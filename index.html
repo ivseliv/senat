@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Решения Общего собрания кассационных департаментов Правительствующего Сената · 1866–1915</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cloth:#22382d;          /* коленкор переплёта */
+  --cloth-deep:#1b2d24;
+  --paper:#f7f4ec;          /* лист */
+  --paper-warm:#f1ede2;
+  --ink:#241f18;
+  --faded:#7a715f;
+  --gold:#a9853e;           /* бинты и линейки */
+  --gold-soft:#cbb078;
+  --green:#2c4a3a;          /* сенатская зелень на бумаге */
+  --stamp:#8e3524;          /* штемпельная краска */
+  --hl:#efe3c0;
+  --hair:#d8d0bd;
+  --serif:'Old Standard TT', Georgia, serif;
+  --sans:'PT Sans', system-ui, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto} *{transition:none!important}}
+
+body{
+  margin:0;color:var(--ink);font-family:var(--sans);line-height:1.55;
+  background:
+    radial-gradient(ellipse 120% 60% at 50% -10%, rgba(255,255,255,.05), transparent 60%),
+    repeating-linear-gradient(45deg, rgba(0,0,0,.05) 0 1px, transparent 1px 3px),
+    linear-gradient(var(--cloth), var(--cloth-deep));
+  background-attachment:fixed;
+  padding:clamp(14px,3.4vw,46px) clamp(8px,2.5vw,40px);
+}
+
+/* лист на переплёте */
+.sheet{
+  max-width:1060px;margin:0 auto;background:var(--paper);
+  box-shadow:0 1px 2px rgba(0,0,0,.35), 0 18px 50px rgba(0,0,0,.45);
+  padding:clamp(20px,4vw,58px) clamp(18px,5vw,72px) 46px;
+  position:relative;
+}
+/* наборная рамка: тонкая + толстая */
+.sheet::before{
+  content:"";position:absolute;inset:10px;pointer-events:none;
+  border:1px solid var(--gold-soft);
+  outline:3px double var(--gold-soft);outline-offset:4px;
+  opacity:.55;
+}
+
+a{color:var(--green)}
+
+/* ---------- титул ---------- */
+header.mast{text-align:center;padding:18px 0 6px}
+.mast .over{font-size:12px;letter-spacing:.42em;text-transform:uppercase;color:var(--faded);word-spacing:.3em}
+.mast h1{font-family:var(--serif);font-weight:400;font-size:clamp(26px,4.6vw,46px);letter-spacing:.1em;margin:.5em 0 .2em;text-transform:uppercase;line-height:1.22}
+.mast h1 .amp{color:var(--stamp)}
+.mast .sub{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--faded);margin:.2em auto 0;max-width:560px}
+.vign{margin:22px auto 8px;width:190px;display:block;color:var(--gold)}
+.imprint{font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--faded);margin-top:14px}
+
+/* ---------- полка ---------- */
+.shelf-wrap{margin:34px 0 8px}
+.shelf-scroll{overflow-x:auto;scrollbar-width:thin;padding-bottom:2px}
+.shelf-inner{min-width:660px}
+#shelf{display:flex;align-items:flex-end;gap:5px;height:132px;padding:0 6px}
+.spine{
+  flex:1 0 21px;min-width:21px;cursor:pointer;position:relative;border-radius:2px 2px 0 0;
+  background:linear-gradient(90deg, #315443, var(--green) 45%, #24402f);
+  box-shadow:inset 1px 0 0 rgba(255,255,255,.14), inset -2px 0 3px rgba(0,0,0,.35);
+  transition:transform .16s ease, filter .16s ease;
+}
+.spine::before{ /* бинты */
+  content:"";position:absolute;left:2px;right:2px;top:7px;height:1px;background:var(--gold-soft);
+  box-shadow:0 4px 0 var(--gold-soft), 0 -2px 0 rgba(0,0,0,.2);opacity:.9;
+}
+#ylabels{display:flex;gap:5px;padding:0 6px;margin-top:6px}
+.ylab{flex:1 0 21px;min-width:21px;height:40px;position:relative}
+.ylab span{
+  position:absolute;top:0;left:50%;transform:translateX(-50%) rotate(58deg);transform-origin:top center;
+  font-family:var(--serif);font-size:11.5px;letter-spacing:.1em;color:var(--faded);white-space:nowrap;
+}
+.spine:hover,.spine:focus-visible{transform:translateY(-7px);filter:brightness(1.12);outline:none}
+.spine.active{background:linear-gradient(90deg,#a5432f,var(--stamp) 45%,#75291b)}
+.shelf-board{height:7px;background:linear-gradient(#5b4a33,#3c3021);box-shadow:0 3px 6px rgba(0,0,0,.3);border-radius:1px;margin:0 -4px}
+.shelf-cap{font-family:var(--serif);font-style:italic;font-size:13.5px;color:var(--faded);text-align:center;margin:14px 0 34px}
+
+/* ---------- разделитель ---------- */
+.divider{display:flex;align-items:center;gap:14px;margin:6px 0 22px;color:var(--gold)}
+.divider::before,.divider::after{content:"";flex:1;border-top:1px solid var(--hair)}
+.divider .dv{font-size:13px;letter-spacing:.1em}
+
+/* ---------- поиск и фильтры ---------- */
+.search-row{display:flex;gap:0;margin:0 0 4px}
+#q{
+  flex:1;font:16px var(--serif);font-style:italic;padding:11px 16px;color:var(--ink);
+  border:1px solid var(--hair);border-right:0;background:#fffdf7;
+}
+#q::placeholder{color:#a99f8a}
+#q:focus{outline:none;border-color:var(--gold);box-shadow:inset 0 0 0 1px var(--gold)}
+button.btn{
+  font:700 13px var(--sans);letter-spacing:.14em;text-transform:uppercase;
+  background:var(--green);color:#f2eddd;border:1px solid var(--green);padding:0 26px;cursor:pointer;
+}
+button.btn:hover{background:#233c2f}
+.hint{font-size:12.5px;color:var(--faded);margin:8px 0 0}
+
+.toplinks{display:flex;justify-content:center;gap:34px;margin:26px 0 20px}
+.toplinks a{
+  font:700 12.5px var(--sans);letter-spacing:.22em;text-transform:uppercase;text-decoration:none;
+  color:var(--faded);padding-bottom:4px;border-bottom:2px solid transparent;
+}
+.toplinks a.on{color:var(--green);border-bottom-color:var(--gold)}
+.toplinks a:hover{color:var(--green)}
+
+.filters{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:0 0 26px}
+.filters select{
+  font:13.5px var(--sans);padding:8px 10px;max-width:225px;color:var(--ink);
+  border:1px solid var(--hair);background:#fffdf7;border-radius:0;
+}
+.filters select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
+
+/* ---------- каталог ---------- */
+#status{font-family:var(--serif);font-style:italic;font-size:16px;color:var(--faded);margin:6px 0 4px;text-align:center}
+.dec{padding:22px 4px;border-top:1px solid var(--hair)}
+.dec:first-of-type{border-top-color:transparent}
+.dec .no{font-family:var(--serif);font-size:14px;letter-spacing:.2em;color:var(--stamp);text-transform:uppercase}
+.dec .no b{font-weight:700;letter-spacing:.1em}
+.dec .hn{font-family:var(--serif);font-size:19px;line-height:1.5;margin:8px 0 8px;cursor:pointer;transition:color .12s}
+.dec .hn:hover{color:var(--green)}
+.dec .meta{font-size:12px;color:var(--faded);margin-top:6px;font-style:italic}
+.flag{
+  display:inline-block;font:700 10px var(--sans);letter-spacing:.12em;color:var(--stamp);
+  border:1px solid currentColor;padding:1px 7px;margin-left:10px;vertical-align:2px;border-radius:1px;opacity:.85;
+}
+.chip{
+  display:inline-block;font:12px var(--sans);letter-spacing:.04em;color:var(--green);
+  border:1px solid #b9c4b4;background:transparent;border-radius:0;padding:2px 9px;margin:3px 7px 0 0;
+}
+.chip.prov{color:#6e5426;border-color:var(--gold-soft)}
+.chip.stat{color:#54452e;border-color:#c9bb9a;font-style:italic}
+.chip.act{color:var(--stamp);border-color:#c9a196}
+.chip.out{color:#3d3a33;border-color:#b8b2a2;background:#edeadf}
+mark{background:var(--hl);color:inherit;padding:0 1px}
+
+/* ---------- лента + боковая колонка ---------- */
+.cols{display:grid;grid-template-columns:minmax(0,1fr) 285px;gap:46px;align-items:start}
+aside#side{position:sticky;top:18px}
+.widget{border-top:1px solid var(--hair);padding:16px 0 20px}
+.widget:first-child{border-top:2px solid var(--gold-soft)}
+.widget h3{
+  font:400 12px var(--serif);letter-spacing:.28em;text-transform:uppercase;
+  color:var(--ink);margin:0 0 12px;
+}
+.witem{display:flex;justify-content:space-between;gap:10px;align-items:baseline;
+  padding:3px 0;cursor:pointer;font-size:13.5px;color:var(--green)}
+.witem:hover .wl{color:var(--stamp)}
+.witem .wl{font-family:var(--serif);font-size:14.5px;color:var(--ink)}
+.witem.on .wl{color:var(--stamp);font-weight:700}
+.witem .wn{font-family:var(--serif);font-size:12.5px;color:var(--faded);white-space:nowrap}
+.wtot{display:flex;flex-wrap:wrap;gap:4px 0;margin:-2px 0 2px}
+.wtot div{flex:1 1 50%;font-size:12px;color:var(--faded)}
+.wtot b{font-family:var(--serif);font-size:17px;font-weight:400;color:var(--green);margin-right:5px}
+.wreset{font:700 11px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--stamp);
+  cursor:pointer;margin-top:10px;display:none}
+.wreset.show{display:inline-block}
+.morewrap{text-align:center;margin:26px 0 8px}
+.btn-more{padding:10px 34px;display:none}
+.btn-more.show{display:inline-block}
+@media (max-width:880px){
+  .cols{grid-template-columns:1fr}
+  aside#side{position:static;border-top:3px double var(--gold-soft);margin-top:20px}
+}
+
+/* ---------- читальный вид ---------- */
+#reader{display:none}#reader.open{display:block}
+#list.hidden{display:none}
+.backbar{margin:6px 0 10px}
+.backbar a{font:700 12px var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;color:var(--faded)}
+.backbar a:hover{color:var(--green)}
+.rhead{text-align:center;margin:26px 0 6px}
+.rhead .rno{font-family:var(--serif);font-size:22px;letter-spacing:.2em;color:var(--ink)}
+.rhead .rrule{width:110px;height:0;border-top:1px solid var(--gold);margin:16px auto 0;position:relative}
+.rhead .rrule::after{content:"";position:absolute;left:26px;right:26px;top:3px;border-top:1px solid var(--gold)}
+.rsrc{font-family:var(--serif);font-style:italic;font-size:14px;color:var(--faded);text-align:center;margin:14px 0 6px}
+.rflags{max-width:700px;margin:0 auto 10px;font-size:13px;color:var(--stamp);text-align:center;font-style:italic}
+.rtext{
+  font-family:var(--serif);font-size:19px;line-height:1.66;max-width:700px;margin:26px auto 60px;
+  white-space:pre-wrap;hyphens:auto;text-align:justify;
+}
+
+/* ---------- статистика ---------- */
+#stats{display:none}#stats.open{display:block}
+.tot-row{display:flex;flex-wrap:wrap;justify-content:center;gap:0;margin:10px 0 34px;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+.tot{padding:20px 34px;text-align:center;border-left:1px solid var(--hair)}
+.tot:first-child{border-left:0}
+.tot .v{font-family:var(--serif);font-size:34px;line-height:1;color:var(--green)}
+.tot .l{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--faded);margin-top:8px}
+.stat-h{
+  font-family:var(--serif);font-weight:400;font-size:15px;letter-spacing:.3em;text-transform:uppercase;
+  text-align:center;color:var(--ink);margin:44px 0 20px;
+}
+.stat-h::after{content:"";display:block;width:64px;margin:12px auto 0;border-top:1px solid var(--gold)}
+.brow{display:flex;align-items:baseline;gap:14px;margin:7px 0;font-size:14px}
+.brow .lbl{flex:0 0 290px;text-align:right;font-family:var(--serif);font-size:15.5px}
+.brow .bar{background:linear-gradient(90deg,var(--green),#446b56);height:8px;min-width:2px;align-self:center;position:relative}
+.brow .bar::after{content:"";position:absolute;right:-1px;top:-3px;bottom:-3px;width:1px;background:var(--gold)}
+.brow .n{font-family:var(--serif);font-size:14px;color:var(--faded);white-space:nowrap}
+.brow.clickable{cursor:pointer}
+.brow.clickable:hover .lbl{color:var(--stamp)}
+.brow.clickable:hover .bar{filter:brightness(1.15)}
+.stat-note{font-family:var(--serif);font-style:italic;font-size:13.5px;color:var(--faded);max-width:640px;margin:16px auto 0;text-align:center}
+
+footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--hair);text-align:center}
+footer .fin{width:150px;color:var(--gold);margin:0 auto 14px;display:block}
+footer p{font-family:var(--serif);font-style:italic;font-size:13px;color:var(--faded);max-width:640px;margin:0 auto}
+
+@media (max-width:680px){
+  .brow .lbl{flex-basis:150px;font-size:13px}
+  .dec .hn{font-size:17px}
+  .rtext{font-size:17px;text-align:left}
+  .tot{padding:14px 18px}.tot .v{font-size:26px}
+  .spine{min-width:15px}
+}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<header class="mast">
+  <p class="over">Правительствующій Сенатъ</p>
+  <h1>Рѣшенія<br>Общаго Собранія</h1>
+  <p class="sub">кассаціонныхъ и съ участіемъ перваго и второго департаментовъ Правительствующаго Сената</p>
+  <svg class="vign" viewBox="0 0 190 26" aria-hidden="true">
+    <g fill="none" stroke="currentColor" stroke-width="1">
+      <path d="M0 13 H70 M120 13 H190"/>
+      <path d="M77 13 l8 -7 8 7 -8 7 z" fill="currentColor" fill-opacity=".15"/>
+      <path d="M95 3 v20 M89 13 h12" stroke-width=".8"/>
+      <circle cx="95" cy="13" r="2.2" fill="currentColor"/>
+    </g>
+  </svg>
+  <p class="imprint">1866 · Санктпетербургъ — Петроградъ · 1915</p>
+</header>
+
+<main>
+  <div class="shelf-wrap">
+    <div class="shelf-scroll"><div class="shelf-inner">
+      <div id="shelf" role="listbox" aria-label="Годы"></div>
+      <div class="shelf-board"></div>
+      <div id="ylabels" aria-hidden="true"></div>
+    </div></div>
+    <p class="shelf-cap">Полка изданій: высота корешка — число рѣшеній за годъ; нажмите, чтобы раскрыть томъ.</p>
+  </div>
+
+  <div class="search-row">
+    <input id="q" type="search" placeholder="Поискъ по рубрикамъ рѣшеній — можно въ современной орѳографіи…" aria-label="Поиск">
+    <button class="btn" id="go">Найти</button>
+  </div>
+  <p class="hint">Запрос «уезд» найдёт «уѣздъ»: дореформенная орфография приводится к современной только при сопоставлении. Поиск идёт по рубрикам; полный текст открывается со страницы решения.</p>
+
+  <nav class="toplinks">
+    <a href="#" id="navlist" class="on">Каталогъ</a>
+    <a href="#/stats" id="navstats">Статистика</a>
+  </nav>
+
+  <div class="filters">
+    <select id="f-topic"><option value="">Тема — все</option></select>
+    <select id="f-prov"><option value="">Губерния — все</option></select>
+    <select id="f-person"><option value="">Участник — все</option></select>
+    <select id="f-occ"><option value="">Повод — все</option></select>
+    <select id="f-status"><option value="">Статус лиц — все</option></select>
+    <select id="f-act"><option value="">Деяние — все</option></select>
+    <select id="f-out"><option value="">Исход — все</option></select>
+  </div>
+
+  <div id="list">
+    <div class="cols">
+      <div class="feed">
+        <p id="status"></p>
+        <div id="results"></div>
+        <div class="morewrap"><button id="more" class="btn btn-more">Показать ещё</button></div>
+      </div>
+      <aside id="side"></aside>
+    </div>
+  </div>
+
+  <div id="reader">
+    <div class="backbar"><a href="#" id="back">← къ каталогу</a></div>
+    <div class="rhead">
+      <div class="rno" id="rno"></div>
+      <div class="rrule"></div>
+    </div>
+    <p class="rsrc" id="rsrc"></p>
+    <p class="rflags" id="rflags"></p>
+    <div class="rtext" id="rtext"></div>
+  </div>
+
+  <div id="stats"></div>
+</main>
+
+<footer>
+  <svg class="fin" viewBox="0 0 150 18" aria-hidden="true">
+    <g fill="none" stroke="currentColor" stroke-width="1">
+      <path d="M0 9 H58 M92 9 H150"/>
+      <path d="M67 9 l8 -6 8 6 -8 6 z" fill="currentColor" fill-opacity=".2"/>
+    </g>
+  </svg>
+  <p>Тексты — OCR печатных изданий с автоматическим исправлением типовых искажений
+  (журнал замен — data/corrections.tsv); орфография оригинала сохранена. Сегментация на решения
+  выполнена по формуле заголовка; записи с пометой OCR требуют сверки с источником.</p>
+</footer>
+
+</div>
+<script>
+
+let DB=null, TEXTS={}, MODS={}, state={year:null, q:'', topic:'', prov:'', person:'', occ:'', status:'', act:'', out:'', orth:'orig', dec:null};
+
+const norm = s => s.toLowerCase()
+  .replace(/ѣ/g,'е').replace(/і/g,'и').replace(/ѳ/g,'ф').replace(/ѵ/g,'и')
+  .replace(/\u00ad/g,'')
+  .replace(/([а-я])ъ(?=\s|[.,;:!?)»"]|$)/g,'$1');
+
+const MONTHS=['','января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
+const fmtDate=d=>{
+  let p=[];
+  if(d.day)p.push(d.day);
+  if(d.month)p.push(MONTHS[d.month]);
+  p.push(d.year);
+  return p.join(' ')+' г.';
+};
+
+function loadScript(src){
+  return new Promise((ok,err)=>{
+    const s=document.createElement('script');
+    s.src=src; s.onload=ok; s.onerror=()=>err(new Error(src));
+    document.head.appendChild(s);
+  });
+}
+
+async function boot(){
+  try{
+    await loadScript('data/index.js');
+  }catch(e){
+    document.getElementById('status').textContent=
+      'Не удалось загрузить data/index.js — проверьте, что папка data лежит рядом с index.html.';
+    return;
+  }
+  DB=window.SENAT_INDEX;
+  DB.byId=Object.fromEntries(DB.decisions.map(d=>[d.id,d]));
+  DB.srcById=Object.fromEntries(DB.sources.map(s=>[s.id,s]));
+  buildShelf();
+  buildFilters();
+  buildSide();
+  route();
+  window.addEventListener('hashchange',route);
+}
+
+function buildShelf(){
+  const counts={};
+  DB.decisions.forEach(d=>counts[d.year]=(counts[d.year]||0)+1);
+  const years=Object.keys(counts).map(Number).sort((a,b)=>a-b);
+  const max=Math.max(...Object.values(counts));
+  const shelf=document.getElementById('shelf');
+  years.forEach(y=>{
+    const el=document.createElement('div');
+    el.className='spine'; el.tabIndex=0; el.role='option';
+    el.style.height=Math.max(10, counts[y]/max*100)+'%';
+    el.title=`${y} — ${counts[y]} реш.`;
+    
+    el.onclick=()=>{location.hash='#/year/'+y};
+    el.onkeydown=e=>{if(e.key==='Enter')el.onclick()};
+    el.dataset.year=y;
+    shelf.appendChild(el);
+    const yl=document.createElement('div');yl.className='ylab';
+    yl.innerHTML=`<span>${y}</span>`;
+    document.getElementById('ylabels').appendChild(yl);
+  });
+}
+
+function show(view){
+  const nl=document.getElementById('navlist'),ns=document.getElementById('navstats');
+  if(nl&&ns){nl.classList.toggle('on',view!=='stats');ns.classList.toggle('on',view==='stats')}
+  document.getElementById('reader').classList.toggle('open',view==='reader');
+  document.getElementById('stats').classList.toggle('open',view==='stats');
+  document.getElementById('list').classList.toggle('hidden',view!=='list');
+}
+
+function route(){
+  const h=location.hash;
+  const mDec=h.match(/^#\/dec\/(.+)$/);
+  const mYear=h.match(/^#\/year\/(\d{4})$/);
+  if(mDec){openDecision(mDec[1]);return}
+  if(h==='#/stats'){show('stats');renderStats();return}
+  show('list');
+  if(mYear){state.year=+mYear[1];state.q='';document.getElementById('q').value=''}
+  renderList();
+}
+
+function setFilter(f,v){
+  if(f==='year'){state.year=state.year===v?null:v;}
+  else{state[f]=state[f]===v?'':v;}
+  document.getElementById('f-topic').value=state.topic;
+  document.getElementById('f-prov').value=state.prov;
+  document.getElementById('f-person').value=state.person;
+  document.getElementById('f-occ').value=state.occ;
+  document.getElementById('f-status').value=state.status;
+  document.getElementById('f-act').value=state.act;
+  document.getElementById('f-out').value=state.out;
+  if(location.hash&&location.hash!=='#')history.replaceState(null,'',location.pathname);
+  show('list');renderList();
+}
+
+function widget(title,counts,fkey,top){
+  const items=Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,top)
+    .map(([k,n])=>`<div class="witem" data-f="${fkey}" data-k="${k}"><span class="wl">${k}</span><span class="wn">${n}</span></div>`).join('');
+  return `<div class="widget"><h3>${title}</h3>${items}</div>`;
+}
+
+function buildSide(){
+  const D=DB.decisions;
+  const c=(f)=>{const o={};D.forEach(d=>f(d).forEach(v=>o[v]=(o[v]||0)+1));return o};
+  const topics=c(d=>d.topics||[]),provs=c(d=>d.provinces||[]),occ=c(d=>d.occasion?[d.occasion]:[]);
+  const statuses=c(d=>d.statuses||[]),acts=c(d=>d.acts||[]),outs=c(d=>d.outcome?[d.outcome]:[]);
+  const people=c(d=>(d.people||[]).map(p=>p.name));
+  Object.keys(people).forEach(k=>{if(people[k]<10)delete people[k]});
+  const names=new Set();D.forEach(d=>(d.people||[]).forEach(p=>names.add(p.name)));
+  document.getElementById('side').innerHTML=`
+    <div class="widget"><h3>Сводъ</h3>
+      <div class="wtot">
+        <div><b>${D.length}</b>решений</div><div><b>${DB.sources.length}</b>тома</div>
+        <div><b>1866–1915</b></div><div><b>${Object.keys(provs).length}</b>губерний</div>
+      </div>
+      <span class="wreset" id="wreset">Сбросить фильтры ✕</span>
+    </div>
+    ${widget('Темы',topics,'topic',12)}
+    ${widget('Сословія и статусы',statuses,'status',10)}
+    ${widget('Дѣянія',acts,'act',10)}
+    ${widget('Исходъ',outs,'out',8)}
+    ${widget('Губерніи',provs,'prov',10)}
+    ${widget('Участники',people,'person',8)}
+    ${widget('Поводъ',occ,'occ',6)}`;
+  document.querySelectorAll('#side .witem').forEach(el=>{
+    el.onclick=()=>setFilter(el.dataset.f,el.dataset.k);
+  });
+  document.getElementById('wreset').onclick=()=>{
+    state.topic=state.prov=state.person=state.occ=state.status=state.act=state.out='';state.year=null;state.q='';
+    document.getElementById('q').value='';
+    ['f-topic','f-prov','f-person','f-occ','f-status','f-act','f-out'].forEach(id=>document.getElementById(id).value='');
+    show('list');renderList();
+  };
+}
+
+function updateSide(){
+  document.querySelectorAll('#side .witem').forEach(el=>{
+    el.classList.toggle('on',state[el.dataset.f]===el.dataset.k);
+  });
+  const any=state.topic||state.prov||state.person||state.occ||state.status||state.act||state.out||state.year||state.q;
+  const r=document.getElementById('wreset');if(r)r.classList.toggle('show',!!any);
+}
+
+function buildFilters(){
+  const count=(f)=>{const c={};DB.decisions.forEach(d=>f(d).forEach(v=>c[v]=(c[v]||0)+1));return c};
+  const fill=(id,counts,fmt)=>{
+    const sel=document.getElementById(id);
+    Object.entries(counts).sort((a,b)=>b[1]-a[1]).forEach(([v,n])=>{
+      const o=document.createElement('option');o.value=v;o.textContent=(fmt?fmt(v):v)+' ('+n+')';sel.appendChild(o);
+    });
+  };
+  fill('f-topic',count(d=>d.topics||[]));
+  fill('f-prov',count(d=>d.provinces||[]));
+  const pc=count(d=>(d.people||[]).map(p=>p.name));
+  Object.keys(pc).forEach(k=>{if(pc[k]<5)delete pc[k]});
+  fill('f-person',pc);
+  fill('f-occ',count(d=>d.occasion?[d.occasion]:[]));
+  fill('f-status',count(d=>d.statuses||[]));
+  fill('f-act',count(d=>d.acts||[]));
+  fill('f-out',count(d=>d.outcome?[d.outcome]:[]));
+  ['f-topic','f-prov','f-person','f-occ','f-status','f-act','f-out'].forEach(id=>{
+    document.getElementById(id).onchange=()=>{
+      state.topic=document.getElementById('f-topic').value;
+      state.prov=document.getElementById('f-prov').value;
+      state.person=document.getElementById('f-person').value;
+      state.occ=document.getElementById('f-occ').value;
+      state.status=document.getElementById('f-status').value;
+      state.act=document.getElementById('f-act').value;
+      state.out=document.getElementById('f-out').value;
+      if(location.hash&&location.hash!=='#')location.hash='';
+      show('list');renderList();
+    };
+  });
+}
+
+function renderList(){
+  document.querySelectorAll('.spine').forEach(s=>
+    s.classList.toggle('active', +s.dataset.year===state.year));
+  let rows=DB.decisions;
+  const hasFilter=state.topic||state.prov||state.person||state.occ||state.status||state.act||state.out;
+  if(state.topic)rows=rows.filter(d=>(d.topics||[]).includes(state.topic));
+  if(state.prov)rows=rows.filter(d=>(d.provinces||[]).includes(state.prov));
+  if(state.person)rows=rows.filter(d=>(d.people||[]).some(p=>p.name===state.person));
+  if(state.occ)rows=rows.filter(d=>d.occasion===state.occ);
+  if(state.status)rows=rows.filter(d=>(d.statuses||[]).includes(state.status));
+  if(state.act)rows=rows.filter(d=>(d.acts||[]).includes(state.act));
+  if(state.out)rows=rows.filter(d=>d.outcome===state.out);
+  let label='Все решения';
+  if(state.q){
+    const qn=norm(state.q);
+    rows=rows.filter(d=>d.hn_norm.includes(qn));
+    label=`Поиск: «${state.q}»`;
+    if(state.year){rows=rows.filter(d=>d.year===state.year);label+=` · ${state.year} г.`}
+  }else if(state.year){
+    rows=rows.filter(d=>d.year===state.year);
+    label=`${state.year} год`;
+  }else if(hasFilter){
+    label=[state.topic,state.prov,state.person,state.occ,state.status,state.act,state.out].filter(Boolean).join(' · ');
+  }else{
+    label='Полная лента';
+  }
+  rows=[...rows].sort((a,b)=>a.year-b.year||(a.month||0)-(b.month||0)||(a.day||0)-(b.day||0)||(a.num||0)-(b.num||0));
+  document.getElementById('status').textContent=`${label} — ${rows.length} реш.`;
+  state.rows=rows;state.shown=0;
+  document.getElementById('results').innerHTML='';
+  renderChunk();
+  updateSide();
+}
+
+const CHUNK=150;
+function renderChunk(){
+  const rows=state.rows||[];
+  const box=document.getElementById('results');
+  const qn=state.q?norm(state.q):null;
+  rows.slice(state.shown,state.shown+CHUNK).forEach(d=>{
+    const el=document.createElement('div');el.className='dec';
+    let hn=d.headnote;
+    if(qn){
+      const i=d.hn_norm.indexOf(qn);
+      if(i>=0) hn=hn.slice(0,i)+'<mark>'+hn.slice(i,i+state.q.length)+'</mark>'+hn.slice(i+state.q.length);
+    }
+    const flags=d.flags.length?`<span class="flag" title="${d.flags.join(', ')}">OCR</span>`:'';
+    el.innerHTML=`
+      <div class="no">${d.num?('№ <b>'+d.num+'</b> · '):''}${fmtDate(d)}${flags}</div>
+      <div class="hn" data-id="${d.id}">${hn}</div>
+      <div>${(d.topics||[]).map(t=>'<span class="chip">'+t+'</span>').join('')}${(d.acts||[]).map(a=>'<span class="chip act">'+a+'</span>').join('')}${(d.statuses||[]).map(s=>'<span class="chip stat">'+s+'</span>').join('')}${(d.provinces||[]).map(p=>'<span class="chip prov">'+p+'</span>').join('')}${d.outcome?'<span class="chip out">'+d.outcome+'</span>':''}</div>
+      <div class="meta">${DB.srcById[d.src].title}</div>`;
+    el.querySelector('.hn').onclick=()=>{location.hash='#/dec/'+d.id};
+    box.appendChild(el);
+  });
+  state.shown=Math.min(rows.length,state.shown+CHUNK);
+  const more=document.getElementById('more');
+  more.classList.toggle('show',state.shown<rows.length);
+  more.textContent=`Показать ещё (${rows.length-state.shown})`;
+}
+document.getElementById('more').onclick=()=>renderChunk();
+
+async function openDecision(id){
+  const d=DB.byId[id]; if(!d){location.hash='';return}
+  if(!TEXTS[d.src]){
+    try{
+      await loadScript('data/src/'+d.src+'.js');
+      TEXTS[d.src]=window.SENAT_SRC[d.src];
+    }catch(e){
+      document.getElementById('status').textContent=
+        'Не удалось загрузить текст тома (data/src/'+d.src+'.js).';
+      return;
+    }
+  }
+  show('reader');
+  state.dec=d;
+  document.getElementById('rno').textContent=
+    (d.num?('№ '+d.num+'. — '):'')+fmtDate(d);
+  document.getElementById('rsrc').textContent='Источник: '+DB.srcById[d.src].title;
+  document.getElementById('rflags').textContent=d.flags.length?
+    'Пометы автоматической обработки: '+d.flags.join(', ')+' — текст требует сверки с изданием.':'';
+  document.getElementById('rtext').textContent=TEXTS[d.src][id];
+  window.scrollTo(0,0);
+}
+
+/* ---------- analytics ---------- */
+function bars(counts,total,opts={}){
+  const max=Math.max(...Object.values(counts),1);
+  return Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,opts.top||20).map(([k,n])=>
+    `<div class="brow${opts.click?' clickable':''}" ${opts.click?`data-k="${k}" data-f="${opts.click}"`:''}>
+       <div class="lbl">${k}</div>
+       <div class="bar" style="width:${(n/max*440).toFixed(0)}px"></div>
+       <div class="n">${n}${total?' ('+(n/total*100).toFixed(1)+'%)':''}</div>
+     </div>`).join('');
+}
+function renderStats(){
+  const D=DB.decisions,N=D.length;
+  const c=(f)=>{const o={};D.forEach(d=>f(d).forEach(v=>o[v]=(o[v]||0)+1));return o};
+  const topics=c(d=>d.topics||[]),provs=c(d=>d.provinces||[]),occ=c(d=>d.occasion?[d.occasion]:[]);
+  const statuses2=c(d=>d.statuses||[]),acts2=c(d=>d.acts||[]),outs2=c(d=>d.outcome?[d.outcome]:[]);
+  const roles={'председательствовал':{},'докладчик':{},'заключение':{}};
+  D.forEach(d=>(d.people||[]).forEach(p=>{if(roles[p.role])roles[p.role][p.name]=(roles[p.role][p.name]||0)+1}));
+  const noTopic=D.filter(d=>(d.flags||[]).includes('no_topic')).length;
+  const fromBody=D.filter(d=>(d.flags||[]).includes('topic_from_body')).length;
+  const pl=(n,a,b,c)=>{const m=n%100;if(m>=11&&m<=14)return c;switch(n%10){case 1:return a;case 2:case 3:case 4:return b;default:return c}};
+  const nProv=Object.keys(provs).length;
+  const names=new Set();D.forEach(d=>(d.people||[]).forEach(p=>names.add(p.name)));
+  const years=[...new Set(D.map(d=>d.year))];
+  document.getElementById('stats').innerHTML=`
+    <div class="tot-row">
+      <div class="tot"><div class="v">${N}</div><div class="l">${pl(N,'решение','решения','решений')}</div></div>
+      <div class="tot"><div class="v">${DB.sources.length}</div><div class="l">${pl(DB.sources.length,'том','тома','томов')}</div></div>
+      <div class="tot"><div class="v">${Math.min(...years)}–${Math.max(...years)}</div><div class="l">годы</div></div>
+      <div class="tot"><div class="v">${nProv}</div><div class="l">${pl(nProv,'губерния','губернии','губерний')}</div></div>
+      <div class="tot"><div class="v">${names.size}</div><div class="l">имён в присутствиях</div></div>
+    </div>
+    <div class="stat-h">Темы</div>${bars(topics,N,{click:'topic'})}
+    <p class="stat-note">Рубрикатор — словарь регулярных выражений по заголовку решения; для ${fromBody} решений тема
+    определена по постановочной части (помета topic_from_body), ${noTopic} остались без темы. Одно решение может иметь несколько тем.</p>
+    <div class="stat-h">Сословія и статусы фигурантовъ</div>${bars(statuses2,0,{top:14,click:'status'})}
+    <div class="stat-h">Дѣянія</div>${bars(acts2,0,{top:16,click:'act'})}
+    <div class="stat-h">Исходъ дѣла</div>${bars(outs2,0,{click:'out'})}
+    <p class="stat-note">Исход извлечён из резолютивной формулы («Правительствующій Сенатъ опредѣляетъ: …»); у части решений
+    окончание повреждено OCR или формула нетиповая — такие оставлены без тега.</p>
+    <div class="stat-h">Губерніи и области</div>${bars(provs,0,{top:25,click:'prov'})}
+    <p class="stat-note">Упоминание в тексте решения по газетиру (форма «…ской губерніи/губ.»); не всегда означает место возникновения дела.</p>
+    <div class="stat-h">Поводъ разсмотрѣнія</div>${bars(occ,N,{click:'occ'})}
+    <div class="stat-h">Предсѣдательствовали</div>${bars(roles['председательствовал'],0,{top:12,click:'person'})}
+    <div class="stat-h">Докладывали</div>${bars(roles['докладчик'],0,{top:12,click:'person'})}
+    <div class="stat-h">Давали заключеніе</div>${bars(roles['заключение'],0,{top:12,click:'person'})}
+    <p class="stat-note">Имена извлечены из формулы состава присутствия и не сведены между собой: OCR-варианты одной фамилии
+    (напр., «Розингъ» / «Ровингъ») считаются раздельно. Строки кликабельны — открывают отфильтрованный список.</p>`;
+  document.querySelectorAll('#stats .brow.clickable').forEach(el=>{
+    el.onclick=()=>{
+      const f=el.dataset.f,k=el.dataset.k;
+      state.topic=state.prov=state.person=state.occ=state.status=state.act=state.out='';state.year=null;state.q='';
+      state[f]=k;
+      ['topic','prov','person','occ','status','act','out'].forEach(kk=>{
+        const el=document.getElementById('f-'+kk);if(el)el.value=state[kk]||'';
+      });
+      location.hash='';show('list');renderList();
+    };
+  });
+}
+document.getElementById('navstats').onclick=e=>{e.preventDefault();location.hash='#/stats'};
+document.getElementById('navlist').onclick=e=>{e.preventDefault();location.hash='';show('list');renderList()};
+
+document.getElementById('go').onclick=()=>{state.q=document.getElementById('q').value.trim();location.hash='';renderList()};
+document.getElementById('q').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('go').onclick()});
+document.getElementById('back').onclick=e=>{e.preventDefault();history.length>1?history.back():(location.hash='')};
+
+boot();
+
+</script>
+</body>
+</html>
