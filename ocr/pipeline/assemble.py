@@ -9,6 +9,12 @@
 """
 import argparse, glob, os, re
 
+LAT2CYR = str.maketrans('aeopcxyABCEHKMOPTXaeopcxy'[:0] + 'aeopcxyABCEHKMOPTX', 'аеорсхуАВСЕНКМОРТХ')
+MIXED = re.compile(r'(?=\w*[а-яѣіѳѵъ])(?=\w*[a-zA-Z])\w+', re.I)
+
+def fix_latin(t):
+    return MIXED.sub(lambda m: m.group(0).translate(LAT2CYR), t)
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('dir'); ap.add_argument('--out')
@@ -16,7 +22,7 @@ def main():
     files = sorted(glob.glob(os.path.join(a.dir, 'p*.txt')))
     out = []; carry = False
     for f in files:
-        t = open(f, encoding='utf-8').read()
+        t = fix_latin(open(f, encoding='utf-8').read())
         t = re.sub(r'^\[\[К:.*?\]\]\s*\n?', '', t, flags=re.M)
         foot = ''
         if '[[СНОСКИ]]' in t:

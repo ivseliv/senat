@@ -8,6 +8,8 @@
 С --delete удаляет результаты помеченных страниц, чтобы run.py прогнал их заново.
 """
 import argparse, glob, os, re
+
+LATIN_IN_CYR = re.compile(r'(?=\w*[а-яѣіѳѵъ])(?=\w*[a-zA-Z])\w+', re.I)
 from collections import Counter
 
 def norm(s):
@@ -35,6 +37,8 @@ def main():
         body = re.sub(r'\[\[.*?\]\]', '', t)
         if len(body.strip()) < 200: why.append('короткий')
         if re.search(r'не могу|cannot|не удалось прочитать|i can.t', t[:300].lower()): why.append('отказ')
+        lat = LATIN_IN_CYR.findall(body)
+        if lat: why.append(f'латиница в словах: {lat[:3]}')
         if t.count('[?]') > 5: why.append(f'[?]×{t.count("[?]")}')
         d = os.path.join(a.work, name + '.abbyy.txt')
         if os.path.exists(d):
