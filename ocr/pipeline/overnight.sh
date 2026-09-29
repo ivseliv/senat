@@ -44,7 +44,7 @@ save() {  # коммит и пуш, ошибки не фатальны
 recognize() {  # $1 = год; повторяет запуск, пока не распознает всё
   local y=$1 rc
   while true; do
-    python3 $PIPE/run.py "work/$y" --out "ocr/$y" --model "$MODEL" --with-draft "${CL[@]}" 2>&1 | tee -a "$LOG" | grep -v '^p[0-9]'
+    python3 -u $PIPE/run.py "work/$y" --out "ocr/$y" --model "$MODEL" --with-draft "${CL[@]}" 2>&1 | tee -a "$LOG" | grep -v '^p[0-9]'
     rc=${PIPESTATUS[0]}
     [ "$rc" -eq 0 ] && return 0
     if [ "$rc" -eq 2 ]; then
@@ -64,7 +64,7 @@ for y in "${YEARS[@]}"; do
   if [ ! -f "$pdf" ]; then log "$y: нет файла $pdf, пропускаю"; continue; fi
   if [ -f "ocr/$y/volume.txt" ] && [ -z "${PAGES:-}" ]; then log "$y: уже готов, пропускаю"; continue; fi
   log "=== Том $y ==="
-  python3 $PIPE/prepare.py "$pdf" --out "work/$y" ${PAGES:+--pages "$PAGES"} 2>&1 | tee -a "$LOG" || { log "$y: prepare не удался"; continue; }
+  python3 -u $PIPE/prepare.py "$pdf" --out "work/$y" ${PAGES:+--pages "$PAGES"} 2>&1 | tee -a "$LOG" || { log "$y: prepare не удался"; continue; }
   recognize "$y" || continue
   python3 $PIPE/check.py "work/$y" "ocr/$y" --delete 2>&1 | tee -a "$LOG"
   recognize "$y" || continue

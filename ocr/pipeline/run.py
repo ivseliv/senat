@@ -11,6 +11,7 @@ import argparse, glob, os, shutil, subprocess, sys, time
 LIMIT_MARKERS = ('usage limit', 'rate limit', 'limit reached', 'limit will reset', 'overloaded', 'quota')
 
 def main():
+    sys.stdout.reconfigure(line_buffering=True)
     ap = argparse.ArgumentParser()
     ap.add_argument('work'); ap.add_argument('--out', required=True)
     ap.add_argument('--model', default='sonnet'); ap.add_argument('--limit', type=int, default=0)
