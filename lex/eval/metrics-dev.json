@@ -1,0 +1,5324 @@
+{
+  "queriesSha256": "b45069d971866929d8c1e2b19d3e31cde9237564e4f5e7c75117eec5ca9db65e",
+  "protocol": "30 запросов: 20 для настройки, 6 отложенных, 4 отрицательных. Эталон — выбранные вручную цитаты рассуждений Сената; не исчерпывающая разметка всех релевантных мест тома. Перекрывающиеся окна не создают дополнительных эталонов.",
+  "split": "dev",
+  "aggregates": [
+    {
+      "split": "dev",
+      "method": "baseline",
+      "n": 20,
+      "recall5": 0.125,
+      "recall10": 0.125,
+      "mrr": 0.125,
+      "falsePositives": null
+    },
+    {
+      "split": "dev",
+      "method": "glossary",
+      "n": 20,
+      "recall5": 0.8,
+      "recall10": 0.9,
+      "mrr": 0.5655555555555555,
+      "falsePositives": null
+    },
+    {
+      "split": "dev",
+      "method": "enriched",
+      "n": 20,
+      "recall5": 0.75,
+      "recall10": 0.85,
+      "mrr": 0.5340873015873016,
+      "falsePositives": null
+    },
+    {
+      "split": "dev",
+      "method": "hybrid",
+      "n": 20,
+      "recall5": 0.9,
+      "recall10": 0.95,
+      "mrr": 0.574861111111111,
+      "falsePositives": null
+    },
+    {
+      "split": "positive",
+      "method": "baseline",
+      "n": 20,
+      "recall5": 0.125,
+      "recall10": 0.125,
+      "mrr": 0.125,
+      "falsePositives": null
+    },
+    {
+      "split": "positive",
+      "method": "glossary",
+      "n": 20,
+      "recall5": 0.8,
+      "recall10": 0.9,
+      "mrr": 0.5655555555555555,
+      "falsePositives": null
+    },
+    {
+      "split": "positive",
+      "method": "enriched",
+      "n": 20,
+      "recall5": 0.75,
+      "recall10": 0.85,
+      "mrr": 0.5340873015873016,
+      "falsePositives": null
+    },
+    {
+      "split": "positive",
+      "method": "hybrid",
+      "n": 20,
+      "recall5": 0.9,
+      "recall10": 0.95,
+      "mrr": 0.574861111111111,
+      "falsePositives": null
+    }
+  ],
+  "rows": [
+    {
+      "id": "q01",
+      "query": "фиктивные сделки",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0.5,
+      "recall10": 0.5,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1905-105:5890-7541",
+          "decision": "1905-105",
+          "pages": [
+            285,
+            286
+          ],
+          "score": 7.23331,
+          "relevant": true
+        }
+      ]
+    },
+    {
+      "id": "q01",
+      "query": "фиктивные сделки",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 5,
+      "top10": [
+        {
+          "passage": "1905-105:7281-9186",
+          "decision": "1905-105",
+          "pages": [
+            286,
+            287
+          ],
+          "score": 13.54221,
+          "relevant": true
+        },
+        {
+          "passage": "1905-105:5890-7541",
+          "decision": "1905-105",
+          "pages": [
+            285,
+            286
+          ],
+          "score": 8.94751,
+          "relevant": true
+        },
+        {
+          "passage": "1905-105:4448-6133",
+          "decision": "1905-105",
+          "pages": [
+            285
+          ],
+          "score": 8.6072,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:8913-10601",
+          "decision": "1905-105",
+          "pages": [
+            286,
+            287
+          ],
+          "score": 5.66054,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:11894-13768",
+          "decision": "1905-105",
+          "pages": [
+            287,
+            288
+          ],
+          "score": 4.05792,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q01",
+      "query": "фиктивные сделки",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 7,
+      "top10": [
+        {
+          "passage": "1905-105:7281-9186",
+          "decision": "1905-105",
+          "pages": [
+            286,
+            287
+          ],
+          "score": 13.54221,
+          "relevant": true
+        },
+        {
+          "passage": "1905-105:5890-7541",
+          "decision": "1905-105",
+          "pages": [
+            285,
+            286
+          ],
+          "score": 8.94751,
+          "relevant": true
+        },
+        {
+          "passage": "1905-105:4448-6133",
+          "decision": "1905-105",
+          "pages": [
+            285
+          ],
+          "score": 8.6072,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:10341-12144",
+          "decision": "1905-105",
+          "pages": [
+            287
+          ],
+          "score": 7.63761,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:8913-10601",
+          "decision": "1905-105",
+          "pages": [
+            286,
+            287
+          ],
+          "score": 7.63761,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:0-1771",
+          "decision": "1905-105",
+          "pages": [
+            283,
+            284
+          ],
+          "score": 6.78127,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:1524-3353",
+          "decision": "1905-105",
+          "pages": [
+            284,
+            285
+          ],
+          "score": 6.78127,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q01",
+      "query": "фиктивные сделки",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 8,
+      "top10": [
+        {
+          "passage": "1905-105:7281-9186",
+          "decision": "1905-105",
+          "pages": [
+            286,
+            287
+          ],
+          "score": 13.54221,
+          "relevant": true
+        },
+        {
+          "passage": "1905-105:5890-7541",
+          "decision": "1905-105",
+          "pages": [
+            285,
+            286
+          ],
+          "score": 8.94751,
+          "relevant": true
+        },
+        {
+          "passage": "1905-105:4448-6133",
+          "decision": "1905-105",
+          "pages": [
+            285
+          ],
+          "score": 8.6072,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:10341-12144",
+          "decision": "1905-105",
+          "pages": [
+            287
+          ],
+          "score": 7.63761,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:8913-10601",
+          "decision": "1905-105",
+          "pages": [
+            286,
+            287
+          ],
+          "score": 7.63761,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:0-1771",
+          "decision": "1905-105",
+          "pages": [
+            283,
+            284
+          ],
+          "score": 6.78127,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:1524-3353",
+          "decision": "1905-105",
+          "pages": [
+            284,
+            285
+          ],
+          "score": 6.78127,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:11894-13768",
+          "decision": "1905-105",
+          "pages": [
+            287,
+            288
+          ],
+          "score": 4.05792,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "query": "обход закона при продлении аренды",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "q02",
+      "query": "обход закона при продлении аренды",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.5,
+      "negativeFalsePositive": null,
+      "results": 2,
+      "top10": [
+        {
+          "passage": "1905-009:1092-2694",
+          "decision": "1905-009",
+          "pages": [
+            19
+          ],
+          "score": 14.91309,
+          "relevant": false
+        },
+        {
+          "passage": "1905-009:10977-12913",
+          "decision": "1905-009",
+          "pages": [
+            22,
+            23
+          ],
+          "score": 13.12462,
+          "relevant": true
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "query": "обход закона при продлении аренды",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1905-009:10977-12913",
+          "decision": "1905-009",
+          "pages": [
+            22,
+            23
+          ],
+          "score": 14.89467,
+          "relevant": true
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "query": "обход закона при продлении аренды",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.5,
+      "negativeFalsePositive": null,
+      "results": 3,
+      "top10": [
+        {
+          "passage": "1905-009:1092-2694",
+          "decision": "1905-009",
+          "pages": [
+            19
+          ],
+          "score": 14.91309,
+          "relevant": false
+        },
+        {
+          "passage": "1905-009:10977-12913",
+          "decision": "1905-009",
+          "pages": [
+            22,
+            23
+          ],
+          "score": 14.89467,
+          "relevant": true
+        },
+        {
+          "passage": "1905-009:0-1386",
+          "decision": "1905-009",
+          "pages": [
+            18,
+            19
+          ],
+          "score": 12.35513,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "query": "признание недееспособным",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 2,
+      "top10": [
+        {
+          "passage": "1905-042:1223-2910",
+          "decision": "1905-042",
+          "pages": [
+            112,
+            113
+          ],
+          "score": 8.97609,
+          "relevant": false
+        },
+        {
+          "passage": "1905-042:2683-4487",
+          "decision": "1905-042",
+          "pages": [
+            113
+          ],
+          "score": 6.0656,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "query": "признание недееспособным",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.3333333333333333,
+      "negativeFalsePositive": null,
+      "results": 30,
+      "top10": [
+        {
+          "passage": "1905-081:0-1504",
+          "decision": "1905-081",
+          "pages": [
+            223
+          ],
+          "score": 13.61365,
+          "relevant": false
+        },
+        {
+          "passage": "1905-001:0-1707",
+          "decision": "1905-001",
+          "pages": [
+            4
+          ],
+          "score": 12.35021,
+          "relevant": false
+        },
+        {
+          "passage": "1905-001:2843-4663",
+          "decision": "1905-001",
+          "pages": [
+            4,
+            5
+          ],
+          "score": 8.91984,
+          "relevant": true
+        },
+        {
+          "passage": "1905-001:1417-3105",
+          "decision": "1905-001",
+          "pages": [
+            4
+          ],
+          "score": 8.6817,
+          "relevant": false
+        },
+        {
+          "passage": "1905-001:4374-6107",
+          "decision": "1905-001",
+          "pages": [
+            5
+          ],
+          "score": 7.9804,
+          "relevant": false
+        },
+        {
+          "passage": "1905-042:1223-2910",
+          "decision": "1905-042",
+          "pages": [
+            112,
+            113
+          ],
+          "score": 7.01374,
+          "relevant": false
+        },
+        {
+          "passage": "1905-097:0-1880",
+          "decision": "1905-097",
+          "pages": [
+            261,
+            262
+          ],
+          "score": 5.08186,
+          "relevant": false
+        },
+        {
+          "passage": "1905-042:6988-8899",
+          "decision": "1905-042",
+          "pages": [
+            114,
+            115
+          ],
+          "score": 5.00155,
+          "relevant": false
+        },
+        {
+          "passage": "1905-058:1056-2960",
+          "decision": "1905-058",
+          "pages": [
+            158
+          ],
+          "score": 4.88629,
+          "relevant": false
+        },
+        {
+          "passage": "1905-081:1225-2981",
+          "decision": "1905-081",
+          "pages": [
+            223,
+            224
+          ],
+          "score": 4.87919,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "query": "признание недееспособным",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.5,
+      "negativeFalsePositive": null,
+      "results": 12,
+      "top10": [
+        {
+          "passage": "1905-001:0-1707",
+          "decision": "1905-001",
+          "pages": [
+            4
+          ],
+          "score": 12.35021,
+          "relevant": false
+        },
+        {
+          "passage": "1905-001:2843-4663",
+          "decision": "1905-001",
+          "pages": [
+            4,
+            5
+          ],
+          "score": 8.91984,
+          "relevant": true
+        },
+        {
+          "passage": "1905-001:1417-3105",
+          "decision": "1905-001",
+          "pages": [
+            4
+          ],
+          "score": 8.6817,
+          "relevant": false
+        },
+        {
+          "passage": "1905-001:4374-6107",
+          "decision": "1905-001",
+          "pages": [
+            5
+          ],
+          "score": 7.99799,
+          "relevant": false
+        },
+        {
+          "passage": "1905-042:1223-2910",
+          "decision": "1905-042",
+          "pages": [
+            112,
+            113
+          ],
+          "score": 7.01374,
+          "relevant": false
+        },
+        {
+          "passage": "1905-058:1056-2960",
+          "decision": "1905-058",
+          "pages": [
+            158
+          ],
+          "score": 4.88629,
+          "relevant": false
+        },
+        {
+          "passage": "1905-042:2683-4487",
+          "decision": "1905-042",
+          "pages": [
+            113
+          ],
+          "score": 4.87454,
+          "relevant": false
+        },
+        {
+          "passage": "1905-081:0-1504",
+          "decision": "1905-081",
+          "pages": [
+            223
+          ],
+          "score": 3.67957,
+          "relevant": false
+        },
+        {
+          "passage": "1905-081:1225-2981",
+          "decision": "1905-081",
+          "pages": [
+            223,
+            224
+          ],
+          "score": 3.67957,
+          "relevant": false
+        },
+        {
+          "passage": "1905-081:2699-4493",
+          "decision": "1905-081",
+          "pages": [
+            224
+          ],
+          "score": 3.67957,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "query": "признание недееспособным",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.3333333333333333,
+      "negativeFalsePositive": null,
+      "results": 30,
+      "top10": [
+        {
+          "passage": "1905-081:0-1504",
+          "decision": "1905-081",
+          "pages": [
+            223
+          ],
+          "score": 13.61365,
+          "relevant": false
+        },
+        {
+          "passage": "1905-001:0-1707",
+          "decision": "1905-001",
+          "pages": [
+            4
+          ],
+          "score": 12.35021,
+          "relevant": false
+        },
+        {
+          "passage": "1905-001:2843-4663",
+          "decision": "1905-001",
+          "pages": [
+            4,
+            5
+          ],
+          "score": 8.91984,
+          "relevant": true
+        },
+        {
+          "passage": "1905-001:1417-3105",
+          "decision": "1905-001",
+          "pages": [
+            4
+          ],
+          "score": 8.6817,
+          "relevant": false
+        },
+        {
+          "passage": "1905-001:4374-6107",
+          "decision": "1905-001",
+          "pages": [
+            5
+          ],
+          "score": 7.99799,
+          "relevant": false
+        },
+        {
+          "passage": "1905-042:1223-2910",
+          "decision": "1905-042",
+          "pages": [
+            112,
+            113
+          ],
+          "score": 7.01374,
+          "relevant": false
+        },
+        {
+          "passage": "1905-097:0-1880",
+          "decision": "1905-097",
+          "pages": [
+            261,
+            262
+          ],
+          "score": 5.08186,
+          "relevant": false
+        },
+        {
+          "passage": "1905-042:6988-8899",
+          "decision": "1905-042",
+          "pages": [
+            114,
+            115
+          ],
+          "score": 5.00155,
+          "relevant": false
+        },
+        {
+          "passage": "1905-058:1056-2960",
+          "decision": "1905-058",
+          "pages": [
+            158
+          ],
+          "score": 4.88629,
+          "relevant": false
+        },
+        {
+          "passage": "1905-081:1225-2981",
+          "decision": "1905-081",
+          "pages": [
+            223,
+            224
+          ],
+          "score": 4.87919,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "query": "залог недвижимости",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "q04",
+      "query": "залог недвижимости",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.25,
+      "negativeFalsePositive": null,
+      "results": 72,
+      "top10": [
+        {
+          "passage": "1905-087:1071-2724",
+          "decision": "1905-087",
+          "pages": [
+            237,
+            238
+          ],
+          "score": 6.44615,
+          "relevant": false
+        },
+        {
+          "passage": "1905-104:4342-6112",
+          "decision": "1905-104",
+          "pages": [
+            283
+          ],
+          "score": 6.16072,
+          "relevant": false
+        },
+        {
+          "passage": "1905-015:1300-2849",
+          "decision": "1905-015",
+          "pages": [
+            36
+          ],
+          "score": 6.02116,
+          "relevant": false
+        },
+        {
+          "passage": "1905-005:1359-3253",
+          "decision": "1905-005",
+          "pages": [
+            11
+          ],
+          "score": 5.82986,
+          "relevant": true
+        },
+        {
+          "passage": "1905-015:2590-4337",
+          "decision": "1905-015",
+          "pages": [
+            36,
+            37
+          ],
+          "score": 5.58953,
+          "relevant": false
+        },
+        {
+          "passage": "1905-030:13849-15599",
+          "decision": "1905-030",
+          "pages": [
+            78,
+            79
+          ],
+          "score": 5.32476,
+          "relevant": false
+        },
+        {
+          "passage": "1905-070:4251-6034",
+          "decision": "1905-070",
+          "pages": [
+            190,
+            191
+          ],
+          "score": 5.25232,
+          "relevant": false
+        },
+        {
+          "passage": "1905-030:15341-17040",
+          "decision": "1905-030",
+          "pages": [
+            79
+          ],
+          "score": 5.1801,
+          "relevant": false
+        },
+        {
+          "passage": "1905-089:0-1503",
+          "decision": "1905-089",
+          "pages": [
+            240
+          ],
+          "score": 5.13868,
+          "relevant": false
+        },
+        {
+          "passage": "1905-087:3913-4788",
+          "decision": "1905-087",
+          "pages": [
+            238,
+            239
+          ],
+          "score": 5.13601,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "query": "залог недвижимости",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.3333333333333333,
+      "negativeFalsePositive": null,
+      "results": 58,
+      "top10": [
+        {
+          "passage": "1905-087:1071-2724",
+          "decision": "1905-087",
+          "pages": [
+            237,
+            238
+          ],
+          "score": 6.44615,
+          "relevant": false
+        },
+        {
+          "passage": "1905-104:4342-6112",
+          "decision": "1905-104",
+          "pages": [
+            283
+          ],
+          "score": 6.16072,
+          "relevant": false
+        },
+        {
+          "passage": "1905-005:1359-3253",
+          "decision": "1905-005",
+          "pages": [
+            11
+          ],
+          "score": 5.82986,
+          "relevant": true
+        },
+        {
+          "passage": "1905-005:0-1634",
+          "decision": "1905-005",
+          "pages": [
+            10,
+            11
+          ],
+          "score": 5.74169,
+          "relevant": false
+        },
+        {
+          "passage": "1905-005:2971-4725",
+          "decision": "1905-005",
+          "pages": [
+            11,
+            12
+          ],
+          "score": 5.74169,
+          "relevant": false
+        },
+        {
+          "passage": "1905-089:0-1503",
+          "decision": "1905-089",
+          "pages": [
+            240
+          ],
+          "score": 5.13868,
+          "relevant": false
+        },
+        {
+          "passage": "1905-087:3913-4788",
+          "decision": "1905-087",
+          "pages": [
+            238,
+            239
+          ],
+          "score": 5.13601,
+          "relevant": false
+        },
+        {
+          "passage": "1905-104:0-1603",
+          "decision": "1905-104",
+          "pages": [
+            281,
+            282
+          ],
+          "score": 5.09398,
+          "relevant": false
+        },
+        {
+          "passage": "1905-050:4379-6033",
+          "decision": "1905-050",
+          "pages": [
+            134,
+            135
+          ],
+          "score": 5.09088,
+          "relevant": false
+        },
+        {
+          "passage": "1905-030:15341-17040",
+          "decision": "1905-030",
+          "pages": [
+            79
+          ],
+          "score": 5.05061,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "query": "залог недвижимости",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.25,
+      "negativeFalsePositive": null,
+      "results": 74,
+      "top10": [
+        {
+          "passage": "1905-087:1071-2724",
+          "decision": "1905-087",
+          "pages": [
+            237,
+            238
+          ],
+          "score": 6.44615,
+          "relevant": false
+        },
+        {
+          "passage": "1905-104:4342-6112",
+          "decision": "1905-104",
+          "pages": [
+            283
+          ],
+          "score": 6.16072,
+          "relevant": false
+        },
+        {
+          "passage": "1905-015:1300-2849",
+          "decision": "1905-015",
+          "pages": [
+            36
+          ],
+          "score": 6.02116,
+          "relevant": false
+        },
+        {
+          "passage": "1905-005:1359-3253",
+          "decision": "1905-005",
+          "pages": [
+            11
+          ],
+          "score": 5.82986,
+          "relevant": true
+        },
+        {
+          "passage": "1905-005:0-1634",
+          "decision": "1905-005",
+          "pages": [
+            10,
+            11
+          ],
+          "score": 5.74169,
+          "relevant": false
+        },
+        {
+          "passage": "1905-005:2971-4725",
+          "decision": "1905-005",
+          "pages": [
+            11,
+            12
+          ],
+          "score": 5.74169,
+          "relevant": false
+        },
+        {
+          "passage": "1905-015:2590-4337",
+          "decision": "1905-015",
+          "pages": [
+            36,
+            37
+          ],
+          "score": 5.58953,
+          "relevant": false
+        },
+        {
+          "passage": "1905-030:13849-15599",
+          "decision": "1905-030",
+          "pages": [
+            78,
+            79
+          ],
+          "score": 5.32476,
+          "relevant": false
+        },
+        {
+          "passage": "1905-070:4251-6034",
+          "decision": "1905-070",
+          "pages": [
+            190,
+            191
+          ],
+          "score": 5.25232,
+          "relevant": false
+        },
+        {
+          "passage": "1905-030:15341-17040",
+          "decision": "1905-030",
+          "pages": [
+            79
+          ],
+          "score": 5.1801,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "query": "срок принятия наследства",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 4,
+      "top10": [
+        {
+          "passage": "1905-006:3090-4760",
+          "decision": "1905-006",
+          "pages": [
+            13
+          ],
+          "score": 9.02564,
+          "relevant": true
+        },
+        {
+          "passage": "1905-004:1743-3242",
+          "decision": "1905-004",
+          "pages": [
+            9,
+            10
+          ],
+          "score": 8.65391,
+          "relevant": false
+        },
+        {
+          "passage": "1905-004:0-1927",
+          "decision": "1905-004",
+          "pages": [
+            9
+          ],
+          "score": 7.55101,
+          "relevant": false
+        },
+        {
+          "passage": "1905-083:3581-5438",
+          "decision": "1905-083",
+          "pages": [
+            229,
+            230
+          ],
+          "score": 6.02526,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "query": "срок принятия наследства",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.25,
+      "negativeFalsePositive": null,
+      "results": 16,
+      "top10": [
+        {
+          "passage": "1905-073:1015-2788",
+          "decision": "1905-073",
+          "pages": [
+            199
+          ],
+          "score": 10.05906,
+          "relevant": false
+        },
+        {
+          "passage": "1905-073:2520-4147",
+          "decision": "1905-073",
+          "pages": [
+            199,
+            200
+          ],
+          "score": 9.99683,
+          "relevant": false
+        },
+        {
+          "passage": "1905-073:0-1272",
+          "decision": "1905-073",
+          "pages": [
+            198,
+            199
+          ],
+          "score": 9.27569,
+          "relevant": false
+        },
+        {
+          "passage": "1905-006:3090-4760",
+          "decision": "1905-006",
+          "pages": [
+            13
+          ],
+          "score": 8.47885,
+          "relevant": true
+        },
+        {
+          "passage": "1905-006:1551-3344",
+          "decision": "1905-006",
+          "pages": [
+            12,
+            13
+          ],
+          "score": 7.44062,
+          "relevant": false
+        },
+        {
+          "passage": "1905-058:8719-10606",
+          "decision": "1905-058",
+          "pages": [
+            160,
+            161
+          ],
+          "score": 6.97371,
+          "relevant": false
+        },
+        {
+          "passage": "1905-007:4343-5960",
+          "decision": "1905-007",
+          "pages": [
+            16
+          ],
+          "score": 5.79373,
+          "relevant": false
+        },
+        {
+          "passage": "1905-006:4492-5781",
+          "decision": "1905-006",
+          "pages": [
+            13,
+            14
+          ],
+          "score": 5.62412,
+          "relevant": true
+        },
+        {
+          "passage": "1905-007:5726-6749",
+          "decision": "1905-007",
+          "pages": [
+            16
+          ],
+          "score": 5.36134,
+          "relevant": false
+        },
+        {
+          "passage": "1905-058:7238-8938",
+          "decision": "1905-058",
+          "pages": [
+            160
+          ],
+          "score": 5.31499,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "query": "срок принятия наследства",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 20,
+      "top10": [
+        {
+          "passage": "1905-006:3090-4760",
+          "decision": "1905-006",
+          "pages": [
+            13
+          ],
+          "score": 8.47885,
+          "relevant": true
+        },
+        {
+          "passage": "1905-006:0-1810",
+          "decision": "1905-006",
+          "pages": [
+            12
+          ],
+          "score": 7.9266,
+          "relevant": false
+        },
+        {
+          "passage": "1905-006:1551-3344",
+          "decision": "1905-006",
+          "pages": [
+            12,
+            13
+          ],
+          "score": 7.9266,
+          "relevant": false
+        },
+        {
+          "passage": "1905-006:4492-5781",
+          "decision": "1905-006",
+          "pages": [
+            13,
+            14
+          ],
+          "score": 7.9266,
+          "relevant": true
+        },
+        {
+          "passage": "1905-058:8719-10606",
+          "decision": "1905-058",
+          "pages": [
+            160,
+            161
+          ],
+          "score": 6.97371,
+          "relevant": false
+        },
+        {
+          "passage": "1905-058:7238-8938",
+          "decision": "1905-058",
+          "pages": [
+            160
+          ],
+          "score": 5.31499,
+          "relevant": false
+        },
+        {
+          "passage": "1905-004:0-1927",
+          "decision": "1905-004",
+          "pages": [
+            9
+          ],
+          "score": 5.0353,
+          "relevant": false
+        },
+        {
+          "passage": "1905-058:5774-7516",
+          "decision": "1905-058",
+          "pages": [
+            159,
+            160
+          ],
+          "score": 4.99987,
+          "relevant": false
+        },
+        {
+          "passage": "1905-007:4343-5960",
+          "decision": "1905-007",
+          "pages": [
+            16
+          ],
+          "score": 4.83846,
+          "relevant": false
+        },
+        {
+          "passage": "1905-054:0-1652",
+          "decision": "1905-054",
+          "pages": [
+            146,
+            147
+          ],
+          "score": 4.61366,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "query": "срок принятия наследства",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.25,
+      "negativeFalsePositive": null,
+      "results": 26,
+      "top10": [
+        {
+          "passage": "1905-073:1015-2788",
+          "decision": "1905-073",
+          "pages": [
+            199
+          ],
+          "score": 10.05906,
+          "relevant": false
+        },
+        {
+          "passage": "1905-073:2520-4147",
+          "decision": "1905-073",
+          "pages": [
+            199,
+            200
+          ],
+          "score": 9.99683,
+          "relevant": false
+        },
+        {
+          "passage": "1905-073:0-1272",
+          "decision": "1905-073",
+          "pages": [
+            198,
+            199
+          ],
+          "score": 9.27569,
+          "relevant": false
+        },
+        {
+          "passage": "1905-006:3090-4760",
+          "decision": "1905-006",
+          "pages": [
+            13
+          ],
+          "score": 8.47885,
+          "relevant": true
+        },
+        {
+          "passage": "1905-006:0-1810",
+          "decision": "1905-006",
+          "pages": [
+            12
+          ],
+          "score": 7.9266,
+          "relevant": false
+        },
+        {
+          "passage": "1905-006:1551-3344",
+          "decision": "1905-006",
+          "pages": [
+            12,
+            13
+          ],
+          "score": 7.9266,
+          "relevant": false
+        },
+        {
+          "passage": "1905-006:4492-5781",
+          "decision": "1905-006",
+          "pages": [
+            13,
+            14
+          ],
+          "score": 7.9266,
+          "relevant": true
+        },
+        {
+          "passage": "1905-058:8719-10606",
+          "decision": "1905-058",
+          "pages": [
+            160,
+            161
+          ],
+          "score": 6.97371,
+          "relevant": false
+        },
+        {
+          "passage": "1905-007:4343-5960",
+          "decision": "1905-007",
+          "pages": [
+            16
+          ],
+          "score": 5.79373,
+          "relevant": false
+        },
+        {
+          "passage": "1905-007:5726-6749",
+          "decision": "1905-007",
+          "pages": [
+            16
+          ],
+          "score": 5.36134,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "query": "полномочия представителя",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "q06",
+      "query": "полномочия представителя",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 1,
+      "mrr": 0.16666666666666666,
+      "negativeFalsePositive": null,
+      "results": 324,
+      "top10": [
+        {
+          "passage": "1905-019:0-1743",
+          "decision": "1905-019",
+          "pages": [
+            45,
+            46
+          ],
+          "score": 5.82451,
+          "relevant": false
+        },
+        {
+          "passage": "1905-019:4054-5813",
+          "decision": "1905-019",
+          "pages": [
+            47
+          ],
+          "score": 5.82451,
+          "relevant": false
+        },
+        {
+          "passage": "1905-019:5539-7345",
+          "decision": "1905-019",
+          "pages": [
+            47,
+            48
+          ],
+          "score": 5.82451,
+          "relevant": false
+        },
+        {
+          "passage": "1905-079:1568-3041",
+          "decision": "1905-079",
+          "pages": [
+            219,
+            220
+          ],
+          "score": 5.49619,
+          "relevant": false
+        },
+        {
+          "passage": "1905-019:1486-2888",
+          "decision": "1905-019",
+          "pages": [
+            46
+          ],
+          "score": 5.01153,
+          "relevant": false
+        },
+        {
+          "passage": "1905-008:0-2227",
+          "decision": "1905-008",
+          "pages": [
+            17
+          ],
+          "score": 4.0861,
+          "relevant": true
+        },
+        {
+          "passage": "1905-100:7388-9099",
+          "decision": "1905-100",
+          "pages": [
+            273
+          ],
+          "score": 3.81346,
+          "relevant": false
+        },
+        {
+          "passage": "1905-058:0-1346",
+          "decision": "1905-058",
+          "pages": [
+            157,
+            158
+          ],
+          "score": 3.78798,
+          "relevant": false
+        },
+        {
+          "passage": "1905-023:2737-4380",
+          "decision": "1905-023",
+          "pages": [
+            58,
+            59
+          ],
+          "score": 3.77425,
+          "relevant": false
+        },
+        {
+          "passage": "1905-032:4487-5859",
+          "decision": "1905-032",
+          "pages": [
+            86
+          ],
+          "score": 3.75817,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "query": "полномочия представителя",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 212,
+      "top10": [
+        {
+          "passage": "1905-008:0-2227",
+          "decision": "1905-008",
+          "pages": [
+            17
+          ],
+          "score": 7.07857,
+          "relevant": true
+        },
+        {
+          "passage": "1905-019:0-1743",
+          "decision": "1905-019",
+          "pages": [
+            45,
+            46
+          ],
+          "score": 6.45574,
+          "relevant": false
+        },
+        {
+          "passage": "1905-019:1486-2888",
+          "decision": "1905-019",
+          "pages": [
+            46
+          ],
+          "score": 6.45574,
+          "relevant": false
+        },
+        {
+          "passage": "1905-019:2602-4330",
+          "decision": "1905-019",
+          "pages": [
+            46,
+            47
+          ],
+          "score": 6.45574,
+          "relevant": false
+        },
+        {
+          "passage": "1905-019:4054-5813",
+          "decision": "1905-019",
+          "pages": [
+            47
+          ],
+          "score": 6.45574,
+          "relevant": false
+        },
+        {
+          "passage": "1905-079:0-1817",
+          "decision": "1905-079",
+          "pages": [
+            219
+          ],
+          "score": 6.05838,
+          "relevant": false
+        },
+        {
+          "passage": "1905-079:1568-3041",
+          "decision": "1905-079",
+          "pages": [
+            219,
+            220
+          ],
+          "score": 6.05838,
+          "relevant": false
+        },
+        {
+          "passage": "1905-079:2770-4602",
+          "decision": "1905-079",
+          "pages": [
+            220
+          ],
+          "score": 6.05838,
+          "relevant": false
+        },
+        {
+          "passage": "1905-079:4345-5896",
+          "decision": "1905-079",
+          "pages": [
+            220,
+            221
+          ],
+          "score": 6.05838,
+          "relevant": false
+        },
+        {
+          "passage": "1905-079:5671-7628",
+          "decision": "1905-079",
+          "pages": [
+            221
+          ],
+          "score": 6.05838,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "query": "полномочия представителя",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 325,
+      "top10": [
+        {
+          "passage": "1905-008:0-2227",
+          "decision": "1905-008",
+          "pages": [
+            17
+          ],
+          "score": 7.07857,
+          "relevant": true
+        },
+        {
+          "passage": "1905-019:0-1743",
+          "decision": "1905-019",
+          "pages": [
+            45,
+            46
+          ],
+          "score": 6.45574,
+          "relevant": false
+        },
+        {
+          "passage": "1905-019:1486-2888",
+          "decision": "1905-019",
+          "pages": [
+            46
+          ],
+          "score": 6.45574,
+          "relevant": false
+        },
+        {
+          "passage": "1905-019:2602-4330",
+          "decision": "1905-019",
+          "pages": [
+            46,
+            47
+          ],
+          "score": 6.45574,
+          "relevant": false
+        },
+        {
+          "passage": "1905-019:4054-5813",
+          "decision": "1905-019",
+          "pages": [
+            47
+          ],
+          "score": 6.45574,
+          "relevant": false
+        },
+        {
+          "passage": "1905-079:0-1817",
+          "decision": "1905-079",
+          "pages": [
+            219
+          ],
+          "score": 6.05838,
+          "relevant": false
+        },
+        {
+          "passage": "1905-079:1568-3041",
+          "decision": "1905-079",
+          "pages": [
+            219,
+            220
+          ],
+          "score": 6.05838,
+          "relevant": false
+        },
+        {
+          "passage": "1905-079:2770-4602",
+          "decision": "1905-079",
+          "pages": [
+            220
+          ],
+          "score": 6.05838,
+          "relevant": false
+        },
+        {
+          "passage": "1905-079:4345-5896",
+          "decision": "1905-079",
+          "pages": [
+            220,
+            221
+          ],
+          "score": 6.05838,
+          "relevant": false
+        },
+        {
+          "passage": "1905-079:5671-7628",
+          "decision": "1905-079",
+          "pages": [
+            221
+          ],
+          "score": 6.05838,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "query": "пресекательный срок",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "q07",
+      "query": "пресекательный срок",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.5,
+      "negativeFalsePositive": null,
+      "results": 19,
+      "top10": [
+        {
+          "passage": "1905-010:5520-7259",
+          "decision": "1905-010",
+          "pages": [
+            25,
+            26
+          ],
+          "score": 11.41486,
+          "relevant": false
+        },
+        {
+          "passage": "1905-010:3930-5742",
+          "decision": "1905-010",
+          "pages": [
+            25
+          ],
+          "score": 5.6121,
+          "relevant": true
+        },
+        {
+          "passage": "1905-030:19748-21396",
+          "decision": "1905-030",
+          "pages": [
+            80,
+            81
+          ],
+          "score": 4.92261,
+          "relevant": false
+        },
+        {
+          "passage": "1905-010:2835-4232",
+          "decision": "1905-010",
+          "pages": [
+            24,
+            25
+          ],
+          "score": 4.6459,
+          "relevant": true
+        },
+        {
+          "passage": "1905-010:6993-8396",
+          "decision": "1905-010",
+          "pages": [
+            26
+          ],
+          "score": 4.47921,
+          "relevant": false
+        },
+        {
+          "passage": "1905-047:2571-4256",
+          "decision": "1905-047",
+          "pages": [
+            128
+          ],
+          "score": 4.28765,
+          "relevant": false
+        },
+        {
+          "passage": "1905-100:0-1763",
+          "decision": "1905-100",
+          "pages": [
+            270,
+            271
+          ],
+          "score": 4.22196,
+          "relevant": false
+        },
+        {
+          "passage": "1905-030:18212-19995",
+          "decision": "1905-030",
+          "pages": [
+            80
+          ],
+          "score": 4.15747,
+          "relevant": false
+        },
+        {
+          "passage": "1905-055:0-1825",
+          "decision": "1905-055",
+          "pages": [
+            149,
+            150
+          ],
+          "score": 4.14341,
+          "relevant": false
+        },
+        {
+          "passage": "1905-030:5376-7028",
+          "decision": "1905-030",
+          "pages": [
+            75,
+            76
+          ],
+          "score": 4.1191,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "query": "пресекательный срок",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.25,
+      "negativeFalsePositive": null,
+      "results": 5,
+      "top10": [
+        {
+          "passage": "1905-010:5520-7259",
+          "decision": "1905-010",
+          "pages": [
+            25,
+            26
+          ],
+          "score": 11.41486,
+          "relevant": false
+        },
+        {
+          "passage": "1905-010:0-1600",
+          "decision": "1905-010",
+          "pages": [
+            23,
+            24
+          ],
+          "score": 7.61848,
+          "relevant": false
+        },
+        {
+          "passage": "1905-010:1382-3091",
+          "decision": "1905-010",
+          "pages": [
+            24
+          ],
+          "score": 7.61848,
+          "relevant": false
+        },
+        {
+          "passage": "1905-010:2835-4232",
+          "decision": "1905-010",
+          "pages": [
+            24,
+            25
+          ],
+          "score": 7.61848,
+          "relevant": true
+        },
+        {
+          "passage": "1905-010:8148-9348",
+          "decision": "1905-010",
+          "pages": [
+            26,
+            27
+          ],
+          "score": 7.61848,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "query": "пресекательный срок",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.25,
+      "negativeFalsePositive": null,
+      "results": 22,
+      "top10": [
+        {
+          "passage": "1905-010:5520-7259",
+          "decision": "1905-010",
+          "pages": [
+            25,
+            26
+          ],
+          "score": 11.41486,
+          "relevant": false
+        },
+        {
+          "passage": "1905-010:0-1600",
+          "decision": "1905-010",
+          "pages": [
+            23,
+            24
+          ],
+          "score": 7.61848,
+          "relevant": false
+        },
+        {
+          "passage": "1905-010:1382-3091",
+          "decision": "1905-010",
+          "pages": [
+            24
+          ],
+          "score": 7.61848,
+          "relevant": false
+        },
+        {
+          "passage": "1905-010:2835-4232",
+          "decision": "1905-010",
+          "pages": [
+            24,
+            25
+          ],
+          "score": 7.61848,
+          "relevant": true
+        },
+        {
+          "passage": "1905-010:8148-9348",
+          "decision": "1905-010",
+          "pages": [
+            26,
+            27
+          ],
+          "score": 7.61848,
+          "relevant": false
+        },
+        {
+          "passage": "1905-010:3930-5742",
+          "decision": "1905-010",
+          "pages": [
+            25
+          ],
+          "score": 5.6121,
+          "relevant": true
+        },
+        {
+          "passage": "1905-030:19748-21396",
+          "decision": "1905-030",
+          "pages": [
+            80,
+            81
+          ],
+          "score": 4.92261,
+          "relevant": false
+        },
+        {
+          "passage": "1905-010:6993-8396",
+          "decision": "1905-010",
+          "pages": [
+            26
+          ],
+          "score": 4.47921,
+          "relevant": false
+        },
+        {
+          "passage": "1905-047:2571-4256",
+          "decision": "1905-047",
+          "pages": [
+            128
+          ],
+          "score": 4.28765,
+          "relevant": false
+        },
+        {
+          "passage": "1905-100:0-1763",
+          "decision": "1905-100",
+          "pages": [
+            270,
+            271
+          ],
+          "score": 4.22196,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "query": "уступка права требования",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "q08",
+      "query": "уступка права требования",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "q08",
+      "query": "уступка права требования",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 13,
+      "top10": [
+        {
+          "passage": "1905-016:1425-2835",
+          "decision": "1905-016",
+          "pages": [
+            38,
+            39
+          ],
+          "score": 4.6986,
+          "relevant": true
+        },
+        {
+          "passage": "1905-016:0-1703",
+          "decision": "1905-016",
+          "pages": [
+            38,
+            39
+          ],
+          "score": 4.66507,
+          "relevant": true
+        },
+        {
+          "passage": "1905-063:5643-7502",
+          "decision": "1905-063",
+          "pages": [
+            173
+          ],
+          "score": 4.46297,
+          "relevant": false
+        },
+        {
+          "passage": "1905-103:1755-3966",
+          "decision": "1905-103",
+          "pages": [
+            280,
+            281
+          ],
+          "score": 4.43567,
+          "relevant": false
+        },
+        {
+          "passage": "1905-063:0-1502",
+          "decision": "1905-063",
+          "pages": [
+            171
+          ],
+          "score": 4.14783,
+          "relevant": false
+        },
+        {
+          "passage": "1905-063:7217-8843",
+          "decision": "1905-063",
+          "pages": [
+            173,
+            174
+          ],
+          "score": 4.14783,
+          "relevant": false
+        },
+        {
+          "passage": "1905-063:4272-5950",
+          "decision": "1905-063",
+          "pages": [
+            172,
+            173
+          ],
+          "score": 4.14364,
+          "relevant": false
+        },
+        {
+          "passage": "1905-044:0-1552",
+          "decision": "1905-044",
+          "pages": [
+            120,
+            121
+          ],
+          "score": 3.38732,
+          "relevant": false
+        },
+        {
+          "passage": "1905-044:1314-2871",
+          "decision": "1905-044",
+          "pages": [
+            121
+          ],
+          "score": 3.38732,
+          "relevant": false
+        },
+        {
+          "passage": "1905-044:2623-4781",
+          "decision": "1905-044",
+          "pages": [
+            121,
+            122
+          ],
+          "score": 3.38732,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "query": "уступка права требования",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 13,
+      "top10": [
+        {
+          "passage": "1905-016:1425-2835",
+          "decision": "1905-016",
+          "pages": [
+            38,
+            39
+          ],
+          "score": 4.6986,
+          "relevant": true
+        },
+        {
+          "passage": "1905-016:0-1703",
+          "decision": "1905-016",
+          "pages": [
+            38,
+            39
+          ],
+          "score": 4.66507,
+          "relevant": true
+        },
+        {
+          "passage": "1905-063:5643-7502",
+          "decision": "1905-063",
+          "pages": [
+            173
+          ],
+          "score": 4.46297,
+          "relevant": false
+        },
+        {
+          "passage": "1905-103:1755-3966",
+          "decision": "1905-103",
+          "pages": [
+            280,
+            281
+          ],
+          "score": 4.43567,
+          "relevant": false
+        },
+        {
+          "passage": "1905-063:0-1502",
+          "decision": "1905-063",
+          "pages": [
+            171
+          ],
+          "score": 4.14783,
+          "relevant": false
+        },
+        {
+          "passage": "1905-063:7217-8843",
+          "decision": "1905-063",
+          "pages": [
+            173,
+            174
+          ],
+          "score": 4.14783,
+          "relevant": false
+        },
+        {
+          "passage": "1905-063:4272-5950",
+          "decision": "1905-063",
+          "pages": [
+            172,
+            173
+          ],
+          "score": 4.14364,
+          "relevant": false
+        },
+        {
+          "passage": "1905-044:0-1552",
+          "decision": "1905-044",
+          "pages": [
+            120,
+            121
+          ],
+          "score": 3.38732,
+          "relevant": false
+        },
+        {
+          "passage": "1905-044:1314-2871",
+          "decision": "1905-044",
+          "pages": [
+            121
+          ],
+          "score": 3.38732,
+          "relevant": false
+        },
+        {
+          "passage": "1905-044:2623-4781",
+          "decision": "1905-044",
+          "pages": [
+            121,
+            122
+          ],
+          "score": 3.38732,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "query": "допустимость свидетельских показаний",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "q09",
+      "query": "допустимость свидетельских показаний",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 1,
+      "mrr": 0.1111111111111111,
+      "negativeFalsePositive": null,
+      "results": 70,
+      "top10": [
+        {
+          "passage": "1905-017:2571-4090",
+          "decision": "1905-017",
+          "pages": [
+            40,
+            41
+          ],
+          "score": 10.04124,
+          "relevant": false
+        },
+        {
+          "passage": "1905-018:7162-9226",
+          "decision": "1905-018",
+          "pages": [
+            44,
+            45
+          ],
+          "score": 8.41352,
+          "relevant": false
+        },
+        {
+          "passage": "1905-017:3807-5281",
+          "decision": "1905-017",
+          "pages": [
+            40,
+            41
+          ],
+          "score": 8.23099,
+          "relevant": false
+        },
+        {
+          "passage": "1905-036:9330-11065",
+          "decision": "1905-036",
+          "pages": [
+            96,
+            97
+          ],
+          "score": 7.80253,
+          "relevant": false
+        },
+        {
+          "passage": "1905-018:1153-2838",
+          "decision": "1905-018",
+          "pages": [
+            42,
+            43
+          ],
+          "score": 7.46143,
+          "relevant": false
+        },
+        {
+          "passage": "1905-017:0-1704",
+          "decision": "1905-017",
+          "pages": [
+            39,
+            40
+          ],
+          "score": 6.46968,
+          "relevant": false
+        },
+        {
+          "passage": "1905-036:2648-4310",
+          "decision": "1905-036",
+          "pages": [
+            94,
+            95
+          ],
+          "score": 6.42854,
+          "relevant": false
+        },
+        {
+          "passage": "1905-036:6610-8219",
+          "decision": "1905-036",
+          "pages": [
+            96
+          ],
+          "score": 6.41396,
+          "relevant": false
+        },
+        {
+          "passage": "1905-018:5573-7415",
+          "decision": "1905-018",
+          "pages": [
+            44
+          ],
+          "score": 6.37187,
+          "relevant": true
+        },
+        {
+          "passage": "1905-035:0-1698",
+          "decision": "1905-035",
+          "pages": [
+            91,
+            92
+          ],
+          "score": 5.53328,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "query": "допустимость свидетельских показаний",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0.05555555555555555,
+      "negativeFalsePositive": null,
+      "results": 36,
+      "top10": [
+        {
+          "passage": "1905-036:0-1753",
+          "decision": "1905-036",
+          "pages": [
+            93,
+            94
+          ],
+          "score": 10.09807,
+          "relevant": false
+        },
+        {
+          "passage": "1905-036:10805-12160",
+          "decision": "1905-036",
+          "pages": [
+            97
+          ],
+          "score": 10.09807,
+          "relevant": false
+        },
+        {
+          "passage": "1905-036:1507-2897",
+          "decision": "1905-036",
+          "pages": [
+            94
+          ],
+          "score": 10.09807,
+          "relevant": false
+        },
+        {
+          "passage": "1905-036:2648-4310",
+          "decision": "1905-036",
+          "pages": [
+            94,
+            95
+          ],
+          "score": 10.09807,
+          "relevant": false
+        },
+        {
+          "passage": "1905-036:4063-5516",
+          "decision": "1905-036",
+          "pages": [
+            95
+          ],
+          "score": 10.09807,
+          "relevant": false
+        },
+        {
+          "passage": "1905-036:5315-6900",
+          "decision": "1905-036",
+          "pages": [
+            95,
+            96
+          ],
+          "score": 10.09807,
+          "relevant": false
+        },
+        {
+          "passage": "1905-036:6610-8219",
+          "decision": "1905-036",
+          "pages": [
+            96
+          ],
+          "score": 10.09807,
+          "relevant": false
+        },
+        {
+          "passage": "1905-036:7982-9615",
+          "decision": "1905-036",
+          "pages": [
+            96,
+            97
+          ],
+          "score": 10.09807,
+          "relevant": false
+        },
+        {
+          "passage": "1905-036:9330-11065",
+          "decision": "1905-036",
+          "pages": [
+            96,
+            97
+          ],
+          "score": 10.09807,
+          "relevant": false
+        },
+        {
+          "passage": "1905-017:2571-4090",
+          "decision": "1905-017",
+          "pages": [
+            40,
+            41
+          ],
+          "score": 10.04124,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "query": "допустимость свидетельских показаний",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0.05555555555555555,
+      "negativeFalsePositive": null,
+      "results": 81,
+      "top10": [
+        {
+          "passage": "1905-036:0-1753",
+          "decision": "1905-036",
+          "pages": [
+            93,
+            94
+          ],
+          "score": 10.09807,
+          "relevant": false
+        },
+        {
+          "passage": "1905-036:10805-12160",
+          "decision": "1905-036",
+          "pages": [
+            97
+          ],
+          "score": 10.09807,
+          "relevant": false
+        },
+        {
+          "passage": "1905-036:1507-2897",
+          "decision": "1905-036",
+          "pages": [
+            94
+          ],
+          "score": 10.09807,
+          "relevant": false
+        },
+        {
+          "passage": "1905-036:2648-4310",
+          "decision": "1905-036",
+          "pages": [
+            94,
+            95
+          ],
+          "score": 10.09807,
+          "relevant": false
+        },
+        {
+          "passage": "1905-036:4063-5516",
+          "decision": "1905-036",
+          "pages": [
+            95
+          ],
+          "score": 10.09807,
+          "relevant": false
+        },
+        {
+          "passage": "1905-036:5315-6900",
+          "decision": "1905-036",
+          "pages": [
+            95,
+            96
+          ],
+          "score": 10.09807,
+          "relevant": false
+        },
+        {
+          "passage": "1905-036:6610-8219",
+          "decision": "1905-036",
+          "pages": [
+            96
+          ],
+          "score": 10.09807,
+          "relevant": false
+        },
+        {
+          "passage": "1905-036:7982-9615",
+          "decision": "1905-036",
+          "pages": [
+            96,
+            97
+          ],
+          "score": 10.09807,
+          "relevant": false
+        },
+        {
+          "passage": "1905-036:9330-11065",
+          "decision": "1905-036",
+          "pages": [
+            96,
+            97
+          ],
+          "score": 10.09807,
+          "relevant": false
+        },
+        {
+          "passage": "1905-017:2571-4090",
+          "decision": "1905-017",
+          "pages": [
+            40,
+            41
+          ],
+          "score": 10.04124,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "query": "торговая сделка и гербовый сбор",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1905-025:0-1534",
+          "decision": "1905-025",
+          "pages": [
+            63,
+            64
+          ],
+          "score": 14.51008,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "query": "торговая сделка и гербовый сбор",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 2,
+      "top10": [
+        {
+          "passage": "1905-025:1292-3001",
+          "decision": "1905-025",
+          "pages": [
+            64
+          ],
+          "score": 18.10356,
+          "relevant": false
+        },
+        {
+          "passage": "1905-025:0-1534",
+          "decision": "1905-025",
+          "pages": [
+            63,
+            64
+          ],
+          "score": 13.11983,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "query": "торговая сделка и гербовый сбор",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.3333333333333333,
+      "negativeFalsePositive": null,
+      "results": 5,
+      "top10": [
+        {
+          "passage": "1905-025:2693-4336",
+          "decision": "1905-025",
+          "pages": [
+            64,
+            65
+          ],
+          "score": 18.41583,
+          "relevant": false
+        },
+        {
+          "passage": "1905-025:1292-3001",
+          "decision": "1905-025",
+          "pages": [
+            64
+          ],
+          "score": 18.10356,
+          "relevant": false
+        },
+        {
+          "passage": "1905-025:4094-5876",
+          "decision": "1905-025",
+          "pages": [
+            65
+          ],
+          "score": 17.43389,
+          "relevant": true
+        },
+        {
+          "passage": "1905-025:0-1534",
+          "decision": "1905-025",
+          "pages": [
+            63,
+            64
+          ],
+          "score": 16.91385,
+          "relevant": false
+        },
+        {
+          "passage": "1905-025:5625-6301",
+          "decision": "1905-025",
+          "pages": [
+            65
+          ],
+          "score": 16.87398,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "query": "торговая сделка и гербовый сбор",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.3333333333333333,
+      "negativeFalsePositive": null,
+      "results": 5,
+      "top10": [
+        {
+          "passage": "1905-025:2693-4336",
+          "decision": "1905-025",
+          "pages": [
+            64,
+            65
+          ],
+          "score": 18.41583,
+          "relevant": false
+        },
+        {
+          "passage": "1905-025:1292-3001",
+          "decision": "1905-025",
+          "pages": [
+            64
+          ],
+          "score": 18.10356,
+          "relevant": false
+        },
+        {
+          "passage": "1905-025:4094-5876",
+          "decision": "1905-025",
+          "pages": [
+            65
+          ],
+          "score": 17.43389,
+          "relevant": true
+        },
+        {
+          "passage": "1905-025:0-1534",
+          "decision": "1905-025",
+          "pages": [
+            63,
+            64
+          ],
+          "score": 16.91385,
+          "relevant": false
+        },
+        {
+          "passage": "1905-025:5625-6301",
+          "decision": "1905-025",
+          "pages": [
+            65
+          ],
+          "score": 16.87398,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "query": "добросовестный приобретатель",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "q11",
+      "query": "добросовестный приобретатель",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 34,
+      "top10": [
+        {
+          "passage": "1905-030:13849-15599",
+          "decision": "1905-030",
+          "pages": [
+            78,
+            79
+          ],
+          "score": 16.26527,
+          "relevant": true
+        },
+        {
+          "passage": "1905-030:16765-18506",
+          "decision": "1905-030",
+          "pages": [
+            79,
+            80
+          ],
+          "score": 16.25762,
+          "relevant": false
+        },
+        {
+          "passage": "1905-050:4379-6033",
+          "decision": "1905-050",
+          "pages": [
+            134,
+            135
+          ],
+          "score": 6.82777,
+          "relevant": false
+        },
+        {
+          "passage": "1905-030:15341-17040",
+          "decision": "1905-030",
+          "pages": [
+            79
+          ],
+          "score": 6.28576,
+          "relevant": false
+        },
+        {
+          "passage": "1905-050:1148-3056",
+          "decision": "1905-050",
+          "pages": [
+            133,
+            134
+          ],
+          "score": 5.70927,
+          "relevant": false
+        },
+        {
+          "passage": "1905-050:2785-4662",
+          "decision": "1905-050",
+          "pages": [
+            134,
+            135
+          ],
+          "score": 5.70927,
+          "relevant": false
+        },
+        {
+          "passage": "1905-047:6590-8570",
+          "decision": "1905-047",
+          "pages": [
+            129,
+            130
+          ],
+          "score": 5.48402,
+          "relevant": false
+        },
+        {
+          "passage": "1905-050:5769-7111",
+          "decision": "1905-050",
+          "pages": [
+            135
+          ],
+          "score": 5.40529,
+          "relevant": false
+        },
+        {
+          "passage": "1905-047:5210-6854",
+          "decision": "1905-047",
+          "pages": [
+            128,
+            129
+          ],
+          "score": 5.39895,
+          "relevant": false
+        },
+        {
+          "passage": "1905-030:10856-12458",
+          "decision": "1905-030",
+          "pages": [
+            77,
+            78
+          ],
+          "score": 5.21901,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "query": "добросовестный приобретатель",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 1,
+      "mrr": 0.16666666666666666,
+      "negativeFalsePositive": null,
+      "results": 8,
+      "top10": [
+        {
+          "passage": "1905-050:4379-6033",
+          "decision": "1905-050",
+          "pages": [
+            134,
+            135
+          ],
+          "score": 6.89513,
+          "relevant": false
+        },
+        {
+          "passage": "1905-050:5769-7111",
+          "decision": "1905-050",
+          "pages": [
+            135
+          ],
+          "score": 6.89513,
+          "relevant": false
+        },
+        {
+          "passage": "1905-050:6857-8535",
+          "decision": "1905-050",
+          "pages": [
+            135,
+            136
+          ],
+          "score": 6.89513,
+          "relevant": false
+        },
+        {
+          "passage": "1905-050:8295-9867",
+          "decision": "1905-050",
+          "pages": [
+            136
+          ],
+          "score": 6.89513,
+          "relevant": false
+        },
+        {
+          "passage": "1905-050:9600-11915",
+          "decision": "1905-050",
+          "pages": [
+            136,
+            137
+          ],
+          "score": 6.89513,
+          "relevant": false
+        },
+        {
+          "passage": "1905-030:13849-15599",
+          "decision": "1905-030",
+          "pages": [
+            78,
+            79
+          ],
+          "score": 6.40708,
+          "relevant": true
+        },
+        {
+          "passage": "1905-030:15341-17040",
+          "decision": "1905-030",
+          "pages": [
+            79
+          ],
+          "score": 6.40708,
+          "relevant": false
+        },
+        {
+          "passage": "1905-030:16765-18506",
+          "decision": "1905-030",
+          "pages": [
+            79,
+            80
+          ],
+          "score": 6.40708,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "query": "добросовестный приобретатель",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 34,
+      "top10": [
+        {
+          "passage": "1905-030:13849-15599",
+          "decision": "1905-030",
+          "pages": [
+            78,
+            79
+          ],
+          "score": 16.26527,
+          "relevant": true
+        },
+        {
+          "passage": "1905-030:16765-18506",
+          "decision": "1905-030",
+          "pages": [
+            79,
+            80
+          ],
+          "score": 16.25762,
+          "relevant": false
+        },
+        {
+          "passage": "1905-050:4379-6033",
+          "decision": "1905-050",
+          "pages": [
+            134,
+            135
+          ],
+          "score": 6.89513,
+          "relevant": false
+        },
+        {
+          "passage": "1905-050:5769-7111",
+          "decision": "1905-050",
+          "pages": [
+            135
+          ],
+          "score": 6.89513,
+          "relevant": false
+        },
+        {
+          "passage": "1905-050:6857-8535",
+          "decision": "1905-050",
+          "pages": [
+            135,
+            136
+          ],
+          "score": 6.89513,
+          "relevant": false
+        },
+        {
+          "passage": "1905-050:8295-9867",
+          "decision": "1905-050",
+          "pages": [
+            136
+          ],
+          "score": 6.89513,
+          "relevant": false
+        },
+        {
+          "passage": "1905-050:9600-11915",
+          "decision": "1905-050",
+          "pages": [
+            136,
+            137
+          ],
+          "score": 6.89513,
+          "relevant": false
+        },
+        {
+          "passage": "1905-030:15341-17040",
+          "decision": "1905-030",
+          "pages": [
+            79
+          ],
+          "score": 6.40708,
+          "relevant": false
+        },
+        {
+          "passage": "1905-050:1148-3056",
+          "decision": "1905-050",
+          "pages": [
+            133,
+            134
+          ],
+          "score": 5.70927,
+          "relevant": false
+        },
+        {
+          "passage": "1905-050:2785-4662",
+          "decision": "1905-050",
+          "pages": [
+            134,
+            135
+          ],
+          "score": 5.70927,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "query": "вина потерпевшего",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "q12",
+      "query": "вина потерпевшего",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.5,
+      "negativeFalsePositive": null,
+      "results": 6,
+      "top10": [
+        {
+          "passage": "1905-031:2630-4463",
+          "decision": "1905-031",
+          "pages": [
+            82,
+            83
+          ],
+          "score": 8.8629,
+          "relevant": false
+        },
+        {
+          "passage": "1905-031:4198-6056",
+          "decision": "1905-031",
+          "pages": [
+            83
+          ],
+          "score": 8.82642,
+          "relevant": true
+        },
+        {
+          "passage": "1905-031:5851-7288",
+          "decision": "1905-031",
+          "pages": [
+            83,
+            84
+          ],
+          "score": 5.66293,
+          "relevant": false
+        },
+        {
+          "passage": "1905-031:1246-2896",
+          "decision": "1905-031",
+          "pages": [
+            82
+          ],
+          "score": 5.40034,
+          "relevant": false
+        },
+        {
+          "passage": "1905-069:1635-3250",
+          "decision": "1905-069",
+          "pages": [
+            187,
+            188
+          ],
+          "score": 4.00035,
+          "relevant": false
+        },
+        {
+          "passage": "1905-028:0-1786",
+          "decision": "1905-028",
+          "pages": [
+            71
+          ],
+          "score": 3.71483,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "query": "вина потерпевшего",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "q12",
+      "query": "вина потерпевшего",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.5,
+      "negativeFalsePositive": null,
+      "results": 6,
+      "top10": [
+        {
+          "passage": "1905-031:2630-4463",
+          "decision": "1905-031",
+          "pages": [
+            82,
+            83
+          ],
+          "score": 8.8629,
+          "relevant": false
+        },
+        {
+          "passage": "1905-031:4198-6056",
+          "decision": "1905-031",
+          "pages": [
+            83
+          ],
+          "score": 8.82642,
+          "relevant": true
+        },
+        {
+          "passage": "1905-031:5851-7288",
+          "decision": "1905-031",
+          "pages": [
+            83,
+            84
+          ],
+          "score": 5.66293,
+          "relevant": false
+        },
+        {
+          "passage": "1905-031:1246-2896",
+          "decision": "1905-031",
+          "pages": [
+            82
+          ],
+          "score": 5.40034,
+          "relevant": false
+        },
+        {
+          "passage": "1905-069:1635-3250",
+          "decision": "1905-069",
+          "pages": [
+            187,
+            188
+          ],
+          "score": 4.00035,
+          "relevant": false
+        },
+        {
+          "passage": "1905-028:0-1786",
+          "decision": "1905-028",
+          "pages": [
+            71
+          ],
+          "score": 3.71483,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "query": "соседские права",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "q13",
+      "query": "соседские права",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 9,
+      "top10": [
+        {
+          "passage": "1905-038:6627-8260",
+          "decision": "1905-038",
+          "pages": [
+            102,
+            103
+          ],
+          "score": 6.82248,
+          "relevant": true
+        },
+        {
+          "passage": "1905-038:0-1497",
+          "decision": "1905-038",
+          "pages": [
+            100
+          ],
+          "score": 6.3854,
+          "relevant": false
+        },
+        {
+          "passage": "1905-038:3848-5510",
+          "decision": "1905-038",
+          "pages": [
+            101,
+            102
+          ],
+          "score": 6.11134,
+          "relevant": false
+        },
+        {
+          "passage": "1905-038:2769-4107",
+          "decision": "1905-038",
+          "pages": [
+            101
+          ],
+          "score": 6.00504,
+          "relevant": false
+        },
+        {
+          "passage": "1905-006:3090-4760",
+          "decision": "1905-006",
+          "pages": [
+            13
+          ],
+          "score": 5.89006,
+          "relevant": false
+        },
+        {
+          "passage": "1905-038:5289-6895",
+          "decision": "1905-038",
+          "pages": [
+            102
+          ],
+          "score": 5.82247,
+          "relevant": false
+        },
+        {
+          "passage": "1905-038:8054-9666",
+          "decision": "1905-038",
+          "pages": [
+            102,
+            103
+          ],
+          "score": 5.0346,
+          "relevant": false
+        },
+        {
+          "passage": "1905-098:0-1762",
+          "decision": "1905-098",
+          "pages": [
+            264
+          ],
+          "score": 4.47906,
+          "relevant": false
+        },
+        {
+          "passage": "1905-038:1230-3017",
+          "decision": "1905-038",
+          "pages": [
+            100,
+            101
+          ],
+          "score": 3.5897,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "query": "соседские права",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 1,
+      "mrr": 0.14285714285714285,
+      "negativeFalsePositive": null,
+      "results": 27,
+      "top10": [
+        {
+          "passage": "1905-038:3848-5510",
+          "decision": "1905-038",
+          "pages": [
+            101,
+            102
+          ],
+          "score": 6.11134,
+          "relevant": false
+        },
+        {
+          "passage": "1905-006:3090-4760",
+          "decision": "1905-006",
+          "pages": [
+            13
+          ],
+          "score": 5.89006,
+          "relevant": false
+        },
+        {
+          "passage": "1905-038:0-1497",
+          "decision": "1905-038",
+          "pages": [
+            100
+          ],
+          "score": 5.40805,
+          "relevant": false
+        },
+        {
+          "passage": "1905-038:1230-3017",
+          "decision": "1905-038",
+          "pages": [
+            100,
+            101
+          ],
+          "score": 5.40805,
+          "relevant": false
+        },
+        {
+          "passage": "1905-038:2769-4107",
+          "decision": "1905-038",
+          "pages": [
+            101
+          ],
+          "score": 5.40805,
+          "relevant": false
+        },
+        {
+          "passage": "1905-038:5289-6895",
+          "decision": "1905-038",
+          "pages": [
+            102
+          ],
+          "score": 5.40805,
+          "relevant": false
+        },
+        {
+          "passage": "1905-038:6627-8260",
+          "decision": "1905-038",
+          "pages": [
+            102,
+            103
+          ],
+          "score": 5.40805,
+          "relevant": true
+        },
+        {
+          "passage": "1905-071:0-1906",
+          "decision": "1905-071",
+          "pages": [
+            192,
+            193
+          ],
+          "score": 5.40805,
+          "relevant": false
+        },
+        {
+          "passage": "1905-071:1634-3379",
+          "decision": "1905-071",
+          "pages": [
+            193,
+            194
+          ],
+          "score": 5.40805,
+          "relevant": false
+        },
+        {
+          "passage": "1905-071:3107-5244",
+          "decision": "1905-071",
+          "pages": [
+            193,
+            194
+          ],
+          "score": 5.40805,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "query": "соседские права",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 28,
+      "top10": [
+        {
+          "passage": "1905-038:6627-8260",
+          "decision": "1905-038",
+          "pages": [
+            102,
+            103
+          ],
+          "score": 6.82248,
+          "relevant": true
+        },
+        {
+          "passage": "1905-038:0-1497",
+          "decision": "1905-038",
+          "pages": [
+            100
+          ],
+          "score": 6.3854,
+          "relevant": false
+        },
+        {
+          "passage": "1905-038:3848-5510",
+          "decision": "1905-038",
+          "pages": [
+            101,
+            102
+          ],
+          "score": 6.11134,
+          "relevant": false
+        },
+        {
+          "passage": "1905-038:2769-4107",
+          "decision": "1905-038",
+          "pages": [
+            101
+          ],
+          "score": 6.00504,
+          "relevant": false
+        },
+        {
+          "passage": "1905-006:3090-4760",
+          "decision": "1905-006",
+          "pages": [
+            13
+          ],
+          "score": 5.89006,
+          "relevant": false
+        },
+        {
+          "passage": "1905-038:5289-6895",
+          "decision": "1905-038",
+          "pages": [
+            102
+          ],
+          "score": 5.82247,
+          "relevant": false
+        },
+        {
+          "passage": "1905-038:1230-3017",
+          "decision": "1905-038",
+          "pages": [
+            100,
+            101
+          ],
+          "score": 5.40805,
+          "relevant": false
+        },
+        {
+          "passage": "1905-071:0-1906",
+          "decision": "1905-071",
+          "pages": [
+            192,
+            193
+          ],
+          "score": 5.40805,
+          "relevant": false
+        },
+        {
+          "passage": "1905-071:1634-3379",
+          "decision": "1905-071",
+          "pages": [
+            193,
+            194
+          ],
+          "score": 5.40805,
+          "relevant": false
+        },
+        {
+          "passage": "1905-071:3107-5244",
+          "decision": "1905-071",
+          "pages": [
+            193,
+            194
+          ],
+          "score": 5.40805,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "query": "вознаграждение исполнителя завещания",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1905-043:2857-4718",
+          "decision": "1905-043",
+          "pages": [
+            117,
+            118
+          ],
+          "score": 9.93501,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "query": "вознаграждение исполнителя завещания",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.2,
+      "negativeFalsePositive": null,
+      "results": 7,
+      "top10": [
+        {
+          "passage": "1905-043:0-1805",
+          "decision": "1905-043",
+          "pages": [
+            116,
+            117
+          ],
+          "score": 11.48901,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:1509-3138",
+          "decision": "1905-043",
+          "pages": [
+            117
+          ],
+          "score": 11.09035,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:2857-4718",
+          "decision": "1905-043",
+          "pages": [
+            117,
+            118
+          ],
+          "score": 10.82455,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:9083-10594",
+          "decision": "1905-043",
+          "pages": [
+            119,
+            120
+          ],
+          "score": 10.70093,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:10335-11651",
+          "decision": "1905-043",
+          "pages": [
+            120
+          ],
+          "score": 10.67651,
+          "relevant": true
+        },
+        {
+          "passage": "1905-043:4440-6337",
+          "decision": "1905-043",
+          "pages": [
+            118
+          ],
+          "score": 10.29415,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:7380-9331",
+          "decision": "1905-043",
+          "pages": [
+            119
+          ],
+          "score": 9.95187,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "query": "вознаграждение исполнителя завещания",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.2,
+      "negativeFalsePositive": null,
+      "results": 7,
+      "top10": [
+        {
+          "passage": "1905-043:0-1805",
+          "decision": "1905-043",
+          "pages": [
+            116,
+            117
+          ],
+          "score": 11.48901,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:1509-3138",
+          "decision": "1905-043",
+          "pages": [
+            117
+          ],
+          "score": 11.09035,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:2857-4718",
+          "decision": "1905-043",
+          "pages": [
+            117,
+            118
+          ],
+          "score": 10.82455,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:9083-10594",
+          "decision": "1905-043",
+          "pages": [
+            119,
+            120
+          ],
+          "score": 10.70093,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:10335-11651",
+          "decision": "1905-043",
+          "pages": [
+            120
+          ],
+          "score": 10.67651,
+          "relevant": true
+        },
+        {
+          "passage": "1905-043:4440-6337",
+          "decision": "1905-043",
+          "pages": [
+            118
+          ],
+          "score": 10.29415,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:7380-9331",
+          "decision": "1905-043",
+          "pages": [
+            119
+          ],
+          "score": 10.21176,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "query": "вознаграждение исполнителя завещания",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.2,
+      "negativeFalsePositive": null,
+      "results": 7,
+      "top10": [
+        {
+          "passage": "1905-043:0-1805",
+          "decision": "1905-043",
+          "pages": [
+            116,
+            117
+          ],
+          "score": 11.48901,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:1509-3138",
+          "decision": "1905-043",
+          "pages": [
+            117
+          ],
+          "score": 11.09035,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:2857-4718",
+          "decision": "1905-043",
+          "pages": [
+            117,
+            118
+          ],
+          "score": 10.82455,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:9083-10594",
+          "decision": "1905-043",
+          "pages": [
+            119,
+            120
+          ],
+          "score": 10.70093,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:10335-11651",
+          "decision": "1905-043",
+          "pages": [
+            120
+          ],
+          "score": 10.67651,
+          "relevant": true
+        },
+        {
+          "passage": "1905-043:4440-6337",
+          "decision": "1905-043",
+          "pages": [
+            118
+          ],
+          "score": 10.29415,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:7380-9331",
+          "decision": "1905-043",
+          "pages": [
+            119
+          ],
+          "score": 10.21176,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "query": "ликвидация юридического лица",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "q15",
+      "query": "ликвидация юридического лица",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.5,
+      "negativeFalsePositive": null,
+      "results": 18,
+      "top10": [
+        {
+          "passage": "1905-049:0-1899",
+          "decision": "1905-049",
+          "pages": [
+            131,
+            132
+          ],
+          "score": 8.69789,
+          "relevant": false
+        },
+        {
+          "passage": "1905-049:1626-3499",
+          "decision": "1905-049",
+          "pages": [
+            132
+          ],
+          "score": 7.4808,
+          "relevant": true
+        },
+        {
+          "passage": "1905-100:4243-5916",
+          "decision": "1905-100",
+          "pages": [
+            272
+          ],
+          "score": 5.05277,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:4440-6337",
+          "decision": "1905-043",
+          "pages": [
+            118
+          ],
+          "score": 4.99325,
+          "relevant": false
+        },
+        {
+          "passage": "1905-100:1454-2990",
+          "decision": "1905-100",
+          "pages": [
+            271
+          ],
+          "score": 4.75433,
+          "relevant": false
+        },
+        {
+          "passage": "1905-049:3244-4978",
+          "decision": "1905-049",
+          "pages": [
+            132,
+            133
+          ],
+          "score": 4.62236,
+          "relevant": false
+        },
+        {
+          "passage": "1905-100:2704-4545",
+          "decision": "1905-100",
+          "pages": [
+            271,
+            272
+          ],
+          "score": 4.59201,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:2857-4718",
+          "decision": "1905-043",
+          "pages": [
+            117,
+            118
+          ],
+          "score": 4.54427,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:1509-3138",
+          "decision": "1905-043",
+          "pages": [
+            117
+          ],
+          "score": 4.1388,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:0-1805",
+          "decision": "1905-043",
+          "pages": [
+            116,
+            117
+          ],
+          "score": 3.99688,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "query": "ликвидация юридического лица",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.5,
+      "negativeFalsePositive": null,
+      "results": 3,
+      "top10": [
+        {
+          "passage": "1905-049:0-1899",
+          "decision": "1905-049",
+          "pages": [
+            131,
+            132
+          ],
+          "score": 10.89949,
+          "relevant": false
+        },
+        {
+          "passage": "1905-049:1626-3499",
+          "decision": "1905-049",
+          "pages": [
+            132
+          ],
+          "score": 10.89949,
+          "relevant": true
+        },
+        {
+          "passage": "1905-049:3244-4978",
+          "decision": "1905-049",
+          "pages": [
+            132,
+            133
+          ],
+          "score": 10.89949,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "query": "ликвидация юридического лица",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.5,
+      "negativeFalsePositive": null,
+      "results": 18,
+      "top10": [
+        {
+          "passage": "1905-049:0-1899",
+          "decision": "1905-049",
+          "pages": [
+            131,
+            132
+          ],
+          "score": 10.89949,
+          "relevant": false
+        },
+        {
+          "passage": "1905-049:1626-3499",
+          "decision": "1905-049",
+          "pages": [
+            132
+          ],
+          "score": 10.89949,
+          "relevant": true
+        },
+        {
+          "passage": "1905-049:3244-4978",
+          "decision": "1905-049",
+          "pages": [
+            132,
+            133
+          ],
+          "score": 10.89949,
+          "relevant": false
+        },
+        {
+          "passage": "1905-100:4243-5916",
+          "decision": "1905-100",
+          "pages": [
+            272
+          ],
+          "score": 5.05277,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:4440-6337",
+          "decision": "1905-043",
+          "pages": [
+            118
+          ],
+          "score": 4.99325,
+          "relevant": false
+        },
+        {
+          "passage": "1905-100:1454-2990",
+          "decision": "1905-100",
+          "pages": [
+            271
+          ],
+          "score": 4.75433,
+          "relevant": false
+        },
+        {
+          "passage": "1905-100:2704-4545",
+          "decision": "1905-100",
+          "pages": [
+            271,
+            272
+          ],
+          "score": 4.59201,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:2857-4718",
+          "decision": "1905-043",
+          "pages": [
+            117,
+            118
+          ],
+          "score": 4.54427,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:1509-3138",
+          "decision": "1905-043",
+          "pages": [
+            117
+          ],
+          "score": 4.1388,
+          "relevant": false
+        },
+        {
+          "passage": "1905-043:0-1805",
+          "decision": "1905-043",
+          "pages": [
+            116,
+            117
+          ],
+          "score": 3.99688,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "query": "неустойка за нарушение договора",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "q16",
+      "query": "неустойка за нарушение договора",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 4,
+      "top10": [
+        {
+          "passage": "1905-052:4265-6134",
+          "decision": "1905-052",
+          "pages": [
+            142,
+            143
+          ],
+          "score": 14.19493,
+          "relevant": true
+        },
+        {
+          "passage": "1905-052:2747-4569",
+          "decision": "1905-052",
+          "pages": [
+            142
+          ],
+          "score": 14.14683,
+          "relevant": true
+        },
+        {
+          "passage": "1905-052:1249-3077",
+          "decision": "1905-052",
+          "pages": [
+            141,
+            142
+          ],
+          "score": 10.37055,
+          "relevant": false
+        },
+        {
+          "passage": "1905-052:0-1538",
+          "decision": "1905-052",
+          "pages": [
+            141
+          ],
+          "score": 9.12007,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "query": "неустойка за нарушение договора",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 5,
+      "top10": [
+        {
+          "passage": "1905-052:4265-6134",
+          "decision": "1905-052",
+          "pages": [
+            142,
+            143
+          ],
+          "score": 12.12179,
+          "relevant": true
+        },
+        {
+          "passage": "1905-052:0-1538",
+          "decision": "1905-052",
+          "pages": [
+            141
+          ],
+          "score": 11.00259,
+          "relevant": false
+        },
+        {
+          "passage": "1905-052:1249-3077",
+          "decision": "1905-052",
+          "pages": [
+            141,
+            142
+          ],
+          "score": 10.38406,
+          "relevant": false
+        },
+        {
+          "passage": "1905-052:2747-4569",
+          "decision": "1905-052",
+          "pages": [
+            142
+          ],
+          "score": 10.38027,
+          "relevant": true
+        },
+        {
+          "passage": "1905-052:5863-7154",
+          "decision": "1905-052",
+          "pages": [
+            143
+          ],
+          "score": 10.38027,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "query": "неустойка за нарушение договора",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 5,
+      "top10": [
+        {
+          "passage": "1905-052:4265-6134",
+          "decision": "1905-052",
+          "pages": [
+            142,
+            143
+          ],
+          "score": 14.19493,
+          "relevant": true
+        },
+        {
+          "passage": "1905-052:2747-4569",
+          "decision": "1905-052",
+          "pages": [
+            142
+          ],
+          "score": 14.17815,
+          "relevant": true
+        },
+        {
+          "passage": "1905-052:0-1538",
+          "decision": "1905-052",
+          "pages": [
+            141
+          ],
+          "score": 11.00259,
+          "relevant": false
+        },
+        {
+          "passage": "1905-052:1249-3077",
+          "decision": "1905-052",
+          "pages": [
+            141,
+            142
+          ],
+          "score": 10.38406,
+          "relevant": false
+        },
+        {
+          "passage": "1905-052:5863-7154",
+          "decision": "1905-052",
+          "pages": [
+            143
+          ],
+          "score": 10.38027,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "query": "судебное оспаривание решений общества",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "q17",
+      "query": "судебное оспаривание решений общества",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 34,
+      "top10": [
+        {
+          "passage": "1905-055:6105-8059",
+          "decision": "1905-055",
+          "pages": [
+            151,
+            152
+          ],
+          "score": 8.6019,
+          "relevant": true
+        },
+        {
+          "passage": "1905-055:7791-9364",
+          "decision": "1905-055",
+          "pages": [
+            152,
+            153
+          ],
+          "score": 6.23008,
+          "relevant": false
+        },
+        {
+          "passage": "1905-106:2962-5034",
+          "decision": "1905-106",
+          "pages": [
+            289,
+            290
+          ],
+          "score": 6.07723,
+          "relevant": false
+        },
+        {
+          "passage": "1905-014:1406-3179",
+          "decision": "1905-014",
+          "pages": [
+            34,
+            35
+          ],
+          "score": 3.82804,
+          "relevant": false
+        },
+        {
+          "passage": "1905-079:2770-4602",
+          "decision": "1905-079",
+          "pages": [
+            220
+          ],
+          "score": 3.74402,
+          "relevant": false
+        },
+        {
+          "passage": "1905-013:0-1434",
+          "decision": "1905-013",
+          "pages": [
+            31,
+            32
+          ],
+          "score": 3.49414,
+          "relevant": false
+        },
+        {
+          "passage": "1905-021:5255-6783",
+          "decision": "1905-021",
+          "pages": [
+            52
+          ],
+          "score": 3.43821,
+          "relevant": false
+        },
+        {
+          "passage": "1905-055:0-1825",
+          "decision": "1905-055",
+          "pages": [
+            149,
+            150
+          ],
+          "score": 3.26958,
+          "relevant": false
+        },
+        {
+          "passage": "1905-113:6561-7937",
+          "decision": "1905-113",
+          "pages": [
+            309,
+            310
+          ],
+          "score": 2.6774,
+          "relevant": false
+        },
+        {
+          "passage": "1905-055:1574-3233",
+          "decision": "1905-055",
+          "pages": [
+            150
+          ],
+          "score": 2.53022,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "query": "судебное оспаривание решений общества",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 7,
+      "top10": [
+        {
+          "passage": "1905-106:0-1571",
+          "decision": "1905-106",
+          "pages": [
+            288,
+            289
+          ],
+          "score": 10.1148,
+          "relevant": false
+        },
+        {
+          "passage": "1905-106:1319-3261",
+          "decision": "1905-106",
+          "pages": [
+            289
+          ],
+          "score": 10.1148,
+          "relevant": false
+        },
+        {
+          "passage": "1905-106:2962-5034",
+          "decision": "1905-106",
+          "pages": [
+            289,
+            290
+          ],
+          "score": 10.1148,
+          "relevant": false
+        },
+        {
+          "passage": "1905-106:4775-6310",
+          "decision": "1905-106",
+          "pages": [
+            290
+          ],
+          "score": 10.1148,
+          "relevant": false
+        },
+        {
+          "passage": "1905-106:6023-7710",
+          "decision": "1905-106",
+          "pages": [
+            290,
+            291
+          ],
+          "score": 10.1148,
+          "relevant": false
+        },
+        {
+          "passage": "1905-106:7459-9081",
+          "decision": "1905-106",
+          "pages": [
+            291
+          ],
+          "score": 10.1148,
+          "relevant": false
+        },
+        {
+          "passage": "1905-106:8825-9866",
+          "decision": "1905-106",
+          "pages": [
+            291,
+            292
+          ],
+          "score": 10.1148,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "query": "судебное оспаривание решений общества",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 0,
+      "recall10": 1,
+      "mrr": 0.125,
+      "negativeFalsePositive": null,
+      "results": 38,
+      "top10": [
+        {
+          "passage": "1905-106:0-1571",
+          "decision": "1905-106",
+          "pages": [
+            288,
+            289
+          ],
+          "score": 10.1148,
+          "relevant": false
+        },
+        {
+          "passage": "1905-106:1319-3261",
+          "decision": "1905-106",
+          "pages": [
+            289
+          ],
+          "score": 10.1148,
+          "relevant": false
+        },
+        {
+          "passage": "1905-106:2962-5034",
+          "decision": "1905-106",
+          "pages": [
+            289,
+            290
+          ],
+          "score": 10.1148,
+          "relevant": false
+        },
+        {
+          "passage": "1905-106:4775-6310",
+          "decision": "1905-106",
+          "pages": [
+            290
+          ],
+          "score": 10.1148,
+          "relevant": false
+        },
+        {
+          "passage": "1905-106:6023-7710",
+          "decision": "1905-106",
+          "pages": [
+            290,
+            291
+          ],
+          "score": 10.1148,
+          "relevant": false
+        },
+        {
+          "passage": "1905-106:7459-9081",
+          "decision": "1905-106",
+          "pages": [
+            291
+          ],
+          "score": 10.1148,
+          "relevant": false
+        },
+        {
+          "passage": "1905-106:8825-9866",
+          "decision": "1905-106",
+          "pages": [
+            291,
+            292
+          ],
+          "score": 10.1148,
+          "relevant": false
+        },
+        {
+          "passage": "1905-055:6105-8059",
+          "decision": "1905-055",
+          "pages": [
+            151,
+            152
+          ],
+          "score": 8.6019,
+          "relevant": true
+        },
+        {
+          "passage": "1905-055:7791-9364",
+          "decision": "1905-055",
+          "pages": [
+            152,
+            153
+          ],
+          "score": 6.23008,
+          "relevant": false
+        },
+        {
+          "passage": "1905-014:1406-3179",
+          "decision": "1905-014",
+          "pages": [
+            34,
+            35
+          ],
+          "score": 3.82804,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "query": "разница между задатком и авансом",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1905-065:1076-2973",
+          "decision": "1905-065",
+          "pages": [
+            176,
+            177
+          ],
+          "score": 13.30586,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "query": "разница между задатком и авансом",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 2,
+      "top10": [
+        {
+          "passage": "1905-065:4149-5817",
+          "decision": "1905-065",
+          "pages": [
+            177,
+            178
+          ],
+          "score": 17.75693,
+          "relevant": true
+        },
+        {
+          "passage": "1905-065:1076-2973",
+          "decision": "1905-065",
+          "pages": [
+            176,
+            177
+          ],
+          "score": 15.33091,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "query": "разница между задатком и авансом",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 4,
+      "top10": [
+        {
+          "passage": "1905-065:4149-5817",
+          "decision": "1905-065",
+          "pages": [
+            177,
+            178
+          ],
+          "score": 14.15613,
+          "relevant": true
+        },
+        {
+          "passage": "1905-065:2728-4376",
+          "decision": "1905-065",
+          "pages": [
+            177
+          ],
+          "score": 13.45952,
+          "relevant": false
+        },
+        {
+          "passage": "1905-065:1076-2973",
+          "decision": "1905-065",
+          "pages": [
+            176,
+            177
+          ],
+          "score": 13.30586,
+          "relevant": false
+        },
+        {
+          "passage": "1905-065:0-1345",
+          "decision": "1905-065",
+          "pages": [
+            176
+          ],
+          "score": 10.53333,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "query": "разница между задатком и авансом",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 4,
+      "top10": [
+        {
+          "passage": "1905-065:4149-5817",
+          "decision": "1905-065",
+          "pages": [
+            177,
+            178
+          ],
+          "score": 17.75693,
+          "relevant": true
+        },
+        {
+          "passage": "1905-065:1076-2973",
+          "decision": "1905-065",
+          "pages": [
+            176,
+            177
+          ],
+          "score": 15.33091,
+          "relevant": false
+        },
+        {
+          "passage": "1905-065:2728-4376",
+          "decision": "1905-065",
+          "pages": [
+            177
+          ],
+          "score": 13.45952,
+          "relevant": false
+        },
+        {
+          "passage": "1905-065:0-1345",
+          "decision": "1905-065",
+          "pages": [
+            176
+          ],
+          "score": 10.53333,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q19",
+      "query": "отмена прежнего завещания",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.5,
+      "negativeFalsePositive": null,
+      "results": 2,
+      "top10": [
+        {
+          "passage": "1905-076:9029-10824",
+          "decision": "1905-076",
+          "pages": [
+            209,
+            210
+          ],
+          "score": 10.91139,
+          "relevant": false
+        },
+        {
+          "passage": "1905-076:10576-11731",
+          "decision": "1905-076",
+          "pages": [
+            210
+          ],
+          "score": 10.16657,
+          "relevant": true
+        }
+      ]
+    },
+    {
+      "id": "q19",
+      "query": "отмена прежнего завещания",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 3,
+      "top10": [
+        {
+          "passage": "1905-076:10576-11731",
+          "decision": "1905-076",
+          "pages": [
+            210
+          ],
+          "score": 10.16657,
+          "relevant": true
+        },
+        {
+          "passage": "1905-076:9029-10824",
+          "decision": "1905-076",
+          "pages": [
+            209,
+            210
+          ],
+          "score": 7.42582,
+          "relevant": false
+        },
+        {
+          "passage": "1905-076:6334-7949",
+          "decision": "1905-076",
+          "pages": [
+            208,
+            209
+          ],
+          "score": 5.17309,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q19",
+      "query": "отмена прежнего завещания",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 5,
+      "top10": [
+        {
+          "passage": "1905-076:10576-11731",
+          "decision": "1905-076",
+          "pages": [
+            210
+          ],
+          "score": 10.16657,
+          "relevant": true
+        },
+        {
+          "passage": "1905-076:18904-20805",
+          "decision": "1905-076",
+          "pages": [
+            213
+          ],
+          "score": 9.17813,
+          "relevant": false
+        },
+        {
+          "passage": "1905-076:20606-22424",
+          "decision": "1905-076",
+          "pages": [
+            213,
+            214
+          ],
+          "score": 9.17813,
+          "relevant": false
+        },
+        {
+          "passage": "1905-076:9029-10824",
+          "decision": "1905-076",
+          "pages": [
+            209,
+            210
+          ],
+          "score": 9.17813,
+          "relevant": false
+        },
+        {
+          "passage": "1905-076:6334-7949",
+          "decision": "1905-076",
+          "pages": [
+            208,
+            209
+          ],
+          "score": 5.17309,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q19",
+      "query": "отмена прежнего завещания",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 5,
+      "top10": [
+        {
+          "passage": "1905-076:10576-11731",
+          "decision": "1905-076",
+          "pages": [
+            210
+          ],
+          "score": 10.16657,
+          "relevant": true
+        },
+        {
+          "passage": "1905-076:18904-20805",
+          "decision": "1905-076",
+          "pages": [
+            213
+          ],
+          "score": 9.17813,
+          "relevant": false
+        },
+        {
+          "passage": "1905-076:20606-22424",
+          "decision": "1905-076",
+          "pages": [
+            213,
+            214
+          ],
+          "score": 9.17813,
+          "relevant": false
+        },
+        {
+          "passage": "1905-076:9029-10824",
+          "decision": "1905-076",
+          "pages": [
+            209,
+            210
+          ],
+          "score": 9.17813,
+          "relevant": false
+        },
+        {
+          "passage": "1905-076:6334-7949",
+          "decision": "1905-076",
+          "pages": [
+            208,
+            209
+          ],
+          "score": 5.17309,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q20",
+      "query": "процессуальное правопреемство",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "q20",
+      "query": "процессуальное правопреемство",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 4,
+      "top10": [
+        {
+          "passage": "1905-083:5190-6613",
+          "decision": "1905-083",
+          "pages": [
+            230
+          ],
+          "score": 6.69059,
+          "relevant": true
+        },
+        {
+          "passage": "1905-094:6998-8523",
+          "decision": "1905-094",
+          "pages": [
+            255
+          ],
+          "score": 4.29161,
+          "relevant": false
+        },
+        {
+          "passage": "1905-094:8273-9960",
+          "decision": "1905-094",
+          "pages": [
+            255,
+            256
+          ],
+          "score": 4.18214,
+          "relevant": false
+        },
+        {
+          "passage": "1905-042:2683-4487",
+          "decision": "1905-042",
+          "pages": [
+            113
+          ],
+          "score": 3.94088,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q20",
+      "query": "процессуальное правопреемство",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.2,
+      "negativeFalsePositive": null,
+      "results": 6,
+      "top10": [
+        {
+          "passage": "1905-083:0-1806",
+          "decision": "1905-083",
+          "pages": [
+            228,
+            229
+          ],
+          "score": 6.9519,
+          "relevant": false
+        },
+        {
+          "passage": "1905-083:1602-2634",
+          "decision": "1905-083",
+          "pages": [
+            229
+          ],
+          "score": 6.9519,
+          "relevant": false
+        },
+        {
+          "passage": "1905-083:2351-3784",
+          "decision": "1905-083",
+          "pages": [
+            229
+          ],
+          "score": 6.9519,
+          "relevant": false
+        },
+        {
+          "passage": "1905-083:3581-5438",
+          "decision": "1905-083",
+          "pages": [
+            229,
+            230
+          ],
+          "score": 6.9519,
+          "relevant": false
+        },
+        {
+          "passage": "1905-083:5190-6613",
+          "decision": "1905-083",
+          "pages": [
+            230
+          ],
+          "score": 6.9519,
+          "relevant": true
+        },
+        {
+          "passage": "1905-083:6394-8029",
+          "decision": "1905-083",
+          "pages": [
+            230,
+            231
+          ],
+          "score": 6.9519,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "q20",
+      "query": "процессуальное правопреемство",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.2,
+      "negativeFalsePositive": null,
+      "results": 9,
+      "top10": [
+        {
+          "passage": "1905-083:0-1806",
+          "decision": "1905-083",
+          "pages": [
+            228,
+            229
+          ],
+          "score": 6.9519,
+          "relevant": false
+        },
+        {
+          "passage": "1905-083:1602-2634",
+          "decision": "1905-083",
+          "pages": [
+            229
+          ],
+          "score": 6.9519,
+          "relevant": false
+        },
+        {
+          "passage": "1905-083:2351-3784",
+          "decision": "1905-083",
+          "pages": [
+            229
+          ],
+          "score": 6.9519,
+          "relevant": false
+        },
+        {
+          "passage": "1905-083:3581-5438",
+          "decision": "1905-083",
+          "pages": [
+            229,
+            230
+          ],
+          "score": 6.9519,
+          "relevant": false
+        },
+        {
+          "passage": "1905-083:5190-6613",
+          "decision": "1905-083",
+          "pages": [
+            230
+          ],
+          "score": 6.9519,
+          "relevant": true
+        },
+        {
+          "passage": "1905-083:6394-8029",
+          "decision": "1905-083",
+          "pages": [
+            230,
+            231
+          ],
+          "score": 6.9519,
+          "relevant": false
+        },
+        {
+          "passage": "1905-094:6998-8523",
+          "decision": "1905-094",
+          "pages": [
+            255
+          ],
+          "score": 4.29161,
+          "relevant": false
+        },
+        {
+          "passage": "1905-094:8273-9960",
+          "decision": "1905-094",
+          "pages": [
+            255,
+            256
+          ],
+          "score": 4.18214,
+          "relevant": false
+        },
+        {
+          "passage": "1905-042:2683-4487",
+          "decision": "1905-042",
+          "pages": [
+            113
+          ],
+          "score": 3.94088,
+          "relevant": false
+        }
+      ]
+    }
+  ]
+}

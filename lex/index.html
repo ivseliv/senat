@@ -68,6 +68,14 @@ mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1
 .empty { padding: 30px 0; color: var(--ink2); }
 #more { margin: 10px 0; }
 #loading { padding: 40px 0; color: var(--ink2); }
+/* фрагменты первоисточника */
+#sense-status { margin: 14px 0 8px; }
+.passage-text { white-space: pre-wrap; font: 16px/1.7 var(--serif); margin: 12px 0; overflow-wrap: anywhere; }
+.ai-note { border-left: 3px solid var(--line); padding-left: 12px; margin: 10px 0; color: var(--ink2); font-size: 14px; }
+.passage-focus { background: var(--soft); border-radius: 3px; scroll-margin-top: 65px; }
+.passage-focus:focus-visible { outline: none; }
+.orth { display: flex; flex-wrap: wrap; gap: 6px 10px; } .orth label { white-space: nowrap; }
+@media (max-width: 520px) { nav { flex-wrap: wrap; } nav a { padding: 9px 10px; } #detail > div { margin: 0; padding: 16px; } }
 /* карточка решения */
 #detail { position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 10; overflow: auto; }
 #detail > div { max-width: 820px; margin: 24px auto; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 22px 26px 30px; position: relative; }
@@ -114,7 +122,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
 <header><div class="wrap">
   <div class="top"><h1>Решения Правительствующего Сената</h1><span class="sub">поиск и аналитика · прототип</span><span class="spacer"></span>
     <button class="btn ghost" id="theme" title="Светлая / тёмная тема">◐ тема</button></div>
-  <nav aria-label="Разделы"><a id="tab-search" href="#/search">Поиск</a><a id="tab-analytics" href="#/analytics">Аналитика</a><a id="tab-about" href="#/about">О проекте</a></nav>
+  <nav aria-label="Разделы"><a id="tab-search" href="#/search">Поиск</a><a id="tab-sense" href="#/sense">По смыслу</a><a id="tab-analytics" href="#/analytics">Аналитика</a><a id="tab-about" href="#/about">О проекте</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -142,6 +150,21 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     <button class="btn ghost" id="more" hidden>Показать ещё</button>
   </section>
 
+  <section id="view-sense" hidden>
+    <form id="sense-form" class="row" role="search">
+      <input id="sense-q" type="search" placeholder="Современное понятие или вопрос: фиктивные сделки" aria-label="Поиск по смыслу" autocomplete="off">
+      <button class="btn" type="submit">Найти фрагменты</button>
+    </form>
+    <div class="chips" id="sense-examples" aria-label="Примеры понятий"></div>
+    <div class="opts"><span class="orth" role="group" aria-label="Орфография фрагментов">Орфография:
+      <label><input type="radio" name="sense-orth" value="old" checked> дореформенная</label>
+      <label><input type="radio" name="sense-orth" value="new"> современная</label>
+    </span></div>
+    <p class="muted small">Современные понятия помогают найти старые выражения. Результат — фрагмент первоисточника; пояснение ИИ дано отдельно. Наличие слов ещё не означает совпадения правового института.</p>
+    <div id="sense-status" aria-live="polite"></div><div id="sense-results"></div>
+    <button class="btn ghost" id="sense-more" hidden>Показать ещё</button>
+  </section>
+
   <section id="view-analytics" hidden><div id="analytics-body"></div></section>
 
   <section id="view-about" hidden>
@@ -155,6 +178,9 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
         <dt>-слово</dt><dd>исключить слово: <em>наследство -завещание</em>.</dd>
         <dt>Современные термины</dt><dd>«исполнитель» ↔ «душеприказчик», «ущерб» ↔ «убытки, вред», «залог» ↔ «заклад», «банкротство» ↔ «несостоятельность, конкурс». Расширение можно отключить; найденные дополнительные слова показываются над результатами.</dd>
       </dl>
+      <h2>По смыслу</h2>
+      <p>Вкладка «По смыслу» ищет отдельные пассажи по современным понятиям и старым выражениям. Например, «фиктивные сделки» помогает найти обсуждение мнимых и притворных договоров. Подсветка отмечает слова запроса и найденные исторические выражения. Ссылка открывает нужное место в решении. Если совпадающих выражений нет, подсветка отмечает цитату пояснения ИИ. Номер страницы относится к печатному изданию; восстановленные по соседним колонтитулам номера помечены.</p>
+      <p>«Пояснение ИИ» — краткое описание обсуждения, привязанное к цитате в пассаже. Это не текст Сената и не юридический вывод. Справочник не уравнивает современные и исторические институты. Отсутствие результата означает, что поиск не нашёл подходящий фрагмент в доступных томах.</p>
       <h2>Ограничения</h2>
       <ul>
         <li>Текст получен автоматическим распознаванием (модель ИИ) и проверен выборочно. Ошибки возможны: сверяйте числа, номера статей и фамилии с изданием.</li>
@@ -171,6 +197,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
 </div></div>
 
 <script src="lex.js"></script>
+<script src="concept.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

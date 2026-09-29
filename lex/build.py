@@ -14,6 +14,7 @@
 и проверяется тестом lex/test_parity.py, чтобы запрос и индекс совпадали.
 """
 import collections, glob, json, math, os, re, sys
+from passages import build_passages
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 OUT = os.path.join(ROOT, 'lex', 'data')
@@ -309,6 +310,7 @@ def main():
     for year, vt in texts.items():
         with open(os.path.join(OUT, f'text-{year}.json'), 'w', encoding='utf-8') as f:
             json.dump(vt, f, ensure_ascii=False, separators=(',', ':'))
+    build_passages(ROOT, docs, texts, stems, modernize, stem)
     print(f'томов {len(vols)}, решений {len(docs)}, основ в индексе {len(post)}')
     for v in vols:
         print(f'  {v["year"]}: {v["decisions"]} решений, пропуски номеров: {v["gaps"] or "нет"}')
@@ -384,7 +386,8 @@ def build_single():
     blob = json.dumps(inline, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
     js = lambda n: open(os.path.join(d, n), encoding='utf-8').read().replace('</script', '<\\/script')
     html = html.replace('<script src="lex.js"></script>', '<script>window.LEX_INLINE=' + blob + '</script>\n<script>' + js('lex.js') + '</script>')
-    html = html.replace('<script src="app.js"></script>', '<script>' + js('app.js') + '</script>')
+    for script in ('concept.js', 'app.js'):
+        html = html.replace(f'<script src="{script}"></script>', '<script>' + js(script) + '</script>')
     html = html.replace('<title>Решения Сената: поиск и аналитика</title>', '<title>Сенат: поиск решений</title>')
     os.makedirs(os.path.join(d, 'dist'), exist_ok=True)
     out = os.path.join(d, 'dist', 'senat-lex.html')
