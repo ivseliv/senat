@@ -8,7 +8,7 @@
 
   const S = {
     meta: null, index: null, an: null, engine: null, texts: {}, stemCache: new Map(),
-    opts: { modern: true, gloss: true },
+    opts: { modern: false, gloss: true }, detailId: null,
     f: { q: '', year: '', outcome: '', topic: '', statute: '', person: '', sort: 'rel' }, shown: 20, hits: [], sentinel: 0,
   };
 
@@ -139,6 +139,7 @@
 
   /* ---------------------------------------------------------------- карточка решения */
   async function openDetail(id) {
+    S.detailId = id;
     const d = S.meta.decisions.find(x => x.id === id); const box = $('#detail-body');
     if (!d) { box.replaceChildren(h('p', {}, 'Решение не найдено')); $('#detail').hidden = false; return; }
     $('#detail').hidden = false; document.body.classList.add('modal');
@@ -166,7 +167,9 @@
       Object.keys(d.statutes).length ? h('section', {}, h('h3', {}, 'Упомянутые статьи'), h('div', { class: 'chips' },
         Object.keys(d.statutes).sort().map(s => h('button', { class: 'chip stat', title: 'Найти все решения с этой статьёй', onclick: () => go('search', { s }) }, statLabel(s))))) : '',
       h('div', { class: 'toolbar' },
-        h('button', { class: 'btn', onclick: () => { S.opts.modern = !S.opts.modern; $('#modern').checked = S.opts.modern; body.innerHTML = paint(text); } }, 'Оригинал ⇄ современная орфография'),
+        h('div', { class: 'seg', role: 'group', 'aria-label': 'Орфография текста' },
+          h('button', { class: 'seg-b', 'aria-pressed': String(!S.opts.modern), onclick: () => setModern(false) }, 'Дореформенная'),
+          h('button', { class: 'seg-b', 'aria-pressed': String(S.opts.modern), onclick: () => setModern(true) }, 'Современная')),
         h('button', { class: 'btn', onclick: e => { const btn = e.target; const txt = cite + '\n' + location.href; const done = ok => { btn.textContent = ok ? 'Скопировано ✓' : 'Не удалось скопировать — выделите текст вручную'; setTimeout(() => btn.textContent = 'Скопировать ссылку и цитату', 2000); }; try { navigator.clipboard.writeText(txt).then(() => done(true), () => done(false)); } catch (err) { done(false); } } }, 'Скопировать ссылку и цитату')),
       body,
       h('p', { class: 'muted small' }, 'Текст получен автоматическим распознаванием скана (модель ИИ) и может содержать ошибки: числа, номера статей и фамилии сверяйте с изданием. Современная орфография — автоматическая, для удобства чтения.'),
@@ -174,6 +177,13 @@
       cited.length ? h('section', {}, h('h3', {}, 'Цитируется в'), h('ul', {}, cited.map(x => h('li', {}, h('a', { href: '#/d/' + x.id }, `${x.vol} г. № ${x.num} — ${M(x.headnote).slice(0, 90)}…`))))) : '',
       d.similar.length ? h('section', {}, h('h3', {}, 'Похожие решения'), h('ul', {}, d.similar.map(([j, sc]) => { const x = S.meta.decisions[j]; return h('li', {}, h('a', { href: '#/d/' + x.id }, `${x.vol} г. № ${x.num} — ${M(x.headnote).slice(0, 100)}…`), h('span', { class: 'muted' }, ` (сходство ${Math.round(sc * 100)}%)`)); }))) : '');
     $('#detail').scrollTop = 0;
+  }
+  function setModern(v) {
+    S.opts.modern = v;
+    try { localStorage.setItem('lex.modern', v ? '1' : '0'); } catch (e) { /* хранилище недоступно */ }
+    for (const r of document.querySelectorAll('input[name=orth]')) r.checked = (r.value === 'new') === v;
+    if (!$('#view-search').hidden) { runToken++; renderResults(runToken); }
+    if (!$('#detail').hidden && S.detailId) { const top = $('#detail').scrollTop; openDetail(S.detailId).then(() => { $('#detail').scrollTop = top; }); }
   }
   function highlight(par, qs) {
     const set = new Set(qs); const re = /[А-Яа-яЁёѢѣІіѲѳѴѵъь0-9]+/g; let out = '', pos = 0, m;
@@ -206,7 +216,8 @@
     $('#form').addEventListener('submit', e => { e.preventDefault(); S.f.q = $('#q').value; pushSearchOrRun(); });
     for (const [id, key] of [['f-year', 'year'], ['f-outcome', 'outcome'], ['f-topic', 'topic'], ['f-statute', 'statute'], ['f-person', 'person'], ['f-sort', 'sort']])
       $('#' + id).addEventListener('change', e => { S.f[key] = e.target.value; S.f.q = $('#q').value; pushSearchOrRun(); });
-    $('#modern').addEventListener('change', e => { S.opts.modern = e.target.checked; renderResults(++runToken); });
+    try { S.opts.modern = localStorage.getItem('lex.modern') === '1'; } catch (e) { /* по умолчанию оригинал */ }
+    for (const r of document.querySelectorAll('input[name=orth]')) { r.checked = (r.value === 'new') === S.opts.modern; r.addEventListener('change', e => setModern(e.target.value === 'new')); }
     $('#gloss').addEventListener('change', e => { S.opts.gloss = e.target.checked; runSearch(); });
     $('#more').addEventListener('click', () => { S.shown += 20; renderResults(++runToken); });
     $('#reset').addEventListener('click', () => go('search'));
