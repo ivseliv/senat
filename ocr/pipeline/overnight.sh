@@ -7,8 +7,8 @@
 # Переменные окружения (необязательно):
 #   PDFDIR   папка с PDF            (по умолчанию ~/projects/senat_downloader/senat_pdfs)
 #   MODEL    sonnet | opus          (по умолчанию sonnet)
-#   WAIT     пауза при лимите, с    (по умолчанию 1800)
-#   MAXWAIT  сколько всего ждать, с (по умолчанию 43200 = 12 ч), потом остановка
+#   WAIT     пауза между пробами при лимите, с (по умолчанию 300)
+#   MAXWAIT  сколько всего ждать, с (по умолчанию 86400 = 24 ч), потом остановка
 #   PAGES    диапазон страниц для проб, например 60-64
 #   CLAUDE   путь к claude, если он не в PATH
 # Ход работы пишется в ocr/overnight.log. Готовые страницы и тома пропускаются,
@@ -21,8 +21,8 @@ fi
 cd "$(dirname "$0")/../.." || exit 1
 PDFDIR=${PDFDIR:-$HOME/projects/senat_downloader/senat_pdfs}
 MODEL=${MODEL:-sonnet}
-WAIT=${WAIT:-1800}
-MAXWAIT=${MAXWAIT:-43200}
+WAIT=${WAIT:-300}
+MAXWAIT=${MAXWAIT:-86400}
 PIPE=ocr/pipeline
 LOG=ocr/overnight.log
 CL=(); [ -n "${CLAUDE:-}" ] && CL=(--claude "$CLAUDE")
@@ -59,7 +59,8 @@ recognize() {  # $1 = год; повторяет запуск, пока не р�
     rc=${PIPESTATUS[0]}
     [ "$rc" -eq 0 ] && return 0
     if [ "$rc" -eq 2 ]; then
-      save "OCR $y: partial (limit)"
+      local cnt; cnt=$(ls "ocr/$y" 2>/dev/null | wc -l)
+      if [ "$cnt" != "${LASTSAVED:-}" ]; then save "OCR $y: partial (limit)"; LASTSAVED=$cnt; fi
       waited=$((waited + WAIT))
       if [ "$waited" -gt "$MAXWAIT" ]; then log "Ожидание дольше $((MAXWAIT/3600)) ч, останавливаюсь."; exit 3; fi
       log "Лимит. Жду $((WAIT/60)) мин (всего ждал $((waited/60)) мин)..."
