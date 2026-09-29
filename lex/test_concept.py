@@ -66,4 +66,22 @@ assert.equal(C.makeEngine(data,config.glossary).search('электронная �
         self.assertEqual(before,{p:hashlib.sha256(p.read_bytes()).hexdigest() for p in files})
         self.assertLess((ROOT/'dist/senat-lex.html').stat().st_size,10_000_000)
 
+    def test_scores_are_comparable_across_volumes(self):
+        script=r"""
+const assert=require('node:assert/strict'), C=require('./concept.js');
+function volume(year, words) {
+ const post={};words.forEach((word,i)=>{(post[word] ||= []).push(i,1);});
+ return {passages:words.map((word,i)=>({id:year+'-'+i,decision:year+'-'+i,start:0,end:1})),
+  original:{n:words.length,avgdl:1,len:words.map(()=>1),post},
+  enriched:{n:words.length,avgdl:0,len:words.map(()=>0),post:{}}};
+}
+const data=[volume(1904,['залог']),volume(1905,['залог',...Array(9).fill('иной')])];
+const engines=C.makeEngines(data,[]),hits=engines.flatMap(e=>e.search('залог','baseline').hits);
+assert.equal(hits.length,2);
+assert.equal(hits[0].score,hits[1].score,'Одинаковый пассаж должен получать одинаковый вес независимо от размера тома');
+assert.equal(C.makeEngines([data[0]],[])[0].search('залог','baseline').hits[0].score,
+ C.makeEngine(data[0],[]).search('залог','baseline').hits[0].score,'Один том сохраняет прежнее ранжирование');
+"""
+        subprocess.run(['node','-e',script],cwd=ROOT,check=True)
+
 if __name__=='__main__': unittest.main()

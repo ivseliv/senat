@@ -4,9 +4,19 @@ const fs=require('fs'), path=require('path'), crypto=require('crypto');
 const C=require('../concept.js');
 const ROOT=path.resolve(__dirname,'..');
 const read=f=>JSON.parse(fs.readFileSync(path.join(ROOT,f),'utf8'));
-const config=read('data/concepts.json'), suite=read('eval/queries.json');
-const volumes=config.volumes.map(v=>read('data/'+v.file));
-const engines=volumes.map(v=>C.makeEngine(v,config.glossary));
+const args=process.argv.slice(2);
+function option(name) {
+ const i=args.indexOf(name);if(i<0)return null;
+ if(!args[i+1]||args[i+1].startsWith('--'))throw Error(name+': требуется значение');
+ return args[i+1];
+}
+const suiteFile=option('--suite')||'eval/queries.json';
+const config=read('data/concepts.json'), suite=read(suiteFile);
+const selectedYears=option('--years')?.split(',').map(Number);
+if(selectedYears?.some(year=>!config.volumes.some(v=>v.year===year)))throw Error('Неизвестный том в --years');
+const scope=config.volumes.filter(v=>!selectedYears||selectedYears.includes(v.year));
+const volumes=scope.map(v=>read('data/'+v.file));
+const engines=C.makeEngines(volumes,config.glossary);
 const meta=read('data/meta.json').decisions, texts={};
 for(const v of config.volumes) texts[v.year]=read(`data/text-${v.year}.json`);
 const originals=new Map();
@@ -14,7 +24,7 @@ for(const year of Object.keys(texts)) meta.filter(d=>String(d.vol)===year).forEa
 for(const q of suite.queries) for(const g of q.expected) {
   if(C.slice(originals.get(g.decision),g.start,g.end)!==g.quote) throw Error(q.id+': эталонная цитата не совпадает с источником');
 }
-const args=process.argv.slice(2), split=args.includes('--split')?args[args.indexOf('--split')+1]:'all';
+const split=option('--split')||'all';
 if(!['all','dev','test','negative'].includes(split)) throw Error('Неизвестная часть набора: '+split);
 const queries=suite.queries.filter(q=>split==='all'||q.split===split);
 const methods=['baseline','glossary','enriched','hybrid'];
@@ -38,12 +48,15 @@ for(const group of ['dev','test','positive','negative']) for(const method of met
     recall10:positive.length?average(positive,'recall10'):null,mrr:positive.length?average(positive,'mrr'):null,
     falsePositives:negative.length?negative.filter(r=>r.negativeFalsePositive).length:null});
 }
-const result={queriesSha256:crypto.createHash('sha256').update(fs.readFileSync(path.join(ROOT,'eval/queries.json'))).digest('hex'),
-  protocol:suite.protocol,split,aggregates,rows};
-const filename=split==='all'?'metrics':`metrics-${split}`;
+const result={queriesSha256:crypto.createHash('sha256').update(fs.readFileSync(path.join(ROOT,suiteFile))).digest('hex'),
+  protocol:suite.protocol,volumes:scope.map(v=>v.year),split,aggregates,rows};
+let filename=suiteFile==='eval/queries.json'?'metrics':path.basename(suiteFile,'.json').replace(/^queries/,'metrics');
+if(split!=='all')filename+='-'+split;
+if(selectedYears)filename+='-'+scope.map(v=>v.year).join('-');
 fs.writeFileSync(path.join(__dirname,filename+'.json'),JSON.stringify(result,null,2)+'\n');
 const f=n=>n===null?'—':n.toFixed(3);
 let md='# Сравнение понятийного поиска\n\n'+suite.protocol+'\n\n'+
+'Поиск по томам: '+scope.map(v=>v.year).join(', ')+'. Эталоны из томов: '+[...new Set(suite.queries.flatMap(q=>q.expected.map(g=>g.decision.split('-')[0])))].join(', ')+'.\n\n'+
 'Релевантным считается пассаж, содержащий целиком размеченную цитату рассуждения. Recall измеряется по эталонным цитатам, MRR — по первому такому пассажу во всей выдаче. Отрицательные запросы исключены из средних recall и MRR.\n\n'+
 '| Часть | Подход | Запросов | Recall@5 | Recall@10 | MRR | Ложные ответы |\n|---|---|---:|---:|---:|---:|---:|\n';
 for(const a of aggregates) md+=`| ${a.split} | ${a.method} | ${a.n} | ${f(a.recall5)} | ${f(a.recall10)} | ${f(a.mrr)} | ${a.falsePositives===null?'—':a.falsePositives} |\n`;

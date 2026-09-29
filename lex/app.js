@@ -66,10 +66,24 @@
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
     } else closeDetail();
     if (tab === 'analytics') renderAnalytics();
+    if (tab === 'about') renderCorpus();
     window.scrollTo(0, path.startsWith('d/') ? window.scrollY : 0);
   }
   function pushSearch() {
     const f = S.f; go('search', { q: f.q, y: f.year, o: f.outcome, t: f.topic, s: f.statute, p: f.person, sort: f.sort === 'rel' ? '' : f.sort });
+  }
+  async function renderCorpus() {
+    const box = $('#corpus-table');
+    try {
+      const config = S.sense.config || await loadJSON('concepts.json');
+      box.replaceChildren(h('table', {class:'tbl'},
+        h('thead', {}, h('tr', {}, ...['Том','Решений','Фрагментов с пояснением ИИ'].map(t=>h('th',{},t)))),
+        h('tbody', {}, S.meta.volumes.map(v=>{
+          const coverage=config.volumes.find(c=>c.year===v.year);
+          return h('tr', {}, h('td',{},String(v.year)), h('td',{},String(v.decisions)),
+            h('td',{},coverage ? `${coverage.enriched} из ${coverage.passages}` : 'Сведения недоступны'));
+        }))));
+    } catch (err) { box.textContent='Не удалось загрузить сведения о томах. Повторите открытие раздела.'; }
   }
 
   /* ---------------------------------------------------------------- поиск */
@@ -272,10 +286,9 @@
   async function loadSense() {
     if (!S.sense.promise) S.sense.promise = (async () => {
       const config = await loadJSON('concepts.json');
-      const engines = await Promise.all(config.volumes.map(async v => {
-        const data = await loadJSON(v.file);
-        return {data, engine:window.Concept.makeEngine(data, config.glossary)};
-      }));
+      const data = await Promise.all(config.volumes.map(v=>loadJSON(v.file)));
+      const shared = window.Concept.makeEngines(data, config.glossary);
+      const engines = data.map((volume,i)=>({data:volume, engine:shared[i]}));
       S.sense.config = config; S.sense.engines = engines;
     })().catch(err => { S.sense.promise = null; throw err; });
     return S.sense.promise;
@@ -384,6 +397,8 @@
       const [meta, index, an] = await Promise.all([loadJSON('meta.json'), loadJSON('index.json'), loadJSON('analytics.json')]);
       S.meta = meta; S.index = index; S.an = an; S.volStart = {};
       meta.decisions.forEach(d => { if (S.volStart[d.vol] == null) S.volStart[d.vol] = d.i; });
+      $('#corpus-summary').textContent = `В корпусе: ${meta.volumes.map(v=>v.year).join(', ')} · ${meta.decisions.length} ${plural(meta.decisions.length,'решение','решения','решений')}`;
+      $('#corpus-summary').hidden = false;
       S.engine = L.makeEngine(index, meta.decisions);
       $('#loading').hidden = true; setupControls(); route(); addEventListener('hashchange', route);
     } catch (e) {
