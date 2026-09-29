@@ -9,6 +9,7 @@
   const S = {
     meta: null, index: null, an: null, engine: null, texts: {}, stemCache: new Map(),
     opts: { modern: false, gloss: true }, detailId: null,
+    sense: { config: null, engines: [], promise: null, q: '', hits: [], shown: 10, token: 0 },
     f: { q: '', year: '', outcome: '', topic: '', statute: '', person: '', sort: 'rel' }, shown: 20, hits: [], sentinel: 0,
   };
 
@@ -49,8 +50,9 @@
   }
   function route() {
     const { path, p } = readHash();
-    const tab = path.startsWith('d/') ? 'search' : (path.split('/')[0] || 'search');
-    for (const t of ['search', 'analytics', 'about']) {
+    const requested = path.startsWith('d/') ? (p.get('mode') === 'sense' ? 'sense' : 'search') : (path.split('/')[0] || 'search');
+    const tab = ['search','sense','analytics','about'].includes(requested) ? requested : 'search';
+    for (const t of ['search', 'sense', 'analytics', 'about']) {
       $('#view-' + t).hidden = t !== tab;
       $('#tab-' + t).setAttribute('aria-current', t === tab ? 'page' : 'false');
     }
@@ -58,6 +60,9 @@
       Object.assign(S.f, { q: p.get('q') || '', year: p.get('y') || '', outcome: p.get('o') || '', topic: p.get('t') || '',
         statute: p.get('s') || '', person: p.get('p') || '', sort: p.get('sort') || 'rel' });
       syncControls(); runSearch();
+      if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
+    } else if (tab === 'sense') {
+      S.sense.q = p.get('q') || ''; $('#sense-q').value = S.sense.q; runSense();
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
     } else closeDetail();
     if (tab === 'analytics') renderAnalytics();
@@ -143,15 +148,36 @@
     const d = S.meta.decisions.find(x => x.id === id); const box = $('#detail-body');
     if (!d) { box.replaceChildren(h('p', {}, 'Решение не найдено')); $('#detail').hidden = false; return; }
     $('#detail').hidden = false; document.body.classList.add('modal');
-    const text = await textOf(d); const modernText = () => S.opts.modern;
+    const text = await textOf(d);
+    if (S.detailId !== id || $('#detail').hidden) return;
+    const params = readHash().p, inSense = params.get('mode') === 'sense';
+    let target = null, senseTerms = [];
+    if (inSense) {
+      await loadSense();
+      if (S.detailId !== id || $('#detail').hidden) return;
+      target = S.sense.engines.flatMap(e => e.data.passages).find(x => x.decision === id && String(x.start) === params.get('at') && String(x.end) === params.get('end'));
+      if (target) {
+        const result = S.sense.engines.flatMap(e => e.engine.search(params.get('q') || '', S.sense.config.method).hits).find(h => h.passage.id === target.id);
+        senseTerms = [params.get('q') || '', ...(result ? result.matched : [])];
+      }
+    }
     const cited = S.meta.decisions.filter(x => x.cites.some(c => c[0] === d.vol && c[1] === d.num));
     const inCorpus = ([y, n]) => S.meta.decisions.find(x => x.vol === y && x.num === n);
-    const qs = queryStems();
+    const qs = inSense ? senseTerms.flatMap(L.stems) : queryStems();
+    const paintPiece = t => qs.length ? highlight(M(t), qs) : L.esc(M(t));
     const paint = t => {
-      const html = M(t).split(/\n\n+/).map(par => '<p>' + (qs.length ? highlight(par, qs) : L.esc(par)) + '</p>').join('');
-      return html;
+      let offset = 0, first = true;
+      return t.split('\n\n').map(par => {
+        const length = Array.from(par).length;
+        const a = target ? Math.max(0, target.start-offset) : length, b = target ? Math.min(length, target.end-offset) : 0;
+        let html;
+        if (a < b) {
+          html = paintPiece(window.Concept.slice(par,0,a)) + '<span class="passage-focus"' + (first ? ' id="passage-target" tabindex="-1"' : '') + '>' + paintPiece(window.Concept.slice(par,a,b)) + '</span>' + paintPiece(window.Concept.slice(par,b)); first = false;
+        } else html = paintPiece(par);
+        offset += length+2; return '<p>'+html+'</p>';
+      }).join('');
     };
-    const cite = `Решение ${d.dept === 'Общее собрание' ? 'Общего собрания' : d.dept.replace('кий', 'кого').replace('ый', 'ого')} Правительствующего Сената ${d.vol} г. № ${d.num}`;
+    const cite = `Решение ${d.dept === 'Общее собрание' ? 'Общего собрания' : d.dept.replace('кий', 'кого').replace('ый', 'ого')} Правительствующего Сената ${d.vol} г. № ${d.num}` + (target ? ', ' + pageLabel(target) : '');
     const body = h('div', { class: 'text', html: paint(text) });
     box.replaceChildren(
       h('div', { class: 'detail-head' },
@@ -177,12 +203,17 @@
       cited.length ? h('section', {}, h('h3', {}, 'Цитируется в'), h('ul', {}, cited.map(x => h('li', {}, h('a', { href: '#/d/' + x.id }, `${x.vol} г. № ${x.num} — ${M(x.headnote).slice(0, 90)}…`))))) : '',
       d.similar.length ? h('section', {}, h('h3', {}, 'Похожие решения'), h('ul', {}, d.similar.map(([j, sc]) => { const x = S.meta.decisions[j]; return h('li', {}, h('a', { href: '#/d/' + x.id }, `${x.vol} г. № ${x.num} — ${M(x.headnote).slice(0, 100)}…`), h('span', { class: 'muted' }, ` (сходство ${Math.round(sc * 100)}%)`)); }))) : '');
     $('#detail').scrollTop = 0;
+    if (target) {
+      const anchor = $('#passage-target');
+      if (anchor) { anchor.scrollIntoView({block:'start'}); anchor.focus({preventScroll:true}); }
+    }
   }
   function setModern(v) {
     S.opts.modern = v;
     try { localStorage.setItem('lex.modern', v ? '1' : '0'); } catch (e) { /* хранилище недоступно */ }
-    for (const r of document.querySelectorAll('input[name=orth]')) r.checked = (r.value === 'new') === v;
+    for (const r of document.querySelectorAll('input[name=orth], input[name=sense-orth]')) r.checked = (r.value === 'new') === v;
     if (!$('#view-search').hidden) { runToken++; renderResults(runToken); }
+    if (!$('#view-sense').hidden) runSense();
     if (!$('#detail').hidden && S.detailId) { const top = $('#detail').scrollTop; openDetail(S.detailId).then(() => { $('#detail').scrollTop = top; }); }
   }
   function highlight(par, qs) {
@@ -217,17 +248,85 @@
     for (const [id, key] of [['f-year', 'year'], ['f-outcome', 'outcome'], ['f-topic', 'topic'], ['f-statute', 'statute'], ['f-person', 'person'], ['f-sort', 'sort']])
       $('#' + id).addEventListener('change', e => { S.f[key] = e.target.value; S.f.q = $('#q').value; pushSearchOrRun(); });
     try { S.opts.modern = localStorage.getItem('lex.modern') === '1'; } catch (e) { /* по умолчанию оригинал */ }
-    for (const r of document.querySelectorAll('input[name=orth]')) { r.checked = (r.value === 'new') === S.opts.modern; r.addEventListener('change', e => setModern(e.target.value === 'new')); }
+    for (const r of document.querySelectorAll('input[name=orth], input[name=sense-orth]')) { r.checked = (r.value === 'new') === S.opts.modern; r.addEventListener('change', e => setModern(e.target.value === 'new')); }
     $('#gloss').addEventListener('change', e => { S.opts.gloss = e.target.checked; runSearch(); });
     $('#more').addEventListener('click', () => { S.shown += 20; renderResults(++runToken); });
     $('#reset').addEventListener('click', () => go('search'));
-    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); location.hash = '#/search' + (p.toString() ? '?' + p.toString() : ''); });
+    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const mode = p.get('mode') === 'sense' ? 'sense' : 'search'; p.delete('at'); p.delete('end'); p.delete('mode'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('#detail').hidden) $('#detail-close').click(); });
     $('#examples').append(...['исполнитель завещания', 'ущерб от пожара', 'давность', 'арендатор', 'банкротство', '"железной дороги" вред', 'вексель протест']
       .map(x => h('button', { class: 'chip', onclick: () => go('search', { q: x }) }, x)));
+    $('#sense-form').addEventListener('submit', e => {
+      e.preventDefault(); const q = $('#sense-q').value.trim(), current = readHash();
+      if (current.path === 'sense' && (current.p.get('q') || '') === q) { S.sense.q = q; runSense(); }
+      else go('sense', {q});
+    });
+    $('#sense-examples').append(...['фиктивные сделки', 'неосновательное обогащение', 'срок исковой давности по договору аренды', 'исполнитель завещания'].map(q => h('button', {class:'chip', onclick:()=>go('sense',{q})}, q)));
+    $('#sense-more').addEventListener('click', () => { S.sense.shown += 10; renderSense(++S.sense.token); });
     $('#theme').addEventListener('click', () => { const r = document.documentElement; const dark = r.dataset.theme === 'dark' || (!r.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches); r.dataset.theme = dark ? 'light' : 'dark'; });
   }
   function pushSearchOrRun() { const { path } = readHash(); if (path.startsWith('d/')) { closeDetail(); } pushSearch(); if (!location.hash.startsWith('#/search')) return; runSearch(); }
+
+
+  /* ---------------------------------------------------------------- понятийный поиск */
+  async function loadSense() {
+    if (!S.sense.promise) S.sense.promise = (async () => {
+      const config = await loadJSON('concepts.json');
+      const engines = await Promise.all(config.volumes.map(async v => {
+        const data = await loadJSON(v.file);
+        return {data, engine:window.Concept.makeEngine(data, config.glossary)};
+      }));
+      S.sense.config = config; S.sense.engines = engines;
+    })().catch(err => { S.sense.promise = null; throw err; });
+    return S.sense.promise;
+  }
+  async function runSense() {
+    const token = ++S.sense.token;
+    $('#sense-more').hidden = true;
+    if (!S.sense.q.trim()) {
+      $('#sense-status').textContent = 'Введите современное понятие или выберите пример.';
+      $('#sense-results').replaceChildren(); return;
+    }
+    $('#sense-status').textContent = 'Ищем фрагменты…';
+    $('#sense-results').replaceChildren();
+    try {
+      await loadSense(); if (token !== S.sense.token) return;
+      const results = S.sense.engines.map(e => e.engine.search(S.sense.q, S.sense.config.method));
+      S.sense.hits = results.flatMap(r=>r.hits).sort((a,b)=>b.score-a.score || a.passage.id.localeCompare(b.passage.id));
+      S.sense.concepts = results[0] ? results[0].concepts : [];
+      S.sense.shown = 10;
+      await renderSense(token);
+    } catch (err) {
+      if (token === S.sense.token) $('#sense-status').textContent = 'Не удалось загрузить поиск по смыслу: ' + err.message + '. Повторите запрос.';
+    }
+  }
+  function pageLabel(p) {
+    const recovered = p.sources.some(s=>s.page_method==='neighbors');
+    return (p.pages.length ? 'с. ' + p.pages.join(', ') : 'страница не определена') + (recovered ? ' (номер восстановлен по соседним колонтитулам)' : '');
+  }
+  async function renderSense(token) {
+    const box = $('#sense-results'); box.replaceChildren();
+    const hits = S.sense.hits;
+    $('#sense-status').replaceChildren(h('strong', {}, `${hits.length} ${plural(hits.length,'фрагмент','фрагмента','фрагментов')}`),
+      h('span', {class:'muted'}, S.sense.concepts && S.sense.concepts.length ? ' · понятия: '+S.sense.concepts.map(c=>c.concept).join(', ') : ''));
+    if (!hits.length) {
+      box.append(h('p', {class:'empty'}, 'Подходящие фрагменты в доступных томах не найдены. Это не доказывает отсутствия такой практики: попробуйте другое понятие или обычный поиск.')); return;
+    }
+    for (const hit of hits.slice(0,S.sense.shown)) {
+      const p=hit.passage, d=S.meta.decisions.find(x=>x.id===p.decision);
+      const text=await textOf(d); if(token!==S.sense.token) return;
+      const original=window.Concept.slice(text,p.start,p.end);
+      const terms=[S.sense.q,...hit.matched];
+      const link='#/d/'+d.id+'?'+new URLSearchParams({mode:'sense',q:S.sense.q,at:String(p.start),end:String(p.end)});
+      box.append(h('article', {class:'card passage', 'data-passage':p.id},
+        h('div', {class:'passage-text',html:(p.start ? '… ' : '') + window.Concept.highlightEvidence(M(original),terms,p.ai ? M(p.ai.evidence) : '') + (p.end < Array.from(text).length ? ' …' : '')}),
+        p.ai ? h('div', {class:'ai-note'}, h('strong', {}, 'Пояснение ИИ: '), p.ai.summary,
+          h('details', {}, h('summary', {}, 'Цитата, на которой основано пояснение'), h('p', {}, '«… ' + M(p.ai.evidence) + ' …»'))) : '',
+        h('div', {class:'card-top'}, h('span', {class:'num'}, `№ ${d.num}`), h('span', {class:'muted'}, `${fmtDate(d.date)} · том ${d.vol} · ${pageLabel(p)}`), h('span', {class:'badge'}, d.outcome)),
+        h('p', {class:'small'}, h('a', {href:link}, 'Открыть в карточке на этом месте'))));
+    }
+    $('#sense-more').hidden=hits.length<=S.sense.shown;
+  }
 
   /* ---------------------------------------------------------------- аналитика */
   function bars(rows, opts) {
