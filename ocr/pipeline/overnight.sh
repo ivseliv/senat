@@ -15,7 +15,7 @@
 # поэтому скрипт можно запускать повторно с той же командой.
 
 if [ -z "${CAFFEINATED:-}" ] && command -v caffeinate >/dev/null 2>&1; then
-  CAFFEINATED=1 exec caffeinate -i "$0" "$@"   # мак не засыпает, пока скрипт работает
+  CAFFEINATED=1 exec caffeinate -dimsu "$0" "$@"   # мак не засыпает (ни экран, ни система), пока скрипт работает
 fi
 
 cd "$(dirname "$0")/../.." || exit 1
@@ -35,8 +35,10 @@ log() { echo "$(date '+%F %T') $*" | tee -a "$LOG"; }
 save() {  # коммит и пуш, ошибки не фатальны
   git add ocr >/dev/null 2>&1
   git -c user.name="${GIT_USER_NAME:-$(git config user.name)}" commit -q -m "$1" >/dev/null 2>&1
-  git pull -q --rebase origin scans >/dev/null 2>&1
-  git push -q origin scans >/dev/null 2>&1 || log "  (пуш не удался, продолжаю; закоммитьте позже вручную)"
+  export GIT_TERMINAL_PROMPT=0   # не ждать ввода пароля в фоне
+  local NET=(-c http.lowSpeedLimit=1000 -c http.lowSpeedTime=60)   # оборвать зависшую передачу
+  git "${NET[@]}" pull -q --rebase origin scans >/dev/null 2>&1
+  git "${NET[@]}" push -q origin scans >/dev/null 2>&1 || log "  (пуш не удался, продолжаю; закоммитьте позже вручную)"
 }
 
 recognize() {  # $1 = год; повторяет запуск, пока не распознает всё
