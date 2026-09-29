@@ -32,13 +32,24 @@ waited=0
 
 log() { echo "$(date '+%F %T') $*" | tee -a "$LOG"; }
 
-save() {  # коммит и пуш, ошибки не фатальны
+# выполнить команду не дольше $1 секунд; зависшую убить
+with_timeout() {
+  local t=$1; shift
+  "$@" & local p=$!
+  ( sleep "$t"; kill -TERM "$p" 2>/dev/null; sleep 3; kill -KILL "$p" 2>/dev/null ) >/dev/null 2>&1 & local w=$!
+  wait "$p" 2>/dev/null; local rc=$?
+  kill "$w" >/dev/null 2>&1
+  return $rc
+}
+
+save() {  # коммит и пуш; любые ошибки и зависания не фатальны
+  export GIT_TERMINAL_PROMPT=0
   git add ocr >/dev/null 2>&1
   git -c user.name="${GIT_USER_NAME:-$(git config user.name)}" commit -q -m "$1" >/dev/null 2>&1
-  export GIT_TERMINAL_PROMPT=0   # не ждать ввода пароля в фоне
-  local NET=(-c http.lowSpeedLimit=1000 -c http.lowSpeedTime=60)   # оборвать зависшую передачу
-  git "${NET[@]}" pull -q --rebase origin scans >/dev/null 2>&1
-  git "${NET[@]}" push -q origin scans >/dev/null 2>&1 || log "  (пуш не удался, продолжаю; закоммитьте позже вручную)"
+  log "  git: pull..."
+  with_timeout 180 git pull -q --rebase origin scans >/dev/null 2>&1 || log "  git: pull не удался или завис (>180 с), продолжаю"
+  log "  git: push..."
+  with_timeout 300 git push -q origin scans >/dev/null 2>&1 && log "  git: готово" || log "  git: push не удался или завис (>300 с), продолжаю; закоммитьте позже вручную"
 }
 
 recognize() {  # $1 = год; повторяет запуск, пока не распознает всё
