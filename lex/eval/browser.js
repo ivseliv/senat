@@ -73,7 +73,7 @@ fs.mkdirSync(out,{recursive:true});
    await page.waitForSelector('#passage-target');assert((await page.locator('#detail-body h2').innerText()).includes('№ 69'));
    await page.reload();await page.waitForSelector('#passage-target');
    await page.goto(base+'#/about');await page.waitForSelector('#corpus-table tbody tr');
-   assert((await page.locator('#corpus-table').innerText()).includes('7 из 636'));
+   assert((await page.locator('#corpus-table').innerText()).includes('636 из 636'));
    await page.screenshot({path:path.join(out,'corpus.png'),fullPage:false});
   }
   // Телефон и тёмная тема, без горизонтальной прокрутки.
