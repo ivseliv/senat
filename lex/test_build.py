@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Проверки границ решений при составных и повреждённых датах OCR."""
 import unittest
-from build import split_volume
+from build import participant_groups, split_volume
 
 ANCHOR = '(Предсѣдательствовалъ сенаторъ Ивановъ).'
 
@@ -47,6 +47,53 @@ class VolumeParsingTests(unittest.TestCase):
         ])
         with self.assertRaisesRegex(ValueError, 'Не распознан заголовок'):
             split_volume(raw)
+
+
+class ParticipantFacetTests(unittest.TestCase):
+    def test_explicit_demographic_and_social_markers(self):
+        groups = participant_groups(
+            'Прошеніе вдовы Анны, опекуна надъ малолѣтними дѣтьми крестьянина Иванова, '
+            'по иску къ земскому банку и сельскому обществу.'
+        )
+        self.assertIn('Женщины', groups['gender'])
+        self.assertIn('Мужчины', groups['gender'])
+        self.assertEqual(groups['age'], ['Дети', 'Малолетние'])
+        self.assertIn('Вдовы и вдовцы', groups['family'])
+        self.assertIn('Крестьяне', groups['estate'])
+        self.assertIn('Банки и кредитные учреждения', groups['entity'])
+        self.assertIn('Сельские общества и общины', groups['entity'])
+        self.assertIn('Опекуны и попечители', groups['role'])
+
+    def test_names_and_representatives_do_not_imply_gender(self):
+        groups = participant_groups(
+            'Прошеніе повѣреннаго Маріи Ивановой, присяжнаго повѣреннаго Петрова, '
+            'объ отмѣнѣ рѣшенія палаты.'
+        )
+        self.assertNotIn('gender', groups)
+        self.assertNotIn('age', groups)
+
+    def test_legal_roles_and_organizations_are_separate_facets(self):
+        groups = participant_groups(
+            'Прошеніе душеприказчиковъ и наслѣдниковъ купца по иску къ акціонерному '
+            'обществу желѣзной дороги и конкурсному управленію несостоятельнаго должника.'
+        )
+        self.assertIn('Купцы и торговцы', groups['estate'])
+        self.assertIn('Компании и товарищества', groups['entity'])
+        self.assertIn('Железные дороги и перевозчики', groups['entity'])
+        self.assertIn('Опеки и конкурсные управления', groups['entity'])
+        self.assertIn('Наследники', groups['role'])
+        self.assertIn('Душеприказчики', groups['role'])
+        self.assertIn('Несостоятельные должники', groups['role'])
+
+    def test_words_in_company_name_do_not_become_family_members(self):
+        groups = participant_groups(
+            'Прошеніе несостоятельнаго должника, торговавшаго подъ фирмою '
+            '„Джонъ Смитъ и сынъ“, объ отмѣнѣ рѣшенія.'
+        )
+        self.assertNotIn('family', groups)
+        self.assertNotIn('gender', groups)
+        self.assertIn('Компании и товарищества', groups['entity'])
+        self.assertIn('Несостоятельные должники', groups['role'])
 
 if __name__ == '__main__':
     unittest.main()
