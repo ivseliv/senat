@@ -53,6 +53,29 @@ fs.mkdirSync(out,{recursive:true});
   await page.click('#tab-search'); await page.fill('#q','давность');await page.click('#form button[type=submit]');
   await page.waitForSelector('#results .card');
   await page.click('#tab-analytics');await page.waitForSelector('.kpi');
+  // Новый том: фильтр, составная дата, конец решения и ссылка на пассаж.
+  const metadata=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../data/meta.json'),'utf8'));
+  if(metadata.volumes.some(v=>v.year===1904)) {
+   await page.goto(base+'#/search?y=1904');
+   await page.waitForFunction(()=>document.querySelector('#status').textContent.includes('120'));
+   assert.equal(await page.locator('#f-year').inputValue(),'1904');
+   assert((await page.locator('#corpus-summary').innerText()).includes('235'));
+   await page.goto(base+'#/d/1904-042');await page.waitForSelector('#detail-body h2');
+   const date42=await page.locator('#detail-body').innerText();
+   assert(date42.includes('1903/₄ года декабря 17 / февраля 11'));
+   assert((await page.locator('#detail-body h2').innerText()).includes('№ 42'));
+   await page.goto(base+'#/d/1904-120');await page.waitForSelector('#detail-body h2');
+   assert((await page.locator('#detail-body').innerText()).includes('контръ-кассацію'));
+   await page.goto(base+'#/sense?q='+encodeURIComponent('вред от диких животных'));
+   await page.waitForSelector('.passage[data-passage^="1904-069"]');
+   assert(await page.locator('.passage mark').count()>0);
+   await page.locator('.passage[data-passage^="1904-069"] a').first().click();
+   await page.waitForSelector('#passage-target');assert((await page.locator('#detail-body h2').innerText()).includes('№ 69'));
+   await page.reload();await page.waitForSelector('#passage-target');
+   await page.goto(base+'#/about');await page.waitForSelector('#corpus-table tbody tr');
+   assert((await page.locator('#corpus-table').innerText()).includes('7 из 636'));
+   await page.screenshot({path:path.join(out,'corpus.png'),fullPage:false});
+  }
   // Телефон и тёмная тема, без горизонтальной прокрутки.
   await page.setViewportSize({width:390,height:844});
   await page.goto(base+'#/sense?q='+encodeURIComponent('фиктивные сделки'));await page.waitForSelector('.passage');

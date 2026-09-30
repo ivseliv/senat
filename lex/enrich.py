@@ -77,7 +77,8 @@ def main():
         if not ann['summary'].strip() or not isinstance(ann['concepts'],list) or any(not isinstance(c,str) for c in ann['concepts']):
             raise ValueError(f'{pid}: некорректная аннотация')
     records.update(imported)
-    for year in sorted(set(pid.split('-')[0] for pid in records)):
+    # Импорт нового тома не меняет происхождение аннотаций других томов.
+    for year in sorted(set(pid.split('-')[0] for pid in imported)):
         volume_records={pid:ann for pid,ann in sorted(records.items()) if pid.startswith(year+'-')}
         out=ROOT/f'enrichment/{year}.json'
         out.parent.mkdir(parents=True,exist_ok=True)
