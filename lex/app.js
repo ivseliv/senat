@@ -24,7 +24,7 @@
     return el;
   }
   const M = t => S.opts.modern ? L.modernize(t) : t;
-  const fmtDate = iso => { if (!iso) return ''; const [y, m, d] = iso.split('-').map(Number); return `${d} ${MONTHS[m - 1]} ${y}`; };
+  const fmtDate = (iso, label) => { if (!iso) return label ? M(label) : ''; const [y, m, d] = iso.split('-').map(Number); return `${d} ${MONTHS[m - 1]} ${y}`; };
   const CODE = () => S.an.codes;
   const statLabel = s => { const [code, ...rest] = s.split(' '); return (CODE()[code] ? CODE()[code] + ',' : 'Иной акт,') + ' ' + rest.join(' '); };
   const deptShort = d => d.replace(' департамент', '').replace('Гражданский кассационный', 'Гражд. касс. деп.');
@@ -66,10 +66,24 @@
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
     } else closeDetail();
     if (tab === 'analytics') renderAnalytics();
+    if (tab === 'about') renderCorpus();
     window.scrollTo(0, path.startsWith('d/') ? window.scrollY : 0);
   }
   function pushSearch() {
     const f = S.f; go('search', { q: f.q, y: f.year, o: f.outcome, t: f.topic, s: f.statute, p: f.person, sort: f.sort === 'rel' ? '' : f.sort });
+  }
+  async function renderCorpus() {
+    const box = $('#corpus-table');
+    try {
+      const config = S.sense.config || await loadJSON('concepts.json');
+      box.replaceChildren(h('table', {class:'tbl'},
+        h('thead', {}, h('tr', {}, ...['Том','Решений','Фрагментов с пояснением ИИ'].map(t=>h('th',{},t)))),
+        h('tbody', {}, S.meta.volumes.map(v=>{
+          const coverage=config.volumes.find(c=>c.year===v.year);
+          return h('tr', {}, h('td',{},String(v.year)), h('td',{},String(v.decisions)),
+            h('td',{},coverage ? `${coverage.enriched} из ${coverage.passages}` : 'Сведения недоступны'));
+        }))));
+    } catch (err) { box.textContent='Не удалось загрузить сведения о томах. Повторите открытие раздела.'; }
   }
 
   /* ---------------------------------------------------------------- поиск */
@@ -119,7 +133,7 @@
       const d = S.meta.decisions[hit.i];
       const card = h('article', { class: 'card', tabindex: 0, 'data-id': d.id });
       card.append(
-        h('div', { class: 'card-top' }, h('span', { class: 'num' }, `№ ${d.num}`), h('span', { class: 'muted' }, `${fmtDate(d.date)} · ${deptShort(d.dept)}, том ${d.vol}`),
+        h('div', { class: 'card-top' }, h('span', { class: 'num' }, `№ ${d.num}`), h('span', { class: 'muted' }, `${fmtDate(d.date, d.date_label)} · ${deptShort(d.dept)}, том ${d.vol}`),
           h('span', { class: 'badge' }, d.outcome)),
         h('h3', {}, h('a', { href: '#/d/' + d.id, onclick: e => { e.preventDefault(); openFromList(d.id); } }, M(d.headnote))),
         h('p', { class: 'snip', 'data-i': d.i }, ''),
@@ -181,7 +195,7 @@
     const body = h('div', { class: 'text', html: paint(text) });
     box.replaceChildren(
       h('div', { class: 'detail-head' },
-        h('h2', {}, `№ ${d.num} · ${fmtDate(d.date)}`),
+        h('h2', {}, `№ ${d.num} · ${fmtDate(d.date, d.date_label)}`),
         h('div', { class: 'muted' }, `${d.dept}, том ${d.vol}`),
         h('span', { class: 'badge big' }, d.outcome)),
       h('p', { class: 'headnote' }, M(d.headnote)),
@@ -272,10 +286,9 @@
   async function loadSense() {
     if (!S.sense.promise) S.sense.promise = (async () => {
       const config = await loadJSON('concepts.json');
-      const engines = await Promise.all(config.volumes.map(async v => {
-        const data = await loadJSON(v.file);
-        return {data, engine:window.Concept.makeEngine(data, config.glossary)};
-      }));
+      const data = await Promise.all(config.volumes.map(v=>loadJSON(v.file)));
+      const shared = window.Concept.makeEngines(data, config.glossary);
+      const engines = data.map((volume,i)=>({data:volume, engine:shared[i]}));
       S.sense.config = config; S.sense.engines = engines;
     })().catch(err => { S.sense.promise = null; throw err; });
     return S.sense.promise;
@@ -302,7 +315,8 @@
   }
   function pageLabel(p) {
     const recovered = p.sources.some(s=>s.page_method==='neighbors');
-    return (p.pages.length ? 'с. ' + p.pages.join(', ') : 'страница не определена') + (recovered ? ' (номер восстановлен по соседним колонтитулам)' : '');
+    const partial = p.pages.length && p.sources.some(s=>s.page===null);
+    return (p.pages.length ? 'с. ' + p.pages.join(', ') : 'страница не определена') + (recovered ? ' (номер восстановлен по соседним колонтитулам)' : '') + (partial ? ' (часть страниц не определена)' : '');
   }
   async function renderSense(token) {
     const box = $('#sense-results'); box.replaceChildren();
@@ -322,7 +336,7 @@
         h('div', {class:'passage-text',html:(p.start ? '… ' : '') + window.Concept.highlightEvidence(M(original),terms,p.ai ? M(p.ai.evidence) : '') + (p.end < Array.from(text).length ? ' …' : '')}),
         p.ai ? h('div', {class:'ai-note'}, h('strong', {}, 'Пояснение ИИ: '), p.ai.summary,
           h('details', {}, h('summary', {}, 'Цитата, на которой основано пояснение'), h('p', {}, '«… ' + M(p.ai.evidence) + ' …»'))) : '',
-        h('div', {class:'card-top'}, h('span', {class:'num'}, `№ ${d.num}`), h('span', {class:'muted'}, `${fmtDate(d.date)} · том ${d.vol} · ${pageLabel(p)}`), h('span', {class:'badge'}, d.outcome)),
+        h('div', {class:'card-top'}, h('span', {class:'num'}, `№ ${d.num}`), h('span', {class:'muted'}, `${fmtDate(d.date, d.date_label)} · том ${d.vol} · ${pageLabel(p)}`), h('span', {class:'badge'}, d.outcome)),
         h('p', {class:'small'}, h('a', {href:link}, 'Открыть в карточке на этом месте'))));
     }
     $('#sense-more').hidden=hits.length<=S.sense.shown;
@@ -384,6 +398,8 @@
       const [meta, index, an] = await Promise.all([loadJSON('meta.json'), loadJSON('index.json'), loadJSON('analytics.json')]);
       S.meta = meta; S.index = index; S.an = an; S.volStart = {};
       meta.decisions.forEach(d => { if (S.volStart[d.vol] == null) S.volStart[d.vol] = d.i; });
+      $('#corpus-summary').textContent = `В корпусе: ${meta.volumes.map(v=>v.year).join(', ')} · ${meta.decisions.length} ${plural(meta.decisions.length,'решение','решения','решений')}`;
+      $('#corpus-summary').hidden = false;
       S.engine = L.makeEngine(index, meta.decisions);
       $('#loading').hidden = true; setupControls(); route(); addEventListener('hashchange', route);
     } catch (e) {
