@@ -5,12 +5,20 @@
   const $ = (s, r) => (r || document).querySelector(s);
   const DATA = window.LEX_DATA_URL || 'data/';
   const MONTHS = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
+  const FACET_FILTERS = [
+    {key:'gender', id:'f-gender', param:'sex', any:'Любой пол'},
+    {key:'age', id:'f-age', param:'age', any:'Любой возраст / дееспособность'},
+    {key:'family', id:'f-family', param:'family', any:'Любое семейное положение'},
+    {key:'estate', id:'f-estate', param:'estate', any:'Любое сословие / занятие'},
+    {key:'entity', id:'f-entity', param:'entity', any:'Любой тип организации'},
+    {key:'role', id:'f-role', param:'role', any:'Любое правовое положение'},
+  ];
 
   const S = {
     meta: null, index: null, an: null, engine: null, texts: {}, stemCache: new Map(),
     opts: { modern: false, gloss: true }, detailId: null,
     sense: { config: null, engines: [], promise: null, q: '', hits: [], shown: 10, token: 0 },
-    f: { q: '', year: '', outcome: '', topic: '', statute: '', person: '', sort: 'rel' }, shown: 20, hits: [], sentinel: 0,
+    f: { q: '', year: '', outcome: '', topic: '', statute: '', person: '', gender: '', age: '', family: '', estate: '', entity: '', role: '', sort: 'rel' }, shown: 20, hits: [], sentinel: 0,
   };
 
   function h(tag, attrs, ...kids) {
@@ -58,7 +66,8 @@
     }
     if (tab === 'search') {
       Object.assign(S.f, { q: p.get('q') || '', year: p.get('y') || '', outcome: p.get('o') || '', topic: p.get('t') || '',
-        statute: p.get('s') || '', person: p.get('p') || '', sort: p.get('sort') || 'rel' });
+        statute: p.get('s') || '', person: p.get('p') || '', sort: p.get('sort') || 'rel' },
+        Object.fromEntries(FACET_FILTERS.map(f => [f.key, p.get(f.param) || ''])));
       syncControls(); runSearch();
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
     } else if (tab === 'sense') {
@@ -70,7 +79,9 @@
     window.scrollTo(0, path.startsWith('d/') ? window.scrollY : 0);
   }
   function pushSearch() {
-    const f = S.f; go('search', { q: f.q, y: f.year, o: f.outcome, t: f.topic, s: f.statute, p: f.person, sort: f.sort === 'rel' ? '' : f.sort });
+    const f = S.f; const params = { q: f.q, y: f.year, o: f.outcome, t: f.topic, s: f.statute, p: f.person, sort: f.sort === 'rel' ? '' : f.sort };
+    for (const facet of FACET_FILTERS) params[facet.param] = f[facet.key];
+    go('search', params);
   }
   async function renderCorpus() {
     const box = $('#corpus-table');
@@ -90,8 +101,22 @@
   function filterFn() {
     const f = S.f;
     return d => (!f.year || String(d.vol) === f.year) && (!f.outcome || d.outcome === f.outcome) && (!f.topic || d.topics.includes(f.topic)) &&
-      (!f.statute || f.statute in d.statutes) && (!f.person || d.presiding === f.person || d.reporter === f.person || d.prosecutor === f.person);
+      (!f.statute || f.statute in d.statutes) && (!f.person || d.presiding === f.person || d.reporter === f.person || d.prosecutor === f.person) &&
+      FACET_FILTERS.every(facet => facetMatch(d, facet.key, f[facet.key]));
   }
+  function facetMatch(d, key, selected) {
+    if (!selected) return true;
+    const values = d.groups && d.groups[key] ? d.groups[key] : [];
+    return selected === '__unknown__' ? !values.length : values.includes(selected);
+  }
+  function groupItems(d) {
+    const seen = new Set(), out = [];
+    for (const facet of FACET_FILTERS) for (const label of (d.groups && d.groups[facet.key] || [])) {
+      if (!seen.has(label)) { seen.add(label); out.push({key:facet.key,label}); }
+    }
+    return out;
+  }
+  function selectFacet(key, value) { S.f[key] = value; pushSearch(); }
   let runToken = 0;
   async function runSearch() {
     const my = ++runToken;
@@ -137,7 +162,8 @@
           h('span', { class: 'badge' }, d.outcome)),
         h('h3', {}, h('a', { href: '#/d/' + d.id, onclick: e => { e.preventDefault(); openFromList(d.id); } }, M(d.headnote))),
         h('p', { class: 'snip', 'data-i': d.i }, ''),
-        h('div', { class: 'chips' }, d.topics.map(t => h('button', { class: 'chip', onclick: () => { S.f.topic = t; pushSearch(); } }, t))));
+        h('div', { class: 'chips' }, d.topics.map(t => h('button', { class: 'chip', onclick: () => { S.f.topic = t; pushSearch(); } }, t))),
+        h('div', { class: 'chips participant-chips' }, groupItems(d).slice(0, 8).map(g => h('button', { class: 'chip group', title: 'Фильтровать решения по этому признаку', onclick: () => selectFacet(g.key, g.label) }, g.label))));
       card.addEventListener('click', e => { if (!e.target.closest('button,a')) openFromList(d.id); });
       card.addEventListener('keydown', e => { if (e.key === 'Enter') openFromList(d.id); });
       box.append(card);
@@ -204,6 +230,8 @@
         d.reporter ? h('div', {}, h('dt', {}, 'Докладывал'), h('dd', {}, personLink(d.reporter))) : '',
         d.prosecutor ? h('div', {}, h('dt', {}, 'Заключение давал'), h('dd', {}, personLink(d.prosecutor))) : ''),
       h('div', { class: 'chips' }, d.topics.map(t => h('button', { class: 'chip', onclick: () => { S.f.topic = t; go('search', { t }); } }, t))),
+      groupItems(d).length ? h('section', {}, h('h3', {}, 'Участники и социальные группы'),
+        h('div', { class: 'chips participant-chips' }, groupItems(d).map(g => h('button', { class: 'chip group', onclick: () => { S.f[g.key] = g.label; pushSearch(); } }, g.label)))) : '',
       Object.keys(d.statutes).length ? h('section', {}, h('h3', {}, 'Упомянутые статьи'), h('div', { class: 'chips' },
         Object.keys(d.statutes).sort().map(s => h('button', { class: 'chip stat', title: 'Найти все решения с этой статьёй', onclick: () => go('search', { s }) }, statLabel(s))))) : '',
       h('div', { class: 'toolbar' },
@@ -245,7 +273,8 @@
   function syncControls() {
     $('#q').value = S.f.q; $('#f-year').value = S.f.year; $('#f-outcome').value = S.f.outcome; $('#f-topic').value = S.f.topic;
     $('#f-statute').value = S.f.statute; $('#f-person').value = S.f.person; $('#f-sort').value = S.f.sort;
-    const act = ['year', 'outcome', 'topic', 'statute', 'person'].filter(k => S.f[k]).length + (S.f.sort !== 'rel' ? 1 : 0);
+    for (const facet of FACET_FILTERS) $('#' + facet.id).value = S.f[facet.key];
+    const act = ['year', 'outcome', 'topic', 'statute', 'person', ...FACET_FILTERS.map(f=>f.key)].filter(k => S.f[k]).length + (S.f.sort !== 'rel' ? 1 : 0);
     $('#fcount').textContent = act ? `· выбрано: ${act}` : '';
     const box = $('#fbox'); if (!box.dataset.init || act) { box.open = act > 0 || innerWidth >= 700; box.dataset.init = '1'; }
   }
@@ -258,9 +287,18 @@
     fillSelect($('#f-statute'), Object.entries(stat).filter(([s]) => !s.startsWith('?')).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 250).map(([s, n]) => [s, `${statLabel(s)} (${n})`]), 'Любая статья');
     const per = {}; dec.forEach(d => [d.presiding, d.reporter, d.prosecutor].forEach(p => p && (per[p] = (per[p] || 0) + 1)));
     fillSelect($('#f-person'), Object.entries(per).sort((a, b) => a[0].localeCompare(b[0])).map(([p, n]) => [p, `${p} (${n})`]), 'Любой сенатор / прокурор');
+    for (const facet of FACET_FILTERS) {
+      const data = an.participant_facets[facet.key];
+      const items = Object.entries(data.values).map(([v,n]) => [v, `${v} (${n})`]);
+      if (data.unknown) items.push(['__unknown__', `Не указано в заголовке (${data.unknown})`]);
+      fillSelect($('#' + facet.id), items, facet.any);
+    }
     $('#form').addEventListener('submit', e => { e.preventDefault(); S.f.q = $('#q').value; pushSearchOrRun(); });
     for (const [id, key] of [['f-year', 'year'], ['f-outcome', 'outcome'], ['f-topic', 'topic'], ['f-statute', 'statute'], ['f-person', 'person'], ['f-sort', 'sort']])
       $('#' + id).addEventListener('change', e => { S.f[key] = e.target.value; S.f.q = $('#q').value; pushSearchOrRun(); });
+    for (const facet of FACET_FILTERS) $('#' + facet.id).addEventListener('change', e => {
+      S.f[facet.key] = e.target.value; S.f.q = $('#q').value; pushSearchOrRun();
+    });
     try { S.opts.modern = localStorage.getItem('lex.modern') === '1'; } catch (e) { /* по умолчанию оригинал */ }
     for (const r of document.querySelectorAll('input[name=orth], input[name=sense-orth]')) { r.checked = (r.value === 'new') === S.opts.modern; r.addEventListener('change', e => setModern(e.target.value === 'new')); }
     $('#gloss').addEventListener('change', e => { S.opts.gloss = e.target.checked; runSearch(); });
@@ -370,6 +408,12 @@
       h('div', { class: 'grid' },
         card('Как решались просьбы', 'Исход определён автоматически по резолютивной части решения.', bars(Object.entries(an.outcomes), { click: r => go('search', { o: r[0] }) })),
         card('О чём решения', 'Тема определяется по ключевым словам в заголовке и тексте; у решения может быть до трёх тем. Нажмите строку, чтобы открыть решения.', bars(Object.entries(an.topics), { click: r => go('search', { t: r[0] }) })),
+        ...FACET_FILTERS.map(facet => {
+          const data = an.participant_facets[facet.key], rows = Object.entries(data.values);
+          if (data.unknown) rows.push(['Не указано в заголовке', data.unknown, '__unknown__']);
+          return card(data.label, 'Признак ставится только по прямой формулировке в заголовке дела; одно решение может входить в несколько групп.',
+            bars(rows, {click:r=>go('search',{[facet.param]:r[2] || r[0]})}));
+        }),
         card('Самые часто упоминаемые статьи', 'Число решений, где статья названа. Кодекс определён автоматически там, где он указан рядом со статьёй. Нажмите, чтобы найти решения.',
           bars(an.statutes.slice(0, 15), { label: r => statLabel(r[0]), click: r => go('search', { s: r[0] }) })),
         card('Решения по месяцам', 'Дата — день заседания по заголовку решения.', monthCols),
