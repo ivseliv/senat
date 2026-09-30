@@ -65,6 +65,9 @@ def stems(text):
 MONTHS = {'января': 1, 'февраля': 2, 'марта': 3, 'апреля': 4, 'мая': 5, 'июня': 6, 'июля': 7, 'августа': 8,
           'сентября': 9, 'октября': 10, 'ноября': 11, 'декабря': 12}
 HDR = re.compile(r'^([З\d]{1,3})\s*[.,]\s*[—–\-]?\s*(\d{4})\s+года\s+([А-Яа-яѢѣІі]+)\s+(\d{1,2})', re.I)
+# Составные даты сохраняем буквально, не выбирая одну из дат заседаний.
+RAW_HDR = re.compile(r'^([З\d]{1,3})\s*[.,]\s*[—–\-]?\s*(\d{4}(?:\s*/\s*[\d₀-₉]+)?\s+года\s+.+?\s+дня)\.?\s*(.*)$', re.I | re.S)
+NUMBERED_HDR = re.compile(r'^[З\d]{1,3}\s*[.,]\s*[—–\-]?\s*\d{4}', re.I)
 ANCHOR = re.compile(r'^\(\s*Предс[ѣе]дательствовал', re.I)
 PERSON = re.compile(r'((?:[А-ЯЁІѢ]\.\s?){1,3})\s*([А-ЯЁІѢ][А-Яа-яЁёѢѣІіѲѳѴѵъь\-]+)')
 TITLE_WORDS = re.compile(r'\b(первоприсутствующій|сенаторъ|товарищъ|оберъ-прокурора|оберъ-прокуроръ|исп\.|обяз\.|графъ|баронъ|князь)\b', re.I)
@@ -99,21 +102,31 @@ def split_volume(text):
     heads = []
     for i in anchors:
         h = paras[i - 1]
-        m = HDR.match(h)
+        raw_header = RAW_HDR.match(h)
+        m = HDR.match(h) if not raw_header or '/' not in raw_header.group(2) else None
         if m:
-            heads.append((i - 1, i, m, h))
+            num = int(m.group(1).replace('З', '3'))
+            date = parse_date(m.group(3), m.group(4), int(m.group(2)))
+            head_rest = re.sub(r'^.*?\d{1,2}[-\s]*(?:го|ое|е)?\s*дня\.?\s*', '', h, count=1, flags=re.I)
+            heads.append((i - 1, i, num, date, None, head_rest))
+        elif (m := raw_header):
+            heads.append((i - 1, i, int(m.group(1).replace('З', '3')), None, m.group(2), m.group(3)))
+        elif NUMBERED_HDR.match(h):
+            raise ValueError(f'Не распознан заголовок решения: {h[:180]}. Проверьте OCR; не склеиваем с предыдущим решением.')
     decs = []
-    for k, (hi, ai, m, h) in enumerate(heads):
+    for k, (hi, ai, num, date, date_label, head_rest) in enumerate(heads):
         end = heads[k + 1][0] if k + 1 < len(heads) else back
-        num = int(m.group(1).replace('З', '3'))
-        year, day = int(m.group(2)), m.group(4)
-        head_rest = re.sub(r'^.*?\d{1,2}[-\s]*(?:го|ое|е)?\s*дня\.?\s*', '', h, count=1, flags=re.I)
         anchor = paras[ai]
         pm = re.search(r'Предс[ѣе]дательствовал[ъ]?\s*(.*?);\s*докладывал[ъ]?\s*д[ѣе]ло\s*(.*?);\s*заключеніе\s*давал[ъ]?\s*(.*?)\)?\s*$', anchor, re.I | re.S)
         body = '\n\n'.join(paras[ai + 1:end])
-        decs.append(dict(num=num, date=parse_date(m.group(3), day, year), headnote=head_rest.strip(),
+        decs.append(dict(num=num, date=date, headnote=head_rest.strip(),
                          presiding=person(pm.group(1)) if pm else None, reporter=person(pm.group(2)) if pm else None,
                          prosecutor=person(pm.group(3)) if pm else None, anchor=anchor, text=body))
+        if date_label:
+            decs[-1]['date_label'] = date_label
+    duplicates = [num for num, count in collections.Counter(d['num'] for d in decs).items() if count > 1]
+    if duplicates:
+        raise ValueError(f'Повторные номера решений: {duplicates}. Проверьте страницы OCR перед публикацией.')
     return front, decs, '\n\n'.join(paras[back:])
 
 # ---------------------------------------------------------------- теги
@@ -268,6 +281,8 @@ def main():
                              prosecutor=d['prosecutor'], outcome=oc, topics=topics_for(d['headnote'], d['text']),
                              statutes=statutes_for(full), cites=[list(c) for c in cites_for(full, int(year))],
                              words=len(tokens(d['text'])), _stems=stems(full), _hstems=stems(d['headnote'])))
+            if d.get('date_label'):
+                docs[-1]['date_label'] = d['date_label']
             vt.append(d['text'])
         texts[year] = vt
     unify_persons(docs)

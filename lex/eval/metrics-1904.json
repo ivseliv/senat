@@ -1,0 +1,661 @@
+{
+  "queriesSha256": "a7273066cd3fe3432b7966a94be56e1a799da8df5ee80e4c5f1d1bd2892abc0a",
+  "protocol": "Дополнительная разработочная выборка: 5 мест 1904 года выбраны вручную Codex по оригинальному OCR до просмотра рангов. Не отложенная независимая оценка, не полная разметка релевантности. Аннотации этих мест подготовлены в той же сессии, поэтому этот набор проверяет доступность примеров и не доказывает обобщающее качество.",
+  "volumes": [
+    1904,
+    1905
+  ],
+  "split": "all",
+  "aggregates": [
+    {
+      "split": "test",
+      "method": "baseline",
+      "n": 5,
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "falsePositives": null
+    },
+    {
+      "split": "test",
+      "method": "glossary",
+      "n": 5,
+      "recall5": 0.2,
+      "recall10": 0.2,
+      "mrr": 0.05,
+      "falsePositives": null
+    },
+    {
+      "split": "test",
+      "method": "enriched",
+      "n": 5,
+      "recall5": 0.6,
+      "recall10": 0.6,
+      "mrr": 0.45,
+      "falsePositives": null
+    },
+    {
+      "split": "test",
+      "method": "hybrid",
+      "n": 5,
+      "recall5": 0.6,
+      "recall10": 0.6,
+      "mrr": 0.45,
+      "falsePositives": null
+    },
+    {
+      "split": "positive",
+      "method": "baseline",
+      "n": 5,
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "falsePositives": null
+    },
+    {
+      "split": "positive",
+      "method": "glossary",
+      "n": 5,
+      "recall5": 0.2,
+      "recall10": 0.2,
+      "mrr": 0.05,
+      "falsePositives": null
+    },
+    {
+      "split": "positive",
+      "method": "enriched",
+      "n": 5,
+      "recall5": 0.6,
+      "recall10": 0.6,
+      "mrr": 0.45,
+      "falsePositives": null
+    },
+    {
+      "split": "positive",
+      "method": "hybrid",
+      "n": 5,
+      "recall5": 0.6,
+      "recall10": 0.6,
+      "mrr": 0.45,
+      "falsePositives": null
+    }
+  ],
+  "rows": [
+    {
+      "id": "1904-26",
+      "query": "компенсация при незаконном увольнении",
+      "split": "test",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "1904-26",
+      "query": "компенсация при незаконном увольнении",
+      "split": "test",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "1904-26",
+      "query": "компенсация при незаконном увольнении",
+      "split": "test",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "1904-26",
+      "query": "компенсация при незаконном увольнении",
+      "split": "test",
+      "method": "hybrid",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "1904-69",
+      "query": "вред от диких животных",
+      "split": "test",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1904-069:0-1635",
+          "decision": "1904-069",
+          "pages": [
+            198
+          ],
+          "score": 16.11151,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "1904-69",
+      "query": "вред от диких животных",
+      "split": "test",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1904-069:0-1635",
+          "decision": "1904-069",
+          "pages": [
+            198
+          ],
+          "score": 16.11151,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "1904-69",
+      "query": "вред от диких животных",
+      "split": "test",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 2,
+      "top10": [
+        {
+          "passage": "1904-069:4102-5978",
+          "decision": "1904-069",
+          "pages": [
+            199,
+            200
+          ],
+          "score": 19.39043,
+          "relevant": true
+        },
+        {
+          "passage": "1904-069:0-1635",
+          "decision": "1904-069",
+          "pages": [
+            198
+          ],
+          "score": 16.11151,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "1904-69",
+      "query": "вред от диких животных",
+      "split": "test",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 2,
+      "top10": [
+        {
+          "passage": "1904-069:4102-5978",
+          "decision": "1904-069",
+          "pages": [
+            199,
+            200
+          ],
+          "score": 19.39043,
+          "relevant": true
+        },
+        {
+          "passage": "1904-069:0-1635",
+          "decision": "1904-069",
+          "pages": [
+            198
+          ],
+          "score": 16.11151,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "1904-114",
+      "query": "фиктивные сделки",
+      "split": "test",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1905-105:5890-7541",
+          "decision": "1905-105",
+          "pages": [
+            285,
+            286
+          ],
+          "score": 7.60067,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "1904-114",
+      "query": "фиктивные сделки",
+      "split": "test",
+      "method": "glossary",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.25,
+      "negativeFalsePositive": null,
+      "results": 6,
+      "top10": [
+        {
+          "passage": "1905-105:7281-9186",
+          "decision": "1905-105",
+          "pages": [
+            286,
+            287
+          ],
+          "score": 14.58685,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:4448-6133",
+          "decision": "1905-105",
+          "pages": [
+            285
+          ],
+          "score": 9.33034,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:5890-7541",
+          "decision": "1905-105",
+          "pages": [
+            285,
+            286
+          ],
+          "score": 9.10282,
+          "relevant": false
+        },
+        {
+          "passage": "1904-114:6191-8017",
+          "decision": "1904-114",
+          "pages": [
+            317
+          ],
+          "score": 8.99102,
+          "relevant": true
+        },
+        {
+          "passage": "1905-105:8913-10601",
+          "decision": "1905-105",
+          "pages": [
+            286,
+            287
+          ],
+          "score": 6.50373,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:11894-13768",
+          "decision": "1905-105",
+          "pages": [
+            287,
+            288
+          ],
+          "score": 4.66434,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "1904-114",
+      "query": "фиктивные сделки",
+      "split": "test",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.25,
+      "negativeFalsePositive": null,
+      "results": 8,
+      "top10": [
+        {
+          "passage": "1905-105:7281-9186",
+          "decision": "1905-105",
+          "pages": [
+            286,
+            287
+          ],
+          "score": 14.58685,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:4448-6133",
+          "decision": "1905-105",
+          "pages": [
+            285
+          ],
+          "score": 9.33034,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:5890-7541",
+          "decision": "1905-105",
+          "pages": [
+            285,
+            286
+          ],
+          "score": 9.10282,
+          "relevant": false
+        },
+        {
+          "passage": "1904-114:6191-8017",
+          "decision": "1904-114",
+          "pages": [
+            317
+          ],
+          "score": 8.99102,
+          "relevant": true
+        },
+        {
+          "passage": "1905-105:10341-12144",
+          "decision": "1905-105",
+          "pages": [
+            287
+          ],
+          "score": 7.26531,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:8913-10601",
+          "decision": "1905-105",
+          "pages": [
+            286,
+            287
+          ],
+          "score": 7.26531,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:0-1771",
+          "decision": "1905-105",
+          "pages": [
+            283,
+            284
+          ],
+          "score": 6.27454,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:1524-3353",
+          "decision": "1905-105",
+          "pages": [
+            284,
+            285
+          ],
+          "score": 6.27454,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "1904-114",
+      "query": "фиктивные сделки",
+      "split": "test",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.25,
+      "negativeFalsePositive": null,
+      "results": 9,
+      "top10": [
+        {
+          "passage": "1905-105:7281-9186",
+          "decision": "1905-105",
+          "pages": [
+            286,
+            287
+          ],
+          "score": 14.58685,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:4448-6133",
+          "decision": "1905-105",
+          "pages": [
+            285
+          ],
+          "score": 9.33034,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:5890-7541",
+          "decision": "1905-105",
+          "pages": [
+            285,
+            286
+          ],
+          "score": 9.10282,
+          "relevant": false
+        },
+        {
+          "passage": "1904-114:6191-8017",
+          "decision": "1904-114",
+          "pages": [
+            317
+          ],
+          "score": 8.99102,
+          "relevant": true
+        },
+        {
+          "passage": "1905-105:10341-12144",
+          "decision": "1905-105",
+          "pages": [
+            287
+          ],
+          "score": 7.26531,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:8913-10601",
+          "decision": "1905-105",
+          "pages": [
+            286,
+            287
+          ],
+          "score": 7.26531,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:0-1771",
+          "decision": "1905-105",
+          "pages": [
+            283,
+            284
+          ],
+          "score": 6.27454,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:1524-3353",
+          "decision": "1905-105",
+          "pages": [
+            284,
+            285
+          ],
+          "score": 6.27454,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:11894-13768",
+          "decision": "1905-105",
+          "pages": [
+            287,
+            288
+          ],
+          "score": 4.66434,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "1904-115",
+      "query": "наследование авторского вознаграждения",
+      "split": "test",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "1904-115",
+      "query": "наследование авторского вознаграждения",
+      "split": "test",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "1904-115",
+      "query": "наследование авторского вознаграждения",
+      "split": "test",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 2,
+      "top10": [
+        {
+          "passage": "1904-115:1338-3092",
+          "decision": "1904-115",
+          "pages": [
+            319
+          ],
+          "score": 10.45438,
+          "relevant": true
+        },
+        {
+          "passage": "1904-115:2837-4305",
+          "decision": "1904-115",
+          "pages": [
+            319,
+            320
+          ],
+          "score": 8.8501,
+          "relevant": true
+        }
+      ]
+    },
+    {
+      "id": "1904-115",
+      "query": "наследование авторского вознаграждения",
+      "split": "test",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 2,
+      "top10": [
+        {
+          "passage": "1904-115:1338-3092",
+          "decision": "1904-115",
+          "pages": [
+            319
+          ],
+          "score": 10.45438,
+          "relevant": true
+        },
+        {
+          "passage": "1904-115:2837-4305",
+          "decision": "1904-115",
+          "pages": [
+            319,
+            320
+          ],
+          "score": 8.8501,
+          "relevant": true
+        }
+      ]
+    },
+    {
+      "id": "1904-120",
+      "query": "исковая давность при смерти потерпевшего",
+      "split": "test",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "1904-120",
+      "query": "исковая давность при смерти потерпевшего",
+      "split": "test",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "1904-120",
+      "query": "исковая давность при смерти потерпевшего",
+      "split": "test",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "1904-120",
+      "query": "исковая давность при смерти потерпевшего",
+      "split": "test",
+      "method": "hybrid",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    }
+  ]
+}

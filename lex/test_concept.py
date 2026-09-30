@@ -5,6 +5,7 @@ import json
 import subprocess
 import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 from passages import source_pages
 
@@ -12,6 +13,24 @@ ROOT=Path(__file__).resolve().parent
 REPO=ROOT.parent
 
 class ConceptTests(unittest.TestCase):
+    def test_import_preserves_other_volumes(self):
+        import enrich
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            (root/'enrichment').mkdir()
+            old=root/'enrichment/1905.json'
+            old.write_text('{"provenance":"Прежнее происхождение", "passages":{}}\n')
+            before=old.read_bytes()
+            pid='1904-001:0-10'
+            response=root/'response.json'
+            response.write_text(json.dumps(dict(provenance='Новый том', passages={pid:dict(
+                sha256='sample',summary='Описание',concepts=['понятие'],evidence='источник')})))
+            with patch.object(enrich,'ROOT',root), patch.object(enrich,'corpus',return_value=[dict(
+                    id=pid,sha256='sample',text='источник')]), patch('sys.argv',['enrich.py','import',str(response)]):
+                enrich.main()
+            self.assertEqual(old.read_bytes(),before)
+            self.assertEqual(json.loads((root/'enrichment/1904.json').read_text())['provenance'],'Новый том')
+
     def test_corpus_provenance(self):
         meta=json.loads((ROOT/'data/meta.json').read_text())['decisions']
         documents={}
@@ -65,5 +84,23 @@ assert.equal(C.makeEngine(data,config.glossary).search('электронная �
         subprocess.run(['python3',str(ROOT/'build.py'),'--single'],cwd=REPO,check=True,capture_output=True)
         self.assertEqual(before,{p:hashlib.sha256(p.read_bytes()).hexdigest() for p in files})
         self.assertLess((ROOT/'dist/senat-lex.html').stat().st_size,10_000_000)
+
+    def test_scores_are_comparable_across_volumes(self):
+        script=r"""
+const assert=require('node:assert/strict'), C=require('./concept.js');
+function volume(year, words) {
+ const post={};words.forEach((word,i)=>{(post[word] ||= []).push(i,1);});
+ return {passages:words.map((word,i)=>({id:year+'-'+i,decision:year+'-'+i,start:0,end:1})),
+  original:{n:words.length,avgdl:1,len:words.map(()=>1),post},
+  enriched:{n:words.length,avgdl:0,len:words.map(()=>0),post:{}}};
+}
+const data=[volume(1904,['залог']),volume(1905,['залог',...Array(9).fill('иной')])];
+const engines=C.makeEngines(data,[]),hits=engines.flatMap(e=>e.search('залог','baseline').hits);
+assert.equal(hits.length,2);
+assert.equal(hits[0].score,hits[1].score,'Одинаковый пассаж должен получать одинаковый вес независимо от размера тома');
+assert.equal(C.makeEngines([data[0]],[])[0].search('залог','baseline').hits[0].score,
+ C.makeEngine(data[0],[]).search('залог','baseline').hits[0].score,'Один том сохраняет прежнее ранжирование');
+"""
+        subprocess.run(['node','-e',script],cwd=ROOT,check=True)
 
 if __name__=='__main__': unittest.main()

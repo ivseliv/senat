@@ -32,7 +32,20 @@
     words.forEach((w,i) => {if (!used.has(i)) groups.push({modern:[w],old:[],concept:null});});
     return {groups, words};
   }
-  function makeEngine(data, glossary) {
+  function makeEngines(volumes, glossary) {
+    // Для нескольких томов BM25 использует общие частоты и среднюю длину.
+    // Иначе редкое слово в маленьком томе получало бы другой вес при слиянии выдачи.
+    const stats=['original','enriched'].map(field=>{
+      let n=0,totalLength=0;const df=new Map();
+      for(const volume of volumes) {
+        const index=volume[field];n+=index.n;totalLength+=index.len.reduce((sum,length)=>sum+length,0);
+        for(const [term,list] of Object.entries(index.post)) df.set(term,(df.get(term)||0)+list.length/2);
+      }
+      return {n,avgdl:totalLength/Math.max(1,n),df};
+    });
+    return volumes.map(data=>makeEngine(data,glossary,stats));
+  }
+  function makeEngine(data, glossary, collectionStats) {
     const docs=data.passages, original=data.original, enriched=data.enriched;
     const vocab=new Map((original.vocabulary || []).map((s,i)=>[s,i]));
     const caches=[new Map(),new Map()];
@@ -57,9 +70,10 @@
         for(const id of ids) {
           let score=0;
           for(let j=0;j<terms.length;j++) {
-            const tf=lists[j].get(id), df=lists[j].size, n=index.n;
+            const stats=collectionStats && collectionStats[which];
+            const tf=lists[j].get(id), df=stats ? stats.df.get(terms[j]) : lists[j].size, n=stats ? stats.n : index.n;
             const idf=Math.log(1+(n-df+0.5)/(df+0.5));
-            score+=idf*tf*2.2/(tf+1.2*(0.25+0.75*index.len[id]/Math.max(1,index.avgdl)));
+            score+=idf*tf*2.2/(tf+1.2*(0.25+0.75*index.len[id]/Math.max(1,stats ? stats.avgdl : index.avgdl)));
           }
           if(score>(scores.get(id)||0)) { scores.set(id,score); matches.set(id,name); }
         }
@@ -121,6 +135,6 @@
   }
   // Python считает Unicode-символы; JS slice считает UTF-16. Смещения переводим явно.
   const slice=(text,start,end)=>Array.from(text).slice(start,end).join('');
-  const api={parse,makeEngine,highlight,highlightEvidence,slice,allStems};
+  const api={parse,makeEngine,makeEngines,highlight,highlightEvidence,slice,allStems};
   if(typeof module!=='undefined'&&module.exports) module.exports=api; else root.Concept=api;
 })(typeof window!=='undefined'?window:globalThis);
