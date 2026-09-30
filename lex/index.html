@@ -56,6 +56,11 @@ select { max-width: 100%; }
 .chip.stat { border-radius: 8px; }
 .chip.group { border-style: dashed; background: transparent; }
 .participant-chips:empty { display: none; }
+.concept-picker { margin: 12px 0; }
+.concept-picker summary { cursor: pointer; color: var(--accent-ink); }
+.concept-catalog { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px 20px; margin: 12px 0; }
+.concept-catalog h3 { font-size: 14px; margin: 0; }
+.concept-catalog .chip { text-align: left; overflow-wrap: anywhere; }
 #status { margin: 14px 0 8px; }
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; margin-bottom: 10px; cursor: pointer; }
 .card:hover { border-color: var(--accent); }
@@ -137,6 +142,11 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
       <button class="btn" type="submit">Найти</button><button class="btn ghost" type="button" id="reset">Сбросить</button>
     </form>
     <div class="chips" id="examples" aria-label="Примеры запросов"></div>
+    <details class="concept-picker" id="search-concepts">
+      <summary>Ещё современные понятия · поиск по смыслу</summary>
+      <p class="muted small">Выберите понятие, чтобы найти фрагменты рассуждений на старом языке во вкладке «По смыслу».</p>
+      <div class="concept-catalog"></div>
+    </details>
     <details class="fbox" id="fbox"><summary>Фильтры и параметры <span class="muted" id="fcount"></span></summary>
     <div class="row filters">
       <select id="f-year" aria-label="Год"></select><select id="f-outcome" aria-label="Исход"></select><select id="f-topic" aria-label="Тема"></select>
@@ -165,6 +175,10 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
       <button class="btn" type="submit">Найти фрагменты</button>
     </form>
     <div class="chips" id="sense-examples" aria-label="Примеры понятий"></div>
+    <details class="concept-picker" id="sense-concepts">
+      <summary>Ещё современные понятия</summary>
+      <div class="concept-catalog"></div>
+    </details>
     <div class="opts"><span class="orth" role="group" aria-label="Орфография фрагментов">Орфография:
       <label><input type="radio" name="sense-orth" value="old" checked> дореформенная</label>
       <label><input type="radio" name="sense-orth" value="new"> современная</label>

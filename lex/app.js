@@ -5,6 +5,15 @@
   const $ = (s, r) => (r || document).querySelector(s);
   const DATA = window.LEX_DATA_URL || 'data/';
   const MONTHS = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
+  const MODERN_CONCEPTS = [
+    ['Сделки и договоры', ['недействительность сделки', 'оспаривание сделки', 'толкование договора', 'расторжение договора', 'неосновательное обогащение']],
+    ['Убытки и ответственность', ['возмещение убытков', 'неустойка', 'причинная связь', 'вина потерпевшего', 'возмещение вреда здоровью']],
+    ['Недвижимость', ['право собственности', 'общая собственность', 'раздел имущества', 'регистрация недвижимости', 'приобретательная давность']],
+    ['Наследство', ['завещание', 'принятие наследства', 'исполнитель завещания', 'отказ от наследства', 'оспаривание завещания']],
+    ['Судебный процесс', ['исковая давность', 'бремя доказывания', 'судебные расходы', 'представительство', 'кассация']],
+    ['Предпринимательство', ['перевозка грузов', 'банкротство', 'уступка права требования', 'страховое возмещение', 'акционерное общество']],
+    ['Семья и труд', ['алименты', 'сделка несовершеннолетнего', 'недееспособность', 'трудовой договор', 'производственная травма']],
+  ];
   const FACET_FILTERS = [
     {key:'gender', id:'f-gender', param:'sex', any:'Любой пол'},
     {key:'age', id:'f-age', param:'age', any:'Любой возраст / дееспособность'},
@@ -306,14 +315,21 @@
     $('#reset').addEventListener('click', () => go('search'));
     $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const mode = p.get('mode') === 'sense' ? 'sense' : 'search'; p.delete('at'); p.delete('end'); p.delete('mode'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('#detail').hidden) $('#detail-close').click(); });
-    $('#examples').append(...['исполнитель завещания', 'ущерб от пожара', 'давность', 'арендатор', 'банкротство', '"железной дороги" вред', 'вексель протест']
+    $('#examples').append(...['недействительность сделки', 'возмещение убытков', 'исковая давность', 'договор аренды', 'банкротство', 'страховое возмещение', 'перевозка грузов', 'исполнитель завещания']
       .map(x => h('button', { class: 'chip', onclick: () => go('search', { q: x }) }, x)));
     $('#sense-form').addEventListener('submit', e => {
       e.preventDefault(); const q = $('#sense-q').value.trim(), current = readHash();
       if (current.path === 'sense' && (current.p.get('q') || '') === q) { S.sense.q = q; runSense(); }
       else go('sense', {q});
     });
-    $('#sense-examples').append(...['фиктивные сделки', 'неосновательное обогащение', 'срок исковой давности по договору аренды', 'исполнитель завещания'].map(q => h('button', {class:'chip', onclick:()=>go('sense',{q})}, q)));
+    $('#sense-examples').append(...['фиктивные сделки', 'неосновательное обогащение', 'добросовестный приобретатель', 'бремя доказывания', 'уступка права требования', 'срок принятия наследства', 'возмещение вреда здоровью', 'производственная травма'].map(q => h('button', {class:'chip', onclick:()=>go('sense',{q})}, q)));
+    for (const id of ['search-concepts', 'sense-concepts']) {
+      const box = $('#' + id);
+      box.querySelector('.concept-catalog').append(...MODERN_CONCEPTS.map(([title, queries]) => h('section', {},
+        h('h3', {}, title), h('div', {class:'chips'}, queries.map(q => h('button', {class:'chip', onclick:()=>{
+          box.open = false; go('sense', {q});
+        }}, q))))));
+    }
     $('#sense-more').addEventListener('click', () => { S.sense.shown += 10; renderSense(++S.sense.token); });
     $('#theme').addEventListener('click', () => { const r = document.documentElement; const dark = r.dataset.theme === 'dark' || (!r.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches); r.dataset.theme = dark ? 'light' : 'dark'; });
   }
