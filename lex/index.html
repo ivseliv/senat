@@ -54,6 +54,8 @@ select { max-width: 100%; }
 .chip { border: 1px solid var(--line); background: var(--soft); color: var(--ink2); border-radius: 999px; padding: 3px 11px; font-size: 13px; }
 .chip:hover { border-color: var(--accent); color: var(--ink); }
 .chip.stat { border-radius: 8px; }
+.chip.group { border-style: dashed; background: transparent; }
+.participant-chips:empty { display: none; }
 #status { margin: 14px 0 8px; }
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; margin-bottom: 10px; cursor: pointer; }
 .card:hover { border-color: var(--accent); }
@@ -141,6 +143,12 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
       <select id="f-statute" aria-label="Статья"></select><select id="f-person" aria-label="Сенатор или прокурор"></select>
       <select id="f-sort" aria-label="Порядок"><option value="rel">По релевантности</option><option value="date">Сначала новые</option></select>
     </div>
+    <div class="row filters" aria-label="Участники и социальные группы">
+      <select id="f-gender" aria-label="Пол участника"></select><select id="f-age" aria-label="Возраст и дееспособность"></select>
+      <select id="f-family" aria-label="Семейное положение"></select><select id="f-estate" aria-label="Сословие или занятие"></select>
+      <select id="f-entity" aria-label="Тип организации"></select><select id="f-role" aria-label="Правовое положение участника"></select>
+    </div>
+    <p class="muted small">Признаки участников извлечены только из прямых слов заголовка дела. Пол не определяется по имени; «не указано» означает отсутствие явного обозначения.</p>
     <div class="opts">
       <span class="orth" role="group" aria-label="Орфография текста">Орфография: <label><input type="radio" name="orth" value="old" checked> дореформенная</label> <label><input type="radio" name="orth" value="new"> современная</label></span>
       <label title="Слово «арендатор» найдёт и «наниматель», «ущерб» — «убытки», «вред» и т. д."><input type="checkbox" id="gloss" checked> расширять запрос старыми терминами</label>
@@ -171,7 +179,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
   <section id="view-about" hidden>
     <div id="about">
       <h2>Что это</h2>
-      <p>Решения Правительствующего Сената по гражданским делам, переведённые в удобный для юриста вид: полнотекстовый поиск на современном языке, фильтры по теме, исходу, статье и составу присутствия, карточка решения со ссылками на связанные дела и сводная аналитика практики. Текст показывается в оригинальной дореформенной орфографии (ѣ, і, ѳ, ъ); переключателем «Орфография» его можно прочитать и в современной. Выбор запоминается. Поиск не зависит от орфографии: «вѣдомство» и «ведомство» найдут одно и то же.</p>
+      <p>Решения Правительствующего Сената по гражданским делам, переведённые в удобный для юриста вид: полнотекстовый поиск на современном языке, фильтры по теме, исходу, статье, составу присутствия, участникам и социальным группам, карточка решения со ссылками на связанные дела и сводная аналитика практики. Текст показывается в оригинальной дореформенной орфографии (ѣ, і, ѳ, ъ); переключателем «Орфография» его можно прочитать и в современной. Выбор запоминается. Поиск не зависит от орфографии: «вѣдомство» и «ведомство» найдут одно и то же.</p>
       <h2>Доступные тома</h2>
       <div id="corpus-table"></div>
       <p class="muted small">Пояснения ИИ могут быть подготовлены лишь для части фрагментов. Поиск по тексту и справочнику понятий работает и без них. Для решения с несколькими датами заседаний сохраняется составная дата из заголовка.</p>
@@ -189,6 +197,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
       <ul>
         <li>Текст получен автоматическим распознаванием (модель ИИ) и проверен выборочно. Ошибки возможны: сверяйте числа, номера статей и фамилии с изданием.</li>
         <li>Тема, исход дела, названия кодексов и ссылки на прежние решения определены автоматически по правилам и могут быть неточны.</li>
+        <li>Пол, возраст, семейное положение, сословие, занятие и правовая роль отмечаются только при прямом обозначении в заголовке дела. Они не определяются по имени и не описывают всех участников решения.</li>
         <li>Пока в корпусе не все годы (см. вкладку «Аналитика»); по мере распознавания томов данные добавляются.</li>
         <li>Это исследовательский инструмент, а не юридическая консультация. Ссылайтесь на первоисточник.</li>
       </ul>

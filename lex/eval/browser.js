@@ -52,7 +52,23 @@ fs.mkdirSync(out,{recursive:true});
   // Старый поиск и аналитика продолжают работать.
   await page.click('#tab-search'); await page.fill('#q','давность');await page.click('#form button[type=submit]');
   await page.waitForSelector('#results .card');
+  // Прямые и комбинированные ссылки на социальные фильтры.
+  await page.goto(base+'#/search?sex='+encodeURIComponent('Женщины'));
+  await page.waitForFunction(()=>document.querySelector('#status').textContent.includes('12'));
+  assert.equal(await page.locator('#f-gender').inputValue(),'Женщины');
+  assert(await page.locator('#results .chip.group').count()>0);
+  await page.goto(base+'#/search?age='+encodeURIComponent('Малолетние'));
+  await page.waitForFunction(()=>document.querySelector('#status').textContent.includes('1'));
+  assert.equal(await page.locator('#f-age').inputValue(),'Малолетние');
+  assert((await page.locator('#results').innerText()).includes('1905 г. № 94'));
+  await page.goto(base+'#/search?estate='+encodeURIComponent('Крестьяне')+'&entity='+encodeURIComponent('Банки и кредитные учреждения'));
+  await page.waitForFunction(()=>!document.querySelector('#status').textContent.includes('Поиск…'));
+  assert.equal(await page.locator('#f-estate').inputValue(),'Крестьяне');
+  assert.equal(await page.locator('#f-entity').inputValue(),'Банки и кредитные учреждения');
+  await page.reload(); await page.waitForSelector('#results .card');
+  assert.equal(await page.locator('#f-estate').inputValue(),'Крестьяне');
   await page.click('#tab-analytics');await page.waitForSelector('.kpi');
+  assert((await page.locator('#analytics-body').innerText()).includes('Пол прямо указан'));
   // Новый том: фильтр, составная дата, конец решения и ссылка на пассаж.
   const metadata=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../data/meta.json'),'utf8'));
   if(metadata.volumes.some(v=>v.year===1904)) {
