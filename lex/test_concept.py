@@ -5,6 +5,7 @@ import json
 import subprocess
 import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 from passages import source_pages
 
@@ -12,6 +13,24 @@ ROOT=Path(__file__).resolve().parent
 REPO=ROOT.parent
 
 class ConceptTests(unittest.TestCase):
+    def test_import_preserves_other_volumes(self):
+        import enrich
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            (root/'enrichment').mkdir()
+            old=root/'enrichment/1905.json'
+            old.write_text('{"provenance":"Прежнее происхождение", "passages":{}}\n')
+            before=old.read_bytes()
+            pid='1904-001:0-10'
+            response=root/'response.json'
+            response.write_text(json.dumps(dict(provenance='Новый том', passages={pid:dict(
+                sha256='sample',summary='Описание',concepts=['понятие'],evidence='источник')})))
+            with patch.object(enrich,'ROOT',root), patch.object(enrich,'corpus',return_value=[dict(
+                    id=pid,sha256='sample',text='источник')]), patch('sys.argv',['enrich.py','import',str(response)]):
+                enrich.main()
+            self.assertEqual(old.read_bytes(),before)
+            self.assertEqual(json.loads((root/'enrichment/1904.json').read_text())['provenance'],'Новый том')
+
     def test_corpus_provenance(self):
         meta=json.loads((ROOT/'data/meta.json').read_text())['decisions']
         documents={}

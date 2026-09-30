@@ -315,7 +315,8 @@
   }
   function pageLabel(p) {
     const recovered = p.sources.some(s=>s.page_method==='neighbors');
-    return (p.pages.length ? 'с. ' + p.pages.join(', ') : 'страница не определена') + (recovered ? ' (номер восстановлен по соседним колонтитулам)' : '');
+    const partial = p.pages.length && p.sources.some(s=>s.page===null);
+    return (p.pages.length ? 'с. ' + p.pages.join(', ') : 'страница не определена') + (recovered ? ' (номер восстановлен по соседним колонтитулам)' : '') + (partial ? ' (часть страниц не определена)' : '');
   }
   async function renderSense(token) {
     const box = $('#sense-results'); box.replaceChildren();
