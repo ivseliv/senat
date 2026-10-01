@@ -2,6 +2,7 @@
 """Привязка пассажей к локальным сканам. Ни сети, ни вызовов модели.
 
 python3 lex/build_scans.py --source-root /путь/к/локальному/senat --cache work/scan-cache
+Экспорт с одной книжной страницей на PDF-страницу: --years 1897 --leaf-pdf 1897=/путь/1897.pdf
 Координаты принимаются только при строгом выравнивании текста с ABBYY.
 Если выравнивание не подтверждено, сохраняется только полная страница.
 """
@@ -66,15 +67,17 @@ def crop_box(piece, ocr, words, mapping, ids, width, height):
 
 
 def pdf_pages(pdf, cache):
-    bbox = cache / (pdf.stem + '.bbox.html')
+    # Одинаковое имя бывает у исходного скана и нового экспорта FineReader.
+    digest = hashlib.sha256(pdf.read_bytes()).hexdigest()[:16]
+    bbox = cache / (pdf.stem + '.' + digest + '.bbox.html')
     if not bbox.exists():
         subprocess.run(['pdftotext', '-bbox-layout', str(pdf), str(bbox)], check=True)
     return ET.parse(bbox).findall('.//x:page', NS)
 
 
-def page_words(page, side):
+def page_words(page, side=None):
     width, height = float(page.attrib['width']), float(page.attrib['height'])
-    lo, hi = (0, width / 2) if side == 'L' else (width / 2, width)
+    lo, hi = (0, width) if side is None else ((0, width / 2) if side == 'L' else (width / 2, width))
     lines = []
     for line in page.findall('.//x:line', NS):
         words = []
@@ -87,15 +90,47 @@ def page_words(page, side):
         if words:
             lines.append(sorted(words, key=lambda w: w['x0']))
     lines.sort(key=lambda line: (line[0]['y0'], line[0]['x0']))
-    return [w for line in lines for w in line], width / 2, height
+    return [w for line in lines for w in line], hi - lo, height
 
 
-def leaf_image(source, year, fn, pdf, cache):
+def leaf_page_index(filename):
+    """p0001_L/p0001_R → нулевые индексы одиночных PDF-страниц 0/1."""
+    match = re.fullmatch(r'p(\d{4})_([LR])(?:\.txt)?', filename)
+    if not match or int(match[1]) < 1:
+        raise ValueError(f'Некорректное имя листа: {filename}')
+    return (int(match[1]) - 1) * 2 + (match[2] == 'R')
+
+
+def validate_leaf_pdf(pages, year, byfile):
+    """Сначала проверяем полный порядок нового экспорта, до записи изображений."""
+    leaves = sorted((ROOT / 'ocr' / str(year)).glob('p????_[LR].txt'))
+    if not leaves or len(pages) != len(leaves) or [leaf_page_index(p.name) for p in leaves] != list(range(len(pages))):
+        raise ValueError(f'{year}: одиночный PDF должен содержать все {len(leaves)} листов в исходном порядке')
+    for filename in sorted(byfile):
+        words, _, _ = page_words(pages[leaf_page_index(filename)])
+        raw = (ROOT / 'ocr' / str(year) / filename).read_text()
+        ocr = norm(re.sub(r'\[\[.*?\]\]', '', raw))
+        target = norm(' '.join(w['text'] for w in words))
+        ratio = difflib.SequenceMatcher(None, ocr, target, autojunk=False).ratio()
+        if ratio < .90:
+            raise ValueError(f'{year}/{filename}: PDF-страница не подтверждена текстом ({ratio:.3f}); экспорт не принят')
+
+
+def leaf_image(source, year, fn, pdf, cache, single_pages=False, digest=None):
+    digest = digest or hashlib.sha256(pdf.read_bytes()).hexdigest()[:16]
+    if single_pages:
+        # Рендерим именно тот PDF, из которого получены координаты: FineReader
+        # может изменить обрезку, размеры и наклон исходной картинки.
+        page = leaf_page_index(fn) + 1
+        ready = cache / f'{year}-{digest}-{fn}.png'
+        if not ready.exists():
+            subprocess.run(['pdftoppm', '-f', str(page), '-l', str(page), '-scale-to-x', '1100', '-scale-to-y', '-1', '-png', '-gray', '-singlefile', str(pdf), str(ready.with_suffix(''))], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
+        return Image.open(ready).convert('L')
     ready = source / 'work' / str(year) / (fn + '.png')
     if ready.exists():
         return Image.open(ready).convert('L')
     number, side = int(fn[1:5]), fn[-1]
-    spread = cache / f'{year}-{number:04d}.png'
+    spread = cache / f'{year}-{digest}-{number:04d}.png'
     if not spread.exists():
         subprocess.run(['pdftoppm', '-f', str(number), '-l', str(number), '-scale-to-x', '2200', '-scale-to-y', '-1', '-png', '-gray', '-singlefile', str(pdf), str(spread.with_suffix(''))], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
     with Image.open(spread) as im:
@@ -103,13 +138,22 @@ def leaf_image(source, year, fn, pdf, cache):
         return im.crop((0 if side == 'L' else mid, 0, mid if side == 'L' else im.width, im.height)).convert('L')
 
 
-def build(source, cache):
+def build(source, cache, years=None, leaf_pdfs=None):
     cache.mkdir(parents=True, exist_ok=True)
     meta = json.loads((ROOT / 'lex/data/meta.json').read_text())
+    leaf_pdfs = leaf_pdfs or {}
+    available = {v['year'] for v in meta['volumes']}
+    if (set(years or []) | set(leaf_pdfs)) - available:
+        raise ValueError('Выбран год, отсутствующий в корпусе')
     summary = []
     for volume in meta['volumes']:
         year = volume['year']
-        pdf = source / 'scans' / f'se_a_u_k_ow_-da_e_o-u_k_ow_{year}.pdf'
+        if years and year not in years:
+            current = json.loads((ROOT / 'lex/data' / f'scans-{year}.json').read_text())
+            summary.append(dict(year=year, **current['coverage']))
+            continue
+        single_pages = year in leaf_pdfs
+        pdf = leaf_pdfs.get(year, source / 'scans' / f'se_a_u_k_ow_-da_e_o-u_k_ow_{year}.pdf')
         if not pdf.exists() or pdf.stat().st_size < 1000:
             raise ValueError(f'Нужен уже локальный PDF {year}: {pdf}; LFS не скачиваем')
         pages = pdf_pages(pdf, cache)
@@ -124,26 +168,35 @@ def build(source, cache):
                 groups[s['file']].append(s)
             for filename, spans in groups.items():
                 byfile[filename].append((p, spans))
+        if single_pages:
+            validate_leaf_pdf(pages, year, byfile)
         manifest = dict(version=1, year=year, source_pdf_sha256=hashlib.sha256(pdf.read_bytes()).hexdigest(), pages={}, passages={}, decisions={}, passage_sha256={p['id']:p['sha256'] for p in data['passages']})
+        if single_pages:
+            manifest.update(source_layout='single-pages', source_pdf_pages=len(pages))
+        stage = cache / 'built' / str(year) / manifest['source_pdf_sha256'][:16]
         crops = 0
         for filename, items in sorted(byfile.items()):
             fn = Path(filename).stem
-            page = pages[int(fn[1:5])-1]
-            words, width, height = page_words(page, fn[-1])
+            page_index = leaf_page_index(fn) if single_pages else int(fn[1:5])-1
+            page = pages[page_index]
+            words, width, height = page_words(page, None if single_pages else fn[-1])
             raw = (ROOT / 'ocr' / str(year) / filename).read_text()
             body = re.sub(r'\[\[.*?\]\]', '', raw)
             ocr = norm(body)
             mapping, ids = alignment(ocr, words)
-            image = leaf_image(source, year, fn, pdf, cache)
-            base = ROOT / 'lex/scans' / str(year)
+            image = leaf_image(source, year, fn, pdf, cache, single_pages, manifest['source_pdf_sha256'][:16])
+            base = stage / 'scans' / str(year)
             (base / 'pages').mkdir(parents=True, exist_ok=True)
             (base / 'fragments').mkdir(exist_ok=True)
-            full = f'scans/{year}/pages/{fn}.webp'
-            image.save(ROOT / 'lex' / full, format='WEBP', quality=86, method=4)
+            suffix = '-' + manifest['source_pdf_sha256'][:16] if single_pages else ''
+            full = f'scans/{year}/pages/{fn}{suffix}.webp'
+            image.save(stage / full, format='WEBP', quality=86, method=4)
             page_nums = {s['page'] for _, spans in items for s in spans if s['page'] is not None}
             if len(page_nums) > 1:
                 raise ValueError(f'{year}/{fn}: противоречивые номера страниц {page_nums}')
             info = dict(file=filename, page=next(iter(page_nums), None), full=full, width=image.width, height=image.height, ocr_sha256=hashlib.sha256(raw.encode()).hexdigest())
+            if single_pages:
+                info['pdf_page'] = page_index + 1
             manifest['pages'][filename] = info
             for p, spans in items:
                 boxes = [crop_box(text_by_id[p['decision']][s['start']:s['end']], ocr, words, mapping, ids, width, height) for s in spans]
@@ -151,10 +204,15 @@ def build(source, cache):
                 if boxes and all(boxes):
                     box = [0, min(b['box'][1] for b in boxes), 1, max(b['box'][3] for b in boxes)]
                     if .025 < box[3] - box[1] < .85:
-                        key = hashlib.sha256((p['id'] + filename).encode()).hexdigest()[:16]
+                        # Новые геометрия/рамка получают новый URL: браузер
+                        # не должен показать старый кадр из кеша с новой рамкой.
+                        identity = p['id'] + filename
+                        if single_pages:
+                            identity += manifest['source_pdf_sha256'] + json.dumps(box)
+                        key = hashlib.sha256(identity.encode()).hexdigest()[:16]
                         thumb = f'scans/{year}/fragments/{key}.webp'
                         cut = image.crop((0, int(box[1]*image.height), image.width, min(image.height, int(box[3]*image.height)+1)))
-                        cut.save(ROOT / 'lex' / thumb, format='WEBP', quality=86, method=4)
+                        cut.save(stage / thumb, format='WEBP', quality=86, method=4)
                         result.update(kind='fragment', image=thumb, box=box, coverage=min(b['coverage'] for b in boxes), width=cut.width, height=cut.height)
                         crops += 1
                 if result['kind'] == 'page':
@@ -165,6 +223,17 @@ def build(source, cache):
                     decision_pages.append(filename)
             print(f'{year}/{fn}: готово', flush=True)
         manifest['coverage'] = dict(pages=len(byfile), fragments=crops, references=sum(len(v) for v in manifest['passages'].values()))
+        assets = {r[k] for refs in manifest['passages'].values() for r in refs for k in ('image', 'full')}
+        for asset in sorted(assets):
+            destination = ROOT / 'lex' / asset
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            (stage / asset).replace(destination)
+        # После исправлений текста идентификаторы кадров меняются. Удаляем
+        # только неиспользуемые WebP выбранного тома после полной сборки.
+        for folder in ('pages', 'fragments'):
+            for old in (ROOT / 'lex/scans' / str(year) / folder).glob('*.webp'):
+                if old.relative_to(ROOT / 'lex').as_posix() not in assets:
+                    old.unlink()
         (ROOT / 'lex/data' / f'scans-{year}.json').write_text(json.dumps(manifest, ensure_ascii=False, separators=(',', ':')))
         summary.append(dict(year=year, **manifest['coverage']))
     (ROOT / 'lex/data/scans.json').write_text(json.dumps(dict(version=1, volumes=summary), ensure_ascii=False, separators=(',', ':')))
@@ -175,5 +244,13 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--source-root', required=True, type=Path)
     ap.add_argument('--cache', required=True, type=Path)
+    ap.add_argument('--years', nargs='+', type=int, help='Пересобрать только выбранные тома')
+    ap.add_argument('--leaf-pdf', action='append', default=[], metavar='ГОД=ПУТЬ', help='Уже локальный PDF с одной книжной страницей на PDF-страницу')
     a = ap.parse_args()
-    build(a.source_root, a.cache)
+    overrides = {}
+    for value in a.leaf_pdf:
+        year, sep, path = value.partition('=')
+        if not sep or not year.isdigit() or not path or int(year) in overrides:
+            ap.error('--leaf-pdf ожидает неповторяющееся ГОД=ПУТЬ')
+        overrides[int(year)] = Path(path)
+    build(a.source_root, a.cache, a.years, overrides)
