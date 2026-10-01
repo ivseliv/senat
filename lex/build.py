@@ -14,6 +14,7 @@
 и проверяется тестом lex/test_parity.py, чтобы запрос и индекс совпадали.
 """
 import collections, glob, json, math, os, re, sys
+from pathlib import Path
 from passages import build_passages
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
@@ -66,9 +67,9 @@ MONTHS = {'января': 1, 'февраля': 2, 'марта': 3, 'апреля
           'сентября': 9, 'октября': 10, 'ноября': 11, 'декабря': 12}
 HDR = re.compile(r'^([З\d]{1,3})\s*[.,]\s*[—–\-]?\s*(\d{4})\s+(?:года\s+)?([А-Яа-яѢѣІі]+)\s+(\d{1,2})', re.I)
 # Составные даты сохраняем буквально, не выбирая одну из дат заседаний.
-RAW_HDR = re.compile(r'^([З\d]{1,3})\s*[.,]\s*[—–\-]?\s*(\d{4}(?:\s*/\s*[\d₀-₉]+)?\s+(?:года\s+)?.+?\s+дня)\.?\s*(.*)$', re.I | re.S)
+RAW_HDR = re.compile(r'^([З\d]{1,3})\s*[.,]\s*[—–\-]?\s*(\d{4}(?:\s*/\s*[\d₀-₉]+)?\s+(?:года\s+)?.+?\s+(?:дня|чиселъ))\.?\s*(.*)$', re.I | re.S)
 NUMBERED_HDR = re.compile(r'^[З\d]{1,3}\s*[.,]\s*[—–\-]?\s*\d{4}', re.I)
-ANCHOR = re.compile(r'^\(\s*Предс[ѣе]дательствовал', re.I)
+ANCHOR = re.compile(r'^\(?\s*Предс[ѣе]дательствовал', re.I)
 PERSON = re.compile(r'((?:[А-ЯЁІѢ]\.\s?){1,3})\s*([А-ЯЁІѢ][А-Яа-яЁёѢѣІіѲѳѴѵъь\-]+)')
 TITLE_WORDS = re.compile(r'\b(первоприсутствующій|сенаторъ|товарищъ|оберъ-прокурора|оберъ-прокуроръ|исп\.|обяз\.|графъ|баронъ|князь)\b', re.I)
 
@@ -476,6 +477,26 @@ def analytics(docs, vols):
         A[k] = dict(sorted(A[k].items(), key=lambda kv: (-kv[1], kv[0])) if k in ('outcomes', 'topics') else sorted(A[k].items()))
     return A
 
+def validate_scans():
+    """Не публикуем изображения, привязанные к устаревшему тексту OCR."""
+    import hashlib
+    for path in sorted(Path(OUT).glob('scans-*.json')):
+        manifest = json.loads(path.read_text())
+        year = manifest['year']
+        passages = json.loads((Path(OUT) / f'passages-{year}.json').read_text())['passages']
+        expected = {p['id']: p['sha256'] for p in passages}
+        if expected != manifest.get('passage_sha256'):
+            raise ValueError(f'{year}: сканы устарели; пересоберите build_scans.py из локального PDF')
+        for fn, info in manifest['pages'].items():
+            source = Path(ROOT) / 'ocr' / str(year) / fn
+            if hashlib.sha256(source.read_bytes()).hexdigest() != info['ocr_sha256']:
+                raise ValueError(f'{year}/{fn}: изображение связано с другой версией OCR')
+        for refs in manifest['passages'].values():
+            for ref in refs:
+                if not (Path(ROOT) / 'lex' / ref['image']).is_file() or not (Path(ROOT) / 'lex' / ref['full']).is_file():
+                    raise ValueError(f'{year}: отсутствует изображение скана {ref["file"]}')
+
+
 def build_single():
     """Один HTML-файл с данными внутри: lex/dist/senat-lex.html (открывается без сервера)."""
     d = os.path.join(ROOT, 'lex')
@@ -497,5 +518,6 @@ def build_single():
 
 if __name__ == '__main__':
     main()
+    validate_scans()
     if '--single' in sys.argv:
         build_single()

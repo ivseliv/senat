@@ -69,6 +69,19 @@ class VolumeParsingTests(unittest.TestCase):
         self.assertEqual(decisions[1]['date_label'], '1903/₄ года декабря 17 / февраля 11 -го дня')
         self.assertEqual(decisions[1]['headnote'], 'Дело о завѣщаніи.')
 
+    def test_unparenthesized_court_composition(self):
+        raw = decision('94.—1897 года октября 15-го дня. Вопрос нотариусам.', 'Вывод Сената.').replace(ANCHOR, 'Предсѣдательствовалъ сенаторъ Ивановъ.')
+        _, decisions, _ = split_volume(raw)
+        self.assertEqual([d['num'] for d in decisions], [94])
+        self.assertEqual(decisions[0]['text'], 'Вывод Сената.')
+
+    def test_date_with_two_days_keeps_both_days(self):
+        raw = decision('95.—1897 года октября 29/30 чиселъ. Дело.', 'Текст.')
+        _, decisions, _ = split_volume(raw)
+        self.assertIsNone(decisions[0]['date'])
+        self.assertEqual(decisions[0]['date_label'], '1897 года октября 29/30 чиселъ')
+        self.assertEqual(decisions[0]['headnote'], 'Дело.')
+
     def test_duplicate_numbers_stop_build(self):
         raw = '\n\n'.join([
             decision('63.—1904 года апрѣля 14-го дня. Дело.', 'Первый ответ OCR.'),

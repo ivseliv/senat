@@ -55,6 +55,65 @@
     return S.stemCache.get(d.i);
   }
 
+  /* Сканы: метаданные по томам, картинки только при показе/открытии. */
+  const scanData = new Map();
+  function loadScans(year) {
+    if (!scanData.has(year)) scanData.set(year, loadJSON(`scans-${year}.json`).catch(err => { scanData.delete(year); throw err; }));
+    return scanData.get(year);
+  }
+  function scanURL(path) {
+    return (window.LEX_SCAN_URL || (window.LEX_INLINE ? 'https://ivseliv.github.io/senat/lex/' : './')) + path;
+  }
+  function scanLabel(d, ref) {
+    return `Том ${d.vol} · ` + (ref.page == null ? `лист ${ref.file.replace('.txt','')}, печатный номер не определён` : `с. ${ref.page}`);
+  }
+  function openScan(d, ref) {
+    const label = scanLabel(d, ref);
+    const image = h('img', {src:scanURL(ref.full), alt:`Полная страница издания: ${label}`, width:ref.width});
+    const sheet = h('div', {class:'scan-sheet'}, image);
+    if (ref.box) sheet.append(h('div', {class:'scan-outline', style:`top:${ref.box[1]*100}%;height:${(ref.box[3]-ref.box[1])*100}%`, 'aria-hidden':'true'}));
+    const viewer = h('div', {class:'scan-scroll'}, sheet);
+    const dialog = h('dialog', {class:'scan-dialog', 'aria-label':`Скан: ${label}`},
+      h('div', {class:'scan-toolbar'}, h('strong',{},label),
+        h('button',{class:'btn ghost',onclick:e=>{const zoom=sheet.classList.toggle('zoom');e.target.textContent=zoom?'По ширине':'Увеличить';}},'Увеличить'),
+        h('a',{href:scanURL(ref.full),target:'_blank',rel:'noopener'},'Открыть изображение'),
+        h('button',{class:'btn ghost',onclick:()=>dialog.close(),'aria-label':'Закрыть скан'},'Закрыть')),
+      viewer);
+    image.addEventListener('error',()=>viewer.replaceChildren(h('p',{},'Не удалось загрузить скан. Проверьте подключение и попробуйте открыть изображение по ссылке.')));
+    dialog.addEventListener('close',()=>dialog.remove());
+    dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close();});
+    document.body.append(dialog); dialog.showModal();
+  }
+  function scanFigure(d, ref) {
+    const label = scanLabel(d, ref);
+    if (window.LEX_INLINE && location.protocol==='file:') return h('p',{class:'small'},
+      h('a',{href:scanURL(ref.full),target:'_blank',rel:'noopener'},`${label} — скан на сайте (нужен интернет)`));
+    const img = h('img',{class:'scan-img',src:scanURL(ref.image || ref.full),loading:'lazy',decoding:'async',
+      width:ref.width,height:ref.height,alt:`${ref.kind==='fragment'?'Фрагмент':'Полная страница'}: ${label}`});
+    const button=h('button',{class:'scan-preview',onclick:()=>openScan(d,ref),'aria-label':`Открыть всю страницу: ${label}`},img);
+    const caption=h('figcaption',{class:'small muted'},`${label} · ${ref.kind==='fragment'?'фрагмент страницы':'страница целиком; точный участок не определён'}`,
+      h('button',{class:'scan-open',onclick:()=>openScan(d,ref)},'Открыть всю страницу'));
+    img.addEventListener('error',()=>button.replaceChildren(h('span',{class:'small'},'Скан не загрузился. Открыть страницу')));
+    return h('figure',{class:'scan-figure','data-source':ref.file,'data-kind':ref.kind},button,caption);
+  }
+  function scanStrip(d, refs) {
+    const box=h('div',{class:'scan-strip'},refs.slice(0,2).map(r=>scanFigure(d,r)));
+    if(refs.length>2) box.append(h('details',{},h('summary',{},`Ещё страницы этого фрагмента (${refs.length-2})`),refs.slice(2).map(r=>scanFigure(d,r))));
+    return box;
+  }
+  function bestScanPassage(manifest, d, text, qs) {
+    const candidates=Object.keys(manifest.passages).filter(id=>id.startsWith(d.id+':'));
+    let best=null, score=-1;
+    for(const id of candidates) {
+      const [start,end]=id.split(':')[1].split('-').map(Number);
+      const part=window.Concept.slice(text,start,end), ss=L.stems(part);
+      const unique=new Set(ss), found=qs.filter(q=>unique.has(q));
+      const n=new Set(found).size*100 + ss.filter(q=>qs.includes(q)).length;
+      if(n>score) {score=n;best={id,start,end,text:part};}
+    }
+    return best;
+  }
+
   /* ---------------------------------------------------------------- маршрутизация */
   function readHash() {
     const p = new URLSearchParams(location.hash.replace(/^#\/?[^?]*\??/, ''));
@@ -174,7 +233,7 @@
         h('div', { class: 'chips' }, d.topics.map(t => h('button', { class: 'chip', onclick: () => { S.f.topic = t; pushSearch(); } }, t))),
         h('div', { class: 'chips participant-chips' }, groupItems(d).slice(0, 8).map(g => h('button', { class: 'chip group', title: 'Фильтровать решения по этому признаку', onclick: () => selectFacet(g.key, g.label) }, g.label))));
       card.addEventListener('click', e => { if (!e.target.closest('button,a')) openFromList(d.id); });
-      card.addEventListener('keydown', e => { if (e.key === 'Enter') openFromList(d.id); });
+      card.addEventListener('keydown', e => { if (e.key === 'Enter' && e.target === card) openFromList(d.id); });
       box.append(card);
     }
     $('#more').hidden = total <= S.shown;
@@ -186,6 +245,13 @@
       const el = box.querySelector(`.snip[data-i="${d.i}"]`); if (!el) continue;
       let body = text; const cut = body.indexOf('\n\n'); if (!qs.length && cut > 0) body = body;
       el.innerHTML = L.snippet(M(body), qs, 300);
+      if (q) {
+        try {
+          const scans=await loadScans(d.vol); if(token!==runToken)return;
+          const p=bestScanPassage(scans,d,text,qs);
+          if(p) {el.innerHTML=L.snippet(M(p.text),qs,300);el.after(scanStrip(d,scans.passages[p.id]));}
+        } catch(err) { /* При отсутствии сканов текстовый поиск остаётся доступен. */ }
+      }
     }
   }
   const plural = (n, a, b, c) => { const m = n % 100, k = n % 10; return m > 10 && m < 20 ? c : k === 1 ? a : k > 1 && k < 5 ? b : c; };
@@ -253,6 +319,17 @@
       d.cites.length ? h('section', {}, h('h3', {}, 'Ссылается на решения'), h('ul', {}, d.cites.map(c => { const t = inCorpus(c); return h('li', {}, t ? h('a', { href: '#/d/' + t.id }, `${c[0]} г. № ${c[1]} — ${M(t.headnote).slice(0, 90)}…`) : `${c[0]} г. № ${c[1]} (нет в корпусе)`); }))) : '',
       cited.length ? h('section', {}, h('h3', {}, 'Цитируется в'), h('ul', {}, cited.map(x => h('li', {}, h('a', { href: '#/d/' + x.id }, `${x.vol} г. № ${x.num} — ${M(x.headnote).slice(0, 90)}…`))))) : '',
       d.similar.length ? h('section', {}, h('h3', {}, 'Похожие решения'), h('ul', {}, d.similar.map(([j, sc]) => { const x = S.meta.decisions[j]; return h('li', {}, h('a', { href: '#/d/' + x.id }, `${x.vol} г. № ${x.num} — ${M(x.headnote).slice(0, 100)}…`), h('span', { class: 'muted' }, ` (сходство ${Math.round(sc * 100)}%)`)); }))) : '');
+    const scanSection=h('details',{class:'detail-scans'},h('summary',{},target?'Сканы найденного фрагмента':'Страницы решения в издании'));
+    scanSection.addEventListener('toggle',async()=>{
+      if(!scanSection.open || scanSection.dataset.loaded)return;
+      try {
+        const scans=await loadScans(d.vol);
+        const refs=target?scans.passages[target.id]:(scans.decisions[d.id]||[]).map(file=>({...scans.pages[file],kind:'page'}));
+        if(refs && refs.length) {scanSection.append(scanStrip(d,refs));scanSection.dataset.loaded='1';}
+        else scanSection.append(h('p',{class:'small'},'Сканы этого места пока недоступны.'));
+      } catch(err) {scanSection.append(h('p',{class:'small'},'Не удалось загрузить список страниц. Закройте и откройте этот раздел для повторной попытки.'));}
+    });
+    body.before(scanSection);
     $('#detail').scrollTop = 0;
     if (target) {
       const anchor = $('#passage-target');
@@ -314,7 +391,7 @@
     $('#more').addEventListener('click', () => { S.shown += 20; renderResults(++runToken); });
     $('#reset').addEventListener('click', () => go('search'));
     $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const mode = p.get('mode') === 'sense' ? 'sense' : 'search'; p.delete('at'); p.delete('end'); p.delete('mode'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('#detail').hidden) $('#detail-close').click(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && !document.querySelector('.scan-dialog[open]') && !$('#detail').hidden) $('#detail-close').click(); });
     $('#examples').append(...['недействительность сделки', 'возмещение убытков', 'исковая давность', 'договор аренды', 'банкротство', 'страховое возмещение', 'перевозка грузов', 'исполнитель завещания']
       .map(x => h('button', { class: 'chip', onclick: () => go('search', { q: x }) }, x)));
     $('#sense-form').addEventListener('submit', e => {
@@ -392,6 +469,10 @@
           h('details', {}, h('summary', {}, 'Цитата, на которой основано пояснение'), h('p', {}, '«… ' + M(p.ai.evidence) + ' …»'))) : '',
         h('div', {class:'card-top'}, h('span', {class:'num'}, `№ ${d.num}`), h('span', {class:'muted'}, `${fmtDate(d.date, d.date_label)} · том ${d.vol} · ${pageLabel(p)}`), h('span', {class:'badge'}, d.outcome)),
         h('p', {class:'small'}, h('a', {href:link}, 'Открыть в карточке на этом месте'))));
+      try {
+        const scans=await loadScans(d.vol);if(token!==S.sense.token)return;
+        const refs=scans.passages[p.id];if(refs)box.lastElementChild.append(scanStrip(d,refs));
+      } catch(err) { /* Скан не является условием доступа к первоисточнику. */ }
     }
     $('#sense-more').hidden=hits.length<=S.sense.shown;
   }
