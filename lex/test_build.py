@@ -9,6 +9,49 @@ def decision(header, body):
     return f'{header}\n\n{ANCHOR}\n\n{body}'
 
 class VolumeParsingTests(unittest.TestCase):
+    def test_printer_signature_does_not_hide_next_header(self):
+        raw = '\n\n'.join([
+            decision('10.—1897 года февраля 5-го дня. Первое дело.', 'Первое решение.'),
+            decision('Гражд. 1897 г. 4 11.—1897 года февраля 12-го дня. Второе дело.', 'Второе решение.'),
+        ])
+        _, decisions, _ = split_volume(raw)
+        self.assertEqual([d['num'] for d in decisions], [10, 11])
+        self.assertEqual(decisions[1]['date'], '1897-02-12')
+        self.assertEqual(decisions[1]['headnote'], 'Второе дело.')
+
+    def test_printed_date_without_year_word(self):
+        # В №7 за 1897 год слово «года» отсутствует в самом издании.
+        raw = decision('7.—1897 февраля 5-го дня. Дело Рубинштейна.', 'Рассуждение Сената.')
+        _, decisions, _ = split_volume(raw)
+        self.assertEqual(decisions[0]['num'], 7)
+        self.assertEqual(decisions[0]['date'], '1897-02-05')
+        self.assertEqual(decisions[0]['headnote'], 'Дело Рубинштейна.')
+
+    def test_front_index_does_not_hide_decisions(self):
+        raw = '\n\n'.join([
+            'РѢШЕНІЯ ГРАЖДАНСКАГО КАССАЦІОННАГО ДЕПАРТАМЕНТА.',
+            'АЛФАВИТНЫЙ УКАЗАТЕЛЬ лицъ.',
+            'Ивановъ — 1. Петровъ — 2.',
+            decision('1.—1897 года января 15-го дня. Первое дело.', 'Первое решение.'),
+            decision('2.—1897 года января 15-го дня. Второе дело.', 'Второе решение.'),
+        ])
+        _, decisions, back = split_volume(raw)
+        self.assertEqual([d['num'] for d in decisions], [1, 2])
+        self.assertEqual(decisions[-1]['text'], 'Второе решение.')
+        self.assertEqual(back, '')
+
+    def test_front_and_back_indexes_are_distinguished(self):
+        raw = '\n\n'.join([
+            'АЛФАВИТНЫЙ УКАЗАТЕЛЬ лицъ передъ текстомъ.',
+            decision('1.—1897 года января 15-го дня. Дело.', 'Рассуждение Сената.'),
+            'Алфавитный указатель законовъ.',
+            'Статья 1254 — решение 1.',
+        ])
+        _, decisions, back = split_volume(raw)
+        self.assertEqual(len(decisions), 1)
+        self.assertEqual(decisions[0]['text'], 'Рассуждение Сената.')
+        self.assertEqual(back, 'Алфавитный указатель законовъ.\n\nСтатья 1254 — решение 1.')
+
     def test_compound_date_does_not_merge_adjacent_decisions(self):
         raw = '\n\n'.join([
             decision('41.—1904 года марта 3-го дня. Первое дело.', 'Рассуждение первого решения.'),

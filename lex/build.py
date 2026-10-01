@@ -64,9 +64,9 @@ def stems(text):
 
 MONTHS = {'января': 1, 'февраля': 2, 'марта': 3, 'апреля': 4, 'мая': 5, 'июня': 6, 'июля': 7, 'августа': 8,
           'сентября': 9, 'октября': 10, 'ноября': 11, 'декабря': 12}
-HDR = re.compile(r'^([З\d]{1,3})\s*[.,]\s*[—–\-]?\s*(\d{4})\s+года\s+([А-Яа-яѢѣІі]+)\s+(\d{1,2})', re.I)
+HDR = re.compile(r'^([З\d]{1,3})\s*[.,]\s*[—–\-]?\s*(\d{4})\s+(?:года\s+)?([А-Яа-яѢѣІі]+)\s+(\d{1,2})', re.I)
 # Составные даты сохраняем буквально, не выбирая одну из дат заседаний.
-RAW_HDR = re.compile(r'^([З\d]{1,3})\s*[.,]\s*[—–\-]?\s*(\d{4}(?:\s*/\s*[\d₀-₉]+)?\s+года\s+.+?\s+дня)\.?\s*(.*)$', re.I | re.S)
+RAW_HDR = re.compile(r'^([З\d]{1,3})\s*[.,]\s*[—–\-]?\s*(\d{4}(?:\s*/\s*[\d₀-₉]+)?\s+(?:года\s+)?.+?\s+дня)\.?\s*(.*)$', re.I | re.S)
 NUMBERED_HDR = re.compile(r'^[З\d]{1,3}\s*[.,]\s*[—–\-]?\s*\d{4}', re.I)
 ANCHOR = re.compile(r'^\(\s*Предс[ѣе]дательствовал', re.I)
 PERSON = re.compile(r'((?:[А-ЯЁІѢ]\.\s?){1,3})\s*([А-ЯЁІѢ][А-Яа-яЁёѢѣІіѲѳѴѵъь\-]+)')
@@ -96,12 +96,19 @@ def department(head):
 
 def split_volume(text):
     paras = [p.strip() for p in text.split('\n\n') if p.strip()]
-    back = next((i for i, p in enumerate(paras) if re.match(r'^Алфавитный указатель', p, re.I)), len(paras))
+    # В некоторых томах (1897) указатель находится также перед решениями.
+    # Хвост начинается только после первого заголовка с судебным составом.
+    all_anchors = [i for i, p in enumerate(paras) if i and ANCHOR.match(p)]
+    first_head = next((i - 1 for i in all_anchors if NUMBERED_HDR.match(paras[i - 1])), 0)
+    back = next((i for i, p in enumerate(paras) if i > first_head and re.match(r'^Алфавитный указатель', p, re.I)), len(paras))
     front = ' '.join(paras[:8])
-    anchors = [i for i, p in enumerate(paras[:back]) if ANCHOR.match(p)]
+    anchors = [i for i in all_anchors if i < back]
     heads = []
     for i in anchors:
         h = paras[i - 1]
+        # При сборке нижняя сигнатура печатного листа может примкнуть
+        # к заголовку следующей страницы; в описание дела её не включаем.
+        h = re.sub(r'^Гражд\.\s*\d{4}\s+г\.\s*\d+\*?\s+(?=[З\d]{1,3}\s*[.,]\s*[—–\-]?\s*\d{4})', '', h)
         raw_header = RAW_HDR.match(h)
         m = HDR.match(h) if not raw_header or '/' not in raw_header.group(2) else None
         if m:
