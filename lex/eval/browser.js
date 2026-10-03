@@ -5,7 +5,7 @@ const base=process.env.LEX_TEST_URL || 'http://127.0.0.1:8765/';
 const out=process.env.LEX_SCREENSHOTS || path.resolve(__dirname,'../../work/browser');
 fs.mkdirSync(out,{recursive:true});
 (async()=>{
- const browser=await chromium.launch({headless:true});
+ const browser=await chromium.launch({headless:true,...(process.env.LEX_CHROMIUM ? {executablePath:process.env.LEX_CHROMIUM} : {})});
  try {
   const context=await browser.newContext({viewport:{width:1280,height:900}}),page=await context.newPage();
   const errors=[],requests=[];
@@ -75,7 +75,7 @@ fs.mkdirSync(out,{recursive:true});
    await page.goto(base+'#/search?y=1904');
    await page.waitForFunction(()=>document.querySelector('#status').textContent.includes('120'));
    assert.equal(await page.locator('#f-year').inputValue(),'1904');
-   assert((await page.locator('#corpus-summary').innerText()).includes('235'));
+   assert((await page.locator('#corpus-summary').innerText()).includes('335'));
    await page.goto(base+'#/d/1904-042');await page.waitForSelector('#detail-body h2');
    const date42=await page.locator('#detail-body').innerText();
    assert(date42.includes('1903/₄ года декабря 17 / февраля 11'));
@@ -91,6 +91,21 @@ fs.mkdirSync(out,{recursive:true});
    await page.goto(base+'#/about');await page.waitForSelector('#corpus-table tbody tr');
    assert((await page.locator('#corpus-table').innerText()).includes('636 из 636'));
    await page.screenshot({path:path.join(out,'corpus.png'),fullPage:false});
+  }
+  // 1897: современный запрос ведёт к исторической формулировке и прямой ссылке.
+  if(metadata.volumes.some(v=>v.year===1897)) {
+   await page.goto(base+'#/search?y=1897');
+   await page.waitForFunction(()=>document.querySelector('#status').textContent.includes('100'));
+   assert.equal(await page.locator('#f-year').inputValue(),'1897');
+   await page.goto(base+'#/sense?q='+encodeURIComponent('фиктивные требования кредиторов при банкротстве'));
+   await page.waitForSelector('.passage[data-passage^="1897-006:30358-31945"]');
+   assert(await page.locator('.passage[data-passage^="1897-006:30358-31945"] mark').count()>0);
+   await page.locator('.passage[data-passage^="1897-006:30358-31945"] a').first().click();
+   await page.waitForSelector('#passage-target');
+   assert((await page.locator('#detail-body h2').innerText()).includes('№ 6'));
+   await page.reload();await page.waitForSelector('#passage-target');
+   await page.goto(base+'#/about');await page.waitForSelector('#corpus-table tbody tr');
+   assert((await page.locator('#corpus-table').innerText()).includes('641 из 641'));
   }
   // Телефон и тёмная тема, без горизонтальной прокрутки.
   await page.setViewportSize({width:390,height:844});

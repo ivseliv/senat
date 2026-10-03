@@ -15,7 +15,11 @@
     const words = L.stems(q).filter(s => !filler.has(s));
     const aliases = [];
     for (const c of glossary) for (const name of [c.понятие, ...c.синонимы]) {
-      const seq = L.stems(name);
+      // Служебные слова не образуют самостоятельных групп в запросе,
+      // поэтому их нельзя оставлять в псевдониме: иначе фраза
+      // «… требования …» никогда не совпадёт с тем же пользовательским
+      // запросом, из которого это слово уже убрано.
+      const seq = L.stems(name).filter(s => !filler.has(s));
       if (seq.length) aliases.push({c, seq});
     }
     aliases.sort((a,b) => b.seq.length-a.seq.length);

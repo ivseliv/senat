@@ -70,6 +70,11 @@ class ConceptTests(unittest.TestCase):
 const assert=require('node:assert/strict'), C=require('./concept.js');
 assert.equal(C.slice('😀мнимая сдѣлка',1,7),'мнимая');
 assert.equal(C.highlightEvidence('<script>😀сдѣлка</script>',[],'сдѣлка'),'&lt;script&gt;😀<mark>сдѣлка</mark>&lt;/script&gt;');
+const parsed=C.parse('фиктивные требования кредиторов при банкротстве',[{
+ понятие:'ложные требования кредиторов при несостоятельности',
+ синонимы:['фиктивные требования кредиторов при банкротстве'],
+ старые_выражения:['претензій ложныхъ, подставныхъ'],примечание:''}]);
+assert.equal(parsed.groups.length,1,'Служебное «требования» не должно разрывать псевдоним понятия');
 const fs=require('fs'),data=JSON.parse(fs.readFileSync('data/passages-1905.json')),config=JSON.parse(fs.readFileSync('data/concepts.json'));
 const hits=C.makeEngine(data,config.glossary).search('фиктивные сделки',config.method).hits.slice(0,5);
 assert(hits.length);assert(hits.every(h=>h.passage.decision==='1905-105'));
