@@ -2,6 +2,7 @@
   "queriesSha256": "a7273066cd3fe3432b7966a94be56e1a799da8df5ee80e4c5f1d1bd2892abc0a",
   "protocol": "Дополнительная разработочная выборка: 5 мест 1904 года выбраны вручную Codex по оригинальному OCR до просмотра рангов. Не отложенная независимая оценка, не полная разметка релевантности. Аннотации этих мест подготовлены в той же сессии, поэтому этот набор проверяет доступность примеров и не доказывает обобщающее качество.",
   "volumes": [
+    1897,
     1904,
     1905
   ],
@@ -22,25 +23,25 @@
       "n": 5,
       "recall5": 0.2,
       "recall10": 0.2,
-      "mrr": 0.05,
+      "mrr": 0.06666666666666667,
       "falsePositives": null
     },
     {
       "split": "test",
       "method": "enriched",
       "n": 5,
-      "recall5": 0.4,
+      "recall5": 0.6,
       "recall10": 0.6,
-      "mrr": 0.4333333333333334,
+      "mrr": 0.44000000000000006,
       "falsePositives": null
     },
     {
       "split": "test",
       "method": "hybrid",
       "n": 5,
-      "recall5": 0.4,
+      "recall5": 0.6,
       "recall10": 0.6,
-      "mrr": 0.4333333333333334,
+      "mrr": 0.44000000000000006,
       "falsePositives": null
     },
     {
@@ -58,25 +59,25 @@
       "n": 5,
       "recall5": 0.2,
       "recall10": 0.2,
-      "mrr": 0.05,
+      "mrr": 0.06666666666666667,
       "falsePositives": null
     },
     {
       "split": "positive",
       "method": "enriched",
       "n": 5,
-      "recall5": 0.4,
+      "recall5": 0.6,
       "recall10": 0.6,
-      "mrr": 0.4333333333333334,
+      "mrr": 0.44000000000000006,
       "falsePositives": null
     },
     {
       "split": "positive",
       "method": "hybrid",
       "n": 5,
-      "recall5": 0.4,
+      "recall5": 0.6,
       "recall10": 0.6,
-      "mrr": 0.4333333333333334,
+      "mrr": 0.44000000000000006,
       "falsePositives": null
     }
   ],
@@ -146,7 +147,7 @@
           "pages": [
             198
           ],
-          "score": 16.11151,
+          "score": 16.90266,
           "relevant": false
         }
       ]
@@ -168,7 +169,7 @@
           "pages": [
             198
           ],
-          "score": 16.11151,
+          "score": 16.90266,
           "relevant": false
         }
       ]
@@ -191,7 +192,7 @@
             199,
             200
           ],
-          "score": 21.93998,
+          "score": 23.26389,
           "relevant": true
         },
         {
@@ -200,7 +201,7 @@
           "pages": [
             198
           ],
-          "score": 16.11151,
+          "score": 16.90266,
           "relevant": false
         }
       ]
@@ -223,7 +224,7 @@
             199,
             200
           ],
-          "score": 21.93998,
+          "score": 23.26389,
           "relevant": true
         },
         {
@@ -232,7 +233,7 @@
           "pages": [
             198
           ],
-          "score": 16.11151,
+          "score": 16.90266,
           "relevant": false
         }
       ]
@@ -246,8 +247,36 @@
       "recall10": 0,
       "mrr": 0,
       "negativeFalsePositive": null,
-      "results": 1,
+      "results": 4,
       "top10": [
+        {
+          "passage": "1897-006:16885-18448",
+          "decision": "1897-006",
+          "pages": [
+            27
+          ],
+          "score": 10.71975,
+          "relevant": false
+        },
+        {
+          "passage": "1897-006:30358-31945",
+          "decision": "1897-006",
+          "pages": [
+            31,
+            32
+          ],
+          "score": 8.89569,
+          "relevant": false
+        },
+        {
+          "passage": "1897-093:2572-4275",
+          "decision": "1897-093",
+          "pages": [
+            300
+          ],
+          "score": 8.05987,
+          "relevant": false
+        },
         {
           "passage": "1905-105:5890-7541",
           "decision": "1905-105",
@@ -255,7 +284,7 @@
             285,
             286
           ],
-          "score": 7.60067,
+          "score": 7.07571,
           "relevant": false
         }
       ]
@@ -267,9 +296,9 @@
       "method": "glossary",
       "recall5": 1,
       "recall10": 1,
-      "mrr": 0.25,
+      "mrr": 0.3333333333333333,
       "negativeFalsePositive": null,
-      "results": 6,
+      "results": 8,
       "top10": [
         {
           "passage": "1905-105:7281-9186",
@@ -278,16 +307,7 @@
             286,
             287
           ],
-          "score": 14.58685,
-          "relevant": false
-        },
-        {
-          "passage": "1905-105:4448-6133",
-          "decision": "1905-105",
-          "pages": [
-            285
-          ],
-          "score": 9.33034,
+          "score": 15.32338,
           "relevant": false
         },
         {
@@ -297,7 +317,7 @@
             285,
             286
           ],
-          "score": 9.10282,
+          "score": 9.64802,
           "relevant": false
         },
         {
@@ -306,8 +326,36 @@
           "pages": [
             317
           ],
-          "score": 8.99102,
+          "score": 9.52864,
           "relevant": true
+        },
+        {
+          "passage": "1897-006:16885-18448",
+          "decision": "1897-006",
+          "pages": [
+            27
+          ],
+          "score": 9.17846,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:4448-6133",
+          "decision": "1905-105",
+          "pages": [
+            285
+          ],
+          "score": 8.81371,
+          "relevant": false
+        },
+        {
+          "passage": "1897-006:35795-37572",
+          "decision": "1897-006",
+          "pages": [
+            33,
+            34
+          ],
+          "score": 8.28836,
+          "relevant": false
         },
         {
           "passage": "1905-105:8913-10601",
@@ -316,7 +364,7 @@
             286,
             287
           ],
-          "score": 6.50373,
+          "score": 6.98561,
           "relevant": false
         },
         {
@@ -326,7 +374,7 @@
             287,
             288
           ],
-          "score": 4.66434,
+          "score": 5.00913,
           "relevant": false
         }
       ]
@@ -336,11 +384,11 @@
       "query": "фиктивные сделки",
       "split": "test",
       "method": "enriched",
-      "recall5": 0,
+      "recall5": 1,
       "recall10": 1,
-      "mrr": 0.16666666666666666,
+      "mrr": 0.2,
       "negativeFalsePositive": null,
-      "results": 11,
+      "results": 17,
       "top10": [
         {
           "passage": "1905-105:7281-9186",
@@ -349,7 +397,7 @@
             286,
             287
           ],
-          "score": 14.58685,
+          "score": 15.32338,
           "relevant": false
         },
         {
@@ -358,7 +406,7 @@
           "pages": [
             287
           ],
-          "score": 10.36513,
+          "score": 11.3645,
           "relevant": false
         },
         {
@@ -368,7 +416,7 @@
             286,
             287
           ],
-          "score": 10.36513,
+          "score": 11.3645,
           "relevant": false
         },
         {
@@ -378,16 +426,7 @@
             285,
             286
           ],
-          "score": 10.26854,
-          "relevant": false
-        },
-        {
-          "passage": "1905-105:4448-6133",
-          "decision": "1905-105",
-          "pages": [
-            285
-          ],
-          "score": 9.33034,
+          "score": 11.27588,
           "relevant": false
         },
         {
@@ -396,8 +435,26 @@
           "pages": [
             317
           ],
-          "score": 8.99102,
+          "score": 9.52864,
           "relevant": true
+        },
+        {
+          "passage": "1905-105:4448-6133",
+          "decision": "1905-105",
+          "pages": [
+            285
+          ],
+          "score": 9.24665,
+          "relevant": false
+        },
+        {
+          "passage": "1897-006:16885-18448",
+          "decision": "1897-006",
+          "pages": [
+            27
+          ],
+          "score": 9.17846,
+          "relevant": false
         },
         {
           "passage": "1905-105:0-1771",
@@ -406,7 +463,7 @@
             283,
             284
           ],
-          "score": 8.9825,
+          "score": 9.15691,
           "relevant": false
         },
         {
@@ -416,27 +473,17 @@
             284,
             285
           ],
-          "score": 8.9825,
+          "score": 9.15691,
           "relevant": false
         },
         {
-          "passage": "1904-114:7765-9339",
-          "decision": "1904-114",
+          "passage": "1897-006:35795-37572",
+          "decision": "1897-006",
           "pages": [
-            317,
-            318
+            33,
+            34
           ],
-          "score": 6.95937,
-          "relevant": false
-        },
-        {
-          "passage": "1904-114:0-1761",
-          "decision": "1904-114",
-          "pages": [
-            314,
-            315
-          ],
-          "score": 6.8066,
+          "score": 8.28836,
           "relevant": false
         }
       ]
@@ -446,11 +493,11 @@
       "query": "фиктивные сделки",
       "split": "test",
       "method": "hybrid",
-      "recall5": 0,
+      "recall5": 1,
       "recall10": 1,
-      "mrr": 0.16666666666666666,
+      "mrr": 0.2,
       "negativeFalsePositive": null,
-      "results": 12,
+      "results": 18,
       "top10": [
         {
           "passage": "1905-105:7281-9186",
@@ -459,7 +506,7 @@
             286,
             287
           ],
-          "score": 14.58685,
+          "score": 15.32338,
           "relevant": false
         },
         {
@@ -468,7 +515,7 @@
           "pages": [
             287
           ],
-          "score": 10.36513,
+          "score": 11.3645,
           "relevant": false
         },
         {
@@ -478,7 +525,7 @@
             286,
             287
           ],
-          "score": 10.36513,
+          "score": 11.3645,
           "relevant": false
         },
         {
@@ -488,16 +535,7 @@
             285,
             286
           ],
-          "score": 10.26854,
-          "relevant": false
-        },
-        {
-          "passage": "1905-105:4448-6133",
-          "decision": "1905-105",
-          "pages": [
-            285
-          ],
-          "score": 9.33034,
+          "score": 11.27588,
           "relevant": false
         },
         {
@@ -506,8 +544,26 @@
           "pages": [
             317
           ],
-          "score": 8.99102,
+          "score": 9.52864,
           "relevant": true
+        },
+        {
+          "passage": "1905-105:4448-6133",
+          "decision": "1905-105",
+          "pages": [
+            285
+          ],
+          "score": 9.24665,
+          "relevant": false
+        },
+        {
+          "passage": "1897-006:16885-18448",
+          "decision": "1897-006",
+          "pages": [
+            27
+          ],
+          "score": 9.17846,
+          "relevant": false
         },
         {
           "passage": "1905-105:0-1771",
@@ -516,7 +572,7 @@
             283,
             284
           ],
-          "score": 8.9825,
+          "score": 9.15691,
           "relevant": false
         },
         {
@@ -526,27 +582,17 @@
             284,
             285
           ],
-          "score": 8.9825,
+          "score": 9.15691,
           "relevant": false
         },
         {
-          "passage": "1904-114:7765-9339",
-          "decision": "1904-114",
+          "passage": "1897-006:35795-37572",
+          "decision": "1897-006",
           "pages": [
-            317,
-            318
+            33,
+            34
           ],
-          "score": 6.95937,
-          "relevant": false
-        },
-        {
-          "passage": "1904-114:0-1761",
-          "decision": "1904-114",
-          "pages": [
-            314,
-            315
-          ],
-          "score": 6.8066,
+          "score": 8.28836,
           "relevant": false
         }
       ]
@@ -592,7 +638,7 @@
           "pages": [
             319
           ],
-          "score": 12.33246,
+          "score": 13.42925,
           "relevant": true
         },
         {
@@ -602,7 +648,7 @@
             319,
             320
           ],
-          "score": 12.07262,
+          "score": 13.24814,
           "relevant": true
         }
       ]
@@ -624,7 +670,7 @@
           "pages": [
             319
           ],
-          "score": 12.33246,
+          "score": 13.42925,
           "relevant": true
         },
         {
@@ -634,7 +680,7 @@
             319,
             320
           ],
-          "score": 12.07262,
+          "score": 13.24814,
           "relevant": true
         }
       ]

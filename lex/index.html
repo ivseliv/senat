@@ -148,7 +148,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
 <header><div class="wrap">
   <div class="top"><h1>Решения Правительствующего Сената</h1><span class="sub">поиск и аналитика · прототип</span><span class="spacer"></span>
     <button class="btn ghost" id="theme" title="Светлая / тёмная тема">◐ тема</button></div>
-  <nav aria-label="Разделы"><a id="tab-search" href="#/search">Поиск</a><a id="tab-sense" href="#/sense">По смыслу</a><a id="tab-analytics" href="#/analytics">Аналитика</a><a id="tab-about" href="#/about">О проекте</a></nav>
+  <nav aria-label="Разделы"><a id="tab-search" href="#/search">Поиск</a><a id="tab-sense" href="#/sense">По смыслу</a><a id="tab-participants" href="#/participants">Участники</a><a id="tab-analytics" href="#/analytics">Аналитика</a><a id="tab-about" href="#/about">О проекте</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -177,6 +177,8 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
       <select id="f-family" aria-label="Семейное положение"></select><select id="f-estate" aria-label="Сословие или занятие"></select>
       <select id="f-entity" aria-label="Тип организации"></select><select id="f-role" aria-label="Правовое положение участника"></select>
     </div>
+    <div class="row"><input id="f-participant" form="form" type="search" list="participant-options" placeholder="Имя или организация из указателя 1897" aria-label="Участник из печатного указателя"><datalist id="participant-options"></datalist></div>
+    <p class="muted small">Именной указатель разобран для 1897 года. Фильтр ищет записи издания, а не всех упомянутых в тексте людей. <a href="#/participants">Открыть указатель со ссылками на сканы</a>.</p>
     <p class="muted small">Признаки участников извлечены только из прямых слов заголовка дела. Пол не определяется по имени; «не указано» означает отсутствие явного обозначения.</p>
     <div class="opts">
       <span class="orth" role="group" aria-label="Орфография текста">Орфография: <label><input type="radio" name="orth" value="old" checked> дореформенная</label> <label><input type="radio" name="orth" value="new"> современная</label></span>
@@ -205,6 +207,18 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     <p class="muted small">Современные понятия помогают найти старые выражения. Результат — фрагмент первоисточника; пояснение ИИ дано отдельно. Наличие слов ещё не означает совпадения правового института.</p>
     <div id="sense-status" aria-live="polite"></div><div id="sense-results"></div>
     <button class="btn ghost" id="sense-more" hidden>Показать ещё</button>
+  </section>
+
+  <section id="view-participants" hidden>
+    <h2>Указатель участников</h2>
+    <form id="participants-form" class="row" role="search">
+      <input id="participants-q" type="search" placeholder="Фамилия, банк, железная дорога или община" aria-label="Поиск в указателе" autocomplete="off">
+      <select id="participants-year" aria-label="Том указателя"></select>
+      <button class="btn" type="submit">Найти</button>
+    </form>
+    <p class="muted small">Печатный указатель 1897 года: люди, семьи, организации и учреждения. Записи могут повторяться и не считаются уникальными людьми. Номера ведут к решениям; роль в деле и биография из указателя не выводятся. В №94 указан вопрос без именованного участника. Указатели 1904 и 1905 пока не разобраны.</p>
+    <div id="participants-status" aria-live="polite"></div><div id="participants-results"></div>
+    <button class="btn ghost" id="participants-more" hidden>Показать ещё</button>
   </section>
 
   <section id="view-analytics" hidden><div id="analytics-body"></div></section>

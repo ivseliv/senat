@@ -27,7 +27,8 @@
     meta: null, index: null, an: null, engine: null, texts: {}, stemCache: new Map(),
     opts: { modern: false, gloss: true }, detailId: null,
     sense: { config: null, engines: [], promise: null, q: '', hits: [], shown: 10, token: 0 },
-    f: { q: '', year: '', outcome: '', topic: '', statute: '', person: '', gender: '', age: '', family: '', estate: '', entity: '', role: '', sort: 'rel' }, shown: 20, hits: [], sentinel: 0,
+    participants: {q:'', year:'', shown:60}, participantMap: new Map(),
+    f: { q: '', year: '', outcome: '', topic: '', statute: '', person: '', participant: '', gender: '', age: '', family: '', estate: '', entity: '', role: '', sort: 'rel' }, shown: 20, hits: [], sentinel: 0,
   };
 
   function h(tag, attrs, ...kids) {
@@ -65,6 +66,7 @@
     return (window.LEX_SCAN_URL || (window.LEX_INLINE ? 'https://ivseliv.github.io/senat/lex/' : './')) + path;
   }
   function scanLabel(d, ref) {
+    if (ref.index) return `Том ${d.vol} · указатель · ` + (ref.printed_page ? `с. ${ref.printed_page}` : 'страница без печатного номера');
     return `Том ${d.vol} · ` + (ref.page == null ? `лист ${ref.file.replace('.txt','')}, печатный номер не определён` : `с. ${ref.page}`);
   }
   function openScan(d, ref) {
@@ -126,20 +128,24 @@
   }
   function route() {
     const { path, p } = readHash();
-    const requested = path.startsWith('d/') ? (p.get('mode') === 'sense' ? 'sense' : 'search') : (path.split('/')[0] || 'search');
-    const tab = ['search','sense','analytics','about'].includes(requested) ? requested : 'search';
-    for (const t of ['search', 'sense', 'analytics', 'about']) {
+    const requested = path.startsWith('d/') ? (['sense','participants'].includes(p.get('mode')) ? p.get('mode') : 'search') : (path.split('/')[0] || 'search');
+    const tab = ['search','sense','participants','analytics','about'].includes(requested) ? requested : 'search';
+    for (const t of ['search', 'sense', 'participants', 'analytics', 'about']) {
       $('#view-' + t).hidden = t !== tab;
       $('#tab-' + t).setAttribute('aria-current', t === tab ? 'page' : 'false');
     }
     if (tab === 'search') {
       Object.assign(S.f, { q: p.get('q') || '', year: p.get('y') || '', outcome: p.get('o') || '', topic: p.get('t') || '',
-        statute: p.get('s') || '', person: p.get('p') || '', sort: p.get('sort') || 'rel' },
+        statute: p.get('s') || '', person: p.get('p') || '', participant: p.get('u') || '', sort: p.get('sort') || 'rel' },
         Object.fromEntries(FACET_FILTERS.map(f => [f.key, p.get(f.param) || ''])));
       syncControls(); runSearch();
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
     } else if (tab === 'sense') {
       S.sense.q = p.get('q') || ''; $('#sense-q').value = S.sense.q; runSense();
+      if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
+    } else if (tab === 'participants') {
+      Object.assign(S.participants, {q:p.get('q') || '', year:p.get('y') || '', shown:60});
+      renderParticipants();
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
     } else closeDetail();
     if (tab === 'analytics') renderAnalytics();
@@ -147,7 +153,7 @@
     window.scrollTo(0, path.startsWith('d/') ? window.scrollY : 0);
   }
   function pushSearch() {
-    const f = S.f; const params = { q: f.q, y: f.year, o: f.outcome, t: f.topic, s: f.statute, p: f.person, sort: f.sort === 'rel' ? '' : f.sort };
+    const f = S.f; const params = { q: f.q, y: f.year, o: f.outcome, t: f.topic, s: f.statute, p: f.person, u:f.participant, sort: f.sort === 'rel' ? '' : f.sort };
     for (const facet of FACET_FILTERS) params[facet.param] = f[facet.key];
     go('search', params);
   }
@@ -170,7 +176,40 @@
     const f = S.f;
     return d => (!f.year || String(d.vol) === f.year) && (!f.outcome || d.outcome === f.outcome) && (!f.topic || d.topics.includes(f.topic)) &&
       (!f.statute || f.statute in d.statutes) && (!f.person || d.presiding === f.person || d.reporter === f.person || d.prosecutor === f.person) &&
+      (!f.participant || (d.participant_ids || []).some(id=>participantMatches(S.participantMap.get(id), f.participant))) &&
       FACET_FILTERS.every(facet => facetMatch(d, facet.key, f[facet.key]));
+  }
+  function participantLabel(entry) { return (entry.section ? entry.section + ': ' : '') + entry.label; }
+  function participantMatches(entry, query) {
+    if (!entry) return false;
+    const normalize=s=>L.modernize(s).toLowerCase().replace(/ё/g,'е').replace(/[^а-яa-z0-9]+/g,' ').trim();
+    const terms=normalize(query).split(' ').filter(Boolean), text=normalize(participantLabel(entry));
+    const words=text.split(' ').map(L.stem);
+    return terms.length>0 && terms.every(term=>text.includes(term) || words.includes(L.stem(term)));
+  }
+  function participantLink(entry) {
+    return h('a',{href:'#/participants?'+new URLSearchParams({q:participantLabel(entry),y:String(entry.year)})},participantLabel(entry));
+  }
+  function renderParticipants() {
+    const f=S.participants;
+    $('#participants-q').value=f.q; $('#participants-year').value=f.year;
+    const entries=(S.meta.participants || []).filter(e=>(!f.year || String(e.year)===f.year) && (!f.q || participantMatches(e,f.q)))
+      .sort((a,b)=>L.modernize(participantLabel(a)).localeCompare(L.modernize(participantLabel(b)),'ru'));
+    const decisions=new Set(entries.flatMap(e=>e.decisions));
+    $('#participants-status').textContent=`Записей: ${entries.length} · Решений: ${decisions.size}`;
+    $('#participants-results').replaceChildren(...entries.slice(0,f.shown).map(entry=>{
+      const refs=entry.decisions.map(id=>h('a',{href:'#/d/'+id+'?'+new URLSearchParams({mode:'participants',q:f.q,y:f.year})},'№ '+Number(id.split('-')[1])));
+      const sources=entry.sources.map(source=>{
+        const ref={...source,full:source.image,index:true},label=scanLabel({vol:entry.year},ref);
+        return window.LEX_INLINE && location.protocol==='file:' ?
+          h('a',{href:scanURL(source.image),target:'_blank',rel:'noopener'},label+' — скан (нужен интернет)') :
+          h('button',{class:'btn ghost participant-source',onclick:()=>openScan({vol:entry.year},ref)},label+' — скан');
+      });
+      return h('article',{class:'card participant-entry','data-participant':entry.id},
+        h('h3',{},participantLabel(entry)),h('p',{class:'chips'},...refs),h('div',{class:'chips'},...sources));
+    }));
+    if (!entries.length) $('#participants-results').append(h('p',{class:'muted'},'В разобранном указателе таких записей нет. Можно поискать имя в тексте решений.'));
+    $('#participants-more').hidden=entries.length<=f.shown;
   }
   function facetMatch(d, key, selected) {
     if (!selected) return true;
@@ -263,6 +302,7 @@
     const d = S.meta.decisions.find(x => x.id === id); const box = $('#detail-body');
     if (!d) { box.replaceChildren(h('p', {}, 'Решение не найдено')); $('#detail').hidden = false; return; }
     $('#detail').hidden = false; document.body.classList.add('modal');
+    box.replaceChildren(h('p',{class:'muted'},'Загрузка решения…'));
     const text = await textOf(d);
     if (S.detailId !== id || $('#detail').hidden) return;
     const params = readHash().p, inSense = params.get('mode') === 'sense';
@@ -307,6 +347,9 @@
       h('div', { class: 'chips' }, d.topics.map(t => h('button', { class: 'chip', onclick: () => { S.f.topic = t; go('search', { t }); } }, t))),
       groupItems(d).length ? h('section', {}, h('h3', {}, 'Участники и социальные группы'),
         h('div', { class: 'chips participant-chips' }, groupItems(d).map(g => h('button', { class: 'chip group', onclick: () => { S.f[g.key] = g.label; pushSearch(); } }, g.label)))) : '',
+      d.participant_ids && d.participant_ids.length ? h('section',{},h('h3',{},'Участники по указателю издания'),
+        h('p',{class:'muted small'},'Записи печатного указателя, без определения роли в деле.'),
+        h('ul',{},d.participant_ids.map(id=>h('li',{},participantLink(S.participantMap.get(id)))))) : '',
       Object.keys(d.statutes).length ? h('section', {}, h('h3', {}, 'Упомянутые статьи'), h('div', { class: 'chips' },
         Object.keys(d.statutes).sort().map(s => h('button', { class: 'chip stat', title: 'Найти все решения с этой статьёй', onclick: () => go('search', { s }) }, statLabel(s))))) : '',
       h('div', { class: 'toolbar' },
@@ -358,14 +401,18 @@
   }
   function syncControls() {
     $('#q').value = S.f.q; $('#f-year').value = S.f.year; $('#f-outcome').value = S.f.outcome; $('#f-topic').value = S.f.topic;
-    $('#f-statute').value = S.f.statute; $('#f-person').value = S.f.person; $('#f-sort').value = S.f.sort;
+    $('#f-statute').value = S.f.statute; $('#f-person').value = S.f.person; $('#f-participant').value=S.f.participant; $('#f-sort').value = S.f.sort;
     for (const facet of FACET_FILTERS) $('#' + facet.id).value = S.f[facet.key];
-    const act = ['year', 'outcome', 'topic', 'statute', 'person', ...FACET_FILTERS.map(f=>f.key)].filter(k => S.f[k]).length + (S.f.sort !== 'rel' ? 1 : 0);
+    const act = ['year', 'outcome', 'topic', 'statute', 'person', 'participant', ...FACET_FILTERS.map(f=>f.key)].filter(k => S.f[k]).length + (S.f.sort !== 'rel' ? 1 : 0);
     $('#fcount').textContent = act ? `· выбрано: ${act}` : '';
     const box = $('#fbox'); if (!box.dataset.init || act) { box.open = act > 0 || innerWidth >= 700; box.dataset.init = '1'; }
   }
   function setupControls() {
     const dec = S.meta.decisions, an = S.an;
+    $('#participant-options').replaceChildren(...[...new Set((S.meta.participants || []).map(e=>L.modernize(participantLabel(e))))].sort((a,b)=>a.localeCompare(b,'ru')).map(value=>h('option',{value})));
+    fillSelect($('#participants-year'), [...new Set((S.meta.participants || []).map(e=>e.year))].map(y=>[String(y),String(y)]), 'Все разобранные указатели');
+    $('#participants-form').addEventListener('submit',e=>{e.preventDefault();go('participants',{q:$('#participants-q').value,y:$('#participants-year').value});});
+    $('#participants-more').addEventListener('click',()=>{S.participants.shown+=60;renderParticipants();});
     fillSelect($('#f-year'), S.meta.volumes.map(v => [String(v.year), String(v.year)]), 'Все годы');
     fillSelect($('#f-outcome'), Object.entries(an.outcomes).map(([k, n]) => [k, `${k} (${n})`]), 'Любой исход');
     fillSelect($('#f-topic'), Object.entries(an.topics).map(([k, n]) => [k, `${k} (${n})`]), 'Любая тема');
@@ -379,8 +426,8 @@
       if (data.unknown) items.push(['__unknown__', `Не указано в заголовке (${data.unknown})`]);
       fillSelect($('#' + facet.id), items, facet.any);
     }
-    $('#form').addEventListener('submit', e => { e.preventDefault(); S.f.q = $('#q').value; pushSearchOrRun(); });
-    for (const [id, key] of [['f-year', 'year'], ['f-outcome', 'outcome'], ['f-topic', 'topic'], ['f-statute', 'statute'], ['f-person', 'person'], ['f-sort', 'sort']])
+    $('#form').addEventListener('submit', e => { e.preventDefault(); S.f.q = $('#q').value; S.f.participant=$('#f-participant').value; pushSearchOrRun(); });
+    for (const [id, key] of [['f-year', 'year'], ['f-outcome', 'outcome'], ['f-topic', 'topic'], ['f-statute', 'statute'], ['f-person', 'person'], ['f-participant','participant'], ['f-sort', 'sort']])
       $('#' + id).addEventListener('change', e => { S.f[key] = e.target.value; S.f.q = $('#q').value; pushSearchOrRun(); });
     for (const facet of FACET_FILTERS) $('#' + facet.id).addEventListener('change', e => {
       S.f[facet.key] = e.target.value; S.f.q = $('#q').value; pushSearchOrRun();
@@ -390,7 +437,7 @@
     $('#gloss').addEventListener('change', e => { S.opts.gloss = e.target.checked; runSearch(); });
     $('#more').addEventListener('click', () => { S.shown += 20; renderResults(++runToken); });
     $('#reset').addEventListener('click', () => go('search'));
-    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const mode = p.get('mode') === 'sense' ? 'sense' : 'search'; p.delete('at'); p.delete('end'); p.delete('mode'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
+    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const mode = ['sense','participants'].includes(p.get('mode')) ? p.get('mode') : 'search'; p.delete('at'); p.delete('end'); p.delete('mode'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !document.querySelector('.scan-dialog[open]') && !$('#detail').hidden) $('#detail-close').click(); });
     $('#examples').append(...['недействительность сделки', 'возмещение убытков', 'исковая давность', 'договор аренды', 'банкротство', 'страховое возмещение', 'перевозка грузов', 'исполнитель завещания']
       .map(x => h('button', { class: 'chip', onclick: () => go('search', { q: x }) }, x)));
@@ -538,6 +585,7 @@
     try {
       const [meta, index, an] = await Promise.all([loadJSON('meta.json'), loadJSON('index.json'), loadJSON('analytics.json')]);
       S.meta = meta; S.index = index; S.an = an; S.volStart = {};
+      S.participantMap = new Map((meta.participants || []).map(e=>[e.id,e]));
       meta.decisions.forEach(d => { if (S.volStart[d.vol] == null) S.volStart[d.vol] = d.i; });
       $('#corpus-summary').textContent = `В корпусе: ${meta.volumes.map(v=>v.year).join(', ')} · ${meta.decisions.length} ${plural(meta.decisions.length,'решение','решения','решений')}`;
       $('#corpus-summary').hidden = false;

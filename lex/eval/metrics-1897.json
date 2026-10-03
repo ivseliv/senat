@@ -1,0 +1,589 @@
+{
+  "queriesSha256": "9efd678bca081ad8801b43addffec92170912e55a5a9f5f273fa1e34ea07ee88",
+  "protocol": "Дополнительная разработочная выборка: пять вопросов 1897 выбраны при чтении оригинального OCR до просмотра рангов. Это не независимый тест: автор читал также часть пояснений к этим решениям в ходе проверки. Набор проверяет доступность конкретных примеров, не измеряет точность всех результатов и не доказывает обобщающее качество. Старая выборка 30 запросов и её пороги не изменены. Исторические позиции не приравниваются к действующему праву.",
+  "volumes": [
+    1897,
+    1904,
+    1905
+  ],
+  "split": "all",
+  "aggregates": [
+    {
+      "split": "dev",
+      "method": "baseline",
+      "n": 5,
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "falsePositives": null
+    },
+    {
+      "split": "dev",
+      "method": "glossary",
+      "n": 5,
+      "recall5": 0,
+      "recall10": 0.2,
+      "mrr": 0.03333333333333333,
+      "falsePositives": null
+    },
+    {
+      "split": "dev",
+      "method": "enriched",
+      "n": 5,
+      "recall5": 0,
+      "recall10": 0.2,
+      "mrr": 0.02857142857142857,
+      "falsePositives": null
+    },
+    {
+      "split": "dev",
+      "method": "hybrid",
+      "n": 5,
+      "recall5": 0,
+      "recall10": 0.2,
+      "mrr": 0.02857142857142857,
+      "falsePositives": null
+    },
+    {
+      "split": "positive",
+      "method": "baseline",
+      "n": 5,
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "falsePositives": null
+    },
+    {
+      "split": "positive",
+      "method": "glossary",
+      "n": 5,
+      "recall5": 0,
+      "recall10": 0.2,
+      "mrr": 0.03333333333333333,
+      "falsePositives": null
+    },
+    {
+      "split": "positive",
+      "method": "enriched",
+      "n": 5,
+      "recall5": 0,
+      "recall10": 0.2,
+      "mrr": 0.02857142857142857,
+      "falsePositives": null
+    },
+    {
+      "split": "positive",
+      "method": "hybrid",
+      "n": 5,
+      "recall5": 0,
+      "recall10": 0.2,
+      "mrr": 0.02857142857142857,
+      "falsePositives": null
+    }
+  ],
+  "rows": [
+    {
+      "id": "1897-1",
+      "query": "ответственность учреждения за выбор сотрудников",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "1897-1",
+      "query": "ответственность учреждения за выбор сотрудников",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "1897-1",
+      "query": "ответственность учреждения за выбор сотрудников",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "1897-1",
+      "query": "ответственность учреждения за выбор сотрудников",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "1897-3",
+      "query": "неустойка за досрочное погашение займа",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "1897-3",
+      "query": "неустойка за досрочное погашение займа",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "1897-3",
+      "query": "неустойка за досрочное погашение займа",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1897-003:1184-2944",
+          "decision": "1897-003",
+          "pages": [
+            15,
+            16
+          ],
+          "score": 21.60545,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "1897-3",
+      "query": "неустойка за досрочное погашение займа",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1897-003:1184-2944",
+          "decision": "1897-003",
+          "pages": [
+            15,
+            16
+          ],
+          "score": 21.60545,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "1897-6",
+      "query": "фиктивные требования кредиторов при банкротстве",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1897-006:28995-30609",
+          "decision": "1897-006",
+          "pages": [
+            31
+          ],
+          "score": 17.27597,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "1897-6",
+      "query": "фиктивные требования кредиторов при банкротстве",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 1,
+      "mrr": 0.16666666666666666,
+      "negativeFalsePositive": null,
+      "results": 8,
+      "top10": [
+        {
+          "passage": "1897-006:6528-8569",
+          "decision": "1897-006",
+          "pages": [
+            23,
+            24
+          ],
+          "score": 17.35878,
+          "relevant": false
+        },
+        {
+          "passage": "1897-006:28995-30609",
+          "decision": "1897-006",
+          "pages": [
+            31
+          ],
+          "score": 17.27597,
+          "relevant": false
+        },
+        {
+          "passage": "1897-006:27558-29303",
+          "decision": "1897-006",
+          "pages": [
+            30,
+            31
+          ],
+          "score": 16.07288,
+          "relevant": false
+        },
+        {
+          "passage": "1897-006:8295-9954",
+          "decision": "1897-006",
+          "pages": [
+            24
+          ],
+          "score": 15.92776,
+          "relevant": false
+        },
+        {
+          "passage": "1897-006:34763-36082",
+          "decision": "1897-006",
+          "pages": [
+            33
+          ],
+          "score": 15.3403,
+          "relevant": false
+        },
+        {
+          "passage": "1897-006:30358-31945",
+          "decision": "1897-006",
+          "pages": [
+            31,
+            32
+          ],
+          "score": 15.17657,
+          "relevant": true
+        },
+        {
+          "passage": "1897-006:35795-37572",
+          "decision": "1897-006",
+          "pages": [
+            33,
+            34
+          ],
+          "score": 14.34227,
+          "relevant": false
+        },
+        {
+          "passage": "1897-062:8952-10950",
+          "decision": "1897-062",
+          "pages": [
+            205
+          ],
+          "score": 9.06452,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "1897-6",
+      "query": "фиктивные требования кредиторов при банкротстве",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 1,
+      "mrr": 0.14285714285714285,
+      "negativeFalsePositive": null,
+      "results": 8,
+      "top10": [
+        {
+          "passage": "1897-006:6528-8569",
+          "decision": "1897-006",
+          "pages": [
+            23,
+            24
+          ],
+          "score": 17.35878,
+          "relevant": false
+        },
+        {
+          "passage": "1897-006:28995-30609",
+          "decision": "1897-006",
+          "pages": [
+            31
+          ],
+          "score": 17.27597,
+          "relevant": false
+        },
+        {
+          "passage": "1897-006:8295-9954",
+          "decision": "1897-006",
+          "pages": [
+            24
+          ],
+          "score": 16.09369,
+          "relevant": false
+        },
+        {
+          "passage": "1897-006:27558-29303",
+          "decision": "1897-006",
+          "pages": [
+            30,
+            31
+          ],
+          "score": 16.07288,
+          "relevant": false
+        },
+        {
+          "passage": "1897-006:35795-37572",
+          "decision": "1897-006",
+          "pages": [
+            33,
+            34
+          ],
+          "score": 16.03772,
+          "relevant": false
+        },
+        {
+          "passage": "1897-006:34763-36082",
+          "decision": "1897-006",
+          "pages": [
+            33
+          ],
+          "score": 15.3403,
+          "relevant": false
+        },
+        {
+          "passage": "1897-006:30358-31945",
+          "decision": "1897-006",
+          "pages": [
+            31,
+            32
+          ],
+          "score": 15.17657,
+          "relevant": true
+        },
+        {
+          "passage": "1897-062:8952-10950",
+          "decision": "1897-062",
+          "pages": [
+            205
+          ],
+          "score": 11.05327,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "1897-6",
+      "query": "фиктивные требования кредиторов при банкротстве",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 0,
+      "recall10": 1,
+      "mrr": 0.14285714285714285,
+      "negativeFalsePositive": null,
+      "results": 8,
+      "top10": [
+        {
+          "passage": "1897-006:6528-8569",
+          "decision": "1897-006",
+          "pages": [
+            23,
+            24
+          ],
+          "score": 17.35878,
+          "relevant": false
+        },
+        {
+          "passage": "1897-006:28995-30609",
+          "decision": "1897-006",
+          "pages": [
+            31
+          ],
+          "score": 17.27597,
+          "relevant": false
+        },
+        {
+          "passage": "1897-006:8295-9954",
+          "decision": "1897-006",
+          "pages": [
+            24
+          ],
+          "score": 16.09369,
+          "relevant": false
+        },
+        {
+          "passage": "1897-006:27558-29303",
+          "decision": "1897-006",
+          "pages": [
+            30,
+            31
+          ],
+          "score": 16.07288,
+          "relevant": false
+        },
+        {
+          "passage": "1897-006:35795-37572",
+          "decision": "1897-006",
+          "pages": [
+            33,
+            34
+          ],
+          "score": 16.03772,
+          "relevant": false
+        },
+        {
+          "passage": "1897-006:34763-36082",
+          "decision": "1897-006",
+          "pages": [
+            33
+          ],
+          "score": 15.3403,
+          "relevant": false
+        },
+        {
+          "passage": "1897-006:30358-31945",
+          "decision": "1897-006",
+          "pages": [
+            31,
+            32
+          ],
+          "score": 15.17657,
+          "relevant": true
+        },
+        {
+          "passage": "1897-062:8952-10950",
+          "decision": "1897-062",
+          "pages": [
+            205
+          ],
+          "score": 11.05327,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "1897-21",
+      "query": "приобретательная давность на общую землю",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "1897-21",
+      "query": "приобретательная давность на общую землю",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "1897-21",
+      "query": "приобретательная давность на общую землю",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "1897-21",
+      "query": "приобретательная давность на общую землю",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "1897-22",
+      "query": "алименты между супругами при раздельном проживании",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "1897-22",
+      "query": "алименты между супругами при раздельном проживании",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "1897-22",
+      "query": "алименты между супругами при раздельном проживании",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "1897-22",
+      "query": "алименты между супругами при раздельном проживании",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    }
+  ]
+}
