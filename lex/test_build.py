@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Проверки границ решений при составных и повреждённых датах OCR."""
 import unittest
-from build import participant_groups, split_volume
+from build import participant_groups, procedure_for, split_volume, statute_code
 
 ANCHOR = '(Предсѣдательствовалъ сенаторъ Ивановъ).'
 
@@ -140,6 +140,15 @@ class ParticipantFacetTests(unittest.TestCase):
         self.assertIn('Наследники', groups['role'])
         self.assertIn('Душеприказчики', groups['role'])
         self.assertIn('Несостоятельные должники', groups['role'])
+
+
+class LegalFilterTests(unittest.TestCase):
+    def test_statute_code_and_procedural_topics_are_explicit(self):
+        self.assertEqual(statute_code('УГС ст. 793'), 'УГС')
+        self.assertEqual(statute_code('? ст. 793'), '?')
+        tags = procedure_for('Суд неправильно применил закон и не оценил доказательства по иску.')
+        self.assertIn('Применение закона', tags)
+        self.assertIn('Доказательства', tags)
 
     def test_words_in_company_name_do_not_become_family_members(self):
         groups = participant_groups(

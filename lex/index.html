@@ -169,9 +169,10 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     <details class="fbox" id="fbox"><summary>Фильтры и параметры <span class="muted" id="fcount"></span></summary>
     <div class="row filters">
       <select id="f-year" aria-label="Год"></select><select id="f-outcome" aria-label="Исход"></select><select id="f-topic" aria-label="Тема"></select>
-      <select id="f-statute" aria-label="Статья"></select><select id="f-person" aria-label="Сенатор или прокурор"></select>
+      <select id="f-code" aria-label="Кодекс или акт"></select><select id="f-statute" aria-label="Статья"></select><select id="f-person" aria-label="Сенатор или прокурор"></select>
       <select id="f-sort" aria-label="Порядок"><option value="rel">По релевантности</option><option value="date">Сначала новые</option></select>
     </div>
+    <div class="row filters" aria-label="Кассационное рассуждение"><select id="f-procedure" aria-label="Фокус кассационного рассуждения"></select></div>
     <div class="row filters" aria-label="Участники и социальные группы">
       <select id="f-gender" aria-label="Пол участника"></select><select id="f-age" aria-label="Возраст и дееспособность"></select>
       <select id="f-family" aria-label="Семейное положение"></select><select id="f-estate" aria-label="Сословие или занятие"></select>
@@ -179,7 +180,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     </div>
     <div class="row"><input id="f-participant" form="form" type="search" list="participant-options" placeholder="Имя или организация из указателя 1897" aria-label="Участник из печатного указателя"><datalist id="participant-options"></datalist></div>
     <p class="muted small">Именной указатель разобран для 1897 года. Фильтр ищет записи издания, а не всех упомянутых в тексте людей. <a href="#/participants">Открыть указатель со ссылками на сканы</a>.</p>
-    <p class="muted small">Признаки участников извлечены только из прямых слов заголовка дела. Пол не определяется по имени; «не указано» означает отсутствие явного обозначения.</p>
+    <p class="muted small">Признаки участников извлечены только из прямых слов заголовка дела. Пол не определяется по имени; «не указано» означает отсутствие явного обозначения. Кодекс и фокус кассационного рассуждения определены автоматически по тексту; их нужно сверять с источником.</p>
     <div class="opts">
       <span class="orth" role="group" aria-label="Орфография текста">Орфография: <label><input type="radio" name="orth" value="old" checked> дореформенная</label> <label><input type="radio" name="orth" value="new"> современная</label></span>
       <label title="Слово «арендатор» найдёт и «наниматель», «ущерб» — «убытки», «вред» и т. д."><input type="checkbox" id="gloss" checked> расширять запрос старыми терминами</label>
