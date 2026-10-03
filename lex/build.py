@@ -267,6 +267,21 @@ def outcome_for(text):
         return 'Просьба удовлетворена', res
     return 'Иное', res
 
+def procedure_for(text):
+    """Темы кассационного рассуждения, а не установленное судом основание.
+
+    Метка ставится по самому тексту и помогает сузить выдачу. Она не говорит,
+    что именно было основанием отмены и потому всегда так подписана в интерфейсе.
+    """
+    t = modernize(text).lower()
+    checks = [
+        ('Применение закона', r'неправильн\w*\s+(?:примен|толкова)|нарушен\w*\s+(?:закон|стат)|противореч\w*\s+закону'),
+        ('Процессуальный порядок', r'подсудн|подведомств|состав[аеу]\s+суд|извещен|ходатайств|состязател|прав[ао]\s+защит'),
+        ('Доказательства', r'доказательств|свидетел|экспертиз|присяг|расписк|показани'),
+        ('Сроки и давность', r'давност|срок\w*\s+(?:иска|предъяв|обжал)'),
+    ]
+    return [name for name, rx in checks if re.search(rx, t)]
+
 CODES = [
     ('УГС', 'Устав гражданского судопроизводства', r'уст(?:ав\w*|\.)?\s*гр(?:аж\w*|\.)?\s*суд'),
     ('УУС', 'Устав уголовного судопроизводства', r'уст(?:ав\w*|\.)?\s*уг(?:ол\w*|\.)?\s*суд'),
@@ -321,6 +336,10 @@ def statutes_for(text):
             out[f'{code} ст. {part}'] += 1
     return dict(out)
 
+def statute_code(statute):
+    """Короткий код акта в ключе вида «УГС ст. 793» или «? ст. 793»."""
+    return statute.split(' ', 1)[0]
+
 CITE = re.compile(r'(\d{4})\s*г(?:ода|\.)?[,\s]*(?:№|n)\s*(\d+(?:\s*(?:,|и)\s*(?:№\s*)?\d+)*)')
 
 def cites_for(text, own_year):
@@ -360,7 +379,8 @@ def main():
             full = d['headnote'] + '\n' + d['text']
             docs.append(dict(i=i, id=f'{year}-{d["num"]:03d}', vol=int(year), num=d['num'], date=d['date'], dept=dept,
                              headnote=d['headnote'], presiding=d['presiding'], reporter=d['reporter'],
-                             prosecutor=d['prosecutor'], outcome=oc, topics=topics_for(d['headnote'], d['text']),
+                             prosecutor=d['prosecutor'], outcome=oc, procedure=procedure_for(d['text']),
+                             topics=topics_for(d['headnote'], d['text']),
                              groups=participant_groups(d['headnote']),
                              statutes=statutes_for(full), cites=[list(c) for c in cites_for(full, int(year))],
                              words=len(tokens(d['text'])), _stems=stems(full), _hstems=stems(d['headnote'])))
@@ -454,6 +474,7 @@ def analytics(docs, vols):
     A['by_year'] = collections.Counter(d['vol'] for d in docs)
     A['by_month'] = collections.Counter((d['date'] or '')[:7] for d in docs if d['date'])
     A['outcomes'] = collections.Counter(d['outcome'] for d in docs)
+    A['procedures'] = collections.Counter(p for d in docs for p in d.get('procedure', []))
     A['topics'] = collections.Counter(t for d in docs for t in d['topics'])
     A['participant_facets'] = {}
     for key, label, values in PARTICIPANT_FACETS:
@@ -465,6 +486,8 @@ def analytics(docs, vols):
         for s in d['statutes']:
             st[s] += 1; stdoc[s].add(d['i'])
     A['statutes'] = [[s, len(stdoc[s])] for s, _ in st.most_common(200) if not s.startswith('?')][:60]
+    A['statute_codes'] = dict(collections.Counter(
+        statute_code(s) for d in docs for s in d['statutes']).most_common())
     A['codes'] = {c: n for c, n, _ in CODES}
     cited = collections.Counter(); ids = {(d['vol'], d['num']): d['i'] for d in docs}
     for d in docs:
@@ -475,8 +498,8 @@ def analytics(docs, vols):
         A[role] = collections.Counter(d[role] for d in docs if d[role]).most_common(25)
     A['words_median'] = sorted(d['words'] for d in docs)[len(docs) // 2] if docs else 0
     A['total_words'] = sum(d['words'] for d in docs)
-    for k in ('by_year', 'by_month', 'outcomes', 'topics'):
-        A[k] = dict(sorted(A[k].items(), key=lambda kv: (-kv[1], kv[0])) if k in ('outcomes', 'topics') else sorted(A[k].items()))
+    for k in ('by_year', 'by_month', 'outcomes', 'topics', 'procedures', 'statute_codes'):
+        A[k] = dict(sorted(A[k].items(), key=lambda kv: (-kv[1], kv[0])) if k in ('outcomes', 'topics', 'procedures', 'statute_codes') else sorted(A[k].items()))
     return A
 
 def validate_scans():
