@@ -76,6 +76,19 @@ fs.mkdirSync(out,{recursive:true});
   await page.reload(); await page.waitForSelector('#results .card');
   assert.equal(await page.locator('#f-code').inputValue(),'УГС');
   assert.equal(await page.locator('#f-procedure').inputValue(),'Доказательства');
+  // Указатели всех трёх томов: 1904/1905 пока честно показывают строку OCR,
+  // а не кнопку на несуществующий скан страницы.
+  await page.goto(base+'#/participants?y=1904&q='+encodeURIComponent('Алексакос'));
+  await page.waitForSelector('#view-participants:not([hidden]) .participant-entry');
+  assert((await page.locator('#participants-status').innerText()).includes('Записей: 1 · Решений: 1'));
+  assert((await page.locator('#participants-results').innerText()).includes('Том 1904 · указатель · с. I — строка OCR'));
+  assert.equal(await page.locator('.participant-source').count(),0);
+  await page.goto(base+'#/participants?y=1905&q='+encodeURIComponent('Балкашин'));
+  await page.waitForSelector('#view-participants:not([hidden]) .participant-entry');
+  assert((await page.locator('#participants-results').innerText()).includes('№ 49'));
+  assert((await page.locator('#participants-results').innerText()).includes('№ 55'));
+  await page.reload(); await page.waitForSelector('#view-participants:not([hidden]) .participant-entry');
+  assert.equal(await page.locator('#participants-year').inputValue(),'1905');
   await page.click('#tab-analytics');await page.waitForSelector('.kpi');
   assert((await page.locator('#analytics-body').innerText()).includes('Пол прямо указан'));
   // Новый том: фильтр, составная дата, конец решения и ссылка на пассаж.

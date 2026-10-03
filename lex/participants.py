@@ -5,6 +5,72 @@ import re
 from pathlib import Path
 
 
+LEADER = re.compile(r'\s*(?:\.\s*){2,}')
+NUMBERED_LINE = re.compile(r'^(.*?)(?:\s+)(\d+(?:\s*(?:,|\.|и)\s*\d+)*)\.?$')
+LETTER = re.compile(r'^[А-ЯЁІѲ]\.$')
+
+
+def parse_printed_index(index, source_texts):
+    """Разобрать строчный алфавитный указатель, не подменяя OCR нормализацией.
+
+    В 1904 одна запись разорвана колонтитулом в OCR. Обе строки остаются
+    источниками единой записи, а номера решений объединяются.
+    """
+    year = index['year']
+    entries, pending = [], None
+    ignored = ('[[', 'АЛФАВИТ', 'Алфавит', 'лицъ,', 'за 190', 'ПО ',
+               'по Граждан', 'Означеніе', 'нумера', '1*')
+    for file, text in source_texts.items():
+        for line_no, raw in enumerate(text.splitlines(), start=1):
+            line = raw.strip()
+            if line.startswith('Предложенія'):
+                break
+            if (not line or line.startswith(ignored) or LETTER.fullmatch(line)
+                    or line.endswith(':')):
+                continue
+            compact = LEADER.sub(' ', line).strip()
+            found = NUMBERED_LINE.fullmatch(compact)
+            if not found:
+                # Единственный перенос в указателе 1904: строка обрывается
+                # после запятой, продолжение начинает следующую страницу.
+                if year == 1904 and line.startswith('Управленіе жел. дор.') and line.endswith(','):
+                    nums = [int(n) for n in re.findall(r'\d+', line)]
+                    pending = dict(label='Управленіе желѣзныхъ дорогъ', section='',
+                                   decisions=nums, sources=[dict(file=file, text=line, line_no=line_no)])
+                continue
+            label, refs = found.groups()
+            label = label.strip(' .')
+            decisions = [int(n) for n in re.findall(r'\d+', refs)]
+            if pending and year == 1904 and line.startswith('Управленіе желѣзныхъ дорогъ'):
+                pending['decisions'].extend(decisions)
+                pending['sources'].append(dict(file=file, text=line, line_no=line_no))
+                entries.append(pending)
+                pending = None
+                continue
+            section = ''
+            if ':' in label:
+                prefix, value = label.split(':', 1)
+                if prefix in ('Банки', 'Желѣзныя дороги', 'Казенныя палаты',
+                              'Общества', 'Крестьянскія общества', 'Крестьянск. общ.'):
+                    section, label = prefix, value.strip()
+            entries.append(dict(label=label, section=section, decisions=decisions,
+                                sources=[dict(file=file, text=line, line_no=line_no)]))
+    if pending:
+        raise ValueError(f'{year}: оборванная запись указателя')
+    seen = set()
+    result = []
+    for entry in entries:
+        source_key = '\0'.join(f"{s['file']}:{s['line_no']}:{s['text']}" for s in entry['sources'])
+        entry_id = f"{year}-{hashlib.sha256(source_key.encode()).hexdigest()[:12]}"
+        if entry_id in seen:
+            raise ValueError(f'{year}: повторная строка указателя')
+        seen.add(entry_id)
+        result.append(dict(id=entry_id, year=year, label=entry['label'], section=entry['section'],
+                           decisions=[f'{year}-{number:03d}' for number in entry['decisions']],
+                           sources=[dict(file=s['file'], text=s['text']) for s in entry['sources']]))
+    return result
+
+
 def load_participants(root, docs):
     root = Path(root)
     known = {d['id']: d for d in docs}
@@ -20,10 +86,12 @@ def load_participants(root, docs):
             raw = (root / 'ocr' / str(year) / file).read_bytes()
             if hashlib.sha256(raw).hexdigest() != source['ocr_sha256']:
                 raise ValueError(f'{file}: указатель устарел; требуется сверка по скану')
-            if not (root / 'lex' / source['image']).is_file():
+            if source.get('image') and not (root / 'lex' / source['image']).is_file():
                 raise ValueError(f'{file}: нет изображения указателя')
             source_texts[file] = raw.decode('utf-8')
-        for entry in index['entries']:
+        source_entries = (parse_printed_index(index, source_texts)
+                          if index.get('format') == 'printed-index-v1' else index['entries'])
+        for entry in source_entries:
             if entry['id'] in seen or entry['year'] != year:
                 raise ValueError(f'{entry["id"]}: повторная запись или неверный том')
             if not entry['label'].strip() or not entry['decisions'] or not entry['sources']:

@@ -14,11 +14,15 @@ class IndexTests(unittest.TestCase):
     def test_all_printed_entries_have_current_sources_and_existing_decisions(self):
         docs = json.loads((ROOT/'lex/data/meta.json').read_text())['decisions']
         entries = load_participants(ROOT, docs)
-        self.assertEqual(len(entries), 243)
-        self.assertEqual(len({e['id'] for e in entries}), 243)
+        self.assertEqual(len(entries), 790)
+        self.assertEqual(len({e['id'] for e in entries}), 790)
         covered = {d for e in entries for d in e['decisions']}
-        self.assertEqual(covered, {f'1897-{n:03d}' for n in range(1,101) if n != 94})
-        self.assertTrue(all(not d.get('participant_ids') for d in docs if d['vol'] != 1897))
+        expected = ({f'1897-{n:03d}' for n in range(1,101) if n != 94}
+                    | {f'1904-{n:03d}' for n in range(1,121) if n not in (19, 33)}
+                    | {f'1905-{n:03d}' for n in range(1,116) if n not in (59, 115)})
+        self.assertEqual(covered, expected)
+        self.assertEqual({year: sum(e['year'] == year for e in entries) for year in (1897,1904,1905)},
+                         {1897: 243, 1904: 275, 1905: 272})
 
     def test_page_breaks_shared_braces_and_group_headings_do_not_create_false_identities(self):
         index = json.loads((ROOT/'lex/participants/1897.json').read_text())
@@ -36,6 +40,19 @@ class IndexTests(unittest.TestCase):
             self.assertTrue(all(not e['section'] for e in entries if e['label'].startswith(prefix)))
         state_rail = [e for e in entries if e['section']=='Желѣзныя дороги' and e['label'].startswith('Казенныхъ')][0]
         self.assertEqual(state_rail['decisions'],['1897-017','1897-075','1897-084','1897-099'])
+
+    def test_1904_and_1905_preserve_repeated_records_and_compound_references(self):
+        docs = json.loads((ROOT/'lex/data/meta.json').read_text())['decisions']
+        entries = load_participants(ROOT, docs)
+        rail_admin = [e for e in entries if e['year'] == 1904 and e['label'] == 'Управленіе желѣзныхъ дорогъ']
+        self.assertEqual(len(rail_admin), 2)  # В указателе есть запись под «Ж» и повтор под «У».
+        broken = next(e for e in rail_admin if len(e['sources']) == 2)
+        self.assertEqual(broken['decisions'], [f'1904-{n:03d}' for n in (3,14,20,31,32,38,39,43,61,91,93,102,106)])
+        balkashin = next(e for e in entries if e['year'] == 1905 and e['label'].startswith('Балкашинъ'))
+        self.assertEqual(balkashin['decisions'], ['1905-049','1905-055'])
+        don = next(e for e in entries if e['year'] == 1905 and e['label'].startswith('Донскаго войска'))
+        self.assertEqual(don['decisions'], ['1905-013','1905-014'])
+        self.assertTrue(all(not source.get('image') for e in entries if e['year'] in (1904,1905) for source in e['sources']))
 
     def fake(self, change):
         with tempfile.TemporaryDirectory() as directory:
