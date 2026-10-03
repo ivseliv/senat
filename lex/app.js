@@ -28,7 +28,7 @@
     opts: { modern: false, gloss: true }, detailId: null,
     sense: { config: null, engines: [], promise: null, q: '', hits: [], shown: 10, token: 0 },
     participants: {q:'', year:'', shown:60}, participantMap: new Map(),
-    f: { q: '', year: '', outcome: '', topic: '', statute: '', person: '', participant: '', gender: '', age: '', family: '', estate: '', entity: '', role: '', sort: 'rel' }, shown: 20, hits: [], sentinel: 0,
+    f: { q: '', year: '', outcome: '', topic: '', code: '', statute: '', procedure: '', person: '', participant: '', gender: '', age: '', family: '', estate: '', entity: '', role: '', sort: 'rel' }, shown: 20, hits: [], sentinel: 0,
   };
 
   function h(tag, attrs, ...kids) {
@@ -44,7 +44,9 @@
   const M = t => S.opts.modern ? L.modernize(t) : t;
   const fmtDate = (iso, label) => { if (!iso) return label ? M(label) : ''; const [y, m, d] = iso.split('-').map(Number); return `${d} ${MONTHS[m - 1]} ${y}`; };
   const CODE = () => S.an.codes;
-  const statLabel = s => { const [code, ...rest] = s.split(' '); return (CODE()[code] ? CODE()[code] + ',' : 'Иной акт,') + ' ' + rest.join(' '); };
+  const statuteCode = s => s.split(' ', 1)[0];
+  const codeLabel = code => code === '?' ? 'Кодекс не определён' : (CODE()[code] || 'Иной акт');
+  const statLabel = s => { const [code, ...rest] = s.split(' '); return codeLabel(code) + ', ' + rest.join(' '); };
   const deptShort = d => d.replace(' департамент', '').replace('Гражданский кассационный', 'Гражд. касс. деп.');
 
   async function loadJSON(name) { if (window.LEX_INLINE && window.LEX_INLINE[name]) return window.LEX_INLINE[name]; const r = await fetch(DATA + name); if (!r.ok) throw new Error(name + ': ' + r.status); return r.json(); }
@@ -136,7 +138,7 @@
     }
     if (tab === 'search') {
       Object.assign(S.f, { q: p.get('q') || '', year: p.get('y') || '', outcome: p.get('o') || '', topic: p.get('t') || '',
-        statute: p.get('s') || '', person: p.get('p') || '', participant: p.get('u') || '', sort: p.get('sort') || 'rel' },
+        code: p.get('c') || '', statute: p.get('s') || '', procedure: p.get('r') || '', person: p.get('p') || '', participant: p.get('u') || '', sort: p.get('sort') || 'rel' },
         Object.fromEntries(FACET_FILTERS.map(f => [f.key, p.get(f.param) || ''])));
       syncControls(); runSearch();
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
@@ -153,7 +155,7 @@
     window.scrollTo(0, path.startsWith('d/') ? window.scrollY : 0);
   }
   function pushSearch() {
-    const f = S.f; const params = { q: f.q, y: f.year, o: f.outcome, t: f.topic, s: f.statute, p: f.person, u:f.participant, sort: f.sort === 'rel' ? '' : f.sort };
+    const f = S.f; const params = { q: f.q, y: f.year, o: f.outcome, t: f.topic, c: f.code, s: f.statute, r: f.procedure, p: f.person, u:f.participant, sort: f.sort === 'rel' ? '' : f.sort };
     for (const facet of FACET_FILTERS) params[facet.param] = f[facet.key];
     go('search', params);
   }
@@ -175,7 +177,8 @@
   function filterFn() {
     const f = S.f;
     return d => (!f.year || String(d.vol) === f.year) && (!f.outcome || d.outcome === f.outcome) && (!f.topic || d.topics.includes(f.topic)) &&
-      (!f.statute || f.statute in d.statutes) && (!f.person || d.presiding === f.person || d.reporter === f.person || d.prosecutor === f.person) &&
+      (!f.code || Object.keys(d.statutes).some(s => statuteCode(s) === f.code)) && (!f.statute || f.statute in d.statutes) &&
+      (!f.procedure || (d.procedure || []).includes(f.procedure)) && (!f.person || d.presiding === f.person || d.reporter === f.person || d.prosecutor === f.person) &&
       (!f.participant || (d.participant_ids || []).some(id=>participantMatches(S.participantMap.get(id), f.participant))) &&
       FACET_FILTERS.every(facet => facetMatch(d, facet.key, f[facet.key]));
   }
@@ -270,6 +273,7 @@
         h('h3', {}, h('a', { href: '#/d/' + d.id, onclick: e => { e.preventDefault(); openFromList(d.id); } }, M(d.headnote))),
         h('p', { class: 'snip', 'data-i': d.i }, ''),
         h('div', { class: 'chips' }, d.topics.map(t => h('button', { class: 'chip', onclick: () => { S.f.topic = t; pushSearch(); } }, t))),
+        d.procedure && d.procedure.length ? h('div', { class: 'chips' }, d.procedure.map(p => h('button', { class: 'chip group', title: 'Фильтровать по фокусу кассационного рассуждения', onclick: () => { S.f.procedure = p; pushSearch(); } }, p))) : '',
         h('div', { class: 'chips participant-chips' }, groupItems(d).slice(0, 8).map(g => h('button', { class: 'chip group', title: 'Фильтровать решения по этому признаку', onclick: () => selectFacet(g.key, g.label) }, g.label))));
       card.addEventListener('click', e => { if (!e.target.closest('button,a')) openFromList(d.id); });
       card.addEventListener('keydown', e => { if (e.key === 'Enter' && e.target === card) openFromList(d.id); });
@@ -401,9 +405,9 @@
   }
   function syncControls() {
     $('#q').value = S.f.q; $('#f-year').value = S.f.year; $('#f-outcome').value = S.f.outcome; $('#f-topic').value = S.f.topic;
-    $('#f-statute').value = S.f.statute; $('#f-person').value = S.f.person; $('#f-participant').value=S.f.participant; $('#f-sort').value = S.f.sort;
+    $('#f-code').value = S.f.code; $('#f-statute').value = S.f.statute; $('#f-procedure').value = S.f.procedure; $('#f-person').value = S.f.person; $('#f-participant').value=S.f.participant; $('#f-sort').value = S.f.sort;
     for (const facet of FACET_FILTERS) $('#' + facet.id).value = S.f[facet.key];
-    const act = ['year', 'outcome', 'topic', 'statute', 'person', 'participant', ...FACET_FILTERS.map(f=>f.key)].filter(k => S.f[k]).length + (S.f.sort !== 'rel' ? 1 : 0);
+    const act = ['year', 'outcome', 'topic', 'code', 'statute', 'procedure', 'person', 'participant', ...FACET_FILTERS.map(f=>f.key)].filter(k => S.f[k]).length + (S.f.sort !== 'rel' ? 1 : 0);
     $('#fcount').textContent = act ? `· выбрано: ${act}` : '';
     const box = $('#fbox'); if (!box.dataset.init || act) { box.open = act > 0 || innerWidth >= 700; box.dataset.init = '1'; }
   }
@@ -416,8 +420,10 @@
     fillSelect($('#f-year'), S.meta.volumes.map(v => [String(v.year), String(v.year)]), 'Все годы');
     fillSelect($('#f-outcome'), Object.entries(an.outcomes).map(([k, n]) => [k, `${k} (${n})`]), 'Любой исход');
     fillSelect($('#f-topic'), Object.entries(an.topics).map(([k, n]) => [k, `${k} (${n})`]), 'Любая тема');
+    fillSelect($('#f-code'), Object.entries(an.statute_codes).map(([c, n]) => [c, `${codeLabel(c)} (${n})`]), 'Любой кодекс / акт');
     const stat = {}; dec.forEach(d => Object.keys(d.statutes).forEach(s => stat[s] = (stat[s] || 0) + 1));
     fillSelect($('#f-statute'), Object.entries(stat).filter(([s]) => !s.startsWith('?')).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 250).map(([s, n]) => [s, `${statLabel(s)} (${n})`]), 'Любая статья');
+    fillSelect($('#f-procedure'), Object.entries(an.procedures).map(([p, n]) => [p, `${p} (${n})`]), 'Любой фокус рассуждения');
     const per = {}; dec.forEach(d => [d.presiding, d.reporter, d.prosecutor].forEach(p => p && (per[p] = (per[p] || 0) + 1)));
     fillSelect($('#f-person'), Object.entries(per).sort((a, b) => a[0].localeCompare(b[0])).map(([p, n]) => [p, `${p} (${n})`]), 'Любой сенатор / прокурор');
     for (const facet of FACET_FILTERS) {
@@ -427,7 +433,7 @@
       fillSelect($('#' + facet.id), items, facet.any);
     }
     $('#form').addEventListener('submit', e => { e.preventDefault(); S.f.q = $('#q').value; S.f.participant=$('#f-participant').value; pushSearchOrRun(); });
-    for (const [id, key] of [['f-year', 'year'], ['f-outcome', 'outcome'], ['f-topic', 'topic'], ['f-statute', 'statute'], ['f-person', 'person'], ['f-participant','participant'], ['f-sort', 'sort']])
+    for (const [id, key] of [['f-year', 'year'], ['f-outcome', 'outcome'], ['f-topic', 'topic'], ['f-code', 'code'], ['f-statute', 'statute'], ['f-procedure', 'procedure'], ['f-person', 'person'], ['f-participant','participant'], ['f-sort', 'sort']])
       $('#' + id).addEventListener('change', e => { S.f[key] = e.target.value; S.f.q = $('#q').value; pushSearchOrRun(); });
     for (const facet of FACET_FILTERS) $('#' + facet.id).addEventListener('change', e => {
       S.f[facet.key] = e.target.value; S.f.q = $('#q').value; pushSearchOrRun();
@@ -551,6 +557,7 @@
     root.replaceChildren(kpi,
       h('div', { class: 'grid' },
         card('Как решались просьбы', 'Исход определён автоматически по резолютивной части решения.', bars(Object.entries(an.outcomes), { click: r => go('search', { o: r[0] }) })),
+        card('Фокус кассационного рассуждения', 'Автоматические метки по тексту: они показывают обсуждаемую тему, а не установленное основание решения.', bars(Object.entries(an.procedures), { click: r => go('search', { r: r[0] }) })),
         card('О чём решения', 'Тема определяется по ключевым словам в заголовке и тексте; у решения может быть до трёх тем. Нажмите строку, чтобы открыть решения.', bars(Object.entries(an.topics), { click: r => go('search', { t: r[0] }) })),
         ...FACET_FILTERS.map(facet => {
           const data = an.participant_facets[facet.key], rows = Object.entries(data.values);
@@ -560,6 +567,8 @@
         }),
         card('Самые часто упоминаемые статьи', 'Число решений, где статья названа. Кодекс определён автоматически там, где он указан рядом со статьёй. Нажмите, чтобы найти решения.',
           bars(an.statutes.slice(0, 15), { label: r => statLabel(r[0]), click: r => go('search', { s: r[0] }) })),
+        card('Кодексы и акты', 'Кодекс определяется по соседней формулировке в тексте; «не определён» означает, что номер статьи виден, но акт не установлен.',
+          bars(Object.entries(an.statute_codes), { label: r => codeLabel(r[0]), click: r => go('search', { c: r[0] }) })),
         card('Решения по месяцам', 'Дата — день заседания по заголовку решения.', monthCols),
         card('Кто председательствовал', 'Чаще всего в этом составе.', people('presiding')),
         card('Кто докладывал дело', '', people('reporter')),

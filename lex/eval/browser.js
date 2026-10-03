@@ -67,6 +67,15 @@ fs.mkdirSync(out,{recursive:true});
   assert.equal(await page.locator('#f-entity').inputValue(),'Банки и кредитные учреждения');
   await page.reload(); await page.waitForSelector('#results .card');
   assert.equal(await page.locator('#f-estate').inputValue(),'Крестьяне');
+  // Отдельные фильтры по коду акта и фокусу кассационного рассуждения.
+  await page.goto(base+'#/search?c='+encodeURIComponent('УГС')+'&r='+encodeURIComponent('Доказательства'));
+  await page.waitForSelector('#results .card');
+  assert.equal(await page.locator('#f-code').inputValue(),'УГС');
+  assert.equal(await page.locator('#f-procedure').inputValue(),'Доказательства');
+  assert((await page.locator('#results').innerText()).includes('Доказательства'));
+  await page.reload(); await page.waitForSelector('#results .card');
+  assert.equal(await page.locator('#f-code').inputValue(),'УГС');
+  assert.equal(await page.locator('#f-procedure').inputValue(),'Доказательства');
   await page.click('#tab-analytics');await page.waitForSelector('.kpi');
   assert((await page.locator('#analytics-body').innerText()).includes('Пол прямо указан'));
   // Новый том: фильтр, составная дата, конец решения и ссылка на пассаж.
