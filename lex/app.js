@@ -204,6 +204,7 @@
       const refs=entry.decisions.map(id=>h('a',{href:'#/d/'+id+'?'+new URLSearchParams({mode:'participants',q:f.q,y:f.year})},'№ '+Number(id.split('-')[1])));
       const sources=entry.sources.map(source=>{
         const ref={...source,full:source.image,index:true},label=scanLabel({vol:entry.year},ref);
+        if (!source.image) return h('span',{class:'muted small',title:'Строка указателя проверяется по OCR и SHA; скан страницы пока не опубликован.'},label+' — строка OCR');
         return window.LEX_INLINE && location.protocol==='file:' ?
           h('a',{href:scanURL(source.image),target:'_blank',rel:'noopener'},label+' — скан (нужен интернет)') :
           h('button',{class:'btn ghost participant-source',onclick:()=>openScan({vol:entry.year},ref)},label+' — скан');

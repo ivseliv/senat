@@ -1,0 +1,12 @@
+{
+  "year": 1904,
+  "format": "printed-index-v1",
+  "description": "Записи алфавитного указателя лиц, семей, организаций и учреждений. Каждая запись строится из буквальной строки OCR и сверяется по SHA-256; страницы-сканы указателя пока не опубликованы.",
+  "sources": {
+    "p0170_R.txt": {"ocr_sha256": "41f8e0b7b29be6fe86621fdd58926a50c4fbb69c59db135f6400b6e54cafabc7", "printed_page": "I"},
+    "p0171_L.txt": {"ocr_sha256": "b08fa30e9bcb89555bfde2d4f9688ae82ec13634ebdaf4cf67d98a42882acf10", "printed_page": "II"},
+    "p0171_R.txt": {"ocr_sha256": "1db28cfbb46eced0b62f67ec03af26b4cb012146ecd6f47b2390fc8230be3b1b", "printed_page": "III"},
+    "p0172_L.txt": {"ocr_sha256": "fd3ae99cf41dc72e5b1fe0c81719009b348ac9b6a2ec524475ed18fb1e91b14d", "printed_page": "IV"},
+    "p0172_R.txt": {"ocr_sha256": "4c2cabcb7d9a68d93c2082561c74dc6796e93ee55b783e4ef9f31b549e5f4eb9", "printed_page": "V"}
+  }
+}
