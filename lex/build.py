@@ -16,6 +16,7 @@
 import collections, glob, json, math, os, re, sys
 from pathlib import Path
 from passages import build_passages
+from participants import load_participants
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 OUT = os.path.join(ROOT, 'lex', 'data')
@@ -368,6 +369,7 @@ def main():
             vt.append(d['text'])
         texts[year] = vt
     unify_persons(docs)
+    participants = load_participants(ROOT, docs)
     # --- обратный индекс
     df = collections.Counter(); post = {}; hpost = {}; lens = []
     for d in docs:
@@ -401,7 +403,7 @@ def main():
         d.pop('_stems'); d.pop('_hstems')
     # --- аналитика
     an = analytics(docs, vols)
-    for name, obj in (('meta', dict(volumes=vols, decisions=docs)), ('index', index), ('analytics', an)):
+    for name, obj in (('meta', dict(volumes=vols, decisions=docs, participants=participants)), ('index', index), ('analytics', an)):
         with open(os.path.join(OUT, f'{name}.json'), 'w', encoding='utf-8') as f:
             json.dump(obj, f, ensure_ascii=False, separators=(',', ':'))
     for year, vt in texts.items():
