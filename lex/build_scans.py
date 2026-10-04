@@ -12,6 +12,7 @@ import difflib
 import hashlib
 import json
 import re
+import shutil
 import subprocess
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -123,6 +124,14 @@ def leaf_image(source, year, fn, pdf, cache, single_pages=False, digest=None):
         # может изменить обрезку, размеры и наклон исходной картинки.
         page = leaf_page_index(fn) + 1
         ready = cache / f'{year}-{digest}-{fn}.png'
+        if ready.exists():
+            try:
+                with Image.open(ready) as cached:
+                    return cached.convert('L')
+            except OSError:
+                # Прерванный pdftoppm иногда оставляет неполный PNG. Кэш
+                # производный, поэтому безопасно перерисовать только его.
+                ready.unlink()
         if not ready.exists():
             subprocess.run(['pdftoppm', '-f', str(page), '-l', str(page), '-scale-to-x', '1100', '-scale-to-y', '-1', '-png', '-gray', '-singlefile', str(pdf), str(ready.with_suffix(''))], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
         return Image.open(ready).convert('L')
@@ -191,6 +200,9 @@ def build(source, cache, years=None, leaf_pdfs=None):
             suffix = '-' + manifest['source_pdf_sha256'][:16] if single_pages else ''
             full = f'scans/{year}/pages/{fn}{suffix}.webp'
             image.save(stage / full, format='WEBP', quality=86, method=4)
+            published_full = ROOT / 'lex' / full
+            published_full.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(stage / full, published_full)
             page_nums = {s['page'] for _, spans in items for s in spans if s['page'] is not None}
             if len(page_nums) > 1:
                 raise ValueError(f'{year}/{fn}: противоречивые номера страниц {page_nums}')
@@ -213,6 +225,9 @@ def build(source, cache, years=None, leaf_pdfs=None):
                         thumb = f'scans/{year}/fragments/{key}.webp'
                         cut = image.crop((0, int(box[1]*image.height), image.width, min(image.height, int(box[3]*image.height)+1)))
                         cut.save(stage / thumb, format='WEBP', quality=86, method=4)
+                        published_thumb = ROOT / 'lex' / thumb
+                        published_thumb.parent.mkdir(parents=True, exist_ok=True)
+                        shutil.copy2(stage / thumb, published_thumb)
                         result.update(kind='fragment', image=thumb, box=box, coverage=min(b['coverage'] for b in boxes), width=cut.width, height=cut.height)
                         crops += 1
                 if result['kind'] == 'page':
@@ -227,7 +242,13 @@ def build(source, cache, years=None, leaf_pdfs=None):
         for asset in sorted(assets):
             destination = ROOT / 'lex' / asset
             destination.parent.mkdir(parents=True, exist_ok=True)
-            (stage / asset).replace(destination)
+            # Оставляем staging-копию: так повторный запуск после прерывания
+            # не потеряет уже собранный кадр до переноса всех остальных.
+            source_asset = stage / asset
+            if source_asset.is_file():
+                shutil.copy2(source_asset, destination)
+            elif not destination.is_file():
+                raise FileNotFoundError(source_asset)
         # После исправлений текста идентификаторы кадров меняются. Удаляем
         # только неиспользуемые WebP выбранного тома после полной сборки.
         for folder in ('pages', 'fragments'):
