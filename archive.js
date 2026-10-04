@@ -211,6 +211,7 @@
       $('#back').addEventListener('click', event => { event.preventDefault(); location.hash = '#/'; });
       $('#navlist').addEventListener('click', event => { event.preventDefault(); location.hash = '#/'; });
       $('#navstats').addEventListener('click', event => { event.preventDefault(); location.hash = '#/stats'; });
+      $('#mode-text').addEventListener('click', () => { setTimeout(() => $('#q').focus(), 0); });
     } catch (error) {
       $('#status').textContent = `Не удалось загрузить корпус: ${error.message}`;
     }
