@@ -90,6 +90,21 @@ fs.mkdirSync(out,{recursive:true});
   assert((await page.locator('#participants-results').innerText()).includes('№ 55'));
   await page.reload(); await page.waitForSelector('#view-participants:not([hidden]) .participant-entry');
   assert.equal(await page.locator('#participants-year').inputValue(),'1905');
+  // Юридическая карта: понятие ведёт к источнику, решениям, нормам и указателю.
+  await page.goto(base+'#/map?q='+encodeURIComponent('фиктивные сделки'));
+  await page.waitForSelector('#view-map:not([hidden]) [data-map-node="sources"]');
+  assert((await page.locator('#map-status').innerText()).includes('решени'));
+  assert.equal(await page.locator('#map-results [data-map-node]').count(),5);
+  assert(await page.locator('[data-map-node="statutes"] .chip.stat').count()>0);
+  await page.locator('[data-map-node="sources"] a').first().click();
+  await page.waitForSelector('#passage-target');
+  assert(page.url().includes('mode=map'));
+  await page.reload(); await page.waitForSelector('#passage-target');
+  await page.click('#detail-close'); await page.waitForSelector('#view-map:not([hidden]) [data-map-node="sources"]');
+  assert.equal(await page.locator('#map-q').inputValue(),'фиктивные сделки');
+  await page.goto(base+'#/map?t='+encodeURIComponent('Наследство и завещания'));
+  await page.waitForSelector('#view-map:not([hidden]) [data-map-node="decisions"]');
+  assert.equal(await page.locator('[data-map-node="sources"]').count(),0);
   await page.click('#tab-analytics');await page.waitForSelector('.kpi');
   assert((await page.locator('#analytics-body').innerText()).includes('Пол прямо указан'));
   // Новый том: фильтр, составная дата, конец решения и ссылка на пассаж.
@@ -132,6 +147,8 @@ fs.mkdirSync(out,{recursive:true});
   }
   // Телефон и тёмная тема, без горизонтальной прокрутки.
   await page.setViewportSize({width:390,height:844});
+  await page.goto(base+'#/map?q='+encodeURIComponent('фиктивные сделки'));await page.waitForSelector('[data-map-node="sources"]');
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   await page.goto(base+'#/sense?q='+encodeURIComponent('фиктивные сделки'));await page.waitForSelector('.passage');
   await page.click('#theme');
   assert.equal(await page.locator('html').getAttribute('data-theme'),'dark');

@@ -125,6 +125,12 @@ dl.meta dt { font-size: 12px; color: var(--ink2); } dl.meta dd { margin: 0; }
 .kpi-v { font: 600 28px/1.2 var(--serif); }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 14px; align-items: start; }
 @media (max-width: 520px) { .grid { grid-template-columns: 1fr; } }
+.map-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; align-items: start; margin-top: 12px; }
+.map-node { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; }
+.map-node h3 { font: 600 17px/1.35 var(--serif); margin: 0; }
+.map-list { margin: 8px 0 0; padding-left: 21px; }
+.map-list li { margin: 8px 0; }
+.map-sources .small { margin-top: 4px; line-height: 1.45; }
 .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; min-width: 0; }
 .panel h3 { margin: 0 0 4px; font-size: 16px; }
 .bars { display: grid; gap: 4px; margin-top: 10px; }
@@ -148,7 +154,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
 <header><div class="wrap">
   <div class="top"><h1>Решения Правительствующего Сената</h1><span class="sub">поиск и аналитика · прототип</span><span class="spacer"></span>
     <button class="btn ghost" id="theme" title="Светлая / тёмная тема">◐ тема</button></div>
-  <nav aria-label="Разделы"><a id="tab-search" href="#/search">Поиск</a><a id="tab-sense" href="#/sense">По смыслу</a><a id="tab-participants" href="#/participants">Участники</a><a id="tab-analytics" href="#/analytics">Аналитика</a><a id="tab-about" href="#/about">О проекте</a></nav>
+  <nav aria-label="Разделы"><a id="tab-search" href="#/search">Поиск</a><a id="tab-sense" href="#/sense">По смыслу</a><a id="tab-map" href="#/map">Карта</a><a id="tab-participants" href="#/participants">Участники</a><a id="tab-analytics" href="#/analytics">Аналитика</a><a id="tab-about" href="#/about">О проекте</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -208,6 +214,20 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     <p class="muted small">Современные понятия помогают найти старые выражения. Результат — фрагмент первоисточника; пояснение ИИ дано отдельно. Наличие слов ещё не означает совпадения правового института.</p>
     <div id="sense-status" aria-live="polite"></div><div id="sense-results"></div>
     <button class="btn ghost" id="sense-more" hidden>Показать ещё</button>
+  </section>
+
+  <section id="view-map" hidden>
+    <h2>Юридическая карта</h2>
+    <form id="map-form" class="row" role="search">
+      <input id="map-q" type="search" placeholder="Современное понятие: фиктивные сделки" aria-label="Современное понятие для карты" autocomplete="off">
+      <select id="map-topic" aria-label="Тема корпуса"></select>
+      <button class="btn" type="submit">Построить карту</button><button class="btn ghost" id="map-reset" type="button">Сбросить</button>
+    </form>
+    <details class="concept-picker" id="map-concepts">
+      <summary>Примеры современных понятий</summary><div class="concept-catalog"></div>
+    </details>
+    <p class="muted small">Цепочка строится от современного понятия или темы к фрагментам первоисточника, затем к решениям, извлечённым ссылкам на нормы и записям печатных указателей. Это навигация по корпусу: совпадение не устанавливает правовой вывод, роль участника или точный исторический аналог.</p>
+    <div id="map-status" aria-live="polite"></div><div id="map-results"></div>
   </section>
 
   <section id="view-participants" hidden>

@@ -27,6 +27,7 @@
     meta: null, index: null, an: null, engine: null, texts: {}, stemCache: new Map(),
     opts: { modern: false, gloss: true }, detailId: null,
     sense: { config: null, engines: [], promise: null, q: '', hits: [], shown: 10, token: 0 },
+    map: { q: '', topic: '', token: 0 },
     participants: {q:'', year:'', shown:60}, participantMap: new Map(),
     f: { q: '', year: '', outcome: '', topic: '', code: '', statute: '', procedure: '', person: '', participant: '', gender: '', age: '', family: '', estate: '', entity: '', role: '', sort: 'rel' }, shown: 20, hits: [], sentinel: 0,
   };
@@ -130,9 +131,9 @@
   }
   function route() {
     const { path, p } = readHash();
-    const requested = path.startsWith('d/') ? (['sense','participants'].includes(p.get('mode')) ? p.get('mode') : 'search') : (path.split('/')[0] || 'search');
-    const tab = ['search','sense','participants','analytics','about'].includes(requested) ? requested : 'search';
-    for (const t of ['search', 'sense', 'participants', 'analytics', 'about']) {
+    const requested = path.startsWith('d/') ? (['sense','participants','map'].includes(p.get('mode')) ? p.get('mode') : 'search') : (path.split('/')[0] || 'search');
+    const tab = ['search','sense','map','participants','analytics','about'].includes(requested) ? requested : 'search';
+    for (const t of ['search','sense','map','participants','analytics','about']) {
       $('#view-' + t).hidden = t !== tab;
       $('#tab-' + t).setAttribute('aria-current', t === tab ? 'page' : 'false');
     }
@@ -144,6 +145,10 @@
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
     } else if (tab === 'sense') {
       S.sense.q = p.get('q') || ''; $('#sense-q').value = S.sense.q; runSense();
+      if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
+    } else if (tab === 'map') {
+      S.map.q = p.get('q') || ''; S.map.topic = p.get('t') || '';
+      $('#map-q').value = S.map.q; $('#map-topic').value = S.map.topic; renderMap();
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
     } else if (tab === 'participants') {
       Object.assign(S.participants, {q:p.get('q') || '', year:p.get('y') || '', shown:60});
@@ -310,7 +315,7 @@
     box.replaceChildren(h('p',{class:'muted'},'Загрузка решения…'));
     const text = await textOf(d);
     if (S.detailId !== id || $('#detail').hidden) return;
-    const params = readHash().p, inSense = params.get('mode') === 'sense';
+    const params = readHash().p, inSense = ['sense','map'].includes(params.get('mode'));
     let target = null, senseTerms = [];
     if (inSense) {
       await loadSense();
@@ -444,7 +449,7 @@
     $('#gloss').addEventListener('change', e => { S.opts.gloss = e.target.checked; runSearch(); });
     $('#more').addEventListener('click', () => { S.shown += 20; renderResults(++runToken); });
     $('#reset').addEventListener('click', () => go('search'));
-    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const mode = ['sense','participants'].includes(p.get('mode')) ? p.get('mode') : 'search'; p.delete('at'); p.delete('end'); p.delete('mode'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
+    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const mode = ['sense','participants','map'].includes(p.get('mode')) ? p.get('mode') : 'search'; p.delete('at'); p.delete('end'); p.delete('mode'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !document.querySelector('.scan-dialog[open]') && !$('#detail').hidden) $('#detail-close').click(); });
     $('#examples').append(...['недействительность сделки', 'возмещение убытков', 'исковая давность', 'договор аренды', 'банкротство', 'страховое возмещение', 'перевозка грузов', 'исполнитель завещания']
       .map(x => h('button', { class: 'chip', onclick: () => go('search', { q: x }) }, x)));
@@ -462,6 +467,11 @@
         }}, q))))));
     }
     $('#sense-more').addEventListener('click', () => { S.sense.shown += 10; renderSense(++S.sense.token); });
+    fillSelect($('#map-topic'), Object.entries(an.topics).map(([k, n]) => [k, `${k} (${n})`]), 'Все темы');
+    $('#map-form').addEventListener('submit', e => { e.preventDefault(); go('map', {q:$('#map-q').value.trim(),t:$('#map-topic').value}); });
+    $('#map-reset').addEventListener('click', () => go('map'));
+    $('#map-concepts .concept-catalog').append(...MODERN_CONCEPTS.map(([title, queries]) => h('section', {},
+      h('h3', {}, title), h('div', {class:'chips'}, queries.map(q => h('button', {class:'chip', onclick:()=>go('map',{q,t:S.map.topic})}, q))))));
     $('#theme').addEventListener('click', () => { const r = document.documentElement; const dark = r.dataset.theme === 'dark' || (!r.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches); r.dataset.theme = dark ? 'light' : 'dark'; });
   }
   function pushSearchOrRun() { const { path } = readHash(); if (path.startsWith('d/')) { closeDetail(); } pushSearch(); if (!location.hash.startsWith('#/search')) return; runSearch(); }
@@ -529,6 +539,92 @@
       } catch(err) { /* Скан не является условием доступа к первоисточнику. */ }
     }
     $('#sense-more').hidden=hits.length<=S.sense.shown;
+  }
+
+  /* ---------------------------------------------------------------- юридическая карта */
+  function mapNode(title, note, content, key) {
+    return h('section', {class:'map-node', 'data-map-node':key}, h('h3',{},title),
+      note ? h('p',{class:'muted small'},note) : '', content);
+  }
+  function mapDecisionHref(d, hit) {
+    const params={mode:'map',q:S.map.q,t:S.map.topic};
+    if (hit) { params.at=String(hit.passage.start); params.end=String(hit.passage.end); }
+    return '#/d/'+d.id+'?'+new URLSearchParams(params);
+  }
+  function mapDecisionList(items) {
+    return h('ol',{class:'map-list'},items.map(({d,hit})=>h('li',{},
+      h('a',{href:mapDecisionHref(d,hit)},`№ ${d.num}, ${d.vol} г.`), ' · ', M(d.headnote.slice(0,150))+(d.headnote.length>150?'…':''),
+      h('div',{class:'chips'},...d.topics.map(t=>h('button',{class:'chip',onclick:()=>go('map',{q:S.map.q,t})},t))))));
+  }
+  async function renderMap() {
+    const token=++S.map.token, q=S.map.q.trim(), topic=S.map.topic;
+    const status=$('#map-status'), box=$('#map-results'); box.replaceChildren();
+    if (!q && !topic) {
+      status.textContent='Выберите тему или введите современное понятие.';
+      box.append(mapNode('Темы корпуса','Метки определены автоматически по заголовкам и текстам; они служат навигацией, а не юридической квалификацией.',
+        h('div',{class:'chips'},...Object.entries(S.an.topics).sort((a,b)=>b[1]-a[1]).map(([t,n])=>h('button',{class:'chip',onclick:()=>go('map',{t})},`${t} (${n})`))),'themes'));
+      return;
+    }
+    status.textContent='Собираем связи по первоисточникам…';
+    let matched=[], concepts=[];
+    if (q) {
+      try {
+        await loadSense(); if(token!==S.map.token)return;
+        const results=S.sense.engines.map(e=>e.engine.search(q,S.sense.config.method));
+        concepts=results[0] ? results[0].concepts : [];
+        matched=results.flatMap(r=>r.hits).sort((a,b)=>b.score-a.score || a.passage.id.localeCompare(b.passage.id));
+        if(topic) matched=matched.filter(hit=>S.meta.decisions.find(d=>d.id===hit.passage.decision).topics.includes(topic));
+        // У карты есть граница релевантности: связи выводятся из верхних фрагментов,
+        // а не из каждого случайного совпадения в полном тексте.
+        matched=matched.slice(0,50);
+      } catch(err) {
+        if(token===S.map.token)status.textContent='Не удалось загрузить поиск по смыслу: '+err.message+'. Повторите запрос.';
+        return;
+      }
+    }
+    const byDecision=new Map();
+    for(const hit of matched) {
+      const d=S.meta.decisions.find(x=>x.id===hit.passage.decision);
+      if(!byDecision.has(d.id) || byDecision.get(d.id).hit.score<hit.score) byDecision.set(d.id,{d,hit});
+    }
+    let decisions=q ? [...byDecision.values()].sort((a,b)=>b.hit.score-a.hit.score || a.d.i-b.d.i) :
+      S.meta.decisions.filter(d=>d.topics.includes(topic)).map(d=>({d,hit:null}));
+    const statutes={}, participants=new Map(), topicCounts={};
+    for(const {d} of decisions) {
+      Object.entries(d.statutes).forEach(([s,n])=>statutes[s]=(statutes[s]||0)+n);
+      (d.participant_ids||[]).forEach(id=>{const entry=S.participantMap.get(id);if(entry)participants.set(id,entry);});
+      d.topics.forEach(t=>topicCounts[t]=(topicCounts[t]||0)+1);
+    }
+    const sources=matched.slice(0,8), topDecisions=decisions.slice(0,25);
+    const hasSources=Boolean(q);
+    status.replaceChildren(h('strong',{},`${decisions.length} ${plural(decisions.length,'решение','решения','решений')}`),
+      h('span',{class:'muted'},hasSources ? ` · связи по ${matched.length} ${plural(matched.length,'фрагменту','фрагментам','фрагментам')} в ранжированной выдаче` : ` · тема: ${topic}`),
+      concepts.length ? h('span',{class:'muted'},' · справочник: '+concepts.map(c=>c.concept).join(', ')) : '');
+    if(!decisions.length) {
+      box.append(h('p',{class:'empty'},'Связей не найдено. Это не доказывает отсутствия практики: смените понятие или снимите тематический фильтр.'));
+      return;
+    }
+    const grid=h('div',{class:'map-grid'});
+    if(hasSources) {
+      const sourceItems=[];
+      for(const hit of sources) {
+        const p=hit.passage,d=S.meta.decisions.find(x=>x.id===p.decision),text=await textOf(d); if(token!==S.map.token)return;
+        const original=window.Concept.slice(text,p.start,p.end), link=mapDecisionHref(d,hit);
+        sourceItems.push(h('li',{},h('a',{href:link},`№ ${d.num}, ${d.vol} г. · ${pageLabel(p)}`),
+          h('div',{class:'small',html:'«… '+window.Concept.highlightEvidence(M(original),[q,...hit.matched],p.ai ? M(p.ai.evidence) : '')+' …»'})));
+      }
+      grid.append(mapNode('Фрагменты первоисточника','Каждая связь начинается с ранжированного фрагмента; ссылка открывает точное место и его скан.',h('ol',{class:'map-list map-sources'},sourceItems),'sources'));
+    }
+    grid.append(mapNode('Решения','Показаны до 25 решений; в каждой карточке сохраняются исходная тема и прямая ссылка.',mapDecisionList(topDecisions),'decisions'));
+    const statRows=Object.entries(statutes).filter(([s])=>!s.startsWith('?')).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).slice(0,20);
+    grid.append(mapNode('Упомянутые нормы','Это извлечённые ссылки из найденных решений. Номер акта нужно сверять с изданием.', statRows.length ?
+      h('div',{class:'chips'},...statRows.map(([s,n])=>h('a',{class:'chip stat',href:'#/search?'+new URLSearchParams({s})},`${statLabel(s)} (${n})`))) : h('p',{class:'muted'},'Определённых ссылок на статьи нет.'),'statutes'));
+    const entries=[...participants.values()].sort((a,b)=>participantLabel(a).localeCompare(participantLabel(b),'ru')).slice(0,30);
+    grid.append(mapNode('Участники','Записи печатных указателей, связанные с найденными решениями. Они не устанавливают процессуальную роль или биографию.',entries.length ?
+      h('ul',{class:'map-list'},entries.map(entry=>h('li',{},participantLink(entry)))) : h('p',{class:'muted'},'В печатных указателях для этих решений записей нет.'),'participants'));
+    const relatedTopics=Object.entries(topicCounts).sort((a,b)=>b[1]-a[1]);
+    grid.append(mapNode('Темы в выборке','Автоматические темы — вход в другую ветвь карты.',h('div',{class:'chips'},...relatedTopics.map(([t,n])=>h('button',{class:'chip',onclick:()=>go('map',{q:S.map.q,t})},`${t} (${n})`))),'related-topics'));
+    box.append(grid);
   }
 
   /* ---------------------------------------------------------------- аналитика */
