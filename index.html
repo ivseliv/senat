@@ -67,10 +67,10 @@ header.mast{text-align:center;padding:18px 0 6px}
 /* ---------- полка ---------- */
 .shelf-wrap{margin:34px 0 8px}
 .shelf-scroll{overflow-x:auto;scrollbar-width:thin;padding-bottom:2px}
-.shelf-inner{min-width:660px}
-#shelf{display:flex;align-items:flex-end;gap:5px;height:132px;padding:0 6px}
+.shelf-inner{min-width:0}
+#shelf{display:flex;justify-content:center;align-items:flex-end;gap:14px;height:145px;padding:0 6px}
 .spine{
-  flex:1 0 21px;min-width:21px;cursor:pointer;position:relative;border-radius:2px 2px 0 0;
+  flex:0 0 clamp(76px,12vw,120px);min-width:76px;cursor:pointer;position:relative;border-radius:2px 2px 0 0;
   background:linear-gradient(90deg, #315443, var(--green) 45%, #24402f);
   box-shadow:inset 1px 0 0 rgba(255,255,255,.14), inset -2px 0 3px rgba(0,0,0,.35);
   transition:transform .16s ease, filter .16s ease;
@@ -79,8 +79,8 @@ header.mast{text-align:center;padding:18px 0 6px}
   content:"";position:absolute;left:2px;right:2px;top:7px;height:1px;background:var(--gold-soft);
   box-shadow:0 4px 0 var(--gold-soft), 0 -2px 0 rgba(0,0,0,.2);opacity:.9;
 }
-#ylabels{display:flex;gap:5px;padding:0 6px;margin-top:6px}
-.ylab{flex:1 0 21px;min-width:21px;height:40px;position:relative}
+#ylabels{display:flex;justify-content:center;gap:14px;padding:0 6px;margin-top:6px}
+.ylab{flex:0 0 clamp(76px,12vw,120px);min-width:76px;height:40px;position:relative}
 .ylab span{
   position:absolute;top:0;left:50%;transform:translateX(-50%) rotate(58deg);transform-origin:top center;
   font-family:var(--serif);font-size:11.5px;letter-spacing:.1em;color:var(--faded);white-space:nowrap;
@@ -109,6 +109,13 @@ button.btn{
 }
 button.btn:hover{background:#233c2f}
 .hint{font-size:12.5px;color:var(--faded);margin:8px 0 0}
+.search-modes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0 2px}
+.search-mode{display:block;min-height:78px;padding:13px 15px;border:1px solid var(--hair);background:var(--paper-warm);color:var(--ink);text-decoration:none}
+.search-mode strong{display:block;font:400 18px var(--serif);color:var(--green);margin-bottom:3px}
+.search-mode span{display:block;font-size:12.5px;line-height:1.35;color:var(--faded)}
+.search-mode.sense{border-color:var(--gold-soft);background:#f7f0dd}
+.search-mode.sense strong::after{content:' →';color:var(--stamp)}
+.search-mode.sense:hover{border-color:var(--stamp)}
 
 .toplinks{display:flex;justify-content:center;gap:34px;margin:26px 0 20px}
 .toplinks a{
@@ -224,13 +231,17 @@ footer .fin{width:150px;color:var(--gold);margin:0 auto 14px;display:block}
 footer p{font-family:var(--serif);font-style:italic;font-size:13px;color:var(--faded);max-width:640px;margin:0 auto}
 
 @media (max-width:680px){
+  #shelf{gap:10px;height:124px}
+  .spine{flex-basis:calc((100vw - 92px) / 3);min-width:0}
+  #ylabels{gap:10px}
+  .ylab{flex-basis:calc((100vw - 92px) / 3);min-width:0}
+  .search-modes{grid-template-columns:1fr}
   .toplinks{flex-wrap:wrap;gap:12px 16px}
   .toplinks a{font-size:11px;letter-spacing:.14em}
   .brow .lbl{flex-basis:150px;font-size:13px}
   .dec .hn{font-size:17px}
   .rtext{font-size:17px;text-align:left}
   .tot{padding:14px 18px}.tot .v{font-size:26px}
-  .spine{min-width:15px}
 }
 </style>
 </head>
@@ -267,6 +278,10 @@ footer p{font-family:var(--serif);font-style:italic;font-size:13px;color:var(--f
     <button class="btn" id="go">Найти</button>
   </div>
   <p class="hint">Запрос «уезд» найдёт «уѣздъ»: орфография нормализуется только для сопоставления. Поиск идёт по полному тексту трёх доступных томов; в карточке сохраняется оригинал.</p>
+  <div class="search-modes" aria-label="Режимы поиска">
+    <a class="search-mode" href="#/" id="mode-text"><strong>По тексту</strong><span>Слова, фамилии, статьи и формулировки во всех доступных решениях.</span></a>
+    <a class="search-mode sense" href="lex/#/sense"><strong>По смыслу</strong><span>Современный юридический термин ведёт к старинным формулировкам и пассажам.</span></a>
+  </div>
 
   <nav class="toplinks">
     <a href="#/" id="navlist" class="on">Каталогъ</a>
