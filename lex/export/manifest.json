@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "base_url": "https://ivseliv.github.io/senat/lex/",
+  "volumes": [
+    {
+      "year": 1897,
+      "dept": "Гражданский кассационный департамент",
+      "decisions": 100,
+      "gaps": [],
+      "file": "text-1897.json"
+    },
+    {
+      "year": 1904,
+      "dept": "Гражданский кассационный департамент",
+      "decisions": 120,
+      "gaps": [],
+      "file": "text-1904.json"
+    },
+    {
+      "year": 1905,
+      "dept": "Гражданский кассационный департамент",
+      "decisions": 115,
+      "gaps": [],
+      "file": "text-1905.json"
+    }
+  ],
+  "counts": {
+    "decisions": 335,
+    "passages": 1875,
+    "participants": 790,
+    "statute_mentions": 1798,
+    "scan_passage_refs": 2921
+  },
+  "files": [
+    {
+      "name": "decisions.json",
+      "sha256": "09a61366fd6df9554e5a6c8d67eb560562bb655de9f690f5838457af4d5df9bf",
+      "bytes": 5815454
+    },
+    {
+      "name": "decisions.csv",
+      "sha256": "e5307a3ed81e48da37f914255d8818d65a990119d66234573d31befe17cd4399",
+      "bytes": 5564079
+    },
+    {
+      "name": "passages.json",
+      "sha256": "edc1ce931693b4e6930956e66c02e0821fcbf0b7c617d4c0b0f5fe2c9bb2afc1",
+      "bytes": 10532830
+    },
+    {
+      "name": "passages.csv",
+      "sha256": "ab1f68554ad56bb5c71cf95a3bec80731d10f44f42c02538ceb2417d739fbf75",
+      "bytes": 9373993
+    },
+    {
+      "name": "participants.json",
+      "sha256": "232de4b2128211f438a3b8decd359871c6b6ac1137013c186343458576e4367b",
+      "bytes": 413730
+    },
+    {
+      "name": "participants.csv",
+      "sha256": "877543575006257c2ec764601f267da27b908d0dc70b03286ecf5c09086f9d5c",
+      "bytes": 270959
+    },
+    {
+      "name": "statutes.json",
+      "sha256": "96c109f01a4d3ed41bd6c930827dd56359d8904c2f4cfb0ecdac4bd86dd38880",
+      "bytes": 460897
+    },
+    {
+      "name": "statutes.csv",
+      "sha256": "496be6978f52e17a7ec8616b3a8d82232936600cbaaceda14684c454903c311b",
+      "bytes": 176886
+    },
+    {
+      "name": "scan-passages.json",
+      "sha256": "5fdbaef95b4189f6408dfdefd3c0c74c5f793bdc5ff26e92e2d7ff205d4aed6e",
+      "bytes": 1761565
+    },
+    {
+      "name": "scan-passages.csv",
+      "sha256": "b2180167e8166cea59cad9ceb6f0f4932eba866798324168c9357a399efaafb0",
+      "bytes": 955811
+    },
+    {
+      "name": "README.md",
+      "sha256": "7c1c61a7fd7e903437dc7355de58eef9b7d25038fd301cc39fc49e532e4cb08c",
+      "bytes": 2622
+    }
+  ],
+  "notes": "Сборка детерминирована из lex/data; даты выгрузки намеренно не записываются."
+}
