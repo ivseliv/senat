@@ -48,7 +48,8 @@ for(const group of ['dev','test','positive','negative']) for(const method of met
     recall10:positive.length?average(positive,'recall10'):null,mrr:positive.length?average(positive,'mrr'):null,
     falsePositives:negative.length?negative.filter(r=>r.negativeFalsePositive).length:null});
 }
-const result={queriesSha256:crypto.createHash('sha256').update(fs.readFileSync(path.join(ROOT,suiteFile))).digest('hex'),
+const suiteLabel=path.basename(suiteFile);
+const result={suite:suiteLabel,queriesSha256:crypto.createHash('sha256').update(fs.readFileSync(path.join(ROOT,suiteFile))).digest('hex'),
   protocol:suite.protocol,volumes:scope.map(v=>v.year),split,aggregates,rows};
 let filename=suiteFile==='eval/queries.json'?'metrics':path.basename(suiteFile,'.json').replace(/^queries/,'metrics');
 if(split!=='all')filename+='-'+split;
@@ -62,7 +63,7 @@ let md='# Сравнение понятийного поиска\n\n'+suite.prot
 for(const a of aggregates) md+=`| ${a.split} | ${a.method} | ${a.n} | ${f(a.recall5)} | ${f(a.recall10)} | ${f(a.mrr)} | ${a.falsePositives===null?'—':a.falsePositives} |\n`;
 md+='\n| Запрос | Часть | Подход | Recall@5 | Recall@10 | MRR |\n|---|---|---|---:|---:|---:|\n';
 for(const r of rows) md+=`| ${r.query} | ${r.split} | ${r.method} | ${f(r.recall5)} | ${f(r.recall10)} | ${f(r.mrr)} |\n`;
-md+='\nКонтрольная сумма queries.json: `'+result.queriesSha256+'`.\n';
+md+='\nКонтрольная сумма '+suiteLabel+': `'+result.queriesSha256+'`.\n';
 fs.writeFileSync(path.join(__dirname,filename+'.md'),md);
 console.table(aggregates);
 if(args.includes('--fail-on-regression')) {
