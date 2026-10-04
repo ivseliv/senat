@@ -315,7 +315,7 @@
     box.replaceChildren(h('p',{class:'muted'},'Загрузка решения…'));
     const text = await textOf(d);
     if (S.detailId !== id || $('#detail').hidden) return;
-    const params = readHash().p, inSense = ['sense','map'].includes(params.get('mode'));
+    const params = readHash().p, inSense = ['sense','map','passage'].includes(params.get('mode'));
     let target = null, senseTerms = [];
     if (inSense) {
       await loadSense();
@@ -449,7 +449,7 @@
     $('#gloss').addEventListener('change', e => { S.opts.gloss = e.target.checked; runSearch(); });
     $('#more').addEventListener('click', () => { S.shown += 20; renderResults(++runToken); });
     $('#reset').addEventListener('click', () => go('search'));
-    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const mode = ['sense','participants','map'].includes(p.get('mode')) ? p.get('mode') : 'search'; p.delete('at'); p.delete('end'); p.delete('mode'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
+    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const requested = p.get('mode'); const mode = requested === 'passage' ? 'sense' : (['sense','participants','map'].includes(requested) ? requested : 'search'); p.delete('at'); p.delete('end'); p.delete('mode'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !document.querySelector('.scan-dialog[open]') && !$('#detail').hidden) $('#detail-close').click(); });
     $('#examples').append(...['недействительность сделки', 'возмещение убытков', 'исковая давность', 'договор аренды', 'банкротство', 'страховое возмещение', 'перевозка грузов', 'исполнитель завещания']
       .map(x => h('button', { class: 'chip', onclick: () => go('search', { q: x }) }, x)));

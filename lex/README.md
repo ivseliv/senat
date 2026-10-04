@@ -13,6 +13,7 @@ lex/build.py              разбор на решения, теги, индек
 lex/lex.js                нормализация (старая орфография -> современная), стемминг, поиск (BM25)
 lex/app.js, index.html    интерфейс
 lex/dist/senat-lex.html   то же одним файлом с данными внутри (открывается двойным кликом)
+lex/export.py             JSON/CSV-экспорт для исследований  ->  lex/export/*
 lex/test_parity.py        проверка: нормализация в Python и JS даёт одинаковый результат
 ```
 
@@ -20,6 +21,7 @@ lex/test_parity.py        проверка: нормализация в Python �
 
 ```bash
 python3 lex/build.py --single      # пересобрать данные и единый файл
+python3 lex/export.py              # пересобрать JSON/CSV из уже собранных данных
 python3 lex/test_parity.py         # (необязательно) проверить, что запрос и индекс совпадают
 python3 -m http.server -d lex      # локальный просмотр: http://localhost:8000
 ```

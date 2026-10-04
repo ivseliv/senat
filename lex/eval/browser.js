@@ -36,8 +36,13 @@ fs.mkdirSync(out,{recursive:true});
   await page.screenshot({path:path.join(out,'detail.png'),fullPage:false});
   await page.reload(); await page.waitForSelector('#passage-target');
   assert((await page.locator('#passage-target').innerText()).length>0,'Прямая ссылка должна работать после перезагрузки');
+  // Стабильная ссылка из исследовательского экспорта не зависит от поискового запроса.
+  await page.goto(base+'#/d/1905-105?mode=passage&at=7281&end=9186'); await page.waitForSelector('#passage-target');
+  assert((await page.locator('#detail-body h2').innerText()).includes('№ 105'));
   await page.click('#detail-close'); await page.waitForSelector('#view-sense:not([hidden])');
-  assert.equal(await page.locator('#sense-q').inputValue(),'фиктивные сделки');
+  assert.equal(await page.locator('#sense-q').inputValue(),'');
+  await page.fill('#sense-q','фиктивные сделки'); await page.click('#sense-form button[type=submit]');
+  await page.waitForSelector('.passage');
   await page.check('input[name=sense-orth][value=new]');
   await page.waitForFunction(()=>!/[ѣі]/.test(document.querySelector('.passage-text').textContent));
   await page.reload(); await page.waitForSelector('.passage');
@@ -166,6 +171,6 @@ fs.mkdirSync(out,{recursive:true});
   await standalone.waitForSelector('.passage');
   assert(!standaloneRequests.some(r=>/\/data\//.test(r)));
   assert.deepEqual(errors,[],'В консоли не должно быть ошибок');
-  console.log(JSON.stringify({checked:'desktop, mobile, dark, highlights, original, orthography persistence, source anchor, deep link, empty answer, old search, analytics, standalone',consoleErrors:errors,detailURL,screenshots:out},null,2));
+  console.log(JSON.stringify({checked:'desktop, mobile, dark, highlights, original, orthography persistence, source anchor, deep links including export, empty answer, old search, analytics, standalone',consoleErrors:errors,detailURL,screenshots:out},null,2));
  } finally {await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

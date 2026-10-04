@@ -251,6 +251,8 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
       <h2>Доступные тома</h2>
       <div id="corpus-table"></div>
       <p class="muted small">Пояснения ИИ могут быть подготовлены лишь для части фрагментов. Поиск по тексту и справочнику понятий работает и без них. Для решения с несколькими датами заседаний сохраняется составная дата из заголовка.</p>
+      <h2>Данные для исследования</h2>
+      <p>Готовый <a href="export/README.md">экспорт JSON и CSV</a> содержит решения, пассажи, участников, ссылки на статьи и привязки к сканам. <a href="export/manifest.json">Манифест</a> фиксирует состав и контрольные суммы файлов; ссылки на решения и пассажи можно использовать как постоянные.</p>
       <h2>Как искать</h2>
       <dl>
         <dt>Несколько слов</dt><dd>находятся решения, где есть все слова, в любых формах: <em>арендатор</em> найдёт «арендатора», «арендатору».</dd>
@@ -921,7 +923,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     box.replaceChildren(h('p',{class:'muted'},'Загрузка решения…'));
     const text = await textOf(d);
     if (S.detailId !== id || $('#detail').hidden) return;
-    const params = readHash().p, inSense = ['sense','map'].includes(params.get('mode'));
+    const params = readHash().p, inSense = ['sense','map','passage'].includes(params.get('mode'));
     let target = null, senseTerms = [];
     if (inSense) {
       await loadSense();
@@ -1055,7 +1057,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     $('#gloss').addEventListener('change', e => { S.opts.gloss = e.target.checked; runSearch(); });
     $('#more').addEventListener('click', () => { S.shown += 20; renderResults(++runToken); });
     $('#reset').addEventListener('click', () => go('search'));
-    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const mode = ['sense','participants','map'].includes(p.get('mode')) ? p.get('mode') : 'search'; p.delete('at'); p.delete('end'); p.delete('mode'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
+    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const requested = p.get('mode'); const mode = requested === 'passage' ? 'sense' : (['sense','participants','map'].includes(requested) ? requested : 'search'); p.delete('at'); p.delete('end'); p.delete('mode'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !document.querySelector('.scan-dialog[open]') && !$('#detail').hidden) $('#detail-close').click(); });
     $('#examples').append(...['недействительность сделки', 'возмещение убытков', 'исковая давность', 'договор аренды', 'банкротство', 'страховое возмещение', 'перевозка грузов', 'исполнитель завещания']
       .map(x => h('button', { class: 'chip', onclick: () => go('search', { q: x }) }, x)));
