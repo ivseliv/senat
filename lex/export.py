@@ -148,10 +148,24 @@ def build_export(root=ROOT):
                                  'decision_url': decision_url(d['id'])})
     statute_fields = ['statute', 'code', 'article', 'mentions', 'decision_id', 'year', 'decision_number', 'decision_url']
 
+    laws = read('laws.json')
+    law_act_rows = []
+    for act in laws['acts']:
+        law_act_rows.append({key: act.get(key) for key in ('code', 'title', 'short_title', 'aliases', 'source_ids', 'edition_note', 'citations', 'decisions', 'articles')})
+    law_act_fields = ['code', 'title', 'short_title', 'aliases', 'source_ids', 'edition_note', 'citations', 'decisions', 'articles']
+    law_citation_rows = [{**row,
+                          'decision_url': url(row['decision_url']),
+                          'passage_url': url(row['passage_url']) if row.get('passage_url') else None}
+                         for row in laws['citations']]
+    law_citation_fields = ['id', 'statute', 'code', 'article', 'decision_id', 'year', 'decision_number', 'start', 'end',
+                           'quote_original', 'context_original', 'association', 'citation_status', 'decision_url',
+                           'passage_id', 'passage_url', 'scan_available']
+
     files = []
     for name, value, fields in (
         ('decisions', decision_rows, decision_fields), ('passages', passage_rows, passage_fields),
         ('participants', participant_rows, participant_fields), ('statutes', statute_rows, statute_fields),
+        ('legislation-acts', law_act_rows, law_act_fields), ('legislation-citations', law_citation_rows, law_citation_fields),
         ('scan-passages', scan_rows, scan_fields),
     ):
         files.extend([write_json(name + '.json', value), write_csv(name + '.csv', value, fields)])
@@ -166,6 +180,8 @@ def build_export(root=ROOT):
 | `passages` | Пассажи для понятийного поиска: Unicode-смещения в исходном тексте, текст, SHA-256, страницы, пояснения ИИ и ссылки. |
 | `participants` | Строки печатных указателей, а не нормализованные люди или процессуальные роли. |
 | `statutes` | Одна строка на «решение — упомянутая статья»; акт определяется автоматически и требует сверки с источником. |
+| `legislation-acts` | Исторические названия и источники карточек актов, используемых в разделе «Законодательство». |
+| `legislation-citations` | Буквальная ссылка OCR, контекст, пассаж, решение и признак доступного скана для привязанных актов. |
 | `scan-passages` | Привязка пассажа к странице и, когда она надёжна, координатам `box` в долях ширины/высоты: `[x0,y0,x1,y1]`. |
 
 `url`, `decision_url`, `passage_url`, `image_url` и `full_page_url` — стабильные публичные ссылки. Режим `mode=passage` открывает решение непосредственно на указанном Unicode-диапазоне. При отсутствии `box` точная геометрия не подтверждена: используйте `full_page_url` и не интерпретируйте отсутствие координат как отсутствие текста.
@@ -176,7 +192,8 @@ def build_export(root=ROOT):
     manifest = {
         'version': 1, 'base_url': PUBLIC, 'volumes': meta['volumes'],
         'counts': {'decisions': len(decision_rows), 'passages': len(passage_rows), 'participants': len(participant_rows),
-                   'statute_mentions': len(statute_rows), 'scan_passage_refs': len(scan_rows)},
+                   'statute_mentions': len(statute_rows), 'legislation_acts': len(law_act_rows),
+                   'legislation_citations': len(law_citation_rows), 'scan_passage_refs': len(scan_rows)},
         'files': [{'name': file.name, 'sha256': hashlib.sha256(file.read_bytes()).hexdigest(), 'bytes': file.stat().st_size} for file in files],
         'notes': 'Сборка детерминирована из lex/data; даты выгрузки намеренно не записываются.',
     }

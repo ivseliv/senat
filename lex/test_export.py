@@ -18,6 +18,8 @@ class ExportTest(unittest.TestCase):
         cls.passages = json.loads((OUT / 'passages.json').read_text(encoding='utf-8'))
         cls.participants = json.loads((OUT / 'participants.json').read_text(encoding='utf-8'))
         cls.statutes = json.loads((OUT / 'statutes.json').read_text(encoding='utf-8'))
+        cls.legislation_acts = json.loads((OUT / 'legislation-acts.json').read_text(encoding='utf-8'))
+        cls.legislation_citations = json.loads((OUT / 'legislation-citations.json').read_text(encoding='utf-8'))
         cls.scan_refs = json.loads((OUT / 'scan-passages.json').read_text(encoding='utf-8'))
 
     def test_counts_and_ids(self):
@@ -25,6 +27,8 @@ class ExportTest(unittest.TestCase):
         self.assertEqual(counts['decisions'], 335)
         self.assertEqual(counts['passages'], 1875)
         self.assertEqual(counts['participants'], 790)
+        self.assertGreaterEqual(counts['legislation_acts'], 8)
+        self.assertGreater(counts['legislation_citations'], 500)
         self.assertEqual(len({x['id'] for x in self.decisions}), len(self.decisions))
         self.assertEqual(len({x['id'] for x in self.passages}), len(self.passages))
 
@@ -45,9 +49,19 @@ class ExportTest(unittest.TestCase):
                 self.assertEqual(len(ref['box']), 4)
                 self.assertTrue(all(0 <= value <= 1 for value in ref['box']))
         for name, expected in [('decisions.csv', 335), ('passages.csv', 1875), ('participants.csv', 790),
-                               ('statutes.csv', len(self.statutes)), ('scan-passages.csv', len(self.scan_refs))]:
+                               ('statutes.csv', len(self.statutes)), ('legislation-acts.csv', len(self.legislation_acts)),
+                               ('legislation-citations.csv', len(self.legislation_citations)), ('scan-passages.csv', len(self.scan_refs))]:
             with (OUT / name).open(encoding='utf-8', newline='') as f:
                 self.assertEqual(sum(1 for _ in csv.DictReader(f)), expected)
+
+    def test_legislation_citations_preserve_the_source(self):
+        acts = {row['code'] for row in self.legislation_acts}
+        passages = {row['id'] for row in self.passages}
+        for row in self.legislation_citations:
+            self.assertIn(row['code'], acts)
+            self.assertIn(row['quote_original'], row['context_original'])
+            self.assertTrue(row['passage_url'].startswith('https://ivseliv.github.io/senat/lex/#/d/'))
+            self.assertIn(row['passage_id'], passages)
 
     def test_manifest_hashes_match(self):
         for item in self.manifest['files']:
