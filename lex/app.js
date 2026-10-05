@@ -28,6 +28,7 @@
     opts: { modern: false, gloss: true }, detailId: null,
     sense: { config: null, engines: [], promise: null, q: '', hits: [], shown: 10, token: 0 },
     map: { q: '', topic: '', token: 0 },
+    laws: { q: '', code: '', data: null, promise: null, token: 0 },
     participants: {q:'', year:'', shown:60}, participantMap: new Map(),
     f: { q: '', year: '', outcome: '', topic: '', code: '', statute: '', procedure: '', person: '', participant: '', gender: '', age: '', family: '', estate: '', entity: '', role: '', sort: 'rel' }, shown: 20, hits: [], sentinel: 0,
   };
@@ -131,9 +132,9 @@
   }
   function route() {
     const { path, p } = readHash();
-    const requested = path.startsWith('d/') ? (['sense','participants','map'].includes(p.get('mode')) ? p.get('mode') : 'search') : (path.split('/')[0] || 'search');
-    const tab = ['search','sense','map','participants','analytics','about'].includes(requested) ? requested : 'search';
-    for (const t of ['search','sense','map','participants','analytics','about']) {
+    const requested = path.startsWith('d/') ? (['sense','participants','map','laws'].includes(p.get('mode')) ? p.get('mode') : 'search') : (path.split('/')[0] || 'search');
+    const tab = ['search','sense','map','laws','participants','analytics','about'].includes(requested) ? requested : 'search';
+    for (const t of ['search','sense','map','laws','participants','analytics','about']) {
       $('#view-' + t).hidden = t !== tab;
       $('#tab-' + t).setAttribute('aria-current', t === tab ? 'page' : 'false');
     }
@@ -149,6 +150,10 @@
     } else if (tab === 'map') {
       S.map.q = p.get('q') || ''; S.map.topic = p.get('t') || '';
       $('#map-q').value = S.map.q; $('#map-topic').value = S.map.topic; renderMap();
+      if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
+    } else if (tab === 'laws') {
+      S.laws.q = p.get('q') || ''; S.laws.code = p.get('c') || '';
+      $('#laws-q').value = S.laws.q; $('#laws-code').value = S.laws.code; renderLaws();
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
     } else if (tab === 'participants') {
       Object.assign(S.participants, {q:p.get('q') || '', year:p.get('y') || '', shown:60});
@@ -315,7 +320,7 @@
     box.replaceChildren(h('p',{class:'muted'},'Загрузка решения…'));
     const text = await textOf(d);
     if (S.detailId !== id || $('#detail').hidden) return;
-    const params = readHash().p, inSense = ['sense','map','passage'].includes(params.get('mode'));
+    const params = readHash().p, inSense = ['sense','map','passage','laws'].includes(params.get('mode'));
     let target = null, senseTerms = [];
     if (inSense) {
       await loadSense();
@@ -449,7 +454,7 @@
     $('#gloss').addEventListener('change', e => { S.opts.gloss = e.target.checked; runSearch(); });
     $('#more').addEventListener('click', () => { S.shown += 20; renderResults(++runToken); });
     $('#reset').addEventListener('click', () => go('search'));
-    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const requested = p.get('mode'); const mode = requested === 'passage' ? 'sense' : (['sense','participants','map'].includes(requested) ? requested : 'search'); p.delete('at'); p.delete('end'); p.delete('mode'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
+    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const requested = p.get('mode'); const mode = requested === 'passage' ? 'sense' : (['sense','participants','map','laws'].includes(requested) ? requested : 'search'); p.delete('at'); p.delete('end'); p.delete('mode'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !document.querySelector('.scan-dialog[open]') && !$('#detail').hidden) $('#detail-close').click(); });
     $('#examples').append(...['недействительность сделки', 'возмещение убытков', 'исковая давность', 'договор аренды', 'банкротство', 'страховое возмещение', 'перевозка грузов', 'исполнитель завещания']
       .map(x => h('button', { class: 'chip', onclick: () => go('search', { q: x }) }, x)));
@@ -472,6 +477,9 @@
     $('#map-reset').addEventListener('click', () => go('map'));
     $('#map-concepts .concept-catalog').append(...MODERN_CONCEPTS.map(([title, queries]) => h('section', {},
       h('h3', {}, title), h('div', {class:'chips'}, queries.map(q => h('button', {class:'chip', onclick:()=>go('map',{q,t:S.map.topic})}, q))))));
+    $('#laws-form').addEventListener('submit', e => { e.preventDefault(); go('laws', {q:$('#laws-q').value.trim(),c:$('#laws-code').value}); });
+    $('#laws-reset').addEventListener('click', () => go('laws'));
+    $('#laws-code').addEventListener('change', () => go('laws', {q:$('#laws-q').value.trim(),c:$('#laws-code').value}));
     $('#theme').addEventListener('click', () => { const r = document.documentElement; const dark = r.dataset.theme === 'dark' || (!r.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches); r.dataset.theme = dark ? 'light' : 'dark'; });
   }
   function pushSearchOrRun() { const { path } = readHash(); if (path.startsWith('d/')) { closeDetail(); } pushSearch(); if (!location.hash.startsWith('#/search')) return; runSearch(); }
@@ -625,6 +633,71 @@
     const relatedTopics=Object.entries(topicCounts).sort((a,b)=>b[1]-a[1]);
     grid.append(mapNode('Темы в выборке','Автоматические темы — вход в другую ветвь карты.',h('div',{class:'chips'},...relatedTopics.map(([t,n])=>h('button',{class:'chip',onclick:()=>go('map',{q:S.map.q,t})},`${t} (${n})`))),'related-topics'));
     box.append(grid);
+  }
+
+  /* ---------------------------------------------------------------- законодательство */
+  async function loadLaws() {
+    if (!S.laws.promise) S.laws.promise = loadJSON('laws.json').then(data => {
+      S.laws.data = data;
+      const select = $('#laws-code');
+      if (select.options.length <= 1) fillSelect(select, data.acts.map(act => [act.code, `${act.code} · ${act.short_title}`]), 'Все акты');
+      return data;
+    }).catch(err => { S.laws.promise = null; throw err; });
+    return S.laws.promise;
+  }
+  function lawText(value) {
+    return L.modernize(String(value || '')).toLowerCase().replace(/ё/g, 'е').replace(/[^а-я0-9]+/g, ' ').trim();
+  }
+  function lawTerms(query) {
+    return lawText(query.replace(/\bст\.?\s*/gi, '')).split(' ').filter(Boolean);
+  }
+  function lawActText(act) { return lawText([act.code, act.title, act.short_title, ...(act.aliases || [])].join(' ')); }
+  function lawCitationMatches(row, act, terms) {
+    if (!terms.length) return true;
+    const hay = lawActText(act) + ' ' + lawText(row.article);
+    return terms.every(term => hay.includes(term));
+  }
+  function lawCitationItem(row) {
+    const href = row.passage_url || row.decision_url;
+    const source = row.scan_available ? ' · скан пассажа доступен' : ' · скан этого пассажа не опубликован';
+    return h('li', {class:'law-citation'},
+      h('a', {href}, `${row.year} г. № ${row.decision_number} · ${row.article}`),
+      h('div', {class:'law-quote'}, '«' + M(row.context_original) + '»'),
+      h('div', {class:'muted small'}, row.association + source));
+  }
+  async function renderLaws() {
+    const token = ++S.laws.token, status = $('#laws-status'), box = $('#laws-results');
+    box.replaceChildren(); status.textContent = 'Загружаем указатель законодательства…';
+    let data;
+    try { data = await loadLaws(); } catch (err) { if (token === S.laws.token) status.textContent = 'Не удалось загрузить указатель: ' + err.message; return; }
+    if (token !== S.laws.token) return;
+    $('#laws-code').value = S.laws.code;
+    const terms = lawTerms(S.laws.q), byCode = new Map(data.acts.map(act => [act.code, act]));
+    const matchingActs = data.acts.filter(act => (!S.laws.code || act.code === S.laws.code) &&
+      (!terms.length || terms.every(term => lawActText(act).includes(term) || data.citations.some(row => row.code === act.code && lawCitationMatches(row, act, terms)))));
+    const allowed = new Set(matchingActs.map(act => act.code));
+    const citations = data.citations.filter(row => allowed.has(row.code) && lawCitationMatches(row, byCode.get(row.code), terms));
+    const hasQuery = terms.length || S.laws.code;
+    const decisionCount = new Set(citations.map(row => row.decision_id)).size;
+    status.replaceChildren(h('strong', {}, hasQuery ? `${citations.length} ${plural(citations.length, 'ссылка', 'ссылки', 'ссылок')}` : `${data.acts.length} ${plural(data.acts.length, 'акт', 'акта', 'актов')}`),
+      h('span', {class:'muted'}, hasQuery ? ` · в ${decisionCount} ${plural(decisionCount, 'решении', 'решениях', 'решениях')}` : ` · ${data.citations.length} привязанных ссылок`));
+    if (!matchingActs.length) { box.append(h('p', {class:'empty'}, 'Не найдено. Попробуйте номер статьи, сокращение «УГС» или название акта.')); return; }
+    const sources = new Map(data.sources.map(source => [source.id, source]));
+    const grid = h('div', {class:'map-grid law-grid'});
+    for (const act of matchingActs) {
+      const rows = citations.filter(row => row.code === act.code);
+      const articles = (hasQuery ? act.articles.filter(item => rows.some(row => row.article === item.article)) : act.articles).slice(0, 18);
+      const sourceLinks = (act.source_ids || []).map(id => sources.get(id)).filter(Boolean).map(source => h('a', {href:source.url, target:'_blank', rel:'noopener'}, source.title));
+      const content = [
+        h('p', {class:'muted small'}, act.edition_note),
+        h('p', {class:'small law-sources'}, 'Источники: ', sourceLinks.flatMap((link, i) => i ? [' · ', link] : [link])),
+        articles.length ? h('div', {class:'chips'}, articles.map(item => h('a', {class:'chip stat', href:'#/laws?'+new URLSearchParams({c:act.code,q:item.article})}, `${item.article} (${item.decisions})`))) : h('p', {class:'muted small'}, 'В привязанных ссылках статьи не выделены.'),
+      ];
+      if (hasQuery && rows.length) content.push(h('ol', {class:'map-list law-citations'}, rows.slice(0, 80).map(lawCitationItem)));
+      if (hasQuery && rows.length > 80) content.push(h('p', {class:'muted small'}, `Показаны первые 80 из ${rows.length} ссылок; уточните номер статьи или год в обычном поиске.`));
+      grid.append(mapNode(`${act.code} · ${act.short_title}`, `${act.decisions} ${plural(act.decisions, 'решение', 'решения', 'решений')} · ${act.citations} ${plural(act.citations, 'ссылка', 'ссылки', 'ссылок')}`, content, 'law-'+act.code));
+    }
+    box.append(grid, h('p', {class:'muted small law-note'}, data.note + ` Неопределённых по акту ссылок: ${data.unknown_act_mentions}; они не включены в этот указатель.`));
   }
 
   /* ---------------------------------------------------------------- аналитика */
