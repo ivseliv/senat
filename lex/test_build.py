@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Проверки границ решений при составных и повреждённых датах OCR."""
 import unittest
+from pathlib import Path
 from build import participant_groups, procedure_for, split_volume, statute_code
 
 ANCHOR = '(Предсѣдательствовалъ сенаторъ Ивановъ).'
@@ -9,6 +10,14 @@ def decision(header, body):
     return f'{header}\n\n{ANCHOR}\n\n{body}'
 
 class VolumeParsingTests(unittest.TestCase):
+    def test_general_assembly_1896_has_all_printed_numbers(self):
+        raw = (Path(__file__).resolve().parent.parent/'ocr/1896/volume.txt').read_text(encoding='utf-8')
+        front, decisions, _ = split_volume(raw)
+        self.assertIn('ОБЩАГО СОБРАНІЯ', front)
+        self.assertEqual([d['num'] for d in decisions], list(range(1, 50)))
+        self.assertEqual(decisions[0]['date'], '1895-10-30')
+        self.assertEqual(decisions[-1]['date'], '1896-02-19')
+
     def test_printer_signature_does_not_hide_next_header(self):
         raw = '\n\n'.join([
             decision('10.—1897 года февраля 5-го дня. Первое дело.', 'Первое решение.'),
