@@ -101,8 +101,15 @@ def build_passages(root, docs, texts, stems, modernize, stem):
         records.update(json.loads(f.read_text(encoding='utf-8')).get('passages', {}))
     output, manifests = {}, []
     for year, volume_texts in texts.items():
-        raw = (root/f'ocr/{year}/volume.txt').read_text(encoding='utf-8')
-        spans = source_pages(root/f'ocr/{year}', raw)
+        source_dir = root/f'ocr/{year}'
+        # Некоторые источники поступают единым текстом FineReader без
+        # проверяемых OCR-листов. Обычный поиск по ним допустим, но для
+        # понятийной выдачи нельзя выдумывать страницы и точные фрагменты.
+        if not list(source_dir.glob('p*.txt')):
+            print(f'  пассажи {year}: не собраны (нет проверяемых OCR-листов)')
+            continue
+        raw = (source_dir/'volume.txt').read_text(encoding='utf-8')
+        spans = source_pages(source_dir, raw)
         vd = [d for d in docs if str(d['vol']) == year]
         items, text_fields, enrichment_fields, sequences = [], [], [], []
         for d, text in zip(vd, volume_texts):
