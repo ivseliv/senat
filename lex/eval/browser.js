@@ -110,6 +110,22 @@ fs.mkdirSync(out,{recursive:true});
   await page.goto(base+'#/map?t='+encodeURIComponent('Наследство и завещания'));
   await page.waitForSelector('#view-map:not([hidden]) [data-map-node="decisions"]');
   assert.equal(await page.locator('[data-map-node="sources"]').count(),0);
+  // Законодательство: карточка исторического акта, буквальная цитата и путь к скану.
+  await page.goto(base+'#/laws?q=1524');
+  await page.waitForSelector('#view-laws:not([hidden]) [data-map-node="law-СЗГ"]');
+  assert((await page.locator('#laws-status').innerText()).includes('ссыл'));
+  assert(await page.locator('.law-citation').count()>0);
+  assert((await page.locator('#laws-results').innerText()).includes('скан пассажа'));
+  await page.locator('.law-citation a').first().click();
+  await page.waitForSelector('#passage-target');
+  assert(page.url().includes('mode=laws'));
+  await page.reload(); await page.waitForSelector('#passage-target');
+  await page.click('#detail-close'); await page.waitForSelector('#view-laws:not([hidden]) .law-citation');
+  assert.equal(await page.locator('#laws-q').inputValue(),'ст. 1524');
+  await page.goto(base+'#/laws?c='+encodeURIComponent('УГС')+'&q='+encodeURIComponent('ст. 793'));
+  await page.waitForSelector('#view-laws:not([hidden]) [data-map-node="law-УГС"]');
+  assert((await page.locator('#laws-results').innerText()).includes('ст. 793'));
+  assert.equal(await page.locator('#laws-code').inputValue(),'УГС');
   await page.click('#tab-analytics');await page.waitForSelector('.kpi');
   assert((await page.locator('#analytics-body').innerText()).includes('Пол прямо указан'));
   // Новый том: фильтр, составная дата, конец решения и ссылка на пассаж.
@@ -171,6 +187,6 @@ fs.mkdirSync(out,{recursive:true});
   await standalone.waitForSelector('.passage');
   assert(!standaloneRequests.some(r=>/\/data\//.test(r)));
   assert.deepEqual(errors,[],'В консоли не должно быть ошибок');
-  console.log(JSON.stringify({checked:'desktop, mobile, dark, highlights, original, orthography persistence, source anchor, deep links including export, empty answer, old search, analytics, standalone',consoleErrors:errors,detailURL,screenshots:out},null,2));
+  console.log(JSON.stringify({checked:'desktop, mobile, dark, highlights, original, orthography persistence, source anchor, laws, deep links including export, empty answer, old search, analytics, standalone',consoleErrors:errors,detailURL,screenshots:out},null,2));
  } finally {await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

@@ -17,6 +17,7 @@ import collections, glob, json, math, os, re, sys
 from pathlib import Path
 from passages import build_passages
 from participants import load_participants
+from laws import build_law_index
 from export import build_export
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
@@ -431,6 +432,8 @@ def main():
         with open(os.path.join(OUT, f'text-{year}.json'), 'w', encoding='utf-8') as f:
             json.dump(vt, f, ensure_ascii=False, separators=(',', ':'))
     build_passages(ROOT, docs, texts, stems, modernize, stem)
+    law_index = build_law_index(ROOT)
+    print(f'  законодательство: {len(law_index["acts"])} актов, {len(law_index["citations"])} точных ссылок')
     export = build_export(ROOT)
     print('  экспорт:', ', '.join(f'{key}={value}' for key, value in export['counts'].items()))
     print(f'томов {len(vols)}, решений {len(docs)}, основ в индексе {len(post)}')

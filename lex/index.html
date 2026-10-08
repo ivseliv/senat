@@ -131,6 +131,10 @@ dl.meta dt { font-size: 12px; color: var(--ink2); } dl.meta dd { margin: 0; }
 .map-list { margin: 8px 0 0; padding-left: 21px; }
 .map-list li { margin: 8px 0; }
 .map-sources .small { margin-top: 4px; line-height: 1.45; }
+.law-sources { margin: 8px 0; overflow-wrap: anywhere; }
+.law-citations { max-height: 420px; overflow: auto; padding-right: 6px; }
+.law-quote { font: 15px/1.45 var(--serif); margin: 3px 0; }
+.law-note { margin-top: 16px; }
 .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; min-width: 0; }
 .panel h3 { margin: 0 0 4px; font-size: 16px; }
 .bars { display: grid; gap: 4px; margin-top: 10px; }
@@ -154,7 +158,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
 <header><div class="wrap">
   <div class="top"><h1>Решения Правительствующего Сената</h1><span class="sub">поиск и аналитика · прототип</span><span class="spacer"></span>
     <button class="btn ghost" id="theme" title="Светлая / тёмная тема">◐ тема</button></div>
-  <nav aria-label="Разделы"><a id="tab-search" href="#/search">Поиск</a><a id="tab-sense" href="#/sense">По смыслу</a><a id="tab-map" href="#/map">Карта</a><a id="tab-participants" href="#/participants">Участники</a><a id="tab-analytics" href="#/analytics">Аналитика</a><a id="tab-about" href="#/about">О проекте</a></nav>
+  <nav aria-label="Разделы"><a id="tab-search" href="#/search">Поиск</a><a id="tab-sense" href="#/sense">По смыслу</a><a id="tab-laws" href="#/laws">Законодательство</a><a id="tab-map" href="#/map">Карта</a><a id="tab-participants" href="#/participants">Участники</a><a id="tab-analytics" href="#/analytics">Аналитика</a><a id="tab-about" href="#/about">О проекте</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -228,6 +232,17 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     </details>
     <p class="muted small">Цепочка строится от современного понятия или темы к фрагментам первоисточника, затем к решениям, извлечённым ссылкам на нормы и записям печатных указателей. Это навигация по корпусу: совпадение не устанавливает правовой вывод, роль участника или точный исторический аналог.</p>
     <div id="map-status" aria-live="polite"></div><div id="map-results"></div>
+  </section>
+
+  <section id="view-laws" hidden>
+    <h2>Законодательство</h2>
+    <form id="laws-form" class="row" role="search">
+      <input id="laws-q" type="search" placeholder="Статья 1524, УГС или Устав гражданского судопроизводства" aria-label="Поиск нормативной ссылки" autocomplete="off">
+      <select id="laws-code" aria-label="Исторический акт"><option value="">Все акты</option></select>
+      <button class="btn" type="submit">Найти</button><button class="btn ghost" id="laws-reset" type="button">Сбросить</button>
+    </form>
+    <p class="muted small">Указатель показывает, на какие нормы ссылался Сенат в доступных томах. Название акта сверено с историческими источниками; номер статьи извлечён из OCR, поэтому рядом всегда остаются буквальная цитата, решение и путь к скану.</p>
+    <div id="laws-status" aria-live="polite"></div><div id="laws-results"></div>
   </section>
 
   <section id="view-participants" hidden>
