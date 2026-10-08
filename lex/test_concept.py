@@ -33,10 +33,15 @@ class ConceptTests(unittest.TestCase):
 
     def test_corpus_provenance(self):
         meta=json.loads((ROOT/'data/meta.json').read_text())['decisions']
+        semantic_years={v['year'] for v in json.loads((ROOT/'data/concepts.json').read_text())['volumes']}
         documents={}
         for year in sorted(set(d['vol'] for d in meta)):
             texts=json.loads((ROOT/f'data/text-{year}.json').read_text())
             documents.update((d['id'],t) for d,t in zip([x for x in meta if x['vol']==year],texts))
+            # Том без проверяемых листов остаётся в обычном поиске, но не
+            # участвует в понятийной выдаче и не получает вымышленных страниц.
+            if year not in semantic_years:
+                continue
             data=json.loads((ROOT/f'data/passages-{year}.json').read_text())
             for p in data['passages']:
                 text=documents[p['decision']][p['start']:p['end']]

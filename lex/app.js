@@ -178,7 +178,7 @@
         h('tbody', {}, S.meta.volumes.map(v=>{
           const coverage=config.volumes.find(c=>c.year===v.year);
           return h('tr', {}, h('td',{},String(v.year)), h('td',{},String(v.decisions)),
-            h('td',{},coverage ? `${coverage.enriched} из ${coverage.passages}` : 'Сведения недоступны'));
+            h('td',{},coverage ? `${coverage.enriched} из ${coverage.passages}` : 'Нет: нет проверяемой привязки к листам'));
         }))));
     } catch (err) { box.textContent='Не удалось загрузить сведения о томах. Повторите открытие раздела.'; }
   }
