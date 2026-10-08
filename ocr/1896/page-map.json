@@ -1,0 +1,1339 @@
+{
+  "version": 1,
+  "layout": "single-pages",
+  "source_pdf_sha256": "798ba3ebc3471affe8c3827293ec31a887ebfc194014006431040a8bbc093250",
+  "volume_sha256": "9534aebf9282059c7a712b4e78109845f6d928a9428dc685705fac8798ebf37e",
+  "pages": 89,
+  "entries": [
+    {
+      "decision": 1,
+      "file": "p0001.txt",
+      "pdf_page": 1,
+      "printed_page": null,
+      "page_method": "verified",
+      "start": 776,
+      "end": 4230,
+      "sha256": "76ab78be1a22cc4c6a9776a0ebab7d0ab628eefe13e3f0ea9258bd3704e98daa"
+    },
+    {
+      "decision": 1,
+      "file": "p0002.txt",
+      "pdf_page": 2,
+      "printed_page": 709,
+      "page_method": "header",
+      "start": 4231,
+      "end": 4381,
+      "sha256": "924da553becf779ab646a8d867a27b603926ad45ca20318f16fea42afb5132c3"
+    },
+    {
+      "decision": 2,
+      "file": "p0002.txt",
+      "pdf_page": 2,
+      "printed_page": 709,
+      "page_method": "header",
+      "start": 5382,
+      "end": 9103,
+      "sha256": "924da553becf779ab646a8d867a27b603926ad45ca20318f16fea42afb5132c3"
+    },
+    {
+      "decision": 2,
+      "file": "p0003.txt",
+      "pdf_page": 3,
+      "printed_page": 710,
+      "page_method": "header",
+      "start": 9104,
+      "end": 13413,
+      "sha256": "89e6b754fa19368811aff53c3cdf7739d72d2a87088c7485887351228716d14e"
+    },
+    {
+      "decision": 2,
+      "file": "p0004.txt",
+      "pdf_page": 4,
+      "printed_page": 711,
+      "page_method": "header",
+      "start": 13414,
+      "end": 14980,
+      "sha256": "f750ea571bca0ecdf53789cd5d72d9183300f43c22f43d90490c6a83c9d1c44c"
+    },
+    {
+      "decision": 3,
+      "file": "p0004.txt",
+      "pdf_page": 4,
+      "printed_page": 711,
+      "page_method": "header",
+      "start": 15202,
+      "end": 17495,
+      "sha256": "f750ea571bca0ecdf53789cd5d72d9183300f43c22f43d90490c6a83c9d1c44c"
+    },
+    {
+      "decision": 3,
+      "file": "p0005.txt",
+      "pdf_page": 5,
+      "printed_page": 712,
+      "page_method": "header",
+      "start": 17496,
+      "end": 21784,
+      "sha256": "3e5e910351ab54c7535f7556d40dc862895f98c019e85c1f4ec06f3002d78686"
+    },
+    {
+      "decision": 3,
+      "file": "p0006.txt",
+      "pdf_page": 6,
+      "printed_page": 713,
+      "page_method": "header",
+      "start": 21785,
+      "end": 23162,
+      "sha256": "d7ce612c7bb0728c30bc7546834aaa0f3bbbc4ed52330daaa528db3cae90e31f"
+    },
+    {
+      "decision": 4,
+      "file": "p0006.txt",
+      "pdf_page": 6,
+      "printed_page": 713,
+      "page_method": "header",
+      "start": 23820,
+      "end": 26435,
+      "sha256": "d7ce612c7bb0728c30bc7546834aaa0f3bbbc4ed52330daaa528db3cae90e31f"
+    },
+    {
+      "decision": 4,
+      "file": "p0007.txt",
+      "pdf_page": 7,
+      "printed_page": 714,
+      "page_method": "header",
+      "start": 26436,
+      "end": 30803,
+      "sha256": "b34e41844b5ce1edaa7466d51182a5e1a12c119e984cf1ad07bc9382d365b607"
+    },
+    {
+      "decision": 4,
+      "file": "p0008.txt",
+      "pdf_page": 8,
+      "printed_page": 715,
+      "page_method": "header",
+      "start": 30804,
+      "end": 31041,
+      "sha256": "354ad1efb284a73f44de5c62c209d8e4dc93afad75e1257046c584dc49266f02"
+    },
+    {
+      "decision": 5,
+      "file": "p0008.txt",
+      "pdf_page": 8,
+      "printed_page": 715,
+      "page_method": "header",
+      "start": 31704,
+      "end": 35065,
+      "sha256": "354ad1efb284a73f44de5c62c209d8e4dc93afad75e1257046c584dc49266f02"
+    },
+    {
+      "decision": 6,
+      "file": "p0008.txt",
+      "pdf_page": 8,
+      "printed_page": 715,
+      "page_method": "header",
+      "start": 35748,
+      "end": 36121,
+      "sha256": "354ad1efb284a73f44de5c62c209d8e4dc93afad75e1257046c584dc49266f02"
+    },
+    {
+      "decision": 6,
+      "file": "p0009.txt",
+      "pdf_page": 9,
+      "printed_page": 716,
+      "page_method": "header",
+      "start": 36122,
+      "end": 40291,
+      "sha256": "45079949c1ada048bdfeb4e10c7632b20ca44df5634004090626a314f2555559"
+    },
+    {
+      "decision": 6,
+      "file": "p0010.txt",
+      "pdf_page": 10,
+      "printed_page": 717,
+      "page_method": "header",
+      "start": 40292,
+      "end": 44534,
+      "sha256": "cbbff91fa958e810ccc7b401171970b0b15b5a7d39335a329e8caa276dbaab8a"
+    },
+    {
+      "decision": 7,
+      "file": "p0011.txt",
+      "pdf_page": 11,
+      "printed_page": 718,
+      "page_method": "header",
+      "start": 45005,
+      "end": 49167,
+      "sha256": "f503df5b074f2aa04c4ee8b317f9b69494f3f3005f1161052a422d4fba2d3cd1"
+    },
+    {
+      "decision": 7,
+      "file": "p0012.txt",
+      "pdf_page": 12,
+      "printed_page": 719,
+      "page_method": "header",
+      "start": 49168,
+      "end": 49686,
+      "sha256": "e6f46938f10a30f46baf0627257adb80b3d66679fc7c58f65476de412dd69305"
+    },
+    {
+      "decision": 8,
+      "file": "p0012.txt",
+      "pdf_page": 12,
+      "printed_page": 719,
+      "page_method": "header",
+      "start": 49849,
+      "end": 53380,
+      "sha256": "e6f46938f10a30f46baf0627257adb80b3d66679fc7c58f65476de412dd69305"
+    },
+    {
+      "decision": 9,
+      "file": "p0013.txt",
+      "pdf_page": 13,
+      "printed_page": 720,
+      "page_method": "header",
+      "start": 53644,
+      "end": 57902,
+      "sha256": "73490743bcc0918f32e1b0658fd7b78b8cfaa0c36ae3c62fad16bc1481b32bd9"
+    },
+    {
+      "decision": 9,
+      "file": "p0014.txt",
+      "pdf_page": 14,
+      "printed_page": 721,
+      "page_method": "header",
+      "start": 57903,
+      "end": 59055,
+      "sha256": "5dd10663485329b12e55653ea6bba88d114fbc6cb7449d997a740115763245b1"
+    },
+    {
+      "decision": 10,
+      "file": "p0014.txt",
+      "pdf_page": 14,
+      "printed_page": 721,
+      "page_method": "header",
+      "start": 60058,
+      "end": 62836,
+      "sha256": "5dd10663485329b12e55653ea6bba88d114fbc6cb7449d997a740115763245b1"
+    },
+    {
+      "decision": 10,
+      "file": "p0015.txt",
+      "pdf_page": 15,
+      "printed_page": 722,
+      "page_method": "neighbors",
+      "start": 62837,
+      "end": 66295,
+      "sha256": "8ca10ade6623ddb25db4730921ef2fc3c232f340cffd5e2ba3ab4918684c219e"
+    },
+    {
+      "decision": 11,
+      "file": "p0015.txt",
+      "pdf_page": 15,
+      "printed_page": 722,
+      "page_method": "neighbors",
+      "start": 66853,
+      "end": 67449,
+      "sha256": "8ca10ade6623ddb25db4730921ef2fc3c232f340cffd5e2ba3ab4918684c219e"
+    },
+    {
+      "decision": 11,
+      "file": "p0016.txt",
+      "pdf_page": 16,
+      "printed_page": 723,
+      "page_method": "header",
+      "start": 67450,
+      "end": 71745,
+      "sha256": "34d4cde5f409723eaed524a11baa44ba5ca62d78d508d298168eee4aa4ef451a"
+    },
+    {
+      "decision": 11,
+      "file": "p0017.txt",
+      "pdf_page": 17,
+      "printed_page": 724,
+      "page_method": "header",
+      "start": 71746,
+      "end": 74872,
+      "sha256": "0500bcd26ff4767025c9acf83cc891651a83eb798aa5335047a0661ade4aaf3f"
+    },
+    {
+      "decision": 12,
+      "file": "p0017.txt",
+      "pdf_page": 17,
+      "printed_page": 724,
+      "page_method": "header",
+      "start": 75875,
+      "end": 76768,
+      "sha256": "0500bcd26ff4767025c9acf83cc891651a83eb798aa5335047a0661ade4aaf3f"
+    },
+    {
+      "decision": 12,
+      "file": "p0018.txt",
+      "pdf_page": 18,
+      "printed_page": 725,
+      "page_method": "header",
+      "start": 76769,
+      "end": 80884,
+      "sha256": "34d6ca8cec11a62057877377a20bffff8b485192c1ed32c6a95b450db8c11ddb"
+    },
+    {
+      "decision": 12,
+      "file": "p0019.txt",
+      "pdf_page": 19,
+      "printed_page": 726,
+      "page_method": "neighbors",
+      "start": 80885,
+      "end": 85208,
+      "sha256": "0d9b865b38d359055c6554940ec5c03b00bfaf9f73fe9c963bf831ca722b2ec7"
+    },
+    {
+      "decision": 12,
+      "file": "p0020.txt",
+      "pdf_page": 20,
+      "printed_page": 727,
+      "page_method": "neighbors",
+      "start": 85209,
+      "end": 89504,
+      "sha256": "2c18749110e08e85b09baefed4db96e038b81d3acf0deadddb31327a9366ed96"
+    },
+    {
+      "decision": 12,
+      "file": "p0021.txt",
+      "pdf_page": 21,
+      "printed_page": 728,
+      "page_method": "header",
+      "start": 89505,
+      "end": 93809,
+      "sha256": "6f9f248167e768c7a5d9365889920ed0846065269d50fa4eb9bb9a72d5032a56"
+    },
+    {
+      "decision": 12,
+      "file": "p0022.txt",
+      "pdf_page": 22,
+      "printed_page": 729,
+      "page_method": "neighbors",
+      "start": 93810,
+      "end": 97668,
+      "sha256": "c1b66d69f732c78ed92cf5cd6e2ab3b99b613441238c54700b13ca277c543092"
+    },
+    {
+      "decision": 13,
+      "file": "p0022.txt",
+      "pdf_page": 22,
+      "printed_page": 729,
+      "page_method": "neighbors",
+      "start": 98000,
+      "end": 98260,
+      "sha256": "c1b66d69f732c78ed92cf5cd6e2ab3b99b613441238c54700b13ca277c543092"
+    },
+    {
+      "decision": 13,
+      "file": "p0023.txt",
+      "pdf_page": 23,
+      "printed_page": 730,
+      "page_method": "header",
+      "start": 98261,
+      "end": 101835,
+      "sha256": "24be93059262ce4d0c53a6732ef32b7067df5305c2fcc648c630b43e49e3156a"
+    },
+    {
+      "decision": 14,
+      "file": "p0023.txt",
+      "pdf_page": 23,
+      "printed_page": 730,
+      "page_method": "header",
+      "start": 102316,
+      "end": 102798,
+      "sha256": "24be93059262ce4d0c53a6732ef32b7067df5305c2fcc648c630b43e49e3156a"
+    },
+    {
+      "decision": 14,
+      "file": "p0024.txt",
+      "pdf_page": 24,
+      "printed_page": 731,
+      "page_method": "header",
+      "start": 102799,
+      "end": 107074,
+      "sha256": "83c38cb92d0a221fa7097da335232c0a54ccb6389fd0a199dd2e9ba625f193dc"
+    },
+    {
+      "decision": 14,
+      "file": "p0025.txt",
+      "pdf_page": 25,
+      "printed_page": 732,
+      "page_method": "header",
+      "start": 107075,
+      "end": 107492,
+      "sha256": "641973d4445511d8e94e18001652a3dfae713136b5f113b6ad13675cd4b4bada"
+    },
+    {
+      "decision": 15,
+      "file": "p0025.txt",
+      "pdf_page": 25,
+      "printed_page": 732,
+      "page_method": "header",
+      "start": 107857,
+      "end": 111596,
+      "sha256": "641973d4445511d8e94e18001652a3dfae713136b5f113b6ad13675cd4b4bada"
+    },
+    {
+      "decision": 15,
+      "file": "p0026.txt",
+      "pdf_page": 26,
+      "printed_page": 733,
+      "page_method": "header",
+      "start": 111597,
+      "end": 114950,
+      "sha256": "a4794215b3cc4556c5210e4b20155a36662922a1cfd0be43d5c696994a1cad29"
+    },
+    {
+      "decision": 16,
+      "file": "p0026.txt",
+      "pdf_page": 26,
+      "printed_page": 733,
+      "page_method": "header",
+      "start": 115540,
+      "end": 116280,
+      "sha256": "a4794215b3cc4556c5210e4b20155a36662922a1cfd0be43d5c696994a1cad29"
+    },
+    {
+      "decision": 16,
+      "file": "p0027.txt",
+      "pdf_page": 27,
+      "printed_page": 734,
+      "page_method": "header",
+      "start": 116281,
+      "end": 120622,
+      "sha256": "90b5bbaeb73406e41345bf01db29b7d8b4a4edcf23ea2a4cca20e165e2cd00ac"
+    },
+    {
+      "decision": 16,
+      "file": "p0028.txt",
+      "pdf_page": 28,
+      "printed_page": 735,
+      "page_method": "header",
+      "start": 120623,
+      "end": 122077,
+      "sha256": "9f70ff803f047b3006c0c3446017c8ba71cb057fc1c1fda4ec84c6d740f1a81b"
+    },
+    {
+      "decision": 17,
+      "file": "p0028.txt",
+      "pdf_page": 28,
+      "printed_page": 735,
+      "page_method": "header",
+      "start": 122510,
+      "end": 125193,
+      "sha256": "9f70ff803f047b3006c0c3446017c8ba71cb057fc1c1fda4ec84c6d740f1a81b"
+    },
+    {
+      "decision": 17,
+      "file": "p0029.txt",
+      "pdf_page": 29,
+      "printed_page": 736,
+      "page_method": "header",
+      "start": 125194,
+      "end": 127447,
+      "sha256": "b77a39317f27bd18337e23725b81756ff89cec95b3fd4daa8e9bf31e18cd4929"
+    },
+    {
+      "decision": 18,
+      "file": "p0029.txt",
+      "pdf_page": 29,
+      "printed_page": 736,
+      "page_method": "header",
+      "start": 127734,
+      "end": 129588,
+      "sha256": "b77a39317f27bd18337e23725b81756ff89cec95b3fd4daa8e9bf31e18cd4929"
+    },
+    {
+      "decision": 18,
+      "file": "p0030.txt",
+      "pdf_page": 30,
+      "printed_page": 737,
+      "page_method": "neighbors",
+      "start": 129589,
+      "end": 133812,
+      "sha256": "fabd3c2dc07da58b3cac18423fc215b17ba9322f4dac042ce0ccdbf156c33f06"
+    },
+    {
+      "decision": 18,
+      "file": "p0031.txt",
+      "pdf_page": 31,
+      "printed_page": 738,
+      "page_method": "header",
+      "start": 133813,
+      "end": 138130,
+      "sha256": "32d58b13eb740b0acc65fea91970b3b679fa2b2d4168db499cccbaec421b12d5"
+    },
+    {
+      "decision": 18,
+      "file": "p0032.txt",
+      "pdf_page": 32,
+      "printed_page": 739,
+      "page_method": "header",
+      "start": 138131,
+      "end": 140016,
+      "sha256": "b13a6fcd700a707047af5112f2bd23de4e71f03f0244e69e3c8688f1497c4321"
+    },
+    {
+      "decision": 19,
+      "file": "p0032.txt",
+      "pdf_page": 32,
+      "printed_page": 739,
+      "page_method": "header",
+      "start": 140318,
+      "end": 142557,
+      "sha256": "b13a6fcd700a707047af5112f2bd23de4e71f03f0244e69e3c8688f1497c4321"
+    },
+    {
+      "decision": 19,
+      "file": "p0033.txt",
+      "pdf_page": 33,
+      "printed_page": 740,
+      "page_method": "header",
+      "start": 142558,
+      "end": 146438,
+      "sha256": "105d07e924d2a154653e5db6a86e0c0a9dcf6bdae22fc1f85d4b9ba2a84e6f39"
+    },
+    {
+      "decision": 20,
+      "file": "p0033.txt",
+      "pdf_page": 33,
+      "printed_page": 740,
+      "page_method": "header",
+      "start": 146971,
+      "end": 147202,
+      "sha256": "105d07e924d2a154653e5db6a86e0c0a9dcf6bdae22fc1f85d4b9ba2a84e6f39"
+    },
+    {
+      "decision": 20,
+      "file": "p0034.txt",
+      "pdf_page": 34,
+      "printed_page": 741,
+      "page_method": "header",
+      "start": 147203,
+      "end": 151357,
+      "sha256": "671341cfad1d7178cb2d2a1fb6968c93a51f970eb0b2d1ea4f771812b3e1a1b5"
+    },
+    {
+      "decision": 20,
+      "file": "p0035.txt",
+      "pdf_page": 35,
+      "printed_page": 742,
+      "page_method": "header",
+      "start": 151358,
+      "end": 155560,
+      "sha256": "75b70dad360a7a2f1202a98bc797a1bff53f5ac2a1b4263a9fe85e6096d0ece5"
+    },
+    {
+      "decision": 20,
+      "file": "p0036.txt",
+      "pdf_page": 36,
+      "printed_page": 743,
+      "page_method": "neighbors",
+      "start": 155561,
+      "end": 159867,
+      "sha256": "3191637f80accd5039b30ab9105507298cc1b5d40236e2ad6bfb3c6e4545ea7e"
+    },
+    {
+      "decision": 20,
+      "file": "p0037.txt",
+      "pdf_page": 37,
+      "printed_page": 744,
+      "page_method": "neighbors",
+      "start": 159868,
+      "end": 160213,
+      "sha256": "2e6c924c11488176da8de170d4475ee49770b011f591bbfda98039d532ccc77e"
+    },
+    {
+      "decision": 21,
+      "file": "p0037.txt",
+      "pdf_page": 37,
+      "printed_page": 744,
+      "page_method": "neighbors",
+      "start": 161215,
+      "end": 164620,
+      "sha256": "2e6c924c11488176da8de170d4475ee49770b011f591bbfda98039d532ccc77e"
+    },
+    {
+      "decision": 21,
+      "file": "p0038.txt",
+      "pdf_page": 38,
+      "printed_page": 745,
+      "page_method": "neighbors",
+      "start": 164621,
+      "end": 168900,
+      "sha256": "fc4058971d79f995bcab1703ba3d8ef1dbe341a69c803b4654fc06af94be3b88"
+    },
+    {
+      "decision": 21,
+      "file": "p0039.txt",
+      "pdf_page": 39,
+      "printed_page": 746,
+      "page_method": "header",
+      "start": 168901,
+      "end": 173077,
+      "sha256": "28df326b2a0d916aec259e6f002eab8b051a7d512258ebf2a995aeb183a29ba0"
+    },
+    {
+      "decision": 21,
+      "file": "p0040.txt",
+      "pdf_page": 40,
+      "printed_page": 747,
+      "page_method": "header",
+      "start": 173078,
+      "end": 177569,
+      "sha256": "19aa707732e5c9d116bacedfbf5c549e4478d78c9724b8c54dcfd78a713c4ce1"
+    },
+    {
+      "decision": 21,
+      "file": "p0041.txt",
+      "pdf_page": 41,
+      "printed_page": 748,
+      "page_method": "neighbors",
+      "start": 177570,
+      "end": 180316,
+      "sha256": "a84bfc0eca75407020cc90102ff92454456246b63494b652aae01513f1e06560"
+    },
+    {
+      "decision": 22,
+      "file": "p0041.txt",
+      "pdf_page": 41,
+      "printed_page": 748,
+      "page_method": "neighbors",
+      "start": 180802,
+      "end": 182115,
+      "sha256": "a84bfc0eca75407020cc90102ff92454456246b63494b652aae01513f1e06560"
+    },
+    {
+      "decision": 22,
+      "file": "p0042.txt",
+      "pdf_page": 42,
+      "printed_page": 749,
+      "page_method": "neighbors",
+      "start": 182116,
+      "end": 186372,
+      "sha256": "8140cd23367ae60d21c4d1e4d0b3b608492c23e95d62d066ea564a8ceb09e959"
+    },
+    {
+      "decision": 22,
+      "file": "p0043.txt",
+      "pdf_page": 43,
+      "printed_page": 750,
+      "page_method": "header",
+      "start": 186373,
+      "end": 187469,
+      "sha256": "21be87112ff1aeaccd6a83427ef2a3988686a21b01265b774689e071066b016e"
+    },
+    {
+      "decision": 23,
+      "file": "p0043.txt",
+      "pdf_page": 43,
+      "printed_page": 750,
+      "page_method": "header",
+      "start": 188025,
+      "end": 190982,
+      "sha256": "21be87112ff1aeaccd6a83427ef2a3988686a21b01265b774689e071066b016e"
+    },
+    {
+      "decision": 23,
+      "file": "p0044.txt",
+      "pdf_page": 44,
+      "printed_page": 751,
+      "page_method": "header",
+      "start": 190983,
+      "end": 192429,
+      "sha256": "475c0c721e43c1e3a07c5b3dfb12f0b7e3433fd67094a6f78fbf9b4a04e276cc"
+    },
+    {
+      "decision": 24,
+      "file": "p0044.txt",
+      "pdf_page": 44,
+      "printed_page": 751,
+      "page_method": "header",
+      "start": 192799,
+      "end": 195352,
+      "sha256": "475c0c721e43c1e3a07c5b3dfb12f0b7e3433fd67094a6f78fbf9b4a04e276cc"
+    },
+    {
+      "decision": 24,
+      "file": "p0045.txt",
+      "pdf_page": 45,
+      "printed_page": 752,
+      "page_method": "header",
+      "start": 195353,
+      "end": 199629,
+      "sha256": "3a808b16573ef3e6678ee0b1670a14d596b2dc94039c4494e978c02a3ffe5671"
+    },
+    {
+      "decision": 24,
+      "file": "p0046.txt",
+      "pdf_page": 46,
+      "printed_page": 753,
+      "page_method": "header",
+      "start": 199630,
+      "end": 199985,
+      "sha256": "1c082099298edca15e6af363891e65deaa431add43e2514df015a598c34054c5"
+    },
+    {
+      "decision": 25,
+      "file": "p0046.txt",
+      "pdf_page": 46,
+      "printed_page": 753,
+      "page_method": "header",
+      "start": 200374,
+      "end": 204092,
+      "sha256": "1c082099298edca15e6af363891e65deaa431add43e2514df015a598c34054c5"
+    },
+    {
+      "decision": 25,
+      "file": "p0047.txt",
+      "pdf_page": 47,
+      "printed_page": 754,
+      "page_method": "header",
+      "start": 204093,
+      "end": 206160,
+      "sha256": "d8607e1ade4dad61f3be95ec16d0f22a56b7c95296fa43a4ac7ad1becaf72668"
+    },
+    {
+      "decision": 26,
+      "file": "p0047.txt",
+      "pdf_page": 47,
+      "printed_page": 754,
+      "page_method": "header",
+      "start": 206684,
+      "end": 208623,
+      "sha256": "d8607e1ade4dad61f3be95ec16d0f22a56b7c95296fa43a4ac7ad1becaf72668"
+    },
+    {
+      "decision": 26,
+      "file": "p0048.txt",
+      "pdf_page": 48,
+      "printed_page": 755,
+      "page_method": "header",
+      "start": 208624,
+      "end": 211422,
+      "sha256": "58aa2929cd6cdb6ebf8f701fd4fa2d73b47273dea4614bb58190f7b43fc6c428"
+    },
+    {
+      "decision": 27,
+      "file": "p0048.txt",
+      "pdf_page": 48,
+      "printed_page": 755,
+      "page_method": "header",
+      "start": 212425,
+      "end": 213456,
+      "sha256": "58aa2929cd6cdb6ebf8f701fd4fa2d73b47273dea4614bb58190f7b43fc6c428"
+    },
+    {
+      "decision": 27,
+      "file": "p0049.txt",
+      "pdf_page": 49,
+      "printed_page": 756,
+      "page_method": "header",
+      "start": 213457,
+      "end": 217572,
+      "sha256": "e1fa67b9b89f71bae399bcdb9ffe49c946d71a275fe6c3bf8fd7a75ca4cb2a19"
+    },
+    {
+      "decision": 27,
+      "file": "p0050.txt",
+      "pdf_page": 50,
+      "printed_page": 757,
+      "page_method": "header",
+      "start": 217573,
+      "end": 220260,
+      "sha256": "1a8381d8f4c8e4e482cf8f49268982708b96b041c94e06ccbfcf0b4907fbce48"
+    },
+    {
+      "decision": 28,
+      "file": "p0050.txt",
+      "pdf_page": 50,
+      "printed_page": 757,
+      "page_method": "header",
+      "start": 221182,
+      "end": 222498,
+      "sha256": "1a8381d8f4c8e4e482cf8f49268982708b96b041c94e06ccbfcf0b4907fbce48"
+    },
+    {
+      "decision": 28,
+      "file": "p0051.txt",
+      "pdf_page": 51,
+      "printed_page": 758,
+      "page_method": "neighbors",
+      "start": 222499,
+      "end": 226791,
+      "sha256": "c828a008eb0a957fd9c8c19dee0f8ddfb111d210ed183a3e786df1143dbf09b9"
+    },
+    {
+      "decision": 28,
+      "file": "p0052.txt",
+      "pdf_page": 52,
+      "printed_page": 759,
+      "page_method": "neighbors",
+      "start": 226792,
+      "end": 231042,
+      "sha256": "e8fd1c46c61df0ec746af09db2dca9e4253ed52662e606c1c587c732f2bddae6"
+    },
+    {
+      "decision": 28,
+      "file": "p0053.txt",
+      "pdf_page": 53,
+      "printed_page": 760,
+      "page_method": "header",
+      "start": 231043,
+      "end": 231906,
+      "sha256": "e1ad5189f0ad6f8c493caf3f9f5a801c4dcefa0369546187b9edd80613ae7d90"
+    },
+    {
+      "decision": 29,
+      "file": "p0053.txt",
+      "pdf_page": 53,
+      "printed_page": 760,
+      "page_method": "header",
+      "start": 232189,
+      "end": 235435,
+      "sha256": "e1ad5189f0ad6f8c493caf3f9f5a801c4dcefa0369546187b9edd80613ae7d90"
+    },
+    {
+      "decision": 29,
+      "file": "p0054.txt",
+      "pdf_page": 54,
+      "printed_page": 761,
+      "page_method": "neighbors",
+      "start": 235436,
+      "end": 239701,
+      "sha256": "fbfc4e595ed85912875e30d33342c6348d76fc8863cdae808141952fb052bfb8"
+    },
+    {
+      "decision": 29,
+      "file": "p0055.txt",
+      "pdf_page": 55,
+      "printed_page": 762,
+      "page_method": "header",
+      "start": 239702,
+      "end": 240983,
+      "sha256": "b376f3299c8d162c133e9242f4516a0d64fd4689ae5dbf626c1c9ab877471b65"
+    },
+    {
+      "decision": 30,
+      "file": "p0055.txt",
+      "pdf_page": 55,
+      "printed_page": 762,
+      "page_method": "header",
+      "start": 241435,
+      "end": 244201,
+      "sha256": "b376f3299c8d162c133e9242f4516a0d64fd4689ae5dbf626c1c9ab877471b65"
+    },
+    {
+      "decision": 30,
+      "file": "p0056.txt",
+      "pdf_page": 56,
+      "printed_page": 763,
+      "page_method": "header",
+      "start": 244202,
+      "end": 248556,
+      "sha256": "ba1a9c4179e187508020f5d53e0ef1878566cada3bbc3afddf345ef2a2f51574"
+    },
+    {
+      "decision": 30,
+      "file": "p0057.txt",
+      "pdf_page": 57,
+      "printed_page": 764,
+      "page_method": "header",
+      "start": 248557,
+      "end": 252911,
+      "sha256": "d1e48601b431335f515fb96f5e6e54e3c36ac8ab82a58d71f4c7d92365e2375e"
+    },
+    {
+      "decision": 30,
+      "file": "p0058.txt",
+      "pdf_page": 58,
+      "printed_page": 765,
+      "page_method": "header",
+      "start": 252912,
+      "end": 254838,
+      "sha256": "427e8b06ba1f727d4ee4a5d80c623417dd43181841216abf91ea7be2d3935a48"
+    },
+    {
+      "decision": 31,
+      "file": "p0058.txt",
+      "pdf_page": 58,
+      "printed_page": 765,
+      "page_method": "header",
+      "start": 255426,
+      "end": 257589,
+      "sha256": "427e8b06ba1f727d4ee4a5d80c623417dd43181841216abf91ea7be2d3935a48"
+    },
+    {
+      "decision": 31,
+      "file": "p0059.txt",
+      "pdf_page": 59,
+      "printed_page": 766,
+      "page_method": "header",
+      "start": 257590,
+      "end": 261876,
+      "sha256": "525364710ec7ad56173b3612a13cc4cf4d5a34ee45e8d4295f3cf4d9e1ecc2df"
+    },
+    {
+      "decision": 31,
+      "file": "p0060.txt",
+      "pdf_page": 60,
+      "printed_page": 767,
+      "page_method": "neighbors",
+      "start": 261877,
+      "end": 266219,
+      "sha256": "82ae60afdb3be0a2a47d8b5c75d30dd286ca76e0572484afb13c9cd967360d8d"
+    },
+    {
+      "decision": 31,
+      "file": "p0061.txt",
+      "pdf_page": 61,
+      "printed_page": 768,
+      "page_method": "header",
+      "start": 266220,
+      "end": 269843,
+      "sha256": "41e2a5c1d70e24ef7472f183ce45ba6b4530e3554d8f2363daf50804fabbd994"
+    },
+    {
+      "decision": 32,
+      "file": "p0061.txt",
+      "pdf_page": 61,
+      "printed_page": 768,
+      "page_method": "header",
+      "start": 270384,
+      "end": 270812,
+      "sha256": "41e2a5c1d70e24ef7472f183ce45ba6b4530e3554d8f2363daf50804fabbd994"
+    },
+    {
+      "decision": 32,
+      "file": "p0062.txt",
+      "pdf_page": 62,
+      "printed_page": 769,
+      "page_method": "header",
+      "start": 270813,
+      "end": 275049,
+      "sha256": "b380df37f2336149b4a6e2087428b384ca707eb265c98361602cfdf08324ee80"
+    },
+    {
+      "decision": 32,
+      "file": "p0063.txt",
+      "pdf_page": 63,
+      "printed_page": 770,
+      "page_method": "header",
+      "start": 275050,
+      "end": 279305,
+      "sha256": "c7f07910e5ec9abaa242abd671ba07edf2c6c9a5f2713c2a65eb964da3da4c30"
+    },
+    {
+      "decision": 32,
+      "file": "p0064.txt",
+      "pdf_page": 64,
+      "printed_page": 771,
+      "page_method": "neighbors",
+      "start": 279306,
+      "end": 281606,
+      "sha256": "4eed4578462f44363774cf2bab86ecb7d243db6ef307bb592e6cd1fba44053d5"
+    },
+    {
+      "decision": 33,
+      "file": "p0064.txt",
+      "pdf_page": 64,
+      "printed_page": 771,
+      "page_method": "neighbors",
+      "start": 281907,
+      "end": 283742,
+      "sha256": "4eed4578462f44363774cf2bab86ecb7d243db6ef307bb592e6cd1fba44053d5"
+    },
+    {
+      "decision": 33,
+      "file": "p0065.txt",
+      "pdf_page": 65,
+      "printed_page": 772,
+      "page_method": "neighbors",
+      "start": 283743,
+      "end": 285518,
+      "sha256": "4548f85c2a181ce21c1e4e231432b1bc1b29c98579d14dbc2fe74f2335a6036e"
+    },
+    {
+      "decision": 34,
+      "file": "p0065.txt",
+      "pdf_page": 65,
+      "printed_page": 772,
+      "page_method": "neighbors",
+      "start": 286501,
+      "end": 288847,
+      "sha256": "4548f85c2a181ce21c1e4e231432b1bc1b29c98579d14dbc2fe74f2335a6036e"
+    },
+    {
+      "decision": 34,
+      "file": "p0066.txt",
+      "pdf_page": 66,
+      "printed_page": 773,
+      "page_method": "neighbors",
+      "start": 288848,
+      "end": 292531,
+      "sha256": "d876ab21db51c3bbe9ea175d5057802489e518050690b843f011d1a01ac84a04"
+    },
+    {
+      "decision": 35,
+      "file": "p0066.txt",
+      "pdf_page": 66,
+      "printed_page": 773,
+      "page_method": "neighbors",
+      "start": 292754,
+      "end": 293247,
+      "sha256": "d876ab21db51c3bbe9ea175d5057802489e518050690b843f011d1a01ac84a04"
+    },
+    {
+      "decision": 35,
+      "file": "p0067.txt",
+      "pdf_page": 67,
+      "printed_page": 774,
+      "page_method": "neighbors",
+      "start": 293248,
+      "end": 297145,
+      "sha256": "d47e8872f7198584d2b783e1193f9016681d28726afe749e880719a267f5781b"
+    },
+    {
+      "decision": 36,
+      "file": "p0067.txt",
+      "pdf_page": 67,
+      "printed_page": 774,
+      "page_method": "neighbors",
+      "start": 297527,
+      "end": 297770,
+      "sha256": "d47e8872f7198584d2b783e1193f9016681d28726afe749e880719a267f5781b"
+    },
+    {
+      "decision": 36,
+      "file": "p0068.txt",
+      "pdf_page": 68,
+      "printed_page": 775,
+      "page_method": "neighbors",
+      "start": 297771,
+      "end": 301979,
+      "sha256": "cff13dedf79d48081d678a4d3c7a129a307f042a599f582b1379d9ee6b440025"
+    },
+    {
+      "decision": 36,
+      "file": "p0069.txt",
+      "pdf_page": 69,
+      "printed_page": 776,
+      "page_method": "neighbors",
+      "start": 301980,
+      "end": 303399,
+      "sha256": "93fccd9c6c630a7b6296cb567410bc1ed7fc8796355b2b8cbd9496eab0820d24"
+    },
+    {
+      "decision": 37,
+      "file": "p0069.txt",
+      "pdf_page": 69,
+      "printed_page": 776,
+      "page_method": "neighbors",
+      "start": 303772,
+      "end": 306452,
+      "sha256": "93fccd9c6c630a7b6296cb567410bc1ed7fc8796355b2b8cbd9496eab0820d24"
+    },
+    {
+      "decision": 37,
+      "file": "p0070.txt",
+      "pdf_page": 70,
+      "printed_page": 777,
+      "page_method": "neighbors",
+      "start": 306453,
+      "end": 310660,
+      "sha256": "a02349a8136a1f57ac122b113adb1e461d42635102f666c4fba53046eba9b5ac"
+    },
+    {
+      "decision": 37,
+      "file": "p0071.txt",
+      "pdf_page": 71,
+      "printed_page": 778,
+      "page_method": "neighbors",
+      "start": 310661,
+      "end": 311563,
+      "sha256": "4ceb9c3daa7137a23c039f819ee14de4f78687374f80e930734d99e9afd75c76"
+    },
+    {
+      "decision": 38,
+      "file": "p0071.txt",
+      "pdf_page": 71,
+      "printed_page": 778,
+      "page_method": "neighbors",
+      "start": 311814,
+      "end": 314861,
+      "sha256": "4ceb9c3daa7137a23c039f819ee14de4f78687374f80e930734d99e9afd75c76"
+    },
+    {
+      "decision": 38,
+      "file": "p0072.txt",
+      "pdf_page": 72,
+      "printed_page": 779,
+      "page_method": "header",
+      "start": 314862,
+      "end": 319158,
+      "sha256": "720018817512d63a6ebb12ca1ebc3a68db42ae40d13fe4e54322a36b8ba74edd"
+    },
+    {
+      "decision": 38,
+      "file": "p0073.txt",
+      "pdf_page": 73,
+      "printed_page": 780,
+      "page_method": "neighbors",
+      "start": 319159,
+      "end": 319591,
+      "sha256": "54f465494745459e06e707265fbd8713670d1d1aae92e1e1f23e5e9d8f234dec"
+    },
+    {
+      "decision": 39,
+      "file": "p0073.txt",
+      "pdf_page": 73,
+      "printed_page": 780,
+      "page_method": "neighbors",
+      "start": 319993,
+      "end": 323635,
+      "sha256": "54f465494745459e06e707265fbd8713670d1d1aae92e1e1f23e5e9d8f234dec"
+    },
+    {
+      "decision": 39,
+      "file": "p0074.txt",
+      "pdf_page": 74,
+      "printed_page": 781,
+      "page_method": "header",
+      "start": 323636,
+      "end": 327902,
+      "sha256": "eb090757c0611fd4b62815477d3abc4570a9df90e0c92d5ae7b450e9d817e2d4"
+    },
+    {
+      "decision": 39,
+      "file": "p0075.txt",
+      "pdf_page": 75,
+      "printed_page": 782,
+      "page_method": "neighbors",
+      "start": 327903,
+      "end": 331980,
+      "sha256": "eab41d8354fab234c1a7ba4ba6f003ac743765a0f613e5e892e5850cfcf86460"
+    },
+    {
+      "decision": 40,
+      "file": "p0076.txt",
+      "pdf_page": 76,
+      "printed_page": 783,
+      "page_method": "header",
+      "start": 332157,
+      "end": 336385,
+      "sha256": "3d9519b17c0252d0cc6f578f7ddeedb2846dd29bd3208519792891fd0aef6312"
+    },
+    {
+      "decision": 40,
+      "file": "p0077.txt",
+      "pdf_page": 77,
+      "printed_page": 784,
+      "page_method": "header",
+      "start": 336386,
+      "end": 338039,
+      "sha256": "965309d8c0d976ea4927f6af09463de558155d4ea210a6f8884016767c7d448a"
+    },
+    {
+      "decision": 41,
+      "file": "p0077.txt",
+      "pdf_page": 77,
+      "printed_page": 784,
+      "page_method": "header",
+      "start": 338788,
+      "end": 341151,
+      "sha256": "965309d8c0d976ea4927f6af09463de558155d4ea210a6f8884016767c7d448a"
+    },
+    {
+      "decision": 41,
+      "file": "p0078.txt",
+      "pdf_page": 78,
+      "printed_page": 785,
+      "page_method": "header",
+      "start": 341152,
+      "end": 341263,
+      "sha256": "a9c38f8f67b67fcd61da8303f740fdea9de4a48e1ad7cbc1644df6abb97d69e7"
+    },
+    {
+      "decision": 42,
+      "file": "p0078.txt",
+      "pdf_page": 78,
+      "printed_page": 785,
+      "page_method": "header",
+      "start": 341629,
+      "end": 343534,
+      "sha256": "a9c38f8f67b67fcd61da8303f740fdea9de4a48e1ad7cbc1644df6abb97d69e7"
+    },
+    {
+      "decision": 43,
+      "file": "p0078.txt",
+      "pdf_page": 78,
+      "printed_page": 785,
+      "page_method": "header",
+      "start": 343816,
+      "end": 345767,
+      "sha256": "a9c38f8f67b67fcd61da8303f740fdea9de4a48e1ad7cbc1644df6abb97d69e7"
+    },
+    {
+      "decision": 43,
+      "file": "p0079.txt",
+      "pdf_page": 79,
+      "printed_page": 786,
+      "page_method": "header",
+      "start": 345768,
+      "end": 350035,
+      "sha256": "73c6c224fcd350d012af145f9cc5ce7ba87ab796b9e8befd865326b4091baaa5"
+    },
+    {
+      "decision": 43,
+      "file": "p0080.txt",
+      "pdf_page": 80,
+      "printed_page": 787,
+      "page_method": "header",
+      "start": 350036,
+      "end": 351069,
+      "sha256": "6f0573ee81611d7b17f7602f449109d9a07c3e88926c5351bca3182863d414ec"
+    },
+    {
+      "decision": 44,
+      "file": "p0080.txt",
+      "pdf_page": 80,
+      "printed_page": 787,
+      "page_method": "header",
+      "start": 351502,
+      "end": 354572,
+      "sha256": "6f0573ee81611d7b17f7602f449109d9a07c3e88926c5351bca3182863d414ec"
+    },
+    {
+      "decision": 44,
+      "file": "p0081.txt",
+      "pdf_page": 81,
+      "printed_page": 788,
+      "page_method": "neighbors",
+      "start": 354573,
+      "end": 355683,
+      "sha256": "68b1c6b12b40f31f479cb452b40ed87100035a873c5f3841cd5411b8c072108c"
+    },
+    {
+      "decision": 45,
+      "file": "p0081.txt",
+      "pdf_page": 81,
+      "printed_page": 788,
+      "page_method": "neighbors",
+      "start": 356685,
+      "end": 359483,
+      "sha256": "68b1c6b12b40f31f479cb452b40ed87100035a873c5f3841cd5411b8c072108c"
+    },
+    {
+      "decision": 46,
+      "file": "p0082.txt",
+      "pdf_page": 82,
+      "printed_page": 789,
+      "page_method": "neighbors",
+      "start": 359662,
+      "end": 363817,
+      "sha256": "5f3c387fd9c789cc1eef1ada5f95d876a6af8a1b0dd649adead5bbd956f4c89d"
+    },
+    {
+      "decision": 46,
+      "file": "p0083.txt",
+      "pdf_page": 83,
+      "printed_page": 790,
+      "page_method": "header",
+      "start": 363818,
+      "end": 363987,
+      "sha256": "a2543bb61846ceadc062e399e06a4d7aeff45f0a8ccb04599de26fd49ebd604d"
+    },
+    {
+      "decision": 47,
+      "file": "p0083.txt",
+      "pdf_page": 83,
+      "printed_page": 790,
+      "page_method": "header",
+      "start": 364314,
+      "end": 368231,
+      "sha256": "a2543bb61846ceadc062e399e06a4d7aeff45f0a8ccb04599de26fd49ebd604d"
+    },
+    {
+      "decision": 47,
+      "file": "p0084.txt",
+      "pdf_page": 84,
+      "printed_page": 791,
+      "page_method": "header",
+      "start": 368232,
+      "end": 368763,
+      "sha256": "c29ac9e758b9f8cd560266ba96970d40346063f3f870091a5f7f51fbe85a77c1"
+    },
+    {
+      "decision": 48,
+      "file": "p0084.txt",
+      "pdf_page": 84,
+      "printed_page": 791,
+      "page_method": "header",
+      "start": 369082,
+      "end": 371991,
+      "sha256": "c29ac9e758b9f8cd560266ba96970d40346063f3f870091a5f7f51fbe85a77c1"
+    },
+    {
+      "decision": 49,
+      "file": "p0084.txt",
+      "pdf_page": 84,
+      "printed_page": 791,
+      "page_method": "header",
+      "start": 372625,
+      "end": 373102,
+      "sha256": "c29ac9e758b9f8cd560266ba96970d40346063f3f870091a5f7f51fbe85a77c1"
+    },
+    {
+      "decision": 49,
+      "file": "p0085.txt",
+      "pdf_page": 85,
+      "printed_page": 792,
+      "page_method": "header",
+      "start": 373103,
+      "end": 377306,
+      "sha256": "a765cd55b9fea6995e5527e7dbc4659ec9f0890bc207864ab2943a8af203a111"
+    },
+    {
+      "decision": 49,
+      "file": "p0086.txt",
+      "pdf_page": 86,
+      "printed_page": 793,
+      "page_method": "header",
+      "start": 377307,
+      "end": 381305,
+      "sha256": "f762755f8af3984531fb3ea6bd29031a63120c273e5e0cd5ad6a11bb54ba55f9"
+    },
+    {
+      "decision": 49,
+      "file": "p0087.txt",
+      "pdf_page": 87,
+      "printed_page": 794,
+      "page_method": "header",
+      "start": 381306,
+      "end": 385272,
+      "sha256": "19e4295c510a02971b040291c6dfb880ab40d07ec8744072115199dc13b8ada5"
+    },
+    {
+      "decision": 49,
+      "file": "p0088.txt",
+      "pdf_page": 88,
+      "printed_page": 795,
+      "page_method": "header",
+      "start": 385273,
+      "end": 389265,
+      "sha256": "22ad6850d269e000b1c03bc0c5da12e0d8341b302a8d4936c796e9876aca3bb5"
+    },
+    {
+      "decision": 49,
+      "file": "p0089.txt",
+      "pdf_page": 89,
+      "printed_page": 796,
+      "page_method": "header",
+      "start": 389266,
+      "end": 390299,
+      "sha256": "4f49e7903c93e73d7686ecbd0d5022898d44b5b5dc8271a2bfe9696c207fb5af"
+    }
+  ]
+}

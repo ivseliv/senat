@@ -47,7 +47,10 @@ class ConceptTests(unittest.TestCase):
                 text=documents[p['decision']][p['start']:p['end']]
                 self.assertEqual(hashlib.sha256(text.encode()).hexdigest(),p['sha256'])
                 self.assertLessEqual(p['words'],300)
-                self.assertTrue(p['pages'],p['id'])
+                # Ранние листы могут иметь только буквенную/непечатную
+                # сигнатуру. В таком случае источник всё равно точный, но
+                # интерфейс честно показывает имя листа, а не выдуманный номер.
+                self.assertTrue(p['pages'] or any(s['page'] is None and s['page_method'] == 'verified' for s in p['sources']),p['id'])
                 for s in p['sources']:
                     self.assertTrue((REPO/f'ocr/{year}'/s['file']).is_file())
                     self.assertGreater(s['end'],s['start'])
@@ -69,6 +72,20 @@ class ConceptTests(unittest.TestCase):
             self.assertEqual(result[1]['page_method'],'neighbors')
             self.assertEqual(raw[result[1]['start']:result[1]['end']],'абзаца.')
             with self.assertRaises(ValueError):source_pages(root,raw.replace('Конец','Изменение'))
+
+    def test_verified_single_page_map(self):
+        with tempfile.TemporaryDirectory() as t:
+            root=Path(t); raw='Первый фрагмент.\n\nВторой фрагмент.\n'
+            leaf=root/'p0001.txt'; leaf.write_text('Первый фрагмент. Второй фрагмент.')
+            sha=hashlib.sha256(leaf.read_bytes()).hexdigest()
+            (root/'page-map.json').write_text(json.dumps(dict(version=1,layout='single-pages',
+                volume_sha256=hashlib.sha256(raw.encode()).hexdigest(),entries=[
+                    dict(file='p0001.txt',start=0,end=16,printed_page=None,sha256=sha),
+                    dict(file='p0001.txt',start=18,end=len(raw)-1,printed_page=709,sha256=sha)])))
+            result=source_pages(root,raw)
+            self.assertEqual([(x['page'],x['page_method']) for x in result],[(None,'verified'),(709,'verified')])
+            leaf.write_text('исправленный текст')
+            with self.assertRaises(ValueError):source_pages(root,raw)
 
     def test_unicode_and_html(self):
         script=r"""

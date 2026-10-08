@@ -76,7 +76,7 @@ def pdf_pages(pdf, cache):
     return ET.parse(bbox).findall('.//x:page', NS)
 
 
-def page_words(page, side=None):
+def page_words(page, side=None, columns=False):
     width, height = float(page.attrib['width']), float(page.attrib['height'])
     lo, hi = (0, width) if side is None else ((0, width / 2) if side == 'L' else (width / 2, width))
     lines = []
@@ -89,30 +89,76 @@ def page_words(page, side=None):
                 continue
             words.append(dict(text=w.text or '', x0=x0-lo, x1=x1-lo, y0=float(a['yMin']), y1=float(a['yMax'])))
         if words:
-            lines.append(sorted(words, key=lambda w: w['x0']))
-    lines.sort(key=lambda line: (line[0]['y0'], line[0]['x0']))
-    return [w for line in lines for w in line], hi - lo, height
+            if columns and side is None:
+                # В некоторых FineReader PDF две печатные колонки собраны в
+                # один XML-line. Текстовый слой читает сначала всю левую, затем
+                # всю правую колонку; построчное чередование давало ~0.55 и
+                # делало координаты недостоверными.
+                middle = width / 2
+                for column, group in enumerate(([w for w in words if (w['x0'] + w['x1']) / 2 < middle],
+                                                [w for w in words if (w['x0'] + w['x1']) / 2 >= middle])):
+                    if group:
+                        lines.append((column, sorted(group, key=lambda w: w['x0'])))
+            else:
+                lines.append((0, sorted(words, key=lambda w: w['x0'])))
+    lines.sort(key=lambda item: (item[0], item[1][0]['y0'], item[1][0]['x0']))
+    return [w for _, line in lines for w in line], hi - lo, height
+
+
+def page_words_matching_ocr(page, raw, single_pages=False, side=None):
+    """Выбирает порядок строк, который подтверждает текстовый слой PDF.
+
+    FineReader обычно пишет двухколоночный лист построчно, но на части листов
+    записывает сначала левую колонку целиком. Выбор по фактическому OCR не
+    меняет слов и координат, только порядок их сопоставления.
+    """
+    candidates = [page_words(page, side)]
+    if single_pages and side is None:
+        candidates.append(page_words(page, columns=True))
+    ocr = norm(re.sub(r'\[\[.*?\]\]', '', raw))
+    scored = [(difflib.SequenceMatcher(None, ocr, norm(' '.join(w['text'] for w in words)), autojunk=False).ratio(), words, width, height)
+              for words, width, height in candidates]
+    return max(scored, key=lambda value: value[0])
 
 
 def leaf_page_index(filename):
-    """p0001_L/p0001_R → нулевые индексы одиночных PDF-страниц 0/1."""
-    match = re.fullmatch(r'p(\d{4})_([LR])(?:\.txt)?', filename)
+    """Индекс страницы для разворота или экспорта с одним листом на страницу."""
+    match = re.fullmatch(r'p(\d{4})(?:_([LR]))?(?:\.txt)?', filename)
     if not match or int(match[1]) < 1:
         raise ValueError(f'Некорректное имя листа: {filename}')
-    return (int(match[1]) - 1) * 2 + (match[2] == 'R')
+    return (int(match[1]) - 1) if match[2] is None else (int(match[1]) - 1) * 2 + (match[2] == 'R')
 
 
-def validate_leaf_pdf(pages, year, byfile):
+def leaf_files(year):
+    """Не смешиваем два соглашения об именах внутри одного тома."""
+    leaves = sorted((ROOT / 'ocr' / str(year)).glob('p????*.txt'))
+    single = [p for p in leaves if re.fullmatch(r'p\d{4}\.txt', p.name)]
+    spreads = [p for p in leaves if re.fullmatch(r'p\d{4}_[LR]\.txt', p.name)]
+    if len(single) + len(spreads) != len(leaves) or (single and spreads):
+        raise ValueError(f'{year}: смешанные или некорректные имена OCR-листов')
+    return single or spreads
+
+
+def validate_leaf_pdf(pages, year, byfile, pdf_sha256=None):
     """Сначала проверяем полный порядок нового экспорта, до записи изображений."""
-    leaves = sorted((ROOT / 'ocr' / str(year)).glob('p????_[LR].txt'))
+    leaves = leaf_files(year)
     if not leaves or len(pages) != len(leaves) or [leaf_page_index(p.name) for p in leaves] != list(range(len(pages))):
         raise ValueError(f'{year}: одиночный PDF должен содержать все {len(leaves)} листов в исходном порядке')
+    # Для 1896 постраничный слой был извлечён именно из этого PDF и закреплён
+    # картой с SHA-256. У части листов FineReader меняет порядок двух колонок
+    # между -raw и -bbox; это не повод отвергать проверенную физическую страницу.
+    page_map = ROOT / 'ocr' / str(year) / 'page-map.json'
+    if page_map.exists():
+        declared = json.loads(page_map.read_text(encoding='utf8'))
+        if declared.get('source_pdf_sha256') != pdf_sha256 or declared.get('pages') != len(leaves):
+            raise ValueError(f'{year}: карта страниц не относится к этому PDF')
+        hashes = {entry['file']: entry['sha256'] for entry in declared.get('entries', [])}
+        if any(hashes.get(p.name) != hashlib.sha256(p.read_bytes()).hexdigest() for p in leaves):
+            raise ValueError(f'{year}: карта страниц не подтверждает OCR-листы')
+        return
     for filename in sorted(byfile):
-        words, _, _ = page_words(pages[leaf_page_index(filename)])
         raw = (ROOT / 'ocr' / str(year) / filename).read_text()
-        ocr = norm(re.sub(r'\[\[.*?\]\]', '', raw))
-        target = norm(' '.join(w['text'] for w in words))
-        ratio = difflib.SequenceMatcher(None, ocr, target, autojunk=False).ratio()
+        ratio, _, _, _ = page_words_matching_ocr(pages[leaf_page_index(filename)], raw, single_pages=True)
         if ratio < .90:
             raise ValueError(f'{year}/{filename}: PDF-страница не подтверждена текстом ({ratio:.3f}); экспорт не принят')
 
@@ -178,7 +224,7 @@ def build(source, cache, years=None, leaf_pdfs=None):
             for filename, spans in groups.items():
                 byfile[filename].append((p, spans))
         if single_pages:
-            validate_leaf_pdf(pages, year, byfile)
+            validate_leaf_pdf(pages, year, byfile, hashlib.sha256(pdf.read_bytes()).hexdigest())
         manifest = dict(version=1, year=year, source_pdf_sha256=hashlib.sha256(pdf.read_bytes()).hexdigest(), pages={}, passages={}, decisions={}, passage_sha256={p['id']:p['sha256'] for p in data['passages']})
         if single_pages:
             manifest.update(source_layout='single-pages', source_pdf_pages=len(pages))
@@ -188,21 +234,28 @@ def build(source, cache, years=None, leaf_pdfs=None):
             fn = Path(filename).stem
             page_index = leaf_page_index(fn) if single_pages else int(fn[1:5])-1
             page = pages[page_index]
-            words, width, height = page_words(page, None if single_pages else fn[-1])
             raw = (ROOT / 'ocr' / str(year) / filename).read_text()
+            _, words, width, height = page_words_matching_ocr(page, raw, single_pages=single_pages,
+                                                               side=None if single_pages else fn[-1])
             body = re.sub(r'\[\[.*?\]\]', '', raw)
             ocr = norm(body)
             mapping, ids = alignment(ocr, words)
-            image = leaf_image(source, year, fn, pdf, cache, single_pages, manifest['source_pdf_sha256'][:16])
             base = stage / 'scans' / str(year)
             (base / 'pages').mkdir(parents=True, exist_ok=True)
             (base / 'fragments').mkdir(exist_ok=True)
             suffix = '-' + manifest['source_pdf_sha256'][:16] if single_pages else ''
             full = f'scans/{year}/pages/{fn}{suffix}.webp'
-            image.save(stage / full, format='WEBP', quality=86, method=4)
             published_full = ROOT / 'lex' / full
             published_full.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(stage / full, published_full)
+            if published_full.is_file():
+                # Кадр уже привязан к SHA PDF в имени; повторная сборка может
+                # менять только метаданные страниц и не должна перекодировать 89
+                # одинаковых изображений.
+                image = Image.open(published_full).convert('L')
+            else:
+                image = leaf_image(source, year, fn, pdf, cache, single_pages, manifest['source_pdf_sha256'][:16])
+                image.save(stage / full, format='WEBP', quality=86, method=4)
+                shutil.copy2(stage / full, published_full)
             page_nums = {s['page'] for _, spans in items for s in spans if s['page'] is not None}
             if len(page_nums) > 1:
                 raise ValueError(f'{year}/{fn}: противоречивые номера страниц {page_nums}')
@@ -223,11 +276,14 @@ def build(source, cache, years=None, leaf_pdfs=None):
                             identity += manifest['source_pdf_sha256'] + json.dumps(box)
                         key = hashlib.sha256(identity.encode()).hexdigest()[:16]
                         thumb = f'scans/{year}/fragments/{key}.webp'
-                        cut = image.crop((0, int(box[1]*image.height), image.width, min(image.height, int(box[3]*image.height)+1)))
-                        cut.save(stage / thumb, format='WEBP', quality=86, method=4)
                         published_thumb = ROOT / 'lex' / thumb
                         published_thumb.parent.mkdir(parents=True, exist_ok=True)
-                        shutil.copy2(stage / thumb, published_thumb)
+                        if published_thumb.is_file():
+                            cut = Image.open(published_thumb).convert('L')
+                        else:
+                            cut = image.crop((0, int(box[1]*image.height), image.width, min(image.height, int(box[3]*image.height)+1)))
+                            cut.save(stage / thumb, format='WEBP', quality=86, method=4)
+                            shutil.copy2(stage / thumb, published_thumb)
                         result.update(kind='fragment', image=thumb, box=box, coverage=min(b['coverage'] for b in boxes), width=cut.width, height=cut.height)
                         crops += 1
                 if result['kind'] == 'page':
