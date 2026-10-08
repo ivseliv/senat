@@ -370,7 +370,8 @@ def main():
         dept = department(front)
         nums = [d['num'] for d in decs]
         gaps = [n for n in range(min(nums), max(nums) + 1) if n not in nums] if nums else []
-        vols.append(dict(year=int(year), dept=dept, decisions=len(decs), gaps=gaps, file=f'text-{year}.json'))
+        vols.append(dict(year=int(year), dept=dept, decisions=len(decs), gaps=gaps, file=f'text-{year}.json',
+                         scans=bool(list(Path(os.path.dirname(vf)).glob('p*.txt')))))
         open(os.path.join(OUT, f'backmatter-{year}.txt'), 'w', encoding='utf-8').write(back)
         vt = []
         for d in decs:

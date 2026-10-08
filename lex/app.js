@@ -61,6 +61,10 @@
   /* Сканы: метаданные по томам, картинки только при показе/открытии. */
   const scanData = new Map();
   function loadScans(year) {
+    const volume = S.meta.volumes.find(v => Number(v.year) === Number(year));
+    // Том с единым текстом без проверяемой постраничной разметки не должен
+    // запрашивать несуществующий манифест и создавать видимость сканов.
+    if (volume && volume.scans === false) return Promise.resolve({passages:{}, decisions:{}, pages:{}});
     if (!scanData.has(year)) scanData.set(year, loadJSON(`scans-${year}.json`).catch(err => { scanData.delete(year); throw err; }));
     return scanData.get(year);
   }
