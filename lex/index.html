@@ -152,13 +152,15 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
 .tbl th, .tbl td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--line); } .tbl td:last-child, .tbl th:last-child { text-align: right; }
 #about { max-width: 760px; } #about h2 { font-size: 18px; margin-top: 26px; }
 #about dt { font-weight: 600; margin-top: 8px; } #about dd { margin: 0 0 4px; }
+.decision-analysis { margin: 24px 0; padding: 18px; border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 8px; background: var(--soft); }
+.decision-analysis h3 { margin-top: 0; }.analysis-label,.analysis-speaker { color: var(--accent-ink); font-size: 13px; font-weight: 600; margin: 4px 0; }.analysis-item { border-top: 1px solid var(--line); padding-top: 12px; margin-top: 12px; }.analysis-item h4 { margin: 0; font-size: 16px; }.analysis-evidence { margin-top: 8px; }.source-quote { margin: 10px 0; padding-left: 12px; border-left: 2px solid var(--line); font-family: "Noto Serif", Georgia, serif; white-space: pre-wrap; }.analysis-card h3 { margin-top: 0; }
 </style>
 </head>
 <body>
 <header><div class="wrap">
   <div class="top"><h1>Решения Правительствующего Сената</h1><span class="sub">поиск и аналитика · прототип</span><span class="spacer"></span>
     <button class="btn ghost" id="theme" title="Светлая / тёмная тема">◐ тема</button></div>
-  <nav aria-label="Разделы"><a id="tab-search" href="#/search">Поиск</a><a id="tab-sense" href="#/sense">По смыслу</a><a id="tab-laws" href="#/laws">Законодательство</a><a id="tab-map" href="#/map">Карта</a><a id="tab-participants" href="#/participants">Участники</a><a id="tab-analytics" href="#/analytics">Аналитика</a><a id="tab-about" href="#/about">О проекте</a></nav>
+  <nav aria-label="Разделы"><a id="tab-search" href="#/search">Поиск</a><a id="tab-sense" href="#/sense">По смыслу</a><a id="tab-laws" href="#/laws">Законодательство</a><a id="tab-map" href="#/map">Карта</a><a id="tab-participants" href="#/participants">Участники</a><a id="tab-analyses" href="#/analyses">Разборы</a><a id="tab-analytics" href="#/analytics">Аналитика</a><a id="tab-about" href="#/about">О проекте</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -255,6 +257,13 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     <p class="muted small">Печатные указатели 1897, 1904 и 1905 годов: люди, семьи, организации и учреждения. Записи могут повторяться и не считаются уникальными людьми. Номера ведут к решениям; роль в деле и биография из указателя не выводятся. В вопросах без именованных участников записи нет.</p>
     <div id="participants-status" aria-live="polite"></div><div id="participants-results"></div>
     <button class="btn ghost" id="participants-more" hidden>Показать ещё</button>
+  </section>
+
+  <section id="view-analyses" hidden>
+    <h2>Что именно решил Сенат</h2>
+    <p>Десять редакционных разборов дел гражданского кассационного департамента 1897, 1904 и 1905 годов. Это пилот, не полное покрытие корпуса.</p>
+    <p class="muted small">Каждый тезис привязан к буквальной цитате, смещению в OCR, пассажу и опубликованной странице скана. Разбор подготовлен с помощью ИИ и не является юридической экспертизой.</p>
+    <div id="analyses-status" aria-live="polite"></div><div id="analyses-results"></div>
   </section>
 
   <section id="view-analytics" hidden><div id="analytics-body"></div></section>
