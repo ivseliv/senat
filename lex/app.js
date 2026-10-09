@@ -29,6 +29,7 @@
     sense: { config: null, engines: [], promise: null, q: '', hits: [], shown: 10, token: 0 },
     map: { q: '', topic: '', token: 0 },
     laws: { q: '', code: '', data: null, promise: null, token: 0 },
+    analyses: { data: null, promise: null },
     participants: {q:'', year:'', shown:60}, participantMap: new Map(),
     f: { q: '', year: '', outcome: '', topic: '', code: '', statute: '', procedure: '', person: '', participant: '', gender: '', age: '', family: '', estate: '', entity: '', role: '', sort: 'rel' }, shown: 20, hits: [], sentinel: 0,
   };
@@ -54,6 +55,10 @@
   async function loadJSON(name) { if (window.LEX_INLINE && window.LEX_INLINE[name]) return window.LEX_INLINE[name]; const r = await fetch(DATA + name); if (!r.ok) throw new Error(name + ': ' + r.status); return r.json(); }
   async function loadVol(y) { if (!S.texts[y]) S.texts[y] = loadJSON(`text-${y}.json`); return S.texts[y]; }
   async function textOf(d) { return (await loadVol(d.vol))[localIndex(d)]; }
+  async function loadAnalyses() {
+    if (!S.analyses.promise) S.analyses.promise = loadJSON('decision-analyses.json').then(data => (S.analyses.data = data));
+    return S.analyses.promise;
+  }
   function localIndex(d) { return d.i - S.volStart[d.vol]; }
   async function stemsOf(d) {
     if (!S.stemCache.has(d.i)) S.stemCache.set(d.i, L.stems(d.headnote + '\n' + await textOf(d)));
@@ -136,9 +141,9 @@
   }
   function route() {
     const { path, p } = readHash();
-    const requested = path.startsWith('d/') ? (['sense','participants','map','laws'].includes(p.get('mode')) ? p.get('mode') : 'search') : (path.split('/')[0] || 'search');
-    const tab = ['search','sense','map','laws','participants','analytics','about'].includes(requested) ? requested : 'search';
-    for (const t of ['search','sense','map','laws','participants','analytics','about']) {
+    const requested = path.startsWith('d/') ? (['sense','participants','map','laws','analyses','analysis'].includes(p.get('mode')) ? (p.get('mode') === 'analysis' ? 'analyses' : p.get('mode')) : 'search') : (path.split('/')[0] || 'search');
+    const tab = ['search','sense','map','laws','participants','analyses','analytics','about'].includes(requested) ? requested : 'search';
+    for (const t of ['search','sense','map','laws','participants','analyses','analytics','about']) {
       $('#view-' + t).hidden = t !== tab;
       $('#tab-' + t).setAttribute('aria-current', t === tab ? 'page' : 'false');
     }
@@ -163,10 +168,28 @@
       Object.assign(S.participants, {q:p.get('q') || '', year:p.get('y') || '', shown:60});
       renderParticipants();
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
+    } else if (tab === 'analyses') {
+      renderAnalyses();
+      if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
     } else closeDetail();
     if (tab === 'analytics') renderAnalytics();
     if (tab === 'about') renderCorpus();
     window.scrollTo(0, path.startsWith('d/') ? window.scrollY : 0);
+  }
+  async function renderAnalyses() {
+    const box = $('#analyses-results');
+    box.replaceChildren(h('p',{class:'muted'},'Загрузка разборов…'));
+    try {
+      const data = await loadAnalyses();
+      const items = Object.values(data.decisions);
+      $('#analyses-status').textContent = `Пилот: ${items.length} из ${S.meta.decisions.length} решений.`;
+      box.replaceChildren(...items.map(item => {
+        const d = S.meta.decisions.find(x => x.id === item.id);
+        return h('article',{class:'card analysis-card'},h('h3',{},h('a',{href:'#/d/'+item.id+'?mode=analyses'},`${item.year} · № ${d.num}`)),
+          h('p',{},M(d.headnote)),h('p',{class:'muted small'},item.selection),
+          h('a',{href:'#/d/'+item.id+'?mode=analyses'},'Открыть разбор и первоисточник →'));
+      }));
+    } catch (err) { box.replaceChildren(h('p',{class:'empty'},'Не удалось загрузить редакционные разборы: '+err.message)); }
   }
   function pushSearch() {
     const f = S.f; const params = { q: f.q, y: f.year, o: f.outcome, t: f.topic, c: f.code, s: f.statute, r: f.procedure, p: f.person, u:f.participant, sort: f.sort === 'rel' ? '' : f.sort };
@@ -315,6 +338,27 @@
   const plural = (n, a, b, c) => { const m = n % 100, k = n % 10; return m > 10 && m < 20 ? c : k === 1 ? a : k > 1 && k < 5 ? b : c; };
   function openFromList(id) { const { p } = readHash(); location.hash = '#/d/' + id + (p.toString() ? '?' + p.toString() : ''); }
 
+  function analysisSection(d, analysis) {
+    if (!analysis) return null;
+    const sections = analysis.sections.map(section => {
+      const evidence = section.evidence.map(ev => {
+        const params = new URLSearchParams({mode:'analysis',at:String(ev.start),end:String(ev.end)});
+        const page = ev.printed_pages && ev.printed_pages.length ? 'с. ' + ev.printed_pages.join(', ') : 'страница не определена';
+        return h('details',{class:'analysis-evidence'},
+          h('summary',{},'Цитата из источника · '+page),
+          h('blockquote',{class:'source-quote'},ev.text),
+          h('p',{class:'small muted'},h('a',{href:'#/d/'+d.id+'?'+params.toString()},'Открыть цитату и скан этой страницы')));
+      });
+      return h('section',{class:'analysis-item'},h('h4',{},section.heading),
+        h('p',{class:'analysis-speaker'},section.speaker),h('p',{},section.summary),...evidence);
+    });
+    return h('section',{class:'decision-analysis','aria-label':'Что именно решил Сенат'},
+      h('h3',{},'Что именно решил Сенат'),
+      h('p',{class:'analysis-label'},'Редакционный разбор, подготовленный с помощью ИИ'),
+      h('p',{class:'muted small'},'Пилот: 10 решений. Каждый тезис связан с буквальной цитатой, местом в OCR и опубликованной страницей скана. Это не юридическая экспертиза и не вывод о современном праве.'),
+      ...sections);
+  }
+
   /* ---------------------------------------------------------------- карточка решения */
   async function openDetail(id) {
     S.detailId = id;
@@ -322,11 +366,16 @@
     if (!d) { box.replaceChildren(h('p', {}, 'Решение не найдено')); $('#detail').hidden = false; return; }
     $('#detail').hidden = false; document.body.classList.add('modal');
     box.replaceChildren(h('p',{class:'muted'},'Загрузка решения…'));
-    const text = await textOf(d);
+    const [text, analyses] = await Promise.all([textOf(d), loadAnalyses()]);
     if (S.detailId !== id || $('#detail').hidden) return;
-    const params = readHash().p, inSense = ['sense','map','passage','laws'].includes(params.get('mode'));
+    const params = readHash().p, inSense = ['sense','map','passage','laws','analysis'].includes(params.get('mode'));
     let target = null, senseTerms = [];
-    if (inSense) {
+    const analysis = analyses.decisions && analyses.decisions[id];
+    if (params.get('mode') === 'analysis' && analysis) {
+      const at=Number(params.get('at')), end=Number(params.get('end'));
+      const evidence=analysis.sections.flatMap(s=>s.evidence).find(e=>e.start===at && e.end===end);
+      if (evidence) target={id:evidence.passage_id,start:evidence.start,end:evidence.end,pages:evidence.printed_pages || [],sources:[]};
+    } else if (inSense) {
       await loadSense();
       if (S.detailId !== id || $('#detail').hidden) return;
       target = S.sense.engines.flatMap(e => e.data.passages).find(x => x.decision === id && String(x.start) === params.get('at') && String(x.end) === params.get('end'));
@@ -369,6 +418,7 @@
       d.participant_ids && d.participant_ids.length ? h('section',{},h('h3',{},'Участники по указателю издания'),
         h('p',{class:'muted small'},'Записи печатного указателя, без определения роли в деле.'),
         h('ul',{},d.participant_ids.map(id=>h('li',{},participantLink(S.participantMap.get(id)))))) : '',
+      analysisSection(d, analysis),
       Object.keys(d.statutes).length ? h('section', {}, h('h3', {}, 'Упомянутые статьи'), h('div', { class: 'chips' },
         Object.keys(d.statutes).sort().map(s => h('button', { class: 'chip stat', title: 'Найти все решения с этой статьёй', onclick: () => go('search', { s }) }, statLabel(s))))) : '',
       h('div', { class: 'toolbar' },
@@ -458,7 +508,7 @@
     $('#gloss').addEventListener('change', e => { S.opts.gloss = e.target.checked; runSearch(); });
     $('#more').addEventListener('click', () => { S.shown += 20; renderResults(++runToken); });
     $('#reset').addEventListener('click', () => go('search'));
-    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const requested = p.get('mode'); const mode = requested === 'passage' ? 'sense' : (['sense','participants','map','laws'].includes(requested) ? requested : 'search'); p.delete('at'); p.delete('end'); p.delete('mode'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
+    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const requested = p.get('mode'); const mode = requested === 'passage' ? 'sense' : (requested === 'analysis' ? 'analyses' : (['sense','participants','map','laws','analyses'].includes(requested) ? requested : 'search')); p.delete('at'); p.delete('end'); p.delete('mode'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !document.querySelector('.scan-dialog[open]') && !$('#detail').hidden) $('#detail-close').click(); });
     $('#examples').append(...['недействительность сделки', 'возмещение убытков', 'исковая давность', 'договор аренды', 'банкротство', 'страховое возмещение', 'перевозка грузов', 'исполнитель завещания']
       .map(x => h('button', { class: 'chip', onclick: () => go('search', { q: x }) }, x)));

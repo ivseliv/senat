@@ -19,6 +19,7 @@ from passages import build_passages
 from participants import load_participants
 from laws import build_law_index
 from export import build_export
+from decision_analyses import build as build_decision_analyses
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 OUT = os.path.join(ROOT, 'lex', 'data')
@@ -436,6 +437,10 @@ def main():
     print(f'  законодательство: {len(law_index["acts"])} актов, {len(law_index["citations"])} точных ссылок')
     export = build_export(ROOT)
     print('  экспорт:', ', '.join(f'{key}={value}' for key, value in export['counts'].items()))
+    analyses = build_decision_analyses()
+    (Path(OUT) / 'decision-analyses.json').write_text(
+        json.dumps(analyses, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+    print(f'  редакционные разборы: {analyses["count"]}')
     print(f'томов {len(vols)}, решений {len(docs)}, основ в индексе {len(post)}')
     for v in vols:
         print(f'  {v["year"]}: {v["decisions"]} решений, пропуски номеров: {v["gaps"] or "нет"}')
@@ -548,7 +553,15 @@ def build_single():
     print(f'единый файл: {out} ({os.path.getsize(out) / 1e6:.1f} МБ)')
 
 if __name__ == '__main__':
-    main()
-    validate_scans()
+    # Публичная ветка хранит готовые JSON, но не обязательно OCR-исходники.
+    # Офлайн-сборка в такой копии должна использовать их, а не обнулять корпус.
+    has_sources = any(Path(ROOT, 'ocr').glob('*/volume.txt'))
+    if has_sources:
+        main()
+        validate_scans()
+    elif '--single' not in sys.argv:
+        raise SystemExit('Нет OCR-исходников: обычная пересборка остановлена, чтобы не удалить готовые данные.')
+    else:
+        print('OCR-исходники отсутствуют: собирается офлайн-файл из проверенных lex/data/.')
     if '--single' in sys.argv:
         build_single()
