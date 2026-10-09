@@ -75,6 +75,8 @@ class LeafPDFTests(unittest.TestCase):
         self.assertEqual(leaf_page_index('p0001_L.txt'),0)
         self.assertEqual(leaf_page_index('p0001_R'),1)
         self.assertEqual(leaf_page_index('p0175_R.txt'),349)
+        self.assertEqual(leaf_page_index('p0001.txt'),0)
+        self.assertEqual(leaf_page_index('p0089'),88)
         for fn in ['p0000_L','p0175_X','p17_L','volume.txt']:
             with self.assertRaises(ValueError):leaf_page_index(fn)
 

@@ -18,6 +18,30 @@ def source_pages(directory, raw):
     никогда не выводим из номера PDF.
     При расхождении сборок не угадываем смещения и останавливаем сборку.
     """
+    directory = Path(directory)
+    mapped = directory / 'page-map.json'
+    if mapped.exists():
+        data = json.loads(mapped.read_text(encoding='utf-8'))
+        if data.get('version') != 1 or data.get('layout') != 'single-pages':
+            raise ValueError(f'{directory}: неизвестный формат карты страниц')
+        if data.get('volume_sha256') != hashlib.sha256(raw.encode()).hexdigest():
+            raise ValueError(f'{directory}: карта относится к другой версии volume.txt')
+        result, previous = [], 0
+        for item in data.get('entries', []):
+            required = {'file', 'start', 'end', 'printed_page', 'sha256'}
+            if not required <= item.keys() or not isinstance(item['start'], int) or not isinstance(item['end'], int):
+                raise ValueError(f'{directory}: неполная запись карты страниц')
+            file = directory / item['file']
+            if not file.is_file() or hashlib.sha256(file.read_bytes()).hexdigest() != item['sha256']:
+                raise ValueError(f'{directory}: изменён или отсутствует OCR-лист {item["file"]}')
+            if not 0 <= item['start'] < item['end'] <= len(raw) or item['start'] < previous:
+                raise ValueError(f'{directory}: нарушен порядок диапазонов карты страниц')
+            previous = item['end']
+            result.append(dict(start=item['start'], end=item['end'], page=item['printed_page'],
+                               file=item['file'], page_method=item.get('page_method', 'verified')))
+        if not result:
+            raise ValueError(f'{directory}: пустая карта страниц')
+        return result
     out, carry = [], False
     files = sorted(Path(directory).glob('p*.txt'))
     headers = {}
