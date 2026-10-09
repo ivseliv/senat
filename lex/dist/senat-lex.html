@@ -153,6 +153,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
 #about { max-width: 760px; } #about h2 { font-size: 18px; margin-top: 26px; }
 #about dt { font-weight: 600; margin-top: 8px; } #about dd { margin: 0 0 4px; }
 .decision-analysis { margin: 24px 0; padding: 18px; border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 8px; background: var(--soft); }
+.preliminary-note { padding: 10px 12px; border: 1px solid var(--line); border-radius: 7px; background: var(--soft); }
 .decision-analysis h3 { margin-top: 0; }.analysis-label,.analysis-speaker { color: var(--accent-ink); font-size: 13px; font-weight: 600; margin: 4px 0; }.analysis-item { border-top: 1px solid var(--line); padding-top: 12px; margin-top: 12px; }.analysis-item h4 { margin: 0; font-size: 16px; }.analysis-evidence { margin-top: 8px; }.source-quote { margin: 10px 0; padding-left: 12px; border-left: 2px solid var(--line); font-family: "Noto Serif", Georgia, serif; white-space: pre-wrap; }.analysis-card h3 { margin-top: 0; }
 </style>
 </head>
@@ -261,6 +262,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
 
   <section id="view-analyses" hidden>
     <h2>Что именно решил Сенат</h2>
+    <p class="preliminary-note"><strong>Предварительная публикация.</strong> Это пилот: 10 вручную проверяемых редакционных разборов, а не полное покрытие корпуса.</p>
     <p>Десять редакционных разборов дел гражданского кассационного департамента 1897, 1904 и 1905 годов. Это пилот, не полное покрытие корпуса.</p>
     <p class="muted small">Каждый тезис привязан к буквальной цитате, смещению в OCR, пассажу и опубликованной странице скана. Разбор подготовлен с помощью ИИ и не является юридической экспертизой.</p>
     <div id="analyses-status" aria-live="polite"></div><div id="analyses-results"></div>
