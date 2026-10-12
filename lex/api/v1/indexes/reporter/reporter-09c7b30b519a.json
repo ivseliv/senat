@@ -1,0 +1,26 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.0.0",
+  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "reporter",
+    "id": "reporter-09c7b30b519a",
+    "label": "Мясоедов Н. Н."
+  },
+  "count": 4,
+  "decision_ids": [
+    "1897-004",
+    "1897-015",
+    "1897-049",
+    "1897-058"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-004.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-015.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-049.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-058.json"
+    ]
+  }
+}

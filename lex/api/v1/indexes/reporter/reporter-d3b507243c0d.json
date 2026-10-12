@@ -1,0 +1,34 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.0.0",
+  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "reporter",
+    "id": "reporter-d3b507243c0d",
+    "label": "Третьяковский М. Я."
+  },
+  "count": 8,
+  "decision_ids": [
+    "1904-053",
+    "1904-054",
+    "1904-061",
+    "1904-102",
+    "1904-112",
+    "1905-051",
+    "1905-052",
+    "1905-113"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-053.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-054.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-061.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-102.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-112.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-051.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-052.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-113.json"
+    ]
+  }
+}

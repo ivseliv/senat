@@ -31,6 +31,7 @@
     laws: { q: '', code: '', data: null, promise: null, token: 0 },
     analyses: { data: null, promise: null },
     guides: { data: null, promise: null },
+    api: { data: null, promise: null },
     participants: {q:'', year:'', shown:60}, participantMap: new Map(),
     f: { q: '', year: '', outcome: '', topic: '', code: '', statute: '', procedure: '', person: '', participant: '', gender: '', age: '', family: '', estate: '', entity: '', role: '', sort: 'rel' }, shown: 20, hits: [], sentinel: 0,
   };
@@ -63,6 +64,16 @@
   async function loadGuides() {
     if (!S.guides.promise) S.guides.promise = loadJSON('guides.json').then(data => (S.guides.data = data));
     return S.guides.promise;
+  }
+  function apiURL(name) {
+    return (window.LEX_INLINE ? 'https://ivseliv.github.io/senat/lex/api/v1/' : 'api/v1/') + name;
+  }
+  async function loadApi() {
+    if (!S.api.promise) S.api.promise = fetch(apiURL('manifest.json')).then(r => {
+      if (!r.ok) throw new Error('manifest.json: ' + r.status);
+      return r.json();
+    }).then(data => (S.api.data = data));
+    return S.api.promise;
   }
   function localIndex(d) { return d.i - S.volStart[d.vol]; }
   async function stemsOf(d) {
@@ -147,8 +158,8 @@
   function route() {
     const { path, p } = readHash();
     const requested = path.startsWith('d/') ? (['sense','participants','map','laws','analyses','analysis','guides'].includes(p.get('mode')) ? (p.get('mode') === 'analysis' ? 'analyses' : p.get('mode')) : 'search') : (path.split('/')[0] || 'search');
-    const tab = ['search','sense','map','laws','participants','guides','analyses','analytics','about'].includes(requested) ? requested : 'search';
-    for (const t of ['search','sense','map','laws','participants','guides','analyses','analytics','about']) {
+    const tab = ['search','sense','map','laws','participants','guides','analyses','api','analytics','about'].includes(requested) ? requested : 'search';
+    for (const t of ['search','sense','map','laws','participants','guides','analyses','api','analytics','about']) {
       $('#view-' + t).hidden = t !== tab;
       $('#tab-' + t).setAttribute('aria-current', t === tab ? 'page' : 'false');
     }
@@ -179,6 +190,8 @@
     } else if (tab === 'guides') {
       renderGuides();
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
+    } else if (tab === 'api') {
+      renderApi(); closeDetail();
     } else closeDetail();
     if (tab === 'analytics') renderAnalytics();
     if (tab === 'about') renderCorpus();
@@ -201,6 +214,24 @@
         return h('article',{class:'guide'},h('h2',{},guide.title),h('p',{class:'preliminary-note'},guide.label),h('p',{},guide.description),h('p',{class:'muted small'},guide.notice),...groups);
       }));
     } catch(err) { box.replaceChildren(h('p',{class:'empty'},'Не удалось загрузить подборки: '+err.message)); }
+  }
+  async function renderApi() {
+    const box=$('#api-results'); box.replaceChildren(h('p',{class:'muted'},'Загрузка статического API…'));
+    if (window.LEX_INLINE && location.protocol==='file:') {
+      box.replaceChildren(h('p',{},'Офлайн-файл содержит интерфейс и корпус, но не дублирует API-файлы. ',
+        h('a',{href:'https://ivseliv.github.io/senat/lex/api/',target:'_blank',rel:'noopener'},'Открыть API на публичном сайте')));
+      return;
+    }
+    try {
+      const api=await loadApi(), counts=api.coverage.counts;
+      const docs=Object.entries(api.documents).map(([key,url])=>h('a',{href:url,target:'_blank',rel:'noopener'},key));
+      const statistics=h('p',{class:'muted'},`${counts.decisions} ${plural(counts.decisions,'решение','решения','решений')} · ${counts.passages} ${plural(counts.passages,'пассаж','пассажа','пассажей')} · ${counts.participants} строк указателя`);
+      const cards=api.datasets.map(dataset=>h('article',{class:'card'},h('h3',{},dataset.id),h('p',{},dataset.description),
+        dataset.href ? h('a',{href:dataset.href,target:'_blank',rel:'noopener'},'Открыть ресурс') : h('a',{href:dataset.href_template.replace('{year}',dataset.values[0] || '').replace('{act_id}',dataset.values[0] || ''),target:'_blank',rel:'noopener'},'Открыть пример ресурса')));
+      box.replaceChildren(h('p',{},'Версия контракта ',h('code',{},api.contract_version),' · снимок ',h('code',{},api.data_revision)),statistics,
+        h('p',{},'Это статические JSON-файлы: ключ и сервер не нужны; фильтры представлены готовыми индексами. ',...docs.flatMap((a,i)=>i?[', ',a]:[a])),
+        h('div',{class:'grid'},cards),h('p',{class:'muted small'},api.limitations[0]));
+    } catch(err) { box.replaceChildren(h('p',{class:'empty'},'Не удалось загрузить API: '+err.message)); }
   }
   async function renderAnalyses() {
     const box = $('#analyses-results');
@@ -534,7 +565,7 @@
     $('#gloss').addEventListener('change', e => { S.opts.gloss = e.target.checked; runSearch(); });
     $('#more').addEventListener('click', () => { S.shown += 20; renderResults(++runToken); });
     $('#reset').addEventListener('click', () => go('search'));
-    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const requested = p.get('mode'); const mode = requested === 'passage' ? 'sense' : (requested === 'analysis' ? 'analyses' : (['sense','participants','map','laws','guides','analyses'].includes(requested) ? requested : 'search')); p.delete('at'); p.delete('end'); p.delete('mode'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
+    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const requested = p.get('mode'); const mode = requested === 'passage' ? 'sense' : (requested === 'analysis' ? 'analyses' : (['sense','participants','map','laws','guides','analyses','api'].includes(requested) ? requested : 'search')); p.delete('at'); p.delete('end'); p.delete('mode'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !document.querySelector('.scan-dialog[open]') && !$('#detail').hidden) $('#detail-close').click(); });
     $('#examples').append(...['недействительность сделки', 'возмещение убытков', 'исковая давность', 'договор аренды', 'банкротство', 'страховое возмещение', 'перевозка грузов', 'исполнитель завещания']
       .map(x => h('button', { class: 'chip', onclick: () => go('search', { q: x }) }, x)));

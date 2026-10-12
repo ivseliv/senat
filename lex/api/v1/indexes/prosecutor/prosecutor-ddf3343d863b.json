@@ -1,0 +1,44 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.0.0",
+  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "prosecutor",
+    "id": "prosecutor-ddf3343d863b",
+    "label": "Рейнке Н. М."
+  },
+  "count": 13,
+  "decision_ids": [
+    "1904-001",
+    "1904-002",
+    "1904-005",
+    "1904-036",
+    "1904-065",
+    "1905-001",
+    "1905-032",
+    "1905-043",
+    "1905-057",
+    "1905-063",
+    "1905-070",
+    "1905-071",
+    "1905-077"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-001.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-002.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-005.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-036.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-065.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-001.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-032.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-043.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-057.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-063.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-070.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-071.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-077.json"
+    ]
+  }
+}

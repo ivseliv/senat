@@ -1,0 +1,34 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.0.0",
+  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "reporter",
+    "id": "reporter-1f5ce561d666",
+    "label": "Кобылинский П. П."
+  },
+  "count": 8,
+  "decision_ids": [
+    "1904-015",
+    "1904-017",
+    "1904-024",
+    "1904-025",
+    "1904-118",
+    "1905-045",
+    "1905-046",
+    "1905-048"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-015.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-017.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-024.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-025.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-118.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-045.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-046.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-048.json"
+    ]
+  }
+}

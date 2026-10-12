@@ -1,0 +1,46 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.0.0",
+  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "prosecutor",
+    "id": "prosecutor-6820ddf63be6",
+    "label": "Купфер Е. Ф."
+  },
+  "count": 14,
+  "decision_ids": [
+    "1904-061",
+    "1904-091",
+    "1904-092",
+    "1904-093",
+    "1904-101",
+    "1904-102",
+    "1904-106",
+    "1904-120",
+    "1905-062",
+    "1905-064",
+    "1905-068",
+    "1905-069",
+    "1905-090",
+    "1905-101"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-061.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-091.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-092.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-093.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-101.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-102.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-106.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-120.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-062.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-064.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-068.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-069.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-090.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-101.json"
+    ]
+  }
+}

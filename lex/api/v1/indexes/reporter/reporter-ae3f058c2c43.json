@@ -1,0 +1,50 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.0.0",
+  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "reporter",
+    "id": "reporter-ae3f058c2c43",
+    "label": "Монастырский Г. П."
+  },
+  "count": 16,
+  "decision_ids": [
+    "1904-013",
+    "1904-047",
+    "1904-048",
+    "1904-059",
+    "1904-060",
+    "1904-098",
+    "1904-101",
+    "1904-106",
+    "1904-120",
+    "1905-010",
+    "1905-020",
+    "1905-042",
+    "1905-068",
+    "1905-069",
+    "1905-081",
+    "1905-082"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-013.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-047.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-048.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-059.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-060.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-098.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-101.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-106.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-120.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-010.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-020.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-042.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-068.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-069.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-081.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-082.json"
+    ]
+  }
+}

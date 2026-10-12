@@ -14,6 +14,7 @@ class ExportTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.manifest = json.loads((OUT / 'manifest.json').read_text(encoding='utf-8'))
+        cls.meta = json.loads((ROOT / 'data' / 'meta.json').read_text(encoding='utf-8'))
         cls.decisions = json.loads((OUT / 'decisions.json').read_text(encoding='utf-8'))
         cls.passages = json.loads((OUT / 'passages.json').read_text(encoding='utf-8'))
         cls.participants = json.loads((OUT / 'participants.json').read_text(encoding='utf-8'))
@@ -24,11 +25,15 @@ class ExportTest(unittest.TestCase):
 
     def test_counts_and_ids(self):
         counts = self.manifest['counts']
-        self.assertEqual(counts['decisions'], 335)
-        self.assertEqual(counts['passages'], 1875)
-        self.assertEqual(counts['participants'], 790)
-        self.assertGreaterEqual(counts['legislation_acts'], 8)
-        self.assertGreater(counts['legislation_citations'], 500)
+        self.assertEqual(counts['decisions'], len(self.decisions))
+        self.assertEqual(counts['passages'], len(self.passages))
+        self.assertEqual(counts['participants'], len(self.participants))
+        self.assertEqual(counts['statute_mentions'], len(self.statutes))
+        self.assertEqual(counts['legislation_acts'], len(self.legislation_acts))
+        self.assertEqual(counts['legislation_citations'], len(self.legislation_citations))
+        self.assertEqual(counts['scan_passage_refs'], len(self.scan_refs))
+        self.assertEqual(sum(volume['decisions'] for volume in self.manifest['volumes']), len(self.decisions))
+        self.assertEqual([volume['year'] for volume in self.manifest['volumes']], [volume['year'] for volume in self.meta['volumes']])
         self.assertEqual(len({x['id'] for x in self.decisions}), len(self.decisions))
         self.assertEqual(len({x['id'] for x in self.passages}), len(self.passages))
 
@@ -48,7 +53,7 @@ class ExportTest(unittest.TestCase):
             if ref.get('box') is not None:
                 self.assertEqual(len(ref['box']), 4)
                 self.assertTrue(all(0 <= value <= 1 for value in ref['box']))
-        for name, expected in [('decisions.csv', 335), ('passages.csv', 1875), ('participants.csv', 790),
+        for name, expected in [('decisions.csv', len(self.decisions)), ('passages.csv', len(self.passages)), ('participants.csv', len(self.participants)),
                                ('statutes.csv', len(self.statutes)), ('legislation-acts.csv', len(self.legislation_acts)),
                                ('legislation-citations.csv', len(self.legislation_citations)), ('scan-passages.csv', len(self.scan_refs))]:
             with (OUT / name).open(encoding='utf-8', newline='') as f:

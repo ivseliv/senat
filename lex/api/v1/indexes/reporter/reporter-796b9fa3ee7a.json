@@ -1,0 +1,34 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.0.0",
+  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "reporter",
+    "id": "reporter-796b9fa3ee7a",
+    "label": "Булгаков Б. П."
+  },
+  "count": 8,
+  "decision_ids": [
+    "1904-078",
+    "1904-093",
+    "1905-028",
+    "1905-031",
+    "1905-044",
+    "1905-065",
+    "1905-092",
+    "1905-093"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-078.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-093.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-028.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-031.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-044.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-065.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-092.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-093.json"
+    ]
+  }
+}

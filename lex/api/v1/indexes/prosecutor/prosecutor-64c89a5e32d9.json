@@ -1,0 +1,34 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.0.0",
+  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "prosecutor",
+    "id": "prosecutor-64c89a5e32d9",
+    "label": "Пушкин Е. А."
+  },
+  "count": 8,
+  "decision_ids": [
+    "1897-027",
+    "1897-058",
+    "1897-059",
+    "1897-078",
+    "1897-086",
+    "1897-093",
+    "1897-097",
+    "1897-098"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-027.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-058.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-059.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-078.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-086.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-093.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-097.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-098.json"
+    ]
+  }
+}
