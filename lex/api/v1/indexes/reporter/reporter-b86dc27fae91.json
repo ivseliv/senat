@@ -1,0 +1,34 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.0.0",
+  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "reporter",
+    "id": "reporter-b86dc27fae91",
+    "label": "Студенцов П. Ф."
+  },
+  "count": 8,
+  "decision_ids": [
+    "1897-020",
+    "1897-024",
+    "1897-039",
+    "1897-043",
+    "1897-057",
+    "1897-060",
+    "1897-061",
+    "1897-100"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-020.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-024.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-039.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-043.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-057.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-060.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-061.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-100.json"
+    ]
+  }
+}

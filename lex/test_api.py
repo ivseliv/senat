@@ -1,0 +1,131 @@
+#!/usr/bin/env python3
+"""Проверяет контракт статического API v1 без сети и сторонних пакетов."""
+import hashlib
+import json
+import unittest
+from pathlib import Path
+
+from api import API_VERSION, CONTRACT_VERSION, build_api
+
+
+ROOT = Path(__file__).resolve().parent
+API = ROOT / 'api' / API_VERSION
+EXPORT = ROOT / 'export'
+
+
+def read(path):
+    return json.loads(Path(path).read_text(encoding='utf-8'))
+
+
+def digest_tree(path):
+    digest = hashlib.sha256()
+    for file in sorted(Path(path).rglob('*')):
+        if file.is_file():
+            digest.update(file.relative_to(path).as_posix().encode('utf-8'))
+            digest.update(b'\0')
+            digest.update(hashlib.sha256(file.read_bytes()).digest())
+    return digest.hexdigest()
+
+
+class ApiTest(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.manifest = read(API / 'manifest.json')
+        cls.export_manifest = read(EXPORT / 'manifest.json')
+        cls.decisions = read(EXPORT / 'decisions.json')
+        cls.passages = read(EXPORT / 'passages.json')
+        cls.participants = read(EXPORT / 'participants.json')
+        cls.guides = read(ROOT / 'data' / 'guides.json')
+
+    def test_manifest_is_complete_and_hashes_match(self):
+        self.assertEqual(self.manifest['api_version'], API_VERSION)
+        self.assertEqual(self.manifest['contract_version'], CONTRACT_VERSION)
+        self.assertRegex(self.manifest['data_revision'], r'^sha256:[0-9a-f]{64}$')
+        self.assertEqual(self.manifest['coverage']['counts']['decisions'], len(self.decisions))
+        self.assertEqual(self.manifest['coverage']['counts']['passages'], len(self.passages))
+        listed = {item['path'] for item in self.manifest['files']}
+        actual = {path.relative_to(API).as_posix() for path in API.rglob('*.json') if path.name != 'manifest.json'}
+        self.assertEqual(listed, actual)
+        for item in self.manifest['files']:
+            path = API / item['path']
+            self.assertEqual(item['bytes'], path.stat().st_size)
+            self.assertEqual(item['sha256'], hashlib.sha256(path.read_bytes()).hexdigest())
+            self.assertTrue(item['href'].startswith('https://ivseliv.github.io/senat/lex/api/v1/'))
+        self.assertTrue((ROOT / 'api' / 'index.html').is_file())
+        self.assertIn('Static API v1', (ROOT / 'API.md').read_text(encoding='utf-8'))
+
+    def test_decisions_and_passages_are_exact(self):
+        index = read(API / 'decisions' / 'index.json')
+        self.assertEqual(index['count'], len(self.decisions))
+        self.assertEqual(len({item['id'] for item in index['items']}), len(self.decisions))
+        export_by_id = {row['id']: row for row in self.decisions}
+        for summary in index['items']:
+            ident = summary['id']
+            detail = read(API / 'decisions' / f'{ident}.json')['item']
+            self.assertEqual(detail['id'], ident)
+            self.assertEqual(detail['text_original'], export_by_id[ident]['text_original'])
+            self.assertEqual(detail['text_sha256'], hashlib.sha256(detail['text_original'].encode('utf-8')).hexdigest())
+            self.assertTrue(detail['passages_url'].endswith(f'passages/{detail["year"]}.json'))
+        text_by_id = {row['id']: row['text_original'] for row in self.decisions}
+        api_passages = []
+        for year in sorted({row['year'] for row in self.decisions}):
+            api_passages.extend(read(API / 'passages' / f'{year}.json')['items'])
+        self.assertEqual(api_passages, self.passages)
+        for passage in api_passages:
+            text = text_by_id[passage['decision_id']]
+            self.assertEqual(passage['text_original'], text[passage['start']:passage['end']])
+            self.assertEqual(passage['sha256'], hashlib.sha256(passage['text_original'].encode('utf-8')).hexdigest())
+
+    def test_facets_only_reference_matching_decisions(self):
+        facets = read(API / 'facets.json')['item']
+        decisions = {row['id']: row for row in self.decisions}
+        participant_map = {row['id']: row for row in self.participants}
+        guide_ids = {guide['id']: {ident for group in guide['groups'] for ident in group['decisions']} for guide in self.guides['guides']}
+        for kind, rows in facets.items():
+            for facet in rows:
+                index = read(API / 'indexes' / kind / f'{facet["id"]}.json')
+                ids = index['decision_ids']
+                self.assertEqual(index['count'], len(ids))
+                self.assertEqual(len(ids), len(set(ids)))
+                self.assertTrue(all(ident in decisions for ident in ids))
+                label = index['filter']['label']
+                for ident in ids:
+                    decision = decisions[ident]
+                    if kind == 'year': self.assertEqual(str(decision['year']), label)
+                    elif kind == 'outcome': self.assertEqual(decision['outcome'], label)
+                    elif kind == 'topic': self.assertIn(label, decision['topics'])
+                    elif kind == 'procedure': self.assertIn(label, decision['procedure'])
+                    elif kind == 'act': self.assertTrue(any(value.split(' ', 1)[0] == label for value in decision['statutes']))
+                    elif kind == 'article': self.assertIn(label, decision['statutes'])
+                    elif kind in ('presiding', 'reporter', 'prosecutor'): self.assertEqual(decision[kind], label)
+                    elif kind == 'participant': self.assertIn(ident, participant_map[label]['decisions'])
+                    elif kind == 'guide': self.assertIn(ident, guide_ids[label])
+
+    def test_openapi_and_scan_contract(self):
+        spec = read(API / 'openapi.json')
+        self.assertEqual(spec['openapi'], '3.1.0')
+        self.assertIn('/manifest.json', spec['paths'])
+        self.assertIn('/decisions/{id}.json', spec['paths'])
+        self.assertIn('/statutes/{act_id}.json', spec['paths'])
+        scans = []
+        for year in sorted({row['year'] for row in self.decisions}):
+            scans.extend(read(API / 'scans' / f'{year}.json')['items'])
+        self.assertEqual(len(scans), self.export_manifest['counts']['scan_passage_refs'])
+        passage_ids = {row['id'] for row in self.passages}
+        for ref in scans:
+            self.assertIn(ref['passage_id'], passage_ids)
+            self.assertTrue(ref['full_page_url'].startswith('https://ivseliv.github.io/senat/lex/scans/'))
+            if ref.get('box') is not None:
+                self.assertEqual(len(ref['box']), 4)
+                self.assertTrue(all(0 <= value <= 1 for value in ref['box']))
+
+    def test_rebuild_is_deterministic(self):
+        before = digest_tree(ROOT / 'api')
+        rebuilt = build_api(ROOT.parent)
+        after = digest_tree(ROOT / 'api')
+        self.assertEqual(before, after)
+        self.assertEqual(rebuilt['data_revision'], self.manifest['data_revision'])
+
+
+if __name__ == '__main__':
+    unittest.main()

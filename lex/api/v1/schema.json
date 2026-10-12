@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ivseliv.github.io/senat/lex/api/v1/schema.json",
+  "title": "Статический API решений Правительствующего Сената, v1",
+  "type": "object",
+  "$defs": {
+    "Envelope": {
+      "type": "object",
+      "required": [
+        "api_version",
+        "contract_version",
+        "data_revision",
+        "resource"
+      ],
+      "properties": {
+        "api_version": {
+          "const": "v1"
+        },
+        "contract_version": {
+          "type": "string"
+        },
+        "data_revision": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        "resource": {
+          "type": "string"
+        },
+        "scope": {
+          "type": "object"
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "items": {
+          "type": "array"
+        },
+        "item": {
+          "type": "object"
+        },
+        "links": {
+          "type": "object"
+        }
+      }
+    },
+    "Decision": {
+      "type": "object",
+      "required": [
+        "id",
+        "year",
+        "number",
+        "department",
+        "headnote_original",
+        "text_original",
+        "url"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{3}$"
+        },
+        "year": {
+          "type": "integer"
+        },
+        "number": {
+          "type": "integer"
+        },
+        "date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "date_label": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "department": {
+          "type": "string"
+        },
+        "headnote_original": {
+          "type": "string"
+        },
+        "text_original": {
+          "type": "string"
+        },
+        "outcome": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "scan_pages": {
+          "type": "array"
+        }
+      }
+    },
+    "Passage": {
+      "type": "object",
+      "required": [
+        "id",
+        "decision_id",
+        "year",
+        "start",
+        "end",
+        "sha256",
+        "text_original",
+        "url"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "decision_id": {
+          "type": "string"
+        },
+        "year": {
+          "type": "integer"
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "text_original": {
+          "type": "string"
+        },
+        "scan_refs": {
+          "type": "array"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "ScanReference": {
+      "type": "object",
+      "properties": {
+        "page": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "box": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "image_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "full_page_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        }
+      }
+    }
+  },
+  "description": "UTF-8. Смещения start/end — полуоткрытый диапазон Unicode-кодовых точек [start,end), а не UTF-16-индексы JavaScript."
+}

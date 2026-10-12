@@ -1,0 +1,40 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.0.0",
+  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "prosecutor",
+    "id": "prosecutor-d9e83063b8fa",
+    "label": "Гожев А. К."
+  },
+  "count": 11,
+  "decision_ids": [
+    "1897-021",
+    "1897-036",
+    "1897-044",
+    "1897-045",
+    "1897-051",
+    "1897-052",
+    "1897-053",
+    "1897-054",
+    "1897-060",
+    "1897-061",
+    "1897-072"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-021.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-036.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-044.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-045.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-051.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-052.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-053.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-054.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-060.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-061.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-072.json"
+    ]
+  }
+}

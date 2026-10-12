@@ -161,6 +161,10 @@ def build_export(root=ROOT):
                            'quote_original', 'context_original', 'association', 'citation_status', 'decision_url',
                            'passage_id', 'passage_url', 'scan_available']
 
+    counts = {'decisions': len(decision_rows), 'passages': len(passage_rows), 'participants': len(participant_rows),
+              'statute_mentions': len(statute_rows), 'legislation_acts': len(law_act_rows),
+              'legislation_citations': len(law_citation_rows), 'scan_passage_refs': len(scan_rows)}
+    years = ', '.join(str(volume['year']) for volume in meta['volumes'])
     files = []
     for name, value, fields in (
         ('decisions', decision_rows, decision_fields), ('passages', passage_rows, passage_fields),
@@ -170,13 +174,13 @@ def build_export(root=ROOT):
     ):
         files.extend([write_json(name + '.json', value), write_csv(name + '.csv', value, fields)])
     readme = OUT / 'README.md'
-    readme.write_text("""# Экспорт корпуса решений Сената
+    readme.write_text(f"""# Экспорт корпуса решений Сената
 
-Файлы созданы из опубликованных данных сайта и содержат только три доступных тома: 1897, 1904 и 1905 годы. JSON сохраняет вложенную структуру; CSV повторяет те же поля, а массивы и объекты записаны компактным JSON в ячейках UTF-8.
+Файлы созданы из опубликованных данных сайта и содержат тома {years} годов: {counts['decisions']} решений и {counts['passages']} пассажей. JSON сохраняет вложенную структуру; CSV повторяет те же поля, а массивы и объекты записаны компактным JSON в ячейках UTF-8.
 
 | Файл | Содержание |
 |---|---|
-| `decisions` | 335 решений: исходный текст, метаданные, темы, исход, статьи, участники и страницы сканов. |
+| `decisions` | Исходный текст, метаданные, темы, исход, статьи, участники и страницы сканов. |
 | `passages` | Пассажи для понятийного поиска: Unicode-смещения в исходном тексте, текст, SHA-256, страницы, пояснения ИИ и ссылки. |
 | `participants` | Строки печатных указателей, а не нормализованные люди или процессуальные роли. |
 | `statutes` | Одна строка на «решение — упомянутая статья»; акт определяется автоматически и требует сверки с источником. |
@@ -186,14 +190,12 @@ def build_export(root=ROOT):
 
 `url`, `decision_url`, `passage_url`, `image_url` и `full_page_url` — стабильные публичные ссылки. Режим `mode=passage` открывает решение непосредственно на указанном Unicode-диапазоне. При отсутствии `box` точная геометрия не подтверждена: используйте `full_page_url` и не интерпретируйте отсутствие координат как отсутствие текста.
 
-Текст получен автоматическим распознаванием; числа, статьи и фамилии нужно сверять с изображением. Поля `ai_*` — отдельные модельные пояснения по буквальной цитате, не юридические выводы и не часть первоисточника. Темы, исход, нормы и социальные группы тоже определяются автоматически. Полное описание ограничений — в [README сайта](../README.md).
+Текст получен автоматическим распознаванием; числа, статьи и фамилии нужно сверять с изображением. Поля `ai_*` — отдельные модельные пояснения по буквальной цитате, не юридические выводы и не часть первоисточника. Темы, исход, нормы и социальные группы тоже определяются автоматически. Полное описание ограничений — в [README сайта](../README.md). Для программного доступа с версионированным контрактом используйте [Static API v1](../api/).
 """, encoding='utf-8')
     files.append(readme)
     manifest = {
         'version': 1, 'base_url': PUBLIC, 'volumes': meta['volumes'],
-        'counts': {'decisions': len(decision_rows), 'passages': len(passage_rows), 'participants': len(participant_rows),
-                   'statute_mentions': len(statute_rows), 'legislation_acts': len(law_act_rows),
-                   'legislation_citations': len(law_citation_rows), 'scan_passage_refs': len(scan_rows)},
+        'counts': counts,
         'files': [{'name': file.name, 'sha256': hashlib.sha256(file.read_bytes()).hexdigest(), 'bytes': file.stat().st_size} for file in files],
         'notes': 'Сборка детерминирована из lex/data; даты выгрузки намеренно не записываются.',
     }

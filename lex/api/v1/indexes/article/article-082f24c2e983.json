@@ -1,0 +1,22 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.0.0",
+  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "article",
+    "id": "article-082f24c2e983",
+    "label": "УГС ст. 456"
+  },
+  "count": 2,
+  "decision_ids": [
+    "1904-025",
+    "1904-054"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-025.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-054.json"
+    ]
+  }
+}

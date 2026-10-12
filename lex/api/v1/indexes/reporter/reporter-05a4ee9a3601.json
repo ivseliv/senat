@@ -1,0 +1,28 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.0.0",
+  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "reporter",
+    "id": "reporter-05a4ee9a3601",
+    "label": "Филиппов К. Е."
+  },
+  "count": 5,
+  "decision_ids": [
+    "1897-009",
+    "1897-010",
+    "1897-028",
+    "1897-085",
+    "1897-098"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-009.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-010.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-028.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-085.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-098.json"
+    ]
+  }
+}

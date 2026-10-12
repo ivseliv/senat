@@ -1,0 +1,57 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.0.0",
+  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "resource": "volumes",
+  "count": 4,
+  "items": [
+    {
+      "year": 1896,
+      "department": "Общее собрание",
+      "decisions": 49,
+      "gaps": [],
+      "links": {
+        "decisions": "https://ivseliv.github.io/senat/lex/api/v1/decisions/1896.json",
+        "passages": "https://ivseliv.github.io/senat/lex/api/v1/passages/1896.json",
+        "participants": "https://ivseliv.github.io/senat/lex/api/v1/participants/1896.json",
+        "scan_passages": "https://ivseliv.github.io/senat/lex/api/v1/scans/1896.json"
+      }
+    },
+    {
+      "year": 1897,
+      "department": "Гражданский кассационный департамент",
+      "decisions": 100,
+      "gaps": [],
+      "links": {
+        "decisions": "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897.json",
+        "passages": "https://ivseliv.github.io/senat/lex/api/v1/passages/1897.json",
+        "participants": "https://ivseliv.github.io/senat/lex/api/v1/participants/1897.json",
+        "scan_passages": "https://ivseliv.github.io/senat/lex/api/v1/scans/1897.json"
+      }
+    },
+    {
+      "year": 1904,
+      "department": "Гражданский кассационный департамент",
+      "decisions": 120,
+      "gaps": [],
+      "links": {
+        "decisions": "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904.json",
+        "passages": "https://ivseliv.github.io/senat/lex/api/v1/passages/1904.json",
+        "participants": "https://ivseliv.github.io/senat/lex/api/v1/participants/1904.json",
+        "scan_passages": "https://ivseliv.github.io/senat/lex/api/v1/scans/1904.json"
+      }
+    },
+    {
+      "year": 1905,
+      "department": "Гражданский кассационный департамент",
+      "decisions": 115,
+      "gaps": [],
+      "links": {
+        "decisions": "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905.json",
+        "passages": "https://ivseliv.github.io/senat/lex/api/v1/passages/1905.json",
+        "participants": "https://ivseliv.github.io/senat/lex/api/v1/participants/1905.json",
+        "scan_passages": "https://ivseliv.github.io/senat/lex/api/v1/scans/1905.json"
+      }
+    }
+  ]
+}

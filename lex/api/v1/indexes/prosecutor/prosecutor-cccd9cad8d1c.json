@@ -1,0 +1,30 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.0.0",
+  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "prosecutor",
+    "id": "prosecutor-cccd9cad8d1c",
+    "label": "Концевич А. П."
+  },
+  "count": 6,
+  "decision_ids": [
+    "1897-022",
+    "1897-023",
+    "1897-025",
+    "1897-026",
+    "1897-041",
+    "1897-048"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-022.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-023.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-025.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-026.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-041.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-048.json"
+    ]
+  }
+}

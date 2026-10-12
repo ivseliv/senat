@@ -1,0 +1,34 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.0.0",
+  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "reporter",
+    "id": "reporter-d7f14713f719",
+    "label": "Сабуров Я. В."
+  },
+  "count": 8,
+  "decision_ids": [
+    "1904-043",
+    "1904-090",
+    "1904-103",
+    "1904-107",
+    "1905-026",
+    "1905-061",
+    "1905-084",
+    "1905-086"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-043.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-090.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-103.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-107.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-026.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-061.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-084.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-086.json"
+    ]
+  }
+}

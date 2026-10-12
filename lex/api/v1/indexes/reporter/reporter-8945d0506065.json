@@ -1,0 +1,34 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.0.0",
+  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "reporter",
+    "id": "reporter-8945d0506065",
+    "label": "Шнейдер К. В."
+  },
+  "count": 8,
+  "decision_ids": [
+    "1897-008",
+    "1897-014",
+    "1897-042",
+    "1897-056",
+    "1897-063",
+    "1897-080",
+    "1897-083",
+    "1897-099"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-008.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-014.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-042.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-056.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-063.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-080.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-083.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-099.json"
+    ]
+  }
+}

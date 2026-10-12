@@ -1,0 +1,24 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.0.0",
+  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "reporter",
+    "id": "reporter-a90a23a11364",
+    "label": "Энден Н. Н."
+  },
+  "count": 3,
+  "decision_ids": [
+    "1905-002",
+    "1905-096",
+    "1905-100"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-002.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-096.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-100.json"
+    ]
+  }
+}

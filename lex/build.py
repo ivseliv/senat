@@ -20,9 +20,23 @@ from participants import load_participants
 from laws import build_law_index
 from export import build_export
 from decision_analyses import build as build_decision_analyses
+from api import build_api
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 OUT = os.path.join(ROOT, 'lex', 'data')
+
+
+def build_published_artifacts():
+    """Пересобирает производные публичные данные и статический API из lex/data."""
+    export = build_export(ROOT)
+    print('  экспорт:', ', '.join(f'{key}={value}' for key, value in export['counts'].items()))
+    analyses = build_decision_analyses()
+    (Path(OUT) / 'decision-analyses.json').write_text(
+        json.dumps(analyses, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+    print(f'  редакционные разборы: {analyses["count"]}')
+    api = build_api(ROOT)
+    print('  API:', api['contract_version'], ', '.join(f'{key}={value}' for key, value in api['coverage']['counts'].items()))
+    return export, analyses, api
 
 # ---------------------------------------------------------------- нормализация
 
@@ -435,12 +449,7 @@ def main():
     build_passages(ROOT, docs, texts, stems, modernize, stem)
     law_index = build_law_index(ROOT)
     print(f'  законодательство: {len(law_index["acts"])} актов, {len(law_index["citations"])} точных ссылок')
-    export = build_export(ROOT)
-    print('  экспорт:', ', '.join(f'{key}={value}' for key, value in export['counts'].items()))
-    analyses = build_decision_analyses()
-    (Path(OUT) / 'decision-analyses.json').write_text(
-        json.dumps(analyses, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
-    print(f'  редакционные разборы: {analyses["count"]}')
+    build_published_artifacts()
     print(f'томов {len(vols)}, решений {len(docs)}, основ в индексе {len(post)}')
     for v in vols:
         print(f'  {v["year"]}: {v["decisions"]} решений, пропуски номеров: {v["gaps"] or "нет"}')
@@ -563,5 +572,6 @@ if __name__ == '__main__':
         raise SystemExit('Нет OCR-исходников: обычная пересборка остановлена, чтобы не удалить готовые данные.')
     else:
         print('OCR-исходники отсутствуют: собирается офлайн-файл из проверенных lex/data/.')
+        build_published_artifacts()
     if '--single' in sys.argv:
         build_single()
