@@ -30,6 +30,7 @@
     map: { q: '', topic: '', token: 0 },
     laws: { q: '', code: '', data: null, promise: null, token: 0 },
     analyses: { data: null, promise: null },
+    guides: { data: null, promise: null },
     participants: {q:'', year:'', shown:60}, participantMap: new Map(),
     f: { q: '', year: '', outcome: '', topic: '', code: '', statute: '', procedure: '', person: '', participant: '', gender: '', age: '', family: '', estate: '', entity: '', role: '', sort: 'rel' }, shown: 20, hits: [], sentinel: 0,
   };
@@ -58,6 +59,10 @@
   async function loadAnalyses() {
     if (!S.analyses.promise) S.analyses.promise = loadJSON('decision-analyses.json').then(data => (S.analyses.data = data));
     return S.analyses.promise;
+  }
+  async function loadGuides() {
+    if (!S.guides.promise) S.guides.promise = loadJSON('guides.json').then(data => (S.guides.data = data));
+    return S.guides.promise;
   }
   function localIndex(d) { return d.i - S.volStart[d.vol]; }
   async function stemsOf(d) {
@@ -141,9 +146,9 @@
   }
   function route() {
     const { path, p } = readHash();
-    const requested = path.startsWith('d/') ? (['sense','participants','map','laws','analyses','analysis'].includes(p.get('mode')) ? (p.get('mode') === 'analysis' ? 'analyses' : p.get('mode')) : 'search') : (path.split('/')[0] || 'search');
-    const tab = ['search','sense','map','laws','participants','analyses','analytics','about'].includes(requested) ? requested : 'search';
-    for (const t of ['search','sense','map','laws','participants','analyses','analytics','about']) {
+    const requested = path.startsWith('d/') ? (['sense','participants','map','laws','analyses','analysis','guides'].includes(p.get('mode')) ? (p.get('mode') === 'analysis' ? 'analyses' : p.get('mode')) : 'search') : (path.split('/')[0] || 'search');
+    const tab = ['search','sense','map','laws','participants','guides','analyses','analytics','about'].includes(requested) ? requested : 'search';
+    for (const t of ['search','sense','map','laws','participants','guides','analyses','analytics','about']) {
       $('#view-' + t).hidden = t !== tab;
       $('#tab-' + t).setAttribute('aria-current', t === tab ? 'page' : 'false');
     }
@@ -171,10 +176,31 @@
     } else if (tab === 'analyses') {
       renderAnalyses();
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
+    } else if (tab === 'guides') {
+      renderGuides();
+      if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
     } else closeDetail();
     if (tab === 'analytics') renderAnalytics();
     if (tab === 'about') renderCorpus();
     window.scrollTo(0, path.startsWith('d/') ? window.scrollY : 0);
+  }
+  async function renderGuides() {
+    const box=$('#guides-results'); box.replaceChildren(h('p',{class:'muted'},'Загрузка тематических подборок…'));
+    try {
+      const [data]=await Promise.all([loadGuides(),loadAnalyses()]);
+      box.replaceChildren(...data.guides.map(guide => {
+        const groups=guide.groups.map(group => {
+          const items=group.decisions.map(id => {
+            const d=S.meta.decisions.find(x=>x.id===id);
+            const hasAnalysis=S.analyses.data && S.analyses.data.decisions && S.analyses.data.decisions[id];
+            return h('li',{},h('a',{href:'#/d/'+id+'?mode=guides'},`${d.vol} г. № ${d.num} — ${M(d.headnote)}`),
+              h('span',{class:'muted small'},' · '+d.outcome),hasAnalysis?' · ':'',hasAnalysis?h('a',{href:'#/d/'+id+'?mode=analyses'},'разбор'):'');
+          });
+          return h('section',{class:'guide-group'},h('h3',{},group.title),h('p',{class:'muted small'},group.description),h('ul',{},items));
+        });
+        return h('article',{class:'guide'},h('h2',{},guide.title),h('p',{class:'preliminary-note'},guide.label),h('p',{},guide.description),h('p',{class:'muted small'},guide.notice),...groups);
+      }));
+    } catch(err) { box.replaceChildren(h('p',{class:'empty'},'Не удалось загрузить подборки: '+err.message)); }
   }
   async function renderAnalyses() {
     const box = $('#analyses-results');
@@ -508,7 +534,7 @@
     $('#gloss').addEventListener('change', e => { S.opts.gloss = e.target.checked; runSearch(); });
     $('#more').addEventListener('click', () => { S.shown += 20; renderResults(++runToken); });
     $('#reset').addEventListener('click', () => go('search'));
-    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const requested = p.get('mode'); const mode = requested === 'passage' ? 'sense' : (requested === 'analysis' ? 'analyses' : (['sense','participants','map','laws','analyses'].includes(requested) ? requested : 'search')); p.delete('at'); p.delete('end'); p.delete('mode'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
+    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const requested = p.get('mode'); const mode = requested === 'passage' ? 'sense' : (requested === 'analysis' ? 'analyses' : (['sense','participants','map','laws','guides','analyses'].includes(requested) ? requested : 'search')); p.delete('at'); p.delete('end'); p.delete('mode'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !document.querySelector('.scan-dialog[open]') && !$('#detail').hidden) $('#detail-close').click(); });
     $('#examples').append(...['недействительность сделки', 'возмещение убытков', 'исковая давность', 'договор аренды', 'банкротство', 'страховое возмещение', 'перевозка грузов', 'исполнитель завещания']
       .map(x => h('button', { class: 'chip', onclick: () => go('search', { q: x }) }, x)));
