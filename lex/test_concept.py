@@ -2,6 +2,7 @@
 """Проверки источника, страниц, устойчивости сборки и безопасной подсветки."""
 import hashlib
 import json
+import os
 import subprocess
 import tempfile
 import unittest
@@ -11,6 +12,7 @@ from passages import source_pages
 
 ROOT=Path(__file__).resolve().parent
 REPO=ROOT.parent
+OCR_ROOT=Path(os.environ.get('LEX_OCR_ROOT',REPO/'ocr'))
 
 class ConceptTests(unittest.TestCase):
     def test_import_preserves_other_volumes(self):
@@ -52,7 +54,7 @@ class ConceptTests(unittest.TestCase):
                 # интерфейс честно показывает имя листа, а не выдуманный номер.
                 self.assertTrue(p['pages'] or any(s['page'] is None and s['page_method'] == 'verified' for s in p['sources']),p['id'])
                 for s in p['sources']:
-                    self.assertTrue((REPO/f'ocr/{year}'/s['file']).is_file())
+                    self.assertTrue((OCR_ROOT/str(year)/s['file']).is_file(),str(OCR_ROOT/str(year)/s['file']))
                     self.assertGreater(s['end'],s['start'])
                 if 'ai' in p:
                     self.assertIn(p['ai']['evidence'],text)
