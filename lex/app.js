@@ -26,7 +26,7 @@
   const S = {
     meta: null, index: null, an: null, engine: null, texts: {}, stemCache: new Map(),
     opts: { modern: false, gloss: true }, detailId: null,
-    sense: { config: null, engines: [], promise: null, q: '', hits: [], shown: 10, token: 0 },
+    sense: { config: null, engines: [], promise: null, q: '', hits: [], shown: 10, token: 0, partial: false, suggested: 0 },
     map: { q: '', topic: '', token: 0 },
     laws: { q: '', code: '', data: null, promise: null, token: 0 },
     analyses: { data: null, promise: null },
@@ -426,7 +426,7 @@
     const [text, analyses] = await Promise.all([textOf(d), loadAnalyses()]);
     if (S.detailId !== id || $('#detail').hidden) return;
     const params = readHash().p, inSense = ['sense','map','passage','laws','analysis'].includes(params.get('mode'));
-    let target = null, senseTerms = [];
+    let target = null, senseTerms = [], partialMissing = [];
     const analysis = analyses.decisions && analyses.decisions[id];
     if (params.get('mode') === 'analysis' && analysis) {
       const at=Number(params.get('at')), end=Number(params.get('end'));
@@ -437,8 +437,9 @@
       if (S.detailId !== id || $('#detail').hidden) return;
       target = S.sense.engines.flatMap(e => e.data.passages).find(x => x.decision === id && String(x.start) === params.get('at') && String(x.end) === params.get('end'));
       if (target) {
-        const result = S.sense.engines.flatMap(e => e.engine.search(params.get('q') || '', S.sense.config.method).hits).find(h => h.passage.id === target.id);
+        const result = window.Concept.searchAll(S.sense.engines.map(e=>e.engine),params.get('q') || '',S.sense.config.method,{partial:params.get('partial')==='1'}).hits.find(h=>h.passage.id===target.id);
         senseTerms = [params.get('q') || '', ...(result ? result.matched : [])];
+        partialMissing = result && result.partial ? result.missing : [];
       }
     }
     const cited = S.meta.decisions.filter(x => x.cites.some(c => c[0] === d.vol && c[1] === d.num));
@@ -465,6 +466,7 @@
         h('div', { class: 'muted' }, `${d.dept}, том ${d.vol}`),
         h('span', { class: 'badge big' }, d.outcome)),
       h('p', { class: 'headnote' }, M(d.headnote)),
+      partialMissing.length ? h('p',{class:'search-partial-note'},'Частичное совпадение. Не найдена часть запроса: '+partialMissing.map(w=>'«'+w+'»').join(', ')+'.') : '',
       h('dl', { class: 'meta' },
         d.presiding ? h('div', {}, h('dt', {}, 'Председательствовал'), h('dd', {}, personLink(d.presiding))) : '',
         d.reporter ? h('div', {}, h('dt', {}, 'Докладывал'), h('dd', {}, personLink(d.reporter))) : '',
@@ -618,9 +620,12 @@
     $('#sense-results').replaceChildren();
     try {
       await loadSense(); if (token !== S.sense.token) return;
-      const results = S.sense.engines.map(e => e.engine.search(S.sense.q, S.sense.config.method));
-      S.sense.hits = results.flatMap(r=>r.hits).sort((a,b)=>b.score-a.score || a.passage.id.localeCompare(b.passage.id));
-      S.sense.concepts = results[0] ? results[0].concepts : [];
+      const result = window.Concept.searchAll(S.sense.engines.map(e=>e.engine),S.sense.q,S.sense.config.method,{partial:true});
+      const optedIn = readHash().p.get('partial') === '1';
+      S.sense.partial = result.partial && optedIn;
+      S.sense.suggested = result.partial && !optedIn ? result.hits.length : 0;
+      S.sense.hits = result.partial && !optedIn ? [] : result.hits;
+      S.sense.concepts = result.concepts;
       S.sense.shown = 10;
       await renderSense(token);
     } catch (err) {
@@ -636,17 +641,24 @@
     const box = $('#sense-results'); box.replaceChildren();
     const hits = S.sense.hits;
     $('#sense-status').replaceChildren(h('strong', {}, `${hits.length} ${plural(hits.length,'фрагмент','фрагмента','фрагментов')}`),
-      h('span', {class:'muted'}, S.sense.concepts && S.sense.concepts.length ? ' · понятия: '+S.sense.concepts.map(c=>c.concept).join(', ') : ''));
+      h('span', {class:'muted'}, S.sense.concepts && S.sense.concepts.length ? ' · понятия: '+S.sense.concepts.map(c=>c.concept).join(', ') : ''),
+      S.sense.partial ? h('span',{class:'search-partial-note'},' · частичные совпадения') : '');
     if (!hits.length) {
-      box.append(h('p', {class:'empty'}, 'Подходящие фрагменты в доступных томах не найдены. Это не доказывает отсутствия такой практики: попробуйте другое понятие или обычный поиск.')); return;
+      box.append(h('p', {class:'empty'}, 'Подходящие фрагменты в доступных томах не найдены. Это не доказывает отсутствия такой практики: попробуйте другое понятие или обычный поиск.'));
+      if (S.sense.suggested) box.append(h('p',{class:'small'},'Есть фрагменты, в которых совпадает всё, кроме одной части запроса.'),
+        h('button',{class:'btn ghost',id:'sense-partial',onclick:()=>go('sense',{q:S.sense.q,partial:'1'})},'Показать частичные совпадения ('+S.sense.suggested+')'));
+      return;
     }
+    if (S.sense.partial) box.append(h('p',{class:'search-partial-note'},'Совпадений по всему запросу нет. Ниже — фрагменты, где не совпала одна часть запроса; она указана в каждой карточке.'),
+      h('button',{class:'btn ghost',id:'sense-strict',onclick:()=>go('sense',{q:S.sense.q})},'Вернуться к полному запросу'));
     for (const hit of hits.slice(0,S.sense.shown)) {
       const p=hit.passage, d=S.meta.decisions.find(x=>x.id===p.decision);
       const text=await textOf(d); if(token!==S.sense.token) return;
       const original=window.Concept.slice(text,p.start,p.end);
       const terms=[S.sense.q,...hit.matched];
-      const link='#/d/'+d.id+'?'+new URLSearchParams({mode:'sense',q:S.sense.q,at:String(p.start),end:String(p.end)});
+      const link='#/d/'+d.id+'?'+new URLSearchParams({mode:'sense',q:S.sense.q,at:String(p.start),end:String(p.end),...(hit.partial ? {partial:'1'} : {})});
       box.append(h('article', {class:'card passage', 'data-passage':p.id},
+        hit.partial ? h('p',{class:'search-partial-note'},'Частичное совпадение. Не найдена часть запроса: '+hit.missing.map(w=>'«'+w+'»').join(', ')+'.') : '',
         h('div', {class:'passage-text',html:(p.start ? '… ' : '') + window.Concept.highlightEvidence(M(original),terms,p.ai ? M(p.ai.evidence) : '') + (p.end < Array.from(text).length ? ' …' : '')}),
         p.ai ? h('div', {class:'ai-note'}, h('strong', {}, 'Пояснение ИИ: '), p.ai.summary,
           h('details', {}, h('summary', {}, 'Цитата, на которой основано пояснение'), h('p', {}, '«… ' + M(p.ai.evidence) + ' …»'))) : '',

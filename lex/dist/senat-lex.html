@@ -79,6 +79,7 @@ mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1
 #sense-status { margin: 14px 0 8px; }
 .passage-text { white-space: pre-wrap; font: 16px/1.7 var(--serif); margin: 12px 0; overflow-wrap: anywhere; }
 .ai-note { border-left: 3px solid var(--line); padding-left: 12px; margin: 10px 0; color: var(--ink2); font-size: 14px; }
+.search-partial-note { color: var(--ink2); font-size: 14px; overflow-wrap: anywhere; }
 .passage-focus { background: var(--soft); border-radius: 3px; scroll-margin-top: 65px; }
 .passage-focus:focus-visible { outline: none; }
 .orth { display: flex; flex-wrap: wrap; gap: 6px 10px; } .orth label { white-space: nowrap; }
@@ -515,7 +516,10 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     return false;
   }
   function parse(q, glossary) {
-    const words = L.stems(q).filter(s => !filler.has(s));
+    // Сохраняем слово рядом с основой: неизвестные слова ещё раз проходят
+    // L.stems() при поиске. Повторное усечение основы (нотариуса → нотариу
+    // → нотари) не совпадает с однократной нормализацией индекса и подсветки.
+    const tokens = L.tokens(q).map(raw => ({raw, stem:L.stem(raw)})).filter(w => !filler.has(w.stem));
     const aliases = [];
     for (const c of glossary) for (const name of [c.понятие, ...c.синонимы]) {
       // Служебные слова не образуют самостоятельных групп в запросе,
@@ -528,16 +532,37 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     aliases.sort((a,b) => b.seq.length-a.seq.length);
     const used = new Set(), groups = [];
     for (const {c, seq} of aliases) {
-      for (let i=0; i+seq.length<=words.length; i++) {
-        if (seq.every((s,j) => s===words[i+j] && !used.has(i+j))) {
+      for (let i=0; i+seq.length<=tokens.length; i++) {
+        if (seq.every((s,j) => s===tokens[i+j].stem && !used.has(i+j))) {
           for (let j=0;j<seq.length;j++) used.add(i+j);
           groups.push({concept:c.понятие, modern:[c.понятие,...c.синонимы], old:c.старые_выражения, note:c.примечание});
-          break;
         }
       }
     }
-    words.forEach((w,i) => {if (!used.has(i)) groups.push({modern:[w],old:[],concept:null});});
-    return {groups, words};
+    tokens.forEach((w,i) => {if (!used.has(i)) groups.push({modern:[w.raw],old:[],concept:null});});
+    const unique = new Map();
+    for (const group of groups) {
+      const key=group.concept ? 'concept:'+group.concept : 'word:'+L.stems(group.modern[0]).join(' ');
+      if (!unique.has(key)) unique.set(key,group);
+    }
+    return {groups:[...unique.values()], words:tokens.map(w=>w.stem)};
+  }
+  // Частичный поиск требует хотя бы две разные совпавшие группы. Номера
+  // и распознанные юридические понятия обязательны; отрицания и операторы
+  // запроса нельзя безопасно ослаблять таким способом.
+  function partialAllowed(q, groups) {
+    const words=L.modernize(q).toLowerCase().match(/[а-я0-9]+/g) || [];
+    return groups.length>=3 && !words.some(w=>['не','ни','без','кроме','исключая','только','лишь','никогда'].includes(w)) &&
+      !/["«»“”„]|(?:^|\s)[+−-]\S/.test(q);
+  }
+  function searchAll(engines, q, method, options) {
+    const results=engines.map(e=>e.search(q,method,options));
+    let hits=results.flatMap(r=>r.hits);
+    // Полное совпадение в любом томе важнее частичных из остальных томов.
+    const strict=hits.filter(h=>!h.partial);
+    if (strict.length) hits=strict;
+    hits.sort((a,b)=>b.score-a.score || a.passage.id.localeCompare(b.passage.id));
+    return {...(results[0] || {expanded:[],concepts:[],query:{groups:[],words:[]}}),hits,partial:hits.some(h=>h.partial)};
   }
   function makeEngines(volumes, glossary) {
     // Для нескольких томов BM25 использует общие частоты и среднюю длину.
@@ -587,11 +612,11 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
       }
       return {scores,matches};
     }
-    function search(q, method) {
+    function search(q, method, options) {
       method=method || 'glossary';
       const pq=parse(q,method==='baseline'?[]:glossary);
       if(!pq.groups.length) return {hits:[],expanded:[],concepts:[],query:pq};
-      let candidates=null; const total=new Map(), evidence=new Map();
+      let candidates=null; const total=new Map(), evidence=new Map(), groupMatches=[];
       for(const group of pq.groups) {
         const plain=alternatives(original,group.modern,0,Boolean(group.concept));
         const old=method==='glossary'||method==='hybrid' ? alternatives(original,group.old,0,true) : {scores:new Map(),matches:new Map()};
@@ -601,6 +626,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
           if(value*weight>(scores.get(id)||0)) {scores.set(id,value*weight);terms.set(id,result===ai?'':result.matches.get(id));}
         }
         const ids=new Set(scores.keys());
+        groupMatches.push(ids);
         candidates=candidates===null?ids:new Set([...candidates].filter(id=>ids.has(id)));
         for(const [id,score] of scores) {
           total.set(id,(total.get(id)||0)+score);
@@ -608,8 +634,20 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
           if(terms.get(id)) evidence.get(id).push(terms.get(id));
         }
       }
-      const hits=[...(candidates||[])].map(i=>({i,score:total.get(i),matched:evidence.get(i),passage:docs[i]}));
-      hits.sort((a,b)=>b.score-a.score || a.passage.id.localeCompare(b.passage.id));
+      const allowPartial=options && options.partial && partialAllowed(q,pq.groups);
+      if (allowPartial) {
+        candidates=new Set([...total.keys()].filter(id=> {
+          const missing=pq.groups.filter((g,i)=>!groupMatches[i].has(id));
+          return missing.length<=1 && missing.every(g=>!g.concept && !/\d/.test(g.modern[0]));
+        }));
+      }
+      const hits=[...(candidates||[])].map(i=> {
+        const missing=pq.groups.filter((g,j)=>!groupMatches[j].has(i)).map(g=>g.concept || g.modern[0]);
+        return {i,score:total.get(i),matched:evidence.get(i),passage:docs[i],partial:missing.length>0,missing};
+      });
+      // В пределах тома полные совпадения также первыми проходят устранение
+      // перекрывающихся окон: частичный пассаж не должен вытеснять полный.
+      hits.sort((a,b)=>Number(a.partial)-Number(b.partial) || b.score-a.score || a.passage.id.localeCompare(b.passage.id));
       // Перекрывающиеся окна с одним рассуждением не занимают весь верх выдачи.
       const distinct=[];
       for(const hit of hits) {
@@ -642,7 +680,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
   }
   // Python считает Unicode-символы; JS slice считает UTF-16. Смещения переводим явно.
   const slice=(text,start,end)=>Array.from(text).slice(start,end).join('');
-  const api={parse,makeEngine,makeEngines,highlight,highlightEvidence,slice,allStems};
+  const api={parse,makeEngine,makeEngines,searchAll,highlight,highlightEvidence,slice,allStems};
   if(typeof module!=='undefined'&&module.exports) module.exports=api; else root.Concept=api;
 })(typeof window!=='undefined'?window:globalThis);
 </script>
@@ -674,7 +712,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
   const S = {
     meta: null, index: null, an: null, engine: null, texts: {}, stemCache: new Map(),
     opts: { modern: false, gloss: true }, detailId: null,
-    sense: { config: null, engines: [], promise: null, q: '', hits: [], shown: 10, token: 0 },
+    sense: { config: null, engines: [], promise: null, q: '', hits: [], shown: 10, token: 0, partial: false, suggested: 0 },
     map: { q: '', topic: '', token: 0 },
     laws: { q: '', code: '', data: null, promise: null, token: 0 },
     analyses: { data: null, promise: null },
@@ -1074,7 +1112,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     const [text, analyses] = await Promise.all([textOf(d), loadAnalyses()]);
     if (S.detailId !== id || $('#detail').hidden) return;
     const params = readHash().p, inSense = ['sense','map','passage','laws','analysis'].includes(params.get('mode'));
-    let target = null, senseTerms = [];
+    let target = null, senseTerms = [], partialMissing = [];
     const analysis = analyses.decisions && analyses.decisions[id];
     if (params.get('mode') === 'analysis' && analysis) {
       const at=Number(params.get('at')), end=Number(params.get('end'));
@@ -1085,8 +1123,9 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
       if (S.detailId !== id || $('#detail').hidden) return;
       target = S.sense.engines.flatMap(e => e.data.passages).find(x => x.decision === id && String(x.start) === params.get('at') && String(x.end) === params.get('end'));
       if (target) {
-        const result = S.sense.engines.flatMap(e => e.engine.search(params.get('q') || '', S.sense.config.method).hits).find(h => h.passage.id === target.id);
+        const result = window.Concept.searchAll(S.sense.engines.map(e=>e.engine),params.get('q') || '',S.sense.config.method,{partial:params.get('partial')==='1'}).hits.find(h=>h.passage.id===target.id);
         senseTerms = [params.get('q') || '', ...(result ? result.matched : [])];
+        partialMissing = result && result.partial ? result.missing : [];
       }
     }
     const cited = S.meta.decisions.filter(x => x.cites.some(c => c[0] === d.vol && c[1] === d.num));
@@ -1113,6 +1152,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
         h('div', { class: 'muted' }, `${d.dept}, том ${d.vol}`),
         h('span', { class: 'badge big' }, d.outcome)),
       h('p', { class: 'headnote' }, M(d.headnote)),
+      partialMissing.length ? h('p',{class:'search-partial-note'},'Частичное совпадение. Не найдена часть запроса: '+partialMissing.map(w=>'«'+w+'»').join(', ')+'.') : '',
       h('dl', { class: 'meta' },
         d.presiding ? h('div', {}, h('dt', {}, 'Председательствовал'), h('dd', {}, personLink(d.presiding))) : '',
         d.reporter ? h('div', {}, h('dt', {}, 'Докладывал'), h('dd', {}, personLink(d.reporter))) : '',
@@ -1266,9 +1306,12 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     $('#sense-results').replaceChildren();
     try {
       await loadSense(); if (token !== S.sense.token) return;
-      const results = S.sense.engines.map(e => e.engine.search(S.sense.q, S.sense.config.method));
-      S.sense.hits = results.flatMap(r=>r.hits).sort((a,b)=>b.score-a.score || a.passage.id.localeCompare(b.passage.id));
-      S.sense.concepts = results[0] ? results[0].concepts : [];
+      const result = window.Concept.searchAll(S.sense.engines.map(e=>e.engine),S.sense.q,S.sense.config.method,{partial:true});
+      const optedIn = readHash().p.get('partial') === '1';
+      S.sense.partial = result.partial && optedIn;
+      S.sense.suggested = result.partial && !optedIn ? result.hits.length : 0;
+      S.sense.hits = result.partial && !optedIn ? [] : result.hits;
+      S.sense.concepts = result.concepts;
       S.sense.shown = 10;
       await renderSense(token);
     } catch (err) {
@@ -1284,17 +1327,24 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     const box = $('#sense-results'); box.replaceChildren();
     const hits = S.sense.hits;
     $('#sense-status').replaceChildren(h('strong', {}, `${hits.length} ${plural(hits.length,'фрагмент','фрагмента','фрагментов')}`),
-      h('span', {class:'muted'}, S.sense.concepts && S.sense.concepts.length ? ' · понятия: '+S.sense.concepts.map(c=>c.concept).join(', ') : ''));
+      h('span', {class:'muted'}, S.sense.concepts && S.sense.concepts.length ? ' · понятия: '+S.sense.concepts.map(c=>c.concept).join(', ') : ''),
+      S.sense.partial ? h('span',{class:'search-partial-note'},' · частичные совпадения') : '');
     if (!hits.length) {
-      box.append(h('p', {class:'empty'}, 'Подходящие фрагменты в доступных томах не найдены. Это не доказывает отсутствия такой практики: попробуйте другое понятие или обычный поиск.')); return;
+      box.append(h('p', {class:'empty'}, 'Подходящие фрагменты в доступных томах не найдены. Это не доказывает отсутствия такой практики: попробуйте другое понятие или обычный поиск.'));
+      if (S.sense.suggested) box.append(h('p',{class:'small'},'Есть фрагменты, в которых совпадает всё, кроме одной части запроса.'),
+        h('button',{class:'btn ghost',id:'sense-partial',onclick:()=>go('sense',{q:S.sense.q,partial:'1'})},'Показать частичные совпадения ('+S.sense.suggested+')'));
+      return;
     }
+    if (S.sense.partial) box.append(h('p',{class:'search-partial-note'},'Совпадений по всему запросу нет. Ниже — фрагменты, где не совпала одна часть запроса; она указана в каждой карточке.'),
+      h('button',{class:'btn ghost',id:'sense-strict',onclick:()=>go('sense',{q:S.sense.q})},'Вернуться к полному запросу'));
     for (const hit of hits.slice(0,S.sense.shown)) {
       const p=hit.passage, d=S.meta.decisions.find(x=>x.id===p.decision);
       const text=await textOf(d); if(token!==S.sense.token) return;
       const original=window.Concept.slice(text,p.start,p.end);
       const terms=[S.sense.q,...hit.matched];
-      const link='#/d/'+d.id+'?'+new URLSearchParams({mode:'sense',q:S.sense.q,at:String(p.start),end:String(p.end)});
+      const link='#/d/'+d.id+'?'+new URLSearchParams({mode:'sense',q:S.sense.q,at:String(p.start),end:String(p.end),...(hit.partial ? {partial:'1'} : {})});
       box.append(h('article', {class:'card passage', 'data-passage':p.id},
+        hit.partial ? h('p',{class:'search-partial-note'},'Частичное совпадение. Не найдена часть запроса: '+hit.missing.map(w=>'«'+w+'»').join(', ')+'.') : '',
         h('div', {class:'passage-text',html:(p.start ? '… ' : '') + window.Concept.highlightEvidence(M(original),terms,p.ai ? M(p.ai.evidence) : '') + (p.end < Array.from(text).length ? ' …' : '')}),
         p.ai ? h('div', {class:'ai-note'}, h('strong', {}, 'Пояснение ИИ: '), p.ai.summary,
           h('details', {}, h('summary', {}, 'Цитата, на которой основано пояснение'), h('p', {}, '«… ' + M(p.ai.evidence) + ' …»'))) : '',
