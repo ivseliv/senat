@@ -15,7 +15,7 @@
 """
 import collections, glob, json, math, os, re, sys
 from pathlib import Path
-from passages import build_passages
+from passages import build_passages, refresh_published_enrichment
 from participants import load_participants
 from laws import build_law_index
 from export import build_export
@@ -29,6 +29,21 @@ OUT = os.path.join(ROOT, 'lex', 'data')
 
 def build_published_artifacts():
     """Пересобирает производные публичные данные и статический API из lex/data."""
+    enrichment = refresh_published_enrichment(ROOT, stems)
+    print('  актуальные пояснения:', enrichment['valid'], '; устаревшие записи:', enrichment['ignored'])
+    warnings = {}
+    for file in sorted(Path(OUT).glob('passages-*.json')):
+        for passage in json.loads(file.read_text(encoding='utf-8'))['passages']:
+            warning = passage.get('ai', {}).get('source_warning')
+            if warning:
+                item = warnings.setdefault(passage['decision'], dict(passages=[], messages=[]))
+                item['passages'].append(passage['id'])
+                if warning not in item['messages']:
+                    item['messages'].append(warning)
+    analytics_path = Path(OUT) / 'analytics.json'
+    analytics_data = json.loads(analytics_path.read_text(encoding='utf-8'))
+    analytics_data['source_warnings'] = warnings
+    analytics_path.write_text(json.dumps(analytics_data, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
     precedents = build_precedents(ROOT)
     print('  ссылки на решения:', len(precedents['references']), precedents['counts'])
     export = build_export(ROOT)

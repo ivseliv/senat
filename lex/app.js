@@ -54,6 +54,12 @@
   const codeLabel = code => code === '?' ? 'Кодекс не определён' : (CODE()[code] || 'Иной акт');
   const statLabel = s => { const [code, ...rest] = s.split(' '); return codeLabel(code) + ', ' + rest.join(' '); };
   const deptShort = d => d.replace(' департамент', '').replace('Гражданский кассационный', 'Гражд. касс. деп.');
+  function sourceWarning(d) {
+    const note = S.an.source_warnings && S.an.source_warnings[d.id];
+    return note ? h('details',{class:'preliminary-note source-warning'},
+      h('summary',{},`Ограничение источника: дефекты OCR в ${note.passages.length} фрагментах`),
+      ...note.messages.map(message=>h('p',{},message))) : null;
+  }
 
   async function loadJSON(name) { if (window.LEX_INLINE && window.LEX_INLINE[name]) return window.LEX_INLINE[name]; const r = await fetch(DATA + name); if (!r.ok) throw new Error(name + ': ' + r.status); return r.json(); }
   async function loadVol(y) { if (!S.texts[y]) S.texts[y] = loadJSON(`text-${y}.json`); return S.texts[y]; }
@@ -273,12 +279,18 @@
     box.replaceChildren(h('p',{class:'muted'},'Загрузка разборов…'));
     try {
       const data = await loadAnalyses();
-      const items = Object.values(data.decisions);
-      $('#analyses-status').textContent = `Пилот: ${items.length} из ${S.meta.decisions.length} решений.`;
+      const all = Object.values(data.decisions), year = readHash().p.get('y') || '';
+      const select = $('#analyses-year');
+      select.replaceChildren(h('option',{value:''},'Все тома'),...S.meta.volumes.map(v=>h('option',{value:String(v.year)},String(v.year)+' · '+v.dept)));
+      select.value = year;
+      select.onchange = () => go('analyses',{y:select.value});
+      const items = all.filter(item=>!year || String(item.year)===year);
+      $('#analyses-status').textContent = `Разобрано ${all.length} из ${S.meta.decisions.length} решений; показано ${items.length}. Полное покрытие корпуса пока отсутствует.`;
       box.replaceChildren(...items.map(item => {
         const d = S.meta.decisions.find(x => x.id === item.id);
         return h('article',{class:'card analysis-card'},h('h3',{},h('a',{href:'#/d/'+item.id+'?mode=analyses'},`${item.year} · № ${d.num}`)),
-          h('p',{},M(d.headnote)),h('p',{class:'muted small'},item.selection),
+          h('p',{class:'muted small'},d.dept),h('p',{},item.sections[0].summary),h('p',{class:'muted small'},item.selection),
+          h('details',{class:'small'},h('summary',{},'Заголовок издания (OCR)'),h('p',{},M(d.headnote))),
           h('a',{href:'#/d/'+item.id+'?mode=analyses'},'Открыть разбор и первоисточник →'));
       }));
     } catch (err) { box.replaceChildren(h('p',{class:'empty'},'Не удалось загрузить редакционные разборы: '+err.message)); }
@@ -293,12 +305,13 @@
     try {
       const config = S.sense.config || await loadJSON('concepts.json');
       box.replaceChildren(h('table', {class:'tbl'},
-        h('thead', {}, h('tr', {}, ...['Том','Решений','Фрагментов с пояснением ИИ'].map(t=>h('th',{},t)))),
+        h('thead', {}, h('tr', {}, ...['Том','Решений','Пояснения ИИ','Дефекты OCR'].map(t=>h('th',{},t)))),
         h('tbody', {}, S.meta.volumes.map(v=>{
           const coverage=config.volumes.find(c=>c.year===v.year);
           return h('tr', {}, h('td',{},String(v.year)), h('td',{},String(v.decisions)),
-            h('td',{},coverage ? `${coverage.enriched} из ${coverage.passages}` : 'Нет: нет проверяемой привязки к листам'));
-        }))));
+            h('td',{},coverage ? `${coverage.enriched} из ${coverage.passages}` : 'Нет: нет проверяемой привязки к листам'),
+            h('td',{},String(coverage && coverage.source_warnings || 0)));
+        }))), h('p',{class:'muted small'},'Пояснения к фрагментам с дефектами источника видны с предупреждением, но не участвуют в обогащённом поисковом индексе.'));
     } catch (err) { box.textContent='Не удалось загрузить сведения о томах. Повторите открытие раздела.'; }
   }
 
@@ -402,6 +415,7 @@
           h('span', { class: 'badge' }, d.outcome)),
         h('h3', {}, h('a', { href: '#/d/' + d.id, onclick: e => { e.preventDefault(); openFromList(d.id); } }, M(d.headnote))),
         h('p', { class: 'snip', 'data-i': d.i }, ''),
+        S.an.source_warnings && S.an.source_warnings[d.id] ? h('p',{class:'small source-warning'},'Есть фрагменты с дефектами OCR. Ограничения указаны в карточке решения.') : '',
         h('div', { class: 'chips' }, d.topics.map(t => h('button', { class: 'chip', onclick: () => { S.f.topic = t; pushSearch(); } }, t))),
         d.procedure && d.procedure.length ? h('div', { class: 'chips' }, d.procedure.map(p => h('button', { class: 'chip group', title: 'Фильтровать по фокусу кассационного рассуждения', onclick: () => { S.f.procedure = p; pushSearch(); } }, p))) : '',
         h('div', { class: 'chips participant-chips' }, groupItems(d).slice(0, 8).map(g => h('button', { class: 'chip group', title: 'Фильтровать решения по этому признаку', onclick: () => selectFacet(g.key, g.label) }, g.label))));
@@ -438,6 +452,7 @@
         const page = ev.printed_pages && ev.printed_pages.length ? 'с. ' + ev.printed_pages.join(', ') : 'страница не определена';
         return h('details',{class:'analysis-evidence'},
           h('summary',{},'Цитата из источника · '+page),
+          ev.source_warning ? h('p',{class:'preliminary-note source-warning'},'Ограничение источника: '+ev.source_warning) : '',
           h('blockquote',{class:'source-quote'},ev.text),
           h('p',{class:'small muted'},h('a',{href:'#/d/'+d.id+'?'+params.toString()},'Открыть цитату и скан этой страницы')));
       });
@@ -447,7 +462,7 @@
     return h('section',{class:'decision-analysis','aria-label':'Что именно решил Сенат'},
       h('h3',{},'Что именно решил Сенат'),
       h('p',{class:'analysis-label'},'Редакционный разбор, подготовленный с помощью ИИ'),
-      h('p',{class:'muted small'},'Пилот: 10 решений. Каждый тезис связан с буквальной цитатой, местом в OCR и опубликованной страницей скана. Это не юридическая экспертиза и не вывод о современном праве.'),
+      h('p',{class:'muted small'},'Каждый тезис связан с полной буквальной цитатой и страницами, на которых она расположена. Разбор проверен по контексту опубликованного текста; независимая юридическая экспертиза и новая сплошная сверка сканов не проводились.'),
       ...sections);
   }
 
@@ -470,7 +485,7 @@
     } else if (params.get('mode') === 'analysis' && analysis) {
       const at=Number(params.get('at')), end=Number(params.get('end'));
       const evidence=analysis.sections.flatMap(s=>s.evidence).find(e=>e.start===at && e.end===end);
-      if (evidence) target={id:evidence.passage_id,start:evidence.start,end:evidence.end,pages:evidence.printed_pages || [],sources:[]};
+      if (evidence) target={id:evidence.passage_id,start:evidence.start,end:evidence.end,pages:evidence.printed_pages || [],sources:evidence.sources || [],scans:evidence.scans,ai:{source_warning:evidence.source_warning}};
     } else if (inSense) {
       await loadSense();
       if (S.detailId !== id || $('#detail').hidden) return;
@@ -527,6 +542,7 @@
           h('button', { class: 'seg-b', 'aria-pressed': String(!S.opts.modern), onclick: () => setModern(false) }, 'Дореформенная'),
           h('button', { class: 'seg-b', 'aria-pressed': String(S.opts.modern), onclick: () => setModern(true) }, 'Современная')),
         h('button', { class: 'btn', onclick: e => { const btn = e.target; const txt = cite + '\n' + location.href; const done = ok => { btn.textContent = ok ? 'Скопировано ✓' : 'Не удалось скопировать — выделите текст вручную'; setTimeout(() => btn.textContent = 'Скопировать ссылку и цитату', 2000); }; try { navigator.clipboard.writeText(txt).then(() => done(true), () => done(false)); } catch (err) { done(false); } } }, 'Скопировать ссылку и цитату')),
+      target && target.ai && target.ai.source_warning ? h('p',{class:'preliminary-note source-warning'},'Ограничение источника: '+target.ai.source_warning) : sourceWarning(d),
       body,
       h('p', { class: 'muted small' }, 'Текст получен автоматическим распознаванием скана (модель ИИ) и может содержать ошибки: числа, номера статей и фамилии сверяйте с изданием. Современная орфография — автоматическая, для удобства чтения.'),
       outgoing.length ? h('section', {class:'precedents-out'}, h('h3', {}, 'Ссылки на прежние решения'),
@@ -541,7 +557,7 @@
       if(!scanSection.open || scanSection.dataset.loaded)return;
       try {
         const scans=await loadScans(d.vol);
-        let refs=target?scans.passages[target.id]:(scans.decisions[d.id]||[]).map(file=>({...scans.pages[file],kind:'page'}));
+        let refs=target?(target.scans || scans.passages[target.id]):(scans.decisions[d.id]||[]).map(file=>({...scans.pages[file],kind:'page'}));
         if(target && target.precedent && refs) refs=refs.filter(r=>target.sources.some(s=>s.file===r.file));
         if(target && (!refs || !refs.length)) refs=(target.sources || []).map(s=>scans.pages[s.file]).filter(Boolean).map(p=>({...p,kind:'page'}));
         if(refs && refs.length) {scanSection.append(scanStrip(d,refs));scanSection.dataset.loaded='1';}
@@ -707,6 +723,7 @@
       const link='#/d/'+d.id+'?'+new URLSearchParams({mode:'sense',q:S.sense.q,at:String(p.start),end:String(p.end),...(hit.partial ? {partial:'1'} : {})});
       box.append(h('article', {class:'card passage', 'data-passage':p.id},
         hit.partial ? h('p',{class:'search-partial-note'},'Частичное совпадение. Не найдена часть запроса: '+hit.missing.map(w=>'«'+w+'»').join(', ')+'.') : '',
+        p.ai && p.ai.source_warning ? h('p',{class:'preliminary-note source-warning'},'Ограничение источника: '+p.ai.source_warning) : '',
         h('div', {class:'passage-text',html:(p.start ? '… ' : '') + window.Concept.highlightEvidence(M(original),terms,p.ai ? M(p.ai.evidence) : '') + (p.end < Array.from(text).length ? ' …' : '')}),
         p.ai ? h('div', {class:'ai-note'}, h('strong', {}, 'Пояснение ИИ: '), p.ai.summary,
           h('details', {}, h('summary', {}, 'Цитата, на которой основано пояснение'), h('p', {}, '«… ' + M(p.ai.evidence) + ' …»'))) : '',

@@ -397,7 +397,7 @@
           "pages": [
             117
           ],
-          "score": 13.90408,
+          "score": 14.12582,
           "relevant": false
         },
         {
@@ -407,7 +407,7 @@
             116,
             117
           ],
-          "score": 13.80221,
+          "score": 13.99488,
           "relevant": false
         },
         {
@@ -417,7 +417,7 @@
             217,
             218
           ],
-          "score": 12.19464,
+          "score": 12.37063,
           "relevant": false
         },
         {
@@ -431,6 +431,25 @@
           "relevant": false
         },
         {
+          "passage": "1897-072:0-1719",
+          "decision": "1897-072",
+          "pages": [
+            239
+          ],
+          "score": 10.92565,
+          "relevant": false
+        },
+        {
+          "passage": "1897-072:1439-3098",
+          "decision": "1897-072",
+          "pages": [
+            239,
+            240
+          ],
+          "score": 10.89949,
+          "relevant": false
+        },
+        {
           "passage": "1904-042:7365-9575",
           "decision": "1904-042",
           "pages": [
@@ -438,6 +457,15 @@
             118
           ],
           "score": 10.87783,
+          "relevant": false
+        },
+        {
+          "passage": "1897-011:0-1640",
+          "decision": "1897-011",
+          "pages": [
+            50
+          ],
+          "score": 10.85623,
           "relevant": false
         },
         {
@@ -451,41 +479,13 @@
           "relevant": false
         },
         {
-          "passage": "1897-072:0-1719",
-          "decision": "1897-072",
-          "pages": [
-            239
-          ],
-          "score": 10.79224,
-          "relevant": false
-        },
-        {
-          "passage": "1897-072:1439-3098",
-          "decision": "1897-072",
-          "pages": [
-            239,
-            240
-          ],
-          "score": 10.67944,
-          "relevant": false
-        },
-        {
-          "passage": "1904-042:16944-18848",
+          "passage": "1904-042:19713-21283",
           "decision": "1904-042",
           "pages": [
-            120,
-            121
+            121,
+            122
           ],
-          "score": 10.62675,
-          "relevant": false
-        },
-        {
-          "passage": "1897-011:0-1640",
-          "decision": "1897-011",
-          "pages": [
-            50
-          ],
-          "score": 10.50223,
+          "score": 10.69786,
           "relevant": false
         }
       ]
@@ -527,7 +527,7 @@
             217,
             218
           ],
-          "score": 14.42164,
+          "score": 14.45939,
           "relevant": false
         },
         {
@@ -537,7 +537,16 @@
             121,
             122
           ],
-          "score": 14.01488,
+          "score": 14.22928,
+          "relevant": false
+        },
+        {
+          "passage": "1904-097:0-2118",
+          "decision": "1904-097",
+          "pages": [
+            269
+          ],
+          "score": 13.36379,
           "relevant": false
         },
         {
@@ -548,15 +557,6 @@
             121
           ],
           "score": 13.3001,
-          "relevant": false
-        },
-        {
-          "passage": "1904-097:0-2118",
-          "decision": "1904-097",
-          "pages": [
-            269
-          ],
-          "score": 13.20014,
           "relevant": false
         },
         {
@@ -585,7 +585,7 @@
           "pages": [
             115
           ],
-          "score": 12.05979,
+          "score": 12.27933,
           "relevant": false
         },
         {
@@ -942,7 +942,7 @@
             131,
             132
           ],
-          "score": 10.99703,
+          "score": 11.04396,
           "relevant": false
         },
         {
@@ -951,7 +951,7 @@
           "pages": [
             132
           ],
-          "score": 10.95234,
+          "score": 10.93922,
           "relevant": false
         },
         {
@@ -960,7 +960,7 @@
           "pages": [
             134
           ],
-          "score": 10.83546,
+          "score": 10.87693,
           "relevant": true
         },
         {
@@ -969,7 +969,7 @@
           "pages": [
             134
           ],
-          "score": 10.58025,
+          "score": 10.61632,
           "relevant": true
         },
         {
@@ -978,7 +978,7 @@
           "pages": [
             131
           ],
-          "score": 9.6429,
+          "score": 9.79221,
           "relevant": false
         },
         {
@@ -988,7 +988,7 @@
             130,
             131
           ],
-          "score": 8.76651,
+          "score": 8.91115,
           "relevant": false
         },
         {
@@ -998,7 +998,7 @@
             151,
             152
           ],
-          "score": 7.77618,
+          "score": 7.85336,
           "relevant": false
         }
       ]
@@ -1041,7 +1041,7 @@
             131,
             132
           ],
-          "score": 10.99703,
+          "score": 11.04396,
           "relevant": false
         },
         {
@@ -1050,7 +1050,7 @@
           "pages": [
             132
           ],
-          "score": 10.95234,
+          "score": 10.93922,
           "relevant": false
         },
         {
@@ -1059,7 +1059,7 @@
           "pages": [
             134
           ],
-          "score": 10.83546,
+          "score": 10.87693,
           "relevant": true
         },
         {
@@ -1068,7 +1068,7 @@
           "pages": [
             134
           ],
-          "score": 10.58025,
+          "score": 10.61632,
           "relevant": true
         },
         {
@@ -1077,7 +1077,7 @@
           "pages": [
             131
           ],
-          "score": 9.6429,
+          "score": 9.79221,
           "relevant": false
         },
         {
@@ -1087,7 +1087,7 @@
             130,
             131
           ],
-          "score": 8.76651,
+          "score": 8.91115,
           "relevant": false
         },
         {
@@ -1097,7 +1097,7 @@
             151,
             152
           ],
-          "score": 7.77618,
+          "score": 7.85336,
           "relevant": false
         },
         {
@@ -1202,7 +1202,7 @@
             178,
             179
           ],
-          "score": 16.7673,
+          "score": 16.63351,
           "relevant": false
         }
       ]
@@ -1225,7 +1225,7 @@
             178,
             179
           ],
-          "score": 16.7673,
+          "score": 16.63351,
           "relevant": false
         }
       ]
@@ -1281,7 +1281,7 @@
           "pages": [
             228
           ],
-          "score": 22.83566,
+          "score": 22.8006,
           "relevant": false
         },
         {
@@ -1290,7 +1290,7 @@
           "pages": [
             228
           ],
-          "score": 21.76087,
+          "score": 22.08358,
           "relevant": false
         }
       ]
@@ -1312,7 +1312,7 @@
           "pages": [
             228
           ],
-          "score": 22.83566,
+          "score": 22.8006,
           "relevant": false
         },
         {
@@ -1321,7 +1321,7 @@
           "pages": [
             228
           ],
-          "score": 21.76087,
+          "score": 22.08358,
           "relevant": false
         }
       ]
@@ -1792,7 +1792,7 @@
             243,
             244
           ],
-          "score": 18.50408,
+          "score": 18.63846,
           "relevant": false
         }
       ]
@@ -1815,7 +1815,7 @@
             243,
             244
           ],
-          "score": 18.50408,
+          "score": 18.63846,
           "relevant": false
         }
       ]
@@ -1861,7 +1861,7 @@
           "pages": [
             280
           ],
-          "score": 17.15455,
+          "score": 17.4603,
           "relevant": true
         }
       ]
@@ -1883,7 +1883,7 @@
           "pages": [
             280
           ],
-          "score": 17.15455,
+          "score": 17.4603,
           "relevant": true
         }
       ]
@@ -2079,7 +2079,7 @@
           "pages": [
             16
           ],
-          "score": 19.39776,
+          "score": 19.12079,
           "relevant": false
         },
         {
@@ -2088,7 +2088,7 @@
           "pages": [
             16
           ],
-          "score": 18.80992,
+          "score": 18.84272,
           "relevant": true
         },
         {
@@ -2098,7 +2098,7 @@
             15,
             16
           ],
-          "score": 18.80489,
+          "score": 18.52793,
           "relevant": false
         }
       ]
@@ -2120,7 +2120,7 @@
           "pages": [
             16
           ],
-          "score": 19.39776,
+          "score": 19.12079,
           "relevant": false
         },
         {
@@ -2129,7 +2129,7 @@
           "pages": [
             16
           ],
-          "score": 18.80992,
+          "score": 18.84272,
           "relevant": true
         },
         {
@@ -2139,7 +2139,7 @@
             15,
             16
           ],
-          "score": 18.80489,
+          "score": 18.52793,
           "relevant": false
         }
       ]
@@ -2223,7 +2223,7 @@
           "pages": [
             31
           ],
-          "score": 18.9633,
+          "score": 19.08455,
           "relevant": true
         },
         {
@@ -2232,7 +2232,7 @@
           "pages": [
             326
           ],
-          "score": 9.1792,
+          "score": 9.31334,
           "relevant": false
         }
       ]
@@ -2254,7 +2254,7 @@
           "pages": [
             31
           ],
-          "score": 18.9633,
+          "score": 19.08455,
           "relevant": true
         },
         {
@@ -2263,7 +2263,7 @@
           "pages": [
             326
           ],
-          "score": 9.1792,
+          "score": 9.31334,
           "relevant": false
         }
       ]
@@ -2309,7 +2309,7 @@
           "pages": [
             46
           ],
-          "score": 18.16598,
+          "score": 18.26427,
           "relevant": false
         },
         {
@@ -2319,7 +2319,7 @@
             46,
             47
           ],
-          "score": 18.00963,
+          "score": 18.10793,
           "relevant": false
         },
         {
@@ -2329,7 +2329,7 @@
             45,
             46
           ],
-          "score": 17.90631,
+          "score": 18.00538,
           "relevant": false
         },
         {
@@ -2338,7 +2338,7 @@
           "pages": [
             47
           ],
-          "score": 17.90631,
+          "score": 18.00538,
           "relevant": false
         }
       ]
@@ -2360,7 +2360,7 @@
           "pages": [
             46
           ],
-          "score": 18.16598,
+          "score": 18.26427,
           "relevant": false
         },
         {
@@ -2370,7 +2370,7 @@
             46,
             47
           ],
-          "score": 18.00963,
+          "score": 18.10793,
           "relevant": false
         },
         {
@@ -2380,7 +2380,7 @@
             45,
             46
           ],
-          "score": 17.90631,
+          "score": 18.00538,
           "relevant": false
         },
         {
@@ -2389,7 +2389,7 @@
           "pages": [
             47
           ],
-          "score": 17.90631,
+          "score": 18.00538,
           "relevant": false
         }
       ]
@@ -2484,7 +2484,7 @@
             122,
             123
           ],
-          "score": 31.45441,
+          "score": 31.56499,
           "relevant": true
         },
         {
@@ -2494,7 +2494,7 @@
             120,
             121
           ],
-          "score": 31.38607,
+          "score": 31.52087,
           "relevant": false
         },
         {
@@ -2503,7 +2503,7 @@
           "pages": [
             121
           ],
-          "score": 29.95675,
+          "score": 30.09155,
           "relevant": false
         },
         {
@@ -2512,7 +2512,7 @@
           "pages": [
             123
           ],
-          "score": 29.01869,
+          "score": 29.15349,
           "relevant": false
         },
         {
@@ -2521,7 +2521,7 @@
           "pages": [
             122
           ],
-          "score": 26.09658,
+          "score": 26.23138,
           "relevant": false
         }
       ]
@@ -2544,7 +2544,7 @@
             122,
             123
           ],
-          "score": 31.45441,
+          "score": 31.56499,
           "relevant": true
         },
         {
@@ -2554,7 +2554,7 @@
             120,
             121
           ],
-          "score": 31.38607,
+          "score": 31.52087,
           "relevant": false
         },
         {
@@ -2563,7 +2563,7 @@
           "pages": [
             121
           ],
-          "score": 29.95675,
+          "score": 30.09155,
           "relevant": false
         },
         {
@@ -2572,7 +2572,7 @@
           "pages": [
             123
           ],
-          "score": 29.01869,
+          "score": 29.15349,
           "relevant": false
         },
         {
@@ -2581,7 +2581,7 @@
           "pages": [
             122
           ],
-          "score": 26.09658,
+          "score": 26.23138,
           "relevant": false
         }
       ]
@@ -2650,7 +2650,7 @@
             156,
             157
           ],
-          "score": 20.45908,
+          "score": 20.40605,
           "relevant": true
         }
       ]
@@ -2673,7 +2673,7 @@
             156,
             157
           ],
-          "score": 20.45908,
+          "score": 20.40605,
           "relevant": true
         }
       ]
@@ -2856,7 +2856,7 @@
           "pages": [
             237
           ],
-          "score": 23.35256,
+          "score": 23.53918,
           "relevant": false
         }
       ]
@@ -2907,7 +2907,7 @@
           "pages": [
             237
           ],
-          "score": 23.79291,
+          "score": 23.97953,
           "relevant": false
         }
       ]

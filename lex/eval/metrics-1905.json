@@ -40,7 +40,7 @@
       "n": 20,
       "recall5": 0.9,
       "recall10": 0.95,
-      "mrr": 0.574861111111111,
+      "mrr": 0.5998611111111111,
       "falsePositives": null
     },
     {
@@ -112,7 +112,7 @@
       "n": 26,
       "recall5": 0.9230769230769231,
       "recall10": 0.9615384615384616,
-      "mrr": 0.5704059829059829,
+      "mrr": 0.5896367521367522,
       "falsePositives": null
     },
     {
@@ -284,7 +284,7 @@
           "pages": [
             287
           ],
-          "score": 7.59334,
+          "score": 7.66684,
           "relevant": false
         },
         {
@@ -294,7 +294,7 @@
             286,
             287
           ],
-          "score": 7.59334,
+          "score": 7.66684,
           "relevant": false
         },
         {
@@ -304,7 +304,7 @@
             283,
             284
           ],
-          "score": 6.73891,
+          "score": 6.81166,
           "relevant": false
         },
         {
@@ -314,7 +314,7 @@
             284,
             285
           ],
-          "score": 6.73891,
+          "score": 6.81166,
           "relevant": false
         }
       ]
@@ -365,7 +365,7 @@
           "pages": [
             287
           ],
-          "score": 7.59334,
+          "score": 7.66684,
           "relevant": false
         },
         {
@@ -375,7 +375,7 @@
             286,
             287
           ],
-          "score": 7.59334,
+          "score": 7.66684,
           "relevant": false
         },
         {
@@ -385,7 +385,7 @@
             283,
             284
           ],
-          "score": 6.73891,
+          "score": 6.81166,
           "relevant": false
         },
         {
@@ -395,7 +395,7 @@
             284,
             285
           ],
-          "score": 6.73891,
+          "score": 6.81166,
           "relevant": false
         },
         {
@@ -472,7 +472,7 @@
             22,
             23
           ],
-          "score": 14.90032,
+          "score": 14.93507,
           "relevant": true
         }
       ]
@@ -484,10 +484,20 @@
       "method": "hybrid",
       "recall5": 1,
       "recall10": 1,
-      "mrr": 0.5,
+      "mrr": 1,
       "negativeFalsePositive": null,
       "results": 3,
       "top10": [
+        {
+          "passage": "1905-009:10977-12913",
+          "decision": "1905-009",
+          "pages": [
+            22,
+            23
+          ],
+          "score": 14.93507,
+          "relevant": true
+        },
         {
           "passage": "1905-009:1092-2694",
           "decision": "1905-009",
@@ -498,23 +508,13 @@
           "relevant": false
         },
         {
-          "passage": "1905-009:10977-12913",
-          "decision": "1905-009",
-          "pages": [
-            22,
-            23
-          ],
-          "score": 14.90032,
-          "relevant": true
-        },
-        {
           "passage": "1905-009:0-1386",
           "decision": "1905-009",
           "pages": [
             18,
             19
           ],
-          "score": 12.46328,
+          "score": 12.5112,
           "relevant": false
         }
       ]
@@ -704,7 +704,7 @@
           "pages": [
             5
           ],
-          "score": 7.93124,
+          "score": 8.08454,
           "relevant": false
         },
         {
@@ -741,7 +741,7 @@
           "pages": [
             223
           ],
-          "score": 3.65286,
+          "score": 3.71412,
           "relevant": false
         },
         {
@@ -751,7 +751,7 @@
             223,
             224
           ],
-          "score": 3.65286,
+          "score": 3.71412,
           "relevant": false
         },
         {
@@ -760,7 +760,7 @@
           "pages": [
             224
           ],
-          "score": 3.65286,
+          "score": 3.71412,
           "relevant": false
         }
       ]
@@ -819,7 +819,7 @@
           "pages": [
             5
           ],
-          "score": 7.98051,
+          "score": 8.08454,
           "relevant": false
         },
         {
@@ -1127,7 +1127,7 @@
             10,
             11
           ],
-          "score": 5.70888,
+          "score": 5.78397,
           "relevant": false
         },
         {
@@ -1137,7 +1137,7 @@
             11,
             12
           ],
-          "score": 5.70888,
+          "score": 5.78397,
           "relevant": false
         },
         {
@@ -1245,7 +1245,7 @@
             10,
             11
           ],
-          "score": 5.70888,
+          "score": 5.78397,
           "relevant": false
         },
         {
@@ -1255,7 +1255,7 @@
             11,
             12
           ],
-          "score": 5.70888,
+          "score": 5.78397,
           "relevant": false
         },
         {
@@ -1484,7 +1484,7 @@
           "pages": [
             12
           ],
-          "score": 7.87517,
+          "score": 7.89105,
           "relevant": false
         },
         {
@@ -1494,7 +1494,7 @@
             12,
             13
           ],
-          "score": 7.87517,
+          "score": 7.89105,
           "relevant": false
         },
         {
@@ -1504,7 +1504,7 @@
             13,
             14
           ],
-          "score": 7.87517,
+          "score": 7.89105,
           "relevant": true
         },
         {
@@ -1532,7 +1532,7 @@
           "pages": [
             9
           ],
-          "score": 5.00121,
+          "score": 5.07936,
           "relevant": false
         },
         {
@@ -1551,7 +1551,7 @@
           "pages": [
             16
           ],
-          "score": 4.80594,
+          "score": 4.85552,
           "relevant": false
         },
         {
@@ -1561,7 +1561,7 @@
             146,
             147
           ],
-          "score": 4.57712,
+          "score": 4.66101,
           "relevant": false
         }
       ]
@@ -1621,7 +1621,7 @@
           "pages": [
             12
           ],
-          "score": 7.87517,
+          "score": 7.89105,
           "relevant": false
         },
         {
@@ -1631,7 +1631,7 @@
             12,
             13
           ],
-          "score": 7.87517,
+          "score": 7.89105,
           "relevant": false
         },
         {
@@ -1641,7 +1641,7 @@
             13,
             14
           ],
-          "score": 7.87517,
+          "score": 7.89105,
           "relevant": true
         },
         {
@@ -1859,7 +1859,7 @@
           "pages": [
             17
           ],
-          "score": 7.04234,
+          "score": 7.12522,
           "relevant": true
         },
         {
@@ -1869,7 +1869,7 @@
             45,
             46
           ],
-          "score": 6.41394,
+          "score": 6.50974,
           "relevant": false
         },
         {
@@ -1878,7 +1878,7 @@
           "pages": [
             46
           ],
-          "score": 6.41394,
+          "score": 6.50974,
           "relevant": false
         },
         {
@@ -1888,7 +1888,7 @@
             46,
             47
           ],
-          "score": 6.41394,
+          "score": 6.50974,
           "relevant": false
         },
         {
@@ -1897,7 +1897,7 @@
           "pages": [
             47
           ],
-          "score": 6.41394,
+          "score": 6.50974,
           "relevant": false
         },
         {
@@ -1906,7 +1906,7 @@
           "pages": [
             219
           ],
-          "score": 6.01391,
+          "score": 6.11592,
           "relevant": false
         },
         {
@@ -1916,7 +1916,7 @@
             219,
             220
           ],
-          "score": 6.01391,
+          "score": 6.11592,
           "relevant": false
         },
         {
@@ -1925,7 +1925,7 @@
           "pages": [
             220
           ],
-          "score": 6.01391,
+          "score": 6.11592,
           "relevant": false
         },
         {
@@ -1935,7 +1935,7 @@
             220,
             221
           ],
-          "score": 6.01391,
+          "score": 6.11592,
           "relevant": false
         },
         {
@@ -1944,7 +1944,7 @@
           "pages": [
             221
           ],
-          "score": 6.01391,
+          "score": 6.11592,
           "relevant": false
         }
       ]
@@ -1966,7 +1966,7 @@
           "pages": [
             17
           ],
-          "score": 7.04234,
+          "score": 7.12522,
           "relevant": true
         },
         {
@@ -1976,7 +1976,7 @@
             45,
             46
           ],
-          "score": 6.41394,
+          "score": 6.50974,
           "relevant": false
         },
         {
@@ -1985,7 +1985,7 @@
           "pages": [
             46
           ],
-          "score": 6.41394,
+          "score": 6.50974,
           "relevant": false
         },
         {
@@ -1995,7 +1995,7 @@
             46,
             47
           ],
-          "score": 6.41394,
+          "score": 6.50974,
           "relevant": false
         },
         {
@@ -2004,7 +2004,7 @@
           "pages": [
             47
           ],
-          "score": 6.41394,
+          "score": 6.50974,
           "relevant": false
         },
         {
@@ -2013,7 +2013,7 @@
           "pages": [
             219
           ],
-          "score": 6.01391,
+          "score": 6.11592,
           "relevant": false
         },
         {
@@ -2023,7 +2023,7 @@
             219,
             220
           ],
-          "score": 6.01391,
+          "score": 6.11592,
           "relevant": false
         },
         {
@@ -2032,7 +2032,7 @@
           "pages": [
             220
           ],
-          "score": 6.01391,
+          "score": 6.11592,
           "relevant": false
         },
         {
@@ -2042,7 +2042,7 @@
             220,
             221
           ],
-          "score": 6.01391,
+          "score": 6.11592,
           "relevant": false
         },
         {
@@ -2051,7 +2051,7 @@
           "pages": [
             221
           ],
-          "score": 6.01391,
+          "score": 6.11592,
           "relevant": false
         }
       ]
@@ -2225,7 +2225,7 @@
             23,
             24
           ],
-          "score": 7.57182,
+          "score": 7.57069,
           "relevant": false
         },
         {
@@ -2234,7 +2234,7 @@
           "pages": [
             24
           ],
-          "score": 7.57182,
+          "score": 7.57069,
           "relevant": false
         },
         {
@@ -2244,7 +2244,7 @@
             24,
             25
           ],
-          "score": 7.57182,
+          "score": 7.57069,
           "relevant": true
         },
         {
@@ -2254,7 +2254,7 @@
             26,
             27
           ],
-          "score": 7.57182,
+          "score": 7.57069,
           "relevant": false
         }
       ]
@@ -2287,7 +2287,7 @@
             23,
             24
           ],
-          "score": 7.57182,
+          "score": 7.57069,
           "relevant": false
         },
         {
@@ -2296,7 +2296,7 @@
           "pages": [
             24
           ],
-          "score": 7.57182,
+          "score": 7.57069,
           "relevant": false
         },
         {
@@ -2306,7 +2306,7 @@
             24,
             25
           ],
-          "score": 7.57182,
+          "score": 7.57069,
           "relevant": true
         },
         {
@@ -2316,7 +2316,7 @@
             26,
             27
           ],
-          "score": 7.57182,
+          "score": 7.57069,
           "relevant": false
         },
         {
@@ -2507,7 +2507,7 @@
             38,
             39
           ],
-          "score": 6.13123,
+          "score": 6.20176,
           "relevant": true
         },
         {
@@ -2517,7 +2517,7 @@
             38,
             39
           ],
-          "score": 6.13123,
+          "score": 6.20176,
           "relevant": true
         },
         {
@@ -2526,7 +2526,7 @@
           "pages": [
             280
           ],
-          "score": 5.91841,
+          "score": 5.9936,
           "relevant": false
         },
         {
@@ -2536,7 +2536,7 @@
             280,
             281
           ],
-          "score": 5.91841,
+          "score": 5.9936,
           "relevant": false
         },
         {
@@ -2545,7 +2545,7 @@
           "pages": [
             171
           ],
-          "score": 5.81745,
+          "score": 5.89467,
           "relevant": false
         },
         {
@@ -2555,7 +2555,7 @@
             171,
             172
           ],
-          "score": 5.81745,
+          "score": 5.89467,
           "relevant": false
         },
         {
@@ -2564,7 +2564,7 @@
           "pages": [
             172
           ],
-          "score": 5.81745,
+          "score": 5.89467,
           "relevant": false
         },
         {
@@ -2574,7 +2574,7 @@
             172,
             173
           ],
-          "score": 5.81745,
+          "score": 5.89467,
           "relevant": false
         },
         {
@@ -2583,7 +2583,7 @@
           "pages": [
             173
           ],
-          "score": 5.81745,
+          "score": 5.89467,
           "relevant": false
         },
         {
@@ -2593,7 +2593,7 @@
             173,
             174
           ],
-          "score": 5.81745,
+          "score": 5.89467,
           "relevant": false
         }
       ]
@@ -2626,7 +2626,7 @@
             38,
             39
           ],
-          "score": 6.13123,
+          "score": 6.20176,
           "relevant": true
         },
         {
@@ -2635,7 +2635,7 @@
           "pages": [
             280
           ],
-          "score": 5.91841,
+          "score": 5.9936,
           "relevant": false
         },
         {
@@ -2645,7 +2645,7 @@
             280,
             281
           ],
-          "score": 5.91841,
+          "score": 5.9936,
           "relevant": false
         },
         {
@@ -2654,7 +2654,7 @@
           "pages": [
             171
           ],
-          "score": 5.81745,
+          "score": 5.89467,
           "relevant": false
         },
         {
@@ -2664,7 +2664,7 @@
             171,
             172
           ],
-          "score": 5.81745,
+          "score": 5.89467,
           "relevant": false
         },
         {
@@ -2673,7 +2673,7 @@
           "pages": [
             172
           ],
-          "score": 5.81745,
+          "score": 5.89467,
           "relevant": false
         },
         {
@@ -2683,7 +2683,7 @@
             172,
             173
           ],
-          "score": 5.81745,
+          "score": 5.89467,
           "relevant": false
         },
         {
@@ -2692,7 +2692,7 @@
           "pages": [
             173
           ],
-          "score": 5.81745,
+          "score": 5.89467,
           "relevant": false
         },
         {
@@ -2702,7 +2702,7 @@
             173,
             174
           ],
-          "score": 5.81745,
+          "score": 5.89467,
           "relevant": false
         }
       ]
@@ -2878,7 +2878,7 @@
             93,
             94
           ],
-          "score": 10.0334,
+          "score": 10.18158,
           "relevant": false
         },
         {
@@ -2887,7 +2887,7 @@
           "pages": [
             97
           ],
-          "score": 10.0334,
+          "score": 10.18158,
           "relevant": false
         },
         {
@@ -2896,7 +2896,7 @@
           "pages": [
             94
           ],
-          "score": 10.0334,
+          "score": 10.18158,
           "relevant": false
         },
         {
@@ -2906,7 +2906,7 @@
             94,
             95
           ],
-          "score": 10.0334,
+          "score": 10.18158,
           "relevant": false
         },
         {
@@ -2915,7 +2915,7 @@
           "pages": [
             95
           ],
-          "score": 10.0334,
+          "score": 10.18158,
           "relevant": false
         },
         {
@@ -2925,7 +2925,7 @@
             95,
             96
           ],
-          "score": 10.0334,
+          "score": 10.18158,
           "relevant": false
         },
         {
@@ -2934,7 +2934,7 @@
           "pages": [
             96
           ],
-          "score": 10.0334,
+          "score": 10.18158,
           "relevant": false
         },
         {
@@ -2944,7 +2944,7 @@
             96,
             97
           ],
-          "score": 10.0334,
+          "score": 10.18158,
           "relevant": false
         },
         {
@@ -2954,7 +2954,7 @@
             96,
             97
           ],
-          "score": 10.0334,
+          "score": 10.18158,
           "relevant": false
         },
         {
@@ -2987,7 +2987,7 @@
             93,
             94
           ],
-          "score": 10.0334,
+          "score": 10.18158,
           "relevant": false
         },
         {
@@ -2996,7 +2996,7 @@
           "pages": [
             97
           ],
-          "score": 10.0334,
+          "score": 10.18158,
           "relevant": false
         },
         {
@@ -3005,7 +3005,7 @@
           "pages": [
             94
           ],
-          "score": 10.0334,
+          "score": 10.18158,
           "relevant": false
         },
         {
@@ -3015,7 +3015,7 @@
             94,
             95
           ],
-          "score": 10.0334,
+          "score": 10.18158,
           "relevant": false
         },
         {
@@ -3024,7 +3024,7 @@
           "pages": [
             95
           ],
-          "score": 10.0334,
+          "score": 10.18158,
           "relevant": false
         },
         {
@@ -3034,7 +3034,7 @@
             95,
             96
           ],
-          "score": 10.0334,
+          "score": 10.18158,
           "relevant": false
         },
         {
@@ -3043,7 +3043,7 @@
           "pages": [
             96
           ],
-          "score": 10.0334,
+          "score": 10.18158,
           "relevant": false
         },
         {
@@ -3053,7 +3053,7 @@
             96,
             97
           ],
-          "score": 10.0334,
+          "score": 10.18158,
           "relevant": false
         },
         {
@@ -3063,7 +3063,7 @@
             96,
             97
           ],
-          "score": 10.0334,
+          "score": 10.18158,
           "relevant": false
         },
         {
@@ -3160,7 +3160,7 @@
             64,
             65
           ],
-          "score": 18.76409,
+          "score": 18.52679,
           "relevant": false
         },
         {
@@ -3178,7 +3178,7 @@
           "pages": [
             65
           ],
-          "score": 17.78217,
+          "score": 17.54487,
           "relevant": true
         },
         {
@@ -3188,7 +3188,7 @@
             63,
             64
           ],
-          "score": 17.26213,
+          "score": 17.02483,
           "relevant": false
         },
         {
@@ -3197,7 +3197,7 @@
           "pages": [
             65
           ],
-          "score": 17.22225,
+          "score": 16.98495,
           "relevant": false
         }
       ]
@@ -3220,7 +3220,7 @@
             64,
             65
           ],
-          "score": 18.76409,
+          "score": 18.52679,
           "relevant": false
         },
         {
@@ -3238,7 +3238,7 @@
           "pages": [
             65
           ],
-          "score": 17.78217,
+          "score": 17.54487,
           "relevant": true
         },
         {
@@ -3248,7 +3248,7 @@
             63,
             64
           ],
-          "score": 17.26213,
+          "score": 17.02483,
           "relevant": false
         },
         {
@@ -3257,7 +3257,7 @@
           "pages": [
             65
           ],
-          "score": 17.22225,
+          "score": 16.98495,
           "relevant": false
         }
       ]
@@ -3403,7 +3403,7 @@
             134,
             135
           ],
-          "score": 6.85009,
+          "score": 6.93454,
           "relevant": false
         },
         {
@@ -3412,7 +3412,7 @@
           "pages": [
             135
           ],
-          "score": 6.85009,
+          "score": 6.93454,
           "relevant": false
         },
         {
@@ -3422,7 +3422,7 @@
             135,
             136
           ],
-          "score": 6.85009,
+          "score": 6.93454,
           "relevant": false
         },
         {
@@ -3431,7 +3431,7 @@
           "pages": [
             136
           ],
-          "score": 6.85009,
+          "score": 6.93454,
           "relevant": false
         },
         {
@@ -3441,7 +3441,7 @@
             136,
             137
           ],
-          "score": 6.85009,
+          "score": 6.93454,
           "relevant": false
         },
         {
@@ -3451,7 +3451,7 @@
             78,
             79
           ],
-          "score": 6.36131,
+          "score": 6.44073,
           "relevant": true
         },
         {
@@ -3460,7 +3460,7 @@
           "pages": [
             79
           ],
-          "score": 6.36131,
+          "score": 6.44073,
           "relevant": false
         },
         {
@@ -3470,7 +3470,7 @@
             79,
             80
           ],
-          "score": 6.36131,
+          "score": 6.44073,
           "relevant": false
         }
       ]
@@ -3513,7 +3513,7 @@
             134,
             135
           ],
-          "score": 6.85009,
+          "score": 6.93454,
           "relevant": false
         },
         {
@@ -3522,7 +3522,7 @@
           "pages": [
             135
           ],
-          "score": 6.85009,
+          "score": 6.93454,
           "relevant": false
         },
         {
@@ -3532,7 +3532,7 @@
             135,
             136
           ],
-          "score": 6.85009,
+          "score": 6.93454,
           "relevant": false
         },
         {
@@ -3541,7 +3541,7 @@
           "pages": [
             136
           ],
-          "score": 6.85009,
+          "score": 6.93454,
           "relevant": false
         },
         {
@@ -3551,7 +3551,7 @@
             136,
             137
           ],
-          "score": 6.85009,
+          "score": 6.93454,
           "relevant": false
         },
         {
@@ -3560,7 +3560,7 @@
           "pages": [
             79
           ],
-          "score": 6.36131,
+          "score": 6.44073,
           "relevant": false
         },
         {
@@ -3925,7 +3925,7 @@
           "pages": [
             100
           ],
-          "score": 5.42559,
+          "score": 5.44674,
           "relevant": false
         },
         {
@@ -3935,7 +3935,7 @@
             100,
             101
           ],
-          "score": 5.42559,
+          "score": 5.44674,
           "relevant": false
         },
         {
@@ -3944,7 +3944,7 @@
           "pages": [
             101
           ],
-          "score": 5.42559,
+          "score": 5.44674,
           "relevant": false
         },
         {
@@ -3953,7 +3953,7 @@
           "pages": [
             102
           ],
-          "score": 5.42559,
+          "score": 5.44674,
           "relevant": false
         },
         {
@@ -3963,7 +3963,7 @@
             102,
             103
           ],
-          "score": 5.42559,
+          "score": 5.44674,
           "relevant": true
         },
         {
@@ -3973,7 +3973,7 @@
             192,
             193
           ],
-          "score": 5.42559,
+          "score": 5.44674,
           "relevant": false
         },
         {
@@ -3983,7 +3983,7 @@
             193,
             194
           ],
-          "score": 5.42559,
+          "score": 5.44674,
           "relevant": false
         },
         {
@@ -3993,7 +3993,7 @@
             193,
             194
           ],
-          "score": 5.42559,
+          "score": 5.44674,
           "relevant": false
         }
       ]
@@ -4072,7 +4072,7 @@
             100,
             101
           ],
-          "score": 5.42559,
+          "score": 5.44674,
           "relevant": false
         },
         {
@@ -4082,7 +4082,7 @@
             192,
             193
           ],
-          "score": 5.42559,
+          "score": 5.44674,
           "relevant": false
         },
         {
@@ -4092,7 +4092,7 @@
             193,
             194
           ],
-          "score": 5.42559,
+          "score": 5.44674,
           "relevant": false
         },
         {
@@ -4102,7 +4102,7 @@
             193,
             194
           ],
-          "score": 5.42559,
+          "score": 5.44674,
           "relevant": false
         }
       ]
@@ -4272,7 +4272,7 @@
           "pages": [
             119
           ],
-          "score": 10.18352,
+          "score": 10.24807,
           "relevant": false
         }
       ]
@@ -4351,7 +4351,7 @@
           "pages": [
             119
           ],
-          "score": 10.18352,
+          "score": 10.24807,
           "relevant": false
         }
       ]
@@ -4494,7 +4494,7 @@
             131,
             132
           ],
-          "score": 10.90481,
+          "score": 10.92794,
           "relevant": false
         },
         {
@@ -4503,7 +4503,7 @@
           "pages": [
             132
           ],
-          "score": 10.90481,
+          "score": 10.92794,
           "relevant": true
         },
         {
@@ -4513,7 +4513,7 @@
             132,
             133
           ],
-          "score": 10.90481,
+          "score": 10.92794,
           "relevant": false
         }
       ]
@@ -4536,7 +4536,7 @@
             131,
             132
           ],
-          "score": 10.90481,
+          "score": 10.92794,
           "relevant": false
         },
         {
@@ -4545,7 +4545,7 @@
           "pages": [
             132
           ],
-          "score": 10.90481,
+          "score": 10.92794,
           "relevant": true
         },
         {
@@ -4555,7 +4555,7 @@
             132,
             133
           ],
-          "score": 10.90481,
+          "score": 10.92794,
           "relevant": false
         },
         {
@@ -4737,7 +4737,7 @@
             142,
             143
           ],
-          "score": 12.25271,
+          "score": 12.00835,
           "relevant": true
         },
         {
@@ -4746,7 +4746,7 @@
           "pages": [
             141
           ],
-          "score": 11.16075,
+          "score": 10.87263,
           "relevant": false
         },
         {
@@ -4756,7 +4756,7 @@
             141,
             142
           ],
-          "score": 10.51499,
+          "score": 10.30279,
           "relevant": false
         },
         {
@@ -4765,7 +4765,7 @@
           "pages": [
             142
           ],
-          "score": 10.4832,
+          "score": 10.30279,
           "relevant": true
         },
         {
@@ -4774,7 +4774,7 @@
           "pages": [
             143
           ],
-          "score": 10.4832,
+          "score": 10.30279,
           "relevant": false
         }
       ]
@@ -4791,6 +4791,15 @@
       "results": 5,
       "top10": [
         {
+          "passage": "1905-052:2747-4569",
+          "decision": "1905-052",
+          "pages": [
+            142
+          ],
+          "score": 14.21425,
+          "relevant": true
+        },
+        {
           "passage": "1905-052:4265-6134",
           "decision": "1905-052",
           "pages": [
@@ -4801,21 +4810,12 @@
           "relevant": true
         },
         {
-          "passage": "1905-052:2747-4569",
-          "decision": "1905-052",
-          "pages": [
-            142
-          ],
-          "score": 14.1503,
-          "relevant": true
-        },
-        {
           "passage": "1905-052:0-1538",
           "decision": "1905-052",
           "pages": [
             141
           ],
-          "score": 11.16075,
+          "score": 10.87263,
           "relevant": false
         },
         {
@@ -4825,7 +4825,7 @@
             141,
             142
           ],
-          "score": 10.51499,
+          "score": 10.40283,
           "relevant": false
         },
         {
@@ -4834,7 +4834,7 @@
           "pages": [
             143
           ],
-          "score": 10.4832,
+          "score": 10.30279,
           "relevant": false
         }
       ]
@@ -4979,7 +4979,7 @@
             288,
             289
           ],
-          "score": 10.04818,
+          "score": 10.16332,
           "relevant": false
         },
         {
@@ -4988,7 +4988,7 @@
           "pages": [
             289
           ],
-          "score": 10.04818,
+          "score": 10.16332,
           "relevant": false
         },
         {
@@ -4998,7 +4998,7 @@
             289,
             290
           ],
-          "score": 10.04818,
+          "score": 10.16332,
           "relevant": false
         },
         {
@@ -5007,7 +5007,7 @@
           "pages": [
             290
           ],
-          "score": 10.04818,
+          "score": 10.16332,
           "relevant": false
         },
         {
@@ -5017,7 +5017,7 @@
             290,
             291
           ],
-          "score": 10.04818,
+          "score": 10.16332,
           "relevant": false
         },
         {
@@ -5026,7 +5026,7 @@
           "pages": [
             291
           ],
-          "score": 10.04818,
+          "score": 10.16332,
           "relevant": false
         },
         {
@@ -5036,7 +5036,7 @@
             291,
             292
           ],
-          "score": 10.04818,
+          "score": 10.16332,
           "relevant": false
         }
       ]
@@ -5059,7 +5059,7 @@
             288,
             289
           ],
-          "score": 10.04818,
+          "score": 10.16332,
           "relevant": false
         },
         {
@@ -5068,7 +5068,7 @@
           "pages": [
             289
           ],
-          "score": 10.04818,
+          "score": 10.16332,
           "relevant": false
         },
         {
@@ -5078,7 +5078,7 @@
             289,
             290
           ],
-          "score": 10.04818,
+          "score": 10.16332,
           "relevant": false
         },
         {
@@ -5087,7 +5087,7 @@
           "pages": [
             290
           ],
-          "score": 10.04818,
+          "score": 10.16332,
           "relevant": false
         },
         {
@@ -5097,7 +5097,7 @@
             290,
             291
           ],
-          "score": 10.04818,
+          "score": 10.16332,
           "relevant": false
         },
         {
@@ -5106,7 +5106,7 @@
           "pages": [
             291
           ],
-          "score": 10.04818,
+          "score": 10.16332,
           "relevant": false
         },
         {
@@ -5116,7 +5116,7 @@
             291,
             292
           ],
-          "score": 10.04818,
+          "score": 10.16332,
           "relevant": false
         },
         {
@@ -5225,7 +5225,7 @@
             177,
             178
           ],
-          "score": 14.12595,
+          "score": 14.19507,
           "relevant": true
         },
         {
@@ -5234,7 +5234,7 @@
           "pages": [
             177
           ],
-          "score": 13.42935,
+          "score": 13.49848,
           "relevant": false
         },
         {
@@ -5244,7 +5244,7 @@
             176,
             177
           ],
-          "score": 13.30598,
+          "score": 13.30921,
           "relevant": false
         },
         {
@@ -5253,7 +5253,7 @@
           "pages": [
             176
           ],
-          "score": 10.50317,
+          "score": 10.57229,
           "relevant": false
         }
       ]
@@ -5295,7 +5295,7 @@
           "pages": [
             177
           ],
-          "score": 13.42935,
+          "score": 13.49848,
           "relevant": false
         },
         {
@@ -5304,7 +5304,7 @@
           "pages": [
             176
           ],
-          "score": 10.50317,
+          "score": 10.57229,
           "relevant": false
         }
       ]
@@ -5409,7 +5409,7 @@
           "pages": [
             213
           ],
-          "score": 9.15462,
+          "score": 9.09967,
           "relevant": false
         },
         {
@@ -5419,7 +5419,7 @@
             213,
             214
           ],
-          "score": 9.15462,
+          "score": 9.09967,
           "relevant": false
         },
         {
@@ -5429,7 +5429,7 @@
             209,
             210
           ],
-          "score": 9.15462,
+          "score": 9.09967,
           "relevant": false
         },
         {
@@ -5470,7 +5470,7 @@
           "pages": [
             213
           ],
-          "score": 9.15462,
+          "score": 9.09967,
           "relevant": false
         },
         {
@@ -5480,7 +5480,7 @@
             213,
             214
           ],
-          "score": 9.15462,
+          "score": 9.09967,
           "relevant": false
         },
         {
@@ -5490,7 +5490,7 @@
             209,
             210
           ],
-          "score": 9.15462,
+          "score": 9.09967,
           "relevant": false
         },
         {
@@ -5585,7 +5585,7 @@
             228,
             229
           ],
-          "score": 7.07258,
+          "score": 7.18909,
           "relevant": false
         },
         {
@@ -5594,7 +5594,7 @@
           "pages": [
             229
           ],
-          "score": 7.07258,
+          "score": 7.18909,
           "relevant": false
         },
         {
@@ -5603,7 +5603,7 @@
           "pages": [
             229
           ],
-          "score": 7.07258,
+          "score": 7.18909,
           "relevant": false
         },
         {
@@ -5613,7 +5613,7 @@
             229,
             230
           ],
-          "score": 7.07258,
+          "score": 7.18909,
           "relevant": false
         },
         {
@@ -5622,7 +5622,7 @@
           "pages": [
             230
           ],
-          "score": 7.07258,
+          "score": 7.18909,
           "relevant": true
         }
       ]
@@ -5645,7 +5645,7 @@
             228,
             229
           ],
-          "score": 7.07258,
+          "score": 7.18909,
           "relevant": false
         },
         {
@@ -5654,7 +5654,7 @@
           "pages": [
             229
           ],
-          "score": 7.07258,
+          "score": 7.18909,
           "relevant": false
         },
         {
@@ -5663,7 +5663,7 @@
           "pages": [
             229
           ],
-          "score": 7.07258,
+          "score": 7.18909,
           "relevant": false
         },
         {
@@ -5673,7 +5673,7 @@
             229,
             230
           ],
-          "score": 7.07258,
+          "score": 7.18909,
           "relevant": false
         },
         {
@@ -5682,7 +5682,7 @@
           "pages": [
             230
           ],
-          "score": 7.07258,
+          "score": 7.18909,
           "relevant": true
         },
         {
@@ -5851,7 +5851,7 @@
             232,
             233
           ],
-          "score": 8.70832,
+          "score": 8.81367,
           "relevant": false
         },
         {
@@ -5860,7 +5860,7 @@
           "pages": [
             233
           ],
-          "score": 8.70832,
+          "score": 8.81367,
           "relevant": false
         },
         {
@@ -5870,7 +5870,7 @@
             233,
             234
           ],
-          "score": 8.70832,
+          "score": 8.81367,
           "relevant": false
         },
         {
@@ -5879,7 +5879,7 @@
           "pages": [
             234
           ],
-          "score": 8.70832,
+          "score": 8.81367,
           "relevant": true
         },
         {
@@ -5888,7 +5888,7 @@
           "pages": [
             234
           ],
-          "score": 8.70832,
+          "score": 8.81367,
           "relevant": false
         },
         {
@@ -5897,7 +5897,7 @@
           "pages": [
             98
           ],
-          "score": 4.64187,
+          "score": 4.69162,
           "relevant": false
         },
         {
@@ -5907,7 +5907,7 @@
             98,
             99
           ],
-          "score": 4.64187,
+          "score": 4.69162,
           "relevant": false
         },
         {
@@ -5917,7 +5917,7 @@
             99,
             100
           ],
-          "score": 4.64187,
+          "score": 4.69162,
           "relevant": false
         }
       ]
@@ -5977,7 +5977,7 @@
           "pages": [
             234
           ],
-          "score": 8.70832,
+          "score": 8.81367,
           "relevant": false
         },
         {
@@ -6004,7 +6004,7 @@
           "pages": [
             98
           ],
-          "score": 4.64187,
+          "score": 4.69162,
           "relevant": false
         },
         {
@@ -6014,7 +6014,7 @@
             98,
             99
           ],
-          "score": 4.64187,
+          "score": 4.69162,
           "relevant": false
         },
         {
@@ -6024,7 +6024,7 @@
             99,
             100
           ],
-          "score": 4.64187,
+          "score": 4.69162,
           "relevant": false
         }
       ]
@@ -6184,7 +6184,7 @@
           "pages": [
             252
           ],
-          "score": 13.44901,
+          "score": 13.05298,
           "relevant": true
         }
       ]
@@ -6206,7 +6206,7 @@
           "pages": [
             252
           ],
-          "score": 13.44901,
+          "score": 13.05298,
           "relevant": true
         },
         {
@@ -6357,7 +6357,7 @@
           "pages": [
             280
           ],
-          "score": 9.81985,
+          "score": 9.86164,
           "relevant": false
         },
         {
@@ -6367,7 +6367,7 @@
             280,
             281
           ],
-          "score": 9.81985,
+          "score": 9.86164,
           "relevant": true
         }
       ]
@@ -6390,7 +6390,7 @@
             280,
             281
           ],
-          "score": 11.17263,
+          "score": 11.15963,
           "relevant": true
         },
         {
@@ -6542,7 +6542,7 @@
           "pages": [
             292
           ],
-          "score": 9.53042,
+          "score": 9.71481,
           "relevant": false
         },
         {
@@ -6552,7 +6552,7 @@
             292,
             293
           ],
-          "score": 9.53042,
+          "score": 9.71481,
           "relevant": false
         },
         {
@@ -6561,7 +6561,7 @@
           "pages": [
             293
           ],
-          "score": 9.53042,
+          "score": 9.71481,
           "relevant": false
         },
         {
@@ -6571,7 +6571,7 @@
             293,
             294
           ],
-          "score": 9.53042,
+          "score": 9.71481,
           "relevant": true
         },
         {
@@ -6581,7 +6581,7 @@
             72,
             73
           ],
-          "score": 7.33496,
+          "score": 7.47673,
           "relevant": false
         },
         {
@@ -6591,7 +6591,7 @@
             137,
             138
           ],
-          "score": 7.33496,
+          "score": 7.47673,
           "relevant": false
         },
         {
@@ -6601,7 +6601,7 @@
             202,
             203
           ],
-          "score": 5.78505,
+          "score": 5.8848,
           "relevant": false
         },
         {
@@ -6610,7 +6610,7 @@
           "pages": [
             206
           ],
-          "score": 5.78505,
+          "score": 5.8848,
           "relevant": false
         },
         {
@@ -6619,7 +6619,7 @@
           "pages": [
             203
           ],
-          "score": 5.78505,
+          "score": 5.8848,
           "relevant": false
         },
         {
@@ -6628,7 +6628,7 @@
           "pages": [
             203
           ],
-          "score": 5.78505,
+          "score": 5.8848,
           "relevant": false
         }
       ]
@@ -6650,7 +6650,7 @@
           "pages": [
             292
           ],
-          "score": 9.53042,
+          "score": 9.71481,
           "relevant": false
         },
         {
@@ -6660,7 +6660,7 @@
             292,
             293
           ],
-          "score": 9.53042,
+          "score": 9.71481,
           "relevant": false
         },
         {
@@ -6669,7 +6669,7 @@
           "pages": [
             293
           ],
-          "score": 9.53042,
+          "score": 9.71481,
           "relevant": false
         },
         {
@@ -6679,7 +6679,7 @@
             293,
             294
           ],
-          "score": 9.53042,
+          "score": 9.71481,
           "relevant": true
         },
         {
@@ -6689,7 +6689,7 @@
             72,
             73
           ],
-          "score": 7.33496,
+          "score": 7.47673,
           "relevant": false
         },
         {
@@ -6699,7 +6699,7 @@
             137,
             138
           ],
-          "score": 7.33496,
+          "score": 7.47673,
           "relevant": false
         },
         {
@@ -6709,7 +6709,7 @@
             202,
             203
           ],
-          "score": 5.78505,
+          "score": 5.8848,
           "relevant": false
         },
         {
@@ -6718,7 +6718,7 @@
           "pages": [
             206
           ],
-          "score": 5.78505,
+          "score": 5.8848,
           "relevant": false
         },
         {
@@ -6727,7 +6727,7 @@
           "pages": [
             203
           ],
-          "score": 5.78505,
+          "score": 5.8848,
           "relevant": false
         },
         {
@@ -6736,7 +6736,7 @@
           "pages": [
             203
           ],
-          "score": 5.78505,
+          "score": 5.8848,
           "relevant": false
         }
       ]
@@ -6912,7 +6912,7 @@
             312,
             313
           ],
-          "score": 14.87855,
+          "score": 14.75751,
           "relevant": false
         },
         {
@@ -6921,7 +6921,7 @@
           "pages": [
             313
           ],
-          "score": 14.87855,
+          "score": 14.75751,
           "relevant": false
         },
         {
@@ -6931,7 +6931,7 @@
             313,
             314
           ],
-          "score": 14.87855,
+          "score": 14.75751,
           "relevant": true
         }
       ]
@@ -6954,7 +6954,7 @@
             312,
             313
           ],
-          "score": 14.87855,
+          "score": 14.75751,
           "relevant": false
         },
         {
@@ -6963,7 +6963,7 @@
           "pages": [
             313
           ],
-          "score": 14.87855,
+          "score": 14.75751,
           "relevant": false
         },
         {
@@ -6973,7 +6973,7 @@
             313,
             314
           ],
-          "score": 14.87855,
+          "score": 14.75751,
           "relevant": true
         },
         {
@@ -7159,7 +7159,7 @@
           "pages": [
             315
           ],
-          "score": 6.11227,
+          "score": 6.20791,
           "relevant": true
         }
       ]
@@ -7211,7 +7211,7 @@
           "pages": [
             315
           ],
-          "score": 6.11227,
+          "score": 6.20791,
           "relevant": true
         },
         {

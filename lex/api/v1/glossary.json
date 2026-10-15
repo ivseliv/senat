@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.1.0",
-  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
+  "contract_version": "1.2.0",
+  "data_revision": "sha256:7eeff56f5e6cc6309f116eaba81d72a69b1f9b12ac703f3019fb3316a3e6bd85",
   "resource": "concepts",
   "item": {
     "version": 1,
@@ -1872,29 +1872,37 @@
         "year": 1896,
         "file": "passages-1896.json",
         "passages": 277,
-        "enriched": 0,
-        "pages_known": 275
+        "enriched": 277,
+        "pages_known": 275,
+        "source_warnings": 56,
+        "enrichment_searchable": 221
       },
       {
         "year": 1897,
         "file": "passages-1897.json",
         "passages": 641,
         "enriched": 641,
-        "pages_known": 641
+        "pages_known": 641,
+        "source_warnings": 0,
+        "enrichment_searchable": 641
       },
       {
         "year": 1904,
         "file": "passages-1904.json",
         "passages": 636,
-        "enriched": 608,
-        "pages_known": 636
+        "enriched": 636,
+        "pages_known": 636,
+        "source_warnings": 0,
+        "enrichment_searchable": 636
       },
       {
         "year": 1905,
         "file": "passages-1905.json",
         "passages": 598,
-        "enriched": 584,
-        "pages_known": 598
+        "enriched": 598,
+        "pages_known": 598,
+        "source_warnings": 0,
+        "enrichment_searchable": 598
       }
     ]
   }

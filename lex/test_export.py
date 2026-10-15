@@ -74,6 +74,16 @@ class ExportTest(unittest.TestCase):
             self.assertEqual(item['bytes'], path.stat().st_size)
             self.assertEqual(item['sha256'], hashlib.sha256(path.read_bytes()).hexdigest())
 
+    def test_source_warnings_survive_json_and_csv(self):
+        warnings = {p['id']: p['source_warning'] for p in self.passages if p.get('source_warning')}
+        source = {p['id']: p['ai']['source_warning']
+                  for p in json.loads((ROOT/'data/passages-1896.json').read_text())['passages']
+                  if p.get('ai', {}).get('source_warning')}
+        self.assertEqual(warnings, source)
+        with (OUT/'passages.csv').open(encoding='utf-8', newline='') as f:
+            csv_warnings = {p['id']: p['source_warning'] for p in csv.DictReader(f) if p['source_warning']}
+        self.assertEqual(csv_warnings, source)
+
 
 if __name__ == '__main__':
     unittest.main()

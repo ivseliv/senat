@@ -7,10 +7,10 @@ id, sha256, summary, concepts, evidence. Сборка принимает тол�
 ответы с точной цитатой. Незавершённое обогащение не ломает обычный поиск.
 """
 import argparse
-import hashlib
 import json
 import re
 from pathlib import Path
+from passages import published_corpus, refresh_published_enrichment, validated_annotation
 
 ROOT = Path(__file__).resolve().parent
 PROMPT = ('Для каждого пассажа напиши 1–2 кратких предложения на современном юридическом языке '
@@ -21,19 +21,7 @@ PROMPT = ('Для каждого пассажа напиши 1–2 кратки�
 
 
 def corpus():
-    meta = json.loads((ROOT/'data/meta.json').read_text())['decisions']
-    ds = {d['id']:d for d in meta}
-    cache = {}
-    out = []
-    for f in sorted((ROOT/'data').glob('passages-*.json')):
-        for p in json.loads(f.read_text())['passages']:
-            d = ds[p['decision']]
-            if d['vol'] not in cache:
-                cache[d['vol']] = json.loads((ROOT/f'data/text-{d["vol"]}.json').read_text())
-            local = sum(x['vol']==d['vol'] and x['i']<d['i'] for x in meta)
-            text = cache[d['vol']][local][p['start']:p['end']]
-            out.append(dict(id=p['id'],sha256=p['sha256'],text=text,headnote=d['headnote']))
-    return out
+    return published_corpus(ROOT.parent)
 
 
 def evidence(text):
@@ -51,7 +39,18 @@ def main():
     export=sub.add_parser('export');export.add_argument('--out',type=Path,required=True);export.add_argument('--batch-size',type=int,default=30)
     imp=sub.add_parser('import');imp.add_argument('response',type=Path)
     review=sub.add_parser('review');review.add_argument('--start',type=int,default=0);review.add_argument('--count',type=int,default=100)
-    a=ap.parse_args();all_items=corpus()
+    sub.add_parser('refresh',help='проверить ответы и обновить опубликованные ai/индекс без OCR')
+    a=ap.parse_args()
+    if a.mode=='refresh':
+        # Ленивая загрузка исключает цикл: build импортирует passages, а не enrich.
+        from build import stems
+        report=refresh_published_enrichment(ROOT.parent,stems)
+        for volume in report['volumes']:
+            print(f'Обогащение {volume["year"]}: {volume["enriched"]}/{volume["passages"]}')
+        print(f'Актуальны {report["valid"]}; проигнорированы {report["stale"]} старых SHA и '
+              f'{report["unknown"]} отсутствующих id; изменено файлов {len(report["changed_files"])}')
+        return
+    all_items=corpus()
     records={}
     for f in sorted((ROOT/'enrichment').glob('*.json')):
         records.update(json.loads(f.read_text()).get('passages',{}))
@@ -71,11 +70,11 @@ def main():
     known={p['id']:p for p in all_items}
     imported=reply['passages']
     for pid,ann in imported.items():
+        if pid not in known:
+            raise ValueError(f'{pid}: отсутствующий id пассажа')
         p=known[pid]
-        if ann['sha256']!=p['sha256'] or not ann['evidence'] or ann['evidence'] not in p['text']:
+        if validated_annotation(pid,ann,p['text'],p['sha256']) is None:
             raise ValueError(f'{pid}: неверная контрольная сумма или цитата')
-        if not ann['summary'].strip() or not isinstance(ann['concepts'],list) or any(not isinstance(c,str) for c in ann['concepts']):
-            raise ValueError(f'{pid}: некорректная аннотация')
     records.update(imported)
     # Импорт нового тома не меняет происхождение аннотаций других томов.
     for year in sorted(set(pid.split('-')[0] for pid in imported)):
