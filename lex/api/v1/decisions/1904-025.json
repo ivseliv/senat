@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-025",
@@ -45,6 +45,86 @@
       "1904-9372a66da69b",
       "1904-b9084c2e8e7f",
       "1904-0acf2410b028"
+    ],
+    "precedents": [
+      {
+        "id": "1904-025:1892:41:2196",
+        "source_id": "1904-025",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4af003de7c71f3f7456f9018f0b578697f71339f07939bc5e6672ecfc9c16e07",
+        "year": 1892,
+        "start": 2146,
+        "end": 2208,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 41,
+        "department_start": 2154,
+        "department_end": 2169,
+        "citation_start": 2196,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеній общаго собранія департаментовъ Пр. Сената 1892 г. № 41",
+        "target_url": null,
+        "department_evidence": "общаго собранія",
+        "context_start": 1966,
+        "context_end": 2428,
+        "context_original": "бъ отмѣнѣ рѣшенія съѣзда по слѣдующимъ соображеніямъ: Хотя спорный участокъ составляетъ крестьянскій надѣлъ, къ которому причастны отвѣтчики, но, въ силу 166 ст. полож. о выкупѣ и рѣшеній общаго собранія департаментовъ Пр. Сената 1892 г. № 41 и 1895 г. № 45, домохозяинъ, какъ распорядитель хозяйства, можетъ избрать тотъ или другой способъ пользованія земельнымъ надѣломъ, не нуждаясь въ согласіи младшихъ членовъ семьи; а потому, сказано въ этой же статьѣ, что",
+        "passage_id": "1904-025:1627-3353",
+        "pages": [
+          60
+        ],
+        "sources": [
+          {
+            "page": 60,
+            "page_method": "header",
+            "file": "p0031_L.txt",
+            "start": 1627,
+            "end": 3262
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-025?mode=precedent&ref=1904-025%3A1892%3A41%3A2196&at=2146&end=2208",
+        "scan_available": true
+      },
+      {
+        "id": "1904-025:1895:45:2211",
+        "source_id": "1904-025",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4af003de7c71f3f7456f9018f0b578697f71339f07939bc5e6672ecfc9c16e07",
+        "year": 1895,
+        "start": 2146,
+        "end": 2223,
+        "department": "Общее собрание",
+        "association": "list",
+        "number": 45,
+        "department_start": 2154,
+        "department_end": 2169,
+        "citation_start": 2211,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеній общаго собранія департаментовъ Пр. Сената 1892 г. № 41 и 1895 г. № 45",
+        "target_url": null,
+        "department_evidence": "общаго собранія",
+        "context_start": 1966,
+        "context_end": 2443,
+        "context_original": "бъ отмѣнѣ рѣшенія съѣзда по слѣдующимъ соображеніямъ: Хотя спорный участокъ составляетъ крестьянскій надѣлъ, къ которому причастны отвѣтчики, но, въ силу 166 ст. полож. о выкупѣ и рѣшеній общаго собранія департаментовъ Пр. Сената 1892 г. № 41 и 1895 г. № 45, домохозяинъ, какъ распорядитель хозяйства, можетъ избрать тотъ или другой способъ пользованія земельнымъ надѣломъ, не нуждаясь въ согласіи младшихъ членовъ семьи; а потому, сказано въ этой же статьѣ, что, въ случаѣ зак",
+        "passage_id": "1904-025:1627-3353",
+        "pages": [
+          60
+        ],
+        "sources": [
+          {
+            "page": 60,
+            "page_method": "header",
+            "file": "p0031_L.txt",
+            "start": 1627,
+            "end": 3262
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-025?mode=precedent&ref=1904-025%3A1895%3A45%3A2211&at=2146&end=2223",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-025",
     "scan_pages": [

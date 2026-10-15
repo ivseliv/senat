@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-060",
@@ -79,6 +79,476 @@
       "1904-ed638a32415a",
       "1904-969034f4249a",
       "1904-bd235405688b"
+    ],
+    "precedents": [
+      {
+        "id": "1904-060:1875:968:1396",
+        "source_id": "1904-060",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8cd7686db11e31857da400962f1b7769f803d8b4f6a21fc692c6f381cdf06618",
+        "year": 1875,
+        "start": 1391,
+        "end": 1409,
+        "department": null,
+        "association": null,
+        "number": 968,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1396,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1875 г. № 968",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1211,
+        "context_end": 1629,
+        "context_original": "имѣютъ тѣ законоположенія, которыя содержатся въ сводѣ законовъ общихъ и въ оффиціальныхъ изданіяхъ законовъ мѣстныхъ, а также въ собраніи узаконеній и распоряженій правительства (рѣш. 1875 г. № 968, 1877 г. № 56, 1889 г. № 7 и друг.). Законоположенія эти, исходятъ-ли они отъ верховной власти, или отъ учрежденій и лицъ, на изданіе ихъ уполномоченныхъ (рѣш. 1879 г. № 300, 1882 г. № 156, 157 и мн. др.), какъ обнародо",
+        "passage_id": "1904-060:0-1446",
+        "pages": [
+          168
+        ],
+        "sources": [
+          {
+            "page": 168,
+            "page_method": "header",
+            "file": "p0085_L.txt",
+            "start": 1238,
+            "end": 2899
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060?mode=precedent&ref=1904-060%3A1875%3A968%3A1396&at=1391&end=1409",
+        "scan_available": true
+      },
+      {
+        "id": "1904-060:1877:56:1411",
+        "source_id": "1904-060",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8cd7686db11e31857da400962f1b7769f803d8b4f6a21fc692c6f381cdf06618",
+        "year": 1877,
+        "start": 1391,
+        "end": 1423,
+        "department": null,
+        "association": null,
+        "number": 56,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1411,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1875 г. № 968, 1877 г. № 56",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1211,
+        "context_end": 1643,
+        "context_original": "имѣютъ тѣ законоположенія, которыя содержатся въ сводѣ законовъ общихъ и въ оффиціальныхъ изданіяхъ законовъ мѣстныхъ, а также въ собраніи узаконеній и распоряженій правительства (рѣш. 1875 г. № 968, 1877 г. № 56, 1889 г. № 7 и друг.). Законоположенія эти, исходятъ-ли они отъ верховной власти, или отъ учрежденій и лицъ, на изданіе ихъ уполномоченныхъ (рѣш. 1879 г. № 300, 1882 г. № 156, 157 и мн. др.), какъ обнародованныя во „все",
+        "passage_id": "1904-060:0-1446",
+        "pages": [
+          168
+        ],
+        "sources": [
+          {
+            "page": 168,
+            "page_method": "header",
+            "file": "p0085_L.txt",
+            "start": 1238,
+            "end": 2899
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060?mode=precedent&ref=1904-060%3A1877%3A56%3A1411&at=1391&end=1423",
+        "scan_available": true
+      },
+      {
+        "id": "1904-060:1889:7:1425",
+        "source_id": "1904-060",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8cd7686db11e31857da400962f1b7769f803d8b4f6a21fc692c6f381cdf06618",
+        "year": 1889,
+        "start": 1391,
+        "end": 1436,
+        "department": null,
+        "association": null,
+        "number": 7,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1425,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1875 г. № 968, 1877 г. № 56, 1889 г. № 7",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1211,
+        "context_end": 1656,
+        "context_original": "имѣютъ тѣ законоположенія, которыя содержатся въ сводѣ законовъ общихъ и въ оффиціальныхъ изданіяхъ законовъ мѣстныхъ, а также въ собраніи узаконеній и распоряженій правительства (рѣш. 1875 г. № 968, 1877 г. № 56, 1889 г. № 7 и друг.). Законоположенія эти, исходятъ-ли они отъ верховной власти, или отъ учрежденій и лицъ, на изданіе ихъ уполномоченныхъ (рѣш. 1879 г. № 300, 1882 г. № 156, 157 и мн. др.), какъ обнародованныя во „всеобщее извѣсті",
+        "passage_id": "1904-060:0-1446",
+        "pages": [
+          168
+        ],
+        "sources": [
+          {
+            "page": 168,
+            "page_method": "header",
+            "file": "p0085_L.txt",
+            "start": 1238,
+            "end": 2899
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060?mode=precedent&ref=1904-060%3A1889%3A7%3A1425&at=1391&end=1436",
+        "scan_available": true
+      },
+      {
+        "id": "1904-060:1879:300:1570",
+        "source_id": "1904-060",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8cd7686db11e31857da400962f1b7769f803d8b4f6a21fc692c6f381cdf06618",
+        "year": 1879,
+        "start": 1565,
+        "end": 1583,
+        "department": null,
+        "association": null,
+        "number": 300,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1570,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1879 г. № 300",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1385,
+        "context_end": 1803,
+        "context_original": "ства (рѣш. 1875 г. № 968, 1877 г. № 56, 1889 г. № 7 и друг.). Законоположенія эти, исходятъ-ли они отъ верховной власти, или отъ учрежденій и лицъ, на изданіе ихъ уполномоченныхъ (рѣш. 1879 г. № 300, 1882 г. № 156, 157 и мн. др.), какъ обнародованныя во „всеобщее извѣстіе“ установленнымъ въ законѣ порядкомъ (ст. 57 и 48 т. I ч. 1 законовъ основныхъ и указъ 1-го департамента Правительствующаго Сената собр. узак. 188",
+        "passage_id": "1904-060:1238-2899",
+        "pages": [
+          168
+        ],
+        "sources": [
+          {
+            "page": 168,
+            "page_method": "header",
+            "file": "p0085_L.txt",
+            "start": 1238,
+            "end": 2899
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060?mode=precedent&ref=1904-060%3A1879%3A300%3A1570&at=1565&end=1583",
+        "scan_available": true
+      },
+      {
+        "id": "1904-060:1882:156:1585",
+        "source_id": "1904-060",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8cd7686db11e31857da400962f1b7769f803d8b4f6a21fc692c6f381cdf06618",
+        "year": 1882,
+        "start": 1565,
+        "end": 1603,
+        "department": null,
+        "association": null,
+        "number": 156,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1585,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1879 г. № 300, 1882 г. № 156, 157",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1385,
+        "context_end": 1823,
+        "context_original": "ства (рѣш. 1875 г. № 968, 1877 г. № 56, 1889 г. № 7 и друг.). Законоположенія эти, исходятъ-ли они отъ верховной власти, или отъ учрежденій и лицъ, на изданіе ихъ уполномоченныхъ (рѣш. 1879 г. № 300, 1882 г. № 156, 157 и мн. др.), какъ обнародованныя во „всеобщее извѣстіе“ установленнымъ въ законѣ порядкомъ (ст. 57 и 48 т. I ч. 1 законовъ основныхъ и указъ 1-го департамента Правительствующаго Сената собр. узак. 1885 г. № 18 ст. 165), ",
+        "passage_id": "1904-060:1238-2899",
+        "pages": [
+          168
+        ],
+        "sources": [
+          {
+            "page": 168,
+            "page_method": "header",
+            "file": "p0085_L.txt",
+            "start": 1238,
+            "end": 2899
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060?mode=precedent&ref=1904-060%3A1882%3A156%3A1585&at=1565&end=1603",
+        "scan_available": true
+      },
+      {
+        "id": "1904-060:1882:157:1585",
+        "source_id": "1904-060",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8cd7686db11e31857da400962f1b7769f803d8b4f6a21fc692c6f381cdf06618",
+        "year": 1882,
+        "start": 1565,
+        "end": 1603,
+        "department": null,
+        "association": null,
+        "number": 157,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1585,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1879 г. № 300, 1882 г. № 156, 157",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1385,
+        "context_end": 1823,
+        "context_original": "ства (рѣш. 1875 г. № 968, 1877 г. № 56, 1889 г. № 7 и друг.). Законоположенія эти, исходятъ-ли они отъ верховной власти, или отъ учрежденій и лицъ, на изданіе ихъ уполномоченныхъ (рѣш. 1879 г. № 300, 1882 г. № 156, 157 и мн. др.), какъ обнародованныя во „всеобщее извѣстіе“ установленнымъ въ законѣ порядкомъ (ст. 57 и 48 т. I ч. 1 законовъ основныхъ и указъ 1-го департамента Правительствующаго Сената собр. узак. 1885 г. № 18 ст. 165), ",
+        "passage_id": "1904-060:1238-2899",
+        "pages": [
+          168
+        ],
+        "sources": [
+          {
+            "page": 168,
+            "page_method": "header",
+            "file": "p0085_L.txt",
+            "start": 1238,
+            "end": 2899
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060?mode=precedent&ref=1904-060%3A1882%3A157%3A1585&at=1565&end=1603",
+        "scan_available": true
+      },
+      {
+        "id": "1904-060:1877:56:2418",
+        "source_id": "1904-060",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8cd7686db11e31857da400962f1b7769f803d8b4f6a21fc692c6f381cdf06618",
+        "year": 1877,
+        "start": 2413,
+        "end": 2430,
+        "department": null,
+        "association": null,
+        "number": 56,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2418,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1877 г. № 56",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2233,
+        "context_end": 2650,
+        "context_original": "Сенатомъ, лишь при слѣдующихъ условіяхъ: если законоположенія эти помѣщены въ полномъ собраніи законовъ, то стороны, на нихъ ссылающіяся, обязаны указать, гдѣ они тамъ напечатаны (рѣш. 1877 г. № 56), а если они и въ это собраніе не вошли—представить точный ихъ списокъ (рѣш. 1875 г. № 968, 1889 г. № 7). Къ числу законнодѣйствующихъ правилъ относятся также и тарифныя постановленія (ст. 68 общ. уст. росс. жел. дор.),",
+        "passage_id": "1904-060:1238-2899",
+        "pages": [
+          168
+        ],
+        "sources": [
+          {
+            "page": 168,
+            "page_method": "header",
+            "file": "p0085_L.txt",
+            "start": 1238,
+            "end": 2899
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060?mode=precedent&ref=1904-060%3A1877%3A56%3A2418&at=2413&end=2430",
+        "scan_available": true
+      },
+      {
+        "id": "1904-060:1875:968:2508",
+        "source_id": "1904-060",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8cd7686db11e31857da400962f1b7769f803d8b4f6a21fc692c6f381cdf06618",
+        "year": 1875,
+        "start": 2503,
+        "end": 2521,
+        "department": null,
+        "association": null,
+        "number": 968,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2508,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1875 г. № 968",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2323,
+        "context_end": 2741,
+        "context_original": "аніи законовъ, то стороны, на нихъ ссылающіяся, обязаны указать, гдѣ они тамъ напечатаны (рѣш. 1877 г. № 56), а если они и въ это собраніе не вошли—представить точный ихъ списокъ (рѣш. 1875 г. № 968, 1889 г. № 7). Къ числу законнодѣйствующихъ правилъ относятся также и тарифныя постановленія (ст. 68 общ. уст. росс. жел. дор.), издаваемыя уполномоченными на то тарифными учрежденіями, а также и распоряженія другихъ вл",
+        "passage_id": "1904-060:1238-2899",
+        "pages": [
+          168
+        ],
+        "sources": [
+          {
+            "page": 168,
+            "page_method": "header",
+            "file": "p0085_L.txt",
+            "start": 1238,
+            "end": 2899
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060?mode=precedent&ref=1904-060%3A1875%3A968%3A2508&at=2503&end=2521",
+        "scan_available": true
+      },
+      {
+        "id": "1904-060:1889:7:2523",
+        "source_id": "1904-060",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8cd7686db11e31857da400962f1b7769f803d8b4f6a21fc692c6f381cdf06618",
+        "year": 1889,
+        "start": 2503,
+        "end": 2534,
+        "department": null,
+        "association": null,
+        "number": 7,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2523,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1875 г. № 968, 1889 г. № 7",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2323,
+        "context_end": 2754,
+        "context_original": "аніи законовъ, то стороны, на нихъ ссылающіяся, обязаны указать, гдѣ они тамъ напечатаны (рѣш. 1877 г. № 56), а если они и въ это собраніе не вошли—представить точный ихъ списокъ (рѣш. 1875 г. № 968, 1889 г. № 7). Къ числу законнодѣйствующихъ правилъ относятся также и тарифныя постановленія (ст. 68 общ. уст. росс. жел. дор.), издаваемыя уполномоченными на то тарифными учрежденіями, а также и распоряженія другихъ властей (минист",
+        "passage_id": "1904-060:1238-2899",
+        "pages": [
+          168
+        ],
+        "sources": [
+          {
+            "page": 168,
+            "page_method": "header",
+            "file": "p0085_L.txt",
+            "start": 1238,
+            "end": 2899
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060?mode=precedent&ref=1904-060%3A1889%3A7%3A2523&at=2503&end=2534",
+        "scan_available": true
+      },
+      {
+        "id": "1904-060:1891:79:3497",
+        "source_id": "1904-060",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8cd7686db11e31857da400962f1b7769f803d8b4f6a21fc692c6f381cdf06618",
+        "year": 1891,
+        "start": 3492,
+        "end": 3509,
+        "department": null,
+        "association": null,
+        "number": 79,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3497,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1891 г. № 79",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3312,
+        "context_end": 3729,
+        "context_original": "аконеній, ибо опубликованіе въ немъ тарифовъ и иныхъ распоряженій неравносильно обнародованію ихъ во всеобщее извѣстіе. На это имѣлъ уже случай указать и Правительствующій Сенатъ (рѣш. 1891 г. № 79), не принявшій къ своему обсужденію ссылку желѣзной дороги на „правила употребленія накладной и ея дубликата\", составленныя министромъ путей сообщенія въ силу предоставленнаго ему ст. 57 общ. уст. росс. желѣзныхъ дорогъ",
+        "passage_id": "1904-060:2633-4297",
+        "pages": [
+          169
+        ],
+        "sources": [
+          {
+            "page": 169,
+            "page_method": "header",
+            "file": "p0085_R.txt",
+            "start": 2981,
+            "end": 4297
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060?mode=precedent&ref=1904-060%3A1891%3A79%3A3497&at=3492&end=3509",
+        "scan_available": true
+      },
+      {
+        "id": "1904-060:1903:128:3925",
+        "source_id": "1904-060",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8cd7686db11e31857da400962f1b7769f803d8b4f6a21fc692c6f381cdf06618",
+        "year": 1903,
+        "start": 3920,
+        "end": 3938,
+        "department": null,
+        "association": null,
+        "number": 128,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3925,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1903 г. № 128",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3740,
+        "context_end": 4158,
+        "context_original": "убликованныя въ сборникѣ тарифовъ,—на томъ основаніи, что правила эти въ собраніи узаконеній не обнародованы и къ дѣлу не представлены. Въ другомъ случаѣ Правительствующій Сенатъ (рѣш. 1903 г. № 128) оставилъ безъ провѣрки ссылку желѣзной дороги на 6 прим. къ § IV списка высшихъ размѣровъ дополнительныхъ сборовъ, такъ какъ это примѣчаніе не содержится въ указанномъ спискѣ, какъ онъ обнародованъ въ собр. узак., а со",
+        "passage_id": "1904-060:2633-4297",
+        "pages": [
+          169
+        ],
+        "sources": [
+          {
+            "page": 169,
+            "page_method": "header",
+            "file": "p0085_R.txt",
+            "start": 2981,
+            "end": 4297
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060?mode=precedent&ref=1904-060%3A1903%3A128%3A3925&at=3920&end=3938",
+        "scan_available": true
+      },
+      {
+        "id": "1904-060:1889:106:6931",
+        "source_id": "1904-060",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8cd7686db11e31857da400962f1b7769f803d8b4f6a21fc692c6f381cdf06618",
+        "year": 1889,
+        "start": 6926,
+        "end": 6944,
+        "department": null,
+        "association": null,
+        "number": 106,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6931,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1889 г. № 106",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 6746,
+        "context_end": 7164,
+        "context_original": "ылъ, обязана представить „точный онаго списокъ“. Тарифныя постановленія, какъ правила законнодѣйствующія (ст. 68 уст. жел. дор.), подлежатъ примѣненію и истолкованію, какъ законъ (рѣш. 1889 г. № 106), и потому должны быть представляемы въ томъ видѣ, какъ они изданы. Подъ словомъ „тарифъ“ разумѣются взимаемыя на желѣзныхъ дорогахъ провозныя платы, дополнительныя и другія сборы, а равно правила примѣненія упомянутыхъ",
+        "passage_id": "1904-060:5736-7467",
+        "pages": [
+          170
+        ],
+        "sources": [
+          {
+            "page": 170,
+            "page_method": "header",
+            "file": "p0086_L.txt",
+            "start": 5983,
+            "end": 7467
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060?mode=precedent&ref=1904-060%3A1889%3A106%3A6931&at=6926&end=6944",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-060",
     "scan_pages": [

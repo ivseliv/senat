@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-097",
@@ -55,6 +55,125 @@
       "1904-6eb7b3baea7d",
       "1904-94359fde3813",
       "1904-0aad944eed6d"
+    ],
+    "precedents": [
+      {
+        "id": "1904-097:1867:384:6954",
+        "source_id": "1904-097",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c121986bd3c59b1cb7a8fedba81e5fd4c98eb083e61865321042ff71526b2ad5",
+        "year": 1867,
+        "start": 6894,
+        "end": 6969,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 384,
+        "department_start": 6894,
+        "department_end": 6933,
+        "citation_start": 6954,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "гражданскаго кассаціоннаго департамента; такъ, въ рѣшеніяхъ 1867 года № 384",
+        "target_url": null,
+        "department_evidence": "гражданскаго кассаціоннаго департамента",
+        "context_start": 6714,
+        "context_end": 7189,
+        "context_original": "реченіи законъ придаетъ значеніе лишь настолько, насколько оно соотвѣтствуетъ фактическому отношенію наслѣдника къ наслѣдственному имуществу. Изложенное подтверждается и практикой гражданскаго кассаціоннаго департамента; такъ, въ рѣшеніяхъ 1867 года № 384 и 1877 года № 24 Правительствующій Сенатъ призналъ недѣйствительнымъ отреченіе, сдѣланное послѣ фактическаго принятія наслѣдника, а въ рѣшеніи 1868 года № 552 призналъ недѣйствительнымъ отреченіе, предшествовавшее факти",
+        "passage_id": "1904-097:5904-8028",
+        "pages": [
+          271
+        ],
+        "sources": [
+          {
+            "page": 271,
+            "page_method": "header",
+            "file": "p0136_R.txt",
+            "start": 5904,
+            "end": 8028
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-097?mode=precedent&ref=1904-097%3A1867%3A384%3A6954&at=6894&end=6969",
+        "scan_available": true
+      },
+      {
+        "id": "1904-097:1877:24:6972",
+        "source_id": "1904-097",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c121986bd3c59b1cb7a8fedba81e5fd4c98eb083e61865321042ff71526b2ad5",
+        "year": 1877,
+        "start": 6894,
+        "end": 6986,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 24,
+        "department_start": 6894,
+        "department_end": 6933,
+        "citation_start": 6972,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "гражданскаго кассаціоннаго департамента; такъ, въ рѣшеніяхъ 1867 года № 384 и 1877 года № 24",
+        "target_url": null,
+        "department_evidence": "гражданскаго кассаціоннаго департамента",
+        "context_start": 6714,
+        "context_end": 7206,
+        "context_original": "реченіи законъ придаетъ значеніе лишь настолько, насколько оно соотвѣтствуетъ фактическому отношенію наслѣдника къ наслѣдственному имуществу. Изложенное подтверждается и практикой гражданскаго кассаціоннаго департамента; такъ, въ рѣшеніяхъ 1867 года № 384 и 1877 года № 24 Правительствующій Сенатъ призналъ недѣйствительнымъ отреченіе, сдѣланное послѣ фактическаго принятія наслѣдника, а въ рѣшеніи 1868 года № 552 призналъ недѣйствительнымъ отреченіе, предшествовавшее фактическому осуществл",
+        "passage_id": "1904-097:5904-8028",
+        "pages": [
+          271
+        ],
+        "sources": [
+          {
+            "page": 271,
+            "page_method": "header",
+            "file": "p0136_R.txt",
+            "start": 5904,
+            "end": 8028
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-097?mode=precedent&ref=1904-097%3A1877%3A24%3A6972&at=6894&end=6986",
+        "scan_available": true
+      },
+      {
+        "id": "1904-097:1868:552:7113",
+        "source_id": "1904-097",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c121986bd3c59b1cb7a8fedba81e5fd4c98eb083e61865321042ff71526b2ad5",
+        "year": 1868,
+        "start": 7105,
+        "end": 7128,
+        "department": null,
+        "association": null,
+        "number": 552,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7113,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1868 года № 552",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 6925,
+        "context_end": 7348,
+        "context_original": "ртамента; такъ, въ рѣшеніяхъ 1867 года № 384 и 1877 года № 24 Правительствующій Сенатъ призналъ недѣйствительнымъ отреченіе, сдѣланное послѣ фактическаго принятія наслѣдника, а въ рѣшеніи 1868 года № 552 призналъ недѣйствительнымъ отреченіе, предшествовавшее фактическому осуществленію наслѣдникомъ наслѣдственныхъ правъ. Если, такимъ образомъ, значеніе поданнаго въ судъ заявленія объ отреченіи зависитъ исключительно отъ ",
+        "passage_id": "1904-097:5904-8028",
+        "pages": [
+          271
+        ],
+        "sources": [
+          {
+            "page": 271,
+            "page_method": "header",
+            "file": "p0136_R.txt",
+            "start": 5904,
+            "end": 8028
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-097?mode=precedent&ref=1904-097%3A1868%3A552%3A7113&at=7105&end=7128",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-097",
     "scan_pages": [

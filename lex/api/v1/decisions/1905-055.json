@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-055",
@@ -66,6 +66,125 @@
       "1905-7e7dcda29627",
       "1905-b7bc7f795ded",
       "1905-156596843e9e"
+    ],
+    "precedents": [
+      {
+        "id": "1905-055:1879:236:6668",
+        "source_id": "1905-055",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "b19f865ddd7c0f71d71196d3c03d6f003d1a1c07e2e47a4e6ae9b6e997aef8e1",
+        "year": 1879,
+        "start": 6660,
+        "end": 6681,
+        "department": null,
+        "association": null,
+        "number": 236,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6668,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніе 1879 г. № 236",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 6480,
+        "context_end": 6901,
+        "context_original": "паніи—съ другой, который вытекаетъ изъ товарищескихъ отношеній, предусмотрѣнныхъ законами о товариществѣ или уставомъ компаніи, долженъ быть признанъ споромъ о правѣ гражданскомъ (рѣшеніе 1879 г. № 236). Невозможно допустить, чтобы товарищъ (или соучастникъ товарищества) былъ обязанъ подчиняться противорѣчащимъ уставу постановленіямъ общаго собранія и точно также невозможно допустить, чтобы разрѣшеніе возбужденнаго им",
+        "passage_id": "1905-055:6105-8059",
+        "pages": [
+          152
+        ],
+        "sources": [
+          {
+            "page": 152,
+            "page_method": "header",
+            "file": "p0077_L.txt",
+            "start": 6190,
+            "end": 8059
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-055?mode=precedent&ref=1905-055%3A1879%3A236%3A6668&at=6660&end=6681",
+        "scan_available": true
+      },
+      {
+        "id": "1905-055:1898:59:7414",
+        "source_id": "1905-055",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "b19f865ddd7c0f71d71196d3c03d6f003d1a1c07e2e47a4e6ae9b6e997aef8e1",
+        "year": 1898,
+        "start": 7406,
+        "end": 7426,
+        "department": null,
+        "association": null,
+        "number": 59,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7414,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніе 1898 г. № 59",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7226,
+        "context_end": 7646,
+        "context_original": "зраженія, противозаконность тѣхъ дѣйствій, и отъ суда будетъ зависѣть установить, согласуется или нѣтъ оспоренное постановленіе общаго собранія съ постановленіями устава общества (рѣшеніе 1898 г. № 59). Подобныя же указанія даны и въ рѣшеніи 1895 г. № 6. Согласно этимъ разъясненіямъ, слѣдуетъ признать, что настоящій искъ Балкашина, имѣющій своимъ предметомъ требованіе о признаніи недѣйствительными постановленій общаг",
+        "passage_id": "1905-055:6105-8059",
+        "pages": [
+          152
+        ],
+        "sources": [
+          {
+            "page": 152,
+            "page_method": "header",
+            "file": "p0077_L.txt",
+            "start": 6190,
+            "end": 8059
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-055?mode=precedent&ref=1905-055%3A1898%3A59%3A7414&at=7406&end=7426",
+        "scan_available": true
+      },
+      {
+        "id": "1905-055:1895:6:7468",
+        "source_id": "1905-055",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "b19f865ddd7c0f71d71196d3c03d6f003d1a1c07e2e47a4e6ae9b6e997aef8e1",
+        "year": 1895,
+        "start": 7460,
+        "end": 7479,
+        "department": null,
+        "association": null,
+        "number": 6,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7468,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1895 г. № 6",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7280,
+        "context_end": 7699,
+        "context_original": "будетъ зависѣть установить, согласуется или нѣтъ оспоренное постановленіе общаго собранія съ постановленіями устава общества (рѣшеніе 1898 г. № 59). Подобныя же указанія даны и въ рѣшеніи 1895 г. № 6. Согласно этимъ разъясненіямъ, слѣдуетъ признать, что настоящій искъ Балкашина, имѣющій своимъ предметомъ требованіе о признаніи недѣйствительными постановленій общаго собранія С.-Петербургскаго общества страхованій, ка",
+        "passage_id": "1905-055:6105-8059",
+        "pages": [
+          152
+        ],
+        "sources": [
+          {
+            "page": 152,
+            "page_method": "header",
+            "file": "p0077_L.txt",
+            "start": 6190,
+            "end": 8059
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-055?mode=precedent&ref=1905-055%3A1895%3A6%3A7468&at=7460&end=7479",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-055",
     "scan_pages": [

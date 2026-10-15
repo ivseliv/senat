@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-057",
@@ -52,6 +52,203 @@
     ],
     "participant_ids": [
       "1905-b571564f4f57"
+    ],
+    "precedents": [
+      {
+        "id": "1905-057:1893:62:2386",
+        "source_id": "1905-057",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "0d1891fee108022da1ffdd2aea954f3ec0a1565b13b7d07a127701e7fdbeedee",
+        "year": 1893,
+        "start": 2378,
+        "end": 2398,
+        "department": null,
+        "association": null,
+        "number": 62,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2386,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1893 г. № 62",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2198,
+        "context_end": 2618,
+        "context_original": "ій, на которыхъ основана эта статья, выраженное въ ней правило установлено для устраненія замедленія въ ходѣ дѣлъ. Въ виду этихъ указаній, Правительствующій Сенатъ въ руководящемъ рѣшеніи 1893 г. № 62 призналъ, что „отступленіе отъ порядка, указаннаго въ 772 ст. уст. гр. суд., можетъ быть оправдано въ каждомъ отдѣльномъ случаѣ или требованіями закона, когда онъ устанавливаетъ необходимость непремѣннаго участія въ раз",
+        "passage_id": "1905-057:1330-3110",
+        "pages": [
+          156
+        ],
+        "sources": [
+          {
+            "page": 156,
+            "page_method": "header",
+            "file": "p0079_L.txt",
+            "start": 2185,
+            "end": 3110
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-057?mode=precedent&ref=1905-057%3A1893%3A62%3A2386&at=2378&end=2398",
+        "scan_available": true
+      },
+      {
+        "id": "1905-057:1887:36:3957",
+        "source_id": "1905-057",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "0d1891fee108022da1ffdd2aea954f3ec0a1565b13b7d07a127701e7fdbeedee",
+        "year": 1887,
+        "start": 3934,
+        "end": 3969,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 36,
+        "department_start": 3939,
+        "department_end": 3956,
+        "citation_start": 3957,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гражд. касс. д-та 1887 г. № 36",
+        "target_url": null,
+        "department_evidence": "гражд. касс. д-та",
+        "context_start": 3754,
+        "context_end": 4189,
+        "context_original": "шеніи должны руководствоваться гминные суды, но ни эти особыя правила, ни эта инструкція понынѣ не изданы. Поэтому, какъ неоднократно было разъясняемо Правительствующимъ Сенатомъ (рѣш. гражд. касс. д-та 1887 г. № 36, 1897 г. № 74, 1903 г. № 5 и друг.), вопросы объ удободелимости подлежащей раздѣлу крестьянской усадьбы, о раздѣленіи ея на участки, продажѣ ея, въ видахъ раздѣла, съ публичнаго торга или о присужденіи ея въ полномъ сос",
+        "passage_id": "1905-057:2881-4920",
+        "pages": [
+          156
+        ],
+        "sources": [
+          {
+            "page": 156,
+            "page_method": "header",
+            "file": "p0079_L.txt",
+            "start": 2881,
+            "end": 4920
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-057?mode=precedent&ref=1905-057%3A1887%3A36%3A3957&at=3934&end=3969",
+        "scan_available": true
+      },
+      {
+        "id": "1905-057:1897:74:3971",
+        "source_id": "1905-057",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "0d1891fee108022da1ffdd2aea954f3ec0a1565b13b7d07a127701e7fdbeedee",
+        "year": 1897,
+        "start": 3934,
+        "end": 3983,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 74,
+        "department_start": 3939,
+        "department_end": 3956,
+        "citation_start": 3971,
+        "status": "linked",
+        "target_id": "1897-074",
+        "quote_original": "рѣш. гражд. касс. д-та 1887 г. № 36, 1897 г. № 74",
+        "target_url": "https://ivseliv.github.io/senat/lex/#/d/1897-074",
+        "department_evidence": "гражд. касс. д-та",
+        "context_start": 3754,
+        "context_end": 4203,
+        "context_original": "шеніи должны руководствоваться гминные суды, но ни эти особыя правила, ни эта инструкція понынѣ не изданы. Поэтому, какъ неоднократно было разъясняемо Правительствующимъ Сенатомъ (рѣш. гражд. касс. д-та 1887 г. № 36, 1897 г. № 74, 1903 г. № 5 и друг.), вопросы объ удободелимости подлежащей раздѣлу крестьянской усадьбы, о раздѣленіи ея на участки, продажѣ ея, въ видахъ раздѣла, съ публичнаго торга или о присужденіи ея въ полномъ составѣ въ пользу",
+        "passage_id": "1905-057:2881-4920",
+        "pages": [
+          156
+        ],
+        "sources": [
+          {
+            "page": 156,
+            "page_method": "header",
+            "file": "p0079_L.txt",
+            "start": 2881,
+            "end": 4920
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-057?mode=precedent&ref=1905-057%3A1897%3A74%3A3971&at=3934&end=3983",
+        "scan_available": true
+      },
+      {
+        "id": "1905-057:1903:5:3985",
+        "source_id": "1905-057",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "0d1891fee108022da1ffdd2aea954f3ec0a1565b13b7d07a127701e7fdbeedee",
+        "year": 1903,
+        "start": 3934,
+        "end": 3996,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 5,
+        "department_start": 3939,
+        "department_end": 3956,
+        "citation_start": 3985,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гражд. касс. д-та 1887 г. № 36, 1897 г. № 74, 1903 г. № 5",
+        "target_url": null,
+        "department_evidence": "гражд. касс. д-та",
+        "context_start": 3754,
+        "context_end": 4216,
+        "context_original": "шеніи должны руководствоваться гминные суды, но ни эти особыя правила, ни эта инструкція понынѣ не изданы. Поэтому, какъ неоднократно было разъясняемо Правительствующимъ Сенатомъ (рѣш. гражд. касс. д-та 1887 г. № 36, 1897 г. № 74, 1903 г. № 5 и друг.), вопросы объ удободелимости подлежащей раздѣлу крестьянской усадьбы, о раздѣленіи ея на участки, продажѣ ея, въ видахъ раздѣла, съ публичнаго торга или о присужденіи ея въ полномъ составѣ въ пользу одного изъ н",
+        "passage_id": "1905-057:2881-4920",
+        "pages": [
+          156
+        ],
+        "sources": [
+          {
+            "page": 156,
+            "page_method": "header",
+            "file": "p0079_L.txt",
+            "start": 2881,
+            "end": 4920
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-057?mode=precedent&ref=1905-057%3A1903%3A5%3A3985&at=3934&end=3996",
+        "scan_available": true
+      },
+      {
+        "id": "1905-057:1880:216:6174",
+        "source_id": "1905-057",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "0d1891fee108022da1ffdd2aea954f3ec0a1565b13b7d07a127701e7fdbeedee",
+        "year": 1880,
+        "start": 6169,
+        "end": 6187,
+        "department": null,
+        "association": null,
+        "number": 216,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6174,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1880 г. № 216",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5989,
+        "context_end": 6407,
+        "context_original": "дованіямъ и возникающимъ отсюда раздѣламъ, дѣла сего рода, при отсутствіи письменныхъ сдѣлокъ, должны быть рѣшаемы на основаніи мѣстныхъ обычаевъ, принятыхъ въ крестьянскомъ быту (рѣш. 1880 г. № 216), каковые обычаи опять-таки всего ближе извѣстны гминнымъ судамъ,—то становится яснымъ, что вызываемое строгимъ примѣненіемъ 772 ст. уст. гр. суд. совершенное устраненіе гминнаго суда отъ участія въ разрѣшеніи по сущест",
+        "passage_id": "1905-057:4659-6739",
+        "pages": [
+          157
+        ],
+        "sources": [
+          {
+            "page": 157,
+            "page_method": "header",
+            "file": "p0079_R.txt",
+            "start": 5153,
+            "end": 6739
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-057?mode=precedent&ref=1905-057%3A1880%3A216%3A6174&at=6169&end=6187",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-057",
     "scan_pages": [

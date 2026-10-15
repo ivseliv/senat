@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-035",
@@ -56,6 +56,47 @@
       "1904-ecd30111b673",
       "1904-0194b14168f7",
       "1904-aa9180b97358"
+    ],
+    "precedents": [
+      {
+        "id": "1904-035:1899:8:6597",
+        "source_id": "1904-035",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8de5023891cf92ff481f5dcf68547179f556f6a67f6d788664ed87e751ec2a86",
+        "year": 1899,
+        "start": 6572,
+        "end": 6611,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 8,
+        "department_start": 6582,
+        "department_end": 6596,
+        "citation_start": 6597,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "Рѣшеніемъ гр. касс. деп. 1899 г. за № 8",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 6392,
+        "context_end": 6831,
+        "context_original": "чета и предъявляемыхъ по оному къ опекуну требованій со стороны вышедшаго изъ подъ опеки подлежащимъ сиротскимъ судомъ. Это положеніе, однако, не можетъ быть признано правильнымъ. Рѣшеніемъ гр. касс. деп. 1899 г. за № 8, состоявшимся по иску, предъявленному (какъ и въ настоящемъ дѣлѣ) къ опекунамъ, назначеннымъ однимъ изъ волостныхъ судовъ Прибалт. губ. на основаніи волостн. суд. уст. 1889 г., уже признано слѣдующее: „послѣ прекращенія",
+        "passage_id": "1904-035:5536-7142",
+        "pages": [
+          93
+        ],
+        "sources": [
+          {
+            "page": 93,
+            "page_method": "header",
+            "file": "p0047_R.txt",
+            "start": 5738,
+            "end": 6848
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-035?mode=precedent&ref=1904-035%3A1899%3A8%3A6597&at=6572&end=6611",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-035",
     "scan_pages": [

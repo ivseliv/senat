@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "analytics",
   "item": {
     "by_year": {
@@ -614,7 +614,7 @@
         1896,
         42,
         2,
-        41
+        null
       ],
       [
         1887,
@@ -638,7 +638,7 @@
         1897,
         70,
         2,
-        118
+        null
       ],
       [
         1889,
@@ -894,6 +894,373 @@
       ]
     ],
     "words_median": 667,
-    "total_words": 303671
+    "total_words": 303671,
+    "cited_decisions": [
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1875,
+        "number": 178,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 2,
+        "mentions": 2
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1879,
+        "number": 347,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 2,
+        "mentions": 2
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1880,
+        "number": 33,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 2,
+        "mentions": 2
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1884,
+        "number": 59,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 2,
+        "mentions": 2
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1887,
+        "number": 52,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 2,
+        "mentions": 3
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1889,
+        "number": 129,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 2,
+        "mentions": 2
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1896,
+        "number": 125,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 2,
+        "mentions": 2
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1900,
+        "number": 42,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 2,
+        "mentions": 2
+      },
+      {
+        "department": "Общее собрание",
+        "year": 1888,
+        "number": 11,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 2,
+        "mentions": 2
+      },
+      {
+        "department": "Общее собрание",
+        "year": 1889,
+        "number": 20,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 2,
+        "mentions": 2
+      },
+      {
+        "department": "Общее собрание",
+        "year": 1890,
+        "number": 37,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 2,
+        "mentions": 2
+      },
+      {
+        "department": "Общее собрание",
+        "year": 1892,
+        "number": 41,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 2,
+        "mentions": 2
+      },
+      {
+        "department": "Общее собрание",
+        "year": 1903,
+        "number": 4,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 2,
+        "mentions": 2
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1867,
+        "number": 36,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1867,
+        "number": 144,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1867,
+        "number": 177,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1867,
+        "number": 384,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1868,
+        "number": 822,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1869,
+        "number": 15,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1869,
+        "number": 583,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1869,
+        "number": 1311,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1870,
+        "number": 334,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1870,
+        "number": 444,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1870,
+        "number": 848,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1871,
+        "number": 115,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1871,
+        "number": 378,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1871,
+        "number": 392,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1871,
+        "number": 432,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1871,
+        "number": 1241,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1872,
+        "number": 681,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1873,
+        "number": 717,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1873,
+        "number": 1239,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1873,
+        "number": 1347,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1874,
+        "number": 258,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1874,
+        "number": 585,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1874,
+        "number": 596,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1874,
+        "number": 612,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1874,
+        "number": 698,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1874,
+        "number": 822,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      },
+      {
+        "department": "Гражданский кассационный департамент",
+        "year": 1874,
+        "number": 848,
+        "target_id": null,
+        "status": "not_in_corpus",
+        "decisions": 1,
+        "mentions": 1
+      }
+    ],
+    "precedent_counts": {
+      "not_in_corpus": 244,
+      "department_unknown": 576,
+      "linked": 6
+    }
   }
 }

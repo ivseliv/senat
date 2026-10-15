@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-053",
@@ -48,6 +48,86 @@
       "1905-465fa7ee07f0",
       "1905-a1249710db40",
       "1905-481594e3f291"
+    ],
+    "precedents": [
+      {
+        "id": "1905-053:1880:174:3797",
+        "source_id": "1905-053",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "00e323f4864eb2180ee78d5837d502d0ce7e0dcfe8c7c8cd9646dc6aee02f329",
+        "year": 1880,
+        "start": 3775,
+        "end": 3810,
+        "department": null,
+        "association": null,
+        "number": 174,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3797,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. граж. касс. деп. 1880 г. № 174",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3595,
+        "context_end": 4030,
+        "context_original": "зак. о сост. изд. 1902 г., въ порядкѣ наслѣдованія имуществомъ крестьянамъ дозволяется руководствоваться мѣстными своими обычаями, при чемъ Правительствующимъ Сенатомъ разъяснено (рѣш. граж. касс. деп. 1880 г. № 174) что изъ сего не слѣдуетъ, конечно, чтобы всякое дѣло о наслѣдствѣ имуществомъ послѣ крестьянина могло быть разрѣшено не иначе, какъ на основаніи обычая. На основаніи 215 ст. уст. граж. суд., искъ о наслѣдствѣ и споръ н",
+        "passage_id": "1905-053:2643-4144",
+        "pages": [
+          145
+        ],
+        "sources": [
+          {
+            "page": 145,
+            "page_method": "header",
+            "file": "p0073_R.txt",
+            "start": 3595,
+            "end": 4144
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-053?mode=precedent&ref=1905-053%3A1880%3A174%3A3797&at=3775&end=3810",
+        "scan_available": true
+      },
+      {
+        "id": "1905-053:1885:131:4515",
+        "source_id": "1905-053",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "00e323f4864eb2180ee78d5837d502d0ce7e0dcfe8c7c8cd9646dc6aee02f329",
+        "year": 1885,
+        "start": 4493,
+        "end": 4528,
+        "department": null,
+        "association": null,
+        "number": 131,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4515,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. граж. касс. деп. 1885 г. № 131",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4313,
+        "context_end": 4748,
+        "context_original": "ѣсколькихъ мѣстахъ,— мѣстомъ послѣдняго жительства должно почитаться то мѣсто осѣдлости, гдѣ умершій имѣлъ пребываніе въ послѣднее время, если оно не было временное или случайное (рѣш. граж. касс. деп. 1885 г. № 131). Принимая, затѣмъ, во вниманіе, что такъ какъ изъ сопоставленія статей 678 и 685 (716 по изд. 1876 года) т. IX зак. о сост. изд. 1899 года вовсе нельзя заключить, чтобы крестьяне, имѣющіе осѣдлость не въ предѣлахъ свое",
+        "passage_id": "1905-053:3914-5388",
+        "pages": [
+          145
+        ],
+        "sources": [
+          {
+            "page": 145,
+            "page_method": "header",
+            "file": "p0073_R.txt",
+            "start": 3914,
+            "end": 5388
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-053?mode=precedent&ref=1905-053%3A1885%3A131%3A4515&at=4493&end=4528",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-053",
     "scan_pages": [

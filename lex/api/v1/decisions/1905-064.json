@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-064",
@@ -59,6 +59,47 @@
       "1905-2877ce7847a9",
       "1905-3943d4e292d7",
       "1905-2ce51a219817"
+    ],
+    "precedents": [
+      {
+        "id": "1905-064:1897:65:3096",
+        "source_id": "1905-064",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "54afc6166e3cfb6081fc4e14105dde690972c20b3fc678770ed87c91183f0a89",
+        "year": 1897,
+        "start": 3091,
+        "end": 3108,
+        "department": null,
+        "association": null,
+        "number": 65,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3096,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1897 г. № 65",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2911,
+        "context_end": 3328,
+        "context_original": "къ означенное рѣшеніе основано еще на другомъ, совершенно самостоятельномъ и при томъ правильномъ соображеніи, вполнѣ достаточномъ для того вывода, къ коему пришелъ окружный судъ (рѣш. 1897 г. № 65 и др.), а именно, что грузъ истца не представляется утраченнымъ, а слѣдовательно и требованіе за него стоимости его, какъ за утраченный, является лишеннымъ всякаго основанія. Придя къ такому заключенію, окружный судъ уж",
+        "passage_id": "1905-064:1584-3283",
+        "pages": [
+          175
+        ],
+        "sources": [
+          {
+            "page": 175,
+            "page_method": "header",
+            "file": "p0088_R.txt",
+            "start": 3059,
+            "end": 4670
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-064?mode=precedent&ref=1905-064%3A1897%3A65%3A3096&at=3091&end=3108",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-064",
     "scan_pages": [

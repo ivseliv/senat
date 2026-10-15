@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-063",
@@ -64,6 +64,242 @@
     ],
     "participant_ids": [
       "1897-2f4dbb567116"
+    ],
+    "precedents": [
+      {
+        "id": "1897-063:1884:59:1790",
+        "source_id": "1897-063",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "73fabd9497313a577f1c2bfcdc0d4faa572b01e3fc8470dd85f0cb6278fca148",
+        "year": 1884,
+        "start": 1765,
+        "end": 1805,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 59,
+        "department_start": 1775,
+        "department_end": 1789,
+        "citation_start": 1790,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніемъ гр. касс. д-та 1884 г. за № 59",
+        "target_url": null,
+        "department_evidence": "гр. касс. д-та",
+        "context_start": 1585,
+        "context_end": 2025,
+        "context_original": "ъ заключеніе товарища оберъ-прокурора и останавливаясь прежде всего на утвержденіи просителя, что годовая давность вовсе не распространяется на дѣла подобныя настоящему, такъ какъ рѣшеніемъ гр. касс. д-та 1884 г. за № 59 разъяснено, что годовой срокъ, указанный въ 683 ст. св. зак. гражд., установленъ лишь для исковъ, въ этой статьѣ предусмотрѣнныхъ, а именно по претензіямъ о вознагражденіи потерпѣвшихъ вредъ или убытокъ вслѣдствіе смерт",
+        "passage_id": "1897-063:1325-3021",
+        "pages": [
+          207
+        ],
+        "sources": [
+          {
+            "page": 207,
+            "page_method": "header",
+            "file": "p0114_R.txt",
+            "start": 1577,
+            "end": 3021
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-063?mode=precedent&ref=1897-063%3A1884%3A59%3A1790&at=1765&end=1805",
+        "scan_available": true
+      },
+      {
+        "id": "1897-063:1889:94:2648",
+        "source_id": "1897-063",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "73fabd9497313a577f1c2bfcdc0d4faa572b01e3fc8470dd85f0cb6278fca148",
+        "year": 1889,
+        "start": 2640,
+        "end": 2663,
+        "department": null,
+        "association": null,
+        "number": 94,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2648,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1889 г. за № 94",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2460,
+        "context_end": 2883,
+        "context_original": "ѣзнымъ дорогамъ исковъ о вознагражденіи за причиненный при эксплоатаціи ихъ личный или имущественный вредъ, этотъ же вопросъ, на основаніи разъясненія Правительствующаго Сената въ рѣшеніи 1889 г. за № 94 по дѣлу, начавшемуся по однородному иску, долженъ быть рѣшенъ утвердительно. Переходя затѣмъ къ доводу просителя, что годовая давность, опредѣленная въ 135 ст. уст. жел. дор., была прервана искомъ, предъявленнымъ Шахрае",
+        "passage_id": "1897-063:1325-3021",
+        "pages": [
+          207
+        ],
+        "sources": [
+          {
+            "page": 207,
+            "page_method": "header",
+            "file": "p0114_R.txt",
+            "start": 1577,
+            "end": 3021
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-063?mode=precedent&ref=1897-063%3A1889%3A94%3A2648&at=2640&end=2663",
+        "scan_available": true
+      },
+      {
+        "id": "1897-063:1877:64:3703",
+        "source_id": "1897-063",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "73fabd9497313a577f1c2bfcdc0d4faa572b01e3fc8470dd85f0cb6278fca148",
+        "year": 1877,
+        "start": 3677,
+        "end": 3715,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 64,
+        "department_start": 3677,
+        "department_end": 3691,
+        "citation_start": 3703,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "гр. касс. д-та въ рѣшеніи 1877 г. № 64",
+        "target_url": null,
+        "department_evidence": "гр. касс. д-та",
+        "context_start": 3497,
+        "context_end": 3935,
+        "context_original": "противъ означеннаго иска; въ 3-хъ) искъ былъ предъявленъ въ суммѣ свыше 500 р., и только по окончаніи дѣла въ общихъ судебныхъ мѣстахъ уменьшенъ въ цѣнѣ и, въ 4-хъ) по разъясненію гр. касс. д-та въ рѣшеніи 1877 г. № 64, давность прерывается искомъ, предъявленнымъ въ подлежащемъ мѣстѣ и къ подлежащему отвѣтчику, хотя бы рѣшеніе, постановленное по такому иску, и было затѣмъ отмѣнено на томъ основаніи, что въ немъ заключалось смѣшеніе ра",
+        "passage_id": "1897-063:2741-4336",
+        "pages": [
+          208
+        ],
+        "sources": [
+          {
+            "page": 208,
+            "page_method": "header",
+            "file": "p0115_L.txt",
+            "start": 3292,
+            "end": 4336
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-063?mode=precedent&ref=1897-063%3A1877%3A64%3A3703&at=3677&end=3715",
+        "scan_available": true
+      },
+      {
+        "id": "1897-063:1882:32:5048",
+        "source_id": "1897-063",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "73fabd9497313a577f1c2bfcdc0d4faa572b01e3fc8470dd85f0cb6278fca148",
+        "year": 1882,
+        "start": 5043,
+        "end": 5060,
+        "department": null,
+        "association": null,
+        "number": 32,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5048,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1882 г. № 32",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4863,
+        "context_end": 5280,
+        "context_original": "а потому искъ этотъ, по самому роду своему, не относился къ вѣдомству общихъ судебныхъ мѣстъ, а производство его подлежало прекращенію и помимо воли тяжущихся (ст. 584 п. 1; касс. рѣш. 1882 г. № 32). Хотя-же проситель въ настоящее время утверждаетъ, что искъ былъ предъявленъ въ суммѣ свыше 500 р., но это заявлено впервые лишь въ кассаціонной жалобѣ, и въ 4-хъ) искъ этотъ, вслѣдствіе соединенія его въ одномъ исково",
+        "passage_id": "1897-063:4090-5529",
+        "pages": [
+          208
+        ],
+        "sources": [
+          {
+            "page": 208,
+            "page_method": "header",
+            "file": "p0115_L.txt",
+            "start": 4090,
+            "end": 5529
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-063?mode=precedent&ref=1897-063%3A1882%3A32%3A5048&at=5043&end=5060",
+        "scan_available": true
+      },
+      {
+        "id": "1897-063:1877:64:5946",
+        "source_id": "1897-063",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "73fabd9497313a577f1c2bfcdc0d4faa572b01e3fc8470dd85f0cb6278fca148",
+        "year": 1877,
+        "start": 5938,
+        "end": 5958,
+        "department": null,
+        "association": null,
+        "number": 64,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5946,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніе 1877 г. № 64",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5758,
+        "context_end": 6178,
+        "context_original": "гъ ли онъ произвести такой перерывъ потому, что неправильно былъ соединенъ въ одномъ исковомъ прошеніи съ исками другихъ лицъ, а, слѣдовательно, и ссылка просителя на кассаціонное рѣшеніе 1877 г. № 64 не имѣетъ для рѣшенія сего дѣла никакого значенія. Наконецъ, послѣдній доводъ кассаціонной жалобы заключается въ томъ, что давность по настоящему дѣлу прервана сообщеніемъ правленію общества Либаво-Роменской желѣзной до",
+        "passage_id": "1897-063:5264-7066",
+        "pages": [
+          208
+        ],
+        "sources": [
+          {
+            "page": 208,
+            "page_method": "header",
+            "file": "p0115_L.txt",
+            "start": 5264,
+            "end": 6312
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-063?mode=precedent&ref=1897-063%3A1877%3A64%3A5946&at=5938&end=5958",
+        "scan_available": true
+      },
+      {
+        "id": "1897-063:1894:20:7519",
+        "source_id": "1897-063",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "73fabd9497313a577f1c2bfcdc0d4faa572b01e3fc8470dd85f0cb6278fca148",
+        "year": 1894,
+        "start": 7485,
+        "end": 7534,
+        "department": null,
+        "association": null,
+        "number": 20,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7519,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи Правительствующаго Сената 1894 г. за № 20",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7305,
+        "context_end": 7754,
+        "context_original": "ѣтчицы, въ которой онъ желаетъ получить причитающееся ему вознагражденіе, и что при заявленіи должны быть представлены: подтверждающіе претензію документы или копіи съ нихъ. Но въ рѣшеніи Правительствующаго Сената 1894 г. за № 20 разъяснено, что „существенными условіями, сохраняющими за заявленіемъ значеніе прерывающаго теченіе исковой давности, признаются лишь письменная форма и подача его указаннымъ въ законѣ органамъ желѣзнодорожнаго управлен",
+        "passage_id": "1897-063:6794-8109",
+        "pages": [
+          209
+        ],
+        "sources": [
+          {
+            "page": 209,
+            "page_method": "header",
+            "file": "p0115_R.txt",
+            "start": 6794,
+            "end": 8109
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-063?mode=precedent&ref=1897-063%3A1894%3A20%3A7519&at=7485&end=7534",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-063",
     "scan_pages": [

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-079",
@@ -64,6 +64,242 @@
     "participant_ids": [
       "1904-5c7d6b994ae6",
       "1904-a34303374040"
+    ],
+    "precedents": [
+      {
+        "id": "1904-079:1892:21:3088",
+        "source_id": "1904-079",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "08fcd44cff7ea3ea7eed314f7334cabb178c6fbfb5fe783fa4eea48fa37b2aed",
+        "year": 1892,
+        "start": 3080,
+        "end": 3102,
+        "department": null,
+        "association": null,
+        "number": 21,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3088,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1892 года № 21",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2900,
+        "context_end": 3322,
+        "context_original": "бстоятельство, что Казиміръ Жуковскій умеръ до укрѣпленія за нимъ купленнаго имущества, не имѣетъ, во-первыхъ, значенія въ силу 959 ст. уст. гр. суд. и разъясненія Прав. Сената въ рѣшеніи 1892 года № 21 и, во-вторыхъ, въ виду того, что укрѣпленіе имущества за Казиміромъ Жуковскимъ, несмотря на его смерть, должно было состояться для опредѣленія его правъ на это имущество, имѣющее значеніе для будущихъ его наслѣдниковъ; ",
+        "passage_id": "1904-079:2844-4481",
+        "pages": [
+          222
+        ],
+        "sources": [
+          {
+            "page": 222,
+            "page_method": "header",
+            "file": "p0112_L.txt",
+            "start": 2844,
+            "end": 3838
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-079?mode=precedent&ref=1904-079%3A1892%3A21%3A3088&at=3080&end=3102",
+        "scan_available": true
+      },
+      {
+        "id": "1904-079:1899:29:3489",
+        "source_id": "1904-079",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "08fcd44cff7ea3ea7eed314f7334cabb178c6fbfb5fe783fa4eea48fa37b2aed",
+        "year": 1899,
+        "start": 3484,
+        "end": 3501,
+        "department": null,
+        "association": null,
+        "number": 29,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3489,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1899 г. № 29",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3304,
+        "context_end": 3721,
+        "context_original": "его наслѣдниковъ; что же касается до свидѣтельства губернатора, то, имѣя въ виду, что таковое служитъ только удостовѣреніемъ правъ покупщика на покупку имущества въ здѣшнемъ краѣ (рѣш. 1899 г. № 29), разница въ нѣсколько десятинъ между свидѣтельствомъ и составомъ имущества не можетъ имѣть значенія, тѣмъ болѣе, что въ оспариваемомъ свидѣтельствѣ прямо разрѣшается Жуковскимъ покупка имущества Бурковскаго.—На рѣшеніе",
+        "passage_id": "1904-079:2844-4481",
+        "pages": [
+          222
+        ],
+        "sources": [
+          {
+            "page": 222,
+            "page_method": "header",
+            "file": "p0112_L.txt",
+            "start": 2844,
+            "end": 3838
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-079?mode=precedent&ref=1904-079%3A1899%3A29%3A3489&at=3484&end=3501",
+        "scan_available": true
+      },
+      {
+        "id": "1904-079:1896:42:5694",
+        "source_id": "1904-079",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "08fcd44cff7ea3ea7eed314f7334cabb178c6fbfb5fe783fa4eea48fa37b2aed",
+        "year": 1896,
+        "start": 5671,
+        "end": 5706,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 42,
+        "department_start": 5679,
+        "department_end": 5693,
+        "citation_start": 5694,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи гр. касс. деп. 1896 г. № 42",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 5491,
+        "context_end": 5926,
+        "context_original": "уже существующаго у покупщика съ момента самаго торга. Въ этомъ именно смыслѣ разъяснено значеніе судебныхъ опредѣленій объ укрѣпленіи имѣнія, проданнаго съ публичнаго торга, и въ рѣшеніи гр. касс. деп. 1896 г. № 42. При публичной продажѣ, говорится въ этомъ рѣшеніи, право собственности на купленное имѣніе пріобрѣтается самымъ фактомъ уплаты высшей предложенной на торгахъ цѣны, но для укрѣпленія этого права необходимо еще утвержден",
+        "passage_id": "1904-079:4246-5707",
+        "pages": [
+          223
+        ],
+        "sources": [
+          {
+            "page": 223,
+            "page_method": "header",
+            "file": "p0112_R.txt",
+            "start": 5470,
+            "end": 7150
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-079?mode=precedent&ref=1904-079%3A1896%3A42%3A5694&at=5671&end=5706",
+        "scan_available": true
+      },
+      {
+        "id": "1904-079:1896:42:6810",
+        "source_id": "1904-079",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "08fcd44cff7ea3ea7eed314f7334cabb178c6fbfb5fe783fa4eea48fa37b2aed",
+        "year": 1896,
+        "start": 6787,
+        "end": 6822,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 42,
+        "department_start": 6795,
+        "department_end": 6809,
+        "citation_start": 6810,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи гр. касс. деп. 1896 г. № 42",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 6607,
+        "context_end": 7042,
+        "context_original": "съ публичнаго торга недвижимое имущество покупателю еще не принадлежитъ на это имущество право собственности. Означенная 1509 ст. имѣетъ отношеніе, какъ было разъяснено въ томъ же рѣшеніи гр. касс. деп. 1896 г. № 42 и мн. др., исключительно къ продажѣ такого имущества и опредѣляетъ лишь моментъ, съ котораго покупщикъ пріобрѣтаетъ право на отчужденіе купленнаго имѣнія. Вообще отсутствіе права продажи само по себѣ еще не лишаетъ влад",
+        "passage_id": "1904-079:5470-7150",
+        "pages": [
+          223
+        ],
+        "sources": [
+          {
+            "page": 223,
+            "page_method": "header",
+            "file": "p0112_R.txt",
+            "start": 5470,
+            "end": 7150
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-079?mode=precedent&ref=1904-079%3A1896%3A42%3A6810&at=6787&end=6822",
+        "scan_available": true
+      },
+      {
+        "id": "1904-079:1885:112:9702",
+        "source_id": "1904-079",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "08fcd44cff7ea3ea7eed314f7334cabb178c6fbfb5fe783fa4eea48fa37b2aed",
+        "year": 1885,
+        "start": 9674,
+        "end": 9717,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 112,
+        "department_start": 9682,
+        "department_end": 9701,
+        "citation_start": 9702,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи гражд. кассац. деп. 1885 года № 112",
+        "target_url": null,
+        "department_evidence": "гражд. кассац. деп.",
+        "context_start": 9494,
+        "context_end": 9937,
+        "context_original": "ополнительныхъ пошлинъ была представлена покупщиками 9 іюня того же года), не лишаетъ опредѣленія суда объ укрѣпленіи законной силы, ибо 1162 ст. уст. гр. суд., какъ разъяснено въ рѣшеніи гражд. кассац. деп. 1885 года № 112, относится къ числу тѣхъ несущественныхъ процессуальныхъ правилъ, нарушеніе которыхъ уставъ гражданскаго судопроизводства дозволяетъ исправлять до наступленія извѣстнаго момента для предупрежденія потери тяжущеюся сторо",
+        "passage_id": "1904-079:9419-11113",
+        "pages": [
+          224
+        ],
+        "sources": [
+          {
+            "page": 224,
+            "page_method": "header",
+            "file": "p0113_L.txt",
+            "start": 9419,
+            "end": 11113
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-079?mode=precedent&ref=1904-079%3A1885%3A112%3A9702&at=9674&end=9717",
+        "scan_available": true
+      },
+      {
+        "id": "1904-079:1900:42:10541",
+        "source_id": "1904-079",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "08fcd44cff7ea3ea7eed314f7334cabb178c6fbfb5fe783fa4eea48fa37b2aed",
+        "year": 1900,
+        "start": 10513,
+        "end": 10553,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 42,
+        "department_start": 10521,
+        "department_end": 10540,
+        "citation_start": 10541,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніе гражд. кассац. деп. 1900 г. № 42",
+        "target_url": null,
+        "department_evidence": "гражд. кассац. деп.",
+        "context_start": 10333,
+        "context_end": 10773,
+        "context_original": "на пріобрѣтеніе недвижимыхъ имуществъ въ Западныхъ губерніяхъ, и уже потому палата правильно не руководствовалась этимъ последнимъ закономъ; что же касается до ссылки просителя на рѣшеніе гражд. кассац. деп. 1900 г. № 42, то это рѣшеніе имѣетъ въ виду исключительно совершеніе купчихъ крѣпостей, утверждаемыхъ старшими нотаріусами, обязанными, при утвержденіи актовъ, принимать въ соображеніе и примѣнять и тѣ законы, которые обнародованы п",
+        "passage_id": "1904-079:9419-11113",
+        "pages": [
+          224
+        ],
+        "sources": [
+          {
+            "page": 224,
+            "page_method": "header",
+            "file": "p0113_L.txt",
+            "start": 9419,
+            "end": 11113
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-079?mode=precedent&ref=1904-079%3A1900%3A42%3A10541&at=10513&end=10553",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-079",
     "scan_pages": [

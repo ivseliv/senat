@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-063",
@@ -40,6 +40,86 @@
       "1904-3b206d5a4ba9",
       "1904-b5e8c382bf53",
       "1904-5bbf249d9e3d"
+    ],
+    "precedents": [
+      {
+        "id": "1904-063:1872:62:4471",
+        "source_id": "1904-063",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bacc763485d7cf71b24599a2a75eba794e452f1cc5c6ff568c7bd9421b9fdf85",
+        "year": 1872,
+        "start": 4466,
+        "end": 4483,
+        "department": null,
+        "association": null,
+        "number": 62,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4471,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1872 г. № 62",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4286,
+        "context_end": 4703,
+        "context_original": "банка, подавшаго прошеніе о допущеніи его къ участію въ дѣлѣ въ качествѣ третьяго лица, не могъ, конечно, оказать никакого вліянія на правильность рѣшенія палаты по существу дѣла (рѣш. 1872 г. № 62, 1870 г. № 83 и др.). Въ виду этихъ соображеній, допущенное судебною палатою нарушеніе 848 ст. уст. гр. суд. вызываетъ лишь необходимость исправленія сдѣланнаго ею упущенія путемъ постановленія дополнительнаго опредѣлен",
+        "passage_id": "1904-063:2701-4505",
+        "pages": [
+          179
+        ],
+        "sources": [
+          {
+            "page": 179,
+            "page_method": "header",
+            "file": "p0090_R.txt",
+            "start": 4312,
+            "end": 5211
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-063?mode=precedent&ref=1904-063%3A1872%3A62%3A4471&at=4466&end=4483",
+        "scan_available": true
+      },
+      {
+        "id": "1904-063:1870:83:4485",
+        "source_id": "1904-063",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bacc763485d7cf71b24599a2a75eba794e452f1cc5c6ff568c7bd9421b9fdf85",
+        "year": 1870,
+        "start": 4466,
+        "end": 4497,
+        "department": null,
+        "association": null,
+        "number": 83,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4485,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1872 г. № 62, 1870 г. № 83",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4286,
+        "context_end": 4717,
+        "context_original": "банка, подавшаго прошеніе о допущеніи его къ участію въ дѣлѣ въ качествѣ третьяго лица, не могъ, конечно, оказать никакого вліянія на правильность рѣшенія палаты по существу дѣла (рѣш. 1872 г. № 62, 1870 г. № 83 и др.). Въ виду этихъ соображеній, допущенное судебною палатою нарушеніе 848 ст. уст. гр. суд. вызываетъ лишь необходимость исправленія сдѣланнаго ею упущенія путемъ постановленія дополнительнаго опредѣленія о взысканіи",
+        "passage_id": "1904-063:2701-4505",
+        "pages": [
+          179
+        ],
+        "sources": [
+          {
+            "page": 179,
+            "page_method": "header",
+            "file": "p0090_R.txt",
+            "start": 4312,
+            "end": 5211
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-063?mode=precedent&ref=1904-063%3A1870%3A83%3A4485&at=4466&end=4497",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-063",
     "scan_pages": [

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-074",
@@ -48,6 +48,141 @@
       "1905-d6efb2eb81f3",
       "1905-ed74f628ddf9",
       "1905-d28d21a04bb8"
+    ],
+    "precedents": [
+      {
+        "id": "1905-074:1904:22:3497",
+        "source_id": "1905-074",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "b3d966f52d54c40f21a38aab49b4a1c0dcecffc39e6f3319eab02dc5690815b1",
+        "year": 1904,
+        "start": 3415,
+        "end": 3514,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 22,
+        "department_start": 3415,
+        "department_end": 3430,
+        "citation_start": 3497,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "общему собранію касс. и 1 департаментовъ въ рѣшеніяхъ, помѣщенныхъ въ сборникѣ за 1904 г. № 22 и 23",
+        "target_url": null,
+        "department_evidence": "общему собранію",
+        "context_start": 3235,
+        "context_end": 3734,
+        "context_original": "наго должника Тениса Упмала и послѣдній вызывается въ судъ для заявленія о своихъ средствахъ, составляетъ всего сумму 205 р. 37 к.; 2) что, между тѣмъ, Правительствующій Сенатъ по общему собранію касс. и 1 департаментовъ въ рѣшеніяхъ, помѣщенныхъ въ сборникѣ за 1904 г. № 22 и 23, разъяснилъ, что хотя присужденныя судебными установленіями въ пользу казны судебныя издержки по дѣламъ уголовнымъ составляютъ неокладныя недоимки, настояніе за взысканіемъ коихъ лежитъ на обязанности казенныхъ палатъ, ",
+        "passage_id": "1905-074:2357-3986",
+        "pages": [
+          201,
+          202
+        ],
+        "sources": [
+          {
+            "page": 201,
+            "page_method": "header",
+            "file": "p0101_R.txt",
+            "start": 3075,
+            "end": 3509
+          },
+          {
+            "page": 202,
+            "page_method": "header",
+            "file": "p0102_L.txt",
+            "start": 3510,
+            "end": 3986
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-074?mode=precedent&ref=1905-074%3A1904%3A22%3A3497&at=3415&end=3514",
+        "scan_available": true
+      },
+      {
+        "id": "1905-074:1904:23:3497",
+        "source_id": "1905-074",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "b3d966f52d54c40f21a38aab49b4a1c0dcecffc39e6f3319eab02dc5690815b1",
+        "year": 1904,
+        "start": 3415,
+        "end": 3514,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 23,
+        "department_start": 3415,
+        "department_end": 3430,
+        "citation_start": 3497,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "общему собранію касс. и 1 департаментовъ въ рѣшеніяхъ, помѣщенныхъ въ сборникѣ за 1904 г. № 22 и 23",
+        "target_url": null,
+        "department_evidence": "общему собранію",
+        "context_start": 3235,
+        "context_end": 3734,
+        "context_original": "наго должника Тениса Упмала и послѣдній вызывается въ судъ для заявленія о своихъ средствахъ, составляетъ всего сумму 205 р. 37 к.; 2) что, между тѣмъ, Правительствующій Сенатъ по общему собранію касс. и 1 департаментовъ въ рѣшеніяхъ, помѣщенныхъ въ сборникѣ за 1904 г. № 22 и 23, разъяснилъ, что хотя присужденныя судебными установленіями въ пользу казны судебныя издержки по дѣламъ уголовнымъ составляютъ неокладныя недоимки, настояніе за взысканіемъ коихъ лежитъ на обязанности казенныхъ палатъ, ",
+        "passage_id": "1905-074:2357-3986",
+        "pages": [
+          201,
+          202
+        ],
+        "sources": [
+          {
+            "page": 201,
+            "page_method": "header",
+            "file": "p0101_R.txt",
+            "start": 3075,
+            "end": 3509
+          },
+          {
+            "page": 202,
+            "page_method": "header",
+            "file": "p0102_L.txt",
+            "start": 3510,
+            "end": 3986
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-074?mode=precedent&ref=1905-074%3A1904%3A23%3A3497&at=3415&end=3514",
+        "scan_available": true
+      },
+      {
+        "id": "1905-074:1897:9:4724",
+        "source_id": "1905-074",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "b3d966f52d54c40f21a38aab49b4a1c0dcecffc39e6f3319eab02dc5690815b1",
+        "year": 1897,
+        "start": 4719,
+        "end": 4735,
+        "department": null,
+        "association": null,
+        "number": 9,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4724,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1897 г. № 9",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4539,
+        "context_end": 4866,
+        "context_original": "ъ не нарушила указанныхъ въ кассаціонной жалобѣ законовъ, такъ какъ одна неправильность соображеній, на коихъ основанъ правильный выводъ, не служитъ еще поводомъ для кассаціи (сб. рѣш. 1897 г. № 9),—Правительствующій Сенатъ опредѣляетъ: кассаціонную жалобу уполномоченнаго Лифляндской казенной палаты оставить безъ послѣдствій.",
+        "passage_id": "1905-074:3734-4866",
+        "pages": [
+          202
+        ],
+        "sources": [
+          {
+            "page": 202,
+            "page_method": "header",
+            "file": "p0102_L.txt",
+            "start": 3734,
+            "end": 4866
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-074?mode=precedent&ref=1905-074%3A1897%3A9%3A4724&at=4719&end=4735",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-074",
     "scan_pages": [

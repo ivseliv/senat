@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-008",
@@ -59,6 +59,203 @@
       "1905-b36baf2954a2",
       "1905-9b1f83da2860",
       "1905-54d25337450e"
+    ],
+    "precedents": [
+      {
+        "id": "1905-008:1875:90:2017",
+        "source_id": "1905-008",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a9d2c08903c93f7bedb1df1082963240f7d9a70ade9270c1de646642a81d0d36",
+        "year": 1875,
+        "start": 1962,
+        "end": 2029,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 90,
+        "department_start": 1962,
+        "department_end": 2003,
+        "citation_start": 2017,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "гражданскимъ кассаціоннымъ департаментомъ въ рѣшеніяхъ 1875 г. № 90",
+        "target_url": null,
+        "department_evidence": "гражданскимъ кассаціоннымъ департаментомъ",
+        "context_start": 1782,
+        "context_end": 2244,
+        "context_original": "доставлялись какія-либо права кромѣ правъ участія въ судоговореніи при разсмотрѣніи дѣла въ судебной палатѣ и Правительствующемъ Сенатѣ; почему, согласно разъясненію, преподанному гражданскимъ кассаціоннымъ департаментомъ въ рѣшеніяхъ 1875 г. № 90, 1877 г. № 301, 313 и мн. др., а равно въ циркулярѣ того же департамента 12 марта 1870 г., кассаціонная жалоба, какъ поданная неуполномоченнымъ на принесеніе ея лицомъ, вовсе не подлежала принятію. Признавая посему",
+        "passage_id": "1905-008:0-2227",
+        "pages": [
+          17
+        ],
+        "sources": [
+          {
+            "page": 17,
+            "page_method": "header",
+            "file": "p0009_R.txt",
+            "start": 2022,
+            "end": 2244
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-008?mode=precedent&ref=1905-008%3A1875%3A90%3A2017&at=1962&end=2029",
+        "scan_available": true
+      },
+      {
+        "id": "1905-008:1877:301:2031",
+        "source_id": "1905-008",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a9d2c08903c93f7bedb1df1082963240f7d9a70ade9270c1de646642a81d0d36",
+        "year": 1877,
+        "start": 1962,
+        "end": 2049,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 301,
+        "department_start": 1962,
+        "department_end": 2003,
+        "citation_start": 2031,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "гражданскимъ кассаціоннымъ департаментомъ въ рѣшеніяхъ 1875 г. № 90, 1877 г. № 301, 313",
+        "target_url": null,
+        "department_evidence": "гражданскимъ кассаціоннымъ департаментомъ",
+        "context_start": 1782,
+        "context_end": 2244,
+        "context_original": "доставлялись какія-либо права кромѣ правъ участія въ судоговореніи при разсмотрѣніи дѣла въ судебной палатѣ и Правительствующемъ Сенатѣ; почему, согласно разъясненію, преподанному гражданскимъ кассаціоннымъ департаментомъ въ рѣшеніяхъ 1875 г. № 90, 1877 г. № 301, 313 и мн. др., а равно въ циркулярѣ того же департамента 12 марта 1870 г., кассаціонная жалоба, какъ поданная неуполномоченнымъ на принесеніе ея лицомъ, вовсе не подлежала принятію. Признавая посему",
+        "passage_id": "1905-008:0-2227",
+        "pages": [
+          17
+        ],
+        "sources": [
+          {
+            "page": 17,
+            "page_method": "header",
+            "file": "p0009_R.txt",
+            "start": 2022,
+            "end": 2244
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-008?mode=precedent&ref=1905-008%3A1877%3A301%3A2031&at=1962&end=2049",
+        "scan_available": true
+      },
+      {
+        "id": "1905-008:1877:313:2031",
+        "source_id": "1905-008",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a9d2c08903c93f7bedb1df1082963240f7d9a70ade9270c1de646642a81d0d36",
+        "year": 1877,
+        "start": 1962,
+        "end": 2049,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 313,
+        "department_start": 1962,
+        "department_end": 2003,
+        "citation_start": 2031,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "гражданскимъ кассаціоннымъ департаментомъ въ рѣшеніяхъ 1875 г. № 90, 1877 г. № 301, 313",
+        "target_url": null,
+        "department_evidence": "гражданскимъ кассаціоннымъ департаментомъ",
+        "context_start": 1782,
+        "context_end": 2244,
+        "context_original": "доставлялись какія-либо права кромѣ правъ участія въ судоговореніи при разсмотрѣніи дѣла въ судебной палатѣ и Правительствующемъ Сенатѣ; почему, согласно разъясненію, преподанному гражданскимъ кассаціоннымъ департаментомъ въ рѣшеніяхъ 1875 г. № 90, 1877 г. № 301, 313 и мн. др., а равно въ циркулярѣ того же департамента 12 марта 1870 г., кассаціонная жалоба, какъ поданная неуполномоченнымъ на принесеніе ея лицомъ, вовсе не подлежала принятію. Признавая посему",
+        "passage_id": "1905-008:0-2227",
+        "pages": [
+          17
+        ],
+        "sources": [
+          {
+            "page": 17,
+            "page_method": "header",
+            "file": "p0009_R.txt",
+            "start": 2022,
+            "end": 2244
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-008?mode=precedent&ref=1905-008%3A1877%3A313%3A2031&at=1962&end=2049",
+        "scan_available": true
+      },
+      {
+        "id": "1905-008:1885:7:2885",
+        "source_id": "1905-008",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a9d2c08903c93f7bedb1df1082963240f7d9a70ade9270c1de646642a81d0d36",
+        "year": 1885,
+        "start": 2880,
+        "end": 2896,
+        "department": null,
+        "association": null,
+        "number": 7,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2885,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1885 г. № 7",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2700,
+        "context_end": 3116,
+        "context_original": "бжаловать рѣшеніе въ объясненіи на кассаціонную жалобу его противника. Такое право составляетъ для каждой изъ сторонъ лишь расширеніе права на самостоятельную кассаціонную жалобу (рѣш. 1885 г. № 7), и для того, чтобы тяжущійся могъ воспользоваться такимъ правомъ, требуется лишь подача самостоятельной кассаціонной жалобы его противникомъ. Коль скоро такая жалоба подана съ соблюденіемъ всѣхъ требуемыхъ закономъ для",
+        "passage_id": "1905-008:2022-3743",
+        "pages": [
+          18
+        ],
+        "sources": [
+          {
+            "page": 18,
+            "page_method": "header",
+            "file": "p0010_L.txt",
+            "start": 2263,
+            "end": 3743
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-008?mode=precedent&ref=1905-008%3A1885%3A7%3A2885&at=2880&end=2896",
+        "scan_available": true
+      },
+      {
+        "id": "1905-008:1897:9:3360",
+        "source_id": "1905-008",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a9d2c08903c93f7bedb1df1082963240f7d9a70ade9270c1de646642a81d0d36",
+        "year": 1897,
+        "start": 3311,
+        "end": 3371,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 9,
+        "department_start": 3311,
+        "department_end": 3348,
+        "citation_start": 3360,
+        "status": "linked",
+        "target_id": "1897-009",
+        "quote_original": "гражданскій кассаціонный департаментъ въ рѣшеніи 1897 г. № 9",
+        "target_url": "https://ivseliv.github.io/senat/lex/#/d/1897-009",
+        "department_evidence": "гражданскій кассаціонный департаментъ",
+        "context_start": 3131,
+        "context_end": 3591,
+        "context_original": "ловій, то право противной стороны требовать въ объясненіи на эту жалобу отмѣны неблагопріятной для нея части рѣшенія должно быть признано установленнымъ. Въ виду этихъ соображеній гражданскій кассаціонный департаментъ въ рѣшеніи 1897 г. № 9 призналъ, что означенное право подавшаго объясненіе не можетъ быть утрачено по произволу главнаго кассатора заявленіемъ послѣдняго объ оставленіи его правильно принесенной кассаціонной жалобы безъ разсмотрѣнія и что так",
+        "passage_id": "1905-008:2022-3743",
+        "pages": [
+          18
+        ],
+        "sources": [
+          {
+            "page": 18,
+            "page_method": "header",
+            "file": "p0010_L.txt",
+            "start": 2263,
+            "end": 3743
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-008?mode=precedent&ref=1905-008%3A1897%3A9%3A3360&at=3311&end=3371",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-008",
     "scan_pages": [

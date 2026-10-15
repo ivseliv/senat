@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-080",
@@ -53,6 +53,47 @@
     "participant_ids": [
       "1905-f2392f9c6427",
       "1905-784bac193ddb"
+    ],
+    "precedents": [
+      {
+        "id": "1905-080:1902:108:2308",
+        "source_id": "1905-080",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c9d4ba63a0c63022b69b07aeb9c97706a7ae78cfc200077ac497de2654dfab8d",
+        "year": 1902,
+        "start": 2298,
+        "end": 2321,
+        "department": null,
+        "association": null,
+        "number": 108,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2308,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "Рѣшеніемъ 1902 г. № 108",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2118,
+        "context_end": 2541,
+        "context_original": "ннорожденнымъ дитятей ея мужа, предъявить искъ къ лицу, съ которымъ, по ея словамъ, она до своего замужества имѣла половыя сношенія и котораго считаетъ отцомъ означеннаго ребенка. Рѣшеніемъ 1902 г. № 108 разъяснено, что законами, въ 119 и 120 ст. X т. 1 ч. изложенными, устанавливается законное предположеніе, состоящее въ томъ, что если рожденіе даннаго лица воспослѣдовало при существованіи законнаго брака, то это лицо п",
+        "passage_id": "1905-080:1400-2971",
+        "pages": [
+          222
+        ],
+        "sources": [
+          {
+            "page": 222,
+            "page_method": "header",
+            "file": "p0112_L.txt",
+            "start": 1855,
+            "end": 2971
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-080?mode=precedent&ref=1905-080%3A1902%3A108%3A2308&at=2298&end=2321",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-080",
     "scan_pages": [

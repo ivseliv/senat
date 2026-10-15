@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-052",
@@ -54,6 +54,86 @@
     "participant_ids": [
       "1904-5da273fbefc7",
       "1904-5ad35096f867"
+    ],
+    "precedents": [
+      {
+        "id": "1904-052:1891:79:4006",
+        "source_id": "1904-052",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4d08722f288f9454e177d5022d0f610ec1b3dabc50b58b5553416a175dfcf82b",
+        "year": 1891,
+        "start": 4001,
+        "end": 4018,
+        "department": null,
+        "association": null,
+        "number": 79,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4006,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1891 г. № 79",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3821,
+        "context_end": 4238,
+        "context_original": "ъ этого циркуляра, не обнародованнаго въ собраніи узаконеній и распоряженій правительства, а слѣдовательно, палата лишена была возможности провѣрить его ссылку на этотъ циркуляръ (рѣш. 1891 г. № 79 и 1889 г. № 7), и б) что, по справедливому мнѣнію, выраженному въ обжалованномъ рѣшеніи палаты, этотъ циркуляръ не могъ измѣнить силы закона, по смыслу котораго, какъ уже объяснено выше, судебная палата правильно призна",
+        "passage_id": "1904-052:2455-4545",
+        "pages": [
+          144
+        ],
+        "sources": [
+          {
+            "page": 144,
+            "page_method": "header",
+            "file": "p0073_L.txt",
+            "start": 2455,
+            "end": 4545
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-052?mode=precedent&ref=1904-052%3A1891%3A79%3A4006&at=4001&end=4018",
+        "scan_available": true
+      },
+      {
+        "id": "1904-052:1889:7:4021",
+        "source_id": "1904-052",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4d08722f288f9454e177d5022d0f610ec1b3dabc50b58b5553416a175dfcf82b",
+        "year": 1889,
+        "start": 4001,
+        "end": 4032,
+        "department": null,
+        "association": null,
+        "number": 7,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4021,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1891 г. № 79 и 1889 г. № 7",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3821,
+        "context_end": 4252,
+        "context_original": "ъ этого циркуляра, не обнародованнаго въ собраніи узаконеній и распоряженій правительства, а слѣдовательно, палата лишена была возможности провѣрить его ссылку на этотъ циркуляръ (рѣш. 1891 г. № 79 и 1889 г. № 7), и б) что, по справедливому мнѣнію, выраженному въ обжалованномъ рѣшеніи палаты, этотъ циркуляръ не могъ измѣнить силы закона, по смыслу котораго, какъ уже объяснено выше, судебная палата правильно признала, что акцизн",
+        "passage_id": "1904-052:2455-4545",
+        "pages": [
+          144
+        ],
+        "sources": [
+          {
+            "page": 144,
+            "page_method": "header",
+            "file": "p0073_L.txt",
+            "start": 2455,
+            "end": 4545
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-052?mode=precedent&ref=1904-052%3A1889%3A7%3A4021&at=4001&end=4032",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-052",
     "scan_pages": [

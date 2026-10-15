@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-090",
@@ -76,6 +76,125 @@
       "1904-2d3115269406",
       "1904-7ed2d6c94307",
       "1904-c87374f3ccb8"
+    ],
+    "precedents": [
+      {
+        "id": "1904-090:1885:28:13247",
+        "source_id": "1904-090",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "b50abd438e2bb3258d41c9cba366946d478d51ca55e8670ba8407f96536fdbdb",
+        "year": 1885,
+        "start": 13225,
+        "end": 13259,
+        "department": null,
+        "association": null,
+        "number": 28,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 13247,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. угол. касс. деп. 1885 г. № 28",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 13045,
+        "context_end": 13479,
+        "context_original": "варовъ и другихъ подлежащихъ конфискаціи предметовъ (ст. 1137 и послѣд.) имѣетъ цѣлью обезпеченіе правъ казны на полученіе удовлетворенія въ причиненномъ ей имущественномъ ущербѣ (рѣш. угол. касс. деп. 1885 г. № 28, 1886 г. № 12 и др.). Въ то время, какъ вещественныя по дѣлу доказательства остаются въ распоряженіи судебнаго слѣдователя и затѣмъ суда, куда дѣло, къ которому они относятся, имѣетъ поступить (ст. 776 и 777 уст.), пред",
+        "passage_id": "1904-090:11914-13614",
+        "pages": [
+          251
+        ],
+        "sources": [
+          {
+            "page": 251,
+            "page_method": "header",
+            "file": "p0126_R.txt",
+            "start": 11914,
+            "end": 13614
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090?mode=precedent&ref=1904-090%3A1885%3A28%3A13247&at=13225&end=13259",
+        "scan_available": true
+      },
+      {
+        "id": "1904-090:1886:12:13261",
+        "source_id": "1904-090",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "b50abd438e2bb3258d41c9cba366946d478d51ca55e8670ba8407f96536fdbdb",
+        "year": 1886,
+        "start": 13225,
+        "end": 13273,
+        "department": null,
+        "association": null,
+        "number": 12,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 13261,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. угол. касс. деп. 1885 г. № 28, 1886 г. № 12",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 13045,
+        "context_end": 13493,
+        "context_original": "варовъ и другихъ подлежащихъ конфискаціи предметовъ (ст. 1137 и послѣд.) имѣетъ цѣлью обезпеченіе правъ казны на полученіе удовлетворенія въ причиненномъ ей имущественномъ ущербѣ (рѣш. угол. касс. деп. 1885 г. № 28, 1886 г. № 12 и др.). Въ то время, какъ вещественныя по дѣлу доказательства остаются въ распоряженіи судебнаго слѣдователя и затѣмъ суда, куда дѣло, къ которому они относятся, имѣетъ поступить (ст. 776 и 777 уст.), предметы, задержан",
+        "passage_id": "1904-090:11914-13614",
+        "pages": [
+          251
+        ],
+        "sources": [
+          {
+            "page": 251,
+            "page_method": "header",
+            "file": "p0126_R.txt",
+            "start": 11914,
+            "end": 13614
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090?mode=precedent&ref=1904-090%3A1886%3A12%3A13261&at=13225&end=13273",
+        "scan_available": true
+      },
+      {
+        "id": "1904-090:1879:347:17946",
+        "source_id": "1904-090",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "b50abd438e2bb3258d41c9cba366946d478d51ca55e8670ba8407f96536fdbdb",
+        "year": 1879,
+        "start": 17898,
+        "end": 17959,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 347,
+        "department_start": 17906,
+        "department_end": 17945,
+        "citation_start": 17946,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніе гражданскаго кассаціоннаго департамента 1879 г. № 347",
+        "target_url": null,
+        "department_evidence": "гражданскаго кассаціоннаго департамента",
+        "context_start": 17718,
+        "context_end": 18179,
+        "context_original": "ваетъ основаній и не ссылается на законы, которые оправдывали бы присужденіе этихъ процентовъ, исчисленныхъ ею со дня продажи чая по день полученія истцами денегъ, кромѣ ссылки на рѣшеніе гражданскаго кассаціоннаго департамента 1879 г. № 347 и на то, что проценты составляютъ принадлежность капитала; но слѣдуетъ полагать, что палата имѣла въ виду ст. 641 ч. 1 т. X, на основаніи коей, при возвращеніи бывшихъ въ незаконномъ владѣніи капиталовъ, недобросовѣстны",
+        "passage_id": "1904-090:17435-18951",
+        "pages": [
+          253
+        ],
+        "sources": [
+          {
+            "page": 253,
+            "page_method": "header",
+            "file": "p0127_R.txt",
+            "start": 17435,
+            "end": 18951
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090?mode=precedent&ref=1904-090%3A1879%3A347%3A17946&at=17898&end=17959",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-090",
     "scan_pages": [

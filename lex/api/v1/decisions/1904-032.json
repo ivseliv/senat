@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-032",
@@ -40,6 +40,7 @@
       "1904-b37f1359914f",
       "1904-c6d3ea2297f7"
     ],
+    "precedents": [],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-032",
     "scan_pages": [
       {

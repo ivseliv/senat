@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-072",
@@ -50,6 +50,47 @@
     "participant_ids": [
       "1904-e671c07c9fe7",
       "1904-77d2a3192813"
+    ],
+    "precedents": [
+      {
+        "id": "1904-072:1903:68:4854",
+        "source_id": "1904-072",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "7d6eafed84ba4f4a4415ff4077d5588ac7887f8d3cf7ddfcaf6f0eca12253ea5",
+        "year": 1903,
+        "start": 4849,
+        "end": 4866,
+        "department": null,
+        "association": null,
+        "number": 68,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4854,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1903 г. № 68",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4669,
+        "context_end": 4984,
+        "context_original": "ымъ, а потому, и при достаточности приведеннаго выше соображенія для оправданія окончательнаго вывода судебной палаты, не требуетъ обсужденія со стороны Правительствующаго Сената (рѣш. 1903 г. № 68). Въ виду всего вышеизложеннаго, Правительствующій Сенатъ опредѣляетъ: кассаціонную жалобу оставить безъ послѣдствій.",
+        "passage_id": "1904-072:2975-4984",
+        "pages": [
+          206
+        ],
+        "sources": [
+          {
+            "page": 206,
+            "page_method": "header",
+            "file": "p0104_L.txt",
+            "start": 4029,
+            "end": 4984
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-072?mode=precedent&ref=1904-072%3A1903%3A68%3A4854&at=4849&end=4866",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-072",
     "scan_pages": [

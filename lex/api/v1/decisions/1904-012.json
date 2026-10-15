@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-012",
@@ -49,6 +49,86 @@
     "participant_ids": [
       "1904-a80318b88684",
       "1904-367152a6107d"
+    ],
+    "precedents": [
+      {
+        "id": "1904-012:1872:306:1568",
+        "source_id": "1904-012",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "532adfc36e45210f5947b83f5df03a617c412021c48e9cb5f075ccc5ebfd8ce4",
+        "year": 1872,
+        "start": 1563,
+        "end": 1581,
+        "department": null,
+        "association": null,
+        "number": 306,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1568,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1872 г. № 306",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1383,
+        "context_end": 1801,
+        "context_original": "та продажи старшимъ нотаріусомъ актъ этотъ обращается въ крѣпостной, и съ этого времени купчая крѣпость считается, по статьѣ 157 и 158 пол. о нот. части, окончательно совершенною (рѣш. 1872 г. № 306 и 1875 г. № 267), то, очевидно, актъ продажи, совершенный только у младшаго нотаріуса, не можетъ быть признаваемъ крѣпостнымъ актомъ, установляющимъ переходъ права собственности на недвижимое имѣніе. Въ виду изложеннаго",
+        "passage_id": "1904-012:0-1781",
+        "pages": [
+          34
+        ],
+        "sources": [
+          {
+            "page": 34,
+            "page_method": "header",
+            "file": "p0018_L.txt",
+            "start": 1530,
+            "end": 2511
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-012?mode=precedent&ref=1904-012%3A1872%3A306%3A1568&at=1563&end=1581",
+        "scan_available": true
+      },
+      {
+        "id": "1904-012:1875:267:1584",
+        "source_id": "1904-012",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "532adfc36e45210f5947b83f5df03a617c412021c48e9cb5f075ccc5ebfd8ce4",
+        "year": 1875,
+        "start": 1563,
+        "end": 1597,
+        "department": null,
+        "association": null,
+        "number": 267,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1584,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1872 г. № 306 и 1875 г. № 267",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1383,
+        "context_end": 1817,
+        "context_original": "та продажи старшимъ нотаріусомъ актъ этотъ обращается въ крѣпостной, и съ этого времени купчая крѣпость считается, по статьѣ 157 и 158 пол. о нот. части, окончательно совершенною (рѣш. 1872 г. № 306 и 1875 г. № 267), то, очевидно, актъ продажи, совершенный только у младшаго нотаріуса, не можетъ быть признаваемъ крѣпостнымъ актомъ, установляющимъ переходъ права собственности на недвижимое имѣніе. Въ виду изложеннаго, судебная палат",
+        "passage_id": "1904-012:0-1781",
+        "pages": [
+          34
+        ],
+        "sources": [
+          {
+            "page": 34,
+            "page_method": "header",
+            "file": "p0018_L.txt",
+            "start": 1530,
+            "end": 2511
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-012?mode=precedent&ref=1904-012%3A1875%3A267%3A1584&at=1563&end=1597",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-012",
     "scan_pages": [

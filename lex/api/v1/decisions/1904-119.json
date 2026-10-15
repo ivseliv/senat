@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-119",
@@ -54,6 +54,86 @@
       "1904-809aa60afb4e",
       "1904-17c1f8e4f65f",
       "1904-89a1f950194d"
+    ],
+    "precedents": [
+      {
+        "id": "1904-119:1888:31:7284",
+        "source_id": "1904-119",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "ad7c155888c845c7d8ecd544a80591d14d359302d48586cb858bad6b6bf09c7c",
+        "year": 1888,
+        "start": 7248,
+        "end": 7296,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 31,
+        "department_start": 7253,
+        "department_end": 7262,
+        "citation_start": 7284,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. общ. собр. 1-го и касс. д-товъ 1888 г. № 31",
+        "target_url": null,
+        "department_evidence": "общ. собр",
+        "context_start": 7068,
+        "context_end": 7312,
+        "context_original": "ѣ и о порядкѣ производства дѣлъ по симъ нарушеніямъ, всецѣло утратили свойство уголовнаго проступка, подвергая виновныхъ не уголовному наказанію, а простому фискальному взысканію (рѣш. общ. собр. 1-го и касс. д-товъ 1888 г. № 31, 1892 г. № 39).",
+        "passage_id": "1904-119:5925-7312",
+        "pages": [
+          334
+        ],
+        "sources": [
+          {
+            "page": 334,
+            "page_method": "header",
+            "file": "p0168_L.txt",
+            "start": 7074,
+            "end": 7312
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-119?mode=precedent&ref=1904-119%3A1888%3A31%3A7284&at=7248&end=7296",
+        "scan_available": true
+      },
+      {
+        "id": "1904-119:1892:39:7298",
+        "source_id": "1904-119",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "ad7c155888c845c7d8ecd544a80591d14d359302d48586cb858bad6b6bf09c7c",
+        "year": 1892,
+        "start": 7248,
+        "end": 7310,
+        "department": "Общее собрание",
+        "association": "list",
+        "number": 39,
+        "department_start": 7253,
+        "department_end": 7262,
+        "citation_start": 7298,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. общ. собр. 1-го и касс. д-товъ 1888 г. № 31, 1892 г. № 39",
+        "target_url": null,
+        "department_evidence": "общ. собр",
+        "context_start": 7068,
+        "context_end": 7312,
+        "context_original": "ѣ и о порядкѣ производства дѣлъ по симъ нарушеніямъ, всецѣло утратили свойство уголовнаго проступка, подвергая виновныхъ не уголовному наказанію, а простому фискальному взысканію (рѣш. общ. собр. 1-го и касс. д-товъ 1888 г. № 31, 1892 г. № 39).",
+        "passage_id": "1904-119:5925-7312",
+        "pages": [
+          334
+        ],
+        "sources": [
+          {
+            "page": 334,
+            "page_method": "header",
+            "file": "p0168_L.txt",
+            "start": 7074,
+            "end": 7312
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-119?mode=precedent&ref=1904-119%3A1892%3A39%3A7298&at=7248&end=7310",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-119",
     "scan_pages": [

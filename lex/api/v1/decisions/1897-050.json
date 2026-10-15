@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-050",
@@ -44,6 +44,125 @@
       "1897-99c103badfd5",
       "1897-b30693e2c529",
       "1897-f6d642a9dc37"
+    ],
+    "precedents": [
+      {
+        "id": "1897-050:1895:88:2045",
+        "source_id": "1897-050",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "d8dda6464ea4655dbfe3ab66642b3b8ff1c703253539299b3a12ee4077645c79",
+        "year": 1895,
+        "start": 2040,
+        "end": 2057,
+        "department": null,
+        "association": null,
+        "number": 88,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2045,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1895 г. № 88",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1860,
+        "context_end": 2125,
+        "context_original": "товъ; рѣшеніемъ же Орловскаго окружнаго суда отказано въ искѣ Ликвидаціонной коммиссіи всецѣло за пропускомъ исковой давности. По отмѣнѣ рѣшенія этого Правительствующимъ Сенатомъ (рѣш. 1895 г. № 88) Тульскій окружный судъ присудилъ истцу всѣ его исковыя требованія.",
+        "passage_id": "1897-050:1519-3332",
+        "pages": [
+          165
+        ],
+        "sources": [
+          {
+            "page": 165,
+            "page_method": "header",
+            "file": "p0093_R.txt",
+            "start": 1583,
+            "end": 2125
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-050?mode=precedent&ref=1897-050%3A1895%3A88%3A2045&at=2040&end=2057",
+        "scan_available": true
+      },
+      {
+        "id": "1897-050:1895:59:5270",
+        "source_id": "1897-050",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "d8dda6464ea4655dbfe3ab66642b3b8ff1c703253539299b3a12ee4077645c79",
+        "year": 1895,
+        "start": 5265,
+        "end": 5288,
+        "department": null,
+        "association": null,
+        "number": 59,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5270,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1895 г. № № 59, 55",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5085,
+        "context_end": 5508,
+        "context_original": "ъ формальностей (несоставленіе журнала или опредѣленія и проч.). Но указанія эти, какъ сдѣланныя впервые въ кассаціонной жалобѣ, не подлежатъ обсужденію Правительствующаго Сената (рѣш. 1895 г. № № 59, 55.).—Мнѣніе просителя (2 п. апелляц. жалобы), будто размѣръ отвѣтственности каждаго члена долженъ опредѣляться состояніемъ счетовъ въ моментъ закрытія общества, расходы же Ликвидаціонной коммиссіи не могутъ быть отнесены ",
+        "passage_id": "1897-050:4717-6795",
+        "pages": [
+          166
+        ],
+        "sources": [
+          {
+            "page": 166,
+            "page_method": "header",
+            "file": "p0094_L.txt",
+            "start": 4717,
+            "end": 6795
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-050?mode=precedent&ref=1897-050%3A1895%3A59%3A5270&at=5265&end=5288",
+        "scan_available": true
+      },
+      {
+        "id": "1897-050:1895:55:5270",
+        "source_id": "1897-050",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "d8dda6464ea4655dbfe3ab66642b3b8ff1c703253539299b3a12ee4077645c79",
+        "year": 1895,
+        "start": 5265,
+        "end": 5288,
+        "department": null,
+        "association": null,
+        "number": 55,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5270,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1895 г. № № 59, 55",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5085,
+        "context_end": 5508,
+        "context_original": "ъ формальностей (несоставленіе журнала или опредѣленія и проч.). Но указанія эти, какъ сдѣланныя впервые въ кассаціонной жалобѣ, не подлежатъ обсужденію Правительствующаго Сената (рѣш. 1895 г. № № 59, 55.).—Мнѣніе просителя (2 п. апелляц. жалобы), будто размѣръ отвѣтственности каждаго члена долженъ опредѣляться состояніемъ счетовъ въ моментъ закрытія общества, расходы же Ликвидаціонной коммиссіи не могутъ быть отнесены ",
+        "passage_id": "1897-050:4717-6795",
+        "pages": [
+          166
+        ],
+        "sources": [
+          {
+            "page": 166,
+            "page_method": "header",
+            "file": "p0094_L.txt",
+            "start": 4717,
+            "end": 6795
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-050?mode=precedent&ref=1897-050%3A1895%3A55%3A5270&at=5265&end=5288",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-050",
     "scan_pages": [

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-066",
@@ -72,6 +72,164 @@
     "participant_ids": [
       "1904-7a0e014727fe",
       "1904-cb6367d0033b"
+    ],
+    "precedents": [
+      {
+        "id": "1904-066:1900:5:4331",
+        "source_id": "1904-066",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a748b76d19fb1eee3d25a938efafdd5b934a1e2f84d37281b205c4f5468aed88",
+        "year": 1900,
+        "start": 4287,
+        "end": 4342,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 5,
+        "department_start": 4292,
+        "department_end": 4301,
+        "citation_start": 4331,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. общ. собр. 1 и касс. деп. Прав. Сената 1900 г. № 5",
+        "target_url": null,
+        "department_evidence": "общ. собр",
+        "context_start": 4107,
+        "context_end": 4562,
+        "context_original": " основаніи и во исполненіе Высочайшаго повелѣнія, въ предѣлахъ предоставленной ему на то этимъ повелѣніемъ власти,— должны были имѣть силу и значеніе особыхъ, мѣстныхъ узаконеній (рѣш. общ. собр. 1 и касс. деп. Прав. Сената 1900 г. № 5) и, какъ таковыя, съ одной стороны, исключали примѣнимость общаго закона къ случаямъ, ими предусмотрѣннымъ, а съ другой—должны сохранить свою силу впредь до отмѣны ихъ силою новаго закона (ст. 70, 72 и 79 т. I ч. 1 осн.",
+        "passage_id": "1904-066:4086-5557",
+        "pages": [
+          191
+        ],
+        "sources": [
+          {
+            "page": 191,
+            "page_method": "neighbors",
+            "file": "p0096_R.txt",
+            "start": 4086,
+            "end": 5557
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066?mode=precedent&ref=1904-066%3A1900%3A5%3A4331&at=4287&end=4342",
+        "scan_available": true
+      },
+      {
+        "id": "1904-066:1900:5:6037",
+        "source_id": "1904-066",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a748b76d19fb1eee3d25a938efafdd5b934a1e2f84d37281b205c4f5468aed88",
+        "year": 1900,
+        "start": 6006,
+        "end": 6048,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 5,
+        "department_start": 6011,
+        "department_end": 6020,
+        "citation_start": 6037,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. общ. собр. 1 и касс. деп. 1900 г. № 5",
+        "target_url": null,
+        "department_evidence": "общ. собр",
+        "context_start": 5826,
+        "context_end": 6268,
+        "context_original": "ими свою силу правилами по почтовой части, сведены въ „сборникѣ постановленій и распоряженій по почтово-телеграфному вѣдомству 1885 г.“; они, какъ это разъяснено Прав. Сенатомъ въ рѣш. общ. собр. 1 и касс. деп. 1900 г. № 5, имѣютъ силу закона и, вслѣдствіе Высочайшихъ повелѣній 6 декабря 1885 г. (п. с. з. № 3363) и 17 октября 1890 г. (п. с. з. № 7129) о предоставленіи министру внутреннихъ дѣлъ тѣхъ же правъ, о коихъ упоминается въ Высочай",
+        "passage_id": "1904-066:5282-7024",
+        "pages": [
+          191
+        ],
+        "sources": [
+          {
+            "page": 191,
+            "page_method": "neighbors",
+            "file": "p0096_R.txt",
+            "start": 5282,
+            "end": 6282
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066?mode=precedent&ref=1904-066%3A1900%3A5%3A6037&at=6006&end=6048",
+        "scan_available": true
+      },
+      {
+        "id": "1904-066:1896:101:12529",
+        "source_id": "1904-066",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a748b76d19fb1eee3d25a938efafdd5b934a1e2f84d37281b205c4f5468aed88",
+        "year": 1896,
+        "start": 12524,
+        "end": 12542,
+        "department": null,
+        "association": null,
+        "number": 101,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 12529,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1896 г. № 101",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 12380,
+        "context_end": 12762,
+        "context_original": "Гражд. 1904 г. 13 о семъ уговора, въ силу самого договора перевозки, съ момента принятія имъ вещей къ перевозкѣ,—а слѣдовательно и на храненіе (рѣш. 1896 г. № 101, 1882 г. № 105). Отвѣтственность эта устраняется въ томъ только случаѣ, если возчикъ, вина котораго всегда предполагается, докажетъ, что принятыя имъ вещи утрачены или повреждены вслѣдствіе случайнаго событія или непрео",
+        "passage_id": "1904-066:11430-12857",
+        "pages": [
+          194
+        ],
+        "sources": [
+          {
+            "page": 194,
+            "page_method": "header",
+            "file": "p0098_L.txt",
+            "start": 12398,
+            "end": 12857
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066?mode=precedent&ref=1904-066%3A1896%3A101%3A12529&at=12524&end=12542",
+        "scan_available": true
+      },
+      {
+        "id": "1904-066:1882:105:12544",
+        "source_id": "1904-066",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a748b76d19fb1eee3d25a938efafdd5b934a1e2f84d37281b205c4f5468aed88",
+        "year": 1882,
+        "start": 12524,
+        "end": 12557,
+        "department": null,
+        "association": null,
+        "number": 105,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 12544,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1896 г. № 101, 1882 г. № 105",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 12380,
+        "context_end": 12777,
+        "context_original": "Гражд. 1904 г. 13 о семъ уговора, въ силу самого договора перевозки, съ момента принятія имъ вещей къ перевозкѣ,—а слѣдовательно и на храненіе (рѣш. 1896 г. № 101, 1882 г. № 105). Отвѣтственность эта устраняется въ томъ только случаѣ, если возчикъ, вина котораго всегда предполагается, докажетъ, что принятыя имъ вещи утрачены или повреждены вслѣдствіе случайнаго событія или непреодолимой силы, и",
+        "passage_id": "1904-066:11430-12857",
+        "pages": [
+          194
+        ],
+        "sources": [
+          {
+            "page": 194,
+            "page_method": "header",
+            "file": "p0098_L.txt",
+            "start": 12398,
+            "end": 12857
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066?mode=precedent&ref=1904-066%3A1882%3A105%3A12544&at=12524&end=12557",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-066",
     "scan_pages": [

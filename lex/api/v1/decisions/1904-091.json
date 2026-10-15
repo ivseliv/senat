@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-091",
@@ -48,6 +48,86 @@
       "1904-1bc8b4e54364",
       "1904-62adcce1e450",
       "1904-b37f1359914f"
+    ],
+    "precedents": [
+      {
+        "id": "1904-091:1879:332:3175",
+        "source_id": "1904-091",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "57187b15329975db68c07ed20f4af776e583640145fbd82f96958b2f14b4498e",
+        "year": 1879,
+        "start": 3126,
+        "end": 3188,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 332,
+        "department_start": 3131,
+        "department_end": 3148,
+        "citation_start": 3175,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гражд. касс. д-та Правительствующаго Сената 1879 г. № 332",
+        "target_url": null,
+        "department_evidence": "гражд. касс. д-та",
+        "context_start": 2946,
+        "context_end": 3408,
+        "context_original": "твержденіе котораго сдѣлана ссылка на свидѣтелей, и если не существуетъ въ законѣ такого предписанія, то слѣдуетъ признать допустимость въ этихъ случаяхъ свидѣтельскихъ показаній (рѣш. гражд. касс. д-та Правительствующаго Сената 1879 г. № 332 и 1893 г. № 57); 2) при разрѣшеніи возникшаго въ настоящемъ дѣлѣ указаннаго выше вопроса оказывается, что ст. 80 уст. жел. дор. требуетъ лишь, чтобы желѣзнодорожная станція во всѣхъ случаяхъ, когда въ накладной обозначе",
+        "passage_id": "1904-091:2580-4708",
+        "pages": [
+          255
+        ],
+        "sources": [
+          {
+            "page": 255,
+            "page_method": "header",
+            "file": "p0128_R.txt",
+            "start": 2580,
+            "end": 4708
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-091?mode=precedent&ref=1904-091%3A1879%3A332%3A3175&at=3126&end=3188",
+        "scan_available": true
+      },
+      {
+        "id": "1904-091:1893:57:3191",
+        "source_id": "1904-091",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "57187b15329975db68c07ed20f4af776e583640145fbd82f96958b2f14b4498e",
+        "year": 1893,
+        "start": 3126,
+        "end": 3203,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 57,
+        "department_start": 3131,
+        "department_end": 3148,
+        "citation_start": 3191,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гражд. касс. д-та Правительствующаго Сената 1879 г. № 332 и 1893 г. № 57",
+        "target_url": null,
+        "department_evidence": "гражд. касс. д-та",
+        "context_start": 2946,
+        "context_end": 3423,
+        "context_original": "твержденіе котораго сдѣлана ссылка на свидѣтелей, и если не существуетъ въ законѣ такого предписанія, то слѣдуетъ признать допустимость въ этихъ случаяхъ свидѣтельскихъ показаній (рѣш. гражд. касс. д-та Правительствующаго Сената 1879 г. № 332 и 1893 г. № 57); 2) при разрѣшеніи возникшаго въ настоящемъ дѣлѣ указаннаго выше вопроса оказывается, что ст. 80 уст. жел. дор. требуетъ лишь, чтобы желѣзнодорожная станція во всѣхъ случаяхъ, когда въ накладной обозначенъ адресъ получ",
+        "passage_id": "1904-091:2580-4708",
+        "pages": [
+          255
+        ],
+        "sources": [
+          {
+            "page": 255,
+            "page_method": "header",
+            "file": "p0128_R.txt",
+            "start": 2580,
+            "end": 4708
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-091?mode=precedent&ref=1904-091%3A1893%3A57%3A3191&at=3126&end=3203",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-091",
     "scan_pages": [

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-061",
@@ -37,6 +37,47 @@
     "participant_ids": [
       "1897-a37eb03c1425",
       "1897-88acbd67faa8"
+    ],
+    "precedents": [
+      {
+        "id": "1897-061:1872:775:1180",
+        "source_id": "1897-061",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "2ef5b111a9448a934e749a08cad359150e3b68890eb262f6ab44f6645a35c549",
+        "year": 1872,
+        "start": 1144,
+        "end": 1193,
+        "department": null,
+        "association": null,
+        "number": 775,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1180,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніемъ Правительствующаго Сената 1872 г. № 775",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 964,
+        "context_end": 1413,
+        "context_original": "ь и по праву представленія, каковое, по 1123 ст. 1 ч. X т., принадлежитъ только лицамъ, состоящимъ между собою въ кровномъ родствѣ. Разъясненіе это не находится въ противорѣчіи съ рѣшеніемъ Правительствующаго Сената 1872 г. № 775, коимъ было признано, что, за смертію усыновленнаго, родныя его дѣти наслѣдуютъ въ имуществѣ усыновителя по праву представленія, тогда какъ по данному дѣлу сама усыновленная отыскиваетъ наслѣдство послѣ родственниковъ у",
+        "passage_id": "1897-061:0-1714",
+        "pages": [
+          201
+        ],
+        "sources": [
+          {
+            "page": 201,
+            "page_method": "header",
+            "file": "p0111_R.txt",
+            "start": 333,
+            "end": 1714
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-061?mode=precedent&ref=1897-061%3A1872%3A775%3A1180&at=1144&end=1193",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-061",
     "scan_pages": [

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-047",
@@ -62,6 +62,242 @@
     "participant_ids": [
       "1905-82c13ebac969",
       "1905-36fa00dea0ab"
+    ],
+    "precedents": [
+      {
+        "id": "1905-047:1875:178:1917",
+        "source_id": "1905-047",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "2c1ea0ff4ee3829a8ae34c0f1d278fd72e56ba650e1a87be779c94609f182a5d",
+        "year": 1875,
+        "start": 1862,
+        "end": 1930,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 178,
+        "department_start": 1862,
+        "department_end": 1903,
+        "citation_start": 1917,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "гражданскимъ кассаціоннымъ департаментомъ въ рѣшеніяхъ 1875 г. № 178",
+        "target_url": null,
+        "department_evidence": "гражданскимъ кассаціоннымъ департаментомъ",
+        "context_start": 1682,
+        "context_end": 2150,
+        "context_original": "ри отчужденіи онаго, какъ въ цѣломъ составѣ, такъ и по частямъ (жеребьямъ), отдѣльными соучастниками былъ неоднократно предметомъ обсужденія Правительствующаго Сената. Преподанныя гражданскимъ кассаціоннымъ департаментомъ въ рѣшеніяхъ 1875 г. № 178, 1876 г. № 559 и 1885 г. № 103 разъясненія по сему вопросу сведены въ рѣшеніи 1900 г. № 55 къ слѣдующему положенію: продажа всего общаго имѣнія можетъ последовать только по соглашенію всѣхъ совладѣльцевъ; свою же долю (",
+        "passage_id": "1905-047:1198-2859",
+        "pages": [
+          127
+        ],
+        "sources": [
+          {
+            "page": 127,
+            "page_method": "header",
+            "file": "p0064_R.txt",
+            "start": 1480,
+            "end": 2245
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-047?mode=precedent&ref=1905-047%3A1875%3A178%3A1917&at=1862&end=1930",
+        "scan_available": true
+      },
+      {
+        "id": "1905-047:1876:559:1932",
+        "source_id": "1905-047",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "2c1ea0ff4ee3829a8ae34c0f1d278fd72e56ba650e1a87be779c94609f182a5d",
+        "year": 1876,
+        "start": 1862,
+        "end": 1945,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 559,
+        "department_start": 1862,
+        "department_end": 1903,
+        "citation_start": 1932,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "гражданскимъ кассаціоннымъ департаментомъ въ рѣшеніяхъ 1875 г. № 178, 1876 г. № 559",
+        "target_url": null,
+        "department_evidence": "гражданскимъ кассаціоннымъ департаментомъ",
+        "context_start": 1682,
+        "context_end": 2165,
+        "context_original": "ри отчужденіи онаго, какъ въ цѣломъ составѣ, такъ и по частямъ (жеребьямъ), отдѣльными соучастниками былъ неоднократно предметомъ обсужденія Правительствующаго Сената. Преподанныя гражданскимъ кассаціоннымъ департаментомъ въ рѣшеніяхъ 1875 г. № 178, 1876 г. № 559 и 1885 г. № 103 разъясненія по сему вопросу сведены въ рѣшеніи 1900 г. № 55 къ слѣдующему положенію: продажа всего общаго имѣнія можетъ последовать только по соглашенію всѣхъ совладѣльцевъ; свою же долю (жеребій) каждый",
+        "passage_id": "1905-047:1198-2859",
+        "pages": [
+          127
+        ],
+        "sources": [
+          {
+            "page": 127,
+            "page_method": "header",
+            "file": "p0064_R.txt",
+            "start": 1480,
+            "end": 2245
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-047?mode=precedent&ref=1905-047%3A1876%3A559%3A1932&at=1862&end=1945",
+        "scan_available": true
+      },
+      {
+        "id": "1905-047:1885:103:1948",
+        "source_id": "1905-047",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "2c1ea0ff4ee3829a8ae34c0f1d278fd72e56ba650e1a87be779c94609f182a5d",
+        "year": 1885,
+        "start": 1862,
+        "end": 1961,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 103,
+        "department_start": 1862,
+        "department_end": 1903,
+        "citation_start": 1948,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "гражданскимъ кассаціоннымъ департаментомъ въ рѣшеніяхъ 1875 г. № 178, 1876 г. № 559 и 1885 г. № 103",
+        "target_url": null,
+        "department_evidence": "гражданскимъ кассаціоннымъ департаментомъ",
+        "context_start": 1682,
+        "context_end": 2181,
+        "context_original": "ри отчужденіи онаго, какъ въ цѣломъ составѣ, такъ и по частямъ (жеребьямъ), отдѣльными соучастниками былъ неоднократно предметомъ обсужденія Правительствующаго Сената. Преподанныя гражданскимъ кассаціоннымъ департаментомъ въ рѣшеніяхъ 1875 г. № 178, 1876 г. № 559 и 1885 г. № 103 разъясненія по сему вопросу сведены въ рѣшеніи 1900 г. № 55 къ слѣдующему положенію: продажа всего общаго имѣнія можетъ последовать только по соглашенію всѣхъ совладѣльцевъ; свою же долю (жеребій) каждый совладѣлецъ вол",
+        "passage_id": "1905-047:1198-2859",
+        "pages": [
+          127
+        ],
+        "sources": [
+          {
+            "page": 127,
+            "page_method": "header",
+            "file": "p0064_R.txt",
+            "start": 1480,
+            "end": 2245
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-047?mode=precedent&ref=1905-047%3A1885%3A103%3A1948&at=1862&end=1961",
+        "scan_available": true
+      },
+      {
+        "id": "1905-047:1900:55:2009",
+        "source_id": "1905-047",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "2c1ea0ff4ee3829a8ae34c0f1d278fd72e56ba650e1a87be779c94609f182a5d",
+        "year": 1900,
+        "start": 2001,
+        "end": 2021,
+        "department": null,
+        "association": null,
+        "number": 55,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2009,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1900 г. № 55",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1821,
+        "context_end": 2241,
+        "context_original": "я Правительствующаго Сената. Преподанныя гражданскимъ кассаціоннымъ департаментомъ въ рѣшеніяхъ 1875 г. № 178, 1876 г. № 559 и 1885 г. № 103 разъясненія по сему вопросу сведены въ рѣшеніи 1900 г. № 55 къ слѣдующему положенію: продажа всего общаго имѣнія можетъ последовать только по соглашенію всѣхъ совладѣльцевъ; свою же долю (жеребій) каждый совладѣлецъ воленъ отчуждать, не испросивъ на то согласія остальныхъ совлад",
+        "passage_id": "1905-047:1198-2859",
+        "pages": [
+          127
+        ],
+        "sources": [
+          {
+            "page": 127,
+            "page_method": "header",
+            "file": "p0064_R.txt",
+            "start": 1480,
+            "end": 2245
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-047?mode=precedent&ref=1905-047%3A1900%3A55%3A2009&at=2001&end=2021",
+        "scan_available": true
+      },
+      {
+        "id": "1905-047:1886:96:3222",
+        "source_id": "1905-047",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "2c1ea0ff4ee3829a8ae34c0f1d278fd72e56ba650e1a87be779c94609f182a5d",
+        "year": 1886,
+        "start": 3217,
+        "end": 3234,
+        "department": null,
+        "association": null,
+        "number": 96,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3222,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1886 г. № 96",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3037,
+        "context_end": 3454,
+        "context_original": "уже самопроизвольно уклоняться отъ законныхъ послѣдствій продажи относительно перенесенія на покупщика права собственности на отчуждаемое имущество и передачи ему сего послѣдняго (рѣш. 1886 г. № 96). Но, съ другой стороны, недвижимыя имущества могутъ быть отчуждаемы не иначе, какъ крѣпостными актами, а нотаріальные акты обращаются въ крѣпостные чрезъ утвержденіе ихъ старшимъ нотаріусомъ, и, слѣдовательно, до сего ",
+        "passage_id": "1905-047:2571-4256",
+        "pages": [
+          128
+        ],
+        "sources": [
+          {
+            "page": 128,
+            "page_method": "header",
+            "file": "p0065_L.txt",
+            "start": 2571,
+            "end": 4256
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-047?mode=precedent&ref=1905-047%3A1886%3A96%3A3222&at=3217&end=3234",
+        "scan_available": true
+      },
+      {
+        "id": "1905-047:1900:48:3641",
+        "source_id": "1905-047",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "2c1ea0ff4ee3829a8ae34c0f1d278fd72e56ba650e1a87be779c94609f182a5d",
+        "year": 1900,
+        "start": 3636,
+        "end": 3653,
+        "department": null,
+        "association": null,
+        "number": 48,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3641,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1900 г. № 48",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3456,
+        "context_end": 3873,
+        "context_original": "вержденія, совершенный у младшаго нотаріуса актъ не имѣетъ силы акта крѣпостнаго, устанавливающаго переходъ права собственности на недвижимое имущество отъ одного лица къ другому (рѣш. 1900 г. № 48). Отсюда явствуетъ, что моментомъ, пресѣкающимъ право совладѣльца требовать признанія за нимъ права преимущественной покупки отчуждаемой другимъ совладѣльцемъ доли общаго имущества, надлежитъ признавать время утверждені",
+        "passage_id": "1905-047:2571-4256",
+        "pages": [
+          128
+        ],
+        "sources": [
+          {
+            "page": 128,
+            "page_method": "header",
+            "file": "p0065_L.txt",
+            "start": 2571,
+            "end": 4256
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-047?mode=precedent&ref=1905-047%3A1900%3A48%3A3641&at=3636&end=3653",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-047",
     "scan_pages": [

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-075",
@@ -51,6 +51,164 @@
       "1897-f590614ff401",
       "1897-cb16ccf64b77",
       "1897-fed0dc8b0a5d"
+    ],
+    "precedents": [
+      {
+        "id": "1897-075:1894:20:1521",
+        "source_id": "1897-075",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "79a095c92771332daf9e3477b17551cb01faf46cbc2e839f6cb59529bca7a061",
+        "year": 1894,
+        "start": 1516,
+        "end": 1533,
+        "department": null,
+        "association": null,
+        "number": 20,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1521,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1894 г. № 20",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1336,
+        "context_end": 1753,
+        "context_original": "или оставленіе его безъ движенія; между тѣмъ неисполненіе, при подачѣ заявленія, формальныхъ требованій 121 и 122 ст. уст. Росс. ж. д. не вызываетъ упомянутыхъ послѣдствій (сборн. рѣш. 1894 г. № 20). Такимъ образомъ, заявленіе мужемъ требованія о вознагражденіи, хотя и отъ своего имени, но по поводу одного и того-же событія 13 іюня 1891 года, а потому очевидно въ интересахъ своей жены, должно быть признано дѣйстві",
+        "passage_id": "1897-075:0-1822",
+        "pages": [
+          245
+        ],
+        "sources": [
+          {
+            "page": 245,
+            "page_method": "header",
+            "file": "p0133_R.txt",
+            "start": 423,
+            "end": 1822
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-075?mode=precedent&ref=1897-075%3A1894%3A20%3A1521&at=1516&end=1533",
+        "scan_available": true
+      },
+      {
+        "id": "1897-075:1894:20:2244",
+        "source_id": "1897-075",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "79a095c92771332daf9e3477b17551cb01faf46cbc2e839f6cb59529bca7a061",
+        "year": 1894,
+        "start": 2236,
+        "end": 2256,
+        "department": null,
+        "association": null,
+        "number": 20,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2244,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. за 1894 г. № 20",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2056,
+        "context_end": 2476,
+        "context_original": " дѣйствительно понесенныхъ впослѣдствіи расходовъ. А затѣмъ, если неуказаніе въ заявленіи суммы требованія не лишаетъ заявителя права предъявить искъ въ опредѣленномъ размѣрѣ (сб. рѣш. за 1894 г. № 20), то требованіе въ заявленіи меньшей суммы вознагражденія не можетъ стѣснять заявителя предъявлять суду свое требованіе въ большемъ размѣрѣ, сообразно измѣнившимся обстоятельствамъ. Независимо отъ сего судебная палата п",
+        "passage_id": "1897-075:1599-3157",
+        "pages": [
+          245
+        ],
+        "sources": [
+          {
+            "page": 245,
+            "page_method": "header",
+            "file": "p0133_R.txt",
+            "start": 1599,
+            "end": 3157
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-075?mode=precedent&ref=1897-075%3A1894%3A20%3A2244&at=2236&end=2256",
+        "scan_available": true
+      },
+      {
+        "id": "1897-075:1873:443:3127",
+        "source_id": "1897-075",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "79a095c92771332daf9e3477b17551cb01faf46cbc2e839f6cb59529bca7a061",
+        "year": 1873,
+        "start": 3119,
+        "end": 3140,
+        "department": null,
+        "association": null,
+        "number": 443,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3127,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. за 1873 г. № 443",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2939,
+        "context_end": 3360,
+        "context_original": "и сдѣлки отъ имени другого лица не требуется представленія выданной имъ довѣренности и лишь довѣритель вправѣ оспаривать дѣйствіе того, кто является отъ его имени повѣреннымъ (сб. рѣш. за 1873 г. № 443 и 1891 г. № 91). Требованіе довѣренности при заявленіи является тѣмъ болѣе излишнею формальностью, что въ интересахъ истицы дѣйствовалъ ея мужъ, который и въ силу 106 ст. 1 ч. X т. обязанъ защищать свою жену. Хотя стать",
+        "passage_id": "1897-075:1599-3157",
+        "pages": [
+          245
+        ],
+        "sources": [
+          {
+            "page": 245,
+            "page_method": "header",
+            "file": "p0133_R.txt",
+            "start": 2948,
+            "end": 3543
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-075?mode=precedent&ref=1897-075%3A1873%3A443%3A3127&at=3119&end=3140",
+        "scan_available": true
+      },
+      {
+        "id": "1897-075:1891:91:3143",
+        "source_id": "1897-075",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "79a095c92771332daf9e3477b17551cb01faf46cbc2e839f6cb59529bca7a061",
+        "year": 1891,
+        "start": 3119,
+        "end": 3155,
+        "department": null,
+        "association": null,
+        "number": 91,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3143,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. за 1873 г. № 443 и 1891 г. № 91",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2939,
+        "context_end": 3375,
+        "context_original": "и сдѣлки отъ имени другого лица не требуется представленія выданной имъ довѣренности и лишь довѣритель вправѣ оспаривать дѣйствіе того, кто является отъ его имени повѣреннымъ (сб. рѣш. за 1873 г. № 443 и 1891 г. № 91). Требованіе довѣренности при заявленіи является тѣмъ болѣе излишнею формальностью, что въ интересахъ истицы дѣйствовалъ ея мужъ, который и въ силу 106 ст. 1 ч. X т. обязанъ защищать свою жену. Хотя статья эта и помѣщен",
+        "passage_id": "1897-075:1599-3157",
+        "pages": [
+          245
+        ],
+        "sources": [
+          {
+            "page": 245,
+            "page_method": "header",
+            "file": "p0133_R.txt",
+            "start": 2948,
+            "end": 3543
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-075?mode=precedent&ref=1897-075%3A1891%3A91%3A3143&at=3119&end=3155",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-075",
     "scan_pages": [

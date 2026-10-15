@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-084",
@@ -49,6 +49,86 @@
       "1904-920f3148e1cd",
       "1904-db21788cf643",
       "1904-7e2ce8ec4974"
+    ],
+    "precedents": [
+      {
+        "id": "1904-084:1883:57:4804",
+        "source_id": "1904-084",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "1ca2fc90d769002e879a65e7af0ec2dbe536b4fdd20f33de8a790fbd5016630c",
+        "year": 1883,
+        "start": 4799,
+        "end": 4816,
+        "department": null,
+        "association": null,
+        "number": 57,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4804,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1883 г. № 57",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4619,
+        "context_end": 5036,
+        "context_original": "ржанія и ничтожности интереса, представляемаго ими для гражданской жизни, не охраняются закономъ и вытекающія изъ этихъ сдѣлокъ требованія не могутъ пользоваться судебною защитою (рѣш. 1883 г. № 57). Хотя это разъясненіе послѣдовало по Варшавскому судебному округу, гдѣ дѣйствуетъ кодексъ Наполеона, но и съ точки зрѣнія нашихъ общихъ гражданскихъ законовъ вопросъ о томъ, пользуются-ли сдѣлки пари покровительствомъ ",
+        "passage_id": "1904-084:4215-5973",
+        "pages": [
+          232
+        ],
+        "sources": [
+          {
+            "page": 232,
+            "page_method": "header",
+            "file": "p0117_L.txt",
+            "start": 4215,
+            "end": 5451
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-084?mode=precedent&ref=1904-084%3A1883%3A57%3A4804&at=4799&end=4816",
+        "scan_available": true
+      },
+      {
+        "id": "1904-084:1882:150:5258",
+        "source_id": "1904-084",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "1ca2fc90d769002e879a65e7af0ec2dbe536b4fdd20f33de8a790fbd5016630c",
+        "year": 1882,
+        "start": 5242,
+        "end": 5271,
+        "department": null,
+        "association": null,
+        "number": 150,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5258,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. Прав. Сен. 1882 г. № 150",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5062,
+        "context_end": 5491,
+        "context_original": "рѣшенъ въ иномъ смыслѣ. На основаніи 1528 ст. т. X ч. 1, для дѣйствительности договора необходимо между прочимъ, чтобы цѣль его не противорѣчила благочинію, т.-е. добрымъ нравамъ (рѣш. Прав. Сен. 1882 г. № 150 и др.). Между тѣмъ, сдѣлки пари не удовлетворяютъ указанному условію. По всѣмъ вообще договорамъ, имѣющимъ своимъ предметомъ обмѣнъ цѣнностей или услугъ, каждый изъ контрагентовъ, пріобрѣтая извѣстныя права, несетъ, вмѣ",
+        "passage_id": "1904-084:4215-5973",
+        "pages": [
+          232
+        ],
+        "sources": [
+          {
+            "page": 232,
+            "page_method": "header",
+            "file": "p0117_L.txt",
+            "start": 4215,
+            "end": 5451
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-084?mode=precedent&ref=1904-084%3A1882%3A150%3A5258&at=5242&end=5271",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-084",
     "scan_pages": [

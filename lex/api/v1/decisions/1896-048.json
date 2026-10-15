@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1896-048",
@@ -42,6 +42,86 @@
       ]
     ],
     "participant_ids": [],
+    "precedents": [
+      {
+        "id": "1896-048:1875:276:2687",
+        "source_id": "1896-048",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "9f897b236197c233e5b7efcfe25fe5b528a74a4ee994a9988fa9b908e3dc6da2",
+        "year": 1875,
+        "start": 2662,
+        "end": 2700,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 276,
+        "department_start": 2667,
+        "department_end": 2686,
+        "citation_start": 2687,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. Гражд. Кассац. Д—та 1875 г. № 276",
+        "target_url": null,
+        "department_evidence": "Гражд. Кассац. Д—та",
+        "context_start": 2482,
+        "context_end": 2909,
+        "context_original": "ется въ предшедшей (242) статьѣ, суть окончательныя, слѣдова тельно, по существу своему неПодлежа- щія повѣркѣ Правительствующа о Се ната, а потому въ виду ст. 243 уст. гр. суд. и рѣш. Гражд. Кассац. Д—та 1875 г. № 276 и Общ. Собр. 1-го и Кассац. Д—товъ 1881 г. № 31, Прави тельствующій Сенатъ, по Общему Со бранію 1-го, 2-го и Кассаціонныхъ Де партаментовъ опредѣляетъ: жалобу Еф рема Дейкарханова оставить безъ раз смотрѣнія.",
+        "passage_id": "1896-048:905-2909",
+        "pages": [
+          791
+        ],
+        "sources": [
+          {
+            "page": 791,
+            "page_method": "header",
+            "file": "p0084.txt",
+            "start": 905,
+            "end": 2909
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-048?mode=precedent&ref=1896-048%3A1875%3A276%3A2687&at=2662&end=2700",
+        "scan_available": true
+      },
+      {
+        "id": "1896-048:1881:31:2736",
+        "source_id": "1896-048",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "9f897b236197c233e5b7efcfe25fe5b528a74a4ee994a9988fa9b908e3dc6da2",
+        "year": 1881,
+        "start": 2662,
+        "end": 2748,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 31,
+        "department_start": 2703,
+        "department_end": 2712,
+        "citation_start": 2736,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. Гражд. Кассац. Д—та 1875 г. № 276 и Общ. Собр. 1-го и Кассац. Д—товъ 1881 г. № 31",
+        "target_url": null,
+        "department_evidence": "Общ. Собр",
+        "context_start": 2482,
+        "context_end": 2909,
+        "context_original": "ется въ предшедшей (242) статьѣ, суть окончательныя, слѣдова тельно, по существу своему неПодлежа- щія повѣркѣ Правительствующа о Се ната, а потому въ виду ст. 243 уст. гр. суд. и рѣш. Гражд. Кассац. Д—та 1875 г. № 276 и Общ. Собр. 1-го и Кассац. Д—товъ 1881 г. № 31, Прави тельствующій Сенатъ, по Общему Со бранію 1-го, 2-го и Кассаціонныхъ Де партаментовъ опредѣляетъ: жалобу Еф рема Дейкарханова оставить безъ раз смотрѣнія.",
+        "passage_id": "1896-048:905-2909",
+        "pages": [
+          791
+        ],
+        "sources": [
+          {
+            "page": 791,
+            "page_method": "header",
+            "file": "p0084.txt",
+            "start": 905,
+            "end": 2909
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-048?mode=precedent&ref=1896-048%3A1881%3A31%3A2736&at=2662&end=2748",
+        "scan_available": true
+      }
+    ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1896-048",
     "scan_pages": [
       {

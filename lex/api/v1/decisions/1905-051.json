@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-051",
@@ -48,6 +48,86 @@
       "1905-37668b162ab8",
       "1905-d3adcacc8d33",
       "1905-e23300578e5c"
+    ],
+    "precedents": [
+      {
+        "id": "1905-051:1900:13:3959",
+        "source_id": "1905-051",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8aea2fa63414b831f0644e27cfe0fb3eb3a55fd1c484d0c52bbaaa448d82337b",
+        "year": 1900,
+        "start": 3872,
+        "end": 3973,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 13,
+        "department_start": 3884,
+        "department_end": 3899,
+        "citation_start": 3959,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "опредѣленіи общаго собранія I и кассаціонныхъ департаментовъ Правительствующаго Сената 1900 года № 13",
+        "target_url": null,
+        "department_evidence": "общаго собранія",
+        "context_start": 3692,
+        "context_end": 4193,
+        "context_original": "четамъ, то помянутая инструкція, распубликованная лишь 18 января 1901 года, не можетъ имѣть примѣненія къ дѣйствіямъ, происходившимъ до ея обнародованія, ибо, какъ и разъяснено въ опредѣленіи общаго собранія I и кассаціонныхъ департаментовъ Правительствующаго Сената 1900 года № 13, коль скоро подлежащими министрами, въ силу предоставленныхъ имъ закономъ полномочій, издаются правила, долженствующія имѣть общеобязательное значеніе, то таковыя „могутъ получить обязательную силу не иначе, какъ по пре",
+        "passage_id": "1905-051:3144-4908",
+        "pages": [
+          138
+        ],
+        "sources": [
+          {
+            "page": 138,
+            "page_method": "header",
+            "file": "p0070_L.txt",
+            "start": 3144,
+            "end": 4136
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-051?mode=precedent&ref=1905-051%3A1900%3A13%3A3959&at=3872&end=3973",
+        "scan_available": true
+      },
+      {
+        "id": "1905-051:1904:4:9297",
+        "source_id": "1905-051",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8aea2fa63414b831f0644e27cfe0fb3eb3a55fd1c484d0c52bbaaa448d82337b",
+        "year": 1904,
+        "start": 9183,
+        "end": 9310,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 4,
+        "department_start": 9183,
+        "department_end": 9198,
+        "citation_start": 9297,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "общаго собранія I и кассаціонныхъ департаментовъ Правительствующаго Сената, припечатаннаго въ сборникѣ рѣшеній за 1904 годъ № 4",
+        "target_url": null,
+        "department_evidence": "общаго собранія",
+        "context_start": 9003,
+        "context_end": 9530,
+        "context_original": "ъ, устанавливающимъ ея обязательность въ тѣхъ ея частяхъ, въ коихъ заключаются распоряженія и постановленія, несогласныя съ дѣйствующимъ закономъ, какъ это и видно изъ опредѣленія общаго собранія I и кассаціонныхъ департаментовъ Правительствующаго Сената, припечатаннаго въ сборникѣ рѣшеній за 1904 годъ № 4, относительно силы и значенія алфавитнаго указателя документовъ и актовъ, подлежащихъ оплатѣ гербовымъ сборомъ и изъятыхъ отъ него, составленнаго министромъ финансовъ и опубликованнаго въ томъ же собраніи узаконеній, въ",
+        "passage_id": "1905-051:8864-9973",
+        "pages": [
+          140
+        ],
+        "sources": [
+          {
+            "page": 140,
+            "page_method": "header",
+            "file": "p0071_L.txt",
+            "start": 8864,
+            "end": 9973
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-051?mode=precedent&ref=1905-051%3A1904%3A4%3A9297&at=9183&end=9310",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-051",
     "scan_pages": [

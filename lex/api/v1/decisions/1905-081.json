@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-081",
@@ -60,6 +60,359 @@
     "participant_ids": [
       "1905-7f70689004f4",
       "1905-e93261031ee8"
+    ],
+    "precedents": [
+      {
+        "id": "1905-081:1880:33:4914",
+        "source_id": "1905-081",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "f27f993b8727c53f6c2260222115881b4060c2ecb608660f3b0d2fd0053b7e00",
+        "year": 1880,
+        "start": 4897,
+        "end": 4926,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 33,
+        "department_start": 4902,
+        "department_end": 4913,
+        "citation_start": 4914,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. к. д-та 1880 г. № 33",
+        "target_url": null,
+        "department_evidence": "гр. к. д-та",
+        "context_start": 4717,
+        "context_end": 5146,
+        "context_original": "еніемъ о его личности, а также устраненіе опекуновъ, по причинамъ ихъ нерадѣнія, бездѣйствія и другихъ неправильныхъ дѣйствій, принадлежатъ подлежащимъ опекунскимъ установленіямъ (рѣш. гр. к. д-та 1880 г. № 33, 1875 г. № 102, 1873 г. № 1239 и общ. собр. за 1890 г. № 11 и 20), а до такого устраненія они продолжаютъ быть опекунами со всѣми обязанностями и правами, присущими ихъ званію (рѣш. 1880 г. № 33). Въ тѣхъ же случаяхъ, к",
+        "passage_id": "1905-081:4204-5590",
+        "pages": [
+          225
+        ],
+        "sources": [
+          {
+            "page": 225,
+            "page_method": "header",
+            "file": "p0113_R.txt",
+            "start": 4611,
+            "end": 5590
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-081?mode=precedent&ref=1905-081%3A1880%3A33%3A4914&at=4897&end=4926",
+        "scan_available": true
+      },
+      {
+        "id": "1905-081:1875:102:4928",
+        "source_id": "1905-081",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "f27f993b8727c53f6c2260222115881b4060c2ecb608660f3b0d2fd0053b7e00",
+        "year": 1875,
+        "start": 4897,
+        "end": 4941,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 102,
+        "department_start": 4902,
+        "department_end": 4913,
+        "citation_start": 4928,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. к. д-та 1880 г. № 33, 1875 г. № 102",
+        "target_url": null,
+        "department_evidence": "гр. к. д-та",
+        "context_start": 4717,
+        "context_end": 5161,
+        "context_original": "еніемъ о его личности, а также устраненіе опекуновъ, по причинамъ ихъ нерадѣнія, бездѣйствія и другихъ неправильныхъ дѣйствій, принадлежатъ подлежащимъ опекунскимъ установленіямъ (рѣш. гр. к. д-та 1880 г. № 33, 1875 г. № 102, 1873 г. № 1239 и общ. собр. за 1890 г. № 11 и 20), а до такого устраненія они продолжаютъ быть опекунами со всѣми обязанностями и правами, присущими ихъ званію (рѣш. 1880 г. № 33). Въ тѣхъ же случаяхъ, когда къ опекаем",
+        "passage_id": "1905-081:4204-5590",
+        "pages": [
+          225
+        ],
+        "sources": [
+          {
+            "page": 225,
+            "page_method": "header",
+            "file": "p0113_R.txt",
+            "start": 4611,
+            "end": 5590
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-081?mode=precedent&ref=1905-081%3A1875%3A102%3A4928&at=4897&end=4941",
+        "scan_available": true
+      },
+      {
+        "id": "1905-081:1873:1239:4943",
+        "source_id": "1905-081",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "f27f993b8727c53f6c2260222115881b4060c2ecb608660f3b0d2fd0053b7e00",
+        "year": 1873,
+        "start": 4897,
+        "end": 4957,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 1239,
+        "department_start": 4902,
+        "department_end": 4913,
+        "citation_start": 4943,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. к. д-та 1880 г. № 33, 1875 г. № 102, 1873 г. № 1239",
+        "target_url": null,
+        "department_evidence": "гр. к. д-та",
+        "context_start": 4717,
+        "context_end": 5177,
+        "context_original": "еніемъ о его личности, а также устраненіе опекуновъ, по причинамъ ихъ нерадѣнія, бездѣйствія и другихъ неправильныхъ дѣйствій, принадлежатъ подлежащимъ опекунскимъ установленіямъ (рѣш. гр. к. д-та 1880 г. № 33, 1875 г. № 102, 1873 г. № 1239 и общ. собр. за 1890 г. № 11 и 20), а до такого устраненія они продолжаютъ быть опекунами со всѣми обязанностями и правами, присущими ихъ званію (рѣш. 1880 г. № 33). Въ тѣхъ же случаяхъ, когда къ опекаемому назначено нѣ",
+        "passage_id": "1905-081:4204-5590",
+        "pages": [
+          225
+        ],
+        "sources": [
+          {
+            "page": 225,
+            "page_method": "header",
+            "file": "p0113_R.txt",
+            "start": 4611,
+            "end": 5590
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-081?mode=precedent&ref=1905-081%3A1873%3A1239%3A4943&at=4897&end=4957",
+        "scan_available": true
+      },
+      {
+        "id": "1905-081:1890:11:4974",
+        "source_id": "1905-081",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "f27f993b8727c53f6c2260222115881b4060c2ecb608660f3b0d2fd0053b7e00",
+        "year": 1890,
+        "start": 4897,
+        "end": 4991,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 11,
+        "department_start": 4960,
+        "department_end": 4969,
+        "citation_start": 4974,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. к. д-та 1880 г. № 33, 1875 г. № 102, 1873 г. № 1239 и общ. собр. за 1890 г. № 11 и 20",
+        "target_url": null,
+        "department_evidence": "общ. собр",
+        "context_start": 4717,
+        "context_end": 5211,
+        "context_original": "еніемъ о его личности, а также устраненіе опекуновъ, по причинамъ ихъ нерадѣнія, бездѣйствія и другихъ неправильныхъ дѣйствій, принадлежатъ подлежащимъ опекунскимъ установленіямъ (рѣш. гр. к. д-та 1880 г. № 33, 1875 г. № 102, 1873 г. № 1239 и общ. собр. за 1890 г. № 11 и 20), а до такого устраненія они продолжаютъ быть опекунами со всѣми обязанностями и правами, присущими ихъ званію (рѣш. 1880 г. № 33). Въ тѣхъ же случаяхъ, когда къ опекаемому назначено нѣсколько опекуновъ, если кто-либо и",
+        "passage_id": "1905-081:4204-5590",
+        "pages": [
+          225
+        ],
+        "sources": [
+          {
+            "page": 225,
+            "page_method": "header",
+            "file": "p0113_R.txt",
+            "start": 4611,
+            "end": 5590
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-081?mode=precedent&ref=1905-081%3A1890%3A11%3A4974&at=4897&end=4991",
+        "scan_available": true
+      },
+      {
+        "id": "1905-081:1890:20:4974",
+        "source_id": "1905-081",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "f27f993b8727c53f6c2260222115881b4060c2ecb608660f3b0d2fd0053b7e00",
+        "year": 1890,
+        "start": 4897,
+        "end": 4991,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 20,
+        "department_start": 4960,
+        "department_end": 4969,
+        "citation_start": 4974,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. к. д-та 1880 г. № 33, 1875 г. № 102, 1873 г. № 1239 и общ. собр. за 1890 г. № 11 и 20",
+        "target_url": null,
+        "department_evidence": "общ. собр",
+        "context_start": 4717,
+        "context_end": 5211,
+        "context_original": "еніемъ о его личности, а также устраненіе опекуновъ, по причинамъ ихъ нерадѣнія, бездѣйствія и другихъ неправильныхъ дѣйствій, принадлежатъ подлежащимъ опекунскимъ установленіямъ (рѣш. гр. к. д-та 1880 г. № 33, 1875 г. № 102, 1873 г. № 1239 и общ. собр. за 1890 г. № 11 и 20), а до такого устраненія они продолжаютъ быть опекунами со всѣми обязанностями и правами, присущими ихъ званію (рѣш. 1880 г. № 33). Въ тѣхъ же случаяхъ, когда къ опекаемому назначено нѣсколько опекуновъ, если кто-либо и",
+        "passage_id": "1905-081:4204-5590",
+        "pages": [
+          225
+        ],
+        "sources": [
+          {
+            "page": 225,
+            "page_method": "header",
+            "file": "p0113_R.txt",
+            "start": 4611,
+            "end": 5590
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-081?mode=precedent&ref=1905-081%3A1890%3A20%3A4974&at=4897&end=4991",
+        "scan_available": true
+      },
+      {
+        "id": "1905-081:1880:33:5109",
+        "source_id": "1905-081",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "f27f993b8727c53f6c2260222115881b4060c2ecb608660f3b0d2fd0053b7e00",
+        "year": 1880,
+        "start": 5104,
+        "end": 5121,
+        "department": null,
+        "association": null,
+        "number": 33,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5109,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1880 г. № 33",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4924,
+        "context_end": 5341,
+        "context_original": "33, 1875 г. № 102, 1873 г. № 1239 и общ. собр. за 1890 г. № 11 и 20), а до такого устраненія они продолжаютъ быть опекунами со всѣми обязанностями и правами, присущими ихъ званію (рѣш. 1880 г. № 33). Въ тѣхъ же случаяхъ, когда къ опекаемому назначено нѣсколько опекуновъ, если кто-либо изъ нихъ находитъ, что другiе соопекуны не исполняютъ своихъ обязанностей, то ему принадлежитъ лишь право, какъ равно и обязанность",
+        "passage_id": "1905-081:4204-5590",
+        "pages": [
+          225
+        ],
+        "sources": [
+          {
+            "page": 225,
+            "page_method": "header",
+            "file": "p0113_R.txt",
+            "start": 4611,
+            "end": 5590
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-081?mode=precedent&ref=1905-081%3A1880%3A33%3A5109&at=5104&end=5121",
+        "scan_available": true
+      },
+      {
+        "id": "1905-081:1875:102:5544",
+        "source_id": "1905-081",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "f27f993b8727c53f6c2260222115881b4060c2ecb608660f3b0d2fd0053b7e00",
+        "year": 1875,
+        "start": 5527,
+        "end": 5557,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 102,
+        "department_start": 5532,
+        "department_end": 5543,
+        "citation_start": 5544,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. к. д-та 1875 г. № 102",
+        "target_url": null,
+        "department_evidence": "гр. к. д-та",
+        "context_start": 5347,
+        "context_end": 5777,
+        "context_original": "сти объ этомъ до свѣдѣнія подлежащаго опекунскаго установленія, отъ котораго только и зависитъ принять тѣ или другія мѣры противъ неисправнаго и при необходимости и устранить его (рѣш. гр. к. д-та 1875 г. № 102 и общ. собр. 1890 г. № 11 и 20). По настоящему дѣлу установлено, что вопросъ объ устраненіи опекуна Иващенкова отъ опекунскихъ обязанностей даже не возбуждался и онъ продолжаетъ состоять при этихъ обязанностяхъ по насто",
+        "passage_id": "1905-081:4204-5590",
+        "pages": [
+          225
+        ],
+        "sources": [
+          {
+            "page": 225,
+            "page_method": "header",
+            "file": "p0113_R.txt",
+            "start": 5411,
+            "end": 6804
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-081?mode=precedent&ref=1905-081%3A1875%3A102%3A5544&at=5527&end=5557",
+        "scan_available": true
+      },
+      {
+        "id": "1905-081:1890:11:5571",
+        "source_id": "1905-081",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "f27f993b8727c53f6c2260222115881b4060c2ecb608660f3b0d2fd0053b7e00",
+        "year": 1890,
+        "start": 5527,
+        "end": 5588,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 11,
+        "department_start": 5560,
+        "department_end": 5569,
+        "citation_start": 5571,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. к. д-та 1875 г. № 102 и общ. собр. 1890 г. № 11 и 20",
+        "target_url": null,
+        "department_evidence": "общ. собр",
+        "context_start": 5347,
+        "context_end": 5808,
+        "context_original": "сти объ этомъ до свѣдѣнія подлежащаго опекунскаго установленія, отъ котораго только и зависитъ принять тѣ или другія мѣры противъ неисправнаго и при необходимости и устранить его (рѣш. гр. к. д-та 1875 г. № 102 и общ. собр. 1890 г. № 11 и 20). По настоящему дѣлу установлено, что вопросъ объ устраненіи опекуна Иващенкова отъ опекунскихъ обязанностей даже не возбуждался и онъ продолжаетъ состоять при этихъ обязанностяхъ по настоящее время, а пока онъ не устра",
+        "passage_id": "1905-081:4204-5590",
+        "pages": [
+          225
+        ],
+        "sources": [
+          {
+            "page": 225,
+            "page_method": "header",
+            "file": "p0113_R.txt",
+            "start": 5411,
+            "end": 6804
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-081?mode=precedent&ref=1905-081%3A1890%3A11%3A5571&at=5527&end=5588",
+        "scan_available": true
+      },
+      {
+        "id": "1905-081:1890:20:5571",
+        "source_id": "1905-081",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "f27f993b8727c53f6c2260222115881b4060c2ecb608660f3b0d2fd0053b7e00",
+        "year": 1890,
+        "start": 5527,
+        "end": 5588,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 20,
+        "department_start": 5560,
+        "department_end": 5569,
+        "citation_start": 5571,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. к. д-та 1875 г. № 102 и общ. собр. 1890 г. № 11 и 20",
+        "target_url": null,
+        "department_evidence": "общ. собр",
+        "context_start": 5347,
+        "context_end": 5808,
+        "context_original": "сти объ этомъ до свѣдѣнія подлежащаго опекунскаго установленія, отъ котораго только и зависитъ принять тѣ или другія мѣры противъ неисправнаго и при необходимости и устранить его (рѣш. гр. к. д-та 1875 г. № 102 и общ. собр. 1890 г. № 11 и 20). По настоящему дѣлу установлено, что вопросъ объ устраненіи опекуна Иващенкова отъ опекунскихъ обязанностей даже не возбуждался и онъ продолжаетъ состоять при этихъ обязанностяхъ по настоящее время, а пока онъ не устра",
+        "passage_id": "1905-081:4204-5590",
+        "pages": [
+          225
+        ],
+        "sources": [
+          {
+            "page": 225,
+            "page_method": "header",
+            "file": "p0113_R.txt",
+            "start": 5411,
+            "end": 6804
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-081?mode=precedent&ref=1905-081%3A1890%3A20%3A5571&at=5527&end=5588",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-081",
     "scan_pages": [

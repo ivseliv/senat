@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-001",
@@ -37,6 +37,47 @@
     "participant_ids": [
       "1904-4cfe11e9b1b7",
       "1904-bddcff3ddb87"
+    ],
+    "precedents": [
+      {
+        "id": "1904-001:1890:10:6322",
+        "source_id": "1904-001",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "5afe9ae4431a36d143c5e9f4d1fc5d1549a834759bdfc59295cbc56639e003ba",
+        "year": 1890,
+        "start": 6302,
+        "end": 6334,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 10,
+        "department_start": 6307,
+        "department_end": 6321,
+        "citation_start": 6322,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. деп. 1890 г. № 10",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 6122,
+        "context_end": 6554,
+        "context_original": "но связанное съ имѣніемъ (jura in re), либо только личное право (jura ad rem personalia), въ зависимости отъ оглашенія или неоглашенія правоосноваs въ ипотечномъ указателѣ (сборн. рѣш. гр. касс. деп. 1890 г. № 10). Права вещныя слѣдуютъ за имѣніемъ, въ чьемъ бы владѣніи оно ни состояло; права личныя могутъ быть осуществлены лишь настолько, насколько имѣніе находится во владѣніи договорившихся сторонъ. Непоколебимость правъ, имѣю",
+        "passage_id": "1904-001:5566-7106",
+        "pages": [
+          5
+        ],
+        "sources": [
+          {
+            "page": 5,
+            "page_method": "header",
+            "file": "p0003_R.txt",
+            "start": 5566,
+            "end": 7106
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-001?mode=precedent&ref=1904-001%3A1890%3A10%3A6322&at=6302&end=6334",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-001",
     "scan_pages": [

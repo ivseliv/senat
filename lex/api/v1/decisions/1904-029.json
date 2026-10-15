@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-029",
@@ -54,6 +54,203 @@
       "1904-dca275680d61",
       "1904-369f5c14e700",
       "1904-345cf4db0064"
+    ],
+    "precedents": [
+      {
+        "id": "1904-029:1894:30:335",
+        "source_id": "1904-029",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "7defe3326c67b04ee2f3370ac120c80245187e1d8bd8ab4bce1b2ce58a9865be",
+        "year": 1894,
+        "start": 330,
+        "end": 347,
+        "department": null,
+        "association": null,
+        "number": 30,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 335,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1894 г. № 30",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 150,
+        "context_end": 567,
+        "context_original": "го же Сапотницкаго, поступившее въ Сенатъ 24 октября 1900 года, такъ какъ въ немъ содержатся недозволенныя закономъ, дополнительныя къ его кассаціонной жалобѣ объясненія и доводы (рѣш. 1894 г. № 30, 1893 г. № 35, 65 и 100 и друг.), и б) прошеніе крестьянина Ивана Головатенко, въ коемъ онъ ходатайствуетъ о разрѣшеніи настоящаго дѣла по существу, въ его пользу,—такъ какъ онъ не принималъ никакого участія въ семъ дѣл",
+        "passage_id": "1904-029:0-1970",
+        "pages": [
+          73
+        ],
+        "sources": [
+          {
+            "page": 73,
+            "page_method": "header",
+            "file": "p0037_R.txt",
+            "start": 0,
+            "end": 413
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-029?mode=precedent&ref=1904-029%3A1894%3A30%3A335&at=330&end=347",
+        "scan_available": true
+      },
+      {
+        "id": "1904-029:1893:35:349",
+        "source_id": "1904-029",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "7defe3326c67b04ee2f3370ac120c80245187e1d8bd8ab4bce1b2ce58a9865be",
+        "year": 1893,
+        "start": 330,
+        "end": 371,
+        "department": null,
+        "association": null,
+        "number": 35,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 349,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1894 г. № 30, 1893 г. № 35, 65 и 100",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 150,
+        "context_end": 591,
+        "context_original": "го же Сапотницкаго, поступившее въ Сенатъ 24 октября 1900 года, такъ какъ въ немъ содержатся недозволенныя закономъ, дополнительныя къ его кассаціонной жалобѣ объясненія и доводы (рѣш. 1894 г. № 30, 1893 г. № 35, 65 и 100 и друг.), и б) прошеніе крестьянина Ивана Головатенко, въ коемъ онъ ходатайствуетъ о разрѣшеніи настоящаго дѣла по существу, въ его пользу,—такъ какъ онъ не принималъ никакого участія въ семъ дѣлѣ въ окружномъ судѣ и су",
+        "passage_id": "1904-029:0-1970",
+        "pages": [
+          73
+        ],
+        "sources": [
+          {
+            "page": 73,
+            "page_method": "header",
+            "file": "p0037_R.txt",
+            "start": 0,
+            "end": 413
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-029?mode=precedent&ref=1904-029%3A1893%3A35%3A349&at=330&end=371",
+        "scan_available": true
+      },
+      {
+        "id": "1904-029:1893:65:349",
+        "source_id": "1904-029",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "7defe3326c67b04ee2f3370ac120c80245187e1d8bd8ab4bce1b2ce58a9865be",
+        "year": 1893,
+        "start": 330,
+        "end": 371,
+        "department": null,
+        "association": null,
+        "number": 65,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 349,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1894 г. № 30, 1893 г. № 35, 65 и 100",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 150,
+        "context_end": 591,
+        "context_original": "го же Сапотницкаго, поступившее въ Сенатъ 24 октября 1900 года, такъ какъ въ немъ содержатся недозволенныя закономъ, дополнительныя къ его кассаціонной жалобѣ объясненія и доводы (рѣш. 1894 г. № 30, 1893 г. № 35, 65 и 100 и друг.), и б) прошеніе крестьянина Ивана Головатенко, въ коемъ онъ ходатайствуетъ о разрѣшеніи настоящаго дѣла по существу, въ его пользу,—такъ какъ онъ не принималъ никакого участія въ семъ дѣлѣ въ окружномъ судѣ и су",
+        "passage_id": "1904-029:0-1970",
+        "pages": [
+          73
+        ],
+        "sources": [
+          {
+            "page": 73,
+            "page_method": "header",
+            "file": "p0037_R.txt",
+            "start": 0,
+            "end": 413
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-029?mode=precedent&ref=1904-029%3A1893%3A65%3A349&at=330&end=371",
+        "scan_available": true
+      },
+      {
+        "id": "1904-029:1893:100:349",
+        "source_id": "1904-029",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "7defe3326c67b04ee2f3370ac120c80245187e1d8bd8ab4bce1b2ce58a9865be",
+        "year": 1893,
+        "start": 330,
+        "end": 371,
+        "department": null,
+        "association": null,
+        "number": 100,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 349,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1894 г. № 30, 1893 г. № 35, 65 и 100",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 150,
+        "context_end": 591,
+        "context_original": "го же Сапотницкаго, поступившее въ Сенатъ 24 октября 1900 года, такъ какъ въ немъ содержатся недозволенныя закономъ, дополнительныя къ его кассаціонной жалобѣ объясненія и доводы (рѣш. 1894 г. № 30, 1893 г. № 35, 65 и 100 и друг.), и б) прошеніе крестьянина Ивана Головатенко, въ коемъ онъ ходатайствуетъ о разрѣшеніи настоящаго дѣла по существу, въ его пользу,—такъ какъ онъ не принималъ никакого участія въ семъ дѣлѣ въ окружномъ судѣ и су",
+        "passage_id": "1904-029:0-1970",
+        "pages": [
+          73
+        ],
+        "sources": [
+          {
+            "page": 73,
+            "page_method": "header",
+            "file": "p0037_R.txt",
+            "start": 0,
+            "end": 413
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-029?mode=precedent&ref=1904-029%3A1893%3A100%3A349&at=330&end=371",
+        "scan_available": true
+      },
+      {
+        "id": "1904-029:1903:60:1358",
+        "source_id": "1904-029",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "7defe3326c67b04ee2f3370ac120c80245187e1d8bd8ab4bce1b2ce58a9865be",
+        "year": 1903,
+        "start": 1228,
+        "end": 1375,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 60,
+        "department_start": 1238,
+        "department_end": 1253,
+        "citation_start": 1358,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніемъ общаго собранія 1-го и кассаціонныхъ департаментовъ Правительствующаго Сената, какъ видно изъ его вѣдѣнія отъ 26 апрѣля 1903 года за № 60",
+        "target_url": null,
+        "department_evidence": "общаго собранія",
+        "context_start": 1048,
+        "context_end": 1595,
+        "context_original": "ъ правѣ-ли евреи, при дѣйствіи закона 3 мая 1882 года, въ чертѣ постоянной ихъ осѣдлости, пріобрѣтать недвижимость въ такихъ мѣстечкахъ, которыя имѣютъ сельское управленіе; 2) что рѣшеніемъ общаго собранія 1-го и кассаціонныхъ департаментовъ Правительствующаго Сената, какъ видно изъ его вѣдѣнія отъ 26 апрѣля 1903 года за № 60, изложенный вопросъ разрѣшенъ въ отрицательномъ смыслѣ, и 3) что, вслѣдствіе этого, не заслуживаютъ уваженія всѣ объясненія просителя, коими онъ стремится доказать, что палата поступила неправильно, отказавъ ему въ искѣ",
+        "passage_id": "1904-029:0-1970",
+        "pages": [
+          74
+        ],
+        "sources": [
+          {
+            "page": 74,
+            "page_method": "header",
+            "file": "p0038_L.txt",
+            "start": 414,
+            "end": 1970
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-029?mode=precedent&ref=1904-029%3A1903%3A60%3A1358&at=1228&end=1375",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-029",
     "scan_pages": [

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-108",
@@ -69,6 +69,203 @@
       "1904-5445c06bc9ad",
       "1904-1d6481223692",
       "1904-b1d9260cd5ed"
+    ],
+    "precedents": [
+      {
+        "id": "1904-108:1880:701:2442",
+        "source_id": "1904-108",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "cab131583feb8a551fb7edcffdf86563dcff94478c5ba2fe53ca6ad6b3a741de",
+        "year": 1880,
+        "start": 2437,
+        "end": 2466,
+        "department": null,
+        "association": null,
+        "number": 701,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2442,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1880 г. № 701, 774 и 775",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2257,
+        "context_end": 2686,
+        "context_original": "акладъ не покрываетъ всей претензіи такого кредитора (ст. 1456 ч. III мѣст. узак.). Изъ этого, прежде всего, слѣдуетъ, что разъясненія Правительствующаго Сената по 4 департаменту (рѣш. 1880 г. № 701, 774 и 775), какъ относящіяся до правъ кредиторовъ по закладнымъ, основанныхъ на законахъ общихъ (т. X ч. 1), не могутъ относиться къ правамъ кредиторовъ по законамъ мѣстнымъ. Затѣмъ, мѣстные законы, предусматривая публичную прода",
+        "passage_id": "1904-108:1648-3248",
+        "pages": [
+          298
+        ],
+        "sources": [
+          {
+            "page": 298,
+            "page_method": "header",
+            "file": "p0150_L.txt",
+            "start": 1648,
+            "end": 3248
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-108?mode=precedent&ref=1904-108%3A1880%3A701%3A2442&at=2437&end=2466",
+        "scan_available": true
+      },
+      {
+        "id": "1904-108:1880:774:2442",
+        "source_id": "1904-108",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "cab131583feb8a551fb7edcffdf86563dcff94478c5ba2fe53ca6ad6b3a741de",
+        "year": 1880,
+        "start": 2437,
+        "end": 2466,
+        "department": null,
+        "association": null,
+        "number": 774,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2442,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1880 г. № 701, 774 и 775",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2257,
+        "context_end": 2686,
+        "context_original": "акладъ не покрываетъ всей претензіи такого кредитора (ст. 1456 ч. III мѣст. узак.). Изъ этого, прежде всего, слѣдуетъ, что разъясненія Правительствующаго Сената по 4 департаменту (рѣш. 1880 г. № 701, 774 и 775), какъ относящіяся до правъ кредиторовъ по закладнымъ, основанныхъ на законахъ общихъ (т. X ч. 1), не могутъ относиться къ правамъ кредиторовъ по законамъ мѣстнымъ. Затѣмъ, мѣстные законы, предусматривая публичную прода",
+        "passage_id": "1904-108:1648-3248",
+        "pages": [
+          298
+        ],
+        "sources": [
+          {
+            "page": 298,
+            "page_method": "header",
+            "file": "p0150_L.txt",
+            "start": 1648,
+            "end": 3248
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-108?mode=precedent&ref=1904-108%3A1880%3A774%3A2442&at=2437&end=2466",
+        "scan_available": true
+      },
+      {
+        "id": "1904-108:1880:775:2442",
+        "source_id": "1904-108",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "cab131583feb8a551fb7edcffdf86563dcff94478c5ba2fe53ca6ad6b3a741de",
+        "year": 1880,
+        "start": 2437,
+        "end": 2466,
+        "department": null,
+        "association": null,
+        "number": 775,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2442,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1880 г. № 701, 774 и 775",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2257,
+        "context_end": 2686,
+        "context_original": "акладъ не покрываетъ всей претензіи такого кредитора (ст. 1456 ч. III мѣст. узак.). Изъ этого, прежде всего, слѣдуетъ, что разъясненія Правительствующаго Сената по 4 департаменту (рѣш. 1880 г. № 701, 774 и 775), какъ относящіяся до правъ кредиторовъ по закладнымъ, основанныхъ на законахъ общихъ (т. X ч. 1), не могутъ относиться къ правамъ кредиторовъ по законамъ мѣстнымъ. Затѣмъ, мѣстные законы, предусматривая публичную прода",
+        "passage_id": "1904-108:1648-3248",
+        "pages": [
+          298
+        ],
+        "sources": [
+          {
+            "page": 298,
+            "page_method": "header",
+            "file": "p0150_L.txt",
+            "start": 1648,
+            "end": 3248
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-108?mode=precedent&ref=1904-108%3A1880%3A775%3A2442&at=2437&end=2466",
+        "scan_available": true
+      },
+      {
+        "id": "1904-108:1893:27:5460",
+        "source_id": "1904-108",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "cab131583feb8a551fb7edcffdf86563dcff94478c5ba2fe53ca6ad6b3a741de",
+        "year": 1893,
+        "start": 5455,
+        "end": 5472,
+        "department": null,
+        "association": null,
+        "number": 27,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5460,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1893 г. № 27",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5275,
+        "context_end": 5692,
+        "context_original": "я по дѣламъ несостоятельнаго общества «Везувій», заканчиваетъ судебное производство, а въ подобныхъ случаяхъ обжалованіе частныхъ опредѣленій въ кассаціонномъ порядкѣ допускается (рѣш. 1893 г. № 27; 1880 г. № 126). Въ настоящемъ дѣлѣ разрѣшенію Сената подлежитъ вопросъ: могутъ-ли въ Прибалтійскихъ губерніяхъ ипотечные кредиторы участвовать въ выборѣ конкурснаго управленія? Подъ ипотекою законъ разумѣетъ закладъ не",
+        "passage_id": "1904-108:4439-6329",
+        "pages": [
+          299
+        ],
+        "sources": [
+          {
+            "page": 299,
+            "page_method": "header",
+            "file": "p0150_R.txt",
+            "start": 5009,
+            "end": 6214
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-108?mode=precedent&ref=1904-108%3A1893%3A27%3A5460&at=5455&end=5472",
+        "scan_available": true
+      },
+      {
+        "id": "1904-108:1880:126:5474",
+        "source_id": "1904-108",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "cab131583feb8a551fb7edcffdf86563dcff94478c5ba2fe53ca6ad6b3a741de",
+        "year": 1880,
+        "start": 5455,
+        "end": 5487,
+        "department": null,
+        "association": null,
+        "number": 126,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5474,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1893 г. № 27; 1880 г. № 126",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5275,
+        "context_end": 5707,
+        "context_original": "я по дѣламъ несостоятельнаго общества «Везувій», заканчиваетъ судебное производство, а въ подобныхъ случаяхъ обжалованіе частныхъ опредѣленій въ кассаціонномъ порядкѣ допускается (рѣш. 1893 г. № 27; 1880 г. № 126). Въ настоящемъ дѣлѣ разрѣшенію Сената подлежитъ вопросъ: могутъ-ли въ Прибалтійскихъ губерніяхъ ипотечные кредиторы участвовать въ выборѣ конкурснаго управленія? Подъ ипотекою законъ разумѣетъ закладъ недвижимаго имуще",
+        "passage_id": "1904-108:4439-6329",
+        "pages": [
+          299
+        ],
+        "sources": [
+          {
+            "page": 299,
+            "page_method": "header",
+            "file": "p0150_R.txt",
+            "start": 5009,
+            "end": 6214
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-108?mode=precedent&ref=1904-108%3A1880%3A126%3A5474&at=5455&end=5487",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-108",
     "scan_pages": [

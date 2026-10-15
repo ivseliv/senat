@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1896-038",
@@ -46,6 +46,86 @@
       ]
     ],
     "participant_ids": [],
+    "precedents": [
+      {
+        "id": "1896-038:1888:11:6526",
+        "source_id": "1896-038",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "f0fa793f9b0d766057c89acf35c5d861f8ceef60dabbff02f8e784e0c27d3029",
+        "year": 1888,
+        "start": 6466,
+        "end": 6544,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 11,
+        "department_start": 6504,
+        "department_end": 6513,
+        "citation_start": 6526,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ Правадель- ствующій Сенатъ (Общ. Собр. Касс. Деи. 1888 года № 11, 20",
+        "target_url": null,
+        "department_evidence": "Общ. Собр",
+        "context_start": 6286,
+        "context_end": 6764,
+        "context_original": " производ ству слѣдствія въ установленномъ за кономъ порядкѣ. Выслушавъ заключеніе Исполн. обяз. Товарища Оберъ-Прокурора, Правитель ствующій Сенатъ нашелъ, что въ не однократныхъ рѣшеніяхъ Правадель- ствующій Сенатъ (Общ. Собр. Касс. Деи. 1888 года № 11, 20 и дрД уже разъяснилъ, что 2 п. 314 ст. воен. суд. устава устанавливаетъ подвѣдом ственность производствъ предваритель наго слѣдствія объ общихъ преступле ніяхъ, совершенныхъ военно служащими въ мѣстахъ, подлежащихъ вѣдѣ",
+        "passage_id": "1896-038:5275-6939",
+        "pages": [
+          779
+        ],
+        "sources": [
+          {
+            "page": 779,
+            "page_method": "header",
+            "file": "p0072.txt",
+            "start": 5275,
+            "end": 6939
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-038?mode=precedent&ref=1896-038%3A1888%3A11%3A6526&at=6466&end=6544",
+        "scan_available": true
+      },
+      {
+        "id": "1896-038:1888:20:6526",
+        "source_id": "1896-038",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "f0fa793f9b0d766057c89acf35c5d861f8ceef60dabbff02f8e784e0c27d3029",
+        "year": 1888,
+        "start": 6466,
+        "end": 6544,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 20,
+        "department_start": 6504,
+        "department_end": 6513,
+        "citation_start": 6526,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ Правадель- ствующій Сенатъ (Общ. Собр. Касс. Деи. 1888 года № 11, 20",
+        "target_url": null,
+        "department_evidence": "Общ. Собр",
+        "context_start": 6286,
+        "context_end": 6764,
+        "context_original": " производ ству слѣдствія въ установленномъ за кономъ порядкѣ. Выслушавъ заключеніе Исполн. обяз. Товарища Оберъ-Прокурора, Правитель ствующій Сенатъ нашелъ, что въ не однократныхъ рѣшеніяхъ Правадель- ствующій Сенатъ (Общ. Собр. Касс. Деи. 1888 года № 11, 20 и дрД уже разъяснилъ, что 2 п. 314 ст. воен. суд. устава устанавливаетъ подвѣдом ственность производствъ предваритель наго слѣдствія объ общихъ преступле ніяхъ, совершенныхъ военно служащими въ мѣстахъ, подлежащихъ вѣдѣ",
+        "passage_id": "1896-038:5275-6939",
+        "pages": [
+          779
+        ],
+        "sources": [
+          {
+            "page": 779,
+            "page_method": "header",
+            "file": "p0072.txt",
+            "start": 5275,
+            "end": 6939
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-038?mode=precedent&ref=1896-038%3A1888%3A20%3A6526&at=6466&end=6544",
+        "scan_available": true
+      }
+    ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1896-038",
     "scan_pages": [
       {

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-113",
@@ -54,6 +54,164 @@
     "participant_ids": [
       "1904-188860a40642",
       "1904-4a21c3136f15"
+    ],
+    "precedents": [
+      {
+        "id": "1904-113:1891:48:3423",
+        "source_id": "1904-113",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "25af9b1e8b954afca895ff9bd88a4d3bfaa5a2fab2699d95404886dd22ff2da2",
+        "year": 1891,
+        "start": 3400,
+        "end": 3441,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 48,
+        "department_start": 3408,
+        "department_end": 3422,
+        "citation_start": 3423,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшенія гр. касс. д-та 1891 г. № 48 и 114",
+        "target_url": null,
+        "department_evidence": "гр. касс. д-та",
+        "context_start": 3220,
+        "context_end": 3661,
+        "context_original": " и только въ такомъ случаѣ дѣйствія органовъ власти, направленныя къ ограниченію частныхъ правъ, признаются правомѣрными. Въ подкрѣпленіе своихъ соображеній проситель ссылается на рѣшенія гр. касс. д-та 1891 г. № 48 и 114; 3) съѣздъ неправильно призналъ, что 371 ст. уст. пут. сообщ. должна имѣть примѣненіе въ Прибалтійскихъ губерніяхъ, такъ какъ въ сводѣ мѣстн. узакон. спеціальнаго закона не имѣется; спеціальнаго закона о томъ, кому соде",
+        "passage_id": "1904-113:2658-4482",
+        "pages": [
+          311
+        ],
+        "sources": [
+          {
+            "page": 311,
+            "page_method": "header",
+            "file": "p0156_R.txt",
+            "start": 2658,
+            "end": 3611
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-113?mode=precedent&ref=1904-113%3A1891%3A48%3A3423&at=3400&end=3441",
+        "scan_available": true
+      },
+      {
+        "id": "1904-113:1891:114:3423",
+        "source_id": "1904-113",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "25af9b1e8b954afca895ff9bd88a4d3bfaa5a2fab2699d95404886dd22ff2da2",
+        "year": 1891,
+        "start": 3400,
+        "end": 3441,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 114,
+        "department_start": 3408,
+        "department_end": 3422,
+        "citation_start": 3423,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшенія гр. касс. д-та 1891 г. № 48 и 114",
+        "target_url": null,
+        "department_evidence": "гр. касс. д-та",
+        "context_start": 3220,
+        "context_end": 3661,
+        "context_original": " и только въ такомъ случаѣ дѣйствія органовъ власти, направленныя къ ограниченію частныхъ правъ, признаются правомѣрными. Въ подкрѣпленіе своихъ соображеній проситель ссылается на рѣшенія гр. касс. д-та 1891 г. № 48 и 114; 3) съѣздъ неправильно призналъ, что 371 ст. уст. пут. сообщ. должна имѣть примѣненіе въ Прибалтійскихъ губерніяхъ, такъ какъ въ сводѣ мѣстн. узакон. спеціальнаго закона не имѣется; спеціальнаго закона о томъ, кому соде",
+        "passage_id": "1904-113:2658-4482",
+        "pages": [
+          311
+        ],
+        "sources": [
+          {
+            "page": 311,
+            "page_method": "header",
+            "file": "p0156_R.txt",
+            "start": 2658,
+            "end": 3611
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-113?mode=precedent&ref=1904-113%3A1891%3A114%3A3423&at=3400&end=3441",
+        "scan_available": true
+      },
+      {
+        "id": "1904-113:1891:48:9512",
+        "source_id": "1904-113",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "25af9b1e8b954afca895ff9bd88a4d3bfaa5a2fab2699d95404886dd22ff2da2",
+        "year": 1891,
+        "start": 9484,
+        "end": 9530,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 48,
+        "department_start": 9492,
+        "department_end": 9511,
+        "citation_start": 9512,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшенія гражд. кассац. д-та 1891 г. № 48 и 114",
+        "target_url": null,
+        "department_evidence": "гражд. кассац. д-та",
+        "context_start": 9304,
+        "context_end": 9750,
+        "context_original": "вительствующій Сенатъ находитъ приведенные просителемъ во 2-мъ пунктѣ кассаціонной жалобы доводы незаслуживающими уваженія. Въ подтвержденіе своихъ доводовъ проситель ссылается на рѣшенія гражд. кассац. д-та 1891 г. № 48 и 114, но ссылка эта лишена значенія уже потому, что ни то, ни другое рѣшеніе никакого отношенія къ настоящему дѣлу имѣть не могутъ, ибо въ первомъ изъ сихъ рѣшеній (№ 48) предметомъ дѣла была постройка, возведенная частнымъ ",
+        "passage_id": "1904-113:8676-10311",
+        "pages": [
+          313
+        ],
+        "sources": [
+          {
+            "page": 313,
+            "page_method": "header",
+            "file": "p0157_R.txt",
+            "start": 8676,
+            "end": 9635
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-113?mode=precedent&ref=1904-113%3A1891%3A48%3A9512&at=9484&end=9530",
+        "scan_available": true
+      },
+      {
+        "id": "1904-113:1891:114:9512",
+        "source_id": "1904-113",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "25af9b1e8b954afca895ff9bd88a4d3bfaa5a2fab2699d95404886dd22ff2da2",
+        "year": 1891,
+        "start": 9484,
+        "end": 9530,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 114,
+        "department_start": 9492,
+        "department_end": 9511,
+        "citation_start": 9512,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшенія гражд. кассац. д-та 1891 г. № 48 и 114",
+        "target_url": null,
+        "department_evidence": "гражд. кассац. д-та",
+        "context_start": 9304,
+        "context_end": 9750,
+        "context_original": "вительствующій Сенатъ находитъ приведенные просителемъ во 2-мъ пунктѣ кассаціонной жалобы доводы незаслуживающими уваженія. Въ подтвержденіе своихъ доводовъ проситель ссылается на рѣшенія гражд. кассац. д-та 1891 г. № 48 и 114, но ссылка эта лишена значенія уже потому, что ни то, ни другое рѣшеніе никакого отношенія къ настоящему дѣлу имѣть не могутъ, ибо въ первомъ изъ сихъ рѣшеній (№ 48) предметомъ дѣла была постройка, возведенная частнымъ ",
+        "passage_id": "1904-113:8676-10311",
+        "pages": [
+          313
+        ],
+        "sources": [
+          {
+            "page": 313,
+            "page_method": "header",
+            "file": "p0157_R.txt",
+            "start": 8676,
+            "end": 9635
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-113?mode=precedent&ref=1904-113%3A1891%3A114%3A9512&at=9484&end=9530",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-113",
     "scan_pages": [

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-111",
@@ -53,6 +53,164 @@
       "1904-a126856b1ea7",
       "1904-af75ed1d790d",
       "1904-16a8c9b3bd47"
+    ],
+    "precedents": [
+      {
+        "id": "1904-111:1881:118:1162",
+        "source_id": "1904-111",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bce6a217b9da26c9cc35d96f13e717309b6521fa8666d7fc4c166a65ac71d2b7",
+        "year": 1881,
+        "start": 1157,
+        "end": 1175,
+        "department": null,
+        "association": null,
+        "number": 118,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1162,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1881 г. № 118",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 977,
+        "context_end": 1395,
+        "context_original": "я или въ Высочайше утвержденныхъ уставахъ страховыхъ обществъ, или въ утвержденныхъ министромъ внутреннихъ дѣлъ полисныхъ условіяхъ, имѣющихъ для обѣихъ сторонъ обязательную силу (рѣш. 1881 г. № 118, 1887 г. № 79 и др.). Такимъ образомъ, если, съ одной стороны, лицо, застраховавшее имущество въ страховомъ обществѣ и становясь, вслѣдствіе сего, контрагентомъ его, получаетъ лишь тѣ права, которыя принадлежатъ ему въ ",
+        "passage_id": "1904-111:0-1844",
+        "pages": [
+          307
+        ],
+        "sources": [
+          {
+            "page": 307,
+            "page_method": "header",
+            "file": "p0154_R.txt",
+            "start": 349,
+            "end": 1844
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-111?mode=precedent&ref=1904-111%3A1881%3A118%3A1162&at=1157&end=1175",
+        "scan_available": true
+      },
+      {
+        "id": "1904-111:1887:79:1177",
+        "source_id": "1904-111",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bce6a217b9da26c9cc35d96f13e717309b6521fa8666d7fc4c166a65ac71d2b7",
+        "year": 1887,
+        "start": 1157,
+        "end": 1189,
+        "department": null,
+        "association": null,
+        "number": 79,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1177,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1881 г. № 118, 1887 г. № 79",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 977,
+        "context_end": 1409,
+        "context_original": "я или въ Высочайше утвержденныхъ уставахъ страховыхъ обществъ, или въ утвержденныхъ министромъ внутреннихъ дѣлъ полисныхъ условіяхъ, имѣющихъ для обѣихъ сторонъ обязательную силу (рѣш. 1881 г. № 118, 1887 г. № 79 и др.). Такимъ образомъ, если, съ одной стороны, лицо, застраховавшее имущество въ страховомъ обществѣ и становясь, вслѣдствіе сего, контрагентомъ его, получаетъ лишь тѣ права, которыя принадлежатъ ему въ силу правилъ у",
+        "passage_id": "1904-111:0-1844",
+        "pages": [
+          307
+        ],
+        "sources": [
+          {
+            "page": 307,
+            "page_method": "header",
+            "file": "p0154_R.txt",
+            "start": 349,
+            "end": 1844
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-111?mode=precedent&ref=1904-111%3A1887%3A79%3A1177&at=1157&end=1189",
+        "scan_available": true
+      },
+      {
+        "id": "1904-111:1881:118:3523",
+        "source_id": "1904-111",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bce6a217b9da26c9cc35d96f13e717309b6521fa8666d7fc4c166a65ac71d2b7",
+        "year": 1881,
+        "start": 3489,
+        "end": 3536,
+        "department": null,
+        "association": null,
+        "number": 118,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3523,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи Правительствующаго Сената 1881 г. № 118",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3309,
+        "context_end": 3756,
+        "context_original": "ъ обогащенія, ибо это положеніе вполнѣ примѣнимо и къ страховщику, когда онъ получаетъ премію за страхъ имущества по стоимости свыше дѣйствительной. Если страхованіе,—говорится въ рѣшеніи Правительствующаго Сената 1881 г. № 118,—не должно служить для страхователя средствомъ къ пріобрѣтенію прибыли, то несомнѣнно, что для страховаго общества договоръ страхованія не долженъ служить источникомъ прибылей и правъ свыше тѣхъ, кои опредѣлены утвержде",
+        "passage_id": "1904-111:3206-4528",
+        "pages": [
+          308
+        ],
+        "sources": [
+          {
+            "page": 308,
+            "page_method": "header",
+            "file": "p0155_L.txt",
+            "start": 3206,
+            "end": 4528
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-111?mode=precedent&ref=1904-111%3A1881%3A118%3A3523&at=3489&end=3536",
+        "scan_available": true
+      },
+      {
+        "id": "1904-111:1892:36:3812",
+        "source_id": "1904-111",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bce6a217b9da26c9cc35d96f13e717309b6521fa8666d7fc4c166a65ac71d2b7",
+        "year": 1892,
+        "start": 3804,
+        "end": 3824,
+        "department": null,
+        "association": null,
+        "number": 36,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3812,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1892 г. № 36",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3624,
+        "context_end": 4044,
+        "context_original": "что для страховаго общества договоръ страхованія не долженъ служить источникомъ прибылей и правъ свыше тѣхъ, кои опредѣлены утвержденнымъ для каждаго общества уставомъ. Засимъ, въ рѣшеніи 1892 г. № 36 Правительствующій Сенатъ высказалъ положеніе, что если, по уставу общества, ему не предоставлено право провѣрять стоимость имущества послѣ пожара, то „подъ стоимостью сгорѣвшаго имущества можетъ быть понимаема лишь та е",
+        "passage_id": "1904-111:3206-4528",
+        "pages": [
+          308
+        ],
+        "sources": [
+          {
+            "page": 308,
+            "page_method": "header",
+            "file": "p0155_L.txt",
+            "start": 3206,
+            "end": 4528
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-111?mode=precedent&ref=1904-111%3A1892%3A36%3A3812&at=3804&end=3824",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-111",
     "scan_pages": [

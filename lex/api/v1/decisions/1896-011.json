@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1896-011",
@@ -61,6 +61,86 @@
       ]
     ],
     "participant_ids": [],
+    "precedents": [
+      {
+        "id": "1896-011:1895:11:6342",
+        "source_id": "1896-011",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "c1c5224f6eafe03c3cba2b66aabb0eb0d4225c870d2ffd9398bd83d3926230a3",
+        "year": 1895,
+        "start": 6337,
+        "end": 6356,
+        "department": null,
+        "association": null,
+        "number": 11,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6342,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1895 года № 11",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 6157,
+        "context_end": 6576,
+        "context_original": "ми обстоятельствами, которыя могутъ влечь за собою присужденіе виновнаго не къ денежному штрафу, а къ аресту или къ тюремному заключенію (2 и 3 п. ст. 155 и ст. 156 уст. о наказ. (рѣш. 1895 года № 11). Такимъ образомъ, все изложенное приводитъ къ заклю ченію, что вопросъ о возможности при миренія лѣсовладѣльцевъ съ нарушите лями ихъ правъ и о законности тако го примиренія, по самому существу дѣ ла, долженъ быть разр",
+        "passage_id": "1896-011:5402-6948",
+        "pages": [
+          724
+        ],
+        "sources": [
+          {
+            "page": 724,
+            "page_method": "header",
+            "file": "p0017.txt",
+            "start": 5402,
+            "end": 6948
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=precedent&ref=1896-011%3A1895%3A11%3A6342&at=6337&end=6356",
+        "scan_available": true
+      },
+      {
+        "id": "1896-011:1890:2:7817",
+        "source_id": "1896-011",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "c1c5224f6eafe03c3cba2b66aabb0eb0d4225c870d2ffd9398bd83d3926230a3",
+        "year": 1890,
+        "start": 7770,
+        "end": 7830,
+        "department": null,
+        "association": null,
+        "number": 2,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7817,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніе Уголовнаго Кассаціонна го Департамента 1890 года № 2",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7590,
+        "context_end": 8019,
+        "context_original": "олько не отвергаетъ право лѣсовла дѣльца не возбуждать дѣла о поруб кѣ, какое бы наказаніе за оную ни грозило порубщику, но, напротивъ то- го, подтверждаетъ это право, ссылаясь на рѣшеніе Уголовнаго Кассаціонна го Департамента 1890 года № 2. Па всѣмъ симъ соображеніямъ Правитель ствующій Сенатъ опредѣляетъ: при знать, что дѣла о лѣсоистребленіяхъ. въ частныхъ дачахъ могутъ быть пре кращаемы, на основаніи ст. 135 уст. уг. суд.",
+        "passage_id": "1896-011:6745-8019",
+        "pages": [
+          724
+        ],
+        "sources": [
+          {
+            "page": 724,
+            "page_method": "header",
+            "file": "p0017.txt",
+            "start": 6745,
+            "end": 8019
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=precedent&ref=1896-011%3A1890%3A2%3A7817&at=7770&end=7830",
+        "scan_available": true
+      }
+    ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1896-011",
     "scan_pages": [
       {

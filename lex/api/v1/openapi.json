@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Решения Правительствующего Сената — Static API",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Статические JSON-файлы: доступны GET и HEAD, query-параметров и серверного поиска нет."
   },
   "servers": [
@@ -126,6 +126,39 @@
     "/passages/{year}.json": {
       "get": {
         "summary": "Пассажи и пояснения за год",
+        "parameters": [
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "enum": [
+                1896,
+                1897,
+                1904,
+                1905
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/precedents/{year}.json": {
+      "get": {
+        "summary": "Ссылки на прежние решения с департаментом и буквальным контекстом",
         "parameters": [
           {
             "name": "year",
@@ -379,6 +412,9 @@
       },
       "Passage": {
         "$ref": "./schema.json#/$defs/Passage"
+      },
+      "PrecedentReference": {
+        "$ref": "./schema.json#/$defs/PrecedentReference"
       }
     }
   }

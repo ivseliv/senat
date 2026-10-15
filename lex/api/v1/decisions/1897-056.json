@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-056",
@@ -44,6 +44,47 @@
       "1897-ee1c031fb4be",
       "1897-9468d5d7b8dc",
       "1897-a737077c8c63"
+    ],
+    "precedents": [
+      {
+        "id": "1897-056:1894:8:3983",
+        "source_id": "1897-056",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e287d54638587b110824da84455b93b41567e45fc83fb2dc1004e3cbd8864307",
+        "year": 1894,
+        "start": 3949,
+        "end": 3997,
+        "department": null,
+        "association": null,
+        "number": 8,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3983,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи Правительствующаго Сената 1894 г. за № 8",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3769,
+        "context_end": 4217,
+        "context_original": ", производится учрежденіями военнаго вѣдомства, согласно исправленіямъ и указаніямъ, сдѣланнымъ Главнымъ штабомъ при разсмотрѣніи подлинныхъ желѣзнодорожныхъ накладныхъ. И если въ рѣшеніи Правительствующаго Сената 1894 г. за № 8 признано, что Главный штабъ обязанъ отвѣтствовать по иску, предъявленному частнымъ грузохозяиномъ къ военному министерству о возвращеніи перебора провозной платы за грузъ, отправленный по Закаспійской желѣзной дорогѣ, т",
+        "passage_id": "1897-056:2881-4406",
+        "pages": [
+          181
+        ],
+        "sources": [
+          {
+            "page": 181,
+            "page_method": "header",
+            "file": "p0101_R.txt",
+            "start": 2881,
+            "end": 4406
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-056?mode=precedent&ref=1897-056%3A1894%3A8%3A3983&at=3949&end=3997",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-056",
     "scan_pages": [

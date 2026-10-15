@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-007",
@@ -41,6 +41,164 @@
     "participant_ids": [
       "1897-c2092e5975ac",
       "1897-441167d5ec4b"
+    ],
+    "precedents": [
+      {
+        "id": "1897-007:1879:359:5971",
+        "source_id": "1897-007",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "265b260190f84f915d5fe650a3e07f7d0740e801d0af5c8e47e3b0de0f05596a",
+        "year": 1879,
+        "start": 5948,
+        "end": 5984,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 359,
+        "department_start": 5953,
+        "department_end": 5970,
+        "citation_start": 5971,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гражд. касс. деп. 1879 г. № 359",
+        "target_url": null,
+        "department_evidence": "гражд. касс. деп.",
+        "context_start": 5768,
+        "context_end": 6204,
+        "context_original": "ъ Ригѣ и въ Курляндіи, ибо, по неоднократнымъ разъясненіямъ Правит. Сената, однимъ кодификаціоннымъ, а не законодательнымъ путемъ, не можетъ быть произведено перемѣны въ законахъ (рѣш. гражд. касс. деп. 1879 г. № 359, 1880 г. №№ 142, 200, 252 и друг.), Правительствующій Сенатъ приходитъ къ заключенію, что мировой съѣздъ, въ обжалованномъ рѣшеніи, на основаніи несогласныхъ съ указаніями Сената соображеній, отвергнувъ право кандидата ",
+        "passage_id": "1897-007:4923-6763",
+        "pages": [
+          37
+        ],
+        "sources": [
+          {
+            "page": 37,
+            "page_method": "header",
+            "file": "p0029_R.txt",
+            "start": 5128,
+            "end": 6763
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-007?mode=precedent&ref=1897-007%3A1879%3A359%3A5971&at=5948&end=5984",
+        "scan_available": true
+      },
+      {
+        "id": "1897-007:1880:142:5986",
+        "source_id": "1897-007",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "265b260190f84f915d5fe650a3e07f7d0740e801d0af5c8e47e3b0de0f05596a",
+        "year": 1880,
+        "start": 5948,
+        "end": 6010,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 142,
+        "department_start": 5953,
+        "department_end": 5970,
+        "citation_start": 5986,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гражд. касс. деп. 1879 г. № 359, 1880 г. №№ 142, 200, 252",
+        "target_url": null,
+        "department_evidence": "гражд. касс. деп.",
+        "context_start": 5768,
+        "context_end": 6230,
+        "context_original": "ъ Ригѣ и въ Курляндіи, ибо, по неоднократнымъ разъясненіямъ Правит. Сената, однимъ кодификаціоннымъ, а не законодательнымъ путемъ, не можетъ быть произведено перемѣны въ законахъ (рѣш. гражд. касс. деп. 1879 г. № 359, 1880 г. №№ 142, 200, 252 и друг.), Правительствующій Сенатъ приходитъ къ заключенію, что мировой съѣздъ, въ обжалованномъ рѣшеніи, на основаніи несогласныхъ съ указаніями Сената соображеній, отвергнувъ право кандидата правъ Рубинштейна на польз",
+        "passage_id": "1897-007:4923-6763",
+        "pages": [
+          37
+        ],
+        "sources": [
+          {
+            "page": 37,
+            "page_method": "header",
+            "file": "p0029_R.txt",
+            "start": 5128,
+            "end": 6763
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-007?mode=precedent&ref=1897-007%3A1880%3A142%3A5986&at=5948&end=6010",
+        "scan_available": true
+      },
+      {
+        "id": "1897-007:1880:200:5986",
+        "source_id": "1897-007",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "265b260190f84f915d5fe650a3e07f7d0740e801d0af5c8e47e3b0de0f05596a",
+        "year": 1880,
+        "start": 5948,
+        "end": 6010,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 200,
+        "department_start": 5953,
+        "department_end": 5970,
+        "citation_start": 5986,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гражд. касс. деп. 1879 г. № 359, 1880 г. №№ 142, 200, 252",
+        "target_url": null,
+        "department_evidence": "гражд. касс. деп.",
+        "context_start": 5768,
+        "context_end": 6230,
+        "context_original": "ъ Ригѣ и въ Курляндіи, ибо, по неоднократнымъ разъясненіямъ Правит. Сената, однимъ кодификаціоннымъ, а не законодательнымъ путемъ, не можетъ быть произведено перемѣны въ законахъ (рѣш. гражд. касс. деп. 1879 г. № 359, 1880 г. №№ 142, 200, 252 и друг.), Правительствующій Сенатъ приходитъ къ заключенію, что мировой съѣздъ, въ обжалованномъ рѣшеніи, на основаніи несогласныхъ съ указаніями Сената соображеній, отвергнувъ право кандидата правъ Рубинштейна на польз",
+        "passage_id": "1897-007:4923-6763",
+        "pages": [
+          37
+        ],
+        "sources": [
+          {
+            "page": 37,
+            "page_method": "header",
+            "file": "p0029_R.txt",
+            "start": 5128,
+            "end": 6763
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-007?mode=precedent&ref=1897-007%3A1880%3A200%3A5986&at=5948&end=6010",
+        "scan_available": true
+      },
+      {
+        "id": "1897-007:1880:252:5986",
+        "source_id": "1897-007",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "265b260190f84f915d5fe650a3e07f7d0740e801d0af5c8e47e3b0de0f05596a",
+        "year": 1880,
+        "start": 5948,
+        "end": 6010,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 252,
+        "department_start": 5953,
+        "department_end": 5970,
+        "citation_start": 5986,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гражд. касс. деп. 1879 г. № 359, 1880 г. №№ 142, 200, 252",
+        "target_url": null,
+        "department_evidence": "гражд. касс. деп.",
+        "context_start": 5768,
+        "context_end": 6230,
+        "context_original": "ъ Ригѣ и въ Курляндіи, ибо, по неоднократнымъ разъясненіямъ Правит. Сената, однимъ кодификаціоннымъ, а не законодательнымъ путемъ, не можетъ быть произведено перемѣны въ законахъ (рѣш. гражд. касс. деп. 1879 г. № 359, 1880 г. №№ 142, 200, 252 и друг.), Правительствующій Сенатъ приходитъ къ заключенію, что мировой съѣздъ, въ обжалованномъ рѣшеніи, на основаніи несогласныхъ съ указаніями Сената соображеній, отвергнувъ право кандидата правъ Рубинштейна на польз",
+        "passage_id": "1897-007:4923-6763",
+        "pages": [
+          37
+        ],
+        "sources": [
+          {
+            "page": 37,
+            "page_method": "header",
+            "file": "p0029_R.txt",
+            "start": 5128,
+            "end": 6763
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-007?mode=precedent&ref=1897-007%3A1880%3A252%3A5986&at=5948&end=6010",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-007",
     "scan_pages": [

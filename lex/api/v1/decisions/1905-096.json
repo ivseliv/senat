@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-096",
@@ -41,6 +41,164 @@
     ],
     "participant_ids": [
       "1905-1d7bb7d99fa6"
+    ],
+    "precedents": [
+      {
+        "id": "1905-096:1879:16:3777",
+        "source_id": "1905-096",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "ed0d4b2d685b8f864bdfdd27773e6f3568b69db5dfba1f6e694e328f4f991e6d",
+        "year": 1879,
+        "start": 3772,
+        "end": 3789,
+        "department": null,
+        "association": null,
+        "number": 16,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3777,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1879 г. № 16",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3592,
+        "context_end": 4009,
+        "context_original": "ія имѣть не можетъ уже по одному тому, что, при совершенной ясности законодательнаго постановленія, никакой надобности прибѣгать къ историческому его толкованію не представляется (рѣш. 1879 г. № 16, 1881 г. № 79, 81 и др.); 3) что, вопреки мнѣнію просителей, переходъ имущества отъ одного супруга къ другому въ видѣ указной части ни подъ одинъ изъ пунктовъ ст. 399 т. X ч. 1 не подходитъ, и право на указную часть не ",
+        "passage_id": "1905-096:2470-3988",
+        "pages": [
+          261
+        ],
+        "sources": [
+          {
+            "page": 261,
+            "page_method": "header",
+            "file": "p0131_R.txt",
+            "start": 3034,
+            "end": 3988
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-096?mode=precedent&ref=1905-096%3A1879%3A16%3A3777&at=3772&end=3789",
+        "scan_available": true
+      },
+      {
+        "id": "1905-096:1881:79:3791",
+        "source_id": "1905-096",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "ed0d4b2d685b8f864bdfdd27773e6f3568b69db5dfba1f6e694e328f4f991e6d",
+        "year": 1881,
+        "start": 3772,
+        "end": 3807,
+        "department": null,
+        "association": null,
+        "number": 79,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3791,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1879 г. № 16, 1881 г. № 79, 81",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3592,
+        "context_end": 4027,
+        "context_original": "ія имѣть не можетъ уже по одному тому, что, при совершенной ясности законодательнаго постановленія, никакой надобности прибѣгать къ историческому его толкованію не представляется (рѣш. 1879 г. № 16, 1881 г. № 79, 81 и др.); 3) что, вопреки мнѣнію просителей, переходъ имущества отъ одного супруга къ другому въ видѣ указной части ни подъ одинъ изъ пунктовъ ст. 399 т. X ч. 1 не подходитъ, и право на указную часть не есть право наслѣдо",
+        "passage_id": "1905-096:2470-3988",
+        "pages": [
+          261
+        ],
+        "sources": [
+          {
+            "page": 261,
+            "page_method": "header",
+            "file": "p0131_R.txt",
+            "start": 3801,
+            "end": 4611
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-096?mode=precedent&ref=1905-096%3A1881%3A79%3A3791&at=3772&end=3807",
+        "scan_available": true
+      },
+      {
+        "id": "1905-096:1881:81:3791",
+        "source_id": "1905-096",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "ed0d4b2d685b8f864bdfdd27773e6f3568b69db5dfba1f6e694e328f4f991e6d",
+        "year": 1881,
+        "start": 3772,
+        "end": 3807,
+        "department": null,
+        "association": null,
+        "number": 81,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3791,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1879 г. № 16, 1881 г. № 79, 81",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3592,
+        "context_end": 4027,
+        "context_original": "ія имѣть не можетъ уже по одному тому, что, при совершенной ясности законодательнаго постановленія, никакой надобности прибѣгать къ историческому его толкованію не представляется (рѣш. 1879 г. № 16, 1881 г. № 79, 81 и др.); 3) что, вопреки мнѣнію просителей, переходъ имущества отъ одного супруга къ другому въ видѣ указной части ни подъ одинъ изъ пунктовъ ст. 399 т. X ч. 1 не подходитъ, и право на указную часть не есть право наслѣдо",
+        "passage_id": "1905-096:2470-3988",
+        "pages": [
+          261
+        ],
+        "sources": [
+          {
+            "page": 261,
+            "page_method": "header",
+            "file": "p0131_R.txt",
+            "start": 3801,
+            "end": 4611
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-096?mode=precedent&ref=1905-096%3A1881%3A81%3A3791&at=3772&end=3807",
+        "scan_available": true
+      },
+      {
+        "id": "1905-096:1871:1224:4039",
+        "source_id": "1905-096",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "ed0d4b2d685b8f864bdfdd27773e6f3568b69db5dfba1f6e694e328f4f991e6d",
+        "year": 1871,
+        "start": 4034,
+        "end": 4053,
+        "department": null,
+        "association": null,
+        "number": 1224,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4039,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1871 г. № 1224",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3854,
+        "context_end": 4273,
+        "context_original": "еходъ имущества отъ одного супруга къ другому въ видѣ указной части ни подъ одинъ изъ пунктовъ ст. 399 т. X ч. 1 не подходитъ, и право на указную часть не есть право наслѣдованія (рѣш. 1871 г. № 1224 и др.), и 4) что, въ виду всего этого, возбужденный въ настоящемъ дѣлѣ вопросъ о томъ, сохраняетъ-ли указная часть, выдѣленная пережившему супругу изъ родоваго имѣнія умершаго, свойство имѣнія родоваго въ томъ случаѣ, к",
+        "passage_id": "1905-096:3801-4611",
+        "pages": [
+          261
+        ],
+        "sources": [
+          {
+            "page": 261,
+            "page_method": "header",
+            "file": "p0131_R.txt",
+            "start": 3801,
+            "end": 4611
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-096?mode=precedent&ref=1905-096%3A1871%3A1224%3A4039&at=4034&end=4053",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-096",
     "scan_pages": [

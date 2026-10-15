@@ -30,6 +30,7 @@
     map: { q: '', topic: '', token: 0 },
     laws: { q: '', code: '', data: null, promise: null, token: 0 },
     analyses: { data: null, promise: null },
+    precedents: { data: null, promise: null },
     guides: { data: null, promise: null },
     api: { data: null, promise: null },
     participants: {q:'', year:'', shown:60}, participantMap: new Map(),
@@ -60,6 +61,40 @@
   async function loadAnalyses() {
     if (!S.analyses.promise) S.analyses.promise = loadJSON('decision-analyses.json').then(data => (S.analyses.data = data));
     return S.analyses.promise;
+  }
+  async function loadPrecedents() {
+    if (!S.precedents.promise) S.precedents.promise=loadJSON('precedents.json').then(data=>(S.precedents.data=data)).catch(err=>{S.precedents.promise=null;throw err;});
+    return S.precedents.promise;
+  }
+  function precedentTarget(ref) {
+    return ref.status==='linked' && S.meta.decisions.find(d=>d.id===ref.target_id && d.dept===ref.department && d.vol===ref.year && d.num===ref.number);
+  }
+  function precedentLabel(ref) {
+    return (ref.department || 'Департамент не установлен')+' · '+ref.year+' г. № '+ref.number;
+  }
+  function precedentGroups(refs, incoming) {
+    const groups=new Map();
+    for(const ref of refs) {
+      const key=incoming ? ref.source_id : JSON.stringify([ref.department,ref.year,ref.number,ref.target_id,ref.status]);
+      if(!groups.has(key))groups.set(key,[]);
+      groups.get(key).push(ref);
+    }
+    return [...groups.values()];
+  }
+  function precedentEvidence(ref) {
+    return h('div',{},h('blockquote',{class:'precedent-context'},M(ref.context_original)),
+      h('p',{class:'small'},h('a',{class:'precedent-source',href:ref.source_url},'Показать место ссылки в тексте'+(ref.pages.length ? ' · с. '+ref.pages.join(', ') : ''))));
+  }
+  function precedentEntry(refs, incoming) {
+    const ref=refs[0], target=precedentTarget(ref), source=S.meta.decisions.find(d=>d.id===ref.source_id);
+    const label=incoming ? source.dept+' · '+source.vol+' г. № '+source.num : precedentLabel(ref);
+    const link=incoming ? ref.source_url : target ? '#/d/'+target.id : null;
+    const note=incoming || target ? '' : ref.status==='department_unknown' ? 'Департамент не указан в ссылке; тождество решения не установлено.' :
+      ref.status==='not_in_corpus' ? 'Решения этого департамента, года и номера нет в корпусе.' : 'Тождество решения неоднозначно; переход не установлен.';
+    return h('li',{'data-precedent-status':ref.status,'data-precedent-year':String(ref.year),'data-precedent-number':String(ref.number)},
+      link ? h('a',{class:incoming?'precedent-incoming':'precedent-target',href:link},label) : h('strong',{},label),
+      note ? h('p',{class:'muted small'},note) : '',precedentEvidence(ref),
+      refs.length>1 ? h('details',{},h('summary',{},'Ещё упоминания: '+(refs.length-1)),refs.slice(1).map(precedentEvidence)) : '');
   }
   async function loadGuides() {
     if (!S.guides.promise) S.guides.promise = loadJSON('guides.json').then(data => (S.guides.data = data));
@@ -423,12 +458,16 @@
     if (!d) { box.replaceChildren(h('p', {}, 'Решение не найдено')); $('#detail').hidden = false; return; }
     $('#detail').hidden = false; document.body.classList.add('modal');
     box.replaceChildren(h('p',{class:'muted'},'Загрузка решения…'));
-    const [text, analyses] = await Promise.all([textOf(d), loadAnalyses()]);
+    const [text, analyses, precedents] = await Promise.all([textOf(d), loadAnalyses(),
+      loadPrecedents().catch(()=>({references:[],unavailable:true}))]);
     if (S.detailId !== id || $('#detail').hidden) return;
     const params = readHash().p, inSense = ['sense','map','passage','laws','analysis'].includes(params.get('mode'));
     let target = null, senseTerms = [], partialMissing = [];
     const analysis = analyses.decisions && analyses.decisions[id];
-    if (params.get('mode') === 'analysis' && analysis) {
+    if (params.get('mode') === 'precedent') {
+      const ref=precedents.references.find(r=>r.id===params.get('ref') && r.source_id===id);
+      if(ref) target={id:ref.passage_id || ref.id,start:ref.start,end:ref.end,pages:ref.pages,sources:ref.sources,precedent:true};
+    } else if (params.get('mode') === 'analysis' && analysis) {
       const at=Number(params.get('at')), end=Number(params.get('end'));
       const evidence=analysis.sections.flatMap(s=>s.evidence).find(e=>e.start===at && e.end===end);
       if (evidence) target={id:evidence.passage_id,start:evidence.start,end:evidence.end,pages:evidence.printed_pages || [],sources:[]};
@@ -442,8 +481,8 @@
         partialMissing = result && result.partial ? result.missing : [];
       }
     }
-    const cited = S.meta.decisions.filter(x => x.cites.some(c => c[0] === d.vol && c[1] === d.num));
-    const inCorpus = ([y, n]) => S.meta.decisions.find(x => x.vol === y && x.num === n);
+    const outgoing = precedents.references.filter(r=>r.source_id===id);
+    const incoming = precedents.references.filter(r=>r.status==='linked' && r.target_id===id && precedentTarget(r));
     const qs = inSense ? senseTerms.flatMap(L.stems) : queryStems();
     const paintPiece = t => qs.length ? highlight(M(t), qs) : L.esc(M(t));
     const paint = t => {
@@ -466,6 +505,9 @@
         h('div', { class: 'muted' }, `${d.dept}, том ${d.vol}`),
         h('span', { class: 'badge big' }, d.outcome)),
       h('p', { class: 'headnote' }, M(d.headnote)),
+      precedents.unavailable ? h('div',{class:'precedents-unavailable small',role:'status'},
+        h('p',{},'Связи с прежними решениями пока недоступны.'),
+        h('button',{class:'btn ghost',id:'precedents-retry',onclick:()=>openDetail(id)},'Повторить загрузку связей')) : '',
       partialMissing.length ? h('p',{class:'search-partial-note'},'Частичное совпадение. Не найдена часть запроса: '+partialMissing.map(w=>'«'+w+'»').join(', ')+'.') : '',
       h('dl', { class: 'meta' },
         d.presiding ? h('div', {}, h('dt', {}, 'Председательствовал'), h('dd', {}, personLink(d.presiding))) : '',
@@ -487,15 +529,21 @@
         h('button', { class: 'btn', onclick: e => { const btn = e.target; const txt = cite + '\n' + location.href; const done = ok => { btn.textContent = ok ? 'Скопировано ✓' : 'Не удалось скопировать — выделите текст вручную'; setTimeout(() => btn.textContent = 'Скопировать ссылку и цитату', 2000); }; try { navigator.clipboard.writeText(txt).then(() => done(true), () => done(false)); } catch (err) { done(false); } } }, 'Скопировать ссылку и цитату')),
       body,
       h('p', { class: 'muted small' }, 'Текст получен автоматическим распознаванием скана (модель ИИ) и может содержать ошибки: числа, номера статей и фамилии сверяйте с изданием. Современная орфография — автоматическая, для удобства чтения.'),
-      d.cites.length ? h('section', {}, h('h3', {}, 'Ссылается на решения'), h('ul', {}, d.cites.map(c => { const t = inCorpus(c); return h('li', {}, t ? h('a', { href: '#/d/' + t.id }, `${c[0]} г. № ${c[1]} — ${M(t.headnote).slice(0, 90)}…`) : `${c[0]} г. № ${c[1]} (нет в корпусе)`); }))) : '',
-      cited.length ? h('section', {}, h('h3', {}, 'Цитируется в'), h('ul', {}, cited.map(x => h('li', {}, h('a', { href: '#/d/' + x.id }, `${x.vol} г. № ${x.num} — ${M(x.headnote).slice(0, 90)}…`))))) : '',
+      outgoing.length ? h('section', {class:'precedents-out'}, h('h3', {}, 'Ссылки на прежние решения'),
+        h('p',{class:'muted small'},'Переход установлен только при совпадении департамента, года и номера. Цитата показывает упоминание, а не обязательное согласие Сената с ним.'),
+        h('ul',{},precedentGroups(outgoing).map(refs=>precedentEntry(refs,false)))) : '',
+      incoming.length ? h('section', {class:'precedents-in'}, h('h3', {}, 'Упоминается в других решениях'),
+        h('p',{class:'muted small'},'Наличие ссылки не означает согласия Сената с процитированным доводом. Сверяйте контекст.'),
+        h('ul',{},precedentGroups(incoming,true).map(refs=>precedentEntry(refs,true)))) : '',
       d.similar.length ? h('section', {}, h('h3', {}, 'Похожие решения'), h('ul', {}, d.similar.map(([j, sc]) => { const x = S.meta.decisions[j]; return h('li', {}, h('a', { href: '#/d/' + x.id }, `${x.vol} г. № ${x.num} — ${M(x.headnote).slice(0, 100)}…`), h('span', { class: 'muted' }, ` (сходство ${Math.round(sc * 100)}%)`)); }))) : '');
     const scanSection=h('details',{class:'detail-scans'},h('summary',{},target?'Сканы найденного фрагмента':'Страницы решения в издании'));
     scanSection.addEventListener('toggle',async()=>{
       if(!scanSection.open || scanSection.dataset.loaded)return;
       try {
         const scans=await loadScans(d.vol);
-        const refs=target?scans.passages[target.id]:(scans.decisions[d.id]||[]).map(file=>({...scans.pages[file],kind:'page'}));
+        let refs=target?scans.passages[target.id]:(scans.decisions[d.id]||[]).map(file=>({...scans.pages[file],kind:'page'}));
+        if(target && target.precedent && refs) refs=refs.filter(r=>target.sources.some(s=>s.file===r.file));
+        if(target && (!refs || !refs.length)) refs=(target.sources || []).map(s=>scans.pages[s.file]).filter(Boolean).map(p=>({...p,kind:'page'}));
         if(refs && refs.length) {scanSection.append(scanStrip(d,refs));scanSection.dataset.loaded='1';}
         else scanSection.append(h('p',{class:'small'},'Сканы этого места пока недоступны.'));
       } catch(err) {scanSection.append(h('p',{class:'small'},'Не удалось загрузить список страниц. Закройте и откройте этот раздел для повторной попытки.'));}
@@ -567,7 +615,7 @@
     $('#gloss').addEventListener('change', e => { S.opts.gloss = e.target.checked; runSearch(); });
     $('#more').addEventListener('click', () => { S.shown += 20; renderResults(++runToken); });
     $('#reset').addEventListener('click', () => go('search'));
-    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const requested = p.get('mode'); const mode = requested === 'passage' ? 'sense' : (requested === 'analysis' ? 'analyses' : (['sense','participants','map','laws','guides','analyses','api'].includes(requested) ? requested : 'search')); p.delete('at'); p.delete('end'); p.delete('mode'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
+    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const requested = p.get('mode'); const mode = requested === 'passage' ? 'sense' : (requested === 'analysis' ? 'analyses' : (['sense','participants','map','laws','guides','analyses','api'].includes(requested) ? requested : 'search')); p.delete('at'); p.delete('end'); p.delete('mode'); p.delete('ref'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !document.querySelector('.scan-dialog[open]') && !$('#detail').hidden) $('#detail-close').click(); });
     $('#examples').append(...['недействительность сделки', 'возмещение убытков', 'исковая давность', 'договор аренды', 'банкротство', 'страховое возмещение', 'перевозка грузов', 'исполнитель завещания']
       .map(x => h('button', { class: 'chip', onclick: () => go('search', { q: x }) }, x)));
@@ -866,8 +914,8 @@
         card('Кто председательствовал', 'Чаще всего в этом составе.', people('presiding')),
         card('Кто докладывал дело', '', people('reporter')),
         card('Кто давал заключение (прокуратура)', '', people('prosecutor')),
-        card('Какие прежние решения цитируются чаще всего', 'Ссылки вида «рѣш. 1887 г. № 16» — так виден «ядро» устойчивой практики. В корпус пока входят не все годы, поэтому ссылка не всегда ведёт к тексту.',
-          h('table', { class: 'tbl' }, h('thead', {}, h('tr', {}, h('th', {}, 'Решение'), h('th', {}, 'Ссылок'))), h('tbody', {}, an.cited.slice(0, 12).map(([y, n, c, i]) => h('tr', {}, h('td', {}, i != null ? h('a', { href: '#/d/' + S.meta.decisions[i].id }, `${y} г. № ${n}`) : `${y} г. № ${n}`), h('td', {}, String(c))))))),
+        card('Ссылки на прежние решения', 'Число решений, в которых встречается ссылка. Учреждения учитываются отдельно; ссылки без установленного департамента в эту таблицу не объединяются. Частота упоминаний сама по себе не определяет значение решения.',
+          h('table', { class: 'tbl' }, h('thead', {}, h('tr', {}, h('th', {}, 'Решение'), h('th', {}, 'Упоминается в'))), h('tbody', {}, (an.cited_decisions || []).slice(0, 12).map(ref=>h('tr',{},h('td',{},precedentTarget(ref) ? h('a',{href:'#/d/'+ref.target_id},precedentLabel(ref)) : precedentLabel(ref)),h('td',{},String(ref.decisions))))))),
         card('Как менялась частота слова по годам', 'Сколько раз слово встречается на 10 тысяч слов текста. Пока в корпусе мало томов — график станет содержательным по мере добавления.', trend)));
     drawTrend('железная дорога');
   }

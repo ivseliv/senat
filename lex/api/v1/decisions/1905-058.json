@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-058",
@@ -52,6 +52,203 @@
       "1905-44ed860c247a",
       "1905-7912c03c9cfe",
       "1905-a79f2fab2525"
+    ],
+    "precedents": [
+      {
+        "id": "1905-058:1897:5:2280",
+        "source_id": "1905-058",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "67b34eebc8578fca8d4f8d8967fbd6c6b4bf77a8cbf2db3b8fb5dbd85e958f25",
+        "year": 1897,
+        "start": 2229,
+        "end": 2293,
+        "department": null,
+        "association": null,
+        "number": 5,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2280,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніе Правительствующаго Сената, состоявшееся въ 1897 году № 5",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2049,
+        "context_end": 2513,
+        "context_original": "хъ наслѣдства положительно отрицается гражданскимъ кассаціоннымъ департаментомъ Правительствующаго Сената въ рѣшеніи его № 32 за 1887 годъ; что указываемое апелляторомъ позднѣйшее рѣшеніе Правительствующаго Сената, состоявшееся въ 1897 году № 5, ни въ чемъ не измѣняетъ этого ранѣе выраженнаго Правительствующимъ Сенатомъ взгляда и не разрѣшаетъ вопроса объ упомянутомъ правѣ опеки. Въ принесенной на это рѣшеніе кассаціонной жалобѣ повѣренный упомянутой опеки, пр",
+        "passage_id": "1905-058:1056-2960",
+        "pages": [
+          158
+        ],
+        "sources": [
+          {
+            "page": 158,
+            "page_method": "header",
+            "file": "p0080_L.txt",
+            "start": 1056,
+            "end": 2960
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-058?mode=precedent&ref=1905-058%3A1897%3A5%3A2280&at=2229&end=2293",
+        "scan_available": true
+      },
+      {
+        "id": "1905-058:1880:33:3427",
+        "source_id": "1905-058",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "67b34eebc8578fca8d4f8d8967fbd6c6b4bf77a8cbf2db3b8fb5dbd85e958f25",
+        "year": 1880,
+        "start": 3376,
+        "end": 3442,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 33,
+        "department_start": 3386,
+        "department_end": 3400,
+        "citation_start": 3427,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "Рѣшеніемъ гр. касс. деп. Правительствующаго Сената 1880 г. за № 33",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 3196,
+        "context_end": 3662,
+        "context_original": "іе товарища оберъ-прокурора, Правительствующій Сенатъ находитъ ходатайство повѣреннаго отвѣтчиковъ объ оставленіи кассаціонной жалобы безъ разсмотрѣнія не заслуживающимъ уваженія. Рѣшеніемъ гр. касс. деп. Правительствующаго Сената 1880 г. за № 33 уже признано, что, доколѣ назначенный сиротскимъ судомъ опекунъ надъ имѣніемъ безвѣстно-отсутствующаго не уволенъ отъ сей должности надлежащею опекунскою властью, до тѣхъ поръ онъ въ правѣ и обязанъ защищать интересы со",
+        "passage_id": "1905-058:2694-4581",
+        "pages": [
+          159
+        ],
+        "sources": [
+          {
+            "page": 159,
+            "page_method": "header",
+            "file": "p0080_R.txt",
+            "start": 3158,
+            "end": 4261
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-058?mode=precedent&ref=1905-058%3A1880%3A33%3A3427&at=3376&end=3442",
+        "scan_available": true
+      },
+      {
+        "id": "1905-058:1887:32:4528",
+        "source_id": "1905-058",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "67b34eebc8578fca8d4f8d8967fbd6c6b4bf77a8cbf2db3b8fb5dbd85e958f25",
+        "year": 1887,
+        "start": 4520,
+        "end": 4545,
+        "department": null,
+        "association": null,
+        "number": 32,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4528,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1887 года за № 32",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4340,
+        "context_end": 4765,
+        "context_original": "кунъ, назначенный надъ безвѣстно-отсутствующимъ, отыскивать открывшееся въ пользу такого лица наслѣдство? Вопросъ этотъ уже доходилъ до разсмотрѣнія Правительствующаго Сената и въ рѣшеніи 1887 года за № 32 разрѣшенъ въ отрицательномъ смыслѣ. Признавая въ настоящее время необходимымъ вновь всесторонне обсудить этотъ вопросъ, Правительствующій Сенатъ находитъ, что, за силою 1243 ст. т. X ч. 1 изд. 1900 г., имѣніе лица, въ б",
+        "passage_id": "1905-058:2694-4581",
+        "pages": [
+          159
+        ],
+        "sources": [
+          {
+            "page": 159,
+            "page_method": "header",
+            "file": "p0080_R.txt",
+            "start": 4306,
+            "end": 6052
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-058?mode=precedent&ref=1905-058%3A1887%3A32%3A4528&at=4520&end=4545",
+        "scan_available": true
+      },
+      {
+        "id": "1905-058:1890:129:5235",
+        "source_id": "1905-058",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "67b34eebc8578fca8d4f8d8967fbd6c6b4bf77a8cbf2db3b8fb5dbd85e958f25",
+        "year": 1890,
+        "start": 5215,
+        "end": 5248,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 129,
+        "department_start": 5220,
+        "department_end": 5234,
+        "citation_start": 5235,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. деп. 1890 г. № 129",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 5035,
+        "context_end": 5468,
+        "context_original": "я безвѣстнаго отсутствія, но нѣтъ правилъ о порядкѣ удостовѣренія въ немъ, и что вся глава объ удостовѣреніи въ безвѣстномъ отсутствіи есть только развитіе 1243 ст. т. X ч. 1 (ср. рѣш. гр. касс. деп. 1890 г. № 129). Въ ст. 1453 уст. гр. суд., помѣщенной въ раздѣлѣ V (прежде въ главѣ V) „объ удостовѣреніи въ безвѣстномъ отсутствіи“, постановлено: окружный судъ, если признаетъ представленныя доказательства достаточно подкрѣпляющими",
+        "passage_id": "1905-058:4306-6052",
+        "pages": [
+          159
+        ],
+        "sources": [
+          {
+            "page": 159,
+            "page_method": "header",
+            "file": "p0080_R.txt",
+            "start": 4306,
+            "end": 6052
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-058?mode=precedent&ref=1905-058%3A1890%3A129%3A5235&at=5215&end=5248",
+        "scan_available": true
+      },
+      {
+        "id": "1905-058:1887:32:8491",
+        "source_id": "1905-058",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "67b34eebc8578fca8d4f8d8967fbd6c6b4bf77a8cbf2db3b8fb5dbd85e958f25",
+        "year": 1887,
+        "start": 8486,
+        "end": 8503,
+        "department": null,
+        "association": null,
+        "number": 32,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 8491,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1887 г. № 32",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 8306,
+        "context_end": 8723,
+        "context_original": "пекунъ надъ безвѣстно-отсутствующимъ въ правѣ, на общемъ основаніи, заступать личность опекаемаго на судѣ не только въ качествѣ отвѣтчика, но и въ качествѣ самостоятельнаго истца (рѣш. 1887 г. № 32). А если это такъ, то упомянутый опекунъ, въ виду 1453 ст., имѣетъ также право изъявить за опекаемаго согласіе на принятіе наслѣдства. По этой статьѣ опекуну ввѣряется охраненіе имущества безвѣстно-отсутствующаго и защи",
+        "passage_id": "1905-058:7238-8938",
+        "pages": [
+          160
+        ],
+        "sources": [
+          {
+            "page": 160,
+            "page_method": "header",
+            "file": "p0081_L.txt",
+            "start": 7238,
+            "end": 8938
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-058?mode=precedent&ref=1905-058%3A1887%3A32%3A8491&at=8486&end=8503",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-058",
     "scan_pages": [

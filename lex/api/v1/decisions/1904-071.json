@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-071",
@@ -58,6 +58,164 @@
     ],
     "participant_ids": [
       "1904-2aafe3f45df6"
+    ],
+    "precedents": [
+      {
+        "id": "1904-071:1882:56:1257",
+        "source_id": "1904-071",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a8931c8de697797b284ac7f0e09d765567d5f6e45eb489eddf8508d69cafc21c",
+        "year": 1882,
+        "start": 1252,
+        "end": 1269,
+        "department": null,
+        "association": null,
+        "number": 56,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1257,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1882 г. № 56",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1072,
+        "context_end": 1489,
+        "context_original": "льствующаго Сената, ссылка суда на неподлежащій законъ, при правильности окончательнаго заключенія суда, не служитъ поводомъ къ отмѣнѣ постановленнаго имъ рѣшенія или опредѣленія (рѣш. 1882 г. № 56, 1896 г. № 95 и др.). Переходя, затѣмъ, къ разрѣшенію возникшаго по дѣлу вопроса о томъ, дозволены-ли наемъ или аренда состоящими въ русскомъ подданствѣ иностранцами-поселенцами принадлежностей недвижимыхъ имѣній (въ да",
+        "passage_id": "1904-071:0-2006",
+        "pages": [
+          203
+        ],
+        "sources": [
+          {
+            "page": 203,
+            "page_method": "header",
+            "file": "p0102_R.txt",
+            "start": 374,
+            "end": 1847
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-071?mode=precedent&ref=1904-071%3A1882%3A56%3A1257&at=1252&end=1269",
+        "scan_available": true
+      },
+      {
+        "id": "1904-071:1896:95:1271",
+        "source_id": "1904-071",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a8931c8de697797b284ac7f0e09d765567d5f6e45eb489eddf8508d69cafc21c",
+        "year": 1896,
+        "start": 1252,
+        "end": 1283,
+        "department": null,
+        "association": null,
+        "number": 95,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1271,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1882 г. № 56, 1896 г. № 95",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1072,
+        "context_end": 1503,
+        "context_original": "льствующаго Сената, ссылка суда на неподлежащій законъ, при правильности окончательнаго заключенія суда, не служитъ поводомъ къ отмѣнѣ постановленнаго имъ рѣшенія или опредѣленія (рѣш. 1882 г. № 56, 1896 г. № 95 и др.). Переходя, затѣмъ, къ разрѣшенію возникшаго по дѣлу вопроса о томъ, дозволены-ли наемъ или аренда состоящими въ русскомъ подданствѣ иностранцами-поселенцами принадлежностей недвижимыхъ имѣній (въ данномъ случаѣ м",
+        "passage_id": "1904-071:0-2006",
+        "pages": [
+          203
+        ],
+        "sources": [
+          {
+            "page": 203,
+            "page_method": "header",
+            "file": "p0102_R.txt",
+            "start": 374,
+            "end": 1847
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-071?mode=precedent&ref=1904-071%3A1896%3A95%3A1271&at=1252&end=1283",
+        "scan_available": true
+      },
+      {
+        "id": "1904-071:1893:33:2796",
+        "source_id": "1904-071",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a8931c8de697797b284ac7f0e09d765567d5f6e45eb489eddf8508d69cafc21c",
+        "year": 1893,
+        "start": 2743,
+        "end": 2808,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 33,
+        "department_start": 2780,
+        "department_end": 2795,
+        "citation_start": 2796,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшенія Правительствующаго Сената по общему собранію 1893 г. № 33",
+        "target_url": null,
+        "department_evidence": "общему собранію",
+        "context_start": 2563,
+        "context_end": 3028,
+        "context_original": "84 тамъ-же), то отсюда само собою слѣдуетъ, что законъ, воспрещая наемъ и аренду земли, тѣмъ самымъ воспрещаетъ наемъ и аренду ея принадлежностей. Указанныя въ кассаціонной жалобѣ рѣшенія Правительствующаго Сената по общему собранію 1893 г. № 33 и 1899 г. № 3 не имѣютъ примѣненія къ настоящему дѣлу, ибо въ первомъ изъ этихъ рѣшеній обсуждался вопросъ о томъ, что слѣдуетъ разумѣть подъ употребленнымъ въ Высочайшемъ указѣ 14 марта 1887 г., касающемся иностранцевъ",
+        "passage_id": "1904-071:1737-3283",
+        "pages": [
+          204
+        ],
+        "sources": [
+          {
+            "page": 204,
+            "page_method": "header",
+            "file": "p0103_L.txt",
+            "start": 1848,
+            "end": 3283
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-071?mode=precedent&ref=1904-071%3A1893%3A33%3A2796&at=2743&end=2808",
+        "scan_available": true
+      },
+      {
+        "id": "1904-071:1899:3:2811",
+        "source_id": "1904-071",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a8931c8de697797b284ac7f0e09d765567d5f6e45eb489eddf8508d69cafc21c",
+        "year": 1899,
+        "start": 2743,
+        "end": 2822,
+        "department": "Общее собрание",
+        "association": "list",
+        "number": 3,
+        "department_start": 2780,
+        "department_end": 2795,
+        "citation_start": 2811,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшенія Правительствующаго Сената по общему собранію 1893 г. № 33 и 1899 г. № 3",
+        "target_url": null,
+        "department_evidence": "общему собранію",
+        "context_start": 2563,
+        "context_end": 3042,
+        "context_original": "84 тамъ-же), то отсюда само собою слѣдуетъ, что законъ, воспрещая наемъ и аренду земли, тѣмъ самымъ воспрещаетъ наемъ и аренду ея принадлежностей. Указанныя въ кассаціонной жалобѣ рѣшенія Правительствующаго Сената по общему собранію 1893 г. № 33 и 1899 г. № 3 не имѣютъ примѣненія къ настоящему дѣлу, ибо въ первомъ изъ этихъ рѣшеній обсуждался вопросъ о томъ, что слѣдуетъ разумѣть подъ употребленнымъ въ Высочайшемъ указѣ 14 марта 1887 г., касающемся иностранцевъ, выраженіемъ ",
+        "passage_id": "1904-071:1737-3283",
+        "pages": [
+          204
+        ],
+        "sources": [
+          {
+            "page": 204,
+            "page_method": "header",
+            "file": "p0103_L.txt",
+            "start": 1848,
+            "end": 3283
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-071?mode=precedent&ref=1904-071%3A1899%3A3%3A2811&at=2743&end=2822",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-071",
     "scan_pages": [

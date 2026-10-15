@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-117",
@@ -57,6 +57,86 @@
       "1904-fac6b5a87d04",
       "1904-0b15b1354f56",
       "1904-f1bcbfcdc3b6"
+    ],
+    "precedents": [
+      {
+        "id": "1904-117:1897:95:9255",
+        "source_id": "1904-117",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "b5157639402c64c71e46191652c7b0895bba9932773567c70f4ce0fba5093c73",
+        "year": 1897,
+        "start": 9204,
+        "end": 9267,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 95,
+        "department_start": 9215,
+        "department_end": 9254,
+        "citation_start": 9255,
+        "status": "linked",
+        "target_id": "1897-095",
+        "quote_original": "рѣшеніи по гражданскому кассаціонному департаменту 1897 г. № 95",
+        "target_url": "https://ivseliv.github.io/senat/lex/#/d/1897-095",
+        "department_evidence": "гражданскому кассаціонному департаменту",
+        "context_start": 9166,
+        "context_end": 9487,
+        "context_original": "Гражд. 1904 г. 21* ствующій Сенатъ въ рѣшеніи по гражданскому кассаціонному департаменту 1897 г. № 95 призналъ, что во время изданія закона 9 іюля 1889 г. постановленія волостнаго схода выборныхъ въ Курляндской губерніи представлялись на разсмотрѣніе уѣзднаго суда лишь въ случаяхъ обжалованія ихъ заинтересованными лицам",
+        "passage_id": "1904-117:8318-9850",
+        "pages": [
+          324
+        ],
+        "sources": [
+          {
+            "page": 324,
+            "page_method": "header",
+            "file": "p0163_L.txt",
+            "start": 9185,
+            "end": 9850
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-117?mode=precedent&ref=1904-117%3A1897%3A95%3A9255&at=9204&end=9267",
+        "scan_available": true
+      },
+      {
+        "id": "1904-117:1902:18:12587",
+        "source_id": "1904-117",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "b5157639402c64c71e46191652c7b0895bba9932773567c70f4ce0fba5093c73",
+        "year": 1902,
+        "start": 12579,
+        "end": 12599,
+        "department": null,
+        "association": null,
+        "number": 18,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 12587,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1902 г. № 18",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 12399,
+        "context_end": 12819,
+        "context_original": "ечь за собою недѣйствительность договора. Вопросъ о значеніи подобной отмѣны доходилъ уже до разрѣшенія гражданскаго кассаціоннаго департамента и былъ предметомъ обсужденія его въ рѣшеніи 1902 г. № 18. Сущность дѣла заключалась въ томъ, что общество крестьянъ села Михайловки по приговору отъ 28 ноября 1891 г., одобренному земскимъ начальникомъ, сдало Цопову землю въ арендное содержаніе; затѣмъ земскій начальникъ, сог",
+        "passage_id": "1904-117:11227-13233",
+        "pages": [
+          325
+        ],
+        "sources": [
+          {
+            "page": 325,
+            "page_method": "header",
+            "file": "p0163_R.txt",
+            "start": 12218,
+            "end": 13233
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-117?mode=precedent&ref=1904-117%3A1902%3A18%3A12587&at=12579&end=12599",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-117",
     "scan_pages": [

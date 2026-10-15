@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-077",
@@ -43,6 +43,203 @@
     "participant_ids": [
       "1905-e4ed119c6a4a",
       "1905-3b38de6152b3"
+    ],
+    "precedents": [
+      {
+        "id": "1905-077:1894:14:1287",
+        "source_id": "1905-077",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "afae0c10822fe0188ab1149c70f64709bf175e0fd8bcab84bececfd265125514",
+        "year": 1894,
+        "start": 1279,
+        "end": 1299,
+        "department": null,
+        "association": null,
+        "number": 14,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1287,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1894 г. № 14",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1099,
+        "context_end": 1519,
+        "context_original": " Разрѣшая аналогичный вопросъ о правѣ наслѣдниковъ заявлять при раздѣльномъ производствѣ требованіе о выкупѣ наслѣдственныхъ долей по 841 ст. гр. код., Правительствующій Сенатъ въ рѣшеніи 1894 г. № 14 высказалъ, что право наслѣдниковъ на устраненіе посторонихъ лицъ отъ раздѣла съ выкупомъ пріобрѣтенныхъ ими долей настолько тѣсно связано съ самымъ раздѣломъ въ качествѣ средства, содѣйствующаго справедливому распредѣле",
+        "passage_id": "1905-077:0-1741",
+        "pages": [
+          215
+        ],
+        "sources": [
+          {
+            "page": 215,
+            "page_method": "header",
+            "file": "p0108_R.txt",
+            "start": 607,
+            "end": 1729
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-077?mode=precedent&ref=1905-077%3A1894%3A14%3A1287&at=1279&end=1299",
+        "scan_available": true
+      },
+      {
+        "id": "1905-077:1894:14:2696",
+        "source_id": "1905-077",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "afae0c10822fe0188ab1149c70f64709bf175e0fd8bcab84bececfd265125514",
+        "year": 1894,
+        "start": 2688,
+        "end": 2708,
+        "department": null,
+        "association": null,
+        "number": 14,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2696,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1894 г. № 14",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2508,
+        "context_end": 2928,
+        "context_original": "та въ приведенномъ рѣшеніи, заключается лишь въ томъ, что въ данномъ случаѣ требованіе о выкупѣ заявлено отдѣльно отъ раздѣльнаго производства, а въ дѣлѣ, о которомъ идетъ рѣчь въ рѣшеніи 1894 г. № 14, требованіе о выкупѣ было заявлено при самомъ производствѣ раздѣла. Но это отличіе ни въ чемъ не измѣняетъ того высказаннаго Правительствующимъ Сенатомъ въ упомянутомъ рѣшеніи положенія, что требованіе о выкупѣ есть тол",
+        "passage_id": "1905-077:1461-3115",
+        "pages": [
+          216
+        ],
+        "sources": [
+          {
+            "page": 216,
+            "page_method": "header",
+            "file": "p0109_L.txt",
+            "start": 1730,
+            "end": 3115
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-077?mode=precedent&ref=1905-077%3A1894%3A14%3A2696&at=2688&end=2708",
+        "scan_available": true
+      },
+      {
+        "id": "1905-077:1901:94:5710",
+        "source_id": "1905-077",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "afae0c10822fe0188ab1149c70f64709bf175e0fd8bcab84bececfd265125514",
+        "year": 1901,
+        "start": 5705,
+        "end": 5722,
+        "department": null,
+        "association": null,
+        "number": 94,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5710,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1901 г. № 94",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5525,
+        "context_end": 5942,
+        "context_original": "ески раздѣлено между сонаслѣдниками еще до предъявленія настоящаго иска о выкупѣ, какъ сдѣланное впервые въ кассаціонной жалобѣ, не подлежитъ обсужденію Правительствующаго Сената (рѣш. 1901 г. № 94, 1893 г. № 35, 100 и др.); 2) что, какъ видно изъ протокола засѣданія мироваго съѣзда 3 іюля 1903 г. проситель, представивъ копію рѣшенія того же мироваго съѣзда отъ 6 марта 1903 г. и копію принесенной имъ на это рѣшені",
+        "passage_id": "1905-077:4324-5912",
+        "pages": [
+          217
+        ],
+        "sources": [
+          {
+            "page": 217,
+            "page_method": "header",
+            "file": "p0109_R.txt",
+            "start": 4764,
+            "end": 5912
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-077?mode=precedent&ref=1905-077%3A1901%3A94%3A5710&at=5705&end=5722",
+        "scan_available": true
+      },
+      {
+        "id": "1905-077:1893:35:5724",
+        "source_id": "1905-077",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "afae0c10822fe0188ab1149c70f64709bf175e0fd8bcab84bececfd265125514",
+        "year": 1893,
+        "start": 5705,
+        "end": 5741,
+        "department": null,
+        "association": null,
+        "number": 35,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5724,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1901 г. № 94, 1893 г. № 35, 100",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5525,
+        "context_end": 5961,
+        "context_original": "ески раздѣлено между сонаслѣдниками еще до предъявленія настоящаго иска о выкупѣ, какъ сдѣланное впервые въ кассаціонной жалобѣ, не подлежитъ обсужденію Правительствующаго Сената (рѣш. 1901 г. № 94, 1893 г. № 35, 100 и др.); 2) что, какъ видно изъ протокола засѣданія мироваго съѣзда 3 іюля 1903 г. проситель, представивъ копію рѣшенія того же мироваго съѣзда отъ 6 марта 1903 г. и копію принесенной имъ на это рѣшеніе кассаціонной жало",
+        "passage_id": "1905-077:4324-5912",
+        "pages": [
+          217
+        ],
+        "sources": [
+          {
+            "page": 217,
+            "page_method": "header",
+            "file": "p0109_R.txt",
+            "start": 5724,
+            "end": 6504
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-077?mode=precedent&ref=1905-077%3A1893%3A35%3A5724&at=5705&end=5741",
+        "scan_available": true
+      },
+      {
+        "id": "1905-077:1893:100:5724",
+        "source_id": "1905-077",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "afae0c10822fe0188ab1149c70f64709bf175e0fd8bcab84bececfd265125514",
+        "year": 1893,
+        "start": 5705,
+        "end": 5741,
+        "department": null,
+        "association": null,
+        "number": 100,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5724,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1901 г. № 94, 1893 г. № 35, 100",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5525,
+        "context_end": 5961,
+        "context_original": "ески раздѣлено между сонаслѣдниками еще до предъявленія настоящаго иска о выкупѣ, какъ сдѣланное впервые въ кассаціонной жалобѣ, не подлежитъ обсужденію Правительствующаго Сената (рѣш. 1901 г. № 94, 1893 г. № 35, 100 и др.); 2) что, какъ видно изъ протокола засѣданія мироваго съѣзда 3 іюля 1903 г. проситель, представивъ копію рѣшенія того же мироваго съѣзда отъ 6 марта 1903 г. и копію принесенной имъ на это рѣшеніе кассаціонной жало",
+        "passage_id": "1905-077:4324-5912",
+        "pages": [
+          217
+        ],
+        "sources": [
+          {
+            "page": 217,
+            "page_method": "header",
+            "file": "p0109_R.txt",
+            "start": 5724,
+            "end": 6504
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-077?mode=precedent&ref=1905-077%3A1893%3A100%3A5724&at=5705&end=5741",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-077",
     "scan_pages": [

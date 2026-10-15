@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-096",
@@ -55,6 +55,164 @@
       "1897-3971b2f3be02",
       "1897-76d97cb08e81",
       "1897-edf73ad5f7ab"
+    ],
+    "precedents": [
+      {
+        "id": "1897-096:1890:124:729",
+        "source_id": "1897-096",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "84dada70ad731385b5a79da92274794642f85c4261d20e20c36d7025fe9b8454",
+        "year": 1890,
+        "start": 710,
+        "end": 742,
+        "department": null,
+        "association": null,
+        "number": 124,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 729,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніе Прав. Сен. 1890 г. № 124",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 530,
+        "context_end": 962,
+        "context_original": ". 7 правилъ 27 декабря 1884 г. и 1529 ст. 1 ч. X т. и объ изъятіи имѣнія изъ незаконнаго владѣнія Скоповской. Отвѣтчики, ссылаясь на 1 п. прилож. къ 694 ст. (прим.) 1 ч. X т. и на рѣшеніе Прав. Сен. 1890 г. № 124, возражали, что истецъ потерялъ право на оспариваніе актовъ, за истеченіемъ земской давности, а уполномоченный истца утверждалъ, что давность не можетъ имѣть примѣненіе къ искамъ, предъявляемымъ администраціей на основа",
+        "passage_id": "1897-096:0-1923",
+        "pages": [
+          313
+        ],
+        "sources": [
+          {
+            "page": 313,
+            "page_method": "header",
+            "file": "p0167_R.txt",
+            "start": 350,
+            "end": 1923
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-096?mode=precedent&ref=1897-096%3A1890%3A124%3A729&at=710&end=742",
+        "scan_available": true
+      },
+      {
+        "id": "1897-096:1890:124:1394",
+        "source_id": "1897-096",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "84dada70ad731385b5a79da92274794642f85c4261d20e20c36d7025fe9b8454",
+        "year": 1890,
+        "start": 1386,
+        "end": 1409,
+        "department": null,
+        "association": null,
+        "number": 124,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1394,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1890 года № 124",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1206,
+        "context_end": 1629,
+        "context_original": "становившись на вопросѣ о томъ, могутъ ли отвѣтчики защищаться противъ настоящаго иска возраженіемъ о пропускѣ исковой давности, нашла: по разъясненію Правительствующаго Сената въ рѣшеніи 1890 года № 124, установленныя закономъ ограниченія правъ частныхъ лицъ на владѣніе извѣстнаго рода имуществомъ бываютъ безусловныя, ограждаемыя мѣрами безусловными, и такія, способы огражденія коихъ имѣютъ иной характеръ; въ первомъ с",
+        "passage_id": "1897-096:0-1923",
+        "pages": [
+          313
+        ],
+        "sources": [
+          {
+            "page": 313,
+            "page_method": "header",
+            "file": "p0167_R.txt",
+            "start": 350,
+            "end": 1923
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-096?mode=precedent&ref=1897-096%3A1890%3A124%3A1394&at=1386&end=1409",
+        "scan_available": true
+      },
+      {
+        "id": "1897-096:1890:124:4596",
+        "source_id": "1897-096",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "84dada70ad731385b5a79da92274794642f85c4261d20e20c36d7025fe9b8454",
+        "year": 1890,
+        "start": 4588,
+        "end": 4609,
+        "department": null,
+        "association": null,
+        "number": 124,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4596,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1890 г. № 124",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4408,
+        "context_end": 4829,
+        "context_original": " находитъ: судебная палата сужденія свои о непримѣнимости къ настоящему дѣлу исковой давности подкрепила ссылкой на 694 ст. 1 ч. X т. и на разъясненія Правительствующаго Сената въ рѣшеніи 1890 г. № 124 по дѣлу Германъ. Въ этомъ рѣшеніи, обсуждая вопросъ о томъ, можетъ ли отвѣтчикъ еврей противъ иска администраціи объ уничтоженіи акта, совершеннаго въ нарушеніе закона 10 іюля 1864 г., защищаться возраженіемъ о пропускѣ",
+        "passage_id": "1897-096:3233-5192",
+        "pages": [
+          314
+        ],
+        "sources": [
+          {
+            "page": 314,
+            "page_method": "header",
+            "file": "p0168_L.txt",
+            "start": 4302,
+            "end": 5192
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-096?mode=precedent&ref=1897-096%3A1890%3A124%3A4596&at=4588&end=4609",
+        "scan_available": true
+      },
+      {
+        "id": "1897-096:1890:124:10732",
+        "source_id": "1897-096",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "84dada70ad731385b5a79da92274794642f85c4261d20e20c36d7025fe9b8454",
+        "year": 1890,
+        "start": 10724,
+        "end": 10745,
+        "department": null,
+        "association": null,
+        "number": 124,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 10732,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніе 1890 г. № 124",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 10544,
+        "context_end": 10965,
+        "context_original": "вое о непримѣнимости къ настоящему дѣлу исковой давности основала на неправильномъ толкованіи 1 пун. приложен. къ ст. 694 (прим.) 1 ч. X т., нисколько не оправдываемомъ ссылкою на рѣшеніе 1890 г. № 124, Правительствующій Сенатъ опредѣляетъ: рѣшеніе Кіевской судебной палаты отмѣнить, по нарушенію 1 пун. прилож. къ ст. 694 (прим.) 1 ч. X т., и передать дѣло, для новаго разсмотрѣнія, въ другой Департаментъ той же палаты.",
+        "passage_id": "1897-096:9286-10965",
+        "pages": [
+          316
+        ],
+        "sources": [
+          {
+            "page": 316,
+            "page_method": "header",
+            "file": "p0169_L.txt",
+            "start": 9286,
+            "end": 10965
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-096?mode=precedent&ref=1897-096%3A1890%3A124%3A10732&at=10724&end=10745",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-096",
     "scan_pages": [

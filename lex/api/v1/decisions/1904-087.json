@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-087",
@@ -66,6 +66,359 @@
     "participant_ids": [
       "1904-aba77f07d7c9",
       "1904-2e6376a323bf"
+    ],
+    "precedents": [
+      {
+        "id": "1904-087:1899:1:1569",
+        "source_id": "1904-087",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c648a408ae5868720bfcbdec227988602862b73d91595e3c9059325ffc55c86d",
+        "year": 1899,
+        "start": 1191,
+        "end": 1583,
+        "department": null,
+        "association": null,
+        "number": 1,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1569,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніе повѣренный отвѣтчика, Бѣликовъ, просилъ отказать въ искѣ въ виду того, что Иванъ Васильевичъ Алексѣевъ, какъ распорядитель дѣлъ торговаго дома „В. А. Алексѣевъ съ сыновьями“, довѣренности отъ торговаго дома не имѣлъ, а дѣйствовалъ на основаніи 5 п. товарищескаго договора, явленнаго у нотаріуса 10 іюля 1899 г., и постановленія участниковъ торговаго дома отъ 30 августа 1899 г. за № 1",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1011,
+        "context_end": 1803,
+        "context_original": "ъ судѣ искъ, прося о взысканіи съ торговаго дома „В. А. Алексѣевъ съ сыновьями“ неустойки въ 6000 р.—Окружный судъ удовлетворилъ исковыя требованія. Въ апелляціонной жалобѣ на это рѣшеніе повѣренный отвѣтчика, Бѣликовъ, просилъ отказать въ искѣ въ виду того, что Иванъ Васильевичъ Алексѣевъ, какъ распорядитель дѣлъ торговаго дома „В. А. Алексѣевъ съ сыновьями“, довѣренности отъ торговаго дома не имѣлъ, а дѣйствовалъ на основаніи 5 п. товарищескаго договора, явленнаго у нотаріуса 10 іюля 1899 г., и постановленія участниковъ торговаго дома отъ 30 августа 1899 г. за № 1, а между тѣмъ въ этомъ пунктѣ договора не сказано, чтобы онъ имѣлъ право обязывать торговый домъ неустойками по какимъ либо договорамъ; по закону же (ст. 1538 и 2326 т. X ч. 1) повѣренный можетъ обязывать своего довѣрит",
+        "passage_id": "1904-087:1091-2363",
+        "pages": [
+          239
+        ],
+        "sources": [
+          {
+            "page": 239,
+            "page_method": "header",
+            "file": "p0120_R.txt",
+            "start": 1091,
+            "end": 2363
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-087?mode=precedent&ref=1904-087%3A1899%3A1%3A1569&at=1191&end=1583",
+        "scan_available": true
+      },
+      {
+        "id": "1904-087:1874:258:2638",
+        "source_id": "1904-087",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c648a408ae5868720bfcbdec227988602862b73d91595e3c9059325ffc55c86d",
+        "year": 1874,
+        "start": 2618,
+        "end": 2651,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 258,
+        "department_start": 2623,
+        "department_end": 2637,
+        "citation_start": 2638,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. деп. 1874 г. № 258",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 2438,
+        "context_end": 2871,
+        "context_original": "X т. ч. 1 св. зак.), въ товариществѣ полномъ всѣ товарищи отвѣтствуютъ за всѣ долги онаго вообще и порознь всѣмъ своимъ имуществомъ, т.-е. отвѣтственность ихъ является солидарною (рѣш. гр. касс. деп. 1874 г. № 258); 3) что посему, хотя Иванъ Алексѣевъ и не имѣлъ спеціальнаго полномочія отъ своего товарищества обязывать его неустойкою, но разъ онъ включилъ ее въ договоръ, то таковая, въ силу вышеприведеннаго закона о полномъ товар",
+        "passage_id": "1904-087:2127-3765",
+        "pages": [
+          240
+        ],
+        "sources": [
+          {
+            "page": 240,
+            "page_method": "header",
+            "file": "p0121_L.txt",
+            "start": 2365,
+            "end": 3765
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-087?mode=precedent&ref=1904-087%3A1874%3A258%3A2638&at=2618&end=2651",
+        "scan_available": true
+      },
+      {
+        "id": "1904-087:1887:59:7758",
+        "source_id": "1904-087",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c648a408ae5868720bfcbdec227988602862b73d91595e3c9059325ffc55c86d",
+        "year": 1887,
+        "start": 7753,
+        "end": 7770,
+        "department": null,
+        "association": null,
+        "number": 59,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7758,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1887 г. № 59",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7573,
+        "context_end": 7990,
+        "context_original": "ительствующаго Сената, довѣренность есть юридическій актъ, которымъ вѣритель уполномочиваетъ повѣреннаго на совершеніе извѣстныхъ вмѣсто него дѣйствій, по праву представительства (рѣш. 1887 г. № 59). Существеннѣйшія обязанности, налагаемыя этимъ двустороннимъ договоромъ, по самому свойству его, суть: для повѣреннаго—не выходить въ дѣйствіяхъ своихъ изъ предѣловъ даннаго ему полномочія, а для довѣрителя—отвѣтствова",
+        "passage_id": "1904-087:6313-8111",
+        "pages": [
+          241
+        ],
+        "sources": [
+          {
+            "page": 241,
+            "page_method": "header",
+            "file": "p0121_R.txt",
+            "start": 6313,
+            "end": 8111
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-087?mode=precedent&ref=1904-087%3A1887%3A59%3A7758&at=7753&end=7770",
+        "scan_available": true
+      },
+      {
+        "id": "1904-087:1878:218:8059",
+        "source_id": "1904-087",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c648a408ae5868720bfcbdec227988602862b73d91595e3c9059325ffc55c86d",
+        "year": 1878,
+        "start": 8054,
+        "end": 8072,
+        "department": null,
+        "association": null,
+        "number": 218,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 8059,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1878 г. № 218",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7874,
+        "context_end": 8170,
+        "context_original": " для повѣреннаго—не выходить въ дѣйствіяхъ своихъ изъ предѣловъ даннаго ему полномочія, а для довѣрителя—отвѣтствовать за все, сдѣланное повѣреннымъ въ силу даннаго ему порученія (рѣш. 1878 г. № 218, 1875 г. № 273, 1871 г. № 1125 и др.). Изъ этого и вытекаетъ заключеніе, что обязывать своего до-",
+        "passage_id": "1904-087:6313-8111",
+        "pages": [
+          241
+        ],
+        "sources": [
+          {
+            "page": 241,
+            "page_method": "header",
+            "file": "p0121_R.txt",
+            "start": 7903,
+            "end": 8170
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-087?mode=precedent&ref=1904-087%3A1878%3A218%3A8059&at=8054&end=8072",
+        "scan_available": true
+      },
+      {
+        "id": "1904-087:1875:273:8074",
+        "source_id": "1904-087",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c648a408ae5868720bfcbdec227988602862b73d91595e3c9059325ffc55c86d",
+        "year": 1875,
+        "start": 8054,
+        "end": 8087,
+        "department": null,
+        "association": null,
+        "number": 273,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 8074,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1878 г. № 218, 1875 г. № 273",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7874,
+        "context_end": 8170,
+        "context_original": " для повѣреннаго—не выходить въ дѣйствіяхъ своихъ изъ предѣловъ даннаго ему полномочія, а для довѣрителя—отвѣтствовать за все, сдѣланное повѣреннымъ въ силу даннаго ему порученія (рѣш. 1878 г. № 218, 1875 г. № 273, 1871 г. № 1125 и др.). Изъ этого и вытекаетъ заключеніе, что обязывать своего до-",
+        "passage_id": "1904-087:6313-8111",
+        "pages": [
+          241
+        ],
+        "sources": [
+          {
+            "page": 241,
+            "page_method": "header",
+            "file": "p0121_R.txt",
+            "start": 7903,
+            "end": 8170
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-087?mode=precedent&ref=1904-087%3A1875%3A273%3A8074&at=8054&end=8087",
+        "scan_available": true
+      },
+      {
+        "id": "1904-087:1871:1125:8089",
+        "source_id": "1904-087",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c648a408ae5868720bfcbdec227988602862b73d91595e3c9059325ffc55c86d",
+        "year": 1871,
+        "start": 8054,
+        "end": 8103,
+        "department": null,
+        "association": null,
+        "number": 1125,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 8089,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1878 г. № 218, 1875 г. № 273, 1871 г. № 1125",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7874,
+        "context_end": 8170,
+        "context_original": " для повѣреннаго—не выходить въ дѣйствіяхъ своихъ изъ предѣловъ даннаго ему полномочія, а для довѣрителя—отвѣтствовать за все, сдѣланное повѣреннымъ въ силу даннаго ему порученія (рѣш. 1878 г. № 218, 1875 г. № 273, 1871 г. № 1125 и др.). Изъ этого и вытекаетъ заключеніе, что обязывать своего до-",
+        "passage_id": "1904-087:6313-8111",
+        "pages": [
+          241
+        ],
+        "sources": [
+          {
+            "page": 241,
+            "page_method": "header",
+            "file": "p0121_R.txt",
+            "start": 7903,
+            "end": 8170
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-087?mode=precedent&ref=1904-087%3A1871%3A1125%3A8089&at=8054&end=8103",
+        "scan_available": true
+      },
+      {
+        "id": "1904-087:1882:36:8366",
+        "source_id": "1904-087",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c648a408ae5868720bfcbdec227988602862b73d91595e3c9059325ffc55c86d",
+        "year": 1882,
+        "start": 8361,
+        "end": 8378,
+        "department": null,
+        "association": null,
+        "number": 36,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 8366,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1882 г. № 36",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 8228,
+        "context_end": 8598,
+        "context_original": "Гражд. 1904 г. 16 вѣрителя неустойкой повѣренный можетъ лишь въ томъ случаѣ, когда полномочіе на это точно выражено въ довѣренности (рѣш. 1882 г. № 36, 1880 г. № 33, 1872 г. № 504 и др.), но представительство распорядителя и участника торговаго дома не тождественно съ представительствомъ повѣреннаго, снабженнаго довѣренностію. Первый—является полнымъ представителемъ т",
+        "passage_id": "1904-087:7903-9811",
+        "pages": [
+          242
+        ],
+        "sources": [
+          {
+            "page": 242,
+            "page_method": "header",
+            "file": "p0122_L.txt",
+            "start": 8246,
+            "end": 9811
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-087?mode=precedent&ref=1904-087%3A1882%3A36%3A8366&at=8361&end=8378",
+        "scan_available": true
+      },
+      {
+        "id": "1904-087:1880:33:8380",
+        "source_id": "1904-087",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c648a408ae5868720bfcbdec227988602862b73d91595e3c9059325ffc55c86d",
+        "year": 1880,
+        "start": 8361,
+        "end": 8392,
+        "department": null,
+        "association": null,
+        "number": 33,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 8380,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1882 г. № 36, 1880 г. № 33",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 8228,
+        "context_end": 8612,
+        "context_original": "Гражд. 1904 г. 16 вѣрителя неустойкой повѣренный можетъ лишь въ томъ случаѣ, когда полномочіе на это точно выражено въ довѣренности (рѣш. 1882 г. № 36, 1880 г. № 33, 1872 г. № 504 и др.), но представительство распорядителя и участника торговаго дома не тождественно съ представительствомъ повѣреннаго, снабженнаго довѣренностію. Первый—является полнымъ представителемъ торговаго дома ",
+        "passage_id": "1904-087:7903-9811",
+        "pages": [
+          242
+        ],
+        "sources": [
+          {
+            "page": 242,
+            "page_method": "header",
+            "file": "p0122_L.txt",
+            "start": 8246,
+            "end": 9811
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-087?mode=precedent&ref=1904-087%3A1880%3A33%3A8380&at=8361&end=8392",
+        "scan_available": true
+      },
+      {
+        "id": "1904-087:1872:504:8394",
+        "source_id": "1904-087",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c648a408ae5868720bfcbdec227988602862b73d91595e3c9059325ffc55c86d",
+        "year": 1872,
+        "start": 8361,
+        "end": 8407,
+        "department": null,
+        "association": null,
+        "number": 504,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 8394,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1882 г. № 36, 1880 г. № 33, 1872 г. № 504",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 8228,
+        "context_end": 8627,
+        "context_original": "Гражд. 1904 г. 16 вѣрителя неустойкой повѣренный можетъ лишь въ томъ случаѣ, когда полномочіе на это точно выражено въ довѣренности (рѣш. 1882 г. № 36, 1880 г. № 33, 1872 г. № 504 и др.), но представительство распорядителя и участника торговаго дома не тождественно съ представительствомъ повѣреннаго, снабженнаго довѣренностію. Первый—является полнымъ представителемъ торговаго дома какъ на судѣ, т",
+        "passage_id": "1904-087:7903-9811",
+        "pages": [
+          242
+        ],
+        "sources": [
+          {
+            "page": 242,
+            "page_method": "header",
+            "file": "p0122_L.txt",
+            "start": 8246,
+            "end": 9811
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-087?mode=precedent&ref=1904-087%3A1872%3A504%3A8394&at=8361&end=8407",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-087",
     "scan_pages": [

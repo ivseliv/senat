@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-045",
@@ -58,6 +58,203 @@
       "1904-9db8b3de3411",
       "1904-c83c858856f6",
       "1904-68325b8a16d0"
+    ],
+    "precedents": [
+      {
+        "id": "1904-045:1899:16:2432",
+        "source_id": "1904-045",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "3d43b1fb7504cad108eb3b16ab502c7a103b5471950c1f935a6b3cfb6cba1a2a",
+        "year": 1899,
+        "start": 2427,
+        "end": 2444,
+        "department": null,
+        "association": null,
+        "number": 16,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2432,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1899 г. № 16",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2247,
+        "context_end": 2664,
+        "context_original": "данное самому себѣ. Оно не тожественно и съ обязательствомъ, выданнымъ повѣреннымъ себѣ отъ имени своего довѣрителя, и не можетъ считаться недѣйствительнымъ съ момента его выдачи (рѣш. 1899 г. № 16). На основаніи § 27 и 32 устава Супруновскаго товарищества, ему не воспрещено принимать векселя и передавать таковые по бланковымъ надписямъ, и такъ какъ бланкъ на векселѣ подписанъ двумя директорами правленія—Сергѣемъ ",
+        "passage_id": "1904-045:1531-3248",
+        "pages": [
+          128
+        ],
+        "sources": [
+          {
+            "page": 128,
+            "page_method": "header",
+            "file": "p0065_L.txt",
+            "start": 2404,
+            "end": 3248
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-045?mode=precedent&ref=1904-045%3A1899%3A16%3A2432&at=2427&end=2444",
+        "scan_available": true
+      },
+      {
+        "id": "1904-045:1892:115:3368",
+        "source_id": "1904-045",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "3d43b1fb7504cad108eb3b16ab502c7a103b5471950c1f935a6b3cfb6cba1a2a",
+        "year": 1892,
+        "start": 3363,
+        "end": 3381,
+        "department": null,
+        "association": null,
+        "number": 115,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3368,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1892 г. № 115",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3183,
+        "context_end": 3601,
+        "context_original": " безденежнаго векселя, ни въ знаніи о мнимости бланковой надписи. Такое обвиненіе голословно, ибо, по ст. 9 уст. о векс. изд. 1893 г. и согласно съ разъясненіями Правит. Сената въ рѣш. 1892 г. № 115 и 1901 г. № 108, безденежность векселей можно доказывать только письменными документами, а такъ какъ бланковая на векселѣ надпись есть то же вексельное обязательство, то мнимость такой надписи, нельзя доказывать показан",
+        "passage_id": "1904-045:3008-4589",
+        "pages": [
+          128
+        ],
+        "sources": [
+          {
+            "page": 128,
+            "page_method": "header",
+            "file": "p0065_L.txt",
+            "start": 3008,
+            "end": 4589
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-045?mode=precedent&ref=1904-045%3A1892%3A115%3A3368&at=3363&end=3381",
+        "scan_available": true
+      },
+      {
+        "id": "1904-045:1901:108:3384",
+        "source_id": "1904-045",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "3d43b1fb7504cad108eb3b16ab502c7a103b5471950c1f935a6b3cfb6cba1a2a",
+        "year": 1901,
+        "start": 3363,
+        "end": 3397,
+        "department": null,
+        "association": null,
+        "number": 108,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3384,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1892 г. № 115 и 1901 г. № 108",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3183,
+        "context_end": 3617,
+        "context_original": " безденежнаго векселя, ни въ знаніи о мнимости бланковой надписи. Такое обвиненіе голословно, ибо, по ст. 9 уст. о векс. изд. 1893 г. и согласно съ разъясненіями Правит. Сената въ рѣш. 1892 г. № 115 и 1901 г. № 108, безденежность векселей можно доказывать только письменными документами, а такъ какъ бланковая на векселѣ надпись есть то же вексельное обязательство, то мнимость такой надписи, нельзя доказывать показаніями свидѣтелей,",
+        "passage_id": "1904-045:3008-4589",
+        "pages": [
+          128
+        ],
+        "sources": [
+          {
+            "page": 128,
+            "page_method": "header",
+            "file": "p0065_L.txt",
+            "start": 3008,
+            "end": 4589
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-045?mode=precedent&ref=1904-045%3A1901%3A108%3A3384&at=3363&end=3397",
+        "scan_available": true
+      },
+      {
+        "id": "1904-045:1892:115:4876",
+        "source_id": "1904-045",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "3d43b1fb7504cad108eb3b16ab502c7a103b5471950c1f935a6b3cfb6cba1a2a",
+        "year": 1892,
+        "start": 4866,
+        "end": 4892,
+        "department": null,
+        "association": null,
+        "number": 115,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4876,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніемъ 1892 г. за № 115",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4796,
+        "context_end": 5112,
+        "context_original": "Обсудивъ обстоятельства настоящаго дѣла, Правит. Сенатъ находитъ: что рѣшеніемъ 1892 г. за № 115 разъяснено, что начало добросовѣстности признается нашимъ законодательствомъ и, при всей строгости и формальности вексельнаго права, не можетъ не имѣть примѣненія въ области также и сего послѣдняго, подобно тому, какъ о",
+        "passage_id": "1904-045:4323-5992",
+        "pages": [
+          128
+        ],
+        "sources": [
+          {
+            "page": 128,
+            "page_method": "header",
+            "file": "p0065_L.txt",
+            "start": 4796,
+            "end": 5354
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-045?mode=precedent&ref=1904-045%3A1892%3A115%3A4876&at=4866&end=4892",
+        "scan_available": true
+      },
+      {
+        "id": "1904-045:1901:108:5548",
+        "source_id": "1904-045",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "3d43b1fb7504cad108eb3b16ab502c7a103b5471950c1f935a6b3cfb6cba1a2a",
+        "year": 1901,
+        "start": 5538,
+        "end": 5561,
+        "department": null,
+        "association": null,
+        "number": 108,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5548,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніемъ 1901 г. № 108",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5358,
+        "context_end": 5781,
+        "context_original": "селя, зналъ, что по гражданскимъ законамъ никакого по оному обязательства не возникало, или такое погашено, или измѣнено, или не подлежитъ исполненію. Другимъ же рѣшеніемъ, именно рѣшеніемъ 1901 г. № 108, Сенатъ разъяснилъ, что установленіе факта извѣстности векселедержателю вышеуказанныхъ обстоятельствъ относится къ области событій, лежащихъ внѣ вексельныхъ отношеній, какъ таковыхъ, и имѣетъ въ виду установить внутренн",
+        "passage_id": "1904-045:4323-5992",
+        "pages": [
+          129
+        ],
+        "sources": [
+          {
+            "page": 129,
+            "page_method": "header",
+            "file": "p0065_R.txt",
+            "start": 5355,
+            "end": 5992
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-045?mode=precedent&ref=1904-045%3A1901%3A108%3A5548&at=5538&end=5561",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-045",
     "scan_pages": [

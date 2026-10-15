@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-062",
@@ -56,6 +56,86 @@
       "1905-7d97a0921630",
       "1905-1194208812cc",
       "1905-980cf0d792d0"
+    ],
+    "precedents": [
+      {
+        "id": "1905-062:1889:5:8112",
+        "source_id": "1905-062",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "3d5b76860ec530183b6937b5a89d7d9966093339dbd33d98b70396f5fc65dc44",
+        "year": 1889,
+        "start": 8107,
+        "end": 8123,
+        "department": null,
+        "association": null,
+        "number": 5,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 8112,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1889 г. № 5",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7927,
+        "context_end": 8343,
+        "context_original": "асть груза, на которую не было исчислено провозной платы вслѣдствіе показанія отправителемъ вѣса груза менѣе дѣйствительнаго. Правительствующій Сенатъ уже неоднократно разъяснялъ (рѣш. 1889 г. № 5, 1894 г. № 8 и др.), что провозная плата за данный грузъ, опредѣляемый не по-штучно, а по вѣсу всегда должна быть исчисляема сообразно пройденному грузомъ разстоянію и на основаніи дѣйствительнаго вѣса груза. Посему, ко",
+        "passage_id": "1905-062:6952-8578",
+        "pages": [
+          170
+        ],
+        "sources": [
+          {
+            "page": 170,
+            "page_method": "header",
+            "file": "p0086_L.txt",
+            "start": 6952,
+            "end": 8578
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-062?mode=precedent&ref=1905-062%3A1889%3A5%3A8112&at=8107&end=8123",
+        "scan_available": true
+      },
+      {
+        "id": "1905-062:1894:8:8125",
+        "source_id": "1905-062",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "3d5b76860ec530183b6937b5a89d7d9966093339dbd33d98b70396f5fc65dc44",
+        "year": 1894,
+        "start": 8107,
+        "end": 8136,
+        "department": null,
+        "association": null,
+        "number": 8,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 8125,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1889 г. № 5, 1894 г. № 8",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7927,
+        "context_end": 8356,
+        "context_original": "асть груза, на которую не было исчислено провозной платы вслѣдствіе показанія отправителемъ вѣса груза менѣе дѣйствительнаго. Правительствующій Сенатъ уже неоднократно разъяснялъ (рѣш. 1889 г. № 5, 1894 г. № 8 и др.), что провозная плата за данный грузъ, опредѣляемый не по-штучно, а по вѣсу всегда должна быть исчисляема сообразно пройденному грузомъ разстоянію и на основаніи дѣйствительнаго вѣса груза. Посему, коль скоро вѣсъ",
+        "passage_id": "1905-062:6952-8578",
+        "pages": [
+          170
+        ],
+        "sources": [
+          {
+            "page": 170,
+            "page_method": "header",
+            "file": "p0086_L.txt",
+            "start": 6952,
+            "end": 8578
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-062?mode=precedent&ref=1905-062%3A1894%3A8%3A8125&at=8107&end=8136",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-062",
     "scan_pages": [

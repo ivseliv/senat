@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-066",
@@ -53,6 +53,242 @@
     "participant_ids": [
       "1897-d07c55b4d78e",
       "1897-5b920aca5ddd"
+    ],
+    "precedents": [
+      {
+        "id": "1897-066:1871:994:5672",
+        "source_id": "1897-066",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "d016ead07847d60d000f598171b40b610ebccc20718de9effe6d1cc118e5785e",
+        "year": 1871,
+        "start": 5667,
+        "end": 5685,
+        "department": null,
+        "association": null,
+        "number": 994,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5672,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1871 г. № 994",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5487,
+        "context_end": 5905,
+        "context_original": " залогоприниматель имѣетъ право на утвержденіе за собою заложеннаго имѣнія не иначе, какъ въ суммѣ залога, безотносительно къ тому, будетъ ли залоговая сумма выше или ниже оцѣнки (рѣш. 1871 г. № 994, 1875 г. № 493, 1876 г. № 93, 1895 г. № 76, 1897 г. № 13 и др.). Такое право залогодержателя, выраженное въ 1187 и 1068 ст. уст. гражд. суд., не ставится въ зависимость отъ его участія или неучастія въ торгѣ и, при отсу",
+        "passage_id": "1897-066:4360-5750",
+        "pages": [
+          223
+        ],
+        "sources": [
+          {
+            "page": 223,
+            "page_method": "header",
+            "file": "p0122_R.txt",
+            "start": 5586,
+            "end": 6969
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-066?mode=precedent&ref=1897-066%3A1871%3A994%3A5672&at=5667&end=5685",
+        "scan_available": true
+      },
+      {
+        "id": "1897-066:1875:493:5687",
+        "source_id": "1897-066",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "d016ead07847d60d000f598171b40b610ebccc20718de9effe6d1cc118e5785e",
+        "year": 1875,
+        "start": 5667,
+        "end": 5700,
+        "department": null,
+        "association": null,
+        "number": 493,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5687,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1871 г. № 994, 1875 г. № 493",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5487,
+        "context_end": 5920,
+        "context_original": " залогоприниматель имѣетъ право на утвержденіе за собою заложеннаго имѣнія не иначе, какъ въ суммѣ залога, безотносительно къ тому, будетъ ли залоговая сумма выше или ниже оцѣнки (рѣш. 1871 г. № 994, 1875 г. № 493, 1876 г. № 93, 1895 г. № 76, 1897 г. № 13 и др.). Такое право залогодержателя, выраженное въ 1187 и 1068 ст. уст. гражд. суд., не ставится въ зависимость отъ его участія или неучастія въ торгѣ и, при отсутствіи указанія",
+        "passage_id": "1897-066:4360-5750",
+        "pages": [
+          223
+        ],
+        "sources": [
+          {
+            "page": 223,
+            "page_method": "header",
+            "file": "p0122_R.txt",
+            "start": 5586,
+            "end": 6969
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-066?mode=precedent&ref=1897-066%3A1875%3A493%3A5687&at=5667&end=5700",
+        "scan_available": true
+      },
+      {
+        "id": "1897-066:1876:93:5702",
+        "source_id": "1897-066",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "d016ead07847d60d000f598171b40b610ebccc20718de9effe6d1cc118e5785e",
+        "year": 1876,
+        "start": 5667,
+        "end": 5714,
+        "department": null,
+        "association": null,
+        "number": 93,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5702,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1871 г. № 994, 1875 г. № 493, 1876 г. № 93",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5487,
+        "context_end": 5934,
+        "context_original": " залогоприниматель имѣетъ право на утвержденіе за собою заложеннаго имѣнія не иначе, какъ въ суммѣ залога, безотносительно къ тому, будетъ ли залоговая сумма выше или ниже оцѣнки (рѣш. 1871 г. № 994, 1875 г. № 493, 1876 г. № 93, 1895 г. № 76, 1897 г. № 13 и др.). Такое право залогодержателя, выраженное въ 1187 и 1068 ст. уст. гражд. суд., не ставится въ зависимость отъ его участія или неучастія въ торгѣ и, при отсутствіи указанія на то въ зако",
+        "passage_id": "1897-066:4360-5750",
+        "pages": [
+          223
+        ],
+        "sources": [
+          {
+            "page": 223,
+            "page_method": "header",
+            "file": "p0122_R.txt",
+            "start": 5586,
+            "end": 6969
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-066?mode=precedent&ref=1897-066%3A1876%3A93%3A5702&at=5667&end=5714",
+        "scan_available": true
+      },
+      {
+        "id": "1897-066:1895:76:5716",
+        "source_id": "1897-066",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "d016ead07847d60d000f598171b40b610ebccc20718de9effe6d1cc118e5785e",
+        "year": 1895,
+        "start": 5667,
+        "end": 5728,
+        "department": null,
+        "association": null,
+        "number": 76,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5716,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1871 г. № 994, 1875 г. № 493, 1876 г. № 93, 1895 г. № 76",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5487,
+        "context_end": 5948,
+        "context_original": " залогоприниматель имѣетъ право на утвержденіе за собою заложеннаго имѣнія не иначе, какъ въ суммѣ залога, безотносительно къ тому, будетъ ли залоговая сумма выше или ниже оцѣнки (рѣш. 1871 г. № 994, 1875 г. № 493, 1876 г. № 93, 1895 г. № 76, 1897 г. № 13 и др.). Такое право залогодержателя, выраженное въ 1187 и 1068 ст. уст. гражд. суд., не ставится въ зависимость отъ его участія или неучастія въ торгѣ и, при отсутствіи указанія на то въ законѣ, противопол",
+        "passage_id": "1897-066:4360-5750",
+        "pages": [
+          223
+        ],
+        "sources": [
+          {
+            "page": 223,
+            "page_method": "header",
+            "file": "p0122_R.txt",
+            "start": 5586,
+            "end": 6969
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-066?mode=precedent&ref=1897-066%3A1895%3A76%3A5716&at=5667&end=5728",
+        "scan_available": true
+      },
+      {
+        "id": "1897-066:1897:13:5730",
+        "source_id": "1897-066",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "d016ead07847d60d000f598171b40b610ebccc20718de9effe6d1cc118e5785e",
+        "year": 1897,
+        "start": 5667,
+        "end": 5742,
+        "department": null,
+        "association": null,
+        "number": 13,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5730,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1871 г. № 994, 1875 г. № 493, 1876 г. № 93, 1895 г. № 76, 1897 г. № 13",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5487,
+        "context_end": 5962,
+        "context_original": " залогоприниматель имѣетъ право на утвержденіе за собою заложеннаго имѣнія не иначе, какъ въ суммѣ залога, безотносительно къ тому, будетъ ли залоговая сумма выше или ниже оцѣнки (рѣш. 1871 г. № 994, 1875 г. № 493, 1876 г. № 93, 1895 г. № 76, 1897 г. № 13 и др.). Такое право залогодержателя, выраженное въ 1187 и 1068 ст. уст. гражд. суд., не ставится въ зависимость отъ его участія или неучастія въ торгѣ и, при отсутствіи указанія на то въ законѣ, противоположное утвержде",
+        "passage_id": "1897-066:4360-5750",
+        "pages": [
+          223
+        ],
+        "sources": [
+          {
+            "page": 223,
+            "page_method": "header",
+            "file": "p0122_R.txt",
+            "start": 5586,
+            "end": 6969
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-066?mode=precedent&ref=1897-066%3A1897%3A13%3A5730&at=5667&end=5742",
+        "scan_available": true
+      },
+      {
+        "id": "1897-066:1876:93:6588",
+        "source_id": "1897-066",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "d016ead07847d60d000f598171b40b610ebccc20718de9effe6d1cc118e5785e",
+        "year": 1876,
+        "start": 6583,
+        "end": 6600,
+        "department": null,
+        "association": null,
+        "number": 93,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6588,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1876 г. № 93",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 6403,
+        "context_end": 6820,
+        "context_original": "ъ какъ оцѣночную, такъ и высшую, предложенную на торгахъ сумму, ибо заложенное имѣніе составляетъ единственный и исключительный источникъ удовлетворенія обезпечиваемаго имъ долга (рѣш. 1876 г. № 93 и др.). По приведеннымъ соображеніямъ, признавая, что возбужденный вопросъ долженъ быть разрѣшенъ въ утвердительномъ смыслѣ и что засѣмъ въ объясненіяхъ просителя не оказывается законныхъ поводовъ къ отмѣнѣ обжалованнаг",
+        "passage_id": "1897-066:5586-6969",
+        "pages": [
+          223
+        ],
+        "sources": [
+          {
+            "page": 223,
+            "page_method": "header",
+            "file": "p0122_R.txt",
+            "start": 5586,
+            "end": 6969
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-066?mode=precedent&ref=1897-066%3A1876%3A93%3A6588&at=6583&end=6600",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-066",
     "scan_pages": [

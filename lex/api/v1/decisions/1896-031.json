@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1896-031",
@@ -46,6 +46,47 @@
       ]
     ],
     "participant_ids": [],
+    "precedents": [
+      {
+        "id": "1896-031:1887:10:1615",
+        "source_id": "1896-031",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "52753bb6fb3721e142c30e9bbe8cfcd7fc2cfb99b7ed43fe1337179b0f81c9db",
+        "year": 1887,
+        "start": 1536,
+        "end": 1627,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 10,
+        "department_start": 1544,
+        "department_end": 1556,
+        "citation_start": 1615,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшенья Общаго Собра нія Кассаціонныхъ Департаментъ Пра вительствующаго Сената 1887 г. № 10",
+        "target_url": null,
+        "department_evidence": "Общаго Собра",
+        "context_start": 1356,
+        "context_end": 1847,
+        "context_original": "тв е о к|:ажѣ у Ел кина прекратить за необн гужен’емъ виновныхъ; 3, что постансвлен е суда въ части, касающейся возврап еня Ел кину ротонды, представляется неправиль нымъ, въ виду рѣшенья Общаго Собра нія Кассаціонныхъ Департаментъ Пра вительствующаго Сената 1887 г. № 10, коимъ разъяснено, что уголовный судъ не уполномоченъ возвращать потерпѣв шему лицу похищенныя у него вещи, когда онѣ взяты къ дѣлу отъ нсу а- ствующихъ въ уголовномъ прои^одствѣ третьихъ лицъ, пріобрѣвшихъ оныя за конн",
+        "passage_id": "1896-031:822-2594",
+        "pages": [
+          765
+        ],
+        "sources": [
+          {
+            "page": 765,
+            "page_method": "header",
+            "file": "p0058.txt",
+            "start": 822,
+            "end": 2163
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-031?mode=precedent&ref=1896-031%3A1887%3A10%3A1615&at=1536&end=1627",
+        "scan_available": true
+      }
+    ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1896-031",
     "scan_pages": [
       {

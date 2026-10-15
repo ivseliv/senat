@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-007",
@@ -46,6 +46,164 @@
     "participant_ids": [
       "1905-842356bcab00",
       "1905-d9dd2daf361c"
+    ],
+    "precedents": [
+      {
+        "id": "1905-007:1868:891:4828",
+        "source_id": "1905-007",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e1ba95cdab29f0062c4cee35f543b9584204740aa87781e79974599e77dde58a",
+        "year": 1868,
+        "start": 4823,
+        "end": 4841,
+        "department": null,
+        "association": null,
+        "number": 891,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4828,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1868 г. № 891",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4643,
+        "context_end": 5061,
+        "context_original": "тъ значеніе договора, силою котораго, по добровольному согласію наслѣдниковъ, общая собственность замѣняется отдѣленными опредѣленными частями, назначаемыми каждому изъ дѣлящихся (рѣш. 1868 г. № 891). Раздѣльный актъ на недвижимое имѣніе совершается нотаріальнымъ порядкомъ (ст. 1337 т. X ч. 1), для раздѣла же движимости не установлено никакой формы (рѣш. 1875 г. № 395). Точное опредѣленіе частей дѣлящихся составляе",
+        "passage_id": "1905-007:4343-5960",
+        "pages": [
+          16
+        ],
+        "sources": [
+          {
+            "page": 16,
+            "page_method": "header",
+            "file": "p0009_L.txt",
+            "start": 4343,
+            "end": 5960
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-007?mode=precedent&ref=1905-007%3A1868%3A891%3A4828&at=4823&end=4841",
+        "scan_available": true
+      },
+      {
+        "id": "1905-007:1875:395:5000",
+        "source_id": "1905-007",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e1ba95cdab29f0062c4cee35f543b9584204740aa87781e79974599e77dde58a",
+        "year": 1875,
+        "start": 4995,
+        "end": 5013,
+        "department": null,
+        "association": null,
+        "number": 395,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5000,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1875 г. № 395",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4815,
+        "context_end": 5233,
+        "context_original": "ящихся (рѣш. 1868 г. № 891). Раздѣльный актъ на недвижимое имѣніе совершается нотаріальнымъ порядкомъ (ст. 1337 т. X ч. 1), для раздѣла же движимости не установлено никакой формы (рѣш. 1875 г. № 395). Точное опредѣленіе частей дѣлящихся составляетъ необходимое условіе раздѣла, который и предпринимается для того, чтобы прекратить общую собственность. Утвержденіе въ правахъ наслѣдства не есть договоръ, устанавливающі",
+        "passage_id": "1905-007:4343-5960",
+        "pages": [
+          16
+        ],
+        "sources": [
+          {
+            "page": 16,
+            "page_method": "header",
+            "file": "p0009_L.txt",
+            "start": 4343,
+            "end": 5960
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-007?mode=precedent&ref=1905-007%3A1875%3A395%3A5000&at=4995&end=5013",
+        "scan_available": true
+      },
+      {
+        "id": "1905-007:1871:1150:5539",
+        "source_id": "1905-007",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e1ba95cdab29f0062c4cee35f543b9584204740aa87781e79974599e77dde58a",
+        "year": 1871,
+        "start": 5534,
+        "end": 5553,
+        "department": null,
+        "association": null,
+        "number": 1150,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5539,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1871 г. № 1150",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5354,
+        "context_end": 5773,
+        "context_original": " повѣркой родственной связи наслѣдниковъ съ наслѣдодателемъ, и самое обращеніе къ суду для утвержденія въ наслѣдственныхъ правахъ, по смыслу ст. 1408 уст. гр. суд., необязательно (рѣш. 1871 г. № 1150, 1875 г. № 848 и др.). При такомъ значеніи, съ одной стороны, раздѣльнаго акта, а съ другой—утвержденія въ правахъ наслѣдства, судебная палата не могла, безъ нарушенія ст. 1545 X т. 1 ч. и ст. 1408 уст. гр. суд. считать",
+        "passage_id": "1905-007:4343-5960",
+        "pages": [
+          16
+        ],
+        "sources": [
+          {
+            "page": 16,
+            "page_method": "header",
+            "file": "p0009_L.txt",
+            "start": 4343,
+            "end": 5960
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-007?mode=precedent&ref=1905-007%3A1871%3A1150%3A5539&at=5534&end=5553",
+        "scan_available": true
+      },
+      {
+        "id": "1905-007:1875:848:5555",
+        "source_id": "1905-007",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e1ba95cdab29f0062c4cee35f543b9584204740aa87781e79974599e77dde58a",
+        "year": 1875,
+        "start": 5534,
+        "end": 5568,
+        "department": null,
+        "association": null,
+        "number": 848,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5555,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1871 г. № 1150, 1875 г. № 848",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5354,
+        "context_end": 5788,
+        "context_original": " повѣркой родственной связи наслѣдниковъ съ наслѣдодателемъ, и самое обращеніе къ суду для утвержденія въ наслѣдственныхъ правахъ, по смыслу ст. 1408 уст. гр. суд., необязательно (рѣш. 1871 г. № 1150, 1875 г. № 848 и др.). При такомъ значеніи, съ одной стороны, раздѣльнаго акта, а съ другой—утвержденія въ правахъ наслѣдства, судебная палата не могла, безъ нарушенія ст. 1545 X т. 1 ч. и ст. 1408 уст. гр. суд. считать раздѣльный акт",
+        "passage_id": "1905-007:4343-5960",
+        "pages": [
+          16
+        ],
+        "sources": [
+          {
+            "page": 16,
+            "page_method": "header",
+            "file": "p0009_L.txt",
+            "start": 4343,
+            "end": 5960
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-007?mode=precedent&ref=1905-007%3A1875%3A848%3A5555&at=5534&end=5568",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-007",
     "scan_pages": [

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-064",
@@ -76,6 +76,671 @@
       "1904-1c314ca8afe2",
       "1904-741a50160687",
       "1904-84ee21f15bb9"
+    ],
+    "precedents": [
+      {
+        "id": "1904-064:1872:756:7261",
+        "source_id": "1904-064",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6de730655679cc307c33ea4555b73170d923778e8e70e33ac8e16e062170027f",
+        "year": 1872,
+        "start": 7256,
+        "end": 7285,
+        "department": null,
+        "association": null,
+        "number": 756,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7261,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1872 г. № 756, 757 и 807",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7076,
+        "context_end": 7505,
+        "context_original": "ричитается извѣстная денежная сумма, имѣетъ-ли право за удержаніе этой суммы отыскивать, сверхъ узаконенныхъ на задержанный у него капиталъ процентовъ (2020 и 2021 ст. 1 ч. X т. и рѣш. 1872 г. № 756, 757 и 807; 1874 г. № 636; 1876 г. № 249 и др.), еще вознагражденіе за понесенные отъ задержанія капитала убытки? Вопросъ этотъ долженъ быть разрѣшенъ отрицательно по слѣдующимъ соображеніямъ: какъ видно изъ установленныхъ судебно",
+        "passage_id": "1904-064:6610-8242",
+        "pages": [
+          183
+        ],
+        "sources": [
+          {
+            "page": 183,
+            "page_method": "header",
+            "file": "p0092_R.txt",
+            "start": 6795,
+            "end": 8210
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-064?mode=precedent&ref=1904-064%3A1872%3A756%3A7261&at=7256&end=7285",
+        "scan_available": true
+      },
+      {
+        "id": "1904-064:1872:757:7261",
+        "source_id": "1904-064",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6de730655679cc307c33ea4555b73170d923778e8e70e33ac8e16e062170027f",
+        "year": 1872,
+        "start": 7256,
+        "end": 7285,
+        "department": null,
+        "association": null,
+        "number": 757,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7261,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1872 г. № 756, 757 и 807",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7076,
+        "context_end": 7505,
+        "context_original": "ричитается извѣстная денежная сумма, имѣетъ-ли право за удержаніе этой суммы отыскивать, сверхъ узаконенныхъ на задержанный у него капиталъ процентовъ (2020 и 2021 ст. 1 ч. X т. и рѣш. 1872 г. № 756, 757 и 807; 1874 г. № 636; 1876 г. № 249 и др.), еще вознагражденіе за понесенные отъ задержанія капитала убытки? Вопросъ этотъ долженъ быть разрѣшенъ отрицательно по слѣдующимъ соображеніямъ: какъ видно изъ установленныхъ судебно",
+        "passage_id": "1904-064:6610-8242",
+        "pages": [
+          183
+        ],
+        "sources": [
+          {
+            "page": 183,
+            "page_method": "header",
+            "file": "p0092_R.txt",
+            "start": 6795,
+            "end": 8210
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-064?mode=precedent&ref=1904-064%3A1872%3A757%3A7261&at=7256&end=7285",
+        "scan_available": true
+      },
+      {
+        "id": "1904-064:1872:807:7261",
+        "source_id": "1904-064",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6de730655679cc307c33ea4555b73170d923778e8e70e33ac8e16e062170027f",
+        "year": 1872,
+        "start": 7256,
+        "end": 7285,
+        "department": null,
+        "association": null,
+        "number": 807,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7261,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1872 г. № 756, 757 и 807",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7076,
+        "context_end": 7505,
+        "context_original": "ричитается извѣстная денежная сумма, имѣетъ-ли право за удержаніе этой суммы отыскивать, сверхъ узаконенныхъ на задержанный у него капиталъ процентовъ (2020 и 2021 ст. 1 ч. X т. и рѣш. 1872 г. № 756, 757 и 807; 1874 г. № 636; 1876 г. № 249 и др.), еще вознагражденіе за понесенные отъ задержанія капитала убытки? Вопросъ этотъ долженъ быть разрѣшенъ отрицательно по слѣдующимъ соображеніямъ: какъ видно изъ установленныхъ судебно",
+        "passage_id": "1904-064:6610-8242",
+        "pages": [
+          183
+        ],
+        "sources": [
+          {
+            "page": 183,
+            "page_method": "header",
+            "file": "p0092_R.txt",
+            "start": 6795,
+            "end": 8210
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-064?mode=precedent&ref=1904-064%3A1872%3A807%3A7261&at=7256&end=7285",
+        "scan_available": true
+      },
+      {
+        "id": "1904-064:1874:636:7287",
+        "source_id": "1904-064",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6de730655679cc307c33ea4555b73170d923778e8e70e33ac8e16e062170027f",
+        "year": 1874,
+        "start": 7256,
+        "end": 7300,
+        "department": null,
+        "association": null,
+        "number": 636,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7287,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1872 г. № 756, 757 и 807; 1874 г. № 636",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7076,
+        "context_end": 7520,
+        "context_original": "ричитается извѣстная денежная сумма, имѣетъ-ли право за удержаніе этой суммы отыскивать, сверхъ узаконенныхъ на задержанный у него капиталъ процентовъ (2020 и 2021 ст. 1 ч. X т. и рѣш. 1872 г. № 756, 757 и 807; 1874 г. № 636; 1876 г. № 249 и др.), еще вознагражденіе за понесенные отъ задержанія капитала убытки? Вопросъ этотъ долженъ быть разрѣшенъ отрицательно по слѣдующимъ соображеніямъ: какъ видно изъ установленныхъ судебною палатою данны",
+        "passage_id": "1904-064:6610-8242",
+        "pages": [
+          183
+        ],
+        "sources": [
+          {
+            "page": 183,
+            "page_method": "header",
+            "file": "p0092_R.txt",
+            "start": 6795,
+            "end": 8210
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-064?mode=precedent&ref=1904-064%3A1874%3A636%3A7287&at=7256&end=7300",
+        "scan_available": true
+      },
+      {
+        "id": "1904-064:1876:249:7302",
+        "source_id": "1904-064",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6de730655679cc307c33ea4555b73170d923778e8e70e33ac8e16e062170027f",
+        "year": 1876,
+        "start": 7256,
+        "end": 7315,
+        "department": null,
+        "association": null,
+        "number": 249,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7302,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1872 г. № 756, 757 и 807; 1874 г. № 636; 1876 г. № 249",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7076,
+        "context_end": 7535,
+        "context_original": "ричитается извѣстная денежная сумма, имѣетъ-ли право за удержаніе этой суммы отыскивать, сверхъ узаконенныхъ на задержанный у него капиталъ процентовъ (2020 и 2021 ст. 1 ч. X т. и рѣш. 1872 г. № 756, 757 и 807; 1874 г. № 636; 1876 г. № 249 и др.), еще вознагражденіе за понесенные отъ задержанія капитала убытки? Вопросъ этотъ долженъ быть разрѣшенъ отрицательно по слѣдующимъ соображеніямъ: какъ видно изъ установленныхъ судебною палатою данныхъ дѣла, въ дог",
+        "passage_id": "1904-064:6610-8242",
+        "pages": [
+          183
+        ],
+        "sources": [
+          {
+            "page": 183,
+            "page_method": "header",
+            "file": "p0092_R.txt",
+            "start": 6795,
+            "end": 8210
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-064?mode=precedent&ref=1904-064%3A1876%3A249%3A7302&at=7256&end=7315",
+        "scan_available": true
+      },
+      {
+        "id": "1904-064:1870:122:11070",
+        "source_id": "1904-064",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6de730655679cc307c33ea4555b73170d923778e8e70e33ac8e16e062170027f",
+        "year": 1870,
+        "start": 11053,
+        "end": 11090,
+        "department": null,
+        "association": null,
+        "number": 122,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 11070,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ его за 1870 г. № 122 и 1211",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 10873,
+        "context_end": 11310,
+        "context_original": "ой суммы, если по договору онъ не выговорилъ себѣ этого права. При этомъ, какъ это явствуетъ изъ 1575 и 2039 ст. 1 ч. X т. и какъ это уже разъяснено Правительствующимъ Сенатомъ въ рѣшеніяхъ его за 1870 г. № 122 и 1211, за 1871 г. № 1073, за 1872 г. № 756, 757 и 807 и друг., за несвоевременную уплату должной денежной суммы должникъ отвѣчаетъ предъ кредиторомъ лишь въ размѣрѣ 6% на сто на удержанный капиталъ по всѣмъ долговымъ обязател",
+        "passage_id": "1904-064:10696-12086",
+        "pages": [
+          184
+        ],
+        "sources": [
+          {
+            "page": 184,
+            "page_method": "header",
+            "file": "p0093_L.txt",
+            "start": 10696,
+            "end": 11241
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-064?mode=precedent&ref=1904-064%3A1870%3A122%3A11070&at=11053&end=11090",
+        "scan_available": true
+      },
+      {
+        "id": "1904-064:1870:1211:11070",
+        "source_id": "1904-064",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6de730655679cc307c33ea4555b73170d923778e8e70e33ac8e16e062170027f",
+        "year": 1870,
+        "start": 11053,
+        "end": 11090,
+        "department": null,
+        "association": null,
+        "number": 1211,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 11070,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ его за 1870 г. № 122 и 1211",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 10873,
+        "context_end": 11310,
+        "context_original": "ой суммы, если по договору онъ не выговорилъ себѣ этого права. При этомъ, какъ это явствуетъ изъ 1575 и 2039 ст. 1 ч. X т. и какъ это уже разъяснено Правительствующимъ Сенатомъ въ рѣшеніяхъ его за 1870 г. № 122 и 1211, за 1871 г. № 1073, за 1872 г. № 756, 757 и 807 и друг., за несвоевременную уплату должной денежной суммы должникъ отвѣчаетъ предъ кредиторомъ лишь въ размѣрѣ 6% на сто на удержанный капиталъ по всѣмъ долговымъ обязател",
+        "passage_id": "1904-064:10696-12086",
+        "pages": [
+          184
+        ],
+        "sources": [
+          {
+            "page": 184,
+            "page_method": "header",
+            "file": "p0093_L.txt",
+            "start": 10696,
+            "end": 11241
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-064?mode=precedent&ref=1904-064%3A1870%3A1211%3A11070&at=11053&end=11090",
+        "scan_available": true
+      },
+      {
+        "id": "1904-064:1871:1073:11095",
+        "source_id": "1904-064",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6de730655679cc307c33ea4555b73170d923778e8e70e33ac8e16e062170027f",
+        "year": 1871,
+        "start": 11053,
+        "end": 11109,
+        "department": null,
+        "association": null,
+        "number": 1073,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 11095,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ его за 1870 г. № 122 и 1211, за 1871 г. № 1073",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 10873,
+        "context_end": 11329,
+        "context_original": "ой суммы, если по договору онъ не выговорилъ себѣ этого права. При этомъ, какъ это явствуетъ изъ 1575 и 2039 ст. 1 ч. X т. и какъ это уже разъяснено Правительствующимъ Сенатомъ въ рѣшеніяхъ его за 1870 г. № 122 и 1211, за 1871 г. № 1073, за 1872 г. № 756, 757 и 807 и друг., за несвоевременную уплату должной денежной суммы должникъ отвѣчаетъ предъ кредиторомъ лишь въ размѣрѣ 6% на сто на удержанный капиталъ по всѣмъ долговымъ обязательствамъ, за исключе",
+        "passage_id": "1904-064:10696-12086",
+        "pages": [
+          184
+        ],
+        "sources": [
+          {
+            "page": 184,
+            "page_method": "header",
+            "file": "p0093_L.txt",
+            "start": 10696,
+            "end": 11241
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-064?mode=precedent&ref=1904-064%3A1871%3A1073%3A11095&at=11053&end=11109",
+        "scan_available": true
+      },
+      {
+        "id": "1904-064:1872:756:11114",
+        "source_id": "1904-064",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6de730655679cc307c33ea4555b73170d923778e8e70e33ac8e16e062170027f",
+        "year": 1872,
+        "start": 11053,
+        "end": 11138,
+        "department": null,
+        "association": null,
+        "number": 756,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 11114,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ его за 1870 г. № 122 и 1211, за 1871 г. № 1073, за 1872 г. № 756, 757 и 807",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 10873,
+        "context_end": 11358,
+        "context_original": "ой суммы, если по договору онъ не выговорилъ себѣ этого права. При этомъ, какъ это явствуетъ изъ 1575 и 2039 ст. 1 ч. X т. и какъ это уже разъяснено Правительствующимъ Сенатомъ въ рѣшеніяхъ его за 1870 г. № 122 и 1211, за 1871 г. № 1073, за 1872 г. № 756, 757 и 807 и друг., за несвоевременную уплату должной денежной суммы должникъ отвѣчаетъ предъ кредиторомъ лишь въ размѣрѣ 6% на сто на удержанный капиталъ по всѣмъ долговымъ обязательствамъ, за исключеніемъ тѣхъ, кои основаны на з",
+        "passage_id": "1904-064:10696-12086",
+        "pages": [
+          184
+        ],
+        "sources": [
+          {
+            "page": 184,
+            "page_method": "header",
+            "file": "p0093_L.txt",
+            "start": 10696,
+            "end": 11241
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-064?mode=precedent&ref=1904-064%3A1872%3A756%3A11114&at=11053&end=11138",
+        "scan_available": true
+      },
+      {
+        "id": "1904-064:1872:757:11114",
+        "source_id": "1904-064",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6de730655679cc307c33ea4555b73170d923778e8e70e33ac8e16e062170027f",
+        "year": 1872,
+        "start": 11053,
+        "end": 11138,
+        "department": null,
+        "association": null,
+        "number": 757,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 11114,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ его за 1870 г. № 122 и 1211, за 1871 г. № 1073, за 1872 г. № 756, 757 и 807",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 10873,
+        "context_end": 11358,
+        "context_original": "ой суммы, если по договору онъ не выговорилъ себѣ этого права. При этомъ, какъ это явствуетъ изъ 1575 и 2039 ст. 1 ч. X т. и какъ это уже разъяснено Правительствующимъ Сенатомъ въ рѣшеніяхъ его за 1870 г. № 122 и 1211, за 1871 г. № 1073, за 1872 г. № 756, 757 и 807 и друг., за несвоевременную уплату должной денежной суммы должникъ отвѣчаетъ предъ кредиторомъ лишь въ размѣрѣ 6% на сто на удержанный капиталъ по всѣмъ долговымъ обязательствамъ, за исключеніемъ тѣхъ, кои основаны на з",
+        "passage_id": "1904-064:10696-12086",
+        "pages": [
+          184
+        ],
+        "sources": [
+          {
+            "page": 184,
+            "page_method": "header",
+            "file": "p0093_L.txt",
+            "start": 10696,
+            "end": 11241
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-064?mode=precedent&ref=1904-064%3A1872%3A757%3A11114&at=11053&end=11138",
+        "scan_available": true
+      },
+      {
+        "id": "1904-064:1872:807:11114",
+        "source_id": "1904-064",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6de730655679cc307c33ea4555b73170d923778e8e70e33ac8e16e062170027f",
+        "year": 1872,
+        "start": 11053,
+        "end": 11138,
+        "department": null,
+        "association": null,
+        "number": 807,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 11114,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ его за 1870 г. № 122 и 1211, за 1871 г. № 1073, за 1872 г. № 756, 757 и 807",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 10873,
+        "context_end": 11358,
+        "context_original": "ой суммы, если по договору онъ не выговорилъ себѣ этого права. При этомъ, какъ это явствуетъ изъ 1575 и 2039 ст. 1 ч. X т. и какъ это уже разъяснено Правительствующимъ Сенатомъ въ рѣшеніяхъ его за 1870 г. № 122 и 1211, за 1871 г. № 1073, за 1872 г. № 756, 757 и 807 и друг., за несвоевременную уплату должной денежной суммы должникъ отвѣчаетъ предъ кредиторомъ лишь въ размѣрѣ 6% на сто на удержанный капиталъ по всѣмъ долговымъ обязательствамъ, за исключеніемъ тѣхъ, кои основаны на з",
+        "passage_id": "1904-064:10696-12086",
+        "pages": [
+          184
+        ],
+        "sources": [
+          {
+            "page": 184,
+            "page_method": "header",
+            "file": "p0093_L.txt",
+            "start": 10696,
+            "end": 11241
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-064?mode=precedent&ref=1904-064%3A1872%3A807%3A11114&at=11053&end=11138",
+        "scan_available": true
+      },
+      {
+        "id": "1904-064:1891:39:12177",
+        "source_id": "1904-064",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6de730655679cc307c33ea4555b73170d923778e8e70e33ac8e16e062170027f",
+        "year": 1891,
+        "start": 12157,
+        "end": 12189,
+        "department": null,
+        "association": null,
+        "number": 39,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 12177,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ своихъ за 1891 г. № 39",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 11977,
+        "context_end": 12409,
+        "context_original": "нный для того срокъ слѣдующей денежной суммы, обязанъ уплатить на неуплаченный капиталъ по 6% на сто въ годъ. Изъясняя точный смыслъ означенной статьи, Правительствующій Сенатъ въ рѣшеніяхъ своихъ за 1891 г. № 39 и за 1892 г. № 57 высказалъ, что 365 ст. устанавливаетъ для кредитора право на полученіе узаконенныхъ процентовъ на незаплаченный капиталъ со дня просрочки обязательства по день платежа по всѣмъ вообще долговымъ обязате",
+        "passage_id": "1904-064:11840-13525",
+        "pages": [
+          185
+        ],
+        "sources": [
+          {
+            "page": 185,
+            "page_method": "header",
+            "file": "p0093_R.txt",
+            "start": 11840,
+            "end": 13525
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-064?mode=precedent&ref=1904-064%3A1891%3A39%3A12177&at=12157&end=12189",
+        "scan_available": true
+      },
+      {
+        "id": "1904-064:1892:57:12195",
+        "source_id": "1904-064",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6de730655679cc307c33ea4555b73170d923778e8e70e33ac8e16e062170027f",
+        "year": 1892,
+        "start": 12157,
+        "end": 12207,
+        "department": null,
+        "association": null,
+        "number": 57,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 12195,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ своихъ за 1891 г. № 39 и за 1892 г. № 57",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 11977,
+        "context_end": 12427,
+        "context_original": "нный для того срокъ слѣдующей денежной суммы, обязанъ уплатить на неуплаченный капиталъ по 6% на сто въ годъ. Изъясняя точный смыслъ означенной статьи, Правительствующій Сенатъ въ рѣшеніяхъ своихъ за 1891 г. № 39 и за 1892 г. № 57 высказалъ, что 365 ст. устанавливаетъ для кредитора право на полученіе узаконенныхъ процентовъ на незаплаченный капиталъ со дня просрочки обязательства по день платежа по всѣмъ вообще долговымъ обязательствамъ, въ коихъ",
+        "passage_id": "1904-064:11840-13525",
+        "pages": [
+          185
+        ],
+        "sources": [
+          {
+            "page": 185,
+            "page_method": "header",
+            "file": "p0093_R.txt",
+            "start": 11840,
+            "end": 13525
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-064?mode=precedent&ref=1904-064%3A1892%3A57%3A12195&at=12157&end=12207",
+        "scan_available": true
+      },
+      {
+        "id": "1904-064:1869:1303:12989",
+        "source_id": "1904-064",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6de730655679cc307c33ea4555b73170d923778e8e70e33ac8e16e062170027f",
+        "year": 1869,
+        "start": 12976,
+        "end": 13003,
+        "department": null,
+        "association": null,
+        "number": 1303,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 12989,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ за 1869 г. № 1303",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 12796,
+        "context_end": 13223,
+        "context_original": "бытки за удержаніе капитала. Наконецъ, подтвержденіемъ того же вывода должна служить и 641 ст. 1 ч. X т. Хотя 641 ст., какъ это уже и разъяснено Правительствующимъ Сенатомъ въ его рѣшеніяхъ за 1869 г. № 1303, за 1871 г. № 125 и 1073 и за 1876 г. № 502, и не можетъ имѣть примѣненія къ тѣмъ случаямъ, когда владѣніе денежнымъ капиталомъ основано на предшествовавшемъ ему договорномъ соглашеніи, но заключающееся въ ней правило у",
+        "passage_id": "1904-064:11840-13525",
+        "pages": [
+          185
+        ],
+        "sources": [
+          {
+            "page": 185,
+            "page_method": "header",
+            "file": "p0093_R.txt",
+            "start": 11840,
+            "end": 13525
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-064?mode=precedent&ref=1904-064%3A1869%3A1303%3A12989&at=12976&end=13003",
+        "scan_available": true
+      },
+      {
+        "id": "1904-064:1871:125:13008",
+        "source_id": "1904-064",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6de730655679cc307c33ea4555b73170d923778e8e70e33ac8e16e062170027f",
+        "year": 1871,
+        "start": 12976,
+        "end": 13028,
+        "department": null,
+        "association": null,
+        "number": 125,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 13008,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ за 1869 г. № 1303, за 1871 г. № 125 и 1073",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 12796,
+        "context_end": 13248,
+        "context_original": "бытки за удержаніе капитала. Наконецъ, подтвержденіемъ того же вывода должна служить и 641 ст. 1 ч. X т. Хотя 641 ст., какъ это уже и разъяснено Правительствующимъ Сенатомъ въ его рѣшеніяхъ за 1869 г. № 1303, за 1871 г. № 125 и 1073 и за 1876 г. № 502, и не можетъ имѣть примѣненія къ тѣмъ случаямъ, когда владѣніе денежнымъ капиталомъ основано на предшествовавшемъ ему договорномъ соглашеніи, но заключающееся въ ней правило указываетъ, что законодате",
+        "passage_id": "1904-064:11840-13525",
+        "pages": [
+          185
+        ],
+        "sources": [
+          {
+            "page": 185,
+            "page_method": "header",
+            "file": "p0093_R.txt",
+            "start": 11840,
+            "end": 13525
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-064?mode=precedent&ref=1904-064%3A1871%3A125%3A13008&at=12976&end=13028",
+        "scan_available": true
+      },
+      {
+        "id": "1904-064:1871:1073:13008",
+        "source_id": "1904-064",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6de730655679cc307c33ea4555b73170d923778e8e70e33ac8e16e062170027f",
+        "year": 1871,
+        "start": 12976,
+        "end": 13028,
+        "department": null,
+        "association": null,
+        "number": 1073,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 13008,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ за 1869 г. № 1303, за 1871 г. № 125 и 1073",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 12796,
+        "context_end": 13248,
+        "context_original": "бытки за удержаніе капитала. Наконецъ, подтвержденіемъ того же вывода должна служить и 641 ст. 1 ч. X т. Хотя 641 ст., какъ это уже и разъяснено Правительствующимъ Сенатомъ въ его рѣшеніяхъ за 1869 г. № 1303, за 1871 г. № 125 и 1073 и за 1876 г. № 502, и не можетъ имѣть примѣненія къ тѣмъ случаямъ, когда владѣніе денежнымъ капиталомъ основано на предшествовавшемъ ему договорномъ соглашеніи, но заключающееся въ ней правило указываетъ, что законодате",
+        "passage_id": "1904-064:11840-13525",
+        "pages": [
+          185
+        ],
+        "sources": [
+          {
+            "page": 185,
+            "page_method": "header",
+            "file": "p0093_R.txt",
+            "start": 11840,
+            "end": 13525
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-064?mode=precedent&ref=1904-064%3A1871%3A1073%3A13008&at=12976&end=13028",
+        "scan_available": true
+      },
+      {
+        "id": "1904-064:1876:502:13034",
+        "source_id": "1904-064",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6de730655679cc307c33ea4555b73170d923778e8e70e33ac8e16e062170027f",
+        "year": 1876,
+        "start": 12976,
+        "end": 13047,
+        "department": null,
+        "association": null,
+        "number": 502,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 13034,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ за 1869 г. № 1303, за 1871 г. № 125 и 1073 и за 1876 г. № 502",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 12796,
+        "context_end": 13267,
+        "context_original": "бытки за удержаніе капитала. Наконецъ, подтвержденіемъ того же вывода должна служить и 641 ст. 1 ч. X т. Хотя 641 ст., какъ это уже и разъяснено Правительствующимъ Сенатомъ въ его рѣшеніяхъ за 1869 г. № 1303, за 1871 г. № 125 и 1073 и за 1876 г. № 502, и не можетъ имѣть примѣненія къ тѣмъ случаямъ, когда владѣніе денежнымъ капиталомъ основано на предшествовавшемъ ему договорномъ соглашеніи, но заключающееся въ ней правило указываетъ, что законодатель мѣрою отвѣтствен",
+        "passage_id": "1904-064:11840-13525",
+        "pages": [
+          185
+        ],
+        "sources": [
+          {
+            "page": 185,
+            "page_method": "header",
+            "file": "p0093_R.txt",
+            "start": 11840,
+            "end": 13525
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-064?mode=precedent&ref=1904-064%3A1876%3A502%3A13034&at=12976&end=13047",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-064",
     "scan_pages": [

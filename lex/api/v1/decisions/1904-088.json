@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-088",
@@ -52,6 +52,86 @@
     ],
     "participant_ids": [
       "1904-2f814ffe679c"
+    ],
+    "precedents": [
+      {
+        "id": "1904-088:1900:11:2514",
+        "source_id": "1904-088",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8d1f7cf9166623d89bea091902962c4ad2eeaafac18f32fedf5fac75c1899ad0",
+        "year": 1900,
+        "start": 2491,
+        "end": 2526,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 11,
+        "department_start": 2496,
+        "department_end": 2513,
+        "citation_start": 2514,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гражд. касс. д-та 1900 г. № 11",
+        "target_url": null,
+        "department_evidence": "гражд. касс. д-та",
+        "context_start": 2311,
+        "context_end": 2746,
+        "context_original": "ата просителю въ его требованіи о выкупѣ отказала на основаніи 1350 ст. зак. гр. Отказъ этотъ вполнѣ согласенъ съ опредѣленіями означеннаго закона и разъясненіями, преподанными въ рѣш. гражд. касс. д-та 1900 г. № 11. Поэтому, обвиненіе просителемъ судебной палаты въ нарушеніи 1350 ст. зак. гр. представляется неосновательнымъ. Наряду съ симъ, проситель обвиняетъ палату въ нарушеніи ст. 1314 тѣхъ же законовъ. Нарушеніе это онъ усматр",
+        "passage_id": "1904-088:1386-3122",
+        "pages": [
+          243
+        ],
+        "sources": [
+          {
+            "page": 243,
+            "page_method": "header",
+            "file": "p0122_R.txt",
+            "start": 1785,
+            "end": 3122
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-088?mode=precedent&ref=1904-088%3A1900%3A11%3A2514&at=2491&end=2526",
+        "scan_available": true
+      },
+      {
+        "id": "1904-088:1875:178:3233",
+        "source_id": "1904-088",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8d1f7cf9166623d89bea091902962c4ad2eeaafac18f32fedf5fac75c1899ad0",
+        "year": 1875,
+        "start": 3207,
+        "end": 3246,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 178,
+        "department_start": 3215,
+        "department_end": 3232,
+        "citation_start": 3233,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніе гражд. касс. д-та 1875 г. № 178",
+        "target_url": null,
+        "department_evidence": "гражд. касс. д-та",
+        "context_start": 3027,
+        "context_end": 3466,
+        "context_original": "слѣдственномъ имѣніи, проданной постороннему лицу безъ его, Николая Шутлеворта, на то согласія. Такое указаніе дѣйствительно было сдѣлано судебной палатѣ и ею устранено ссылкою на рѣшеніе гражд. касс. д-та 1875 г. № 178, по коему, какъ говоритъ палата, осуществленіе права, основаннаго на 1314 ст. 1 ч. X т. и нарушеннаго продажею безъ согласія сонаслѣдниковъ части общаго ихъ наслѣдственнаго имѣнія, можетъ состояться только по общимъ пра",
+        "passage_id": "1904-088:2838-4491",
+        "pages": [
+          243
+        ],
+        "sources": [
+          {
+            "page": 243,
+            "page_method": "header",
+            "file": "p0122_R.txt",
+            "start": 2838,
+            "end": 3780
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-088?mode=precedent&ref=1904-088%3A1875%3A178%3A3233&at=3207&end=3246",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-088",
     "scan_pages": [

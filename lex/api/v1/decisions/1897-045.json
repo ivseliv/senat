@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-045",
@@ -49,6 +49,86 @@
       "1897-bede041a5f9f",
       "1897-575479aeda54",
       "1897-e73704044516"
+    ],
+    "precedents": [
+      {
+        "id": "1897-045:1883:82:2792",
+        "source_id": "1897-045",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "b54dd4c476acf2129e70820c4d5a13b22e1c6bdd3fe0f7b3221dc47953fa4e4e",
+        "year": 1883,
+        "start": 2756,
+        "end": 2804,
+        "department": null,
+        "association": null,
+        "number": 82,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2792,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніями Правительствующаго Сената 1883 г. № 82",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2576,
+        "context_end": 3024,
+        "context_original": "имъ соображеніямъ основанія, на которыхъ построено обжалованное рѣшеніе мироваго съѣзда, не могутъ быть признаны правильными. Но рѣшеніе это не оправдывается и приводимыми въ немъ рѣшеніями Правительствующаго Сената 1883 г. № 82 и 1891 г. № 22. Въ рѣшеніяхъ этихъ разрѣшенъ вопросъ объ отвѣтственности кредиторовъ, получившихъ удовлетвореніе изъ считавшагося, въ силу судебнаго опредѣленія, принадлежавшимъ ихъ должнику капитала, признаннаго впослѣ",
+        "passage_id": "1897-045:1356-3205",
+        "pages": [
+          155
+        ],
+        "sources": [
+          {
+            "page": 155,
+            "page_method": "header",
+            "file": "p0088_R.txt",
+            "start": 1356,
+            "end": 3205
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-045?mode=precedent&ref=1897-045%3A1883%3A82%3A2792&at=2756&end=2804",
+        "scan_available": true
+      },
+      {
+        "id": "1897-045:1891:22:2807",
+        "source_id": "1897-045",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "b54dd4c476acf2129e70820c4d5a13b22e1c6bdd3fe0f7b3221dc47953fa4e4e",
+        "year": 1891,
+        "start": 2756,
+        "end": 2819,
+        "department": null,
+        "association": null,
+        "number": 22,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2807,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніями Правительствующаго Сената 1883 г. № 82 и 1891 г. № 22",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2576,
+        "context_end": 3039,
+        "context_original": "имъ соображеніямъ основанія, на которыхъ построено обжалованное рѣшеніе мироваго съѣзда, не могутъ быть признаны правильными. Но рѣшеніе это не оправдывается и приводимыми въ немъ рѣшеніями Правительствующаго Сената 1883 г. № 82 и 1891 г. № 22. Въ рѣшеніяхъ этихъ разрѣшенъ вопросъ объ отвѣтственности кредиторовъ, получившихъ удовлетвореніе изъ считавшагося, въ силу судебнаго опредѣленія, принадлежавшимъ ихъ должнику капитала, признаннаго впослѣдствіи принадле",
+        "passage_id": "1897-045:1356-3205",
+        "pages": [
+          155
+        ],
+        "sources": [
+          {
+            "page": 155,
+            "page_method": "header",
+            "file": "p0088_R.txt",
+            "start": 1356,
+            "end": 3205
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-045?mode=precedent&ref=1897-045%3A1891%3A22%3A2807&at=2756&end=2819",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-045",
     "scan_pages": [

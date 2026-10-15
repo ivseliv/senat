@@ -76,6 +76,12 @@ def build_export(root=ROOT):
     meta = read('meta.json')
     decisions = meta['decisions']
     decision_by_id = {d['id']: d for d in decisions}
+    precedent_rows = [{**ref, 'source_url': url(ref['source_url']),
+                       'target_url': url(ref['target_url']) if ref['target_url'] else None}
+                      for ref in read('precedents.json')['references']]
+    precedents_by_source = {}
+    for ref in precedent_rows:
+        precedents_by_source.setdefault(ref['source_id'], []).append(ref)
     text_by_id = {}
     passage_by_id, scans_by_year = {}, {}
     for volume in meta['volumes']:
@@ -100,11 +106,12 @@ def build_export(root=ROOT):
             'reporter': d.get('reporter'), 'prosecutor': d.get('prosecutor'), 'outcome': d['outcome'],
             'procedure': d.get('procedure', []), 'topics': d.get('topics', []), 'participant_groups': d.get('groups', {}),
             'statutes': d.get('statutes', {}), 'cites': d.get('cites', []), 'participant_ids': d.get('participant_ids', []),
+            'precedents': precedents_by_source.get(d['id'], []),
             'url': decision_url(d['id']), 'scan_pages': refs,
         })
     decision_fields = ['id', 'year', 'number', 'date', 'date_label', 'department', 'headnote_original', 'text_original',
                        'presiding', 'reporter', 'prosecutor', 'outcome', 'procedure', 'topics', 'participant_groups',
-                       'statutes', 'cites', 'participant_ids', 'url', 'scan_pages']
+                       'statutes', 'cites', 'precedents', 'participant_ids', 'url', 'scan_pages']
 
     passage_rows, scan_rows = [], []
     for passage in sorted(passage_by_id.values(), key=lambda p: (p['doc'], p['start'])):
@@ -163,7 +170,8 @@ def build_export(root=ROOT):
 
     counts = {'decisions': len(decision_rows), 'passages': len(passage_rows), 'participants': len(participant_rows),
               'statute_mentions': len(statute_rows), 'legislation_acts': len(law_act_rows),
-              'legislation_citations': len(law_citation_rows), 'scan_passage_refs': len(scan_rows)}
+              'legislation_citations': len(law_citation_rows), 'scan_passage_refs': len(scan_rows),
+              'precedent_references': len(precedent_rows)}
     years = ', '.join(str(volume['year']) for volume in meta['volumes'])
     files = []
     for name, value, fields in (
@@ -171,6 +179,7 @@ def build_export(root=ROOT):
         ('participants', participant_rows, participant_fields), ('statutes', statute_rows, statute_fields),
         ('legislation-acts', law_act_rows, law_act_fields), ('legislation-citations', law_citation_rows, law_citation_fields),
         ('scan-passages', scan_rows, scan_fields),
+        ('precedents', precedent_rows, list(precedent_rows[0]) if precedent_rows else ['id','source_id','department','year','number','status','target_id','quote_original','source_url','target_url']),
     ):
         files.extend([write_json(name + '.json', value), write_csv(name + '.csv', value, fields)])
     readme = OUT / 'README.md'
@@ -187,8 +196,11 @@ def build_export(root=ROOT):
 | `legislation-acts` | Исторические названия и источники карточек актов, используемых в разделе «Законодательство». |
 | `legislation-citations` | Буквальная ссылка OCR, контекст, пассаж, решение и признак доступного скана для привязанных актов. |
 | `scan-passages` | Привязка пассажа к странице и, когда она надёжна, координатам `box` в долях ширины/высоты: `[x0,y0,x1,y1]`. |
+| `precedents` | Упоминания прежних решений: департамент, год, номер, статус привязки, буквальная цитата, контекст и точное место в источнике. |
 
 `url`, `decision_url`, `passage_url`, `image_url` и `full_page_url` — стабильные публичные ссылки. Режим `mode=passage` открывает решение непосредственно на указанном Unicode-диапазоне. При отсутствии `box` точная геометрия не подтверждена: используйте `full_page_url` и не интерпретируйте отсутствие координат как отсутствие текста.
+
+В `precedents` целевое решение определяется только по департаменту, году и номеру. `status=linked` даёт `target_id`/`target_url`; остальные записи сохраняют контекст без перехода. `source_url` открывает точное место упоминания. Старое поле `cites` в решениях оставлено для совместимости: это неполные пары год/номер со старым извлечением, их нельзя использовать для построения связей. Наличие ссылки в тексте не означает согласия Сената с цитируемым доводом.
 
 Текст получен автоматическим распознаванием; числа, статьи и фамилии нужно сверять с изображением. Поля `ai_*` — отдельные модельные пояснения по буквальной цитате, не юридические выводы и не часть первоисточника. Темы, исход, нормы и социальные группы тоже определяются автоматически. Полное описание ограничений — в [README сайта](../README.md). Для программного доступа с версионированным контрактом используйте [Static API v1](../api/).
 """, encoding='utf-8')

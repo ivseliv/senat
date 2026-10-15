@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-080",
@@ -39,6 +39,47 @@
     "participant_ids": [
       "1904-bc093c490711",
       "1904-08683a1d9f36"
+    ],
+    "precedents": [
+      {
+        "id": "1904-080:1876:268:4285",
+        "source_id": "1904-080",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a03a825b421d101a36170a02f051d3aa51359618a07fc860a8b4b902c9fd1c0a",
+        "year": 1876,
+        "start": 4280,
+        "end": 4298,
+        "department": null,
+        "association": null,
+        "number": 268,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4285,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1876 г. № 268",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4100,
+        "context_end": 4518,
+        "context_original": "я просителя противъ правильности вывода палаты о невиновности Сергѣя Волховскаго не могутъ быть приняты въ уваженіе и потому, что, какъ уже разъяснено Правительствующимъ Сенатомъ (рѣш. 1876 г. № 268), вообще вопросъ о томъ, которая изъ сторонъ виновна въ несовершеніи условленнаго задаточною роспискою акта, относится къ существу дѣла и не подлежитъ повѣркѣ въ кассаціонномъ порядкѣ. Согласно изложенному, находя рѣшен",
+        "passage_id": "1904-080:2963-4625",
+        "pages": [
+          226
+        ],
+        "sources": [
+          {
+            "page": 226,
+            "page_method": "header",
+            "file": "p0114_L.txt",
+            "start": 2963,
+            "end": 4436
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-080?mode=precedent&ref=1904-080%3A1876%3A268%3A4285&at=4280&end=4298",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-080",
     "scan_pages": [

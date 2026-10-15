@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-031",
@@ -80,6 +80,281 @@
       "1897-f5690ae595fe",
       "1897-4326620ec5d7",
       "1897-fa00d0941944"
+    ],
+    "precedents": [
+      {
+        "id": "1897-031:1884:55:7305",
+        "source_id": "1897-031",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "29163d2bfade02c83906ff88a7b6525b20aebb150b4a74689f1073a666e44f1a",
+        "year": 1884,
+        "start": 7297,
+        "end": 7317,
+        "department": null,
+        "association": null,
+        "number": 55,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7305,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1884 г. № 55",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7117,
+        "context_end": 7537,
+        "context_original": "енію крѣпостнаго акта, казнѣ было оффиціально извѣстно съ 19 августа 1878 г. Такой вводъ во владѣніе, по смыслу ст. 1432 уст. гр. суд., разъясненной Правительствующимъ Сенатомъ въ рѣшеніи 1884 г. № 55, не составляетъ „безусловнаго\" доказательства ни фактическаго владѣнія пріобрѣтателя, ни перерыва владѣнія третьяго лица, которому здѣсь соотвѣтствуетъ казна, не принимавшая участія въ охранительномъ производствѣ. Но въ",
+        "passage_id": "1897-031:6935-8653",
+        "pages": [
+          110
+        ],
+        "sources": [
+          {
+            "page": 110,
+            "page_method": "header",
+            "file": "p0066_L.txt",
+            "start": 6935,
+            "end": 8458
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-031?mode=precedent&ref=1897-031%3A1884%3A55%3A7305&at=7297&end=7317",
+        "scan_available": true
+      },
+      {
+        "id": "1897-031:1883:4:9614",
+        "source_id": "1897-031",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "29163d2bfade02c83906ff88a7b6525b20aebb150b4a74689f1073a666e44f1a",
+        "year": 1883,
+        "start": 9578,
+        "end": 9625,
+        "department": null,
+        "association": null,
+        "number": 4,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 9614,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніемъ Правительствующаго Сената 1883 г. № 4",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 9398,
+        "context_end": 9845,
+        "context_original": "съ нимъ примѣчанія къ ст. 563 (основ. госуд. закон. т. I. ст. 67) Вообще же слѣдуетъ замѣтить, что, по смыслу ст. 1 и 64 положенія о размежеваніи Закавказскаго края, разъясненныхъ рѣшеніемъ Правительствующаго Сената 1883 г. № 4, разрѣшенію въ межевомъ порядкѣ подлежатъ лишь споры о границахъ поземельныхъ владѣній, а не споры вотчинные о правѣ собственности; засимъ отвѣтчики не имѣли никакого повода просить въ качествѣ третьихъ лицъ объ отмѣнѣ ",
+        "passage_id": "1897-031:8408-10220",
+        "pages": [
+          111
+        ],
+        "sources": [
+          {
+            "page": 111,
+            "page_method": "header",
+            "file": "p0066_R.txt",
+            "start": 8459,
+            "end": 10220
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-031?mode=precedent&ref=1897-031%3A1883%3A4%3A9614&at=9578&end=9625",
+        "scan_available": true
+      },
+      {
+        "id": "1897-031:1872:698:18281",
+        "source_id": "1897-031",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "29163d2bfade02c83906ff88a7b6525b20aebb150b4a74689f1073a666e44f1a",
+        "year": 1872,
+        "start": 18276,
+        "end": 18308,
+        "department": null,
+        "association": null,
+        "number": 698,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 18281,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1872 г. №№ 698, 1086 и 1241",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 18096,
+        "context_end": 18528,
+        "context_original": "енія палаты о томъ, что вотчинные споры о правѣ собственности не на цѣлую дачу, а на находящіеся внутри дачи частичные участки, разрѣшенію въ межевомъ порядкѣ подлежать не могутъ (рѣш. 1872 г. №№ 698, 1086 и 1241, 1883 года № 4 и 1895 г. № 48),—какъ не имѣющихъ для настоящаго дѣла значенія въ виду предъявленія въ настоящемъ случаѣ иска не Асадулаевымъ, а казною, за которою спорный участокъ при межеваніи замежеванъ,—Правительству",
+        "passage_id": "1897-031:17633-19211",
+        "pages": [
+          114
+        ],
+        "sources": [
+          {
+            "page": 114,
+            "page_method": "header",
+            "file": "p0068_L.txt",
+            "start": 17633,
+            "end": 19211
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-031?mode=precedent&ref=1897-031%3A1872%3A698%3A18281&at=18276&end=18308",
+        "scan_available": true
+      },
+      {
+        "id": "1897-031:1872:1086:18281",
+        "source_id": "1897-031",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "29163d2bfade02c83906ff88a7b6525b20aebb150b4a74689f1073a666e44f1a",
+        "year": 1872,
+        "start": 18276,
+        "end": 18308,
+        "department": null,
+        "association": null,
+        "number": 1086,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 18281,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1872 г. №№ 698, 1086 и 1241",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 18096,
+        "context_end": 18528,
+        "context_original": "енія палаты о томъ, что вотчинные споры о правѣ собственности не на цѣлую дачу, а на находящіеся внутри дачи частичные участки, разрѣшенію въ межевомъ порядкѣ подлежать не могутъ (рѣш. 1872 г. №№ 698, 1086 и 1241, 1883 года № 4 и 1895 г. № 48),—какъ не имѣющихъ для настоящаго дѣла значенія въ виду предъявленія въ настоящемъ случаѣ иска не Асадулаевымъ, а казною, за которою спорный участокъ при межеваніи замежеванъ,—Правительству",
+        "passage_id": "1897-031:17633-19211",
+        "pages": [
+          114
+        ],
+        "sources": [
+          {
+            "page": 114,
+            "page_method": "header",
+            "file": "p0068_L.txt",
+            "start": 17633,
+            "end": 19211
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-031?mode=precedent&ref=1897-031%3A1872%3A1086%3A18281&at=18276&end=18308",
+        "scan_available": true
+      },
+      {
+        "id": "1897-031:1872:1241:18281",
+        "source_id": "1897-031",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "29163d2bfade02c83906ff88a7b6525b20aebb150b4a74689f1073a666e44f1a",
+        "year": 1872,
+        "start": 18276,
+        "end": 18308,
+        "department": null,
+        "association": null,
+        "number": 1241,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 18281,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1872 г. №№ 698, 1086 и 1241",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 18096,
+        "context_end": 18528,
+        "context_original": "енія палаты о томъ, что вотчинные споры о правѣ собственности не на цѣлую дачу, а на находящіеся внутри дачи частичные участки, разрѣшенію въ межевомъ порядкѣ подлежать не могутъ (рѣш. 1872 г. №№ 698, 1086 и 1241, 1883 года № 4 и 1895 г. № 48),—какъ не имѣющихъ для настоящаго дѣла значенія въ виду предъявленія въ настоящемъ случаѣ иска не Асадулаевымъ, а казною, за которою спорный участокъ при межеваніи замежеванъ,—Правительству",
+        "passage_id": "1897-031:17633-19211",
+        "pages": [
+          114
+        ],
+        "sources": [
+          {
+            "page": 114,
+            "page_method": "header",
+            "file": "p0068_L.txt",
+            "start": 17633,
+            "end": 19211
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-031?mode=precedent&ref=1897-031%3A1872%3A1241%3A18281&at=18276&end=18308",
+        "scan_available": true
+      },
+      {
+        "id": "1897-031:1883:4:18310",
+        "source_id": "1897-031",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "29163d2bfade02c83906ff88a7b6525b20aebb150b4a74689f1073a666e44f1a",
+        "year": 1883,
+        "start": 18276,
+        "end": 18323,
+        "department": null,
+        "association": null,
+        "number": 4,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 18310,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1872 г. №№ 698, 1086 и 1241, 1883 года № 4",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 18096,
+        "context_end": 18543,
+        "context_original": "енія палаты о томъ, что вотчинные споры о правѣ собственности не на цѣлую дачу, а на находящіеся внутри дачи частичные участки, разрѣшенію въ межевомъ порядкѣ подлежать не могутъ (рѣш. 1872 г. №№ 698, 1086 и 1241, 1883 года № 4 и 1895 г. № 48),—какъ не имѣющихъ для настоящаго дѣла значенія въ виду предъявленія въ настоящемъ случаѣ иска не Асадулаевымъ, а казною, за которою спорный участокъ при межеваніи замежеванъ,—Правительствующій Сенатъ нах",
+        "passage_id": "1897-031:17633-19211",
+        "pages": [
+          114
+        ],
+        "sources": [
+          {
+            "page": 114,
+            "page_method": "header",
+            "file": "p0068_L.txt",
+            "start": 17633,
+            "end": 19211
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-031?mode=precedent&ref=1897-031%3A1883%3A4%3A18310&at=18276&end=18323",
+        "scan_available": true
+      },
+      {
+        "id": "1897-031:1895:48:18326",
+        "source_id": "1897-031",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "29163d2bfade02c83906ff88a7b6525b20aebb150b4a74689f1073a666e44f1a",
+        "year": 1895,
+        "start": 18276,
+        "end": 18338,
+        "department": null,
+        "association": null,
+        "number": 48,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 18326,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1872 г. №№ 698, 1086 и 1241, 1883 года № 4 и 1895 г. № 48",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 18096,
+        "context_end": 18558,
+        "context_original": "енія палаты о томъ, что вотчинные споры о правѣ собственности не на цѣлую дачу, а на находящіеся внутри дачи частичные участки, разрѣшенію въ межевомъ порядкѣ подлежать не могутъ (рѣш. 1872 г. №№ 698, 1086 и 1241, 1883 года № 4 и 1895 г. № 48),—какъ не имѣющихъ для настоящаго дѣла значенія въ виду предъявленія въ настоящемъ случаѣ иска не Асадулаевымъ, а казною, за которою спорный участокъ при межеваніи замежеванъ,—Правительствующій Сенатъ находитъ, что пала",
+        "passage_id": "1897-031:17633-19211",
+        "pages": [
+          114
+        ],
+        "sources": [
+          {
+            "page": 114,
+            "page_method": "header",
+            "file": "p0068_L.txt",
+            "start": 17633,
+            "end": 19211
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-031?mode=precedent&ref=1897-031%3A1895%3A48%3A18326&at=18276&end=18338",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-031",
     "scan_pages": [

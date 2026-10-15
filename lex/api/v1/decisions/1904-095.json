@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-095",
@@ -32,6 +32,125 @@
     ],
     "participant_ids": [
       "1904-e29c524527c4"
+    ],
+    "precedents": [
+      {
+        "id": "1904-095:1880:283:2568",
+        "source_id": "1904-095",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "1c1cb686a33df0db0fa600b41259ff3d4a2d13af92ad9766f5f42a1c024c3ba6",
+        "year": 1880,
+        "start": 2563,
+        "end": 2589,
+        "department": null,
+        "association": null,
+        "number": 283,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2568,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1880 г. № № 283 и 278",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2383,
+        "context_end": 2809,
+        "context_original": "дѣ руководящихъ рѣшеній гражданскаго кассаціоннаго департамента установлено уже то общее положеніе, что права, тѣсно связанныя съ личностью, не могутъ быть предметомъ переуступки (рѣш. 1880 г. № № 283 и 278, 1878 г. № 256 и др.). Вслѣдствіе этого, для разрѣшенія возбужденнаго кассаціонною жалобою вопроса о томъ, можетъ-ли быть передаваемо право на взысканіе вознагражденія за смерть или увѣчье, послѣдовавшія при эксплоатаці",
+        "passage_id": "1904-095:1491-3186",
+        "pages": [
+          263
+        ],
+        "sources": [
+          {
+            "page": 263,
+            "page_method": "header",
+            "file": "p0132_R.txt",
+            "start": 2285,
+            "end": 3186
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-095?mode=precedent&ref=1904-095%3A1880%3A283%3A2568&at=2563&end=2589",
+        "scan_available": true
+      },
+      {
+        "id": "1904-095:1880:278:2568",
+        "source_id": "1904-095",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "1c1cb686a33df0db0fa600b41259ff3d4a2d13af92ad9766f5f42a1c024c3ba6",
+        "year": 1880,
+        "start": 2563,
+        "end": 2589,
+        "department": null,
+        "association": null,
+        "number": 278,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2568,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1880 г. № № 283 и 278",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2383,
+        "context_end": 2809,
+        "context_original": "дѣ руководящихъ рѣшеній гражданскаго кассаціоннаго департамента установлено уже то общее положеніе, что права, тѣсно связанныя съ личностью, не могутъ быть предметомъ переуступки (рѣш. 1880 г. № № 283 и 278, 1878 г. № 256 и др.). Вслѣдствіе этого, для разрѣшенія возбужденнаго кассаціонною жалобою вопроса о томъ, можетъ-ли быть передаваемо право на взысканіе вознагражденія за смерть или увѣчье, послѣдовавшія при эксплоатаці",
+        "passage_id": "1904-095:1491-3186",
+        "pages": [
+          263
+        ],
+        "sources": [
+          {
+            "page": 263,
+            "page_method": "header",
+            "file": "p0132_R.txt",
+            "start": 2285,
+            "end": 3186
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-095?mode=precedent&ref=1904-095%3A1880%3A278%3A2568&at=2563&end=2589",
+        "scan_available": true
+      },
+      {
+        "id": "1904-095:1878:256:2591",
+        "source_id": "1904-095",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "1c1cb686a33df0db0fa600b41259ff3d4a2d13af92ad9766f5f42a1c024c3ba6",
+        "year": 1878,
+        "start": 2563,
+        "end": 2604,
+        "department": null,
+        "association": null,
+        "number": 256,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2591,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1880 г. № № 283 и 278, 1878 г. № 256",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2383,
+        "context_end": 2824,
+        "context_original": "дѣ руководящихъ рѣшеній гражданскаго кассаціоннаго департамента установлено уже то общее положеніе, что права, тѣсно связанныя съ личностью, не могутъ быть предметомъ переуступки (рѣш. 1880 г. № № 283 и 278, 1878 г. № 256 и др.). Вслѣдствіе этого, для разрѣшенія возбужденнаго кассаціонною жалобою вопроса о томъ, можетъ-ли быть передаваемо право на взысканіе вознагражденія за смерть или увѣчье, послѣдовавшія при эксплоатаціи пароходныхъ и",
+        "passage_id": "1904-095:1491-3186",
+        "pages": [
+          263
+        ],
+        "sources": [
+          {
+            "page": 263,
+            "page_method": "header",
+            "file": "p0132_R.txt",
+            "start": 2285,
+            "end": 3186
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-095?mode=precedent&ref=1904-095%3A1878%3A256%3A2591&at=2563&end=2604",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-095",
     "scan_pages": [

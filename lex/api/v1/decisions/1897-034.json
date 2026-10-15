@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-034",
@@ -40,6 +40,47 @@
     "participant_ids": [
       "1897-779c2825fd8a",
       "1897-1dd4ed81811f"
+    ],
+    "precedents": [
+      {
+        "id": "1897-034:1871:722:1869",
+        "source_id": "1897-034",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "420a533bd06ed50d9560793660bb057ab26e1a34aed922ca3f41e270cc913ec9",
+        "year": 1871,
+        "start": 1864,
+        "end": 1882,
+        "department": null,
+        "association": null,
+        "number": 722,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1869,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1871 г. № 722",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1684,
+        "context_end": 2102,
+        "context_original": "ядомъ съ этимъ ограниченіемъ, другое—относительно права на взысканіе неустойки по тѣмъ же актамъ, имѣетъ также въ виду неустойку узаконенную (1575 ст. X т. 1 ч.), а не договорную (рѣш. 1871 г. № 722). Противное сему толкованіе этого закона не согласовалось бы и съ коренною мыслью, выраженною въ его источникѣ (полн. собр. зак. 1858 г. декабря 22 № 33,942) и заключающейся въ томъ, что домашніе акты, совершенные вопре",
+        "passage_id": "1897-034:1332-3104",
+        "pages": [
+          117
+        ],
+        "sources": [
+          {
+            "page": 117,
+            "page_method": "header",
+            "file": "p0069_R.txt",
+            "start": 1332,
+            "end": 2467
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-034?mode=precedent&ref=1897-034%3A1871%3A722%3A1869&at=1864&end=1882",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-034",
     "scan_pages": [

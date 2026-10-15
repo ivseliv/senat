@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-033",
@@ -42,6 +42,47 @@
       "1905-7c8f83d7a910",
       "1905-0100f2c414de",
       "1905-ef9869e3c2ef"
+    ],
+    "precedents": [
+      {
+        "id": "1905-033:1883:57:3975",
+        "source_id": "1905-033",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "1217fb7249ebe953bcf39c4228f5913268c99f87fe5895d3c7e0736da59ecda6",
+        "year": 1883,
+        "start": 3970,
+        "end": 3987,
+        "department": null,
+        "association": null,
+        "number": 57,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3975,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1883 г. № 57",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3790,
+        "context_end": 4207,
+        "context_original": "хотя бы и личной, но всетаки за извѣстный эквивалентъ выгоды, а исключительно въ стремленіи къ обогащенію себя, путемъ риска, на чужой счетъ, въ прямой ущербъ другому контрагенту (рѣш. 1883 г. № 57 и рѣш. 29 сентября 1904 г. по дѣлу Гельбраса). Здѣсь ожидаемая выгода не служитъ побужденіемъ къ игрѣ, признанной закономъ полезною; ставка не служитъ поощреніемъ игроковъ развивать и усовершенствовать свои физическія с",
+        "passage_id": "1905-033:2385-4034",
+        "pages": [
+          88
+        ],
+        "sources": [
+          {
+            "page": 88,
+            "page_method": "header",
+            "file": "p0045_L.txt",
+            "start": 3819,
+            "end": 4556
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-033?mode=precedent&ref=1905-033%3A1883%3A57%3A3975&at=3970&end=3987",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-033",
     "scan_pages": [

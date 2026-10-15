@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-029",
@@ -43,6 +43,47 @@
     "participant_ids": [
       "1897-14f79d338f4e",
       "1897-a156e5a75ac1"
+    ],
+    "precedents": [
+      {
+        "id": "1897-029:1874:274:3366",
+        "source_id": "1897-029",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a3f9bfaf1420b1e9b93c23476406e8c94d813e1f9c5329cd05920f063bd701fd",
+        "year": 1874,
+        "start": 3351,
+        "end": 3379,
+        "department": null,
+        "association": null,
+        "number": 274,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3366,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшенію Сената 1874 г. № 274",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3171,
+        "context_end": 3599,
+        "context_original": " убытки по таксѣ, принявъ, для исчисленія убытковъ, то количество лошадей, именно 20, которое было опредѣлено показаніями свидѣтелей въ первой инстанціи, тѣмъ болѣе, что, согласно рѣшенію Сената 1874 г. № 274, такое присужденіе убытковъ по таксѣ, тогда какъ истецъ просилъ о взысканіи убытковъ по оцѣнкѣ, не составляетъ видоизмѣненія исковыхъ требованій; 5) что только такое присужденіе и возможно, и что въ то же время невозмож",
+        "passage_id": "1897-029:2756-4544",
+        "pages": [
+          105
+        ],
+        "sources": [
+          {
+            "page": 105,
+            "page_method": "header",
+            "file": "p0063_R.txt",
+            "start": 2756,
+            "end": 3423
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-029?mode=precedent&ref=1897-029%3A1874%3A274%3A3366&at=3351&end=3379",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-029",
     "scan_pages": [

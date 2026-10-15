@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1896-010",
@@ -51,6 +51,469 @@
       ]
     ],
     "participant_ids": [],
+    "precedents": [
+      {
+        "id": "1896-010:1890:6:1293",
+        "source_id": "1896-010",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "a28223d7f80bdef458bf75104cb3c2f2e80a3300280f483de6b011ebb4981143",
+        "year": 1890,
+        "start": 1265,
+        "end": 1304,
+        "department": null,
+        "association": null,
+        "number": 6,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1293,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніемъ сего-же собранія (1890 г. № 6",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1085,
+        "context_end": 1524,
+        "context_original": "Н. Бѣловъ). По выслушаніи заключенія Исп. обяз. Товарища Оберъ-Прокурора, Правитель* ствующій Сенатъ, въ Общемъ Собра ніи 1-го, 2-го и Кассаціонныхъ Депар таментовъ, находитъ, что рѣшеніемъ сего-же собранія (1890 г. № 6Ѣ соглас но съ многочисленными разъясненіями Гражданскаго Кассаціоннаго Департа мента, признано, что предусмотрѣнные въ 4 п. 29 ст. уст. гражд. суд. иски о возстановленіи нарушеннаго владѣнія направляются единственно къ ",
+        "passage_id": "1896-010:0-1593",
+        "pages": [
+          721
+        ],
+        "sources": [
+          {
+            "page": 721,
+            "page_method": "header",
+            "file": "p0014.txt",
+            "start": 0,
+            "end": 1593
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-010?mode=precedent&ref=1896-010%3A1890%3A6%3A1293&at=1265&end=1304",
+        "scan_available": true
+      },
+      {
+        "id": "1896-010:1873:1347:2716",
+        "source_id": "1896-010",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "a28223d7f80bdef458bf75104cb3c2f2e80a3300280f483de6b011ebb4981143",
+        "year": 1873,
+        "start": 2689,
+        "end": 2729,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 1347,
+        "department_start": 2694,
+        "department_end": 2704,
+        "citation_start": 2716,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. Гражд. Кас- сац. Д-та 1873 г. №1347",
+        "target_url": null,
+        "department_evidence": "Гражд. Кас",
+        "context_start": 2509,
+        "context_end": 2949,
+        "context_original": "торонами споръ о правѣ, то онъ подлежитъ разрѣшенію на общемъ основаніи, какъ и всякій споръ о правѣ гражданскомъ (1 ст. уст. гр. суд.), и по общимъ правиламъ о подсудности (срав. рѣш. Гражд. Кас- сац. Д-та 1873 г. №1347, 1874 г.№№ 585, 612, 698, 1875 г. № 890, 1876 г. № 372, 1877 г. № 111, 1878 г. № 237, 1879 г, № 89). По примѣненіи этихъ общихъ соображеній къ раз сматриваемому случаю оказывается, что поводомъ къ предъявленію исковъ о ",
+        "passage_id": "1896-010:1376-2830",
+        "pages": [
+          721
+        ],
+        "sources": [
+          {
+            "page": 721,
+            "page_method": "header",
+            "file": "p0014.txt",
+            "start": 2670,
+            "end": 2778
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-010?mode=precedent&ref=1896-010%3A1873%3A1347%3A2716&at=2689&end=2729",
+        "scan_available": true
+      },
+      {
+        "id": "1896-010:1874:585:2731",
+        "source_id": "1896-010",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "a28223d7f80bdef458bf75104cb3c2f2e80a3300280f483de6b011ebb4981143",
+        "year": 1874,
+        "start": 2689,
+        "end": 2754,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 585,
+        "department_start": 2694,
+        "department_end": 2704,
+        "citation_start": 2731,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. Гражд. Кас- сац. Д-та 1873 г. №1347, 1874 г.№№ 585, 612, 698",
+        "target_url": null,
+        "department_evidence": "Гражд. Кас",
+        "context_start": 2509,
+        "context_end": 2974,
+        "context_original": "торонами споръ о правѣ, то онъ подлежитъ разрѣшенію на общемъ основаніи, какъ и всякій споръ о правѣ гражданскомъ (1 ст. уст. гр. суд.), и по общимъ правиламъ о подсудности (срав. рѣш. Гражд. Кас- сац. Д-та 1873 г. №1347, 1874 г.№№ 585, 612, 698, 1875 г. № 890, 1876 г. № 372, 1877 г. № 111, 1878 г. № 237, 1879 г, № 89). По примѣненіи этихъ общихъ соображеній къ раз сматриваемому случаю оказывается, что поводомъ къ предъявленію исковъ о возстановленіи нарушеннаг",
+        "passage_id": "1896-010:1376-2830",
+        "pages": [
+          721
+        ],
+        "sources": [
+          {
+            "page": 721,
+            "page_method": "header",
+            "file": "p0014.txt",
+            "start": 2670,
+            "end": 2778
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-010?mode=precedent&ref=1896-010%3A1874%3A585%3A2731&at=2689&end=2754",
+        "scan_available": true
+      },
+      {
+        "id": "1896-010:1874:612:2731",
+        "source_id": "1896-010",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "a28223d7f80bdef458bf75104cb3c2f2e80a3300280f483de6b011ebb4981143",
+        "year": 1874,
+        "start": 2689,
+        "end": 2754,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 612,
+        "department_start": 2694,
+        "department_end": 2704,
+        "citation_start": 2731,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. Гражд. Кас- сац. Д-та 1873 г. №1347, 1874 г.№№ 585, 612, 698",
+        "target_url": null,
+        "department_evidence": "Гражд. Кас",
+        "context_start": 2509,
+        "context_end": 2974,
+        "context_original": "торонами споръ о правѣ, то онъ подлежитъ разрѣшенію на общемъ основаніи, какъ и всякій споръ о правѣ гражданскомъ (1 ст. уст. гр. суд.), и по общимъ правиламъ о подсудности (срав. рѣш. Гражд. Кас- сац. Д-та 1873 г. №1347, 1874 г.№№ 585, 612, 698, 1875 г. № 890, 1876 г. № 372, 1877 г. № 111, 1878 г. № 237, 1879 г, № 89). По примѣненіи этихъ общихъ соображеній къ раз сматриваемому случаю оказывается, что поводомъ къ предъявленію исковъ о возстановленіи нарушеннаг",
+        "passage_id": "1896-010:1376-2830",
+        "pages": [
+          721
+        ],
+        "sources": [
+          {
+            "page": 721,
+            "page_method": "header",
+            "file": "p0014.txt",
+            "start": 2670,
+            "end": 2778
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-010?mode=precedent&ref=1896-010%3A1874%3A612%3A2731&at=2689&end=2754",
+        "scan_available": true
+      },
+      {
+        "id": "1896-010:1874:698:2731",
+        "source_id": "1896-010",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "a28223d7f80bdef458bf75104cb3c2f2e80a3300280f483de6b011ebb4981143",
+        "year": 1874,
+        "start": 2689,
+        "end": 2754,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 698,
+        "department_start": 2694,
+        "department_end": 2704,
+        "citation_start": 2731,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. Гражд. Кас- сац. Д-та 1873 г. №1347, 1874 г.№№ 585, 612, 698",
+        "target_url": null,
+        "department_evidence": "Гражд. Кас",
+        "context_start": 2509,
+        "context_end": 2974,
+        "context_original": "торонами споръ о правѣ, то онъ подлежитъ разрѣшенію на общемъ основаніи, какъ и всякій споръ о правѣ гражданскомъ (1 ст. уст. гр. суд.), и по общимъ правиламъ о подсудности (срав. рѣш. Гражд. Кас- сац. Д-та 1873 г. №1347, 1874 г.№№ 585, 612, 698, 1875 г. № 890, 1876 г. № 372, 1877 г. № 111, 1878 г. № 237, 1879 г, № 89). По примѣненіи этихъ общихъ соображеній къ раз сматриваемому случаю оказывается, что поводомъ къ предъявленію исковъ о возстановленіи нарушеннаг",
+        "passage_id": "1896-010:1376-2830",
+        "pages": [
+          721
+        ],
+        "sources": [
+          {
+            "page": 721,
+            "page_method": "header",
+            "file": "p0014.txt",
+            "start": 2670,
+            "end": 2778
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-010?mode=precedent&ref=1896-010%3A1874%3A698%3A2731&at=2689&end=2754",
+        "scan_available": true
+      },
+      {
+        "id": "1896-010:1875:890:2756",
+        "source_id": "1896-010",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "a28223d7f80bdef458bf75104cb3c2f2e80a3300280f483de6b011ebb4981143",
+        "year": 1875,
+        "start": 2689,
+        "end": 2769,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 890,
+        "department_start": 2694,
+        "department_end": 2704,
+        "citation_start": 2756,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. Гражд. Кас- сац. Д-та 1873 г. №1347, 1874 г.№№ 585, 612, 698, 1875 г. № 890",
+        "target_url": null,
+        "department_evidence": "Гражд. Кас",
+        "context_start": 2509,
+        "context_end": 2989,
+        "context_original": "торонами споръ о правѣ, то онъ подлежитъ разрѣшенію на общемъ основаніи, какъ и всякій споръ о правѣ гражданскомъ (1 ст. уст. гр. суд.), и по общимъ правиламъ о подсудности (срав. рѣш. Гражд. Кас- сац. Д-та 1873 г. №1347, 1874 г.№№ 585, 612, 698, 1875 г. № 890, 1876 г. № 372, 1877 г. № 111, 1878 г. № 237, 1879 г, № 89). По примѣненіи этихъ общихъ соображеній къ раз сматриваемому случаю оказывается, что поводомъ къ предъявленію исковъ о возстановленіи нарушеннаго владѣнія посл",
+        "passage_id": "1896-010:1376-2830",
+        "pages": [
+          721
+        ],
+        "sources": [
+          {
+            "page": 721,
+            "page_method": "header",
+            "file": "p0014.txt",
+            "start": 2670,
+            "end": 2778
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-010?mode=precedent&ref=1896-010%3A1875%3A890%3A2756&at=2689&end=2769",
+        "scan_available": true
+      },
+      {
+        "id": "1896-010:1876:372:2771",
+        "source_id": "1896-010",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "a28223d7f80bdef458bf75104cb3c2f2e80a3300280f483de6b011ebb4981143",
+        "year": 1876,
+        "start": 2689,
+        "end": 2784,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 372,
+        "department_start": 2694,
+        "department_end": 2704,
+        "citation_start": 2771,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. Гражд. Кас- сац. Д-та 1873 г. №1347, 1874 г.№№ 585, 612, 698, 1875 г. № 890, 1876 г. № 372",
+        "target_url": null,
+        "department_evidence": "Гражд. Кас",
+        "context_start": 2509,
+        "context_end": 3004,
+        "context_original": "торонами споръ о правѣ, то онъ подлежитъ разрѣшенію на общемъ основаніи, какъ и всякій споръ о правѣ гражданскомъ (1 ст. уст. гр. суд.), и по общимъ правиламъ о подсудности (срав. рѣш. Гражд. Кас- сац. Д-та 1873 г. №1347, 1874 г.№№ 585, 612, 698, 1875 г. № 890, 1876 г. № 372, 1877 г. № 111, 1878 г. № 237, 1879 г, № 89). По примѣненіи этихъ общихъ соображеній къ раз сматриваемому случаю оказывается, что поводомъ къ предъявленію исковъ о возстановленіи нарушеннаго владѣнія послужило исполнені",
+        "passage_id": "1896-010:1376-2830",
+        "pages": [
+          721,
+          722
+        ],
+        "sources": [
+          {
+            "page": 721,
+            "page_method": "header",
+            "file": "p0014.txt",
+            "start": 2670,
+            "end": 2778
+          },
+          {
+            "page": 722,
+            "page_method": "neighbors",
+            "file": "p0015.txt",
+            "start": 2779,
+            "end": 4200
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-010?mode=precedent&ref=1896-010%3A1876%3A372%3A2771&at=2689&end=2784",
+        "scan_available": true
+      },
+      {
+        "id": "1896-010:1877:111:2786",
+        "source_id": "1896-010",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "a28223d7f80bdef458bf75104cb3c2f2e80a3300280f483de6b011ebb4981143",
+        "year": 1877,
+        "start": 2689,
+        "end": 2799,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 111,
+        "department_start": 2694,
+        "department_end": 2704,
+        "citation_start": 2786,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. Гражд. Кас- сац. Д-та 1873 г. №1347, 1874 г.№№ 585, 612, 698, 1875 г. № 890, 1876 г. № 372, 1877 г. № 111",
+        "target_url": null,
+        "department_evidence": "Гражд. Кас",
+        "context_start": 2509,
+        "context_end": 3019,
+        "context_original": "торонами споръ о правѣ, то онъ подлежитъ разрѣшенію на общемъ основаніи, какъ и всякій споръ о правѣ гражданскомъ (1 ст. уст. гр. суд.), и по общимъ правиламъ о подсудности (срав. рѣш. Гражд. Кас- сац. Д-та 1873 г. №1347, 1874 г.№№ 585, 612, 698, 1875 г. № 890, 1876 г. № 372, 1877 г. № 111, 1878 г. № 237, 1879 г, № 89). По примѣненіи этихъ общихъ соображеній къ раз сматриваемому случаю оказывается, что поводомъ къ предъявленію исковъ о возстановленіи нарушеннаго владѣнія послужило исполненіе общественнаго",
+        "passage_id": "1896-010:1376-2830",
+        "pages": [
+          721,
+          722
+        ],
+        "sources": [
+          {
+            "page": 721,
+            "page_method": "header",
+            "file": "p0014.txt",
+            "start": 2670,
+            "end": 2778
+          },
+          {
+            "page": 722,
+            "page_method": "neighbors",
+            "file": "p0015.txt",
+            "start": 2779,
+            "end": 4200
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-010?mode=precedent&ref=1896-010%3A1877%3A111%3A2786&at=2689&end=2799",
+        "scan_available": true
+      },
+      {
+        "id": "1896-010:1878:237:2801",
+        "source_id": "1896-010",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "a28223d7f80bdef458bf75104cb3c2f2e80a3300280f483de6b011ebb4981143",
+        "year": 1878,
+        "start": 2689,
+        "end": 2814,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 237,
+        "department_start": 2694,
+        "department_end": 2704,
+        "citation_start": 2801,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. Гражд. Кас- сац. Д-та 1873 г. №1347, 1874 г.№№ 585, 612, 698, 1875 г. № 890, 1876 г. № 372, 1877 г. № 111, 1878 г. № 237",
+        "target_url": null,
+        "department_evidence": "Гражд. Кас",
+        "context_start": 2509,
+        "context_end": 3034,
+        "context_original": "торонами споръ о правѣ, то онъ подлежитъ разрѣшенію на общемъ основаніи, какъ и всякій споръ о правѣ гражданскомъ (1 ст. уст. гр. суд.), и по общимъ правиламъ о подсудности (срав. рѣш. Гражд. Кас- сац. Д-та 1873 г. №1347, 1874 г.№№ 585, 612, 698, 1875 г. № 890, 1876 г. № 372, 1877 г. № 111, 1878 г. № 237, 1879 г, № 89). По примѣненіи этихъ общихъ соображеній къ раз сматриваемому случаю оказывается, что поводомъ къ предъявленію исковъ о возстановленіи нарушеннаго владѣнія послужило исполненіе общественнаго приговора объ ",
+        "passage_id": "1896-010:1376-2830",
+        "pages": [
+          721,
+          722
+        ],
+        "sources": [
+          {
+            "page": 721,
+            "page_method": "header",
+            "file": "p0014.txt",
+            "start": 2670,
+            "end": 2778
+          },
+          {
+            "page": 722,
+            "page_method": "neighbors",
+            "file": "p0015.txt",
+            "start": 2779,
+            "end": 4200
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-010?mode=precedent&ref=1896-010%3A1878%3A237%3A2801&at=2689&end=2814",
+        "scan_available": true
+      },
+      {
+        "id": "1896-010:1879:89:2816",
+        "source_id": "1896-010",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "a28223d7f80bdef458bf75104cb3c2f2e80a3300280f483de6b011ebb4981143",
+        "year": 1879,
+        "start": 2689,
+        "end": 2828,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 89,
+        "department_start": 2694,
+        "department_end": 2704,
+        "citation_start": 2816,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. Гражд. Кас- сац. Д-та 1873 г. №1347, 1874 г.№№ 585, 612, 698, 1875 г. № 890, 1876 г. № 372, 1877 г. № 111, 1878 г. № 237, 1879 г, № 89",
+        "target_url": null,
+        "department_evidence": "Гражд. Кас",
+        "context_start": 2509,
+        "context_end": 3048,
+        "context_original": "торонами споръ о правѣ, то онъ подлежитъ разрѣшенію на общемъ основаніи, какъ и всякій споръ о правѣ гражданскомъ (1 ст. уст. гр. суд.), и по общимъ правиламъ о подсудности (срав. рѣш. Гражд. Кас- сац. Д-та 1873 г. №1347, 1874 г.№№ 585, 612, 698, 1875 г. № 890, 1876 г. № 372, 1877 г. № 111, 1878 г. № 237, 1879 г, № 89). По примѣненіи этихъ общихъ соображеній къ раз сматриваемому случаю оказывается, что поводомъ къ предъявленію исковъ о возстановленіи нарушеннаго владѣнія послужило исполненіе общественнаго приговора объ отводѣ къ одни",
+        "passage_id": "1896-010:1376-2830",
+        "pages": [
+          721,
+          722
+        ],
+        "sources": [
+          {
+            "page": 721,
+            "page_method": "header",
+            "file": "p0014.txt",
+            "start": 2670,
+            "end": 2778
+          },
+          {
+            "page": 722,
+            "page_method": "neighbors",
+            "file": "p0015.txt",
+            "start": 2779,
+            "end": 4200
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-010?mode=precedent&ref=1896-010%3A1879%3A89%3A2816&at=2689&end=2828",
+        "scan_available": true
+      },
+      {
+        "id": "1896-010:1882:162:5557",
+        "source_id": "1896-010",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "a28223d7f80bdef458bf75104cb3c2f2e80a3300280f483de6b011ebb4981143",
+        "year": 1882,
+        "start": 5534,
+        "end": 5569,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 162,
+        "department_start": 5539,
+        "department_end": 5556,
+        "citation_start": 5557,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. Гражд. Касс. Д-та 1882 г № 162",
+        "target_url": null,
+        "department_evidence": "Гражд. Касс. Д-та",
+        "context_start": 5354,
+        "context_end": 5789,
+        "context_original": "стьянамъ новой владѣнной записи и что отграниченіе земли общественнаго владѣнія отъ четвертнаго не составля етъ распоряженія четвертною землею, не предоставленнаго обществу (срав. рѣш. Гражд. Касс. Д-та 1882 г № 162), почему и не заключаетъ въ се бѣ никакихъ признаковъ самоволія и самоуправства, Правительствующій Се натъ находитъ, что если, при приведе ніи въ исполненіе такого приговора, тѣ или другіе изъ четвертныхъ владѣль цевъ с",
+        "passage_id": "1896-010:5281-6237",
+        "pages": [
+          722
+        ],
+        "sources": [
+          {
+            "page": 722,
+            "page_method": "neighbors",
+            "file": "p0015.txt",
+            "start": 5281,
+            "end": 6237
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-010?mode=precedent&ref=1896-010%3A1882%3A162%3A5557&at=5534&end=5569",
+        "scan_available": true
+      }
+    ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1896-010",
     "scan_pages": [
       {

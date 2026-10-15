@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-058",
@@ -73,6 +73,437 @@
       "1897-a409e910bdae",
       "1897-e38893f24aad",
       "1897-0c6e058c6b6a"
+    ],
+    "precedents": [
+      {
+        "id": "1897-058:1894:117:2637",
+        "source_id": "1897-058",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e619f34f9a6c9e5bc1efcdfe21e4b69ae17ac94d8e3ebc169d0cb26036d609ed",
+        "year": 1894,
+        "start": 2632,
+        "end": 2650,
+        "department": null,
+        "association": null,
+        "number": 117,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2637,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1894 г. № 117",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2452,
+        "context_end": 2870,
+        "context_original": " выдать князю Мещерскому недоплаченные деньги, по расчету изъ 5000 р. въ годъ, съ 1 ноября 1888 года по день платежа. По разсмотрѣніи этого дѣла Харьковская судебная палата (срав. рѣш. 1894 г. № 117) нашла: что давностный срокъ на предъявленіе настоящаго иска не пропущенъ; что правило шестикнижія Арменопуло: „когда дочь умретъ, приданое возвращается отцу, давшему оное“ должно быть изъяснено, въ сопоставленіи его съ",
+        "passage_id": "1897-058:2335-3950",
+        "pages": [
+          186
+        ],
+        "sources": [
+          {
+            "page": 186,
+            "page_method": "header",
+            "file": "p0104_L.txt",
+            "start": 2335,
+            "end": 3950
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-058?mode=precedent&ref=1897-058%3A1894%3A117%3A2637&at=2632&end=2650",
+        "scan_available": true
+      },
+      {
+        "id": "1897-058:1872:222:14677",
+        "source_id": "1897-058",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e619f34f9a6c9e5bc1efcdfe21e4b69ae17ac94d8e3ebc169d0cb26036d609ed",
+        "year": 1872,
+        "start": 14672,
+        "end": 14690,
+        "department": null,
+        "association": null,
+        "number": 222,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 14677,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1872 г. № 222",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 14492,
+        "context_end": 14910,
+        "context_original": " высказывая это заключеніе, несогласно съ толкованіемъ просителя, палата не извратила содержанія письма, да и самъ проситель не указываетъ на какіе либо признаки извращенія (срав. рѣш. 1872 г. № 222, 1878 г. № 195, 1879 г. № 178, 1880 г. № 190, 1884 г. № 78 и др.). Въ пятомъ пунктѣ указывается на оставленіе палатою безъ обсужденія доводовъ отвѣтчиковъ, относящихся къ значенію для настоящаго иска духовнаго завѣщанія",
+        "passage_id": "1897-058:13733-15326",
+        "pages": [
+          190
+        ],
+        "sources": [
+          {
+            "page": 190,
+            "page_method": "header",
+            "file": "p0106_L.txt",
+            "start": 13733,
+            "end": 15326
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-058?mode=precedent&ref=1897-058%3A1872%3A222%3A14677&at=14672&end=14690",
+        "scan_available": true
+      },
+      {
+        "id": "1897-058:1878:195:14692",
+        "source_id": "1897-058",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e619f34f9a6c9e5bc1efcdfe21e4b69ae17ac94d8e3ebc169d0cb26036d609ed",
+        "year": 1878,
+        "start": 14672,
+        "end": 14705,
+        "department": null,
+        "association": null,
+        "number": 195,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 14692,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1872 г. № 222, 1878 г. № 195",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 14492,
+        "context_end": 14925,
+        "context_original": " высказывая это заключеніе, несогласно съ толкованіемъ просителя, палата не извратила содержанія письма, да и самъ проситель не указываетъ на какіе либо признаки извращенія (срав. рѣш. 1872 г. № 222, 1878 г. № 195, 1879 г. № 178, 1880 г. № 190, 1884 г. № 78 и др.). Въ пятомъ пунктѣ указывается на оставленіе палатою безъ обсужденія доводовъ отвѣтчиковъ, относящихся къ значенію для настоящаго иска духовнаго завѣщанія Карла Гартинга",
+        "passage_id": "1897-058:13733-15326",
+        "pages": [
+          190
+        ],
+        "sources": [
+          {
+            "page": 190,
+            "page_method": "header",
+            "file": "p0106_L.txt",
+            "start": 13733,
+            "end": 15326
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-058?mode=precedent&ref=1897-058%3A1878%3A195%3A14692&at=14672&end=14705",
+        "scan_available": true
+      },
+      {
+        "id": "1897-058:1879:178:14707",
+        "source_id": "1897-058",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e619f34f9a6c9e5bc1efcdfe21e4b69ae17ac94d8e3ebc169d0cb26036d609ed",
+        "year": 1879,
+        "start": 14672,
+        "end": 14720,
+        "department": null,
+        "association": null,
+        "number": 178,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 14707,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1872 г. № 222, 1878 г. № 195, 1879 г. № 178",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 14492,
+        "context_end": 14940,
+        "context_original": " высказывая это заключеніе, несогласно съ толкованіемъ просителя, палата не извратила содержанія письма, да и самъ проситель не указываетъ на какіе либо признаки извращенія (срав. рѣш. 1872 г. № 222, 1878 г. № 195, 1879 г. № 178, 1880 г. № 190, 1884 г. № 78 и др.). Въ пятомъ пунктѣ указывается на оставленіе палатою безъ обсужденія доводовъ отвѣтчиковъ, относящихся къ значенію для настоящаго иска духовнаго завѣщанія Карла Гартинга. Это указаніе ",
+        "passage_id": "1897-058:13733-15326",
+        "pages": [
+          190
+        ],
+        "sources": [
+          {
+            "page": 190,
+            "page_method": "header",
+            "file": "p0106_L.txt",
+            "start": 13733,
+            "end": 15326
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-058?mode=precedent&ref=1897-058%3A1879%3A178%3A14707&at=14672&end=14720",
+        "scan_available": true
+      },
+      {
+        "id": "1897-058:1880:190:14722",
+        "source_id": "1897-058",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e619f34f9a6c9e5bc1efcdfe21e4b69ae17ac94d8e3ebc169d0cb26036d609ed",
+        "year": 1880,
+        "start": 14672,
+        "end": 14735,
+        "department": null,
+        "association": null,
+        "number": 190,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 14722,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1872 г. № 222, 1878 г. № 195, 1879 г. № 178, 1880 г. № 190",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 14492,
+        "context_end": 14955,
+        "context_original": " высказывая это заключеніе, несогласно съ толкованіемъ просителя, палата не извратила содержанія письма, да и самъ проситель не указываетъ на какіе либо признаки извращенія (срав. рѣш. 1872 г. № 222, 1878 г. № 195, 1879 г. № 178, 1880 г. № 190, 1884 г. № 78 и др.). Въ пятомъ пунктѣ указывается на оставленіе палатою безъ обсужденія доводовъ отвѣтчиковъ, относящихся къ значенію для настоящаго иска духовнаго завѣщанія Карла Гартинга. Это указаніе не заслуживаетъ",
+        "passage_id": "1897-058:13733-15326",
+        "pages": [
+          190
+        ],
+        "sources": [
+          {
+            "page": 190,
+            "page_method": "header",
+            "file": "p0106_L.txt",
+            "start": 13733,
+            "end": 15326
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-058?mode=precedent&ref=1897-058%3A1880%3A190%3A14722&at=14672&end=14735",
+        "scan_available": true
+      },
+      {
+        "id": "1897-058:1884:78:14737",
+        "source_id": "1897-058",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e619f34f9a6c9e5bc1efcdfe21e4b69ae17ac94d8e3ebc169d0cb26036d609ed",
+        "year": 1884,
+        "start": 14672,
+        "end": 14749,
+        "department": null,
+        "association": null,
+        "number": 78,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 14737,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1872 г. № 222, 1878 г. № 195, 1879 г. № 178, 1880 г. № 190, 1884 г. № 78",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 14492,
+        "context_end": 14969,
+        "context_original": " высказывая это заключеніе, несогласно съ толкованіемъ просителя, палата не извратила содержанія письма, да и самъ проситель не указываетъ на какіе либо признаки извращенія (срав. рѣш. 1872 г. № 222, 1878 г. № 195, 1879 г. № 178, 1880 г. № 190, 1884 г. № 78 и др.). Въ пятомъ пунктѣ указывается на оставленіе палатою безъ обсужденія доводовъ отвѣтчиковъ, относящихся къ значенію для настоящаго иска духовнаго завѣщанія Карла Гартинга. Это указаніе не заслуживаетъ уваженія, ибо",
+        "passage_id": "1897-058:13733-15326",
+        "pages": [
+          190
+        ],
+        "sources": [
+          {
+            "page": 190,
+            "page_method": "header",
+            "file": "p0106_L.txt",
+            "start": 13733,
+            "end": 15326
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-058?mode=precedent&ref=1897-058%3A1884%3A78%3A14737&at=14672&end=14749",
+        "scan_available": true
+      },
+      {
+        "id": "1897-058:1894:117:15107",
+        "source_id": "1897-058",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e619f34f9a6c9e5bc1efcdfe21e4b69ae17ac94d8e3ebc169d0cb26036d609ed",
+        "year": 1894,
+        "start": 15099,
+        "end": 15120,
+        "department": null,
+        "association": null,
+        "number": 117,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 15107,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніе 1894 г. № 117",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 14919,
+        "context_end": 15340,
+        "context_original": "ртинга. Это указаніе не заслуживаетъ уваженія, ибо вопросъ объ отношеніи означеннаго завѣщанія къ сему иску уже доходилъ до обсужденія Правительствующаго Сената, который призналъ (рѣшеніе 1894 г. № 117), что если письмо, на которомъ основанъ искъ, имѣетъ значеніе обязательства (а это признано настоящимъ рѣшеніемъ палаты), то право, имъ установленное, подлежитъ охраненію и защитѣ независимо отъ завѣщанія. Посему этотъ ",
+        "passage_id": "1897-058:13733-15326",
+        "pages": [
+          190
+        ],
+        "sources": [
+          {
+            "page": 190,
+            "page_method": "header",
+            "file": "p0106_L.txt",
+            "start": 15073,
+            "end": 16572
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-058?mode=precedent&ref=1897-058%3A1894%3A117%3A15107&at=15099&end=15120",
+        "scan_available": true
+      },
+      {
+        "id": "1897-058:1881:14:16758",
+        "source_id": "1897-058",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e619f34f9a6c9e5bc1efcdfe21e4b69ae17ac94d8e3ebc169d0cb26036d609ed",
+        "year": 1881,
+        "start": 16724,
+        "end": 16770,
+        "department": null,
+        "association": null,
+        "number": 14,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 16758,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи Правительствующаго Сената 1881 г. № 14",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 16544,
+        "context_end": 16990,
+        "context_original": "еденъ общій законъ о десяти- лѣтней давности. Оспаривая это положеніе, вполнѣ согласное съ приведенными палатою мѣстными законами, повѣренный отвѣтчиковъ основываетъ свой споръ на рѣшеніи Правительствующаго Сената 1881 г. № 14.—Но въ этомъ рѣшеніи преподано лишь общее правило для исчисленія сроковъ по искамъ о приданомъ, причемъ установлено, что десятилѣтній срокъ долженъ быть исчисляемъ не со времени смерти жены, а со времени совершенія брак",
+        "passage_id": "1897-058:16378-18084",
+        "pages": [
+          191
+        ],
+        "sources": [
+          {
+            "page": 191,
+            "page_method": "header",
+            "file": "p0106_R.txt",
+            "start": 16573,
+            "end": 18084
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-058?mode=precedent&ref=1897-058%3A1881%3A14%3A16758&at=16724&end=16770",
+        "scan_available": true
+      },
+      {
+        "id": "1897-058:1874:251:17561",
+        "source_id": "1897-058",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e619f34f9a6c9e5bc1efcdfe21e4b69ae17ac94d8e3ebc169d0cb26036d609ed",
+        "year": 1874,
+        "start": 17556,
+        "end": 17574,
+        "department": null,
+        "association": null,
+        "number": 251,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 17561,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1874 г. № 251",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 17376,
+        "context_end": 17794,
+        "context_original": "ъ, предъявленный къ нѣсколькимъ отвѣтчикамъ безъ указанія долей ихъ отвѣтственности, палата не имѣла повода опредѣлять эти доли, потому что отвѣтчики не возбуждали о семъ вопроса (рѣш. 1874 г. № 251). Девятый и послѣдній пунктъ жалобы относится къ возложенію палатой судебныхъ издержекъ на обѣ стороны поровну, тогда какъ истцу присуждено меньше половины его требованія. Эта жалоба неуважительна, потому что мѣра возна",
+        "passage_id": "1897-058:16378-18084",
+        "pages": [
+          191
+        ],
+        "sources": [
+          {
+            "page": 191,
+            "page_method": "header",
+            "file": "p0106_R.txt",
+            "start": 16573,
+            "end": 18084
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-058?mode=precedent&ref=1897-058%3A1874%3A251%3A17561&at=17556&end=17574",
+        "scan_available": true
+      },
+      {
+        "id": "1897-058:1880:237:17896",
+        "source_id": "1897-058",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e619f34f9a6c9e5bc1efcdfe21e4b69ae17ac94d8e3ebc169d0cb26036d609ed",
+        "year": 1880,
+        "start": 17891,
+        "end": 17909,
+        "department": null,
+        "association": null,
+        "number": 237,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 17896,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1880 г. № 237",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 17711,
+        "context_end": 18129,
+        "context_original": "ено меньше половины его требованія. Эта жалоба неуважительна, потому что мѣра вознагражденія тяжущихся въ подобныхъ случаяхъ зависитъ исключительно отъ усмотрѣнія судебнаго мѣста (рѣш. 1880 г. № 237 и др.). Принимая во вниманіе все вышеизложенное, Правительствующій Сенатъ признаетъ кассаціонную жалобу повѣреннаго отвѣтчиковъ во всѣхъ частяхъ ея не заслуживающей уваженія. По кассаціонной жалобѣ повѣреннаго князя Мещ",
+        "passage_id": "1897-058:16378-18084",
+        "pages": [
+          191
+        ],
+        "sources": [
+          {
+            "page": 191,
+            "page_method": "header",
+            "file": "p0106_R.txt",
+            "start": 17814,
+            "end": 19272
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-058?mode=precedent&ref=1897-058%3A1880%3A237%3A17896&at=17891&end=17909",
+        "scan_available": true
+      },
+      {
+        "id": "1897-058:1894:117:25179",
+        "source_id": "1897-058",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e619f34f9a6c9e5bc1efcdfe21e4b69ae17ac94d8e3ebc169d0cb26036d609ed",
+        "year": 1894,
+        "start": 25174,
+        "end": 25192,
+        "department": null,
+        "association": null,
+        "number": 117,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 25179,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1894 г. № 117",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 24994,
+        "context_end": 25412,
+        "context_original": "мъ только обязательствѣ. Изъ рѣшенія палаты видно, что она объясняетъ такое раздробленіе указомъ Правительствующаго Сената, даннымъ по настоящему дѣлу. Между тѣмъ изъ этого указа (рѣш. 1894 г. № 117) видно, что Правительствующій Сенатъ призналъ право, установленное обязательствомъ, подлежащимъ охраненію и защитѣ независимо отъ завѣщанія, которое должно было быть принято лишь для зачета назначенной въ немъ доли въ с",
+        "passage_id": "1897-058:24370-25941",
+        "pages": [
+          193
+        ],
+        "sources": [
+          {
+            "page": 193,
+            "page_method": "header",
+            "file": "p0107_R.txt",
+            "start": 24396,
+            "end": 25590
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-058?mode=precedent&ref=1897-058%3A1894%3A117%3A25179&at=25174&end=25192",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-058",
     "scan_pages": [

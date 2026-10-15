@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-076",
@@ -42,6 +42,47 @@
     "participant_ids": [
       "1904-458d70eef23c",
       "1904-48867ac970dd"
+    ],
+    "precedents": [
+      {
+        "id": "1904-076:1881:131:1507",
+        "source_id": "1904-076",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "54f02ac06a84643d50899c3b84452acd190b9f1037cc69f6ed5c4e5575b2880f",
+        "year": 1881,
+        "start": 1502,
+        "end": 1520,
+        "department": null,
+        "association": null,
+        "number": 131,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1507,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1881 г. № 131",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1322,
+        "context_end": 1740,
+        "context_original": "е шести мѣсяцевъ послѣ бракосочетанія, и это совпаденіе времени выдѣла приданаго съ выходомъ въ замужество съ ясностью установлено въ вышеприведенномъ 7 пунктѣ ст. 1005 X т. ч. 1 (рѣш. 1881 г. № 131); 3) что, посему, если въ этомъ законѣ постановлено, что вышедшей замужъ дѣвицѣ дозволяется отыскивать отъ братьевъ свое приданое въ теченіе десяти лѣтъ со времени выхода замужъ, то этимъ самымъ установлено не одно толь",
+        "passage_id": "1904-076:0-1543",
+        "pages": [
+          213
+        ],
+        "sources": [
+          {
+            "page": 213,
+            "page_method": "header",
+            "file": "p0107_R.txt",
+            "start": 1330,
+            "end": 2560
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-076?mode=precedent&ref=1904-076%3A1881%3A131%3A1507&at=1502&end=1520",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-076",
     "scan_pages": [

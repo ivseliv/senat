@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-054",
@@ -54,6 +54,125 @@
       "1905-7e38e446c688",
       "1905-b7763bf69307",
       "1905-aaddb8c344b3"
+    ],
+    "precedents": [
+      {
+        "id": "1905-054:1889:37:2604",
+        "source_id": "1905-054",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e93f546851192bcf0479a5dd6c2837ecc4900583fbc7ef22f10c9d09ea676621",
+        "year": 1889,
+        "start": 2571,
+        "end": 2616,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 37,
+        "department_start": 2576,
+        "department_end": 2585,
+        "citation_start": 2604,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. общ. собр. 1 и касс. д-товъ 1889 г. № 37",
+        "target_url": null,
+        "department_evidence": "общ. собр",
+        "context_start": 2391,
+        "context_end": 2836,
+        "context_original": "ъ казенная палата можетъ достигнуть отмѣны опредѣленія окружнаго суда объ исчисленіи пошлины съ даннаго наслѣдства не иначе, какъ путемъ принесенія на оное жалобы судебной палатѣ (рѣш. общ. собр. 1 и касс. д-товъ 1889 г. № 37). Въ настоящемъ случаѣ, какъ объясняетъ и самъ проситель, имущество, на которое начислена казенною палатою пошлина, было показано въ сдѣланномъ окружному суду наслѣдниками заявленіи о составѣ и цѣнности наслѣдства. Поэт",
+        "passage_id": "1905-054:1382-3083",
+        "pages": [
+          147
+        ],
+        "sources": [
+          {
+            "page": 147,
+            "page_method": "header",
+            "file": "p0074_R.txt",
+            "start": 1654,
+            "end": 3083
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-054?mode=precedent&ref=1905-054%3A1889%3A37%3A2604&at=2571&end=2616",
+        "scan_available": true
+      },
+      {
+        "id": "1905-054:1869:583:5994",
+        "source_id": "1905-054",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e93f546851192bcf0479a5dd6c2837ecc4900583fbc7ef22f10c9d09ea676621",
+        "year": 1869,
+        "start": 5968,
+        "end": 6007,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 583,
+        "department_start": 5976,
+        "department_end": 5993,
+        "citation_start": 5994,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи гражд. касс. д-та 1869 г. № 583",
+        "target_url": null,
+        "department_evidence": "гражд. касс. д-та",
+        "context_start": 5788,
+        "context_end": 6227,
+        "context_original": "адлежавшими наслѣдодателю именно на арендномъ правѣ, а не на правѣ собственности. Это заключеніе судебной палаты представляется вполнѣ согласнымъ съ разъясненіями, преподанными въ рѣшеніи гражд. касс. д-та 1869 г. № 583. Въ рѣшеніи этомъ Правит. Сенатъ, подвергнувъ всестороннему обсужденію вопросъ о томъ, кто — собственникъ-ли земли или арендаторъ оной — долженъ быть почитаемъ во время дѣйствія аренднаго договора собственникомъ зданія,",
+        "passage_id": "1905-054:5076-6675",
+        "pages": [
+          148
+        ],
+        "sources": [
+          {
+            "page": 148,
+            "page_method": "header",
+            "file": "p0075_L.txt",
+            "start": 5076,
+            "end": 6675
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-054?mode=precedent&ref=1905-054%3A1869%3A583%3A5994&at=5968&end=6007",
+        "scan_available": true
+      },
+      {
+        "id": "1905-054:1881:113:7548",
+        "source_id": "1905-054",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e93f546851192bcf0479a5dd6c2837ecc4900583fbc7ef22f10c9d09ea676621",
+        "year": 1881,
+        "start": 7528,
+        "end": 7561,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 113,
+        "department_start": 7533,
+        "department_end": 7547,
+        "citation_start": 7548,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. д-та 1881 г. № 113",
+        "target_url": null,
+        "department_evidence": "гр. касс. д-та",
+        "context_start": 7348,
+        "context_end": 7781,
+        "context_original": "аменныхъ и, по условіямъ аренднаго договора, отнюдь не подлежащихъ по произволу арендатора сносу съ земли представляется, очевидно, лишеннымъ всякаго основанія (ст. 384 т. X ч. 1; рѣш. гр. касс. д-та 1881 г. № 113 и мн. др.). Утвержденіе это надлежитъ, быть можетъ, понимать въ томъ смыслѣ, что подъ подлежащимъ въ настоящемъ случаѣ обложенію наслѣдственною пошлиною движимымъ имуществомъ проситель разумѣетъ собственно не самыя лавк",
+        "passage_id": "1905-054:6412-8089",
+        "pages": [
+          149
+        ],
+        "sources": [
+          {
+            "page": 149,
+            "page_method": "header",
+            "file": "p0075_R.txt",
+            "start": 7172,
+            "end": 8089
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-054?mode=precedent&ref=1905-054%3A1881%3A113%3A7548&at=7528&end=7561",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-054",
     "scan_pages": [

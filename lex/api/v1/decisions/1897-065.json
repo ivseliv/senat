@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-065",
@@ -96,6 +96,398 @@
     ],
     "participant_ids": [
       "1897-62bfe8ef2cb0"
+    ],
+    "precedents": [
+      {
+        "id": "1897-065:1879:147:12343",
+        "source_id": "1897-065",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c8ca1cf9840bd59db111d04a61d174d177f739b172683d462ac96958b9866076",
+        "year": 1879,
+        "start": 12338,
+        "end": 12356,
+        "department": null,
+        "association": null,
+        "number": 147,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 12343,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1879 г. № 147",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 12158,
+        "context_end": 12576,
+        "context_original": "оявшихся въ порядкѣ исковомъ; постановленія эти, какъ неоднократно разъяснялось Правительствующимъ Сенатомъ, не могутъ стѣснять судъ при разсмотрѣніи дѣла въ исковомъ порядкѣ (ср. рѣш. 1879 г. № 147, 1880 г. № 124, 1886 г. № 33). Посему заключеніе палаты, что опредѣленіе 23 іюня 1890 г. не преграждало Афанасію Волкову путь предъявить настоящій искъ, представляется правильнымъ. Указаніе просителя, что упомянутое опр",
+        "passage_id": "1897-065:10851-12537",
+        "pages": [
+          216
+        ],
+        "sources": [
+          {
+            "page": 216,
+            "page_method": "header",
+            "file": "p0119_L.txt",
+            "start": 12316,
+            "end": 12873
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-065?mode=precedent&ref=1897-065%3A1879%3A147%3A12343&at=12338&end=12356",
+        "scan_available": true
+      },
+      {
+        "id": "1897-065:1880:124:12358",
+        "source_id": "1897-065",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c8ca1cf9840bd59db111d04a61d174d177f739b172683d462ac96958b9866076",
+        "year": 1880,
+        "start": 12338,
+        "end": 12371,
+        "department": null,
+        "association": null,
+        "number": 124,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 12358,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1879 г. № 147, 1880 г. № 124",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 12158,
+        "context_end": 12591,
+        "context_original": "оявшихся въ порядкѣ исковомъ; постановленія эти, какъ неоднократно разъяснялось Правительствующимъ Сенатомъ, не могутъ стѣснять судъ при разсмотрѣніи дѣла въ исковомъ порядкѣ (ср. рѣш. 1879 г. № 147, 1880 г. № 124, 1886 г. № 33). Посему заключеніе палаты, что опредѣленіе 23 іюня 1890 г. не преграждало Афанасію Волкову путь предъявить настоящій искъ, представляется правильнымъ. Указаніе просителя, что упомянутое опредѣленіе не мож",
+        "passage_id": "1897-065:10851-12537",
+        "pages": [
+          216
+        ],
+        "sources": [
+          {
+            "page": 216,
+            "page_method": "header",
+            "file": "p0119_L.txt",
+            "start": 12316,
+            "end": 12873
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-065?mode=precedent&ref=1897-065%3A1880%3A124%3A12358&at=12338&end=12371",
+        "scan_available": true
+      },
+      {
+        "id": "1897-065:1886:33:12373",
+        "source_id": "1897-065",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c8ca1cf9840bd59db111d04a61d174d177f739b172683d462ac96958b9866076",
+        "year": 1886,
+        "start": 12338,
+        "end": 12385,
+        "department": null,
+        "association": null,
+        "number": 33,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 12373,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1879 г. № 147, 1880 г. № 124, 1886 г. № 33",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 12158,
+        "context_end": 12605,
+        "context_original": "оявшихся въ порядкѣ исковомъ; постановленія эти, какъ неоднократно разъяснялось Правительствующимъ Сенатомъ, не могутъ стѣснять судъ при разсмотрѣніи дѣла въ исковомъ порядкѣ (ср. рѣш. 1879 г. № 147, 1880 г. № 124, 1886 г. № 33). Посему заключеніе палаты, что опредѣленіе 23 іюня 1890 г. не преграждало Афанасію Волкову путь предъявить настоящій искъ, представляется правильнымъ. Указаніе просителя, что упомянутое опредѣленіе не можетъ быть призн",
+        "passage_id": "1897-065:10851-12537",
+        "pages": [
+          216
+        ],
+        "sources": [
+          {
+            "page": 216,
+            "page_method": "header",
+            "file": "p0119_L.txt",
+            "start": 12316,
+            "end": 12873
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-065?mode=precedent&ref=1897-065%3A1886%3A33%3A12373&at=12338&end=12385",
+        "scan_available": true
+      },
+      {
+        "id": "1897-065:1894:35:15877",
+        "source_id": "1897-065",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c8ca1cf9840bd59db111d04a61d174d177f739b172683d462ac96958b9866076",
+        "year": 1894,
+        "start": 15822,
+        "end": 15897,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 35,
+        "department_start": 15822,
+        "department_end": 15863,
+        "citation_start": 15877,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "гражданскимъ кассаціоннымъ департаментомъ въ рѣшеніяхъ 1894 года №№ 35 и 36",
+        "target_url": null,
+        "department_evidence": "гражданскимъ кассаціоннымъ департаментомъ",
+        "context_start": 15642,
+        "context_end": 16117,
+        "context_original": "ожетъ ли рожденное отъ сего брака лицо, не записанное въ метрику, доказывать путемъ иска законность рожденія и сопряженное съ нимъ право на наслѣдство? Вопросъ этотъ не предрѣшенъ гражданскимъ кассаціоннымъ департаментомъ въ рѣшеніяхъ 1894 года №№ 35 и 36. Въ первомъ рѣшеніи Сенатъ призналъ неправильнымъ лишь основное соображеніе палаты о томъ, что бракъ раскольниковъ, заключенный въ промежутокъ времени между X ревизіей и изданіемъ закона 19 апрѣля 1874 года о метрическо",
+        "passage_id": "1897-065:14879-16571",
+        "pages": [
+          218
+        ],
+        "sources": [
+          {
+            "page": 218,
+            "page_method": "header",
+            "file": "p0120_L.txt",
+            "start": 15802,
+            "end": 16571
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-065?mode=precedent&ref=1897-065%3A1894%3A35%3A15877&at=15822&end=15897",
+        "scan_available": true
+      },
+      {
+        "id": "1897-065:1894:36:15877",
+        "source_id": "1897-065",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c8ca1cf9840bd59db111d04a61d174d177f739b172683d462ac96958b9866076",
+        "year": 1894,
+        "start": 15822,
+        "end": 15897,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 36,
+        "department_start": 15822,
+        "department_end": 15863,
+        "citation_start": 15877,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "гражданскимъ кассаціоннымъ департаментомъ въ рѣшеніяхъ 1894 года №№ 35 и 36",
+        "target_url": null,
+        "department_evidence": "гражданскимъ кассаціоннымъ департаментомъ",
+        "context_start": 15642,
+        "context_end": 16117,
+        "context_original": "ожетъ ли рожденное отъ сего брака лицо, не записанное въ метрику, доказывать путемъ иска законность рожденія и сопряженное съ нимъ право на наслѣдство? Вопросъ этотъ не предрѣшенъ гражданскимъ кассаціоннымъ департаментомъ въ рѣшеніяхъ 1894 года №№ 35 и 36. Въ первомъ рѣшеніи Сенатъ призналъ неправильнымъ лишь основное соображеніе палаты о томъ, что бракъ раскольниковъ, заключенный въ промежутокъ времени между X ревизіей и изданіемъ закона 19 апрѣля 1874 года о метрическо",
+        "passage_id": "1897-065:14879-16571",
+        "pages": [
+          218
+        ],
+        "sources": [
+          {
+            "page": 218,
+            "page_method": "header",
+            "file": "p0120_L.txt",
+            "start": 15802,
+            "end": 16571
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-065?mode=precedent&ref=1897-065%3A1894%3A36%3A15877&at=15822&end=15897",
+        "scan_available": true
+      },
+      {
+        "id": "1897-065:1893:25:21296",
+        "source_id": "1897-065",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c8ca1cf9840bd59db111d04a61d174d177f739b172683d462ac96958b9866076",
+        "year": 1893,
+        "start": 21291,
+        "end": 21308,
+        "department": null,
+        "association": null,
+        "number": 25,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 21296,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1893 г. № 25",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 21111,
+        "context_end": 21528,
+        "context_original": "разрушаетъ самаго брака. Объясненіе просителя, будто къ настоящему дѣлу, имѣющему предметомъ отысканіе наслѣдства, непримѣнима ст. 1356⁵ уст. гр. суд., въ виду разъясненія Сената (рѣш. 1893 г. № 25 и 1879 г. № 68) о томъ, что эта статья относится исключительно къ дѣламъ о законности рожденія,—не заслуживаетъ уваженія, ибо хотя палата и признала, что искъ Афанасія Волкова имѣетъ предметомъ своимъ главнымъ образомъ ",
+        "passage_id": "1897-065:20284-21879",
+        "pages": [
+          219
+        ],
+        "sources": [
+          {
+            "page": 219,
+            "page_method": "header",
+            "file": "p0120_R.txt",
+            "start": 20284,
+            "end": 21800
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-065?mode=precedent&ref=1897-065%3A1893%3A25%3A21296&at=21291&end=21308",
+        "scan_available": true
+      },
+      {
+        "id": "1897-065:1879:68:21311",
+        "source_id": "1897-065",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c8ca1cf9840bd59db111d04a61d174d177f739b172683d462ac96958b9866076",
+        "year": 1879,
+        "start": 21291,
+        "end": 21323,
+        "department": null,
+        "association": null,
+        "number": 68,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 21311,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1893 г. № 25 и 1879 г. № 68",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 21111,
+        "context_end": 21543,
+        "context_original": "разрушаетъ самаго брака. Объясненіе просителя, будто къ настоящему дѣлу, имѣющему предметомъ отысканіе наслѣдства, непримѣнима ст. 1356⁵ уст. гр. суд., въ виду разъясненія Сената (рѣш. 1893 г. № 25 и 1879 г. № 68) о томъ, что эта статья относится исключительно къ дѣламъ о законности рожденія,—не заслуживаетъ уваженія, ибо хотя палата и признала, что искъ Афанасія Волкова имѣетъ предметомъ своимъ главнымъ образомъ оставшееся посл",
+        "passage_id": "1897-065:20284-21879",
+        "pages": [
+          219
+        ],
+        "sources": [
+          {
+            "page": 219,
+            "page_method": "header",
+            "file": "p0120_R.txt",
+            "start": 20284,
+            "end": 21800
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-065?mode=precedent&ref=1897-065%3A1879%3A68%3A21311&at=21291&end=21323",
+        "scan_available": true
+      },
+      {
+        "id": "1897-065:1878:117:24057",
+        "source_id": "1897-065",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c8ca1cf9840bd59db111d04a61d174d177f739b172683d462ac96958b9866076",
+        "year": 1878,
+        "start": 24052,
+        "end": 24070,
+        "department": null,
+        "association": null,
+        "number": 117,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 24057,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1878 г. № 117",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 23872,
+        "context_end": 24290,
+        "context_original": "раскольниковъ, а посему такая роспись можетъ имѣть значеніе доказательства въ дѣлахъ, упомянутыхъ въ 1356⁵ ст. уст. гр. суд. Къ тому же Правительствующимъ Сенатомъ уже разъяснено (рѣш. 1878 г. № 117 и др.), что и въ доказательство близости родства, по точной силѣ 209 ст. т. X ч. 1, точно такъ, какъ и въ доказательство рожденія въ законномъ бракѣ, по 123 ст. тѣхъ же тома и части, могутъ быть принимаемы и исповѣдныя ",
+        "passage_id": "1897-065:23069-24634",
+        "pages": [
+          220
+        ],
+        "sources": [
+          {
+            "page": 220,
+            "page_method": "header",
+            "file": "p0121_L.txt",
+            "start": 23069,
+            "end": 24634
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-065?mode=precedent&ref=1897-065%3A1878%3A117%3A24057&at=24052&end=24070",
+        "scan_available": true
+      },
+      {
+        "id": "1897-065:1887:23:25212",
+        "source_id": "1897-065",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c8ca1cf9840bd59db111d04a61d174d177f739b172683d462ac96958b9866076",
+        "year": 1887,
+        "start": 25207,
+        "end": 25224,
+        "department": null,
+        "association": null,
+        "number": 23,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 25212,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1887 г. № 23",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 25027,
+        "context_end": 25444,
+        "context_original": "вляется дополнительнымъ, а потому даже и неправильность онаго не могла бы служить поводомъ къ отмѣнѣ рѣшенія, основаннаго на другихъ, самостоятельныхъ и правильныхъ соображеніяхъ (рѣш. 1887 г. № 23, 1886 г. № 52). VI. Проситель обвиняетъ палату въ необсужденіи ходатайства о выдачѣ ему свидѣтельства на полученіе изъ Московской духовной консисторіи справки о томъ, какъ составлялись исповѣдныя росписи по отношенію ра",
+        "passage_id": "1897-065:24382-25960",
+        "pages": [
+          221
+        ],
+        "sources": [
+          {
+            "page": 221,
+            "page_method": "header",
+            "file": "p0121_R.txt",
+            "start": 24748,
+            "end": 25960
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-065?mode=precedent&ref=1897-065%3A1887%3A23%3A25212&at=25207&end=25224",
+        "scan_available": true
+      },
+      {
+        "id": "1897-065:1886:52:25226",
+        "source_id": "1897-065",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c8ca1cf9840bd59db111d04a61d174d177f739b172683d462ac96958b9866076",
+        "year": 1886,
+        "start": 25207,
+        "end": 25238,
+        "department": null,
+        "association": null,
+        "number": 52,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 25226,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1887 г. № 23, 1886 г. № 52",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 25027,
+        "context_end": 25458,
+        "context_original": "вляется дополнительнымъ, а потому даже и неправильность онаго не могла бы служить поводомъ къ отмѣнѣ рѣшенія, основаннаго на другихъ, самостоятельныхъ и правильныхъ соображеніяхъ (рѣш. 1887 г. № 23, 1886 г. № 52). VI. Проситель обвиняетъ палату въ необсужденіи ходатайства о выдачѣ ему свидѣтельства на полученіе изъ Московской духовной консисторіи справки о томъ, какъ составлялись исповѣдныя росписи по отношенію раскольниковъ и ",
+        "passage_id": "1897-065:24382-25960",
+        "pages": [
+          221
+        ],
+        "sources": [
+          {
+            "page": 221,
+            "page_method": "header",
+            "file": "p0121_R.txt",
+            "start": 24748,
+            "end": 25960
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-065?mode=precedent&ref=1897-065%3A1886%3A52%3A25226&at=25207&end=25238",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-065",
     "scan_pages": [

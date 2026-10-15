@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-073",
@@ -48,6 +48,125 @@
     ],
     "participant_ids": [
       "1905-304af0513417"
+    ],
+    "precedents": [
+      {
+        "id": "1905-073:1875:702:3373",
+        "source_id": "1905-073",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "185751a7a02d2b9e8d2b53dbd1aabe2573500d59998236d0c048e3253fd11339",
+        "year": 1875,
+        "start": 3353,
+        "end": 3388,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 702,
+        "department_start": 3358,
+        "department_end": 3372,
+        "citation_start": 3373,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. д-та 1875 года № 702",
+        "target_url": null,
+        "department_evidence": "гр. касс. д-та",
+        "context_start": 3173,
+        "context_end": 3608,
+        "context_original": "мъ. Нѣтъ сомнѣнія въ томъ, что вводъ во владѣніе можетъ явиться и послѣдствіемъ судебнаго рѣшенія или опредѣленія по дѣлу, производившемуся въ порядкѣ охранительнаго производства (рѣш. гр. касс. д-та 1875 года № 702). Затѣмъ, въ силу 707 ст. X т. 1 ч. зак. гражд. и 1432 ст. уст. гр. суд., вводный листъ считается удостовѣреніемъ укрѣпленія права на имущество за лицомъ, которому таковой выданъ. Правительствующій Сенатъ въ рѣшеніи общ",
+        "passage_id": "1905-073:2520-4147",
+        "pages": [
+          200
+        ],
+        "sources": [
+          {
+            "page": 200,
+            "page_method": "header",
+            "file": "p0101_L.txt",
+            "start": 3155,
+            "end": 4147
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-073?mode=precedent&ref=1905-073%3A1875%3A702%3A3373&at=3353&end=3388",
+        "scan_available": true
+      },
+      {
+        "id": "1905-073:1892:13:3645",
+        "source_id": "1905-073",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "185751a7a02d2b9e8d2b53dbd1aabe2573500d59998236d0c048e3253fd11339",
+        "year": 1892,
+        "start": 3597,
+        "end": 3659,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 13,
+        "department_start": 3605,
+        "department_end": 3620,
+        "citation_start": 3645,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи общаго собранія кассаціонныхъ д-товъ за 1892 годъ № 13",
+        "target_url": null,
+        "department_evidence": "общаго собранія",
+        "context_start": 3417,
+        "context_end": 3879,
+        "context_original": "т. 1 ч. зак. гражд. и 1432 ст. уст. гр. суд., вводный листъ считается удостовѣреніемъ укрѣпленія права на имущество за лицомъ, которому таковой выданъ. Правительствующій Сенатъ въ рѣшеніи общаго собранія кассаціонныхъ д-товъ за 1892 годъ № 13 разъяснилъ уже, что вводъ во владѣніе есть обрядъ оглашенія со стороны судебной власти объ осуществившемся укрѣпленіи права на недвижимость, а въ рѣшеніи гражданскаго кассаціоннаго д-та 1884 года № 55 категорически разъ",
+        "passage_id": "1905-073:2520-4147",
+        "pages": [
+          200
+        ],
+        "sources": [
+          {
+            "page": 200,
+            "page_method": "header",
+            "file": "p0101_L.txt",
+            "start": 3155,
+            "end": 4147
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-073?mode=precedent&ref=1905-073%3A1892%3A13%3A3645&at=3597&end=3659",
+        "scan_available": true
+      },
+      {
+        "id": "1905-073:1884:55:3846",
+        "source_id": "1905-073",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "185751a7a02d2b9e8d2b53dbd1aabe2573500d59998236d0c048e3253fd11339",
+        "year": 1884,
+        "start": 3806,
+        "end": 3860,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 55,
+        "department_start": 3814,
+        "department_end": 3845,
+        "citation_start": 3846,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи гражданскаго кассаціоннаго д-та 1884 года № 55",
+        "target_url": null,
+        "department_evidence": "гражданскаго кассаціоннаго д-та",
+        "context_start": 3626,
+        "context_end": 4080,
+        "context_original": "ціонныхъ д-товъ за 1892 годъ № 13 разъяснилъ уже, что вводъ во владѣніе есть обрядъ оглашенія со стороны судебной власти объ осуществившемся укрѣпленіи права на недвижимость, а въ рѣшеніи гражданскаго кассаціоннаго д-та 1884 года № 55 категорически разъяснено, что вводный листъ можетъ быть принятъ какъ доказательство пріобрѣтенія права на владѣніе. Въ данномъ случаѣ просителемъ, графомъ Паленомъ, представленъ вводный листъ на вводъ умершей матери его",
+        "passage_id": "1905-073:2520-4147",
+        "pages": [
+          200
+        ],
+        "sources": [
+          {
+            "page": 200,
+            "page_method": "header",
+            "file": "p0101_L.txt",
+            "start": 3155,
+            "end": 4147
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-073?mode=precedent&ref=1905-073%3A1884%3A55%3A3846&at=3806&end=3860",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-073",
     "scan_pages": [

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-068",
@@ -45,6 +45,86 @@
     "participant_ids": [
       "1904-bfa5188be338",
       "1904-3292c49e2ba6"
+    ],
+    "precedents": [
+      {
+        "id": "1904-068:1882:141:4045",
+        "source_id": "1904-068",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "d558526bd65c4e83c14edc5cd52fa5e1b5d40427a056f0a4b3b305d3235462da",
+        "year": 1882,
+        "start": 4035,
+        "end": 4058,
+        "department": null,
+        "association": null,
+        "number": 141,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4045,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ 1882 г. № 141",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3855,
+        "context_end": 4278,
+        "context_original": "дебнымъ уставамъ 1864 г. ни въ какомъ случаѣ не допускается. Это положеніе, относительно публичной продажи недвижимаго имущества, было уже высказано Правительствующимъ Сенатомъ въ рѣшеніяхъ 1882 г. № 141 и 1900 г. № 51, правила же, опредѣляющія случаи признанія торговъ несостоявшимися и послѣдствія несостоявшихся вторыхъ торговъ при продажѣ недвижимаго имущества (ст. 1170-1176), вполнѣ аналогичны съ таковыми же правилам",
+        "passage_id": "1904-068:2982-4930",
+        "pages": [
+          197
+        ],
+        "sources": [
+          {
+            "page": 197,
+            "page_method": "header",
+            "file": "p0099_R.txt",
+            "start": 2982,
+            "end": 4930
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-068?mode=precedent&ref=1904-068%3A1882%3A141%3A4045&at=4035&end=4058",
+        "scan_available": true
+      },
+      {
+        "id": "1904-068:1900:51:4061",
+        "source_id": "1904-068",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "d558526bd65c4e83c14edc5cd52fa5e1b5d40427a056f0a4b3b305d3235462da",
+        "year": 1900,
+        "start": 4035,
+        "end": 4073,
+        "department": null,
+        "association": null,
+        "number": 51,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4061,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ 1882 г. № 141 и 1900 г. № 51",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3855,
+        "context_end": 4293,
+        "context_original": "дебнымъ уставамъ 1864 г. ни въ какомъ случаѣ не допускается. Это положеніе, относительно публичной продажи недвижимаго имущества, было уже высказано Правительствующимъ Сенатомъ въ рѣшеніяхъ 1882 г. № 141 и 1900 г. № 51, правила же, опредѣляющія случаи признанія торговъ несостоявшимися и послѣдствія несостоявшихся вторыхъ торговъ при продажѣ недвижимаго имущества (ст. 1170-1176), вполнѣ аналогичны съ таковыми же правилами о продажѣ иму",
+        "passage_id": "1904-068:2982-4930",
+        "pages": [
+          197
+        ],
+        "sources": [
+          {
+            "page": 197,
+            "page_method": "header",
+            "file": "p0099_R.txt",
+            "start": 2982,
+            "end": 4930
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-068?mode=precedent&ref=1904-068%3A1900%3A51%3A4061&at=4035&end=4073",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-068",
     "scan_pages": [

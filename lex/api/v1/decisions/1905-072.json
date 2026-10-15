@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-072",
@@ -57,6 +57,125 @@
       "1905-7b176c488a69",
       "1905-d297234cf10e",
       "1905-c79c43897798"
+    ],
+    "precedents": [
+      {
+        "id": "1905-072:1897:4:8844",
+        "source_id": "1905-072",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "95f098ba4d2bfe67044466fd495e74d86a8d14b3407d81642cd02e59e7feda7b",
+        "year": 1897,
+        "start": 8784,
+        "end": 8855,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 4,
+        "department_start": 8784,
+        "department_end": 8823,
+        "citation_start": 8844,
+        "status": "linked",
+        "target_id": "1897-004",
+        "quote_original": "гражданскаго кассаціоннаго департамента; именно, въ рѣшеніи 1897 г. № 4",
+        "target_url": "https://ivseliv.github.io/senat/lex/#/d/1897-004",
+        "department_evidence": "гражданскаго кассаціоннаго департамента",
+        "context_start": 8604,
+        "context_end": 9075,
+        "context_original": " этихъ учрежденій на это право никакихъ указаній сдѣлано не было, какъ это имѣетъ мѣсто по отношенію къ городскимъ общественнымъ банкамъ. Въ этомъ смыслѣ последовало и разъясненіе гражданскаго кассаціоннаго департамента; именно, въ рѣшеніи 1897 г. № 4 Правительствующій Сенатъ указалъ, что, по силѣ 54 и 65 ст. полож. о гор. общественн. банк. (по изд. 1893 г.), надписи на билетахъ, сдѣланныя на случай смерти вкладчика, сами по себѣ, не могутъ устанавливать права лица, ",
+        "passage_id": "1905-072:8498-9811",
+        "pages": [
+          198
+        ],
+        "sources": [
+          {
+            "page": 198,
+            "page_method": "header",
+            "file": "p0100_L.txt",
+            "start": 8498,
+            "end": 9811
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-072?mode=precedent&ref=1905-072%3A1897%3A4%3A8844&at=8784&end=8855",
+        "scan_available": true
+      },
+      {
+        "id": "1905-072:1874:244:9188",
+        "source_id": "1905-072",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "95f098ba4d2bfe67044466fd495e74d86a8d14b3407d81642cd02e59e7feda7b",
+        "year": 1874,
+        "start": 9180,
+        "end": 9201,
+        "department": null,
+        "association": null,
+        "number": 244,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 9188,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеній 1874 г. № 244",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 9000,
+        "context_end": 9421,
+        "context_original": "случай смерти вкладчика, сами по себѣ, не могутъ устанавливать права лица, означеннаго въ надписи, на полученіе вклада; при этомъ въ упомянутомъ рѣшеніи добавлено: что же касается рѣшеній 1874 г. № 244 и 1875 г. № 430, то если въ этихъ рѣшеніяхъ и былъ допущенъ переходъ вкладовъ по такимъ надписямъ, то единственно потому, что во время постановленія сихъ рѣшеній существовало въ ст. 1199 т. XI ч. 2 уст. кредитн. правило",
+        "passage_id": "1905-072:8498-9811",
+        "pages": [
+          198
+        ],
+        "sources": [
+          {
+            "page": 198,
+            "page_method": "header",
+            "file": "p0100_L.txt",
+            "start": 8498,
+            "end": 9811
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-072?mode=precedent&ref=1905-072%3A1874%3A244%3A9188&at=9180&end=9201",
+        "scan_available": true
+      },
+      {
+        "id": "1905-072:1875:430:9204",
+        "source_id": "1905-072",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "95f098ba4d2bfe67044466fd495e74d86a8d14b3407d81642cd02e59e7feda7b",
+        "year": 1875,
+        "start": 9180,
+        "end": 9217,
+        "department": null,
+        "association": null,
+        "number": 430,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 9204,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеній 1874 г. № 244 и 1875 г. № 430",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 9000,
+        "context_end": 9437,
+        "context_original": "случай смерти вкладчика, сами по себѣ, не могутъ устанавливать права лица, означеннаго въ надписи, на полученіе вклада; при этомъ въ упомянутомъ рѣшеніи добавлено: что же касается рѣшеній 1874 г. № 244 и 1875 г. № 430, то если въ этихъ рѣшеніяхъ и былъ допущенъ переходъ вкладовъ по такимъ надписямъ, то единственно потому, что во время постановленія сихъ рѣшеній существовало въ ст. 1199 т. XI ч. 2 уст. кредитн. правило, оправдывающее ",
+        "passage_id": "1905-072:8498-9811",
+        "pages": [
+          198
+        ],
+        "sources": [
+          {
+            "page": 198,
+            "page_method": "header",
+            "file": "p0100_L.txt",
+            "start": 8498,
+            "end": 9811
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-072?mode=precedent&ref=1905-072%3A1875%3A430%3A9204&at=9180&end=9217",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-072",
     "scan_pages": [

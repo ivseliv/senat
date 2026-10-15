@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-079",
@@ -56,6 +56,164 @@
       "1905-a16da28b1888",
       "1905-252e5c947f40",
       "1905-2ae989cf518a"
+    ],
+    "precedents": [
+      {
+        "id": "1905-079:1901:80:437",
+        "source_id": "1905-079",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bb4619099f63ea449871144174331c3e6389992a208930d1e20f8ad123ee901b",
+        "year": 1901,
+        "start": 429,
+        "end": 449,
+        "department": null,
+        "association": null,
+        "number": 80,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 437,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1901 г. № 80",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 249,
+        "context_end": 669,
+        "context_original": "нная на такое возвращеніе жалоба была оставлена Саратовскою судебною палатою безъ послѣдствій въ виду того, что городскіе банки, какъ это разъяснено Правительствующимъ Сенатомъ въ рѣшеніи 1901 г. № 80, правами казенныхъ управленій въ процессуальномъ отношеніи не пользуются, а слѣдовательно, одно то обстоятельство, что Кузьминъ состоитъ на службѣ въ канцеляріи банка въ качествѣ помощника бухгалтера съ возложеніемъ на ",
+        "passage_id": "1905-079:0-1817",
+        "pages": [
+          219
+        ],
+        "sources": [
+          {
+            "page": 219,
+            "page_method": "neighbors",
+            "file": "p0110_R.txt",
+            "start": 0,
+            "end": 1328
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-079?mode=precedent&ref=1905-079%3A1901%3A80%3A437&at=429&end=449",
+        "scan_available": true
+      },
+      {
+        "id": "1905-079:1876:19:2762",
+        "source_id": "1905-079",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bb4619099f63ea449871144174331c3e6389992a208930d1e20f8ad123ee901b",
+        "year": 1876,
+        "start": 2704,
+        "end": 2774,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 19,
+        "department_start": 2704,
+        "department_end": 2719,
+        "citation_start": 2762,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "общемъ собраніи 1-го и кассаціоннаго департаментовъ (рѣш. 1876 г. № 19",
+        "target_url": null,
+        "department_evidence": "общемъ собраніи",
+        "context_start": 2524,
+        "context_end": 2994,
+        "context_original": "тямъ имѣніями или дѣлами тѣхъ тяжущихся. При этомъ не сказано, что такое завѣдываніе должно касаться непремѣнно всѣхъ имѣній или всѣхъ дѣлъ тяжущагося. Правительствующій Сенатъ въ общемъ собраніи 1-го и кассаціоннаго департаментовъ (рѣш. 1876 г. № 19) разъяснилъ, что Высочайше утвержденныя 25 мая—6 іюня 1874 г. правила (о частныхъ повѣренныхъ) не распространяются на директоровъ, членовъ правленій, членовъ оцѣночныхъ коммисій, агентовъ и управляющихъ дѣлами банковъ, ",
+        "passage_id": "1905-079:1568-3041",
+        "pages": [
+          220
+        ],
+        "sources": [
+          {
+            "page": 220,
+            "page_method": "header",
+            "file": "p0111_L.txt",
+            "start": 2770,
+            "end": 4602
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-079?mode=precedent&ref=1905-079%3A1876%3A19%3A2762&at=2704&end=2774",
+        "scan_available": true
+      },
+      {
+        "id": "1905-079:1902:121:4654",
+        "source_id": "1905-079",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bb4619099f63ea449871144174331c3e6389992a208930d1e20f8ad123ee901b",
+        "year": 1902,
+        "start": 4606,
+        "end": 4667,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 121,
+        "department_start": 4614,
+        "department_end": 4653,
+        "citation_start": 4654,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи гражданскаго кассаціоннаго департамента 1902 г. № 121",
+        "target_url": null,
+        "department_evidence": "гражданскаго кассаціоннаго департамента",
+        "context_start": 4426,
+        "context_end": 4887,
+        "context_original": "лужащихъ въ сихъ учрежденіяхъ лицъ, а не за одними только директорами, членами правленій и другими лицами, коимъ принадлежитъ общее завѣдываніе всѣми дѣлами даннаго учрежденія. Въ рѣшеніи гражданскаго кассаціоннаго департамента 1902 г. № 121 признано, что юрисконсульты желѣзныхъ дорогъ и ихъ помощники, по самому свойству ихъ обязанностей, несомнѣнно должны быть отнесены къ числу лицъ, о коихъ упомянуто въ 389 ст. учр. суд. уст. Такимъ образомъ, для того, чт",
+        "passage_id": "1905-079:4345-5896",
+        "pages": [
+          220
+        ],
+        "sources": [
+          {
+            "page": 220,
+            "page_method": "header",
+            "file": "p0111_L.txt",
+            "start": 4345,
+            "end": 5170
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-079?mode=precedent&ref=1905-079%3A1902%3A121%3A4654&at=4606&end=4667",
+        "scan_available": true
+      },
+      {
+        "id": "1905-079:1901:80:5473",
+        "source_id": "1905-079",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bb4619099f63ea449871144174331c3e6389992a208930d1e20f8ad123ee901b",
+        "year": 1901,
+        "start": 5425,
+        "end": 5485,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 80,
+        "department_start": 5433,
+        "department_end": 5472,
+        "citation_start": 5473,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи гражданскаго кассаціоннаго департамента 1901 г. № 80",
+        "target_url": null,
+        "department_evidence": "гражданскаго кассаціоннаго департамента",
+        "context_start": 5245,
+        "context_end": 5705,
+        "context_original": "исла лицъ, имѣющихъ, по закону, право быть повѣренными, по добровольному съ ними соглашенію. Правда, городской общественный банкъ не есть казенное управленіе и, какъ разъяснено въ рѣшеніи гражданскаго кассаціоннаго департамента 1901 г. № 80, хотя и принадлежитъ къ числу городскихъ общественныхъ учрежденій, но не входитъ въ составъ городскаго общественнаго управленія, вслѣдствіе чего дѣла его не подлежатъ, въ отношеніи ихъ подсудности, дѣйствію примѣчанія 2",
+        "passage_id": "1905-079:4345-5896",
+        "pages": [
+          221
+        ],
+        "sources": [
+          {
+            "page": 221,
+            "page_method": "header",
+            "file": "p0111_R.txt",
+            "start": 5171,
+            "end": 5896
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-079?mode=precedent&ref=1905-079%3A1901%3A80%3A5473&at=5425&end=5485",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-079",
     "scan_pages": [

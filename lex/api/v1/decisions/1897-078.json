@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-078",
@@ -59,6 +59,437 @@
     ],
     "participant_ids": [
       "1897-c1a812ebf888"
+    ],
+    "precedents": [
+      {
+        "id": "1897-078:1892:24:419",
+        "source_id": "1897-078",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "946e723713c3e3b95122314a1ccab8f84ac5d7ccdf7dd2f21cfb39b90db2097d",
+        "year": 1892,
+        "start": 366,
+        "end": 433,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 24,
+        "department_start": 366,
+        "department_end": 381,
+        "citation_start": 419,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "общаго собранія Правительствующаго Сената въ рѣшеніи 1892 года № 24",
+        "target_url": null,
+        "department_evidence": "общаго собранія",
+        "context_start": 186,
+        "context_end": 653,
+        "context_original": "то въ немъ сдѣлано распоряженіе о недвижимыхъ имѣніяхъ, состоящихъ изъ пахатныхъ, сѣнокосныхъ и усадебныхъ земель, принадлежащихъ дворянину, вслѣдствіе чего и согласно разъясненію общаго собранія Правительствующаго Сената въ рѣшеніи 1892 года № 24, такое имѣніе, не смотря на то, что оно находится въ чертѣ города Несвижа, какъ это удостовѣряетъ Несвижская городская дума (удостовѣреніе 18 января 1894 года № 147), и оплачивается уволочнымъ сборомъ въ пользу города, ",
+        "passage_id": "1897-078:0-1806",
+        "pages": [
+          254
+        ],
+        "sources": [
+          {
+            "page": 254,
+            "page_method": "header",
+            "file": "p0138_L.txt",
+            "start": 0,
+            "end": 975
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-078?mode=precedent&ref=1897-078%3A1892%3A24%3A419&at=366&end=433",
+        "scan_available": true
+      },
+      {
+        "id": "1897-078:1894:147:583",
+        "source_id": "1897-078",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "946e723713c3e3b95122314a1ccab8f84ac5d7ccdf7dd2f21cfb39b90db2097d",
+        "year": 1894,
+        "start": 411,
+        "end": 598,
+        "department": null,
+        "association": null,
+        "number": 147,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 583,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1892 года № 24, такое имѣніе, не смотря на то, что оно находится въ чертѣ города Несвижа, какъ это удостовѣряетъ Несвижская городская дума (удостовѣреніе 18 января 1894 года № 147",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 231,
+        "context_end": 818,
+        "context_original": " имѣніяхъ, состоящихъ изъ пахатныхъ, сѣнокосныхъ и усадебныхъ земель, принадлежащихъ дворянину, вслѣдствіе чего и согласно разъясненію общаго собранія Правительствующаго Сената въ рѣшеніи 1892 года № 24, такое имѣніе, не смотря на то, что оно находится въ чертѣ города Несвижа, какъ это удостовѣряетъ Несвижская городская дума (удостовѣреніе 18 января 1894 года № 147), и оплачивается уволочнымъ сборомъ въ пользу города, должно быть признано помѣщичьимъ имѣніемъ. А какъ по разъясненію Правительствующаго Сената, изложенному въ томъ же рѣшеніи, всякое помѣщичье имѣніе, гдѣ бы оно ни на",
+        "passage_id": "1897-078:0-1806",
+        "pages": [
+          254
+        ],
+        "sources": [
+          {
+            "page": 254,
+            "page_method": "header",
+            "file": "p0138_L.txt",
+            "start": 0,
+            "end": 975
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-078?mode=precedent&ref=1897-078%3A1894%3A147%3A583&at=411&end=598",
+        "scan_available": true
+      },
+      {
+        "id": "1897-078:1893:17:1696",
+        "source_id": "1897-078",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "946e723713c3e3b95122314a1ccab8f84ac5d7ccdf7dd2f21cfb39b90db2097d",
+        "year": 1893,
+        "start": 1646,
+        "end": 1710,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 17,
+        "department_start": 1654,
+        "department_end": 1669,
+        "citation_start": 1696,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніе общаго собранія Правительствующаго Сената 1893 года № 17",
+        "target_url": null,
+        "department_evidence": "общаго собранія",
+        "context_start": 1466,
+        "context_end": 1930,
+        "context_original": "ая судебная палата нашла опредѣленіе окружнаго суда, по изложеннымъ въ немъ основаніямъ, правильнымъ, а частную жалобу на оное повѣреннаго Мярковской незаслуживающею уваженія, ибо рѣшеніе общаго собранія Правительствующаго Сената 1893 года № 17, на которое ссылается проситель, не имѣетъ вовсе того смысла, въ какомъ его толкуетъ жалобщикъ. По мнѣнію его, помѣщичьими имѣніями слѣдуетъ разумѣть только такія дворянскія имѣнія, которыя были въ свое время населены к",
+        "passage_id": "1897-078:0-1806",
+        "pages": [
+          255
+        ],
+        "sources": [
+          {
+            "page": 255,
+            "page_method": "header",
+            "file": "p0138_R.txt",
+            "start": 1542,
+            "end": 3278
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-078?mode=precedent&ref=1897-078%3A1893%3A17%3A1696&at=1646&end=1710",
+        "scan_available": true
+      },
+      {
+        "id": "1897-078:1892:24:3774",
+        "source_id": "1897-078",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "946e723713c3e3b95122314a1ccab8f84ac5d7ccdf7dd2f21cfb39b90db2097d",
+        "year": 1892,
+        "start": 3688,
+        "end": 3786,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 24,
+        "department_start": 3696,
+        "department_end": 3711,
+        "citation_start": 3774,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшенія общаго собранія 1-го и кассаціонныхъ департаментовъ Правительствующаго Сената 1892 г. № 24",
+        "target_url": null,
+        "department_evidence": "общаго собранія",
+        "context_start": 3508,
+        "context_end": 4006,
+        "context_original": "ной и сѣнокосной земли, хотя и находится въ предѣлахъ городской черты? Судебная палата въ обжалованномъ опредѣленіи разрѣшаетъ этотъ вопросъ въ утвердительномъ смыслѣ, ссылаясь на рѣшенія общаго собранія 1-го и кассаціонныхъ департаментовъ Правительствующаго Сената 1892 г. № 24 и 1893 г. № 17. Въ первомъ изъ этихъ рѣшеній Правительствующій Сенатъ призналъ, что, по точному смыслу примѣчанія 2-го къ ст. 698 и приложенія къ оному т. X ч. 1 св. зак. гражд. изд. 1887 г., лицамъ польскаго происхожде",
+        "passage_id": "1897-078:3117-4774",
+        "pages": [
+          255
+        ],
+        "sources": [
+          {
+            "page": 255,
+            "page_method": "header",
+            "file": "p0138_R.txt",
+            "start": 3280,
+            "end": 3905
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-078?mode=precedent&ref=1897-078%3A1892%3A24%3A3774&at=3688&end=3786",
+        "scan_available": true
+      },
+      {
+        "id": "1897-078:1893:17:3789",
+        "source_id": "1897-078",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "946e723713c3e3b95122314a1ccab8f84ac5d7ccdf7dd2f21cfb39b90db2097d",
+        "year": 1893,
+        "start": 3688,
+        "end": 3801,
+        "department": "Общее собрание",
+        "association": "list",
+        "number": 17,
+        "department_start": 3696,
+        "department_end": 3711,
+        "citation_start": 3789,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшенія общаго собранія 1-го и кассаціонныхъ департаментовъ Правительствующаго Сената 1892 г. № 24 и 1893 г. № 17",
+        "target_url": null,
+        "department_evidence": "общаго собранія",
+        "context_start": 3508,
+        "context_end": 4021,
+        "context_original": "ной и сѣнокосной земли, хотя и находится въ предѣлахъ городской черты? Судебная палата въ обжалованномъ опредѣленіи разрѣшаетъ этотъ вопросъ въ утвердительномъ смыслѣ, ссылаясь на рѣшенія общаго собранія 1-го и кассаціонныхъ департаментовъ Правительствующаго Сената 1892 г. № 24 и 1893 г. № 17. Въ первомъ изъ этихъ рѣшеній Правительствующій Сенатъ призналъ, что, по точному смыслу примѣчанія 2-го къ ст. 698 и приложенія къ оному т. X ч. 1 св. зак. гражд. изд. 1887 г., лицамъ польскаго происхожденія въ Западном",
+        "passage_id": "1897-078:3117-4774",
+        "pages": [
+          255
+        ],
+        "sources": [
+          {
+            "page": 255,
+            "page_method": "header",
+            "file": "p0138_R.txt",
+            "start": 3280,
+            "end": 3905
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-078?mode=precedent&ref=1897-078%3A1893%3A17%3A3789&at=3688&end=3801",
+        "scan_available": true
+      },
+      {
+        "id": "1897-078:1893:17:4425",
+        "source_id": "1897-078",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "946e723713c3e3b95122314a1ccab8f84ac5d7ccdf7dd2f21cfb39b90db2097d",
+        "year": 1893,
+        "start": 4394,
+        "end": 4439,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 17,
+        "department_start": 4402,
+        "department_end": 4417,
+        "citation_start": 4425,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи общаго собранія Сената 1893 года № 17",
+        "target_url": null,
+        "department_evidence": "общаго собранія",
+        "context_start": 4214,
+        "context_end": 4659,
+        "context_original": "ю пріобрѣтателямъ дарованныхъ закономъ и отдѣльными привилегіями владѣльцамъ городовъ вотчинныхъ правъ, они не могутъ. То же положеніе повторено и въ приведенномъ судебною палатою рѣшеніи общаго собранія Сената 1893 года № 17. Это послѣднее рѣшеніе состоялось по вопросу объ ограниченіи правоспособности евреевъ въ отношеніи землевладѣнія, вытекающемъ изъ закона 10 іюня 1864 года и заключающемся въ воспрещеніи всѣмъ безъ исключенія евреямъ прі",
+        "passage_id": "1897-078:3117-4774",
+        "pages": [
+          256
+        ],
+        "sources": [
+          {
+            "page": 256,
+            "page_method": "header",
+            "file": "p0139_L.txt",
+            "start": 3906,
+            "end": 4774
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-078?mode=precedent&ref=1897-078%3A1893%3A17%3A4425&at=4394&end=4439",
+        "scan_available": true
+      },
+      {
+        "id": "1897-078:1870:334:5210",
+        "source_id": "1897-078",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "946e723713c3e3b95122314a1ccab8f84ac5d7ccdf7dd2f21cfb39b90db2097d",
+        "year": 1870,
+        "start": 5182,
+        "end": 5223,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 334,
+        "department_start": 5187,
+        "department_end": 5209,
+        "citation_start": 5210,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гражд. кассац. департ. 1870 г. № 334",
+        "target_url": null,
+        "department_evidence": "гражд. кассац. департ.",
+        "context_start": 5002,
+        "context_end": 5443,
+        "context_original": "конъ (9 ст. уст. гр. суд.) не дозволяетъ суду недостатокъ въ спеціальномъ постановленіи по одному предмету восполнять спеціальнымъ постановленіемъ, изданнымъ для другого предмета (рѣш. гражд. кассац. департ. 1870 г. № 334, 1884 г. №№ 59 и 108, 1885 г. № 85 и друг.). Всѣдствіе сего, сдѣланное при толкованіи закона 10 іюня 1864 года указаніе на хозяйственное назначеніе земли (пахотныя и сѣнокосныя земли), какъ на признакъ земель помѣщичьих",
+        "passage_id": "1897-078:4485-6166",
+        "pages": [
+          256
+        ],
+        "sources": [
+          {
+            "page": 256,
+            "page_method": "header",
+            "file": "p0139_L.txt",
+            "start": 4485,
+            "end": 6166
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-078?mode=precedent&ref=1897-078%3A1870%3A334%3A5210&at=5182&end=5223",
+        "scan_available": true
+      },
+      {
+        "id": "1897-078:1884:59:5225",
+        "source_id": "1897-078",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "946e723713c3e3b95122314a1ccab8f84ac5d7ccdf7dd2f21cfb39b90db2097d",
+        "year": 1884,
+        "start": 5182,
+        "end": 5244,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 59,
+        "department_start": 5187,
+        "department_end": 5209,
+        "citation_start": 5225,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гражд. кассац. департ. 1870 г. № 334, 1884 г. №№ 59 и 108",
+        "target_url": null,
+        "department_evidence": "гражд. кассац. департ.",
+        "context_start": 5002,
+        "context_end": 5464,
+        "context_original": "конъ (9 ст. уст. гр. суд.) не дозволяетъ суду недостатокъ въ спеціальномъ постановленіи по одному предмету восполнять спеціальнымъ постановленіемъ, изданнымъ для другого предмета (рѣш. гражд. кассац. департ. 1870 г. № 334, 1884 г. №№ 59 и 108, 1885 г. № 85 и друг.). Всѣдствіе сего, сдѣланное при толкованіи закона 10 іюня 1864 года указаніе на хозяйственное назначеніе земли (пахотныя и сѣнокосныя земли), какъ на признакъ земель помѣщичьихъ или крестьянскихъ, ",
+        "passage_id": "1897-078:4485-6166",
+        "pages": [
+          256
+        ],
+        "sources": [
+          {
+            "page": 256,
+            "page_method": "header",
+            "file": "p0139_L.txt",
+            "start": 4485,
+            "end": 6166
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-078?mode=precedent&ref=1897-078%3A1884%3A59%3A5225&at=5182&end=5244",
+        "scan_available": true
+      },
+      {
+        "id": "1897-078:1884:108:5225",
+        "source_id": "1897-078",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "946e723713c3e3b95122314a1ccab8f84ac5d7ccdf7dd2f21cfb39b90db2097d",
+        "year": 1884,
+        "start": 5182,
+        "end": 5244,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 108,
+        "department_start": 5187,
+        "department_end": 5209,
+        "citation_start": 5225,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гражд. кассац. департ. 1870 г. № 334, 1884 г. №№ 59 и 108",
+        "target_url": null,
+        "department_evidence": "гражд. кассац. департ.",
+        "context_start": 5002,
+        "context_end": 5464,
+        "context_original": "конъ (9 ст. уст. гр. суд.) не дозволяетъ суду недостатокъ въ спеціальномъ постановленіи по одному предмету восполнять спеціальнымъ постановленіемъ, изданнымъ для другого предмета (рѣш. гражд. кассац. департ. 1870 г. № 334, 1884 г. №№ 59 и 108, 1885 г. № 85 и друг.). Всѣдствіе сего, сдѣланное при толкованіи закона 10 іюня 1864 года указаніе на хозяйственное назначеніе земли (пахотныя и сѣнокосныя земли), какъ на признакъ земель помѣщичьихъ или крестьянскихъ, ",
+        "passage_id": "1897-078:4485-6166",
+        "pages": [
+          256
+        ],
+        "sources": [
+          {
+            "page": 256,
+            "page_method": "header",
+            "file": "p0139_L.txt",
+            "start": 4485,
+            "end": 6166
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-078?mode=precedent&ref=1897-078%3A1884%3A108%3A5225&at=5182&end=5244",
+        "scan_available": true
+      },
+      {
+        "id": "1897-078:1885:85:5246",
+        "source_id": "1897-078",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "946e723713c3e3b95122314a1ccab8f84ac5d7ccdf7dd2f21cfb39b90db2097d",
+        "year": 1885,
+        "start": 5182,
+        "end": 5258,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 85,
+        "department_start": 5187,
+        "department_end": 5209,
+        "citation_start": 5246,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гражд. кассац. департ. 1870 г. № 334, 1884 г. №№ 59 и 108, 1885 г. № 85",
+        "target_url": null,
+        "department_evidence": "гражд. кассац. департ.",
+        "context_start": 5002,
+        "context_end": 5478,
+        "context_original": "конъ (9 ст. уст. гр. суд.) не дозволяетъ суду недостатокъ въ спеціальномъ постановленіи по одному предмету восполнять спеціальнымъ постановленіемъ, изданнымъ для другого предмета (рѣш. гражд. кассац. департ. 1870 г. № 334, 1884 г. №№ 59 и 108, 1885 г. № 85 и друг.). Всѣдствіе сего, сдѣланное при толкованіи закона 10 іюня 1864 года указаніе на хозяйственное назначеніе земли (пахотныя и сѣнокосныя земли), какъ на признакъ земель помѣщичьихъ или крестьянскихъ, не можетъ быть",
+        "passage_id": "1897-078:4485-6166",
+        "pages": [
+          256
+        ],
+        "sources": [
+          {
+            "page": 256,
+            "page_method": "header",
+            "file": "p0139_L.txt",
+            "start": 4485,
+            "end": 6166
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-078?mode=precedent&ref=1897-078%3A1885%3A85%3A5246&at=5182&end=5258",
+        "scan_available": true
+      },
+      {
+        "id": "1897-078:1892:24:6007",
+        "source_id": "1897-078",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "946e723713c3e3b95122314a1ccab8f84ac5d7ccdf7dd2f21cfb39b90db2097d",
+        "year": 1892,
+        "start": 5983,
+        "end": 6019,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 24,
+        "department_start": 5991,
+        "department_end": 6006,
+        "citation_start": 6007,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи общаго собранія 1892 г. № 24",
+        "target_url": null,
+        "department_evidence": "общаго собранія",
+        "context_start": 5803,
+        "context_end": 6239,
+        "context_original": " образомъ, въ данномъ случаѣ, для признанія завѣщаннаго дворяниномъ Мярковскимъ имущества помѣщичьимъ имѣніемъ, судебной палатѣ надлежало, сообразно съ указаніями, преподанными въ рѣшеніи общаго собранія 1892 г. № 24, установить: принадлежали ли когда либо къ этому имуществу крестьяне или чиншевики, или были ли присвоены владѣльцамъ его какія либо особыя права. При отсутствіи въ дѣлѣ указаній по означеннымъ предметамъ, примѣнивъ 2 о",
+        "passage_id": "1897-078:4485-6166",
+        "pages": [
+          256
+        ],
+        "sources": [
+          {
+            "page": 256,
+            "page_method": "header",
+            "file": "p0139_L.txt",
+            "start": 5924,
+            "end": 6955
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-078?mode=precedent&ref=1897-078%3A1892%3A24%3A6007&at=5983&end=6019",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-078",
     "scan_pages": [

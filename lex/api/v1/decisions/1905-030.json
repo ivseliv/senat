@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-030",
@@ -55,6 +55,203 @@
       "1905-5887414f84f6",
       "1905-5b6c63a251a3",
       "1905-fa8d65b720e2"
+    ],
+    "precedents": [
+      {
+        "id": "1905-030:1902:36:10151",
+        "source_id": "1905-030",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "b56718c40655934f46402df8ed5c80ec21eec0964c8ab75f3e3aa9459548e034",
+        "year": 1902,
+        "start": 10117,
+        "end": 10165,
+        "department": null,
+        "association": null,
+        "number": 36,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 10151,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи Правительствующаго Сената 1902 года № 36",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 9937,
+        "context_end": 10385,
+        "context_original": "въ истощеніи и уничтоженіи ея сущности, никакъ не можетъ считаться договоромъ аренды; но, имѣя всѣ признаки продажи, долженъ быть признанъ договоромъ купли-продажи ископаемаго. Въ рѣшеніи Правительствующаго Сената 1902 года № 36 разъяснено, что договоръ, по которому собственникъ земли передаетъ другому контрагенту, за условленную плату, право на разработку и добываніе въ свою пользу всякаго рода ископаемыхъ въ нѣдрахъ имѣнія, имѣетъ всѣ признак",
+        "passage_id": "1905-030:9415-11106",
+        "pages": [
+          77
+        ],
+        "sources": [
+          {
+            "page": 77,
+            "page_method": "header",
+            "file": "p0039_R.txt",
+            "start": 9415,
+            "end": 10881
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-030?mode=precedent&ref=1905-030%3A1902%3A36%3A10151&at=10117&end=10165",
+        "scan_available": true
+      },
+      {
+        "id": "1905-030:1882:59:10514",
+        "source_id": "1905-030",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "b56718c40655934f46402df8ed5c80ec21eec0964c8ab75f3e3aa9459548e034",
+        "year": 1882,
+        "start": 10503,
+        "end": 10526,
+        "department": null,
+        "association": null,
+        "number": 59,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 10514,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ (1882 г. № 59",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 10323,
+        "context_end": 10746,
+        "context_original": "всякаго рода ископаемыхъ въ нѣдрахъ имѣнія, имѣетъ всѣ признаки продажи и, по свойству своего предмета, долженъ быть признанъ договоромъ купли-продажи движимости. Также во многихъ рѣшеніяхъ (1882 г. № 59, 1880 г. № 265, 1877 г. № 186, 1874 г. № 375) Правительствующій Сенатъ разъяснилъ, что лѣсъ на корню, какъ составная часть недвижимаго имѣнія, есть имущество недвижимое, но онъ становится движимостью со времени его выру",
+        "passage_id": "1905-030:9415-11106",
+        "pages": [
+          77
+        ],
+        "sources": [
+          {
+            "page": 77,
+            "page_method": "header",
+            "file": "p0039_R.txt",
+            "start": 9415,
+            "end": 10881
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-030?mode=precedent&ref=1905-030%3A1882%3A59%3A10514&at=10503&end=10526",
+        "scan_available": true
+      },
+      {
+        "id": "1905-030:1880:265:10528",
+        "source_id": "1905-030",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "b56718c40655934f46402df8ed5c80ec21eec0964c8ab75f3e3aa9459548e034",
+        "year": 1880,
+        "start": 10503,
+        "end": 10541,
+        "department": null,
+        "association": null,
+        "number": 265,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 10528,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ (1882 г. № 59, 1880 г. № 265",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 10323,
+        "context_end": 10761,
+        "context_original": "всякаго рода ископаемыхъ въ нѣдрахъ имѣнія, имѣетъ всѣ признаки продажи и, по свойству своего предмета, долженъ быть признанъ договоромъ купли-продажи движимости. Также во многихъ рѣшеніяхъ (1882 г. № 59, 1880 г. № 265, 1877 г. № 186, 1874 г. № 375) Правительствующій Сенатъ разъяснилъ, что лѣсъ на корню, какъ составная часть недвижимаго имѣнія, есть имущество недвижимое, но онъ становится движимостью со времени его вырубки, а посему п",
+        "passage_id": "1905-030:9415-11106",
+        "pages": [
+          77
+        ],
+        "sources": [
+          {
+            "page": 77,
+            "page_method": "header",
+            "file": "p0039_R.txt",
+            "start": 9415,
+            "end": 10881
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-030?mode=precedent&ref=1905-030%3A1880%3A265%3A10528&at=10503&end=10541",
+        "scan_available": true
+      },
+      {
+        "id": "1905-030:1877:186:10543",
+        "source_id": "1905-030",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "b56718c40655934f46402df8ed5c80ec21eec0964c8ab75f3e3aa9459548e034",
+        "year": 1877,
+        "start": 10503,
+        "end": 10556,
+        "department": null,
+        "association": null,
+        "number": 186,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 10543,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ (1882 г. № 59, 1880 г. № 265, 1877 г. № 186",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 10323,
+        "context_end": 10776,
+        "context_original": "всякаго рода ископаемыхъ въ нѣдрахъ имѣнія, имѣетъ всѣ признаки продажи и, по свойству своего предмета, долженъ быть признанъ договоромъ купли-продажи движимости. Также во многихъ рѣшеніяхъ (1882 г. № 59, 1880 г. № 265, 1877 г. № 186, 1874 г. № 375) Правительствующій Сенатъ разъяснилъ, что лѣсъ на корню, какъ составная часть недвижимаго имѣнія, есть имущество недвижимое, но онъ становится движимостью со времени его вырубки, а посему продажа лѣса на ",
+        "passage_id": "1905-030:9415-11106",
+        "pages": [
+          77
+        ],
+        "sources": [
+          {
+            "page": 77,
+            "page_method": "header",
+            "file": "p0039_R.txt",
+            "start": 9415,
+            "end": 10881
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-030?mode=precedent&ref=1905-030%3A1877%3A186%3A10543&at=10503&end=10556",
+        "scan_available": true
+      },
+      {
+        "id": "1905-030:1874:375:10558",
+        "source_id": "1905-030",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "b56718c40655934f46402df8ed5c80ec21eec0964c8ab75f3e3aa9459548e034",
+        "year": 1874,
+        "start": 10503,
+        "end": 10571,
+        "department": null,
+        "association": null,
+        "number": 375,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 10558,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ (1882 г. № 59, 1880 г. № 265, 1877 г. № 186, 1874 г. № 375",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 10323,
+        "context_end": 10791,
+        "context_original": "всякаго рода ископаемыхъ въ нѣдрахъ имѣнія, имѣетъ всѣ признаки продажи и, по свойству своего предмета, долженъ быть признанъ договоромъ купли-продажи движимости. Также во многихъ рѣшеніяхъ (1882 г. № 59, 1880 г. № 265, 1877 г. № 186, 1874 г. № 375) Правительствующій Сенатъ разъяснилъ, что лѣсъ на корню, какъ составная часть недвижимаго имѣнія, есть имущество недвижимое, но онъ становится движимостью со времени его вырубки, а посему продажа лѣса на срубъ считается",
+        "passage_id": "1905-030:9415-11106",
+        "pages": [
+          77
+        ],
+        "sources": [
+          {
+            "page": 77,
+            "page_method": "header",
+            "file": "p0039_R.txt",
+            "start": 9415,
+            "end": 10881
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-030?mode=precedent&ref=1905-030%3A1874%3A375%3A10558&at=10503&end=10571",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-030",
     "scan_pages": [

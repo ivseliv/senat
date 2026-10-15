@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1896-039",
@@ -57,6 +57,203 @@
       ]
     ],
     "participant_ids": [],
+    "precedents": [
+      {
+        "id": "1896-039:1876:1:7039",
+        "source_id": "1896-039",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "6c79f9583a001f3f12182a792fbd84a3c42d95121d8bae890003ac5ebdbff198",
+        "year": 1876,
+        "start": 6988,
+        "end": 7052,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 1,
+        "department_start": 7007,
+        "department_end": 7016,
+        "citation_start": 7039,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшен яхъ сво ихъ (Общ. Собр. 1-гои Кассац. Д-товъ 1876 года № 1",
+        "target_url": null,
+        "department_evidence": "Общ. Собр",
+        "context_start": 6808,
+        "context_end": 7272,
+        "context_original": "й въ случаяхъ, по добныхъ настоящему, уже неоднскрат но восходилъ на разрѣшеніе Прави тельствующаго Сената, по представле ніямъ Военнаго Министра, и П/авите^ь- ствующій Сенатъ, въ рѣшен яхъ сво ихъ (Общ. Собр. 1-гои Кассац. Д-товъ 1876 года № 1, по дѣлу рядоэаго Пи- сляка, Общ. Собр. Касс. Дтовъ 1888 года № 11 по дѣлу о поврежден'и те леграфа нижними чинами 37 пѣхотна го Нейшлотскаго полка, того же года № 20 по дѣлу рядоваго Вархотскаго и рѣш. отъ 24-го мая 1 ",
+        "passage_id": "1896-039:6226-7726",
+        "pages": [
+          781
+        ],
+        "sources": [
+          {
+            "page": 781,
+            "page_method": "header",
+            "file": "p0074.txt",
+            "start": 6226,
+            "end": 7726
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-039?mode=precedent&ref=1896-039%3A1876%3A1%3A7039&at=6988&end=7052",
+        "scan_available": true
+      },
+      {
+        "id": "1896-039:1888:11:7105",
+        "source_id": "1896-039",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "6c79f9583a001f3f12182a792fbd84a3c42d95121d8bae890003ac5ebdbff198",
+        "year": 1888,
+        "start": 6988,
+        "end": 7119,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 11,
+        "department_start": 7082,
+        "department_end": 7091,
+        "citation_start": 7105,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшен яхъ сво ихъ (Общ. Собр. 1-гои Кассац. Д-товъ 1876 года № 1, по дѣлу рядоэаго Пи- сляка, Общ. Собр. Касс. Дтовъ 1888 года № 11",
+        "target_url": null,
+        "department_evidence": "Общ. Собр",
+        "context_start": 6808,
+        "context_end": 7339,
+        "context_original": "й въ случаяхъ, по добныхъ настоящему, уже неоднскрат но восходилъ на разрѣшеніе Прави тельствующаго Сената, по представле ніямъ Военнаго Министра, и П/авите^ь- ствующій Сенатъ, въ рѣшен яхъ сво ихъ (Общ. Собр. 1-гои Кассац. Д-товъ 1876 года № 1, по дѣлу рядоэаго Пи- сляка, Общ. Собр. Касс. Дтовъ 1888 года № 11 по дѣлу о поврежден'и те леграфа нижними чинами 37 пѣхотна го Нейшлотскаго полка, того же года № 20 по дѣлу рядоваго Вархотскаго и рѣш. отъ 24-го мая 1 82 года по дѣлу канон. Качара) разъяснилъ, что пунктъ .2 ст. 314 во",
+        "passage_id": "1896-039:6226-7726",
+        "pages": [
+          781
+        ],
+        "sources": [
+          {
+            "page": 781,
+            "page_method": "header",
+            "file": "p0074.txt",
+            "start": 6226,
+            "end": 7726
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-039?mode=precedent&ref=1896-039%3A1888%3A11%3A7105&at=6988&end=7119",
+        "scan_available": true
+      },
+      {
+        "id": "1896-039:1888:20:9795",
+        "source_id": "1896-039",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "6c79f9583a001f3f12182a792fbd84a3c42d95121d8bae890003ac5ebdbff198",
+        "year": 1888,
+        "start": 9790,
+        "end": 9809,
+        "department": null,
+        "association": null,
+        "number": 20,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 9795,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1888 года № 20",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 9610,
+        "context_end": 10029,
+        "context_original": "мый при совмѣст номъ исполненіи своихъ служебныхъ обязанностей не находились, а потому нашелъ невозможнымъ признать слѣд ствіе по сему дѣлу подвѣдомственнымъ военному слѣдователю (рѣш. 1888 года № 20). Въ виду изложен наго разъясненія и принимая въ соображеніе, что на казаковъ Жда нова и Рытикова возникаетъ обвине ніе въ кражѣ денегъ на сумму болѣе 300 р. у войсковаго старшины Крюко ва, у котораго они находились каз",
+        "passage_id": "1896-039:8610-9811",
+        "pages": [
+          782
+        ],
+        "sources": [
+          {
+            "page": 782,
+            "page_method": "neighbors",
+            "file": "p0075.txt",
+            "start": 9559,
+            "end": 11107
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-039?mode=precedent&ref=1896-039%3A1888%3A20%3A9795&at=9790&end=9809",
+        "scan_available": true
+      },
+      {
+        "id": "1896-039:1881:138:10239",
+        "source_id": "1896-039",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "6c79f9583a001f3f12182a792fbd84a3c42d95121d8bae890003ac5ebdbff198",
+        "year": 1881,
+        "start": 10211,
+        "end": 10251,
+        "department": null,
+        "association": null,
+        "number": 138,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 10239,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. главнаго военнаго суда 1881 г. №138",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 10031,
+        "context_end": 10471,
+        "context_original": " ною прислугою; что кража эта состав ляетъ преступленіе общее и относится къ числу предусмотрѣнныхъ 1655 (ч. 3) и 1659 ст. улож. о наказ. домашнихъ кражъ слугами у своихъ хозяевъ (рѣш. главнаго военнаго суда 1881 г. №138 и 1886 г. № 60); что означенное пре ступленіе совершено въ частной квар тирѣ войсковаго старшины Крюкова, т. е. въ мѣстѣ, не состоящемъ въ ис- ключительномъ вѣдѣн.и военнаго на чальства, что при сове^шени сего пре ступл",
+        "passage_id": "1896-039:9559-11107",
+        "pages": [
+          782
+        ],
+        "sources": [
+          {
+            "page": 782,
+            "page_method": "neighbors",
+            "file": "p0075.txt",
+            "start": 9559,
+            "end": 11107
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-039?mode=precedent&ref=1896-039%3A1881%3A138%3A10239&at=10211&end=10251",
+        "scan_available": true
+      },
+      {
+        "id": "1896-039:1886:60:10254",
+        "source_id": "1896-039",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "6c79f9583a001f3f12182a792fbd84a3c42d95121d8bae890003ac5ebdbff198",
+        "year": 1886,
+        "start": 10211,
+        "end": 10266,
+        "department": null,
+        "association": null,
+        "number": 60,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 10254,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. главнаго военнаго суда 1881 г. №138 и 1886 г. № 60",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 10031,
+        "context_end": 10486,
+        "context_original": " ною прислугою; что кража эта состав ляетъ преступленіе общее и относится къ числу предусмотрѣнныхъ 1655 (ч. 3) и 1659 ст. улож. о наказ. домашнихъ кражъ слугами у своихъ хозяевъ (рѣш. главнаго военнаго суда 1881 г. №138 и 1886 г. № 60); что означенное пре ступленіе совершено въ частной квар тирѣ войсковаго старшины Крюкова, т. е. въ мѣстѣ, не состоящемъ въ ис- ключительномъ вѣдѣн.и военнаго на чальства, что при сове^шени сего пре ступленія потерпѣвші",
+        "passage_id": "1896-039:9559-11107",
+        "pages": [
+          782
+        ],
+        "sources": [
+          {
+            "page": 782,
+            "page_method": "neighbors",
+            "file": "p0075.txt",
+            "start": 9559,
+            "end": 11107
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-039?mode=precedent&ref=1896-039%3A1886%3A60%3A10254&at=10211&end=10266",
+        "scan_available": true
+      }
+    ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1896-039",
     "scan_pages": [
       {

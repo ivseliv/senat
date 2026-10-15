@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-101",
@@ -66,6 +66,242 @@
       "1904-560489123515",
       "1904-ed86c0317e4e",
       "1904-e22773d7475b"
+    ],
+    "precedents": [
+      {
+        "id": "1904-101:1875:970:2988",
+        "source_id": "1904-101",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "616bd28832249df4dc212c5bdaab4b996b91a256851663951507d6f4ebb86145",
+        "year": 1875,
+        "start": 2983,
+        "end": 3001,
+        "department": null,
+        "association": null,
+        "number": 970,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2988,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1875 г. № 970",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2803,
+        "context_end": 3221,
+        "context_original": "я въ дѣйствіе устава гражд. судопр. 20 ноября 1864 г. самъ судъ, помимо заявленія тяжущихся, обязанъ былъ обращать вниманіе на пропускъ истцомъ давностнаго срока для начатія иска (рѣш. 1875 г. № 970), такъ какъ въ законѣ не заключалось правила, изложеннаго нынѣ въ 132 и 706 ст. уст. гражд. суд., а было указано, что, кто не учинилъ или не учинитъ иска о недвижимомъ или движимомъ имуществѣ въ теченіе давности, такой ",
+        "passage_id": "1904-101:2550-4189",
+        "pages": [
+          279
+        ],
+        "sources": [
+          {
+            "page": 279,
+            "page_method": "header",
+            "file": "p0140_R.txt",
+            "start": 2550,
+            "end": 4189
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-101?mode=precedent&ref=1904-101%3A1875%3A970%3A2988&at=2983&end=3001",
+        "scan_available": true
+      },
+      {
+        "id": "1904-101:1874:339:3823",
+        "source_id": "1904-101",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "616bd28832249df4dc212c5bdaab4b996b91a256851663951507d6f4ebb86145",
+        "year": 1874,
+        "start": 3818,
+        "end": 3836,
+        "department": null,
+        "association": null,
+        "number": 339,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3823,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1874 г. № 339",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3638,
+        "context_end": 4056,
+        "context_original": "не имѣетъ права основывать своихъ рѣшеній на давности, если тяжущіеся на нее не ссылались (ст. 132 и 706), будетъ-ли эта давность десятилѣтняя, или менѣе продолжительныхъ сроковъ (рѣш. 1874 г. № 339 и друг.). Касатся вопроса о давности судъ въ правѣ лишь тогда, когда на нее ссылались тяжущіеся, а это значитъ, по отношенію къ погасительной давности, что судъ не долженъ обсуждать этого вопроса, пока отвѣтчикъ не заяв",
+        "passage_id": "1904-101:2550-4189",
+        "pages": [
+          279
+        ],
+        "sources": [
+          {
+            "page": 279,
+            "page_method": "header",
+            "file": "p0140_R.txt",
+            "start": 2550,
+            "end": 4189
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-101?mode=precedent&ref=1904-101%3A1874%3A339%3A3823&at=3818&end=3836",
+        "scan_available": true
+      },
+      {
+        "id": "1904-101:1875:970:4174",
+        "source_id": "1904-101",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "616bd28832249df4dc212c5bdaab4b996b91a256851663951507d6f4ebb86145",
+        "year": 1875,
+        "start": 4169,
+        "end": 4187,
+        "department": null,
+        "association": null,
+        "number": 970,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4174,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1875 г. № 970",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3989,
+        "context_end": 4407,
+        "context_original": "что судъ не долженъ обсуждать этого вопроса, пока отвѣтчикъ не заявитъ, что „право“ на предъявленный къ нему „искъ“ погашено истеченіемъ установленнаго для него давностнаго срока (рѣш. 1875 г. № 970). По общему смыслу законовъ о давности одно наступленіе давностнаго срока не уничтожаетъ, само по себѣ, правоотношеній, вытекающихъ изъ обязательства, и обязательство не становится, въ этомъ случаѣ, само по себѣ ничтожн",
+        "passage_id": "1904-101:2550-4189",
+        "pages": [
+          279
+        ],
+        "sources": [
+          {
+            "page": 279,
+            "page_method": "header",
+            "file": "p0140_R.txt",
+            "start": 3949,
+            "end": 4535
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-101?mode=precedent&ref=1904-101%3A1875%3A970%3A4174&at=4169&end=4187",
+        "scan_available": true
+      },
+      {
+        "id": "1904-101:1891:26:4514",
+        "source_id": "1904-101",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "616bd28832249df4dc212c5bdaab4b996b91a256851663951507d6f4ebb86145",
+        "year": 1891,
+        "start": 4509,
+        "end": 4526,
+        "department": null,
+        "association": null,
+        "number": 26,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4514,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1891 г. № 26",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4329,
+        "context_end": 4746,
+        "context_original": "тельства, и обязательство не становится, въ этомъ случаѣ, само по себѣ ничтожнымъ, а сохраняетъ силу, пока обязанное къ его исполненію лицо не сошлется на погашающую его давность (рѣш. 1891 г. № 26). Обяза- тельство продолжаетъ свое существованіе, если отвѣтчикъ не защищается возраженіемъ о давности (ст. 589 уст. гражд. судопр.), все равно по причинѣ ли нежеланія прибѣгать къ такому средству защиты, по другимъ ли ",
+        "passage_id": "1904-101:3949-5612",
+        "pages": [
+          279
+        ],
+        "sources": [
+          {
+            "page": 279,
+            "page_method": "header",
+            "file": "p0140_R.txt",
+            "start": 3949,
+            "end": 4535
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-101?mode=precedent&ref=1904-101%3A1891%3A26%3A4514&at=4509&end=4526",
+        "scan_available": true
+      },
+      {
+        "id": "1904-101:1896:2:5902",
+        "source_id": "1904-101",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "616bd28832249df4dc212c5bdaab4b996b91a256851663951507d6f4ebb86145",
+        "year": 1896,
+        "start": 5897,
+        "end": 5913,
+        "department": null,
+        "association": null,
+        "number": 2,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5902,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1896 г. № 2",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5717,
+        "context_end": 6133,
+        "context_original": "кой ея выводъ, какъ относящійся къ существу дѣла, не подлежитъ, за силою 5 ст. учр. суд. уст., кассаціонной повѣркѣ, какъ равно не подлежитъ повѣркѣ и признаніе палатой излишнимъ (рѣш. 1896 г. № 2; 1895 г. № 11 и друг.) допросъ свидѣтелей о томъ, что, при предъявленіи агентами дороги квитанцій къ платежу, просьбы представителей торговаго дома дать имъ возможность провѣрить правильность платежей оставлялись безъ у",
+        "passage_id": "1904-101:5368-6603",
+        "pages": [
+          280
+        ],
+        "sources": [
+          {
+            "page": 280,
+            "page_method": "header",
+            "file": "p0141_L.txt",
+            "start": 5368,
+            "end": 6603
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-101?mode=precedent&ref=1904-101%3A1896%3A2%3A5902&at=5897&end=5913",
+        "scan_available": true
+      },
+      {
+        "id": "1904-101:1895:11:5915",
+        "source_id": "1904-101",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "616bd28832249df4dc212c5bdaab4b996b91a256851663951507d6f4ebb86145",
+        "year": 1895,
+        "start": 5897,
+        "end": 5927,
+        "department": null,
+        "association": null,
+        "number": 11,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5915,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1896 г. № 2; 1895 г. № 11",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5717,
+        "context_end": 6147,
+        "context_original": "кой ея выводъ, какъ относящійся къ существу дѣла, не подлежитъ, за силою 5 ст. учр. суд. уст., кассаціонной повѣркѣ, какъ равно не подлежитъ повѣркѣ и признаніе палатой излишнимъ (рѣш. 1896 г. № 2; 1895 г. № 11 и друг.) допросъ свидѣтелей о томъ, что, при предъявленіи агентами дороги квитанцій къ платежу, просьбы представителей торговаго дома дать имъ возможность провѣрить правильность платежей оставлялись безъ уваженія и толь",
+        "passage_id": "1904-101:5368-6603",
+        "pages": [
+          280
+        ],
+        "sources": [
+          {
+            "page": 280,
+            "page_method": "header",
+            "file": "p0141_L.txt",
+            "start": 5368,
+            "end": 6603
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-101?mode=precedent&ref=1904-101%3A1895%3A11%3A5915&at=5897&end=5927",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-101",
     "scan_pages": [

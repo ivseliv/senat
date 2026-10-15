@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-085",
@@ -48,6 +48,47 @@
     "participant_ids": [
       "1905-c030a80cf27d",
       "1905-a4a59ad45234"
+    ],
+    "precedents": [
+      {
+        "id": "1905-085:1898:2:4039",
+        "source_id": "1905-085",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "203183a22e2747f6f8b4c60b686931b9694982e92a7ac7a7addfbbd2620666df",
+        "year": 1898,
+        "start": 4031,
+        "end": 4050,
+        "department": null,
+        "association": null,
+        "number": 2,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4039,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1898 г. № 2",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3851,
+        "context_end": 4270,
+        "context_original": "творить обязавшагося къ послугамъ слѣдующею по договору платою за время, въ которое послѣдній не будетъ занятъ. Хотя эта статья, какъ это разъяснено Правительствующимъ Сенатомъ въ рѣшеніи 1898 г. № 2, по буквальному смыслу ея, имѣетъ въ виду лишь случай временнаго оставленія безъ занятій обязавшагося лица, однако не подлежитъ сомнѣнію, что дѣйствіе ея распространяется и на случай совершеннаго отказа сему лицу отъ за",
+        "passage_id": "1905-085:2509-4276",
+        "pages": [
+          234
+        ],
+        "sources": [
+          {
+            "page": 234,
+            "page_method": "header",
+            "file": "p0118_L.txt",
+            "start": 4044,
+            "end": 5147
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-085?mode=precedent&ref=1905-085%3A1898%3A2%3A4039&at=4031&end=4050",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-085",
     "scan_pages": [

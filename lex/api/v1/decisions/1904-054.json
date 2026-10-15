@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-054",
@@ -105,6 +105,679 @@
       "1904-10724420b2ed",
       "1904-96728d1abe1c",
       "1904-0c7600e16e43"
+    ],
+    "precedents": [
+      {
+        "id": "1904-054:1881:93:2321",
+        "source_id": "1904-054",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e2c1b22326639bb9f1504bd084effd867f05b8ff86005a42eecdc2cb5d783e10",
+        "year": 1881,
+        "start": 2298,
+        "end": 2333,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 93,
+        "department_start": 2303,
+        "department_end": 2320,
+        "citation_start": 2321,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гражд. касс. д-та 1881 г. № 93",
+        "target_url": null,
+        "department_evidence": "гражд. касс. д-та",
+        "context_start": 2118,
+        "context_end": 2553,
+        "context_original": " того же, именно—закрытія оконъ и снесенія шкафа, выходящихъ на владѣемое ими дворовое мѣсто. Слѣдовательно, ихъ требованіе къ отвѣтчикамъ и основаніе иска остались неизмѣненными (рѣш. гражд. касс. д-та 1881 г. № 93). Разъясненіе же истцами объема своихъ правъ на усадьбу, относительно которой допущены приписываемыя отвѣтчикамъ нарушенія (446 и 447 ст. 1 ч. X т. св. зак.), не составляетъ воспрещеннаго 332 ст. уст. гр. суд. измѣненія",
+        "passage_id": "1904-054:1757-3316",
+        "pages": [
+          150
+        ],
+        "sources": [
+          {
+            "page": 150,
+            "page_method": "header",
+            "file": "p0076_L.txt",
+            "start": 2124,
+            "end": 3189
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-054?mode=precedent&ref=1904-054%3A1881%3A93%3A2321&at=2298&end=2333",
+        "scan_available": true
+      },
+      {
+        "id": "1904-054:1877:160:5102",
+        "source_id": "1904-054",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e2c1b22326639bb9f1504bd084effd867f05b8ff86005a42eecdc2cb5d783e10",
+        "year": 1877,
+        "start": 5097,
+        "end": 5115,
+        "department": null,
+        "association": null,
+        "number": 160,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5102,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1877 г. № 160",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4917,
+        "context_end": 5335,
+        "context_original": "аетъ уваженія, потому что хотя, при такомъ недостаткѣ, судебное мѣсто не можетъ быть обвинено въ нарушеніи ст. 456 уст. гр. суд., если оставитъ подобные документы безъ обсужденія (рѣш. 1877 г. № 160),—но ни въ какомъ случаѣ принятіе ихъ къ разсмотрѣнію не можетъ составить повода къ отмѣнѣ рѣшенія,—ибо, очевидно, что если судебное мѣсто сдѣлало изъ представленныхъ документовъ определенный выводъ, въ смыслѣ доказател",
+        "passage_id": "1904-054:4117-5775",
+        "pages": [
+          150
+        ],
+        "sources": [
+          {
+            "page": 150,
+            "page_method": "header",
+            "file": "p0076_L.txt",
+            "start": 4117,
+            "end": 5189
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-054?mode=precedent&ref=1904-054%3A1877%3A160%3A5102&at=5097&end=5115",
+        "scan_available": true
+      },
+      {
+        "id": "1904-054:1868:480:9243",
+        "source_id": "1904-054",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e2c1b22326639bb9f1504bd084effd867f05b8ff86005a42eecdc2cb5d783e10",
+        "year": 1868,
+        "start": 9238,
+        "end": 9256,
+        "department": null,
+        "association": null,
+        "number": 480,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 9243,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1868 г. № 480",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 9058,
+        "context_end": 9476,
+        "context_original": "аться обязательнымъ,—и посему, непринятіе палатою во вниманіе изложеннаго мнѣнія строительнаго отдѣленія, вопреки мнѣнію просителя, не составляетъ нарушенія 456 ст. уст. гр. суд. (рѣш. 1868 г. № 480). Что же касается до возбужденнаго въ кассаціонной жалобѣ, не подвергавшагося еще разъясненію кассаціоннаго департамента Сената вопроса о томъ,—принадлежитъ-ли чиншевому владѣльцу право на искъ о закрытіи выходящихъ на ",
+        "passage_id": "1904-054:8300-10021",
+        "pages": [
+          152
+        ],
+        "sources": [
+          {
+            "page": 152,
+            "page_method": "header",
+            "file": "p0077_L.txt",
+            "start": 8300,
+            "end": 10021
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-054?mode=precedent&ref=1904-054%3A1868%3A480%3A9243&at=9238&end=9256",
+        "scan_available": true
+      },
+      {
+        "id": "1904-054:1877:109:9798",
+        "source_id": "1904-054",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e2c1b22326639bb9f1504bd084effd867f05b8ff86005a42eecdc2cb5d783e10",
+        "year": 1877,
+        "start": 9793,
+        "end": 9816,
+        "department": null,
+        "association": null,
+        "number": 109,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 9798,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1877 г. № 109, 113",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 9613,
+        "context_end": 10036,
+        "context_original": "атнымъ разъясненіямъ его, подъ чиншевымъ правомъ разумѣется вѣчное, потомственное пользованіе за опредѣленную навсегда плату—чиншъ землею съ правомъ отчужденія такого пользованія (рѣш. 1877 г. № 109, 113; 1880 г. № 147; 1884 г. № 141 и др.); иначе говоря,—владѣніе на чиншевомъ правѣ есть совокупность всѣхъ соединенныхъ съ владѣніемъ вообще правъ, т.-е. какъ обладаніе имуществомъ, такъ и пользованіе онымъ. По праву же не",
+        "passage_id": "1904-054:8300-10021",
+        "pages": [
+          152
+        ],
+        "sources": [
+          {
+            "page": 152,
+            "page_method": "header",
+            "file": "p0077_L.txt",
+            "start": 9803,
+            "end": 11306
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-054?mode=precedent&ref=1904-054%3A1877%3A109%3A9798&at=9793&end=9816",
+        "scan_available": true
+      },
+      {
+        "id": "1904-054:1877:113:9798",
+        "source_id": "1904-054",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e2c1b22326639bb9f1504bd084effd867f05b8ff86005a42eecdc2cb5d783e10",
+        "year": 1877,
+        "start": 9793,
+        "end": 9816,
+        "department": null,
+        "association": null,
+        "number": 113,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 9798,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1877 г. № 109, 113",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 9613,
+        "context_end": 10036,
+        "context_original": "атнымъ разъясненіямъ его, подъ чиншевымъ правомъ разумѣется вѣчное, потомственное пользованіе за опредѣленную навсегда плату—чиншъ землею съ правомъ отчужденія такого пользованія (рѣш. 1877 г. № 109, 113; 1880 г. № 147; 1884 г. № 141 и др.); иначе говоря,—владѣніе на чиншевомъ правѣ есть совокупность всѣхъ соединенныхъ съ владѣніемъ вообще правъ, т.-е. какъ обладаніе имуществомъ, такъ и пользованіе онымъ. По праву же не",
+        "passage_id": "1904-054:8300-10021",
+        "pages": [
+          152
+        ],
+        "sources": [
+          {
+            "page": 152,
+            "page_method": "header",
+            "file": "p0077_L.txt",
+            "start": 9803,
+            "end": 11306
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-054?mode=precedent&ref=1904-054%3A1877%3A113%3A9798&at=9793&end=9816",
+        "scan_available": true
+      },
+      {
+        "id": "1904-054:1880:147:9818",
+        "source_id": "1904-054",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e2c1b22326639bb9f1504bd084effd867f05b8ff86005a42eecdc2cb5d783e10",
+        "year": 1880,
+        "start": 9793,
+        "end": 9831,
+        "department": null,
+        "association": null,
+        "number": 147,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 9818,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1877 г. № 109, 113; 1880 г. № 147",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 9613,
+        "context_end": 10051,
+        "context_original": "атнымъ разъясненіямъ его, подъ чиншевымъ правомъ разумѣется вѣчное, потомственное пользованіе за опредѣленную навсегда плату—чиншъ землею съ правомъ отчужденія такого пользованія (рѣш. 1877 г. № 109, 113; 1880 г. № 147; 1884 г. № 141 и др.); иначе говоря,—владѣніе на чиншевомъ правѣ есть совокупность всѣхъ соединенныхъ съ владѣніемъ вообще правъ, т.-е. какъ обладаніе имуществомъ, такъ и пользованіе онымъ. По праву же неограниченнаго п",
+        "passage_id": "1904-054:8300-10021",
+        "pages": [
+          152
+        ],
+        "sources": [
+          {
+            "page": 152,
+            "page_method": "header",
+            "file": "p0077_L.txt",
+            "start": 9803,
+            "end": 11306
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-054?mode=precedent&ref=1904-054%3A1880%3A147%3A9818&at=9793&end=9831",
+        "scan_available": true
+      },
+      {
+        "id": "1904-054:1884:141:9833",
+        "source_id": "1904-054",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e2c1b22326639bb9f1504bd084effd867f05b8ff86005a42eecdc2cb5d783e10",
+        "year": 1884,
+        "start": 9793,
+        "end": 9846,
+        "department": null,
+        "association": null,
+        "number": 141,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 9833,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1877 г. № 109, 113; 1880 г. № 147; 1884 г. № 141",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 9613,
+        "context_end": 10066,
+        "context_original": "атнымъ разъясненіямъ его, подъ чиншевымъ правомъ разумѣется вѣчное, потомственное пользованіе за опредѣленную навсегда плату—чиншъ землею съ правомъ отчужденія такого пользованія (рѣш. 1877 г. № 109, 113; 1880 г. № 147; 1884 г. № 141 и др.); иначе говоря,—владѣніе на чиншевомъ правѣ есть совокупность всѣхъ соединенныхъ съ владѣніемъ вообще правъ, т.-е. какъ обладаніе имуществомъ, такъ и пользованіе онымъ. По праву же неограниченнаго пользованія чинш",
+        "passage_id": "1904-054:8300-10021",
+        "pages": [
+          152
+        ],
+        "sources": [
+          {
+            "page": 152,
+            "page_method": "header",
+            "file": "p0077_L.txt",
+            "start": 9803,
+            "end": 11306
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-054?mode=precedent&ref=1904-054%3A1884%3A141%3A9833&at=9793&end=9846",
+        "scan_available": true
+      },
+      {
+        "id": "1904-054:1877:110:10227",
+        "source_id": "1904-054",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e2c1b22326639bb9f1504bd084effd867f05b8ff86005a42eecdc2cb5d783e10",
+        "year": 1877,
+        "start": 10222,
+        "end": 10240,
+        "department": null,
+        "association": null,
+        "number": 110,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 10227,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1877 г. № 110",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 10042,
+        "context_end": 10460,
+        "context_original": "ченнаго пользованія чиншевому владѣльцу принадлежатъ и всѣ выгоды, извлекаемыя изъ этого пользованія, а также и право распоряженія, право залога, продажи и передачи по наслѣдству (рѣш. 1877 г. № 110), и это право, будучи вещнымъ и притомъ не срочнымъ, а потомственнымъ и вѣчнымъ, должно быть обсуживаемо аналогично съ владѣніемъ, происходящимъ на правѣ собственности, и потому всѣ атрибуты сего владѣнія должны быть об",
+        "passage_id": "1904-054:9803-11698",
+        "pages": [
+          152
+        ],
+        "sources": [
+          {
+            "page": 152,
+            "page_method": "header",
+            "file": "p0077_L.txt",
+            "start": 9803,
+            "end": 11306
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-054?mode=precedent&ref=1904-054%3A1877%3A110%3A10227&at=10222&end=10240",
+        "scan_available": true
+      },
+      {
+        "id": "1904-054:1880:20:10550",
+        "source_id": "1904-054",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e2c1b22326639bb9f1504bd084effd867f05b8ff86005a42eecdc2cb5d783e10",
+        "year": 1880,
+        "start": 10545,
+        "end": 10562,
+        "department": null,
+        "association": null,
+        "number": 20,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 10550,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1880 г. № 20",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 10365,
+        "context_end": 10782,
+        "context_original": "ніемъ, происходящимъ на правѣ собственности, и потому всѣ атрибуты сего владѣнія должны быть обсуживаемы по тѣмъ же началамъ, которыя относятся къ владѣнію на правѣ собственности (рѣш. 1880 г. № 20). Отсюда слѣдуетъ, что и указанное въ 445—447 ст. 1 ч. X т. право требовать, чтобы сосѣдній владѣлецъ не совершалъ по отношенію къ чиншевой усадьбѣ исчисленныхъ въ тѣхъ статьяхъ нарушеній,—примѣнимо и къ случаямъ вѣчно-",
+        "passage_id": "1904-054:9803-11698",
+        "pages": [
+          152
+        ],
+        "sources": [
+          {
+            "page": 152,
+            "page_method": "header",
+            "file": "p0077_L.txt",
+            "start": 9803,
+            "end": 11306
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-054?mode=precedent&ref=1904-054%3A1880%3A20%3A10550&at=10545&end=10562",
+        "scan_available": true
+      },
+      {
+        "id": "1904-054:1874:763:13573",
+        "source_id": "1904-054",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e2c1b22326639bb9f1504bd084effd867f05b8ff86005a42eecdc2cb5d783e10",
+        "year": 1874,
+        "start": 13568,
+        "end": 13586,
+        "department": null,
+        "association": null,
+        "number": 763,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 13573,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1874 г. № 763",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 13388,
+        "context_end": 13806,
+        "context_original": "требованій и о томъ, къ кому изъ привлекаемыхъ къ отвѣту лицъ каждое изъ требованій относится, за силою 5 ст. учр. суд. уст., не можетъ подлежать повѣркѣ въ кассаціонномъ порядкѣ (рѣш. 1874 г. № 763, 1879 г. № 209, 1886 г. № 17 и др.). Относительно же отвѣтственности по такому иску собственника имѣнія или его арендатора, Правительствующимъ Сенатомъ въ рѣшеніи 1886 г. № 95 разъяснено, что требованіе, вытекающее изъ ",
+        "passage_id": "1904-054:12698-14301",
+        "pages": [
+          153
+        ],
+        "sources": [
+          {
+            "page": 153,
+            "page_method": "header",
+            "file": "p0077_R.txt",
+            "start": 12698,
+            "end": 14301
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-054?mode=precedent&ref=1904-054%3A1874%3A763%3A13573&at=13568&end=13586",
+        "scan_available": true
+      },
+      {
+        "id": "1904-054:1879:209:13588",
+        "source_id": "1904-054",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e2c1b22326639bb9f1504bd084effd867f05b8ff86005a42eecdc2cb5d783e10",
+        "year": 1879,
+        "start": 13568,
+        "end": 13601,
+        "department": null,
+        "association": null,
+        "number": 209,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 13588,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1874 г. № 763, 1879 г. № 209",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 13388,
+        "context_end": 13821,
+        "context_original": "требованій и о томъ, къ кому изъ привлекаемыхъ къ отвѣту лицъ каждое изъ требованій относится, за силою 5 ст. учр. суд. уст., не можетъ подлежать повѣркѣ въ кассаціонномъ порядкѣ (рѣш. 1874 г. № 763, 1879 г. № 209, 1886 г. № 17 и др.). Относительно же отвѣтственности по такому иску собственника имѣнія или его арендатора, Правительствующимъ Сенатомъ въ рѣшеніи 1886 г. № 95 разъяснено, что требованіе, вытекающее изъ права участія ч",
+        "passage_id": "1904-054:12698-14301",
+        "pages": [
+          153
+        ],
+        "sources": [
+          {
+            "page": 153,
+            "page_method": "header",
+            "file": "p0077_R.txt",
+            "start": 12698,
+            "end": 14301
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-054?mode=precedent&ref=1904-054%3A1879%3A209%3A13588&at=13568&end=13601",
+        "scan_available": true
+      },
+      {
+        "id": "1904-054:1886:17:13603",
+        "source_id": "1904-054",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e2c1b22326639bb9f1504bd084effd867f05b8ff86005a42eecdc2cb5d783e10",
+        "year": 1886,
+        "start": 13568,
+        "end": 13615,
+        "department": null,
+        "association": null,
+        "number": 17,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 13603,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1874 г. № 763, 1879 г. № 209, 1886 г. № 17",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 13388,
+        "context_end": 13835,
+        "context_original": "требованій и о томъ, къ кому изъ привлекаемыхъ къ отвѣту лицъ каждое изъ требованій относится, за силою 5 ст. учр. суд. уст., не можетъ подлежать повѣркѣ въ кассаціонномъ порядкѣ (рѣш. 1874 г. № 763, 1879 г. № 209, 1886 г. № 17 и др.). Относительно же отвѣтственности по такому иску собственника имѣнія или его арендатора, Правительствующимъ Сенатомъ въ рѣшеніи 1886 г. № 95 разъяснено, что требованіе, вытекающее изъ права участія частнаго, может",
+        "passage_id": "1904-054:12698-14301",
+        "pages": [
+          153
+        ],
+        "sources": [
+          {
+            "page": 153,
+            "page_method": "header",
+            "file": "p0077_R.txt",
+            "start": 12698,
+            "end": 14301
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-054?mode=precedent&ref=1904-054%3A1886%3A17%3A13603&at=13568&end=13615",
+        "scan_available": true
+      },
+      {
+        "id": "1904-054:1886:95:13750",
+        "source_id": "1904-054",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e2c1b22326639bb9f1504bd084effd867f05b8ff86005a42eecdc2cb5d783e10",
+        "year": 1886,
+        "start": 13742,
+        "end": 13762,
+        "department": null,
+        "association": null,
+        "number": 95,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 13750,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1886 г. № 95",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 13562,
+        "context_end": 13982,
+        "context_original": "ядкѣ (рѣш. 1874 г. № 763, 1879 г. № 209, 1886 г. № 17 и др.). Относительно же отвѣтственности по такому иску собственника имѣнія или его арендатора, Правительствующимъ Сенатомъ въ рѣшеніи 1886 г. № 95 разъяснено, что требованіе, вытекающее изъ права участія частнаго, можетъ быть обращено не только къ собственнику имѣнія, но и къ арендатору, за неимѣніемъ въ законахъ (ст. 442—448 ч. 1 т. X) никакого указанія на то, чт",
+        "passage_id": "1904-054:12698-14301",
+        "pages": [
+          153
+        ],
+        "sources": [
+          {
+            "page": 153,
+            "page_method": "header",
+            "file": "p0077_R.txt",
+            "start": 12698,
+            "end": 14301
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-054?mode=precedent&ref=1904-054%3A1886%3A95%3A13750&at=13742&end=13762",
+        "scan_available": true
+      },
+      {
+        "id": "1904-054:1874:286:14258",
+        "source_id": "1904-054",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e2c1b22326639bb9f1504bd084effd867f05b8ff86005a42eecdc2cb5d783e10",
+        "year": 1874,
+        "start": 14253,
+        "end": 14277,
+        "department": null,
+        "association": null,
+        "number": 286,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 14258,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1874 г. № 286 и 465",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 14073,
+        "context_end": 14301,
+        "context_original": "ѣнія, а не къ арендатору или вообще къ временному владѣльцу имѣнія, въ тѣхъ случаяхъ, когда нарушеніе означеннаго права произошло со стороны лица, временно пользующагося имѣніемъ (рѣш. 1874 г. № 286 и 465, 1875 г. № 922, 1880 г.",
+        "passage_id": "1904-054:12698-14301",
+        "pages": [
+          153
+        ],
+        "sources": [
+          {
+            "page": 153,
+            "page_method": "header",
+            "file": "p0077_R.txt",
+            "start": 14084,
+            "end": 14301
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-054?mode=precedent&ref=1904-054%3A1874%3A286%3A14258&at=14253&end=14277",
+        "scan_available": true
+      },
+      {
+        "id": "1904-054:1874:465:14258",
+        "source_id": "1904-054",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e2c1b22326639bb9f1504bd084effd867f05b8ff86005a42eecdc2cb5d783e10",
+        "year": 1874,
+        "start": 14253,
+        "end": 14277,
+        "department": null,
+        "association": null,
+        "number": 465,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 14258,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1874 г. № 286 и 465",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 14073,
+        "context_end": 14301,
+        "context_original": "ѣнія, а не къ арендатору или вообще къ временному владѣльцу имѣнія, въ тѣхъ случаяхъ, когда нарушеніе означеннаго права произошло со стороны лица, временно пользующагося имѣніемъ (рѣш. 1874 г. № 286 и 465, 1875 г. № 922, 1880 г.",
+        "passage_id": "1904-054:12698-14301",
+        "pages": [
+          153
+        ],
+        "sources": [
+          {
+            "page": 153,
+            "page_method": "header",
+            "file": "p0077_R.txt",
+            "start": 14084,
+            "end": 14301
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-054?mode=precedent&ref=1904-054%3A1874%3A465%3A14258&at=14253&end=14277",
+        "scan_available": true
+      },
+      {
+        "id": "1904-054:1875:922:14279",
+        "source_id": "1904-054",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e2c1b22326639bb9f1504bd084effd867f05b8ff86005a42eecdc2cb5d783e10",
+        "year": 1875,
+        "start": 14253,
+        "end": 14292,
+        "department": null,
+        "association": null,
+        "number": 922,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 14279,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1874 г. № 286 и 465, 1875 г. № 922",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 14073,
+        "context_end": 14301,
+        "context_original": "ѣнія, а не къ арендатору или вообще къ временному владѣльцу имѣнія, въ тѣхъ случаяхъ, когда нарушеніе означеннаго права произошло со стороны лица, временно пользующагося имѣніемъ (рѣш. 1874 г. № 286 и 465, 1875 г. № 922, 1880 г.",
+        "passage_id": "1904-054:12698-14301",
+        "pages": [
+          153
+        ],
+        "sources": [
+          {
+            "page": 153,
+            "page_method": "header",
+            "file": "p0077_R.txt",
+            "start": 14084,
+            "end": 14301
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-054?mode=precedent&ref=1904-054%3A1875%3A922%3A14279&at=14253&end=14292",
+        "scan_available": true
+      },
+      {
+        "id": "1904-054:1880:235:14294",
+        "source_id": "1904-054",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e2c1b22326639bb9f1504bd084effd867f05b8ff86005a42eecdc2cb5d783e10",
+        "year": 1880,
+        "start": 14253,
+        "end": 14308,
+        "department": null,
+        "association": null,
+        "number": 235,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 14294,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1874 г. № 286 и 465, 1875 г. № 922, 1880 г.\n\n№ 235",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 14073,
+        "context_end": 14528,
+        "context_original": "ѣнія, а не къ арендатору или вообще къ временному владѣльцу имѣнія, въ тѣхъ случаяхъ, когда нарушеніе означеннаго права произошло со стороны лица, временно пользующагося имѣніемъ (рѣш. 1874 г. № 286 и 465, 1875 г. № 922, 1880 г.\n\n№ 235). По настоящему дѣлу судебною палатою признано, что какъ Петровымъ, такъ и Шацами допущены приписываемыя имъ нарушенія правъ Черкесовъ. За установленіемъ же палатою существа исковыхъ требованій и совокупной вины отвѣтчи",
+        "passage_id": "1904-054:14084-15006",
+        "pages": [
+          153,
+          154
+        ],
+        "sources": [
+          {
+            "page": 153,
+            "page_method": "header",
+            "file": "p0077_R.txt",
+            "start": 14084,
+            "end": 14301
+          },
+          {
+            "page": 154,
+            "page_method": "header",
+            "file": "p0078_L.txt",
+            "start": 14303,
+            "end": 15006
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-054?mode=precedent&ref=1904-054%3A1880%3A235%3A14294&at=14253&end=14308",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-054",
     "scan_pages": [

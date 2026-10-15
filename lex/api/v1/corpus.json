@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "corpus",
   "item": {
     "volumes": [
@@ -62,6 +62,7 @@
       "legislation_acts": 9,
       "legislation_citations": 832,
       "scan_passage_refs": 3293,
+      "precedent_references": 826,
       "editorial_analyses": 10,
       "guides": 3
     },
@@ -76,6 +77,7 @@
       "statutes",
       "ai_summary",
       "ai_concepts"
-    ]
+    ],
+    "precedents": "Переход устанавливается только по департаменту, году и номеру; неопределённые ссылки сохранены с контекстом без target_id. Старые пары cites не пригодны для переходов."
   }
 }

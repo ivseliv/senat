@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1896-034",
@@ -37,6 +37,47 @@
     },
     "cites": [],
     "participant_ids": [],
+    "precedents": [
+      {
+        "id": "1896-034:1869:1311:3148",
+        "source_id": "1896-034",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "181a2a83ed25a8294913df58e7af605461f8b49add03c2a826c2efc9d424f92c",
+        "year": 1869,
+        "start": 3088,
+        "end": 3163,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 1311,
+        "department_start": 3093,
+        "department_end": 3105,
+        "citation_start": 3148,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. Гражд. Касс. второй изъ постановленныхъ вопросовъ Д-та 1869 года №1311",
+        "target_url": null,
+        "department_evidence": "Гражд. Касс.",
+        "context_start": 2908,
+        "context_end": 3383,
+        "context_original": "ла, т. е. въ окруж- выдачи,: препровождаетъ, вмѣстѣ съ номъ судѣ или у мироваго судьи. Зата- тѣмъ, и поступившіе къ нему испол- кимъ разрѣшеніемъ перваго вопроса, нительные листы (рѣш. Гражд. Касс. второй изъ постановленныхъ вопросовъ Д-та 1869 года №1311). Конечно, если, разрѣшается самъ собою. Отмѣтки на кромѣ препровожденныхъ присутствен- исполнительномъ листѣ (957 ст. уст. нымъ мѣстомъ капиталовъ должника, гражд. суд.) о приведеніи рѣшенія въ ис- другихъ какихъ либо ",
+        "passage_id": "1896-034:2114-3645",
+        "pages": [
+          773
+        ],
+        "sources": [
+          {
+            "page": 773,
+            "page_method": "neighbors",
+            "file": "p0066.txt",
+            "start": 2347,
+            "end": 3645
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-034?mode=precedent&ref=1896-034%3A1869%3A1311%3A3148&at=3088&end=3163",
+        "scan_available": true
+      }
+    ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1896-034",
     "scan_pages": [
       {

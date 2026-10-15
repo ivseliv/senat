@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-006",
@@ -62,6 +62,359 @@
       "1897-1ec1ec0b4bf0",
       "1897-53dcbf8366b5",
       "1897-46a77754891c"
+    ],
+    "precedents": [
+      {
+        "id": "1897-006:1882:66:4673",
+        "source_id": "1897-006",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c0dee0e0224b8ef6ee56e83dcd3ab15650eab8784cb433503a6c0f040267aae6",
+        "year": 1882,
+        "start": 4410,
+        "end": 4685,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 66,
+        "department_start": 4608,
+        "department_end": 4628,
+        "citation_start": 4673,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніе окружнаго суда о признаніи несостоятельности Талышханова злостною. Права выше поименованныхъ апелляторовъ въ этомъ отношеніи отличаются отъ общихъ кредиторскихъ правъ, которыя имѣлъ въ виду гражд. касс. департ. Правит. Сената, разсматривая дѣло Усманова (1882 г. № 66",
+        "target_url": null,
+        "department_evidence": "гражд. касс. департ.",
+        "context_start": 4230,
+        "context_end": 4905,
+        "context_original": "режде всего подлежитъ разсмотрѣнію вопросъ о томъ, имѣютъ-ли кредиторы Талышханова: Яголковскій, князь Масальскій, Маевскій и Рымовичъ право на принесеніе апелляціонныхъ жалобъ на рѣшеніе окружнаго суда о признаніи несостоятельности Талышханова злостною. Права выше поименованныхъ апелляторовъ въ этомъ отношеніи отличаются отъ общихъ кредиторскихъ правъ, которыя имѣлъ въ виду гражд. касс. департ. Правит. Сената, разсматривая дѣло Усманова (1882 г. № 66), и разъясняя, что кредиторы, при отсутствіи жалобы самого несостоятельнаго, не имѣютъ права жаловаться судебной палатѣ на рѣшеніе окружнаго суда о признаніи несостоятельности злостною. Яголковскій, князь Масальскій, Ма",
+        "passage_id": "1897-006:3125-4871",
+        "pages": [
+          23
+        ],
+        "sources": [
+          {
+            "page": 23,
+            "page_method": "header",
+            "file": "p0022_R.txt",
+            "start": 4608,
+            "end": 6757
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-006?mode=precedent&ref=1897-006%3A1882%3A66%3A4673&at=4410&end=4685",
+        "scan_available": true
+      },
+      {
+        "id": "1897-006:1882:66:21281",
+        "source_id": "1897-006",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c0dee0e0224b8ef6ee56e83dcd3ab15650eab8784cb433503a6c0f040267aae6",
+        "year": 1882,
+        "start": 21215,
+        "end": 21293,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 66,
+        "department_start": 21223,
+        "department_end": 21262,
+        "citation_start": 21281,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніе гражданскаго кассаціоннаго департамента по дѣлу Усманова (1882 г. № 66",
+        "target_url": null,
+        "department_evidence": "гражданскаго кассаціоннаго департамента",
+        "context_start": 21035,
+        "context_end": 21513,
+        "context_original": "аго повѣреннаго Михайлова о томъ, что кассаціонныя жалобы просителей не подлежатъ разсмотрѣнію, Правительствующій Сенатъ находитъ, что помянутое заявленіе подкрѣпляется ссылкою на рѣшеніе гражданскаго кассаціоннаго департамента по дѣлу Усманова (1882 г. № 66). Въ этомъ рѣшеніи Правительствующій Сенатъ, относительно права обжалованія рѣшеній окружнаго суда о свойствѣ несостоятельности, высказалъ то положеніе, что кредиторы не могутъ жаловаться на признаніе несостоятельнаго д",
+        "passage_id": "1897-006:20033-22156",
+        "pages": [
+          28
+        ],
+        "sources": [
+          {
+            "page": 28,
+            "page_method": "header",
+            "file": "p0025_L.txt",
+            "start": 20639,
+            "end": 22156
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-006?mode=precedent&ref=1897-006%3A1882%3A66%3A21281&at=21215&end=21293",
+        "scan_available": true
+      },
+      {
+        "id": "1897-006:1875:860:21641",
+        "source_id": "1897-006",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c0dee0e0224b8ef6ee56e83dcd3ab15650eab8784cb433503a6c0f040267aae6",
+        "year": 1875,
+        "start": 21618,
+        "end": 21654,
+        "department": null,
+        "association": null,
+        "number": 860,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 21641,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніе по дѣлу Ліона (1875 г. № 860",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 21438,
+        "context_end": 21874,
+        "context_original": "ложеніе, что кредиторы не могутъ жаловаться на признаніе несостоятельнаго должника злостнымъ, если онъ самъ жалобы на это не приносилъ. При этомъ Сенатъ призналъ, что кассаціонное рѣшеніе по дѣлу Ліона (1875 г. № 860), гдѣ такое право за кредиторами признается, непримѣнимо къ дѣлу Усманова потому, что по дѣлу Ліона рѣшеніе окружнаго суда о признаніи несостоятельности Ліона злостною было обжаловано и самимъ должникомъ, по дѣлу же Усм",
+        "passage_id": "1897-006:20033-22156",
+        "pages": [
+          28
+        ],
+        "sources": [
+          {
+            "page": 28,
+            "page_method": "header",
+            "file": "p0025_L.txt",
+            "start": 20639,
+            "end": 22156
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-006?mode=precedent&ref=1897-006%3A1875%3A860%3A21641&at=21618&end=21654",
+        "scan_available": true
+      },
+      {
+        "id": "1897-006:1872:1137:22490",
+        "source_id": "1897-006",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c0dee0e0224b8ef6ee56e83dcd3ab15650eab8784cb433503a6c0f040267aae6",
+        "year": 1872,
+        "start": 22485,
+        "end": 22504,
+        "department": null,
+        "association": null,
+        "number": 1137,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 22490,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1872 г. № 1137",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 22305,
+        "context_end": 22724,
+        "context_original": " обжаловано въ кассаціонномъ порядкѣ, если этимъ постановленіемъ разрѣшается окончательно вопросъ о чьемъ либо правѣ и тѣмъ заканчивается судебное производство по данному вопросу (рѣш. 1872 г. № 1137, 1887 г. № 42 и друг.), принялъ къ разсмотрѣнію кассаціонныя жалобы кредиторовъ Маевскаго и Яголковскаго на преждевременное возбужденіе уголовнаго преслѣдованія противъ Талышханова за злостное банкротство, а противъ кре",
+        "passage_id": "1897-006:21871-23582",
+        "pages": [
+          29
+        ],
+        "sources": [
+          {
+            "page": 29,
+            "page_method": "header",
+            "file": "p0025_R.txt",
+            "start": 22306,
+            "end": 23582
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-006?mode=precedent&ref=1897-006%3A1872%3A1137%3A22490&at=22485&end=22504",
+        "scan_available": true
+      },
+      {
+        "id": "1897-006:1887:42:22506",
+        "source_id": "1897-006",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c0dee0e0224b8ef6ee56e83dcd3ab15650eab8784cb433503a6c0f040267aae6",
+        "year": 1887,
+        "start": 22485,
+        "end": 22518,
+        "department": null,
+        "association": null,
+        "number": 42,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 22506,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1872 г. № 1137, 1887 г. № 42",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 22305,
+        "context_end": 22738,
+        "context_original": " обжаловано въ кассаціонномъ порядкѣ, если этимъ постановленіемъ разрѣшается окончательно вопросъ о чьемъ либо правѣ и тѣмъ заканчивается судебное производство по данному вопросу (рѣш. 1872 г. № 1137, 1887 г. № 42 и друг.), принялъ къ разсмотрѣнію кассаціонныя жалобы кредиторовъ Маевскаго и Яголковскаго на преждевременное возбужденіе уголовнаго преслѣдованія противъ Талышханова за злостное банкротство, а противъ кредиторовъ за со",
+        "passage_id": "1897-006:21871-23582",
+        "pages": [
+          29
+        ],
+        "sources": [
+          {
+            "page": 29,
+            "page_method": "header",
+            "file": "p0025_R.txt",
+            "start": 22306,
+            "end": 23582
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-006?mode=precedent&ref=1897-006%3A1887%3A42%3A22506&at=22485&end=22518",
+        "scan_available": true
+      },
+      {
+        "id": "1897-006:1867:493:34465",
+        "source_id": "1897-006",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c0dee0e0224b8ef6ee56e83dcd3ab15650eab8784cb433503a6c0f040267aae6",
+        "year": 1867,
+        "start": 34453,
+        "end": 34478,
+        "department": null,
+        "association": null,
+        "number": 493,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 34465,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшенія (р. 1867 г. № 493",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 34273,
+        "context_end": 34698,
+        "context_original": "слѣдствіемъ нару- шеніе закона, вслѣдствіе приложенія его къ событію не существующему или противоположному тому, что въ дѣйствительности было, а потому составляетъ поводъ кассаціи рѣшенія (р. 1867 г. № 493, 1869 г. №№ 89 и 1043, 1870 г. № 342 и друг.). 8) Самый выводъ судебной палаты объ умыслѣ сводится къ тому, что Талышхановъ объявилъ себя несостоятельнымъ, умысливъ воспользоваться 3 п. 570 ст. уст. суд. торг., что онъ ",
+        "passage_id": "1897-006:32926-35024",
+        "pages": [
+          33
+        ],
+        "sources": [
+          {
+            "page": 33,
+            "page_method": "header",
+            "file": "p0027_R.txt",
+            "start": 34291,
+            "end": 35024
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-006?mode=precedent&ref=1897-006%3A1867%3A493%3A34465&at=34453&end=34478",
+        "scan_available": true
+      },
+      {
+        "id": "1897-006:1869:89:34480",
+        "source_id": "1897-006",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c0dee0e0224b8ef6ee56e83dcd3ab15650eab8784cb433503a6c0f040267aae6",
+        "year": 1869,
+        "start": 34453,
+        "end": 34500,
+        "department": null,
+        "association": null,
+        "number": 89,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 34480,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшенія (р. 1867 г. № 493, 1869 г. №№ 89 и 1043",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 34273,
+        "context_end": 34720,
+        "context_original": "слѣдствіемъ нару- шеніе закона, вслѣдствіе приложенія его къ событію не существующему или противоположному тому, что въ дѣйствительности было, а потому составляетъ поводъ кассаціи рѣшенія (р. 1867 г. № 493, 1869 г. №№ 89 и 1043, 1870 г. № 342 и друг.). 8) Самый выводъ судебной палаты объ умыслѣ сводится къ тому, что Талышхановъ объявилъ себя несостоятельнымъ, умысливъ воспользоваться 3 п. 570 ст. уст. суд. торг., что онъ „сознательно совершилъ",
+        "passage_id": "1897-006:32926-35024",
+        "pages": [
+          33
+        ],
+        "sources": [
+          {
+            "page": 33,
+            "page_method": "header",
+            "file": "p0027_R.txt",
+            "start": 34291,
+            "end": 35024
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-006?mode=precedent&ref=1897-006%3A1869%3A89%3A34480&at=34453&end=34500",
+        "scan_available": true
+      },
+      {
+        "id": "1897-006:1869:1043:34480",
+        "source_id": "1897-006",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c0dee0e0224b8ef6ee56e83dcd3ab15650eab8784cb433503a6c0f040267aae6",
+        "year": 1869,
+        "start": 34453,
+        "end": 34500,
+        "department": null,
+        "association": null,
+        "number": 1043,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 34480,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшенія (р. 1867 г. № 493, 1869 г. №№ 89 и 1043",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 34273,
+        "context_end": 34720,
+        "context_original": "слѣдствіемъ нару- шеніе закона, вслѣдствіе приложенія его къ событію не существующему или противоположному тому, что въ дѣйствительности было, а потому составляетъ поводъ кассаціи рѣшенія (р. 1867 г. № 493, 1869 г. №№ 89 и 1043, 1870 г. № 342 и друг.). 8) Самый выводъ судебной палаты объ умыслѣ сводится къ тому, что Талышхановъ объявилъ себя несостоятельнымъ, умысливъ воспользоваться 3 п. 570 ст. уст. суд. торг., что онъ „сознательно совершилъ",
+        "passage_id": "1897-006:32926-35024",
+        "pages": [
+          33
+        ],
+        "sources": [
+          {
+            "page": 33,
+            "page_method": "header",
+            "file": "p0027_R.txt",
+            "start": 34291,
+            "end": 35024
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-006?mode=precedent&ref=1897-006%3A1869%3A1043%3A34480&at=34453&end=34500",
+        "scan_available": true
+      },
+      {
+        "id": "1897-006:1870:342:34502",
+        "source_id": "1897-006",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c0dee0e0224b8ef6ee56e83dcd3ab15650eab8784cb433503a6c0f040267aae6",
+        "year": 1870,
+        "start": 34453,
+        "end": 34515,
+        "department": null,
+        "association": null,
+        "number": 342,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 34502,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшенія (р. 1867 г. № 493, 1869 г. №№ 89 и 1043, 1870 г. № 342",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 34273,
+        "context_end": 34735,
+        "context_original": "слѣдствіемъ нару- шеніе закона, вслѣдствіе приложенія его къ событію не существующему или противоположному тому, что въ дѣйствительности было, а потому составляетъ поводъ кассаціи рѣшенія (р. 1867 г. № 493, 1869 г. №№ 89 и 1043, 1870 г. № 342 и друг.). 8) Самый выводъ судебной палаты объ умыслѣ сводится къ тому, что Талышхановъ объявилъ себя несостоятельнымъ, умысливъ воспользоваться 3 п. 570 ст. уст. суд. торг., что онъ „сознательно совершилъ дѣйствія, посл",
+        "passage_id": "1897-006:32926-35024",
+        "pages": [
+          33
+        ],
+        "sources": [
+          {
+            "page": 33,
+            "page_method": "header",
+            "file": "p0027_R.txt",
+            "start": 34291,
+            "end": 35024
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-006?mode=precedent&ref=1897-006%3A1870%3A342%3A34502&at=34453&end=34515",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-006",
     "scan_pages": [

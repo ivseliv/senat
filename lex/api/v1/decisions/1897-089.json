@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-089",
@@ -56,6 +56,47 @@
     "participant_ids": [
       "1897-e25842a6415f",
       "1897-9eed2fa1c7c0"
+    ],
+    "precedents": [
+      {
+        "id": "1897-089:1882:34:5510",
+        "source_id": "1897-089",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "92beb67f56b15c7267ffd098b6c465979f495fbb1c1e4c6c8c4962a094b3e82a",
+        "year": 1882,
+        "start": 5483,
+        "end": 5524,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 34,
+        "department_start": 5488,
+        "department_end": 5509,
+        "citation_start": 5510,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. кас. департамента 1882 года № 34",
+        "target_url": null,
+        "department_evidence": "гр. кас. департамента",
+        "context_start": 5303,
+        "context_end": 5744,
+        "context_original": "юридическаго лица въ области гражданскихъ имущественныхъ правъ. Изъ сопоставленія законовъ, изложенныхъ въ 1074—1082 ст. т. XI уст. духов. дѣлъ иностр. испов., 698 ст. X т. ч. 1 и рѣш. гр. кас. департамента 1882 года № 34, слѣдуетъ придти къ заключенію, что еврейскія молитвенныя общества составляютъ юридическое лицо лишь въ духовномъ смыслѣ и не обладаютъ никакими гражданскими имущественными правами, такъ что каждое молитвенное еврейское",
+        "passage_id": "1897-089:5083-7018",
+        "pages": [
+          291
+        ],
+        "sources": [
+          {
+            "page": 291,
+            "page_method": "header",
+            "file": "p0156_R.txt",
+            "start": 5083,
+            "end": 7018
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-089?mode=precedent&ref=1897-089%3A1882%3A34%3A5510&at=5483&end=5524",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-089",
     "scan_pages": [

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-014",
@@ -45,6 +45,125 @@
     "participant_ids": [
       "1905-13cf6b0edb02",
       "1905-5c9914e438db"
+    ],
+    "precedents": [
+      {
+        "id": "1905-014:1889:129:3954",
+        "source_id": "1905-014",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "781fac3fcb66f6e67ada14f0d2f50ca78ccec0460631c40a531e736405b67490",
+        "year": 1889,
+        "start": 3904,
+        "end": 3967,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 129,
+        "department_start": 3914,
+        "department_end": 3953,
+        "citation_start": 3954,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ гражданскаго кассаціоннаго департамента 1889 г. № 129",
+        "target_url": null,
+        "department_evidence": "гражданскаго кассаціоннаго департамента",
+        "context_start": 3724,
+        "context_end": 4187,
+        "context_original": "диться административнымъ порядкомъ (ст. 38 правилъ 1877 г.), не можетъ препятствовать такому разрѣшенію поставленнаго вопроса въ виду разъясненій, изложенныхъ по этому предмету въ рѣшеніяхъ гражданскаго кассаціоннаго департамента 1889 г. № 129 и общаго собранія 1885 г. № 33 и 28 октября 1902 г. и 28 апрѣля 1903 г. по дѣлу Баранова. По всѣмъ симъ основаніямъ, общее собраніе 1-го и кассаціонныхъ департаментовъ Правительствующаго Сената опредѣлило: признать, что",
+        "passage_id": "1905-014:2886-4629",
+        "pages": [
+          35
+        ],
+        "sources": [
+          {
+            "page": 35,
+            "page_method": "header",
+            "file": "p0018_R.txt",
+            "start": 2886,
+            "end": 4629
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-014?mode=precedent&ref=1905-014%3A1889%3A129%3A3954&at=3904&end=3967",
+        "scan_available": true
+      },
+      {
+        "id": "1905-014:1885:33:3986",
+        "source_id": "1905-014",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "781fac3fcb66f6e67ada14f0d2f50ca78ccec0460631c40a531e736405b67490",
+        "year": 1885,
+        "start": 3904,
+        "end": 4003,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 33,
+        "department_start": 3970,
+        "department_end": 3985,
+        "citation_start": 3986,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ гражданскаго кассаціоннаго департамента 1889 г. № 129 и общаго собранія 1885 г. № 33 и 28",
+        "target_url": null,
+        "department_evidence": "общаго собранія",
+        "context_start": 3724,
+        "context_end": 4223,
+        "context_original": "диться административнымъ порядкомъ (ст. 38 правилъ 1877 г.), не можетъ препятствовать такому разрѣшенію поставленнаго вопроса въ виду разъясненій, изложенныхъ по этому предмету въ рѣшеніяхъ гражданскаго кассаціоннаго департамента 1889 г. № 129 и общаго собранія 1885 г. № 33 и 28 октября 1902 г. и 28 апрѣля 1903 г. по дѣлу Баранова. По всѣмъ симъ основаніямъ, общее собраніе 1-го и кассаціонныхъ департаментовъ Правительствующаго Сената опредѣлило: признать, что предложенный вопросъ разрѣшается ут",
+        "passage_id": "1905-014:2886-4629",
+        "pages": [
+          35
+        ],
+        "sources": [
+          {
+            "page": 35,
+            "page_method": "header",
+            "file": "p0018_R.txt",
+            "start": 2886,
+            "end": 4629
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-014?mode=precedent&ref=1905-014%3A1885%3A33%3A3986&at=3904&end=4003",
+        "scan_available": true
+      },
+      {
+        "id": "1905-014:1885:28:3986",
+        "source_id": "1905-014",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "781fac3fcb66f6e67ada14f0d2f50ca78ccec0460631c40a531e736405b67490",
+        "year": 1885,
+        "start": 3904,
+        "end": 4003,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 28,
+        "department_start": 3970,
+        "department_end": 3985,
+        "citation_start": 3986,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ гражданскаго кассаціоннаго департамента 1889 г. № 129 и общаго собранія 1885 г. № 33 и 28",
+        "target_url": null,
+        "department_evidence": "общаго собранія",
+        "context_start": 3724,
+        "context_end": 4223,
+        "context_original": "диться административнымъ порядкомъ (ст. 38 правилъ 1877 г.), не можетъ препятствовать такому разрѣшенію поставленнаго вопроса въ виду разъясненій, изложенныхъ по этому предмету въ рѣшеніяхъ гражданскаго кассаціоннаго департамента 1889 г. № 129 и общаго собранія 1885 г. № 33 и 28 октября 1902 г. и 28 апрѣля 1903 г. по дѣлу Баранова. По всѣмъ симъ основаніямъ, общее собраніе 1-го и кассаціонныхъ департаментовъ Правительствующаго Сената опредѣлило: признать, что предложенный вопросъ разрѣшается ут",
+        "passage_id": "1905-014:2886-4629",
+        "pages": [
+          35
+        ],
+        "sources": [
+          {
+            "page": 35,
+            "page_method": "header",
+            "file": "p0018_R.txt",
+            "start": 2886,
+            "end": 4629
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-014?mode=precedent&ref=1905-014%3A1885%3A28%3A3986&at=3904&end=4003",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-014",
     "scan_pages": [

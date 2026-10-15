@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-029",
@@ -30,6 +30,47 @@
     "participant_ids": [
       "1905-4978166edb83",
       "1905-766e43ff124f"
+    ],
+    "precedents": [
+      {
+        "id": "1905-029:1897:1830:1011",
+        "source_id": "1905-029",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "020f275fd50b875f9dbe9d05e46ba38a8913fa5c62ec396295fcfbb3094b1ce2",
+        "year": 1897,
+        "start": 956,
+        "end": 1025,
+        "department": null,
+        "association": null,
+        "number": 1830,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1011,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "опредѣленную плату (указъ Правительствующаго Сената за 1897 г. № 1830",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 776,
+        "context_end": 1245,
+        "context_original": "ое распоряженіе не стѣсняетъ общаго пользованія, почему думѣ и не возбраняется отводить незначительные участки въ этихъ мѣстахъ въ чье-либо временное исключительное пользованіе за опредѣленную плату (указъ Правительствующаго Сената за 1897 г. № 1830); что, какъ видно изъ представленнаго повѣреннымъ города удостовѣренія, Ростовская на Дону дума, постановленіями своими отъ 3 апрѣля 1880 г., 15 апрѣля 1887 г., 13 марта 1889 г. и 30 апрѣля 1890 г., установила особый сб",
+        "passage_id": "1905-029:0-1843",
+        "pages": [
+          73
+        ],
+        "sources": [
+          {
+            "page": 73,
+            "page_method": "header",
+            "file": "p0037_R.txt",
+            "start": 709,
+            "end": 1843
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-029?mode=precedent&ref=1905-029%3A1897%3A1830%3A1011&at=956&end=1025",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-029",
     "scan_pages": [

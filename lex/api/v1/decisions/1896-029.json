@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1896-029",
@@ -37,6 +37,47 @@
       ]
     ],
     "participant_ids": [],
+    "precedents": [
+      {
+        "id": "1896-029:1881:178:1885",
+        "source_id": "1896-029",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "25d41261f57855399f21fac0c4c197c5ed46231b0dd4d9eb42a366b96329d249",
+        "year": 1881,
+        "start": 1820,
+        "end": 1900,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 178,
+        "department_start": 1820,
+        "department_end": 1857,
+        "citation_start": 1885,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "Гражданскій Кассаціонный Департаментъ 'Правит. Сената въ рѣшеніи 1881 года № 178",
+        "target_url": null,
+        "department_evidence": "Гражданскій Кассаціонный Департаментъ",
+        "context_start": 1640,
+        "context_end": 2120,
+        "context_original": "т. герб. изд. 1886 года и изд. 1874 года). Го воря о значеніи одного изъ сихъ оп редѣленій — пункта 3 ст. 20 уст. герб. 1874 года, касающейся пропорціональ наго гербоваго сбора, — Гражданскій Кассаціонный Департаментъ 'Правит. Сената въ рѣшеніи 1881 года № 178 именно высказалъ, что „гю силѣ этого узаконенія, если актъ опла ченъ при его написаніи установлен нымъ гербовымъ оборомъ, то дѣла емая на этомъ актѣ впослѣдствіи пе редаточная надпись не подлежитъ но вой оплатѣ пропорці",
+        "passage_id": "1896-029:990-2352",
+        "pages": [
+          760
+        ],
+        "sources": [
+          {
+            "page": 760,
+            "page_method": "header",
+            "file": "p0053.txt",
+            "start": 990,
+            "end": 2352
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-029?mode=precedent&ref=1896-029%3A1881%3A178%3A1885&at=1820&end=1900",
+        "scan_available": true
+      }
+    ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1896-029",
     "scan_pages": [
       {

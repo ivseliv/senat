@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-096",
@@ -52,6 +52,47 @@
     "participant_ids": [
       "1904-de34a9275d1b",
       "1904-6fd7f25bcb5c"
+    ],
+    "precedents": [
+      {
+        "id": "1904-096:1900:82:7020",
+        "source_id": "1904-096",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "677785a4e7f9f0eda10602861f321e2cbc264f61c0ae18893c83317c122e7e05",
+        "year": 1900,
+        "start": 6992,
+        "end": 7032,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 82,
+        "department_start": 6997,
+        "department_end": 7019,
+        "citation_start": 7020,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гражд. кассац. департ. 1900 г. № 82",
+        "target_url": null,
+        "department_evidence": "гражд. кассац. департ.",
+        "context_start": 6812,
+        "context_end": 7252,
+        "context_original": "нано право отыскивать, на основаніи означенныхъ узаконеній, вознагражденіе съ обвинителей и въ судѣ гражданскомъ, такъ какъ сіи узаконенія, устанавливая особое матеріальное право (рѣш. гражд. кассац. департ. 1900 г. № 82) лишь для оправданныхъ подсудимыхъ и не предоставляя таковаго обвиняемымъ, о коихъ предварительное слѣдствіе прекращено по указаннымъ выше причинамъ, тѣмъ самымъ исключаютъ возможность примѣненія къ симъ послѣднимъ общи",
+        "passage_id": "1904-096:6483-8172",
+        "pages": [
+          268
+        ],
+        "sources": [
+          {
+            "page": 268,
+            "page_method": "header",
+            "file": "p0135_L.txt",
+            "start": 6483,
+            "end": 8172
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096?mode=precedent&ref=1904-096%3A1900%3A82%3A7020&at=6992&end=7032",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-096",
     "scan_pages": [

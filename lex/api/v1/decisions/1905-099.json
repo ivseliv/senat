@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-099",
@@ -42,6 +42,47 @@
       "1905-e41a0041130a",
       "1905-89bb6bc49cb6",
       "1905-10ae49f811a2"
+    ],
+    "precedents": [
+      {
+        "id": "1905-099:1891:97:5149",
+        "source_id": "1905-099",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "5c52fb9e3b9c3e5df19836f9dfded8ceef862b582355d62555cabaf3c46490d0",
+        "year": 1891,
+        "start": 5104,
+        "end": 5161,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 97,
+        "department_start": 5109,
+        "department_end": 5148,
+        "citation_start": 5149,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гражданскаго кассаціоннаго департамента 1891 г. № 97",
+        "target_url": null,
+        "department_evidence": "гражданскаго кассаціоннаго департамента",
+        "context_start": 4924,
+        "context_end": 5381,
+        "context_original": "тъ, чтобы таковое могло быть предметомъ судебнаго иска, ибо подсудность имущественнаго требованія суду зависитъ отъ того, можетъ-ли оно быть признано споромъ о правѣ гражданскомъ (рѣш. гражданскаго кассаціоннаго департамента 1891 г. № 97 и друг.), общественная же повинность призрѣнія волостными обществами своихъ бѣдныхъ членовъ не можетъ быть предметомъ такого спора. Согласно сему, Правительствующій Сенатъ признаетъ настоящее дѣло неправильно принятымъ ",
+        "passage_id": "1905-099:4562-5665",
+        "pages": [
+          270
+        ],
+        "sources": [
+          {
+            "page": 270,
+            "page_method": "header",
+            "file": "p0136_L.txt",
+            "start": 4562,
+            "end": 5665
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-099?mode=precedent&ref=1905-099%3A1891%3A97%3A5149&at=5104&end=5161",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-099",
     "scan_pages": [

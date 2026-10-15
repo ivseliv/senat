@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-083",
@@ -49,6 +49,203 @@
     "participant_ids": [
       "1905-0aaf70cb2d68",
       "1905-19d6c1443d4d"
+    ],
+    "precedents": [
+      {
+        "id": "1905-083:1875:512:1789",
+        "source_id": "1905-083",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8ec89d56134bf71869b51660705d3d611c3562780497f3ffa4150798633aebef",
+        "year": 1875,
+        "start": 1766,
+        "end": 1805,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 512,
+        "department_start": 1766,
+        "department_end": 1780,
+        "citation_start": 1789,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "гр. касс. деп. въ рѣш. 1875 г. за № 512",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 1586,
+        "context_end": 2025,
+        "context_original": "е къ настоящему дѣлу 681 ст. уст. гр. суд., такъ какъ Поликарпъ Махоньковъ умеръ еще до предъявленія къ нему иска, посему этотъ искъ подлежитъ прекращенію на основаніи разъясненія гр. касс. деп. въ рѣш. 1875 г. за № 512. Разсмотрѣвъ настоящее дѣло, мировой судья отказалъ въ искѣ къ Іозупейтъ и призналъ исковыя требованія, предъявленныя къ Махоньковымъ, подлежащими удовлетворенію, находя, что срокъ давности для взысканія по векселю не м",
+        "passage_id": "1905-083:0-1806",
+        "pages": [
+          229
+        ],
+        "sources": [
+          {
+            "page": 229,
+            "page_method": "header",
+            "file": "p0115_R.txt",
+            "start": 1602,
+            "end": 2634
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-083?mode=precedent&ref=1905-083%3A1875%3A512%3A1789&at=1766&end=1805",
+        "scan_available": true
+      },
+      {
+        "id": "1905-083:1885:131:2295",
+        "source_id": "1905-083",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8ec89d56134bf71869b51660705d3d611c3562780497f3ffa4150798633aebef",
+        "year": 1885,
+        "start": 2275,
+        "end": 2311,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 131,
+        "department_start": 2280,
+        "department_end": 2294,
+        "citation_start": 2295,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. деп. 1885 г. за № 131",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 2095,
+        "context_end": 2531,
+        "context_original": "Махоньковыхъ о томъ, что дѣло должно подлежать прекращенію, не можетъ быть признано заслуживающимъ уваженія, такъ какъ въ подобныхъ случаяхъ, въ силу 215 и 681 ст. уст. гр. суд. и рѣш. гр. касс. деп. 1885 г. за № 131, производство по дѣлу не прекращается, а пріостанавливается. Казанскій мировой съѣздъ, куда дѣло перешло по апелляціонной жалобѣ Махоньковыхъ, вполнѣ соглашаясь, какъ сказано въ его рѣшеніи, съ мотивами рѣшенія мироваго",
+        "passage_id": "1905-083:1602-2634",
+        "pages": [
+          229
+        ],
+        "sources": [
+          {
+            "page": 229,
+            "page_method": "header",
+            "file": "p0115_R.txt",
+            "start": 1602,
+            "end": 2634
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-083?mode=precedent&ref=1905-083%3A1885%3A131%3A2295&at=2275&end=2311",
+        "scan_available": true
+      },
+      {
+        "id": "1905-083:1878:256:5273",
+        "source_id": "1905-083",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8ec89d56134bf71869b51660705d3d611c3562780497f3ffa4150798633aebef",
+        "year": 1878,
+        "start": 5253,
+        "end": 5286,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 256,
+        "department_start": 5258,
+        "department_end": 5272,
+        "citation_start": 5273,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. деп. 1878 г. № 256",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 5073,
+        "context_end": 5506,
+        "context_original": "емъ на новаго тяжущагося съ самаго исковаго прошенія переносится все то, что имѣло мѣсто и произошло въ отношеніи къ прежнему тяжущемуся, юридическую личность коего онъ замѣнилъ ( рѣш. гр. касс. деп. 1878 г. № 256 ),—конечно, если предметъ иска не заключаетъ въ себѣ требованія совершенія какихъ-либо личныхъ услугъ или дѣйствій, вытекающихъ изъ договоровъ личныхъ. Въ виду этого тождества въ процессѣ первоначальнаго отвѣтчика съ ли",
+        "passage_id": "1905-083:3581-5438",
+        "pages": [
+          230
+        ],
+        "sources": [
+          {
+            "page": 230,
+            "page_method": "header",
+            "file": "p0116_L.txt",
+            "start": 5190,
+            "end": 6613
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-083?mode=precedent&ref=1905-083%3A1878%3A256%3A5273&at=5253&end=5286",
+        "scan_available": true
+      },
+      {
+        "id": "1905-083:1887:25:7476",
+        "source_id": "1905-083",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8ec89d56134bf71869b51660705d3d611c3562780497f3ffa4150798633aebef",
+        "year": 1887,
+        "start": 7471,
+        "end": 7488,
+        "department": null,
+        "association": null,
+        "number": 25,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7476,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1887 г. № 25",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7291,
+        "context_end": 7708,
+        "context_original": " всѣмъ этимъ соображені- ямъ и принимая во вниманіе: 1) что, соглашаясь съ соображеніями первой инстанціи и утверждая ея рѣшеніе, апелляціонная инстанція не обязана ихъ повторять (рѣш. 1887 г. № 25 и мн. др.), и 2) что, вопреки указанію просителя, Правительствующимъ Сенатомъ уже было разъяснено, что десятилѣтній срокъ давности для предъявленія векселя ко взысканію долженъ исчисляться не со дня просрочки, исчисляющ",
+        "passage_id": "1905-083:6394-8026",
+        "pages": [
+          231
+        ],
+        "sources": [
+          {
+            "page": 231,
+            "page_method": "header",
+            "file": "p0116_R.txt",
+            "start": 7316,
+            "end": 8026
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-083?mode=precedent&ref=1905-083%3A1887%3A25%3A7476&at=7471&end=7488",
+        "scan_available": true
+      },
+      {
+        "id": "1905-083:1878:217:7919",
+        "source_id": "1905-083",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8ec89d56134bf71869b51660705d3d611c3562780497f3ffa4150798633aebef",
+        "year": 1878,
+        "start": 7899,
+        "end": 7932,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 217,
+        "department_start": 7904,
+        "department_end": 7918,
+        "citation_start": 7919,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. деп. 1878 г. № 217",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 7719,
+        "context_end": 8026,
+        "context_original": "ваго дня по истеченіи срока векселя, а по минованіи дней отсрочки или обожданія, такъ какъ послѣдній изъ этихъ дней составляетъ окончательный срокъ исполненія по договору векселя (рѣш. гр. касс. деп. 1878 г. № 217 и др.),—Правительствующій Сенатъ опредѣляетъ: просьбу Махоньковыхъ оставить безъ послѣдствій.",
+        "passage_id": "1905-083:6394-8026",
+        "pages": [
+          231
+        ],
+        "sources": [
+          {
+            "page": 231,
+            "page_method": "header",
+            "file": "p0116_R.txt",
+            "start": 7316,
+            "end": 8026
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-083?mode=precedent&ref=1905-083%3A1878%3A217%3A7919&at=7899&end=7932",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-083",
     "scan_pages": [

@@ -17,7 +17,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 PUBLIC = 'https://ivseliv.github.io/senat/lex/'
 API_VERSION = 'v1'
-CONTRACT_VERSION = '1.0.0'
+CONTRACT_VERSION = '1.1.0'
 
 
 def read_json(path):
@@ -75,7 +75,26 @@ def schema_document():
                     'department': {'type': 'string'}, 'headnote_original': {'type': 'string'},
                     'text_original': {'type': 'string'}, 'outcome': {'type': 'string'},
                     'url': {'type': 'string', 'format': 'uri'}, 'scan_pages': {'type': 'array'},
+                    'precedents': {'type': 'array', 'items': {'$ref': '#/$defs/PrecedentReference'}},
+                    'cites': {'type': 'array', 'deprecated': True, 'description': 'Старые пары год/номер без департамента. Не устанавливают тождество и не пригодны для переходов; используйте precedents.'},
                 },
+            },
+            'PrecedentReference': {
+                'type': 'object',
+                'required': ['id','source_id','source_sha256','department','year','number','status','target_id','start','end','quote_original','context_original','source_url','target_url'],
+                'properties': {
+                    'id': {'type':'string'}, 'source_id': {'type':'string'},
+                    'source_sha256': {'type':'string','pattern':'^[0-9a-f]{64}$'},
+                    'department': {'type':['string','null']}, 'year': {'type':'integer'}, 'number': {'type':'integer'},
+                    'status': {'type':'string','enum':['linked','not_in_corpus','department_unknown','ambiguous_target']},
+                    'target_id': {'type':['string','null']}, 'target_url': {'type':['string','null'],'format':'uri'},
+                    'start': {'type':'integer','minimum':0}, 'end': {'type':'integer','minimum':0},
+                    'quote_original': {'type':'string'}, 'context_original': {'type':'string'},
+                    'source_url': {'type':'string','format':'uri'},
+                },
+                'allOf': [{'if': {'properties': {'status': {'const':'linked'}}},
+                           'then': {'properties': {'department': {'type':'string'}, 'target_id': {'type':'string'},'target_url': {'type':'string'}}},
+                           'else': {'properties': {'target_id': {'type':'null'},'target_url': {'type':'null'}}}}],
             },
             'Passage': {
                 'type': 'object',
@@ -118,6 +137,7 @@ def openapi_document(years, act_ids):
             '/decisions/{year}.json': {'get': {'summary': 'Полные решения за год', 'parameters': year_parameter, 'responses': response}},
             '/decisions/{id}.json': {'get': {'summary': 'Решение по постоянному ID', 'parameters': [{'name': 'id', 'in': 'path', 'required': True, 'schema': {'type': 'string', 'pattern': '^\\d{4}-\\d{3}$'}}], 'responses': response}},
             '/passages/{year}.json': {'get': {'summary': 'Пассажи и пояснения за год', 'parameters': year_parameter, 'responses': response}},
+            '/precedents/{year}.json': {'get': {'summary': 'Ссылки на прежние решения с департаментом и буквальным контекстом', 'parameters': year_parameter, 'responses': response}},
             '/participants/{year}.json': {'get': {'summary': 'Строки указателя за год', 'parameters': year_parameter, 'responses': response}},
             '/statutes/{act_id}.json': {'get': {'summary': 'Упоминания статей одного акта; act_id берётся из statutes/index.json', 'parameters': act_parameter, 'responses': response}},
             '/legislation/acts.json': {'get': {'summary': 'Исторические названия актов', 'responses': response}},
@@ -127,7 +147,7 @@ def openapi_document(years, act_ids):
             '/editorial/guides.json': {'get': {'summary': 'Тематические подборки', 'responses': response}},
             '/bulk.json': {'get': {'summary': 'Полные JSON/CSV-выгрузки', 'responses': response}},
         },
-        'components': {'schemas': {'Envelope': {'$ref': './schema.json#/$defs/Envelope'}, 'Decision': {'$ref': './schema.json#/$defs/Decision'}, 'Passage': {'$ref': './schema.json#/$defs/Passage'}}},
+        'components': {'schemas': {'Envelope': {'$ref': './schema.json#/$defs/Envelope'}, 'Decision': {'$ref': './schema.json#/$defs/Decision'}, 'Passage': {'$ref': './schema.json#/$defs/Passage'}, 'PrecedentReference': {'$ref':'./schema.json#/$defs/PrecedentReference'}}},
     }
 
 
@@ -173,6 +193,7 @@ def build_api(root=ROOT):
     acts = read_json(export / 'legislation-acts.json')
     citations = read_json(export / 'legislation-citations.json')
     scan_refs = read_json(export / 'scan-passages.json')
+    precedents = read_json(export / 'precedents.json')
     analyses = read_json(data / 'decision-analyses.json')
     guides = read_json(data / 'guides.json')
     analytics = read_json(data / 'analytics.json')
@@ -207,6 +228,9 @@ def build_api(root=ROOT):
     decision_by_id = {row['id']: row for row in decisions}
     passages_by_year, participants_by_year, scans_by_year = defaultdict(list), defaultdict(list), defaultdict(list)
     statutes_by_code, citations_by_code = defaultdict(list), defaultdict(list)
+    precedents_by_year = defaultdict(list)
+    for row in precedents:
+        precedents_by_year[row['source_year']].append(row)
     for row in passages:
         passages_by_year[row['year']].append(row)
     for row in participants:
@@ -246,6 +270,7 @@ def build_api(root=ROOT):
     for year in years:
         emit(f'passages/{year}.json', envelope('passages', scope={'year': year}, items=passages_by_year[year],
              links={'decisions': href(f'decisions/{year}.json')}))
+        emit(f'precedents/{year}.json', envelope('precedents', scope={'year':year}, items=precedents_by_year[year]))
         emit(f'participants/{year}.json', envelope('participants', scope={'year': year}, items=participants_by_year[year]))
         emit(f'scans/{year}.json', envelope('scan-passages', scope={'year': year}, items=scans_by_year[year],
              links={'passages': href(f'passages/{year}.json')}))
@@ -287,6 +312,7 @@ def build_api(root=ROOT):
         'passage_offsets': 'start/end — полуоткрытый Unicode-диапазон [start,end) в text_original.',
         'scan_geometry': 'box — [x0,y0,x1,y1] в долях ширины и высоты; при null используйте full_page_url.',
         'automated_fields': ['topics', 'outcome', 'procedure', 'participant_groups', 'statutes', 'ai_summary', 'ai_concepts'],
+        'precedents': 'Переход устанавливается только по департаменту, году и номеру; неопределённые ссылки сохранены с контекстом без target_id. Старые пары cites не пригодны для переходов.',
     }))
     emit('bulk.json', envelope('bulk-downloads', item={
         'description': 'Полные JSON/CSV-выгрузки; имена, контрольные суммы и размеры определяет export/manifest.json.',
@@ -347,6 +373,7 @@ def build_api(root=ROOT):
     datasets = [
         {'id': 'decisions', 'description': 'Полные решения по годам и по постоянному ID.', 'href_template': href('decisions/{year}.json'), 'values': years, 'item_schema': 'Decision'},
         {'id': 'passages', 'description': 'Пассажи поиска и пояснения по годам.', 'href_template': href('passages/{year}.json'), 'values': years, 'item_schema': 'Passage'},
+        {'id':'precedents','description':'Ссылки на прежние решения с подтверждающей цитатой и статусом привязки.','href_template':href('precedents/{year}.json'),'values':years,'item_schema':'PrecedentReference'},
         {'id': 'participants', 'description': 'Строки печатного указателя, а не нормализованные люди.', 'href_template': href('participants/{year}.json'), 'values': years},
         {'id': 'scans', 'description': 'Связи пассажей со страницами и координатами.', 'href_template': href('scans/{year}.json'), 'values': years, 'item_schema': 'ScanReference'},
         {'id': 'statutes', 'description': 'Упоминания статей, раздельно по историческому акту.', 'href_template': href('statutes/{act_id}.json'), 'values': [row['id'] for row in statute_index]},
@@ -371,6 +398,7 @@ def build_api(root=ROOT):
             'participant_id обозначает строку печатного указателя, а не уникального человека или процессуальную роль.',
             'При отсутствии box нельзя реконструировать точный участок изображения: используйте full_page_url.',
             'passage_id зависит от OCR-смещений и стабилен только в пределах data_revision; decision_id является постоянным ключом корпуса.',
+            'Старое поле cites содержит неполные пары год/номер. Для связей используйте precedents: department + year + number и status=linked.',
         ],
     }
     write_json(out, 'manifest.json', manifest)

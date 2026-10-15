@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1896-014",
@@ -49,6 +49,47 @@
       ]
     ],
     "participant_ids": [],
+    "precedents": [
+      {
+        "id": "1896-014:1888:30:2748",
+        "source_id": "1896-014",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "c949b96f7a8adbc375153c543a88ad06d2b71cb1a9a2727b54081afa0f3556a3",
+        "year": 1888,
+        "start": 2680,
+        "end": 2762,
+        "department": null,
+        "association": null,
+        "number": 30,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2748,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. Прав. Сената по Общ. ляющія этотъ надѣлъ, не могутъ быть Собр. 1888 года № 30",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2500,
+        "context_end": 2982,
+        "context_original": "лѣснымъ надѣломъ крестьяне точникомъ для разрѣшенія всѣхъ не- пользуются правами крестьяне^- соб- «доразумѣній и споровъ между кресть- ственниковъ, но пространства, состав- здами (рѣш. Прав. Сената по Общ. ляющія этотъ надѣлъ, не могутъ быть Собр. 1888 года № 30), установлено, отчуждаемы крестьянскими обществами что означенное лѣсное пространство ни въ полномъ составѣ, ни по частямъ, отведено всѣмъ деревнямъ, замежеван- и не могутъ подлежать раздѣлу на нымъ въ одну дачу генерал",
+        "passage_id": "1896-014:1376-3020",
+        "pages": [
+          731
+        ],
+        "sources": [
+          {
+            "page": 731,
+            "page_method": "header",
+            "file": "p0024.txt",
+            "start": 1376,
+            "end": 3020
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-014?mode=precedent&ref=1896-014%3A1888%3A30%3A2748&at=2680&end=2762",
+        "scan_available": true
+      }
+    ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1896-014",
     "scan_pages": [
       {
