@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.1.0",
-  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
+  "contract_version": "1.2.0",
+  "data_revision": "sha256:7eeff56f5e6cc6309f116eaba81d72a69b1f9b12ac703f3019fb3316a3e6bd85",
   "resource": "bulk-downloads",
   "item": {
     "description": "Полные JSON/CSV-выгрузки; имена, контрольные суммы и размеры определяет export/manifest.json.",
@@ -22,14 +22,14 @@
       },
       {
         "name": "passages.json",
-        "sha256": "707d11b6df0110f83283905192c82b85decf2bbd31d98ee9b76de3c9ba7655a3",
-        "bytes": 11643508,
+        "sha256": "b305e72c2f7a0e2729d1c2d8c61e1a5047a143555b24f75082d5ec245b55e3b9",
+        "bytes": 12124961,
         "href": "https://ivseliv.github.io/senat/lex/export/passages.json"
       },
       {
         "name": "passages.csv",
-        "sha256": "cf8dce88c3b1669b60f7d0c2d8e03c299b8602106bbb93ce28e8fa8412740112",
-        "bytes": 10340673,
+        "sha256": "264443b353b0192136e8cfceca2a0ad56632501d5a2db48a3b79efb9396bf995",
+        "bytes": 10758990,
         "href": "https://ivseliv.github.io/senat/lex/export/passages.csv"
       },
       {

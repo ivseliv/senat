@@ -483,7 +483,7 @@
           "pages": [
             117
           ],
-          "score": 13.90408,
+          "score": 14.12582,
           "relevant": false,
           "missing": []
         },
@@ -494,7 +494,7 @@
             116,
             117
           ],
-          "score": 13.80221,
+          "score": 13.99488,
           "relevant": false,
           "missing": []
         },
@@ -505,7 +505,7 @@
             217,
             218
           ],
-          "score": 12.19464,
+          "score": 12.37063,
           "relevant": false,
           "missing": []
         },
@@ -521,6 +521,27 @@
           "missing": []
         },
         {
+          "passage": "1897-072:0-1719",
+          "decision": "1897-072",
+          "pages": [
+            239
+          ],
+          "score": 10.92565,
+          "relevant": false,
+          "missing": []
+        },
+        {
+          "passage": "1897-072:1439-3098",
+          "decision": "1897-072",
+          "pages": [
+            239,
+            240
+          ],
+          "score": 10.89949,
+          "relevant": false,
+          "missing": []
+        },
+        {
           "passage": "1904-042:7365-9575",
           "decision": "1904-042",
           "pages": [
@@ -528,6 +549,16 @@
             118
           ],
           "score": 10.87783,
+          "relevant": false,
+          "missing": []
+        },
+        {
+          "passage": "1897-011:0-1640",
+          "decision": "1897-011",
+          "pages": [
+            50
+          ],
+          "score": 10.85623,
           "relevant": false,
           "missing": []
         },
@@ -543,44 +574,13 @@
           "missing": []
         },
         {
-          "passage": "1897-072:0-1719",
-          "decision": "1897-072",
-          "pages": [
-            239
-          ],
-          "score": 10.79224,
-          "relevant": false,
-          "missing": []
-        },
-        {
-          "passage": "1897-072:1439-3098",
-          "decision": "1897-072",
-          "pages": [
-            239,
-            240
-          ],
-          "score": 10.67944,
-          "relevant": false,
-          "missing": []
-        },
-        {
-          "passage": "1904-042:16944-18848",
+          "passage": "1904-042:19713-21283",
           "decision": "1904-042",
           "pages": [
-            120,
-            121
+            121,
+            122
           ],
-          "score": 10.62675,
-          "relevant": false,
-          "missing": []
-        },
-        {
-          "passage": "1897-011:0-1640",
-          "decision": "1897-011",
-          "pages": [
-            50
-          ],
-          "score": 10.50223,
+          "score": 10.69786,
           "relevant": false,
           "missing": []
         }
@@ -626,7 +626,7 @@
             217,
             218
           ],
-          "score": 14.42164,
+          "score": 14.45939,
           "relevant": false,
           "missing": []
         },
@@ -637,7 +637,17 @@
             121,
             122
           ],
-          "score": 14.01488,
+          "score": 14.22928,
+          "relevant": false,
+          "missing": []
+        },
+        {
+          "passage": "1904-097:0-2118",
+          "decision": "1904-097",
+          "pages": [
+            269
+          ],
+          "score": 13.36379,
           "relevant": false,
           "missing": []
         },
@@ -649,16 +659,6 @@
             121
           ],
           "score": 13.3001,
-          "relevant": false,
-          "missing": []
-        },
-        {
-          "passage": "1904-097:0-2118",
-          "decision": "1904-097",
-          "pages": [
-            269
-          ],
-          "score": 13.20014,
           "relevant": false,
           "missing": []
         },
@@ -690,7 +690,7 @@
           "pages": [
             115
           ],
-          "score": 12.05979,
+          "score": 12.27933,
           "relevant": false,
           "missing": []
         },
@@ -897,7 +897,7 @@
             237,
             238
           ],
-          "score": 8.80369,
+          "score": 8.82643,
           "relevant": false,
           "missing": [
             "забытые"
@@ -950,7 +950,7 @@
             237,
             238
           ],
-          "score": 8.80369,
+          "score": 8.82643,
           "relevant": false,
           "missing": [
             "забытые"
@@ -1015,7 +1015,7 @@
           "pages": [
             74
           ],
-          "score": 18.1948,
+          "score": 18.29838,
           "relevant": false,
           "missing": [
             "уплаты"
@@ -1028,7 +1028,7 @@
             287,
             288
           ],
-          "score": 14.59705,
+          "score": 14.59982,
           "relevant": false,
           "missing": [
             "пошлины"
@@ -1054,7 +1054,7 @@
           "pages": [
             74
           ],
-          "score": 18.1948,
+          "score": 18.29838,
           "relevant": false,
           "missing": [
             "уплаты"
@@ -1067,7 +1067,7 @@
             287,
             288
           ],
-          "score": 14.59705,
+          "score": 14.59982,
           "relevant": false,
           "missing": [
             "пошлины"
@@ -1292,7 +1292,7 @@
             131,
             132
           ],
-          "score": 10.99703,
+          "score": 11.04396,
           "relevant": false,
           "missing": []
         },
@@ -1302,7 +1302,7 @@
           "pages": [
             132
           ],
-          "score": 10.95234,
+          "score": 10.93922,
           "relevant": false,
           "missing": []
         },
@@ -1312,7 +1312,7 @@
           "pages": [
             134
           ],
-          "score": 10.83546,
+          "score": 10.87693,
           "relevant": true,
           "missing": []
         },
@@ -1322,7 +1322,7 @@
           "pages": [
             134
           ],
-          "score": 10.58025,
+          "score": 10.61632,
           "relevant": true,
           "missing": []
         },
@@ -1332,7 +1332,7 @@
           "pages": [
             131
           ],
-          "score": 9.6429,
+          "score": 9.79221,
           "relevant": false,
           "missing": []
         },
@@ -1343,7 +1343,7 @@
             130,
             131
           ],
-          "score": 8.76651,
+          "score": 8.91115,
           "relevant": false,
           "missing": []
         },
@@ -1354,7 +1354,7 @@
             151,
             152
           ],
-          "score": 7.77618,
+          "score": 7.85336,
           "relevant": false,
           "missing": []
         }
@@ -1401,7 +1401,7 @@
             131,
             132
           ],
-          "score": 10.99703,
+          "score": 11.04396,
           "relevant": false,
           "missing": []
         },
@@ -1411,7 +1411,7 @@
           "pages": [
             132
           ],
-          "score": 10.95234,
+          "score": 10.93922,
           "relevant": false,
           "missing": []
         },
@@ -1421,7 +1421,7 @@
           "pages": [
             134
           ],
-          "score": 10.83546,
+          "score": 10.87693,
           "relevant": true,
           "missing": []
         },
@@ -1431,7 +1431,7 @@
           "pages": [
             134
           ],
-          "score": 10.58025,
+          "score": 10.61632,
           "relevant": true,
           "missing": []
         },
@@ -1441,7 +1441,7 @@
           "pages": [
             131
           ],
-          "score": 9.6429,
+          "score": 9.79221,
           "relevant": false,
           "missing": []
         },
@@ -1452,7 +1452,7 @@
             130,
             131
           ],
-          "score": 8.76651,
+          "score": 8.91115,
           "relevant": false,
           "missing": []
         },
@@ -1463,7 +1463,7 @@
             151,
             152
           ],
-          "score": 7.77618,
+          "score": 7.85336,
           "relevant": false,
           "missing": []
         },
@@ -1681,7 +1681,7 @@
             178,
             179
           ],
-          "score": 16.7673,
+          "score": 16.63351,
           "relevant": false,
           "missing": []
         }
@@ -1706,7 +1706,7 @@
             178,
             179
           ],
-          "score": 16.7673,
+          "score": 16.63351,
           "relevant": false,
           "missing": []
         }
@@ -1792,7 +1792,7 @@
           "pages": [
             228
           ],
-          "score": 22.83566,
+          "score": 22.8006,
           "relevant": false,
           "missing": []
         },
@@ -1802,7 +1802,7 @@
           "pages": [
             228
           ],
-          "score": 21.76087,
+          "score": 22.08358,
           "relevant": false,
           "missing": []
         }
@@ -1826,7 +1826,7 @@
           "pages": [
             228
           ],
-          "score": 22.83566,
+          "score": 22.8006,
           "relevant": false,
           "missing": []
         },
@@ -1836,7 +1836,7 @@
           "pages": [
             228
           ],
-          "score": 21.76087,
+          "score": 22.08358,
           "relevant": false,
           "missing": []
         }
@@ -1915,7 +1915,7 @@
             237,
             238
           ],
-          "score": 18.40024,
+          "score": 18.42071,
           "relevant": false,
           "missing": [
             "доказывание"
@@ -1942,7 +1942,7 @@
             237,
             238
           ],
-          "score": 18.40024,
+          "score": 18.42071,
           "relevant": false,
           "missing": [
             "доказывание"
@@ -2439,7 +2439,7 @@
           "pages": [
             174
           ],
-          "score": 18.37294,
+          "score": 18.39832,
           "relevant": true,
           "missing": [
             "маршрута"
@@ -2465,7 +2465,7 @@
           "pages": [
             174
           ],
-          "score": 18.37294,
+          "score": 18.39832,
           "relevant": true,
           "missing": [
             "маршрута"
@@ -2726,7 +2726,7 @@
       "recall10": 1,
       "mrr": 0.5,
       "negativeFalsePositive": null,
-      "results": 6,
+      "results": 9,
       "partial": true,
       "top10": [
         {
@@ -2736,7 +2736,7 @@
             721,
             722
           ],
-          "score": 13.19904,
+          "score": 14.38034,
           "relevant": false,
           "missing": [
             "спора"
@@ -2756,24 +2756,50 @@
           ]
         },
         {
-          "passage": "1904-006:2950-4860",
-          "decision": "1904-006",
+          "passage": "1896-009:0-1412",
+          "decision": "1896-009",
           "pages": [
-            18
+            720
           ],
-          "score": 10.43286,
+          "score": 10.46029,
           "relevant": false,
           "missing": [
             "общинной"
           ]
         },
         {
-          "passage": "1905-113:10246-11567",
-          "decision": "1905-113",
+          "passage": "1904-006:2950-4860",
+          "decision": "1904-006",
           "pages": [
-            311
+            18
           ],
-          "score": 8.64615,
+          "score": 10.37907,
+          "relevant": false,
+          "missing": [
+            "общинной"
+          ]
+        },
+        {
+          "passage": "1896-015:3152-4682",
+          "decision": "1896-015",
+          "pages": [
+            732,
+            733
+          ],
+          "score": 10.3158,
+          "relevant": false,
+          "missing": [
+            "общинной"
+          ]
+        },
+        {
+          "passage": "1896-006:0-1500",
+          "decision": "1896-006",
+          "pages": [
+            715,
+            716
+          ],
+          "score": 9.45401,
           "relevant": false,
           "missing": [
             "общинной"
@@ -2793,13 +2819,25 @@
           ]
         },
         {
+          "passage": "1905-113:10246-11567",
+          "decision": "1905-113",
+          "pages": [
+            311
+          ],
+          "score": 8.42317,
+          "relevant": false,
+          "missing": [
+            "общинной"
+          ]
+        },
+        {
           "passage": "1905-098:4369-6013",
           "decision": "1905-098",
           "pages": [
             265,
             266
           ],
-          "score": 8.38127,
+          "score": 8.2211,
           "relevant": false,
           "missing": [
             "общинной"
@@ -2816,7 +2854,7 @@
       "recall10": 1,
       "mrr": 0.5,
       "negativeFalsePositive": null,
-      "results": 24,
+      "results": 28,
       "partial": true,
       "top10": [
         {
@@ -2826,7 +2864,7 @@
             721,
             722
           ],
-          "score": 13.19904,
+          "score": 14.38034,
           "relevant": false,
           "missing": [
             "спора"
@@ -2846,36 +2884,50 @@
           ]
         },
         {
+          "passage": "1896-009:0-1412",
+          "decision": "1896-009",
+          "pages": [
+            720
+          ],
+          "score": 10.46029,
+          "relevant": false,
+          "missing": [
+            "общинной"
+          ]
+        },
+        {
           "passage": "1904-006:2950-4860",
           "decision": "1904-006",
           "pages": [
             18
           ],
-          "score": 10.43286,
+          "score": 10.37907,
           "relevant": false,
           "missing": [
             "общинной"
           ]
         },
         {
-          "passage": "1905-113:10246-11567",
-          "decision": "1905-113",
+          "passage": "1896-015:3152-4682",
+          "decision": "1896-015",
           "pages": [
-            311
+            732,
+            733
           ],
-          "score": 8.64615,
+          "score": 10.3158,
           "relevant": false,
           "missing": [
             "общинной"
           ]
         },
         {
-          "passage": "1905-026:2656-4277",
-          "decision": "1905-026",
+          "passage": "1896-006:0-1500",
+          "decision": "1896-006",
           "pages": [
-            67
+            715,
+            716
           ],
-          "score": 8.50854,
+          "score": 9.45401,
           "relevant": false,
           "missing": [
             "общинной"
@@ -2887,7 +2939,7 @@
           "pages": [
             181
           ],
-          "score": 8.49469,
+          "score": 8.45395,
           "relevant": false,
           "missing": [
             "общинной"
@@ -2907,39 +2959,24 @@
           ]
         },
         {
-          "passage": "1905-098:4369-6013",
-          "decision": "1905-098",
+          "passage": "1905-113:10246-11567",
+          "decision": "1905-113",
           "pages": [
-            265,
-            266
+            311
           ],
-          "score": 8.38127,
+          "score": 8.42317,
           "relevant": false,
           "missing": [
             "общинной"
           ]
         },
         {
-          "passage": "1905-030:3957-5602",
-          "decision": "1905-030",
-          "pages": [
-            75,
-            76
-          ],
-          "score": 8.28841,
-          "relevant": false,
-          "missing": [
-            "общинной"
-          ]
-        },
-        {
-          "passage": "1905-026:1304-2948",
+          "passage": "1905-026:2656-4277",
           "decision": "1905-026",
           "pages": [
-            66,
             67
           ],
-          "score": 7.50614,
+          "score": 8.31758,
           "relevant": false,
           "missing": [
             "общинной"
@@ -3070,7 +3107,7 @@
             243,
             244
           ],
-          "score": 18.50408,
+          "score": 18.63846,
           "relevant": false,
           "missing": []
         }
@@ -3095,7 +3132,7 @@
             243,
             244
           ],
-          "score": 18.50408,
+          "score": 18.63846,
           "relevant": false,
           "missing": []
         }
@@ -3173,7 +3210,7 @@
           "pages": [
             280
           ],
-          "score": 17.15455,
+          "score": 17.4603,
           "relevant": true,
           "missing": []
         }
@@ -3197,7 +3234,7 @@
           "pages": [
             280
           ],
-          "score": 17.15455,
+          "score": 17.4603,
           "relevant": true,
           "missing": []
         }
@@ -3411,7 +3448,7 @@
           "pages": [
             16
           ],
-          "score": 19.39776,
+          "score": 19.12079,
           "relevant": false,
           "missing": []
         },
@@ -3421,7 +3458,7 @@
           "pages": [
             16
           ],
-          "score": 18.80992,
+          "score": 18.84272,
           "relevant": true,
           "missing": []
         },
@@ -3432,7 +3469,7 @@
             15,
             16
           ],
-          "score": 18.80489,
+          "score": 18.52793,
           "relevant": false,
           "missing": []
         }
@@ -3456,7 +3493,7 @@
           "pages": [
             16
           ],
-          "score": 19.39776,
+          "score": 19.12079,
           "relevant": false,
           "missing": []
         },
@@ -3466,7 +3503,7 @@
           "pages": [
             16
           ],
-          "score": 18.80992,
+          "score": 18.84272,
           "relevant": true,
           "missing": []
         },
@@ -3477,7 +3514,7 @@
             15,
             16
           ],
-          "score": 18.80489,
+          "score": 18.52793,
           "relevant": false,
           "missing": []
         }
@@ -3569,7 +3606,7 @@
           "pages": [
             31
           ],
-          "score": 18.9633,
+          "score": 19.08455,
           "relevant": true,
           "missing": []
         },
@@ -3579,7 +3616,7 @@
           "pages": [
             326
           ],
-          "score": 9.1792,
+          "score": 9.31334,
           "relevant": false,
           "missing": []
         }
@@ -3603,7 +3640,7 @@
           "pages": [
             31
           ],
-          "score": 18.9633,
+          "score": 19.08455,
           "relevant": true,
           "missing": []
         },
@@ -3613,7 +3650,7 @@
           "pages": [
             326
           ],
-          "score": 9.1792,
+          "score": 9.31334,
           "relevant": false,
           "missing": []
         }
@@ -3878,7 +3915,7 @@
           "pages": [
             46
           ],
-          "score": 18.16598,
+          "score": 18.26427,
           "relevant": false,
           "missing": []
         },
@@ -3889,7 +3926,7 @@
             46,
             47
           ],
-          "score": 18.00963,
+          "score": 18.10793,
           "relevant": false,
           "missing": []
         },
@@ -3900,7 +3937,7 @@
             45,
             46
           ],
-          "score": 17.90631,
+          "score": 18.00538,
           "relevant": false,
           "missing": []
         },
@@ -3910,7 +3947,7 @@
           "pages": [
             47
           ],
-          "score": 17.90631,
+          "score": 18.00538,
           "relevant": false,
           "missing": []
         }
@@ -3934,7 +3971,7 @@
           "pages": [
             46
           ],
-          "score": 18.16598,
+          "score": 18.26427,
           "relevant": false,
           "missing": []
         },
@@ -3945,7 +3982,7 @@
             46,
             47
           ],
-          "score": 18.00963,
+          "score": 18.10793,
           "relevant": false,
           "missing": []
         },
@@ -3956,7 +3993,7 @@
             45,
             46
           ],
-          "score": 17.90631,
+          "score": 18.00538,
           "relevant": false,
           "missing": []
         },
@@ -3966,7 +4003,7 @@
           "pages": [
             47
           ],
-          "score": 17.90631,
+          "score": 18.00538,
           "relevant": false,
           "missing": []
         }
@@ -4045,7 +4082,7 @@
             72,
             73
           ],
-          "score": 19.48475,
+          "score": 19.48137,
           "relevant": false,
           "missing": [
             "использование"
@@ -4072,7 +4109,7 @@
             72,
             73
           ],
-          "score": 19.48475,
+          "score": 19.48137,
           "relevant": false,
           "missing": [
             "использование"
@@ -4177,7 +4214,7 @@
             122,
             123
           ],
-          "score": 31.45441,
+          "score": 31.56499,
           "relevant": true,
           "missing": []
         },
@@ -4188,7 +4225,7 @@
             120,
             121
           ],
-          "score": 31.38607,
+          "score": 31.52087,
           "relevant": false,
           "missing": []
         },
@@ -4198,7 +4235,7 @@
           "pages": [
             121
           ],
-          "score": 29.95675,
+          "score": 30.09155,
           "relevant": false,
           "missing": []
         },
@@ -4208,7 +4245,7 @@
           "pages": [
             123
           ],
-          "score": 29.01869,
+          "score": 29.15349,
           "relevant": false,
           "missing": []
         },
@@ -4218,7 +4255,7 @@
           "pages": [
             122
           ],
-          "score": 26.09658,
+          "score": 26.23138,
           "relevant": false,
           "missing": []
         }
@@ -4243,7 +4280,7 @@
             122,
             123
           ],
-          "score": 31.45441,
+          "score": 31.56499,
           "relevant": true,
           "missing": []
         },
@@ -4254,7 +4291,7 @@
             120,
             121
           ],
-          "score": 31.38607,
+          "score": 31.52087,
           "relevant": false,
           "missing": []
         },
@@ -4264,7 +4301,7 @@
           "pages": [
             121
           ],
-          "score": 29.95675,
+          "score": 30.09155,
           "relevant": false,
           "missing": []
         },
@@ -4274,7 +4311,7 @@
           "pages": [
             123
           ],
-          "score": 29.01869,
+          "score": 29.15349,
           "relevant": false,
           "missing": []
         },
@@ -4284,7 +4321,7 @@
           "pages": [
             122
           ],
-          "score": 26.09658,
+          "score": 26.23138,
           "relevant": false,
           "missing": []
         }
@@ -4359,7 +4396,7 @@
             156,
             157
           ],
-          "score": 20.45908,
+          "score": 20.40605,
           "relevant": true,
           "missing": []
         }
@@ -4384,7 +4421,7 @@
             156,
             157
           ],
-          "score": 20.45908,
+          "score": 20.40605,
           "relevant": true,
           "missing": []
         }
@@ -4584,7 +4621,7 @@
           "pages": [
             237
           ],
-          "score": 23.35256,
+          "score": 23.53918,
           "relevant": false,
           "missing": []
         }
@@ -4640,7 +4677,7 @@
           "pages": [
             237
           ],
-          "score": 23.79291,
+          "score": 23.97953,
           "relevant": false,
           "missing": []
         }
@@ -4743,7 +4780,7 @@
             273,
             274
           ],
-          "score": 22.69046,
+          "score": 22.8363,
           "relevant": true,
           "missing": [
             "внешней"
@@ -4755,7 +4792,7 @@
           "pages": [
             273
           ],
-          "score": 20.41924,
+          "score": 20.56508,
           "relevant": false,
           "missing": [
             "внешней"
@@ -4795,7 +4832,7 @@
             273,
             274
           ],
-          "score": 22.69046,
+          "score": 22.8363,
           "relevant": true,
           "missing": [
             "внешней"
@@ -4807,7 +4844,7 @@
           "pages": [
             273
           ],
-          "score": 20.41924,
+          "score": 20.56508,
           "relevant": false,
           "missing": [
             "внешней"

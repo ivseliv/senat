@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.1.0",
-  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
+  "contract_version": "1.2.0",
+  "data_revision": "sha256:7eeff56f5e6cc6309f116eaba81d72a69b1f9b12ac703f3019fb3316a3e6bd85",
   "resource": "corpus",
   "item": {
     "volumes": [
@@ -63,7 +63,8 @@
       "legislation_citations": 832,
       "scan_passage_refs": 3293,
       "precedent_references": 826,
-      "editorial_analyses": 10,
+      "editorial_analyses": 40,
+      "passage_source_warnings": 56,
       "guides": 3
     },
     "orthography": "Оригинальная дореформенная орфография OCR.",
@@ -78,6 +79,7 @@
       "ai_summary",
       "ai_concepts"
     ],
-    "precedents": "Переход устанавливается только по департаменту, году и номеру; неопределённые ссылки сохранены с контекстом без target_id. Старые пары cites не пригодны для переходов."
+    "precedents": "Переход устанавливается только по департаменту, году и номеру; неопределённые ссылки сохранены с контекстом без target_id. Старые пары cites не пригодны для переходов.",
+    "source_warning": "Непустая строка у пассажа сообщает об установленном дефекте порядка или атрибуции OCR. Его пояснение не индексируется в обогащённом поиске; исходный текст сохранён."
   }
 }

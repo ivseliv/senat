@@ -17,7 +17,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 PUBLIC = 'https://ivseliv.github.io/senat/lex/'
 API_VERSION = 'v1'
-CONTRACT_VERSION = '1.1.0'
+CONTRACT_VERSION = '1.2.0'
 
 
 def read_json(path):
@@ -104,6 +104,7 @@ def schema_document():
                     'start': {'type': 'integer', 'minimum': 0}, 'end': {'type': 'integer', 'minimum': 0},
                     'sha256': {'type': 'string', 'pattern': '^[0-9a-f]{64}$'},
                     'text_original': {'type': 'string'}, 'scan_refs': {'type': 'array'},
+                    'source_warning': {'type': ['string', 'null'], 'description': 'Предупреждение о порядке или атрибуции OCR; пояснение такого пассажа не участвует в обогащённом поиске.'},
                     'url': {'type': 'string', 'format': 'uri'},
                 },
             },
@@ -303,6 +304,7 @@ def build_api(root=ROOT):
         })
     counts = dict(export_manifest['counts'])
     counts['editorial_analyses'] = analyses['count']
+    counts['passage_source_warnings'] = sum(bool(p.get('source_warning')) for p in passages)
     counts['guides'] = len(guides['guides'])
     coverage = {'volumes': volumes, 'counts': counts}
     emit('volumes.json', envelope('volumes', items=volumes))
@@ -313,6 +315,7 @@ def build_api(root=ROOT):
         'scan_geometry': 'box — [x0,y0,x1,y1] в долях ширины и высоты; при null используйте full_page_url.',
         'automated_fields': ['topics', 'outcome', 'procedure', 'participant_groups', 'statutes', 'ai_summary', 'ai_concepts'],
         'precedents': 'Переход устанавливается только по департаменту, году и номеру; неопределённые ссылки сохранены с контекстом без target_id. Старые пары cites не пригодны для переходов.',
+        'source_warning': 'Непустая строка у пассажа сообщает об установленном дефекте порядка или атрибуции OCR. Его пояснение не индексируется в обогащённом поиске; исходный текст сохранён.',
     }))
     emit('bulk.json', envelope('bulk-downloads', item={
         'description': 'Полные JSON/CSV-выгрузки; имена, контрольные суммы и размеры определяет export/manifest.json.',

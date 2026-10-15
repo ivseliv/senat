@@ -267,6 +267,13 @@
         "scan_refs": {
           "type": "array"
         },
+        "source_warning": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Предупреждение о порядке или атрибуции OCR; пояснение такого пассажа не участвует в обогащённом поиске."
+        },
         "url": {
           "type": "string",
           "format": "uri"

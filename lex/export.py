@@ -125,13 +125,14 @@ def build_export(root=ROOT):
             'text_original': text_by_id[passage['decision']][passage['start']:passage['end']],
             'ai_summary': passage.get('ai', {}).get('summary'), 'ai_concepts': passage.get('ai', {}).get('concepts', []),
             'ai_evidence_original': passage.get('ai', {}).get('evidence'), 'url': passage_url(passage), 'scan_refs': refs,
+            'source_warning': passage.get('ai', {}).get('source_warning'),
         }
         passage_rows.append(row)
         for ref in refs:
             scan_rows.append({'passage_id': passage['id'], 'decision_id': passage['decision'], 'year': decision['vol'],
                               'decision_number': decision['num'], 'passage_url': row['url'], **ref})
     passage_fields = ['id', 'decision_id', 'year', 'decision_number', 'start', 'end', 'words', 'pages', 'sources', 'sha256',
-                      'text_original', 'ai_summary', 'ai_concepts', 'ai_evidence_original', 'url', 'scan_refs']
+                      'text_original', 'ai_summary', 'ai_concepts', 'ai_evidence_original', 'url', 'scan_refs', 'source_warning']
     scan_fields = ['passage_id', 'decision_id', 'year', 'decision_number', 'passage_url', 'file', 'page', 'kind', 'box',
                    'coverage', 'width', 'height', 'pdf_page', 'ocr_sha256', 'image_url', 'full_page_url']
 
