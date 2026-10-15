@@ -1,19 +1,20 @@
 {
   "api_version": "v1",
-  "contract_version": "1.2.0",
-  "data_revision": "sha256:7eeff56f5e6cc6309f116eaba81d72a69b1f9b12ac703f3019fb3316a3e6bd85",
+  "contract_version": "1.3.0",
+  "data_revision": "sha256:8400c8a693eb04d86632cb3357c5a969674d15807cd143e7558bf9c04d5e5867",
   "resource": "decision-set",
   "filter": {
     "kind": "guide",
     "id": "commerce-transport",
     "label": "commerce-transport"
   },
-  "count": 26,
+  "count": 27,
   "decision_ids": [
     "1897-054",
     "1897-056",
     "1897-075",
     "1904-020",
+    "1904-030",
     "1904-111",
     "1905-015",
     "1905-017",
@@ -43,6 +44,7 @@
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-056.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-075.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-020.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-030.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-111.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-015.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-017.json",

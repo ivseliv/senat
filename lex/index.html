@@ -158,6 +158,14 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
 .decision-analysis { margin: 24px 0; padding: 18px; border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 8px; background: var(--soft); }
 .preliminary-note { padding: 10px 12px; border: 1px solid var(--line); border-radius: 7px; background: var(--soft); }
 .guide { margin-bottom: 34px; }.guide-group { margin: 22px 0; }.guide-group li { margin: 9px 0; }
+.guide-nav { margin: 18px 0 26px; }.guide-nav [aria-current="page"] { border-color: var(--accent); }
+.guide-question { font-weight: 600; }.guide-reading { margin-top: 22px; }
+.guide-contrast { margin: 20px 0; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+.guide-contrast h4 { margin-bottom: 8px; font-size: 18px; }
+.comparison-cases { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,300px),1fr)); gap: 16px; margin: 18px 0; align-items: start; }
+.comparison-case { min-width: 0; border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
+.comparison-case h4 { margin: 0; font-size: 17px; }.comparison-case h5 { margin: 20px 0 5px; font-size: 15px; }
+.comparison-case .source-quote { overflow-wrap: anywhere; }.comparison-limits h3 { margin-top: 0; }
 .decision-analysis h3 { margin-top: 0; }.analysis-label,.analysis-speaker { color: var(--accent-ink); font-size: 13px; font-weight: 600; margin: 4px 0; }.analysis-item { border-top: 1px solid var(--line); padding-top: 12px; margin-top: 12px; }.analysis-item h4 { margin: 0; font-size: 16px; }.analysis-evidence { margin-top: 8px; }.source-quote { margin: 10px 0; padding-left: 12px; border-left: 2px solid var(--line); font-family: "Noto Serif", Georgia, serif; white-space: pre-wrap; }.analysis-card h3 { margin-top: 0; }
 </style>
 </head>
@@ -274,8 +282,9 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
   </section>
 
   <section id="view-guides" hidden>
-    <h2>Тематические подборки</h2>
-    <p class="muted small">Подборки помогают начать чтение корпуса. Они не заменяют поиск и не формулируют правило современного права.</p>
+    <h2>Сравнить решения по теме</h2>
+    <p>Как обстоятельства и применённые нормы влияют на ответ Сената: сравнения с буквальными цитатами и страницами издания.</p>
+    <p class="muted small">В каждой теме сохранён широкий список для дальнейшего чтения. Сравнения охватывают выбранные дела и не формулируют правило современного права.</p>
     <div id="guides-results"></div>
   </section>
 

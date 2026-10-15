@@ -6,6 +6,7 @@ import unittest
 from pathlib import Path
 
 from api import API_VERSION, CONTRACT_VERSION, build_api
+from guide_comparisons import guide_decisions
 
 
 ROOT = Path(__file__).resolve().parent
@@ -80,7 +81,7 @@ class ApiTest(unittest.TestCase):
         facets = read(API / 'facets.json')['item']
         decisions = {row['id']: row for row in self.decisions}
         participant_map = {row['id']: row for row in self.participants}
-        guide_ids = {guide['id']: {ident for group in guide['groups'] for ident in group['decisions']} for guide in self.guides['guides']}
+        guide_ids = {guide['id']: set(guide_decisions(guide)) for guide in self.guides['guides']}
         for kind, rows in facets.items():
             for facet in rows:
                 index = read(API / 'indexes' / kind / f'{facet["id"]}.json')
@@ -100,6 +101,15 @@ class ApiTest(unittest.TestCase):
                     elif kind in ('presiding', 'reporter', 'prosecutor'): self.assertEqual(decision[kind], label)
                     elif kind == 'participant': self.assertIn(ident, participant_map[label]['decisions'])
                     elif kind == 'guide': self.assertIn(ident, guide_ids[label])
+                if kind == 'guide': self.assertEqual(set(ids),guide_ids[label])
+
+    def test_comparisons_are_in_editorial_resource_and_coverage(self):
+        resource=read(API/'editorial/guides.json')['item']
+        self.assertEqual(resource,self.guides)
+        counts=self.manifest['coverage']['counts']
+        self.assertEqual(counts['guide_comparisons'],3)
+        self.assertEqual(counts['guide_comparison_decisions'],8)
+        self.assertIn('GuideComparison',read(API/'schema.json')['$defs'])
 
     def test_openapi_and_scan_contract(self):
         spec = read(API / 'openapi.json')

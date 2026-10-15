@@ -12,12 +12,13 @@ import json
 import shutil
 from collections import defaultdict
 from pathlib import Path
+from guide_comparisons import guide_decisions
 
 
 ROOT = Path(__file__).resolve().parent.parent
 PUBLIC = 'https://ivseliv.github.io/senat/lex/'
 API_VERSION = 'v1'
-CONTRACT_VERSION = '1.2.0'
+CONTRACT_VERSION = '1.3.0'
 
 
 def read_json(path):
@@ -117,6 +118,41 @@ def schema_document():
                     'full_page_url': {'type': ['string', 'null'], 'format': 'uri'},
                 },
             },
+            'EditorialEvidence': {
+                'type': 'object',
+                'required': ['decision', 'text', 'start', 'end', 'passage_id', 'passage_ids', 'sources', 'printed_pages', 'scans'],
+                'properties': {
+                    'decision': {'type': 'string', 'pattern': '^\\d{4}-\\d{3}$'},
+                    'text': {'type': 'string'}, 'start': {'type': 'integer', 'minimum': 0},
+                    'end': {'type': 'integer', 'minimum': 0},
+                    'passage_id': {'type': ['string', 'null']},
+                    'passage_ids': {'type': 'array', 'items': {'type': 'string'}, 'minItems': 1},
+                    'sources': {'type': 'array', 'minItems': 1},
+                    'printed_pages': {'type': 'array', 'items': {'type': 'integer'}},
+                    'scans': {'type': 'array', 'minItems': 1, 'description': 'Страницы цитаты; full разрешается относительно корня lex/.'},
+                    'editorial_note': {'type': 'string', 'description': 'Редакционное примечание, отдельно от буквальной цитаты.'},
+                    'source_warning': {'type': ['string', 'null']},
+                },
+            },
+            'GuideComparison': {
+                'type': 'object',
+                'required': ['title', 'question', 'scope', 'limits', 'label', 'verification', 'cases', 'comparisons'],
+                'properties': {
+                    **{key: {'type': 'string'} for key in ('title', 'question', 'scope', 'limits', 'label', 'verification')},
+                    'cases': {'type': 'array', 'minItems': 2, 'items': {
+                        'type': 'object', 'required': ['id', 'source_sha256', 'title', 'year', 'department', 'sections'],
+                        'properties': {
+                            'id': {'type': 'string'}, 'source_sha256': {'type': 'string', 'pattern': '^[0-9a-f]{64}$'},
+                            'sections': {'type': 'array', 'items': {'type': 'object', 'required': ['heading', 'speaker', 'summary', 'evidence'],
+                                'properties': {'evidence': {'type': 'array', 'minItems': 1, 'items': {'$ref': '#/$defs/EditorialEvidence'}}}}},
+                        },
+                    }},
+                    'comparisons': {'type': 'array', 'minItems': 1, 'items': {
+                        'type': 'object', 'required': ['heading', 'summary', 'evidence'],
+                        'properties': {'evidence': {'type': 'array', 'minItems': 2, 'items': {'$ref': '#/$defs/EditorialEvidence'}}},
+                    }},
+                },
+            },
         },
         'description': 'UTF-8. Смещения start/end — полуоткрытый диапазон Unicode-кодовых точек [start,end), а не UTF-16-индексы JavaScript.',
     }
@@ -145,7 +181,7 @@ def openapi_document(years, act_ids):
             '/legislation/citations/{act_id}.json': {'get': {'summary': 'Контексты ссылок на один акт; act_id берётся из statutes/index.json', 'parameters': act_parameter, 'responses': response}},
             '/scans/{year}.json': {'get': {'summary': 'Привязки к страницам и координатам', 'parameters': year_parameter, 'responses': response}},
             '/editorial/analyses.json': {'get': {'summary': 'Редакционные разборы', 'responses': response}},
-            '/editorial/guides.json': {'get': {'summary': 'Тематические подборки', 'responses': response}},
+            '/editorial/guides.json': {'get': {'summary': 'Тематические подборки и сравнительные разборы', 'responses': response}},
             '/bulk.json': {'get': {'summary': 'Полные JSON/CSV-выгрузки', 'responses': response}},
         },
         'components': {'schemas': {'Envelope': {'$ref': './schema.json#/$defs/Envelope'}, 'Decision': {'$ref': './schema.json#/$defs/Decision'}, 'Passage': {'$ref': './schema.json#/$defs/Passage'}, 'PrecedentReference': {'$ref':'./schema.json#/$defs/PrecedentReference'}}},
@@ -306,6 +342,8 @@ def build_api(root=ROOT):
     counts['editorial_analyses'] = analyses['count']
     counts['passage_source_warnings'] = sum(bool(p.get('source_warning')) for p in passages)
     counts['guides'] = len(guides['guides'])
+    counts['guide_comparisons'] = guides.get('comparison_count', 0)
+    counts['guide_comparison_decisions'] = len({c['id'] for g in guides['guides'] for c in g.get('comparison', {}).get('cases', [])})
     coverage = {'volumes': volumes, 'counts': counts}
     emit('volumes.json', envelope('volumes', items=volumes))
     emit('corpus.json', envelope('corpus', item={
@@ -316,6 +354,7 @@ def build_api(root=ROOT):
         'automated_fields': ['topics', 'outcome', 'procedure', 'participant_groups', 'statutes', 'ai_summary', 'ai_concepts'],
         'precedents': 'Переход устанавливается только по департаменту, году и номеру; неопределённые ссылки сохранены с контекстом без target_id. Старые пары cites не пригодны для переходов.',
         'source_warning': 'Непустая строка у пассажа сообщает об установленном дефекте порядка или атрибуции OCR. Его пояснение не индексируется в обогащённом поиске; исходный текст сохранён.',
+        'guide_comparisons': 'Редакционные сопоставления выбранных дел: закреплённые SHA полных текстов и буквальные цитаты со страницами. Не являются независимой юридической экспертизой или доказательством развития практики.',
     }))
     emit('bulk.json', envelope('bulk-downloads', item={
         'description': 'Полные JSON/CSV-выгрузки; имена, контрольные суммы и размеры определяет export/manifest.json.',
@@ -352,9 +391,8 @@ def build_api(root=ROOT):
         for ident in row['decisions']:
             add_facet('participant', row['id'], ident)
     for guide in guides['guides']:
-        for group in guide['groups']:
-            for ident in group['decisions']:
-                add_facet('guide', guide['id'], ident)
+        for ident in guide_decisions(guide):
+            add_facet('guide', guide['id'], ident)
 
     facets = {}
     for kind, labels in sorted(facet_groups.items()):
