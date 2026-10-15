@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-016",
@@ -48,6 +48,164 @@
     "participant_ids": [
       "1905-1f9c0b368031",
       "1905-5c11cb985cac"
+    ],
+    "precedents": [
+      {
+        "id": "1905-016:1871:788:862",
+        "source_id": "1905-016",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "f283081f838003dd113efb2dfaaa0382d37e23911cbb576e8562ae6b62bb643e",
+        "year": 1871,
+        "start": 857,
+        "end": 875,
+        "department": null,
+        "association": null,
+        "number": 788,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 862,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1871 г. № 788",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 677,
+        "context_end": 1095,
+        "context_original": "ованія по пріобрѣтеннымъ изъ долговыхъ отношеній правамъ, на сколько таковыя по роду своему не принадлежатъ къ правамъ исключительно личнымъ, могутъ быть уступаемы другимъ лицамъ (рѣш. 1871 г. № 788, 1876 г. № 100, 1888 г. № 101, 1896 г. № 2 и др.); 2) что, посему, принадлежавшее Карлу Эйзерту право, возникшее изъ долговыхъ отношеній, могло быть свободно передано имъ истцу по настоящему дѣлу; 3) что дѣйствительност",
+        "passage_id": "1905-016:0-1703",
+        "pages": [
+          38
+        ],
+        "sources": [
+          {
+            "page": 38,
+            "page_method": "header",
+            "file": "p0020_L.txt",
+            "start": 512,
+            "end": 1638
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-016?mode=precedent&ref=1905-016%3A1871%3A788%3A862&at=857&end=875",
+        "scan_available": true
+      },
+      {
+        "id": "1905-016:1876:100:877",
+        "source_id": "1905-016",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "f283081f838003dd113efb2dfaaa0382d37e23911cbb576e8562ae6b62bb643e",
+        "year": 1876,
+        "start": 857,
+        "end": 890,
+        "department": null,
+        "association": null,
+        "number": 100,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 877,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1871 г. № 788, 1876 г. № 100",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 677,
+        "context_end": 1110,
+        "context_original": "ованія по пріобрѣтеннымъ изъ долговыхъ отношеній правамъ, на сколько таковыя по роду своему не принадлежатъ къ правамъ исключительно личнымъ, могутъ быть уступаемы другимъ лицамъ (рѣш. 1871 г. № 788, 1876 г. № 100, 1888 г. № 101, 1896 г. № 2 и др.); 2) что, посему, принадлежавшее Карлу Эйзерту право, возникшее изъ долговыхъ отношеній, могло быть свободно передано имъ истцу по настоящему дѣлу; 3) что дѣйствительность передачи, удо",
+        "passage_id": "1905-016:0-1703",
+        "pages": [
+          38
+        ],
+        "sources": [
+          {
+            "page": 38,
+            "page_method": "header",
+            "file": "p0020_L.txt",
+            "start": 512,
+            "end": 1638
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-016?mode=precedent&ref=1905-016%3A1876%3A100%3A877&at=857&end=890",
+        "scan_available": true
+      },
+      {
+        "id": "1905-016:1888:101:892",
+        "source_id": "1905-016",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "f283081f838003dd113efb2dfaaa0382d37e23911cbb576e8562ae6b62bb643e",
+        "year": 1888,
+        "start": 857,
+        "end": 905,
+        "department": null,
+        "association": null,
+        "number": 101,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 892,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1871 г. № 788, 1876 г. № 100, 1888 г. № 101",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 677,
+        "context_end": 1125,
+        "context_original": "ованія по пріобрѣтеннымъ изъ долговыхъ отношеній правамъ, на сколько таковыя по роду своему не принадлежатъ къ правамъ исключительно личнымъ, могутъ быть уступаемы другимъ лицамъ (рѣш. 1871 г. № 788, 1876 г. № 100, 1888 г. № 101, 1896 г. № 2 и др.); 2) что, посему, принадлежавшее Карлу Эйзерту право, возникшее изъ долговыхъ отношеній, могло быть свободно передано имъ истцу по настоящему дѣлу; 3) что дѣйствительность передачи, удостовѣренная над",
+        "passage_id": "1905-016:0-1703",
+        "pages": [
+          38
+        ],
+        "sources": [
+          {
+            "page": 38,
+            "page_method": "header",
+            "file": "p0020_L.txt",
+            "start": 512,
+            "end": 1638
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-016?mode=precedent&ref=1905-016%3A1888%3A101%3A892&at=857&end=905",
+        "scan_available": true
+      },
+      {
+        "id": "1905-016:1896:2:907",
+        "source_id": "1905-016",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "f283081f838003dd113efb2dfaaa0382d37e23911cbb576e8562ae6b62bb643e",
+        "year": 1896,
+        "start": 857,
+        "end": 918,
+        "department": null,
+        "association": null,
+        "number": 2,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 907,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1871 г. № 788, 1876 г. № 100, 1888 г. № 101, 1896 г. № 2",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 677,
+        "context_end": 1138,
+        "context_original": "ованія по пріобрѣтеннымъ изъ долговыхъ отношеній правамъ, на сколько таковыя по роду своему не принадлежатъ къ правамъ исключительно личнымъ, могутъ быть уступаемы другимъ лицамъ (рѣш. 1871 г. № 788, 1876 г. № 100, 1888 г. № 101, 1896 г. № 2 и др.); 2) что, посему, принадлежавшее Карлу Эйзерту право, возникшее изъ долговыхъ отношеній, могло быть свободно передано имъ истцу по настоящему дѣлу; 3) что дѣйствительность передачи, удостовѣренная надписью Эйзерта",
+        "passage_id": "1905-016:0-1703",
+        "pages": [
+          38
+        ],
+        "sources": [
+          {
+            "page": 38,
+            "page_method": "header",
+            "file": "p0020_L.txt",
+            "start": 512,
+            "end": 1638
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-016?mode=precedent&ref=1905-016%3A1896%3A2%3A907&at=857&end=918",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-016",
     "scan_pages": [

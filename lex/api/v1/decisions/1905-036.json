@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-036",
@@ -63,6 +63,86 @@
     "participant_ids": [
       "1905-d314f6156f41",
       "1905-e3fe24ebf9ad"
+    ],
+    "precedents": [
+      {
+        "id": "1905-036:1901:3:6124",
+        "source_id": "1905-036",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e34d8b157ac1c52a401bd0aef1ee9e6a43c47971011448f73e8bebed0d90f5ee",
+        "year": 1901,
+        "start": 6088,
+        "end": 6135,
+        "department": null,
+        "association": null,
+        "number": 3,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6124,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ Правительствующаго Сената 1901 г. № 3",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5908,
+        "context_end": 6355,
+        "context_original": ", исполненіе требованія 2062 ст. III ч. св. мѣст. узак. губ. Прибалт., т.-е. особое приглашеніе самимъ завѣщателемъ свидѣтелей и объявленіе имъ о намѣреніи составить завѣщаніе? Въ рѣшеніяхъ Правительствующаго Сената 1901 г. № 3 и 1900 г. № 28 подробно разъяснено, что, по дѣйствующимъ для крестьянъ Лифляндской губ. законамъ (ст. 938 и 1013 пол. о крест. 1860 г. и ст. 2036, 2038, 2060, 2070—2073, 2090—2092, 2443 и друг. III ч. св. мѣст. узак. гу",
+        "passage_id": "1905-036:5315-6900",
+        "pages": [
+          95
+        ],
+        "sources": [
+          {
+            "page": 95,
+            "page_method": "header",
+            "file": "p0048_R.txt",
+            "start": 5518,
+            "end": 6379
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-036?mode=precedent&ref=1905-036%3A1901%3A3%3A6124&at=6088&end=6135",
+        "scan_available": true
+      },
+      {
+        "id": "1905-036:1900:28:6138",
+        "source_id": "1905-036",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e34d8b157ac1c52a401bd0aef1ee9e6a43c47971011448f73e8bebed0d90f5ee",
+        "year": 1900,
+        "start": 6088,
+        "end": 6150,
+        "department": null,
+        "association": null,
+        "number": 28,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6138,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ Правительствующаго Сената 1901 г. № 3 и 1900 г. № 28",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5908,
+        "context_end": 6370,
+        "context_original": ", исполненіе требованія 2062 ст. III ч. св. мѣст. узак. губ. Прибалт., т.-е. особое приглашеніе самимъ завѣщателемъ свидѣтелей и объявленіе имъ о намѣреніи составить завѣщаніе? Въ рѣшеніяхъ Правительствующаго Сената 1901 г. № 3 и 1900 г. № 28 подробно разъяснено, что, по дѣйствующимъ для крестьянъ Лифляндской губ. законамъ (ст. 938 и 1013 пол. о крест. 1860 г. и ст. 2036, 2038, 2060, 2070—2073, 2090—2092, 2443 и друг. III ч. св. мѣст. узак. губ. Остз.), для ",
+        "passage_id": "1905-036:5315-6900",
+        "pages": [
+          95
+        ],
+        "sources": [
+          {
+            "page": 95,
+            "page_method": "header",
+            "file": "p0048_R.txt",
+            "start": 5518,
+            "end": 6379
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-036?mode=precedent&ref=1905-036%3A1900%3A28%3A6138&at=6088&end=6150",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-036",
     "scan_pages": [

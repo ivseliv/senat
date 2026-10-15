@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-022",
@@ -58,6 +58,86 @@
       "1905-1194208812cc",
       "1905-381b57d3b6c8",
       "1905-980cf0d792d0"
+    ],
+    "precedents": [
+      {
+        "id": "1905-022:1897:100:6181",
+        "source_id": "1905-022",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4baa157abdcaeea5f41fc77e13308c90f9e730ad18715ee3f86de38b7a8c6437",
+        "year": 1897,
+        "start": 6176,
+        "end": 6194,
+        "department": null,
+        "association": null,
+        "number": 100,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6181,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1897 г. № 100",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5996,
+        "context_end": 6414,
+        "context_original": "анные къ парку желѣзной дороги, считаются желѣзнодорожнымъ подвижнымъ составомъ этой дороги, наравнѣ съ тѣми вагонами и цистернами, которые принадлежатъ ей на правѣ собственности (рѣш. 1897 г. № 100 и 1903 г. № 82). Изъ правилъ обращенія на сѣти желѣзныхъ дорогъ пассажирскихъ вагоновъ частныхъ лицъ (собр. узак. 1901 г. № 2 ст. 13) и правилъ перевозки нефтяныхъ грузовъ въ частныхъ цистернахъ (собр. узак. 1900 г. № 6",
+        "passage_id": "1905-022:5636-7082",
+        "pages": [
+          55
+        ],
+        "sources": [
+          {
+            "page": 55,
+            "page_method": "header",
+            "file": "p0028_R.txt",
+            "start": 5636,
+            "end": 7082
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-022?mode=precedent&ref=1905-022%3A1897%3A100%3A6181&at=6176&end=6194",
+        "scan_available": true
+      },
+      {
+        "id": "1905-022:1903:82:6197",
+        "source_id": "1905-022",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4baa157abdcaeea5f41fc77e13308c90f9e730ad18715ee3f86de38b7a8c6437",
+        "year": 1903,
+        "start": 6176,
+        "end": 6209,
+        "department": null,
+        "association": null,
+        "number": 82,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6197,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1897 г. № 100 и 1903 г. № 82",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5996,
+        "context_end": 6429,
+        "context_original": "анные къ парку желѣзной дороги, считаются желѣзнодорожнымъ подвижнымъ составомъ этой дороги, наравнѣ съ тѣми вагонами и цистернами, которые принадлежатъ ей на правѣ собственности (рѣш. 1897 г. № 100 и 1903 г. № 82). Изъ правилъ обращенія на сѣти желѣзныхъ дорогъ пассажирскихъ вагоновъ частныхъ лицъ (собр. узак. 1901 г. № 2 ст. 13) и правилъ перевозки нефтяныхъ грузовъ въ частныхъ цистернахъ (собр. узак. 1900 г. № 66 ст. 1504) явс",
+        "passage_id": "1905-022:5636-7082",
+        "pages": [
+          55
+        ],
+        "sources": [
+          {
+            "page": 55,
+            "page_method": "header",
+            "file": "p0028_R.txt",
+            "start": 5636,
+            "end": 7082
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-022?mode=precedent&ref=1905-022%3A1903%3A82%3A6197&at=6176&end=6209",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-022",
     "scan_pages": [

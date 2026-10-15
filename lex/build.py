@@ -21,6 +21,7 @@ from laws import build_law_index
 from export import build_export
 from decision_analyses import build as build_decision_analyses
 from api import build_api
+from precedents import build_precedents
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 OUT = os.path.join(ROOT, 'lex', 'data')
@@ -28,6 +29,8 @@ OUT = os.path.join(ROOT, 'lex', 'data')
 
 def build_published_artifacts():
     """Пересобирает производные публичные данные и статический API из lex/data."""
+    precedents = build_precedents(ROOT)
+    print('  ссылки на решения:', len(precedents['references']), precedents['counts'])
     export = build_export(ROOT)
     print('  экспорт:', ', '.join(f'{key}={value}' for key, value in export['counts'].items()))
     analyses = build_decision_analyses()
@@ -360,6 +363,10 @@ def statute_code(statute):
 CITE = re.compile(r'(\d{4})\s*г(?:ода|\.)?[,\s]*(?:№|n)\s*(\d+(?:\s*(?:,|и)\s*(?:№\s*)?\d+)*)')
 
 def cites_for(text, own_year):
+    """Старые неполные пары для совместимости; не использовать для переходов.
+
+    Полный разбор по оригиналу, учреждению и цитате — в precedents.py.
+    """
     t = modernize(text).lower()
     found = set()
     for m in CITE.finditer(t):
@@ -509,11 +516,13 @@ def analytics(docs, vols):
     A['statute_codes'] = dict(collections.Counter(
         statute_code(s) for d in docs for s in d['statutes']).most_common())
     A['codes'] = {c: n for c, n, _ in CODES}
-    cited = collections.Counter(); ids = {(d['vol'], d['num']): d['i'] for d in docs}
+    cited = collections.Counter()
     for d in docs:
         for y, n in d['cites']:
             cited[(y, n)] += 1
-    A['cited'] = [[y, n, c, ids.get((y, n))] for (y, n), c in cited.most_common(40)]
+    # Неполная пара год/номер не даёт перехода. Типизированные связи
+    # добавляет build_precedents после записи текстов.
+    A['cited'] = [[y, n, c, None] for (y, n), c in cited.most_common(40)]
     for role in ('presiding', 'reporter', 'prosecutor'):
         A[role] = collections.Counter(d[role] for d in docs if d[role]).most_common(25)
     A['words_median'] = sorted(d['words'] for d in docs)[len(docs) // 2] if docs else 0

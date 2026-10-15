@@ -96,8 +96,136 @@
         },
         "scan_pages": {
           "type": "array"
+        },
+        "precedents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/PrecedentReference"
+          }
+        },
+        "cites": {
+          "type": "array",
+          "deprecated": true,
+          "description": "Старые пары год/номер без департамента. Не устанавливают тождество и не пригодны для переходов; используйте precedents."
         }
       }
+    },
+    "PrecedentReference": {
+      "type": "object",
+      "required": [
+        "id",
+        "source_id",
+        "source_sha256",
+        "department",
+        "year",
+        "number",
+        "status",
+        "target_id",
+        "start",
+        "end",
+        "quote_original",
+        "context_original",
+        "source_url",
+        "target_url"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "source_id": {
+          "type": "string"
+        },
+        "source_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "department": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "year": {
+          "type": "integer"
+        },
+        "number": {
+          "type": "integer"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "linked",
+            "not_in_corpus",
+            "department_unknown",
+            "ambiguous_target"
+          ]
+        },
+        "target_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "target_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "quote_original": {
+          "type": "string"
+        },
+        "context_original": {
+          "type": "string"
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "linked"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "department": {
+                "type": "string"
+              },
+              "target_id": {
+                "type": "string"
+              },
+              "target_url": {
+                "type": "string"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "target_id": {
+                "type": "null"
+              },
+              "target_url": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
     },
     "Passage": {
       "type": "object",

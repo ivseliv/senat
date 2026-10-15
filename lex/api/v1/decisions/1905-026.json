@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-026",
@@ -60,6 +60,242 @@
       "1905-b42aeafe90af",
       "1905-79c32a094238",
       "1905-4ec40c43f210"
+    ],
+    "precedents": [
+      {
+        "id": "1905-026:1880:28:8221",
+        "source_id": "1905-026",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "55350d292070e439c10cd83d482de6ce02457b21da616143f69e20773ade24f2",
+        "year": 1880,
+        "start": 8216,
+        "end": 8233,
+        "department": null,
+        "association": null,
+        "number": 28,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 8221,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1880 г. № 28",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 8036,
+        "context_end": 8453,
+        "context_original": "ктическомъ владѣніи третьяго лица, въ настоящемъ случаѣ общества крестьянъ дер. Ситово, послѣднее могло ссылаться на свое фактическое владѣніе лишь за время до производства торга (рѣш. 1880 г. № 28, 1875 г. № 840 и др.), но послѣ продажи имѣнія съ публичнаго торга оно въ правѣ лишь, согласно 1197 и 1 п. 1180 ст. уст. гр. суд. (рѣш. 1884 г. № 110, 1879 г. № 251 и др.), защищаться своимъ правомъ собственности на так",
+        "passage_id": "1905-026:6697-8458",
+        "pages": [
+          68
+        ],
+        "sources": [
+          {
+            "page": 68,
+            "page_method": "header",
+            "file": "p0035_L.txt",
+            "start": 6697,
+            "end": 8300
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-026?mode=precedent&ref=1905-026%3A1880%3A28%3A8221&at=8216&end=8233",
+        "scan_available": true
+      },
+      {
+        "id": "1905-026:1875:840:8235",
+        "source_id": "1905-026",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "55350d292070e439c10cd83d482de6ce02457b21da616143f69e20773ade24f2",
+        "year": 1875,
+        "start": 8216,
+        "end": 8248,
+        "department": null,
+        "association": null,
+        "number": 840,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 8235,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1880 г. № 28, 1875 г. № 840",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 8036,
+        "context_end": 8468,
+        "context_original": "ктическомъ владѣніи третьяго лица, въ настоящемъ случаѣ общества крестьянъ дер. Ситово, послѣднее могло ссылаться на свое фактическое владѣніе лишь за время до производства торга (рѣш. 1880 г. № 28, 1875 г. № 840 и др.), но послѣ продажи имѣнія съ публичнаго торга оно въ правѣ лишь, согласно 1197 и 1 п. 1180 ст. уст. гр. суд. (рѣш. 1884 г. № 110, 1879 г. № 251 и др.), защищаться своимъ правомъ собственности на таковое. Примѣняя ",
+        "passage_id": "1905-026:6697-8458",
+        "pages": [
+          68
+        ],
+        "sources": [
+          {
+            "page": 68,
+            "page_method": "header",
+            "file": "p0035_L.txt",
+            "start": 6697,
+            "end": 8300
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-026?mode=precedent&ref=1905-026%3A1875%3A840%3A8235&at=8216&end=8248",
+        "scan_available": true
+      },
+      {
+        "id": "1905-026:1884:110:8370",
+        "source_id": "1905-026",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "55350d292070e439c10cd83d482de6ce02457b21da616143f69e20773ade24f2",
+        "year": 1884,
+        "start": 8365,
+        "end": 8383,
+        "department": null,
+        "association": null,
+        "number": 110,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 8370,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1884 г. № 110",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 8185,
+        "context_end": 8603,
+        "context_original": "а время до производства торга (рѣш. 1880 г. № 28, 1875 г. № 840 и др.), но послѣ продажи имѣнія съ публичнаго торга оно въ правѣ лишь, согласно 1197 и 1 п. 1180 ст. уст. гр. суд. (рѣш. 1884 г. № 110, 1879 г. № 251 и др.), защищаться своимъ правомъ собственности на таковое. Примѣняя эти указанія, основанныя на установленной Сенатомъ практикѣ, вполнѣ согласной съ приведеннымъ 1 п. 1180 ст. уст. гр. суд., по силѣ коег",
+        "passage_id": "1905-026:6697-8458",
+        "pages": [
+          69
+        ],
+        "sources": [
+          {
+            "page": 69,
+            "page_method": "header",
+            "file": "p0035_R.txt",
+            "start": 8301,
+            "end": 9416
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-026?mode=precedent&ref=1905-026%3A1884%3A110%3A8370&at=8365&end=8383",
+        "scan_available": true
+      },
+      {
+        "id": "1905-026:1879:251:8385",
+        "source_id": "1905-026",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "55350d292070e439c10cd83d482de6ce02457b21da616143f69e20773ade24f2",
+        "year": 1879,
+        "start": 8365,
+        "end": 8398,
+        "department": null,
+        "association": null,
+        "number": 251,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 8385,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1884 г. № 110, 1879 г. № 251",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 8185,
+        "context_end": 8618,
+        "context_original": "а время до производства торга (рѣш. 1880 г. № 28, 1875 г. № 840 и др.), но послѣ продажи имѣнія съ публичнаго торга оно въ правѣ лишь, согласно 1197 и 1 п. 1180 ст. уст. гр. суд. (рѣш. 1884 г. № 110, 1879 г. № 251 и др.), защищаться своимъ правомъ собственности на таковое. Примѣняя эти указанія, основанныя на установленной Сенатомъ практикѣ, вполнѣ согласной съ приведеннымъ 1 п. 1180 ст. уст. гр. суд., по силѣ коего имѣніе, прода",
+        "passage_id": "1905-026:6697-8458",
+        "pages": [
+          69
+        ],
+        "sources": [
+          {
+            "page": 69,
+            "page_method": "header",
+            "file": "p0035_R.txt",
+            "start": 8301,
+            "end": 9416
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-026?mode=precedent&ref=1905-026%3A1879%3A251%3A8385&at=8365&end=8398",
+        "scan_available": true
+      },
+      {
+        "id": "1905-026:1888:84:9544",
+        "source_id": "1905-026",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "55350d292070e439c10cd83d482de6ce02457b21da616143f69e20773ade24f2",
+        "year": 1888,
+        "start": 9536,
+        "end": 9556,
+        "department": null,
+        "association": null,
+        "number": 84,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 9544,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшенія 1888 г. № 84",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 9356,
+        "context_end": 9776,
+        "context_original": "тивной стороной, о ея правѣ собственности на спорное имѣніе. Въ такомъ разрѣшеніи этого дѣла нельзя не усмотрѣть нарушенія 1 п. 1180 ст. уст. гр. суд. и разъясняющаго этотъ законъ рѣшенія 1888 г. № 84, ибо, какъ указано въ названномъ пунктѣ закона и разъяснено въ приведенномъ рѣшеніи Правительствующаго Сената, пріобрѣтенное съ публичнаго торга имѣніе можетъ быть изъято изъ владѣнія пріобрѣвшаго его лица лишь въ случа",
+        "passage_id": "1905-026:9149-10794",
+        "pages": [
+          69
+        ],
+        "sources": [
+          {
+            "page": 69,
+            "page_method": "header",
+            "file": "p0035_R.txt",
+            "start": 9149,
+            "end": 10794
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-026?mode=precedent&ref=1905-026%3A1888%3A84%3A9544&at=9536&end=9556",
+        "scan_available": true
+      },
+      {
+        "id": "1905-026:1894:117:11396",
+        "source_id": "1905-026",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "55350d292070e439c10cd83d482de6ce02457b21da616143f69e20773ade24f2",
+        "year": 1894,
+        "start": 11391,
+        "end": 11409,
+        "department": null,
+        "association": null,
+        "number": 117,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 11396,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1894 г. № 117",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 11211,
+        "context_end": 11629,
+        "context_original": "а разсмотрѣнія палатою доказательствъ противной стороны, опровергается тѣмъ мѣстомъ рѣшенія, гдѣ самою палатою признано ненужнымъ входить въ разсмотрѣніе этихъ доказательствъ (ср. рѣш. 1894 г. № 117). Признавая, въ виду изложеннаго, обжалованное рѣшеніе Кіевской судебной палаты подлежащимъ отмѣнѣ и не усматривая надобности входить въ разсмотрѣніе прочихъ приводимыхъ въ кассаціонной жалобѣ поводовъ къ отмѣнѣ этого р",
+        "passage_id": "1905-026:10502-11816",
+        "pages": [
+          70
+        ],
+        "sources": [
+          {
+            "page": 70,
+            "page_method": "header",
+            "file": "p0036_L.txt",
+            "start": 11295,
+            "end": 11816
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-026?mode=precedent&ref=1905-026%3A1894%3A117%3A11396&at=11391&end=11409",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-026",
     "scan_pages": [

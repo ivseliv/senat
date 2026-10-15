@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-059",
@@ -57,6 +57,242 @@
       "1904-ed638a32415a",
       "1904-969034f4249a",
       "1904-3415d84e4031"
+    ],
+    "precedents": [
+      {
+        "id": "1904-059:1875:575:1949",
+        "source_id": "1904-059",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "48075ff337e470d50a8711efe5775afd71b77f7daa6f443aaac2e3a32f9b1523",
+        "year": 1875,
+        "start": 1944,
+        "end": 1962,
+        "department": null,
+        "association": null,
+        "number": 575,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1949,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1875 г. № 575",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1764,
+        "context_end": 2182,
+        "context_original": "му значенію представляются окончательными, преграждающими участвующимъ въ дѣлѣ лицамъ дальнѣйшій путь къ огражденію ихъ интересовъ, подлежатъ обжалованію въ кассаціонномъ порядкѣ (рѣш. 1875 г. № 575, 1877 г. № 246, 1897 г. № 6 и мн. друг.) и поэтому подлежитъ такому обжалованію и опредѣленіе суда о непринятіи къ разсмотрѣнію апелляціонныхъ жалобъ, какъ это было въ данномъ случаѣ (рѣш. 1887 г. № 56, 1877 г. № 246 и ",
+        "passage_id": "1904-059:1297-2961",
+        "pages": [
+          166
+        ],
+        "sources": [
+          {
+            "page": 166,
+            "page_method": "header",
+            "file": "p0084_L.txt",
+            "start": 1297,
+            "end": 2269
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-059?mode=precedent&ref=1904-059%3A1875%3A575%3A1949&at=1944&end=1962",
+        "scan_available": true
+      },
+      {
+        "id": "1904-059:1877:246:1964",
+        "source_id": "1904-059",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "48075ff337e470d50a8711efe5775afd71b77f7daa6f443aaac2e3a32f9b1523",
+        "year": 1877,
+        "start": 1944,
+        "end": 1977,
+        "department": null,
+        "association": null,
+        "number": 246,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1964,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1875 г. № 575, 1877 г. № 246",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1764,
+        "context_end": 2197,
+        "context_original": "му значенію представляются окончательными, преграждающими участвующимъ въ дѣлѣ лицамъ дальнѣйшій путь къ огражденію ихъ интересовъ, подлежатъ обжалованію въ кассаціонномъ порядкѣ (рѣш. 1875 г. № 575, 1877 г. № 246, 1897 г. № 6 и мн. друг.) и поэтому подлежитъ такому обжалованію и опредѣленіе суда о непринятіи къ разсмотрѣнію апелляціонныхъ жалобъ, какъ это было въ данномъ случаѣ (рѣш. 1887 г. № 56, 1877 г. № 246 и друг.). Обращая",
+        "passage_id": "1904-059:1297-2961",
+        "pages": [
+          166
+        ],
+        "sources": [
+          {
+            "page": 166,
+            "page_method": "header",
+            "file": "p0084_L.txt",
+            "start": 1297,
+            "end": 2269
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-059?mode=precedent&ref=1904-059%3A1877%3A246%3A1964&at=1944&end=1977",
+        "scan_available": true
+      },
+      {
+        "id": "1904-059:1897:6:1979",
+        "source_id": "1904-059",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "48075ff337e470d50a8711efe5775afd71b77f7daa6f443aaac2e3a32f9b1523",
+        "year": 1897,
+        "start": 1944,
+        "end": 1990,
+        "department": null,
+        "association": null,
+        "number": 6,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1979,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1875 г. № 575, 1877 г. № 246, 1897 г. № 6",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1764,
+        "context_end": 2210,
+        "context_original": "му значенію представляются окончательными, преграждающими участвующимъ въ дѣлѣ лицамъ дальнѣйшій путь къ огражденію ихъ интересовъ, подлежатъ обжалованію въ кассаціонномъ порядкѣ (рѣш. 1875 г. № 575, 1877 г. № 246, 1897 г. № 6 и мн. друг.) и поэтому подлежитъ такому обжалованію и опредѣленіе суда о непринятіи къ разсмотрѣнію апелляціонныхъ жалобъ, какъ это было въ данномъ случаѣ (рѣш. 1887 г. № 56, 1877 г. № 246 и друг.). Обращаясь къ разсмот",
+        "passage_id": "1904-059:1297-2961",
+        "pages": [
+          166
+        ],
+        "sources": [
+          {
+            "page": 166,
+            "page_method": "header",
+            "file": "p0084_L.txt",
+            "start": 1297,
+            "end": 2269
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-059?mode=precedent&ref=1904-059%3A1897%3A6%3A1979&at=1944&end=1990",
+        "scan_available": true
+      },
+      {
+        "id": "1904-059:1887:56:2152",
+        "source_id": "1904-059",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "48075ff337e470d50a8711efe5775afd71b77f7daa6f443aaac2e3a32f9b1523",
+        "year": 1887,
+        "start": 2147,
+        "end": 2164,
+        "department": null,
+        "association": null,
+        "number": 56,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2152,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1887 г. № 56",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1967,
+        "context_end": 2384,
+        "context_original": "7 г. № 246, 1897 г. № 6 и мн. друг.) и поэтому подлежитъ такому обжалованію и опредѣленіе суда о непринятіи къ разсмотрѣнію апелляціонныхъ жалобъ, какъ это было въ данномъ случаѣ (рѣш. 1887 г. № 56, 1877 г. № 246 и друг.). Обращаясь къ разсмотрѣнію кассаціонной жалобы повѣреннаго отвѣтчика, Правитель- ствующій Сенатъ находитъ, что мировой съѣздъ, возвращая ему апелляціонную жалобу за пропускомъ срока, упустилъ изъ",
+        "passage_id": "1904-059:1297-2961",
+        "pages": [
+          166
+        ],
+        "sources": [
+          {
+            "page": 166,
+            "page_method": "header",
+            "file": "p0084_L.txt",
+            "start": 1297,
+            "end": 2269
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-059?mode=precedent&ref=1904-059%3A1887%3A56%3A2152&at=2147&end=2164",
+        "scan_available": true
+      },
+      {
+        "id": "1904-059:1877:246:2166",
+        "source_id": "1904-059",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "48075ff337e470d50a8711efe5775afd71b77f7daa6f443aaac2e3a32f9b1523",
+        "year": 1877,
+        "start": 2147,
+        "end": 2179,
+        "department": null,
+        "association": null,
+        "number": 246,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2166,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1887 г. № 56, 1877 г. № 246",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1967,
+        "context_end": 2399,
+        "context_original": "7 г. № 246, 1897 г. № 6 и мн. друг.) и поэтому подлежитъ такому обжалованію и опредѣленіе суда о непринятіи къ разсмотрѣнію апелляціонныхъ жалобъ, какъ это было въ данномъ случаѣ (рѣш. 1887 г. № 56, 1877 г. № 246 и друг.). Обращаясь къ разсмотрѣнію кассаціонной жалобы повѣреннаго отвѣтчика, Правитель- ствующій Сенатъ находитъ, что мировой съѣздъ, возвращая ему апелляціонную жалобу за пропускомъ срока, упустилъ изъ виду, что непр",
+        "passage_id": "1904-059:1297-2961",
+        "pages": [
+          166
+        ],
+        "sources": [
+          {
+            "page": 166,
+            "page_method": "header",
+            "file": "p0084_L.txt",
+            "start": 1297,
+            "end": 2269
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-059?mode=precedent&ref=1904-059%3A1877%3A246%3A2166&at=2147&end=2179",
+        "scan_available": true
+      },
+      {
+        "id": "1904-059:1876:345:3973",
+        "source_id": "1904-059",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "48075ff337e470d50a8711efe5775afd71b77f7daa6f443aaac2e3a32f9b1523",
+        "year": 1876,
+        "start": 3968,
+        "end": 3986,
+        "department": null,
+        "association": null,
+        "number": 345,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3973,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1876 г. № 345",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3788,
+        "context_end": 4206,
+        "context_original": "о отвѣтчикъ не имѣлъ и повода жаловаться на такое распоряженіе, которое нисколько не преграждало ему права воспользоваться тѣмъ срокомъ, который установленъ 155 ст. уст. гр. суд. (рѣш. 1876 г. № 345). Изложенное даетъ основаніе къ установленію того общаго положенія, что отвѣтчикъ, подавшій до полученія выписки изъ заочнаго рѣшенія или повѣстки объ исполненіи, т.-е. до начала теченія апелляціоннаго срока, апелляціон",
+        "passage_id": "1904-059:2712-4575",
+        "pages": [
+          167
+        ],
+        "sources": [
+          {
+            "page": 167,
+            "page_method": "header",
+            "file": "p0084_R.txt",
+            "start": 2712,
+            "end": 4575
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-059?mode=precedent&ref=1904-059%3A1876%3A345%3A3973&at=3968&end=3986",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-059",
     "scan_pages": [

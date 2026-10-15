@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-098",
@@ -63,6 +63,47 @@
       "1905-58e888151c43",
       "1905-9f4e988b35e8",
       "1905-cfbb0574cdbd"
+    ],
+    "precedents": [
+      {
+        "id": "1905-098:1878:70:11966",
+        "source_id": "1905-098",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "2f84d9dd4671b0d3c93958b4fcf70d91f9e4ee6b39d904f88067bd1e5beb0c46",
+        "year": 1878,
+        "start": 11932,
+        "end": 11978,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 70,
+        "department_start": 11932,
+        "department_end": 11959,
+        "citation_start": 11966,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "гражд. кассац. департамента (рѣш. 1878 г. № 70",
+        "target_url": null,
+        "department_evidence": "гражд. кассац. департамента",
+        "context_start": 11752,
+        "context_end": 12198,
+        "context_original": "дьбы, слѣдовательно и не оставлены въ пользу заводовладѣльцевъ. Указываемая просителемъ 27 ст. мѣстн. велик. полож. не можетъ служить въ пользу отвѣтчика, такъ какъ по разъясненію гражд. кассац. департамента (рѣш. 1878 г. № 70) въ законѣ не выражено такого правила, чтобы и послѣ выкупа надѣла земля, вообще неспособная къ воздѣлыванію, а равно и улицы и т. п., оставались исключительною принадлежностью бывшаго помѣщика и состояли въ исключитель",
+        "passage_id": "1905-098:11038-12335",
+        "pages": [
+          268
+        ],
+        "sources": [
+          {
+            "page": 268,
+            "page_method": "header",
+            "file": "p0135_L.txt",
+            "start": 11273,
+            "end": 12335
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-098?mode=precedent&ref=1905-098%3A1878%3A70%3A11966&at=11932&end=11978",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-098",
     "scan_pages": [

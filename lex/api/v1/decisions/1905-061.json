@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-061",
@@ -67,6 +67,86 @@
       "1905-37668b162ab8",
       "1905-d98bf1aa3c7f",
       "1905-6b56c65ce24f"
+    ],
+    "precedents": [
+      {
+        "id": "1905-061:1878:214:6637",
+        "source_id": "1905-061",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "39ca81a53e2f593146dc21471287b37341fe43d4177bc5ca0a70d01c19ee1158",
+        "year": 1878,
+        "start": 6632,
+        "end": 6650,
+        "department": null,
+        "association": null,
+        "number": 214,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6637,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1878 г. № 214",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 6452,
+        "context_end": 6870,
+        "context_original": "при разсмотрѣніи этихъ дѣлъ, разрѣшаютъ въ межевомъ порядкѣ не только споры о границахъ, но и споры о правѣ собственности и о правѣ владѣнія вообще (ст. 92, 93 и 109 пол. о разм.; рѣш. 1878 г. № 214 и мн. др.). При наличности такого порядка производства межевыхъ дѣлъ невозможно признать, чтобы споры о правѣ въѣзда, какъ споры о правѣ вещномъ и вотчинномъ, имѣющіе тѣсную связь съ другими, возникающими при межевомъ п",
+        "passage_id": "1905-061:5646-6975",
+        "pages": [
+          166
+        ],
+        "sources": [
+          {
+            "page": 166,
+            "page_method": "header",
+            "file": "p0084_L.txt",
+            "start": 5646,
+            "end": 6975
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-061?mode=precedent&ref=1905-061%3A1878%3A214%3A6637&at=6632&end=6650",
+        "scan_available": true
+      },
+      {
+        "id": "1905-061:1880:204:8918",
+        "source_id": "1905-061",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "39ca81a53e2f593146dc21471287b37341fe43d4177bc5ca0a70d01c19ee1158",
+        "year": 1880,
+        "start": 8913,
+        "end": 8931,
+        "department": null,
+        "association": null,
+        "number": 204,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 8918,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1880 г. № 204",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 8733,
+        "context_end": 9151,
+        "context_original": "та, установивъ по дѣлу, что просители, кн. Николай и Иванъ Чикованповы, состоятъ совладѣльцами прочихъ кн. Чиковановыхъ, поступила правильно и согласно приведенной 116 ст. полож. (рѣш. 1880 г. № 204) и не нарушила 108—110 ст. пол., отказавъ въ производствѣ дознанія чрезъ окольныхъ людей въ подтвержденіе размѣровъ фактическаго владѣнія просителей въ дачѣ. Принимая, засимъ, во вниманіе, что просители, жалуясь на непр",
+        "passage_id": "1905-061:8096-10317",
+        "pages": [
+          167
+        ],
+        "sources": [
+          {
+            "page": 167,
+            "page_method": "header",
+            "file": "p0084_R.txt",
+            "start": 8096,
+            "end": 10317
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-061?mode=precedent&ref=1905-061%3A1880%3A204%3A8918&at=8913&end=8931",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-061",
     "scan_pages": [

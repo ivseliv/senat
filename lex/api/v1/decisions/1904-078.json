@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-078",
@@ -62,6 +62,125 @@
       "1904-a8a7b4de6009",
       "1904-08fe1eacd532",
       "1904-c65ad82ca942"
+    ],
+    "precedents": [
+      {
+        "id": "1904-078:1882:96:8738",
+        "source_id": "1904-078",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "04f253c311990e4a525d7ca0136459b383272548e7e579444993eca1e179afa3",
+        "year": 1882,
+        "start": 8718,
+        "end": 8750,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 96,
+        "department_start": 8723,
+        "department_end": 8737,
+        "citation_start": 8738,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. деп. 1882 г. № 96",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 8538,
+        "context_end": 8970,
+        "context_original": "щества, только состоявшіяся при точномъ соблюденіи правилъ своего устава, изданнаго въ огражденіе участниковъ въ товариществѣ и публики (ст. 2158 т. X ч. 1), имѣютъ законную силу (рѣш. гр. касс. деп. 1882 г. № 96); это подтверждается тѣмъ, что учрежденіе компаніи разрѣшается правительствомъ (ст. 2141), образъ дѣйствій опредѣляется уставомъ, проектъ коего, единожды утвержденный правительствомъ, компанія безъ новаго разрѣшенія не ",
+        "passage_id": "1904-078:7027-9090",
+        "pages": [
+          218
+        ],
+        "sources": [
+          {
+            "page": 218,
+            "page_method": "header",
+            "file": "p0110_L.txt",
+            "start": 7719,
+            "end": 9090
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-078?mode=precedent&ref=1904-078%3A1882%3A96%3A8738&at=8718&end=8750",
+        "scan_available": true
+      },
+      {
+        "id": "1904-078:1902:14:10218",
+        "source_id": "1904-078",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "04f253c311990e4a525d7ca0136459b383272548e7e579444993eca1e179afa3",
+        "year": 1902,
+        "start": 10198,
+        "end": 10230,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 14,
+        "department_start": 10203,
+        "department_end": 10217,
+        "citation_start": 10218,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. д-та 1902 г. № 14",
+        "target_url": null,
+        "department_evidence": "гр. касс. д-та",
+        "context_start": 10018,
+        "context_end": 10232,
+        "context_original": "ѣлила какъ заключеніе это, такъ и соображенія суда, вслѣдствіе чего не была обязана излагать свои соображенія по сему предмету и, слѣдовательно, не нарушила ст. 711 уст. гр. суд. (рѣш. гр. касс. д-та 1902 г. № 14).",
+        "passage_id": "1904-078:8802-10531",
+        "pages": [
+          218
+        ],
+        "sources": [
+          {
+            "page": 218,
+            "page_method": "header",
+            "file": "p0110_L.txt",
+            "start": 8802,
+            "end": 10232
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-078?mode=precedent&ref=1904-078%3A1902%3A14%3A10218&at=10198&end=10230",
+        "scan_available": true
+      },
+      {
+        "id": "1904-078:1892:83:10517",
+        "source_id": "1904-078",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "04f253c311990e4a525d7ca0136459b383272548e7e579444993eca1e179afa3",
+        "year": 1892,
+        "start": 10497,
+        "end": 10529,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 83,
+        "department_start": 10502,
+        "department_end": 10516,
+        "citation_start": 10517,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. д-та 1892 г. № 83",
+        "target_url": null,
+        "department_evidence": "гр. касс. д-та",
+        "context_start": 10317,
+        "context_end": 10749,
+        "context_original": ", почему его права не нарушены открытіемъ таковаго въ іюнѣ, а не въ іюлѣ мѣсяцѣ, не подлежитъ обсужденію Правительствующаго Сената, какъ заявленное впервые въ кассаціонной жалобѣ (рѣш. гр. касс. д-та 1892 г. № 83). Заявленіе же его о томъ, что сокращеніемъ срока для раздачи пайщикамъ отчета съ приложеніями и несвоевременнымъ открытіемъ книгъ правленія не нарушены интересы истца и что будто Мещеринъ даже этого и не утверждалъ, оп",
+        "passage_id": "1904-078:8802-10531",
+        "pages": [
+          218
+        ],
+        "sources": [
+          {
+            "page": 218,
+            "page_method": "header",
+            "file": "p0110_L.txt",
+            "start": 10310,
+            "end": 10808
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-078?mode=precedent&ref=1904-078%3A1892%3A83%3A10517&at=10497&end=10529",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-078",
     "scan_pages": [

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-038",
@@ -43,6 +43,125 @@
     "participant_ids": [
       "1905-a7c6d3cee5ab",
       "1905-05a8fb77ce25"
+    ],
+    "precedents": [
+      {
+        "id": "1905-038:1887:107:5516",
+        "source_id": "1905-038",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "7b60dc598df8e62dcf161da78719791a1d43000622cf662d1214e03b49ab4b0b",
+        "year": 1887,
+        "start": 5506,
+        "end": 5529,
+        "department": null,
+        "association": null,
+        "number": 107,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5516,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. Сен. 1887 г. № 107",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5326,
+        "context_end": 5749,
+        "context_original": " закономъ ограничительнымъ, она должна быть изъясняема по точному и буквальному ея смыслу, т.-е. можетъ быть примѣняема лишь къ однимъ окнамъ въ самомъ тѣсномъ смыслѣ этого слова (рѣш. Сен. 1887 г. № 107). Поэтому, обсужденію Правительствующаго Сената въ настоящемъ дѣлѣ подлежитъ вопросъ: устроенные отвѣтчикомъ Фокинымъ въ каменной стѣнѣ своего дома, стоящей на межѣ двора истицы Молошниковой, и называемые послѣднею окна",
+        "passage_id": "1905-038:5289-6895",
+        "pages": [
+          102
+        ],
+        "sources": [
+          {
+            "page": 102,
+            "page_method": "header",
+            "file": "p0052_L.txt",
+            "start": 5289,
+            "end": 6140
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-038?mode=precedent&ref=1905-038%3A1887%3A107%3A5516&at=5506&end=5529",
+        "scan_available": true
+      },
+      {
+        "id": "1905-038:1895:64:7398",
+        "source_id": "1905-038",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "7b60dc598df8e62dcf161da78719791a1d43000622cf662d1214e03b49ab4b0b",
+        "year": 1895,
+        "start": 7388,
+        "end": 7410,
+        "department": null,
+        "association": null,
+        "number": 64,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7398,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. Сен. 1895 г. № 64",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7208,
+        "context_end": 7630,
+        "context_original": "нъ воспрещаетъ устраивать окна на дворъ сосѣда, слѣдуетъ признать: возможность чрезъ окно имѣть прямое непосредственное сообщеніе съ дворомъ сосѣда и возможность видѣть его дворъ (рѣш. Сен. 1895 г. № 64), такъ какъ то и другое представляютъ для сосѣда дѣйствительное неудобство. Хотя просительница въ кассаціонной своей жалобѣ и указываетъ, что воспрещеніе устраивать окна на дворъ сосѣда установлено закономъ и съ цѣлью в",
+        "passage_id": "1905-038:6627-8260",
+        "pages": [
+          102
+        ],
+        "sources": [
+          {
+            "page": 102,
+            "page_method": "header",
+            "file": "p0052_L.txt",
+            "start": 6627,
+            "end": 8247
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-038?mode=precedent&ref=1905-038%3A1895%3A64%3A7398&at=7388&end=7410",
+        "scan_available": true
+      },
+      {
+        "id": "1905-038:1874:524:9413",
+        "source_id": "1905-038",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "7b60dc598df8e62dcf161da78719791a1d43000622cf662d1214e03b49ab4b0b",
+        "year": 1874,
+        "start": 9403,
+        "end": 9426,
+        "department": null,
+        "association": null,
+        "number": 524,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 9413,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. Сен. 1874 г. № 524",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 9223,
+        "context_end": 9646,
+        "context_original": "бъявленія резолюціи по дѣлу, но уже послѣ того, какъ судьи удалились для постановленія рѣшенія, не давало ему законнаго основанія требовать, чтобы съѣздъ выслушалъ его объясненія (рѣш. Сен. 1874 г. № 524), почему послѣдній въ правѣ былъ отказать въ такомъ его ходатайствѣ и отказомъ этимъ указываемыхъ просительницею 338 и 339 ст. уст. гр. суд. не нарушилъ,—Правительствующій Сенатъ опредѣляетъ: просьбу Молошниковой остави",
+        "passage_id": "1905-038:8054-9666",
+        "pages": [
+          103
+        ],
+        "sources": [
+          {
+            "page": 103,
+            "page_method": "header",
+            "file": "p0052_R.txt",
+            "start": 8248,
+            "end": 9666
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-038?mode=precedent&ref=1905-038%3A1874%3A524%3A9413&at=9403&end=9426",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-038",
     "scan_pages": [

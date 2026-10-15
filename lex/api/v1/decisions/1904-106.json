@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-106",
@@ -74,6 +74,359 @@
       "1904-01c4994a8531",
       "1904-0f48acfb9d89",
       "1904-b37f1359914f"
+    ],
+    "precedents": [
+      {
+        "id": "1904-106:1901:38:2349",
+        "source_id": "1904-106",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "84df011b7cd7154ff710a934f60a446c0e9b0dde082086b9115ebda0db6268de",
+        "year": 1901,
+        "start": 2344,
+        "end": 2361,
+        "department": null,
+        "association": null,
+        "number": 38,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2349,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1901 г. № 38",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2234,
+        "context_end": 2581,
+        "context_original": "Гражд. 1904 г.\n19* въ накладныхъ, между тѣмъ какъ такая обязанность никакимъ закономъ на дороги не возложена (рѣш. 1901 г. № 38); не обязываетъ къ этому и указываемая просителемъ 60 ст. общ. уст. росс. жел. дор., такъ какъ она лишь предоставляетъ дорогамъ, въ видахъ правильнаго исчисленія провозныхъ платъ, повѣрку содержанія груза, его вѣса и ст",
+        "passage_id": "1904-106:1330-2652",
+        "pages": [
+          292
+        ],
+        "sources": [
+          {
+            "page": 292,
+            "page_method": "header",
+            "file": "p0147_L.txt",
+            "start": 2253,
+            "end": 2652
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-106?mode=precedent&ref=1904-106%3A1901%3A38%3A2349&at=2344&end=2361",
+        "scan_available": true
+      },
+      {
+        "id": "1904-106:1902:15:3651",
+        "source_id": "1904-106",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "84df011b7cd7154ff710a934f60a446c0e9b0dde082086b9115ebda0db6268de",
+        "year": 1902,
+        "start": 3643,
+        "end": 3668,
+        "department": null,
+        "association": null,
+        "number": 15,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3651,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. за 1902 г. № 15 и 16",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3463,
+        "context_end": 3888,
+        "context_original": " Такое уясненіе представляется существенно важнымъ и тѣмъ болѣе необходимымъ, что въ двухъ рѣшеніяхъ Правительствующаго Сената, имѣвшихъ своимъ предметомъ также нарушеніе очереди (рѣш. за 1902 г. № 15 и 16), не содержится общихъ указаній по этому предмету, а потому сдѣланные въ тѣхъ рѣшеніяхъ выводы не выясняютъ вопроса во всей его полнотѣ. Въ рѣшеніяхъ тѣхъ говорится, что если въ накладной и дубликатѣ означенъ день отпра",
+        "passage_id": "1904-106:2401-3805",
+        "pages": [
+          292
+        ],
+        "sources": [
+          {
+            "page": 292,
+            "page_method": "header",
+            "file": "p0147_L.txt",
+            "start": 3591,
+            "end": 5041
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-106?mode=precedent&ref=1904-106%3A1902%3A15%3A3651&at=3643&end=3668",
+        "scan_available": true
+      },
+      {
+        "id": "1904-106:1902:16:3651",
+        "source_id": "1904-106",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "84df011b7cd7154ff710a934f60a446c0e9b0dde082086b9115ebda0db6268de",
+        "year": 1902,
+        "start": 3643,
+        "end": 3668,
+        "department": null,
+        "association": null,
+        "number": 16,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3651,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. за 1902 г. № 15 и 16",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3463,
+        "context_end": 3888,
+        "context_original": " Такое уясненіе представляется существенно важнымъ и тѣмъ болѣе необходимымъ, что въ двухъ рѣшеніяхъ Правительствующаго Сената, имѣвшихъ своимъ предметомъ также нарушеніе очереди (рѣш. за 1902 г. № 15 и 16), не содержится общихъ указаній по этому предмету, а потому сдѣланные въ тѣхъ рѣшеніяхъ выводы не выясняютъ вопроса во всей его полнотѣ. Въ рѣшеніяхъ тѣхъ говорится, что если въ накладной и дубликатѣ означенъ день отпра",
+        "passage_id": "1904-106:2401-3805",
+        "pages": [
+          292
+        ],
+        "sources": [
+          {
+            "page": 292,
+            "page_method": "header",
+            "file": "p0147_L.txt",
+            "start": 3591,
+            "end": 5041
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-106?mode=precedent&ref=1904-106%3A1902%3A16%3A3651&at=3643&end=3668",
+        "scan_available": true
+      },
+      {
+        "id": "1904-106:1894:60:6536",
+        "source_id": "1904-106",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "84df011b7cd7154ff710a934f60a446c0e9b0dde082086b9115ebda0db6268de",
+        "year": 1894,
+        "start": 6531,
+        "end": 6548,
+        "department": null,
+        "association": null,
+        "number": 60,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6536,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1894 г. № 60",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 6351,
+        "context_end": 6768,
+        "context_original": "ор., при чемъ во второй изъ нихъ, имѣющей своимъ предметомъ собственно „очередные грузы“, т.-е. такіе, которые не могутъ быть отправлены въ день ихъ ввоза (ст. 49 уст. жел. дор. и рѣш. 1894 г. № 60, 1898 г. № 77, 1899 г. № 28), и сказано, что они „подлежатъ отправкѣ съ соблюденіемъ постепенности, порядокъ которой установляется министромъ путей сообщенія“. Этотъ порядокъ и былъ имъ установленъ въ „правилахъ о поряд",
+        "passage_id": "1904-106:6002-7671",
+        "pages": [
+          293
+        ],
+        "sources": [
+          {
+            "page": 293,
+            "page_method": "header",
+            "file": "p0147_R.txt",
+            "start": 6002,
+            "end": 7671
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-106?mode=precedent&ref=1904-106%3A1894%3A60%3A6536&at=6531&end=6548",
+        "scan_available": true
+      },
+      {
+        "id": "1904-106:1898:77:6550",
+        "source_id": "1904-106",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "84df011b7cd7154ff710a934f60a446c0e9b0dde082086b9115ebda0db6268de",
+        "year": 1898,
+        "start": 6531,
+        "end": 6562,
+        "department": null,
+        "association": null,
+        "number": 77,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6550,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1894 г. № 60, 1898 г. № 77",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 6351,
+        "context_end": 6782,
+        "context_original": "ор., при чемъ во второй изъ нихъ, имѣющей своимъ предметомъ собственно „очередные грузы“, т.-е. такіе, которые не могутъ быть отправлены въ день ихъ ввоза (ст. 49 уст. жел. дор. и рѣш. 1894 г. № 60, 1898 г. № 77, 1899 г. № 28), и сказано, что они „подлежатъ отправкѣ съ соблюденіемъ постепенности, порядокъ которой установляется министромъ путей сообщенія“. Этотъ порядокъ и былъ имъ установленъ въ „правилахъ о порядкѣ постепеннос",
+        "passage_id": "1904-106:6002-7671",
+        "pages": [
+          293
+        ],
+        "sources": [
+          {
+            "page": 293,
+            "page_method": "header",
+            "file": "p0147_R.txt",
+            "start": 6002,
+            "end": 7671
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-106?mode=precedent&ref=1904-106%3A1898%3A77%3A6550&at=6531&end=6562",
+        "scan_available": true
+      },
+      {
+        "id": "1904-106:1899:28:6564",
+        "source_id": "1904-106",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "84df011b7cd7154ff710a934f60a446c0e9b0dde082086b9115ebda0db6268de",
+        "year": 1899,
+        "start": 6531,
+        "end": 6576,
+        "department": null,
+        "association": null,
+        "number": 28,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6564,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1894 г. № 60, 1898 г. № 77, 1899 г. № 28",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 6351,
+        "context_end": 6796,
+        "context_original": "ор., при чемъ во второй изъ нихъ, имѣющей своимъ предметомъ собственно „очередные грузы“, т.-е. такіе, которые не могутъ быть отправлены въ день ихъ ввоза (ст. 49 уст. жел. дор. и рѣш. 1894 г. № 60, 1898 г. № 77, 1899 г. № 28), и сказано, что они „подлежатъ отправкѣ съ соблюденіемъ постепенности, порядокъ которой установляется министромъ путей сообщенія“. Этотъ порядокъ и былъ имъ установленъ въ „правилахъ о порядкѣ постепенности отправки гр",
+        "passage_id": "1904-106:6002-7671",
+        "pages": [
+          293
+        ],
+        "sources": [
+          {
+            "page": 293,
+            "page_method": "header",
+            "file": "p0147_R.txt",
+            "start": 6002,
+            "end": 7671
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-106?mode=precedent&ref=1904-106%3A1899%3A28%3A6564&at=6531&end=6576",
+        "scan_available": true
+      },
+      {
+        "id": "1904-106:1902:11:11410",
+        "source_id": "1904-106",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "84df011b7cd7154ff710a934f60a446c0e9b0dde082086b9115ebda0db6268de",
+        "year": 1902,
+        "start": 11405,
+        "end": 11422,
+        "department": null,
+        "association": null,
+        "number": 11,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 11410,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1902 г. № 11",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 11225,
+        "context_end": 11642,
+        "context_original": "а къ нему, и представленіе доказательствъ, что его грузъ „обиженъ“, лежитъ на истцѣ. Но основаніе настоящаго иска есть нарушеніе очереди въ отправкѣ, т.-е. недозволенное дѣйствіе (рѣш. 1902 г. № 11), изъ чего слѣдуетъ, что истцу достаточно доказать наличность такого дѣйствія и представить данныя, по коимъ слѣдующее ему вознагражденіе можетъ быть опредѣлено. Эти доказательства и данныя были представлены истцами въ ",
+        "passage_id": "1904-106:10253-11790",
+        "pages": [
+          295
+        ],
+        "sources": [
+          {
+            "page": 295,
+            "page_method": "header",
+            "file": "p0148_R.txt",
+            "start": 11268,
+            "end": 11790
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-106?mode=precedent&ref=1904-106%3A1902%3A11%3A11410&at=11405&end=11422",
+        "scan_available": true
+      },
+      {
+        "id": "1904-106:1902:15:13830",
+        "source_id": "1904-106",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "84df011b7cd7154ff710a934f60a446c0e9b0dde082086b9115ebda0db6268de",
+        "year": 1902,
+        "start": 13794,
+        "end": 13847,
+        "department": null,
+        "association": null,
+        "number": 15,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 13830,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ Правительствующаго Сената 1902 г. № 15 и 16",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 13614,
+        "context_end": 14067,
+        "context_original": "вная сторона не докажетъ неправильности такого утвержденія установленіемъ другаго дня, когда надлежало отправить грузъ истца.—Въ этомъ отношеніи слѣдуетъ ограничить высказанное въ рѣшеніяхъ Правительствующаго Сената 1902 г. № 15 и 16 положеніе, что, при соблюденіи очереди между грузомъ истца и предшествовавшимъ ему непосредственно отправителемъ, одно выдвинутіе какого-либо другаго позднѣе принятаго груза не составляетъ нарушенія ст. 101 уст. жел. до",
+        "passage_id": "1904-106:12875-14690",
+        "pages": [
+          295
+        ],
+        "sources": [
+          {
+            "page": 295,
+            "page_method": "header",
+            "file": "p0148_R.txt",
+            "start": 12875,
+            "end": 14271
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-106?mode=precedent&ref=1904-106%3A1902%3A15%3A13830&at=13794&end=13847",
+        "scan_available": true
+      },
+      {
+        "id": "1904-106:1902:16:13830",
+        "source_id": "1904-106",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "84df011b7cd7154ff710a934f60a446c0e9b0dde082086b9115ebda0db6268de",
+        "year": 1902,
+        "start": 13794,
+        "end": 13847,
+        "department": null,
+        "association": null,
+        "number": 16,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 13830,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ Правительствующаго Сената 1902 г. № 15 и 16",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 13614,
+        "context_end": 14067,
+        "context_original": "вная сторона не докажетъ неправильности такого утвержденія установленіемъ другаго дня, когда надлежало отправить грузъ истца.—Въ этомъ отношеніи слѣдуетъ ограничить высказанное въ рѣшеніяхъ Правительствующаго Сената 1902 г. № 15 и 16 положеніе, что, при соблюденіи очереди между грузомъ истца и предшествовавшимъ ему непосредственно отправителемъ, одно выдвинутіе какого-либо другаго позднѣе принятаго груза не составляетъ нарушенія ст. 101 уст. жел. до",
+        "passage_id": "1904-106:12875-14690",
+        "pages": [
+          295
+        ],
+        "sources": [
+          {
+            "page": 295,
+            "page_method": "header",
+            "file": "p0148_R.txt",
+            "start": 12875,
+            "end": 14271
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-106?mode=precedent&ref=1904-106%3A1902%3A16%3A13830&at=13794&end=13847",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-106",
     "scan_pages": [

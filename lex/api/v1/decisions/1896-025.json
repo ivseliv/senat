@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1896-025",
@@ -39,6 +39,164 @@
     },
     "cites": [],
     "participant_ids": [],
+    "precedents": [
+      {
+        "id": "1896-025:1874:14:1354",
+        "source_id": "1896-025",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "aa7a49bfbf7417c0f50f120b2391c6bbcf9054bafe9ac0c8dd4bf62e3b3342a4",
+        "year": 1874,
+        "start": 1270,
+        "end": 1369,
+        "department": null,
+        "association": null,
+        "number": 14,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1354,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшенщ Правительствующаго Сената, по Обще му Собранію Кассаціонныхъ Департа ментовъ 1874 г. за № 14",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1090,
+        "context_end": 1589,
+        "context_original": "ъ, коман диръ бригады сообщилъ о семъ, 19 марта за № 657, прокурору Таганрог скаго окружнаго суда и просилъ его направить дѣло, на основаніи 277 ст. уст. уг. суд., разъясненной въ рѣшенщ Правительствующаго Сената, по Обще му Собранію Кассаціонныхъ Департа ментовъ 1874 г. за № 14, къ военно му прокурору Одесскаго военно-окруж наго суда. Въ отвѣтъ на это проку роръ Таганрогскаго» окружнаго суча, отзывомъ отъ 18 апрѣля за № 3394, увѣдомилъ, что дѣло о канонирѣ Ста- 48 ниславскомъ, опредѣленіемъ Та",
+        "passage_id": "1896-025:0-1427",
+        "pages": [
+          753
+        ],
+        "sources": [
+          {
+            "page": 753,
+            "page_method": "header",
+            "file": "p0046.txt",
+            "start": 1198,
+            "end": 2654
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-025?mode=precedent&ref=1896-025%3A1874%3A14%3A1354&at=1270&end=1369",
+        "scan_available": true
+      },
+      {
+        "id": "1896-025:1874:14:1865",
+        "source_id": "1896-025",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "aa7a49bfbf7417c0f50f120b2391c6bbcf9054bafe9ac0c8dd4bf62e3b3342a4",
+        "year": 1874,
+        "start": 1573,
+        "end": 1880,
+        "department": null,
+        "association": null,
+        "number": 14,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1865,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "опредѣленіемъ Таганрог скаго окружнаго суда отъ 12 ма та сого года, прекращено, за недостаточ ностью уликъ противъ Станиславскаго, на основаніи 277 ст. уст. угол. суд. въ редакціи ея по закону 3 мая 1883 г., и при этомъ высказалъ мнѣн'е, что упомянутоеразъясненіе Правительствую- щаго Сената 1874 г. за № 14",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1393,
+        "context_end": 2100,
+        "context_original": " Одесскаго военно-окруж наго суда. Въ отвѣтъ на это проку роръ Таганрогскаго» окружнаго суча, отзывомъ отъ 18 апрѣля за № 3394, увѣдомилъ, что дѣло о канонирѣ Ста- 48 ниславскомъ, опредѣленіемъ Таганрог скаго окружнаго суда отъ 12 ма та сого года, прекращено, за недостаточ ностью уликъ противъ Станиславскаго, на основаніи 277 ст. уст. угол. суд. въ редакціи ея по закону 3 мая 1883 г., и при этомъ высказалъ мнѣн'е, что упомянутоеразъясненіе Правительствую- щаго Сената 1874 г. за № 14, какъ относившееся до прежней редакціи 277 ст. уст. угол. суд., утратило свое зна ченіе. Съ своей стороны, временно-ко мандующій бригадою, основываясь на заключеніи военнаго прокурора Одес скаго военно-окружнаго суда, н",
+        "passage_id": "1896-025:1198-2654",
+        "pages": [
+          753
+        ],
+        "sources": [
+          {
+            "page": 753,
+            "page_method": "header",
+            "file": "p0046.txt",
+            "start": 1198,
+            "end": 2654
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-025?mode=precedent&ref=1896-025%3A1874%3A14%3A1865&at=1573&end=1880",
+        "scan_available": true
+      },
+      {
+        "id": "1896-025:1874:14:2508",
+        "source_id": "1896-025",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "aa7a49bfbf7417c0f50f120b2391c6bbcf9054bafe9ac0c8dd4bf62e3b3342a4",
+        "year": 1874,
+        "start": 2493,
+        "end": 2523,
+        "department": null,
+        "association": null,
+        "number": 14,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2508,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшен я своего 1874 г. за № 14",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2313,
+        "context_end": 2743,
+        "context_original": " есть, когда самое дѣло подсудно военному суду; поэтому и Правительствующій Сенатъ, разрѣ шая вопросъ о порядкѣ направленія дѣлъ послѣдняго рода, принялъ въ ос нованіе упомянутаго рѣшен я своего 1874 г. за № 14 не текстъ 277 ст. уст. угол. суд., а основныя постановле нія законаобъ органахъ власти, имѣю щихъ право преданія суду обвиняемыхъ. Вслѣдствіе сего Правительствующій Се натъ въ приведенномъ рѣшен и и 'вы сказалъ взглядъ,",
+        "passage_id": "1896-025:1198-2654",
+        "pages": [
+          753
+        ],
+        "sources": [
+          {
+            "page": 753,
+            "page_method": "header",
+            "file": "p0046.txt",
+            "start": 2442,
+            "end": 3718
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-025?mode=precedent&ref=1896-025%3A1874%3A14%3A2508&at=2493&end=2523",
+        "scan_available": true
+      },
+      {
+        "id": "1896-025:1889:5:4281",
+        "source_id": "1896-025",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "aa7a49bfbf7417c0f50f120b2391c6bbcf9054bafe9ac0c8dd4bf62e3b3342a4",
+        "year": 1889,
+        "start": 4199,
+        "end": 4295,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 5,
+        "department_start": 4207,
+        "department_end": 4220,
+        "citation_start": 4281,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшенія Общаго Собран'я Кас саціонныхъ Департаментовъ П апитель- ствующаго Сената 1889 г. за № 5",
+        "target_url": null,
+        "department_evidence": "Общаго Собран",
+        "context_start": 4019,
+        "context_end": 4515,
+        "context_original": "что хотя производимыя судеб ными слѣдователями предварител ныя слѣдствія направляются къ , прекраще нію въ порядкѣ, опредѣленномъ 277 ст. уст. угол. суд., но статья эта, по смыслу рѣшенія Общаго Собран'я Кас саціонныхъ Департаментовъ П апитель- ствующаго Сената 1889 г. за № 5 (по дѣлу рядоваго Купріянова) не можетъ имѣть примѣненія къ дѣламъ, по кото рымъ обвиняемыми или подозрѣваемыми въ совершеніи преступленья, составляю щаго предметъ слѣдств’я, являются во- енно-служащіе. Въ этихъ случаях",
+        "passage_id": "1896-025:3682-4989",
+        "pages": [
+          754
+        ],
+        "sources": [
+          {
+            "page": 754,
+            "page_method": "header",
+            "file": "p0047.txt",
+            "start": 3719,
+            "end": 4989
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-025?mode=precedent&ref=1896-025%3A1889%3A5%3A4281&at=4199&end=4295",
+        "scan_available": true
+      }
+    ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1896-025",
     "scan_pages": [
       {

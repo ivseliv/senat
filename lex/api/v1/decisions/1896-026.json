@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1896-026",
@@ -37,6 +37,125 @@
       ]
     ],
     "participant_ids": [],
+    "precedents": [
+      {
+        "id": "1896-026:1893:37:197",
+        "source_id": "1896-026",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "2984f1cf0223437db17c44ffde624822e6d88086af0a32251cc39618e211f7c4",
+        "year": 1893,
+        "start": 136,
+        "end": 209,
+        "department": null,
+        "association": null,
+        "number": 37,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 197,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи Общаго Со бранія 1-го и Кассаціонныхъ Департаментовъ 1893 г. № 37",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 0,
+        "context_end": 429,
+        "context_original": "26. 1896 года октября 28 дня. По внесенному, Первопри сутствующимъ вопросу о томъ: разъясненіе, препо данное Правительств. Сена томъ въ рѣшеніи Общаго Со бранія 1-го и Кассаціонныхъ Департаментовъ 1893 г. № 37, касающееся собственно го родскихъ недвижимыхъ иму ществъ, , примѣнимо ли къ случаямъ продажи государ ственными кредитными уста новленіями*^ оставленныхъ ими за собою, по безуспѣш ности публичныхъ торговъ, земель и друг",
+        "passage_id": "1896-026:0-1695",
+        "pages": [
+          754
+        ],
+        "sources": [
+          {
+            "page": 754,
+            "page_method": "header",
+            "file": "p0047.txt",
+            "start": 0,
+            "end": 1695
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-026?mode=precedent&ref=1896-026%3A1893%3A37%3A197&at=136&end=209",
+        "scan_available": true
+      },
+      {
+        "id": "1896-026:1893:37:2302",
+        "source_id": "1896-026",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "2984f1cf0223437db17c44ffde624822e6d88086af0a32251cc39618e211f7c4",
+        "year": 1893,
+        "start": 2297,
+        "end": 2314,
+        "department": null,
+        "association": null,
+        "number": 37,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2302,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1893 г, № 37",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2117,
+        "context_end": 2534,
+        "context_original": "арта- юмъ банкѣ и оставшееся за банкомъ, мента Правительствующаго Сената на въ силу 56 ст, прил. къ 68 ст. уст. ходитъ, что рѣшен'е сего Общаго Со бранія 4 октября 1893 г, (сборн. рѣш. 1893 г, № 37) состоялось по общему .вопросу: слѣдуетъ-ли опредѣлять сумму крѣпостной пошлины по одной изъ цѣнъ, указанныхъ въ 403 ст. уст. о пошл. по прод. 1886 г. (209 ст. уст. о пошл. изд. 1893 г.), или по продаж ной, показанной в",
+        "passage_id": "1896-026:1437-2764",
+        "pages": [
+          755
+        ],
+        "sources": [
+          {
+            "page": 755,
+            "page_method": "header",
+            "file": "p0048.txt",
+            "start": 1940,
+            "end": 2764
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-026?mode=precedent&ref=1896-026%3A1893%3A37%3A2302&at=2297&end=2314",
+        "scan_available": true
+      },
+      {
+        "id": "1896-026:1893:37:4425",
+        "source_id": "1896-026",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "2984f1cf0223437db17c44ffde624822e6d88086af0a32251cc39618e211f7c4",
+        "year": 1893,
+        "start": 4413,
+        "end": 4438,
+        "department": null,
+        "association": null,
+        "number": 37,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4425,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи его 1893 г., № 37",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4233,
+        "context_end": 4658,
+        "context_original": "ность какой либо утайки къ ущербу казны, по исчисленію крѣ постной пошлины не можетъ быть пред полагаема. Въ виду сего, Общее Со браніе полагаетъ, что положенія, уста новленныя въ рѣшеніи его 1893 г., № 37, относительно случаевъ продажи го родскихъ недвижимыхъ имѣн й, вполнѣ примѣнимы и къ случаю продажи госу дарственнымъ дворянскимъ земельнымъ банкомъ имѣнія, въ порядкѣ 61 ст. прил. къ ст. 68 устава сего банка, а посему ",
+        "passage_id": "1896-026:3732-4738",
+        "pages": [
+          755
+        ],
+        "sources": [
+          {
+            "page": 755,
+            "page_method": "header",
+            "file": "p0048.txt",
+            "start": 3732,
+            "end": 4738
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-026?mode=precedent&ref=1896-026%3A1893%3A37%3A4425&at=4413&end=4438",
+        "scan_available": true
+      }
+    ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1896-026",
     "scan_pages": [
       {

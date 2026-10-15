@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-069",
@@ -46,6 +46,47 @@
     "participant_ids": [
       "1904-4632820c1478",
       "1904-8077e7870efe"
+    ],
+    "precedents": [
+      {
+        "id": "1904-069:1899:107:5961",
+        "source_id": "1904-069",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "f400ff797b0a8bd0f37101caae0d445623113c2d9ba49fd40b305b3ef18e0fa4",
+        "year": 1899,
+        "start": 5941,
+        "end": 5974,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 107,
+        "department_start": 5946,
+        "department_end": 5960,
+        "citation_start": 5961,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. д-та 1899 г. № 107",
+        "target_url": null,
+        "department_evidence": "гр. касс. д-та",
+        "context_start": 5761,
+        "context_end": 6194,
+        "context_original": "дѣлъ ими, устроилъ, напримѣръ, звѣринецъ, извлекаетъ изъ этихъ животныхъ личную себѣ пользу, разводитъ ихъ для хозяйственныхъ цѣлей и даже просто для доставленія себѣ развлеченія (рѣш. гр. касс. д-та 1899 г. № 107). То обстоятельство, что удѣльное управленіе предоставляетъ зубрамъ безпрепятственную пастьбу въ лѣсахъ Бѣловѣжской пущи и заготовляетъ запасы сѣна въ лѣсахъ, удерживая зубровъ въ предѣлахъ пущи и отвлекая ихъ отъ угоді",
+        "passage_id": "1904-069:4100-5976",
+        "pages": [
+          200
+        ],
+        "sources": [
+          {
+            "page": 200,
+            "page_method": "header",
+            "file": "p0101_L.txt",
+            "start": 5743,
+            "end": 7053
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-069?mode=precedent&ref=1904-069%3A1899%3A107%3A5961&at=5941&end=5974",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-069",
     "scan_pages": [

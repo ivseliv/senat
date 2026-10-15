@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-068",
@@ -55,6 +55,203 @@
     "participant_ids": [
       "1897-cc7e7d87349d",
       "1897-e174a10bf2a9"
+    ],
+    "precedents": [
+      {
+        "id": "1897-068:1888:74:873",
+        "source_id": "1897-068",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "785f2d2f29c14ddd0ef1be66e56de027e4d071bb2e1472ee02b8051127a62b81",
+        "year": 1888,
+        "start": 824,
+        "end": 885,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 74,
+        "department_start": 824,
+        "department_end": 846,
+        "citation_start": 873,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "гражданскій касс. д-тъ Прав. Сената (сборн. рѣш. 1888 г. № 74",
+        "target_url": null,
+        "department_evidence": "гражданскій касс. д-тъ",
+        "context_start": 644,
+        "context_end": 1105,
+        "context_original": "вый вопросъ: благопріобрѣтенное имѣніе родителей, перешедшее къ нимъ отъ дѣтей по дарственной записи, становится ли у нихъ родовымъ? Сомнѣніе это возбуждается вслѣдствіе того, что гражданскій касс. д-тъ Прав. Сената (сборн. рѣш. 1888 г. № 74) разъяснилъ, что благопріобрѣтенное у родителей имѣніе, доставшееся дѣтямъ ихъ по выдѣлу (ст. 994—1000 т. X ч. 1), становится у выдѣленныхъ лицъ имѣніемъ родовымъ. Но это разъясненіе, касающееся выдѣла, какъ предваренна",
+        "passage_id": "1897-068:0-1302",
+        "pages": [
+          227
+        ],
+        "sources": [
+          {
+            "page": 227,
+            "page_method": "header",
+            "file": "p0124_R.txt",
+            "start": 0,
+            "end": 974
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-068?mode=precedent&ref=1897-068%3A1888%3A74%3A873&at=824&end=885",
+        "scan_available": true
+      },
+      {
+        "id": "1897-068:1867:144:1736",
+        "source_id": "1897-068",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "785f2d2f29c14ddd0ef1be66e56de027e4d071bb2e1472ee02b8051127a62b81",
+        "year": 1867,
+        "start": 1716,
+        "end": 1749,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 144,
+        "department_start": 1721,
+        "department_end": 1735,
+        "citation_start": 1736,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. деп. 1867 г. № 144",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 1536,
+        "context_end": 1969,
+        "context_original": " наслѣдствомъ по закону, но и наслѣдствомъ по завѣщанію, если только оно завѣщается именно тому лицу, которое и безъ завѣщанія должно было бы наслѣдовать въ немъ по закону (собрн. рѣш. гр. касс. деп. 1867 г. № 144), притомъ только въ той части, которая ему слѣдовала бы по закону (сборн. рѣш. 1879 г. № 3). Имѣніе же, благопріобрѣтенное, переходя по дарственной записи, хотя бы къ ближайшему наслѣднику по закону, остается и у сего п",
+        "passage_id": "1897-068:1053-2372",
+        "pages": [
+          228
+        ],
+        "sources": [
+          {
+            "page": 228,
+            "page_method": "header",
+            "file": "p0125_L.txt",
+            "start": 1053,
+            "end": 2372
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-068?mode=precedent&ref=1897-068%3A1867%3A144%3A1736&at=1716&end=1749",
+        "scan_available": true
+      },
+      {
+        "id": "1897-068:1879:3:1829",
+        "source_id": "1897-068",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "785f2d2f29c14ddd0ef1be66e56de027e4d071bb2e1472ee02b8051127a62b81",
+        "year": 1879,
+        "start": 1824,
+        "end": 1840,
+        "department": null,
+        "association": null,
+        "number": 3,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1829,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1879 г. № 3",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1644,
+        "context_end": 2060,
+        "context_original": "е и безъ завѣщанія должно было бы наслѣдовать въ немъ по закону (собрн. рѣш. гр. касс. деп. 1867 г. № 144), притомъ только въ той части, которая ему слѣдовала бы по закону (сборн. рѣш. 1879 г. № 3). Имѣніе же, благопріобрѣтенное, переходя по дарственной записи, хотя бы къ ближайшему наслѣднику по закону, остается и у сего послѣдняго благопріобрѣтеннымъ (сборн. рѣш. 1879 г. № 58). Разрѣшая поэтому вышеозначенный в",
+        "passage_id": "1897-068:1053-2372",
+        "pages": [
+          228
+        ],
+        "sources": [
+          {
+            "page": 228,
+            "page_method": "header",
+            "file": "p0125_L.txt",
+            "start": 1053,
+            "end": 2372
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-068?mode=precedent&ref=1897-068%3A1879%3A3%3A1829&at=1824&end=1840",
+        "scan_available": true
+      },
+      {
+        "id": "1897-068:1879:58:2012",
+        "source_id": "1897-068",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "785f2d2f29c14ddd0ef1be66e56de027e4d071bb2e1472ee02b8051127a62b81",
+        "year": 1879,
+        "start": 2007,
+        "end": 2024,
+        "department": null,
+        "association": null,
+        "number": 58,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2012,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1879 г. № 58",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1827,
+        "context_end": 2244,
+        "context_original": ". 1879 г. № 3). Имѣніе же, благопріобрѣтенное, переходя по дарственной записи, хотя бы къ ближайшему наслѣднику по закону, остается и у сего послѣдняго благопріобрѣтеннымъ (сборн. рѣш. 1879 г. № 58). Разрѣшая поэтому вышеозначенный вопросъ отрицательно, Прав. Сенатъ находить, что засѣмъ подлежить разрѣшенію вопросъ: получаетъ ли по 1151 ст X т. 1 ч. вдова (или по 1153 ст. вдовецъ) указанную часть только изъ родова",
+        "passage_id": "1897-068:1053-2372",
+        "pages": [
+          228
+        ],
+        "sources": [
+          {
+            "page": 228,
+            "page_method": "header",
+            "file": "p0125_L.txt",
+            "start": 1053,
+            "end": 2372
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-068?mode=precedent&ref=1897-068%3A1879%3A58%3A2012&at=2007&end=2024",
+        "scan_available": true
+      },
+      {
+        "id": "1897-068:1868:869:2961",
+        "source_id": "1897-068",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "785f2d2f29c14ddd0ef1be66e56de027e4d071bb2e1472ee02b8051127a62b81",
+        "year": 1868,
+        "start": 2956,
+        "end": 2974,
+        "department": null,
+        "association": null,
+        "number": 869,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2961,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1868 г. № 869",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2776,
+        "context_end": 3194,
+        "context_original": "ражданскій кассаціонный департаментъ пришелъ къ такому же разрѣшенію означеннаго вопроса по разсмотрѣніи историческихъ данныхъ о томъ, какъ образовалась 1151 ст. X т. 1 ч. (сборн. рѣш. 1868 г. № 869), и по соображеніи ея съ 1148 ст. X т. 1 ч. о свободномъ распоряженіи владѣльцевъ благопріобрѣтенными имѣніями. Притомъ постановленіе 1151 статьи, совершенно исключительное, въ противоположность 995 статьи X т. 1 ч., по",
+        "passage_id": "1897-068:2166-3814",
+        "pages": [
+          228
+        ],
+        "sources": [
+          {
+            "page": 228,
+            "page_method": "header",
+            "file": "p0125_L.txt",
+            "start": 2166,
+            "end": 3814
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-068?mode=precedent&ref=1897-068%3A1868%3A869%3A2961&at=2956&end=2974",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-068",
     "scan_pages": [

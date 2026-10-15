@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-067",
@@ -54,6 +54,47 @@
     "cites": [],
     "participant_ids": [
       "1897-ceff902284df"
+    ],
+    "precedents": [
+      {
+        "id": "1897-067:1872:1137:4597",
+        "source_id": "1897-067",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a62ae79bfa2d79687460a35a086c45c395eef71b09f92ad58a3a93de2ad97d7c",
+        "year": 1872,
+        "start": 4592,
+        "end": 4611,
+        "department": null,
+        "association": null,
+        "number": 1137,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4597,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1872 г. № 1137",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4412,
+        "context_end": 4831,
+        "context_original": "симы лишь на тѣ частныя опредѣленія, которыми разрѣшается какой либо процессуальный вопросъ и за которыми слѣдуетъ рѣшеніе по существу или вообще окончательное постановленіе суда (рѣш. 1872 г. № 1137 и друг.). По уставу гражданскаго судопроизводства, просьбы объ обезпеченіи доказательствъ допускаются въ мировыхъ и въ общихъ судебныхъ установленіяхъ (ст. 29 п. 6, 821-8 и 369-) какъ во время производства дѣла, такъ и ",
+        "passage_id": "1897-067:3269-4621",
+        "pages": [
+          225
+        ],
+        "sources": [
+          {
+            "page": 225,
+            "page_method": "header",
+            "file": "p0123_R.txt",
+            "start": 4385,
+            "end": 5285
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-067?mode=precedent&ref=1897-067%3A1872%3A1137%3A4597&at=4592&end=4611",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-067",
     "scan_pages": [

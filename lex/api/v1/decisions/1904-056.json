@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-056",
@@ -73,6 +73,398 @@
     ],
     "participant_ids": [
       "1904-2cc0eb5d8146"
+    ],
+    "precedents": [
+      {
+        "id": "1904-056:1881:109:4545",
+        "source_id": "1904-056",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "30da2050b3e2fdb6c2ad36a21ffb2a825238c3cde359e2bf01d4839c6ab45ef0",
+        "year": 1881,
+        "start": 4520,
+        "end": 4558,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 109,
+        "department_start": 4525,
+        "department_end": 4544,
+        "citation_start": 4545,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гражд. кассац. д-та 1881 г. № 109",
+        "target_url": null,
+        "department_evidence": "гражд. кассац. д-та",
+        "context_start": 4340,
+        "context_end": 4778,
+        "context_original": " ст. того же устава, подлежатъ примѣненію только при отсутствіи соглашенія между должникомъ и взыскателемъ о мѣстѣ, гдѣ должна производиться публичная продажа данной недвижимости (рѣш. гражд. кассац. д-та 1881 г. № 109). Если же по сему предмету не последовало соглашенія между должникомъ и взыскателемъ, то, относительно порядка продажи, слѣдуетъ руководствоваться установленными закономъ правилами о подсудности производства продажи нед",
+        "passage_id": "1904-056:3726-5544",
+        "pages": [
+          157
+        ],
+        "sources": [
+          {
+            "page": 157,
+            "page_method": "header",
+            "file": "p0079_R.txt",
+            "start": 4019,
+            "end": 5544
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-056?mode=precedent&ref=1904-056%3A1881%3A109%3A4545&at=4520&end=4558",
+        "scan_available": true
+      },
+      {
+        "id": "1904-056:1882:166:4923",
+        "source_id": "1904-056",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "30da2050b3e2fdb6c2ad36a21ffb2a825238c3cde359e2bf01d4839c6ab45ef0",
+        "year": 1882,
+        "start": 4918,
+        "end": 4936,
+        "department": null,
+        "association": null,
+        "number": 166,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4923,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1882 г. № 166",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4738,
+        "context_end": 5156,
+        "context_original": "и о подсудности производства продажи недвижимостей по цѣнѣ и мѣсту нахожденія таковыхъ, и назначеніе продажи не въ томъ судѣ, гдѣ слѣдуетъ по закону, представляется недопустимымъ (рѣш. 1882 г. № 166 и 1877 г. № 158). Хотя изъ этого слѣдуетъ, что назначеніе продажи не въ томъ судѣ, гдѣ слѣдовало бы по закону, не можетъ имѣть мѣста по одностороннему требованію одной лишь стороны,—должника или взыскателя,—и, засимъ, с",
+        "passage_id": "1904-056:3726-5544",
+        "pages": [
+          157
+        ],
+        "sources": [
+          {
+            "page": 157,
+            "page_method": "header",
+            "file": "p0079_R.txt",
+            "start": 4019,
+            "end": 5544
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-056?mode=precedent&ref=1904-056%3A1882%3A166%3A4923&at=4918&end=4936",
+        "scan_available": true
+      },
+      {
+        "id": "1904-056:1877:158:4939",
+        "source_id": "1904-056",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "30da2050b3e2fdb6c2ad36a21ffb2a825238c3cde359e2bf01d4839c6ab45ef0",
+        "year": 1877,
+        "start": 4918,
+        "end": 4952,
+        "department": null,
+        "association": null,
+        "number": 158,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4939,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1882 г. № 166 и 1877 г. № 158",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4738,
+        "context_end": 5172,
+        "context_original": "и о подсудности производства продажи недвижимостей по цѣнѣ и мѣсту нахожденія таковыхъ, и назначеніе продажи не въ томъ судѣ, гдѣ слѣдуетъ по закону, представляется недопустимымъ (рѣш. 1882 г. № 166 и 1877 г. № 158). Хотя изъ этого слѣдуетъ, что назначеніе продажи не въ томъ судѣ, гдѣ слѣдовало бы по закону, не можетъ имѣть мѣста по одностороннему требованію одной лишь стороны,—должника или взыскателя,—и, засимъ, судъ, установивъ ",
+        "passage_id": "1904-056:3726-5544",
+        "pages": [
+          157
+        ],
+        "sources": [
+          {
+            "page": 157,
+            "page_method": "header",
+            "file": "p0079_R.txt",
+            "start": 4019,
+            "end": 5544
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-056?mode=precedent&ref=1904-056%3A1877%3A158%3A4939&at=4918&end=4952",
+        "scan_available": true
+      },
+      {
+        "id": "1904-056:1874:647:5529",
+        "source_id": "1904-056",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "30da2050b3e2fdb6c2ad36a21ffb2a825238c3cde359e2bf01d4839c6ab45ef0",
+        "year": 1874,
+        "start": 5524,
+        "end": 5542,
+        "department": null,
+        "association": null,
+        "number": 647,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5529,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1874 г. № 647",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5344,
+        "context_end": 5762,
+        "context_original": " при продажѣ недвижимости указанныхъ правилъ о подсудности не должно безусловно повести къ уничтоженію торговъ, если оно заинтересованною стороною своевременно не было обжаловано (рѣш. 1874 г. № 647). Предоставляя заинтересованнымъ въ дѣлѣ сторонамъ, по своему усмотрѣнію, въ видахъ личной ихъ выгоды (сравн. мотивы къ 1132 ст. уст. гр. суд. изд. госуд. канц.), измѣнить и исключить примѣнимость установленной закономъ",
+        "passage_id": "1904-056:3726-5544",
+        "pages": [
+          157
+        ],
+        "sources": [
+          {
+            "page": 157,
+            "page_method": "header",
+            "file": "p0079_R.txt",
+            "start": 5290,
+            "end": 7011
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-056?mode=precedent&ref=1904-056%3A1874%3A647%3A5529&at=5524&end=5542",
+        "scan_available": true
+      },
+      {
+        "id": "1904-056:1897:70:9835",
+        "source_id": "1904-056",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "30da2050b3e2fdb6c2ad36a21ffb2a825238c3cde359e2bf01d4839c6ab45ef0",
+        "year": 1897,
+        "start": 9799,
+        "end": 9847,
+        "department": null,
+        "association": null,
+        "number": 70,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 9835,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ Правительствующаго Сената 1897 г. № 70",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 9619,
+        "context_end": 10067,
+        "context_original": "омогаться возстановленія таковыхъ,—не можетъ требовать уничтоженія состоявшихся торговъ на томъ лишь основаніи, что совершеніе таковыхъ въ означенномъ мѣстѣ нарушаетъ ея права. Въ рѣшеніяхъ Правительствующаго Сената 1897 г. № 70, 1887 г. № 57, 1884 г. № 104 и друг. высказано то общее положеніе, что неправильныя дѣйствія, допущенныя должностными лицами въ отношеніи соблюденія за- коннаго порядка при описи и оцѣнкѣ, назначеніи имѣнія въ публичную",
+        "passage_id": "1904-056:9508-11096",
+        "pages": [
+          158
+        ],
+        "sources": [
+          {
+            "page": 158,
+            "page_method": "header",
+            "file": "p0080_L.txt",
+            "start": 9508,
+            "end": 10000
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-056?mode=precedent&ref=1904-056%3A1897%3A70%3A9835&at=9799&end=9847",
+        "scan_available": true
+      },
+      {
+        "id": "1904-056:1887:57:9849",
+        "source_id": "1904-056",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "30da2050b3e2fdb6c2ad36a21ffb2a825238c3cde359e2bf01d4839c6ab45ef0",
+        "year": 1887,
+        "start": 9799,
+        "end": 9861,
+        "department": null,
+        "association": null,
+        "number": 57,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 9849,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ Правительствующаго Сената 1897 г. № 70, 1887 г. № 57",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 9619,
+        "context_end": 10081,
+        "context_original": "омогаться возстановленія таковыхъ,—не можетъ требовать уничтоженія состоявшихся торговъ на томъ лишь основаніи, что совершеніе таковыхъ въ означенномъ мѣстѣ нарушаетъ ея права. Въ рѣшеніяхъ Правительствующаго Сената 1897 г. № 70, 1887 г. № 57, 1884 г. № 104 и друг. высказано то общее положеніе, что неправильныя дѣйствія, допущенныя должностными лицами въ отношеніи соблюденія за- коннаго порядка при описи и оцѣнкѣ, назначеніи имѣнія въ публичную продажу и сам",
+        "passage_id": "1904-056:9508-11096",
+        "pages": [
+          158
+        ],
+        "sources": [
+          {
+            "page": 158,
+            "page_method": "header",
+            "file": "p0080_L.txt",
+            "start": 9508,
+            "end": 10000
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-056?mode=precedent&ref=1904-056%3A1887%3A57%3A9849&at=9799&end=9861",
+        "scan_available": true
+      },
+      {
+        "id": "1904-056:1884:104:9863",
+        "source_id": "1904-056",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "30da2050b3e2fdb6c2ad36a21ffb2a825238c3cde359e2bf01d4839c6ab45ef0",
+        "year": 1884,
+        "start": 9799,
+        "end": 9876,
+        "department": null,
+        "association": null,
+        "number": 104,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 9863,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ Правительствующаго Сената 1897 г. № 70, 1887 г. № 57, 1884 г. № 104",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 9619,
+        "context_end": 10096,
+        "context_original": "омогаться возстановленія таковыхъ,—не можетъ требовать уничтоженія состоявшихся торговъ на томъ лишь основаніи, что совершеніе таковыхъ въ означенномъ мѣстѣ нарушаетъ ея права. Въ рѣшеніяхъ Правительствующаго Сената 1897 г. № 70, 1887 г. № 57, 1884 г. № 104 и друг. высказано то общее положеніе, что неправильныя дѣйствія, допущенныя должностными лицами въ отношеніи соблюденія за- коннаго порядка при описи и оцѣнкѣ, назначеніи имѣнія въ публичную продажу и самой публичной пр",
+        "passage_id": "1904-056:9508-11096",
+        "pages": [
+          158
+        ],
+        "sources": [
+          {
+            "page": 158,
+            "page_method": "header",
+            "file": "p0080_L.txt",
+            "start": 9508,
+            "end": 10000
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-056?mode=precedent&ref=1904-056%3A1884%3A104%3A9863&at=9799&end=9876",
+        "scan_available": true
+      },
+      {
+        "id": "1904-056:1877:158:10268",
+        "source_id": "1904-056",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "30da2050b3e2fdb6c2ad36a21ffb2a825238c3cde359e2bf01d4839c6ab45ef0",
+        "year": 1877,
+        "start": 10263,
+        "end": 10281,
+        "department": null,
+        "association": null,
+        "number": 158,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 10268,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1877 г. № 158",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 10083,
+        "context_end": 10501,
+        "context_original": " публичной продажѣ, необжалованныя участвующими въ дѣлѣ лицами своевременно и въ порядкѣ, указанномъ въ законѣ, не могутъ быть исправляемы послѣ состоявшейся публичной продажи. Въ рѣш. 1877 г. № 158, наоборотъ, признано, что нарушеніе 1132 и 1133 ст. уст. гр. суд. служитъ основаніемъ къ уничтоженію торговъ, хотя бы до торговъ жалобы принесено не было, потому что въ законѣ никакого срока для подобной жалобы не устан",
+        "passage_id": "1904-056:9508-11096",
+        "pages": [
+          159
+        ],
+        "sources": [
+          {
+            "page": 159,
+            "page_method": "neighbors",
+            "file": "p0080_R.txt",
+            "start": 10001,
+            "end": 11096
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-056?mode=precedent&ref=1904-056%3A1877%3A158%3A10268&at=10263&end=10281",
+        "scan_available": true
+      },
+      {
+        "id": "1904-056:1897:70:10598",
+        "source_id": "1904-056",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "30da2050b3e2fdb6c2ad36a21ffb2a825238c3cde359e2bf01d4839c6ab45ef0",
+        "year": 1897,
+        "start": 10588,
+        "end": 10610,
+        "department": null,
+        "association": null,
+        "number": 70,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 10598,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "Рѣшеніемъ 1897 г. № 70",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 10408,
+        "context_end": 10830,
+        "context_original": "въ жалобы принесено не было, потому что въ законѣ никакого срока для подобной жалобы не установлено. Отъ этого взгляда Правительствующій Сенатъ признаетъ необходимымъ отступиться. Рѣшеніемъ 1897 г. № 70 признано, что 1205 ст. уст. гр. суд. объемлетъ своимъ содержаніемъ всякаго рода уклоненія отъ законнаго порядка производства торга и не предусматриваетъ никакого исключенія изъ установленнаго имъ правила. Къ тому, по си",
+        "passage_id": "1904-056:9508-11096",
+        "pages": [
+          159
+        ],
+        "sources": [
+          {
+            "page": 159,
+            "page_method": "neighbors",
+            "file": "p0080_R.txt",
+            "start": 10001,
+            "end": 11096
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-056?mode=precedent&ref=1904-056%3A1897%3A70%3A10598&at=10588&end=10610",
+        "scan_available": true
+      },
+      {
+        "id": "1904-056:1893:7:11538",
+        "source_id": "1904-056",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "30da2050b3e2fdb6c2ad36a21ffb2a825238c3cde359e2bf01d4839c6ab45ef0",
+        "year": 1893,
+        "start": 11533,
+        "end": 11549,
+        "department": null,
+        "association": null,
+        "number": 7,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 11538,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1893 г. № 7",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 11353,
+        "context_end": 11769,
+        "context_original": "постановленіе сдѣлалось жалобщику извѣстнымъ. По изложеннымъ соображеніямъ и руководствуясь ст. 1127, 1134, 1135, 1566 и 1567 уст. гр. суд., а также разъясненіемъ, преподаннымъ въ рѣш. 1893 г. № 7, Правительствующій Сенатъ приходитъ къ слѣдующему заключенію: по полученіи судомъ отъ судебнаго пристава, на основаніи 1127 ст. уст. гр. суд., описи продаваемаго имѣнія, подлежащій органъ судебной власти, отъ котораго з",
+        "passage_id": "1904-056:10837-12627",
+        "pages": [
+          159
+        ],
+        "sources": [
+          {
+            "page": 159,
+            "page_method": "neighbors",
+            "file": "p0080_R.txt",
+            "start": 10837,
+            "end": 12627
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-056?mode=precedent&ref=1904-056%3A1893%3A7%3A11538&at=11533&end=11549",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-056",
     "scan_pages": [

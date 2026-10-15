@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-002",
@@ -53,6 +53,125 @@
       "1897-8be97d5c9e18",
       "1897-1b859132e611",
       "1897-3af960c0cdfc"
+    ],
+    "precedents": [
+      {
+        "id": "1897-002:1892:24:6925",
+        "source_id": "1897-002",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "692b6f61e04f86055c9992db6c91929866df98f8211421319e38d4e700f5c2d7",
+        "year": 1892,
+        "start": 6920,
+        "end": 6937,
+        "department": null,
+        "association": null,
+        "number": 24,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6925,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1892 г. № 24",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 6740,
+        "context_end": 7157,
+        "context_original": " 2 ч. X т. разд. VII, ст. 29, 42, 56, 102), конечно, имѣли бы въ настоящемъ спорѣ примѣненіе именно въ томъ смыслѣ, въ которомъ они разъяснены Правительствующимъ Сенатомъ въ касс. рѣш. 1892 г. № 24, если бы долгъ товарищества Баклановой, будучи установленъ и удостовѣренъ въ томъ предварительномъ условіи, о которомъ говорятъ ст. 17—19 упомянутаго устава и которое въ данномъ случаѣ было заключено 10 августа 1883 г. ",
+        "passage_id": "1897-002:5648-7553",
+        "pages": [
+          12
+        ],
+        "sources": [
+          {
+            "page": 12,
+            "page_method": "header",
+            "file": "p0017_L.txt",
+            "start": 5648,
+            "end": 7375
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-002?mode=precedent&ref=1897-002%3A1892%3A24%3A6925&at=6920&end=6937",
+        "scan_available": true
+      },
+      {
+        "id": "1897-002:1892:24:11708",
+        "source_id": "1897-002",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "692b6f61e04f86055c9992db6c91929866df98f8211421319e38d4e700f5c2d7",
+        "year": 1892,
+        "start": 11693,
+        "end": 11720,
+        "department": null,
+        "association": null,
+        "number": 24,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 11708,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи своемъ 1892 г. № 24",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 11513,
+        "context_end": 11940,
+        "context_original": "бращено взысканіе исключительно на покупное имѣніе или же оно можетъ быть обращено и на всякое другое имущество покупщиковъ, какъ по личному ихъ долгу? Правительствующій Сенатъ въ рѣшеніи своемъ 1892 г. № 24 по дѣлу Рѣдькина призналъ, что при покупкѣ крестьянами съ содѣйствіемъ крестьянскаго поземельнаго банка имѣнія долгъ ихъ продавцу, какъ возникшій изъ доплаты, сверхъ полученной изъ банка ссуды, можетъ быть удовлетворенъ",
+        "passage_id": "1897-002:11433-13374",
+        "pages": [
+          14
+        ],
+        "sources": [
+          {
+            "page": 14,
+            "page_method": "header",
+            "file": "p0018_L.txt",
+            "start": 11433,
+            "end": 13268
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-002?mode=precedent&ref=1897-002%3A1892%3A24%3A11708&at=11693&end=11720",
+        "scan_available": true
+      },
+      {
+        "id": "1897-002:1892:24:13515",
+        "source_id": "1897-002",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "692b6f61e04f86055c9992db6c91929866df98f8211421319e38d4e700f5c2d7",
+        "year": 1892,
+        "start": 13507,
+        "end": 13527,
+        "department": null,
+        "association": null,
+        "number": 24,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 13515,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1892 г. № 24",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 13327,
+        "context_end": 13747,
+        "context_original": "о оному можетъ быть обращено лишь на то имѣніе. Посему находя, что палата неправильно устранила примѣненіе къ данному дѣлу разъясненій, преподанныхъ Правительствующимъ Сенатомъ въ рѣшеніи 1892 г. № 24, и признала искъ къ просителямъ подлежащимъ удовлетворенію въ порядкѣ взысканія ихъ личнаго долга,—Правительствующій Сенатъ опредѣляетъ: рѣшеніе Харьковской судебной палаты, по нарушенію 711 статьи устава гражданскаго с",
+        "passage_id": "1897-002:13123-13852",
+        "pages": [
+          15
+        ],
+        "sources": [
+          {
+            "page": 15,
+            "page_method": "header",
+            "file": "p0018_R.txt",
+            "start": 13269,
+            "end": 13852
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-002?mode=precedent&ref=1897-002%3A1892%3A24%3A13515&at=13507&end=13527",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-002",
     "scan_pages": [

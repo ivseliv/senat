@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-048",
@@ -54,6 +54,125 @@
     ],
     "participant_ids": [
       "1904-fe29b8e4f5ee"
+    ],
+    "precedents": [
+      {
+        "id": "1904-048:1898:32:2066",
+        "source_id": "1904-048",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "5f830b5dce90c161d80124fda9b701b4cf8184d5a9794cb657553a0a7ca81826",
+        "year": 1898,
+        "start": 2061,
+        "end": 2078,
+        "department": null,
+        "association": null,
+        "number": 32,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2066,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1898 г. № 32",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1881,
+        "context_end": 2298,
+        "context_original": "ыслу закона, несомнѣнно, что такими просителями являются, прежде всего, родители, по вступленіи ихъ въ бракъ, а затѣмъ и дѣти или ихъ законные представители, опекуны и попечители (рѣш. 1898 г. № 32 вопросы 7—10). Положенія эти признаны и Государственнымъ Совѣтомъ прямо вытекающими изъ проектированныхъ имъ статей закона, Высочайше утвержденнаго 12 марта 1891 года (нынѣ кн. IV разд. VI уст. гр. суд.). Это видно прям",
+        "passage_id": "1904-048:1206-2888",
+        "pages": [
+          134
+        ],
+        "sources": [
+          {
+            "page": 134,
+            "page_method": "header",
+            "file": "p0068_L.txt",
+            "start": 1239,
+            "end": 2888
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-048?mode=precedent&ref=1904-048%3A1898%3A32%3A2066&at=2061&end=2078",
+        "scan_available": true
+      },
+      {
+        "id": "1904-048:1893:21:3890",
+        "source_id": "1904-048",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "5f830b5dce90c161d80124fda9b701b4cf8184d5a9794cb657553a0a7ca81826",
+        "year": 1893,
+        "start": 3885,
+        "end": 3902,
+        "department": null,
+        "association": null,
+        "number": 21,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3890,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1893 г. № 21",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3705,
+        "context_end": 4122,
+        "context_original": "льно, какъ потому, что законъ (ст. 368 уст. гр. суд.) не налагаетъ на судъ обязанности указывать просителямъ на необходимость представленія новыхъ доказательствъ спорныхъ фактовъ (рѣш. 1893 г. № 21, 1888 г. № 88 и др.), такъ и, главнымъ образомъ, потому, что подтвержденіе обстоятельствъ о болѣзни отца Т., въ виду главнаго основанія, правильно принятаго палатою къ отказу въ ходатайствѣ объ узаконеніи ея отца, предс",
+        "passage_id": "1904-048:2605-4155",
+        "pages": [
+          135
+        ],
+        "sources": [
+          {
+            "page": 135,
+            "page_method": "header",
+            "file": "p0068_R.txt",
+            "start": 2973,
+            "end": 4155
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-048?mode=precedent&ref=1904-048%3A1893%3A21%3A3890&at=3885&end=3902",
+        "scan_available": true
+      },
+      {
+        "id": "1904-048:1888:88:3904",
+        "source_id": "1904-048",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "5f830b5dce90c161d80124fda9b701b4cf8184d5a9794cb657553a0a7ca81826",
+        "year": 1888,
+        "start": 3885,
+        "end": 3916,
+        "department": null,
+        "association": null,
+        "number": 88,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3904,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1893 г. № 21, 1888 г. № 88",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3705,
+        "context_end": 4136,
+        "context_original": "льно, какъ потому, что законъ (ст. 368 уст. гр. суд.) не налагаетъ на судъ обязанности указывать просителямъ на необходимость представленія новыхъ доказательствъ спорныхъ фактовъ (рѣш. 1893 г. № 21, 1888 г. № 88 и др.), такъ и, главнымъ образомъ, потому, что подтвержденіе обстоятельствъ о болѣзни отца Т., въ виду главнаго основанія, правильно принятаго палатою къ отказу въ ходатайствѣ объ узаконеніи ея отца, представлялось сове",
+        "passage_id": "1904-048:2605-4155",
+        "pages": [
+          135
+        ],
+        "sources": [
+          {
+            "page": 135,
+            "page_method": "header",
+            "file": "p0068_R.txt",
+            "start": 3909,
+            "end": 5029
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-048?mode=precedent&ref=1904-048%3A1888%3A88%3A3904&at=3885&end=3916",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-048",
     "scan_pages": [

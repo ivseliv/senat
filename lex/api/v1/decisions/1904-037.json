@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-037",
@@ -56,6 +56,281 @@
     ],
     "participant_ids": [
       "1904-8220492513a8"
+    ],
+    "precedents": [
+      {
+        "id": "1904-037:1878:282:3258",
+        "source_id": "1904-037",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "37511b9a837ca87b2eba8ca358b6cd27769c071ef847293a17b6b645811b15e6",
+        "year": 1878,
+        "start": 3249,
+        "end": 3271,
+        "department": null,
+        "association": null,
+        "number": 282,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3258,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеній (1878 г. № 282",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3069,
+        "context_end": 3491,
+        "context_original": ", совершаются-ли,—какъ полагаетъ палата,—два перехода права собственности, подлежащихъ каждый оплатѣ крѣпостною пошлиною, или только одинъ? Правительствующій Сенатъ въ цѣломъ рядѣ рѣшеній (1878 г. № 282, 1881 г. № 40, 1895 г. № 40, 1896 г. № 42, 1899 г. № 42 и мн. друг.) постоянно высказывалъ, что, при продажѣ съ публичнаго торга, права собственности на проданное имѣніе хотя и переходятъ къ покупщику со дня торга, но л",
+        "passage_id": "1904-037:2905-4632",
+        "pages": [
+          99
+        ],
+        "sources": [
+          {
+            "page": 99,
+            "page_method": "header",
+            "file": "p0050_R.txt",
+            "start": 2905,
+            "end": 3833
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-037?mode=precedent&ref=1904-037%3A1878%3A282%3A3258&at=3249&end=3271",
+        "scan_available": true
+      },
+      {
+        "id": "1904-037:1881:40:3273",
+        "source_id": "1904-037",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "37511b9a837ca87b2eba8ca358b6cd27769c071ef847293a17b6b645811b15e6",
+        "year": 1881,
+        "start": 3249,
+        "end": 3285,
+        "department": null,
+        "association": null,
+        "number": 40,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3273,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеній (1878 г. № 282, 1881 г. № 40",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3069,
+        "context_end": 3505,
+        "context_original": ", совершаются-ли,—какъ полагаетъ палата,—два перехода права собственности, подлежащихъ каждый оплатѣ крѣпостною пошлиною, или только одинъ? Правительствующій Сенатъ въ цѣломъ рядѣ рѣшеній (1878 г. № 282, 1881 г. № 40, 1895 г. № 40, 1896 г. № 42, 1899 г. № 42 и мн. друг.) постоянно высказывалъ, что, при продажѣ съ публичнаго торга, права собственности на проданное имѣніе хотя и переходятъ къ покупщику со дня торга, но лишь въ томъ сл",
+        "passage_id": "1904-037:2905-4632",
+        "pages": [
+          99
+        ],
+        "sources": [
+          {
+            "page": 99,
+            "page_method": "header",
+            "file": "p0050_R.txt",
+            "start": 2905,
+            "end": 3833
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-037?mode=precedent&ref=1904-037%3A1881%3A40%3A3273&at=3249&end=3285",
+        "scan_available": true
+      },
+      {
+        "id": "1904-037:1895:40:3287",
+        "source_id": "1904-037",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "37511b9a837ca87b2eba8ca358b6cd27769c071ef847293a17b6b645811b15e6",
+        "year": 1895,
+        "start": 3249,
+        "end": 3299,
+        "department": null,
+        "association": null,
+        "number": 40,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3287,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеній (1878 г. № 282, 1881 г. № 40, 1895 г. № 40",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3069,
+        "context_end": 3519,
+        "context_original": ", совершаются-ли,—какъ полагаетъ палата,—два перехода права собственности, подлежащихъ каждый оплатѣ крѣпостною пошлиною, или только одинъ? Правительствующій Сенатъ въ цѣломъ рядѣ рѣшеній (1878 г. № 282, 1881 г. № 40, 1895 г. № 40, 1896 г. № 42, 1899 г. № 42 и мн. друг.) постоянно высказывалъ, что, при продажѣ съ публичнаго торга, права собственности на проданное имѣніе хотя и переходятъ къ покупщику со дня торга, но лишь въ томъ случаѣ, если тор",
+        "passage_id": "1904-037:2905-4632",
+        "pages": [
+          99
+        ],
+        "sources": [
+          {
+            "page": 99,
+            "page_method": "header",
+            "file": "p0050_R.txt",
+            "start": 2905,
+            "end": 3833
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-037?mode=precedent&ref=1904-037%3A1895%3A40%3A3287&at=3249&end=3299",
+        "scan_available": true
+      },
+      {
+        "id": "1904-037:1896:42:3301",
+        "source_id": "1904-037",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "37511b9a837ca87b2eba8ca358b6cd27769c071ef847293a17b6b645811b15e6",
+        "year": 1896,
+        "start": 3249,
+        "end": 3313,
+        "department": null,
+        "association": null,
+        "number": 42,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3301,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеній (1878 г. № 282, 1881 г. № 40, 1895 г. № 40, 1896 г. № 42",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3069,
+        "context_end": 3533,
+        "context_original": ", совершаются-ли,—какъ полагаетъ палата,—два перехода права собственности, подлежащихъ каждый оплатѣ крѣпостною пошлиною, или только одинъ? Правительствующій Сенатъ въ цѣломъ рядѣ рѣшеній (1878 г. № 282, 1881 г. № 40, 1895 г. № 40, 1896 г. № 42, 1899 г. № 42 и мн. друг.) постоянно высказывалъ, что, при продажѣ съ публичнаго торга, права собственности на проданное имѣніе хотя и переходятъ къ покупщику со дня торга, но лишь въ томъ случаѣ, если торгъ утвержденъ,",
+        "passage_id": "1904-037:2905-4632",
+        "pages": [
+          99
+        ],
+        "sources": [
+          {
+            "page": 99,
+            "page_method": "header",
+            "file": "p0050_R.txt",
+            "start": 2905,
+            "end": 3833
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-037?mode=precedent&ref=1904-037%3A1896%3A42%3A3301&at=3249&end=3313",
+        "scan_available": true
+      },
+      {
+        "id": "1904-037:1899:42:3315",
+        "source_id": "1904-037",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "37511b9a837ca87b2eba8ca358b6cd27769c071ef847293a17b6b645811b15e6",
+        "year": 1899,
+        "start": 3249,
+        "end": 3327,
+        "department": null,
+        "association": null,
+        "number": 42,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3315,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеній (1878 г. № 282, 1881 г. № 40, 1895 г. № 40, 1896 г. № 42, 1899 г. № 42",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3069,
+        "context_end": 3547,
+        "context_original": ", совершаются-ли,—какъ полагаетъ палата,—два перехода права собственности, подлежащихъ каждый оплатѣ крѣпостною пошлиною, или только одинъ? Правительствующій Сенатъ въ цѣломъ рядѣ рѣшеній (1878 г. № 282, 1881 г. № 40, 1895 г. № 40, 1896 г. № 42, 1899 г. № 42 и мн. друг.) постоянно высказывалъ, что, при продажѣ съ публичнаго торга, права собственности на проданное имѣніе хотя и переходятъ къ покупщику со дня торга, но лишь въ томъ случаѣ, если торгъ утвержденъ, если имѣніе у",
+        "passage_id": "1904-037:2905-4632",
+        "pages": [
+          99
+        ],
+        "sources": [
+          {
+            "page": 99,
+            "page_method": "header",
+            "file": "p0050_R.txt",
+            "start": 2905,
+            "end": 3833
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-037?mode=precedent&ref=1904-037%3A1899%3A42%3A3315&at=3249&end=3327",
+        "scan_available": true
+      },
+      {
+        "id": "1904-037:1899:42:4469",
+        "source_id": "1904-037",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "37511b9a837ca87b2eba8ca358b6cd27769c071ef847293a17b6b645811b15e6",
+        "year": 1899,
+        "start": 4460,
+        "end": 4481,
+        "department": null,
+        "association": null,
+        "number": 42,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4469,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеній (1899 г. № 42",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4280,
+        "context_end": 4701,
+        "context_original": "одимымъ на основаніи устава земскаго кредитнаго общества губ. Царства Польскаго (т. XI ч. 2 уст. кред. разд. XII), какъ это косвенно и признано въ последнемъ изъ приведенныхъ выше рѣшеній (1899 г. № 42), въ коемъ сдѣланы ссылки на этотъ уставъ, а равно и къ продажамъ, производимымъ на основаніи уставовъ другихъ земельныхъ банковъ (рѣш. 1896 г. № 42). Такимъ образомъ, надлежитъ признать твердо установленнымъ, что, до у",
+        "passage_id": "1904-037:2905-4632",
+        "pages": [
+          100
+        ],
+        "sources": [
+          {
+            "page": 100,
+            "page_method": "header",
+            "file": "p0051_L.txt",
+            "start": 4415,
+            "end": 6446
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-037?mode=precedent&ref=1904-037%3A1899%3A42%3A4469&at=4460&end=4481",
+        "scan_available": true
+      },
+      {
+        "id": "1904-037:1896:42:4618",
+        "source_id": "1904-037",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "37511b9a837ca87b2eba8ca358b6cd27769c071ef847293a17b6b645811b15e6",
+        "year": 1896,
+        "start": 4613,
+        "end": 4630,
+        "department": null,
+        "association": null,
+        "number": 42,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4618,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1896 г. № 42",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4433,
+        "context_end": 4850,
+        "context_original": "немъ изъ приведенныхъ выше рѣшеній (1899 г. № 42), въ коемъ сдѣланы ссылки на этотъ уставъ, а равно и къ продажамъ, производимымъ на основаніи уставовъ другихъ земельныхъ банковъ (рѣш. 1896 г. № 42). Такимъ образомъ, надлежитъ признать твердо установленнымъ, что, до укрѣпленія имѣнія за покупателемъ, перехода права собственности нѣтъ. Мнѣніе судебной палаты, будто неуплата покупщикомъ въ надлежащее время всей пред",
+        "passage_id": "1904-037:2905-4632",
+        "pages": [
+          100
+        ],
+        "sources": [
+          {
+            "page": 100,
+            "page_method": "header",
+            "file": "p0051_L.txt",
+            "start": 4415,
+            "end": 6446
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-037?mode=precedent&ref=1904-037%3A1896%3A42%3A4618&at=4613&end=4630",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-037",
     "scan_pages": [

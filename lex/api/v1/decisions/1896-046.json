@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1896-046",
@@ -34,6 +34,47 @@
       ]
     ],
     "participant_ids": [],
+    "precedents": [
+      {
+        "id": "1896-046:1889:52:2535",
+        "source_id": "1896-046",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "49987781cf82bddb246b7049f822a49c1ab6cd192bda964e3f65896ca6bef763",
+        "year": 1889,
+        "start": 2486,
+        "end": 2549,
+        "department": null,
+        "association": null,
+        "number": 52,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2535,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи Гражданска го Кассаціоннаго Департамента 1889 года № 52",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2306,
+        "context_end": 2769,
+        "context_original": "подлежатъ ли сіи послѣднія постройки самостоятельной оцѣнкѣ для взысканія наслѣдственной пошлины, былъ уже разсмотрѣнъ Правительству ющимъ Сенатомъ и разрѣшенъ имъ отрицательно въ рѣшеніи Гражданска го Кассаціоннаго Департамента 1889 года № 52, которымъ было принято во вниманіе, что хотя наличность раз наго рода сельско-хозяйственныхъ по строекъ, въ большой или меньшей мѣ рѣ, вліяетъ и на подесятинную цѣну имѣнія, но онѣ несомнѣнно входятъ въ оцѣнку сего посл",
+        "passage_id": "1896-046:1337-3117",
+        "pages": [
+          789
+        ],
+        "sources": [
+          {
+            "page": 789,
+            "page_method": "neighbors",
+            "file": "p0082.txt",
+            "start": 1337,
+            "end": 3117
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-046?mode=precedent&ref=1896-046%3A1889%3A52%3A2535&at=2486&end=2549",
+        "scan_available": true
+      }
+    ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1896-046",
     "scan_pages": [
       {

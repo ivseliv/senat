@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-094",
@@ -46,6 +46,47 @@
       ]
     ],
     "participant_ids": [],
+    "precedents": [
+      {
+        "id": "1897-094:1893:10:3112",
+        "source_id": "1897-094",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6d853f716c4312f936ef3c7bf196e26df8f6e124e20d1b7696c846df1b41cee0",
+        "year": 1893,
+        "start": 3073,
+        "end": 3124,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 10,
+        "department_start": 3081,
+        "department_end": 3098,
+        "citation_start": 3112,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи гражд. касс. д-та Прав. Сената 1893 г. № 10",
+        "target_url": null,
+        "department_evidence": "гражд. касс. д-та",
+        "context_start": 2893,
+        "context_end": 3344,
+        "context_original": " книгу могутъ послѣдовать только при наступленіи означеннаго событія. Самый же актъ объ отказѣ отъ права пожизненнаго владѣнія, согласно 66 ст. нот. пол., и какъ это разъяснено въ рѣшеніи гражд. касс. д-та Прав. Сената 1893 г. № 10, можетъ быть совершенъ, по усмотрѣнію сторонъ, порядкомъ домашнимъ или нотаріальнымъ (или явочнымъ). По симъ основаніямъ Правительствующій Сенатъ опредѣляетъ: разъяснить, что старшіе нотаріусы не должны отмѣчать въ реес",
+        "passage_id": "1897-094:2875-3904",
+        "pages": [
+          306
+        ],
+        "sources": [
+          {
+            "page": 306,
+            "page_method": "header",
+            "file": "p0164_L.txt",
+            "start": 2875,
+            "end": 3904
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-094?mode=precedent&ref=1897-094%3A1893%3A10%3A3112&at=3073&end=3124",
+        "scan_available": true
+      }
+    ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-094",
     "scan_pages": [
       {

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-004",
@@ -59,6 +59,86 @@
       "1897-87d43e3a7a3f",
       "1897-c954e2920ca2",
       "1897-394c1957af2c"
+    ],
+    "precedents": [
+      {
+        "id": "1897-004:1874:244:3961",
+        "source_id": "1897-004",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "9cb73ed57083d41c0b45d374daf28c559de10d13628c925b65accf63c833c079",
+        "year": 1874,
+        "start": 3927,
+        "end": 3976,
+        "department": null,
+        "association": null,
+        "number": 244,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3961,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшенія Правительствующаго Сената 1874 года № 244",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3747,
+        "context_end": 4196,
+        "context_original": "иси на билетахъ, сдѣланныя на случай смерти вкладчика, сами по себѣ не могутъ установить права лица, означеннаго въ надписи, на полученіе вклада. Что касается ссылки просителей на рѣшенія Правительствующаго Сената 1874 года № 244 и 1875 года № 430, то если въ этихъ рѣшеніяхъ и былъ допущенъ переходъ вкладовъ по такимъ надписямъ, то единственно потому, что во время постановленія тѣхъ рѣшеній существовало въ ст. 1199 т. XI уст. кред. правило, опра",
+        "passage_id": "1897-004:2959-5044",
+        "pages": [
+          18
+        ],
+        "sources": [
+          {
+            "page": 18,
+            "page_method": "header",
+            "file": "p0020_L.txt",
+            "start": 3477,
+            "end": 5044
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-004?mode=precedent&ref=1897-004%3A1874%3A244%3A3961&at=3927&end=3976",
+        "scan_available": true
+      },
+      {
+        "id": "1897-004:1875:430:3979",
+        "source_id": "1897-004",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "9cb73ed57083d41c0b45d374daf28c559de10d13628c925b65accf63c833c079",
+        "year": 1875,
+        "start": 3927,
+        "end": 3994,
+        "department": null,
+        "association": null,
+        "number": 430,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3979,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшенія Правительствующаго Сената 1874 года № 244 и 1875 года № 430",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3747,
+        "context_end": 4214,
+        "context_original": "иси на билетахъ, сдѣланныя на случай смерти вкладчика, сами по себѣ не могутъ установить права лица, означеннаго въ надписи, на полученіе вклада. Что касается ссылки просителей на рѣшенія Правительствующаго Сената 1874 года № 244 и 1875 года № 430, то если въ этихъ рѣшеніяхъ и былъ допущенъ переходъ вкладовъ по такимъ надписямъ, то единственно потому, что во время постановленія тѣхъ рѣшеній существовало въ ст. 1199 т. XI уст. кред. правило, оправдывавшее этотъ сп",
+        "passage_id": "1897-004:2959-5044",
+        "pages": [
+          18
+        ],
+        "sources": [
+          {
+            "page": 18,
+            "page_method": "header",
+            "file": "p0020_L.txt",
+            "start": 3477,
+            "end": 5044
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-004?mode=precedent&ref=1897-004%3A1875%3A430%3A3979&at=3927&end=3994",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-004",
     "scan_pages": [

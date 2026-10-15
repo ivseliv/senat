@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-042",
@@ -73,6 +73,125 @@
       "1904-00e57940e3d2",
       "1904-bab59991d8be",
       "1904-2db8ec388598"
+    ],
+    "precedents": [
+      {
+        "id": "1904-042:1890:12:13629",
+        "source_id": "1904-042",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "03f0c7c240da545283baff87a52dc7d777612142b28c1787b53a546a5dbad8f6",
+        "year": 1890,
+        "start": 13621,
+        "end": 13646,
+        "department": null,
+        "association": null,
+        "number": 12,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 13629,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1890 года за № 12",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 13441,
+        "context_end": 13866,
+        "context_original": "ы, и признаются дѣиствительными, если только заключающаяся въ нихъ сдѣлка не противна общественному порядку и не воспрещается законами Имперіи. Толкуя эту статью, Прав. Сенатъ, въ рѣшеніи 1890 года за № 12, разъяснилъ, что, по смыслу ея, упомянутые договоры и акты должны обсуждаться на основаніи законовъ того государства, въ предѣлахъ коего они совершены, во всемъ ихъ объемѣ, следовательно, какъ въ отношеніи обряда ихъ со",
+        "passage_id": "1904-042:12206-13951",
+        "pages": [
+          119
+        ],
+        "sources": [
+          {
+            "page": 119,
+            "page_method": "header",
+            "file": "p0060_R.txt",
+            "start": 12455,
+            "end": 13951
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-042?mode=precedent&ref=1904-042%3A1890%3A12%3A13629&at=13621&end=13646",
+        "scan_available": true
+      },
+      {
+        "id": "1904-042:1882:130:13962",
+        "source_id": "1904-042",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "03f0c7c240da545283baff87a52dc7d777612142b28c1787b53a546a5dbad8f6",
+        "year": 1882,
+        "start": 13952,
+        "end": 13980,
+        "department": null,
+        "association": null,
+        "number": 130,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 13962,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "Рѣшеніемъ 1882 года за № 130",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 13772,
+        "context_end": 14200,
+        "context_original": "ѣлахъ коего они совершены, во всемъ ихъ объемѣ, следовательно, какъ въ отношеніи обряда ихъ совершенія, такъ и въ отношеніи правъ и обязанностей, устанавливаемыхъ ими для сторонъ. Рѣшеніемъ 1882 года за № 130 признано, что ст. 465 уст. гр. суд., которая стоитъ въ неразрывной связи съ вышеприведенною 464 статьею, относится также къ завѣщаніямъ, составленнымъ по законамъ иностраннаго государства. Несмотря на приведенныя законо",
+        "passage_id": "1904-042:13701-15585",
+        "pages": [
+          119
+        ],
+        "sources": [
+          {
+            "page": 119,
+            "page_method": "header",
+            "file": "p0060_R.txt",
+            "start": 13701,
+            "end": 14104
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-042?mode=precedent&ref=1904-042%3A1882%3A130%3A13962&at=13952&end=13980",
+        "scan_available": true
+      },
+      {
+        "id": "1904-042:1889:36:15116",
+        "source_id": "1904-042",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "03f0c7c240da545283baff87a52dc7d777612142b28c1787b53a546a5dbad8f6",
+        "year": 1889,
+        "start": 15111,
+        "end": 15128,
+        "department": null,
+        "association": null,
+        "number": 36,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 15116,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1889 г. № 36",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 14931,
+        "context_end": 15348,
+        "context_original": "для храненія въ опекунскій совѣтъ или другія учрежденія, поименованныя въ сей статьѣ. Это внесеніе завѣщанія на храненіе Правительствующій Сенатъ называетъ „особою формальностью“ (рѣш. 1889 г. № 36), а Государственный Совѣтъ, при разсмотрѣніи въ 1853 г. дѣла о завѣщаніи дѣвицы Лихоревой, разъяснилъ и значеніе этой формы: „правиломъ этой статьи устанавливается не что иное, какъ особый свидѣтель въ лицѣ извѣстнаго п",
+        "passage_id": "1904-042:13701-15585",
+        "pages": [
+          120
+        ],
+        "sources": [
+          {
+            "page": 120,
+            "page_method": "header",
+            "file": "p0061_L.txt",
+            "start": 14105,
+            "end": 15585
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-042?mode=precedent&ref=1904-042%3A1889%3A36%3A15116&at=15111&end=15128",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-042",
     "scan_pages": [

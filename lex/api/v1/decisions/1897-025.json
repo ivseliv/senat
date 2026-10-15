@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-025",
@@ -37,6 +37,47 @@
     "participant_ids": [
       "1897-25dcb2e13cb7",
       "1897-cea691d1421f"
+    ],
+    "precedents": [
+      {
+        "id": "1897-025:1887:19:1181",
+        "source_id": "1897-025",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "3b547b3122f7a61946596a490add5d1caeb7f287a995f0bf6bbc60f2bbb2d9b4",
+        "year": 1887,
+        "start": 1086,
+        "end": 1193,
+        "department": null,
+        "association": null,
+        "number": 19,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1181,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "опредѣленіе основалъ на слѣдующихъ соображеніяхъ: по разъясненію Правительствующаго Сената (р. 1887 г. № 19",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 906,
+        "context_end": 1413,
+        "context_original": "ть не могутъ, въ ходатайствѣ Франковскаго отказалъ, а Петроковскій 3 округа мировой съѣздъ жалобу Франковскаго на это постановленіе мироваго судьи оставилъ безъ послѣдствій и свое опредѣленіе основалъ на слѣдующихъ соображеніяхъ: по разъясненію Правительствующаго Сената (р. 1887 г. № 19), по дѣламъ гражданскимъ неторговымъ личное задержаніе по гражданскому кодексу (ст. 2059—2062 и 2066) примѣняется только за подлоги и обманныя дѣйствія, а относительно неисправныхъ должниковъ неторговаго званія задержан",
+        "passage_id": "1897-025:0-1677",
+        "pages": [
+          94
+        ],
+        "sources": [
+          {
+            "page": 94,
+            "page_method": "header",
+            "file": "p0058_L.txt",
+            "start": 0,
+            "end": 1677
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-025?mode=precedent&ref=1897-025%3A1887%3A19%3A1181&at=1086&end=1193",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-025",
     "scan_pages": [

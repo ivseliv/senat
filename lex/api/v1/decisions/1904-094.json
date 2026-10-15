@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-094",
@@ -56,6 +56,47 @@
     "participant_ids": [
       "1904-624a241079bd",
       "1904-aae0675f3a86"
+    ],
+    "precedents": [
+      {
+        "id": "1904-094:1898:32:2582",
+        "source_id": "1904-094",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "d4a888496360d4c347983efbc0dacaf565973b27eead668b4ba9c75fe56c5645",
+        "year": 1898,
+        "start": 2562,
+        "end": 2594,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 32,
+        "department_start": 2567,
+        "department_end": 2581,
+        "citation_start": 2582,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. д-та 1898 г. № 32",
+        "target_url": null,
+        "department_evidence": "гр. касс. д-та",
+        "context_start": 2382,
+        "context_end": 2814,
+        "context_original": " произвола коихъ не зависитъ перемѣнить перешедшую къ нимъ отъ отца фамилію безъ испрошенія на то разрѣшенія въ установленномъ порядкѣ. Руководствуясь 1460¹ ст. уст. гр. суд. (ср. рѣш. гр. касс. д-та 1898 г. № 32 вопросы 30 и 31), окружный судъ, сдѣлавъ надпись о состоявшемся опредѣленіи объ узаконеніи на метрическомъ свидѣтельствѣ, сообщаетъ объ этомъ опредѣленіи духовной консисторіи для соотвѣтственной отмѣтки въ метрической к",
+        "passage_id": "1904-094:1512-3007",
+        "pages": [
+          261
+        ],
+        "sources": [
+          {
+            "page": 261,
+            "page_method": "header",
+            "file": "p0131_R.txt",
+            "start": 1588,
+            "end": 3007
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-094?mode=precedent&ref=1904-094%3A1898%3A32%3A2582&at=2562&end=2594",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-094",
     "scan_pages": [

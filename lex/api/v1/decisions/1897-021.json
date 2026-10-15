@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-021",
@@ -56,6 +56,86 @@
       "1897-89f86fb41e2b",
       "1897-4e6f95da431a",
       "1897-6dde21116c76"
+    ],
+    "precedents": [
+      {
+        "id": "1897-021:1890:16:3924",
+        "source_id": "1897-021",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "634900d7f74e52e1faca11a78c63692829e8c20a9053b8199af47b92f2e60da3",
+        "year": 1890,
+        "start": 3900,
+        "end": 3936,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 16,
+        "department_start": 3908,
+        "department_end": 3923,
+        "citation_start": 3924,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи общаго собранія 1890 г. № 16",
+        "target_url": null,
+        "department_evidence": "общаго собранія",
+        "context_start": 3720,
+        "context_end": 4156,
+        "context_original": "ентовъ Правительствующаго Сената 19 февраля 1896 г., причемъ общее собраніе нашло, что къ настоящему случаю вполнѣ примѣнимо, по однородности предмета, разъясненіе, преподанное въ рѣшеніи общаго собранія 1890 г. № 16 и касающееся собственно вопроса о возможности пріобрѣтенія права собственности, по давности владѣнія, на оброчную статью, показанную по владѣнной записи въ общинномъ владѣніи (прим. къ ст. 113 мѣст. пол. великор.) нѣско",
+        "passage_id": "1897-021:2971-4710",
+        "pages": [
+          80
+        ],
+        "sources": [
+          {
+            "page": 80,
+            "page_method": "header",
+            "file": "p0051_L.txt",
+            "start": 3243,
+            "end": 4235
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-021?mode=precedent&ref=1897-021%3A1890%3A16%3A3924&at=3900&end=3936",
+        "scan_available": true
+      },
+      {
+        "id": "1897-021:1888:30:4732",
+        "source_id": "1897-021",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "634900d7f74e52e1faca11a78c63692829e8c20a9053b8199af47b92f2e60da3",
+        "year": 1888,
+        "start": 4700,
+        "end": 4744,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 30,
+        "department_start": 4721,
+        "department_end": 4730,
+        "citation_start": 4732,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. Прав. Сената по общ. собр. 1888 г. № 30",
+        "target_url": null,
+        "department_evidence": "общ. собр",
+        "context_start": 4520,
+        "context_end": 4964,
+        "context_original": " генеральнаго межеванія? Если по дѣлу, на основаніи владѣнныхъ записей, которыя должны служить главнымъ источникомъ для разрѣшенія всѣхъ недоразумѣній и споровъ между крестьянами (рѣш. Прав. Сената по общ. собр. 1888 г. № 30), установлено, что означенное лѣсное пространство отведено всѣмъ деревнямъ, замежеваннымъ въ одну дачу генеральнаго межеванія, въ общее нераздѣльное владѣніе, для пользованія лѣснымъ матеріаломъ, и что лѣсное пространст",
+        "passage_id": "1897-021:4435-6098",
+        "pages": [
+          81
+        ],
+        "sources": [
+          {
+            "page": 81,
+            "page_method": "header",
+            "file": "p0051_R.txt",
+            "start": 4435,
+            "end": 6098
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-021?mode=precedent&ref=1897-021%3A1888%3A30%3A4732&at=4700&end=4744",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-021",
     "scan_pages": [

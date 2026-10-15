@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-043",
@@ -45,6 +45,86 @@
       "1905-95ad5e0320fc",
       "1905-214f05ef2dca",
       "1905-2b92601e111f"
+    ],
+    "precedents": [
+      {
+        "id": "1905-043:1887:16:2203",
+        "source_id": "1905-043",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "3cb14d917700792266262bd041873ce8b5f485fa90f622c79aa94b4c94e0b46c",
+        "year": 1887,
+        "start": 2195,
+        "end": 2215,
+        "department": null,
+        "association": null,
+        "number": 16,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2203,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1887 г. № 16",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2015,
+        "context_end": 2435,
+        "context_original": "едвижимости, ибо, по ст. 1026 гр. код., завѣщательница могла предоставить въ завѣдываніе душеприказчиковъ только свою движимость, какъ это разъяснилъ и Правительствующій Сенатъ въ рѣшеніи 1887 г. № 16. Вмѣстѣ съ тѣмъ, палата признала, что содержаніе завѣщанія Янковской не оставляетъ никакого сомнѣнія въ томъ, что, предоставляя каждому изъ душеприказчиковъ по 10% съ суммы, въ какой, по реализаціи, опредѣлится активъ н",
+        "passage_id": "1905-043:1509-3138",
+        "pages": [
+          117
+        ],
+        "sources": [
+          {
+            "page": 117,
+            "page_method": "header",
+            "file": "p0059_R.txt",
+            "start": 1509,
+            "end": 3138
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-043?mode=precedent&ref=1905-043%3A1887%3A16%3A2203&at=2195&end=2215",
+        "scan_available": true
+      },
+      {
+        "id": "1905-043:1887:16:7767",
+        "source_id": "1905-043",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "3cb14d917700792266262bd041873ce8b5f485fa90f622c79aa94b4c94e0b46c",
+        "year": 1887,
+        "start": 7759,
+        "end": 7779,
+        "department": null,
+        "association": null,
+        "number": 16,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7767,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1887 г. № 16",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7579,
+        "context_end": 7999,
+        "context_original": "огласнаго съ общественнымъ порядкомъ или добрыми нравами, нѣтъ никакихъ оснований. Такому пониманію ст. 1026 гр. код. не противорѣчитъ и преподанное Правительствующимъ Сенатомъ въ рѣшеніи 1887 г. № 16 по дѣлу о завѣщаніи Сѣраковской разъясненіе, какъ послѣдовавшее собственно по вопросу о томъ: распространяется-ли правило ст. 1026 гр. код. также и на случаи, когда въ завѣщаніи отказано имущество не въ пользу отдѣльных",
+        "passage_id": "1905-043:7380-9331",
+        "pages": [
+          119
+        ],
+        "sources": [
+          {
+            "page": 119,
+            "page_method": "header",
+            "file": "p0060_R.txt",
+            "start": 7380,
+            "end": 9331
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-043?mode=precedent&ref=1905-043%3A1887%3A16%3A7767&at=7759&end=7779",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-043",
     "scan_pages": [

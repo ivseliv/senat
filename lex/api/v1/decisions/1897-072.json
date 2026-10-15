@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-072",
@@ -55,6 +55,86 @@
       "1897-ff4d0a9bb945",
       "1897-3f826efd0d13",
       "1897-f1ff5d0d5d8d"
+    ],
+    "precedents": [
+      {
+        "id": "1897-072:1891:56:3780",
+        "source_id": "1897-072",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "191778cf7b430819d5d31d105fbac34cc1b1b6498889cb3dd544116909059c34",
+        "year": 1891,
+        "start": 3775,
+        "end": 3792,
+        "department": null,
+        "association": null,
+        "number": 56,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3780,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1891 г. № 56",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3595,
+        "context_end": 4012,
+        "context_original": "ва, связанныя съ усыновленіемъ, совершеннымъ припискою усыновленнаго къ семейству усыновителя, присвоиваютъ усыновленному одно лишь право наслѣдованія по закону послѣ усыновителя (рѣш. 1891 г. № 56, 1892 г. № 31). Но и при допущеніи законнаго наслѣдованія помимо кровнаго родства, а именно въ случаяхъ наслѣдованія по закону послѣ усыновителей, нельзя имѣніе, дошедшее по праву законнаго наслѣдованія отъ усыновителя ",
+        "passage_id": "1897-072:2846-4693",
+        "pages": [
+          240
+        ],
+        "sources": [
+          {
+            "page": 240,
+            "page_method": "header",
+            "file": "p0131_L.txt",
+            "start": 2846,
+            "end": 4693
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-072?mode=precedent&ref=1897-072%3A1891%3A56%3A3780&at=3775&end=3792",
+        "scan_available": true
+      },
+      {
+        "id": "1897-072:1892:31:3794",
+        "source_id": "1897-072",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "191778cf7b430819d5d31d105fbac34cc1b1b6498889cb3dd544116909059c34",
+        "year": 1892,
+        "start": 3775,
+        "end": 3806,
+        "department": null,
+        "association": null,
+        "number": 31,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3794,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1891 г. № 56, 1892 г. № 31",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3595,
+        "context_end": 4026,
+        "context_original": "ва, связанныя съ усыновленіемъ, совершеннымъ припискою усыновленнаго къ семейству усыновителя, присвоиваютъ усыновленному одно лишь право наслѣдованія по закону послѣ усыновителя (рѣш. 1891 г. № 56, 1892 г. № 31). Но и при допущеніи законнаго наслѣдованія помимо кровнаго родства, а именно въ случаяхъ наслѣдованія по закону послѣ усыновителей, нельзя имѣніе, дошедшее по праву законнаго наслѣдованія отъ усыновителя къ усыновленно",
+        "passage_id": "1897-072:2846-4693",
+        "pages": [
+          240
+        ],
+        "sources": [
+          {
+            "page": 240,
+            "page_method": "header",
+            "file": "p0131_L.txt",
+            "start": 2846,
+            "end": 4693
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-072?mode=precedent&ref=1897-072%3A1892%3A31%3A3794&at=3775&end=3806",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-072",
     "scan_pages": [

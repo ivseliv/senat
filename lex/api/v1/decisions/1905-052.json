@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-052",
@@ -56,6 +56,125 @@
     "participant_ids": [
       "1905-d4db61c84edf",
       "1905-43180700e5ff"
+    ],
+    "precedents": [
+      {
+        "id": "1905-052:1885:112:3485",
+        "source_id": "1905-052",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e6e8683d5f443f0fdfcc5c1dd923045e1ab0bca3cc64d63c8b6f857dad45b3f9",
+        "year": 1885,
+        "start": 3480,
+        "end": 3500,
+        "department": null,
+        "association": null,
+        "number": 112,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3485,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1885 года № 112",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3300,
+        "context_end": 3720,
+        "context_original": "примѣненіе 3 п. 1170 ст. того-же устава къ случаямъ просрочки во взносѣ крѣпостныхъ пошлинъ, въ виду карательнаго свойства этого закона, представлялось-бы не вполнѣ справедливымъ (рѣш. 1885 года № 112); 2) точно также просрочка во взносѣ части покупной цѣны за имѣніе, купленное съ торговъ, обусловленная недоразумѣніемъ, явившимся у покупателя, признана Сенатомъ неподлежащею зачету въ вину покупщика и, поэтому, невлек",
+        "passage_id": "1905-052:2747-4569",
+        "pages": [
+          142
+        ],
+        "sources": [
+          {
+            "page": 142,
+            "page_method": "header",
+            "file": "p0072_L.txt",
+            "start": 2747,
+            "end": 4569
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-052?mode=precedent&ref=1905-052%3A1885%3A112%3A3485&at=3480&end=3500",
+        "scan_available": true
+      },
+      {
+        "id": "1905-052:1893:100:3956",
+        "source_id": "1905-052",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e6e8683d5f443f0fdfcc5c1dd923045e1ab0bca3cc64d63c8b6f857dad45b3f9",
+        "year": 1893,
+        "start": 3951,
+        "end": 3971,
+        "department": null,
+        "association": null,
+        "number": 100,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3956,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1893 года № 100",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3771,
+        "context_end": 4191,
+        "context_original": "ст. гражд. суд., ибо, какъ и высказано въ рѣшеніи Сената, постановленія, въ приведенныхъ статьяхъ указанныя, имѣя карательное свойство, предполагаютъ существованіе вины покупщика (рѣш. 1893 года № 100); г) что въ приведенныхъ рѣшеніяхъ Правительствующаго Сената установлена противоположность недоразумѣнія или ошибки съ виною и признано, что лишь при наличности послѣдней умѣстны карательныя послѣдствія, но таковыя не п",
+        "passage_id": "1905-052:2747-4569",
+        "pages": [
+          142
+        ],
+        "sources": [
+          {
+            "page": 142,
+            "page_method": "header",
+            "file": "p0072_L.txt",
+            "start": 2747,
+            "end": 4569
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-052?mode=precedent&ref=1905-052%3A1893%3A100%3A3956&at=3951&end=3971",
+        "scan_available": true
+      },
+      {
+        "id": "1905-052:1900:62:4932",
+        "source_id": "1905-052",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "e6e8683d5f443f0fdfcc5c1dd923045e1ab0bca3cc64d63c8b6f857dad45b3f9",
+        "year": 1900,
+        "start": 4927,
+        "end": 4944,
+        "department": null,
+        "association": null,
+        "number": 62,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4932,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1900 г. № 62",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4747,
+        "context_end": 5164,
+        "context_original": "йки, ибо, какъ и изъяснено Сенатомъ,—къ такому заключенію неизбѣжно приводитъ и чувство справедливости, долженствующее всегда помогать судьѣ при разрѣшеніи сомнительныхъ случаевъ (рѣш. 1900 г. № 62); е) что, вопреки мнѣнію Симферопольскаго окружнаго суда и согласно съ выраженными въ приведенныхъ выше сенатскихъ рѣшеніяхъ разъясненіями, хотя-бы для истца и было, какъ сказано въ рѣшеніи суда, безразлично—по какой им",
+        "passage_id": "1905-052:4265-6134",
+        "pages": [
+          142
+        ],
+        "sources": [
+          {
+            "page": 142,
+            "page_method": "header",
+            "file": "p0072_L.txt",
+            "start": 4265,
+            "end": 5589
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-052?mode=precedent&ref=1905-052%3A1900%3A62%3A4932&at=4927&end=4944",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-052",
     "scan_pages": [

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1896-018",
@@ -62,6 +62,125 @@
       ]
     ],
     "participant_ids": [],
+    "precedents": [
+      {
+        "id": "1896-018:1875:236:3710",
+        "source_id": "1896-018",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "30112539cdaac2a84a818089b0194a4308e3b2d027de7abd0ccdf6451f45e7c6",
+        "year": 1875,
+        "start": 3691,
+        "end": 3725,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 236,
+        "department_start": 3696,
+        "department_end": 3705,
+        "citation_start": 3710,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. Гр. Касс. еп. 1875 года № 236",
+        "target_url": null,
+        "department_evidence": "Гр. Касс.",
+        "context_start": 3511,
+        "context_end": 3945,
+        "context_original": "этомъ значеніи сила въ дѣлахъ вотчинныхъ всегда признавалась по взгляду Гражданскаго Кассаціоннаго Департамента Прави тельствующаго Сената, вполнѣ раз дѣляемому Общимъ Собран'емъ (рѣш. Гр. Касс. еп. 1875 года № 236, 1879 года № 132, 1887 года № 8); 2) что приравненіе, по закону, межевыхъ ак товъ къ актамъ, имѣющимъ силу но таріальныхъ, достаточно явствуетъ изъ включенія въ положеніе о нотар. ча су» ст. 81, гдѣ сказано, что акты со",
+        "passage_id": "1896-018:2685-4495",
+        "pages": [
+          737
+        ],
+        "sources": [
+          {
+            "page": 737,
+            "page_method": "neighbors",
+            "file": "p0030.txt",
+            "start": 2685,
+            "end": 4495
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-018?mode=precedent&ref=1896-018%3A1875%3A236%3A3710&at=3691&end=3725",
+        "scan_available": true
+      },
+      {
+        "id": "1896-018:1879:132:3727",
+        "source_id": "1896-018",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "30112539cdaac2a84a818089b0194a4308e3b2d027de7abd0ccdf6451f45e7c6",
+        "year": 1879,
+        "start": 3691,
+        "end": 3742,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 132,
+        "department_start": 3696,
+        "department_end": 3705,
+        "citation_start": 3727,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. Гр. Касс. еп. 1875 года № 236, 1879 года № 132",
+        "target_url": null,
+        "department_evidence": "Гр. Касс.",
+        "context_start": 3511,
+        "context_end": 3962,
+        "context_original": "этомъ значеніи сила въ дѣлахъ вотчинныхъ всегда признавалась по взгляду Гражданскаго Кассаціоннаго Департамента Прави тельствующаго Сената, вполнѣ раз дѣляемому Общимъ Собран'емъ (рѣш. Гр. Касс. еп. 1875 года № 236, 1879 года № 132, 1887 года № 8); 2) что приравненіе, по закону, межевыхъ ак товъ къ актамъ, имѣющимъ силу но таріальныхъ, достаточно явствуетъ изъ включенія въ положеніе о нотар. ча су» ст. 81, гдѣ сказано, что акты со- 47 стояній, рав",
+        "passage_id": "1896-018:2685-4495",
+        "pages": [
+          737
+        ],
+        "sources": [
+          {
+            "page": 737,
+            "page_method": "neighbors",
+            "file": "p0030.txt",
+            "start": 2685,
+            "end": 4495
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-018?mode=precedent&ref=1896-018%3A1879%3A132%3A3727&at=3691&end=3742",
+        "scan_available": true
+      },
+      {
+        "id": "1896-018:1887:8:3744",
+        "source_id": "1896-018",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "30112539cdaac2a84a818089b0194a4308e3b2d027de7abd0ccdf6451f45e7c6",
+        "year": 1887,
+        "start": 3691,
+        "end": 3757,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 8,
+        "department_start": 3696,
+        "department_end": 3705,
+        "citation_start": 3744,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. Гр. Касс. еп. 1875 года № 236, 1879 года № 132, 1887 года № 8",
+        "target_url": null,
+        "department_evidence": "Гр. Касс.",
+        "context_start": 3511,
+        "context_end": 3977,
+        "context_original": "этомъ значеніи сила въ дѣлахъ вотчинныхъ всегда признавалась по взгляду Гражданскаго Кассаціоннаго Департамента Прави тельствующаго Сената, вполнѣ раз дѣляемому Общимъ Собран'емъ (рѣш. Гр. Касс. еп. 1875 года № 236, 1879 года № 132, 1887 года № 8); 2) что приравненіе, по закону, межевыхъ ак товъ къ актамъ, имѣющимъ силу но таріальныхъ, достаточно явствуетъ изъ включенія въ положеніе о нотар. ча су» ст. 81, гдѣ сказано, что акты со- 47 стояній, равно какъ и акты ",
+        "passage_id": "1896-018:2685-4495",
+        "pages": [
+          737
+        ],
+        "sources": [
+          {
+            "page": 737,
+            "page_method": "neighbors",
+            "file": "p0030.txt",
+            "start": 2685,
+            "end": 4495
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-018?mode=precedent&ref=1896-018%3A1887%3A8%3A3744&at=3691&end=3757",
+        "scan_available": true
+      }
+    ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1896-018",
     "scan_pages": [
       {

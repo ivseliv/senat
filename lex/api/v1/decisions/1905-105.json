@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-105",
@@ -55,6 +55,164 @@
     "participant_ids": [
       "1905-c781e61e7445",
       "1905-059d85d77239"
+    ],
+    "precedents": [
+      {
+        "id": "1905-105:1901:45:7168",
+        "source_id": "1905-105",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "991a61dd282cb9089c7c1ae190f9f8d142d44d5596621ba461fd562029298275",
+        "year": 1901,
+        "start": 7160,
+        "end": 7180,
+        "department": null,
+        "association": null,
+        "number": 45,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7168,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1901 г. № 45",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 6980,
+        "context_end": 7400,
+        "context_original": "дачи арендныхъ правъ еврею, вопреки закону 3 мая 1882 г., долженъ почитаться, на основаніи 1528 и 1529 ст. X т. ч. 1, ничтожнымъ. Согласно разъясненію Правительствующаго Сената въ рѣшеніи 1901 г. № 45 и 1902 г. № 87. по смыслу законовъ объ обязательствахъ по договорамъ надлежитъ различать собственно мнимые договоры, заключенные только для виду, и договоры притворные, прикрывающіе собою другую дѣйствительно состоявшую",
+        "passage_id": "1905-105:5890-7541",
+        "pages": [
+          286
+        ],
+        "sources": [
+          {
+            "page": 286,
+            "page_method": "header",
+            "file": "p0144_L.txt",
+            "start": 6135,
+            "end": 7541
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-105?mode=precedent&ref=1905-105%3A1901%3A45%3A7168&at=7160&end=7180",
+        "scan_available": true
+      },
+      {
+        "id": "1905-105:1902:87:7183",
+        "source_id": "1905-105",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "991a61dd282cb9089c7c1ae190f9f8d142d44d5596621ba461fd562029298275",
+        "year": 1902,
+        "start": 7160,
+        "end": 7195,
+        "department": null,
+        "association": null,
+        "number": 87,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7183,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1901 г. № 45 и 1902 г. № 87",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 6980,
+        "context_end": 7415,
+        "context_original": "дачи арендныхъ правъ еврею, вопреки закону 3 мая 1882 г., долженъ почитаться, на основаніи 1528 и 1529 ст. X т. ч. 1, ничтожнымъ. Согласно разъясненію Правительствующаго Сената въ рѣшеніи 1901 г. № 45 и 1902 г. № 87. по смыслу законовъ объ обязательствахъ по договорамъ надлежитъ различать собственно мнимые договоры, заключенные только для виду, и договоры притворные, прикрывающіе собою другую дѣйствительно состоявшуюся между сторон",
+        "passage_id": "1905-105:5890-7541",
+        "pages": [
+          286
+        ],
+        "sources": [
+          {
+            "page": 286,
+            "page_method": "header",
+            "file": "p0144_L.txt",
+            "start": 6135,
+            "end": 7541
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-105?mode=precedent&ref=1905-105%3A1902%3A87%3A7183&at=7160&end=7195",
+        "scan_available": true
+      },
+      {
+        "id": "1905-105:1886:16:9768",
+        "source_id": "1905-105",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "991a61dd282cb9089c7c1ae190f9f8d142d44d5596621ba461fd562029298275",
+        "year": 1886,
+        "start": 9763,
+        "end": 9780,
+        "department": null,
+        "association": null,
+        "number": 16,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 9768,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1886 г. № 16",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 9583,
+        "context_end": 10000,
+        "context_original": "лъ въ виду взаимныхъ интересовъ частныхъ лицъ. Посему, при примѣненіи этого закона, слѣдуетъ руководствоваться тѣми разъясненіями, которыя преподаны Правительствующимъ Сенатомъ въ рѣш. 1886 г. № 16 и 1902 г. № 87, согласно которымъ при обсужденіи сдѣлокъ, совершенныхъ въ нарушеніе исключительныхъ законовъ, судъ долженъ принимать въ соображеніе, можетъ-ли имѣть такая сдѣлка своимъ послѣдствіемъ запрещенное закономъ",
+        "passage_id": "1905-105:8913-10601",
+        "pages": [
+          287
+        ],
+        "sources": [
+          {
+            "page": 287,
+            "page_method": "header",
+            "file": "p0144_R.txt",
+            "start": 9135,
+            "end": 10601
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-105?mode=precedent&ref=1905-105%3A1886%3A16%3A9768&at=9763&end=9780",
+        "scan_available": true
+      },
+      {
+        "id": "1905-105:1902:87:9783",
+        "source_id": "1905-105",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "991a61dd282cb9089c7c1ae190f9f8d142d44d5596621ba461fd562029298275",
+        "year": 1902,
+        "start": 9763,
+        "end": 9795,
+        "department": null,
+        "association": null,
+        "number": 87,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 9783,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1886 г. № 16 и 1902 г. № 87",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 9583,
+        "context_end": 10015,
+        "context_original": "лъ въ виду взаимныхъ интересовъ частныхъ лицъ. Посему, при примѣненіи этого закона, слѣдуетъ руководствоваться тѣми разъясненіями, которыя преподаны Правительствующимъ Сенатомъ въ рѣш. 1886 г. № 16 и 1902 г. № 87, согласно которымъ при обсужденіи сдѣлокъ, совершенныхъ въ нарушеніе исключительныхъ законовъ, судъ долженъ принимать въ соображеніе, можетъ-ли имѣть такая сдѣлка своимъ послѣдствіемъ запрещенное закономъ вступленіе евр",
+        "passage_id": "1905-105:8913-10601",
+        "pages": [
+          287
+        ],
+        "sources": [
+          {
+            "page": 287,
+            "page_method": "header",
+            "file": "p0144_R.txt",
+            "start": 9135,
+            "end": 10601
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-105?mode=precedent&ref=1905-105%3A1902%3A87%3A9783&at=9763&end=9795",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-105",
     "scan_pages": [

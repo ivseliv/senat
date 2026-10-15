@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-001",
@@ -54,6 +54,242 @@
       "1897-e1d24e4da712",
       "1897-c8045496cd79",
       "1897-93f3292a35e8"
+    ],
+    "precedents": [
+      {
+        "id": "1897-001:1883:8:7722",
+        "source_id": "1897-001",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6b584a709fbbca3674c6e2c578645e41838f95b7fdf92ca1fe9a07f78e60d2ce",
+        "year": 1883,
+        "start": 7717,
+        "end": 7733,
+        "department": null,
+        "association": null,
+        "number": 8,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7722,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1883 г. № 8",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7537,
+        "context_end": 7953,
+        "context_original": " будетъ отвѣчать за нихъ, и 2) что общественное управленіе, даже дѣйствуя въ качествѣ власти, обязано отвѣчать за дѣйствія своихъ агентовъ, если этими дѣйствіями причинены убытки (рѣш. 1883 г. № 8, 1875 г. №№ 490 и 380). Но, независимо сего, Одесское городское общественное управленіе дѣйствовало въ качествѣ хозяйственнаго органа и представителя имущественныхъ интересовъ, ибо приняло на себя организацію специальна",
+        "passage_id": "1897-001:7012-8648",
+        "pages": [
+          6
+        ],
+        "sources": [
+          {
+            "page": 6,
+            "page_method": "header",
+            "file": "p0014_L.txt",
+            "start": 7287,
+            "end": 8648
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-001?mode=precedent&ref=1897-001%3A1883%3A8%3A7722&at=7717&end=7733",
+        "scan_available": true
+      },
+      {
+        "id": "1897-001:1875:490:7735",
+        "source_id": "1897-001",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6b584a709fbbca3674c6e2c578645e41838f95b7fdf92ca1fe9a07f78e60d2ce",
+        "year": 1875,
+        "start": 7717,
+        "end": 7755,
+        "department": null,
+        "association": null,
+        "number": 490,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7735,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1883 г. № 8, 1875 г. №№ 490 и 380",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7537,
+        "context_end": 7975,
+        "context_original": " будетъ отвѣчать за нихъ, и 2) что общественное управленіе, даже дѣйствуя въ качествѣ власти, обязано отвѣчать за дѣйствія своихъ агентовъ, если этими дѣйствіями причинены убытки (рѣш. 1883 г. № 8, 1875 г. №№ 490 и 380). Но, независимо сего, Одесское городское общественное управленіе дѣйствовало въ качествѣ хозяйственнаго органа и представителя имущественныхъ интересовъ, ибо приняло на себя организацію специальнаго учрежденія для прив",
+        "passage_id": "1897-001:7012-8648",
+        "pages": [
+          6
+        ],
+        "sources": [
+          {
+            "page": 6,
+            "page_method": "header",
+            "file": "p0014_L.txt",
+            "start": 7287,
+            "end": 8648
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-001?mode=precedent&ref=1897-001%3A1875%3A490%3A7735&at=7717&end=7755",
+        "scan_available": true
+      },
+      {
+        "id": "1897-001:1875:380:7735",
+        "source_id": "1897-001",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6b584a709fbbca3674c6e2c578645e41838f95b7fdf92ca1fe9a07f78e60d2ce",
+        "year": 1875,
+        "start": 7717,
+        "end": 7755,
+        "department": null,
+        "association": null,
+        "number": 380,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7735,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1883 г. № 8, 1875 г. №№ 490 и 380",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7537,
+        "context_end": 7975,
+        "context_original": " будетъ отвѣчать за нихъ, и 2) что общественное управленіе, даже дѣйствуя въ качествѣ власти, обязано отвѣчать за дѣйствія своихъ агентовъ, если этими дѣйствіями причинены убытки (рѣш. 1883 г. № 8, 1875 г. №№ 490 и 380). Но, независимо сего, Одесское городское общественное управленіе дѣйствовало въ качествѣ хозяйственнаго органа и представителя имущественныхъ интересовъ, ибо приняло на себя организацію специальнаго учрежденія для прив",
+        "passage_id": "1897-001:7012-8648",
+        "pages": [
+          6
+        ],
+        "sources": [
+          {
+            "page": 6,
+            "page_method": "header",
+            "file": "p0014_L.txt",
+            "start": 7287,
+            "end": 8648
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-001?mode=precedent&ref=1897-001%3A1875%3A380%3A7735&at=7717&end=7755",
+        "scan_available": true
+      },
+      {
+        "id": "1897-001:1883:8:15053",
+        "source_id": "1897-001",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6b584a709fbbca3674c6e2c578645e41838f95b7fdf92ca1fe9a07f78e60d2ce",
+        "year": 1883,
+        "start": 15030,
+        "end": 15064,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 8,
+        "department_start": 15035,
+        "department_end": 15049,
+        "citation_start": 15053,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. деп. за 1883 г. № 8",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 14850,
+        "context_end": 15284,
+        "context_original": " же 711 ст. у. г. с., судебная палата не вошла въ разсмотрѣніе развитыхъ просителями положеній объ отвѣтственности городскихъ общественныхъ управленій за дѣйствія своихъ агентовъ (рѣш. гр. касс. деп. за 1883 г. № 8, 1875 г. №№ 490 и 380) и, вопреки ст. 2020 и прим. къ ней, 2021 и 2050 (пун. 11) общ. губ. учр. т. II ч. 1 (городовое положеніе), пришла къ заключенію, что бактеріологическая станція есть учрежденіе ученое, неимѣющее цѣ",
+        "passage_id": "1897-001:14052-15563",
+        "pages": [
+          8
+        ],
+        "sources": [
+          {
+            "page": 8,
+            "page_method": "header",
+            "file": "p0015_L.txt",
+            "start": 14052,
+            "end": 15563
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-001?mode=precedent&ref=1897-001%3A1883%3A8%3A15053&at=15030&end=15064",
+        "scan_available": true
+      },
+      {
+        "id": "1897-001:1875:490:15066",
+        "source_id": "1897-001",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6b584a709fbbca3674c6e2c578645e41838f95b7fdf92ca1fe9a07f78e60d2ce",
+        "year": 1875,
+        "start": 15030,
+        "end": 15086,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 490,
+        "department_start": 15035,
+        "department_end": 15049,
+        "citation_start": 15066,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. деп. за 1883 г. № 8, 1875 г. №№ 490 и 380",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 14850,
+        "context_end": 15306,
+        "context_original": " же 711 ст. у. г. с., судебная палата не вошла въ разсмотрѣніе развитыхъ просителями положеній объ отвѣтственности городскихъ общественныхъ управленій за дѣйствія своихъ агентовъ (рѣш. гр. касс. деп. за 1883 г. № 8, 1875 г. №№ 490 и 380) и, вопреки ст. 2020 и прим. къ ней, 2021 и 2050 (пун. 11) общ. губ. учр. т. II ч. 1 (городовое положеніе), пришла къ заключенію, что бактеріологическая станція есть учрежденіе ученое, неимѣющее цѣлью эксплоатаціи въ по",
+        "passage_id": "1897-001:14052-15563",
+        "pages": [
+          8
+        ],
+        "sources": [
+          {
+            "page": 8,
+            "page_method": "header",
+            "file": "p0015_L.txt",
+            "start": 14052,
+            "end": 15563
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-001?mode=precedent&ref=1897-001%3A1875%3A490%3A15066&at=15030&end=15086",
+        "scan_available": true
+      },
+      {
+        "id": "1897-001:1875:380:15066",
+        "source_id": "1897-001",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6b584a709fbbca3674c6e2c578645e41838f95b7fdf92ca1fe9a07f78e60d2ce",
+        "year": 1875,
+        "start": 15030,
+        "end": 15086,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 380,
+        "department_start": 15035,
+        "department_end": 15049,
+        "citation_start": 15066,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. деп. за 1883 г. № 8, 1875 г. №№ 490 и 380",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 14850,
+        "context_end": 15306,
+        "context_original": " же 711 ст. у. г. с., судебная палата не вошла въ разсмотрѣніе развитыхъ просителями положеній объ отвѣтственности городскихъ общественныхъ управленій за дѣйствія своихъ агентовъ (рѣш. гр. касс. деп. за 1883 г. № 8, 1875 г. №№ 490 и 380) и, вопреки ст. 2020 и прим. къ ней, 2021 и 2050 (пун. 11) общ. губ. учр. т. II ч. 1 (городовое положеніе), пришла къ заключенію, что бактеріологическая станція есть учрежденіе ученое, неимѣющее цѣлью эксплоатаціи въ по",
+        "passage_id": "1897-001:14052-15563",
+        "pages": [
+          8
+        ],
+        "sources": [
+          {
+            "page": 8,
+            "page_method": "header",
+            "file": "p0015_L.txt",
+            "start": 14052,
+            "end": 15563
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-001?mode=precedent&ref=1897-001%3A1875%3A380%3A15066&at=15030&end=15086",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-001",
     "scan_pages": [

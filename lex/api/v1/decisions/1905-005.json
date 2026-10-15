@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-005",
@@ -52,6 +52,86 @@
       "1905-37668b162ab8",
       "1905-e4e22b0388a2",
       "1905-588fc586fa60"
+    ],
+    "precedents": [
+      {
+        "id": "1905-005:1899:35:2161",
+        "source_id": "1905-005",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "835e259e2b8a20f2666733c311fa1af2761db90b232d5f5b4a56821cea21912f",
+        "year": 1899,
+        "start": 2153,
+        "end": 2173,
+        "department": null,
+        "association": null,
+        "number": 35,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2161,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1899 г. № 35",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1973,
+        "context_end": 2393,
+        "context_original": "выводится изъ точнаго смысла закона, ограничивающаго правоспособность собственника имѣнія и не допускающаго, посему, распространительнаго толкованія, и Правительствующій Сенатъ въ рѣшеніи 1899 г. № 35, относясь съ такой точки зрѣнія къ приведенному закону, призналъ, что онъ имѣетъ въ виду лишь запрещеніе, исключительно относящееся къ договорной ипотекѣ. Доводы кассаціонной жалобы не могутъ привести Правительствующій ",
+        "passage_id": "1905-005:1359-3253",
+        "pages": [
+          11
+        ],
+        "sources": [
+          {
+            "page": 11,
+            "page_method": "header",
+            "file": "p0006_R.txt",
+            "start": 1359,
+            "end": 3253
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-005?mode=precedent&ref=1905-005%3A1899%3A35%3A2161&at=2153&end=2173",
+        "scan_available": true
+      },
+      {
+        "id": "1905-005:1899:35:4242",
+        "source_id": "1905-005",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "835e259e2b8a20f2666733c311fa1af2761db90b232d5f5b4a56821cea21912f",
+        "year": 1899,
+        "start": 4234,
+        "end": 4254,
+        "department": null,
+        "association": null,
+        "number": 35,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4242,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1899 г. № 35",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4054,
+        "context_end": 4474,
+        "context_original": "ельству всѣмъ своимъ имуществомъ движимымъ и недвижимымъ, настоящимъ и будущимъ (ст. 2 закона о привилегіяхъ и ипотекахъ 1825 г.), на что также указалъ Правительствующій Сенатъ въ рѣшеніи 1899 г. № 35.—Остается замѣтить, что если бы, при изданіи закона 1/13 іюля 1871 г., имѣлось въ виду объявить всѣ имѣнія, проданныя на основаніи этихъ правилъ, неприкосновенными для частныхъ взыскателей въ теченіе всего времени нахож",
+        "passage_id": "1905-005:2971-4725",
+        "pages": [
+          11
+        ],
+        "sources": [
+          {
+            "page": 11,
+            "page_method": "header",
+            "file": "p0006_R.txt",
+            "start": 2971,
+            "end": 4325
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-005?mode=precedent&ref=1905-005%3A1899%3A35%3A4242&at=4234&end=4254",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-005",
     "scan_pages": [

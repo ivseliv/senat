@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-018",
@@ -68,6 +68,554 @@
       "1905-1519382b6ab9",
       "1905-3495af07f80c",
       "1905-0b141ec84156"
+    ],
+    "precedents": [
+      {
+        "id": "1905-018:1868:97:3032",
+        "source_id": "1905-018",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4bb95bffe7459cfc5e0d94fbd81129c6b644a540a511253b5c7ff870e31d2524",
+        "year": 1868,
+        "start": 3027,
+        "end": 3044,
+        "department": null,
+        "association": null,
+        "number": 97,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3032,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1868 г. № 97",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2847,
+        "context_end": 3264,
+        "context_original": "аго смысла 410 ст. уст. гр. суд. явствуетъ, что совершенными въ установленномъ порядкѣ письменными документами признаются не только акты присутственныхъ мѣстъ и должностныхъ лицъ (рѣш. 1868 г. № 97, 1873 г. № 118, 1883 г. № 38 и др.) и документы, явленные у нотаріуса или записанные въ нотаріальныхъ книгахъ послѣдняго (рѣш. 1875 г. № 993 и др.), но и всѣ тѣ акты, которые, служа доказательствомъ юридической сдѣлки, ",
+        "passage_id": "1905-018:2579-4283",
+        "pages": [
+          43
+        ],
+        "sources": [
+          {
+            "page": 43,
+            "page_method": "header",
+            "file": "p0022_R.txt",
+            "start": 2579,
+            "end": 4283
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-018?mode=precedent&ref=1905-018%3A1868%3A97%3A3032&at=3027&end=3044",
+        "scan_available": true
+      },
+      {
+        "id": "1905-018:1873:118:3046",
+        "source_id": "1905-018",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4bb95bffe7459cfc5e0d94fbd81129c6b644a540a511253b5c7ff870e31d2524",
+        "year": 1873,
+        "start": 3027,
+        "end": 3059,
+        "department": null,
+        "association": null,
+        "number": 118,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3046,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1868 г. № 97, 1873 г. № 118",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2847,
+        "context_end": 3279,
+        "context_original": "аго смысла 410 ст. уст. гр. суд. явствуетъ, что совершенными въ установленномъ порядкѣ письменными документами признаются не только акты присутственныхъ мѣстъ и должностныхъ лицъ (рѣш. 1868 г. № 97, 1873 г. № 118, 1883 г. № 38 и др.) и документы, явленные у нотаріуса или записанные въ нотаріальныхъ книгахъ послѣдняго (рѣш. 1875 г. № 993 и др.), но и всѣ тѣ акты, которые, служа доказательствомъ юридической сдѣлки, составляютъ, вм",
+        "passage_id": "1905-018:2579-4283",
+        "pages": [
+          43
+        ],
+        "sources": [
+          {
+            "page": 43,
+            "page_method": "header",
+            "file": "p0022_R.txt",
+            "start": 2579,
+            "end": 4283
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-018?mode=precedent&ref=1905-018%3A1873%3A118%3A3046&at=3027&end=3059",
+        "scan_available": true
+      },
+      {
+        "id": "1905-018:1883:38:3061",
+        "source_id": "1905-018",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4bb95bffe7459cfc5e0d94fbd81129c6b644a540a511253b5c7ff870e31d2524",
+        "year": 1883,
+        "start": 3027,
+        "end": 3073,
+        "department": null,
+        "association": null,
+        "number": 38,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3061,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1868 г. № 97, 1873 г. № 118, 1883 г. № 38",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2847,
+        "context_end": 3293,
+        "context_original": "аго смысла 410 ст. уст. гр. суд. явствуетъ, что совершенными въ установленномъ порядкѣ письменными документами признаются не только акты присутственныхъ мѣстъ и должностныхъ лицъ (рѣш. 1868 г. № 97, 1873 г. № 118, 1883 г. № 38 и др.) и документы, явленные у нотаріуса или записанные въ нотаріальныхъ книгахъ послѣдняго (рѣш. 1875 г. № 993 и др.), но и всѣ тѣ акты, которые, служа доказательствомъ юридической сдѣлки, составляютъ, вмѣстѣ съ тѣмъ, ",
+        "passage_id": "1905-018:2579-4283",
+        "pages": [
+          43
+        ],
+        "sources": [
+          {
+            "page": 43,
+            "page_method": "header",
+            "file": "p0022_R.txt",
+            "start": 2579,
+            "end": 4283
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-018?mode=precedent&ref=1905-018%3A1883%3A38%3A3061&at=3027&end=3073",
+        "scan_available": true
+      },
+      {
+        "id": "1905-018:1875:993:3172",
+        "source_id": "1905-018",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4bb95bffe7459cfc5e0d94fbd81129c6b644a540a511253b5c7ff870e31d2524",
+        "year": 1875,
+        "start": 3167,
+        "end": 3185,
+        "department": null,
+        "association": null,
+        "number": 993,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3172,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1875 г. № 993",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2987,
+        "context_end": 3405,
+        "context_original": "сутственныхъ мѣстъ и должностныхъ лицъ (рѣш. 1868 г. № 97, 1873 г. № 118, 1883 г. № 38 и др.) и документы, явленные у нотаріуса или записанные въ нотаріальныхъ книгахъ послѣдняго (рѣш. 1875 г. № 993 и др.), но и всѣ тѣ акты, которые, служа доказательствомъ юридической сдѣлки, составляютъ, вмѣстѣ съ тѣмъ, и составную часть этой сдѣлки, такъ что безъ акта, которымъ удостовѣряется содержаніе самой сдѣлки, недопустимо,",
+        "passage_id": "1905-018:2579-4283",
+        "pages": [
+          43
+        ],
+        "sources": [
+          {
+            "page": 43,
+            "page_method": "header",
+            "file": "p0022_R.txt",
+            "start": 2579,
+            "end": 4283
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-018?mode=precedent&ref=1905-018%3A1875%3A993%3A3172&at=3167&end=3185",
+        "scan_available": true
+      },
+      {
+        "id": "1905-018:1871:871:3467",
+        "source_id": "1905-018",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4bb95bffe7459cfc5e0d94fbd81129c6b644a540a511253b5c7ff870e31d2524",
+        "year": 1871,
+        "start": 3462,
+        "end": 3480,
+        "department": null,
+        "association": null,
+        "number": 871,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3467,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1871 г. № 871",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3282,
+        "context_end": 3700,
+        "context_original": "ѣ съ тѣмъ, и составную часть этой сдѣлки, такъ что безъ акта, которымъ удостовѣряется содержаніе самой сдѣлки, недопустимо, съ точки зрѣнія закона, и признаніе наличности таковой (рѣш. 1871 г. № 871, 1872 г. № 774, 1873 г. № 1586, 1878 г. № 24, 1883 г. № 3, 4 и 27 и др.). На этомъ основаніи, Правительствующій Сенатъ неоднократно разъяснялъ, что неявленный и даже непротестованный векселъ составляетъ актъ, установлен",
+        "passage_id": "1905-018:2579-4283",
+        "pages": [
+          43
+        ],
+        "sources": [
+          {
+            "page": 43,
+            "page_method": "header",
+            "file": "p0022_R.txt",
+            "start": 2579,
+            "end": 4283
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-018?mode=precedent&ref=1905-018%3A1871%3A871%3A3467&at=3462&end=3480",
+        "scan_available": true
+      },
+      {
+        "id": "1905-018:1872:774:3482",
+        "source_id": "1905-018",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4bb95bffe7459cfc5e0d94fbd81129c6b644a540a511253b5c7ff870e31d2524",
+        "year": 1872,
+        "start": 3462,
+        "end": 3495,
+        "department": null,
+        "association": null,
+        "number": 774,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3482,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1871 г. № 871, 1872 г. № 774",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3282,
+        "context_end": 3715,
+        "context_original": "ѣ съ тѣмъ, и составную часть этой сдѣлки, такъ что безъ акта, которымъ удостовѣряется содержаніе самой сдѣлки, недопустимо, съ точки зрѣнія закона, и признаніе наличности таковой (рѣш. 1871 г. № 871, 1872 г. № 774, 1873 г. № 1586, 1878 г. № 24, 1883 г. № 3, 4 и 27 и др.). На этомъ основаніи, Правительствующій Сенатъ неоднократно разъяснялъ, что неявленный и даже непротестованный векселъ составляетъ актъ, установленнымъ порядкомъ ",
+        "passage_id": "1905-018:2579-4283",
+        "pages": [
+          43
+        ],
+        "sources": [
+          {
+            "page": 43,
+            "page_method": "header",
+            "file": "p0022_R.txt",
+            "start": 2579,
+            "end": 4283
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-018?mode=precedent&ref=1905-018%3A1872%3A774%3A3482&at=3462&end=3495",
+        "scan_available": true
+      },
+      {
+        "id": "1905-018:1873:1586:3497",
+        "source_id": "1905-018",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4bb95bffe7459cfc5e0d94fbd81129c6b644a540a511253b5c7ff870e31d2524",
+        "year": 1873,
+        "start": 3462,
+        "end": 3511,
+        "department": null,
+        "association": null,
+        "number": 1586,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3497,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1871 г. № 871, 1872 г. № 774, 1873 г. № 1586",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3282,
+        "context_end": 3731,
+        "context_original": "ѣ съ тѣмъ, и составную часть этой сдѣлки, такъ что безъ акта, которымъ удостовѣряется содержаніе самой сдѣлки, недопустимо, съ точки зрѣнія закона, и признаніе наличности таковой (рѣш. 1871 г. № 871, 1872 г. № 774, 1873 г. № 1586, 1878 г. № 24, 1883 г. № 3, 4 и 27 и др.). На этомъ основаніи, Правительствующій Сенатъ неоднократно разъяснялъ, что неявленный и даже непротестованный векселъ составляетъ актъ, установленнымъ порядкомъ совершенный, и н",
+        "passage_id": "1905-018:2579-4283",
+        "pages": [
+          43
+        ],
+        "sources": [
+          {
+            "page": 43,
+            "page_method": "header",
+            "file": "p0022_R.txt",
+            "start": 2579,
+            "end": 4283
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-018?mode=precedent&ref=1905-018%3A1873%3A1586%3A3497&at=3462&end=3511",
+        "scan_available": true
+      },
+      {
+        "id": "1905-018:1878:24:3513",
+        "source_id": "1905-018",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4bb95bffe7459cfc5e0d94fbd81129c6b644a540a511253b5c7ff870e31d2524",
+        "year": 1878,
+        "start": 3462,
+        "end": 3525,
+        "department": null,
+        "association": null,
+        "number": 24,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3513,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1871 г. № 871, 1872 г. № 774, 1873 г. № 1586, 1878 г. № 24",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3282,
+        "context_end": 3745,
+        "context_original": "ѣ съ тѣмъ, и составную часть этой сдѣлки, такъ что безъ акта, которымъ удостовѣряется содержаніе самой сдѣлки, недопустимо, съ точки зрѣнія закона, и признаніе наличности таковой (рѣш. 1871 г. № 871, 1872 г. № 774, 1873 г. № 1586, 1878 г. № 24, 1883 г. № 3, 4 и 27 и др.). На этомъ основаніи, Правительствующій Сенатъ неоднократно разъяснялъ, что неявленный и даже непротестованный векселъ составляетъ актъ, установленнымъ порядкомъ совершенный, и не можетъ быть ",
+        "passage_id": "1905-018:2579-4283",
+        "pages": [
+          43
+        ],
+        "sources": [
+          {
+            "page": 43,
+            "page_method": "header",
+            "file": "p0022_R.txt",
+            "start": 2579,
+            "end": 4283
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-018?mode=precedent&ref=1905-018%3A1878%3A24%3A3513&at=3462&end=3525",
+        "scan_available": true
+      },
+      {
+        "id": "1905-018:1883:3:3527",
+        "source_id": "1905-018",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4bb95bffe7459cfc5e0d94fbd81129c6b644a540a511253b5c7ff870e31d2524",
+        "year": 1883,
+        "start": 3462,
+        "end": 3546,
+        "department": null,
+        "association": null,
+        "number": 3,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3527,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1871 г. № 871, 1872 г. № 774, 1873 г. № 1586, 1878 г. № 24, 1883 г. № 3, 4 и 27",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3282,
+        "context_end": 3766,
+        "context_original": "ѣ съ тѣмъ, и составную часть этой сдѣлки, такъ что безъ акта, которымъ удостовѣряется содержаніе самой сдѣлки, недопустимо, съ точки зрѣнія закона, и признаніе наличности таковой (рѣш. 1871 г. № 871, 1872 г. № 774, 1873 г. № 1586, 1878 г. № 24, 1883 г. № 3, 4 и 27 и др.). На этомъ основаніи, Правительствующій Сенатъ неоднократно разъяснялъ, что неявленный и даже непротестованный векселъ составляетъ актъ, установленнымъ порядкомъ совершенный, и не можетъ быть опровергаемъ въ своем",
+        "passage_id": "1905-018:2579-4283",
+        "pages": [
+          43
+        ],
+        "sources": [
+          {
+            "page": 43,
+            "page_method": "header",
+            "file": "p0022_R.txt",
+            "start": 2579,
+            "end": 4283
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-018?mode=precedent&ref=1905-018%3A1883%3A3%3A3527&at=3462&end=3546",
+        "scan_available": true
+      },
+      {
+        "id": "1905-018:1883:4:3527",
+        "source_id": "1905-018",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4bb95bffe7459cfc5e0d94fbd81129c6b644a540a511253b5c7ff870e31d2524",
+        "year": 1883,
+        "start": 3462,
+        "end": 3546,
+        "department": null,
+        "association": null,
+        "number": 4,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3527,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1871 г. № 871, 1872 г. № 774, 1873 г. № 1586, 1878 г. № 24, 1883 г. № 3, 4 и 27",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3282,
+        "context_end": 3766,
+        "context_original": "ѣ съ тѣмъ, и составную часть этой сдѣлки, такъ что безъ акта, которымъ удостовѣряется содержаніе самой сдѣлки, недопустимо, съ точки зрѣнія закона, и признаніе наличности таковой (рѣш. 1871 г. № 871, 1872 г. № 774, 1873 г. № 1586, 1878 г. № 24, 1883 г. № 3, 4 и 27 и др.). На этомъ основаніи, Правительствующій Сенатъ неоднократно разъяснялъ, что неявленный и даже непротестованный векселъ составляетъ актъ, установленнымъ порядкомъ совершенный, и не можетъ быть опровергаемъ въ своем",
+        "passage_id": "1905-018:2579-4283",
+        "pages": [
+          43
+        ],
+        "sources": [
+          {
+            "page": 43,
+            "page_method": "header",
+            "file": "p0022_R.txt",
+            "start": 2579,
+            "end": 4283
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-018?mode=precedent&ref=1905-018%3A1883%3A4%3A3527&at=3462&end=3546",
+        "scan_available": true
+      },
+      {
+        "id": "1905-018:1883:27:3527",
+        "source_id": "1905-018",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4bb95bffe7459cfc5e0d94fbd81129c6b644a540a511253b5c7ff870e31d2524",
+        "year": 1883,
+        "start": 3462,
+        "end": 3546,
+        "department": null,
+        "association": null,
+        "number": 27,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3527,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1871 г. № 871, 1872 г. № 774, 1873 г. № 1586, 1878 г. № 24, 1883 г. № 3, 4 и 27",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3282,
+        "context_end": 3766,
+        "context_original": "ѣ съ тѣмъ, и составную часть этой сдѣлки, такъ что безъ акта, которымъ удостовѣряется содержаніе самой сдѣлки, недопустимо, съ точки зрѣнія закона, и признаніе наличности таковой (рѣш. 1871 г. № 871, 1872 г. № 774, 1873 г. № 1586, 1878 г. № 24, 1883 г. № 3, 4 и 27 и др.). На этомъ основаніи, Правительствующій Сенатъ неоднократно разъяснялъ, что неявленный и даже непротестованный векселъ составляетъ актъ, установленнымъ порядкомъ совершенный, и не можетъ быть опровергаемъ въ своем",
+        "passage_id": "1905-018:2579-4283",
+        "pages": [
+          43
+        ],
+        "sources": [
+          {
+            "page": 43,
+            "page_method": "header",
+            "file": "p0022_R.txt",
+            "start": 2579,
+            "end": 4283
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-018?mode=precedent&ref=1905-018%3A1883%3A27%3A3527&at=3462&end=3546",
+        "scan_available": true
+      },
+      {
+        "id": "1905-018:1901:39:8732",
+        "source_id": "1905-018",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4bb95bffe7459cfc5e0d94fbd81129c6b644a540a511253b5c7ff870e31d2524",
+        "year": 1901,
+        "start": 8727,
+        "end": 8744,
+        "department": null,
+        "association": null,
+        "number": 39,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 8732,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1901 г. № 39",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 8547,
+        "context_end": 8964,
+        "context_original": " храненіе его на открытой платформѣ препятствовали, въ данномъ случаѣ, считать этотъ грузъ поставленнымъ въ такое положеніе, что онъ могъ быть свободно полученъ грузополучателемъ (рѣш. 1901 г. № 39 и 1898 г. № 57 и 78). Между тѣмъ, мировой съѣздъ, вопреки точному смыслу 410 ст. уст. гр. суд., не вошелъ въ обсужденіе показанія свидѣтеля Лифшица, находя, что самое содержаніе штемпеля о времени выгрузки груза не може",
+        "passage_id": "1905-018:7162-9226",
+        "pages": [
+          45
+        ],
+        "sources": [
+          {
+            "page": 45,
+            "page_method": "header",
+            "file": "p0023_R.txt",
+            "start": 7927,
+            "end": 9226
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-018?mode=precedent&ref=1905-018%3A1901%3A39%3A8732&at=8727&end=8744",
+        "scan_available": true
+      },
+      {
+        "id": "1905-018:1898:57:8747",
+        "source_id": "1905-018",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4bb95bffe7459cfc5e0d94fbd81129c6b644a540a511253b5c7ff870e31d2524",
+        "year": 1898,
+        "start": 8727,
+        "end": 8764,
+        "department": null,
+        "association": null,
+        "number": 57,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 8747,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1901 г. № 39 и 1898 г. № 57 и 78",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 8547,
+        "context_end": 8984,
+        "context_original": " храненіе его на открытой платформѣ препятствовали, въ данномъ случаѣ, считать этотъ грузъ поставленнымъ въ такое положеніе, что онъ могъ быть свободно полученъ грузополучателемъ (рѣш. 1901 г. № 39 и 1898 г. № 57 и 78). Между тѣмъ, мировой съѣздъ, вопреки точному смыслу 410 ст. уст. гр. суд., не вошелъ въ обсужденіе показанія свидѣтеля Лифшица, находя, что самое содержаніе штемпеля о времени выгрузки груза не можетъ быть опровергаемо",
+        "passage_id": "1905-018:7162-9226",
+        "pages": [
+          45
+        ],
+        "sources": [
+          {
+            "page": 45,
+            "page_method": "header",
+            "file": "p0023_R.txt",
+            "start": 7927,
+            "end": 9226
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-018?mode=precedent&ref=1905-018%3A1898%3A57%3A8747&at=8727&end=8764",
+        "scan_available": true
+      },
+      {
+        "id": "1905-018:1898:78:8747",
+        "source_id": "1905-018",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4bb95bffe7459cfc5e0d94fbd81129c6b644a540a511253b5c7ff870e31d2524",
+        "year": 1898,
+        "start": 8727,
+        "end": 8764,
+        "department": null,
+        "association": null,
+        "number": 78,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 8747,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1901 г. № 39 и 1898 г. № 57 и 78",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 8547,
+        "context_end": 8984,
+        "context_original": " храненіе его на открытой платформѣ препятствовали, въ данномъ случаѣ, считать этотъ грузъ поставленнымъ въ такое положеніе, что онъ могъ быть свободно полученъ грузополучателемъ (рѣш. 1901 г. № 39 и 1898 г. № 57 и 78). Между тѣмъ, мировой съѣздъ, вопреки точному смыслу 410 ст. уст. гр. суд., не вошелъ въ обсужденіе показанія свидѣтеля Лифшица, находя, что самое содержаніе штемпеля о времени выгрузки груза не можетъ быть опровергаемо",
+        "passage_id": "1905-018:7162-9226",
+        "pages": [
+          45
+        ],
+        "sources": [
+          {
+            "page": 45,
+            "page_method": "header",
+            "file": "p0023_R.txt",
+            "start": 7927,
+            "end": 9226
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-018?mode=precedent&ref=1905-018%3A1898%3A78%3A8747&at=8727&end=8764",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-018",
     "scan_pages": [

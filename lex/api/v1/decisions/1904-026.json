@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-026",
@@ -52,6 +52,94 @@
     "participant_ids": [
       "1904-5dcf63e6659a",
       "1904-7b4696071fb5"
+    ],
+    "precedents": [
+      {
+        "id": "1904-026:1884:24:1478",
+        "source_id": "1904-026",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "ba9383351ca8b0229fc9027feca0cbb0184e16405f1313bb8e3d5f0b843d2b4c",
+        "year": 1884,
+        "start": 1456,
+        "end": 1491,
+        "department": null,
+        "association": null,
+        "number": 24,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1478,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. угол. касс. д-та 1884 г.\n\n№ 24",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1276,
+        "context_end": 1711,
+        "context_original": " нанимаемыхъ для домашнихъ, сельскихъ и земледѣльческихъ занятій“. Приведенныя правила имѣютъ значеніе закона самостоятельнаго и вполнѣ спеціальнаго, согласно чему и Прав. Сенатъ (рѣш. угол. касс. д-та 1884 г.\n\n№ 24) признал, что дѣла по спорамъ между хозяевами и прислугой, возникшимъ изъ нарушенія правилъ о слугахъ и рабочихъ, могутъ быть разрѣшаемы не иначе, какъ на точномъ основаніи постановленій устава о сельскихъ гминныхъ суда",
+        "passage_id": "1904-026:1221-2764",
+        "pages": [
+          62,
+          63
+        ],
+        "sources": [
+          {
+            "page": 62,
+            "page_method": "header",
+            "file": "p0032_L.txt",
+            "start": 1221,
+            "end": 1485
+          },
+          {
+            "page": 63,
+            "page_method": "header",
+            "file": "p0032_R.txt",
+            "start": 1487,
+            "end": 2764
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-026?mode=precedent&ref=1904-026%3A1884%3A24%3A1478&at=1456&end=1491",
+        "scan_available": true
+      },
+      {
+        "id": "1904-026:1875:933:3461",
+        "source_id": "1904-026",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "ba9383351ca8b0229fc9027feca0cbb0184e16405f1313bb8e3d5f0b843d2b4c",
+        "year": 1875,
+        "start": 3438,
+        "end": 3474,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 933,
+        "department_start": 3443,
+        "department_end": 3460,
+        "citation_start": 3461,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гражд. касс. д-та 1875 г. № 933",
+        "target_url": null,
+        "department_evidence": "гражд. касс. д-та",
+        "context_start": 3258,
+        "context_end": 3694,
+        "context_original": "я, такъ и родъ и размѣръ этого вознагражденія, совершенно безотносительно къ тому, дѣйствительно ли, въ данномъ случаѣ, понесъ нанявшійся убытки и въ какомъ именно размѣрѣ (сравн. рѣш. гражд. касс. д-та 1875 г. № 933). Съ этимъ правиломъ несовмѣстимо признаніе за нанявшимся лишь права на возмѣщеніе убытковъ отъ неисполненія хозяиномъ обязательства. Отыскивать можно лишь убытки, которые уже наступили, слѣдовательно нанявшійся, въ мом",
+        "passage_id": "1904-026:2509-4125",
+        "pages": [
+          63
+        ],
+        "sources": [
+          {
+            "page": 63,
+            "page_method": "header",
+            "file": "p0032_R.txt",
+            "start": 2509,
+            "end": 4125
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-026?mode=precedent&ref=1904-026%3A1875%3A933%3A3461&at=3438&end=3474",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-026",
     "scan_pages": [

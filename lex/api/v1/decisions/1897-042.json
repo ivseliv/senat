@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-042",
@@ -97,6 +97,125 @@
       "1897-a3868658ba58",
       "1897-bb8e6974827f",
       "1897-f21d2c5b9beb"
+    ],
+    "precedents": [
+      {
+        "id": "1897-042:1891:76:6160",
+        "source_id": "1897-042",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "5d6bb028890ff074c0cf61ce46bb43372e31cde7a0b3df4f26a1b7923d141c05",
+        "year": 1891,
+        "start": 6152,
+        "end": 6172,
+        "department": null,
+        "association": null,
+        "number": 76,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6160,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1891 г. № 76",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5972,
+        "context_end": 6392,
+        "context_original": "ика по вопросу о значеніи, въ отношеніи къ давности, внѣсудебнаго требованія вознагражденія, побуждаетъ Правительствующій Сенатъ вопросъ этотъ, бывшій уже предметомъ обсужденія въ рѣшеніи 1891 г. № 76, подвергнуть вновь разсмотрѣнію. III. Изъ вышеприведенной 137 ст. видно, что въ 1-й ея части указанъ случай, когда теченіе годоваго срока не пріостанавливается, а во 2-й говорится о томъ, когда теченіе „означенной исков",
+        "passage_id": "1897-042:5606-7455",
+        "pages": [
+          137
+        ],
+        "sources": [
+          {
+            "page": 137,
+            "page_method": "header",
+            "file": "p0079_R.txt",
+            "start": 5606,
+            "end": 7455
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-042?mode=precedent&ref=1897-042%3A1891%3A76%3A6160&at=6152&end=6172",
+        "scan_available": true
+      },
+      {
+        "id": "1897-042:1879:234:10755",
+        "source_id": "1897-042",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "5d6bb028890ff074c0cf61ce46bb43372e31cde7a0b3df4f26a1b7923d141c05",
+        "year": 1879,
+        "start": 10735,
+        "end": 10768,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 234,
+        "department_start": 10740,
+        "department_end": 10754,
+        "citation_start": 10755,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. д—та 1879 г. № 234",
+        "target_url": null,
+        "department_evidence": "гр. касс. д—та",
+        "context_start": 10555,
+        "context_end": 10988,
+        "context_original": "анною до прекращенія истцомъ хожденія по дѣлу, т. е. до того дня, въ который онъ упустить совершить процессуальное дѣйствіе, необходимое для дальнѣйшаго движенія дѣла въ судѣ (ср. рѣш. гр. касс. д—та 1879 г. № 234), какъ напримѣръ, когда онъ, вопреки 320 и 321 ст. уст. гражд. суд., при отсутствіи просьбы о томъ съ противной стороны, не будетъ просить о назначеніи засѣданія для слушанія дѣла, или не явится въ назначенное засѣданіе",
+        "passage_id": "1897-042:10185-11711",
+        "pages": [
+          138
+        ],
+        "sources": [
+          {
+            "page": 138,
+            "page_method": "header",
+            "file": "p0080_L.txt",
+            "start": 10185,
+            "end": 11546
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-042?mode=precedent&ref=1897-042%3A1879%3A234%3A10755&at=10735&end=10768",
+        "scan_available": true
+      },
+      {
+        "id": "1897-042:1879:347:12899",
+        "source_id": "1897-042",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "5d6bb028890ff074c0cf61ce46bb43372e31cde7a0b3df4f26a1b7923d141c05",
+        "year": 1879,
+        "start": 12876,
+        "end": 12912,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 347,
+        "department_start": 12884,
+        "department_end": 12898,
+        "citation_start": 12899,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи гр. касс. д-та 1879 г. № 347",
+        "target_url": null,
+        "department_evidence": "гр. касс. д-та",
+        "context_start": 12696,
+        "context_end": 13132,
+        "context_original": "ы, различая между пріостановленіемъ и прерваніемъ давности вполнѣ согласно съ общепризнаннымъ различіемъ между этими понятіями,— въ частности, какъ это впрочемъ уже и высказано въ рѣшеніи гр. касс. д-та 1879 г. № 347 (стр. 1376 и сл.), признаютъ слѣдствіемъ прерванія уничтоженіе протекшей и начатіе новой давности. Отсюда понятно, что въ каждомъ новомъ постановленіи сихъ законовъ, въ которомъ указывается обстоятельство, препятствующе",
+        "passage_id": "1897-042:11474-13011",
+        "pages": [
+          139
+        ],
+        "sources": [
+          {
+            "page": 139,
+            "page_method": "header",
+            "file": "p0080_R.txt",
+            "start": 12774,
+            "end": 14566
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-042?mode=precedent&ref=1897-042%3A1879%3A347%3A12899&at=12876&end=12912",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-042",
     "scan_pages": [

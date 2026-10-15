@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-111",
@@ -48,6 +48,125 @@
     "participant_ids": [
       "1905-d69b192120d9",
       "1905-16017f970e88"
+    ],
+    "precedents": [
+      {
+        "id": "1905-111:1888:89:461",
+        "source_id": "1905-111",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "65745c1e465d5b12b5c87ff7ba89abfd723414f190f4401aba921a9609cffab1",
+        "year": 1888,
+        "start": 440,
+        "end": 473,
+        "department": null,
+        "association": null,
+        "number": 89,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 461,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніе Прав. Сената 1888 г. № 89",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 260,
+        "context_end": 693,
+        "context_original": "ыскать съ Михаила Александра и Николая Нестеровыхъ и Микиртыча Муровьянца гербовый штрафъ въ размѣрѣ 24 руб. съ каждаго. Въ кассаціонной жалобѣ повѣренный Нестеровыхъ, ссылаясь на рѣшеніе Прав. Сената 1888 г. № 89 и утверждая что, какъ по старому (ст. 129), такъ и по новому уставу о гербовомъ сборѣ (ст. 170), гербовый штрафъ подлежитъ взысканію съ каждой изъ договорившихся сторонъ, а не съ каждаго изъ лицъ, составляющихъ одну сто",
+        "passage_id": "1905-111:0-1598",
+        "pages": [
+          304
+        ],
+        "sources": [
+          {
+            "page": 304,
+            "page_method": "header",
+            "file": "p0153_L.txt",
+            "start": 0,
+            "end": 918
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-111?mode=precedent&ref=1905-111%3A1888%3A89%3A461&at=440&end=473",
+        "scan_available": true
+      },
+      {
+        "id": "1905-111:1885:73:1308",
+        "source_id": "1905-111",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "65745c1e465d5b12b5c87ff7ba89abfd723414f190f4401aba921a9609cffab1",
+        "year": 1885,
+        "start": 1298,
+        "end": 1320,
+        "department": null,
+        "association": null,
+        "number": 73,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1308,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ 1885 г. № 73",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1118,
+        "context_end": 1540,
+        "context_original": "й изъ договорившихся сторонъ, независимо отъ числа лицъ, таковую составляющихъ, или же съ каждаго лица, принадлежащаго къ той или другой сторонѣ,— былъ разрѣшенъ Прав. Сенатомъ въ рѣшеніяхъ 1885 г. № 73 и 1888 г. № 89 при дѣйствіи ст. 107 (въ изд. 1893 г. ст. 129) прежняго устава о гербовомъ сборѣ, Высочайше утвержденнаго 17 апрѣля 1874 г., въ первомъ смыслѣ, т.-е. въ томъ, что штрафъ подлежитъ взысканію лишь съ каждой",
+        "passage_id": "1905-111:0-1598",
+        "pages": [
+          304
+        ],
+        "sources": [
+          {
+            "page": 304,
+            "page_method": "header",
+            "file": "p0153_L.txt",
+            "start": 920,
+            "end": 1598
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-111?mode=precedent&ref=1905-111%3A1885%3A73%3A1308&at=1298&end=1320",
+        "scan_available": true
+      },
+      {
+        "id": "1905-111:1888:89:1323",
+        "source_id": "1905-111",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "65745c1e465d5b12b5c87ff7ba89abfd723414f190f4401aba921a9609cffab1",
+        "year": 1888,
+        "start": 1298,
+        "end": 1335,
+        "department": null,
+        "association": null,
+        "number": 89,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1323,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ 1885 г. № 73 и 1888 г. № 89",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1118,
+        "context_end": 1555,
+        "context_original": "й изъ договорившихся сторонъ, независимо отъ числа лицъ, таковую составляющихъ, или же съ каждаго лица, принадлежащаго къ той или другой сторонѣ,— былъ разрѣшенъ Прав. Сенатомъ въ рѣшеніяхъ 1885 г. № 73 и 1888 г. № 89 при дѣйствіи ст. 107 (въ изд. 1893 г. ст. 129) прежняго устава о гербовомъ сборѣ, Высочайше утвержденнаго 17 апрѣля 1874 г., въ первомъ смыслѣ, т.-е. въ томъ, что штрафъ подлежитъ взысканію лишь съ каждой изъ сторонъ, н",
+        "passage_id": "1905-111:0-1598",
+        "pages": [
+          304
+        ],
+        "sources": [
+          {
+            "page": 304,
+            "page_method": "header",
+            "file": "p0153_L.txt",
+            "start": 920,
+            "end": 1598
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-111?mode=precedent&ref=1905-111%3A1888%3A89%3A1323&at=1298&end=1335",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-111",
     "scan_pages": [

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-049",
@@ -49,6 +49,47 @@
     "participant_ids": [
       "1904-ac620f9f6950",
       "1904-179b436afe2b"
+    ],
+    "precedents": [
+      {
+        "id": "1904-049:1888:48:2942",
+        "source_id": "1904-049",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "fc25d1d3ba3ec85305586110c109a955f617f2651334e66f5b14b021e0149e68",
+        "year": 1888,
+        "start": 2934,
+        "end": 2954,
+        "department": null,
+        "association": null,
+        "number": 48,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2942,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1888 г. № 48",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2754,
+        "context_end": 3174,
+        "context_original": "я правовыя отношенія, наиболѣе сходныя съ подлежащими разрѣшенію, т.-е. именно необходимость въ примѣненіи по аналогіи 1590 ст. гр. код. Такъ поступилъ Правительствующій Сенатъ въ рѣшеніи 1888 г. № 48, признавая, что хотя этотъ законъ, по буквальному его содержанію, имѣетъ въ виду только сдѣлку объ обѣщаніи продажи, когда установляетъ, что сторона, давшая задатокъ, теряетъ его, если отступится отъ договора, но разумъ",
+        "passage_id": "1904-049:2627-4644",
+        "pages": [
+          136
+        ],
+        "sources": [
+          {
+            "page": 136,
+            "page_method": "header",
+            "file": "p0069_L.txt",
+            "start": 2627,
+            "end": 3349
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-049?mode=precedent&ref=1904-049%3A1888%3A48%3A2942&at=2934&end=2954",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-049",
     "scan_pages": [

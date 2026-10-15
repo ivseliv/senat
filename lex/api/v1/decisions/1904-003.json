@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-003",
@@ -48,6 +48,47 @@
       "1904-32707ae76c47",
       "1904-b37f1359914f",
       "1904-64ceb317caf2"
+    ],
+    "precedents": [
+      {
+        "id": "1904-003:1896:113:2839",
+        "source_id": "1904-003",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "9c3081c475076cb021e96b24ad60b4a0beffe10f91184aef0748031639e7072d",
+        "year": 1896,
+        "start": 2828,
+        "end": 2852,
+        "department": null,
+        "association": null,
+        "number": 113,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2839,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи за 1896 г. № 113",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2648,
+        "context_end": 3072,
+        "context_original": "ваніи 683 ст. 1 ч. X т.? Вопросъ этотъ долженъ быть разрѣшенъ отрицательно согласно 92 ст. уст. ж. д., 683 ст. 1 ч. X т. и преподанныхъ Правительствующимъ Сенатомъ указаній въ его рѣшеніи за 1896 г. № 113. По ясному и недопускающему никакого сомнѣнія смыслу 92 ст. уст. ж. д., вознагражденіе за вредъ и убытки по 683 ст. 1 ч. X т. опредѣляется, не только въ мѣстностяхъ Россійской имперіи, гдѣ дѣйствуетъ 1 ч. X т., но и там",
+        "passage_id": "1904-003:1751-3212",
+        "pages": [
+          12
+        ],
+        "sources": [
+          {
+            "page": 12,
+            "page_method": "header",
+            "file": "p0007_L.txt",
+            "start": 2372,
+            "end": 3212
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-003?mode=precedent&ref=1904-003%3A1896%3A113%3A2839&at=2828&end=2852",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-003",
     "scan_pages": [

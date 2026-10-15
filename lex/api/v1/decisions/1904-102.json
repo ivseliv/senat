@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-102",
@@ -46,6 +46,164 @@
       "1904-d1f6748ba1cd",
       "1904-1bc8b4e54364",
       "1904-b37f1359914f"
+    ],
+    "precedents": [
+      {
+        "id": "1904-102:1903:131:1435",
+        "source_id": "1904-102",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "108de43ae630377635d33856d8f29b8a3a9d1a53660caac5c089eb382ba20236",
+        "year": 1903,
+        "start": 1387,
+        "end": 1448,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 131,
+        "department_start": 1395,
+        "department_end": 1434,
+        "citation_start": 1435,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи гражданскаго кассаціоннаго департамента 1903 г. № 131",
+        "target_url": null,
+        "department_evidence": "гражданскаго кассаціоннаго департамента",
+        "context_start": 1207,
+        "context_end": 1668,
+        "context_original": "ъ довзысканія тѣхъ платежей, т.-е, вообще, до возмѣщенія недобора, желѣзная дорога сохраняетъ право требовать возмѣщенія сего недобора съ грузополучателя, какъ это и разъяснено въ рѣшеніи гражданскаго кассаціоннаго департамента 1903 г. № 131; б) требованіе возврата перебора разныхъ платежей, равно какъ и требованіе о вознагражденіи вообще за имущественный вредъ, въ силу 121—122 ст. желѣзнодорожнаго устава, можетъ быть заявлено правленію или управленію желѣз",
+        "passage_id": "1904-102:0-1779",
+        "pages": [
+          281
+        ],
+        "sources": [
+          {
+            "page": 281,
+            "page_method": "header",
+            "file": "p0141_R.txt",
+            "start": 497,
+            "end": 1779
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-102?mode=precedent&ref=1904-102%3A1903%3A131%3A1435&at=1387&end=1448",
+        "scan_available": true
+      },
+      {
+        "id": "1904-102:1901:117:2678",
+        "source_id": "1904-102",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "108de43ae630377635d33856d8f29b8a3a9d1a53660caac5c089eb382ba20236",
+        "year": 1901,
+        "start": 2643,
+        "end": 2694,
+        "department": null,
+        "association": null,
+        "number": 117,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2678,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи кассаціоннаго департамента 1901 г. за № 117",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2463,
+        "context_end": 2914,
+        "context_original": "лѣзная дорога, кромѣ сего, имѣетъ право и безъ судебнаго производства причитающіеся съ нея грузохозяину платежи обратить на пополненіе недобора, каковое право, какъ и высказано въ рѣшеніи кассаціоннаго департамента 1901 г. за № 117, предоставлено желѣзной дорогѣ съ цѣлью облегченія возможности своевременнаго полученія недоборовъ.—Переходя, засимъ, къ разсмотрѣнію правъ и обязанностей грузохозяевъ въ отношеніи расчетовъ по выполненной желѣзною доро",
+        "passage_id": "1904-102:1524-3301",
+        "pages": [
+          281
+        ],
+        "sources": [
+          {
+            "page": 281,
+            "page_method": "header",
+            "file": "p0141_R.txt",
+            "start": 1524,
+            "end": 3271
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-102?mode=precedent&ref=1904-102%3A1901%3A117%3A2678&at=2643&end=2694",
+        "scan_available": true
+      },
+      {
+        "id": "1904-102:1879:112:7245",
+        "source_id": "1904-102",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "108de43ae630377635d33856d8f29b8a3a9d1a53660caac5c089eb382ba20236",
+        "year": 1879,
+        "start": 7240,
+        "end": 7258,
+        "department": null,
+        "association": null,
+        "number": 112,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7245,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1879 г. № 112",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7060,
+        "context_end": 7478,
+        "context_original": "ніе, ничего съ истца не ищетъ, а лишь защищается противъ требованій его указаніемъ на произведенный зачетъ его претензіи и тѣхъ суммъ, которыя съ него причитались желѣзной дорогѣ (рѣш. 1879 г. № 112, 1899 г. № 15),—слѣдуетъ признать, что въ этомъ случаѣ, при оспариваніи истцомъ права желѣзной дороги на таковое погашеніе его претензіи тѣми суммами, которыя желѣзная дорога считаетъ въ недоборѣ за грузохозяевами, на о",
+        "passage_id": "1904-102:6759-8640",
+        "pages": [
+          283
+        ],
+        "sources": [
+          {
+            "page": 283,
+            "page_method": "header",
+            "file": "p0142_R.txt",
+            "start": 6759,
+            "end": 8640
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-102?mode=precedent&ref=1904-102%3A1879%3A112%3A7245&at=7240&end=7258",
+        "scan_available": true
+      },
+      {
+        "id": "1904-102:1899:15:7260",
+        "source_id": "1904-102",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "108de43ae630377635d33856d8f29b8a3a9d1a53660caac5c089eb382ba20236",
+        "year": 1899,
+        "start": 7240,
+        "end": 7272,
+        "department": null,
+        "association": null,
+        "number": 15,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7260,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1879 г. № 112, 1899 г. № 15",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7060,
+        "context_end": 7492,
+        "context_original": "ніе, ничего съ истца не ищетъ, а лишь защищается противъ требованій его указаніемъ на произведенный зачетъ его претензіи и тѣхъ суммъ, которыя съ него причитались желѣзной дорогѣ (рѣш. 1879 г. № 112, 1899 г. № 15),—слѣдуетъ признать, что въ этомъ случаѣ, при оспариваніи истцомъ права желѣзной дороги на таковое погашеніе его претензіи тѣми суммами, которыя желѣзная дорога считаетъ въ недоборѣ за грузохозяевами, на обязанности суд",
+        "passage_id": "1904-102:6759-8640",
+        "pages": [
+          283
+        ],
+        "sources": [
+          {
+            "page": 283,
+            "page_method": "header",
+            "file": "p0142_R.txt",
+            "start": 6759,
+            "end": 8640
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-102?mode=precedent&ref=1904-102%3A1899%3A15%3A7260&at=7240&end=7272",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-102",
     "scan_pages": [

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-050",
@@ -45,6 +45,125 @@
       "1905-e4cac9bc1714",
       "1905-d28a2c90a69a",
       "1905-c7d840222d94"
+    ],
+    "precedents": [
+      {
+        "id": "1905-050:1887:34:2873",
+        "source_id": "1905-050",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bce97b121a6cac9989238b61e2401fcd342a1c5acd282d0c7fefae6bc084d43f",
+        "year": 1887,
+        "start": 2842,
+        "end": 2885,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 34,
+        "department_start": 2850,
+        "department_end": 2869,
+        "citation_start": 2873,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи гражд. кассац. деп. за 1887 г. № 34",
+        "target_url": null,
+        "department_evidence": "гражд. кассац. деп.",
+        "context_start": 2662,
+        "context_end": 3105,
+        "context_original": "зяину полученныя имъ впередъ по договорамъ найма деньги, но, въ виду толкованія тожественной въ редакціонномъ отношеніи съ первою второй части приведенной 635 ст., преподаннаго въ рѣшеніи гражд. кассац. деп. за 1887 г. № 34, въ статьѣ этой нельзя усмотрѣть основаній къ заключенію объ обязательности для законнаго собственника долгосрочныхъ договоровъ, заключенныхъ добросовѣстнымъ владѣльцемъ. Необходимое условіе законности владѣнія состоитъ",
+        "passage_id": "1905-050:1148-3056",
+        "pages": [
+          134
+        ],
+        "sources": [
+          {
+            "page": 134,
+            "page_method": "header",
+            "file": "p0068_L.txt",
+            "start": 2785,
+            "end": 3927
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-050?mode=precedent&ref=1905-050%3A1887%3A34%3A2873&at=2842&end=2885",
+        "scan_available": true
+      },
+      {
+        "id": "1905-050:1887:34:5066",
+        "source_id": "1905-050",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bce97b121a6cac9989238b61e2401fcd342a1c5acd282d0c7fefae6bc084d43f",
+        "year": 1887,
+        "start": 5061,
+        "end": 5078,
+        "department": null,
+        "association": null,
+        "number": 34,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5066,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1887 г. № 34",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4881,
+        "context_end": 5298,
+        "context_original": "ожено, то и всю потребную на выкупъ онаго сумму.“ Послѣдняя часть этой статьи, касающаяся залога имѣнія добросовѣстнымъ его владѣльцемъ, истолкована Правительствующимъ Сенатомъ въ рѣш. 1887 г. № 34 въ томъ смыслѣ, что отъ законнаго собственника зависитъ или взять деньги отъ добросовѣстнаго владѣльца на выкупъ имѣнія, или же предъявить искъ о недѣйствительности закладной. Толкованіе это ни по формѣ, ни по существу ",
+        "passage_id": "1905-050:4379-6033",
+        "pages": [
+          135
+        ],
+        "sources": [
+          {
+            "page": 135,
+            "page_method": "header",
+            "file": "p0068_R.txt",
+            "start": 4639,
+            "end": 6033
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-050?mode=precedent&ref=1905-050%3A1887%3A34%3A5066&at=5061&end=5078",
+        "scan_available": true
+      },
+      {
+        "id": "1905-050:1880:301:6957",
+        "source_id": "1905-050",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bce97b121a6cac9989238b61e2401fcd342a1c5acd282d0c7fefae6bc084d43f",
+        "year": 1880,
+        "start": 6949,
+        "end": 6970,
+        "department": null,
+        "association": null,
+        "number": 301,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6957,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1880 г. № 301",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 6769,
+        "context_end": 7190,
+        "context_original": " договору, не имѣющему для него обязательной силы. Такое пониманіе первой части 635 ст. находитъ себѣ подтвержденіе и въ соображеніяхъ, приведенныхъ Правительствующимъ Сенатомъ въ рѣшеніи 1880 г. № 301, относительно силы договоровъ найма въ случаѣ перехода права собственности на отданное въ наемъ имущество отъ его владѣльца къ другому лицу. Правительствующимъ Сенатомъ было именно высказано, что, коль скоро добровольна",
+        "passage_id": "1905-050:5769-7111",
+        "pages": [
+          135
+        ],
+        "sources": [
+          {
+            "page": 135,
+            "page_method": "header",
+            "file": "p0068_R.txt",
+            "start": 6857,
+            "end": 7656
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-050?mode=precedent&ref=1905-050%3A1880%3A301%3A6957&at=6949&end=6970",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-050",
     "scan_pages": [

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-005",
@@ -55,6 +55,47 @@
     "participant_ids": [
       "1904-ba51eabe8301",
       "1904-41dda126033f"
+    ],
+    "precedents": [
+      {
+        "id": "1904-005:1903:69:4723",
+        "source_id": "1904-005",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "01ed7264fbea66b85c623c5299c7ac63a8341ae5b9ba5575d1e86b3356151ba5",
+        "year": 1903,
+        "start": 4718,
+        "end": 4735,
+        "department": null,
+        "association": null,
+        "number": 69,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4723,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1903 г. № 69",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4538,
+        "context_end": 4955,
+        "context_original": "остановленій о предѣльномъ срокѣ не могутъ, и всякій болѣе продолжительный срокъ долженъ быть, по требованію заинтересованнаго лица, сокращенъ судомъ до размѣровъ предѣльнаго (ср. рѣш. 1903 г. № 69). Въ настоящемъ случаѣ, хотя стороны и могли условиться, что арендаторъ будетъ пользоваться отданною ему въ аренду усадьбою до тѣхъ поръ, пока будетъ признавать это для себя удобнымъ, но такое пользованіе, во всякомъ сл",
+        "passage_id": "1904-005:2995-4737",
+        "pages": [
+          16
+        ],
+        "sources": [
+          {
+            "page": 16,
+            "page_method": "header",
+            "file": "p0009_L.txt",
+            "start": 4478,
+            "end": 5910
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-005?mode=precedent&ref=1904-005%3A1903%3A69%3A4723&at=4718&end=4735",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-005",
     "scan_pages": [

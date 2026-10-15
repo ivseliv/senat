@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-015",
@@ -58,6 +58,47 @@
       "1897-589a29b8e2ba",
       "1897-329fc034cdaf",
       "1897-73eb6a77f9b9"
+    ],
+    "precedents": [
+      {
+        "id": "1897-015:1891:61:10488",
+        "source_id": "1897-015",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "c56ae8b4ba410b93b7979e9cfdf5b43ed7a0df4ce130bcc6f822828dc2c7b7dc",
+        "year": 1891,
+        "start": 10411,
+        "end": 10500,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 61,
+        "department_start": 10448,
+        "department_end": 10487,
+        "citation_start": 10488,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи Правительствующаго Сената по гражданскому кассаціонному департаменту 1891 г. № 61",
+        "target_url": null,
+        "department_evidence": "гражданскому кассаціонному департаменту",
+        "context_start": 10231,
+        "context_end": 10720,
+        "context_original": " ближайшая степень можетъ быть исключена дальнѣйшею, если эта послѣдняя удовлетворяетъ условію наслѣдованія родоваго имѣнія. Это значеніе 1138 ст. X т. I ч. подробно разъяснено въ рѣшеніи Правительствующаго Сената по гражданскому кассаціонному департаменту 1891 г. № 61. Не смотря на относительно недавнее внесеніе означеннаго общаго правила въ сводъ законовъ, оно принадлежитъ къ древнимъ и своеобразнымъ постановленіямъ нашего законодательства. Начиная съ уложенія 1649 г. и до ближайшаг",
+        "passage_id": "1897-015:9711-11323",
+        "pages": [
+          67
+        ],
+        "sources": [
+          {
+            "page": 67,
+            "page_method": "header",
+            "file": "p0044_R.txt",
+            "start": 9711,
+            "end": 11323
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-015?mode=precedent&ref=1897-015%3A1891%3A61%3A10488&at=10411&end=10500",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-015",
     "scan_pages": [

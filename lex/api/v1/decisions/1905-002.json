@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-002",
@@ -40,6 +40,86 @@
       "1905-439c350a2667",
       "1905-d6a2a4585395",
       "1905-5781e77e0db8"
+    ],
+    "precedents": [
+      {
+        "id": "1905-002:1889:20:1747",
+        "source_id": "1905-002",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a2b743d22e82573a4e78077a9c09bc2c8c71b4fe70cd6bce90439e3750104194",
+        "year": 1889,
+        "start": 1731,
+        "end": 1759,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 20,
+        "department_start": 1736,
+        "department_end": 1745,
+        "citation_start": 1747,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. общ. собр. 1889 г. № 20",
+        "target_url": null,
+        "department_evidence": "общ. собр",
+        "context_start": 1551,
+        "context_end": 1979,
+        "context_original": "комъ иномъ правѣ на землю (если только, само собою разумѣется, право это не основывается на особыхъ, ничего общаго съ гражданскимъ правомъ неимѣющихъ, отношеніяхъ между тяжущимися—рѣш. общ. собр. 1889 г. № 20, 1901 г. № 27), есть споръ о правѣ гражданскомъ, который, въ силу 1 ст. уст. гр. суд., подлежитъ разрѣшенію судебныхъ установленій, и 3) что всѣ приведенныя въ обжалованномъ опредѣленіи статьи закона не оправдываютъ сдѣ",
+        "passage_id": "1905-002:1398-3234",
+        "pages": [
+          6
+        ],
+        "sources": [
+          {
+            "page": 6,
+            "page_method": "header",
+            "file": "p0004_L.txt",
+            "start": 1398,
+            "end": 3234
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-002?mode=precedent&ref=1905-002%3A1889%3A20%3A1747&at=1731&end=1759",
+        "scan_available": true
+      },
+      {
+        "id": "1905-002:1901:27:1761",
+        "source_id": "1905-002",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a2b743d22e82573a4e78077a9c09bc2c8c71b4fe70cd6bce90439e3750104194",
+        "year": 1901,
+        "start": 1731,
+        "end": 1773,
+        "department": "Общее собрание",
+        "association": "list",
+        "number": 27,
+        "department_start": 1736,
+        "department_end": 1745,
+        "citation_start": 1761,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. общ. собр. 1889 г. № 20, 1901 г. № 27",
+        "target_url": null,
+        "department_evidence": "общ. собр",
+        "context_start": 1551,
+        "context_end": 1993,
+        "context_original": "комъ иномъ правѣ на землю (если только, само собою разумѣется, право это не основывается на особыхъ, ничего общаго съ гражданскимъ правомъ неимѣющихъ, отношеніяхъ между тяжущимися—рѣш. общ. собр. 1889 г. № 20, 1901 г. № 27), есть споръ о правѣ гражданскомъ, который, въ силу 1 ст. уст. гр. суд., подлежитъ разрѣшенію судебныхъ установленій, и 3) что всѣ приведенныя въ обжалованномъ опредѣленіи статьи закона не оправдываютъ сдѣланной на нихъ",
+        "passage_id": "1905-002:1398-3234",
+        "pages": [
+          6
+        ],
+        "sources": [
+          {
+            "page": 6,
+            "page_method": "header",
+            "file": "p0004_L.txt",
+            "start": 1398,
+            "end": 3234
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-002?mode=precedent&ref=1905-002%3A1901%3A27%3A1761&at=1731&end=1773",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-002",
     "scan_pages": [

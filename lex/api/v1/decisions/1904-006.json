@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-006",
@@ -65,6 +65,125 @@
       "1904-e50c7f2fb1bd",
       "1904-5abfaef2ca2e",
       "1904-70e981814bac"
+    ],
+    "precedents": [
+      {
+        "id": "1904-006:1903:4:3888",
+        "source_id": "1904-006",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "d3946e5513800e8d486eee91688c25351631be36fde8eedade3527187a596969",
+        "year": 1903,
+        "start": 3869,
+        "end": 3899,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 4,
+        "department_start": 3877,
+        "department_end": 3886,
+        "citation_start": 3888,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеній общ. собр. 1903 г. № 4",
+        "target_url": null,
+        "department_evidence": "общ. собр",
+        "context_start": 3689,
+        "context_end": 4119,
+        "context_original": "росовъ разрѣшается тѣми указаніями, которыя преподаны въ рѣшеніи общаго собранія 1-го, 2-го и кассаціонныхъ департаментовъ Правительствующаго Сената отъ 24 февраля 1903 г. (сборн. рѣшеній общ. собр. 1903 г. № 4). Въ этомъ рѣшеніи разъяснено въ отрицательномъ смыслѣ вопросъ о подсудности волостному суду, по 1 п. 15 ст. временныхъ правилъ о волостномъ судѣ 12 іюля 1889 г. (нынѣ 1 п. 125 ст. общ. пол. о крест. изд. 1902 г.), иска",
+        "passage_id": "1904-006:2950-4860",
+        "pages": [
+          18
+        ],
+        "sources": [
+          {
+            "page": 18,
+            "page_method": "header",
+            "file": "p0010_L.txt",
+            "start": 3159,
+            "end": 4860
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-006?mode=precedent&ref=1904-006%3A1903%3A4%3A3888&at=3869&end=3899",
+        "scan_available": true
+      },
+      {
+        "id": "1904-006:1878:151:4951",
+        "source_id": "1904-006",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "d3946e5513800e8d486eee91688c25351631be36fde8eedade3527187a596969",
+        "year": 1878,
+        "start": 4925,
+        "end": 4964,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 151,
+        "department_start": 4933,
+        "department_end": 4950,
+        "citation_start": 4951,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи гражд. касс. деп. 1878 г. № 151",
+        "target_url": null,
+        "department_evidence": "гражд. касс. деп.",
+        "context_start": 4745,
+        "context_end": 5184,
+        "context_original": "общимъ судебнымъ учрежденіямъ, и объясненія кассаціонной жалобы по сему вопросу надлежитъ признать неуважительными. При разрѣшеніи втораго вопроса, надлежитъ имѣть въ виду, что въ рѣшеніи гражд. касс. деп. 1878 г. № 151 признано, что каждое сельское общество, участвующее въ общемъ съ другими сельскими обществами владѣніи землями, полученными ими по одной владѣнной записи въ одной округѣ или дачѣ, представляется отдѣльнымъ юридическимъ ",
+        "passage_id": "1904-006:4548-6162",
+        "pages": [
+          18
+        ],
+        "sources": [
+          {
+            "page": 18,
+            "page_method": "header",
+            "file": "p0010_L.txt",
+            "start": 4548,
+            "end": 5488
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-006?mode=precedent&ref=1904-006%3A1878%3A151%3A4951&at=4925&end=4964",
+        "scan_available": true
+      },
+      {
+        "id": "1904-006:1890:37:5389",
+        "source_id": "1904-006",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "d3946e5513800e8d486eee91688c25351631be36fde8eedade3527187a596969",
+        "year": 1890,
+        "start": 5365,
+        "end": 5401,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 37,
+        "department_start": 5373,
+        "department_end": 5388,
+        "citation_start": 5389,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи общаго собранія 1890 г. № 37",
+        "target_url": null,
+        "department_evidence": "общаго собранія",
+        "context_start": 5185,
+        "context_end": 5488,
+        "context_original": "ицомъ по отношенію къ праву общаго владѣнія, а потому и можетъ требовать выдѣла слѣдующей ему земли изъ общаго владѣнія независимо отъ согласія на это прочихъ обществъ. Затѣмъ, въ рѣшеніи общаго собранія 1890 г. № 37 пояснено, со ссылкою на законъ 24 апрѣля 1887 г. (прим. 7 къ ст. 54 общ. пол. о крест.",
+        "passage_id": "1904-006:4548-6162",
+        "pages": [
+          18
+        ],
+        "sources": [
+          {
+            "page": 18,
+            "page_method": "header",
+            "file": "p0010_L.txt",
+            "start": 4548,
+            "end": 5488
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-006?mode=precedent&ref=1904-006%3A1890%3A37%3A5389&at=5365&end=5401",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-006",
     "scan_pages": [

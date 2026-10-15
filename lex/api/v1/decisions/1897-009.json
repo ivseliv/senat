@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-009",
@@ -51,6 +51,86 @@
     "participant_ids": [
       "1897-1f938d8f8267",
       "1897-8e13621e1c4a"
+    ],
+    "precedents": [
+      {
+        "id": "1897-009:1885:86:20934",
+        "source_id": "1897-009",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "b77ab5c3a671127fe185d69d8019e6a94a7f350a46b36877b0e52d0a5da0ccba",
+        "year": 1885,
+        "start": 20908,
+        "end": 20946,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 86,
+        "department_start": 20913,
+        "department_end": 20930,
+        "citation_start": 20934,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гражд. касс. деп. за 1885 г. № 86",
+        "target_url": null,
+        "department_evidence": "гражд. касс. деп.",
+        "context_start": 20728,
+        "context_end": 21166,
+        "context_original": " а посему оставленіе палатою безъ обсужденія этого возраженія Ярошинскаго не имѣло вліянія на окончательный выводъ ея въ рѣшеніи и посему поводомъ къ отмѣнѣ его служить не можетъ (рѣш. гражд. касс. деп. за 1885 г. № 86). Вслѣдствіе сего и принимая во вниманіе: 1) что, по точному смыслу 1427 ст. 1 ч. X т. (рѣш. гр. касс. деп. 1874 г. № 848), условіемъ объ очисткахъ продавецъ принимаетъ на себя обязанность очищать покупщика отъ всѣхъ вс",
+        "passage_id": "1897-009:19952-21588",
+        "pages": [
+          45
+        ],
+        "sources": [
+          {
+            "page": 45,
+            "page_method": "header",
+            "file": "p0033_R.txt",
+            "start": 19952,
+            "end": 21588
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-009?mode=precedent&ref=1897-009%3A1885%3A86%3A20934&at=20908&end=20946",
+        "scan_available": true
+      },
+      {
+        "id": "1897-009:1874:848:21055",
+        "source_id": "1897-009",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "b77ab5c3a671127fe185d69d8019e6a94a7f350a46b36877b0e52d0a5da0ccba",
+        "year": 1874,
+        "start": 21035,
+        "end": 21068,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 848,
+        "department_start": 21040,
+        "department_end": 21054,
+        "citation_start": 21055,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. деп. 1874 г. № 848",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 20855,
+        "context_end": 21288,
+        "context_original": "и и посему поводомъ къ отмѣнѣ его служить не можетъ (рѣш. гражд. касс. деп. за 1885 г. № 86). Вслѣдствіе сего и принимая во вниманіе: 1) что, по точному смыслу 1427 ст. 1 ч. X т. (рѣш. гр. касс. деп. 1874 г. № 848), условіемъ объ очисткахъ продавецъ принимаетъ на себя обязанность очищать покупщика отъ всѣхъ вступщиковъ въ проданное имущество, которые предъявляютъ на него свои права, основанныя на обстоятельствахъ, относящихся до ",
+        "passage_id": "1897-009:19952-21588",
+        "pages": [
+          45
+        ],
+        "sources": [
+          {
+            "page": 45,
+            "page_method": "header",
+            "file": "p0033_R.txt",
+            "start": 19952,
+            "end": 21588
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-009?mode=precedent&ref=1897-009%3A1874%3A848%3A21055&at=21035&end=21068",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-009",
     "scan_pages": [

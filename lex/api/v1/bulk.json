@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "bulk-downloads",
   "item": {
     "description": "Полные JSON/CSV-выгрузки; имена, контрольные суммы и размеры определяет export/manifest.json.",
@@ -10,14 +10,14 @@
     "files": [
       {
         "name": "decisions.json",
-        "sha256": "1bd6dbb10a5e71fcc08c98480002844f654dadad5049ad8992df089051137d28",
-        "bytes": 6594085,
+        "sha256": "82f9d7519b3b69deac21af55330c350db5d8f90f64e7b72290a451f869aec27a",
+        "bytes": 8384310,
         "href": "https://ivseliv.github.io/senat/lex/export/decisions.json"
       },
       {
         "name": "decisions.csv",
-        "sha256": "6f9fee6f009b5712b15534e13ad231093ab6ee92330da4811c13ad6861439704",
-        "bytes": 6311075,
+        "sha256": "e14fdf413feba6de9fe2bbd509259314e05871f63354432b69819e072818aef5",
+        "bytes": 7829945,
         "href": "https://ivseliv.github.io/senat/lex/export/decisions.csv"
       },
       {
@@ -93,9 +93,21 @@
         "href": "https://ivseliv.github.io/senat/lex/export/scan-passages.csv"
       },
       {
+        "name": "precedents.json",
+        "sha256": "d28187d4064bf86fe1fa31bc199bdabae44e0dd22c6f1e1552f169321d9a77f1",
+        "bytes": 1651508,
+        "href": "https://ivseliv.github.io/senat/lex/export/precedents.json"
+      },
+      {
+        "name": "precedents.csv",
+        "sha256": "87f12a1c41b0437177fbd144a255f2ce434a9b7577fc853aa25413ada4df1862",
+        "bytes": 1127144,
+        "href": "https://ivseliv.github.io/senat/lex/export/precedents.csv"
+      },
+      {
         "name": "README.md",
-        "sha256": "151bc1ff9d62d1465464369aace6f9fd2af48762849b149fe3e9ae3246aff560",
-        "bytes": 3173,
+        "sha256": "b58be59ba8c2852093af9728cebb91e8acc578fafe7ca2e84df3edc3c25701e2",
+        "bytes": 4203,
         "href": "https://ivseliv.github.io/senat/lex/export/README.md"
       }
     ]

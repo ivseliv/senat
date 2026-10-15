@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-076",
@@ -76,6 +76,398 @@
       "1905-d96bdc803d24",
       "1905-dd323b89aeb6",
       "1905-c7fe8671bb8d"
+    ],
+    "precedents": [
+      {
+        "id": "1905-076:1898:86:10621",
+        "source_id": "1905-076",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a8d382a64880eeaee65b4f6bff43e36be81839e462ec58555e6074981227a0a0",
+        "year": 1898,
+        "start": 10598,
+        "end": 10633,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 86,
+        "department_start": 10606,
+        "department_end": 10620,
+        "citation_start": 10621,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи гр. касс. д-та 1898 г. № 86",
+        "target_url": null,
+        "department_evidence": "гр. касс. д-та",
+        "context_start": 10418,
+        "context_end": 10853,
+        "context_original": "охраняетъ, при наличности двухъ свидѣтелей, силу и значеніе акта нотаріальнаго объ отмѣнѣ прежняго нотаріальнаго духовнаго завѣщанія, и такой выводъ находитъ себѣ подтвержденіе въ рѣшеніи гр. касс. д-та 1898 г. № 86, коимъ завѣщаніе, оставшееся, по ст. 1065 ч. 1 X т., ничтожнымъ какъ распоряженіе завѣщательное, признано имѣющимъ силу нотаріальнаго акта объ отмѣнѣ предшествующаго нотаріальнаго завѣщанія. Соображенія эти вполнѣ примѣ",
+        "passage_id": "1905-076:9029-10824",
+        "pages": [
+          210
+        ],
+        "sources": [
+          {
+            "page": 210,
+            "page_method": "header",
+            "file": "p0106_L.txt",
+            "start": 10576,
+            "end": 11731
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-076?mode=precedent&ref=1905-076%3A1898%3A86%3A10621&at=10598&end=10633",
+        "scan_available": true
+      },
+      {
+        "id": "1905-076:1890:87:13268",
+        "source_id": "1905-076",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a8d382a64880eeaee65b4f6bff43e36be81839e462ec58555e6074981227a0a0",
+        "year": 1890,
+        "start": 13248,
+        "end": 13280,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 87,
+        "department_start": 13253,
+        "department_end": 13267,
+        "citation_start": 13268,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. д-та 1890 г. № 87",
+        "target_url": null,
+        "department_evidence": "гр. касс. д-та",
+        "context_start": 13068,
+        "context_end": 13500,
+        "context_original": " а не обстоятельства, указанныя во 2 п. 1050 ст. 1 ч. X т., каковыя могутъ быть удостовѣрены лишь нотаріусомъ, коль скоро подпись его приравнивается къ подписи свидѣтеля, согласно рѣш. гр. касс. д-та 1890 г. № 87. Такимъ образомъ, дѣйствительно, казалось бы, что завѣщаніе Афендика, разсматриваемое какъ домашнее, подписано лишь однимъ свидѣтелемъ, отвѣчающимъ требованіямъ 1050 ст. 1 ч. X т., но въ такомъ случаѣ правило, выраженно",
+        "passage_id": "1905-076:11444-13281",
+        "pages": [
+          211
+        ],
+        "sources": [
+          {
+            "page": 211,
+            "page_method": "header",
+            "file": "p0106_R.txt",
+            "start": 13071,
+            "end": 14728
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-076?mode=precedent&ref=1905-076%3A1890%3A87%3A13268&at=13248&end=13280",
+        "scan_available": true
+      },
+      {
+        "id": "1905-076:1899:101:13829",
+        "source_id": "1905-076",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a8d382a64880eeaee65b4f6bff43e36be81839e462ec58555e6074981227a0a0",
+        "year": 1899,
+        "start": 13821,
+        "end": 13842,
+        "department": null,
+        "association": null,
+        "number": 101,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 13829,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1899 г. № 101",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 13641,
+        "context_end": 14062,
+        "context_original": "ожности допросомъ ихъ восполнить недостатокъ необходимыхъ свѣдѣній въ подписяхъ ихъ. Очевидно, что приведенный законъ не имѣлъ въ виду этого положенія, и, какъ высказалъ Сенатъ въ рѣшеніи 1899 г. № 101, изъ смысла ст. 1035² нельзя дѣлать вывода, что нотаріальное завѣщаніе, въ виду возможности перехода его въ домашнее, должно, независимо отъ правилъ, установленныхъ 1013 ст. 1 ч. X т., удовлетворять и всѣмъ условіямъ, к",
+        "passage_id": "1905-076:13071-14728",
+        "pages": [
+          211
+        ],
+        "sources": [
+          {
+            "page": 211,
+            "page_method": "header",
+            "file": "p0106_R.txt",
+            "start": 13071,
+            "end": 14728
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-076?mode=precedent&ref=1905-076%3A1899%3A101%3A13829&at=13821&end=13842",
+        "scan_available": true
+      },
+      {
+        "id": "1905-076:1871:392:15474",
+        "source_id": "1905-076",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a8d382a64880eeaee65b4f6bff43e36be81839e462ec58555e6074981227a0a0",
+        "year": 1871,
+        "start": 15454,
+        "end": 15487,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 392,
+        "department_start": 15459,
+        "department_end": 15473,
+        "citation_start": 15474,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. д-та 1871 г. № 392",
+        "target_url": null,
+        "department_evidence": "гр. касс. д-та",
+        "context_start": 15274,
+        "context_end": 15707,
+        "context_original": "женіямъ, духовное завѣщаніе Игнатія Афендика, совершенное 22 августа 1883 г., имѣющимъ силу домашняго духовнаго завѣщанія, судебная палата, по разуму 1010 ст. 1 ч. X т. и согласно рѣш. гр. касс. д-та 1871 г. № 392 и 1880 г. № 56, признала Ольгу Иваненко собственницею всего завѣщаннаго ей имущества съ момента смерти завѣщателя, и исковыя ея требованія въ отношеніи земли, пространствомъ около 60 дес., въ с. Заворичахъ, въ м. Бобров",
+        "passage_id": "1905-076:14485-16064",
+        "pages": [
+          211
+        ],
+        "sources": [
+          {
+            "page": 211,
+            "page_method": "header",
+            "file": "p0106_R.txt",
+            "start": 14485,
+            "end": 15875
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-076?mode=precedent&ref=1905-076%3A1871%3A392%3A15474&at=15454&end=15487",
+        "scan_available": true
+      },
+      {
+        "id": "1905-076:1880:56:15490",
+        "source_id": "1905-076",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a8d382a64880eeaee65b4f6bff43e36be81839e462ec58555e6074981227a0a0",
+        "year": 1880,
+        "start": 15454,
+        "end": 15502,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 56,
+        "department_start": 15459,
+        "department_end": 15473,
+        "citation_start": 15490,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. д-та 1871 г. № 392 и 1880 г. № 56",
+        "target_url": null,
+        "department_evidence": "гр. касс. д-та",
+        "context_start": 15274,
+        "context_end": 15722,
+        "context_original": "женіямъ, духовное завѣщаніе Игнатія Афендика, совершенное 22 августа 1883 г., имѣющимъ силу домашняго духовнаго завѣщанія, судебная палата, по разуму 1010 ст. 1 ч. X т. и согласно рѣш. гр. касс. д-та 1871 г. № 392 и 1880 г. № 56, признала Ольгу Иваненко собственницею всего завѣщаннаго ей имущества съ момента смерти завѣщателя, и исковыя ея требованія въ отношеніи земли, пространствомъ около 60 дес., въ с. Заворичахъ, въ м. Бобровицѣ и его дачѣ,",
+        "passage_id": "1905-076:14485-16064",
+        "pages": [
+          211
+        ],
+        "sources": [
+          {
+            "page": 211,
+            "page_method": "header",
+            "file": "p0106_R.txt",
+            "start": 14485,
+            "end": 15875
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-076?mode=precedent&ref=1905-076%3A1880%3A56%3A15490&at=15454&end=15502",
+        "scan_available": true
+      },
+      {
+        "id": "1905-076:1898:86:20895",
+        "source_id": "1905-076",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a8d382a64880eeaee65b4f6bff43e36be81839e462ec58555e6074981227a0a0",
+        "year": 1898,
+        "start": 20880,
+        "end": 20907,
+        "department": null,
+        "association": null,
+        "number": 86,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 20895,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи его за 1898 г. № 86",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 20700,
+        "context_end": 21127,
+        "context_original": "ѣ, и 1031 ст. запрещенія на такое изъявленіе завѣщателемъ своей воли въ одномъ актѣ въ себѣ не содержитъ. Такой смыслъ этой статьи подтверждается и разъясненіями Правит. Сената въ рѣшеніи его за 1898 г. № 86. Поэтому, выводъ судебной палаты о томъ, что завѣщаніе Игнатія Афендика отъ 22 августа 1883 г. заключаетъ въ себѣ и нотаріальный актъ объ уничтоженіи нотаріальнаго зазѣщанія его отъ 25 іюля 1878 г. и особое домашнее дух",
+        "passage_id": "1905-076:20606-22424",
+        "pages": [
+          213
+        ],
+        "sources": [
+          {
+            "page": 213,
+            "page_method": "header",
+            "file": "p0107_R.txt",
+            "start": 20606,
+            "end": 21717
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-076?mode=precedent&ref=1905-076%3A1898%3A86%3A20895&at=20880&end=20907",
+        "scan_available": true
+      },
+      {
+        "id": "1905-076:1899:101:22851",
+        "source_id": "1905-076",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a8d382a64880eeaee65b4f6bff43e36be81839e462ec58555e6074981227a0a0",
+        "year": 1899,
+        "start": 22836,
+        "end": 22864,
+        "department": null,
+        "association": null,
+        "number": 101,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 22851,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи своемъ 1899 г. № 101",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 22656,
+        "context_end": 23084,
+        "context_original": " составлено съ соблюденіемъ всѣхъ условій, установленныхъ для домашнихъ завѣщаній, но изъ этого не слѣдуетъ дѣлать еще того вывода, какъ разъяснилъ это Правительствующій Сенатъ въ рѣшеніи своемъ 1899 г. № 101, чтобы нотаріальное завѣщаніе, въ виду возможности перехода его въ домашнее завѣщаніе, должно, независимо отъ правилъ совершенія его нотаріальнымъ порядкомъ, удовлетворять и всѣмъ условіямъ, которыя требуются для домашн",
+        "passage_id": "1905-076:22158-23803",
+        "pages": [
+          214
+        ],
+        "sources": [
+          {
+            "page": 214,
+            "page_method": "header",
+            "file": "p0108_L.txt",
+            "start": 22158,
+            "end": 23803
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-076?mode=precedent&ref=1905-076%3A1899%3A101%3A22851&at=22836&end=22864",
+        "scan_available": true
+      },
+      {
+        "id": "1905-076:1890:87:23240",
+        "source_id": "1905-076",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a8d382a64880eeaee65b4f6bff43e36be81839e462ec58555e6074981227a0a0",
+        "year": 1890,
+        "start": 23227,
+        "end": 23252,
+        "department": null,
+        "association": null,
+        "number": 87,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 23240,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніемъ за 1890 г. № 87",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 23047,
+        "context_end": 23472,
+        "context_original": "ловіямъ, которыя требуются для домашняго завѣщанія, т.-е., такъ сказать, должно быть совершено двоякимъ порядкомъ: и нотаріальнымъ, и домашнимъ порядкомъ одновременно. Кромѣ того, рѣшеніемъ за 1890 г. № 87 Правительствующій Сенатъ призналъ за подпись 3-го свидѣтеля на завѣщаніи подпись нотаріуса, слѣдовательно, въ настоящемъ случаѣ судебная палата имѣла тѣмъ болѣе основаній признать за подпись переписчика подпись нотаріус",
+        "passage_id": "1905-076:22158-23803",
+        "pages": [
+          214
+        ],
+        "sources": [
+          {
+            "page": 214,
+            "page_method": "header",
+            "file": "p0108_L.txt",
+            "start": 22158,
+            "end": 23803
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-076?mode=precedent&ref=1905-076%3A1890%3A87%3A23240&at=23227&end=23252",
+        "scan_available": true
+      },
+      {
+        "id": "1905-076:1876:292:23651",
+        "source_id": "1905-076",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a8d382a64880eeaee65b4f6bff43e36be81839e462ec58555e6074981227a0a0",
+        "year": 1876,
+        "start": 23639,
+        "end": 23664,
+        "department": null,
+        "association": null,
+        "number": 292,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 23651,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. Сената 1876 г. № 292",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 23459,
+        "context_end": 23884,
+        "context_original": "пись нотаріуса, такъ какъ къ переписчикамъ законъ предъявляетъ менѣе строгія требованія, чѣмъ къ свидѣтелямъ (переписчикомъ можетъ быть и родственникъ и даже наслѣдникъ завѣщателя—рѣш. Сената 1876 г. № 292). Поэтому, судебная палата правильно разрѣшила означенный выше вопросъ въ утвердительномъ смыслѣ, а возраженія просителя лишены основанія. Принимая, затѣмъ, во вниманіе: 1) что несоблюденіе требованій 89, 104 и 105 ст. ",
+        "passage_id": "1905-076:22158-23803",
+        "pages": [
+          214
+        ],
+        "sources": [
+          {
+            "page": 214,
+            "page_method": "header",
+            "file": "p0108_L.txt",
+            "start": 23528,
+            "end": 24714
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-076?mode=precedent&ref=1905-076%3A1876%3A292%3A23651&at=23639&end=23664",
+        "scan_available": true
+      },
+      {
+        "id": "1905-076:1874:642:24496",
+        "source_id": "1905-076",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a8d382a64880eeaee65b4f6bff43e36be81839e462ec58555e6074981227a0a0",
+        "year": 1874,
+        "start": 24491,
+        "end": 24509,
+        "department": null,
+        "association": null,
+        "number": 642,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 24496,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1874 г. № 642",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 24311,
+        "context_end": 24729,
+        "context_original": "о закону (2 п. 1050 ст. т. X ч. 1 зак. гр.) вовсе не требуется, чтобы это было выражено въ самой подписи свидѣтелей—обстоятельства эти они должны удостовѣрить при допросѣ на судѣ (рѣш. 1874 г. № 642); 3) что указаніе просителя на нарушеніе судебною палатой 711 ст. уст. гр. суд. необсужденіемъ ею признаннаго уже за его довѣрителемъ права на ¹/₂ завѣщаннаго имѣнія не заслуживаетъ уваженія, ибо означен- ное обстоятель",
+        "passage_id": "1905-076:23528-25219",
+        "pages": [
+          214
+        ],
+        "sources": [
+          {
+            "page": 214,
+            "page_method": "header",
+            "file": "p0108_L.txt",
+            "start": 23528,
+            "end": 24714
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-076?mode=precedent&ref=1905-076%3A1874%3A642%3A24496&at=24491&end=24509",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-076",
     "scan_pages": [

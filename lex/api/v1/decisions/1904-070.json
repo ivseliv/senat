@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-070",
@@ -58,6 +58,164 @@
       "1904-031e8ff225c3",
       "1904-743f96f7686b",
       "1904-6ea31940139a"
+    ],
+    "precedents": [
+      {
+        "id": "1904-070:1895:10:2241",
+        "source_id": "1904-070",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "908fa3cb3a66935929abc0b3d5fd0a8a7c79799b21c28969ac0b1e75ca412f80",
+        "year": 1895,
+        "start": 2218,
+        "end": 2256,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 10,
+        "department_start": 2218,
+        "department_end": 2232,
+        "citation_start": 2241,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "гр. касс. д-ту въ рѣш. 1895 г. за № 10",
+        "target_url": null,
+        "department_evidence": "гр. касс. д-ту",
+        "context_start": 2038,
+        "context_end": 2476,
+        "context_original": "и за вредъ и убытки, причиненные преступленіемъ, содержатся какъ общія по сему предмету правила, такъ и особенныя по нѣкоторымъ родамъ и видамъ преступныхъ дѣяній. Прав. Сенатъ по гр. касс. д-ту въ рѣш. 1895 г. за № 10 разъяснилъ, что если нѣкоторыя изъ сихъ послѣднихъ особо не приведены, то, такъ какъ они, тѣмъ не менѣе, закономъ не исключены отъ примѣненія къ нимъ общихъ правилъ 59 и 61 ст. улож. о нак. и общихъ правилъ X т. 1 ч. о ",
+        "passage_id": "1904-070:1339-2775",
+        "pages": [
+          201
+        ],
+        "sources": [
+          {
+            "page": 201,
+            "page_method": "header",
+            "file": "p0101_R.txt",
+            "start": 1339,
+            "end": 2775
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-070?mode=precedent&ref=1904-070%3A1895%3A10%3A2241&at=2218&end=2256",
+        "scan_available": true
+      },
+      {
+        "id": "1904-070:1888:17:4249",
+        "source_id": "1904-070",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "908fa3cb3a66935929abc0b3d5fd0a8a7c79799b21c28969ac0b1e75ca412f80",
+        "year": 1888,
+        "start": 4241,
+        "end": 4261,
+        "department": null,
+        "association": null,
+        "number": 17,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4249,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1888 г. № 17",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4061,
+        "context_end": 4481,
+        "context_original": "и на наслѣдниковъ лица, прижившаго внѣ брака ребенка, обязанность давать содержаніе этому ребенку, доходилъ уже до разсмотрѣнія гражданскаго кассаціоннаго департамента, который въ рѣшеніи 1888 г. № 17 разъяснилъ, что обязанность обезпечить содержаніе младенца и матери его, возлагаемая, по 994 ст. улож. о нак., на отца, не составляетъ обязанности вознаградить за вредъ и убытки, преступнымъ дѣяніемъ причиненные, а выте",
+        "passage_id": "1904-070:2554-4655",
+        "pages": [
+          202
+        ],
+        "sources": [
+          {
+            "page": 202,
+            "page_method": "header",
+            "file": "p0102_L.txt",
+            "start": 3767,
+            "end": 4655
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-070?mode=precedent&ref=1904-070%3A1888%3A17%3A4249&at=4241&end=4261",
+        "scan_available": true
+      },
+      {
+        "id": "1904-070:1893:105:4810",
+        "source_id": "1904-070",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "908fa3cb3a66935929abc0b3d5fd0a8a7c79799b21c28969ac0b1e75ca412f80",
+        "year": 1893,
+        "start": 4802,
+        "end": 4823,
+        "department": null,
+        "association": null,
+        "number": 105,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4810,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1893 г. № 105",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4622,
+        "context_end": 5043,
+        "context_original": "ержать своего ребенка и его мать. Такая обязанность въ основѣ имѣетъ не имущественныя отношенія, а есть обязанность личная родителей, которая не переходитъ на ихъ наслѣдниковъ. Въ рѣшеніи 1893 г. № 105 Прав. Сенатъ, признавая, что отецъ обязанъ содѣйствовать матери въ приличномъ содержаніи ребенка, родившагося отъ прелюбодѣянія, выводилъ эту обязанность отца изъ естественной связи, существующей между родителями и ихъ ",
+        "passage_id": "1904-070:4382-5991",
+        "pages": [
+          202
+        ],
+        "sources": [
+          {
+            "page": 202,
+            "page_method": "header",
+            "file": "p0102_L.txt",
+            "start": 4382,
+            "end": 5991
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-070?mode=precedent&ref=1904-070%3A1893%3A105%3A4810&at=4802&end=4823",
+        "scan_available": true
+      },
+      {
+        "id": "1904-070:1895:10:5174",
+        "source_id": "1904-070",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "908fa3cb3a66935929abc0b3d5fd0a8a7c79799b21c28969ac0b1e75ca412f80",
+        "year": 1895,
+        "start": 5166,
+        "end": 5186,
+        "department": null,
+        "association": null,
+        "number": 10,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5174,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1895 г. № 10",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4986,
+        "context_end": 5406,
+        "context_original": " естественной связи, существующей между родителями и ихъ незаконнорожденными дѣтьми, а не изъ обязанности вознаграждать за вредъ и убытки, преступленіемъ причиненные. Наконецъ, въ рѣшеніи 1895 г. № 10 Прав. Сенатъ разъяснилъ, что наслѣдники лица, обольстившаго дѣвицу торжественнымъ обѣщаніемъ на ней жениться, прижившаго съ нею ребенка и отказавшагося отъ исполненія обѣщанія, могутъ быть присуждены къ уплатѣ ей и ея р",
+        "passage_id": "1904-070:4382-5991",
+        "pages": [
+          202
+        ],
+        "sources": [
+          {
+            "page": 202,
+            "page_method": "header",
+            "file": "p0102_L.txt",
+            "start": 4382,
+            "end": 5991
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-070?mode=precedent&ref=1904-070%3A1895%3A10%3A5174&at=5166&end=5186",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-070",
     "scan_pages": [

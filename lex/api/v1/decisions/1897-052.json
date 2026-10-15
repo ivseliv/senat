@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-052",
@@ -64,6 +64,320 @@
     "participant_ids": [
       "1897-128b03143db7",
       "1897-46e4feb79068"
+    ],
+    "precedents": [
+      {
+        "id": "1897-052:1879:63:2191",
+        "source_id": "1897-052",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "73857b9eec9e5ee7ec3351f8c723aeafa352493140507861e30d2d510dbb4eb2",
+        "year": 1879,
+        "start": 2157,
+        "end": 2203,
+        "department": null,
+        "association": null,
+        "number": 63,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2191,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшенія Правительствующаго Сената 1879 г. № 63",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1977,
+        "context_end": 2423,
+        "context_original": "енный отвѣтчика возражалъ, что Путятѣ было извѣстно о существованіи договора найма лавки Гуровымъ, что имъ не доказано, что договоръ заключенъ во вредъ его, Путяты, и, ссылаясь на рѣшенія Правительствующаго Сената 1879 г. № 63 и 1885 г. № 63, указывалъ, что 2 п. 1529 ст. т. X ч. 1 св. зак. гражд. непримѣнимъ въ данномъ случаѣ, почему и просилъ въ искѣ Путяты отказать. По апелляціонной жалобѣ Путяты на рѣшеніе окружнаго суда, отказавшаго ему в",
+        "passage_id": "1897-052:914-2347",
+        "pages": [
+          170
+        ],
+        "sources": [
+          {
+            "page": 170,
+            "page_method": "header",
+            "file": "p0096_L.txt",
+            "start": 2165,
+            "end": 3573
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-052?mode=precedent&ref=1897-052%3A1879%3A63%3A2191&at=2157&end=2203",
+        "scan_available": true
+      },
+      {
+        "id": "1897-052:1885:63:2206",
+        "source_id": "1897-052",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "73857b9eec9e5ee7ec3351f8c723aeafa352493140507861e30d2d510dbb4eb2",
+        "year": 1885,
+        "start": 2157,
+        "end": 2218,
+        "department": null,
+        "association": null,
+        "number": 63,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2206,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшенія Правительствующаго Сената 1879 г. № 63 и 1885 г. № 63",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1977,
+        "context_end": 2438,
+        "context_original": "енный отвѣтчика возражалъ, что Путятѣ было извѣстно о существованіи договора найма лавки Гуровымъ, что имъ не доказано, что договоръ заключенъ во вредъ его, Путяты, и, ссылаясь на рѣшенія Правительствующаго Сената 1879 г. № 63 и 1885 г. № 63, указывалъ, что 2 п. 1529 ст. т. X ч. 1 св. зак. гражд. непримѣнимъ въ данномъ случаѣ, почему и просилъ въ искѣ Путяты отказать. По апелляціонной жалобѣ Путяты на рѣшеніе окружнаго суда, отказавшаго ему въ искѣ, дѣло пе",
+        "passage_id": "1897-052:914-2347",
+        "pages": [
+          170
+        ],
+        "sources": [
+          {
+            "page": 170,
+            "page_method": "header",
+            "file": "p0096_L.txt",
+            "start": 2165,
+            "end": 3573
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-052?mode=precedent&ref=1897-052%3A1885%3A63%3A2206&at=2157&end=2218",
+        "scan_available": true
+      },
+      {
+        "id": "1897-052:1878:289:11285",
+        "source_id": "1897-052",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "73857b9eec9e5ee7ec3351f8c723aeafa352493140507861e30d2d510dbb4eb2",
+        "year": 1878,
+        "start": 11280,
+        "end": 11298,
+        "department": null,
+        "association": null,
+        "number": 289,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 11285,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1878 г. № 289",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 11100,
+        "context_end": 11518,
+        "context_original": "ыхъ истцомъ въ разъясненіе такой наемной стоимости лавки и признаніе, что разъясненіе сего вопроса чрезъ свѣдущихъ людей излишне, не могутъ уже служить поводомъ къ отмѣнѣ рѣшенія (рѣш. 1878 г. № 289, 1880 г. № 193, 1879 г. № 204 и др.). Указанія кассаціонной жалобы на неправильность сужденія судебной палаты, что только умышленно, при помощи какихъ либо ухищреній, скрытые договоры могутъ быть признаны необязательным",
+        "passage_id": "1897-052:10098-11872",
+        "pages": [
+          173
+        ],
+        "sources": [
+          {
+            "page": 173,
+            "page_method": "header",
+            "file": "p0097_R.txt",
+            "start": 10303,
+            "end": 11872
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-052?mode=precedent&ref=1897-052%3A1878%3A289%3A11285&at=11280&end=11298",
+        "scan_available": true
+      },
+      {
+        "id": "1897-052:1880:193:11300",
+        "source_id": "1897-052",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "73857b9eec9e5ee7ec3351f8c723aeafa352493140507861e30d2d510dbb4eb2",
+        "year": 1880,
+        "start": 11280,
+        "end": 11313,
+        "department": null,
+        "association": null,
+        "number": 193,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 11300,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1878 г. № 289, 1880 г. № 193",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 11100,
+        "context_end": 11533,
+        "context_original": "ыхъ истцомъ въ разъясненіе такой наемной стоимости лавки и признаніе, что разъясненіе сего вопроса чрезъ свѣдущихъ людей излишне, не могутъ уже служить поводомъ къ отмѣнѣ рѣшенія (рѣш. 1878 г. № 289, 1880 г. № 193, 1879 г. № 204 и др.). Указанія кассаціонной жалобы на неправильность сужденія судебной палаты, что только умышленно, при помощи какихъ либо ухищреній, скрытые договоры могутъ быть признаны необязательными для новаго по",
+        "passage_id": "1897-052:10098-11872",
+        "pages": [
+          173
+        ],
+        "sources": [
+          {
+            "page": 173,
+            "page_method": "header",
+            "file": "p0097_R.txt",
+            "start": 10303,
+            "end": 11872
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-052?mode=precedent&ref=1897-052%3A1880%3A193%3A11300&at=11280&end=11313",
+        "scan_available": true
+      },
+      {
+        "id": "1897-052:1879:204:11315",
+        "source_id": "1897-052",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "73857b9eec9e5ee7ec3351f8c723aeafa352493140507861e30d2d510dbb4eb2",
+        "year": 1879,
+        "start": 11280,
+        "end": 11328,
+        "department": null,
+        "association": null,
+        "number": 204,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 11315,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1878 г. № 289, 1880 г. № 193, 1879 г. № 204",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 11100,
+        "context_end": 11548,
+        "context_original": "ыхъ истцомъ въ разъясненіе такой наемной стоимости лавки и признаніе, что разъясненіе сего вопроса чрезъ свѣдущихъ людей излишне, не могутъ уже служить поводомъ къ отмѣнѣ рѣшенія (рѣш. 1878 г. № 289, 1880 г. № 193, 1879 г. № 204 и др.). Указанія кассаціонной жалобы на неправильность сужденія судебной палаты, что только умышленно, при помощи какихъ либо ухищреній, скрытые договоры могутъ быть признаны необязательными для новаго покупщика, не мог",
+        "passage_id": "1897-052:10098-11872",
+        "pages": [
+          173
+        ],
+        "sources": [
+          {
+            "page": 173,
+            "page_method": "header",
+            "file": "p0097_R.txt",
+            "start": 10303,
+            "end": 11872
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-052?mode=precedent&ref=1897-052%3A1879%3A204%3A11315&at=11280&end=11328",
+        "scan_available": true
+      },
+      {
+        "id": "1897-052:1879:63:12868",
+        "source_id": "1897-052",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "73857b9eec9e5ee7ec3351f8c723aeafa352493140507861e30d2d510dbb4eb2",
+        "year": 1879,
+        "start": 12834,
+        "end": 12880,
+        "department": null,
+        "association": null,
+        "number": 63,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 12868,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшенія Правительствующаго Сената 1879 г. № 63",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 12654,
+        "context_end": 13100,
+        "context_original": "а не установлена наличность недобросовѣстности и Гурова при заключеніи договора съ Дубенскимъ по найму лавки. Противъ такой недобросовѣстности Гурова повѣренный его, со ссылкою на рѣшенія Правительствующаго Сената 1879 г. № 63 и 1885 г. № 63, указывалъ въ окружномъ судѣ и повторилъ эти указанія и въ судебной палатѣ. При такихъ условіяхъ одна недобросовѣстность заключенія сдѣлки со стороны Дубенскаго, подтверждаемая упомянутыми обязательствами",
+        "passage_id": "1897-052:11621-13429",
+        "pages": [
+          174
+        ],
+        "sources": [
+          {
+            "page": 174,
+            "page_method": "header",
+            "file": "p0098_L.txt",
+            "start": 12490,
+            "end": 13429
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-052?mode=precedent&ref=1897-052%3A1879%3A63%3A12868&at=12834&end=12880",
+        "scan_available": true
+      },
+      {
+        "id": "1897-052:1885:63:12883",
+        "source_id": "1897-052",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "73857b9eec9e5ee7ec3351f8c723aeafa352493140507861e30d2d510dbb4eb2",
+        "year": 1885,
+        "start": 12834,
+        "end": 12895,
+        "department": null,
+        "association": null,
+        "number": 63,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 12883,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшенія Правительствующаго Сената 1879 г. № 63 и 1885 г. № 63",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 12654,
+        "context_end": 13115,
+        "context_original": "а не установлена наличность недобросовѣстности и Гурова при заключеніи договора съ Дубенскимъ по найму лавки. Противъ такой недобросовѣстности Гурова повѣренный его, со ссылкою на рѣшенія Правительствующаго Сената 1879 г. № 63 и 1885 г. № 63, указывалъ въ окружномъ судѣ и повторилъ эти указанія и въ судебной палатѣ. При такихъ условіяхъ одна недобросовѣстность заключенія сдѣлки со стороны Дубенскаго, подтверждаемая упомянутыми обязательствами его, при неуст",
+        "passage_id": "1897-052:11621-13429",
+        "pages": [
+          174
+        ],
+        "sources": [
+          {
+            "page": 174,
+            "page_method": "header",
+            "file": "p0098_L.txt",
+            "start": 12490,
+            "end": 13429
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-052?mode=precedent&ref=1897-052%3A1885%3A63%3A12883&at=12834&end=12895",
+        "scan_available": true
+      },
+      {
+        "id": "1897-052:1885:63:13252",
+        "source_id": "1897-052",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "73857b9eec9e5ee7ec3351f8c723aeafa352493140507861e30d2d510dbb4eb2",
+        "year": 1885,
+        "start": 13247,
+        "end": 13264,
+        "department": null,
+        "association": null,
+        "number": 63,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 13252,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1885 г. № 63",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 13067,
+        "context_end": 13429,
+        "context_original": "аемая упомянутыми обязательствами его, при неустановленіи недобросовѣстности и Гурова, совершенно правильно признана недостаточною для уничтоженія договора Дубенскаго съ Гуровымъ (рѣш. 1885 г. № 63). На основаніи изложеннаго, Правительствующій Сенатъ опредѣляетъ: кассаціонную жалобу повѣреннаго Путяты, за силою 793 ст. уст. гр. суд., оставить безъ послѣдствій.",
+        "passage_id": "1897-052:11621-13429",
+        "pages": [
+          174
+        ],
+        "sources": [
+          {
+            "page": 174,
+            "page_method": "header",
+            "file": "p0098_L.txt",
+            "start": 12490,
+            "end": 13429
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-052?mode=precedent&ref=1897-052%3A1885%3A63%3A13252&at=13247&end=13264",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-052",
     "scan_pages": [

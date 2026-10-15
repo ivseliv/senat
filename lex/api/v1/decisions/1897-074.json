@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-074",
@@ -50,6 +50,164 @@
     "participant_ids": [
       "1897-7931e93b01a7",
       "1897-b11017c1057e"
+    ],
+    "precedents": [
+      {
+        "id": "1897-074:1887:36:3262",
+        "source_id": "1897-074",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "ce69ad8a2bb41d529ade3a9fbc910bdcbe7484a32c36335109a1353a31b27b48",
+        "year": 1887,
+        "start": 3254,
+        "end": 3274,
+        "department": null,
+        "association": null,
+        "number": 36,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3262,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1887 г. № 36",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3074,
+        "context_end": 3494,
+        "context_original": "рые въ иныхъ дѣлахъ о раздѣлѣ разрѣшаются тѣмъ или другимъ правиломъ гражданскаго кодекса, не примѣнимымъ въ дѣлахъ о раздѣлѣ, подсудныхъ гминнымъ судамъ (по разъясненію Сената въ рѣшеніи 1887 г. № 36 не примѣнимы лишь правила судопроизводственныя), отъ суда нельзя требовать исполненія какого либо правила, а слѣдуетъ предоставить ему поступать по обстоятельствамъ дѣла, конечно, безъ нарушенія какого либо положительна",
+        "passage_id": "1897-074:2787-4142",
+        "pages": [
+          243
+        ],
+        "sources": [
+          {
+            "page": 243,
+            "page_method": "header",
+            "file": "p0132_R.txt",
+            "start": 2787,
+            "end": 4142
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-074?mode=precedent&ref=1897-074%3A1887%3A36%3A3262&at=3254&end=3274",
+        "scan_available": true
+      },
+      {
+        "id": "1897-074:1887:36:4007",
+        "source_id": "1897-074",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "ce69ad8a2bb41d529ade3a9fbc910bdcbe7484a32c36335109a1353a31b27b48",
+        "year": 1887,
+        "start": 3992,
+        "end": 4021,
+        "department": null,
+        "association": null,
+        "number": 36,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4007,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшенія Сената 1887 года № 36",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3812,
+        "context_end": 4241,
+        "context_original": "ено въ натурѣ, то оно, по ст. 82 код., должно быть продано съ публичнаго торга. Первая изъ этихъ статей, какъ относящаяся къ матеріальному гражданскому праву, въ виду приведеннаго рѣшенія Сената 1887 года № 36, примѣнима и въ дѣлахъ, подобныхъ настоящему, послѣдняя же, по разъясненію Сената въ рѣшеніи 1879 г. № 327, непримѣнима. Поэтому въ подобныхъ дѣлахъ, въ случаѣ невозможности раздѣлить недвижимость въ натурѣ между наслѣд",
+        "passage_id": "1897-074:2787-4142",
+        "pages": [
+          243
+        ],
+        "sources": [
+          {
+            "page": 243,
+            "page_method": "header",
+            "file": "p0132_R.txt",
+            "start": 3903,
+            "end": 5189
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-074?mode=precedent&ref=1897-074%3A1887%3A36%3A4007&at=3992&end=4021",
+        "scan_available": true
+      },
+      {
+        "id": "1897-074:1879:327:4115",
+        "source_id": "1897-074",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "ce69ad8a2bb41d529ade3a9fbc910bdcbe7484a32c36335109a1353a31b27b48",
+        "year": 1879,
+        "start": 4107,
+        "end": 4128,
+        "department": null,
+        "association": null,
+        "number": 327,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4115,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1879 г. № 327",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3927,
+        "context_end": 4348,
+        "context_original": "ящаяся къ матеріальному гражданскому праву, въ виду приведеннаго рѣшенія Сената 1887 года № 36, примѣнима и въ дѣлахъ, подобныхъ настоящему, послѣдняя же, по разъясненію Сената въ рѣшеніи 1879 г. № 327, непримѣнима. Поэтому въ подобныхъ дѣлахъ, въ случаѣ невозможности раздѣлить недвижимость въ натурѣ между наслѣдниками, судъ не связанъ правиломъ ст. 827 и хотя можетъ прибѣгнуть къ способу, въ ней указанному, но можетъ",
+        "passage_id": "1897-074:2787-4142",
+        "pages": [
+          243
+        ],
+        "sources": [
+          {
+            "page": 243,
+            "page_method": "header",
+            "file": "p0132_R.txt",
+            "start": 3903,
+            "end": 5189
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-074?mode=precedent&ref=1897-074%3A1879%3A327%3A4115&at=4107&end=4128",
+        "scan_available": true
+      },
+      {
+        "id": "1897-074:1891:8174:6434",
+        "source_id": "1897-074",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "ce69ad8a2bb41d529ade3a9fbc910bdcbe7484a32c36335109a1353a31b27b48",
+        "year": 1891,
+        "start": 6339,
+        "end": 6451,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 8174,
+        "department_start": 6339,
+        "department_end": 6378,
+        "citation_start": 6434,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "гражданскаго кассаціоннаго департамента Сената въ рѣшеніи, изложенномъ въ указѣ отъ 30 декабря 1891 г. за № 8174",
+        "target_url": null,
+        "department_evidence": "гражданскаго кассаціоннаго департамента",
+        "context_start": 6159,
+        "context_end": 6671,
+        "context_original": "ущецъ согласилась принять то и другое по оцѣнкѣ въ инвентарной описи. Но и это указаніе не заслуживаетъ уваженія. Хотя соображеніе мирового съѣзда о томъ, будто бы, по разъясненію гражданскаго кассаціоннаго департамента Сената въ рѣшеніи, изложенномъ въ указѣ отъ 30 декабря 1891 г. за № 8174, въ дѣлахъ о раздѣлѣ наслѣдства требованія сторонъ могутъ быть измѣняемы во 2-й инстанціи, содержаніемъ сего рѣшенія не подтверждается, но рѣшеніе мирового съѣзда въ этой части дѣла представляется правильнымъ потому, чт",
+        "passage_id": "1897-074:5033-7205",
+        "pages": [
+          244
+        ],
+        "sources": [
+          {
+            "page": 244,
+            "page_method": "header",
+            "file": "p0133_L.txt",
+            "start": 5190,
+            "end": 7205
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-074?mode=precedent&ref=1897-074%3A1891%3A8174%3A6434&at=6339&end=6451",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-074",
     "scan_pages": [

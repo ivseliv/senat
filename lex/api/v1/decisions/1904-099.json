@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-099",
@@ -51,6 +51,86 @@
     "participant_ids": [
       "1904-48aa6307f911",
       "1904-5bd9c543e727"
+    ],
+    "precedents": [
+      {
+        "id": "1904-099:1874:596:7607",
+        "source_id": "1904-099",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "de1b72c93f4e38427b4a72d6880a55693e3a84ed628bf4d6349b5c5092074313",
+        "year": 1874,
+        "start": 7587,
+        "end": 7620,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 596,
+        "department_start": 7592,
+        "department_end": 7606,
+        "citation_start": 7607,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. д-та 1874 г. № 596",
+        "target_url": null,
+        "department_evidence": "гр. касс. д-та",
+        "context_start": 7407,
+        "context_end": 7840,
+        "context_original": "лѣднихъ составляетъ стоимость перешедшаго къ нимъ, по завѣщанію отца, имущества, за вычетомъ платежа, на нихъ по завѣщанію въ пользу сонаслѣдницы наложеннаго (ст. 1086 X т. 1 ч. и рѣш. гр. касс. д-та 1874 г. № 596 и 1879 г. № 340). При такихъ, устанавливаемыхъ судомъ юридическихъ отношеніяхъ равноправныхъ наслѣдниковъ, право Рымаревой, которой присуждена наслѣдственная доля деньгами, остается самостоятельнымъ наслѣдственнымъ прав",
+        "passage_id": "1904-099:6417-7987",
+        "pages": [
+          276
+        ],
+        "sources": [
+          {
+            "page": 276,
+            "page_method": "header",
+            "file": "p0139_L.txt",
+            "start": 6819,
+            "end": 7987
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-099?mode=precedent&ref=1904-099%3A1874%3A596%3A7607&at=7587&end=7620",
+        "scan_available": true
+      },
+      {
+        "id": "1904-099:1879:340:7623",
+        "source_id": "1904-099",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "de1b72c93f4e38427b4a72d6880a55693e3a84ed628bf4d6349b5c5092074313",
+        "year": 1879,
+        "start": 7587,
+        "end": 7636,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 340,
+        "department_start": 7592,
+        "department_end": 7606,
+        "citation_start": 7623,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. д-та 1874 г. № 596 и 1879 г. № 340",
+        "target_url": null,
+        "department_evidence": "гр. касс. д-та",
+        "context_start": 7407,
+        "context_end": 7856,
+        "context_original": "лѣднихъ составляетъ стоимость перешедшаго къ нимъ, по завѣщанію отца, имущества, за вычетомъ платежа, на нихъ по завѣщанію въ пользу сонаслѣдницы наложеннаго (ст. 1086 X т. 1 ч. и рѣш. гр. касс. д-та 1874 г. № 596 и 1879 г. № 340). При такихъ, устанавливаемыхъ судомъ юридическихъ отношеніяхъ равноправныхъ наслѣдниковъ, право Рымаревой, которой присуждена наслѣдственная доля деньгами, остается самостоятельнымъ наслѣдственнымъ правомъ на оставшеес",
+        "passage_id": "1904-099:6417-7987",
+        "pages": [
+          276
+        ],
+        "sources": [
+          {
+            "page": 276,
+            "page_method": "header",
+            "file": "p0139_L.txt",
+            "start": 6819,
+            "end": 7987
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-099?mode=precedent&ref=1904-099%3A1879%3A340%3A7623&at=7587&end=7636",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-099",
     "scan_pages": [

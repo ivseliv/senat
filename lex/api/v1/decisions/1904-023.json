@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-023",
@@ -75,6 +75,476 @@
       "1904-2dba4c87891d",
       "1904-beb85c7a2a53",
       "1904-34d4971ab03b"
+    ],
+    "precedents": [
+      {
+        "id": "1904-023:1894:5:922",
+        "source_id": "1904-023",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "18d45efdc41bb9ca1b75c1f757d15f216745c61c202b73546d731de097385121",
+        "year": 1894,
+        "start": 917,
+        "end": 933,
+        "department": null,
+        "association": null,
+        "number": 5,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 922,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1894 г. № 5",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 737,
+        "context_end": 1153,
+        "context_original": " статья эта примѣнима не только къ случаю, когда имѣніе продано или заложено наслѣдникомъ по закону до открытія спора со стороны наслѣдника по завѣщанію, но и къ случаю обратному (рѣш. 1894 г. № 5, 1891 г. № 105, 1890 г. № 43, 1880 г. № 101, 1879 г. № 50, 1876 г. № 46),—хотя бы даже проданное имѣніе оказалось неподлежавшимъ завѣщательнымъ распоряженіямъ какъ родовое (рѣш. 1876 г. № 46); указывалось на примѣнимост",
+        "passage_id": "1904-023:0-1401",
+        "pages": [
+          57
+        ],
+        "sources": [
+          {
+            "page": 57,
+            "page_method": "header",
+            "file": "p0029_R.txt",
+            "start": 0,
+            "end": 1401
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-023?mode=precedent&ref=1904-023%3A1894%3A5%3A922&at=917&end=933",
+        "scan_available": true
+      },
+      {
+        "id": "1904-023:1891:105:935",
+        "source_id": "1904-023",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "18d45efdc41bb9ca1b75c1f757d15f216745c61c202b73546d731de097385121",
+        "year": 1891,
+        "start": 917,
+        "end": 948,
+        "department": null,
+        "association": null,
+        "number": 105,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 935,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1894 г. № 5, 1891 г. № 105",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 737,
+        "context_end": 1168,
+        "context_original": " статья эта примѣнима не только къ случаю, когда имѣніе продано или заложено наслѣдникомъ по закону до открытія спора со стороны наслѣдника по завѣщанію, но и къ случаю обратному (рѣш. 1894 г. № 5, 1891 г. № 105, 1890 г. № 43, 1880 г. № 101, 1879 г. № 50, 1876 г. № 46),—хотя бы даже проданное имѣніе оказалось неподлежавшимъ завѣщательнымъ распоряженіямъ какъ родовое (рѣш. 1876 г. № 46); указывалось на примѣнимость 1301 ст. и къ",
+        "passage_id": "1904-023:0-1401",
+        "pages": [
+          57
+        ],
+        "sources": [
+          {
+            "page": 57,
+            "page_method": "header",
+            "file": "p0029_R.txt",
+            "start": 0,
+            "end": 1401
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-023?mode=precedent&ref=1904-023%3A1891%3A105%3A935&at=917&end=948",
+        "scan_available": true
+      },
+      {
+        "id": "1904-023:1890:43:950",
+        "source_id": "1904-023",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "18d45efdc41bb9ca1b75c1f757d15f216745c61c202b73546d731de097385121",
+        "year": 1890,
+        "start": 917,
+        "end": 962,
+        "department": null,
+        "association": null,
+        "number": 43,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 950,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1894 г. № 5, 1891 г. № 105, 1890 г. № 43",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 737,
+        "context_end": 1182,
+        "context_original": " статья эта примѣнима не только къ случаю, когда имѣніе продано или заложено наслѣдникомъ по закону до открытія спора со стороны наслѣдника по завѣщанію, но и къ случаю обратному (рѣш. 1894 г. № 5, 1891 г. № 105, 1890 г. № 43, 1880 г. № 101, 1879 г. № 50, 1876 г. № 46),—хотя бы даже проданное имѣніе оказалось неподлежавшимъ завѣщательнымъ распоряженіямъ какъ родовое (рѣш. 1876 г. № 46); указывалось на примѣнимость 1301 ст. и къ тому случаю, ",
+        "passage_id": "1904-023:0-1401",
+        "pages": [
+          57
+        ],
+        "sources": [
+          {
+            "page": 57,
+            "page_method": "header",
+            "file": "p0029_R.txt",
+            "start": 0,
+            "end": 1401
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-023?mode=precedent&ref=1904-023%3A1890%3A43%3A950&at=917&end=962",
+        "scan_available": true
+      },
+      {
+        "id": "1904-023:1880:101:964",
+        "source_id": "1904-023",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "18d45efdc41bb9ca1b75c1f757d15f216745c61c202b73546d731de097385121",
+        "year": 1880,
+        "start": 917,
+        "end": 977,
+        "department": null,
+        "association": null,
+        "number": 101,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 964,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1894 г. № 5, 1891 г. № 105, 1890 г. № 43, 1880 г. № 101",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 737,
+        "context_end": 1197,
+        "context_original": " статья эта примѣнима не только къ случаю, когда имѣніе продано или заложено наслѣдникомъ по закону до открытія спора со стороны наслѣдника по завѣщанію, но и къ случаю обратному (рѣш. 1894 г. № 5, 1891 г. № 105, 1890 г. № 43, 1880 г. № 101, 1879 г. № 50, 1876 г. № 46),—хотя бы даже проданное имѣніе оказалось неподлежавшимъ завѣщательнымъ распоряженіямъ какъ родовое (рѣш. 1876 г. № 46); указывалось на примѣнимость 1301 ст. и къ тому случаю, когда акты на н",
+        "passage_id": "1904-023:0-1401",
+        "pages": [
+          57
+        ],
+        "sources": [
+          {
+            "page": 57,
+            "page_method": "header",
+            "file": "p0029_R.txt",
+            "start": 0,
+            "end": 1401
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-023?mode=precedent&ref=1904-023%3A1880%3A101%3A964&at=917&end=977",
+        "scan_available": true
+      },
+      {
+        "id": "1904-023:1879:50:979",
+        "source_id": "1904-023",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "18d45efdc41bb9ca1b75c1f757d15f216745c61c202b73546d731de097385121",
+        "year": 1879,
+        "start": 917,
+        "end": 991,
+        "department": null,
+        "association": null,
+        "number": 50,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 979,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1894 г. № 5, 1891 г. № 105, 1890 г. № 43, 1880 г. № 101, 1879 г. № 50",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 737,
+        "context_end": 1211,
+        "context_original": " статья эта примѣнима не только къ случаю, когда имѣніе продано или заложено наслѣдникомъ по закону до открытія спора со стороны наслѣдника по завѣщанію, но и къ случаю обратному (рѣш. 1894 г. № 5, 1891 г. № 105, 1890 г. № 43, 1880 г. № 101, 1879 г. № 50, 1876 г. № 46),—хотя бы даже проданное имѣніе оказалось неподлежавшимъ завѣщательнымъ распоряженіямъ какъ родовое (рѣш. 1876 г. № 46); указывалось на примѣнимость 1301 ст. и къ тому случаю, когда акты на наслѣдственное ",
+        "passage_id": "1904-023:0-1401",
+        "pages": [
+          57
+        ],
+        "sources": [
+          {
+            "page": 57,
+            "page_method": "header",
+            "file": "p0029_R.txt",
+            "start": 0,
+            "end": 1401
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-023?mode=precedent&ref=1904-023%3A1879%3A50%3A979&at=917&end=991",
+        "scan_available": true
+      },
+      {
+        "id": "1904-023:1876:46:993",
+        "source_id": "1904-023",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "18d45efdc41bb9ca1b75c1f757d15f216745c61c202b73546d731de097385121",
+        "year": 1876,
+        "start": 917,
+        "end": 1005,
+        "department": null,
+        "association": null,
+        "number": 46,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 993,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1894 г. № 5, 1891 г. № 105, 1890 г. № 43, 1880 г. № 101, 1879 г. № 50, 1876 г. № 46",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 737,
+        "context_end": 1225,
+        "context_original": " статья эта примѣнима не только къ случаю, когда имѣніе продано или заложено наслѣдникомъ по закону до открытія спора со стороны наслѣдника по завѣщанію, но и къ случаю обратному (рѣш. 1894 г. № 5, 1891 г. № 105, 1890 г. № 43, 1880 г. № 101, 1879 г. № 50, 1876 г. № 46),—хотя бы даже проданное имѣніе оказалось неподлежавшимъ завѣщательнымъ распоряженіямъ какъ родовое (рѣш. 1876 г. № 46); указывалось на примѣнимость 1301 ст. и къ тому случаю, когда акты на наслѣдственное имѣніе соверше",
+        "passage_id": "1904-023:0-1401",
+        "pages": [
+          57
+        ],
+        "sources": [
+          {
+            "page": 57,
+            "page_method": "header",
+            "file": "p0029_R.txt",
+            "start": 0,
+            "end": 1401
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-023?mode=precedent&ref=1904-023%3A1876%3A46%3A993&at=917&end=1005",
+        "scan_available": true
+      },
+      {
+        "id": "1904-023:1876:46:1112",
+        "source_id": "1904-023",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "18d45efdc41bb9ca1b75c1f757d15f216745c61c202b73546d731de097385121",
+        "year": 1876,
+        "start": 1107,
+        "end": 1124,
+        "department": null,
+        "association": null,
+        "number": 46,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1112,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1876 г. № 46",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 927,
+        "context_end": 1344,
+        "context_original": "г. № 5, 1891 г. № 105, 1890 г. № 43, 1880 г. № 101, 1879 г. № 50, 1876 г. № 46),—хотя бы даже проданное имѣніе оказалось неподлежавшимъ завѣщательнымъ распоряженіямъ какъ родовое (рѣш. 1876 г. № 46); указывалось на примѣнимость 1301 ст. и къ тому случаю, когда акты на наслѣдственное имѣніе совершены наслѣдниками по закону, права которыхъ впослѣдствіи оспорены не наслѣдниками по завѣщанію, а другими ближайшими насл",
+        "passage_id": "1904-023:0-1401",
+        "pages": [
+          57
+        ],
+        "sources": [
+          {
+            "page": 57,
+            "page_method": "header",
+            "file": "p0029_R.txt",
+            "start": 0,
+            "end": 1401
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-023?mode=precedent&ref=1904-023%3A1876%3A46%3A1112&at=1107&end=1124",
+        "scan_available": true
+      },
+      {
+        "id": "1904-023:1879:113:1372",
+        "source_id": "1904-023",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "18d45efdc41bb9ca1b75c1f757d15f216745c61c202b73546d731de097385121",
+        "year": 1879,
+        "start": 1367,
+        "end": 1385,
+        "department": null,
+        "association": null,
+        "number": 113,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1372,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1879 г. № 113",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1187,
+        "context_end": 1605,
+        "context_original": " акты на наслѣдственное имѣніе совершены наслѣдниками по закону, права которыхъ впослѣдствіи оспорены не наслѣдниками по завѣщанію, а другими ближайшими наслѣдниками по закону же (рѣш. 1879 г. № 113, 1876 г. № 46). Въ основѣ этихъ указаній лежало то положеніе, что изложенное въ ст. 1301 правило не составляетъ правила исключительнаго, но служитъ примѣненіемъ къ частному случаю другаго общаго положенія: продажа и зал",
+        "passage_id": "1904-023:0-1401",
+        "pages": [
+          57
+        ],
+        "sources": [
+          {
+            "page": 57,
+            "page_method": "header",
+            "file": "p0029_R.txt",
+            "start": 1169,
+            "end": 1834
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-023?mode=precedent&ref=1904-023%3A1879%3A113%3A1372&at=1367&end=1385",
+        "scan_available": true
+      },
+      {
+        "id": "1904-023:1876:46:1387",
+        "source_id": "1904-023",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "18d45efdc41bb9ca1b75c1f757d15f216745c61c202b73546d731de097385121",
+        "year": 1876,
+        "start": 1367,
+        "end": 1399,
+        "department": null,
+        "association": null,
+        "number": 46,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1387,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1879 г. № 113, 1876 г. № 46",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1187,
+        "context_end": 1619,
+        "context_original": " акты на наслѣдственное имѣніе совершены наслѣдниками по закону, права которыхъ впослѣдствіи оспорены не наслѣдниками по завѣщанію, а другими ближайшими наслѣдниками по закону же (рѣш. 1879 г. № 113, 1876 г. № 46). Въ основѣ этихъ указаній лежало то положеніе, что изложенное въ ст. 1301 правило не составляетъ правила исключительнаго, но служитъ примѣненіемъ къ частному случаю другаго общаго положенія: продажа и залогъ дѣйствител",
+        "passage_id": "1904-023:0-1401",
+        "pages": [
+          57
+        ],
+        "sources": [
+          {
+            "page": 57,
+            "page_method": "header",
+            "file": "p0029_R.txt",
+            "start": 1169,
+            "end": 1834
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-023?mode=precedent&ref=1904-023%3A1876%3A46%3A1387&at=1367&end=1399",
+        "scan_available": true
+      },
+      {
+        "id": "1904-023:1891:105:1679",
+        "source_id": "1904-023",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "18d45efdc41bb9ca1b75c1f757d15f216745c61c202b73546d731de097385121",
+        "year": 1891,
+        "start": 1674,
+        "end": 1692,
+        "department": null,
+        "association": null,
+        "number": 105,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1679,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1891 г. № 105",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1494,
+        "context_end": 1912,
+        "context_original": "етъ правила исключительнаго, но служитъ примѣненіемъ къ частному случаю другаго общаго положенія: продажа и залогъ дѣйствительны, „яко учиненные на имѣніе свободное и безспорное“ (рѣш. 1891 г. № 105 1877 г. № 59). Законъ предоставляетъ истинному наслѣднику искать себѣ удовлетворенія отъ лица, неправильно воспользовавшагося наслѣдственнымъ имуществомъ, но ограждаетъ третьихъ лицъ, добросовѣстно пріобрѣвшихъ это имущ",
+        "passage_id": "1904-023:1169-2416",
+        "pages": [
+          57
+        ],
+        "sources": [
+          {
+            "page": 57,
+            "page_method": "header",
+            "file": "p0029_R.txt",
+            "start": 1169,
+            "end": 1834
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-023?mode=precedent&ref=1904-023%3A1891%3A105%3A1679&at=1674&end=1692",
+        "scan_available": true
+      },
+      {
+        "id": "1904-023:1877:59:1693",
+        "source_id": "1904-023",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "18d45efdc41bb9ca1b75c1f757d15f216745c61c202b73546d731de097385121",
+        "year": 1877,
+        "start": 1674,
+        "end": 1705,
+        "department": null,
+        "association": null,
+        "number": 59,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1693,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1891 г. № 105 1877 г. № 59",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1494,
+        "context_end": 1925,
+        "context_original": "етъ правила исключительнаго, но служитъ примѣненіемъ къ частному случаю другаго общаго положенія: продажа и залогъ дѣйствительны, „яко учиненные на имѣніе свободное и безспорное“ (рѣш. 1891 г. № 105 1877 г. № 59). Законъ предоставляетъ истинному наслѣднику искать себѣ удовлетворенія отъ лица, неправильно воспользовавшагося наслѣдственнымъ имуществомъ, но ограждаетъ третьихъ лицъ, добросовѣстно пріобрѣвшихъ это имущество отъ тог",
+        "passage_id": "1904-023:1169-2416",
+        "pages": [
+          57
+        ],
+        "sources": [
+          {
+            "page": 57,
+            "page_method": "header",
+            "file": "p0029_R.txt",
+            "start": 1169,
+            "end": 1834
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-023?mode=precedent&ref=1904-023%3A1877%3A59%3A1693&at=1674&end=1705",
+        "scan_available": true
+      },
+      {
+        "id": "1904-023:1888:95:2743",
+        "source_id": "1904-023",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "18d45efdc41bb9ca1b75c1f757d15f216745c61c202b73546d731de097385121",
+        "year": 1888,
+        "start": 2738,
+        "end": 2755,
+        "department": null,
+        "association": null,
+        "number": 95,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2743,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1888 г. № 95",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2558,
+        "context_end": 2975,
+        "context_original": "ъ, не просившій о выдѣлѣ указной части, хотя бы и владѣлъ имѣніемъ сообща съ наслѣдникомъ (какъ это установила палата въ данномъ дѣлѣ), не становится собственникомъ указной части (рѣш. 1888 г. № 95).— Посему, признавая рѣшеніе судебной палаты, коимъ удовлетворенъ искъ Елены Мегвинетхуцесовой къ Тифлисскому дворянскому земельному банку о признаніи за истицею права собственности на 1/7 долю имѣнія, заложеннаго сыном",
+        "passage_id": "1904-023:2193-3417",
+        "pages": [
+          58
+        ],
+        "sources": [
+          {
+            "page": 58,
+            "page_method": "header",
+            "file": "p0030_L.txt",
+            "start": 2193,
+            "end": 3417
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-023?mode=precedent&ref=1904-023%3A1888%3A95%3A2743&at=2738&end=2755",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-023",
     "scan_pages": [

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-102",
@@ -59,6 +59,320 @@
     "participant_ids": [
       "1905-31ea08e89046",
       "1905-9b16f0b0dd80"
+    ],
+    "precedents": [
+      {
+        "id": "1905-102:1900:27:1434",
+        "source_id": "1905-102",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "2a70f876a228419a20057e4123d68a984fc6f4f180929924297a9d1db765ef66",
+        "year": 1900,
+        "start": 1395,
+        "end": 1446,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 27,
+        "department_start": 1403,
+        "department_end": 1412,
+        "citation_start": 1434,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеній общ. собр. касс. деп. Пр. Сен. 1900 г. № 27",
+        "target_url": null,
+        "department_evidence": "общ. собр",
+        "context_start": 1215,
+        "context_end": 1666,
+        "context_original": "да, имѣя своимъ предметомъ погашеніе долга отца за проценты съ 500 руб., на которые отецъ отвѣтчика выдалъ истцу заемное обязательство, не обязателенъ для него, отвѣтчика, въ виду рѣшеній общ. собр. касс. деп. Пр. Сен. 1900 г. № 27 и 1897 г. № 29, и 3) что истецъ не доказалъ существованія долга по заемному письму. Мировой судья нашелъ, что искъ доказанъ договоромъ отъ 11 января 1901 г.; что, по показанію свидѣтелей, спорною землею владѣлъ и распор",
+        "passage_id": "1905-102:0-1530",
+        "pages": [
+          277
+        ],
+        "sources": [
+          {
+            "page": 277,
+            "page_method": "header",
+            "file": "p0139_R.txt",
+            "start": 1336,
+            "end": 2975
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-102?mode=precedent&ref=1905-102%3A1900%3A27%3A1434&at=1395&end=1446",
+        "scan_available": true
+      },
+      {
+        "id": "1905-102:1897:29:1449",
+        "source_id": "1905-102",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "2a70f876a228419a20057e4123d68a984fc6f4f180929924297a9d1db765ef66",
+        "year": 1897,
+        "start": 1395,
+        "end": 1461,
+        "department": "Общее собрание",
+        "association": "list",
+        "number": 29,
+        "department_start": 1403,
+        "department_end": 1412,
+        "citation_start": 1449,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеній общ. собр. касс. деп. Пр. Сен. 1900 г. № 27 и 1897 г. № 29",
+        "target_url": null,
+        "department_evidence": "общ. собр",
+        "context_start": 1215,
+        "context_end": 1681,
+        "context_original": "да, имѣя своимъ предметомъ погашеніе долга отца за проценты съ 500 руб., на которые отецъ отвѣтчика выдалъ истцу заемное обязательство, не обязателенъ для него, отвѣтчика, въ виду рѣшеній общ. собр. касс. деп. Пр. Сен. 1900 г. № 27 и 1897 г. № 29, и 3) что истецъ не доказалъ существованія долга по заемному письму. Мировой судья нашелъ, что искъ доказанъ договоромъ отъ 11 января 1901 г.; что, по показанію свидѣтелей, спорною землею владѣлъ и распоряжался самостоя",
+        "passage_id": "1905-102:0-1530",
+        "pages": [
+          277
+        ],
+        "sources": [
+          {
+            "page": 277,
+            "page_method": "header",
+            "file": "p0139_R.txt",
+            "start": 1336,
+            "end": 2975
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-102?mode=precedent&ref=1905-102%3A1897%3A29%3A1449&at=1395&end=1461",
+        "scan_available": true
+      },
+      {
+        "id": "1905-102:1900:27:2981",
+        "source_id": "1905-102",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "2a70f876a228419a20057e4123d68a984fc6f4f180929924297a9d1db765ef66",
+        "year": 1900,
+        "start": 2957,
+        "end": 2993,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 27,
+        "department_start": 2965,
+        "department_end": 2974,
+        "citation_start": 2981,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніе общ. собр. Сен. 1900 г. № 27",
+        "target_url": null,
+        "department_evidence": "общ. собр",
+        "context_start": 2777,
+        "context_end": 3213,
+        "context_original": " покойнаго отца его на отдачу въ аренду истцу спорной земли и на необязательность исполненія аренднаго договора для апеллятора, какъ не наслѣдника, не оправдывается ссылкой его на рѣшеніе общ. собр. Сен. 1900 г. № 27, такъ какъ симъ рѣшеніемъ разъяснено, что старшій членъ крестьянскаго двора, не имѣя права личной и исключительной собственности на подворный надѣлъ, составляющій достояніе всѣхъ членовъ двора въ совокупности, не можетъ",
+        "passage_id": "1905-102:2736-4007",
+        "pages": [
+          277
+        ],
+        "sources": [
+          {
+            "page": 277,
+            "page_method": "header",
+            "file": "p0139_R.txt",
+            "start": 2736,
+            "end": 4007
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-102?mode=precedent&ref=1905-102%3A1900%3A27%3A2981&at=2957&end=2993",
+        "scan_available": true
+      },
+      {
+        "id": "1905-102:1884:67:5835",
+        "source_id": "1905-102",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "2a70f876a228419a20057e4123d68a984fc6f4f180929924297a9d1db765ef66",
+        "year": 1884,
+        "start": 5810,
+        "end": 5847,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 67,
+        "department_start": 5820,
+        "department_end": 5834,
+        "citation_start": 5835,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніями гр. касс. деп. 1884 г. № 67",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 5696,
+        "context_end": 6067,
+        "context_original": "Выслушавъ заключеніе исп. обяз. товарища оберъ-прокурора, Правительствующій Сенатъ находитъ, что, какъ разъяснено рѣшеніями гр. касс. деп. 1884 г. № 67, 1893 г. № 91 и общ. собр. 1892 г. № 41, представителемъ всего крестьянскаго двора предъ обществомъ и казною является домохозяинъ, на имя котораго выдана данная, на немъ лежитъ отвѣтственность въ исправномъ взносѣ слѣду",
+        "passage_id": "1905-102:5143-7009",
+        "pages": [
+          278
+        ],
+        "sources": [
+          {
+            "page": 278,
+            "page_method": "header",
+            "file": "p0140_L.txt",
+            "start": 5696,
+            "end": 7009
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-102?mode=precedent&ref=1905-102%3A1884%3A67%3A5835&at=5810&end=5847",
+        "scan_available": true
+      },
+      {
+        "id": "1905-102:1893:91:5849",
+        "source_id": "1905-102",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "2a70f876a228419a20057e4123d68a984fc6f4f180929924297a9d1db765ef66",
+        "year": 1893,
+        "start": 5810,
+        "end": 5861,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 91,
+        "department_start": 5820,
+        "department_end": 5834,
+        "citation_start": 5849,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніями гр. касс. деп. 1884 г. № 67, 1893 г. № 91",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 5696,
+        "context_end": 6081,
+        "context_original": "Выслушавъ заключеніе исп. обяз. товарища оберъ-прокурора, Правительствующій Сенатъ находитъ, что, какъ разъяснено рѣшеніями гр. касс. деп. 1884 г. № 67, 1893 г. № 91 и общ. собр. 1892 г. № 41, представителемъ всего крестьянскаго двора предъ обществомъ и казною является домохозяинъ, на имя котораго выдана данная, на немъ лежитъ отвѣтственность въ исправномъ взносѣ слѣдующихъ по закон",
+        "passage_id": "1905-102:5143-7009",
+        "pages": [
+          278
+        ],
+        "sources": [
+          {
+            "page": 278,
+            "page_method": "header",
+            "file": "p0140_L.txt",
+            "start": 5696,
+            "end": 7009
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-102?mode=precedent&ref=1905-102%3A1893%3A91%3A5849&at=5810&end=5861",
+        "scan_available": true
+      },
+      {
+        "id": "1905-102:1892:41:5875",
+        "source_id": "1905-102",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "2a70f876a228419a20057e4123d68a984fc6f4f180929924297a9d1db765ef66",
+        "year": 1892,
+        "start": 5810,
+        "end": 5887,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 41,
+        "department_start": 5864,
+        "department_end": 5873,
+        "citation_start": 5875,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніями гр. касс. деп. 1884 г. № 67, 1893 г. № 91 и общ. собр. 1892 г. № 41",
+        "target_url": null,
+        "department_evidence": "общ. собр",
+        "context_start": 5696,
+        "context_end": 6107,
+        "context_original": "Выслушавъ заключеніе исп. обяз. товарища оберъ-прокурора, Правительствующій Сенатъ находитъ, что, какъ разъяснено рѣшеніями гр. касс. деп. 1884 г. № 67, 1893 г. № 91 и общ. собр. 1892 г. № 41, представителемъ всего крестьянскаго двора предъ обществомъ и казною является домохозяинъ, на имя котораго выдана данная, на немъ лежитъ отвѣтственность въ исправномъ взносѣ слѣдующихъ по закону платежей, ему принадлежи",
+        "passage_id": "1905-102:5143-7009",
+        "pages": [
+          278
+        ],
+        "sources": [
+          {
+            "page": 278,
+            "page_method": "header",
+            "file": "p0140_L.txt",
+            "start": 5696,
+            "end": 7009
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-102?mode=precedent&ref=1905-102%3A1892%3A41%3A5875&at=5810&end=5887",
+        "scan_available": true
+      },
+      {
+        "id": "1905-102:1897:29:6410",
+        "source_id": "1905-102",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "2a70f876a228419a20057e4123d68a984fc6f4f180929924297a9d1db765ef66",
+        "year": 1897,
+        "start": 6348,
+        "end": 6424,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 29,
+        "department_start": 6348,
+        "department_end": 6362,
+        "citation_start": 6410,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "Общее собраніе 1, 2 и кассаціонныхъ департаментовъ въ рѣшеніи 1897 года № 29",
+        "target_url": null,
+        "department_evidence": "Общее собраніе",
+        "context_start": 6168,
+        "context_end": 6644,
+        "context_original": "енія имъ договора объ отдачѣ подворнаго участка въ арендное содержаніе, для дѣйствительности подобнаго договора не требуется согласія прочихъ членовъ семьи на заключеніе договора. Общее собраніе 1, 2 и кассаціонныхъ департаментовъ въ рѣшеніи 1897 года № 29 признало, что надѣльныя земли крестьянъ не могутъ подлежать завѣщательнымъ распоряженіямъ, и въ рѣшеніи 1900 г. № 27 разъяснило, что эти земли принадлежатъ или крестьянскому обществу, или двору, при чемъ старшій членъ д",
+        "passage_id": "1905-102:5143-7009",
+        "pages": [
+          278
+        ],
+        "sources": [
+          {
+            "page": 278,
+            "page_method": "header",
+            "file": "p0140_L.txt",
+            "start": 5696,
+            "end": 7009
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-102?mode=precedent&ref=1905-102%3A1897%3A29%3A6410&at=6348&end=6424",
+        "scan_available": true
+      },
+      {
+        "id": "1905-102:1900:27:6529",
+        "source_id": "1905-102",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "2a70f876a228419a20057e4123d68a984fc6f4f180929924297a9d1db765ef66",
+        "year": 1900,
+        "start": 6521,
+        "end": 6541,
+        "department": null,
+        "association": null,
+        "number": 27,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6529,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1900 г. № 27",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 6341,
+        "context_end": 6761,
+        "context_original": "овора. Общее собраніе 1, 2 и кассаціонныхъ департаментовъ въ рѣшеніи 1897 года № 29 признало, что надѣльныя земли крестьянъ не могутъ подлежать завѣщательнымъ распоряженіямъ, и въ рѣшеніи 1900 г. № 27 разъяснило, что эти земли принадлежатъ или крестьянскому обществу, или двору, при чемъ старшій членъ двора или семьи является распорядителемъ надѣла; въ случаѣ смерти его, старшій членъ семьи заступаетъ мѣсто покойнаго ",
+        "passage_id": "1905-102:5143-7009",
+        "pages": [
+          278
+        ],
+        "sources": [
+          {
+            "page": 278,
+            "page_method": "header",
+            "file": "p0140_L.txt",
+            "start": 5696,
+            "end": 7009
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-102?mode=precedent&ref=1905-102%3A1900%3A27%3A6529&at=6521&end=6541",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-102",
     "scan_pages": [

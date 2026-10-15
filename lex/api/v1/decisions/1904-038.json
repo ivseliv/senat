@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-038",
@@ -58,6 +58,164 @@
       "1904-1bc8b4e54364",
       "1904-a0db045055a6",
       "1904-b37f1359914f"
+    ],
+    "precedents": [
+      {
+        "id": "1904-038:1887:52:2735",
+        "source_id": "1904-038",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "ebbe7219fc06000416daca7d6f9b11c28fd16970371c0c042f9bfa0ab0941426",
+        "year": 1887,
+        "start": 2696,
+        "end": 2747,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 52,
+        "department_start": 2701,
+        "department_end": 2734,
+        "citation_start": 2735,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гражд. кассаціоннаго департамента 1887 г. № 52",
+        "target_url": null,
+        "department_evidence": "гражд. кассаціоннаго департамента",
+        "context_start": 2516,
+        "context_end": 2967,
+        "context_original": "ованіе лишь въ суммѣ 455 р., которая съ процентами не превышала бы 500 руб.,—не можетъ быть принято во вниманіе, какъ заявленное, согласно разъясненію Правительствующаго Сената въ рѣш. гражд. кассаціоннаго департамента 1887 г. № 52, несвоевременно. Въ виду вышеизложеннаго, мировой съѣздъ опредѣлилъ: рѣшеніе мироваго судьи, состоявшееся 6 октября 1900 г., отмѣнить и настоящее дѣло производствомъ прекратить. Въ кассаціонной жалобѣ повѣренный истца х",
+        "passage_id": "1904-038:1440-2925",
+        "pages": [
+          102
+        ],
+        "sources": [
+          {
+            "page": 102,
+            "page_method": "header",
+            "file": "p0052_L.txt",
+            "start": 2634,
+            "end": 3244
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-038?mode=precedent&ref=1904-038%3A1887%3A52%3A2735&at=2696&end=2747",
+        "scan_available": true
+      },
+      {
+        "id": "1904-038:1881:108:3155",
+        "source_id": "1904-038",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "ebbe7219fc06000416daca7d6f9b11c28fd16970371c0c042f9bfa0ab0941426",
+        "year": 1881,
+        "start": 3119,
+        "end": 3168,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 108,
+        "department_start": 3127,
+        "department_end": 3154,
+        "citation_start": 3155,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи гражд. кассац. департамента 1881 г. № 108",
+        "target_url": null,
+        "department_evidence": "гражд. кассац. департамента",
+        "context_start": 2939,
+        "context_end": 3244,
+        "context_original": "ой жалобѣ повѣренный истца ходатайствуетъ объ отмѣнѣ этого рѣшенія, главнымъ образомъ, на основаніи 332 ст. уст. гр. суд., дающей, по разъясненію ея Правительствующимъ Сенатомъ въ рѣшеніи гражд. кассац. департамента 1881 г. № 108, право истцу на уменьшеніе искового требованія и во 2-й судебной инстанціи.",
+        "passage_id": "1904-038:2634-4391",
+        "pages": [
+          102
+        ],
+        "sources": [
+          {
+            "page": 102,
+            "page_method": "header",
+            "file": "p0052_L.txt",
+            "start": 2634,
+            "end": 3244
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-038?mode=precedent&ref=1904-038%3A1881%3A108%3A3155&at=3119&end=3168",
+        "scan_available": true
+      },
+      {
+        "id": "1904-038:1870:444:5333",
+        "source_id": "1904-038",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "ebbe7219fc06000416daca7d6f9b11c28fd16970371c0c042f9bfa0ab0941426",
+        "year": 1870,
+        "start": 5287,
+        "end": 5346,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 444,
+        "department_start": 5292,
+        "department_end": 5306,
+        "citation_start": 5333,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. д-та Правительствующаго Сената 1870 г. № 444",
+        "target_url": null,
+        "department_evidence": "гр. касс. д-та",
+        "context_start": 5107,
+        "context_end": 5566,
+        "context_original": "жетъ, въ силу 332 ст. уст. гр. суд., имѣть мѣсто при томъ условіи, когда искъ, по цѣнѣ своей, предъявленъ въ предѣлахъ подсудности, и это заключеніе находитъ подтвержденіе себѣ въ рѣш. гр. касс. д-та Правительствующаго Сената 1870 г. № 444, признавшаго дѣло по иску, предъявленному у мироваго судьи въ 700 р. и уменьшенному, затѣмъ, въ мировомъ съѣздѣ до 500 руб., неподсуднымъ мировымъ судебнымъ установленіямъ, и 5) изъ этого общаго правила Правительствующі",
+        "passage_id": "1904-038:4106-6204",
+        "pages": [
+          102
+        ],
+        "sources": [
+          {
+            "page": 102,
+            "page_method": "header",
+            "file": "p0052_L.txt",
+            "start": 4106,
+            "end": 5399
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-038?mode=precedent&ref=1904-038%3A1870%3A444%3A5333&at=5287&end=5346",
+        "scan_available": true
+      },
+      {
+        "id": "1904-038:1887:52:5604",
+        "source_id": "1904-038",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "ebbe7219fc06000416daca7d6f9b11c28fd16970371c0c042f9bfa0ab0941426",
+        "year": 1887,
+        "start": 5578,
+        "end": 5616,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 52,
+        "department_start": 5586,
+        "department_end": 5603,
+        "citation_start": 5604,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи гражд. касс. д-та 1887 г. № 52",
+        "target_url": null,
+        "department_evidence": "гражд. касс. д-та",
+        "context_start": 5398,
+        "context_end": 5836,
+        "context_original": "о судьи въ 700 р. и уменьшенному, затѣмъ, въ мировомъ съѣздѣ до 500 руб., неподсуднымъ мировымъ судебнымъ установленіямъ, и 5) изъ этого общаго правила Правительствующій Сенатъ въ рѣшеніи гражд. касс. д-та 1887 г. № 52 сдѣлалъ лишь то исключеніе, что если подобное уменьшеніе последовало еще до разсмотрѣнія дѣла въ первой инстанціи, то хотя бы искъ, по первоначально показанной въ исковомъ прошеніи суммѣ, и представлялся неподсуднымъ ми",
+        "passage_id": "1904-038:4106-6204",
+        "pages": [
+          103
+        ],
+        "sources": [
+          {
+            "page": 103,
+            "page_method": "header",
+            "file": "p0052_R.txt",
+            "start": 5400,
+            "end": 6204
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-038?mode=precedent&ref=1904-038%3A1887%3A52%3A5604&at=5578&end=5616",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-038",
     "scan_pages": [

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-089",
@@ -47,6 +47,242 @@
     ],
     "participant_ids": [
       "1904-ecfd31538ba0"
+    ],
+    "precedents": [
+      {
+        "id": "1904-089:1893:68:2715",
+        "source_id": "1904-089",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "73ee96caafe667252229cda4b88e31fcba47021b64f766fc01d2ab89fe003c30",
+        "year": 1893,
+        "start": 2681,
+        "end": 2727,
+        "department": null,
+        "association": null,
+        "number": 68,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2715,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшенія Правительствующаго Сената 1893 г. № 68",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2501,
+        "context_end": 2869,
+        "context_original": "адзе, посредствомъ сообщенія ему невѣрныхъ свѣдѣній, обѣщаній и угрозъ, отъ участія въ торгѣ, а равно фиктивное участіе въ торгѣ Звиноградскаго, не заслуживаютъ уваженія, за силою рѣшенія Правительствующаго Сената 1893 г. № 68, и не подлежатъ повѣркѣ въ порядкѣ гражданскаго судопроизводства. Вслѣдствіе сего, судебная палата жалобу Милилова оставила безъ послѣдствій.",
+        "passage_id": "1904-089:1462-2869",
+        "pages": [
+          245
+        ],
+        "sources": [
+          {
+            "page": 245,
+            "page_method": "header",
+            "file": "p0123_R.txt",
+            "start": 2597,
+            "end": 2869
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-089?mode=precedent&ref=1904-089%3A1893%3A68%3A2715&at=2681&end=2727",
+        "scan_available": true
+      },
+      {
+        "id": "1904-089:1888:72:3527",
+        "source_id": "1904-089",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "73ee96caafe667252229cda4b88e31fcba47021b64f766fc01d2ab89fe003c30",
+        "year": 1888,
+        "start": 3509,
+        "end": 3545,
+        "department": null,
+        "association": null,
+        "number": 72,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3527,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ, именно 1888 г. № 72, 1890",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3329,
+        "context_end": 3765,
+        "context_original": "нѣ Кобуловой купить имѣніе по низкой цѣнѣ, или были устранены отъ торга повѣреннымъ Кобуловой посредствомъ ложныхъ увѣреній, увѣщаній и угрозъ. Правительствующій Сенатъ во многихъ рѣшеніяхъ, именно 1888 г. № 72, 1890 № 14, 1897 г. № 70 и 1898 г. № 103, разъяснилъ, что законы о публичной продажѣ, обусловливая приступъ къ торгу наличностью не менѣе двухъ покупателей (ст. 1048 уст. гр. суд.) и признавая торгъ несостоявшимся при явкѣ то",
+        "passage_id": "1904-089:2597-4638",
+        "pages": [
+          246
+        ],
+        "sources": [
+          {
+            "page": 246,
+            "page_method": "header",
+            "file": "p0124_L.txt",
+            "start": 3006,
+            "end": 4638
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-089?mode=precedent&ref=1904-089%3A1888%3A72%3A3527&at=3509&end=3545",
+        "scan_available": true
+      },
+      {
+        "id": "1904-089:1888:1890:3527",
+        "source_id": "1904-089",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "73ee96caafe667252229cda4b88e31fcba47021b64f766fc01d2ab89fe003c30",
+        "year": 1888,
+        "start": 3509,
+        "end": 3545,
+        "department": null,
+        "association": null,
+        "number": 1890,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3527,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ, именно 1888 г. № 72, 1890",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3329,
+        "context_end": 3765,
+        "context_original": "нѣ Кобуловой купить имѣніе по низкой цѣнѣ, или были устранены отъ торга повѣреннымъ Кобуловой посредствомъ ложныхъ увѣреній, увѣщаній и угрозъ. Правительствующій Сенатъ во многихъ рѣшеніяхъ, именно 1888 г. № 72, 1890 № 14, 1897 г. № 70 и 1898 г. № 103, разъяснилъ, что законы о публичной продажѣ, обусловливая приступъ къ торгу наличностью не менѣе двухъ покупателей (ст. 1048 уст. гр. суд.) и признавая торгъ несостоявшимся при явкѣ то",
+        "passage_id": "1904-089:2597-4638",
+        "pages": [
+          246
+        ],
+        "sources": [
+          {
+            "page": 246,
+            "page_method": "header",
+            "file": "p0124_L.txt",
+            "start": 3006,
+            "end": 4638
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-089?mode=precedent&ref=1904-089%3A1888%3A1890%3A3527&at=3509&end=3545",
+        "scan_available": true
+      },
+      {
+        "id": "1904-089:1897:70:3552",
+        "source_id": "1904-089",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "73ee96caafe667252229cda4b88e31fcba47021b64f766fc01d2ab89fe003c30",
+        "year": 1897,
+        "start": 3509,
+        "end": 3564,
+        "department": null,
+        "association": null,
+        "number": 70,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3552,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ, именно 1888 г. № 72, 1890 № 14, 1897 г. № 70",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3329,
+        "context_end": 3784,
+        "context_original": "нѣ Кобуловой купить имѣніе по низкой цѣнѣ, или были устранены отъ торга повѣреннымъ Кобуловой посредствомъ ложныхъ увѣреній, увѣщаній и угрозъ. Правительствующій Сенатъ во многихъ рѣшеніяхъ, именно 1888 г. № 72, 1890 № 14, 1897 г. № 70 и 1898 г. № 103, разъяснилъ, что законы о публичной продажѣ, обусловливая приступъ къ торгу наличностью не менѣе двухъ покупателей (ст. 1048 уст. гр. суд.) и признавая торгъ несостоявшимся при явкѣ только одного покупат",
+        "passage_id": "1904-089:2597-4638",
+        "pages": [
+          246
+        ],
+        "sources": [
+          {
+            "page": 246,
+            "page_method": "header",
+            "file": "p0124_L.txt",
+            "start": 3006,
+            "end": 4638
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-089?mode=precedent&ref=1904-089%3A1897%3A70%3A3552&at=3509&end=3564",
+        "scan_available": true
+      },
+      {
+        "id": "1904-089:1898:103:3567",
+        "source_id": "1904-089",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "73ee96caafe667252229cda4b88e31fcba47021b64f766fc01d2ab89fe003c30",
+        "year": 1898,
+        "start": 3509,
+        "end": 3580,
+        "department": null,
+        "association": null,
+        "number": 103,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3567,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ, именно 1888 г. № 72, 1890 № 14, 1897 г. № 70 и 1898 г. № 103",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3329,
+        "context_end": 3800,
+        "context_original": "нѣ Кобуловой купить имѣніе по низкой цѣнѣ, или были устранены отъ торга повѣреннымъ Кобуловой посредствомъ ложныхъ увѣреній, увѣщаній и угрозъ. Правительствующій Сенатъ во многихъ рѣшеніяхъ, именно 1888 г. № 72, 1890 № 14, 1897 г. № 70 и 1898 г. № 103, разъяснилъ, что законы о публичной продажѣ, обусловливая приступъ къ торгу наличностью не менѣе двухъ покупателей (ст. 1048 уст. гр. суд.) и признавая торгъ несостоявшимся при явкѣ только одного покупателя (ст. 1170), ",
+        "passage_id": "1904-089:2597-4638",
+        "pages": [
+          246
+        ],
+        "sources": [
+          {
+            "page": 246,
+            "page_method": "header",
+            "file": "p0124_L.txt",
+            "start": 3006,
+            "end": 4638
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-089?mode=precedent&ref=1904-089%3A1898%3A103%3A3567&at=3509&end=3580",
+        "scan_available": true
+      },
+      {
+        "id": "1904-089:1893:68:5276",
+        "source_id": "1904-089",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "73ee96caafe667252229cda4b88e31fcba47021b64f766fc01d2ab89fe003c30",
+        "year": 1893,
+        "start": 5242,
+        "end": 5288,
+        "department": null,
+        "association": null,
+        "number": 68,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5276,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніе Правительствующаго Сената 1893 г. № 68",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5062,
+        "context_end": 5508,
+        "context_original": "дствами имѣетъ послѣдствіемъ тоже дѣйствительное участіе въ торгѣ только одного лица и посему должно также влечь за собою признаніе торга несостоявшимся. Ссылка судебной палаты на рѣшеніе Правительствующаго Сената 1893 г. № 68 представляется неправильной, потому что въ этомъ рѣшеніи признано, что одно только заявленіе заинтересованнаго лица о предусмотрѣнной въ 1181 ст. улож. о нак. стачкѣ на торгѣ не можетъ служить основаніемъ къ пріостановл",
+        "passage_id": "1904-089:4403-6512",
+        "pages": [
+          246
+        ],
+        "sources": [
+          {
+            "page": 246,
+            "page_method": "header",
+            "file": "p0124_L.txt",
+            "start": 4403,
+            "end": 6053
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-089?mode=precedent&ref=1904-089%3A1893%3A68%3A5276&at=5242&end=5288",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-089",
     "scan_pages": [

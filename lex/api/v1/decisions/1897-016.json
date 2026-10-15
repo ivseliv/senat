@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-016",
@@ -43,6 +43,47 @@
       "1897-800cc4b3c3d5",
       "1897-dbf15b7642f9",
       "1897-6ce26a5baf30"
+    ],
+    "precedents": [
+      {
+        "id": "1897-016:1883:83:105",
+        "source_id": "1897-016",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "9cad3b7099936c9c3ba29a5854906de1fd555c53e952e097456ec00716ce9876",
+        "year": 1883,
+        "start": 93,
+        "end": 120,
+        "department": null,
+        "association": null,
+        "number": 83,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 105,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи его 1883 г. за № 83",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 0,
+        "context_end": 340,
+        "context_original": "Выслушавъ заключеніе товарища оберъ-прокурора, Правительствующій Сенатъ усматриваетъ: что въ рѣшеніи его 1883 г. за № 83, послѣ приведеннаго тамъ ряда рѣшеній, относящихся къ спорамъ, возникшимъ по поводу найденныхъ вещей, разъяснено, что для того, чтобы обрѣтеніе потерянной вещи имѣла значеніе находки, дающей нашедшему право на вознаграж",
+        "passage_id": "1897-016:0-1756",
+        "pages": [
+          71
+        ],
+        "sources": [
+          {
+            "page": 71,
+            "page_method": "header",
+            "file": "p0046_R.txt",
+            "start": 0,
+            "end": 1662
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-016?mode=precedent&ref=1897-016%3A1883%3A83%3A105&at=93&end=120",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-016",
     "scan_pages": [

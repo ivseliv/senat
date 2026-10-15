@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-070",
@@ -57,6 +57,320 @@
     ],
     "participant_ids": [
       "1897-8024999c8c6f"
+    ],
+    "precedents": [
+      {
+        "id": "1897-070:1880:165:1942",
+        "source_id": "1897-070",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "34fa61d1e1754c30cc154fdf43ec4c89ee66a7cc7ba3d8a2c143b780a23f8508",
+        "year": 1880,
+        "start": 1905,
+        "end": 1961,
+        "department": null,
+        "association": null,
+        "number": 165,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1942,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеній Правительствующаго Сената за 1880 г. № 165, 1881",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1725,
+        "context_end": 2181,
+        "context_original": "ы на обжалованіе указываемыхъ имъ нарушеній не положено срока. Такое указаніе нѣтъ законныхъ основаній признать правильнымъ; напротивъ, изъ точнаго смысла 1205 ст. уст. гр. суд. и рѣшеній Правительствующаго Сената за 1880 г. № 165, 1881 № 147, 1884 г. № 104, 1887 г. № 57 и многихъ другихъ видно, что всѣ участвующія въ торговомъ производствѣ лица, разъ они находятъ неправильнымъ по какимъ бы то ни было основаніямъ производство торговъ, должны неправильн",
+        "passage_id": "1897-070:1542-3395",
+        "pages": [
+          231
+        ],
+        "sources": [
+          {
+            "page": 231,
+            "page_method": "header",
+            "file": "p0126_R.txt",
+            "start": 1542,
+            "end": 2534
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-070?mode=precedent&ref=1897-070%3A1880%3A165%3A1942&at=1905&end=1961",
+        "scan_available": true
+      },
+      {
+        "id": "1897-070:1880:1881:1942",
+        "source_id": "1897-070",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "34fa61d1e1754c30cc154fdf43ec4c89ee66a7cc7ba3d8a2c143b780a23f8508",
+        "year": 1880,
+        "start": 1905,
+        "end": 1961,
+        "department": null,
+        "association": null,
+        "number": 1881,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1942,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеній Правительствующаго Сената за 1880 г. № 165, 1881",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1725,
+        "context_end": 2181,
+        "context_original": "ы на обжалованіе указываемыхъ имъ нарушеній не положено срока. Такое указаніе нѣтъ законныхъ основаній признать правильнымъ; напротивъ, изъ точнаго смысла 1205 ст. уст. гр. суд. и рѣшеній Правительствующаго Сената за 1880 г. № 165, 1881 № 147, 1884 г. № 104, 1887 г. № 57 и многихъ другихъ видно, что всѣ участвующія въ торговомъ производствѣ лица, разъ они находятъ неправильнымъ по какимъ бы то ни было основаніямъ производство торговъ, должны неправильн",
+        "passage_id": "1897-070:1542-3395",
+        "pages": [
+          231
+        ],
+        "sources": [
+          {
+            "page": 231,
+            "page_method": "header",
+            "file": "p0126_R.txt",
+            "start": 1542,
+            "end": 2534
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-070?mode=precedent&ref=1897-070%3A1880%3A1881%3A1942&at=1905&end=1961",
+        "scan_available": true
+      },
+      {
+        "id": "1897-070:1884:104:1969",
+        "source_id": "1897-070",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "34fa61d1e1754c30cc154fdf43ec4c89ee66a7cc7ba3d8a2c143b780a23f8508",
+        "year": 1884,
+        "start": 1905,
+        "end": 1982,
+        "department": null,
+        "association": null,
+        "number": 104,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1969,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеній Правительствующаго Сената за 1880 г. № 165, 1881 № 147, 1884 г. № 104",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1725,
+        "context_end": 2202,
+        "context_original": "ы на обжалованіе указываемыхъ имъ нарушеній не положено срока. Такое указаніе нѣтъ законныхъ основаній признать правильнымъ; напротивъ, изъ точнаго смысла 1205 ст. уст. гр. суд. и рѣшеній Правительствующаго Сената за 1880 г. № 165, 1881 № 147, 1884 г. № 104, 1887 г. № 57 и многихъ другихъ видно, что всѣ участвующія въ торговомъ производствѣ лица, разъ они находятъ неправильнымъ по какимъ бы то ни было основаніямъ производство торговъ, должны неправильность эту обжаловать в",
+        "passage_id": "1897-070:1542-3395",
+        "pages": [
+          231
+        ],
+        "sources": [
+          {
+            "page": 231,
+            "page_method": "header",
+            "file": "p0126_R.txt",
+            "start": 1542,
+            "end": 2534
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-070?mode=precedent&ref=1897-070%3A1884%3A104%3A1969&at=1905&end=1982",
+        "scan_available": true
+      },
+      {
+        "id": "1897-070:1887:57:1984",
+        "source_id": "1897-070",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "34fa61d1e1754c30cc154fdf43ec4c89ee66a7cc7ba3d8a2c143b780a23f8508",
+        "year": 1887,
+        "start": 1905,
+        "end": 1996,
+        "department": null,
+        "association": null,
+        "number": 57,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1984,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеній Правительствующаго Сената за 1880 г. № 165, 1881 № 147, 1884 г. № 104, 1887 г. № 57",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1725,
+        "context_end": 2216,
+        "context_original": "ы на обжалованіе указываемыхъ имъ нарушеній не положено срока. Такое указаніе нѣтъ законныхъ основаній признать правильнымъ; напротивъ, изъ точнаго смысла 1205 ст. уст. гр. суд. и рѣшеній Правительствующаго Сената за 1880 г. № 165, 1881 № 147, 1884 г. № 104, 1887 г. № 57 и многихъ другихъ видно, что всѣ участвующія въ торговомъ производствѣ лица, разъ они находятъ неправильнымъ по какимъ бы то ни было основаніямъ производство торговъ, должны неправильность эту обжаловать въ частномъ пор",
+        "passage_id": "1897-070:1542-3395",
+        "pages": [
+          231
+        ],
+        "sources": [
+          {
+            "page": 231,
+            "page_method": "header",
+            "file": "p0126_R.txt",
+            "start": 1542,
+            "end": 2534
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-070?mode=precedent&ref=1897-070%3A1887%3A57%3A1984&at=1905&end=1996",
+        "scan_available": true
+      },
+      {
+        "id": "1897-070:1888:72:4200",
+        "source_id": "1897-070",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "34fa61d1e1754c30cc154fdf43ec4c89ee66a7cc7ba3d8a2c143b780a23f8508",
+        "year": 1888,
+        "start": 4190,
+        "end": 4212,
+        "department": null,
+        "association": null,
+        "number": 72,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4200,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ 1888 г. № 72",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4010,
+        "context_end": 4432,
+        "context_original": "торговавшихся трое были подставными лицами, участвовавшими въ торгѣ по стачкѣ съ пріобрѣвшимъ имѣніе съ торговъ, для того, чтобы торгъ могъ состояться? Правительствующій Сенатъ въ рѣшеніяхъ 1888 г. № 72 и 1890 г. № 14 признавалъ, что послѣдовавшая, при указанныхъ въ вопросѣ условіяхъ, продажа имѣнія, не имѣя значенія торга на имѣніе между двумя или нѣсколькими покупателями, подлежала бы оставленію безъ утвержденія со с",
+        "passage_id": "1897-070:3138-4845",
+        "pages": [
+          232
+        ],
+        "sources": [
+          {
+            "page": 232,
+            "page_method": "header",
+            "file": "p0127_L.txt",
+            "start": 3732,
+            "end": 4845
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-070?mode=precedent&ref=1897-070%3A1888%3A72%3A4200&at=4190&end=4212",
+        "scan_available": true
+      },
+      {
+        "id": "1897-070:1890:14:4215",
+        "source_id": "1897-070",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "34fa61d1e1754c30cc154fdf43ec4c89ee66a7cc7ba3d8a2c143b780a23f8508",
+        "year": 1890,
+        "start": 4190,
+        "end": 4227,
+        "department": null,
+        "association": null,
+        "number": 14,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4215,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ 1888 г. № 72 и 1890 г. № 14",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4010,
+        "context_end": 4447,
+        "context_original": "торговавшихся трое были подставными лицами, участвовавшими въ торгѣ по стачкѣ съ пріобрѣвшимъ имѣніе съ торговъ, для того, чтобы торгъ могъ состояться? Правительствующій Сенатъ въ рѣшеніяхъ 1888 г. № 72 и 1890 г. № 14 признавалъ, что послѣдовавшая, при указанныхъ въ вопросѣ условіяхъ, продажа имѣнія, не имѣя значенія торга на имѣніе между двумя или нѣсколькими покупателями, подлежала бы оставленію безъ утвержденія со стороны суда за ",
+        "passage_id": "1897-070:3138-4845",
+        "pages": [
+          232
+        ],
+        "sources": [
+          {
+            "page": 232,
+            "page_method": "header",
+            "file": "p0127_L.txt",
+            "start": 3732,
+            "end": 4845
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-070?mode=precedent&ref=1897-070%3A1890%3A14%3A4215&at=4190&end=4227",
+        "scan_available": true
+      },
+      {
+        "id": "1897-070:1884:104:5154",
+        "source_id": "1897-070",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "34fa61d1e1754c30cc154fdf43ec4c89ee66a7cc7ba3d8a2c143b780a23f8508",
+        "year": 1884,
+        "start": 5137,
+        "end": 5167,
+        "department": null,
+        "association": null,
+        "number": 104,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5154,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1881 № 147, 1884 г. № 104",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4957,
+        "context_end": 5387,
+        "context_original": "производствѣ по данному дѣлу, каковое обстоятельство, относящееся къ существу дѣла, не подлежитъ повѣркѣ въ кассаціонномъ порядкѣ. Правительствующимъ Сенатомъ было уже разъяснено (рѣш. 1881 № 147, 1884 г. № 104, 1887 г. № 57 и др.), что взыскатель и должникъ могутъ ограждать свои права въ отношеніи соблюденія законнаго порядка при описи и оцѣнкѣ, назначеніи имѣнія въ публичную продажу и самой публичной продажѣ своевременною по",
+        "passage_id": "1897-070:4591-6406",
+        "pages": [
+          232
+        ],
+        "sources": [
+          {
+            "page": 232,
+            "page_method": "header",
+            "file": "p0127_L.txt",
+            "start": 4591,
+            "end": 5487
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-070?mode=precedent&ref=1897-070%3A1884%3A104%3A5154&at=5137&end=5167",
+        "scan_available": true
+      },
+      {
+        "id": "1897-070:1887:57:5169",
+        "source_id": "1897-070",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "34fa61d1e1754c30cc154fdf43ec4c89ee66a7cc7ba3d8a2c143b780a23f8508",
+        "year": 1887,
+        "start": 5137,
+        "end": 5181,
+        "department": null,
+        "association": null,
+        "number": 57,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5169,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1881 № 147, 1884 г. № 104, 1887 г. № 57",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4957,
+        "context_end": 5401,
+        "context_original": "производствѣ по данному дѣлу, каковое обстоятельство, относящееся къ существу дѣла, не подлежитъ повѣркѣ въ кассаціонномъ порядкѣ. Правительствующимъ Сенатомъ было уже разъяснено (рѣш. 1881 № 147, 1884 г. № 104, 1887 г. № 57 и др.), что взыскатель и должникъ могутъ ограждать свои права въ отношеніи соблюденія законнаго порядка при описи и оцѣнкѣ, назначеніи имѣнія въ публичную продажу и самой публичной продажѣ своевременною подачею жалобы, ",
+        "passage_id": "1897-070:4591-6406",
+        "pages": [
+          232
+        ],
+        "sources": [
+          {
+            "page": 232,
+            "page_method": "header",
+            "file": "p0127_L.txt",
+            "start": 4591,
+            "end": 5487
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-070?mode=precedent&ref=1897-070%3A1887%3A57%3A5169&at=5137&end=5181",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-070",
     "scan_pages": [

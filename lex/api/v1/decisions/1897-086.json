@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-086",
@@ -69,6 +69,726 @@
     "participant_ids": [
       "1897-37b1966dc68f",
       "1897-e1123e1bfcab"
+    ],
+    "precedents": [
+      {
+        "id": "1897-086:1870:848:1841",
+        "source_id": "1897-086",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bfd564396a7ca1fb2f49c46412e14b8c9dba2ebee3e3055601dd612a1c3e8f2c",
+        "year": 1870,
+        "start": 1807,
+        "end": 1854,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 848,
+        "department_start": 1812,
+        "department_end": 1829,
+        "citation_start": 1841,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. департ. Пр. Сената 1870 г. № 848",
+        "target_url": null,
+        "department_evidence": "гр. касс. департ.",
+        "context_start": 1627,
+        "context_end": 2074,
+        "context_original": "5 статьи уст. гр. суд., касаясь порядка исчисленія и установленія сроковъ, правилами сего устава опредѣленныхъ, не могутъ быть примѣняемы при рѣшеніи вопроса объ исковой давности (рѣш. гр. касс. департ. Пр. Сената 1870 г. № 848), палата, руководствуясь 694 ст. т. X ч. I прим. (сб. рѣш. Сената 1881 г. № 41, 1883 г. № 11 и друг.), нашла, что крестьянинъ Антонъ Ракштисъ, не предъявляя иска въ теченіи земской давности со дня нарушенія его правъ, п",
+        "passage_id": "1897-086:1282-2952",
+        "pages": [
+          282
+        ],
+        "sources": [
+          {
+            "page": 282,
+            "page_method": "header",
+            "file": "p0152_L.txt",
+            "start": 1282,
+            "end": 2605
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-086?mode=precedent&ref=1897-086%3A1870%3A848%3A1841&at=1807&end=1854",
+        "scan_available": true
+      },
+      {
+        "id": "1897-086:1881:41:1921",
+        "source_id": "1897-086",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bfd564396a7ca1fb2f49c46412e14b8c9dba2ebee3e3055601dd612a1c3e8f2c",
+        "year": 1881,
+        "start": 1909,
+        "end": 1933,
+        "department": null,
+        "association": null,
+        "number": 41,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1921,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. Сената 1881 г. № 41",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1729,
+        "context_end": 2153,
+        "context_original": "ѣленныхъ, не могутъ быть примѣняемы при рѣшеніи вопроса объ исковой давности (рѣш. гр. касс. департ. Пр. Сената 1870 г. № 848), палата, руководствуясь 694 ст. т. X ч. I прим. (сб. рѣш. Сената 1881 г. № 41, 1883 г. № 11 и друг.), нашла, что крестьянинъ Антонъ Ракштисъ, не предъявляя иска въ теченіи земской давности со дня нарушенія его правъ, потерялъ свое право, почему и не признала возможнымъ входить въ обсужденіе насто",
+        "passage_id": "1897-086:1282-2952",
+        "pages": [
+          282
+        ],
+        "sources": [
+          {
+            "page": 282,
+            "page_method": "header",
+            "file": "p0152_L.txt",
+            "start": 1282,
+            "end": 2605
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-086?mode=precedent&ref=1897-086%3A1881%3A41%3A1921&at=1909&end=1933",
+        "scan_available": true
+      },
+      {
+        "id": "1897-086:1883:11:1935",
+        "source_id": "1897-086",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bfd564396a7ca1fb2f49c46412e14b8c9dba2ebee3e3055601dd612a1c3e8f2c",
+        "year": 1883,
+        "start": 1909,
+        "end": 1947,
+        "department": null,
+        "association": null,
+        "number": 11,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 1935,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. Сената 1881 г. № 41, 1883 г. № 11",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1729,
+        "context_end": 2167,
+        "context_original": "ѣленныхъ, не могутъ быть примѣняемы при рѣшеніи вопроса объ исковой давности (рѣш. гр. касс. департ. Пр. Сената 1870 г. № 848), палата, руководствуясь 694 ст. т. X ч. I прим. (сб. рѣш. Сената 1881 г. № 41, 1883 г. № 11 и друг.), нашла, что крестьянинъ Антонъ Ракштисъ, не предъявляя иска въ теченіи земской давности со дня нарушенія его правъ, потерялъ свое право, почему и не признала возможнымъ входить въ обсужденіе настоящаго дѣла по ",
+        "passage_id": "1897-086:1282-2952",
+        "pages": [
+          282
+        ],
+        "sources": [
+          {
+            "page": 282,
+            "page_method": "header",
+            "file": "p0152_L.txt",
+            "start": 1282,
+            "end": 2605
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-086?mode=precedent&ref=1897-086%3A1883%3A11%3A1935&at=1909&end=1947",
+        "scan_available": true
+      },
+      {
+        "id": "1897-086:1883:6:2366",
+        "source_id": "1897-086",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bfd564396a7ca1fb2f49c46412e14b8c9dba2ebee3e3055601dd612a1c3e8f2c",
+        "year": 1883,
+        "start": 2219,
+        "end": 2381,
+        "department": null,
+        "association": null,
+        "number": 6,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2366,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніе палаты Антонъ Ракштисъ принесъ кассаціонную жалобу, въ которой, между прочимъ, указываетъ, что, по разъясненіямъ Правительствующаго Сената 1883 г. №№ 6, 7",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2039,
+        "context_end": 2601,
+        "context_original": "ности со дня нарушенія его правъ, потерялъ свое право, почему и не признала возможнымъ входить въ обсужденіе настоящаго дѣла по существу и утвердила рѣшеніе окружнаго суда. На это рѣшеніе палаты Антонъ Ракштисъ принесъ кассаціонную жалобу, въ которой, между прочимъ, указываетъ, что, по разъясненіямъ Правительствующаго Сената 1883 г. №№ 6, 7 и др., статьи 820—830 уст. гр. суд. примѣняются и при исчисленіи сроковъ матеріальнаго права и что, вопреки этому, судебная палата моментомъ предъявленія иска признала полученіе съ почты искового прошенія въ судъ(17 мар",
+        "passage_id": "1897-086:1282-2952",
+        "pages": [
+          282
+        ],
+        "sources": [
+          {
+            "page": 282,
+            "page_method": "header",
+            "file": "p0152_L.txt",
+            "start": 1282,
+            "end": 2605
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-086?mode=precedent&ref=1897-086%3A1883%3A6%3A2366&at=2219&end=2381",
+        "scan_available": true
+      },
+      {
+        "id": "1897-086:1883:7:2366",
+        "source_id": "1897-086",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bfd564396a7ca1fb2f49c46412e14b8c9dba2ebee3e3055601dd612a1c3e8f2c",
+        "year": 1883,
+        "start": 2219,
+        "end": 2381,
+        "department": null,
+        "association": null,
+        "number": 7,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2366,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніе палаты Антонъ Ракштисъ принесъ кассаціонную жалобу, въ которой, между прочимъ, указываетъ, что, по разъясненіямъ Правительствующаго Сената 1883 г. №№ 6, 7",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2039,
+        "context_end": 2601,
+        "context_original": "ности со дня нарушенія его правъ, потерялъ свое право, почему и не признала возможнымъ входить въ обсужденіе настоящаго дѣла по существу и утвердила рѣшеніе окружнаго суда. На это рѣшеніе палаты Антонъ Ракштисъ принесъ кассаціонную жалобу, въ которой, между прочимъ, указываетъ, что, по разъясненіямъ Правительствующаго Сената 1883 г. №№ 6, 7 и др., статьи 820—830 уст. гр. суд. примѣняются и при исчисленіи сроковъ матеріальнаго права и что, вопреки этому, судебная палата моментомъ предъявленія иска признала полученіе съ почты искового прошенія въ судъ(17 мар",
+        "passage_id": "1897-086:1282-2952",
+        "pages": [
+          282
+        ],
+        "sources": [
+          {
+            "page": 282,
+            "page_method": "header",
+            "file": "p0152_L.txt",
+            "start": 1282,
+            "end": 2605
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-086?mode=precedent&ref=1897-086%3A1883%3A7%3A2366&at=2219&end=2381",
+        "scan_available": true
+      },
+      {
+        "id": "1897-086:1870:848:3237",
+        "source_id": "1897-086",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bfd564396a7ca1fb2f49c46412e14b8c9dba2ebee3e3055601dd612a1c3e8f2c",
+        "year": 1870,
+        "start": 3203,
+        "end": 3250,
+        "department": null,
+        "association": null,
+        "number": 848,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3237,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніе Правительствующаго Сената 1870 г. № 848",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3023,
+        "context_end": 3470,
+        "context_original": "бщія правила устава гражд. суд. объ исчисленіи сроковъ не могутъ быть примѣняемы при рѣшеніи вопроса объ исковой давности, при чемъ, въ подтвержденіе этого положенія, сослалась на рѣшеніе Правительствующаго Сената 1870 г. № 848 по дѣлу Осетрова. Въ этомъ рѣшеніи дѣйствительно высказано, что статьи устава гражд. суд., касающіяся порядка исчисленія и возстановленія сроковъ, правилами сего устава опредѣленныхъ, непримѣнимы къ случаю, касающемуся ",
+        "passage_id": "1897-086:2725-4302",
+        "pages": [
+          282
+        ],
+        "sources": [
+          {
+            "page": 282,
+            "page_method": "header",
+            "file": "p0152_L.txt",
+            "start": 2725,
+            "end": 3919
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-086?mode=precedent&ref=1897-086%3A1870%3A848%3A3237&at=3203&end=3250",
+        "scan_available": true
+      },
+      {
+        "id": "1897-086:1868:721:3926",
+        "source_id": "1897-086",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bfd564396a7ca1fb2f49c46412e14b8c9dba2ebee3e3055601dd612a1c3e8f2c",
+        "year": 1868,
+        "start": 3763,
+        "end": 3941,
+        "department": null,
+        "association": null,
+        "number": 721,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3926,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи по дѣлу Осетрова, и допускалъ примѣненіе общихъ правилъ исчисленія процессуальныхъ сроковъ къ исчисленію сроковъ матеріальнаго права. Такъ, въ рѣше- ніяхъ 1868 года № 721",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3583,
+        "context_end": 4161,
+        "context_original": "о взысканію. Между тѣмъ въ кассаціонной практикѣ какъ до 1870 года, такъ и въ позднѣйшее, встрѣчались дѣла, въ которыхъ Сенатъ держался воззрѣнія, противоположнаго высказанному въ рѣшеніи по дѣлу Осетрова, и допускалъ примѣненіе общихъ правилъ исчисленія процессуальныхъ сроковъ къ исчисленію сроковъ матеріальнаго права. Такъ, въ рѣше- ніяхъ 1868 года № 721 и 1869 года № 701 Правительствующій Сенатъ правила 819 и 821 ст. устава гражд. суд. объ истеченіи сроковъ, исчисляемыхъ по мѣсяцамъ и по недѣлямъ, призналъ по общему смыслу законовъ (9 ст. уст. гражд. суд.) примѣнимыми ",
+        "passage_id": "1897-086:2725-4302",
+        "pages": [
+          282,
+          283
+        ],
+        "sources": [
+          {
+            "page": 282,
+            "page_method": "header",
+            "file": "p0152_L.txt",
+            "start": 2725,
+            "end": 3919
+          },
+          {
+            "page": 283,
+            "page_method": "header",
+            "file": "p0152_R.txt",
+            "start": 3920,
+            "end": 4302
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-086?mode=precedent&ref=1897-086%3A1868%3A721%3A3926&at=3763&end=3941",
+        "scan_available": true
+      },
+      {
+        "id": "1897-086:1869:701:3944",
+        "source_id": "1897-086",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bfd564396a7ca1fb2f49c46412e14b8c9dba2ebee3e3055601dd612a1c3e8f2c",
+        "year": 1869,
+        "start": 3763,
+        "end": 3959,
+        "department": null,
+        "association": null,
+        "number": 701,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3944,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи по дѣлу Осетрова, и допускалъ примѣненіе общихъ правилъ исчисленія процессуальныхъ сроковъ къ исчисленію сроковъ матеріальнаго права. Такъ, въ рѣше- ніяхъ 1868 года № 721 и 1869 года № 701",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3583,
+        "context_end": 4179,
+        "context_original": "о взысканію. Между тѣмъ въ кассаціонной практикѣ какъ до 1870 года, такъ и въ позднѣйшее, встрѣчались дѣла, въ которыхъ Сенатъ держался воззрѣнія, противоположнаго высказанному въ рѣшеніи по дѣлу Осетрова, и допускалъ примѣненіе общихъ правилъ исчисленія процессуальныхъ сроковъ къ исчисленію сроковъ матеріальнаго права. Такъ, въ рѣше- ніяхъ 1868 года № 721 и 1869 года № 701 Правительствующій Сенатъ правила 819 и 821 ст. устава гражд. суд. объ истеченіи сроковъ, исчисляемыхъ по мѣсяцамъ и по недѣлямъ, призналъ по общему смыслу законовъ (9 ст. уст. гражд. суд.) примѣнимыми и къ исчисленію 6-",
+        "passage_id": "1897-086:2725-4302",
+        "pages": [
+          282,
+          283
+        ],
+        "sources": [
+          {
+            "page": 282,
+            "page_method": "header",
+            "file": "p0152_L.txt",
+            "start": 2725,
+            "end": 3919
+          },
+          {
+            "page": 283,
+            "page_method": "header",
+            "file": "p0152_R.txt",
+            "start": 3920,
+            "end": 4302
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-086?mode=precedent&ref=1897-086%3A1869%3A701%3A3944&at=3763&end=3959",
+        "scan_available": true
+      },
+      {
+        "id": "1897-086:1869:701:4339",
+        "source_id": "1897-086",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bfd564396a7ca1fb2f49c46412e14b8c9dba2ebee3e3055601dd612a1c3e8f2c",
+        "year": 1869,
+        "start": 4331,
+        "end": 4354,
+        "department": null,
+        "association": null,
+        "number": 701,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4339,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1869 года № 701",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4151,
+        "context_end": 4574,
+        "context_original": "имѣнимыми и къ исчисленію 6-ти недѣльнаго срока росписки о задаткѣ по 1687 ст. т. X ч. I (по прежней редакціи въ сводѣ законовъ гражд. издан. 1857 г.). Разъясненіе, преподанное въ рѣшеніи 1869 года № 701, повторено въ рѣшеніи 1875 года № 296, а въ рѣшеніи того же 1875 года № 329 признано, что правила статей 816—831 уст. гражд. суд. могутъ служить руководствомъ при исчисленіи сроковъ, въ договорѣ не опредѣленныхъ; въ рѣш",
+        "passage_id": "1897-086:4101-5805",
+        "pages": [
+          283
+        ],
+        "sources": [
+          {
+            "page": 283,
+            "page_method": "header",
+            "file": "p0152_R.txt",
+            "start": 4101,
+            "end": 5805
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-086?mode=precedent&ref=1897-086%3A1869%3A701%3A4339&at=4331&end=4354",
+        "scan_available": true
+      },
+      {
+        "id": "1897-086:1875:296:4377",
+        "source_id": "1897-086",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bfd564396a7ca1fb2f49c46412e14b8c9dba2ebee3e3055601dd612a1c3e8f2c",
+        "year": 1875,
+        "start": 4369,
+        "end": 4392,
+        "department": null,
+        "association": null,
+        "number": 296,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4377,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1875 года № 296",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4189,
+        "context_end": 4612,
+        "context_original": "аго срока росписки о задаткѣ по 1687 ст. т. X ч. I (по прежней редакціи въ сводѣ законовъ гражд. издан. 1857 г.). Разъясненіе, преподанное въ рѣшеніи 1869 года № 701, повторено въ рѣшеніи 1875 года № 296, а въ рѣшеніи того же 1875 года № 329 признано, что правила статей 816—831 уст. гражд. суд. могутъ служить руководствомъ при исчисленіи сроковъ, въ договорѣ не опредѣленныхъ; въ рѣшеніи же 1889 года № 102 высказано, что",
+        "passage_id": "1897-086:4101-5805",
+        "pages": [
+          283
+        ],
+        "sources": [
+          {
+            "page": 283,
+            "page_method": "header",
+            "file": "p0152_R.txt",
+            "start": 4101,
+            "end": 5805
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-086?mode=precedent&ref=1897-086%3A1875%3A296%3A4377&at=4369&end=4392",
+        "scan_available": true
+      },
+      {
+        "id": "1897-086:1875:329:4415",
+        "source_id": "1897-086",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bfd564396a7ca1fb2f49c46412e14b8c9dba2ebee3e3055601dd612a1c3e8f2c",
+        "year": 1875,
+        "start": 4399,
+        "end": 4430,
+        "department": null,
+        "association": null,
+        "number": 329,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4415,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи того же 1875 года № 329",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4219,
+        "context_end": 4650,
+        "context_original": "о 1687 ст. т. X ч. I (по прежней редакціи въ сводѣ законовъ гражд. издан. 1857 г.). Разъясненіе, преподанное въ рѣшеніи 1869 года № 701, повторено въ рѣшеніи 1875 года № 296, а въ рѣшеніи того же 1875 года № 329 признано, что правила статей 816—831 уст. гражд. суд. могутъ служить руководствомъ при исчисленіи сроковъ, въ договорѣ не опредѣленныхъ; въ рѣшеніи же 1889 года № 102 высказано, что судопроизводственныя правила 822 и 82",
+        "passage_id": "1897-086:4101-5805",
+        "pages": [
+          283
+        ],
+        "sources": [
+          {
+            "page": 283,
+            "page_method": "header",
+            "file": "p0152_R.txt",
+            "start": 4101,
+            "end": 5805
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-086?mode=precedent&ref=1897-086%3A1875%3A329%3A4415&at=4399&end=4430",
+        "scan_available": true
+      },
+      {
+        "id": "1897-086:1889:102:4582",
+        "source_id": "1897-086",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bfd564396a7ca1fb2f49c46412e14b8c9dba2ebee3e3055601dd612a1c3e8f2c",
+        "year": 1889,
+        "start": 4571,
+        "end": 4597,
+        "department": null,
+        "association": null,
+        "number": 102,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4582,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи же 1889 года № 102",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4391,
+        "context_end": 4817,
+        "context_original": "6, а въ рѣшеніи того же 1875 года № 329 признано, что правила статей 816—831 уст. гражд. суд. могутъ служить руководствомъ при исчисленіи сроковъ, въ договорѣ не опредѣленныхъ; въ рѣшеніи же 1889 года № 102 высказано, что судопроизводственныя правила 822 и 828 статей уст. гражд. суд. не могутъ имѣть примѣненіе при исчисленіи сроковъ, установленныхъ контрагентами для исполненія принятыхъ взаимно, по отношенію другъ къ другу",
+        "passage_id": "1897-086:4101-5805",
+        "pages": [
+          283
+        ],
+        "sources": [
+          {
+            "page": 283,
+            "page_method": "header",
+            "file": "p0152_R.txt",
+            "start": 4101,
+            "end": 5805
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-086?mode=precedent&ref=1897-086%3A1889%3A102%3A4582&at=4571&end=4597",
+        "scan_available": true
+      },
+      {
+        "id": "1897-086:1874:664:5106",
+        "source_id": "1897-086",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bfd564396a7ca1fb2f49c46412e14b8c9dba2ebee3e3055601dd612a1c3e8f2c",
+        "year": 1874,
+        "start": 5101,
+        "end": 5119,
+        "department": null,
+        "association": null,
+        "number": 664,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5106,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1874 г. № 664",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4921,
+        "context_end": 5339,
+        "context_original": ". суд. объ исключеніи изъ оканчивающихся уже сроковъ табельныхъ дней относится также къ искамъ, предъявляемымъ по задаточнымъ роспискамъ на основаніи 1687 статьи прежней редакціи (рѣш. 1874 г. № 664) и къ срокамъ, установленнымъ въ 683 ст. т. X ч. I издан. 1887 года для начатія исковъ по дѣламъ о вознагражденіи за вредъ или убытокъ вслѣдствіе смерти или поврежденія въ здоровьѣ, причиненныхъ при эксплуатаціи желѣзны",
+        "passage_id": "1897-086:4101-5805",
+        "pages": [
+          283
+        ],
+        "sources": [
+          {
+            "page": 283,
+            "page_method": "header",
+            "file": "p0152_R.txt",
+            "start": 4101,
+            "end": 5805
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-086?mode=precedent&ref=1897-086%3A1874%3A664%3A5106&at=5101&end=5119",
+        "scan_available": true
+      },
+      {
+        "id": "1897-086:1883:6:5379",
+        "source_id": "1897-086",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bfd564396a7ca1fb2f49c46412e14b8c9dba2ebee3e3055601dd612a1c3e8f2c",
+        "year": 1883,
+        "start": 5374,
+        "end": 5390,
+        "department": null,
+        "association": null,
+        "number": 6,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5379,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1883 г. № 6",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5194,
+        "context_end": 5610,
+        "context_original": "чатія исковъ по дѣламъ о вознагражденіи за вредъ или убытокъ вслѣдствіе смерти или поврежденія въ здоровьѣ, причиненныхъ при эксплуатаціи желѣзныхъ дорогъ и пароходныхъ сообщеній (рѣш. 1883 г. № 6). Въ виду этихъ указаній представляется несомнѣннымъ, что возникшій въ настоящемъ дѣлѣ вопросъ о примѣнимости правила 828-ой статьи уст. гражд. суд. къ исчисленію срока давности для предъявленія иска о признаніи недѣйст",
+        "passage_id": "1897-086:4101-5805",
+        "pages": [
+          283
+        ],
+        "sources": [
+          {
+            "page": 283,
+            "page_method": "header",
+            "file": "p0152_R.txt",
+            "start": 4101,
+            "end": 5805
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-086?mode=precedent&ref=1897-086%3A1883%3A6%3A5379&at=5374&end=5390",
+        "scan_available": true
+      },
+      {
+        "id": "1897-086:1870:848:5790",
+        "source_id": "1897-086",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bfd564396a7ca1fb2f49c46412e14b8c9dba2ebee3e3055601dd612a1c3e8f2c",
+        "year": 1870,
+        "start": 5764,
+        "end": 5803,
+        "department": null,
+        "association": null,
+        "number": 848,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5790,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи по дѣлу Осетрова (1870 г. № 848",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5584,
+        "context_end": 6023,
+        "context_original": "я иска о признаніи недѣйствительною запродажной записи на земельный участокъ не можетъ быть разрѣшенъ при руководствѣ лишь разъясненіемъ Правительствующаго Сената, содержащимся въ рѣшеніи по дѣлу Осетрова (1870 г. № 848). Вслѣдствіе сего, входя въ обсужденіе возбужденнаго вопроса, Правительствующій Сенатъ находитъ, что постановленія свода законовъ гражданскихъ (т. X ч. I), относящіяся до сроковъ исковой давности, не заключаютъ въ себѣ ",
+        "passage_id": "1897-086:4101-5805",
+        "pages": [
+          283
+        ],
+        "sources": [
+          {
+            "page": 283,
+            "page_method": "header",
+            "file": "p0152_R.txt",
+            "start": 5540,
+            "end": 6944
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-086?mode=precedent&ref=1897-086%3A1870%3A848%3A5790&at=5764&end=5803",
+        "scan_available": true
+      },
+      {
+        "id": "1897-086:1880:195:6660",
+        "source_id": "1897-086",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bfd564396a7ca1fb2f49c46412e14b8c9dba2ebee3e3055601dd612a1c3e8f2c",
+        "year": 1880,
+        "start": 6653,
+        "end": 6680,
+        "department": null,
+        "association": null,
+        "number": 195,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6660,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшен. 1880 г. №№ 195 и 298",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 6473,
+        "context_end": 6900,
+        "context_original": "и, относящимися къ области матеріальнаго права, но и при существующемъ различіи между ними, на которое неоднократно указывалъ и Правительствующій Сенатъ въ своихъ рѣшеніяхъ (напр. рѣшен. 1880 г. №№ 195 и 298, 1885 г. № 31), надлежитъ, согласно 9 статьѣ уст. гр. суд., по общему смыслу законовъ признать, что и къ давностнымъ срокамъ примѣнимы правила устава гражд. суд. о порядкѣ исчисленія процессуальныхъ сроковъ, въ томъ чис",
+        "passage_id": "1897-086:5540-7192",
+        "pages": [
+          283
+        ],
+        "sources": [
+          {
+            "page": 283,
+            "page_method": "header",
+            "file": "p0152_R.txt",
+            "start": 5540,
+            "end": 6944
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-086?mode=precedent&ref=1897-086%3A1880%3A195%3A6660&at=6653&end=6680",
+        "scan_available": true
+      },
+      {
+        "id": "1897-086:1880:298:6660",
+        "source_id": "1897-086",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bfd564396a7ca1fb2f49c46412e14b8c9dba2ebee3e3055601dd612a1c3e8f2c",
+        "year": 1880,
+        "start": 6653,
+        "end": 6680,
+        "department": null,
+        "association": null,
+        "number": 298,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6660,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшен. 1880 г. №№ 195 и 298",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 6473,
+        "context_end": 6900,
+        "context_original": "и, относящимися къ области матеріальнаго права, но и при существующемъ различіи между ними, на которое неоднократно указывалъ и Правительствующій Сенатъ въ своихъ рѣшеніяхъ (напр. рѣшен. 1880 г. №№ 195 и 298, 1885 г. № 31), надлежитъ, согласно 9 статьѣ уст. гр. суд., по общему смыслу законовъ признать, что и къ давностнымъ срокамъ примѣнимы правила устава гражд. суд. о порядкѣ исчисленія процессуальныхъ сроковъ, въ томъ чис",
+        "passage_id": "1897-086:5540-7192",
+        "pages": [
+          283
+        ],
+        "sources": [
+          {
+            "page": 283,
+            "page_method": "header",
+            "file": "p0152_R.txt",
+            "start": 5540,
+            "end": 6944
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-086?mode=precedent&ref=1897-086%3A1880%3A298%3A6660&at=6653&end=6680",
+        "scan_available": true
+      },
+      {
+        "id": "1897-086:1885:31:6682",
+        "source_id": "1897-086",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "bfd564396a7ca1fb2f49c46412e14b8c9dba2ebee3e3055601dd612a1c3e8f2c",
+        "year": 1885,
+        "start": 6653,
+        "end": 6694,
+        "department": null,
+        "association": null,
+        "number": 31,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6682,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшен. 1880 г. №№ 195 и 298, 1885 г. № 31",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 6473,
+        "context_end": 6914,
+        "context_original": "и, относящимися къ области матеріальнаго права, но и при существующемъ различіи между ними, на которое неоднократно указывалъ и Правительствующій Сенатъ въ своихъ рѣшеніяхъ (напр. рѣшен. 1880 г. №№ 195 и 298, 1885 г. № 31), надлежитъ, согласно 9 статьѣ уст. гр. суд., по общему смыслу законовъ признать, что и къ давностнымъ срокамъ примѣнимы правила устава гражд. суд. о порядкѣ исчисленія процессуальныхъ сроковъ, въ томъ числѣ и правило 8",
+        "passage_id": "1897-086:5540-7192",
+        "pages": [
+          283
+        ],
+        "sources": [
+          {
+            "page": 283,
+            "page_method": "header",
+            "file": "p0152_R.txt",
+            "start": 5540,
+            "end": 6944
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-086?mode=precedent&ref=1897-086%3A1885%3A31%3A6682&at=6653&end=6694",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-086",
     "scan_pages": [

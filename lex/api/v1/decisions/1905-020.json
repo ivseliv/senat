@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-020",
@@ -53,6 +53,86 @@
       "1905-e88ee21c015b",
       "1905-2ce51a219817",
       "1905-29b258f6473b"
+    ],
+    "precedents": [
+      {
+        "id": "1905-020:1902:2:3218",
+        "source_id": "1905-020",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8375740ab320ba693faa10b9144cc24320d91178bd3b6f03c507b9c82b959d8e",
+        "year": 1902,
+        "start": 3213,
+        "end": 3229,
+        "department": null,
+        "association": null,
+        "number": 2,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3218,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1902 г. № 2",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3033,
+        "context_end": 3449,
+        "context_original": "о законодателя при установленіи давности. Имъ при этомъ имѣлось въ виду, главнымъ образомъ, охраненіе порядка и спокойствія во взаимныхъ отношеніяхъ членовъ гражданскаго общества (рѣш. 1902 г. № 2), и, слѣдовательно, давность составляетъ часть права публичнаго, отказъ отъ котораго, поэтому, не можетъ быть допускаемъ по заранѣе заключенному соглашенію. Проситель утверждаетъ, что относительно срока для предъявленія",
+        "passage_id": "1905-020:1534-3386",
+        "pages": [
+          49
+        ],
+        "sources": [
+          {
+            "page": 49,
+            "page_method": "header",
+            "file": "p0025_R.txt",
+            "start": 3115,
+            "end": 4978
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-020?mode=precedent&ref=1905-020%3A1902%3A2%3A3218&at=3213&end=3229",
+        "scan_available": true
+      },
+      {
+        "id": "1905-020:1904:101:5070",
+        "source_id": "1905-020",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "8375740ab320ba693faa10b9144cc24320d91178bd3b6f03c507b9c82b959d8e",
+        "year": 1904,
+        "start": 5065,
+        "end": 5083,
+        "department": null,
+        "association": null,
+        "number": 101,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5070,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1904 г. № 101",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4885,
+        "context_end": 5303,
+        "context_original": "ъ случаѣ, общество Московско-Кіево-Воронежской желѣзной дороги потеряло право, въ виду отказа общества Юго-Восточныхъ желѣзныхъ дорогъ, удерживать съ него долю присужденной суммы (рѣш. 1904 г. № 101). По изложеннымъ соображеніямъ, послужившимъ въ окончательномъ выводѣ основаніемъ и для разрѣшенія мировымъ съѣздомъ настоящаго дѣла, просьба объ отмѣнѣ этого рѣшенія не заслуживаетъ уваженія. Вслѣдствіе сего, Правитель",
+        "passage_id": "1905-020:3115-5431",
+        "pages": [
+          50
+        ],
+        "sources": [
+          {
+            "page": 50,
+            "page_method": "header",
+            "file": "p0026_L.txt",
+            "start": 4979,
+            "end": 5431
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-020?mode=precedent&ref=1905-020%3A1904%3A101%3A5070&at=5065&end=5083",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-020",
     "scan_pages": [

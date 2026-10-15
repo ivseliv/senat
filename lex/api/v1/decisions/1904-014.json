@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-014",
@@ -46,6 +46,86 @@
       "1904-1bc8b4e54364",
       "1904-344f056c13c0",
       "1904-b37f1359914f"
+    ],
+    "precedents": [
+      {
+        "id": "1904-014:1901:88:3912",
+        "source_id": "1904-014",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "29d98e7e9c6348e23b23e95dcc0fa7ef07f643db62468be00a9cd7eebd68a130",
+        "year": 1901,
+        "start": 3901,
+        "end": 3924,
+        "department": null,
+        "association": null,
+        "number": 88,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3912,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи за 1901 г. № 88",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3721,
+        "context_end": 4144,
+        "context_original": "менно требованія, вытекающія изъ перевозки груза и составляющія предметъ передачи? Входя въ обсужденіе этого вопроса, Правительствующій Сенатъ находитъ, что, по разъясненію его въ рѣшеніи за 1901 г. № 88, «передача накладной объявившимся уже грузополучателемъ можетъ быть совершена посредствомъ передаточной надписи или особаго письменнаго акта и только со времени совершенія такой надписи или акта переходятъ къ третьему л",
+        "passage_id": "1904-014:2645-4550",
+        "pages": [
+          40
+        ],
+        "sources": [
+          {
+            "page": 40,
+            "page_method": "header",
+            "file": "p0021_L.txt",
+            "start": 3313,
+            "end": 4550
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-014?mode=precedent&ref=1904-014%3A1901%3A88%3A3912&at=3901&end=3924",
+        "scan_available": true
+      },
+      {
+        "id": "1904-014:1901:88:4537",
+        "source_id": "1904-014",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "29d98e7e9c6348e23b23e95dcc0fa7ef07f643db62468be00a9cd7eebd68a130",
+        "year": 1901,
+        "start": 4511,
+        "end": 4549,
+        "department": null,
+        "association": null,
+        "number": 88,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4537,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніемъ департамента за 1901 г. № 88",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4331,
+        "context_end": 4769,
+        "context_original": "просъ о порядкѣ передачи накладныхъ, возвращенныхъ грузополучателямъ по исполненіи желѣзной дорогой договора перевозки, признало, что этотъ вопросъ вполнѣ разрѣшается приведеннымъ рѣшеніемъ департамента за 1901 г. № 88. Такимъ образомъ, означенными рѣшеніями устанавливается, что наличность акта объ уступкѣ накладной или надписи о передачѣ ея свидѣтельствуетъ, что права, изъ этой накладной вытекающія, перешли къ третьему лицу. Такъ как",
+        "passage_id": "1904-014:2645-4550",
+        "pages": [
+          40
+        ],
+        "sources": [
+          {
+            "page": 40,
+            "page_method": "header",
+            "file": "p0021_L.txt",
+            "start": 4257,
+            "end": 6112
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-014?mode=precedent&ref=1904-014%3A1901%3A88%3A4537&at=4511&end=4549",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-014",
     "scan_pages": [

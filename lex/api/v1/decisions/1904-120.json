@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-120",
@@ -64,6 +64,164 @@
       "1904-7a0d12527bb4",
       "1904-00fc0749cc56",
       "1904-e360409e8ab3"
+    ],
+    "precedents": [
+      {
+        "id": "1904-120:1900:107:2336",
+        "source_id": "1904-120",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "928ba47929c5d5ee30bd05b3efe399ed1b123ced62065d861c2a8f6c9041f4b0",
+        "year": 1900,
+        "start": 2331,
+        "end": 2349,
+        "department": null,
+        "association": null,
+        "number": 107,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2336,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1900 г. № 107",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2151,
+        "context_end": 2569,
+        "context_original": "вья, то таковое при- надлежитъ при жизни лица, коему оно причинено, исключительно ему (ст. 660, 661 и 1 п. 683 ст. X т. 1 ч.), какъ это разъяснено уже Правительствующимъ Сенатомъ (рѣш. 1900 г. № 107). Если, затѣмъ, законъ даетъ лицу, потерпѣвшему разстройство здоровья, право требовать отъ виновнаго содержанія не только для себя, но и для членовъ своей семьи, то отсюда естественно вытекаетъ, что членъ семьи не имѣет",
+        "passage_id": "1904-120:1810-3445",
+        "pages": [
+          336
+        ],
+        "sources": [
+          {
+            "page": 336,
+            "page_method": "header",
+            "file": "p0169_L.txt",
+            "start": 2172,
+            "end": 3445
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-120?mode=precedent&ref=1904-120%3A1900%3A107%3A2336&at=2331&end=2349",
+        "scan_available": true
+      },
+      {
+        "id": "1904-120:1902:48:3142",
+        "source_id": "1904-120",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "928ba47929c5d5ee30bd05b3efe399ed1b123ced62065d861c2a8f6c9041f4b0",
+        "year": 1902,
+        "start": 3137,
+        "end": 3154,
+        "department": null,
+        "association": null,
+        "number": 48,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3142,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1902 г. № 48",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2957,
+        "context_end": 3374,
+        "context_original": "атъ призналъ такое право на самостоятельное требованіе вознагражденія за женою потерпѣвшаго разстройство въ здоровьѣ, имѣвшее своимъ послѣдствіемъ потерю умственныхъ способностей (рѣш. 1902 г. № 48). Затѣмъ, изъ вышеизложеннаго само собою слѣдуетъ, что смерть потерпѣвшаго разстройство здоровья послѣ предъявленія имъ иска о вознагражденіи, имѣвшаго въ виду обезпеченіе какъ его самого, такъ и его семьи, даетъ право ",
+        "passage_id": "1904-120:1810-3445",
+        "pages": [
+          336
+        ],
+        "sources": [
+          {
+            "page": 336,
+            "page_method": "header",
+            "file": "p0169_L.txt",
+            "start": 2172,
+            "end": 3445
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-120?mode=precedent&ref=1904-120%3A1902%3A48%3A3142&at=3137&end=3154",
+        "scan_available": true
+      },
+      {
+        "id": "1904-120:1900:107:3496",
+        "source_id": "1904-120",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "928ba47929c5d5ee30bd05b3efe399ed1b123ced62065d861c2a8f6c9041f4b0",
+        "year": 1900,
+        "start": 3485,
+        "end": 3509,
+        "department": null,
+        "association": null,
+        "number": 107,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3496,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи за 1900 г. № 107",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3305,
+        "context_end": 3729,
+        "context_original": "о въ виду обезпеченіе какъ его самого, такъ и его семьи, даетъ право всѣмъ членамъ этой семьи продолжать начатый уже въ ихъ интересахъ искъ. Правительствующимъ Сенатомъ въ томъ же рѣшеніи за 1900 г. № 107 разъяснено уже, что выбытіе изъ процесса по такому иску кого-либо изъ лицъ, имѣвшихъ право на полученіе отъ виновнаго содержанія, вліяетъ лишь на уменьшеніе размѣра вознагражденія, но не устраняетъ права остальныхъ на в",
+        "passage_id": "1904-120:3206-4624",
+        "pages": [
+          336
+        ],
+        "sources": [
+          {
+            "page": 336,
+            "page_method": "header",
+            "file": "p0169_L.txt",
+            "start": 3206,
+            "end": 4624
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-120?mode=precedent&ref=1904-120%3A1900%3A107%3A3496&at=3485&end=3509",
+        "scan_available": true
+      },
+      {
+        "id": "1904-120:1901:65:6985",
+        "source_id": "1904-120",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "928ba47929c5d5ee30bd05b3efe399ed1b123ced62065d861c2a8f6c9041f4b0",
+        "year": 1901,
+        "start": 6980,
+        "end": 6997,
+        "department": null,
+        "association": null,
+        "number": 65,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6985,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1901 г. № 65",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 6800,
+        "context_end": 7217,
+        "context_original": "661 и 683 ст. 1 ч. X т. Если для всѣхъ безъ исключенія случаевъ годичный срокъ о вознагражденіи за разстройство здоровья исчисляется, согласно 7 п. 683 ст., со дня самаго событія (рѣш. 1901 г. № 65), то, очевидно, смерть лица, коему причинено поврежденіе здоровья, во время производства дѣла по предъявленному имъ самимъ иску, не можетъ имѣть никакого значенія для исчисленія начала теченія годичной давности. Помимо ",
+        "passage_id": "1904-120:5643-7209",
+        "pages": [
+          337
+        ],
+        "sources": [
+          {
+            "page": 337,
+            "page_method": "header",
+            "file": "p0169_R.txt",
+            "start": 6964,
+            "end": 8120
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-120?mode=precedent&ref=1904-120%3A1901%3A65%3A6985&at=6980&end=6997",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-120",
     "scan_pages": [

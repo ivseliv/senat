@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-010",
@@ -81,6 +81,281 @@
     "participant_ids": [
       "1905-44c5875a1295",
       "1905-9bbbcb9a7d4e"
+    ],
+    "precedents": [
+      {
+        "id": "1905-010:1880:195:3626",
+        "source_id": "1905-010",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "cb3723be82fcef8909a153a5a6018f85aa1337f593a4889323a94f7538cdb3a0",
+        "year": 1880,
+        "start": 3621,
+        "end": 3645,
+        "department": null,
+        "association": null,
+        "number": 195,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3626,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1880 г. № 195 и 298",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3441,
+        "context_end": 3865,
+        "context_original": " тѣмъ, что судебная палата мѣсячному сроку по статьѣ 1560 придала значеніе срока давностнаго, что совершенно неправильно, ибо хотя сроки давностные суть сроки права матеріальнаго (рѣш. 1880 г. № 195 и 298, 1885 г. № 131 и др.), но не всѣ сроки, указанные въ законахъ матеріальныхъ, относятся къ срокамъ давностнымъ. Въ нашихъ законахъ хотя и нѣтъ прямаго указанія на отличіе этихъ послѣднихъ сроковъ отъ другихъ, какъ права ",
+        "passage_id": "1905-010:2835-4232",
+        "pages": [
+          25
+        ],
+        "sources": [
+          {
+            "page": 25,
+            "page_method": "header",
+            "file": "p0013_R.txt",
+            "start": 3278,
+            "end": 4232
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-010?mode=precedent&ref=1905-010%3A1880%3A195%3A3626&at=3621&end=3645",
+        "scan_available": true
+      },
+      {
+        "id": "1905-010:1880:298:3626",
+        "source_id": "1905-010",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "cb3723be82fcef8909a153a5a6018f85aa1337f593a4889323a94f7538cdb3a0",
+        "year": 1880,
+        "start": 3621,
+        "end": 3645,
+        "department": null,
+        "association": null,
+        "number": 298,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3626,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1880 г. № 195 и 298",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3441,
+        "context_end": 3865,
+        "context_original": " тѣмъ, что судебная палата мѣсячному сроку по статьѣ 1560 придала значеніе срока давностнаго, что совершенно неправильно, ибо хотя сроки давностные суть сроки права матеріальнаго (рѣш. 1880 г. № 195 и 298, 1885 г. № 131 и др.), но не всѣ сроки, указанные въ законахъ матеріальныхъ, относятся къ срокамъ давностнымъ. Въ нашихъ законахъ хотя и нѣтъ прямаго указанія на отличіе этихъ послѣднихъ сроковъ отъ другихъ, какъ права ",
+        "passage_id": "1905-010:2835-4232",
+        "pages": [
+          25
+        ],
+        "sources": [
+          {
+            "page": 25,
+            "page_method": "header",
+            "file": "p0013_R.txt",
+            "start": 3278,
+            "end": 4232
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-010?mode=precedent&ref=1905-010%3A1880%3A298%3A3626&at=3621&end=3645",
+        "scan_available": true
+      },
+      {
+        "id": "1905-010:1885:131:3647",
+        "source_id": "1905-010",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "cb3723be82fcef8909a153a5a6018f85aa1337f593a4889323a94f7538cdb3a0",
+        "year": 1885,
+        "start": 3621,
+        "end": 3660,
+        "department": null,
+        "association": null,
+        "number": 131,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3647,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1880 г. № 195 и 298, 1885 г. № 131",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3441,
+        "context_end": 3880,
+        "context_original": " тѣмъ, что судебная палата мѣсячному сроку по статьѣ 1560 придала значеніе срока давностнаго, что совершенно неправильно, ибо хотя сроки давностные суть сроки права матеріальнаго (рѣш. 1880 г. № 195 и 298, 1885 г. № 131 и др.), но не всѣ сроки, указанные въ законахъ матеріальныхъ, относятся къ срокамъ давностнымъ. Въ нашихъ законахъ хотя и нѣтъ прямаго указанія на отличіе этихъ послѣднихъ сроковъ отъ другихъ, какъ права матеріальнаго, ",
+        "passage_id": "1905-010:2835-4232",
+        "pages": [
+          25
+        ],
+        "sources": [
+          {
+            "page": 25,
+            "page_method": "header",
+            "file": "p0013_R.txt",
+            "start": 3278,
+            "end": 4232
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-010?mode=precedent&ref=1905-010%3A1885%3A131%3A3647&at=3621&end=3660",
+        "scan_available": true
+      },
+      {
+        "id": "1905-010:1901:109:3994",
+        "source_id": "1905-010",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "cb3723be82fcef8909a153a5a6018f85aa1337f593a4889323a94f7538cdb3a0",
+        "year": 1901,
+        "start": 3989,
+        "end": 4007,
+        "department": null,
+        "association": null,
+        "number": 109,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3994,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1901 г. № 109",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3809,
+        "context_end": 4227,
+        "context_original": "тличіе этихъ послѣднихъ сроковъ отъ другихъ, какъ права матеріальнаго, такъ и права судопроизводственнаго, извѣстныхъ въ теоріи права подъ общимъ названіемъ сроковъ преклюзивныхъ (рѣш. 1901 г. № 109), т.-е. рѣшительныхъ, пресѣкательныхъ или прекратительныхъ, но изъ сопоставленія отдѣльныхъ, относящихся къ сему предмету законоположеній, признаки этого различія устанавливаются съ достаточною опредѣлительностью и ясно",
+        "passage_id": "1905-010:2835-4232",
+        "pages": [
+          25
+        ],
+        "sources": [
+          {
+            "page": 25,
+            "page_method": "header",
+            "file": "p0013_R.txt",
+            "start": 3930,
+            "end": 5742
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-010?mode=precedent&ref=1905-010%3A1901%3A109%3A3994&at=3989&end=4007",
+        "scan_available": true
+      },
+      {
+        "id": "1905-010:1897:42:5707",
+        "source_id": "1905-010",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "cb3723be82fcef8909a153a5a6018f85aa1337f593a4889323a94f7538cdb3a0",
+        "year": 1897,
+        "start": 5702,
+        "end": 5719,
+        "department": null,
+        "association": null,
+        "number": 42,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5707,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1897 г. № 42",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5522,
+        "context_end": 5939,
+        "context_original": "ерывается, все истекшее до сего время исключается изъ срока давности, теченіе которой, съ момента перерыва, начинается вновь и продолжается во весь періодъ установленной давности (рѣш. 1897 г. № 42, 1879 г. № 347 и др.). Независимо сего, давностные сроки не подлежатъ ни продолженію, ни возстановленію. Что же касается сроковъ преклюзивныхъ, то они не подлежатъ ни перерыву, ни пріостановленію, но, за исключеніемъ сл",
+        "passage_id": "1905-010:3930-5742",
+        "pages": [
+          25
+        ],
+        "sources": [
+          {
+            "page": 25,
+            "page_method": "header",
+            "file": "p0013_R.txt",
+            "start": 5520,
+            "end": 6304
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-010?mode=precedent&ref=1905-010%3A1897%3A42%3A5707&at=5702&end=5719",
+        "scan_available": true
+      },
+      {
+        "id": "1905-010:1879:347:5721",
+        "source_id": "1905-010",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "cb3723be82fcef8909a153a5a6018f85aa1337f593a4889323a94f7538cdb3a0",
+        "year": 1879,
+        "start": 5702,
+        "end": 5734,
+        "department": null,
+        "association": null,
+        "number": 347,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5721,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1897 г. № 42, 1879 г. № 347",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5522,
+        "context_end": 5954,
+        "context_original": "ерывается, все истекшее до сего время исключается изъ срока давности, теченіе которой, съ момента перерыва, начинается вновь и продолжается во весь періодъ установленной давности (рѣш. 1897 г. № 42, 1879 г. № 347 и др.). Независимо сего, давностные сроки не подлежатъ ни продолженію, ни возстановленію. Что же касается сроковъ преклюзивныхъ, то они не подлежатъ ни перерыву, ни пріостановленію, но, за исключеніемъ случаевъ, прямо у",
+        "passage_id": "1905-010:3930-5742",
+        "pages": [
+          25
+        ],
+        "sources": [
+          {
+            "page": 25,
+            "page_method": "header",
+            "file": "p0013_R.txt",
+            "start": 5520,
+            "end": 6304
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-010?mode=precedent&ref=1905-010%3A1879%3A347%3A5721&at=5702&end=5734",
+        "scan_available": true
+      },
+      {
+        "id": "1905-010:1882:48:7396",
+        "source_id": "1905-010",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "cb3723be82fcef8909a153a5a6018f85aa1337f593a4889323a94f7538cdb3a0",
+        "year": 1882,
+        "start": 7388,
+        "end": 7408,
+        "department": null,
+        "association": null,
+        "number": 48,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 7396,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1882 г. № 48",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 7208,
+        "context_end": 7628,
+        "context_original": "торое открываетъ ему право на такое вознагражденіе. И Правительствующій Сенатъ признавалъ нѣкоторые изъ указанныхъ въ законахъ гражданскихъ сроковъ сроками преклюзивными. Такъ, въ рѣшеніи 1882 г. № 48 имъ разъяснено, что срокъ, установленный 1563 ст. ч. 1 т. X для выкупа родовыхъ имѣній, не относится къ срокамъ давностнымъ, ибо къ нему не могутъ быть примѣняемы правила ни о пріостановленіи, ни о перерывѣ, что, какъ с",
+        "passage_id": "1905-010:6993-8396",
+        "pages": [
+          26
+        ],
+        "sources": [
+          {
+            "page": 26,
+            "page_method": "header",
+            "file": "p0014_L.txt",
+            "start": 6993,
+            "end": 8396
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-010?mode=precedent&ref=1905-010%3A1882%3A48%3A7396&at=7388&end=7408",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-010",
     "scan_pages": [

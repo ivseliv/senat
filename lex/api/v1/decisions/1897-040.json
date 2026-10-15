@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-040",
@@ -46,6 +46,47 @@
     "participant_ids": [
       "1897-7b7abe1bb0ba",
       "1897-c2f0d9230401"
+    ],
+    "precedents": [
+      {
+        "id": "1897-040:1895:23:724",
+        "source_id": "1897-040",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "9ee8174554007085ffdbd8a3ab693039a6299815f56477e06ff930b9f7cefa72",
+        "year": 1895,
+        "start": 716,
+        "end": 736,
+        "department": null,
+        "association": null,
+        "number": 23,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 724,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеній 1895 г. № 23",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 536,
+        "context_end": 899,
+        "context_original": " маркою въ 80 коп., былъ переданъ на обсужденіе общаго собранія 1-го и кассаціонныхъ департаментовъ Правительствующаго Сената. Общее собраніе рѣшеніемъ, припечатаннымъ въ сборникѣ рѣшеній 1895 г. № 23, признало, что размѣръ листа простой бумаги, подлежащаго оплатѣ простымъ гербовымъ сборомъ, долженъ соотвѣтствовать гербовому листу, и что предсѣдательствующіе въ",
+        "passage_id": "1897-040:0-1658",
+        "pages": [
+          129
+        ],
+        "sources": [
+          {
+            "page": 129,
+            "page_method": "header",
+            "file": "p0075_R.txt",
+            "start": 0,
+            "end": 899
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-040?mode=precedent&ref=1897-040%3A1895%3A23%3A724&at=716&end=736",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-040",
     "scan_pages": [

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-076",
@@ -56,6 +56,86 @@
     "participant_ids": [
       "1897-1c3f780c44c7",
       "1897-7ad81cb199ab"
+    ],
+    "precedents": [
+      {
+        "id": "1897-076:1893:12:14474",
+        "source_id": "1897-076",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "05867d0498fe87c572173b59e99d70b8fdf8cbdadf95cd6fddefcd3b8788ebc2",
+        "year": 1893,
+        "start": 14462,
+        "end": 14486,
+        "department": null,
+        "association": null,
+        "number": 12,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 14474,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. Сената 1893 г. № 12",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 14282,
+        "context_end": 14706,
+        "context_original": "что вычеты Беккеръ производилъ принудительно. Между тѣмъ, судебное рѣшеніе должно быть основано на представленныхъ сторонами доказательствахъ, а не на предположеніяхъ самого суда (рѣш. Сената 1893 г. № 12, 1879 г. № 296 и мн. др.), а на то, чтобы онъ подвергся принужденію, самъ истецъ вовсе не указывалъ. Если бы даже приведенное съѣздомъ условіе § 2 устава кассы, что всѣ рабочіе „принуждаются“ вступить въ кассу, считать ",
+        "passage_id": "1897-076:14166-15539",
+        "pages": [
+          251
+        ],
+        "sources": [
+          {
+            "page": 251,
+            "page_method": "header",
+            "file": "p0136_R.txt",
+            "start": 14166,
+            "end": 14576
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-076?mode=precedent&ref=1897-076%3A1893%3A12%3A14474&at=14462&end=14486",
+        "scan_available": true
+      },
+      {
+        "id": "1897-076:1879:296:14488",
+        "source_id": "1897-076",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "05867d0498fe87c572173b59e99d70b8fdf8cbdadf95cd6fddefcd3b8788ebc2",
+        "year": 1879,
+        "start": 14462,
+        "end": 14501,
+        "department": null,
+        "association": null,
+        "number": 296,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 14488,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. Сената 1893 г. № 12, 1879 г. № 296",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 14282,
+        "context_end": 14721,
+        "context_original": "что вычеты Беккеръ производилъ принудительно. Между тѣмъ, судебное рѣшеніе должно быть основано на представленныхъ сторонами доказательствахъ, а не на предположеніяхъ самого суда (рѣш. Сената 1893 г. № 12, 1879 г. № 296 и мн. др.), а на то, чтобы онъ подвергся принужденію, самъ истецъ вовсе не указывалъ. Если бы даже приведенное съѣздомъ условіе § 2 устава кассы, что всѣ рабочіе „принуждаются“ вступить въ кассу, считать оправданіемъ за",
+        "passage_id": "1897-076:14166-15539",
+        "pages": [
+          251
+        ],
+        "sources": [
+          {
+            "page": 251,
+            "page_method": "header",
+            "file": "p0136_R.txt",
+            "start": 14166,
+            "end": 14576
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-076?mode=precedent&ref=1897-076%3A1879%3A296%3A14488&at=14462&end=14501",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-076",
     "scan_pages": [

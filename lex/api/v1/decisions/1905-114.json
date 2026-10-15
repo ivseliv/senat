@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-114",
@@ -56,6 +56,203 @@
     ],
     "participant_ids": [
       "1905-bc0bb9bb9f84"
+    ],
+    "precedents": [
+      {
+        "id": "1905-114:1869:933:926",
+        "source_id": "1905-114",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6ae6540f4242c5b83097d9a864bb63c4a88c89001ff850bd165b308d6a1264e5",
+        "year": 1869,
+        "start": 914,
+        "end": 939,
+        "department": null,
+        "association": null,
+        "number": 933,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 926,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. Сената 1869 г. № 933",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 734,
+        "context_end": 1159,
+        "context_original": "процесса, пока происходитъ на судѣ споръ; посему третье лицо въ правѣ вступить въ дѣло въ теченіе его производства и въ апелляціонной инстанціи, но до окончательнаго рѣшенія дѣла (рѣш. Сената 1869 г. № 933, 1874 г. № 142, 1875 г. № 1077 и мн. др.). Что же касается того, что слѣдуетъ разумѣть подъ выраженіемъ «въ теченіе его производства», то совокупный смыслъ всѣхъ относящихся къ сему законовъ, помѣщенныхъ въ кн. II раздѣ",
+        "passage_id": "1905-114:0-1521",
+        "pages": [
+          313
+        ],
+        "sources": [
+          {
+            "page": 313,
+            "page_method": "header",
+            "file": "p0157_R.txt",
+            "start": 702,
+            "end": 1521
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-114?mode=precedent&ref=1905-114%3A1869%3A933%3A926&at=914&end=939",
+        "scan_available": true
+      },
+      {
+        "id": "1905-114:1874:142:941",
+        "source_id": "1905-114",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6ae6540f4242c5b83097d9a864bb63c4a88c89001ff850bd165b308d6a1264e5",
+        "year": 1874,
+        "start": 914,
+        "end": 954,
+        "department": null,
+        "association": null,
+        "number": 142,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 941,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. Сената 1869 г. № 933, 1874 г. № 142",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 734,
+        "context_end": 1174,
+        "context_original": "процесса, пока происходитъ на судѣ споръ; посему третье лицо въ правѣ вступить въ дѣло въ теченіе его производства и въ апелляціонной инстанціи, но до окончательнаго рѣшенія дѣла (рѣш. Сената 1869 г. № 933, 1874 г. № 142, 1875 г. № 1077 и мн. др.). Что же касается того, что слѣдуетъ разумѣть подъ выраженіемъ «въ теченіе его производства», то совокупный смыслъ всѣхъ относящихся къ сему законовъ, помѣщенныхъ въ кн. II раздѣл. I уст. гр. с",
+        "passage_id": "1905-114:0-1521",
+        "pages": [
+          313
+        ],
+        "sources": [
+          {
+            "page": 313,
+            "page_method": "header",
+            "file": "p0157_R.txt",
+            "start": 702,
+            "end": 1521
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-114?mode=precedent&ref=1905-114%3A1874%3A142%3A941&at=914&end=954",
+        "scan_available": true
+      },
+      {
+        "id": "1905-114:1875:1077:956",
+        "source_id": "1905-114",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6ae6540f4242c5b83097d9a864bb63c4a88c89001ff850bd165b308d6a1264e5",
+        "year": 1875,
+        "start": 914,
+        "end": 970,
+        "department": null,
+        "association": null,
+        "number": 1077,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 956,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. Сената 1869 г. № 933, 1874 г. № 142, 1875 г. № 1077",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 734,
+        "context_end": 1190,
+        "context_original": "процесса, пока происходитъ на судѣ споръ; посему третье лицо въ правѣ вступить въ дѣло въ теченіе его производства и въ апелляціонной инстанціи, но до окончательнаго рѣшенія дѣла (рѣш. Сената 1869 г. № 933, 1874 г. № 142, 1875 г. № 1077 и мн. др.). Что же касается того, что слѣдуетъ разумѣть подъ выраженіемъ «въ теченіе его производства», то совокупный смыслъ всѣхъ относящихся къ сему законовъ, помѣщенныхъ въ кн. II раздѣл. I уст. гр. суд., показываетъ",
+        "passage_id": "1905-114:0-1521",
+        "pages": [
+          313
+        ],
+        "sources": [
+          {
+            "page": 313,
+            "page_method": "header",
+            "file": "p0157_R.txt",
+            "start": 702,
+            "end": 1521
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-114?mode=precedent&ref=1905-114%3A1875%3A1077%3A956&at=914&end=970",
+        "scan_available": true
+      },
+      {
+        "id": "1905-114:1874:524:2323",
+        "source_id": "1905-114",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6ae6540f4242c5b83097d9a864bb63c4a88c89001ff850bd165b308d6a1264e5",
+        "year": 1874,
+        "start": 2289,
+        "end": 2336,
+        "department": null,
+        "association": null,
+        "number": 524,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2323,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшенія Правительствующаго Сената 1874 г. № 524",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2109,
+        "context_end": 2556,
+        "context_original": "торонъ; когда же судьи уже приступили къ постановленію рѣшенія, никакое процессуальное дѣйствіе, а слѣдовательно и вступленіе въ дѣло третьихъ лицъ, не можетъ уже имѣть мѣста. Изъ рѣшенія Правительствующаго Сената 1874 г. № 524 видно, что явка тяжущагося послѣ того, какъ судьи удалились для совѣщанія, признана несвоевременной,—а въ рѣшеніи 1898 г. № 73 (по сборнику 1899 г.) установлено, что судъ не обязанъ допускать къ словеснымъ объясненіямъ ",
+        "passage_id": "1905-114:1237-3043",
+        "pages": [
+          313
+        ],
+        "sources": [
+          {
+            "page": 313,
+            "page_method": "header",
+            "file": "p0157_R.txt",
+            "start": 1237,
+            "end": 3043
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-114?mode=precedent&ref=1905-114%3A1874%3A524%3A2323&at=2289&end=2336",
+        "scan_available": true
+      },
+      {
+        "id": "1905-114:1898:73:2451",
+        "source_id": "1905-114",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6ae6540f4242c5b83097d9a864bb63c4a88c89001ff850bd165b308d6a1264e5",
+        "year": 1898,
+        "start": 2443,
+        "end": 2463,
+        "department": null,
+        "association": null,
+        "number": 73,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2451,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1898 г. № 73",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2263,
+        "context_end": 2683,
+        "context_original": "жетъ уже имѣть мѣста. Изъ рѣшенія Правительствующаго Сената 1874 г. № 524 видно, что явка тяжущагося послѣ того, какъ судьи удалились для совѣщанія, признана несвоевременной,—а въ рѣшеніи 1898 г. № 73 (по сборнику 1899 г.) установлено, что судъ не обязанъ допускать къ словеснымъ объясненіямъ тяжущагося, если явка его въ засѣданіе послѣдовала послѣ удаленія судей въ совѣщательную комнату и послѣ приступа къ совѣщанію.",
+        "passage_id": "1905-114:1237-3043",
+        "pages": [
+          313
+        ],
+        "sources": [
+          {
+            "page": 313,
+            "page_method": "header",
+            "file": "p0157_R.txt",
+            "start": 1237,
+            "end": 3043
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-114?mode=precedent&ref=1905-114%3A1898%3A73%3A2451&at=2443&end=2463",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-114",
     "scan_pages": [

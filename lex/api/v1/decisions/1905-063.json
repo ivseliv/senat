@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-063",
@@ -58,6 +58,125 @@
       "1905-fe20507a4cd3",
       "1905-92b68a94767e",
       "1905-80b9f101a928"
+    ],
+    "precedents": [
+      {
+        "id": "1905-063:1892:114:3139",
+        "source_id": "1905-063",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "ced98b0564043d846483ce1af8d7d8884b4d61cf15f650648bdce3acc24b9c14",
+        "year": 1892,
+        "start": 3091,
+        "end": 3152,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 114,
+        "department_start": 3099,
+        "department_end": 3138,
+        "citation_start": 3139,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи гражданскаго кассаціоннаго департамента 1892 г. № 114",
+        "target_url": null,
+        "department_evidence": "гражданскаго кассаціоннаго департамента",
+        "context_start": 2911,
+        "context_end": 3372,
+        "context_original": "тношеній сторонъ, принимающихъ въ ней участіе, въ нѣкоторой мѣрѣ восполнена рѣшеніями Правительствующаго Сената, послѣдовавшими по доходившимъ до его разсмотрѣнія дѣламъ. Такъ, въ рѣшеніи гражданскаго кассаціоннаго департамента 1892 г. № 114 высказано, что „банкъ уплачиваетъ деньги по чекамъ на томъ лишь основаніи, что деньги вкладчиковъ находятся у него на текущемъ счету, т.-е., въ сущности, по порученію вкладчика распоряжается его деньгами“. Въ рѣшеніи 19",
+        "passage_id": "1905-063:2770-4527",
+        "pages": [
+          172
+        ],
+        "sources": [
+          {
+            "page": 172,
+            "page_method": "header",
+            "file": "p0087_L.txt",
+            "start": 2770,
+            "end": 4527
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-063?mode=precedent&ref=1905-063%3A1892%3A114%3A3139&at=3091&end=3152",
+        "scan_available": true
+      },
+      {
+        "id": "1905-063:1900:71:3370",
+        "source_id": "1905-063",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "ced98b0564043d846483ce1af8d7d8884b4d61cf15f650648bdce3acc24b9c14",
+        "year": 1900,
+        "start": 3362,
+        "end": 3408,
+        "department": "Гражданский кассационный департамент",
+        "association": "trailing",
+        "number": 71,
+        "department_start": 3383,
+        "department_end": 3408,
+        "citation_start": 3370,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1900 г. № 71 гражд. касс. департаментъ",
+        "target_url": null,
+        "department_evidence": "гражд. касс. департаментъ",
+        "context_start": 3182,
+        "context_end": 3628,
+        "context_original": "аетъ деньги по чекамъ на томъ лишь основаніи, что деньги вкладчиковъ находятся у него на текущемъ счету, т.-е., въ сущности, по порученію вкладчика распоряжается его деньгами“. Въ рѣшеніи 1900 г. № 71 гражд. касс. департаментъ, развивая вышеприведенное положеніе, призналъ, „что, по самому существу своему, чекъ, какъ приказъ на кассу банка или банкира, у котораго чекодатель имѣетъ текущій счетъ, служитъ, главнымъ образомъ, для окончанія долгов",
+        "passage_id": "1905-063:2770-4527",
+        "pages": [
+          172
+        ],
+        "sources": [
+          {
+            "page": 172,
+            "page_method": "header",
+            "file": "p0087_L.txt",
+            "start": 2770,
+            "end": 4527
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-063?mode=precedent&ref=1905-063%3A1900%3A71%3A3370&at=3362&end=3408",
+        "scan_available": true
+      },
+      {
+        "id": "1905-063:1900:71:7981",
+        "source_id": "1905-063",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "ced98b0564043d846483ce1af8d7d8884b4d61cf15f650648bdce3acc24b9c14",
+        "year": 1900,
+        "start": 7961,
+        "end": 7993,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 71,
+        "department_start": 7966,
+        "department_end": 7980,
+        "citation_start": 7981,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. деп. 1900 г. № 71",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 7781,
+        "context_end": 8213,
+        "context_original": "нка произвести платежъ по предъявленному ему чеку, чекодержатель, независимо отъ степени основательности уклоненія банка отъ платежа, можетъ заявить притязанія лишь къ чекодателю (рѣш. гр. касс. деп. 1900 г. № 71), а не къ банку; 5) что, такимъ образомъ, основное положеніе обжалованнаго рѣшенія, вопреки мнѣнію просителя, не противорѣчитъ § 4 правилъ кредитовъ, открываемыхъ Русскимъ для внѣшней торговли банкомъ (по кіевскому отдѣ",
+        "passage_id": "1905-063:7217-8843",
+        "pages": [
+          173
+        ],
+        "sources": [
+          {
+            "page": 173,
+            "page_method": "header",
+            "file": "p0087_R.txt",
+            "start": 7217,
+            "end": 8208
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-063?mode=precedent&ref=1905-063%3A1900%3A71%3A7981&at=7961&end=7993",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-063",
     "scan_pages": [

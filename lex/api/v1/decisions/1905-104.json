@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-104",
@@ -48,6 +48,86 @@
       "1905-e5d2d6a4d41e",
       "1905-a1922a1d7520",
       "1905-1b3a1db2068e"
+    ],
+    "precedents": [
+      {
+        "id": "1905-104:1874:129:5122",
+        "source_id": "1905-104",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "d0044ebf4d1476a988b12547ea16a9b8e5cccc2fbb733703dd0d8b731d689b2a",
+        "year": 1874,
+        "start": 5117,
+        "end": 5135,
+        "department": null,
+        "association": null,
+        "number": 129,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5122,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1874 г. № 129",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4937,
+        "context_end": 5355,
+        "context_original": "вленныя къ распространенію права общества на какое-либо имущество должника, внѣ заложеннаго, уставомъ не разрѣшаются. Поэтому, хотя подобныя сдѣлки вообще не противозаконны (срав. рѣш. 1874 г. № 129 и 1884 г. № 5), но кредитныя установленія, въ уставѣ коихъ нѣтъ прямаго разрѣшенія, не могутъ ими пользоваться и устанавливать, въ дополненіе къ залогу, какія бы то ни было личныя долговыя обязательства.—Но, независимо ",
+        "passage_id": "1905-104:4342-6112",
+        "pages": [
+          283
+        ],
+        "sources": [
+          {
+            "page": 283,
+            "page_method": "header",
+            "file": "p0142_R.txt",
+            "start": 4342,
+            "end": 6112
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-104?mode=precedent&ref=1905-104%3A1874%3A129%3A5122&at=5117&end=5135",
+        "scan_available": true
+      },
+      {
+        "id": "1905-104:1884:5:5138",
+        "source_id": "1905-104",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "d0044ebf4d1476a988b12547ea16a9b8e5cccc2fbb733703dd0d8b731d689b2a",
+        "year": 1884,
+        "start": 5117,
+        "end": 5149,
+        "department": null,
+        "association": null,
+        "number": 5,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5138,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1874 г. № 129 и 1884 г. № 5",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4937,
+        "context_end": 5369,
+        "context_original": "вленныя къ распространенію права общества на какое-либо имущество должника, внѣ заложеннаго, уставомъ не разрѣшаются. Поэтому, хотя подобныя сдѣлки вообще не противозаконны (срав. рѣш. 1874 г. № 129 и 1884 г. № 5), но кредитныя установленія, въ уставѣ коихъ нѣтъ прямаго разрѣшенія, не могутъ ими пользоваться и устанавливать, въ дополненіе къ залогу, какія бы то ни было личныя долговыя обязательства.—Но, независимо отъ этихъ общи",
+        "passage_id": "1905-104:4342-6112",
+        "pages": [
+          283
+        ],
+        "sources": [
+          {
+            "page": 283,
+            "page_method": "header",
+            "file": "p0142_R.txt",
+            "start": 4342,
+            "end": 6112
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-104?mode=precedent&ref=1905-104%3A1884%3A5%3A5138&at=5117&end=5149",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-104",
     "scan_pages": [

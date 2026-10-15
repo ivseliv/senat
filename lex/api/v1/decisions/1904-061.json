@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-061",
@@ -50,6 +50,125 @@
       "1904-1bc8b4e54364",
       "1904-c2fb029d135d",
       "1904-b37f1359914f"
+    ],
+    "precedents": [
+      {
+        "id": "1904-061:1889:106:5681",
+        "source_id": "1904-061",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a29831d4a936885e13f1f253da5c2aeb836c3583ddadcfdc65a95e9b0c0545cc",
+        "year": 1889,
+        "start": 5633,
+        "end": 5696,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 106,
+        "department_start": 5641,
+        "department_end": 5680,
+        "citation_start": 5681,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи гражданскаго кассаціоннаго департамента 1889 года № 106",
+        "target_url": null,
+        "department_evidence": "гражданскаго кассаціоннаго департамента",
+        "context_start": 5453,
+        "context_end": 5916,
+        "context_original": " росс. жел. дор.), подлежатъ, однако, примѣненію и истолкованію вполнѣ согласно съ правилами примѣненія закона (65 ст. зак. основ. и 9 ст. уст. гр. суд.), какъ это и разъяснено въ рѣшеніи гражданскаго кассаціоннаго департамента 1889 года № 106,—именно: судебныя мѣста обязаны въ примѣненіи относящихся къ обсуждаемому случаю узаконеній руководствоваться точнымъ и буквальнымъ смысломъ оныхъ и, по разъясненію того же департамента въ рѣшеніяхъ 1875 года № 968 и 18",
+        "passage_id": "1904-061:4416-6132",
+        "pages": [
+          173
+        ],
+        "sources": [
+          {
+            "page": 173,
+            "page_method": "header",
+            "file": "p0087_R.txt",
+            "start": 4416,
+            "end": 6132
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-061?mode=precedent&ref=1904-061%3A1889%3A106%3A5681&at=5633&end=5696",
+        "scan_available": true
+      },
+      {
+        "id": "1904-061:1875:968:5896",
+        "source_id": "1904-061",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a29831d4a936885e13f1f253da5c2aeb836c3583ddadcfdc65a95e9b0c0545cc",
+        "year": 1875,
+        "start": 5886,
+        "end": 5911,
+        "department": null,
+        "association": null,
+        "number": 968,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5896,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ 1875 года № 968",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5706,
+        "context_end": 6131,
+        "context_original": "судебныя мѣста обязаны въ примѣненіи относящихся къ обсуждаемому случаю узаконеній руководствоваться точнымъ и буквальнымъ смысломъ оныхъ и, по разъясненію того же департамента въ рѣшеніяхъ 1875 года № 968 и 1889 года № 7, сторона, признающая, что необнародованное установленнымъ порядкомъ во всеобщее свѣдѣніе положеніе должно имѣть къ обсуждаемому судомъ случаю примѣненіе, обязана представить точный списокъ сего положенія",
+        "passage_id": "1904-061:4416-6132",
+        "pages": [
+          173
+        ],
+        "sources": [
+          {
+            "page": 173,
+            "page_method": "header",
+            "file": "p0087_R.txt",
+            "start": 5870,
+            "end": 6320
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-061?mode=precedent&ref=1904-061%3A1875%3A968%3A5896&at=5886&end=5911",
+        "scan_available": true
+      },
+      {
+        "id": "1904-061:1889:7:5914",
+        "source_id": "1904-061",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a29831d4a936885e13f1f253da5c2aeb836c3583ddadcfdc65a95e9b0c0545cc",
+        "year": 1889,
+        "start": 5886,
+        "end": 5927,
+        "department": null,
+        "association": null,
+        "number": 7,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5914,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ 1875 года № 968 и 1889 года № 7",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5706,
+        "context_end": 6147,
+        "context_original": "судебныя мѣста обязаны въ примѣненіи относящихся къ обсуждаемому случаю узаконеній руководствоваться точнымъ и буквальнымъ смысломъ оныхъ и, по разъясненію того же департамента въ рѣшеніяхъ 1875 года № 968 и 1889 года № 7, сторона, признающая, что необнародованное установленнымъ порядкомъ во всеобщее свѣдѣніе положеніе должно имѣть къ обсуждаемому судомъ случаю примѣненіе, обязана представить точный списокъ сего положенія. Точнымъ же спи",
+        "passage_id": "1904-061:4416-6132",
+        "pages": [
+          173
+        ],
+        "sources": [
+          {
+            "page": 173,
+            "page_method": "header",
+            "file": "p0087_R.txt",
+            "start": 5870,
+            "end": 6320
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-061?mode=precedent&ref=1904-061%3A1889%3A7%3A5914&at=5886&end=5927",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-061",
     "scan_pages": [

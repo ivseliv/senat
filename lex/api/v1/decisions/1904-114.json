@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-114",
@@ -63,6 +63,164 @@
       "1904-892bf02e9107",
       "1904-ef86bcf05621",
       "1904-dbc3599b84e7"
+    ],
+    "precedents": [
+      {
+        "id": "1904-114:1867:243:2813",
+        "source_id": "1904-114",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "2caf8b213481a214361f67fc0c3af8e43fa931b04825b533888216f6d31faaf1",
+        "year": 1867,
+        "start": 2799,
+        "end": 2826,
+        "department": null,
+        "association": null,
+        "number": 243,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2813,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. Пр. Сен. 1867 г. № 243",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2619,
+        "context_end": 3046,
+        "context_original": "ой статьѣ устава, не могутъ имѣть никакого приѣмѣненія въ тѣхъ случаяхъ, когда истцомъ заявлено требованіе не объ исполненіи по договору, а о признаніи договора недѣйствительнымъ (рѣш. Пр. Сен. 1867 г. № 243, 1871 г. № 42 и др.). Впослѣдствіи Правительствующій Сенатъ отступилъ отъ этого взгляда и въ рѣшеніи 1880 г. № 64 установлено то положеніе, что во всѣхъ случаяхъ, когда истецъ требуетъ не только взысканія срочнаго плате",
+        "passage_id": "1904-114:1498-3269",
+        "pages": [
+          315
+        ],
+        "sources": [
+          {
+            "page": 315,
+            "page_method": "header",
+            "file": "p0158_R.txt",
+            "start": 2039,
+            "end": 3092
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-114?mode=precedent&ref=1904-114%3A1867%3A243%3A2813&at=2799&end=2826",
+        "scan_available": true
+      },
+      {
+        "id": "1904-114:1871:42:2828",
+        "source_id": "1904-114",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "2caf8b213481a214361f67fc0c3af8e43fa931b04825b533888216f6d31faaf1",
+        "year": 1871,
+        "start": 2799,
+        "end": 2840,
+        "department": null,
+        "association": null,
+        "number": 42,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2828,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. Пр. Сен. 1867 г. № 243, 1871 г. № 42",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2619,
+        "context_end": 3060,
+        "context_original": "ой статьѣ устава, не могутъ имѣть никакого приѣмѣненія въ тѣхъ случаяхъ, когда истцомъ заявлено требованіе не объ исполненіи по договору, а о признаніи договора недѣйствительнымъ (рѣш. Пр. Сен. 1867 г. № 243, 1871 г. № 42 и др.). Впослѣдствіи Правительствующій Сенатъ отступилъ отъ этого взгляда и въ рѣшеніи 1880 г. № 64 установлено то положеніе, что во всѣхъ случаяхъ, когда истецъ требуетъ не только взысканія срочнаго платежа по договору",
+        "passage_id": "1904-114:1498-3269",
+        "pages": [
+          315
+        ],
+        "sources": [
+          {
+            "page": 315,
+            "page_method": "header",
+            "file": "p0158_R.txt",
+            "start": 2039,
+            "end": 3092
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-114?mode=precedent&ref=1904-114%3A1871%3A42%3A2828&at=2799&end=2840",
+        "scan_available": true
+      },
+      {
+        "id": "1904-114:1880:64:2928",
+        "source_id": "1904-114",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "2caf8b213481a214361f67fc0c3af8e43fa931b04825b533888216f6d31faaf1",
+        "year": 1880,
+        "start": 2920,
+        "end": 2940,
+        "department": null,
+        "association": null,
+        "number": 64,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2928,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1880 г. № 64",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2740,
+        "context_end": 3160,
+        "context_original": "ніи по договору, а о признаніи договора недѣйствительнымъ (рѣш. Пр. Сен. 1867 г. № 243, 1871 г. № 42 и др.). Впослѣдствіи Правительствующій Сенатъ отступилъ отъ этого взгляда и въ рѣшеніи 1880 г. № 64 установлено то положеніе, что во всѣхъ случаяхъ, когда истецъ требуетъ не только взысканія срочнаго платежа по договору найма имуществъ, но и расторже- нія этого договора, цѣна иска, согласно 4 п. 273 ст. уст. гр. суд.,",
+        "passage_id": "1904-114:1498-3269",
+        "pages": [
+          315
+        ],
+        "sources": [
+          {
+            "page": 315,
+            "page_method": "header",
+            "file": "p0158_R.txt",
+            "start": 2039,
+            "end": 3092
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-114?mode=precedent&ref=1904-114%3A1880%3A64%3A2928&at=2920&end=2940",
+        "scan_available": true
+      },
+      {
+        "id": "1904-114:1893:6:3511",
+        "source_id": "1904-114",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "2caf8b213481a214361f67fc0c3af8e43fa931b04825b533888216f6d31faaf1",
+        "year": 1893,
+        "start": 3503,
+        "end": 3522,
+        "department": null,
+        "association": null,
+        "number": 6,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3511,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1893 г. № 6",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3323,
+        "context_end": 3742,
+        "context_original": "ѣна иска должна быть опредѣляема на одинаковыхъ основаніяхъ какъ при требованіи исполненія по договору, такъ и въ случаѣ требованія объ его уничтоженіи, было затѣмъ поколеблено въ рѣшеніи 1893 г. № 6. Въ этомъ рѣшеніи разъяснено между прочимъ, что правила, выраженныя въ 273 ст. уст. гр. суд., не могутъ имѣть никакого примѣненія при опредѣленіи цѣны иска о признаніи договора недѣйствительнымъ, когда основаніемъ таког",
+        "passage_id": "1904-114:3041-4928",
+        "pages": [
+          316
+        ],
+        "sources": [
+          {
+            "page": 316,
+            "page_method": "header",
+            "file": "p0159_L.txt",
+            "start": 3093,
+            "end": 4928
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-114?mode=precedent&ref=1904-114%3A1893%3A6%3A3511&at=3503&end=3522",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-114",
     "scan_pages": [

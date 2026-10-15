@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-017",
@@ -53,6 +53,164 @@
       "1905-7bf0bc0205e9",
       "1905-b8f4ecfcf72c",
       "1905-cc2d855baa23"
+    ],
+    "precedents": [
+      {
+        "id": "1905-017:1881:110:4530",
+        "source_id": "1905-017",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "5962441b7e75c31674824f533aa81f90dc766b1839f568958cf3d3882f5b968d",
+        "year": 1881,
+        "start": 4525,
+        "end": 4543,
+        "department": null,
+        "association": null,
+        "number": 110,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4530,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1881 г. № 110",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4345,
+        "context_end": 4763,
+        "context_original": "говаривающихся обязанность ихъ исполнить, а въ случаѣ неисполненія—даютъ право требовать отъ лица обязавшагося вознагражденія за убытки, могущіе произойти отъ такого неисполненія (рѣш. 1881 г. № 110, 1887 г. № 70, 1896 г. № 8 и др.). Не подходя непосредственно ни подъ одинъ изъ договоровъ, предусмотрѣнныхъ закономъ, означеннаго рода соглашенія, согласно 9 ст. уст. гр. суд., должны быть подводимы подъ тѣ изъ этихъ д",
+        "passage_id": "1905-017:3807-5281",
+        "pages": [
+          41
+        ],
+        "sources": [
+          {
+            "page": 41,
+            "page_method": "header",
+            "file": "p0021_R.txt",
+            "start": 3996,
+            "end": 5281
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-017?mode=precedent&ref=1905-017%3A1881%3A110%3A4530&at=4525&end=4543",
+        "scan_available": true
+      },
+      {
+        "id": "1905-017:1887:70:4545",
+        "source_id": "1905-017",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "5962441b7e75c31674824f533aa81f90dc766b1839f568958cf3d3882f5b968d",
+        "year": 1887,
+        "start": 4525,
+        "end": 4557,
+        "department": null,
+        "association": null,
+        "number": 70,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4545,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1881 г. № 110, 1887 г. № 70",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4345,
+        "context_end": 4777,
+        "context_original": "говаривающихся обязанность ихъ исполнить, а въ случаѣ неисполненія—даютъ право требовать отъ лица обязавшагося вознагражденія за убытки, могущіе произойти отъ такого неисполненія (рѣш. 1881 г. № 110, 1887 г. № 70, 1896 г. № 8 и др.). Не подходя непосредственно ни подъ одинъ изъ договоровъ, предусмотрѣнныхъ закономъ, означеннаго рода соглашенія, согласно 9 ст. уст. гр. суд., должны быть подводимы подъ тѣ изъ этихъ договоровъ, кот",
+        "passage_id": "1905-017:3807-5281",
+        "pages": [
+          41
+        ],
+        "sources": [
+          {
+            "page": 41,
+            "page_method": "header",
+            "file": "p0021_R.txt",
+            "start": 3996,
+            "end": 5281
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-017?mode=precedent&ref=1905-017%3A1887%3A70%3A4545&at=4525&end=4557",
+        "scan_available": true
+      },
+      {
+        "id": "1905-017:1896:8:4559",
+        "source_id": "1905-017",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "5962441b7e75c31674824f533aa81f90dc766b1839f568958cf3d3882f5b968d",
+        "year": 1896,
+        "start": 4525,
+        "end": 4570,
+        "department": null,
+        "association": null,
+        "number": 8,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4559,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1881 г. № 110, 1887 г. № 70, 1896 г. № 8",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4345,
+        "context_end": 4790,
+        "context_original": "говаривающихся обязанность ихъ исполнить, а въ случаѣ неисполненія—даютъ право требовать отъ лица обязавшагося вознагражденія за убытки, могущіе произойти отъ такого неисполненія (рѣш. 1881 г. № 110, 1887 г. № 70, 1896 г. № 8 и др.). Не подходя непосредственно ни подъ одинъ изъ договоровъ, предусмотрѣнныхъ закономъ, означеннаго рода соглашенія, согласно 9 ст. уст. гр. суд., должны быть подводимы подъ тѣ изъ этихъ договоровъ, которые по своей",
+        "passage_id": "1905-017:3807-5281",
+        "pages": [
+          41
+        ],
+        "sources": [
+          {
+            "page": 41,
+            "page_method": "header",
+            "file": "p0021_R.txt",
+            "start": 3996,
+            "end": 5281
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-017?mode=precedent&ref=1905-017%3A1896%3A8%3A4559&at=4525&end=4570",
+        "scan_available": true
+      },
+      {
+        "id": "1905-017:1868:1327:5620",
+        "source_id": "1905-017",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "5962441b7e75c31674824f533aa81f90dc766b1839f568958cf3d3882f5b968d",
+        "year": 1868,
+        "start": 5615,
+        "end": 5634,
+        "department": null,
+        "association": null,
+        "number": 1327,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5620,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1868 г. № 1327",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5435,
+        "context_end": 5854,
+        "context_original": "беретъ на себя обязанность хранить чужое имущество только до наступленія извѣстнаго момента, что во всякомъ случаѣ является обязательнымъ и для поклажедателя (2108 ст. 1 ч. X т. и рѣш. 1868 г. № 1327). Однако, срочность принятаго на себя дорогою обязательства хранить грузъ не можетъ освободить ее отъ обязанности хранить его, какъ надлежитъ доброму хозяину, и, въ случаѣ истребленія этого груза, доказать, что истребле",
+        "passage_id": "1905-017:5043-7153",
+        "pages": [
+          41
+        ],
+        "sources": [
+          {
+            "page": 41,
+            "page_method": "header",
+            "file": "p0021_R.txt",
+            "start": 5043,
+            "end": 7015
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-017?mode=precedent&ref=1905-017%3A1868%3A1327%3A5620&at=5615&end=5634",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-017",
     "scan_pages": [

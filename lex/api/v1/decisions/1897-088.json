@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-088",
@@ -40,6 +40,47 @@
       "1897-adae2d42e795",
       "1897-cdd81ade8c59",
       "1897-7b8fdb00f3ea"
+    ],
+    "precedents": [
+      {
+        "id": "1897-088:1890:31:2984",
+        "source_id": "1897-088",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "a7567b72b29b5763b005ba137b17b2362cbfa4207d789b9a02c835b9a73c13db",
+        "year": 1890,
+        "start": 2945,
+        "end": 2998,
+        "department": null,
+        "association": null,
+        "number": 31,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2984,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніемъ Правительствующаго Сената за 1890 годъ № 31",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2765,
+        "context_end": 3218,
+        "context_original": "а собою законныхъ основаній и руководствуясь означенными параграфами устава Московскаго городскаго кредитнаго общества, 366, 774 и 868 ст. уст. гр. суд. т. XVI ч. 1 изд. 1892 г. и рѣшеніемъ Правительствующаго Сената за 1890 годъ № 31,—судебная палата 2 декабря 1894 года постановила: отмѣнивъ рѣшеніе окружнаго суда, въ искѣ Безобразову отказать. Въ кассаціонной жалобѣ повѣренный Безобразова, указывая на нарушеніе палатою ст. 65 т. I зак. осн. §§ 67, ",
+        "passage_id": "1897-088:2429-3966",
+        "pages": [
+          287
+        ],
+        "sources": [
+          {
+            "page": 287,
+            "page_method": "header",
+            "file": "p0154_R.txt",
+            "start": 2429,
+            "end": 3966
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-088?mode=precedent&ref=1897-088%3A1890%3A31%3A2984&at=2945&end=2998",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-088",
     "scan_pages": [

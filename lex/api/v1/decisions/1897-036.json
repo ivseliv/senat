@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-036",
@@ -68,6 +68,203 @@
       "1897-66ea146a6ea9",
       "1897-7ad942fad61d",
       "1897-d29517b5e076"
+    ],
+    "precedents": [
+      {
+        "id": "1897-036:1888:42:3062",
+        "source_id": "1897-036",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4252a55fb689c931ab2ff1200d1335db2a814e7acf8199c9b0904b060fe8c918",
+        "year": 1888,
+        "start": 3054,
+        "end": 3074,
+        "department": null,
+        "association": null,
+        "number": 42,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3062,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1888 г. № 42",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2874,
+        "context_end": 3294,
+        "context_original": "а затѣмъ выкупные платежи вносили въ казну истцы. Платежъ собственникомъ повинностей, а слѣдовательно и оброчной подати за землю, хотя, по разъясненію Правительствующаго Сената въ рѣшеніи 1888 г. № 42, и составляетъ одно изъ существенныхъ проявленій имъ права собственности, но это лишь въ томъ случаѣ, когда платежъ таковой производится собственникомъ въ силу признаваемой имъ для себя, какъ собственника, обязанности, ",
+        "passage_id": "1897-036:2726-4413",
+        "pages": [
+          122
+        ],
+        "sources": [
+          {
+            "page": 122,
+            "page_method": "header",
+            "file": "p0072_L.txt",
+            "start": 2726,
+            "end": 3389
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-036?mode=precedent&ref=1897-036%3A1888%3A42%3A3062&at=3054&end=3074",
+        "scan_available": true
+      },
+      {
+        "id": "1897-036:1891:7:4817",
+        "source_id": "1897-036",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4252a55fb689c931ab2ff1200d1335db2a814e7acf8199c9b0904b060fe8c918",
+        "year": 1891,
+        "start": 4777,
+        "end": 4828,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 7,
+        "department_start": 4777,
+        "department_end": 4792,
+        "citation_start": 4817,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "общаго собранія Прав. Сената въ рѣшеніи 1891 г. № 7",
+        "target_url": null,
+        "department_evidence": "общаго собранія",
+        "context_start": 4597,
+        "context_end": 5048,
+        "context_original": " X т. 1 ч., истцы утратили всякое право на него и даже на самый искъ о немъ въ силу 692 ст. и 1 п. прил. къ 694 ст. X т. 1 ч. Выводъ этотъ нисколько не противорѣчитъ и разъясненію общаго собранія Прав. Сената въ рѣшеніи 1891 г. № 7, на которое сдѣлалъ ссылку повѣренный истцовъ, такъ какъ разсматриваемый въ томъ рѣшеніи вопросъ о возможности продажи надѣльной земли государственныхъ крестьянъ къ настоящему дѣлу вовсе не относится и если, по разъясне",
+        "passage_id": "1897-036:4156-5433",
+        "pages": [
+          123
+        ],
+        "sources": [
+          {
+            "page": 123,
+            "page_method": "header",
+            "file": "p0072_R.txt",
+            "start": 4156,
+            "end": 5433
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-036?mode=precedent&ref=1897-036%3A1891%3A7%3A4817&at=4777&end=4828",
+        "scan_available": true
+      },
+      {
+        "id": "1897-036:1884:113:12152",
+        "source_id": "1897-036",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4252a55fb689c931ab2ff1200d1335db2a814e7acf8199c9b0904b060fe8c918",
+        "year": 1884,
+        "start": 12147,
+        "end": 12165,
+        "department": null,
+        "association": null,
+        "number": 113,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 12152,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1884 г. № 113",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 11967,
+        "context_end": 12385,
+        "context_original": "изнака сознанія истцами того, что платежи эти относились и къ спорному участку. Всѣ выводы палаты по симъ предметамъ, относясь къ существу дѣла, не подлежатъ кассаціонной повѣркѣ (рѣш. 1884 г. № 113, 1887 г. № 65 и др.). Наконецъ изъ общаго возраженія отвѣтчиковъ о давности палата не лишена была права заключить, что въ немъ содержится указаніе на давность не только пріобрѣтательную, но и исковую, и этимъ не нарушил",
+        "passage_id": "1897-036:11280-12733",
+        "pages": [
+          125
+        ],
+        "sources": [
+          {
+            "page": 125,
+            "page_method": "header",
+            "file": "p0073_R.txt",
+            "start": 11280,
+            "end": 12386
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-036?mode=precedent&ref=1897-036%3A1884%3A113%3A12152&at=12147&end=12165",
+        "scan_available": true
+      },
+      {
+        "id": "1897-036:1887:65:12167",
+        "source_id": "1897-036",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4252a55fb689c931ab2ff1200d1335db2a814e7acf8199c9b0904b060fe8c918",
+        "year": 1887,
+        "start": 12147,
+        "end": 12179,
+        "department": null,
+        "association": null,
+        "number": 65,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 12167,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1884 г. № 113, 1887 г. № 65",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 11967,
+        "context_end": 12399,
+        "context_original": "изнака сознанія истцами того, что платежи эти относились и къ спорному участку. Всѣ выводы палаты по симъ предметамъ, относясь къ существу дѣла, не подлежатъ кассаціонной повѣркѣ (рѣш. 1884 г. № 113, 1887 г. № 65 и др.). Наконецъ изъ общаго возраженія отвѣтчиковъ о давности палата не лишена была права заключить, что въ немъ содержится указаніе на давность не только пріобрѣтательную, но и исковую, и этимъ не нарушила 706 ст. уст.",
+        "passage_id": "1897-036:11280-12733",
+        "pages": [
+          125
+        ],
+        "sources": [
+          {
+            "page": 125,
+            "page_method": "header",
+            "file": "p0073_R.txt",
+            "start": 11280,
+            "end": 12386
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-036?mode=precedent&ref=1897-036%3A1887%3A65%3A12167&at=12147&end=12179",
+        "scan_available": true
+      },
+      {
+        "id": "1897-036:1881:22:12415",
+        "source_id": "1897-036",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4252a55fb689c931ab2ff1200d1335db2a814e7acf8199c9b0904b060fe8c918",
+        "year": 1881,
+        "start": 12410,
+        "end": 12427,
+        "department": null,
+        "association": null,
+        "number": 22,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 12415,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1881 г. № 22",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 12230,
+        "context_end": 12647,
+        "context_original": " о давности палата не лишена была права заключить, что въ немъ содержится указаніе на давность не только пріобрѣтательную, но и исковую, и этимъ не нарушила 706 ст. уст. гр. суд. (рѣш. 1881 г. № 22). По всѣмъ вышеприведеннымъ соображеніямъ Правительствующій Сенатъ, не усматривая въ рѣшеніи палаты нарушенія указываемыхъ просителемъ законовъ, опредѣляетъ: просьбу повѣреннаго общества крестьянъ деревни Варусова, прис",
+        "passage_id": "1897-036:11280-12733",
+        "pages": [
+          126
+        ],
+        "sources": [
+          {
+            "page": 126,
+            "page_method": "header",
+            "file": "p0074_L.txt",
+            "start": 12387,
+            "end": 12733
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-036?mode=precedent&ref=1897-036%3A1881%3A22%3A12415&at=12410&end=12427",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-036",
     "scan_pages": [

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-067",
@@ -50,6 +50,86 @@
       "1904-5f11ad35eba3",
       "1904-a2f075f08722",
       "1904-912acbf2d11a"
+    ],
+    "precedents": [
+      {
+        "id": "1904-067:1871:432:103",
+        "source_id": "1904-067",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "d60fd85212511b809cc8adf82bc142df890ae55e43d0cf038e9d930175407121",
+        "year": 1871,
+        "start": 83,
+        "end": 116,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 432,
+        "department_start": 88,
+        "department_end": 102,
+        "citation_start": 103,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. деп. 1871 г. № 432",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 0,
+        "context_end": 336,
+        "context_original": "Принимая во вниманіе: 1) что,—какъ это разъяснено уже Правительствующимъ Сенатомъ (рѣш. гр. касс. деп. 1871 г. № 432, 1876 г. № 254),—при возникновеніи права общей собственности по договорному соглашенію пріобрѣтателей, права каждаго изъ соучастниковъ опредѣляются тѣмъ актомъ или договоромъ, въ силу котораго пріобрѣтеніе совершилось, ",
+        "passage_id": "1904-067:0-1578",
+        "pages": [
+          195
+        ],
+        "sources": [
+          {
+            "page": 195,
+            "page_method": "header",
+            "file": "p0098_R.txt",
+            "start": 0,
+            "end": 1578
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-067?mode=precedent&ref=1904-067%3A1871%3A432%3A103&at=83&end=116",
+        "scan_available": true
+      },
+      {
+        "id": "1904-067:1876:254:118",
+        "source_id": "1904-067",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "d60fd85212511b809cc8adf82bc142df890ae55e43d0cf038e9d930175407121",
+        "year": 1876,
+        "start": 83,
+        "end": 131,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 254,
+        "department_start": 88,
+        "department_end": 102,
+        "citation_start": 118,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. гр. касс. деп. 1871 г. № 432, 1876 г. № 254",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 0,
+        "context_end": 351,
+        "context_original": "Принимая во вниманіе: 1) что,—какъ это разъяснено уже Правительствующимъ Сенатомъ (рѣш. гр. касс. деп. 1871 г. № 432, 1876 г. № 254),—при возникновеніи права общей собственности по договорному соглашенію пріобрѣтателей, права каждаго изъ соучастниковъ опредѣляются тѣмъ актомъ или договоромъ, въ силу котораго пріобрѣтеніе совершилось, и соучастникъ, ",
+        "passage_id": "1904-067:0-1578",
+        "pages": [
+          195
+        ],
+        "sources": [
+          {
+            "page": 195,
+            "page_method": "header",
+            "file": "p0098_R.txt",
+            "start": 0,
+            "end": 1578
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-067?mode=precedent&ref=1904-067%3A1876%3A254%3A118&at=83&end=131",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-067",
     "scan_pages": [

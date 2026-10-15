@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1896-044",
@@ -41,6 +41,86 @@
       ]
     ],
     "participant_ids": [],
+    "precedents": [
+      {
+        "id": "1896-044:1887:22:260",
+        "source_id": "1896-044",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "ba8da6537ac6dad8ffc75dd8f41088ed799e607f3deb5123ce026041a7690e83",
+        "year": 1887,
+        "start": 242,
+        "end": 272,
+        "department": null,
+        "association": null,
+        "number": 22,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 260,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. О б щ. Собр. 1887 г. № 22",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 62,
+        "context_end": 492,
+        "context_original": "твующимъ вопросу* о томъ: въ Юго-западныхъ губерніяхъ, при установле ніи, актами земельнаго ус т- ройства крестьянъ, общаго пользованія помѣщиковъ и крестьянъвъ лѣсныхъ угодь яхъ (рѣш. О б щ. Собр. 1887 г. № 22), въ чемъ должны за ключаться права помѣщика и крестьянъ послѣ оконча тельной вырубки лѣса? (Предсѣ’іатедьствовалъПервоприсутств. Сенаторъ II. А. Марковъ; док.іад, дѣю Сенаг. Н. И. БарковскІ*; з‘чо. давалъ и.о. Гмв Об.-",
+        "passage_id": "1896-044:0-1734",
+        "pages": [
+          787
+        ],
+        "sources": [
+          {
+            "page": 787,
+            "page_method": "header",
+            "file": "p0080.txt",
+            "start": 0,
+            "end": 1734
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-044?mode=precedent&ref=1896-044%3A1887%3A22%3A260&at=242&end=272",
+        "scan_available": true
+      },
+      {
+        "id": "1896-044:1887:22:2043",
+        "source_id": "1896-044",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "ba8da6537ac6dad8ffc75dd8f41088ed799e607f3deb5123ce026041a7690e83",
+        "year": 1887,
+        "start": 2027,
+        "end": 2055,
+        "department": null,
+        "association": null,
+        "number": 22,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2043,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. Обш. Собр. 1887 г. № 22",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 1847,
+        "context_end": 2275,
+        "context_original": " къ сему пользо ванію права, опредѣленныя въ 18 ст. мѣстнаго положена, сохра ены за сто ронами при выкупѣ крестьянами въ собственность отведенной имъ въ на- дѣлъ сѣнокосной земли (рѣш. Обш. Собр. 1887 г. № 22). Такимъ обра зомъ, въ этомъ случаѣ помѣщикъ со храняетъ свои прежнія права на лѣсъ, а крестьяне продолжаютъ пользоваться отведенною имъ въ собственность на дѣльною землею на ^ограниченномъ правѣ сѣнскошенія въ свободны",
+        "passage_id": "1896-044:1453-3058",
+        "pages": [
+          787
+        ],
+        "sources": [
+          {
+            "page": 787,
+            "page_method": "header",
+            "file": "p0080.txt",
+            "start": 1453,
+            "end": 3058
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-044?mode=precedent&ref=1896-044%3A1887%3A22%3A2043&at=2027&end=2055",
+        "scan_available": true
+      }
+    ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1896-044",
     "scan_pages": [
       {

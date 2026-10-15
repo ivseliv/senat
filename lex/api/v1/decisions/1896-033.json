@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1896-033",
@@ -38,6 +38,47 @@
       ]
     ],
     "participant_ids": [],
+    "precedents": [
+      {
+        "id": "1896-033:1893:26:591",
+        "source_id": "1896-033",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "77ab5f47277932fd68a580daa8dc2dd6d428dfbe845e86f4aacd711db4ebdd7d",
+        "year": 1893,
+        "start": 497,
+        "end": 602,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 26,
+        "department_start": 505,
+        "department_end": 520,
+        "citation_start": 591,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи Общаго Собранія Правитель ствующаго Сената 1-го, 2-го и Касса ціонныхъ Департаментовъ 1893 г. №26",
+        "target_url": null,
+        "department_evidence": "Общаго Собранія",
+        "context_start": 317,
+        "context_end": 822,
+        "context_original": " Сазоновъ; заклю ченіе давалъ исп. об. Тов. Об.-Прокурора М, Н. Бѣловъ). Выслушавъ заключеніе исп. обязан. Товарища Оберъ-Прокурора и принимая во вниманіе: 1) что, какъ указано въ рѣшеніи Общаго Собранія Правитель ствующаго Сената 1-го, 2-го и Касса ціонныхъ Департаментовъ 1893 г. №26 —по точному смыслу Высочайше утвер жденнаго 21 мая 1876 г. полож. коми тета по дѣламъ Царства Польскаго(п. 1), учрежденіямъ по крестьянскимъ дѣ ламъ подвѣдомы возникающ е изъ лик- видаціонныхъ табелей и данныхъ спо ры о",
+        "passage_id": "1896-033:0-1482",
+        "pages": [
+          771
+        ],
+        "sources": [
+          {
+            "page": 771,
+            "page_method": "neighbors",
+            "file": "p0064.txt",
+            "start": 0,
+            "end": 1482
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-033?mode=precedent&ref=1896-033%3A1893%3A26%3A591&at=497&end=602",
+        "scan_available": true
+      }
+    ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1896-033",
     "scan_pages": [
       {

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-092",
@@ -48,6 +48,125 @@
       "1904-09a937af6d88",
       "1904-2e1940b0f3aa",
       "1904-abdea64bfd18"
+    ],
+    "precedents": [
+      {
+        "id": "1904-092:1900:1:3660",
+        "source_id": "1904-092",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "81cfadbd2417e88e35b5e7770b035b22aadecb8dce8451a78bb411eef2a5912b",
+        "year": 1900,
+        "start": 3647,
+        "end": 3677,
+        "department": null,
+        "association": null,
+        "number": 1,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3660,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ за 1900 г. №№ 1 и 67",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3467,
+        "context_end": 3897,
+        "context_original": "акъ какъ въ самое понятіе договора перевозки входитъ доставленіе груза отъ станціи отправленія (Одесса) до станціи назначенія (Ростовъ на Дону). Правительствующимъ Сенатомъ въ его рѣшеніяхъ за 1900 г. №№ 1 и 67 и за 1904 г. № 30 уже разъяснено, что участіе въ перевозкѣ груза нѣсколькихъ транспортныхъ предпріятій не препятствуетъ признанію самаго договора о перевозкѣ единымъ дѣйствіемъ, въ которомъ транспортное предпріятіе, пол",
+        "passage_id": "1904-092:2746-4484",
+        "pages": [
+          257
+        ],
+        "sources": [
+          {
+            "page": 257,
+            "page_method": "header",
+            "file": "p0129_R.txt",
+            "start": 2746,
+            "end": 4484
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-092?mode=precedent&ref=1904-092%3A1900%3A1%3A3660&at=3647&end=3677",
+        "scan_available": true
+      },
+      {
+        "id": "1904-092:1900:67:3660",
+        "source_id": "1904-092",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "81cfadbd2417e88e35b5e7770b035b22aadecb8dce8451a78bb411eef2a5912b",
+        "year": 1900,
+        "start": 3647,
+        "end": 3677,
+        "department": null,
+        "association": null,
+        "number": 67,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3660,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ за 1900 г. №№ 1 и 67",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3467,
+        "context_end": 3897,
+        "context_original": "акъ какъ въ самое понятіе договора перевозки входитъ доставленіе груза отъ станціи отправленія (Одесса) до станціи назначенія (Ростовъ на Дону). Правительствующимъ Сенатомъ въ его рѣшеніяхъ за 1900 г. №№ 1 и 67 и за 1904 г. № 30 уже разъяснено, что участіе въ перевозкѣ груза нѣсколькихъ транспортныхъ предпріятій не препятствуетъ признанію самаго договора о перевозкѣ единымъ дѣйствіемъ, въ которомъ транспортное предпріятіе, пол",
+        "passage_id": "1904-092:2746-4484",
+        "pages": [
+          257
+        ],
+        "sources": [
+          {
+            "page": 257,
+            "page_method": "header",
+            "file": "p0129_R.txt",
+            "start": 2746,
+            "end": 4484
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-092?mode=precedent&ref=1904-092%3A1900%3A67%3A3660&at=3647&end=3677",
+        "scan_available": true
+      },
+      {
+        "id": "1904-092:1904:30:3683",
+        "source_id": "1904-092",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "81cfadbd2417e88e35b5e7770b035b22aadecb8dce8451a78bb411eef2a5912b",
+        "year": 1904,
+        "start": 3647,
+        "end": 3695,
+        "department": null,
+        "association": null,
+        "number": 30,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3683,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ за 1900 г. №№ 1 и 67 и за 1904 г. № 30",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3467,
+        "context_end": 3915,
+        "context_original": "акъ какъ въ самое понятіе договора перевозки входитъ доставленіе груза отъ станціи отправленія (Одесса) до станціи назначенія (Ростовъ на Дону). Правительствующимъ Сенатомъ въ его рѣшеніяхъ за 1900 г. №№ 1 и 67 и за 1904 г. № 30 уже разъяснено, что участіе въ перевозкѣ груза нѣсколькихъ транспортныхъ предпріятій не препятствуетъ признанію самаго договора о перевозкѣ единымъ дѣйствіемъ, въ которомъ транспортное предпріятіе, получившее грузъ для ",
+        "passage_id": "1904-092:2746-4484",
+        "pages": [
+          257
+        ],
+        "sources": [
+          {
+            "page": 257,
+            "page_method": "header",
+            "file": "p0129_R.txt",
+            "start": 2746,
+            "end": 4484
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-092?mode=precedent&ref=1904-092%3A1904%3A30%3A3683&at=3647&end=3695",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-092",
     "scan_pages": [

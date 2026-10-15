@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-009",
@@ -54,6 +54,242 @@
       "1905-37668b162ab8",
       "1905-588fc586fa60",
       "1905-c7839e657988"
+    ],
+    "precedents": [
+      {
+        "id": "1905-009:1891:110:4185",
+        "source_id": "1905-009",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6580c3f7a1d96f66ec83de316787fa3d5956425f828b4a09fcb66b9bdcbcc68a",
+        "year": 1891,
+        "start": 4180,
+        "end": 4198,
+        "department": null,
+        "association": null,
+        "number": 110,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4185,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1891 г. № 110",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4000,
+        "context_end": 4406,
+        "context_original": "у толкованію, а посему установленныя ими ограниченія правъ лицъ нерусскаго происхожденія не могутъ быть распространяемы на случаи, самимъ закономъ прямо не предусмотрѣнные (сравн. рѣш. 1891 г. № 110, 1902 г. № 8, 1903 г. № 97). Поэтому и изъ правила 17 ст. закона 1/13 июля 1871 г. нельзя, путемъ толкованія, вывести ограниченій правъ лицъ нерусскаго происхожденія, самимъ закономъ прямо не установленныхъ.",
+        "passage_id": "1905-009:2408-4227",
+        "pages": [
+          20
+        ],
+        "sources": [
+          {
+            "page": 20,
+            "page_method": "header",
+            "file": "p0011_L.txt",
+            "start": 4002,
+            "end": 4406
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-009?mode=precedent&ref=1905-009%3A1891%3A110%3A4185&at=4180&end=4198",
+        "scan_available": true
+      },
+      {
+        "id": "1905-009:1902:8:4200",
+        "source_id": "1905-009",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6580c3f7a1d96f66ec83de316787fa3d5956425f828b4a09fcb66b9bdcbcc68a",
+        "year": 1902,
+        "start": 4180,
+        "end": 4211,
+        "department": null,
+        "association": null,
+        "number": 8,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4200,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1891 г. № 110, 1902 г. № 8",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4000,
+        "context_end": 4406,
+        "context_original": "у толкованію, а посему установленныя ими ограниченія правъ лицъ нерусскаго происхожденія не могутъ быть распространяемы на случаи, самимъ закономъ прямо не предусмотрѣнные (сравн. рѣш. 1891 г. № 110, 1902 г. № 8, 1903 г. № 97). Поэтому и изъ правила 17 ст. закона 1/13 июля 1871 г. нельзя, путемъ толкованія, вывести ограниченій правъ лицъ нерусскаго происхожденія, самимъ закономъ прямо не установленныхъ.",
+        "passage_id": "1905-009:2408-4227",
+        "pages": [
+          20
+        ],
+        "sources": [
+          {
+            "page": 20,
+            "page_method": "header",
+            "file": "p0011_L.txt",
+            "start": 4002,
+            "end": 4406
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-009?mode=precedent&ref=1905-009%3A1902%3A8%3A4200&at=4180&end=4211",
+        "scan_available": true
+      },
+      {
+        "id": "1905-009:1903:97:4213",
+        "source_id": "1905-009",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6580c3f7a1d96f66ec83de316787fa3d5956425f828b4a09fcb66b9bdcbcc68a",
+        "year": 1903,
+        "start": 4180,
+        "end": 4225,
+        "department": null,
+        "association": null,
+        "number": 97,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4213,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1891 г. № 110, 1902 г. № 8, 1903 г. № 97",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4000,
+        "context_end": 4406,
+        "context_original": "у толкованію, а посему установленныя ими ограниченія правъ лицъ нерусскаго происхожденія не могутъ быть распространяемы на случаи, самимъ закономъ прямо не предусмотрѣнные (сравн. рѣш. 1891 г. № 110, 1902 г. № 8, 1903 г. № 97). Поэтому и изъ правила 17 ст. закона 1/13 июля 1871 г. нельзя, путемъ толкованія, вывести ограниченій правъ лицъ нерусскаго происхожденія, самимъ закономъ прямо не установленныхъ.",
+        "passage_id": "1905-009:2408-4227",
+        "pages": [
+          20
+        ],
+        "sources": [
+          {
+            "page": 20,
+            "page_method": "header",
+            "file": "p0011_L.txt",
+            "start": 4002,
+            "end": 4406
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-009?mode=precedent&ref=1905-009%3A1903%3A97%3A4213&at=4180&end=4225",
+        "scan_available": true
+      },
+      {
+        "id": "1905-009:1873:1328:6243",
+        "source_id": "1905-009",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6580c3f7a1d96f66ec83de316787fa3d5956425f828b4a09fcb66b9bdcbcc68a",
+        "year": 1873,
+        "start": 6238,
+        "end": 6257,
+        "department": null,
+        "association": null,
+        "number": 1328,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6243,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1873 г. № 1328",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 6058,
+        "context_end": 6477,
+        "context_original": "е арендатора въ продолженіе вре мени, много разъ превышающаго срокъ, на который могъ быть заключенъ каждый отдѣльный договоръ. Слѣдовательно (какъ это и признано Прав. Сенатомъ въ рѣш. 1873 г. № 1328, 1875 г. № 181 и 1884 г. № 2), запрещеніе закона отдавать имѣніе въ аренду срокомъ свыше установленнаго предѣльнаго срока, само по себѣ, вовсе не равносильно запрещенію оставлять такое имѣніе въ арендномъ владѣніи того ",
+        "passage_id": "1905-009:5457-7023",
+        "pages": [
+          21
+        ],
+        "sources": [
+          {
+            "page": 21,
+            "page_method": "header",
+            "file": "p0011_R.txt",
+            "start": 6090,
+            "end": 7023
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-009?mode=precedent&ref=1905-009%3A1873%3A1328%3A6243&at=6238&end=6257",
+        "scan_available": true
+      },
+      {
+        "id": "1905-009:1875:181:6259",
+        "source_id": "1905-009",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6580c3f7a1d96f66ec83de316787fa3d5956425f828b4a09fcb66b9bdcbcc68a",
+        "year": 1875,
+        "start": 6238,
+        "end": 6272,
+        "department": null,
+        "association": null,
+        "number": 181,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6259,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1873 г. № 1328, 1875 г. № 181",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 6058,
+        "context_end": 6492,
+        "context_original": "е арендатора въ продолженіе вре мени, много разъ превышающаго срокъ, на который могъ быть заключенъ каждый отдѣльный договоръ. Слѣдовательно (какъ это и признано Прав. Сенатомъ въ рѣш. 1873 г. № 1328, 1875 г. № 181 и 1884 г. № 2), запрещеніе закона отдавать имѣніе въ аренду срокомъ свыше установленнаго предѣльнаго срока, само по себѣ, вовсе не равносильно запрещенію оставлять такое имѣніе въ арендномъ владѣніи того же арендатора в",
+        "passage_id": "1905-009:5457-7023",
+        "pages": [
+          21
+        ],
+        "sources": [
+          {
+            "page": 21,
+            "page_method": "header",
+            "file": "p0011_R.txt",
+            "start": 6090,
+            "end": 7023
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-009?mode=precedent&ref=1905-009%3A1875%3A181%3A6259&at=6238&end=6272",
+        "scan_available": true
+      },
+      {
+        "id": "1905-009:1884:2:6275",
+        "source_id": "1905-009",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "6580c3f7a1d96f66ec83de316787fa3d5956425f828b4a09fcb66b9bdcbcc68a",
+        "year": 1884,
+        "start": 6238,
+        "end": 6286,
+        "department": null,
+        "association": null,
+        "number": 2,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 6275,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1873 г. № 1328, 1875 г. № 181 и 1884 г. № 2",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 6058,
+        "context_end": 6506,
+        "context_original": "е арендатора въ продолженіе вре мени, много разъ превышающаго срокъ, на который могъ быть заключенъ каждый отдѣльный договоръ. Слѣдовательно (какъ это и признано Прав. Сенатомъ въ рѣш. 1873 г. № 1328, 1875 г. № 181 и 1884 г. № 2), запрещеніе закона отдавать имѣніе въ аренду срокомъ свыше установленнаго предѣльнаго срока, само по себѣ, вовсе не равносильно запрещенію оставлять такое имѣніе въ арендномъ владѣніи того же арендатора въ теченіе болѣ",
+        "passage_id": "1905-009:5457-7023",
+        "pages": [
+          21
+        ],
+        "sources": [
+          {
+            "page": 21,
+            "page_method": "header",
+            "file": "p0011_R.txt",
+            "start": 6090,
+            "end": 7023
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-009?mode=precedent&ref=1905-009%3A1884%3A2%3A6275&at=6238&end=6286",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-009",
     "scan_pages": [

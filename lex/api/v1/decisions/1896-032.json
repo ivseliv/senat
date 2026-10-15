@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1896-032",
@@ -43,6 +43,125 @@
       ]
     ],
     "participant_ids": [],
+    "precedents": [
+      {
+        "id": "1896-032:1877:41:4600",
+        "source_id": "1896-032",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "8322abda8bbae5b1446506399de39a8b1fec02715c3562fa2a95ae71aa0fbbb4",
+        "year": 1877,
+        "start": 4502,
+        "end": 4614,
+        "department": null,
+        "association": null,
+        "number": 41,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4600,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "опредѣленемъ 1-го Де партамента Правительствующаго Сена та 21-го сентября 1876 года (собр.: узак. 1877 года № 41",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4322,
+        "context_end": 4834,
+        "context_original": "даются, въ указанныхъ въ сей статьѣ случаяхъ, отъ платежа крѣпостныхъ пошлинъ при покупкѣ по винностно-арендной и мызной земли. По вопросу о разіясн ни 2 п. 66 ст. уст. герб. сб., опредѣленемъ 1-го Де партамента Правительствующаго Сена та 21-го сентября 1876 года (собр.: узак. 1877 года № 41, ст. 508) ‘разъ яснено, что выдаваемыя крестьянами Остзейскаго края, при пріобрѣтеніи ими въ собственность участковъ аренд ной земли, облигаціи, обезйѣчйвающ.я предъ продавцами часть покупной сум мы, неуплаченную при са",
+        "passage_id": "1896-032:3732-5490",
+        "pages": [
+          769
+        ],
+        "sources": [
+          {
+            "page": 769,
+            "page_method": "header",
+            "file": "p0062.txt",
+            "start": 3732,
+            "end": 4665
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-032?mode=precedent&ref=1896-032%3A1877%3A41%3A4600&at=4502&end=4614",
+        "scan_available": true
+      },
+      {
+        "id": "1896-032:1891:4:5017",
+        "source_id": "1896-032",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "8322abda8bbae5b1446506399de39a8b1fec02715c3562fa2a95ae71aa0fbbb4",
+        "year": 1891,
+        "start": 4914,
+        "end": 5030,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 4,
+        "department_start": 4914,
+        "department_end": 4931,
+        "citation_start": 5017,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "Общимъ Собраніемъ 1-го, 2-го и Кас саціонныхъ Департаментовъ Правитель ствующаго Сената признано (рѣш. 1891 года № 4",
+        "target_url": null,
+        "department_evidence": "Общимъ Собраніемъ",
+        "context_start": 4734,
+        "context_end": 5250,
+        "context_original": "енд ной земли, облигаціи, обезйѣчйвающ.я предъ продавцами часть покупной сум мы, неуплаченную при самомъ совер шеніи договора купли, не подлежатъ оплатѣ гербовымъ сборомъ. Засимъ, Общимъ Собраніемъ 1-го, 2-го и Кас саціонныхъ Департаментовъ Правитель ствующаго Сената признано (рѣш. 1891 года № 4 и 1892 года № 23), что отъ гербоваго сбора въ Лифляндской губерніи освобождаются тѣ договоры заключаемые крестьянами на покупку участковъ повинностной или мызной земли, о коихъ упоминается въ 393 ст. т. V уст. о пошл. п",
+        "passage_id": "1896-032:3732-5490",
+        "pages": [
+          770
+        ],
+        "sources": [
+          {
+            "page": 770,
+            "page_method": "header",
+            "file": "p0063.txt",
+            "start": 4666,
+            "end": 5490
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-032?mode=precedent&ref=1896-032%3A1891%3A4%3A5017&at=4914&end=5030",
+        "scan_available": true
+      },
+      {
+        "id": "1896-032:1892:23:5033",
+        "source_id": "1896-032",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "8322abda8bbae5b1446506399de39a8b1fec02715c3562fa2a95ae71aa0fbbb4",
+        "year": 1892,
+        "start": 4914,
+        "end": 5047,
+        "department": "Общее собрание",
+        "association": "list",
+        "number": 23,
+        "department_start": 4914,
+        "department_end": 4931,
+        "citation_start": 5033,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "Общимъ Собраніемъ 1-го, 2-го и Кас саціонныхъ Департаментовъ Правитель ствующаго Сената признано (рѣш. 1891 года № 4 и 1892 года № 23",
+        "target_url": null,
+        "department_evidence": "Общимъ Собраніемъ",
+        "context_start": 4734,
+        "context_end": 5267,
+        "context_original": "енд ной земли, облигаціи, обезйѣчйвающ.я предъ продавцами часть покупной сум мы, неуплаченную при самомъ совер шеніи договора купли, не подлежатъ оплатѣ гербовымъ сборомъ. Засимъ, Общимъ Собраніемъ 1-го, 2-го и Кас саціонныхъ Департаментовъ Правитель ствующаго Сената признано (рѣш. 1891 года № 4 и 1892 года № 23), что отъ гербоваго сбора въ Лифляндской губерніи освобождаются тѣ договоры заключаемые крестьянами на покупку участковъ повинностной или мызной земли, о коихъ упоминается въ 393 ст. т. V уст. о пошл. по прод. 1889 года",
+        "passage_id": "1896-032:3732-5490",
+        "pages": [
+          770
+        ],
+        "sources": [
+          {
+            "page": 770,
+            "page_method": "header",
+            "file": "p0063.txt",
+            "start": 4666,
+            "end": 5490
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-032?mode=precedent&ref=1896-032%3A1892%3A23%3A5033&at=4914&end=5047",
+        "scan_available": true
+      }
+    ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1896-032",
     "scan_pages": [
       {

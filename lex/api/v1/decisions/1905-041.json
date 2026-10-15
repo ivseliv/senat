@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-041",
@@ -44,6 +44,86 @@
     ],
     "participant_ids": [
       "1905-b15df79cfad6"
+    ],
+    "precedents": [
+      {
+        "id": "1905-041:1892:94:2577",
+        "source_id": "1905-041",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "438052f05ab65e9c93d510f1473055c553fb6f4b3e8ff62b826121c2fc684791",
+        "year": 1892,
+        "start": 2541,
+        "end": 2589,
+        "department": null,
+        "association": null,
+        "number": 94,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 2577,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніемъ Правительствующаго Сената 1892 г. № 94",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2361,
+        "context_end": 2590,
+        "context_original": "ь соображеній съѣзда мировыхъ судей о незаконности договора объ установленіи пожизненнаго владѣнія и на нарушеніе съѣздомъ мировыхъ судей 352 ст. пол. о нотар. части, разъясненной рѣшеніемъ Правительствующаго Сената 1892 г. № 94.",
+        "passage_id": "1905-041:1496-3213",
+        "pages": [
+          110
+        ],
+        "sources": [
+          {
+            "page": 110,
+            "page_method": "header",
+            "file": "p0056_L.txt",
+            "start": 1496,
+            "end": 2590
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-041?mode=precedent&ref=1905-041%3A1892%3A94%3A2577&at=2541&end=2589",
+        "scan_available": true
+      },
+      {
+        "id": "1905-041:1902:36:3028",
+        "source_id": "1905-041",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "438052f05ab65e9c93d510f1473055c553fb6f4b3e8ff62b826121c2fc684791",
+        "year": 1902,
+        "start": 2994,
+        "end": 3040,
+        "department": null,
+        "association": null,
+        "number": 36,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3028,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи Правительствующаго Сената 1902 г. № 36",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2814,
+        "context_end": 3260,
+        "context_original": "ъ права собственности не оправдывается содержащимися въ этихъ узаконеніяхъ постановленіями. На основаніи 707, 708 и 872 ст. ч. III св. мѣстн. узак. губ. Прибалт., разъясненныхъ въ рѣшеніи Правительствующаго Сената 1902 г. № 36, собственникъ имѣнія, въ силу принадлежащаго ему права собственности, можетъ передать другому лицу отдѣльныя, проистекающія изъ собственности права въ произвольномъ объемѣ. Вслѣдствіе этого, каждый собственникъ можетъ о",
+        "passage_id": "1905-041:1496-3213",
+        "pages": [
+          110
+        ],
+        "sources": [
+          {
+            "page": 110,
+            "page_method": "header",
+            "file": "p0056_L.txt",
+            "start": 2941,
+            "end": 3993
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-041?mode=precedent&ref=1905-041%3A1902%3A36%3A3028&at=2994&end=3040",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-041",
     "scan_pages": [

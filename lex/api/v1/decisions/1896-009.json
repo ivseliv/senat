@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1896-009",
@@ -47,6 +47,86 @@
       ]
     ],
     "participant_ids": [],
+    "precedents": [
+      {
+        "id": "1896-009:1890:37:3299",
+        "source_id": "1896-009",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "315226e1397e19d7ef04d540991076016c81f3f74e89a7f773c2ab2d0f61835f",
+        "year": 1890,
+        "start": 3239,
+        "end": 3311,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 37,
+        "department_start": 3244,
+        "department_end": 3253,
+        "citation_start": 3299,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. Общ. Собр. 1, 2 и Кассаціоннаго Де партаментовъ Сената 1890 г. № 37",
+        "target_url": null,
+        "department_evidence": "Общ. Собр",
+        "context_start": 3059,
+        "context_end": 3531,
+        "context_original": "ли на 100 душъ крестьянъ, переселив шихся въ пустошь Гарь, состоялся о ав густа 1876 г. и ни со стороны кресть янскихъ учрежденій, ни, со стороны крестьянъ не оспаривается (Сборн. рѣш. Общ. Собр. 1, 2 и Кассаціоннаго Де партаментовъ Сената 1890 г. № 37); только распредѣленія между общества ми с. Бѣтина и дер. Гарь, на основа ніи сего приговора, оброчныхъ въ каз ну платежей, а засимъ и выкупныхъ платежей не было сдѣлано. Распредѣ леніе это, необходимое и по требова нію",
+        "passage_id": "1896-009:2462-4122",
+        "pages": [
+          720
+        ],
+        "sources": [
+          {
+            "page": 720,
+            "page_method": "header",
+            "file": "p0013.txt",
+            "start": 2462,
+            "end": 4122
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-009?mode=precedent&ref=1896-009%3A1890%3A37%3A3299&at=3239&end=3311",
+        "scan_available": true
+      },
+      {
+        "id": "1896-009:1889:20:5049",
+        "source_id": "1896-009",
+        "source_year": 1896,
+        "source_department": "Общее собрание",
+        "source_sha256": "315226e1397e19d7ef04d540991076016c81f3f74e89a7f773c2ab2d0f61835f",
+        "year": 1889,
+        "start": 4995,
+        "end": 5061,
+        "department": "Общее собрание",
+        "association": "explicit",
+        "number": 20,
+        "department_start": 5002,
+        "department_end": 5011,
+        "citation_start": 5049,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшен. Общ. Собр. 1, 2 и Кассаціонныхъ Департаментовъ 1889 г. № 20",
+        "target_url": null,
+        "department_evidence": "Общ. Собр",
+        "context_start": 4815,
+        "context_end": 5281,
+        "context_original": "у, такъ какъ, по не исполненію закона 24 апрѣля 1887 г., общества сел. Бѣтина и дер. Гарь не могли разсматриваться какъ отдѣльныя одно отъ другаго самостоятельныя сто роны (Сборн. рѣшен. Общ. Собр. 1, 2 и Кассаціонныхъ Департаментовъ 1889 г. № 20 и др.), Правительствующій Се натъ, въ Общемъ Собраніи 1, 2 и Кас саціонныхъ Департаментовъ, по выслу шаніи заключенія Исп. обяз. Товарища Оберъ-Прокурора, опредѣляетъ: отмѣ нивъ постановленіе по сему дѣлу Ря занскаго гу",
+        "passage_id": "1896-009:3930-5411",
+        "pages": [
+          721
+        ],
+        "sources": [
+          {
+            "page": 721,
+            "page_method": "header",
+            "file": "p0014.txt",
+            "start": 4259,
+            "end": 5411
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1896-009?mode=precedent&ref=1896-009%3A1889%3A20%3A5049&at=4995&end=5061",
+        "scan_available": true
+      }
+    ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1896-009",
     "scan_pages": [
       {

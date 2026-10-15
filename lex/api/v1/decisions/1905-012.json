@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1905-012",
@@ -67,6 +67,242 @@
     "participant_ids": [
       "1905-d9f257c7b390",
       "1905-e646f5aa1fb7"
+    ],
+    "precedents": [
+      {
+        "id": "1905-012:1882:106:3132",
+        "source_id": "1905-012",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "74438a4a9fd5dd833a49f4a79571ac8c38ba89203ef0b159bdecbbbe7beb128f",
+        "year": 1882,
+        "start": 3127,
+        "end": 3145,
+        "department": null,
+        "association": null,
+        "number": 106,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3132,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1882 г. № 106",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 2947,
+        "context_end": 3365,
+        "context_original": "шь вмѣстѣ съ апелляціей. Имѣя въ виду, что жаловаться на принятіе отзыва можетъ только истецъ, и что рѣшеніе не можетъ быть обжаловано лицами, права которыхъ утверждены рѣшеніемъ (рѣш. 1882 г. № 106), истецъ, требованія котораго удовлетворены, имѣетъ возможность принести жалобу на принятіе отзыва лишь въ видѣ встрѣчнаго апелляціоннаго требованія, заявленнаго въ объясненіи на апелляціонную жалобу отвѣтчика. Такого р",
+        "passage_id": "1905-012:2745-4251",
+        "pages": [
+          30
+        ],
+        "sources": [
+          {
+            "page": 30,
+            "page_method": "header",
+            "file": "p0016_L.txt",
+            "start": 2745,
+            "end": 3966
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-012?mode=precedent&ref=1905-012%3A1882%3A106%3A3132&at=3127&end=3145",
+        "scan_available": true
+      },
+      {
+        "id": "1905-012:1885:7:4371",
+        "source_id": "1905-012",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "74438a4a9fd5dd833a49f4a79571ac8c38ba89203ef0b159bdecbbbe7beb128f",
+        "year": 1885,
+        "start": 4348,
+        "end": 4382,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 7,
+        "department_start": 4348,
+        "department_end": 4362,
+        "citation_start": 4371,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "гр. касс. деп. въ рѣш. 1885 г. № 7",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 4253,
+        "context_end": 4602,
+        "context_original": "Войдя въ разсмотрѣніе этого вопроса, Правительствующій Сенатъ находитъ: 1) что, по разъясненію гр. касс. деп. въ рѣш. 1885 г. № 7, разрѣшеніе апеллированія въ объясненіи на апелляцію противной стороны составляетъ для каждой изъ сторонъ лишь расширеніе права на самостоятельную апелляцію, а установленный ст. 764 уст. гр. суд. срокъ назначенъ для той",
+        "passage_id": "1905-012:3991-5604",
+        "pages": [
+          31
+        ],
+        "sources": [
+          {
+            "page": 31,
+            "page_method": "header",
+            "file": "p0016_R.txt",
+            "start": 4253,
+            "end": 5604
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-012?mode=precedent&ref=1905-012%3A1885%3A7%3A4371&at=4348&end=4382",
+        "scan_available": true
+      },
+      {
+        "id": "1905-012:1882:37:5145",
+        "source_id": "1905-012",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "74438a4a9fd5dd833a49f4a79571ac8c38ba89203ef0b159bdecbbbe7beb128f",
+        "year": 1882,
+        "start": 5134,
+        "end": 5157,
+        "department": null,
+        "association": null,
+        "number": 37,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5145,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ (1882 г. № 37",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4954,
+        "context_end": 5377,
+        "context_original": "ію самостоятельной апелляціи,—нѣтъ и необходимости въ заявленіи апелляціоннаго требованія въ объясненіи на сію жалобу; 3) что, согласно съ этимъ, гр. касс. департаментъ во многихъ рѣшеніяхъ (1882 г. № 37, 1881 г. № 141, 1875 г. № 485) разъяснялъ, что если судъ первой степени отвергъ какое-либо возраженіе тяжущагося, но постановилъ рѣшеніе въ его пользу, то этотъ тяжущійся, не подавая жалобы на такое рѣшеніе, не лишается",
+        "passage_id": "1905-012:3991-5604",
+        "pages": [
+          31
+        ],
+        "sources": [
+          {
+            "page": 31,
+            "page_method": "header",
+            "file": "p0016_R.txt",
+            "start": 4253,
+            "end": 5604
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-012?mode=precedent&ref=1905-012%3A1882%3A37%3A5145&at=5134&end=5157",
+        "scan_available": true
+      },
+      {
+        "id": "1905-012:1881:141:5159",
+        "source_id": "1905-012",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "74438a4a9fd5dd833a49f4a79571ac8c38ba89203ef0b159bdecbbbe7beb128f",
+        "year": 1881,
+        "start": 5134,
+        "end": 5172,
+        "department": null,
+        "association": null,
+        "number": 141,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5159,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ (1882 г. № 37, 1881 г. № 141",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4954,
+        "context_end": 5392,
+        "context_original": "ію самостоятельной апелляціи,—нѣтъ и необходимости въ заявленіи апелляціоннаго требованія въ объясненіи на сію жалобу; 3) что, согласно съ этимъ, гр. касс. департаментъ во многихъ рѣшеніяхъ (1882 г. № 37, 1881 г. № 141, 1875 г. № 485) разъяснялъ, что если судъ первой степени отвергъ какое-либо возраженіе тяжущагося, но постановилъ рѣшеніе въ его пользу, то этотъ тяжущійся, не подавая жалобы на такое рѣшеніе, не лишается права привести",
+        "passage_id": "1905-012:3991-5604",
+        "pages": [
+          31
+        ],
+        "sources": [
+          {
+            "page": 31,
+            "page_method": "header",
+            "file": "p0016_R.txt",
+            "start": 4253,
+            "end": 5604
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-012?mode=precedent&ref=1905-012%3A1881%3A141%3A5159&at=5134&end=5172",
+        "scan_available": true
+      },
+      {
+        "id": "1905-012:1875:485:5174",
+        "source_id": "1905-012",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "74438a4a9fd5dd833a49f4a79571ac8c38ba89203ef0b159bdecbbbe7beb128f",
+        "year": 1875,
+        "start": 5134,
+        "end": 5187,
+        "department": null,
+        "association": null,
+        "number": 485,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5174,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ (1882 г. № 37, 1881 г. № 141, 1875 г. № 485",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4954,
+        "context_end": 5407,
+        "context_original": "ію самостоятельной апелляціи,—нѣтъ и необходимости въ заявленіи апелляціоннаго требованія въ объясненіи на сію жалобу; 3) что, согласно съ этимъ, гр. касс. департаментъ во многихъ рѣшеніяхъ (1882 г. № 37, 1881 г. № 141, 1875 г. № 485) разъяснялъ, что если судъ первой степени отвергъ какое-либо возраженіе тяжущагося, но постановилъ рѣшеніе въ его пользу, то этотъ тяжущійся, не подавая жалобы на такое рѣшеніе, не лишается права привести вновь то самое",
+        "passage_id": "1905-012:3991-5604",
+        "pages": [
+          31
+        ],
+        "sources": [
+          {
+            "page": 31,
+            "page_method": "header",
+            "file": "p0016_R.txt",
+            "start": 4253,
+            "end": 5604
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-012?mode=precedent&ref=1905-012%3A1875%3A485%3A5174&at=5134&end=5187",
+        "scan_available": true
+      },
+      {
+        "id": "1905-012:1877:131:5720",
+        "source_id": "1905-012",
+        "source_year": 1905,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "74438a4a9fd5dd833a49f4a79571ac8c38ba89203ef0b159bdecbbbe7beb128f",
+        "year": 1877,
+        "start": 5715,
+        "end": 5733,
+        "department": null,
+        "association": null,
+        "number": 131,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5720,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1877 г. № 131",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5535,
+        "context_end": 5953,
+        "context_original": "а апелляціонную жалобу, поданномъ согласно 761 ст. уст. гр. суд. и по истеченіи указаннаго въ ст. 760 срока, такъ и въ самомъ засѣданіи апелляціоннаго суда (ст. 339 уст. гр. суд.; рѣш. 1877 г. № 131 и др.); 5) что, въ виду изложенныхъ соображеній, Харьковская судебная палата неправильно оставила безъ надлежащаго обсужденія возраженіе Пименова о пропускѣ отвѣтчикомъ срока на принесеніе противъ заочнаго рѣшенія окруж",
+        "passage_id": "1905-012:5384-6273",
+        "pages": [
+          31
+        ],
+        "sources": [
+          {
+            "page": 31,
+            "page_method": "header",
+            "file": "p0016_R.txt",
+            "start": 5384,
+            "end": 6273
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1905-012?mode=precedent&ref=1905-012%3A1877%3A131%3A5720&at=5715&end=5733",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1905-012",
     "scan_pages": [

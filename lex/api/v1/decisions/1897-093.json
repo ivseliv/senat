@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-093",
@@ -61,6 +61,125 @@
       "1897-c750fd6d4730",
       "1897-4bb694b08c3e",
       "1897-21e978fa09f5"
+    ],
+    "precedents": [
+      {
+        "id": "1897-093:1890:124:9549",
+        "source_id": "1897-093",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "448e01921bab765595b5aaa9703a380c644695c5d99bb91082756d8c17195c3e",
+        "year": 1890,
+        "start": 9515,
+        "end": 9562,
+        "department": null,
+        "association": null,
+        "number": 124,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 9549,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи Правительствующаго Сената 1890 г. № 124",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 9335,
+        "context_end": 9782,
+        "context_original": "овъ и сдѣлокъ, а всей совокупности оныхъ и порядка ихъ осуществленія. Въ такомъ смыслѣ разъяснено уже значеніе законовъ 10 іюля 1864 г., 10 декабря 1885 г. и 27 декабря 1884 г. въ рѣшеніи Правительствующаго Сената 1890 г. № 124 (по дѣлу о недѣйствительности купчей крѣпости, совершенной 22 апрѣля 1866 г.), коимъ, между прочимъ, признано, что къ искамъ, предъявленнымъ на основаніи правилъ 27 декабря 1884 г., непримѣнимъ двухгодичный срокъ, преду",
+        "passage_id": "1897-093:8547-9818",
+        "pages": [
+          302
+        ],
+        "sources": [
+          {
+            "page": 302,
+            "page_method": "header",
+            "file": "p0162_L.txt",
+            "start": 8547,
+            "end": 9818
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-093?mode=precedent&ref=1897-093%3A1890%3A124%3A9549&at=9515&end=9562",
+        "scan_available": true
+      },
+      {
+        "id": "1897-093:1893:6:13987",
+        "source_id": "1897-093",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "448e01921bab765595b5aaa9703a380c644695c5d99bb91082756d8c17195c3e",
+        "year": 1893,
+        "start": 13969,
+        "end": 14000,
+        "department": null,
+        "association": null,
+        "number": 6,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 13987,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. Прав. Сената 1893 года № 6",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 13789,
+        "context_end": 14220,
+        "context_original": "дновременныя съ совершеніемъ сего договора, такъ и на обстоятельства, относящіяся къ акту, совершенному на то же имѣніе впослѣдствіи, а имен- но къ купчей 17 февраля того же года (рѣш. Прав. Сената 1893 года № 6). 5) За установленіемъ, какъ указано выше, что Гродненскій губернаторъ не имѣлъ права оспаривать недѣйствительность купчей 17 февраля 1882 г., уже не требуетъ разсмотрѣнія указанія въ кассаціонной жалобѣ повѣреннаго Гво",
+        "passage_id": "1897-093:13740-15607",
+        "pages": [
+          304
+        ],
+        "sources": [
+          {
+            "page": 304,
+            "page_method": "header",
+            "file": "p0163_L.txt",
+            "start": 13931,
+            "end": 15607
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-093?mode=precedent&ref=1897-093%3A1893%3A6%3A13987&at=13969&end=14000",
+        "scan_available": true
+      },
+      {
+        "id": "1897-093:1880:58:15144",
+        "source_id": "1897-093",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "448e01921bab765595b5aaa9703a380c644695c5d99bb91082756d8c17195c3e",
+        "year": 1880,
+        "start": 15136,
+        "end": 15156,
+        "department": null,
+        "association": null,
+        "number": 58,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 15144,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1880 г. № 58",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 14956,
+        "context_end": 15376,
+        "context_original": "лужить поводомъ къ отмѣнѣ обжалованнаго рѣшенія въ отношеніи контракта 4 февраля 1882 г., ибо, согласно неоднократнымъ разъясненіямъ Правительствующаго Сената, и между прочимъ, въ рѣшеніи 1880 г. № 58, къ пріобрѣтателю имѣнія переходятъ, — хотя бы о томъ не было особаго соглашенія съ прежнимъ собственникомъ, — всѣ права и обязанности по заключеннымъ съ другими лицами контрактамъ по имѣнію, а вслѣдствіе сего предъявле",
+        "passage_id": "1897-093:13740-15607",
+        "pages": [
+          304
+        ],
+        "sources": [
+          {
+            "page": 304,
+            "page_method": "header",
+            "file": "p0163_L.txt",
+            "start": 13931,
+            "end": 15607
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-093?mode=precedent&ref=1897-093%3A1880%3A58%3A15144&at=15136&end=15156",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-093",
     "scan_pages": [

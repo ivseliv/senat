@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-028",
@@ -72,6 +72,164 @@
       "1904-787d98ce1e93",
       "1904-0e88ed24afb2",
       "1904-3d0c1c182621"
+    ],
+    "precedents": [
+      {
+        "id": "1904-028:1879:317:3519",
+        "source_id": "1904-028",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4321fe8269e0fa18cd62efd487adce92df7a5e6175cc4ddc67f07d000e158eb0",
+        "year": 1879,
+        "start": 3514,
+        "end": 3532,
+        "department": null,
+        "association": null,
+        "number": 317,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3519,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1879 г. № 317",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3334,
+        "context_end": 3752,
+        "context_original": "енность, которая, независимо отъ другихъ послѣдствій, сопряженныхъ съ неустойкой или задаткомъ, можетъ состоять и въ вознагражденіи за убытки, причиненные неисполненіемъ договора (рѣш. 1879 г. № 317). Если въ запродажную запись включено условіе о неустойкѣ, виновная сторона повинна заплатить ее согласно условію записи, и платежъ ея покрываетъ собою отвѣтственность за убытки только въ томъ случаѣ, когда это установл",
+        "passage_id": "1904-028:2962-4697",
+        "pages": [
+          72
+        ],
+        "sources": [
+          {
+            "page": 72,
+            "page_method": "header",
+            "file": "p0037_L.txt",
+            "start": 3096,
+            "end": 4697
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-028?mode=precedent&ref=1904-028%3A1879%3A317%3A3519&at=3514&end=3532",
+        "scan_available": true
+      },
+      {
+        "id": "1904-028:1869:310:3791",
+        "source_id": "1904-028",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4321fe8269e0fa18cd62efd487adce92df7a5e6175cc4ddc67f07d000e158eb0",
+        "year": 1869,
+        "start": 3786,
+        "end": 3804,
+        "department": null,
+        "association": null,
+        "number": 310,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3791,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1869 г. № 310",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3606,
+        "context_end": 4024,
+        "context_original": "на повинна заплатить ее согласно условію записи, и платежъ ея покрываетъ собою отвѣтственность за убытки только въ томъ случаѣ, когда это установлено въ самомъ договорѣ запродажи (рѣш. 1869 г. № 310). Если въ запродажной записи содержится условіе о задаткѣ, то, согласно разъясненіямъ Правительствующаго Сената въ рѣшеніяхъ 1888 г. № 33 и и 1892 г. № 12, задатокъ въ подобныхъ случаяхъ также не имѣетъ значенія вознагр",
+        "passage_id": "1904-028:2962-4697",
+        "pages": [
+          72
+        ],
+        "sources": [
+          {
+            "page": 72,
+            "page_method": "header",
+            "file": "p0037_L.txt",
+            "start": 3096,
+            "end": 4697
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-028?mode=precedent&ref=1904-028%3A1869%3A310%3A3791&at=3786&end=3804",
+        "scan_available": true
+      },
+      {
+        "id": "1904-028:1888:33:3930",
+        "source_id": "1904-028",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4321fe8269e0fa18cd62efd487adce92df7a5e6175cc4ddc67f07d000e158eb0",
+        "year": 1888,
+        "start": 3920,
+        "end": 3942,
+        "department": null,
+        "association": null,
+        "number": 33,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3930,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ 1888 г. № 33",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3740,
+        "context_end": 4162,
+        "context_original": "это установлено въ самомъ договорѣ запродажи (рѣш. 1869 г. № 310). Если въ запродажной записи содержится условіе о задаткѣ, то, согласно разъясненіямъ Правительствующаго Сената въ рѣшеніяхъ 1888 г. № 33 и и 1892 г. № 12, задатокъ въ подобныхъ случаяхъ также не имѣетъ значенія вознагражденія за убытки, и если таковые превышаютъ количество задатка, то присуждаются съ нарушителя договора въ размѣрѣ, превышающемъ задатокъ.",
+        "passage_id": "1904-028:2962-4697",
+        "pages": [
+          72
+        ],
+        "sources": [
+          {
+            "page": 72,
+            "page_method": "header",
+            "file": "p0037_L.txt",
+            "start": 3096,
+            "end": 4697
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-028?mode=precedent&ref=1904-028%3A1888%3A33%3A3930&at=3920&end=3942",
+        "scan_available": true
+      },
+      {
+        "id": "1904-028:1892:12:3947",
+        "source_id": "1904-028",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "4321fe8269e0fa18cd62efd487adce92df7a5e6175cc4ddc67f07d000e158eb0",
+        "year": 1892,
+        "start": 3920,
+        "end": 3959,
+        "department": null,
+        "association": null,
+        "number": 12,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3947,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ 1888 г. № 33 и и 1892 г. № 12",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3740,
+        "context_end": 4179,
+        "context_original": "это установлено въ самомъ договорѣ запродажи (рѣш. 1869 г. № 310). Если въ запродажной записи содержится условіе о задаткѣ, то, согласно разъясненіямъ Правительствующаго Сената въ рѣшеніяхъ 1888 г. № 33 и и 1892 г. № 12, задатокъ въ подобныхъ случаяхъ также не имѣетъ значенія вознагражденія за убытки, и если таковые превышаютъ количество задатка, то присуждаются съ нарушителя договора въ размѣрѣ, превышающемъ задатокъ. Такимъ образомъ,",
+        "passage_id": "1904-028:2962-4697",
+        "pages": [
+          72
+        ],
+        "sources": [
+          {
+            "page": 72,
+            "page_method": "header",
+            "file": "p0037_L.txt",
+            "start": 3096,
+            "end": 4697
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-028?mode=precedent&ref=1904-028%3A1892%3A12%3A3947&at=3920&end=3959",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-028",
     "scan_pages": [

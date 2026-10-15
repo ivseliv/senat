@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1904-051",
@@ -51,6 +51,86 @@
     ],
     "participant_ids": [
       "1904-067421633449"
+    ],
+    "precedents": [
+      {
+        "id": "1904-051:1870:61:4095",
+        "source_id": "1904-051",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "b83672f3f58e6239f8b67ba4e30b78fdbc78f9bd67a26d25820a5366a7856557",
+        "year": 1870,
+        "start": 4084,
+        "end": 4107,
+        "department": null,
+        "association": null,
+        "number": 61,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4095,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи за 1870 г. № 61",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3904,
+        "context_end": 4327,
+        "context_original": "ласти въ широкихъ размѣрахъ поощрять мировыя сдѣлки въ видахъ прекращенія тяжбъ. Практика Правительствующаго Сената также относилась къ мировымъ сдѣлкамъ въ этомъ смыслѣ, такъ: въ рѣшеніи за 1870 г. № 61 Правительствующій Сенатъ разъяснилъ, что даже послѣ вступленія судебнаго рѣшенія въ законную силу мировая сдѣлка уничтожаетъ рѣшеніе со всѣми послѣдствіями; въ рѣшеніи за 1876 г. № 296 разъяснено, что тяжущіеся вольны з",
+        "passage_id": "1904-051:3193-4472",
+        "pages": [
+          142
+        ],
+        "sources": [
+          {
+            "page": 142,
+            "page_method": "header",
+            "file": "p0072_L.txt",
+            "start": 3322,
+            "end": 4472
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-051?mode=precedent&ref=1904-051%3A1870%3A61%3A4095&at=4084&end=4107",
+        "scan_available": true
+      },
+      {
+        "id": "1904-051:1876:296:4279",
+        "source_id": "1904-051",
+        "source_year": 1904,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "b83672f3f58e6239f8b67ba4e30b78fdbc78f9bd67a26d25820a5366a7856557",
+        "year": 1876,
+        "start": 4268,
+        "end": 4292,
+        "department": null,
+        "association": null,
+        "number": 296,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4279,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи за 1876 г. № 296",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4088,
+        "context_end": 4512,
+        "context_original": "ніи за 1870 г. № 61 Правительствующій Сенатъ разъяснилъ, что даже послѣ вступленія судебнаго рѣшенія въ законную силу мировая сдѣлка уничтожаетъ рѣшеніе со всѣми послѣдствіями; въ рѣшеніи за 1876 г. № 296 разъяснено, что тяжущіеся вольны заключить сдѣлку о томъ, что отказываются отъ права на обжалованіе въ кассаціонномъ порядкѣ имѣющаго состояться рѣшенія апелляціоннаго суда, и др. Не препятствовало удовлетворенію ходата",
+        "passage_id": "1904-051:3193-4472",
+        "pages": [
+          142
+        ],
+        "sources": [
+          {
+            "page": 142,
+            "page_method": "header",
+            "file": "p0072_L.txt",
+            "start": 4233,
+            "end": 5830
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1904-051?mode=precedent&ref=1904-051%3A1876%3A296%3A4279&at=4268&end=4292",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1904-051",
     "scan_pages": [

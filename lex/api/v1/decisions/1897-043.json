@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-043",
@@ -54,6 +54,125 @@
     ],
     "participant_ids": [
       "1897-3258437aac7b"
+    ],
+    "precedents": [
+      {
+        "id": "1897-043:1880:140:3330",
+        "source_id": "1897-043",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "edf0a8ddb6e7097344dbcc6edea433b54d2b299aeb1f76976ac178f008b0e8d2",
+        "year": 1880,
+        "start": 3322,
+        "end": 3343,
+        "department": null,
+        "association": null,
+        "number": 140,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3330,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1880 г. № 140",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3142,
+        "context_end": 3563,
+        "context_original": "ассаціонной практикѣ положеніями и съ приведенными въ кассаціонной жалобѣ двумя рѣшеніями Правительствующаго Сената по гражданскому кассаціонному департаменту не усматривается. Въ рѣшеніи 1880 г. № 140 разъяснено только, что противъ третьяго лица, предъявляющаго самостоятельныя требованія къ сторонамъ, послѣднія могутъ предъявить встрѣчный искъ, какъ всякій отвѣтчикъ противъ истца. Въ другомъ рѣшеніи 1887 г. № 109, хо",
+        "passage_id": "1897-043:2817-4668",
+        "pages": [
+          150
+        ],
+        "sources": [
+          {
+            "page": 150,
+            "page_method": "header",
+            "file": "p0086_L.txt",
+            "start": 3103,
+            "end": 4668
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-043?mode=precedent&ref=1897-043%3A1880%3A140%3A3330&at=3322&end=3343",
+        "scan_available": true
+      },
+      {
+        "id": "1897-043:1887:109:3546",
+        "source_id": "1897-043",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "edf0a8ddb6e7097344dbcc6edea433b54d2b299aeb1f76976ac178f008b0e8d2",
+        "year": 1887,
+        "start": 3538,
+        "end": 3559,
+        "department": null,
+        "association": null,
+        "number": 109,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 3546,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи 1887 г. № 109",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 3358,
+        "context_end": 3779,
+        "context_original": "ько, что противъ третьяго лица, предъявляющаго самостоятельныя требованія къ сторонамъ, послѣднія могутъ предъявить встрѣчный искъ, какъ всякій отвѣтчикъ противъ истца. Въ другомъ рѣшеніи 1887 г. № 109, хотя и разсматривался случай предъявленія встрѣчнаго иска къ истцамъ и вмѣстѣ съ ними къ одному изъ отвѣтчиковъ, но по поводу этого случая не было высказано Правительствующимъ Сенатомъ никакихъ руководящихъ сужденій по",
+        "passage_id": "1897-043:2817-4668",
+        "pages": [
+          150
+        ],
+        "sources": [
+          {
+            "page": 150,
+            "page_method": "header",
+            "file": "p0086_L.txt",
+            "start": 3103,
+            "end": 4668
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-043?mode=precedent&ref=1897-043%3A1887%3A109%3A3546&at=3538&end=3559",
+        "scan_available": true
+      },
+      {
+        "id": "1897-043:1885:70:4654",
+        "source_id": "1897-043",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "edf0a8ddb6e7097344dbcc6edea433b54d2b299aeb1f76976ac178f008b0e8d2",
+        "year": 1885,
+        "start": 4649,
+        "end": 4666,
+        "department": null,
+        "association": null,
+        "number": 70,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 4654,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣш. 1885 г. № 70",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4469,
+        "context_end": 4886,
+        "context_original": "ескомъ судѣ, оставленъ палатою безъ уваженія по отсутствію связи между этими дѣлами (2 п. 571 ст. уст. гр. суд.), каковое заключеніе не подлежитъ повѣркѣ въ кассаціонномъ порядкѣ (рѣш. 1885 г. № 70). Обращаясь къ другимъ доводамъ кассаціонной жалобы, Правительствующій Сенатъ находитъ, что палата признала искъ Елизаветы Поповой подлежащимъ удовлетворенію, потому что отвѣтчикъ не доказалъ передачи лично истицѣ прина",
+        "passage_id": "1897-043:2817-4668",
+        "pages": [
+          150
+        ],
+        "sources": [
+          {
+            "page": 150,
+            "page_method": "header",
+            "file": "p0086_L.txt",
+            "start": 4449,
+            "end": 6096
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-043?mode=precedent&ref=1897-043%3A1885%3A70%3A4654&at=4649&end=4666",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-043",
     "scan_pages": [

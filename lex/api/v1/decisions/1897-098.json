@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-098",
@@ -54,6 +54,125 @@
     "participant_ids": [
       "1897-822a94f1d4ae",
       "1897-855314b7492a"
+    ],
+    "precedents": [
+      {
+        "id": "1897-098:1881:94:5038",
+        "source_id": "1897-098",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "3431e69fdfb5ceb8b2774c385c723ab5c39581431d1c2b3b1109208ccaf70b49",
+        "year": 1881,
+        "start": 5023,
+        "end": 5050,
+        "department": null,
+        "association": null,
+        "number": 94,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5038,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніи его за 1881 г. № 94",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 4843,
+        "context_end": 5270,
+        "context_original": "у проданнаго съ публичнаго торга имѣнія подобно тому, какъ вправѣ сдѣлать это продавецъ по купчей крѣпости, судебная палата не подчинилась разъясненію Правительствующаго Сената въ рѣшеніи его за 1881 г. № 94. Городское имущество можетъ быть продаваемо, какъ разъяснилъ Правительствующій Сенатъ (№ 94-1881 г.), „по вольной цѣнѣ,“ и съ публичнаго торга. Въ первомъ случаѣ совершается купчая крѣпость, какъ и вообще при куплѣ—прод",
+        "passage_id": "1897-098:4114-5684",
+        "pages": [
+          320
+        ],
+        "sources": [
+          {
+            "page": 320,
+            "page_method": "header",
+            "file": "p0171_L.txt",
+            "start": 4114,
+            "end": 5684
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-098?mode=precedent&ref=1897-098%3A1881%3A94%3A5038&at=5023&end=5050",
+        "scan_available": true
+      },
+      {
+        "id": "1897-098:1881:94:11670",
+        "source_id": "1897-098",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "3431e69fdfb5ceb8b2774c385c723ab5c39581431d1c2b3b1109208ccaf70b49",
+        "year": 1881,
+        "start": 11609,
+        "end": 11682,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 94,
+        "department_start": 11623,
+        "department_end": 11640,
+        "citation_start": 11670,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "опредѣленіемъ гражд. касс. деп. Правительствующаго Сената за 1881 г. № 94",
+        "target_url": null,
+        "department_evidence": "гражд. касс. деп.",
+        "context_start": 11429,
+        "context_end": 11902,
+        "context_original": "одажѣ по вольной цѣнѣ посредствомъ совершенія купчихъ крѣпостей по правиламъ, изложеннымъ въ 1417 и послѣдующихъ статьяхъ 1 ч. X т. Соображенія эти не находятся въ противорѣчіи съ опредѣленіемъ гражд. касс. деп. Правительствующаго Сената за 1881 г. № 94, на которое ссылается кассаторъ, ибо въ этомъ опредѣленіи Правительствующій Сенатъ, въ видахъ установленія единообразной практики, разъяснилъ, что на отчужденіе частнымъ лицамъ участковъ городской земли, при продажѣ съ ",
+        "passage_id": "1897-098:11294-12619",
+        "pages": [
+          322
+        ],
+        "sources": [
+          {
+            "page": 322,
+            "page_method": "header",
+            "file": "p0172_L.txt",
+            "start": 11294,
+            "end": 12619
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-098?mode=precedent&ref=1897-098%3A1881%3A94%3A11670&at=11609&end=11682",
+        "scan_available": true
+      },
+      {
+        "id": "1897-098:1871:378:15674",
+        "source_id": "1897-098",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "3431e69fdfb5ceb8b2774c385c723ab5c39581431d1c2b3b1109208ccaf70b49",
+        "year": 1871,
+        "start": 15638,
+        "end": 15687,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 378,
+        "department_start": 15646,
+        "department_end": 15660,
+        "citation_start": 15674,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣшеніи гр. касс. деп. Прав. Сената 1871 г. № 378",
+        "target_url": null,
+        "department_evidence": "гр. касс. деп.",
+        "context_start": 15458,
+        "context_end": 15907,
+        "context_original": "ько признаются дѣйствительными, когда они утверждаются на непринужденность производивъ и согласіи и посему палата поступила вполнѣ согласно съ симъ закономъ и разъясненіемъ его въ рѣшеніи гр. касс. деп. Прав. Сената 1871 г. № 378, отвергнувъ требованіе Кремянскаго о признаніи городской управы обязанною сдѣлать распоряженіе о выдачѣ ему крѣпостнаго акта на спорное имущество, ибо такое требованіе, какъ правильно заключила палата, равносильно понуж",
+        "passage_id": "1897-098:15394-16587",
+        "pages": [
+          323
+        ],
+        "sources": [
+          {
+            "page": 323,
+            "page_method": "header",
+            "file": "p0172_R.txt",
+            "start": 15394,
+            "end": 16088
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-098?mode=precedent&ref=1897-098%3A1871%3A378%3A15674&at=15638&end=15687",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-098",
     "scan_pages": [

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.0.0",
-  "data_revision": "sha256:92c0ea2f9b87b7e8d02813cb9ca54c39461cc8cafb400922ad10d821a1a3c36f",
+  "contract_version": "1.1.0",
+  "data_revision": "sha256:34f6f51d94118aefa393c033204729f66eb9902462d8382a59817d7d5c19fc0c",
   "resource": "decision",
   "scope": {
     "id": "1897-027",
@@ -48,6 +48,281 @@
     "participant_ids": [
       "1897-78ce5987928c",
       "1897-e4ba8c5c8221"
+    ],
+    "precedents": [
+      {
+        "id": "1897-027:1885:132:5515",
+        "source_id": "1897-027",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "43493268174b6ae751bda0be3eb38fbe1e5fe0b1a7e72a1b313fb014061abd84",
+        "year": 1885,
+        "start": 5505,
+        "end": 5531,
+        "department": null,
+        "association": null,
+        "number": 132,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5515,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ 1885 г. за № 132",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5325,
+        "context_end": 5751,
+        "context_original": "единяется къ общей суммѣ, вырученной за имущество. Такимъ образомъ, по своему свойству, задатокъ есть часть суммы, вырученной при производствѣ торговъ. Правительствующій Сенатъ въ рѣшеніяхъ 1885 г. за № 132 и 1883 г. за № 68 разъяснилъ, что задатокъ этотъ, въ извѣстныхъ случаяхъ, можетъ быть возвращенъ внесшему его лицу. Къ числу этихъ случаевъ долженъ быть присоединенъ и тотъ, когда покупщикъ, представивъ, на основаніи 11",
+        "passage_id": "1897-027:5197-6509",
+        "pages": [
+          101
+        ],
+        "sources": [
+          {
+            "page": 101,
+            "page_method": "header",
+            "file": "p0061_R.txt",
+            "start": 5197,
+            "end": 6509
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-027?mode=precedent&ref=1897-027%3A1885%3A132%3A5515&at=5505&end=5531",
+        "scan_available": true
+      },
+      {
+        "id": "1897-027:1883:68:5534",
+        "source_id": "1897-027",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "43493268174b6ae751bda0be3eb38fbe1e5fe0b1a7e72a1b313fb014061abd84",
+        "year": 1883,
+        "start": 5505,
+        "end": 5549,
+        "department": null,
+        "association": null,
+        "number": 68,
+        "department_start": null,
+        "department_end": null,
+        "citation_start": 5534,
+        "status": "department_unknown",
+        "target_id": null,
+        "quote_original": "рѣшеніяхъ 1885 г. за № 132 и 1883 г. за № 68",
+        "target_url": null,
+        "department_evidence": null,
+        "context_start": 5325,
+        "context_end": 5769,
+        "context_original": "единяется къ общей суммѣ, вырученной за имущество. Такимъ образомъ, по своему свойству, задатокъ есть часть суммы, вырученной при производствѣ торговъ. Правительствующій Сенатъ въ рѣшеніяхъ 1885 г. за № 132 и 1883 г. за № 68 разъяснилъ, что задатокъ этотъ, въ извѣстныхъ случаяхъ, можетъ быть возвращенъ внесшему его лицу. Къ числу этихъ случаевъ долженъ быть присоединенъ и тотъ, когда покупщикъ, представивъ, на основаніи 1161 ст. уст. гр. су",
+        "passage_id": "1897-027:5197-6509",
+        "pages": [
+          101
+        ],
+        "sources": [
+          {
+            "page": 101,
+            "page_method": "header",
+            "file": "p0061_R.txt",
+            "start": 5197,
+            "end": 6509
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-027?mode=precedent&ref=1897-027%3A1883%3A68%3A5534&at=5505&end=5549",
+        "scan_available": true
+      },
+      {
+        "id": "1897-027:1875:906:6872",
+        "source_id": "1897-027",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "43493268174b6ae751bda0be3eb38fbe1e5fe0b1a7e72a1b313fb014061abd84",
+        "year": 1875,
+        "start": 6858,
+        "end": 6885,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 906,
+        "department_start": 6863,
+        "department_end": 6871,
+        "citation_start": 6872,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. г. к. д. 1875 г. № 906",
+        "target_url": null,
+        "department_evidence": "г. к. д.",
+        "context_start": 6678,
+        "context_end": 7105,
+        "context_original": "его значеніе, какъ штрафа, налагаемаго на покупщика, вступившаго въ извѣстныя отношенія къ торгу, не устоявшаго въ принятыхъ имъ на себя обязанностяхъ и отказавшагося отъ покупки (рѣш. г. к. д. 1875 г. № 906), утрачиваетъ это значеніе съ того момента, когда самая продажа является излишнею, какъ не вызываемая законными для назначенія ея основаніями, ибо, устанавливая подобныя послѣдствія для неисправныхъ покупщиковъ, законъ,",
+        "passage_id": "1897-027:6243-8283",
+        "pages": [
+          101
+        ],
+        "sources": [
+          {
+            "page": 101,
+            "page_method": "header",
+            "file": "p0061_R.txt",
+            "start": 6243,
+            "end": 6903
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-027?mode=precedent&ref=1897-027%3A1875%3A906%3A6872&at=6858&end=6885",
+        "scan_available": true
+      },
+      {
+        "id": "1897-027:1881:142:7732",
+        "source_id": "1897-027",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "43493268174b6ae751bda0be3eb38fbe1e5fe0b1a7e72a1b313fb014061abd84",
+        "year": 1881,
+        "start": 7718,
+        "end": 7745,
+        "department": "Гражданский кассационный департамент",
+        "association": "explicit",
+        "number": 142,
+        "department_start": 7723,
+        "department_end": 7731,
+        "citation_start": 7732,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. г. к. д. 1881 г. № 142",
+        "target_url": null,
+        "department_evidence": "г. к. д.",
+        "context_start": 7538,
+        "context_end": 7965,
+        "context_original": "спеціальныхъ и притомъ карательныхъ постановленій закона не можетъ имѣть мѣста, въ порядкѣ 9 ст. уст. гр. суд., на тѣ случаи, которые прямо этими постановленіями не предусмотрѣны (рѣш. г. к. д. 1881 г. № 142, 1879 г. № 165 и мн. др., рѣш. уг. к. д. 1883 г. № 8, 1871 г. № 175). Въ виду сего, Правительствующій Сенатъ, придя къ выводу, что поставленный выше вопросъ долженъ быть разрѣшенъ въ отрицательномъ смыслѣ, и рѣшеніе окр",
+        "passage_id": "1897-027:6243-8283",
+        "pages": [
+          102
+        ],
+        "sources": [
+          {
+            "page": 102,
+            "page_method": "header",
+            "file": "p0062_L.txt",
+            "start": 6904,
+            "end": 8283
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-027?mode=precedent&ref=1897-027%3A1881%3A142%3A7732&at=7718&end=7745",
+        "scan_available": true
+      },
+      {
+        "id": "1897-027:1879:165:7747",
+        "source_id": "1897-027",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "43493268174b6ae751bda0be3eb38fbe1e5fe0b1a7e72a1b313fb014061abd84",
+        "year": 1879,
+        "start": 7718,
+        "end": 7760,
+        "department": "Гражданский кассационный департамент",
+        "association": "list",
+        "number": 165,
+        "department_start": 7723,
+        "department_end": 7731,
+        "citation_start": 7747,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. г. к. д. 1881 г. № 142, 1879 г. № 165",
+        "target_url": null,
+        "department_evidence": "г. к. д.",
+        "context_start": 7538,
+        "context_end": 7980,
+        "context_original": "спеціальныхъ и притомъ карательныхъ постановленій закона не можетъ имѣть мѣста, въ порядкѣ 9 ст. уст. гр. суд., на тѣ случаи, которые прямо этими постановленіями не предусмотрѣны (рѣш. г. к. д. 1881 г. № 142, 1879 г. № 165 и мн. др., рѣш. уг. к. д. 1883 г. № 8, 1871 г. № 175). Въ виду сего, Правительствующій Сенатъ, придя къ выводу, что поставленный выше вопросъ долженъ быть разрѣшенъ въ отрицательномъ смыслѣ, и рѣшеніе окружнаго суда, ка",
+        "passage_id": "1897-027:6243-8283",
+        "pages": [
+          102
+        ],
+        "sources": [
+          {
+            "page": 102,
+            "page_method": "header",
+            "file": "p0062_L.txt",
+            "start": 6904,
+            "end": 8283
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-027?mode=precedent&ref=1897-027%3A1879%3A165%3A7747&at=7718&end=7760",
+        "scan_available": true
+      },
+      {
+        "id": "1897-027:1883:8:7787",
+        "source_id": "1897-027",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "43493268174b6ae751bda0be3eb38fbe1e5fe0b1a7e72a1b313fb014061abd84",
+        "year": 1883,
+        "start": 7772,
+        "end": 7798,
+        "department": "Уголовный кассационный департамент",
+        "association": "explicit",
+        "number": 8,
+        "department_start": 7777,
+        "department_end": 7786,
+        "citation_start": 7787,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. уг. к. д. 1883 г. № 8",
+        "target_url": null,
+        "department_evidence": "уг. к. д.",
+        "context_start": 7592,
+        "context_end": 8018,
+        "context_original": "на не можетъ имѣть мѣста, въ порядкѣ 9 ст. уст. гр. суд., на тѣ случаи, которые прямо этими постановленіями не предусмотрѣны (рѣш. г. к. д. 1881 г. № 142, 1879 г. № 165 и мн. др., рѣш. уг. к. д. 1883 г. № 8, 1871 г. № 175). Въ виду сего, Правительствующій Сенатъ, придя къ выводу, что поставленный выше вопросъ долженъ быть разрѣшенъ въ отрицательномъ смыслѣ, и рѣшеніе окружнаго суда, какъ съ симъ несогласное, подлежитъ отмѣ",
+        "passage_id": "1897-027:6243-8283",
+        "pages": [
+          102
+        ],
+        "sources": [
+          {
+            "page": 102,
+            "page_method": "header",
+            "file": "p0062_L.txt",
+            "start": 6904,
+            "end": 8283
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-027?mode=precedent&ref=1897-027%3A1883%3A8%3A7787&at=7772&end=7798",
+        "scan_available": true
+      },
+      {
+        "id": "1897-027:1871:175:7800",
+        "source_id": "1897-027",
+        "source_year": 1897,
+        "source_department": "Гражданский кассационный департамент",
+        "source_sha256": "43493268174b6ae751bda0be3eb38fbe1e5fe0b1a7e72a1b313fb014061abd84",
+        "year": 1871,
+        "start": 7772,
+        "end": 7813,
+        "department": "Уголовный кассационный департамент",
+        "association": "list",
+        "number": 175,
+        "department_start": 7777,
+        "department_end": 7786,
+        "citation_start": 7800,
+        "status": "not_in_corpus",
+        "target_id": null,
+        "quote_original": "рѣш. уг. к. д. 1883 г. № 8, 1871 г. № 175",
+        "target_url": null,
+        "department_evidence": "уг. к. д.",
+        "context_start": 7592,
+        "context_end": 8033,
+        "context_original": "на не можетъ имѣть мѣста, въ порядкѣ 9 ст. уст. гр. суд., на тѣ случаи, которые прямо этими постановленіями не предусмотрѣны (рѣш. г. к. д. 1881 г. № 142, 1879 г. № 165 и мн. др., рѣш. уг. к. д. 1883 г. № 8, 1871 г. № 175). Въ виду сего, Правительствующій Сенатъ, придя къ выводу, что поставленный выше вопросъ долженъ быть разрѣшенъ въ отрицательномъ смыслѣ, и рѣшеніе окружнаго суда, какъ съ симъ несогласное, подлежитъ отмѣнѣ, по выслушан",
+        "passage_id": "1897-027:6243-8283",
+        "pages": [
+          102
+        ],
+        "sources": [
+          {
+            "page": 102,
+            "page_method": "header",
+            "file": "p0062_L.txt",
+            "start": 6904,
+            "end": 8283
+          }
+        ],
+        "source_url": "https://ivseliv.github.io/senat/lex/#/d/1897-027?mode=precedent&ref=1897-027%3A1871%3A175%3A7800&at=7772&end=7813",
+        "scan_available": true
+      }
     ],
     "url": "https://ivseliv.github.io/senat/lex/#/d/1897-027",
     "scan_pages": [
