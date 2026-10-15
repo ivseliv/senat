@@ -20,6 +20,7 @@ from participants import load_participants
 from laws import build_law_index
 from export import build_export
 from decision_analyses import build as build_decision_analyses
+from guide_comparisons import build as build_guides
 from api import build_api
 from precedents import build_precedents
 
@@ -52,6 +53,10 @@ def build_published_artifacts():
     (Path(OUT) / 'decision-analyses.json').write_text(
         json.dumps(analyses, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
     print(f'  редакционные разборы: {analyses["count"]}')
+    guides = build_guides()
+    (Path(OUT) / 'guides.json').write_text(
+        json.dumps(guides, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+    print(f'  сравнительные разборы: {guides["comparison_count"]}')
     api = build_api(ROOT)
     print('  API:', api['contract_version'], ', '.join(f'{key}={value}' for key, value in api['coverage']['counts'].items()))
     return export, analyses, api

@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Решения Правительствующего Сената — Static API",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "description": "Статические JSON-файлы: доступны GET и HEAD, query-параметров и серверного поиска нет."
   },
   "servers": [
@@ -369,7 +369,7 @@
     },
     "/editorial/guides.json": {
       "get": {
-        "summary": "Тематические подборки",
+        "summary": "Тематические подборки и сравнительные разборы",
         "responses": {
           "200": {
             "description": "JSON UTF-8",

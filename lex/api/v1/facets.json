@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.2.0",
-  "data_revision": "sha256:7eeff56f5e6cc6309f116eaba81d72a69b1f9b12ac703f3019fb3316a3e6bd85",
+  "contract_version": "1.3.0",
+  "data_revision": "sha256:8400c8a693eb04d86632cb3357c5a969674d15807cd143e7558bf9c04d5e5867",
   "resource": "facets",
   "item": {
     "act": [
@@ -8604,19 +8604,19 @@
       {
         "id": "commerce-transport",
         "label": "commerce-transport",
-        "count": 26,
+        "count": 27,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/guide/commerce-transport.json"
       },
       {
         "id": "inheritance",
         "label": "inheritance",
-        "count": 33,
+        "count": 35,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/guide/inheritance.json"
       },
       {
         "id": "property-notary",
         "label": "property-notary",
-        "count": 23,
+        "count": 26,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/guide/property-notary.json"
       }
     ],
