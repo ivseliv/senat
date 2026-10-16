@@ -45,8 +45,12 @@ assert.equal(data.attribution_summary.legacy_unverified_citations,data.citations
   page.on('request',r=>{if(/\/scans\//.test(r.url()))images.push(r.url());});
   const listing=async(c='',q='',number=1)=>{
    await page.goto(route(c,q,number===1?'':String(number)));
-   await page.waitForFunction(()=>!document.querySelector('#laws-status').textContent.includes('Загружаем'));
    const expected=all.filter(r=>(!c || r.code===c) && matches(r,q));
+   await page.waitForFunction(({code,query,count})=>{
+    const view=document.querySelector('#view-laws'),status=document.querySelector('#laws-status');
+    return view && !view.hidden && document.querySelector('#laws-code').value===code &&
+     document.querySelector('#laws-q').value===query && status.textContent.trim().startsWith(String(count)+' ');
+   },{code:c,query:q,count:expected.length});
    if(c || q) assert.deepEqual(await page.locator('#laws-results .law-citation').evaluateAll(xs=>xs.map(x=>x.dataset.lawId)),expected.slice((number-1)*80,number*80).map(r=>r.id));
    assert((await page.locator('#laws-status').textContent()).includes(String(expected.length)));
    assert(await page.locator('#laws-results .law-citation').count()<=80,'В DOM не больше одной страницы цитат');
