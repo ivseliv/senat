@@ -54,6 +54,7 @@ console.log(items.filter(d => d.outcome));
 | `participants/{year}.json` | строки печатного указателя одного года |
 | `scans/{year}.json` | связи пассажей с изображениями страниц и координатами |
 | `statutes/index.json`, `statutes/{act_id}.json` | упоминания исторических норм; `act_id` берётся из индекса |
+| `legislation/unresolved.json`, `legislation/attribution.json` | остаток без установленного акта и покрытие сверки |
 | `legislation/acts.json`, `legislation/citations/{act_id}.json` | названия актов и буквальные контексты ссылок |
 | `facets.json`, `indexes/...` | материализованные фильтры по годам, темам, исходам, процедуре, нормам, участникам, должностным лицам и подборкам |
 | `analytics.json`, `glossary.json` | данные аналитики и словарь понятийного поиска |
@@ -109,6 +110,22 @@ SHA-256 исходного текста и прямой ссылкой на ме
 смешивайте данные разных снимков.
 
 ## Степень достоверности
+
+Контракт **1.5.0** добавляет `legislation/unresolved.json` и
+`legislation/attribution.json`. В цитатах законодательства `verification_status`
+равен `context_verified`, `legacy_unverified` или `act_unknown`. Это статус
+привязки акта; правильность номера OCR и исторической редакции им не
+удостоверяется. `field=text|headnote` задаёт поле для Unicode-смещений;
+`source_sha256` и `headnote_sha256` закрепляют оба источника. `evidence`
+сохраняет прямые/повторные цитаты и строки печатного указателя; `occurrences`
+сохраняет проверенные места. Относительные `path` и `scans[].full` разрешаются
+от корня `lex/`. Дополнительная `role=act_identity` поясняет идентичность акта.
+`source_warning` и `attribution_note`, если есть, сохраняют ограничения.
+Прежние URL фасетов сохраняются; опустевший после корректуры фасет имеет
+`count=0`, пустые `decision_ids` и `status=no_current_matches`.
+Счётчик `legislation_unresolved` считает пары «решение + обозначение статьи»,
+а не физические упоминания. [Метод](LAW_ATTRIBUTION.md).
+
 
 Контракт **1.4.0** добавляет `editorial/topics.json` (`TopicCatalog`) —
 редакционный каталог всех решений с современными названиями, описаниями,

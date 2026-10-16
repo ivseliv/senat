@@ -1,20 +1,18 @@
 {
   "api_version": "v1",
-  "contract_version": "1.4.0",
-  "data_revision": "sha256:6ac98d54af90894c26d5b151ea6fa7560f3c59eb9c7573bdfa175192587860d6",
+  "contract_version": "1.5.0",
+  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
   "resource": "decision-set",
   "filter": {
     "kind": "article",
     "id": "article-c5b9d0232ce5",
     "label": "ГКП ст. 188"
   },
-  "count": 1,
-  "decision_ids": [
-    "1905-032"
-  ],
+  "count": 0,
+  "decision_ids": [],
   "links": {
-    "decisions": [
-      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-032.json"
-    ]
-  }
+    "decisions": []
+  },
+  "status": "no_current_matches",
+  "note": "Прежний URL фасета сохранён; после сверки актов текущих совпадений нет."
 }

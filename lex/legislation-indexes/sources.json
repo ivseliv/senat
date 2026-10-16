@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "year": 1897,
+      "path": "legislation-indexes/1897.txt",
+      "sha256": "942b1330f3c0919f3d97ce8b33f6499c064fb061ba4669c0f2a9bbcab05dc60b",
+      "offset_unit": "Unicode code points; end exclusive",
+      "byte_length": 21684,
+      "origin_path": "../search-quality-2026-10/source/ocr/1897/volume.txt",
+      "origin_sha256": "74047301b0811df322eff270634be322069d8cccbdd255fe79a117be4c9f33b7",
+      "origin_start_line": 550,
+      "origin_stop_line_exclusive": 1377,
+      "trailing_blank_lines_removed": 1
+    },
+    {
+      "year": 1904,
+      "path": "legislation-indexes/1904.txt",
+      "sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+      "offset_unit": "Unicode code points; end exclusive",
+      "byte_length": 29707,
+      "origin_path": "lex/data/backmatter-1904.txt",
+      "origin_sha256": "073d4f630e41decc93b6593d807a322e745751cb8d880069fb80ab7f9591ede3",
+      "origin_start_line": 457,
+      "origin_stop_line_exclusive": 1579,
+      "recovered_title_marker": {
+        "path": "../search-quality-2026-10/source/ocr/1904/p0173_R.txt",
+        "line": 1,
+        "literal": "[[К: УКАЗАТЕЛЬ ЗАКОНОВЪ,]]",
+        "sha256": "c9efdee40d5994781d2c77a3aaea197388001d8d6ec76e585c362cb2bcd00067"
+      },
+      "trailing_blank_lines_removed": 1
+    }
+  ]
+}

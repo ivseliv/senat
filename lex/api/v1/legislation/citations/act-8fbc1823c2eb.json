@@ -1,469 +1,1903 @@
 {
   "api_version": "v1",
-  "contract_version": "1.4.0",
-  "data_revision": "sha256:6ac98d54af90894c26d5b151ea6fa7560f3c59eb9c7573bdfa175192587860d6",
+  "contract_version": "1.5.0",
+  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
   "resource": "legislation-citations",
   "scope": {
     "code": "УСУ",
     "id": "act-8fbc1823c2eb"
   },
-  "count": 24,
+  "count": 23,
   "items": [
     {
-      "id": "1896-012:УСУ:2591:1627",
+      "id": "1896-012:УСУ:2591:text:1627",
       "statute": "УСУ ст. 2591",
       "code": "УСУ",
       "article": "ст. 2591",
       "decision_id": "1896-012",
       "year": 1896,
       "decision_number": 12,
+      "field": "text",
       "start": 1627,
       "end": 1635,
       "quote_original": "ст. 2591",
       "context_original": "но важнымъ, за Министра Юсти ціи, Сенаторъ Завадскій! ордеромъ отъ 27-го іюля 1895 года за № 20221, поручилъ Оберъ-Прокурору, на основа ніи ст. 2591 учр. суд. уст., предложить означенные вопросы , на разсмотрѣніе м законное постановленіе Общаго Соб ранія Перваго и Кассаціонныхъ Де партам",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "dcf8ffb0fb5baec6df080f0aa577e6af0d2505d1e59bf60dfcfdbc9eb6a05854",
+      "headnote_sha256": "2d2602010105a65ef15c245f1578e3f7e92bd2a1a4c405d1a44ad2346e38b86f",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-012",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-012?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+2591&law=1896-012%3A%D0%A3%D0%A1%D0%A3%3A2591%3Atext%3A1627&at=1627&end=1635",
+      "source_warning": null,
       "passage_id": "1896-012:1061-2689",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-012?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+2591&at=1061&end=2689",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 725,
+          "page_method": "header",
+          "file": "p0018.txt",
+          "start": 1627,
+          "end": 1635
+        }
+      ],
+      "printed_pages": [
+        725
+      ],
+      "scans": [
+        {
+          "file": "p0018.txt",
+          "page": 725,
+          "full": "scans/1896/pages/p0018-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1676,
+          "ocr_sha256": "34d6ca8cec11a62057877377a20bffff8b485192c1ed32c6a95b450db8c11ddb",
+          "pdf_page": 18,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1627,
+          "end": 1650,
+          "quote_original": "ст. 2591 учр. суд. уст.",
+          "act_code": "УСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1627,
+          "end": 1635,
+          "quote_original": "ст. 2591",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1627,
+              "end": 1650,
+              "quote_original": "ст. 2591 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ],
+          "attribution_note": "В исходном OCR перемежены фрагменты соседних дел. Акт установлен у строки, но её принадлежность этому решению требует сверки оригинала."
+        }
+      ],
+      "attribution_note": "В исходном OCR перемежены фрагменты соседних дел. Акт установлен у строки, но её принадлежность этому решению требует сверки оригинала."
     },
     {
-      "id": "1896-024:УСУ:2591:856",
+      "id": "1896-024:УСУ:2591:text:856",
       "statute": "УСУ ст. 2591",
       "code": "УСУ",
       "article": "ст. 2591",
       "decision_id": "1896-024",
       "year": 1896,
       "decision_number": 24,
+      "field": "text",
       "start": 856,
       "end": 864,
       "quote_original": "ст. 2591",
       "context_original": "отъ 15 февраля сего года за № 4613, Оберъ-Прокурору Общаго Со- браьй Кассаціонныхъ Департаментовъ Правительствующаго Сената, на осно ваніи ст. 2591 учр. суд. уст., предложить означенный вопросъ на обсужденіе и ныхъ судей, при исполненіи ими обя занностей службы, признавалось про ступком",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "0429c65ec7ad8983aeb73faf6a9a88aaee7159ffe0f5b4207c55e9d5e148a9cc",
+      "headnote_sha256": "f04a207393bd17abd7db583da85c51ace8a0ab7e05e467103f60ef3b9de97992",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-024",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-024?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+2591&law=1896-024%3A%D0%A3%D0%A1%D0%A3%3A2591%3Atext%3A856&at=856&end=864",
+      "source_warning": "Вводная мотивировка этого решения обрывается и частично находится в OCR предыдущего решения №23. Постановка вопроса и последующее собственное рассуждение №24 различимы.",
       "passage_id": "1896-024:0-1519",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-024?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+2591&at=0&end=1519",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 751,
+          "page_method": "header",
+          "file": "p0044.txt",
+          "start": 856,
+          "end": 864
+        }
+      ],
+      "printed_pages": [
+        751
+      ],
+      "scans": [
+        {
+          "file": "p0044.txt",
+          "page": 751,
+          "full": "scans/1896/pages/p0044-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1677,
+          "ocr_sha256": "475c0c721e43c1e3a07c5b3dfb12f0b7e3433fd67094a6f78fbf9b4a04e276cc",
+          "pdf_page": 44,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 856,
+          "end": 879,
+          "quote_original": "ст. 2591 учр. суд. уст.",
+          "act_code": "УСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 856,
+          "end": 864,
+          "quote_original": "ст. 2591",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 856,
+              "end": 879,
+              "quote_original": "ст. 2591 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1904-075:УСУ:32:7796",
-      "statute": "УСУ ст. 32",
-      "code": "УСУ",
-      "article": "ст. 32",
-      "decision_id": "1904-075",
-      "year": 1904,
-      "decision_number": 75,
-      "start": 7796,
-      "end": 7802,
-      "quote_original": "ст. 32",
-      "context_original": "мъ порядкѣ,— поэтому, признавъ, что данный договоръ надлежало оплатить гербовымъ сборомъ въ 5 коп., съѣздъ поступилъ согласно съ пунктомъ 2 ст. 32 уст. о герб. сборѣ и ст. 36 того устава не нарушилъ. Вслѣдствіе сего, находя жалобу казенной палаты неуважительною, Правительствующій Сенат",
-      "association": "акт определён по контексту решения",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-075",
-      "passage_id": "1904-075:7260-8003",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-075?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+32&at=7260&end=8003",
-      "scan_available": true
-    },
-    {
-      "id": "1904-075:УСУ:36:1417",
+      "id": "1904-075:УСУ:36:text:1417",
       "statute": "УСУ ст. 36",
       "code": "УСУ",
       "article": "ст. 36",
       "decision_id": "1904-075",
       "year": 1904,
       "decision_number": 75,
+      "field": "text",
       "start": 1417,
       "end": 1423,
       "quote_original": "ст. 36",
       "context_original": "о неустойкѣ на случай нарушенія договора. Вслѣдствіе сего полагая, что такой договоръ, по свойству своему, не подлежитъ оцѣнкѣ и, согласно ст. 36 уст. о герб. сб. изд. 1893 г., долженъ быть оплаченъ сборомъ въ 80 коп., и что посему штрафа причиталось 8 рубл.,—просила опредѣленіе съѣзд",
-      "association": "акт определён по контексту решения",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "e5e7ad3d418a06d6fb399c3e0a3827bb7d71d6b450ccd49339c471d79e308d0b",
+      "headnote_sha256": "db906df9ef03bf731c69bb476b91928200d079a38ff9e6c4717009ad9582cde4",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-075",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-075?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+36&law=1904-075%3A%D0%A3%D0%A1%D0%A3%3A36%3Atext%3A1417&at=1417&end=1423",
+      "source_warning": null,
       "passage_id": "1904-075:0-1574",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-075?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+36&at=0&end=1574",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 210,
+          "page_method": "header",
+          "file": "p0106_L.txt",
+          "start": 1417,
+          "end": 1423
+        }
+      ],
+      "printed_pages": [
+        210
+      ],
+      "scans": [
+        {
+          "file": "p0106_L.txt",
+          "page": 210,
+          "full": "scans/1904/pages/p0106_L.webp",
+          "width": 1100,
+          "height": 1621,
+          "ocr_sha256": "4a62067827b687ed6c5a0e7ceaa295dfa000796b43d97cfce09fb725f3781150",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-079:УСУ:389:817",
+      "id": "1905-079:УСУ:389:text:1232",
       "statute": "УСУ ст. 389",
       "code": "УСУ",
       "article": "ст. 389",
       "decision_id": "1905-079",
       "year": 1905,
       "decision_number": 79,
-      "start": 817,
-      "end": 824,
-      "quote_original": "389 ст.",
-      "context_original": "изводства взысканій долговъ, не даетъ еще основанія отнести его къ числу тѣхъ лицъ, о правѣ которыхъ вести чужія судебныя дѣла говорится въ 389 ст. учр. суд. уст., опредѣляющей тѣ случаи и основанія, по которымъ веденіе чужихъ судебныхъ дѣлъ дозволяется, въ видѣ исключенія изъ общаго пр",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "field": "text",
+      "start": 1232,
+      "end": 1239,
+      "quote_original": "ст. 389",
+      "context_original": "тъ. Въ принесенной въ Правительствующій Сенатъ кассаціонной жалобѣ Кузьминъ ходатайствуетъ объ отмѣнѣ этого опредѣленія палаты по нарушенію ст. 389 учр. суд. уст., 2, 3 и 11 пол. о гор. банкахъ и 438, 456, 584 (п. 3) и 711 уст. гр. суд.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "bb4619099f63ea449871144174331c3e6389992a208930d1e20f8ad123ee901b",
+      "headnote_sha256": "ec92cd5faddd70d871c622dbb2d12080305bb685fa404874a47fea8024706e6a",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-079",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-079?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+389&law=1905-079%3A%D0%A3%D0%A1%D0%A3%3A389%3Atext%3A1232&at=1232&end=1239",
+      "source_warning": null,
       "passage_id": "1905-079:0-1817",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-079?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+389&at=0&end=1817",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 219,
+          "page_method": "neighbors",
+          "file": "p0110_R.txt",
+          "start": 1232,
+          "end": 1239
+        }
+      ],
+      "printed_pages": [
+        219
+      ],
+      "scans": [
+        {
+          "file": "p0110_R.txt",
+          "page": 219,
+          "full": "scans/1905/pages/p0110_R.webp",
+          "width": 1100,
+          "height": 1525,
+          "ocr_sha256": "5bbb833d34ae4ff70363218fe04de852d1862f92b95fab4f6d92b55046c54030",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1232,
+          "end": 1254,
+          "quote_original": "ст. 389 учр. суд. уст.",
+          "act_code": "УСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1232,
+          "end": 1239,
+          "quote_original": "ст. 389",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1232,
+              "end": 1254,
+              "quote_original": "ст. 389 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 1695,
+          "end": 1702,
+          "quote_original": "ст. 389",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1695,
+              "end": 1717,
+              "quote_original": "ст. 389 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 3501,
+          "end": 3508,
+          "quote_original": "ст. 389",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3501,
+              "end": 3523,
+              "quote_original": "ст. 389 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 7407,
+          "end": 7414,
+          "quote_original": "ст. 389",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 7407,
+              "end": 7429,
+              "quote_original": "ст. 389 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 7523,
+          "end": 7530,
+          "quote_original": "ст. 389",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 7523,
+              "end": 7545,
+              "quote_original": "ст. 389 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1905-019:УСУ:390:2170",
+      "id": "1905-019:УСУ:390:text:2170",
       "statute": "УСУ ст. 390",
       "code": "УСУ",
       "article": "ст. 390",
       "decision_id": "1905-019",
       "year": 1905,
       "decision_number": 19,
+      "field": "text",
       "start": 2170,
       "end": 2177,
       "quote_original": "ст. 390",
       "context_original": "ъ на невозможность совершенія между ними въ данномъ случаѣ акта довѣренности, и 3) приведенныя положенія вполнѣ подтверждаются содержаніемъ ст. 390 учр. суд. уст., въ которой проводится различіе между ходатайствомъ повѣреннаго по избранію самого тяжущагося и ходатайствомъ по назначенію",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "8b6b198e34cf8b757586c616f011b7b2e960deebc1d8cd2d368c34ec72a5eb97",
+      "headnote_sha256": "f0cf052332713e8ad25f0f0f870e3a823f526bf82e8acf4387b0d7148d071b0e",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-019",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-019?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+390&law=1905-019%3A%D0%A3%D0%A1%D0%A3%3A390%3Atext%3A2170&at=2170&end=2177",
+      "source_warning": null,
       "passage_id": "1905-019:1486-2888",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-019?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+390&at=1486&end=2888",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 46,
+          "page_method": "header",
+          "file": "p0024_L.txt",
+          "start": 2170,
+          "end": 2177
+        }
+      ],
+      "printed_pages": [
+        46
+      ],
+      "scans": [
+        {
+          "file": "p0024_L.txt",
+          "page": 46,
+          "full": "scans/1905/pages/p0024_L.webp",
+          "width": 1100,
+          "height": 1510,
+          "ocr_sha256": "21f7f5a3376500b9080d75544c512d0dbd1775ffd10525b921e5902986c1b78b",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2170,
+          "end": 2192,
+          "quote_original": "ст. 390 учр. суд. уст.",
+          "act_code": "УСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2170,
+          "end": 2177,
+          "quote_original": "ст. 390",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2170,
+              "end": 2192,
+              "quote_original": "ст. 390 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1905-105:УСУ:396:3697",
+      "id": "1905-105:УСУ:396:text:3697",
       "statute": "УСУ ст. 396",
       "code": "УСУ",
       "article": "ст. 396",
       "decision_id": "1905-105",
       "year": 1905,
       "decision_number": 105,
+      "field": "text",
       "start": 3697,
       "end": 3704,
       "quote_original": "ст. 396",
       "context_original": "го во владѣніе Одинцова. Вмѣстѣ съ тѣмъ окружный судъ, находя, что настоящій искъ не подлежитъ оцѣнкѣ, и примѣняясь къ 3 ст. прилож. VII къ ст. 396 учр. суд. уст., призналъ возможнымъ, соображаясь съ значеніемъ дѣла, опредѣлить размѣръ вознагражденія за веденіе дѣла и за судебныя издерж",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "991a61dd282cb9089c7c1ae190f9f8d142d44d5596621ba461fd562029298275",
+      "headnote_sha256": "750a231e9d7d06e8773411e7bef1ed79119391457417f8b6c040b982cfd029f3",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-105",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-105?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+396&law=1905-105%3A%D0%A3%D0%A1%D0%A3%3A396%3Atext%3A3697&at=3697&end=3704",
+      "source_warning": null,
       "passage_id": "1905-105:3102-4697",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-105?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+396&at=3102&end=4697",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 285,
+          "page_method": "header",
+          "file": "p0143_R.txt",
+          "start": 3697,
+          "end": 3704
+        }
+      ],
+      "printed_pages": [
+        285
+      ],
+      "scans": [
+        {
+          "file": "p0143_R.txt",
+          "page": 285,
+          "full": "scans/1905/pages/p0143_R.webp",
+          "width": 1100,
+          "height": 1517,
+          "ocr_sha256": "be0318623b6bf0db5e99239c9696b5e2ed6faf9b1670e8963fd5c4c37b927806",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3697,
+          "end": 3719,
+          "quote_original": "ст. 396 учр. суд. уст.",
+          "act_code": "УСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3697,
+          "end": 3704,
+          "quote_original": "ст. 396",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3697,
+              "end": 3719,
+              "quote_original": "ст. 396 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1897-062:УСУ:400:4973",
+      "id": "1897-062:УСУ:400:text:4973",
       "statute": "УСУ ст. 400",
       "code": "УСУ",
       "article": "ст. 400",
       "decision_id": "1897-062",
       "year": 1897,
       "decision_number": 62,
+      "field": "text",
       "start": 4973,
       "end": 4980,
       "quote_original": "ст. 400",
       "context_original": "гская судебная палата (по 2-му гр. д-ту) признала споръ отвѣтчиковъ незаслуживающимъ уваженія по слѣдующимъ соображеніямъ: 1) изложенное въ ст. 400 учр. суд. уст. запрещеніе повѣреннымъ покупать или инымъ образомъ пріобрѣтать права своихъ довѣрителей по ихъ тяжбамъ, какъ на свое имя, та",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "6d80ffff2fac6a815c04086f16ce352ca0098c56029e1ffc68549b223e9162a9",
+      "headnote_sha256": "5cf54828c701570ce670f8621f61e0a79e65f17b654e35f0fb3d3bee6f70da0c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-062",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-062?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+400&law=1897-062%3A%D0%A3%D0%A1%D0%A3%3A400%3Atext%3A4973&at=4973&end=4980",
+      "source_warning": null,
       "passage_id": "1897-062:4206-5458",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-062?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+400&at=4206&end=5458",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 203,
+          "page_method": "header",
+          "file": "p0112_R.txt",
+          "start": 4973,
+          "end": 4980
+        }
+      ],
+      "printed_pages": [
+        203
+      ],
+      "scans": [
+        {
+          "file": "p0112_R.txt",
+          "page": 203,
+          "full": "scans/1897/pages/p0112_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1521,
+          "ocr_sha256": "1e72bf3fa5eeabe4bfea9ac4c551c08e0fb32968a02f4906b9e9a51a42cad064",
+          "pdf_page": 224,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 4973,
+          "end": 4995,
+          "quote_original": "ст. 400 учр. суд. уст.",
+          "act_code": "УСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4973,
+          "end": 4980,
+          "quote_original": "ст. 400",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4973,
+              "end": 4995,
+              "quote_original": "ст. 400 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 8162,
+          "end": 8169,
+          "quote_original": "ст. 400",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 8162,
+              "end": 8184,
+              "quote_original": "ст. 400 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 8298,
+          "end": 8305,
+          "quote_original": "ст. 400",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 8298,
+              "end": 8320,
+              "quote_original": "ст. 400 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 11185,
+          "end": 11192,
+          "quote_original": "ст. 400",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 11185,
+              "end": 11209,
+              "quote_original": "ст. 400 учр. суд. устан.",
+              "act_code": "УСУ"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 11993,
+          "end": 12000,
+          "quote_original": "ст. 400",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1897.txt",
+              "source_sha256": "942b1330f3c0919f3d97ce8b33f6499c064fb061ba4669c0f2a9bbcab05dc60b",
+              "start": 5334,
+              "end": 5343,
+              "quote_original": "400 | 62.",
+              "heading": {
+                "start": 5310,
+                "end": 5332,
+                "quote_original": "Учрежденіе суд. устан."
+              },
+              "edition_continuation": null,
+              "act_code": "УСУ"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1896-019:УСУ:457:3923",
+      "id": "1896-019:УСУ:457:text:3923",
       "statute": "УСУ ст. 457",
       "code": "УСУ",
       "article": "ст. 457",
       "decision_id": "1896-019",
       "year": 1896,
       "decision_number": 19,
+      "field": "text",
       "start": 3923,
       "end": 3930,
       "quote_original": "ст. 457",
       "context_original": "азднить; при этомъ обязанности, лежавшія на меже выхъ коммисіяхъ, Высочайше повелѣно : изложить на окружные суды. Соот вѣтственно сему и въ ст. 457 учр. суд уст. (суд. уст. Императора Александра II, изд. 1892 года) выражено, что на Тифлисскую судебную палату и на под вѣдомственные ей ок",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "444246ecd35a734acf3a7c1947d027d5178a75c863b9656d1ba73d4b312b683e",
+      "headnote_sha256": "ff155063853e00327f8c77e31534ae8641e9a12c2e52bffc0a3791ed33e37316",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-019",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-019?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+457&law=1896-019%3A%D0%A3%D0%A1%D0%A3%3A457%3Atext%3A3923&at=3923&end=3930",
+      "source_warning": null,
       "passage_id": "1896-019:3631-5569",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-019?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+457&at=3631&end=5569",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 740,
+          "page_method": "header",
+          "file": "p0033.txt",
+          "start": 3923,
+          "end": 3930
+        }
+      ],
+      "printed_pages": [
+        740
+      ],
+      "scans": [
+        {
+          "file": "p0033.txt",
+          "page": 740,
+          "full": "scans/1896/pages/p0033-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1674,
+          "ocr_sha256": "105d07e924d2a154653e5db6a86e0c0a9dcf6bdae22fc1f85d4b9ba2a84e6f39",
+          "pdf_page": 33,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3923,
+          "end": 3944,
+          "quote_original": "ст. 457 учр. суд уст.",
+          "act_code": "УСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3923,
+          "end": 3930,
+          "quote_original": "ст. 457",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3923,
+              "end": 3944,
+              "quote_original": "ст. 457 учр. суд уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1897-003:УСУ:5:3631",
+      "id": "1897-003:УСУ:5:text:3631",
       "statute": "УСУ ст. 5",
       "code": "УСУ",
       "article": "ст. 5",
       "decision_id": "1897-003",
       "year": 1897,
       "decision_number": 3,
+      "field": "text",
       "start": 3631,
       "end": 3636,
       "quote_original": "ст. 5",
       "context_original": "налаг. мир. суд., какъ ростовщической, то оно не заслуживаетъ уваженія, потому что, по заключенію окружнаго суда, правильность котораго, по ст. 5 учр. суд. уст., не подлежитъ кассаціонной повѣркѣ, ростовщическій характеръ оспариваемой Кумомъ сдѣлки не доказанъ. По симъ основаніямъ Пра",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "57a8f06ac2c2b90b80d378a414ded4bfd4ff658d9c7a2a248f8dd291efb2b501",
+      "headnote_sha256": "33e3984fd56b976a876d9fb14c7aab725813e1a82cd8a7e82b330a02d7978c1f",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-003",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-003?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&law=1897-003%3A%D0%A3%D0%A1%D0%A3%3A5%3Atext%3A3631&at=3631&end=3636",
+      "source_warning": null,
       "passage_id": "1897-003:2661-3882",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-003?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&at=2661&end=3882",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 16,
+          "page_method": "header",
+          "file": "p0019_L.txt",
+          "start": 3631,
+          "end": 3636
+        }
+      ],
+      "printed_pages": [
+        16
+      ],
+      "scans": [
+        {
+          "file": "p0019_L.txt",
+          "page": 16,
+          "full": "scans/1897/pages/p0019_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1519,
+          "ocr_sha256": "92cc6b0f8ee8c253bff26197ae4aab9de21a29f63f6664b7ba71ca4e8209d88f",
+          "pdf_page": 37,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3631,
+          "end": 3651,
+          "quote_original": "ст. 5 учр. суд. уст.",
+          "act_code": "УСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3631,
+          "end": 3636,
+          "quote_original": "ст. 5",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3631,
+              "end": 3651,
+              "quote_original": "ст. 5 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1897-034:УСУ:5:5513",
+      "id": "1897-034:УСУ:5:text:5513",
       "statute": "УСУ ст. 5",
       "code": "УСУ",
       "article": "ст. 5",
       "decision_id": "1897-034",
       "year": 1897,
       "decision_number": 34,
+      "field": "text",
       "start": 5513,
       "end": 5519,
       "quote_original": "ст.\n\n5",
       "context_original": "редставленныхъ къ дѣлу доказательствъ, по ихъ внутреннему содержанію, относясь всецѣло къ существу дѣла, не подлежатъ кассаціонной повѣркѣ (ст.\n\n5 учр. суд. уст.), Правительствующій Сенатъ находитъ всѣ возраженія Зетцеръ противъ обжалованнаго рѣшенія незаслуживающими уваженія. Въ виду",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "420a533bd06ed50d9560793660bb057ab26e1a34aed922ca3f41e270cc913ec9",
+      "headnote_sha256": "bc2169b1e771675d49113abb7ae81155427638ae4d62de7aea21de36fcbcb077",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-034",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-034?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&law=1897-034%3A%D0%A3%D0%A1%D0%A3%3A5%3Atext%3A5513&at=5513&end=5519",
+      "source_warning": null,
       "passage_id": "1897-034:4220-6139",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-034?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&at=4220&end=6139",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 118,
+          "page_method": "header",
+          "file": "p0070_L.txt",
+          "start": 5513,
+          "end": 5516
+        },
+        {
+          "page": 119,
+          "page_method": "header",
+          "file": "p0070_R.txt",
+          "start": 5518,
+          "end": 5519
+        }
+      ],
+      "printed_pages": [
+        118,
+        119
+      ],
+      "scans": [
+        {
+          "file": "p0070_L.txt",
+          "page": 118,
+          "full": "scans/1897/pages/p0070_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1540,
+          "ocr_sha256": "0d25cdcab85214f0f91a3609f74e6c15b646b68f9fe769cda1faea5fa5e1ccb1",
+          "pdf_page": 139,
+          "kind": "page"
+        },
+        {
+          "file": "p0070_R.txt",
+          "page": 119,
+          "full": "scans/1897/pages/p0070_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1510,
+          "ocr_sha256": "a2291b1b0345b9f1a9d9819fc0ef24c8b36f5d2c1596446d766c5bc7efc0f478",
+          "pdf_page": 140,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 5513,
+          "end": 5534,
+          "quote_original": "ст.\n\n5 учр. суд. уст.",
+          "act_code": "УСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5513,
+          "end": 5519,
+          "quote_original": "ст.\n\n5",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 5513,
+              "end": 5534,
+              "quote_original": "ст.\n\n5 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1897-062:УСУ:5:13356",
+      "id": "1897-062:УСУ:5:text:13356",
       "statute": "УСУ ст. 5",
       "code": "УСУ",
       "article": "ст. 5",
       "decision_id": "1897-062",
       "year": 1897,
       "decision_number": 62,
+      "field": "text",
       "start": 13356,
       "end": 13361,
       "quote_original": "ст. 5",
       "context_original": "омъ, что допросомъ этимъ они, отвѣтчики, желаютъ удостовѣрить содержаніе тѣхъ договоровъ, относятся къ существу дѣла,неподлежащему,за силой ст. 5 учр. суд. уст., повѣркѣ въ кассаціонномъ порядкѣ. Отказъ же со стороны судебной палаты въ допросѣ свидѣтелей, которыми отвѣтчики имѣли въ в",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "6d80ffff2fac6a815c04086f16ce352ca0098c56029e1ffc68549b223e9162a9",
+      "headnote_sha256": "5cf54828c701570ce670f8621f61e0a79e65f17b654e35f0fb3d3bee6f70da0c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-062",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-062?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&law=1897-062%3A%D0%A3%D0%A1%D0%A3%3A5%3Atext%3A13356&at=13356&end=13361",
+      "source_warning": null,
       "passage_id": "1897-062:11710-13844",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-062?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&at=11710&end=13844",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 206,
+          "page_method": "header",
+          "file": "p0114_L.txt",
+          "start": 13356,
+          "end": 13361
+        }
+      ],
+      "printed_pages": [
+        206
+      ],
+      "scans": [
+        {
+          "file": "p0114_L.txt",
+          "page": 206,
+          "full": "scans/1897/pages/p0114_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1580,
+          "ocr_sha256": "f6da0942263f902708b4ce8ebb1378706ea213e6d25ecc64cb36c8735d0554e6",
+          "pdf_page": 227,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 13356,
+          "end": 13376,
+          "quote_original": "ст. 5 учр. суд. уст.",
+          "act_code": "УСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 13356,
+          "end": 13361,
+          "quote_original": "ст. 5",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 13356,
+              "end": 13376,
+              "quote_original": "ст. 5 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1897-080:УСУ:5:8578",
+      "id": "1897-080:УСУ:5:text:8578",
       "statute": "УСУ ст. 5",
       "code": "УСУ",
       "article": "ст. 5",
       "decision_id": "1897-080",
       "year": 1897,
       "decision_number": 80,
+      "field": "text",
       "start": 8578,
       "end": 8583,
       "quote_original": "ст. 5",
       "context_original": "іемъ въ этомъ видѣ условленнаго сторонами обезпеченія означеннаго долга, что, относясь къ существу дѣла, не подлежитъ кассаціонной повѣркѣ (ст. 5 учр. суд. уст.), послѣдующее отдѣленіе Пальмеромъ лѣса отъ земли, съ переработкою онаго въ лѣсной товаръ, не могло лишить кредитора права н",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "d3013323920ac5410c4e352f2c6cea72b5770af3bb2d1646d4ab04fddbad4ad6",
+      "headnote_sha256": "ae3420a30800a1cd396831b0c67e824387425686ef36b02c76ed7c551c51860e",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-080",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-080?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&law=1897-080%3A%D0%A3%D0%A1%D0%A3%3A5%3Atext%3A8578&at=8578&end=8583",
+      "source_warning": null,
       "passage_id": "1897-080:7421-9423",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-080?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&at=7421&end=9423",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 262,
+          "page_method": "header",
+          "file": "p0142_L.txt",
+          "start": 8578,
+          "end": 8583
+        }
+      ],
+      "printed_pages": [
+        262
+      ],
+      "scans": [
+        {
+          "file": "p0142_L.txt",
+          "page": 262,
+          "full": "scans/1897/pages/p0142_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1545,
+          "ocr_sha256": "587244b1dd0f82953d9e55af04b264c591d650ad72de121867f9c58c82f555ae",
+          "pdf_page": 283,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 8578,
+          "end": 8598,
+          "quote_original": "ст. 5 учр. суд. уст.",
+          "act_code": "УСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8578,
+          "end": 8583,
+          "quote_original": "ст. 5",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 8578,
+              "end": 8598,
+              "quote_original": "ст. 5 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1897-090:УСУ:5:5191",
+      "id": "1897-090:УСУ:5:text:5191",
       "statute": "УСУ ст. 5",
       "code": "УСУ",
       "article": "ст. 5",
       "decision_id": "1897-090",
       "year": 1897,
       "decision_number": 90,
+      "field": "text",
       "start": 5191,
       "end": 5196,
       "quote_original": "ст. 5",
       "context_original": "ованіямъ и не входя въ разсмотрѣніе остальныхъ возраженій просителя, которыя, относясь къ существу дѣла, не подлежатъ кассаціонной повѣркѣ (ст. 5 учр. суд. уст.), Правительствующій Сенатъ опредѣляетъ рѣшеніе Сувалкскаго 2 округа мирового съѣзда, въ части, касающейся исчисленія размѣра",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "95256faab54f9993b56b80803ae9209358ef0df33c4cbdc58ecc762b6c33ca73",
+      "headnote_sha256": "260469288c67843157f453f4c72c10653acb2d1fa918102d3e768d7d1a1c79f0",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-090",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-090?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&law=1897-090%3A%D0%A3%D0%A1%D0%A3%3A5%3Atext%3A5191&at=5191&end=5196",
+      "source_warning": null,
       "passage_id": "1897-090:4023-5638",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-090?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&at=4023&end=5638",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 295,
+          "page_method": "header",
+          "file": "p0158_R.txt",
+          "start": 5191,
+          "end": 5196
+        }
+      ],
+      "printed_pages": [
+        295
+      ],
+      "scans": [
+        {
+          "file": "p0158_R.txt",
+          "page": 295,
+          "full": "scans/1897/pages/p0158_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1501,
+          "ocr_sha256": "d25cb3cbb6739f6f42f848f935ff32fbc994642495db9e787df952a968435521",
+          "pdf_page": 316,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 5191,
+          "end": 5211,
+          "quote_original": "ст. 5 учр. суд. уст.",
+          "act_code": "УСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5191,
+          "end": 5196,
+          "quote_original": "ст. 5",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 5191,
+              "end": 5211,
+              "quote_original": "ст. 5 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1904-029:УСУ:5:647",
+      "id": "1904-029:УСУ:5:text:647",
       "statute": "УСУ ст. 5",
       "code": "УСУ",
       "article": "ст. 5",
       "decision_id": "1904-029",
       "year": 1904,
       "decision_number": 29,
+      "field": "text",
       "start": 647,
       "end": 652,
       "quote_original": "ст. 5",
       "context_original": "ьзу,—такъ какъ онъ не принималъ никакого участія въ семъ дѣлѣ въ окружномъ судѣ и судебной палатѣ, а Правительствующій Сенатъ, на основаніи ст. 5 учр. суд. уст. и ст. 11 уст. гр. суд., не можетъ входить въ разсмотрѣніе дѣлъ по существу даже по просьбамъ сторонъ, принимавшихъ участіе в",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "7defe3326c67b04ee2f3370ac120c80245187e1d8bd8ab4bce1b2ce58a9865be",
+      "headnote_sha256": "46b4b94b82b1a50cbcacb87efcdcd76f6a4e6302f9a878ac6dd53b775767ec58",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-029",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-029?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&law=1904-029%3A%D0%A3%D0%A1%D0%A3%3A5%3Atext%3A647&at=647&end=652",
+      "source_warning": null,
       "passage_id": "1904-029:0-1970",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-029?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&at=0&end=1970",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 74,
+          "page_method": "header",
+          "file": "p0038_L.txt",
+          "start": 647,
+          "end": 652
+        }
+      ],
+      "printed_pages": [
+        74
+      ],
+      "scans": [
+        {
+          "file": "p0038_L.txt",
+          "page": 74,
+          "full": "scans/1904/pages/p0038_L.webp",
+          "width": 1100,
+          "height": 1597,
+          "ocr_sha256": "31a70109d2a3e21375d75bdb968021b4a8fb6745ec3cb973b87641ebd41d1e89",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 647,
+          "end": 667,
+          "quote_original": "ст. 5 учр. суд. уст.",
+          "act_code": "УСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 647,
+          "end": 652,
+          "quote_original": "ст. 5",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 647,
+              "end": 667,
+              "quote_original": "ст. 5 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1904-040:УСУ:5:4363",
+      "id": "1904-040:УСУ:5:text:4363",
       "statute": "УСУ ст. 5",
       "code": "УСУ",
       "article": "ст. 5",
       "decision_id": "1904-040",
       "year": 1904,
       "decision_number": 40,
+      "field": "text",
       "start": 4363,
       "end": 4368,
       "quote_original": "ст. 5",
       "context_original": "а о томъ самомъ наслѣдствѣ, о которомъ предъявленъ имъ настоящій искъ, относясь всецѣло къ фактической сторонѣ дѣла, не подлежитъ, за силою ст. 5 учр. суд. уст., кассаціонной повѣркѣ. Переходя, затѣмъ, къ разрѣшенію главнаго возникающаго въ настоящемъ дѣлѣ вопроса о томъ, правильно-ли",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "92e8d8d962c6ce97fc05133e91c6336cdb2a1348560304573a8e8e71407e5d53",
+      "headnote_sha256": "3ea6f6474b1393a77923b9a70bc461372a87b15d855fcef69fa37591db8cb6b2",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-040",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-040?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&law=1904-040%3A%D0%A3%D0%A1%D0%A3%3A5%3Atext%3A4363&at=4363&end=4368",
+      "source_warning": null,
       "passage_id": "1904-040:3245-5072",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-040?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&at=3245&end=5072",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 107,
+          "page_method": "header",
+          "file": "p0054_R.txt",
+          "start": 4363,
+          "end": 4368
+        }
+      ],
+      "printed_pages": [
+        107
+      ],
+      "scans": [
+        {
+          "file": "p0054_R.txt",
+          "page": 107,
+          "full": "scans/1904/pages/p0054_R.webp",
+          "width": 1100,
+          "height": 1635,
+          "ocr_sha256": "b5697693659dd6244f6d1e42894960f84afca31cd85c839905eb08e17f1e180a",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 4363,
+          "end": 4383,
+          "quote_original": "ст. 5 учр. суд. уст.",
+          "act_code": "УСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4363,
+          "end": 4368,
+          "quote_original": "ст. 5",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4363,
+              "end": 4383,
+              "quote_original": "ст. 5 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1904-049:УСУ:5:4127",
+      "id": "1904-049:УСУ:5:text:4127",
       "statute": "УСУ ст. 5",
       "code": "УСУ",
       "article": "ст. 5",
       "decision_id": "1904-049",
       "year": 1904,
       "decision_number": 49,
+      "field": "text",
       "start": 4127,
       "end": 4132,
       "quote_original": "ст. 5",
       "context_original": "а о признаніи просителя нарушителемъ договора найма относится къ существу дѣла и не подлежитъ повѣркѣ въ кассаціонномъ порядкѣ на основаніи ст. 5 учр. суд. уст., а указаніе просителя на нарушеніе 1139, 1146 и 1737 ст. гр. код. не имѣетъ никакого значенія, въ виду разрѣшенія дѣла по 15",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "fc25d1d3ba3ec85305586110c109a955f617f2651334e66f5b14b021e0149e68",
+      "headnote_sha256": "bce56c3de68aeb5d07dcd3098c8f28372a2b483e345d0bf08fff65440fa37060",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-049",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-049?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&law=1904-049%3A%D0%A3%D0%A1%D0%A3%3A5%3Atext%3A4127&at=4127&end=4132",
+      "source_warning": null,
       "passage_id": "1904-049:2627-4644",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-049?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&at=2627&end=4644",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 137,
+          "page_method": "header",
+          "file": "p0069_R.txt",
+          "start": 4127,
+          "end": 4132
+        }
+      ],
+      "printed_pages": [
+        137
+      ],
+      "scans": [
+        {
+          "file": "p0069_R.txt",
+          "page": 137,
+          "full": "scans/1904/pages/p0069_R.webp",
+          "width": 1100,
+          "height": 1640,
+          "ocr_sha256": "9c072a71f038ae90e778718f7f9acef13ab5f9bdc7262bb83bdbde891b4ad51b",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 4127,
+          "end": 4147,
+          "quote_original": "ст. 5 учр. суд. уст.",
+          "act_code": "УСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4127,
+          "end": 4132,
+          "quote_original": "ст. 5",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4127,
+              "end": 4147,
+              "quote_original": "ст. 5 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1904-067:УСУ:5:1359",
+      "id": "1904-067:УСУ:5:text:1359",
       "statute": "УСУ ст. 5",
       "code": "УСУ",
       "article": "ст. 5",
       "decision_id": "1904-067",
       "year": 1904,
       "decision_number": 67,
+      "field": "text",
       "start": 1359,
       "end": 1364,
       "quote_original": "ст. 5",
       "context_original": "лъ своего согласія на общее владѣніе таковымъ, и 3) что, посему, и установивъ по обстоятельствамъ дѣла, неподлежащимъ кассаціонной повѣркѣ (ст. 5 учр. суд. уст.), съ одной стороны, что правопредшественники истца, Филипповича, участвовали въ полюбовной сказкѣ, составленной 12 октября 1",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "d60fd85212511b809cc8adf82bc142df890ae55e43d0cf038e9d930175407121",
+      "headnote_sha256": "f8ed7f877d443cc1b89284e0cb79858b4a352169844834bc84a36af276793d2b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-067",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-067?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&law=1904-067%3A%D0%A3%D0%A1%D0%A3%3A5%3Atext%3A1359&at=1359&end=1364",
+      "source_warning": null,
       "passage_id": "1904-067:0-1578",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-067?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&at=0&end=1578",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 195,
+          "page_method": "header",
+          "file": "p0098_R.txt",
+          "start": 1359,
+          "end": 1364
+        }
+      ],
+      "printed_pages": [
+        195
+      ],
+      "scans": [
+        {
+          "file": "p0098_R.txt",
+          "page": 195,
+          "full": "scans/1904/pages/p0098_R.webp",
+          "width": 1100,
+          "height": 1611,
+          "ocr_sha256": "4cb48ed86834c51482882b028f4d506616cb3d74403dbe9434a850497026829a",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1359,
+          "end": 1379,
+          "quote_original": "ст. 5 учр. суд. уст.",
+          "act_code": "УСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1359,
+          "end": 1364,
+          "quote_original": "ст. 5",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1359,
+              "end": 1379,
+              "quote_original": "ст. 5 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1904-072:УСУ:5:4155",
+      "id": "1904-072:УСУ:5:text:4155",
       "statute": "УСУ ст. 5",
       "code": "УСУ",
       "article": "ст. 5",
       "decision_id": "1904-072",
       "year": 1904,
       "decision_number": 72,
+      "field": "text",
       "start": 4155,
       "end": 4160,
       "quote_original": "ст. 5",
       "context_original": "у основано на выводахъ изъ фактической стороны дѣла, то правильность онаго и не можетъ подлежать повѣркѣ Правительствующаго Сената за силою ст. 5 учр. суд. уст. Засимъ, назначивъ мѣстомъ пребыванія конкурснаго управленія гор. Митаву, судебная палата правильно утвердила въ должности пр",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "7d6eafed84ba4f4a4415ff4077d5588ac7887f8d3cf7ddfcaf6f0eca12253ea5",
+      "headnote_sha256": "76063a0a2978c1875c81183d6a5655ef539197805779f119f4d8b1e93a1c8f89",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-072",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-072?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&law=1904-072%3A%D0%A3%D0%A1%D0%A3%3A5%3Atext%3A4155&at=4155&end=4160",
+      "source_warning": null,
       "passage_id": "1904-072:2975-4984",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-072?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&at=2975&end=4984",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 206,
+          "page_method": "header",
+          "file": "p0104_L.txt",
+          "start": 4155,
+          "end": 4160
+        }
+      ],
+      "printed_pages": [
+        206
+      ],
+      "scans": [
+        {
+          "file": "p0104_L.txt",
+          "page": 206,
+          "full": "scans/1904/pages/p0104_L.webp",
+          "width": 1100,
+          "height": 1612,
+          "ocr_sha256": "adde965c4471003c6b5d2b6dbdd961f5751e75586fbbfe57fe5a8cf087566ddf",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 4155,
+          "end": 4175,
+          "quote_original": "ст. 5 учр. суд. уст.",
+          "act_code": "УСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4155,
+          "end": 4160,
+          "quote_original": "ст. 5",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4155,
+              "end": 4175,
+              "quote_original": "ст. 5 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1904-075:УСУ:5:7599",
+      "id": "1904-075:УСУ:5:text:7599",
       "statute": "УСУ ст. 5",
       "code": "УСУ",
       "article": "ст. 5",
       "decision_id": "1904-075",
       "year": 1904,
       "decision_number": 75,
+      "field": "text",
       "start": 7599,
       "end": 7604,
       "quote_original": "ст. 5",
       "context_original": "о содержанію своему, есть простое условіе о неустойкѣ на сумму 25 руб. Такое заключеніе, основанное на толкованіи смысла договора, за силою ст. 5 учр. суд. уст., не подлежитъ повѣркѣ въ кассаціонномъ порядкѣ,— поэтому, признавъ, что данный договоръ надлежало оплатить гербовымъ сборомъ",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "e5e7ad3d418a06d6fb399c3e0a3827bb7d71d6b450ccd49339c471d79e308d0b",
+      "headnote_sha256": "db906df9ef03bf731c69bb476b91928200d079a38ff9e6c4717009ad9582cde4",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-075",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-075?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&law=1904-075%3A%D0%A3%D0%A1%D0%A3%3A5%3Atext%3A7599&at=7599&end=7604",
+      "source_warning": null,
       "passage_id": "1904-075:7260-8003",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-075?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&at=7260&end=8003",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 212,
+          "page_method": "header",
+          "file": "p0107_L.txt",
+          "start": 7599,
+          "end": 7604
+        }
+      ],
+      "printed_pages": [
+        212
+      ],
+      "scans": [
+        {
+          "file": "p0107_L.txt",
+          "page": 212,
+          "full": "scans/1904/pages/p0107_L.webp",
+          "width": 1100,
+          "height": 1586,
+          "ocr_sha256": "042a17d452db0788f81ab6575965a62d0f84e7d726631bd0e0b13f858634fc8f",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 7599,
+          "end": 7619,
+          "quote_original": "ст. 5 учр. суд. уст.",
+          "act_code": "УСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7599,
+          "end": 7604,
+          "quote_original": "ст. 5",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 7599,
+              "end": 7619,
+              "quote_original": "ст. 5 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1905-031:УСУ:5:7591",
+      "id": "1905-031:УСУ:5:text:7591",
       "statute": "УСУ ст. 5",
       "code": "УСУ",
       "article": "ст. 5",
       "decision_id": "1905-031",
       "year": 1905,
       "decision_number": 31,
+      "field": "text",
       "start": 7591,
       "end": 7596,
       "quote_original": "ст. 5",
       "context_original": "е крушеніе, не заслуживаетъ уваженія, такъ какъ заключеніе палаты о причинахъ несчастья относится къ существу дѣла и не подлежитъ, за силою ст. 5 учр. суд. уст., повѣркѣ въ кассаціонномъ порядкѣ (рѣш. гр. к. д-та 1896 г. № 125). Заявленіе просителя о томъ, что одинъ Галіотъ можетъ счи",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "71b9bc6f2319914749490fe77c196a666429c7c78d2e7f33932a9669160b1d8c",
+      "headnote_sha256": "0bab9e2fd882b209af5d8d0cbdf855ead8a92ddc189dc0b1ad29ee7d4b263113",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-031",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-031?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&law=1905-031%3A%D0%A3%D0%A1%D0%A3%3A5%3Atext%3A7591&at=7591&end=7596",
+      "source_warning": null,
       "passage_id": "1905-031:7041-8480",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-031?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&at=7041&end=8480",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 84,
+          "page_method": "header",
+          "file": "p0043_L.txt",
+          "start": 7591,
+          "end": 7596
+        }
+      ],
+      "printed_pages": [
+        84
+      ],
+      "scans": [
+        {
+          "file": "p0043_L.txt",
+          "page": 84,
+          "full": "scans/1905/pages/p0043_L.webp",
+          "width": 1100,
+          "height": 1529,
+          "ocr_sha256": "95bd082745310ab481278cd5fdb5f9698cc0aef30f48602476b3526566063240",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 7591,
+          "end": 7611,
+          "quote_original": "ст. 5 учр. суд. уст.",
+          "act_code": "УСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7591,
+          "end": 7596,
+          "quote_original": "ст. 5",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 7591,
+              "end": 7611,
+              "quote_original": "ст. 5 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1905-043:УСУ:5:9441",
+      "id": "1905-043:УСУ:5:text:9441",
       "statute": "УСУ ст. 5",
       "code": "УСУ",
       "article": "ст. 5",
       "decision_id": "1905-043",
       "year": 1905,
       "decision_number": 43,
+      "field": "text",
       "start": 9441,
       "end": 9446,
       "quote_original": "ст. 5",
       "context_original": "азовъ при недостаткѣ средствъ. Всѣ эти заключенія относятся къ существу дѣла и не подлежатъ опроверженію въ кассаціонномъ порядкѣ, за силою ст. 5 учр. суд. уст. Какъ выше указано, палата ограничила вознагражденіе душеприказчиковъ процентнымъ вычисленіемъ стоимости только движимаго иму",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "3cb14d917700792266262bd041873ce8b5f485fa90f622c79aa94b4c94e0b46c",
+      "headnote_sha256": "d9982d46af1ca622505f0df09fa4559998dede7658b7bbe3a6a2547477261a5c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-043",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-043?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&law=1905-043%3A%D0%A3%D0%A1%D0%A3%3A5%3Atext%3A9441&at=9441&end=9446",
+      "source_warning": null,
       "passage_id": "1905-043:9083-10594",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-043?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&at=9083&end=10594",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 119,
+          "page_method": "header",
+          "file": "p0060_R.txt",
+          "start": 9441,
+          "end": 9446
+        }
+      ],
+      "printed_pages": [
+        119
+      ],
+      "scans": [
+        {
+          "file": "p0060_R.txt",
+          "page": 119,
+          "full": "scans/1905/pages/p0060_R.webp",
+          "width": 1100,
+          "height": 1546,
+          "ocr_sha256": "7f0c6fbdab8ec968e245cf12eef264dff961eef35e93c47d44ed156f523e045d",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 9441,
+          "end": 9461,
+          "quote_original": "ст. 5 учр. суд. уст.",
+          "act_code": "УСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 9441,
+          "end": 9446,
+          "quote_original": "ст. 5",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 9441,
+              "end": 9461,
+              "quote_original": "ст. 5 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1905-057:УСУ:5:7025",
+      "id": "1905-057:УСУ:5:text:7025",
       "statute": "УСУ ст. 5",
       "code": "УСУ",
       "article": "ст. 5",
       "decision_id": "1905-057",
       "year": 1905,
       "decision_number": 57,
+      "field": "text",
       "start": 7025,
       "end": 7030,
       "quote_original": "ст. 5",
       "context_original": "съѣзда о необходимости возвращенія настоящаго дѣла въ гминный судъ, для разсмотрѣнія онаго по существу, не подлежитъ кассаціонной повѣркѣ (ст. 5 учр. суд. уст.),—Правительствующій Сенатъ опредѣляетъ: кассаціонную жалобу Ивана Гумели оставить безъ послѣдствій.",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "0d1891fee108022da1ffdd2aea954f3ec0a1565b13b7d07a127701e7fdbeedee",
+      "headnote_sha256": "41c4e66410d69fb898a4fdcaf97b9f85faa88420d0c06984beb4c990ddd90250",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-057",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-057?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&law=1905-057%3A%D0%A3%D0%A1%D0%A3%3A5%3Atext%3A7025&at=7025&end=7030",
+      "source_warning": null,
       "passage_id": "1905-057:6471-7145",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-057?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+5&at=6471&end=7145",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 157,
+          "page_method": "header",
+          "file": "p0079_R.txt",
+          "start": 7025,
+          "end": 7030
+        }
+      ],
+      "printed_pages": [
+        157
+      ],
+      "scans": [
+        {
+          "file": "p0079_R.txt",
+          "page": 157,
+          "full": "scans/1905/pages/p0079_R.webp",
+          "width": 1100,
+          "height": 1560,
+          "ocr_sha256": "2f5bb1cfcb44f0482dc0c229b0c79c5ccbb32462d1400ac660a93a0e6fcd1ec4",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 7025,
+          "end": 7045,
+          "quote_original": "ст. 5 учр. суд. уст.",
+          "act_code": "УСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7025,
+          "end": 7030,
+          "quote_original": "ст. 5",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 7025,
+              "end": 7045,
+              "quote_original": "ст. 5 учр. суд. уст.",
+              "act_code": "УСУ"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1896-024:УСУ:93:1094",
+      "id": "1896-024:УСУ:93:text:1094",
       "statute": "УСУ ст. 93",
       "code": "УСУ",
       "article": "ст. 93",
       "decision_id": "1896-024",
       "year": 1896,
       "decision_number": 24,
+      "field": "text",
       "start": 1094,
       "end": 1100,
       "quote_original": "ст. 93",
       "context_original": "ими обя занностей службы, признавалось про ступкомъ, предусмотрѣннымъ 2 ч. 31 ст. уст. о нак. Съ изданіемъ закона 12 іюля 1889 г. (прил. къ ст. 93, прим. 3, особ. прил. къ т. IX, зак. сост., по прод. 1890 г.), прежній' взглядъ на значеніе волостнаго суда долженъ былъ существенно измѣни",
-      "association": "акт определён по контексту решения",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "0429c65ec7ad8983aeb73faf6a9a88aaee7159ffe0f5b4207c55e9d5e148a9cc",
+      "headnote_sha256": "f04a207393bd17abd7db583da85c51ace8a0ab7e05e467103f60ef3b9de97992",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-024",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-024?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+93&law=1896-024%3A%D0%A3%D0%A1%D0%A3%3A93%3Atext%3A1094&at=1094&end=1100",
+      "source_warning": "Вводная мотивировка этого решения обрывается и частично находится в OCR предыдущего решения №23. Постановка вопроса и последующее собственное рассуждение №24 различимы.",
       "passage_id": "1896-024:0-1519",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-024?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+93&at=0&end=1519",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 751,
+          "page_method": "header",
+          "file": "p0044.txt",
+          "start": 1094,
+          "end": 1100
+        }
+      ],
+      "printed_pages": [
+        751
+      ],
+      "scans": [
+        {
+          "file": "p0044.txt",
+          "page": 751,
+          "full": "scans/1896/pages/p0044-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1677,
+          "ocr_sha256": "475c0c721e43c1e3a07c5b3dfb12f0b7e3433fd67094a6f78fbf9b4a04e276cc",
+          "pdf_page": 44,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     }
   ]
 }

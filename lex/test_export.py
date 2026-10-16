@@ -66,7 +66,13 @@ class ExportTest(unittest.TestCase):
             self.assertIn(row['code'], acts)
             self.assertIn(row['quote_original'], row['context_original'])
             self.assertTrue(row['passage_url'].startswith('https://ivseliv.github.io/senat/lex/#/d/'))
-            self.assertIn(row['passage_id'], passages)
+            if row.get('field')=='headnote':
+                self.assertIsNone(row['passage_id'])
+                self.assertFalse(row['scan_available'])
+            else:
+                self.assertIn(row['passage_id'], passages)
+            self.assertIn(row['verification_status'],('context_verified','legacy_unverified'))
+            self.assertEqual(len(row['source_sha256']),64)
 
     def test_manifest_hashes_match(self):
         for item in self.manifest['files']:

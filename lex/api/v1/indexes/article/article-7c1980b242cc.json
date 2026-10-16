@@ -1,0 +1,22 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.5.0",
+  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "article",
+    "id": "article-7c1980b242cc",
+    "label": "УНМС ст. 152"
+  },
+  "count": 2,
+  "decision_ids": [
+    "1896-042",
+    "1897-029"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1896-042.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-029.json"
+    ]
+  }
+}

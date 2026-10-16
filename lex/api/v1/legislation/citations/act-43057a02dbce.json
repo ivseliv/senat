@@ -1,0 +1,1127 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.5.0",
+  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "resource": "legislation-citations",
+  "scope": {
+    "code": "СМУО",
+    "id": "act-43057a02dbce"
+  },
+  "count": 13,
+  "items": [
+    {
+      "id": "1904-110:СМУО:1103:text:6045",
+      "statute": "СМУО ст. 1103",
+      "code": "СМУО",
+      "article": "ст. 1103",
+      "decision_id": "1904-110",
+      "year": 1904,
+      "decision_number": 110,
+      "field": "text",
+      "start": 6045,
+      "end": 6053,
+      "quote_original": "ст. 1103",
+      "context_original": "о имѣніе, въ пользу котораго установленъ сервитутъ, само не внесено въ крѣпостныя книги,—Правительствующій Сенатъ опредѣляетъ: по нарушенію ст. 1103 III ч. св. мѣст. узак. Приб. губ. опредѣленіе Виндаво-Гольдингенскаго мироваго съѣзда отмѣнить и передать дѣло въ Газенпотъ-Гробинскій миро",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "f8da4f9453d8e42fa6c9dfe7864aee9492339aae01440ed355ca9da635ba4b21",
+      "headnote_sha256": "558af48eed862a95661f7a644cd0275a04cca966b8cb2286909b3fea4d788571",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-110",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-110?mode=laws&c=%D0%A1%D0%9C%D0%A3%D0%9E&q=%D1%81%D1%82.+1103&law=1904-110%3A%D0%A1%D0%9C%D0%A3%D0%9E%3A1103%3Atext%3A6045&at=6045&end=6053",
+      "source_warning": null,
+      "passage_id": "1904-110:4227-6204",
+      "sources": [
+        {
+          "page": 306,
+          "page_method": "header",
+          "file": "p0154_L.txt",
+          "start": 6045,
+          "end": 6053
+        }
+      ],
+      "printed_pages": [
+        306
+      ],
+      "scans": [
+        {
+          "file": "p0154_L.txt",
+          "page": 306,
+          "full": "scans/1904/pages/p0154_L.webp",
+          "width": 1100,
+          "height": 1597,
+          "ocr_sha256": "bfeabf5d70b4fd9078c97dcfb69726b89f66f101ced683a0075800bf64dfbeb8",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 6045,
+          "end": 6076,
+          "quote_original": "ст. 1103 III ч. св. мѣст. узак.",
+          "act_code": "СМУО"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3786,
+          "end": 3794,
+          "quote_original": "ст. 1103",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 10979,
+              "end": 10996,
+              "quote_original": "1103, 1264 — 110.",
+              "heading": {
+                "start": 10825,
+                "end": 10856,
+                "quote_original": "III ч. свода мѣстн. узаконеній."
+              },
+              "edition_continuation": null,
+              "act_code": "СМУО"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 6045,
+          "end": 6053,
+          "quote_original": "ст. 1103",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 6045,
+              "end": 6076,
+              "quote_original": "ст. 1103 III ч. св. мѣст. узак.",
+              "act_code": "СМУО"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-108:СМУО:1456:text:8599",
+      "statute": "СМУО ст. 1456",
+      "code": "СМУО",
+      "article": "ст. 1456",
+      "decision_id": "1904-108",
+      "year": 1904,
+      "decision_number": 108,
+      "field": "text",
+      "start": 8599,
+      "end": 8607,
+      "quote_original": "ст. 1456",
+      "context_original": "водство конкурснаго порядка. Заключеніе это, коимъ поставленный по сему дѣлу вопросъ разрѣшается отрицательно, не стоитъ въ противорѣчіи съ ст. 1456 ч. III св. мѣстн. узак., по силѣ которой, въ случаѣ недостаточности вырученной отъ продажи заложеннаго имущества суммы на полное удовлетвор",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "cab131583feb8a551fb7edcffdf86563dcff94478c5ba2fe53ca6ad6b3a741de",
+      "headnote_sha256": "6839e4af1d0b5d101af493d67bad0bc8422dd8939d13419ece7cd124ab1c667a",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-108",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-108?mode=laws&c=%D0%A1%D0%9C%D0%A3%D0%9E&q=%D1%81%D1%82.+1456&law=1904-108%3A%D0%A1%D0%9C%D0%A3%D0%9E%3A1456%3Atext%3A8599&at=8599&end=8607",
+      "source_warning": null,
+      "passage_id": "1904-108:7644-9512",
+      "sources": [
+        {
+          "page": 300,
+          "page_method": "header",
+          "file": "p0151_L.txt",
+          "start": 8599,
+          "end": 8607
+        }
+      ],
+      "printed_pages": [
+        300
+      ],
+      "scans": [
+        {
+          "file": "p0151_L.txt",
+          "page": 300,
+          "full": "scans/1904/pages/p0151_L.webp",
+          "width": 1100,
+          "height": 1630,
+          "ocr_sha256": "0af383e92f94645d0ad154866e34c9b36c03db7aaa467bebab2bd7dd3b00db5f",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 8599,
+          "end": 8631,
+          "quote_original": "ст. 1456 ч. III св. мѣстн. узак.",
+          "act_code": "СМУО"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2311,
+          "end": 2319,
+          "quote_original": "ст. 1456",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "field": "text",
+              "start": 8599,
+              "end": 8631,
+              "quote_original": "ст. 1456 ч. III св. мѣстн. узак.",
+              "act_code": "СМУО"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 8599,
+          "end": 8607,
+          "quote_original": "ст. 1456",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 8599,
+              "end": 8631,
+              "quote_original": "ст. 1456 ч. III св. мѣстн. узак.",
+              "act_code": "СМУО"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-015:СМУО:1478:text:1048",
+      "statute": "СМУО ст. 1478",
+      "code": "СМУО",
+      "article": "ст. 1478",
+      "decision_id": "1905-015",
+      "year": 1905,
+      "decision_number": 15,
+      "field": "text",
+      "start": 1048,
+      "end": 1069,
+      "quote_original": "ст. 1478, 1479 и 1480",
+      "context_original": "займа съ выигрышами и закладные листы дворянскаго земельнаго банка. Мировой судья и мировой съѣздъ отказали въ искѣ Таубмана, признавъ, что ст. 1478, 1479 и 1480 ч. III св. мѣстн. узакон. Прибалт. губ. не возлагаютъ на банкъ, принявшій въ закладъ выигрышные билеты, обязанности страховать ихъ отъ тира",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "512f9a9ab748c216690bb49da4aa004e7d24e3e8e71b8345eaad537d13fa4065",
+      "headnote_sha256": "1c897a77ecbc398cae9af2c6c2520671a4a1aa8744f927fa175c7221f628ed66",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-015",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-015?mode=laws&c=%D0%A1%D0%9C%D0%A3%D0%9E&q=%D1%81%D1%82.+1478&law=1905-015%3A%D0%A1%D0%9C%D0%A3%D0%9E%3A1478%3Atext%3A1048&at=1048&end=1069",
+      "source_warning": null,
+      "passage_id": "1905-015:0-1545",
+      "sources": [
+        {
+          "page": 36,
+          "page_method": "header",
+          "file": "p0019_L.txt",
+          "start": 1048,
+          "end": 1069
+        }
+      ],
+      "printed_pages": [
+        36
+      ],
+      "scans": [
+        {
+          "file": "p0019_L.txt",
+          "page": 36,
+          "full": "scans/1905/pages/p0019_L.webp",
+          "width": 1100,
+          "height": 1490,
+          "ocr_sha256": "e8721ae52c13a2575c8fcca2bee45d08e5ee528dfa91123999a23edccd8ff027",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1048,
+          "end": 1095,
+          "quote_original": "ст. 1478, 1479 и 1480 ч. III св. мѣстн. узакон.",
+          "act_code": "СМУО"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1048,
+          "end": 1069,
+          "quote_original": "ст. 1478, 1479 и 1480",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1048,
+              "end": 1095,
+              "quote_original": "ст. 1478, 1479 и 1480 ч. III св. мѣстн. узакон.",
+              "act_code": "СМУО"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 1669,
+          "end": 1690,
+          "quote_original": "ст. 1478, 1479 и 1480",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1669,
+              "end": 1716,
+              "quote_original": "ст. 1478, 1479 и 1480 ч. III св. мѣстн. узакон.",
+              "act_code": "СМУО"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-015:СМУО:1479:text:1048",
+      "statute": "СМУО ст. 1479",
+      "code": "СМУО",
+      "article": "ст. 1479",
+      "decision_id": "1905-015",
+      "year": 1905,
+      "decision_number": 15,
+      "field": "text",
+      "start": 1048,
+      "end": 1069,
+      "quote_original": "ст. 1478, 1479 и 1480",
+      "context_original": "займа съ выигрышами и закладные листы дворянскаго земельнаго банка. Мировой судья и мировой съѣздъ отказали въ искѣ Таубмана, признавъ, что ст. 1478, 1479 и 1480 ч. III св. мѣстн. узакон. Прибалт. губ. не возлагаютъ на банкъ, принявшій въ закладъ выигрышные билеты, обязанности страховать ихъ отъ тира",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "512f9a9ab748c216690bb49da4aa004e7d24e3e8e71b8345eaad537d13fa4065",
+      "headnote_sha256": "1c897a77ecbc398cae9af2c6c2520671a4a1aa8744f927fa175c7221f628ed66",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-015",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-015?mode=laws&c=%D0%A1%D0%9C%D0%A3%D0%9E&q=%D1%81%D1%82.+1479&law=1905-015%3A%D0%A1%D0%9C%D0%A3%D0%9E%3A1479%3Atext%3A1048&at=1048&end=1069",
+      "source_warning": null,
+      "passage_id": "1905-015:0-1545",
+      "sources": [
+        {
+          "page": 36,
+          "page_method": "header",
+          "file": "p0019_L.txt",
+          "start": 1048,
+          "end": 1069
+        }
+      ],
+      "printed_pages": [
+        36
+      ],
+      "scans": [
+        {
+          "file": "p0019_L.txt",
+          "page": 36,
+          "full": "scans/1905/pages/p0019_L.webp",
+          "width": 1100,
+          "height": 1490,
+          "ocr_sha256": "e8721ae52c13a2575c8fcca2bee45d08e5ee528dfa91123999a23edccd8ff027",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1048,
+          "end": 1095,
+          "quote_original": "ст. 1478, 1479 и 1480 ч. III св. мѣстн. узакон.",
+          "act_code": "СМУО"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1048,
+          "end": 1069,
+          "quote_original": "ст. 1478, 1479 и 1480",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1048,
+              "end": 1095,
+              "quote_original": "ст. 1478, 1479 и 1480 ч. III св. мѣстн. узакон.",
+              "act_code": "СМУО"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 1669,
+          "end": 1690,
+          "quote_original": "ст. 1478, 1479 и 1480",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1669,
+              "end": 1716,
+              "quote_original": "ст. 1478, 1479 и 1480 ч. III св. мѣстн. узакон.",
+              "act_code": "СМУО"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-076:СМУО:2922:text:3149",
+      "statute": "СМУО ст. 2922",
+      "code": "СМУО",
+      "article": "ст. 2922",
+      "decision_id": "1897-076",
+      "year": 1897,
+      "decision_number": 76,
+      "field": "text",
+      "start": 3149,
+      "end": 3157,
+      "quote_original": "ст. 2922",
+      "context_original": "аботной платы не имѣетъ значенія, такъ какъ самое соглашеніе это, если бы даже оно состоялось, не можетъ считаться для истца обязательнымъ (ст. 2922 III ч. св. мѣстн. узакон.), такъ какъ законъ въ 102 ст. уст. о пром. запрещаетъ взысканіе съ рабочихъ платы за врачебную помощь, что входит",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "05867d0498fe87c572173b59e99d70b8fdf8cbdadf95cd6fddefcd3b8788ebc2",
+      "headnote_sha256": "f033b75f0ed42d5579ca9a93b06fba6dfb84f7dba008eb355ce13ca3a29ef843",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-076",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-076?mode=laws&c=%D0%A1%D0%9C%D0%A3%D0%9E&q=%D1%81%D1%82.+2922&law=1897-076%3A%D0%A1%D0%9C%D0%A3%D0%9E%3A2922%3Atext%3A3149&at=3149&end=3157",
+      "source_warning": null,
+      "passage_id": "1897-076:1307-3380",
+      "sources": [
+        {
+          "page": 248,
+          "page_method": "header",
+          "file": "p0135_L.txt",
+          "start": 3149,
+          "end": 3157
+        }
+      ],
+      "printed_pages": [
+        248
+      ],
+      "scans": [
+        {
+          "file": "p0135_L.txt",
+          "page": 248,
+          "full": "scans/1897/pages/p0135_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1555,
+          "ocr_sha256": "91bcd8e4c6ea6c53b8ada1b9b6a7865f40e56e2ccc8fe6bb7589334ab352be3b",
+          "pdf_page": 269,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3149,
+          "end": 3183,
+          "quote_original": "ст. 2922 III ч. св. мѣстн. узакон.",
+          "act_code": "СМУО"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3149,
+          "end": 3157,
+          "quote_original": "ст. 2922",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3149,
+              "end": 3183,
+              "quote_original": "ст. 2922 III ч. св. мѣстн. узакон.",
+              "act_code": "СМУО"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 11973,
+          "end": 11993,
+          "quote_original": "ст. 4271, 3214, 2922",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 11973,
+              "end": 12017,
+              "quote_original": "ст. 4271, 3214, 2922 III ч. св. мѣстн. узак.",
+              "act_code": "СМУО"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-085:СМУО:2993:text:6854",
+      "statute": "СМУО ст. 2993",
+      "code": "СМУО",
+      "article": "ст. 2993",
+      "decision_id": "1897-085",
+      "year": 1897,
+      "decision_number": 85,
+      "field": "text",
+      "start": 6854,
+      "end": 6869,
+      "quote_original": "ст. 2993 и 2994",
+      "context_original": "что такіе договоры въ отношеніи формы ихъ совершенія подчи- няются общеустановленнымъ мѣстными узаконеніями правиламъ, на основаніи коихъ (ст. 2993 и 2994 III ч. св. мѣстн. узак.) заключеніе сдѣлки на письмѣ или на словахъ отдается на волю участвующимъ въ ней, за исключеніемъ лишь тѣхъ случаев",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "ffb37ffc63f4c953d4ddb65eb5b9271b8200c7fa08e9224312ad746ddd1df671",
+      "headnote_sha256": "1c6f68a2246c060663c05af09d0366f5dbb712d397545871c58008d09c894425",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-085",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-085?mode=laws&c=%D0%A1%D0%9C%D0%A3%D0%9E&q=%D1%81%D1%82.+2993&law=1897-085%3A%D0%A1%D0%9C%D0%A3%D0%9E%3A2993%3Atext%3A6854&at=6854&end=6869",
+      "source_warning": null,
+      "passage_id": "1897-085:5917-7488",
+      "sources": [
+        {
+          "page": 281,
+          "page_method": "header",
+          "file": "p0151_R.txt",
+          "start": 6854,
+          "end": 6869
+        }
+      ],
+      "printed_pages": [
+        281
+      ],
+      "scans": [
+        {
+          "file": "p0151_R.txt",
+          "page": 281,
+          "full": "scans/1897/pages/p0151_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1504,
+          "ocr_sha256": "4e1782cb2ac4c86fd9474871a85676811d66c6d11d102d44a300c6a4de3b9a2d",
+          "pdf_page": 302,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 6854,
+          "end": 6893,
+          "quote_original": "ст. 2993 и 2994 III ч. св. мѣстн. узак.",
+          "act_code": "СМУО"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 6854,
+          "end": 6869,
+          "quote_original": "ст. 2993 и 2994",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 6854,
+              "end": 6893,
+              "quote_original": "ст. 2993 и 2994 III ч. св. мѣстн. узак.",
+              "act_code": "СМУО"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-085:СМУО:2994:text:6854",
+      "statute": "СМУО ст. 2994",
+      "code": "СМУО",
+      "article": "ст. 2994",
+      "decision_id": "1897-085",
+      "year": 1897,
+      "decision_number": 85,
+      "field": "text",
+      "start": 6854,
+      "end": 6869,
+      "quote_original": "ст. 2993 и 2994",
+      "context_original": "что такіе договоры въ отношеніи формы ихъ совершенія подчи- няются общеустановленнымъ мѣстными узаконеніями правиламъ, на основаніи коихъ (ст. 2993 и 2994 III ч. св. мѣстн. узак.) заключеніе сдѣлки на письмѣ или на словахъ отдается на волю участвующимъ въ ней, за исключеніемъ лишь тѣхъ случаев",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "ffb37ffc63f4c953d4ddb65eb5b9271b8200c7fa08e9224312ad746ddd1df671",
+      "headnote_sha256": "1c6f68a2246c060663c05af09d0366f5dbb712d397545871c58008d09c894425",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-085",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-085?mode=laws&c=%D0%A1%D0%9C%D0%A3%D0%9E&q=%D1%81%D1%82.+2994&law=1897-085%3A%D0%A1%D0%9C%D0%A3%D0%9E%3A2994%3Atext%3A6854&at=6854&end=6869",
+      "source_warning": null,
+      "passage_id": "1897-085:5917-7488",
+      "sources": [
+        {
+          "page": 281,
+          "page_method": "header",
+          "file": "p0151_R.txt",
+          "start": 6854,
+          "end": 6869
+        }
+      ],
+      "printed_pages": [
+        281
+      ],
+      "scans": [
+        {
+          "file": "p0151_R.txt",
+          "page": 281,
+          "full": "scans/1897/pages/p0151_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1504,
+          "ocr_sha256": "4e1782cb2ac4c86fd9474871a85676811d66c6d11d102d44a300c6a4de3b9a2d",
+          "pdf_page": 302,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 6854,
+          "end": 6893,
+          "quote_original": "ст. 2993 и 2994 III ч. св. мѣстн. узак.",
+          "act_code": "СМУО"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 6854,
+          "end": 6869,
+          "quote_original": "ст. 2993 и 2994",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 6854,
+              "end": 6893,
+              "quote_original": "ст. 2993 и 2994 III ч. св. мѣстн. узак.",
+              "act_code": "СМУО"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-076:СМУО:3214:text:11973",
+      "statute": "СМУО ст. 3214",
+      "code": "СМУО",
+      "article": "ст. 3214",
+      "decision_id": "1897-076",
+      "year": 1897,
+      "decision_number": 76,
+      "field": "text",
+      "start": 11973,
+      "end": 11993,
+      "quote_original": "ст. 4271, 3214, 2922",
+      "context_original": "ебя необязательнымъ. Такое право принадлежало бы ему, на общемъ основаніи, лишь въ томъ случаѣ, если бы цѣль договора была противна закону (ст. 4271, 3214, 2922 III ч. св. мѣстн. узак.), или если бы дѣйствительно съ его стороны не было свободнаго изъявленія согласія на условія того договора (ст. 293",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "05867d0498fe87c572173b59e99d70b8fdf8cbdadf95cd6fddefcd3b8788ebc2",
+      "headnote_sha256": "f033b75f0ed42d5579ca9a93b06fba6dfb84f7dba008eb355ce13ca3a29ef843",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-076",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-076?mode=laws&c=%D0%A1%D0%9C%D0%A3%D0%9E&q=%D1%81%D1%82.+3214&law=1897-076%3A%D0%A1%D0%9C%D0%A3%D0%9E%3A3214%3Atext%3A11973&at=11973&end=11993",
+      "source_warning": null,
+      "passage_id": "1897-076:11594-13112",
+      "sources": [
+        {
+          "page": 251,
+          "page_method": "header",
+          "file": "p0136_R.txt",
+          "start": 11973,
+          "end": 11993
+        }
+      ],
+      "printed_pages": [
+        251
+      ],
+      "scans": [
+        {
+          "file": "p0136_R.txt",
+          "page": 251,
+          "full": "scans/1897/pages/p0136_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1529,
+          "ocr_sha256": "b1b410e8f263bb78f82dbdcbb5177880ae0e3aacc3bb1b1a7bca51a87c23f782",
+          "pdf_page": 272,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 11973,
+          "end": 12017,
+          "quote_original": "ст. 4271, 3214, 2922 III ч. св. мѣстн. узак.",
+          "act_code": "СМУО"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 11973,
+          "end": 11993,
+          "quote_original": "ст. 4271, 3214, 2922",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 11973,
+              "end": 12017,
+              "quote_original": "ст. 4271, 3214, 2922 III ч. св. мѣстн. узак.",
+              "act_code": "СМУО"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-003:СМУО:3444:text:1885",
+      "statute": "СМУО ст. 3444",
+      "code": "СМУО",
+      "article": "ст. 3444",
+      "decision_id": "1904-003",
+      "year": 1904,
+      "decision_number": 3,
+      "field": "text",
+      "start": 1885,
+      "end": 1893,
+      "quote_original": "ст. 3444",
+      "context_original": "ность такого приспособленія, составляя упущеніе дороги, налагаетъ на нее обязанность вознагражденія за вредъ, причиненный этимъ упущеніемъ (ст. 3444), и 4) что, согласно заключенію эксперта, размѣръ причиненнаго истцамъ убытка долженъ быть опредѣленъ въ 97 руб. 60 коп. На это рѣшеніе при",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "9c3081c475076cb021e96b24ad60b4a0beffe10f91184aef0748031639e7072d",
+      "headnote_sha256": "baef191c6ab5949799e16f62ac6da51db259b5c57980bab330f295b0802d69f3",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-003",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-003?mode=laws&c=%D0%A1%D0%9C%D0%A3%D0%9E&q=%D1%81%D1%82.+3444&law=1904-003%3A%D0%A1%D0%9C%D0%A3%D0%9E%3A3444%3Atext%3A1885&at=1885&end=1893",
+      "source_warning": null,
+      "passage_id": "1904-003:0-2014",
+      "sources": [
+        {
+          "page": 11,
+          "page_method": "header",
+          "file": "p0006_R.txt",
+          "start": 1885,
+          "end": 1893
+        }
+      ],
+      "printed_pages": [
+        11
+      ],
+      "scans": [
+        {
+          "file": "p0006_R.txt",
+          "page": 11,
+          "full": "scans/1904/pages/p0006_R.webp",
+          "width": 1100,
+          "height": 1572,
+          "ocr_sha256": "37d8e3a605d2190ef886a7bb78baf5c9ac8e0d032bb7f93298f5dca21020b42e",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 11102,
+          "end": 11135,
+          "quote_original": "3284, 3285, 3304, 3438, 3444 — 3.",
+          "heading": {
+            "start": 10825,
+            "end": 10856,
+            "quote_original": "III ч. свода мѣстн. узаконеній."
+          },
+          "edition_continuation": null,
+          "act_code": "СМУО"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1885,
+          "end": 1893,
+          "quote_original": "ст. 3444",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 11102,
+              "end": 11135,
+              "quote_original": "3284, 3285, 3304, 3438, 3444 — 3.",
+              "heading": {
+                "start": 10825,
+                "end": 10856,
+                "quote_original": "III ч. свода мѣстн. узаконеній."
+              },
+              "edition_continuation": null,
+              "act_code": "СМУО"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-072:СМУО:3482:text:1679",
+      "statute": "СМУО ст. 3482",
+      "code": "СМУО",
+      "article": "ст. 3482",
+      "decision_id": "1904-072",
+      "year": 1904,
+      "decision_number": 72,
+      "field": "text",
+      "start": 1679,
+      "end": 1687,
+      "quote_original": "ст. 3482",
+      "context_original": "тъѣзда за границу несостоятельнаго и того обстоятельства, что претензіи Града и Веллера куплены ими послѣ сего, а слѣдовательно, по закону (ст. 3482 ч. III св. мѣст. узак.), должны получить значительное уменьшеніе номинальной цѣнности, отдавать этимъ двумъ кредиторамъ безусловное предпоч",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "7d6eafed84ba4f4a4415ff4077d5588ac7887f8d3cf7ddfcaf6f0eca12253ea5",
+      "headnote_sha256": "76063a0a2978c1875c81183d6a5655ef539197805779f119f4d8b1e93a1c8f89",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-072",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-072?mode=laws&c=%D0%A1%D0%9C%D0%A3%D0%9E&q=%D1%81%D1%82.+3482&law=1904-072%3A%D0%A1%D0%9C%D0%A3%D0%9E%3A3482%3Atext%3A1679&at=1679&end=1687",
+      "source_warning": null,
+      "passage_id": "1904-072:0-2126",
+      "sources": [
+        {
+          "page": 205,
+          "page_method": "header",
+          "file": "p0103_R.txt",
+          "start": 1679,
+          "end": 1687
+        }
+      ],
+      "printed_pages": [
+        205
+      ],
+      "scans": [
+        {
+          "file": "p0103_R.txt",
+          "page": 205,
+          "full": "scans/1904/pages/p0103_R.webp",
+          "width": 1100,
+          "height": 1590,
+          "ocr_sha256": "a5405719f47bbfc16e95c224e384605afa1b293e68782cc0a78100b681ee4e7e",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1679,
+          "end": 1710,
+          "quote_original": "ст. 3482 ч. III св. мѣст. узак.",
+          "act_code": "СМУО"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1679,
+          "end": 1687,
+          "quote_original": "ст. 3482",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1679,
+              "end": 1710,
+              "quote_original": "ст. 3482 ч. III св. мѣст. узак.",
+              "act_code": "СМУО"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-076:СМУО:4268:text:8945",
+      "statute": "СМУО ст. 4268",
+      "code": "СМУО",
+      "article": "ст. 4268",
+      "decision_id": "1897-076",
+      "year": 1897,
+      "decision_number": 76,
+      "field": "text",
+      "start": 8945,
+      "end": 8965,
+      "quote_original": "ст. 4266, 4268, 4294",
+      "context_original": "едъ другомъ, приняли на себя обязанность содѣйствовать достиженію цѣли договора исполненіемъ установленныхъ для сего, по договору, условій (ст. 4266, 4268, 4294 III ч. св. мѣстн. узак.). Изъ одного того обстоятельства, что уставъ кассы не утвержденъ, вовсе не слѣдуетъ, чтобы это должно было имѣть не",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "05867d0498fe87c572173b59e99d70b8fdf8cbdadf95cd6fddefcd3b8788ebc2",
+      "headnote_sha256": "f033b75f0ed42d5579ca9a93b06fba6dfb84f7dba008eb355ce13ca3a29ef843",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-076",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-076?mode=laws&c=%D0%A1%D0%9C%D0%A3%D0%9E&q=%D1%81%D1%82.+4268&law=1897-076%3A%D0%A1%D0%9C%D0%A3%D0%9E%3A4268%3Atext%3A8945&at=8945&end=8965",
+      "source_warning": null,
+      "passage_id": "1897-076:7328-8991",
+      "sources": [
+        {
+          "page": 250,
+          "page_method": "header",
+          "file": "p0136_L.txt",
+          "start": 8945,
+          "end": 8965
+        }
+      ],
+      "printed_pages": [
+        250
+      ],
+      "scans": [
+        {
+          "file": "p0136_L.txt",
+          "page": 250,
+          "full": "scans/1897/pages/p0136_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1557,
+          "ocr_sha256": "1227b2cc9ddbfc114194afed591bf42ce97e1b113d3826f69b43f785c7755e8e",
+          "pdf_page": 271,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 8945,
+          "end": 8989,
+          "quote_original": "ст. 4266, 4268, 4294 III ч. св. мѣстн. узак.",
+          "act_code": "СМУО"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8945,
+          "end": 8965,
+          "quote_original": "ст. 4266, 4268, 4294",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 8945,
+              "end": 8989,
+              "quote_original": "ст. 4266, 4268, 4294 III ч. св. мѣстн. узак.",
+              "act_code": "СМУО"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-076:СМУО:4271:text:11973",
+      "statute": "СМУО ст. 4271",
+      "code": "СМУО",
+      "article": "ст. 4271",
+      "decision_id": "1897-076",
+      "year": 1897,
+      "decision_number": 76,
+      "field": "text",
+      "start": 11973,
+      "end": 11993,
+      "quote_original": "ст. 4271, 3214, 2922",
+      "context_original": "ебя необязательнымъ. Такое право принадлежало бы ему, на общемъ основаніи, лишь въ томъ случаѣ, если бы цѣль договора была противна закону (ст. 4271, 3214, 2922 III ч. св. мѣстн. узак.), или если бы дѣйствительно съ его стороны не было свободнаго изъявленія согласія на условія того договора (ст. 293",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "05867d0498fe87c572173b59e99d70b8fdf8cbdadf95cd6fddefcd3b8788ebc2",
+      "headnote_sha256": "f033b75f0ed42d5579ca9a93b06fba6dfb84f7dba008eb355ce13ca3a29ef843",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-076",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-076?mode=laws&c=%D0%A1%D0%9C%D0%A3%D0%9E&q=%D1%81%D1%82.+4271&law=1897-076%3A%D0%A1%D0%9C%D0%A3%D0%9E%3A4271%3Atext%3A11973&at=11973&end=11993",
+      "source_warning": null,
+      "passage_id": "1897-076:11594-13112",
+      "sources": [
+        {
+          "page": 251,
+          "page_method": "header",
+          "file": "p0136_R.txt",
+          "start": 11973,
+          "end": 11993
+        }
+      ],
+      "printed_pages": [
+        251
+      ],
+      "scans": [
+        {
+          "file": "p0136_R.txt",
+          "page": 251,
+          "full": "scans/1897/pages/p0136_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1529,
+          "ocr_sha256": "b1b410e8f263bb78f82dbdcbb5177880ae0e3aacc3bb1b1a7bca51a87c23f782",
+          "pdf_page": 272,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 11973,
+          "end": 12017,
+          "quote_original": "ст. 4271, 3214, 2922 III ч. св. мѣстн. узак.",
+          "act_code": "СМУО"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 11973,
+          "end": 11993,
+          "quote_original": "ст. 4271, 3214, 2922",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 11973,
+              "end": 12017,
+              "quote_original": "ст. 4271, 3214, 2922 III ч. св. мѣстн. узак.",
+              "act_code": "СМУО"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-076:СМУО:4294:text:8945",
+      "statute": "СМУО ст. 4294",
+      "code": "СМУО",
+      "article": "ст. 4294",
+      "decision_id": "1897-076",
+      "year": 1897,
+      "decision_number": 76,
+      "field": "text",
+      "start": 8945,
+      "end": 8965,
+      "quote_original": "ст. 4266, 4268, 4294",
+      "context_original": "едъ другомъ, приняли на себя обязанность содѣйствовать достиженію цѣли договора исполненіемъ установленныхъ для сего, по договору, условій (ст. 4266, 4268, 4294 III ч. св. мѣстн. узак.). Изъ одного того обстоятельства, что уставъ кассы не утвержденъ, вовсе не слѣдуетъ, чтобы это должно было имѣть не",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "05867d0498fe87c572173b59e99d70b8fdf8cbdadf95cd6fddefcd3b8788ebc2",
+      "headnote_sha256": "f033b75f0ed42d5579ca9a93b06fba6dfb84f7dba008eb355ce13ca3a29ef843",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-076",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-076?mode=laws&c=%D0%A1%D0%9C%D0%A3%D0%9E&q=%D1%81%D1%82.+4294&law=1897-076%3A%D0%A1%D0%9C%D0%A3%D0%9E%3A4294%3Atext%3A8945&at=8945&end=8965",
+      "source_warning": null,
+      "passage_id": "1897-076:7328-8991",
+      "sources": [
+        {
+          "page": 250,
+          "page_method": "header",
+          "file": "p0136_L.txt",
+          "start": 8945,
+          "end": 8965
+        }
+      ],
+      "printed_pages": [
+        250
+      ],
+      "scans": [
+        {
+          "file": "p0136_L.txt",
+          "page": 250,
+          "full": "scans/1897/pages/p0136_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1557,
+          "ocr_sha256": "1227b2cc9ddbfc114194afed591bf42ce97e1b113d3826f69b43f785c7755e8e",
+          "pdf_page": 271,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 8945,
+          "end": 8989,
+          "quote_original": "ст. 4266, 4268, 4294 III ч. св. мѣстн. узак.",
+          "act_code": "СМУО"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8945,
+          "end": 8965,
+          "quote_original": "ст. 4266, 4268, 4294",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 8945,
+              "end": 8989,
+              "quote_original": "ст. 4266, 4268, 4294 III ч. св. мѣстн. узак.",
+              "act_code": "СМУО"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

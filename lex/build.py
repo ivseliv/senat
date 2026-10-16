@@ -31,6 +31,8 @@ OUT = os.path.join(ROOT, 'lex', 'data')
 
 def build_published_artifacts():
     """Пересобирает производные публичные данные и статический API из lex/data."""
+    law_index = build_law_index(ROOT)
+    print('  законодательство:', law_index['attribution_summary'])
     enrichment = refresh_published_enrichment(ROOT, stems)
     print('  актуальные пояснения:', enrichment['valid'], '; устаревшие записи:', enrichment['ignored'])
     warnings = {}
@@ -479,8 +481,6 @@ def main():
         with open(os.path.join(OUT, f'text-{year}.json'), 'w', encoding='utf-8') as f:
             json.dump(vt, f, ensure_ascii=False, separators=(',', ':'))
     build_passages(ROOT, docs, texts, stems, modernize, stem)
-    law_index = build_law_index(ROOT)
-    print(f'  законодательство: {len(law_index["acts"])} актов, {len(law_index["citations"])} точных ссылок')
     build_published_artifacts()
     print(f'томов {len(vols)}, решений {len(docs)}, основ в индексе {len(post)}')
     for v in vols:

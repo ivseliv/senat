@@ -92,91 +92,146 @@ def choose_match(text, matches, code):
 
 
 def context(text, start, end, limit=280):
-    left = max(text.rfind('\n\n', 0, start) + 2, start - limit // 2)
+    paragraph = text.rfind('\n\n', 0, start)
+    left = max(paragraph + 2 if paragraph >= 0 else 0, start - limit // 2)
     right_break = text.find('\n\n', end)
     right = len(text) if right_break < 0 else right_break
     right = min(right, end + limit // 2)
     return text[left:right].strip()
 
 
+def location_info(text, start, end, passages, manifest):
+    """Все страницы буквальной цитаты, а не первая страница решения."""
+    overlaps = [p for p in passages if p['start'] < end and p['end'] > start]
+    containing = next((p for p in overlaps if p['start'] <= start and end <= p['end']), None)
+    sources = {}
+    for p in overlaps:
+        for source in p.get('sources', []):
+            a, b = max(start, source['start']), min(end, source['end'])
+            if a < b:
+                key = (source['file'], source['page'])
+                if key in sources:
+                    sources[key]['start'] = min(a, sources[key]['start'])
+                    sources[key]['end'] = max(b, sources[key]['end'])
+                else:
+                    sources[key] = dict(source, start=a, end=b)
+    sources = sorted(sources.values(), key=lambda s: (s['start'], s['file']))
+    scans = [dict(manifest['pages'][f], kind='page') for f in dict.fromkeys(s['file'] for s in sources)
+             if f in manifest['pages']]
+    warnings=list(dict.fromkeys(p['ai']['source_warning'] for p in overlaps if p.get('ai',{}).get('source_warning')))
+    return dict(source_warning=' '.join(warnings) or None,passage_id=containing['id'] if containing else (overlaps[0]['id'] if overlaps else None),
+                sources=sources, printed_pages=list(dict.fromkeys(s['page'] for s in sources if s['page'] is not None)),
+                scans=scans, scan_available=bool(scans))
+
+
 def build_law_index(root=ROOT):
-    root = Path(root)
-    data = root / 'lex' / 'data'
-    catalog = read_json(root / 'lex' / 'laws.json')
-    acts = {act['code']: dict(act) for act in catalog['acts']}
-    meta = read_json(data / 'meta.json')
+    from law_attribution import apply_attributions, check_quote, sha, texts_by_id
+    from urllib.parse import urlencode
+    root = Path(root); data = root/'lex/data'
+    source = apply_attributions(root)
+    catalog = read_json(root/'lex/laws.json')
+    acts = {a['code']: dict(a) for a in catalog['acts']}
+    meta = read_json(data/'meta.json'); texts = texts_by_id(root, meta)
+    docs = {d['id']: d for d in meta['decisions']}
     passages_by_decision, scans_by_year = collections.defaultdict(list), {}
     for volume in meta['volumes']:
         year = volume['year']
-        passages = read_json(data / f'passages-{year}.json')['passages']
-        for passage in passages:
-            passages_by_decision[passage['decision']].append(passage)
-        scans_by_year[year] = read_json(data / f'scans-{year}.json')
-
-    citations, unlocated, missing_catalog = [], 0, set()
-    for volume in meta['volumes']:
-        year = volume['year']
-        docs = [d for d in meta['decisions'] if d['vol'] == year]
-        texts = read_json(data / f'text-{year}.json')
-        for doc, text in zip(docs, texts):
-            for statute in sorted(doc.get('statutes', {})):
-                code, _, article = statute.partition(' ')
-                if code == '?':
-                    continue
-                if code not in acts:
-                    missing_catalog.add(code)
-                    continue
-                match, direct = choose_match(text, article_matches(text, article), code)
+        for p in read_json(data/f'passages-{year}.json')['passages']:
+            passages_by_decision[p['decision']].append(p)
+        scans_by_year[year] = read_json(data/f'scans-{year}.json')
+    verified = collections.defaultdict(list)
+    new_keys, corrected = set(), []
+    methods = collections.Counter()
+    for row in source['resolutions']:
+        ident = row['decision_id']; article = row['from_statute'].partition(' ')[2]
+        if row['from_statute'].startswith('? '):
+            new_keys.add((ident, row['from_statute']))
+        elif any(t['code'] != row['from_statute'].split(' ')[0] for t in row['targets']):
+            corrected.append({'decision_id':ident,'from_statute':row['from_statute'],
+                              'to_statutes':[t['code']+' '+article for t in row['targets']]})
+        for target in row['targets']:
+            for occurrence in target['occurrences']:
+                verified[ident, target['code']+' '+article].append(occurrence)
+                if row['from_statute'].startswith('? '):
+                    methods[occurrence['method']] += 1
+    def make_row(doc, statute, occurrence, status):
+        text = texts[doc['id']]; code, _, article = statute.partition(' ')
+        start, end = occurrence['start'], occurrence['end']; field = occurrence.get('field', 'text')
+        original = text if field == 'text' else doc['headnote']
+        check_quote(original, occurrence)
+        ident = f'{doc["id"]}:{code}:{article_number(article)}:{field}:{start}'
+        url = decision_url(doc['id']) + '?' + urlencode({'mode':'laws','c':code,'q':article,'law':ident,'at':start,'end':end})
+        location = location_info(text,start,end,passages_by_decision[doc['id']],scans_by_year[doc['vol']]) if field=='text' else dict(passage_id=None,sources=[],printed_pages=[],scans=[],scan_available=False,source_warning=None)
+        association = {'direct':'акт прямо назван при этой ссылке',
+                       'printed_index':'печатный указатель законов и контекст решения',
+                       'repeat':'повторная ссылка с явным указанием на тот же акт'}.get(occurrence.get('method'), 'прежняя автоматическая привязка; отдельно не подтверждена')
+        return dict(id=ident,statute=statute,code=code,article=article,decision_id=doc['id'],year=doc['vol'],decision_number=doc['num'],
+                    field=field,start=start,end=end,quote_original=original[start:end],context_original=context(original,start,end),
+                    association=association,verification_status=status,source_sha256=sha(text),headnote_sha256=sha(doc['headnote']),
+                    number_status='ocr_unverified',
+                    citation_status='Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.' if status=='context_verified' else 'Историческая автоматическая привязка; акт требует проверки по контексту.',
+                    decision_url=decision_url(doc['id']),passage_url=url,**location,
+                    evidence=occurrence.get('evidence', []))
+    citations, unlocated = [], 0
+    for doc in meta['decisions']:
+        text = texts[doc['id']]
+        for statute in sorted(doc['statutes']):
+            code, _, article = statute.partition(' ')
+            if code=='?': continue
+            if code not in acts: raise ValueError('Нет карточки акта: '+code)
+            occurrences = verified.get((doc['id'],statute),[])
+            if occurrences:
+                occurrence = min(occurrences,key=lambda o:(o['field']!='text',o['method']!='direct',o['start']))
+                row = make_row(doc,statute,occurrence,'context_verified')
+                row['occurrences'] = occurrences
+                notes=[o.get('attribution_note') for o in occurrences if o.get('attribution_note')]
+                if notes: row['attribution_note']=' '.join(dict.fromkeys(notes))
+            else:
+                match, direct = choose_match(text,article_matches(text,article),code)
                 if not match:
-                    unlocated += 1
-                    continue
-                passage = next((p for p in passages_by_decision[doc['id']]
-                                if p['start'] <= match.start() < p['end']), None)
-                scan_refs = scans_by_year[year]['passages'].get(passage['id'], []) if passage else []
-                citations.append({
-                    'id': f'{doc["id"]}:{code}:{article_number(article)}:{match.start()}',
-                    'statute': statute, 'code': code, 'article': article,
-                    'decision_id': doc['id'], 'year': year, 'decision_number': doc['num'],
-                    'start': match.start(), 'end': match.end(),
-                    'quote_original': match.group(0), 'context_original': context(text, match.start(), match.end()),
-                    'association': 'прямое название акта рядом с номером' if direct else 'акт определён по контексту решения',
-                    'citation_status': 'номер статьи извлечён из OCR; сверяйте со сканом',
-                    'decision_url': decision_url(doc['id']),
-                    'passage_id': passage['id'] if passage else None,
-                    'passage_url': passage_url(doc['id'], passage, code, article) if passage else None,
-                    'scan_available': bool(scan_refs),
-                })
-
-    if missing_catalog:
-        raise ValueError('Нет карточки акта: ' + ', '.join(sorted(missing_catalog)))
+                    unlocated += 1; continue
+                row = make_row(doc,statute,dict(field='text',start=match.start(),end=match.end(),quote_original=match.group(0)), 'legacy_unverified')
+                row['occurrences'] = []
+            citations.append(row)
+    unresolved = []
+    for item in source['unresolved']:
+        doc = docs[item['decision_id']]
+        if item['statute'] not in doc['statutes']: raise ValueError('Неопределённая ссылка исчезла')
+        occurrences = item['occurrences']
+        for o in occurrences:
+            check_quote(texts[doc['id']] if o['field']=='text' else doc['headnote'],o)
+        occurrence = min(occurrences,key=lambda o:(o['field']!='text',o['start']))
+        row = make_row(doc,item['statute'],occurrence,'act_unknown')
+        row.update(association='акт не установлен: опубликованного контекста и однозначных оснований недостаточно',
+                   citation_status='Не включается в указатель конкретного акта.',mentions=item['mentions'],occurrences=occurrences)
+        unresolved.append(row)
+    unknown_count = sum(k.startswith('? ') for d in meta['decisions'] for k in d['statutes'])
+    if unknown_count != len(unresolved): raise ValueError('Не все неопределённые ссылки показаны')
     by_code = collections.defaultdict(list)
-    for citation in citations:
-        by_code[citation['code']].append(citation)
+    for c in citations: by_code[c['code']].append(c)
     output_acts = []
-    for code, act in acts.items():
-        rows = by_code.get(code, [])
-        articles = collections.Counter(row['article'] for row in rows)
-        output_acts.append({
-            **act,
-            'citations': len(rows),
-            'decisions': len({row['decision_id'] for row in rows}),
-            'articles': [{'article': article, 'citations': count,
-                          'decisions': len({row['decision_id'] for row in rows if row['article'] == article})}
-                         for article, count in sorted(articles.items(), key=lambda item: (-item[1], item[0]))],
-        })
-    output = {
-        'version': 1,
-        'sources': catalog['sources'],
-        'acts': output_acts,
-        'citations': sorted(citations, key=lambda row: (row['code'], row['article'], row['year'], row['decision_number'], row['start'])),
-        'unknown_act_mentions': sum(1 for doc in meta['decisions'] for statute in doc.get('statutes', {}) if statute.startswith('? ')),
-        'unlocated_known_mentions': unlocated,
-        'note': 'Карточки актов сверены по библиографическим и цифровым источникам. Номер статьи и историческую редакцию следует сверять с оригинальным сканом и изданием.',
-    }
-    (data / 'laws.json').write_text(json.dumps(output, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+    for code,act in acts.items():
+        rows=by_code[code]; articles=collections.Counter(r['article'] for r in rows)
+        output_acts.append(dict(act,citations=len(rows),decisions=len({r['decision_id'] for r in rows}),
+            articles=[dict(article=a,citations=n,decisions=len({r['decision_id'] for r in rows if r['article']==a}))
+                      for a,n in sorted(articles.items(),key=lambda x:(-x[1],x[0]))]))
+    baseline_unknown = sum(k.startswith('? ') for d in source['decisions'].values() for k in d['statutes'])
+    summary = dict(unit='уникальная пара «решение + извлечённое обозначение статьи»',baseline_unknown=baseline_unknown,
+                   resolved_unknown=len(new_keys),remaining_unknown=unknown_count,corrected_known=len(corrected),
+                   confirmed_citations=sum(c['verification_status']=='context_verified' for c in citations),
+                   legacy_unverified_citations=sum(c['verification_status']=='legacy_unverified' for c in citations),
+                   remaining_legacy_occurrences=sum(r['mentions'] for r in unresolved),new_resolution_occurrences_by_method=dict(methods),
+                   by_year={str(v['year']):dict(resolved=sum(ident.startswith(str(v['year'])) for ident,k in new_keys),
+                                               unresolved=sum(r['year']==v['year'] for r in unresolved)) for v in meta['volumes']})
+    output = dict(version=2,sources=catalog['sources'],acts=output_acts,
+        citations=sorted(citations,key=lambda r:(r['code'],r['article'],r['year'],r['decision_number'],r['start'])),
+        unresolved=unresolved,attribution_summary=summary,corrected_legacy_assignments=corrected,
+        unknown_act_mentions=unknown_count,unlocated_known_mentions=unlocated,
+        note='Единица счёта — решение и обозначение статьи, а не число цитат. Основания новых привязок сохранены буквально; прежние непроверенные привязки отмечены отдельно. Историческая редакция статьи не устанавливается, номер в OCR может содержать ошибку.')
+    (data/'laws.json').write_text(json.dumps(output,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
     return output
 
 
-if __name__ == '__main__':
-    result = build_law_index()
-    print('указатель законодательства:', len(result['acts']), 'актов,', len(result['citations']), 'цитат')
+if __name__=='__main__':
+    result=build_law_index()
+    print(json.dumps(result['attribution_summary'],ensure_ascii=False))

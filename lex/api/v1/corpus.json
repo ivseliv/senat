@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.4.0",
-  "data_revision": "sha256:6ac98d54af90894c26d5b151ea6fa7560f3c59eb9c7573bdfa175192587860d6",
+  "contract_version": "1.5.0",
+  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
   "resource": "corpus",
   "item": {
     "volumes": [
@@ -58,9 +58,10 @@
       "decisions": 384,
       "passages": 2152,
       "participants": 790,
-      "statute_mentions": 2034,
-      "legislation_acts": 9,
-      "legislation_citations": 832,
+      "statute_mentions": 1991,
+      "legislation_acts": 21,
+      "legislation_citations": 1141,
+      "legislation_unresolved": 789,
       "scan_passage_refs": 3293,
       "precedent_references": 826,
       "editorial_analyses": 40,

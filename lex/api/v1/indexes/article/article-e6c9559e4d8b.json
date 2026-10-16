@@ -1,17 +1,16 @@
 {
   "api_version": "v1",
-  "contract_version": "1.4.0",
-  "data_revision": "sha256:6ac98d54af90894c26d5b151ea6fa7560f3c59eb9c7573bdfa175192587860d6",
+  "contract_version": "1.5.0",
+  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
   "resource": "decision-set",
   "filter": {
     "kind": "article",
     "id": "article-e6c9559e4d8b",
     "label": "? ст. 39"
   },
-  "count": 7,
+  "count": 6,
   "decision_ids": [
     "1896-012",
-    "1897-042",
     "1904-002",
     "1904-036",
     "1904-066",
@@ -21,7 +20,6 @@
   "links": {
     "decisions": [
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1896-012.json",
-      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-042.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-002.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-036.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-066.json",

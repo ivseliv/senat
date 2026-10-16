@@ -486,6 +486,81 @@
         }
       }
     },
+    "LegislationCitation": {
+      "type": "object",
+      "required": [
+        "id",
+        "decision_id",
+        "code",
+        "article",
+        "field",
+        "start",
+        "end",
+        "quote_original",
+        "source_sha256",
+        "verification_status",
+        "evidence"
+      ],
+      "properties": {
+        "verification_status": {
+          "enum": [
+            "context_verified",
+            "legacy_unverified",
+            "act_unknown"
+          ]
+        },
+        "field": {
+          "enum": [
+            "text",
+            "headnote"
+          ]
+        },
+        "source_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "headnote_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "kind",
+              "start",
+              "end",
+              "quote_original"
+            ],
+            "properties": {
+              "kind": {
+                "enum": [
+                  "direct",
+                  "repeat",
+                  "printed_index"
+                ]
+              },
+              "quote_original": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "occurrences": {
+          "type": "array"
+        }
+      },
+      "description": "Единица — решение и обозначение статьи. field определяет исходное поле Unicode-смещений; SHA полного текста и заголовка закреплены отдельно. Подтверждение акта не удостоверяет номер OCR или редакцию нормы."
+    },
     "TopicCatalog": {
       "type": "object",
       "required": [

@@ -1,0 +1,4239 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.5.0",
+  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "resource": "legislation-citations",
+  "scope": {
+    "code": "УСТ",
+    "id": "act-0409227854e7"
+  },
+  "count": 50,
+  "items": [
+    {
+      "id": "1897-062:УСТ:257:text:8216",
+      "statute": "УСТ ст. 257",
+      "code": "УСТ",
+      "article": "ст. 257",
+      "decision_id": "1897-062",
+      "year": 1897,
+      "decision_number": 62,
+      "field": "text",
+      "start": 8216,
+      "end": 8229,
+      "quote_original": "ст. 257 и 258",
+      "context_original": "наго рѣшенія по нарушенію ст. 366, 409 и 410 уст. гр. суд. и неправильному толкованію ст. 400 учр. суд. уст., ст. 1529 зак. гр. 1 ч. X т. и ст. 257 и 258 уст. суд. торг. ч. 2 т. XI св. зак., изд. 1893 г., объясняя: а) что ст. 400 учр. суд. уст., воспрещая повѣреннымъ пріобрѣтать принадлежащія",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "6d80ffff2fac6a815c04086f16ce352ca0098c56029e1ffc68549b223e9162a9",
+      "headnote_sha256": "5cf54828c701570ce670f8621f61e0a79e65f17b654e35f0fb3d3bee6f70da0c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-062",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-062?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+257&law=1897-062%3A%D0%A3%D0%A1%D0%A2%3A257%3Atext%3A8216&at=8216&end=8229",
+      "source_warning": null,
+      "passage_id": "1897-062:7661-9170",
+      "sources": [
+        {
+          "page": 204,
+          "page_method": "header",
+          "file": "p0113_L.txt",
+          "start": 8216,
+          "end": 8229
+        }
+      ],
+      "printed_pages": [
+        204
+      ],
+      "scans": [
+        {
+          "file": "p0113_L.txt",
+          "page": 204,
+          "full": "scans/1897/pages/p0113_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1557,
+          "ocr_sha256": "249b6869ef118f5fb083fec89c88c525c76afba4048f9ccb564d0b2533ab16ea",
+          "pdf_page": 225,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 8216,
+          "end": 8245,
+          "quote_original": "ст. 257 и 258 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8216,
+          "end": 8229,
+          "quote_original": "ст. 257 и 258",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 8216,
+              "end": 8245,
+              "quote_original": "ст. 257 и 258 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-062:УСТ:258:text:8216",
+      "statute": "УСТ ст. 258",
+      "code": "УСТ",
+      "article": "ст. 258",
+      "decision_id": "1897-062",
+      "year": 1897,
+      "decision_number": 62,
+      "field": "text",
+      "start": 8216,
+      "end": 8229,
+      "quote_original": "ст. 257 и 258",
+      "context_original": "наго рѣшенія по нарушенію ст. 366, 409 и 410 уст. гр. суд. и неправильному толкованію ст. 400 учр. суд. уст., ст. 1529 зак. гр. 1 ч. X т. и ст. 257 и 258 уст. суд. торг. ч. 2 т. XI св. зак., изд. 1893 г., объясняя: а) что ст. 400 учр. суд. уст., воспрещая повѣреннымъ пріобрѣтать принадлежащія",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "6d80ffff2fac6a815c04086f16ce352ca0098c56029e1ffc68549b223e9162a9",
+      "headnote_sha256": "5cf54828c701570ce670f8621f61e0a79e65f17b654e35f0fb3d3bee6f70da0c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-062",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-062?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+258&law=1897-062%3A%D0%A3%D0%A1%D0%A2%3A258%3Atext%3A8216&at=8216&end=8229",
+      "source_warning": null,
+      "passage_id": "1897-062:7661-9170",
+      "sources": [
+        {
+          "page": 204,
+          "page_method": "header",
+          "file": "p0113_L.txt",
+          "start": 8216,
+          "end": 8229
+        }
+      ],
+      "printed_pages": [
+        204
+      ],
+      "scans": [
+        {
+          "file": "p0113_L.txt",
+          "page": 204,
+          "full": "scans/1897/pages/p0113_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1557,
+          "ocr_sha256": "249b6869ef118f5fb083fec89c88c525c76afba4048f9ccb564d0b2533ab16ea",
+          "pdf_page": 225,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 8216,
+          "end": 8245,
+          "quote_original": "ст. 257 и 258 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8216,
+          "end": 8229,
+          "quote_original": "ст. 257 и 258",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 8216,
+              "end": 8245,
+              "quote_original": "ст. 257 и 258 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-016:УСТ:258:text:1967",
+      "statute": "УСТ ст. 258",
+      "code": "УСТ",
+      "article": "ст. 258",
+      "decision_id": "1905-016",
+      "year": 1905,
+      "decision_number": 16,
+      "field": "text",
+      "start": 1967,
+      "end": 1980,
+      "quote_original": "ст. 258 и 259",
+      "context_original": "ъ какъ, по правильному замѣчанію просителя, обязанъ былъ оставить самую книгу при себѣ въ силу устава торговаго; 7) что ссылка просителя на ст. 258 и 259 уст. суд. торг. изд. 1893 г. (по изд. 1903 г. ст. 234 и 235) и на ст. 449 уст. гр. суд. можетъ вызвать лишь указаніе на то, что съ передаче",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "f283081f838003dd113efb2dfaaa0382d37e23911cbb576e8562ae6b62bb643e",
+      "headnote_sha256": "ef0a437d0335adc40bc61aaef79ac2989ba84f0bc962c3725aabfda1c46b8a76",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-016",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-016?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+258&law=1905-016%3A%D0%A3%D0%A1%D0%A2%3A258%3Atext%3A1967&at=1967&end=1980",
+      "source_warning": null,
+      "passage_id": "1905-016:1425-2835",
+      "sources": [
+        {
+          "page": 39,
+          "page_method": "header",
+          "file": "p0020_R.txt",
+          "start": 1967,
+          "end": 1980
+        }
+      ],
+      "printed_pages": [
+        39
+      ],
+      "scans": [
+        {
+          "file": "p0020_R.txt",
+          "page": 39,
+          "full": "scans/1905/pages/p0020_R.webp",
+          "width": 1100,
+          "height": 1486,
+          "ocr_sha256": "54b794b746872f9e476f5aeb5579736beb1173ffc5fa702fba3f329641217fcc",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1967,
+          "end": 1996,
+          "quote_original": "ст. 258 и 259 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1967,
+          "end": 1980,
+          "quote_original": "ст. 258 и 259",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1967,
+              "end": 1996,
+              "quote_original": "ст. 258 и 259 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-016:УСТ:259:text:1967",
+      "statute": "УСТ ст. 259",
+      "code": "УСТ",
+      "article": "ст. 259",
+      "decision_id": "1905-016",
+      "year": 1905,
+      "decision_number": 16,
+      "field": "text",
+      "start": 1967,
+      "end": 1980,
+      "quote_original": "ст. 258 и 259",
+      "context_original": "ъ какъ, по правильному замѣчанію просителя, обязанъ былъ оставить самую книгу при себѣ въ силу устава торговаго; 7) что ссылка просителя на ст. 258 и 259 уст. суд. торг. изд. 1893 г. (по изд. 1903 г. ст. 234 и 235) и на ст. 449 уст. гр. суд. можетъ вызвать лишь указаніе на то, что съ передаче",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "f283081f838003dd113efb2dfaaa0382d37e23911cbb576e8562ae6b62bb643e",
+      "headnote_sha256": "ef0a437d0335adc40bc61aaef79ac2989ba84f0bc962c3725aabfda1c46b8a76",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-016",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-016?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+259&law=1905-016%3A%D0%A3%D0%A1%D0%A2%3A259%3Atext%3A1967&at=1967&end=1980",
+      "source_warning": null,
+      "passage_id": "1905-016:1425-2835",
+      "sources": [
+        {
+          "page": 39,
+          "page_method": "header",
+          "file": "p0020_R.txt",
+          "start": 1967,
+          "end": 1980
+        }
+      ],
+      "printed_pages": [
+        39
+      ],
+      "scans": [
+        {
+          "file": "p0020_R.txt",
+          "page": 39,
+          "full": "scans/1905/pages/p0020_R.webp",
+          "width": 1100,
+          "height": 1486,
+          "ocr_sha256": "54b794b746872f9e476f5aeb5579736beb1173ffc5fa702fba3f329641217fcc",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1967,
+          "end": 1996,
+          "quote_original": "ст. 258 и 259 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1967,
+          "end": 1980,
+          "quote_original": "ст. 258 и 259",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1967,
+              "end": 1996,
+              "quote_original": "ст. 258 и 259 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-022:УСТ:387:text:7169",
+      "statute": "УСТ ст. 387",
+      "code": "УСТ",
+      "article": "ст. 387",
+      "decision_id": "1904-022",
+      "year": 1904,
+      "decision_number": 22,
+      "field": "text",
+      "start": 7169,
+      "end": 7176,
+      "quote_original": "ст. 387",
+      "context_original": "никъ приведенъ будетъ въ неоплатность не собственною своею виною, но стеченіемъ обстоятельствъ, коихъ родъ и свойство опредѣлены въ законѣ (ст. 387). Непредвидимыми бѣдственными обстоятельствами, по коимъ несостоятельность можетъ быть признана несчастною, надлежитъ считать: 1) наводнені",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "652f24eadaa26d2406d5b9d38a0307c5964c0a6645cb2bc6f5d6b4410e51a461",
+      "headnote_sha256": "879a4dfea38af53e01c736f51881b65422ba66df657daff02025740e7a3b9e17",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-022",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-022?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+387&law=1904-022%3A%D0%A3%D0%A1%D0%A2%3A387%3Atext%3A7169&at=7169&end=7176",
+      "source_warning": null,
+      "passage_id": "1904-022:5807-7718",
+      "sources": [
+        {
+          "page": 55,
+          "page_method": "header",
+          "file": "p0028_R.txt",
+          "start": 7169,
+          "end": 7176
+        }
+      ],
+      "printed_pages": [
+        55
+      ],
+      "scans": [
+        {
+          "file": "p0028_R.txt",
+          "page": 55,
+          "full": "scans/1904/pages/p0028_R.webp",
+          "width": 1100,
+          "height": 1640,
+          "ocr_sha256": "a281a50aea8a258978b5aa2ae241a6315b414daa13912554e12d7d5d0c08fd7d",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 4790,
+          "end": 4803,
+          "quote_original": "387—389 — 22.",
+          "heading": {
+            "start": 4682,
+            "end": 4728,
+            "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+          },
+          "edition_continuation": {
+            "line": 412,
+            "quote": "Тоже изд. 1903 г.",
+            "start": 4761,
+            "end": 4778
+          },
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7169,
+          "end": 7176,
+          "quote_original": "ст. 387",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 4790,
+              "end": 4803,
+              "quote_original": "387—389 — 22.",
+              "heading": {
+                "start": 4682,
+                "end": 4728,
+                "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+              },
+              "edition_continuation": {
+                "line": 412,
+                "quote": "Тоже изд. 1903 г.",
+                "start": 4761,
+                "end": 4778
+              },
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-022:УСТ:388:text:12012",
+      "statute": "УСТ ст. 388",
+      "code": "УСТ",
+      "article": "ст. 388",
+      "decision_id": "1904-022",
+      "year": 1904,
+      "decision_number": 22,
+      "field": "text",
+      "start": 12012,
+      "end": 12019,
+      "quote_original": "ст. 388",
+      "context_original": "авительствующій Сенатъ, по выслушаніи заключенія товарища оберъ-прокурора, опредѣляетъ: опредѣленіе Иркутской судебной палаты, по нарушенію ст. 388 уст. суд. торг., отмѣнить и передать дѣло на разсмотрѣніе той же палаты въ другомъ составѣ присутствія.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "652f24eadaa26d2406d5b9d38a0307c5964c0a6645cb2bc6f5d6b4410e51a461",
+      "headnote_sha256": "879a4dfea38af53e01c736f51881b65422ba66df657daff02025740e7a3b9e17",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-022",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-022?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+388&law=1904-022%3A%D0%A3%D0%A1%D0%A2%3A388%3Atext%3A12012&at=12012&end=12019",
+      "source_warning": null,
+      "passage_id": "1904-022:10574-12123",
+      "sources": [
+        {
+          "page": 57,
+          "page_method": "header",
+          "file": "p0029_R.txt",
+          "start": 12012,
+          "end": 12019
+        }
+      ],
+      "printed_pages": [
+        57
+      ],
+      "scans": [
+        {
+          "file": "p0029_R.txt",
+          "page": 57,
+          "full": "scans/1904/pages/p0029_R.webp",
+          "width": 1100,
+          "height": 1681,
+          "ocr_sha256": "922ab06abe1c6538ebbee051a832c9ed2bd4c22b4e6566865789b86c77b25e78",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 12012,
+          "end": 12035,
+          "quote_original": "ст. 388 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7709,
+          "end": 7716,
+          "quote_original": "ст. 388",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 4790,
+              "end": 4803,
+              "quote_original": "387—389 — 22.",
+              "heading": {
+                "start": 4682,
+                "end": 4728,
+                "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+              },
+              "edition_continuation": {
+                "line": 412,
+                "quote": "Тоже изд. 1903 г.",
+                "start": 4761,
+                "end": 4778
+              },
+              "act_code": "УСТ"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 12012,
+          "end": 12019,
+          "quote_original": "ст. 388",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 12012,
+              "end": 12035,
+              "quote_original": "ст. 388 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-022:УСТ:389:text:7866",
+      "statute": "УСТ ст. 389",
+      "code": "УСТ",
+      "article": "ст. 389",
+      "decision_id": "1904-022",
+      "year": 1904,
+      "decision_number": 22,
+      "field": "text",
+      "start": 7866,
+      "end": 7873,
+      "quote_original": "ст. 389",
+      "context_original": "ятельность есть неосторожная и именуется простымъ банкротствомъ, когда неоплатность послѣдуетъ отъ вины должника, но безъ умысла и подлога (ст. 389). Послѣдствія несчастной несостоятельности суть: 1) освобожденіе несосостоятельнаго изъ подъ стражи; 2) возстановленіе его во всѣ права его",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "652f24eadaa26d2406d5b9d38a0307c5964c0a6645cb2bc6f5d6b4410e51a461",
+      "headnote_sha256": "879a4dfea38af53e01c736f51881b65422ba66df657daff02025740e7a3b9e17",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-022",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-022?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+389&law=1904-022%3A%D0%A3%D0%A1%D0%A2%3A389%3Atext%3A7866&at=7866&end=7873",
+      "source_warning": null,
+      "passage_id": "1904-022:7444-9134",
+      "sources": [
+        {
+          "page": 55,
+          "page_method": "header",
+          "file": "p0028_R.txt",
+          "start": 7866,
+          "end": 7873
+        }
+      ],
+      "printed_pages": [
+        55
+      ],
+      "scans": [
+        {
+          "file": "p0028_R.txt",
+          "page": 55,
+          "full": "scans/1904/pages/p0028_R.webp",
+          "width": 1100,
+          "height": 1640,
+          "ocr_sha256": "a281a50aea8a258978b5aa2ae241a6315b414daa13912554e12d7d5d0c08fd7d",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 4790,
+          "end": 4803,
+          "quote_original": "387—389 — 22.",
+          "heading": {
+            "start": 4682,
+            "end": 4728,
+            "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+          },
+          "edition_continuation": {
+            "line": 412,
+            "quote": "Тоже изд. 1903 г.",
+            "start": 4761,
+            "end": 4778
+          },
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7866,
+          "end": 7873,
+          "quote_original": "ст. 389",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 4790,
+              "end": 4803,
+              "quote_original": "387—389 — 22.",
+              "heading": {
+                "start": 4682,
+                "end": 4728,
+                "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+              },
+              "edition_continuation": {
+                "line": 412,
+                "quote": "Тоже изд. 1903 г.",
+                "start": 4761,
+                "end": 4778
+              },
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-045:УСТ:395–403:text:157",
+      "statute": "УСТ ст. 395–403",
+      "code": "УСТ",
+      "article": "ст. 395–403",
+      "decision_id": "1905-045",
+      "year": 1905,
+      "decision_number": 45,
+      "field": "text",
+      "start": 157,
+      "end": 168,
+      "quote_original": "ст. 395—403",
+      "context_original": "ніе товарища оберъ-прокурора и разсмотрѣвъ дѣло, Правительствующій Сенатъ находитъ, что дѣйствующія узаконенія о торговыхъ администраціяхъ (ст. 395—403 уст. суд. торг.) хотя и не содержатъ общихъ положеній къ разрѣшенію отдѣльныхъ, возбуждаемыхъ на практикѣ вопросовъ, однако съ достаточною",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "592c162fddbc8684026008385d9c59099d0b596aafe9eeeafc16a29aedb4c4b5",
+      "headnote_sha256": "f57a477b31f3181673703b5f1d71c8c3dee35e5cbc437424b674895675e060bc",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-045",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-045?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+395%E2%80%93403&law=1905-045%3A%D0%A3%D0%A1%D0%A2%3A395%E2%80%93403%3Atext%3A157&at=157&end=168",
+      "source_warning": null,
+      "passage_id": "1905-045:0-1763",
+      "sources": [
+        {
+          "page": 123,
+          "page_method": "header",
+          "file": "p0062_R.txt",
+          "start": 157,
+          "end": 168
+        }
+      ],
+      "printed_pages": [
+        123
+      ],
+      "scans": [
+        {
+          "file": "p0062_R.txt",
+          "page": 123,
+          "full": "scans/1905/pages/p0062_R.webp",
+          "width": 1100,
+          "height": 1540,
+          "ocr_sha256": "b6e3b192f7635c642f8e20518eb03ff89a880f98a1853c94968ec0e553261263",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 157,
+          "end": 184,
+          "quote_original": "ст. 395—403 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 157,
+          "end": 168,
+          "quote_original": "ст. 395—403",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 157,
+              "end": 184,
+              "quote_original": "ст. 395—403 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-044:УСТ:397:text:4750",
+      "statute": "УСТ ст. 397",
+      "code": "УСТ",
+      "article": "ст. 397",
+      "decision_id": "1905-044",
+      "year": 1905,
+      "decision_number": 44,
+      "field": "text",
+      "start": 4750,
+      "end": 4763,
+      "quote_original": "ст. 397 и 402",
+      "context_original": "центовъ и затѣмъ передастъ свое имущество, не скрывая таковаго, въ распоряженіе администраціи, которая и вступаетъ въ полныя права хозяина (ст. 397 и 402 уст. суд. торг.). Въ виду такого назначенія администраціи и условій учрежденія ея, торговый домъ, дѣла коего пришли въ упадокъ, вступивши в",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "af9b0186776ab624a9a621c0dc3be27cf8d9461cb89ba3b2b5f0d3a6ea4d91d4",
+      "headnote_sha256": "6db598b69f19556ef71b0a0097d339927fcc01c0335b88463657c2f5b3994cb8",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-044",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-044?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+397&law=1905-044%3A%D0%A3%D0%A1%D0%A2%3A397%3Atext%3A4750&at=4750&end=4763",
+      "source_warning": null,
+      "passage_id": "1905-044:2623-4781",
+      "sources": [
+        {
+          "page": 122,
+          "page_method": "header",
+          "file": "p0062_L.txt",
+          "start": 4750,
+          "end": 4763
+        }
+      ],
+      "printed_pages": [
+        122
+      ],
+      "scans": [
+        {
+          "file": "p0062_L.txt",
+          "page": 122,
+          "full": "scans/1905/pages/p0062_L.webp",
+          "width": 1100,
+          "height": 1540,
+          "ocr_sha256": "c8401cbe7011ebb6d885fe924035825e241709129a93ed1ad7375e9e653b5a33",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 4750,
+          "end": 4779,
+          "quote_original": "ст. 397 и 402 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4750,
+          "end": 4763,
+          "quote_original": "ст. 397 и 402",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4750,
+              "end": 4779,
+              "quote_original": "ст. 397 и 402 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 5813,
+          "end": 5820,
+          "quote_original": "ст. 397",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 5813,
+              "end": 5836,
+              "quote_original": "ст. 397 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-046:УСТ:397:text:848",
+      "statute": "УСТ ст. 397",
+      "code": "УСТ",
+      "article": "ст. 397",
+      "decision_id": "1905-046",
+      "year": 1905,
+      "decision_number": 46,
+      "field": "text",
+      "start": 848,
+      "end": 855,
+      "quote_original": "ст. 397",
+      "context_original": "ъ цѣлей, въ каждомъ отдѣльномъ случаѣ, не можетъ быть съ точностью обусловлена ясными или опредѣленными признаками, вслѣдствіе чего законъ (ст. 397 уст. суд. торг.) даетъ лишь примѣрное указаніе на подобные признаки въ видѣ наибольшаго предѣла допустимой задолженности предпріятія, предо",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "fdead428d498b224574e00af35c889fb5a8a66b89e3f4084f23bba06de3a9b96",
+      "headnote_sha256": "55183d05e32ab311e98c92bebc44e630e7f77b2a24922813889559897826bc88",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-046",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-046?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+397&law=1905-046%3A%D0%A3%D0%A1%D0%A2%3A397%3Atext%3A848&at=848&end=855",
+      "source_warning": null,
+      "passage_id": "1905-046:0-1818",
+      "sources": [
+        {
+          "page": 126,
+          "page_method": "header",
+          "file": "p0064_L.txt",
+          "start": 848,
+          "end": 855
+        }
+      ],
+      "printed_pages": [
+        126
+      ],
+      "scans": [
+        {
+          "file": "p0064_L.txt",
+          "page": 126,
+          "full": "scans/1905/pages/p0064_L.webp",
+          "width": 1100,
+          "height": 1514,
+          "ocr_sha256": "5850e61adbbb15c5ced7ae31186605b12f5c2fa356f6ddc227e0f316be57c379",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 848,
+          "end": 871,
+          "quote_original": "ст. 397 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 848,
+          "end": 855,
+          "quote_original": "ст. 397",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 848,
+              "end": 871,
+              "quote_original": "ст. 397 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 3531,
+          "end": 3544,
+          "quote_original": "ст. 397 и 399",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3531,
+              "end": 3560,
+              "quote_original": "ст. 397 и 399 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-046:УСТ:398:text:1234",
+      "statute": "УСТ ст. 398",
+      "code": "УСТ",
+      "article": "ст. 398",
+      "decision_id": "1905-046",
+      "year": 1905,
+      "decision_number": 46,
+      "field": "text",
+      "start": 1234,
+      "end": 1241,
+      "quote_original": "ст. 398",
+      "context_original": "му совѣщанію, составленному, подъ предсѣдательствомъ предсѣдателя биржеваго комитета, изъ шести почетнѣйшихъ купцовъ, торгующихъ при биржѣ (ст. 398 уст. суд. торг.). Такимъ образомъ, хотя законъ и не допускаетъ учрежденія администраціи при значительной задолженности торговаго или фабрич",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "fdead428d498b224574e00af35c889fb5a8a66b89e3f4084f23bba06de3a9b96",
+      "headnote_sha256": "55183d05e32ab311e98c92bebc44e630e7f77b2a24922813889559897826bc88",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-046",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-046?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+398&law=1905-046%3A%D0%A3%D0%A1%D0%A2%3A398%3Atext%3A1234&at=1234&end=1241",
+      "source_warning": null,
+      "passage_id": "1905-046:0-1818",
+      "sources": [
+        {
+          "page": 126,
+          "page_method": "header",
+          "file": "p0064_L.txt",
+          "start": 1234,
+          "end": 1241
+        }
+      ],
+      "printed_pages": [
+        126
+      ],
+      "scans": [
+        {
+          "file": "p0064_L.txt",
+          "page": 126,
+          "full": "scans/1905/pages/p0064_L.webp",
+          "width": 1100,
+          "height": 1514,
+          "ocr_sha256": "5850e61adbbb15c5ced7ae31186605b12f5c2fa356f6ddc227e0f316be57c379",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1234,
+          "end": 1257,
+          "quote_original": "ст. 398 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1234,
+          "end": 1241,
+          "quote_original": "ст. 398",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1234,
+              "end": 1257,
+              "quote_original": "ст. 398 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-045:УСТ:399:text:5186",
+      "statute": "УСТ ст. 399",
+      "code": "УСТ",
+      "article": "ст. 399",
+      "decision_id": "1905-045",
+      "year": 1905,
+      "decision_number": 45,
+      "field": "text",
+      "start": 5186,
+      "end": 5199,
+      "quote_original": "ст. 397 и 399",
+      "context_original": "ильнымъ. На основаніи вышеизложеннаго, Правительствующій Сенатъ опредѣляетъ: опредѣленіе Саратовской судебной палаты отмѣнить, по нарушенію ст. 397 и 399 уст. суд. торг. (изд. 1903 г.), и передать дѣло въ Казанскую судебную палату.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "592c162fddbc8684026008385d9c59099d0b596aafe9eeeafc16a29aedb4c4b5",
+      "headnote_sha256": "f57a477b31f3181673703b5f1d71c8c3dee35e5cbc437424b674895675e060bc",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-045",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-045?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+399&law=1905-045%3A%D0%A3%D0%A1%D0%A2%3A399%3Atext%3A5186&at=5186&end=5199",
+      "source_warning": null,
+      "passage_id": "1905-045:3284-5277",
+      "sources": [
+        {
+          "page": 125,
+          "page_method": "header",
+          "file": "p0063_R.txt",
+          "start": 5186,
+          "end": 5199
+        }
+      ],
+      "printed_pages": [
+        125
+      ],
+      "scans": [
+        {
+          "file": "p0063_R.txt",
+          "page": 125,
+          "full": "scans/1905/pages/p0063_R.webp",
+          "width": 1100,
+          "height": 1489,
+          "ocr_sha256": "aa75cd82cd0e4766ae0f42f9cacb35aa47cb425abca88137ff769634c7b5d917",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 5186,
+          "end": 5215,
+          "quote_original": "ст. 397 и 399 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5186,
+          "end": 5199,
+          "quote_original": "ст. 397 и 399",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 5186,
+              "end": 5215,
+              "quote_original": "ст. 397 и 399 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-046:УСТ:399:text:3531",
+      "statute": "УСТ ст. 399",
+      "code": "УСТ",
+      "article": "ст. 399",
+      "decision_id": "1905-046",
+      "year": 1905,
+      "decision_number": 46,
+      "field": "text",
+      "start": 3531,
+      "end": 3544,
+      "quote_original": "ст. 397 и 399",
+      "context_original": "ми и опредѣленіе ея подлежащимъ отмѣнѣ,—Правительствующій Сенатъ определяетъ: опредѣленіе Саратовской судебной палаты отмѣнить по нарушенію ст. 397 и 399 уст. суд. торг. (изд. 1903 г.), передавъ дѣло въ Казанскую судебную палату.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "fdead428d498b224574e00af35c889fb5a8a66b89e3f4084f23bba06de3a9b96",
+      "headnote_sha256": "55183d05e32ab311e98c92bebc44e630e7f77b2a24922813889559897826bc88",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-046",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-046?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+399&law=1905-046%3A%D0%A3%D0%A1%D0%A2%3A399%3Atext%3A3531&at=3531&end=3544",
+      "source_warning": null,
+      "passage_id": "1905-046:1516-3620",
+      "sources": [
+        {
+          "page": 126,
+          "page_method": "header",
+          "file": "p0064_L.txt",
+          "start": 3531,
+          "end": 3544
+        }
+      ],
+      "printed_pages": [
+        126
+      ],
+      "scans": [
+        {
+          "file": "p0064_L.txt",
+          "page": 126,
+          "full": "scans/1905/pages/p0064_L.webp",
+          "width": 1100,
+          "height": 1514,
+          "ocr_sha256": "5850e61adbbb15c5ced7ae31186605b12f5c2fa356f6ddc227e0f316be57c379",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3531,
+          "end": 3560,
+          "quote_original": "ст. 397 и 399 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3531,
+          "end": 3544,
+          "quote_original": "ст. 397 и 399",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3531,
+              "end": 3560,
+              "quote_original": "ст. 397 и 399 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-044:УСТ:402:text:4750",
+      "statute": "УСТ ст. 402",
+      "code": "УСТ",
+      "article": "ст. 402",
+      "decision_id": "1905-044",
+      "year": 1905,
+      "decision_number": 44,
+      "field": "text",
+      "start": 4750,
+      "end": 4763,
+      "quote_original": "ст. 397 и 402",
+      "context_original": "центовъ и затѣмъ передастъ свое имущество, не скрывая таковаго, въ распоряженіе администраціи, которая и вступаетъ въ полныя права хозяина (ст. 397 и 402 уст. суд. торг.). Въ виду такого назначенія администраціи и условій учрежденія ея, торговый домъ, дѣла коего пришли въ упадокъ, вступивши в",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "af9b0186776ab624a9a621c0dc3be27cf8d9461cb89ba3b2b5f0d3a6ea4d91d4",
+      "headnote_sha256": "6db598b69f19556ef71b0a0097d339927fcc01c0335b88463657c2f5b3994cb8",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-044",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-044?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+402&law=1905-044%3A%D0%A3%D0%A1%D0%A2%3A402%3Atext%3A4750&at=4750&end=4763",
+      "source_warning": null,
+      "passage_id": "1905-044:2623-4781",
+      "sources": [
+        {
+          "page": 122,
+          "page_method": "header",
+          "file": "p0062_L.txt",
+          "start": 4750,
+          "end": 4763
+        }
+      ],
+      "printed_pages": [
+        122
+      ],
+      "scans": [
+        {
+          "file": "p0062_L.txt",
+          "page": 122,
+          "full": "scans/1905/pages/p0062_L.webp",
+          "width": 1100,
+          "height": 1540,
+          "ocr_sha256": "c8401cbe7011ebb6d885fe924035825e241709129a93ed1ad7375e9e653b5a33",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 4750,
+          "end": 4779,
+          "quote_original": "ст. 397 и 402 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4750,
+          "end": 4763,
+          "quote_original": "ст. 397 и 402",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4750,
+              "end": 4779,
+              "quote_original": "ст. 397 и 402 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-046:УСТ:413:text:2358",
+      "statute": "УСТ ст. 413",
+      "code": "УСТ",
+      "article": "ст. 413",
+      "decision_id": "1905-046",
+      "year": 1905,
+      "decision_number": 46,
+      "field": "text",
+      "start": 2358,
+      "end": 2371,
+      "quote_original": "ст. 413 и 515",
+      "context_original": "палатою въ своемъ рѣшеніи, Правительствующій Сенатъ находитъ: во 1-хъ, что оповѣщеніе кредиторовъ, примѣнительно къ порядку, указанному въ ст. 413 и 515 уст. суд. торг., не можетъ имѣть существеннаго значенія во всѣхъ тѣхъ случаяхъ, когда кредиторы, ходатайствующіе объ учрежденіи администрац",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "fdead428d498b224574e00af35c889fb5a8a66b89e3f4084f23bba06de3a9b96",
+      "headnote_sha256": "55183d05e32ab311e98c92bebc44e630e7f77b2a24922813889559897826bc88",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-046",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-046?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+413&law=1905-046%3A%D0%A3%D0%A1%D0%A2%3A413%3Atext%3A2358&at=2358&end=2371",
+      "source_warning": null,
+      "passage_id": "1905-046:1516-3620",
+      "sources": [
+        {
+          "page": 126,
+          "page_method": "header",
+          "file": "p0064_L.txt",
+          "start": 2358,
+          "end": 2371
+        }
+      ],
+      "printed_pages": [
+        126
+      ],
+      "scans": [
+        {
+          "file": "p0064_L.txt",
+          "page": 126,
+          "full": "scans/1905/pages/p0064_L.webp",
+          "width": 1100,
+          "height": 1514,
+          "ocr_sha256": "5850e61adbbb15c5ced7ae31186605b12f5c2fa356f6ddc227e0f316be57c379",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2358,
+          "end": 2387,
+          "quote_original": "ст. 413 и 515 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2358,
+          "end": 2371,
+          "quote_original": "ст. 413 и 515",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2358,
+              "end": 2387,
+              "quote_original": "ст. 413 и 515 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-011:УСТ:415:text:1703",
+      "statute": "УСТ ст. 415",
+      "code": "УСТ",
+      "article": "ст. 415",
+      "decision_id": "1904-011",
+      "year": 1904,
+      "decision_number": 11,
+      "field": "text",
+      "start": 1703,
+      "end": 1710,
+      "quote_original": "ст. 415",
+      "context_original": "тоятельный не лишается еще права на свое имущество, которое только берется подъ запрещеніе и арестъ, т.-е. онъ лишается права распоряженія (ст. 415), хозяиномъ массы, которому ввѣрено управленіе имуществомъ, дѣлается присяжный попечитель вмѣстѣ съ наличными заимодав- цами (ст. 428); они",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "be58b5e84c2a4b9bc590fb2e81cf14eb6d415dab1dcb5cfa9086b6ebabd71306",
+      "headnote_sha256": "fffd2b8cad4a471a5129fedc43d8fe09b77e3bbccf207b204819fa8efead9f3b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-011?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+415&law=1904-011%3A%D0%A3%D0%A1%D0%A2%3A415%3Atext%3A1703&at=1703&end=1710",
+      "source_warning": null,
+      "passage_id": "1904-011:0-1974",
+      "sources": [
+        {
+          "page": 32,
+          "page_method": "header",
+          "file": "p0017_L.txt",
+          "start": 1703,
+          "end": 1710
+        }
+      ],
+      "printed_pages": [
+        32
+      ],
+      "scans": [
+        {
+          "file": "p0017_L.txt",
+          "page": 32,
+          "full": "scans/1904/pages/p0017_L.webp",
+          "width": 1100,
+          "height": 1629,
+          "ocr_sha256": "fbed8d88c4cab02be1822f41d8c19cc8c6c33768275f09972a8a95a2a19bfb51",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 4804,
+          "end": 4817,
+          "quote_original": "415 — 11, 99.",
+          "heading": {
+            "start": 4682,
+            "end": 4728,
+            "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+          },
+          "edition_continuation": {
+            "line": 412,
+            "quote": "Тоже изд. 1903 г.",
+            "start": 4761,
+            "end": 4778
+          },
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1703,
+          "end": 1710,
+          "quote_original": "ст. 415",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 4804,
+              "end": 4817,
+              "quote_original": "415 — 11, 99.",
+              "heading": {
+                "start": 4682,
+                "end": 4728,
+                "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+              },
+              "edition_continuation": {
+                "line": 412,
+                "quote": "Тоже изд. 1903 г.",
+                "start": 4761,
+                "end": 4778
+              },
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-099:УСТ:416:text:9966",
+      "statute": "УСТ ст. 416",
+      "code": "УСТ",
+      "article": "ст. 416",
+      "decision_id": "1904-099",
+      "year": 1904,
+      "decision_number": 99,
+      "field": "text",
+      "start": 9966,
+      "end": 9973,
+      "quote_original": "ст. 416",
+      "context_original": "По приведеннымъ соображеніямъ Правительствующій Сенатъ, по выслушаніи заключенія товарища оберъ-прокурора, опредѣляетъ: по нарушенію ст. 416 уст. суд. торг. изд. 1903 г., ст. 1086 т. X ч. 1 и 21 уст. гр. суд., опредѣленіе Саратовской судебной палаты отмѣнить и передать дѣло на ра",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "de1b72c93f4e38427b4a72d6880a55693e3a84ed628bf4d6349b5c5092074313",
+      "headnote_sha256": "d35603be7c14a5ca16e9f9362583db75d55c71a1145b39f4095a8184a5d44ea8",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-099",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-099?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+416&law=1904-099%3A%D0%A3%D0%A1%D0%A2%3A416%3Atext%3A9966&at=9966&end=9973",
+      "source_warning": null,
+      "passage_id": "1904-099:9344-10169",
+      "sources": [
+        {
+          "page": 277,
+          "page_method": "header",
+          "file": "p0139_R.txt",
+          "start": 9966,
+          "end": 9973
+        }
+      ],
+      "printed_pages": [
+        277
+      ],
+      "scans": [
+        {
+          "file": "p0139_R.txt",
+          "page": 277,
+          "full": "scans/1904/pages/p0139_R.webp",
+          "width": 1100,
+          "height": 1621,
+          "ocr_sha256": "e3b16401b60752850d0c265f17f412714dfb2e0ea8095dabf8bf087bdef27c17",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 9966,
+          "end": 9989,
+          "quote_original": "ст. 416 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 9966,
+          "end": 9973,
+          "quote_original": "ст. 416",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 9966,
+              "end": 9989,
+              "quote_original": "ст. 416 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-011:УСТ:428:text:1837",
+      "statute": "УСТ ст. 428",
+      "code": "УСТ",
+      "article": "ст. 428",
+      "decision_id": "1904-011",
+      "year": 1904,
+      "decision_number": 11,
+      "field": "text",
+      "start": 1837,
+      "end": 1844,
+      "quote_original": "ст. 428",
+      "context_original": "енія (ст. 415), хозяиномъ массы, которому ввѣрено управленіе имуществомъ, дѣлается присяжный попечитель вмѣстѣ съ наличными заимодав- цами (ст. 428); они обязаны, между прочимъ, платить пошлины и отпускать на содержаніе несостоятельнаго и его семейства необходимо-нужную сумму. Изъ вышеи",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "be58b5e84c2a4b9bc590fb2e81cf14eb6d415dab1dcb5cfa9086b6ebabd71306",
+      "headnote_sha256": "fffd2b8cad4a471a5129fedc43d8fe09b77e3bbccf207b204819fa8efead9f3b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-011?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+428&law=1904-011%3A%D0%A3%D0%A1%D0%A2%3A428%3Atext%3A1837&at=1837&end=1844",
+      "source_warning": null,
+      "passage_id": "1904-011:0-1974",
+      "sources": [
+        {
+          "page": 33,
+          "page_method": "header",
+          "file": "p0017_R.txt",
+          "start": 1837,
+          "end": 1844
+        }
+      ],
+      "printed_pages": [
+        33
+      ],
+      "scans": [
+        {
+          "file": "p0017_R.txt",
+          "page": 33,
+          "full": "scans/1904/pages/p0017_R.webp",
+          "width": 1100,
+          "height": 1629,
+          "ocr_sha256": "d8ab25fc763f2ca52145afd95bcad4bae2cadcd396bd0881787eeedc743bb212",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 4833,
+          "end": 4846,
+          "quote_original": "428—430 — 11.",
+          "heading": {
+            "start": 4682,
+            "end": 4728,
+            "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+          },
+          "edition_continuation": {
+            "line": 412,
+            "quote": "Тоже изд. 1903 г.",
+            "start": 4761,
+            "end": 4778
+          },
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1837,
+          "end": 1844,
+          "quote_original": "ст. 428",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 4833,
+              "end": 4846,
+              "quote_original": "428—430 — 11.",
+              "heading": {
+                "start": 4682,
+                "end": 4728,
+                "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+              },
+              "edition_continuation": {
+                "line": 412,
+                "quote": "Тоже изд. 1903 г.",
+                "start": 4761,
+                "end": 4778
+              },
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-025:УСТ:43:text:1182",
+      "statute": "УСТ ст. 43",
+      "code": "УСТ",
+      "article": "ст. 43",
+      "decision_id": "1905-025",
+      "year": 1905,
+      "decision_number": 25,
+      "field": "text",
+      "start": 1182,
+      "end": 1188,
+      "quote_original": "ст. 43",
+      "context_original": "изд. 1900 г., а п. 3 ст. 57 того же устава. По заключенію съѣзда, сдѣлка 1 марта 1902 г. носитъ на себѣ всѣ признаки торговаго договора. По ст. 43 уст. суд. торг., а также по разъясненіямъ Правительствующаго Сената (касс. рѣш. 1872 г. № 288, 1874 г. № 761, 1882 г. № 23, 1884 г. № 69),",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "068d0ad9860f1beff5b8b95fae44d929a620cbe16c662ff572128a0f4e3e4732",
+      "headnote_sha256": "5bd6b0d9d3a5facc2541867a89271e77923c3592487eb5901429a05813d11cc3",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-025",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-025?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+43&law=1905-025%3A%D0%A3%D0%A1%D0%A2%3A43%3Atext%3A1182&at=1182&end=1188",
+      "source_warning": null,
+      "passage_id": "1905-025:0-1534",
+      "sources": [
+        {
+          "page": 64,
+          "page_method": "header",
+          "file": "p0033_L.txt",
+          "start": 1182,
+          "end": 1188
+        }
+      ],
+      "printed_pages": [
+        64
+      ],
+      "scans": [
+        {
+          "file": "p0033_L.txt",
+          "page": 64,
+          "full": "scans/1905/pages/p0033_L.webp",
+          "width": 1100,
+          "height": 1510,
+          "ocr_sha256": "7ffb3ccf72ef0b7a4d8ed713baf4bb3f4fc7f2d29a3757c7a2413e6780e5bb8f",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1182,
+          "end": 1204,
+          "quote_original": "ст. 43 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1182,
+          "end": 1188,
+          "quote_original": "ст. 43",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1182,
+              "end": 1204,
+              "quote_original": "ст. 43 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-022:УСТ:443:text:9125",
+      "statute": "УСТ ст. 443",
+      "code": "УСТ",
+      "article": "ст. 443",
+      "decision_id": "1904-022",
+      "year": 1904,
+      "decision_number": 22,
+      "field": "text",
+      "start": 9125,
+      "end": 9132,
+      "quote_original": "ст. 443",
+      "context_original": "рехъ, то конкурсъ не учреждается, а обязанности его исполняются тѣмъ судебнымъ мѣстомъ, подъ вѣдомствомъ коего открылась несостоятельность (ст. 443). Содержаніе приведенныхъ узаконеній показываетъ, что законъ предоставляетъ заимодавцамъ опредѣлять причины упадка дѣлъ несостоятельнаго и",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "652f24eadaa26d2406d5b9d38a0307c5964c0a6645cb2bc6f5d6b4410e51a461",
+      "headnote_sha256": "879a4dfea38af53e01c736f51881b65422ba66df657daff02025740e7a3b9e17",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-022",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-022?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+443&law=1904-022%3A%D0%A3%D0%A1%D0%A2%3A443%3Atext%3A9125&at=9125&end=9132",
+      "source_warning": null,
+      "passage_id": "1904-022:7444-9134",
+      "sources": [
+        {
+          "page": 56,
+          "page_method": "header",
+          "file": "p0029_L.txt",
+          "start": 9125,
+          "end": 9132
+        }
+      ],
+      "printed_pages": [
+        56
+      ],
+      "scans": [
+        {
+          "file": "p0029_L.txt",
+          "page": 56,
+          "full": "scans/1904/pages/p0029_L.webp",
+          "width": 1100,
+          "height": 1681,
+          "ocr_sha256": "e3ddd46d6e292796bcf90e50c177cd28dbec11499bf488f3927d7c0ae9c67eee",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 4888,
+          "end": 4897,
+          "quote_original": "443 — 22.",
+          "heading": {
+            "start": 4682,
+            "end": 4728,
+            "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+          },
+          "edition_continuation": {
+            "line": 412,
+            "quote": "Тоже изд. 1903 г.",
+            "start": 4761,
+            "end": 4778
+          },
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 9125,
+          "end": 9132,
+          "quote_original": "ст. 443",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 4888,
+              "end": 4897,
+              "quote_original": "443 — 22.",
+              "heading": {
+                "start": 4682,
+                "end": 4728,
+                "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+              },
+              "edition_continuation": {
+                "line": 412,
+                "quote": "Тоже изд. 1903 г.",
+                "start": 4761,
+                "end": 4778
+              },
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-072:УСТ:477:text:2597",
+      "statute": "УСТ ст. 477",
+      "code": "УСТ",
+      "article": "ст. 477",
+      "decision_id": "1904-072",
+      "year": 1904,
+      "decision_number": 72,
+      "field": "text",
+      "start": 2597,
+      "end": 2604,
+      "quote_original": "ст. 477",
+      "context_original": "бранію кредиторовъ несостоятельнаго. Поэтому и въ виду того, что дѣла о несостоятельности, согласно ст. 2 упомянутаго приложенія и прим. къ ст. 477 уст. суд. торг. изд. 1893 г., въ тѣхъ местностяхъ, гдѣ нѣтъ коммерческихъ судовъ, вѣдаются окружными судами, которымъ предоставленъ и высші",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "7d6eafed84ba4f4a4415ff4077d5588ac7887f8d3cf7ddfcaf6f0eca12253ea5",
+      "headnote_sha256": "76063a0a2978c1875c81183d6a5655ef539197805779f119f4d8b1e93a1c8f89",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-072",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-072?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+477&law=1904-072%3A%D0%A3%D0%A1%D0%A2%3A477%3Atext%3A2597&at=2597&end=2604",
+      "source_warning": null,
+      "passage_id": "1904-072:1796-3271",
+      "sources": [
+        {
+          "page": 205,
+          "page_method": "header",
+          "file": "p0103_R.txt",
+          "start": 2597,
+          "end": 2604
+        }
+      ],
+      "printed_pages": [
+        205
+      ],
+      "scans": [
+        {
+          "file": "p0103_R.txt",
+          "page": 205,
+          "full": "scans/1904/pages/p0103_R.webp",
+          "width": 1100,
+          "height": 1590,
+          "ocr_sha256": "a5405719f47bbfc16e95c224e384605afa1b293e68782cc0a78100b681ee4e7e",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2597,
+          "end": 2620,
+          "quote_original": "ст. 477 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2597,
+          "end": 2604,
+          "quote_original": "ст. 477",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2597,
+              "end": 2620,
+              "quote_original": "ст. 477 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-014:УСТ:480:text:5275",
+      "statute": "УСТ ст. 480",
+      "code": "УСТ",
+      "article": "ст. 480",
+      "decision_id": "1897-014",
+      "year": 1897,
+      "decision_number": 14,
+      "field": "text",
+      "start": 5275,
+      "end": 5293,
+      "quote_original": "ст. 480, 604 и 620",
+      "context_original": "ъ самимъ кредиторамъ имѣть въ семъ отношеніи попеченіе о своихъ интересахъ, пользуясь притомъ, какъ явствуетъ изъ указаній, содержащихся въ ст. 480, 604 и 620 уст. суд. торг., большимъ просторомъ, нежели конкурсное управленіе при составленіи имъ заключеній о причинахъ упадка должника. Признавать п",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "73b48469b14fe7eac451ff81880a629f81698622e5ddbe1fe642624e3ae002b6",
+      "headnote_sha256": "21ba2aa3f42c37d5b7e564825191951bfaecd8ab62914c10e1c381944196c437",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-014",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-014?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+480&law=1897-014%3A%D0%A3%D0%A1%D0%A2%3A480%3Atext%3A5275&at=5275&end=5293",
+      "source_warning": null,
+      "passage_id": "1897-014:4224-5880",
+      "sources": [
+        {
+          "page": 59,
+          "page_method": "header",
+          "file": "p0040_R.txt",
+          "start": 5275,
+          "end": 5293
+        }
+      ],
+      "printed_pages": [
+        59
+      ],
+      "scans": [
+        {
+          "file": "p0040_R.txt",
+          "page": 59,
+          "full": "scans/1897/pages/p0040_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1539,
+          "ocr_sha256": "7fe41753eb8f84814cf637679cb1610ceda3895ff0ccdadfd7800de7ee740913",
+          "pdf_page": 80,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 5275,
+          "end": 5309,
+          "quote_original": "ст. 480, 604 и 620 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5275,
+          "end": 5293,
+          "quote_original": "ст. 480, 604 и 620",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 5275,
+              "end": 5309,
+              "quote_original": "ст. 480, 604 и 620 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-014:УСТ:480–482:text:14701",
+      "statute": "УСТ ст. 480–482",
+      "code": "УСТ",
+      "article": "ст. 480–482",
+      "decision_id": "1897-014",
+      "year": 1897,
+      "decision_number": 14,
+      "field": "text",
+      "start": 14701,
+      "end": 14712,
+      "quote_original": "ст. 480—482",
+      "context_original": ", которыя предшествовали открытію упадка должника. Сужденіе это, однако, не можетъ быть признано правильнымъ и въ частности вытекающимъ изъ ст. 480—482 уст. суд. торг. Не представляется никакого законнаго основанія, при опредѣленіи свойства несостоятельности, не принимать въ соображеніе и с",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "73b48469b14fe7eac451ff81880a629f81698622e5ddbe1fe642624e3ae002b6",
+      "headnote_sha256": "21ba2aa3f42c37d5b7e564825191951bfaecd8ab62914c10e1c381944196c437",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-014",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-014?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+480%E2%80%93482&law=1897-014%3A%D0%A3%D0%A1%D0%A2%3A480%E2%80%93482%3Atext%3A14701&at=14701&end=14712",
+      "source_warning": null,
+      "passage_id": "1897-014:14299-16107",
+      "sources": [
+        {
+          "page": 62,
+          "page_method": "header",
+          "file": "p0042_L.txt",
+          "start": 14701,
+          "end": 14712
+        }
+      ],
+      "printed_pages": [
+        62
+      ],
+      "scans": [
+        {
+          "file": "p0042_L.txt",
+          "page": 62,
+          "full": "scans/1897/pages/p0042_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1572,
+          "ocr_sha256": "000d0793f3af000d1ab6e7017c552934cce800ca758ac449cae8debe4cfff50c",
+          "pdf_page": 83,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 14701,
+          "end": 14728,
+          "quote_original": "ст. 480—482 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 14701,
+          "end": 14712,
+          "quote_original": "ст. 480—482",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 14701,
+              "end": 14728,
+              "quote_original": "ст. 480—482 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-112:УСТ:488:text:1798",
+      "statute": "УСТ ст. 488",
+      "code": "УСТ",
+      "article": "ст. 488",
+      "decision_id": "1905-112",
+      "year": 1905,
+      "decision_number": 112,
+      "field": "text",
+      "start": 1798,
+      "end": 1805,
+      "quote_original": "ст. 488",
+      "context_original": "енія администраціи и открытія несостоятельности должника, въ обыкновенномъ порядкѣ взысканія или же въ конкурсномъ порядкѣ? Учреждаемая, по ст. 488 уст. суд. торг., по обширнымъ коммерческимъ и фабричнымъ дѣламъ, гдѣ существуютъ биржи, администрація управляетъ всѣми дѣлами должника согл",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "3124d977bbc7e0330885ed407c6315fef13e672a884274be0189c77fbdc63ed5",
+      "headnote_sha256": "1f1d7b65916869d527fbb12b932a5546a50691bc01cc08b2ba555c03d6448894",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-112",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-112?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+488&law=1905-112%3A%D0%A3%D0%A1%D0%A2%3A488%3Atext%3A1798&at=1798&end=1805",
+      "source_warning": null,
+      "passage_id": "1905-112:1464-3769",
+      "sources": [
+        {
+          "page": 306,
+          "page_method": "header",
+          "file": "p0154_L.txt",
+          "start": 1798,
+          "end": 1805
+        }
+      ],
+      "printed_pages": [
+        306
+      ],
+      "scans": [
+        {
+          "file": "p0154_L.txt",
+          "page": 306,
+          "full": "scans/1905/pages/p0154_L.webp",
+          "width": 1100,
+          "height": 1519,
+          "ocr_sha256": "3c8797dfbf92bc166e2d7edd8914bd6aaed708f2251810f5e181b4777bfaf3dd",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1798,
+          "end": 1821,
+          "quote_original": "ст. 488 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1798,
+          "end": 1805,
+          "quote_original": "ст. 488",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1798,
+              "end": 1821,
+              "quote_original": "ст. 488 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-100:УСТ:495:text:863",
+      "statute": "УСТ ст. 495",
+      "code": "УСТ",
+      "article": "ст. 495",
+      "decision_id": "1905-100",
+      "year": 1905,
+      "decision_number": 100,
+      "field": "text",
+      "start": 863,
+      "end": 870,
+      "quote_original": "ст. 495",
+      "context_original": "принесенной въ Правительствующій Сенатъ на такое опредѣленіе палаты кассаціонной жалобѣ повѣренный Эпштейна указываетъ на нарушеніе палатою ст. 495 уст. суд. торг. и примѣч. къ ней, 1545 т. X ч. 1 и 339 и 711 уст. гр. суд.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "f60d9f322ec1375a3e3cb51dbe786da89834a969727fcd24cf198d4ea9424d78",
+      "headnote_sha256": "24a2219a66a3e048a093c1f693cdeb99aa795b884d725408bced88c4740f9dce",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-100",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-100?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+495&law=1905-100%3A%D0%A3%D0%A1%D0%A2%3A495%3Atext%3A863&at=863&end=870",
+      "source_warning": null,
+      "passage_id": "1905-100:0-1763",
+      "sources": [
+        {
+          "page": 270,
+          "page_method": "header",
+          "file": "p0136_L.txt",
+          "start": 863,
+          "end": 870
+        }
+      ],
+      "printed_pages": [
+        270
+      ],
+      "scans": [
+        {
+          "file": "p0136_L.txt",
+          "page": 270,
+          "full": "scans/1905/pages/p0136_L.webp",
+          "width": 1100,
+          "height": 1510,
+          "ocr_sha256": "eb114cce7973dd72e22f36d50409651ec426ef39781b836ab85d0b03c8588d34",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 863,
+          "end": 886,
+          "quote_original": "ст. 495 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 863,
+          "end": 870,
+          "quote_original": "ст. 495",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 863,
+              "end": 886,
+              "quote_original": "ст. 495 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-099:УСТ:509:text:9522",
+      "statute": "УСТ ст. 509",
+      "code": "УСТ",
+      "article": "ст. 509",
+      "decision_id": "1904-099",
+      "year": 1904,
+      "decision_number": 99,
+      "field": "text",
+      "start": 9522,
+      "end": 9529,
+      "quote_original": "ст. 509",
+      "context_original": "дкѣ, ст. 966 уст. гр. суд. указанномъ. Въ виду изложеннаго, слѣдуетъ признать, что судебная палата неправильно примѣнила къ настоящему дѣлу ст. 509 уст. суд. торг. (по изд. 1903 г. ст. 416). Саратовская судебная палата, независимо отъ сего, нарушила еще и 21 ст. уст. гр. суд., признавъ,",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "de1b72c93f4e38427b4a72d6880a55693e3a84ed628bf4d6349b5c5092074313",
+      "headnote_sha256": "d35603be7c14a5ca16e9f9362583db75d55c71a1145b39f4095a8184a5d44ea8",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-099",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-099?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+509&law=1904-099%3A%D0%A3%D0%A1%D0%A2%3A509%3Atext%3A9522&at=9522&end=9529",
+      "source_warning": null,
+      "passage_id": "1904-099:7639-9572",
+      "sources": [
+        {
+          "page": 276,
+          "page_method": "header",
+          "file": "p0139_L.txt",
+          "start": 9522,
+          "end": 9529
+        }
+      ],
+      "printed_pages": [
+        276
+      ],
+      "scans": [
+        {
+          "file": "p0139_L.txt",
+          "page": 276,
+          "full": "scans/1904/pages/p0139_L.webp",
+          "width": 1100,
+          "height": 1621,
+          "ocr_sha256": "964186f1ed39b5bd9c02a8c10fbc7625818569f1c4b4d018844e8a03cf26f80c",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 9522,
+          "end": 9545,
+          "quote_original": "ст. 509 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 9522,
+          "end": 9529,
+          "quote_original": "ст. 509",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 9522,
+              "end": 9545,
+              "quote_original": "ст. 509 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-108:УСТ:509:text:4002",
+      "statute": "УСТ ст. 509",
+      "code": "УСТ",
+      "article": "ст. 509",
+      "decision_id": "1904-108",
+      "year": 1904,
+      "decision_number": 108,
+      "field": "text",
+      "start": 4002,
+      "end": 4020,
+      "quote_original": "ст. 509, 524 и 552",
+      "context_original": "управленія, долговыя претензіи должны быть только заявлены, а не классифицированы по роду и разряду, а также степени достовѣрности ихъ (ср. ст. 509, 524 и 552 уст. судопр. торг.); что въ такомъ общемъ собраніи принимаютъ участіе, какъ кредиторы по претензіямъ безспорнымъ, такъ и спорнымъ (ср. ст.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "cab131583feb8a551fb7edcffdf86563dcff94478c5ba2fe53ca6ad6b3a741de",
+      "headnote_sha256": "6839e4af1d0b5d101af493d67bad0bc8422dd8939d13419ece7cd124ab1c667a",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-108",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-108?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+509&law=1904-108%3A%D0%A3%D0%A1%D0%A2%3A509%3Atext%3A4002&at=4002&end=4020",
+      "source_warning": null,
+      "passage_id": "1904-108:2963-4725",
+      "sources": [
+        {
+          "page": 299,
+          "page_method": "header",
+          "file": "p0150_R.txt",
+          "start": 4002,
+          "end": 4020
+        }
+      ],
+      "printed_pages": [
+        299
+      ],
+      "scans": [
+        {
+          "file": "p0150_R.txt",
+          "page": 299,
+          "full": "scans/1904/pages/p0150_R.webp",
+          "width": 1100,
+          "height": 1630,
+          "ocr_sha256": "4d8a332ac4bc3be28d9953ff8d8223466279efe0b3fc4ba84ea177a97ec6ad07",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 4002,
+          "end": 4039,
+          "quote_original": "ст. 509, 524 и 552 уст. судопр. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4002,
+          "end": 4020,
+          "quote_original": "ст. 509, 524 и 552",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4002,
+              "end": 4039,
+              "quote_original": "ст. 509, 524 и 552 уст. судопр. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-046:УСТ:515:text:2358",
+      "statute": "УСТ ст. 515",
+      "code": "УСТ",
+      "article": "ст. 515",
+      "decision_id": "1905-046",
+      "year": 1905,
+      "decision_number": 46,
+      "field": "text",
+      "start": 2358,
+      "end": 2371,
+      "quote_original": "ст. 413 и 515",
+      "context_original": "палатою въ своемъ рѣшеніи, Правительствующій Сенатъ находитъ: во 1-хъ, что оповѣщеніе кредиторовъ, примѣнительно къ порядку, указанному въ ст. 413 и 515 уст. суд. торг., не можетъ имѣть существеннаго значенія во всѣхъ тѣхъ случаяхъ, когда кредиторы, ходатайствующіе объ учрежденіи администрац",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "fdead428d498b224574e00af35c889fb5a8a66b89e3f4084f23bba06de3a9b96",
+      "headnote_sha256": "55183d05e32ab311e98c92bebc44e630e7f77b2a24922813889559897826bc88",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-046",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-046?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+515&law=1905-046%3A%D0%A3%D0%A1%D0%A2%3A515%3Atext%3A2358&at=2358&end=2371",
+      "source_warning": null,
+      "passage_id": "1905-046:1516-3620",
+      "sources": [
+        {
+          "page": 126,
+          "page_method": "header",
+          "file": "p0064_L.txt",
+          "start": 2358,
+          "end": 2371
+        }
+      ],
+      "printed_pages": [
+        126
+      ],
+      "scans": [
+        {
+          "file": "p0064_L.txt",
+          "page": 126,
+          "full": "scans/1905/pages/p0064_L.webp",
+          "width": 1100,
+          "height": 1514,
+          "ocr_sha256": "5850e61adbbb15c5ced7ae31186605b12f5c2fa356f6ddc227e0f316be57c379",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2358,
+          "end": 2387,
+          "quote_original": "ст. 413 и 515 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2358,
+          "end": 2371,
+          "quote_original": "ст. 413 и 515",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2358,
+              "end": 2387,
+              "quote_original": "ст. 413 и 515 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-022:УСТ:518:text:6596",
+      "statute": "УСТ ст. 518",
+      "code": "УСТ",
+      "article": "ст. 518",
+      "decision_id": "1904-022",
+      "year": 1904,
+      "decision_number": 22,
+      "field": "text",
+      "start": 6596,
+      "end": 6603,
+      "quote_original": "ст. 518",
+      "context_original": "т. суд. торг., изд. 1903 г., ст. 511). Заключеніе свое о причинахъ упадка конкурсное управленіе представляетъ общему собранію заимодавцевъ (ст. 518). Общее собраніе, разсмотрѣвъ мнѣніе конкурснаго управленія о причинахъ упадка и сообразивъ оное съ обстоятельствами, постановляетъ о свойс",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "652f24eadaa26d2406d5b9d38a0307c5964c0a6645cb2bc6f5d6b4410e51a461",
+      "headnote_sha256": "879a4dfea38af53e01c736f51881b65422ba66df657daff02025740e7a3b9e17",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-022",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-022?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+518&law=1904-022%3A%D0%A3%D0%A1%D0%A2%3A518%3Atext%3A6596&at=6596&end=6603",
+      "source_warning": null,
+      "passage_id": "1904-022:5807-7718",
+      "sources": [
+        {
+          "page": 55,
+          "page_method": "header",
+          "file": "p0028_R.txt",
+          "start": 6596,
+          "end": 6603
+        }
+      ],
+      "printed_pages": [
+        55
+      ],
+      "scans": [
+        {
+          "file": "p0028_R.txt",
+          "page": 55,
+          "full": "scans/1904/pages/p0028_R.webp",
+          "width": 1100,
+          "height": 1640,
+          "ocr_sha256": "a281a50aea8a258978b5aa2ae241a6315b414daa13912554e12d7d5d0c08fd7d",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 4963,
+          "end": 4977,
+          "quote_original": "511, 518 — 22.",
+          "heading": {
+            "start": 4682,
+            "end": 4728,
+            "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+          },
+          "edition_continuation": {
+            "line": 412,
+            "quote": "Тоже изд. 1903 г.",
+            "start": 4761,
+            "end": 4778
+          },
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 6596,
+          "end": 6603,
+          "quote_original": "ст. 518",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 4963,
+              "end": 4977,
+              "quote_original": "511, 518 — 22.",
+              "heading": {
+                "start": 4682,
+                "end": 4728,
+                "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+              },
+              "edition_continuation": {
+                "line": 412,
+                "quote": "Тоже изд. 1903 г.",
+                "start": 4761,
+                "end": 4778
+              },
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-108:УСТ:524:text:4002",
+      "statute": "УСТ ст. 524",
+      "code": "УСТ",
+      "article": "ст. 524",
+      "decision_id": "1904-108",
+      "year": 1904,
+      "decision_number": 108,
+      "field": "text",
+      "start": 4002,
+      "end": 4020,
+      "quote_original": "ст. 509, 524 и 552",
+      "context_original": "управленія, долговыя претензіи должны быть только заявлены, а не классифицированы по роду и разряду, а также степени достовѣрности ихъ (ср. ст. 509, 524 и 552 уст. судопр. торг.); что въ такомъ общемъ собраніи принимаютъ участіе, какъ кредиторы по претензіямъ безспорнымъ, такъ и спорнымъ (ср. ст.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "cab131583feb8a551fb7edcffdf86563dcff94478c5ba2fe53ca6ad6b3a741de",
+      "headnote_sha256": "6839e4af1d0b5d101af493d67bad0bc8422dd8939d13419ece7cd124ab1c667a",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-108",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-108?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+524&law=1904-108%3A%D0%A3%D0%A1%D0%A2%3A524%3Atext%3A4002&at=4002&end=4020",
+      "source_warning": null,
+      "passage_id": "1904-108:2963-4725",
+      "sources": [
+        {
+          "page": 299,
+          "page_method": "header",
+          "file": "p0150_R.txt",
+          "start": 4002,
+          "end": 4020
+        }
+      ],
+      "printed_pages": [
+        299
+      ],
+      "scans": [
+        {
+          "file": "p0150_R.txt",
+          "page": 299,
+          "full": "scans/1904/pages/p0150_R.webp",
+          "width": 1100,
+          "height": 1630,
+          "ocr_sha256": "4d8a332ac4bc3be28d9953ff8d8223466279efe0b3fc4ba84ea177a97ec6ad07",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 4002,
+          "end": 4039,
+          "quote_original": "ст. 509, 524 и 552 уст. судопр. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4002,
+          "end": 4020,
+          "quote_original": "ст. 509, 524 и 552",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4002,
+              "end": 4039,
+              "quote_original": "ст. 509, 524 и 552 уст. судопр. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-022:УСТ:527:text:6791",
+      "statute": "УСТ ст. 527",
+      "code": "УСТ",
+      "article": "ст. 527",
+      "decision_id": "1904-022",
+      "year": 1904,
+      "decision_number": 22,
+      "field": "text",
+      "start": 6791,
+      "end": 6798,
+      "quote_original": "ст. 527",
+      "context_original": "о управленія о причинахъ упадка и сообразивъ оное съ обстоятельствами, постановляетъ о свойствѣ несостоятельности окончательное заключеніе (ст. 527). Всѣ постановленія общаго заимодавцевъ собранія о свойствѣ несостоятельности представляются на разсмотрѣніе подлежащаго суда и, съ утвержд",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "652f24eadaa26d2406d5b9d38a0307c5964c0a6645cb2bc6f5d6b4410e51a461",
+      "headnote_sha256": "879a4dfea38af53e01c736f51881b65422ba66df657daff02025740e7a3b9e17",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-022",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-022?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+527&law=1904-022%3A%D0%A3%D0%A1%D0%A2%3A527%3Atext%3A6791&at=6791&end=6798",
+      "source_warning": null,
+      "passage_id": "1904-022:5807-7718",
+      "sources": [
+        {
+          "page": 55,
+          "page_method": "header",
+          "file": "p0028_R.txt",
+          "start": 6791,
+          "end": 6798
+        }
+      ],
+      "printed_pages": [
+        55
+      ],
+      "scans": [
+        {
+          "file": "p0028_R.txt",
+          "page": 55,
+          "full": "scans/1904/pages/p0028_R.webp",
+          "width": 1100,
+          "height": 1640,
+          "ocr_sha256": "a281a50aea8a258978b5aa2ae241a6315b414daa13912554e12d7d5d0c08fd7d",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 5011,
+          "end": 5025,
+          "quote_original": "527, 528 — 22.",
+          "heading": {
+            "start": 4682,
+            "end": 4728,
+            "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+          },
+          "edition_continuation": {
+            "line": 412,
+            "quote": "Тоже изд. 1903 г.",
+            "start": 4761,
+            "end": 4778
+          },
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 6791,
+          "end": 6798,
+          "quote_original": "ст. 527",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 5011,
+              "end": 5025,
+              "quote_original": "527, 528 — 22.",
+              "heading": {
+                "start": 4682,
+                "end": 4728,
+                "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+              },
+              "edition_continuation": {
+                "line": 412,
+                "quote": "Тоже изд. 1903 г.",
+                "start": 4761,
+                "end": 4778
+              },
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-022:УСТ:528:text:8351",
+      "statute": "УСТ ст. 528",
+      "code": "УСТ",
+      "article": "ст. 528",
+      "decision_id": "1904-022",
+      "year": 1904,
+      "decision_number": 22,
+      "field": "text",
+      "start": 8351,
+      "end": 8358,
+      "quote_original": "ст. 528",
+      "context_original": "рса, собраніе можетъ при распредѣленіи платежей предоставить въ пользу его и семейства его такую часть имущества, какую признаетъ за благо (ст. 528). Послѣдствія неосторожной несостоятельности, или простаго банкротства, суть: 1) продолженіе заключенія банкрота подъ стражею отъ 8 мѣсяцев",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "652f24eadaa26d2406d5b9d38a0307c5964c0a6645cb2bc6f5d6b4410e51a461",
+      "headnote_sha256": "879a4dfea38af53e01c736f51881b65422ba66df657daff02025740e7a3b9e17",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-022",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-022?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+528&law=1904-022%3A%D0%A3%D0%A1%D0%A2%3A528%3Atext%3A8351&at=8351&end=8358",
+      "source_warning": null,
+      "passage_id": "1904-022:7444-9134",
+      "sources": [
+        {
+          "page": 55,
+          "page_method": "header",
+          "file": "p0028_R.txt",
+          "start": 8351,
+          "end": 8358
+        }
+      ],
+      "printed_pages": [
+        55
+      ],
+      "scans": [
+        {
+          "file": "p0028_R.txt",
+          "page": 55,
+          "full": "scans/1904/pages/p0028_R.webp",
+          "width": 1100,
+          "height": 1640,
+          "ocr_sha256": "a281a50aea8a258978b5aa2ae241a6315b414daa13912554e12d7d5d0c08fd7d",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 5011,
+          "end": 5025,
+          "quote_original": "527, 528 — 22.",
+          "heading": {
+            "start": 4682,
+            "end": 4728,
+            "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+          },
+          "edition_continuation": {
+            "line": 412,
+            "quote": "Тоже изд. 1903 г.",
+            "start": 4761,
+            "end": 4778
+          },
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8351,
+          "end": 8358,
+          "quote_original": "ст. 528",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 5011,
+              "end": 5025,
+              "quote_original": "527, 528 — 22.",
+              "heading": {
+                "start": 4682,
+                "end": 4728,
+                "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+              },
+              "edition_continuation": {
+                "line": 412,
+                "quote": "Тоже изд. 1903 г.",
+                "start": 4761,
+                "end": 4778
+              },
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-011:УСТ:529:text:1074",
+      "statute": "УСТ ст. 529",
+      "code": "УСТ",
+      "article": "ст. 529",
+      "decision_id": "1904-011",
+      "year": 1904,
+      "decision_number": 11,
+      "field": "text",
+      "start": 1074,
+      "end": 1081,
+      "quote_original": "ст. 529",
+      "context_original": "ли представлять кассаціонный залогъ лицо, признанное несостоятельнымъ должникомъ неосторожнымъ съ послѣдствіями по ст. 622 уст. суд. торг. (ст. 529 по изд. 1903 г.), причемъ вопросъ этотъ разрѣшенъ отрицательно потому, что, по ст. 623 (ст. 530), такое лицо лишается всякаго имущества и д",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "be58b5e84c2a4b9bc590fb2e81cf14eb6d415dab1dcb5cfa9086b6ebabd71306",
+      "headnote_sha256": "fffd2b8cad4a471a5129fedc43d8fe09b77e3bbccf207b204819fa8efead9f3b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-011?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+529&law=1904-011%3A%D0%A3%D0%A1%D0%A2%3A529%3Atext%3A1074&at=1074&end=1081",
+      "source_warning": null,
+      "passage_id": "1904-011:0-1974",
+      "sources": [
+        {
+          "page": 32,
+          "page_method": "header",
+          "file": "p0017_L.txt",
+          "start": 1074,
+          "end": 1081
+        }
+      ],
+      "printed_pages": [
+        32
+      ],
+      "scans": [
+        {
+          "file": "p0017_L.txt",
+          "page": 32,
+          "full": "scans/1904/pages/p0017_L.webp",
+          "width": 1100,
+          "height": 1629,
+          "ocr_sha256": "fbed8d88c4cab02be1822f41d8c19cc8c6c33768275f09972a8a95a2a19bfb51",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1057,
+          "end": 1081,
+          "quote_original": "уст. суд. торг. (ст. 529",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1074,
+          "end": 1081,
+          "quote_original": "ст. 529",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1057,
+              "end": 1081,
+              "quote_original": "уст. суд. торг. (ст. 529",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-022:УСТ:529:text:8583",
+      "statute": "УСТ ст. 529",
+      "code": "УСТ",
+      "article": "ст. 529",
+      "decision_id": "1904-022",
+      "year": 1904,
+      "decision_number": 22,
+      "field": "text",
+      "start": 8583,
+      "end": 8590,
+      "quote_original": "ст. 529",
+      "context_original": "долженіе заключенія банкрота подъ стражею отъ 8 мѣсяцевъ до 1 года и 4 мѣсяцевъ, по усмотрѣнію заимодавцевъ; 2) лишеніе его правъ торговли (ст. 529). Между тѣмъ, если впослѣдствіи дойдетъ къ неосторожному несостоятельному должнику какое либо имущество по наслѣдству, дару, или инымъ обра",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "652f24eadaa26d2406d5b9d38a0307c5964c0a6645cb2bc6f5d6b4410e51a461",
+      "headnote_sha256": "879a4dfea38af53e01c736f51881b65422ba66df657daff02025740e7a3b9e17",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-022",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-022?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+529&law=1904-022%3A%D0%A3%D0%A1%D0%A2%3A529%3Atext%3A8583&at=8583&end=8590",
+      "source_warning": null,
+      "passage_id": "1904-022:7444-9134",
+      "sources": [
+        {
+          "page": 56,
+          "page_method": "header",
+          "file": "p0029_L.txt",
+          "start": 8583,
+          "end": 8590
+        }
+      ],
+      "printed_pages": [
+        56
+      ],
+      "scans": [
+        {
+          "file": "p0029_L.txt",
+          "page": 56,
+          "full": "scans/1904/pages/p0029_L.webp",
+          "width": 1100,
+          "height": 1681,
+          "ocr_sha256": "e3ddd46d6e292796bcf90e50c177cd28dbec11499bf488f3927d7c0ae9c67eee",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 5026,
+          "end": 5044,
+          "quote_original": "529, 530 — 11, 22.",
+          "heading": {
+            "start": 4682,
+            "end": 4728,
+            "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+          },
+          "edition_continuation": {
+            "line": 412,
+            "quote": "Тоже изд. 1903 г.",
+            "start": 4761,
+            "end": 4778
+          },
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8583,
+          "end": 8590,
+          "quote_original": "ст. 529",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 5026,
+              "end": 5044,
+              "quote_original": "529, 530 — 11, 22.",
+              "heading": {
+                "start": 4682,
+                "end": 4728,
+                "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+              },
+              "edition_continuation": {
+                "line": 412,
+                "quote": "Тоже изд. 1903 г.",
+                "start": 4761,
+                "end": 4778
+              },
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-011:УСТ:530:text:1170",
+      "statute": "УСТ ст. 530",
+      "code": "УСТ",
+      "article": "ст. 530",
+      "decision_id": "1904-011",
+      "year": 1904,
+      "decision_number": 11,
+      "field": "text",
+      "start": 1170,
+      "end": 1177,
+      "quote_original": "ст. 530",
+      "context_original": "ъ послѣдствіями по ст. 622 уст. суд. торг. (ст. 529 по изд. 1903 г.), причемъ вопросъ этотъ разрѣшенъ отрицательно потому, что, по ст. 623 (ст. 530), такое лицо лишается всякаго имущества и даже возможности пріобрѣсти что либо, такъ какъ „если дойдетъ какое-либо имущество по наслѣдству,",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "be58b5e84c2a4b9bc590fb2e81cf14eb6d415dab1dcb5cfa9086b6ebabd71306",
+      "headnote_sha256": "fffd2b8cad4a471a5129fedc43d8fe09b77e3bbccf207b204819fa8efead9f3b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-011?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+530&law=1904-011%3A%D0%A3%D0%A1%D0%A2%3A530%3Atext%3A1170&at=1170&end=1177",
+      "source_warning": null,
+      "passage_id": "1904-011:0-1974",
+      "sources": [
+        {
+          "page": 32,
+          "page_method": "header",
+          "file": "p0017_L.txt",
+          "start": 1170,
+          "end": 1177
+        }
+      ],
+      "printed_pages": [
+        32
+      ],
+      "scans": [
+        {
+          "file": "p0017_L.txt",
+          "page": 32,
+          "full": "scans/1904/pages/p0017_L.webp",
+          "width": 1100,
+          "height": 1629,
+          "ocr_sha256": "fbed8d88c4cab02be1822f41d8c19cc8c6c33768275f09972a8a95a2a19bfb51",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 5026,
+          "end": 5044,
+          "quote_original": "529, 530 — 11, 22.",
+          "heading": {
+            "start": 4682,
+            "end": 4728,
+            "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+          },
+          "edition_continuation": {
+            "line": 412,
+            "quote": "Тоже изд. 1903 г.",
+            "start": 4761,
+            "end": 4778
+          },
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1170,
+          "end": 1177,
+          "quote_original": "ст. 530",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 5026,
+              "end": 5044,
+              "quote_original": "529, 530 — 11, 22.",
+              "heading": {
+                "start": 4682,
+                "end": 4728,
+                "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+              },
+              "edition_continuation": {
+                "line": 412,
+                "quote": "Тоже изд. 1903 г.",
+                "start": 4761,
+                "end": 4778
+              },
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-022:УСТ:530:text:8889",
+      "statute": "УСТ ст. 530",
+      "code": "УСТ",
+      "article": "ст. 530",
+      "decision_id": "1904-022",
+      "year": 1904,
+      "decision_number": 22,
+      "field": "text",
+      "start": 8889,
+      "end": 8896,
+      "quote_original": "ст. 530",
+      "context_original": "полна обращается на удовлетвореніе прежнихъ долговъ его, въ конкурсъ вступившихъ, предпочтительно всѣмъ новымъ, какого бы рода они ни были (ст. 530). По объявленіи несостоятельности, если число наличныхъ заимодавцевъ составляетъ менѣе трехъ, то конкурсъ не учреждается, а обязанности его",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "652f24eadaa26d2406d5b9d38a0307c5964c0a6645cb2bc6f5d6b4410e51a461",
+      "headnote_sha256": "879a4dfea38af53e01c736f51881b65422ba66df657daff02025740e7a3b9e17",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-022",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-022?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+530&law=1904-022%3A%D0%A3%D0%A1%D0%A2%3A530%3Atext%3A8889&at=8889&end=8896",
+      "source_warning": null,
+      "passage_id": "1904-022:7444-9134",
+      "sources": [
+        {
+          "page": 56,
+          "page_method": "header",
+          "file": "p0029_L.txt",
+          "start": 8889,
+          "end": 8896
+        }
+      ],
+      "printed_pages": [
+        56
+      ],
+      "scans": [
+        {
+          "file": "p0029_L.txt",
+          "page": 56,
+          "full": "scans/1904/pages/p0029_L.webp",
+          "width": 1100,
+          "height": 1681,
+          "ocr_sha256": "e3ddd46d6e292796bcf90e50c177cd28dbec11499bf488f3927d7c0ae9c67eee",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 5026,
+          "end": 5044,
+          "quote_original": "529, 530 — 11, 22.",
+          "heading": {
+            "start": 4682,
+            "end": 4728,
+            "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+          },
+          "edition_continuation": {
+            "line": 412,
+            "quote": "Тоже изд. 1903 г.",
+            "start": 4761,
+            "end": 4778
+          },
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8889,
+          "end": 8896,
+          "quote_original": "ст. 530",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 5026,
+              "end": 5044,
+              "quote_original": "529, 530 — 11, 22.",
+              "heading": {
+                "start": 4682,
+                "end": 4728,
+                "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+              },
+              "edition_continuation": {
+                "line": 412,
+                "quote": "Тоже изд. 1903 г.",
+                "start": 4761,
+                "end": 4778
+              },
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-050:УСТ:531:text:4763",
+      "statute": "УСТ ст. 531",
+      "code": "УСТ",
+      "article": "ст. 531",
+      "decision_id": "1897-050",
+      "year": 1897,
+      "decision_number": 50,
+      "field": "text",
+      "start": 4763,
+      "end": 4770,
+      "quote_original": "ст. 531",
+      "context_original": "стоинствомъ Ликвидаціонной коммиссіи, какъ присутственнаго мѣста, составляющаго по дѣламъ ему ввѣреннымъ нижнюю степень коммерческаго суда (ст. 531 уст. суд. торг.), ни даже съ интересами самихъ участниковъ ликвидируемаго общества, на которыхъ неизбѣжно пали бы всѣ немаловажные расходы,",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "d8dda6464ea4655dbfe3ab66642b3b8ff1c703253539299b3a12ee4077645c79",
+      "headnote_sha256": "7d7051a7b71244dc75c0edae8be7e3b1bb861839c9b066789c46fe2aa553798d",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-050",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-050?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+531&law=1897-050%3A%D0%A3%D0%A1%D0%A2%3A531%3Atext%3A4763&at=4763&end=4770",
+      "source_warning": null,
+      "passage_id": "1897-050:3102-4978",
+      "sources": [
+        {
+          "page": 166,
+          "page_method": "header",
+          "file": "p0094_L.txt",
+          "start": 4763,
+          "end": 4770
+        }
+      ],
+      "printed_pages": [
+        166
+      ],
+      "scans": [
+        {
+          "file": "p0094_L.txt",
+          "page": 166,
+          "full": "scans/1897/pages/p0094_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1544,
+          "ocr_sha256": "e2db17160c653ffcbfd7bf2e9d4e7f99c78a5d6130a58a20ea363ecda617580c",
+          "pdf_page": 187,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 4763,
+          "end": 4786,
+          "quote_original": "ст. 531 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4763,
+          "end": 4770,
+          "quote_original": "ст. 531",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4763,
+              "end": 4786,
+              "quote_original": "ст. 531 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-072:УСТ:531:text:1487",
+      "statute": "УСТ ст. 531",
+      "code": "УСТ",
+      "article": "ст. 531",
+      "decision_id": "1904-072",
+      "year": 1904,
+      "decision_number": 72,
+      "field": "text",
+      "start": 1487,
+      "end": 1504,
+      "quote_original": "ст. 531, 538, 542",
+      "context_original": "лжно быть принято во вниманіе и удобство надзора самого суда, какъ инстанціи высшей въ отношеніи конкурснаго управленія, суду подчиненнаго (ст. 531, 538, 542 уст. суд. торг.), и что, въ виду отъѣзда за границу несостоятельнаго и того обстоятельства, что претензіи Града и Веллера куплены ими послѣ",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "7d6eafed84ba4f4a4415ff4077d5588ac7887f8d3cf7ddfcaf6f0eca12253ea5",
+      "headnote_sha256": "76063a0a2978c1875c81183d6a5655ef539197805779f119f4d8b1e93a1c8f89",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-072",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-072?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+531&law=1904-072%3A%D0%A3%D0%A1%D0%A2%3A531%3Atext%3A1487&at=1487&end=1504",
+      "source_warning": null,
+      "passage_id": "1904-072:0-2126",
+      "sources": [
+        {
+          "page": 205,
+          "page_method": "header",
+          "file": "p0103_R.txt",
+          "start": 1487,
+          "end": 1504
+        }
+      ],
+      "printed_pages": [
+        205
+      ],
+      "scans": [
+        {
+          "file": "p0103_R.txt",
+          "page": 205,
+          "full": "scans/1904/pages/p0103_R.webp",
+          "width": 1100,
+          "height": 1590,
+          "ocr_sha256": "a5405719f47bbfc16e95c224e384605afa1b293e68782cc0a78100b681ee4e7e",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1487,
+          "end": 1520,
+          "quote_original": "ст. 531, 538, 542 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1487,
+          "end": 1504,
+          "quote_original": "ст. 531, 538, 542",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1487,
+              "end": 1520,
+              "quote_original": "ст. 531, 538, 542 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-022:УСТ:532:text:6974",
+      "statute": "УСТ ст. 532",
+      "code": "УСТ",
+      "article": "ст. 532",
+      "decision_id": "1904-022",
+      "year": 1904,
+      "decision_number": 22,
+      "field": "text",
+      "start": 6974,
+      "end": 6981,
+      "quote_original": "ст. 532",
+      "context_original": "цевъ собранія о свойствѣ несостоятельности представляются на разсмотрѣніе подлежащаго суда и, съ утвержденія его, приводятся въ исполненіе (ст. 532). Несостоятельность есть несчастная, когда должникъ приведенъ будетъ въ неоплатность не собственною своею виною, но стеченіемъ обстоятельст",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "652f24eadaa26d2406d5b9d38a0307c5964c0a6645cb2bc6f5d6b4410e51a461",
+      "headnote_sha256": "879a4dfea38af53e01c736f51881b65422ba66df657daff02025740e7a3b9e17",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-022",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-022?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+532&law=1904-022%3A%D0%A3%D0%A1%D0%A2%3A532%3Atext%3A6974&at=6974&end=6981",
+      "source_warning": null,
+      "passage_id": "1904-022:5807-7718",
+      "sources": [
+        {
+          "page": 55,
+          "page_method": "header",
+          "file": "p0028_R.txt",
+          "start": 6974,
+          "end": 6981
+        }
+      ],
+      "printed_pages": [
+        55
+      ],
+      "scans": [
+        {
+          "file": "p0028_R.txt",
+          "page": 55,
+          "full": "scans/1904/pages/p0028_R.webp",
+          "width": 1100,
+          "height": 1640,
+          "ocr_sha256": "a281a50aea8a258978b5aa2ae241a6315b414daa13912554e12d7d5d0c08fd7d",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 5045,
+          "end": 5054,
+          "quote_original": "532 — 22.",
+          "heading": {
+            "start": 4682,
+            "end": 4728,
+            "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+          },
+          "edition_continuation": {
+            "line": 412,
+            "quote": "Тоже изд. 1903 г.",
+            "start": 4761,
+            "end": 4778
+          },
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 6974,
+          "end": 6981,
+          "quote_original": "ст. 532",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 5045,
+              "end": 5054,
+              "quote_original": "532 — 22.",
+              "heading": {
+                "start": 4682,
+                "end": 4728,
+                "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+              },
+              "edition_continuation": {
+                "line": 412,
+                "quote": "Тоже изд. 1903 г.",
+                "start": 4761,
+                "end": 4778
+              },
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-014:УСТ:538:text:10003",
+      "statute": "УСТ ст. 538",
+      "code": "УСТ",
+      "article": "ст. 538",
+      "decision_id": "1897-014",
+      "year": 1897,
+      "decision_number": 14,
+      "field": "text",
+      "start": 10003,
+      "end": 10016,
+      "quote_original": "ст. 538 и 539",
+      "context_original": "угой мѣры, которую сей послѣдній, въ силу предоставленной ему по закону блюстительной надъ конкурсными управленіями власти (уст. суд. торг. ст. 538 и 539; уст. гражд. суд. ст. 1400 прим., прил. III, I, ст. 16), могъ бы принять по отношенію къ управленію или отдѣльнымъ членамъ его. Въ виду изл",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "73b48469b14fe7eac451ff81880a629f81698622e5ddbe1fe642624e3ae002b6",
+      "headnote_sha256": "21ba2aa3f42c37d5b7e564825191951bfaecd8ab62914c10e1c381944196c437",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-014",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-014?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+538&law=1897-014%3A%D0%A3%D0%A1%D0%A2%3A538%3Atext%3A10003&at=10003&end=10016",
+      "source_warning": null,
+      "passage_id": "1897-014:8541-10144",
+      "sources": [
+        {
+          "page": 60,
+          "page_method": "header",
+          "file": "p0041_L.txt",
+          "start": 10003,
+          "end": 10016
+        }
+      ],
+      "printed_pages": [
+        60
+      ],
+      "scans": [
+        {
+          "file": "p0041_L.txt",
+          "page": 60,
+          "full": "scans/1897/pages/p0041_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1592,
+          "ocr_sha256": "e380ead248993f3fe63e2847a3712ac800405cfb573ad7ba6a13e8c0a8adb8b1",
+          "pdf_page": 81,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 9987,
+          "end": 10016,
+          "quote_original": "уст. суд. торг. ст. 538 и 539",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 10003,
+          "end": 10016,
+          "quote_original": "ст. 538 и 539",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 9987,
+              "end": 10016,
+              "quote_original": "уст. суд. торг. ст. 538 и 539",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-072:УСТ:538:text:1487",
+      "statute": "УСТ ст. 538",
+      "code": "УСТ",
+      "article": "ст. 538",
+      "decision_id": "1904-072",
+      "year": 1904,
+      "decision_number": 72,
+      "field": "text",
+      "start": 1487,
+      "end": 1504,
+      "quote_original": "ст. 531, 538, 542",
+      "context_original": "лжно быть принято во вниманіе и удобство надзора самого суда, какъ инстанціи высшей въ отношеніи конкурснаго управленія, суду подчиненнаго (ст. 531, 538, 542 уст. суд. торг.), и что, въ виду отъѣзда за границу несостоятельнаго и того обстоятельства, что претензіи Града и Веллера куплены ими послѣ",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "7d6eafed84ba4f4a4415ff4077d5588ac7887f8d3cf7ddfcaf6f0eca12253ea5",
+      "headnote_sha256": "76063a0a2978c1875c81183d6a5655ef539197805779f119f4d8b1e93a1c8f89",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-072",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-072?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+538&law=1904-072%3A%D0%A3%D0%A1%D0%A2%3A538%3Atext%3A1487&at=1487&end=1504",
+      "source_warning": null,
+      "passage_id": "1904-072:0-2126",
+      "sources": [
+        {
+          "page": 205,
+          "page_method": "header",
+          "file": "p0103_R.txt",
+          "start": 1487,
+          "end": 1504
+        }
+      ],
+      "printed_pages": [
+        205
+      ],
+      "scans": [
+        {
+          "file": "p0103_R.txt",
+          "page": 205,
+          "full": "scans/1904/pages/p0103_R.webp",
+          "width": 1100,
+          "height": 1590,
+          "ocr_sha256": "a5405719f47bbfc16e95c224e384605afa1b293e68782cc0a78100b681ee4e7e",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1487,
+          "end": 1520,
+          "quote_original": "ст. 531, 538, 542 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1487,
+          "end": 1504,
+          "quote_original": "ст. 531, 538, 542",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1487,
+              "end": 1520,
+              "quote_original": "ст. 531, 538, 542 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-072:УСТ:542:text:1487",
+      "statute": "УСТ ст. 542",
+      "code": "УСТ",
+      "article": "ст. 542",
+      "decision_id": "1904-072",
+      "year": 1904,
+      "decision_number": 72,
+      "field": "text",
+      "start": 1487,
+      "end": 1504,
+      "quote_original": "ст. 531, 538, 542",
+      "context_original": "лжно быть принято во вниманіе и удобство надзора самого суда, какъ инстанціи высшей въ отношеніи конкурснаго управленія, суду подчиненнаго (ст. 531, 538, 542 уст. суд. торг.), и что, въ виду отъѣзда за границу несостоятельнаго и того обстоятельства, что претензіи Града и Веллера куплены ими послѣ",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "7d6eafed84ba4f4a4415ff4077d5588ac7887f8d3cf7ddfcaf6f0eca12253ea5",
+      "headnote_sha256": "76063a0a2978c1875c81183d6a5655ef539197805779f119f4d8b1e93a1c8f89",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-072",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-072?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+542&law=1904-072%3A%D0%A3%D0%A1%D0%A2%3A542%3Atext%3A1487&at=1487&end=1504",
+      "source_warning": null,
+      "passage_id": "1904-072:0-2126",
+      "sources": [
+        {
+          "page": 205,
+          "page_method": "header",
+          "file": "p0103_R.txt",
+          "start": 1487,
+          "end": 1504
+        }
+      ],
+      "printed_pages": [
+        205
+      ],
+      "scans": [
+        {
+          "file": "p0103_R.txt",
+          "page": 205,
+          "full": "scans/1904/pages/p0103_R.webp",
+          "width": 1100,
+          "height": 1590,
+          "ocr_sha256": "a5405719f47bbfc16e95c224e384605afa1b293e68782cc0a78100b681ee4e7e",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1487,
+          "end": 1520,
+          "quote_original": "ст. 531, 538, 542 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1487,
+          "end": 1504,
+          "quote_original": "ст. 531, 538, 542",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1487,
+              "end": 1520,
+              "quote_original": "ст. 531, 538, 542 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-045:УСТ:552:text:1376",
+      "statute": "УСТ ст. 552",
+      "code": "УСТ",
+      "article": "ст. 552",
+      "decision_id": "1897-045",
+      "year": 1897,
+      "decision_number": 45,
+      "field": "text",
+      "start": 1376,
+      "end": 1383,
+      "quote_original": "ст. 552",
+      "context_original": "Выслушавъ заключеніе товарища оберъ-прокурора, Правительствующій Сенатъ находитъ, что по опредѣленію закона (ст. 552 уст. суд. торг.), конкурсное управленіе завѣдываетъ дѣлами несостоятельнаго въ качествѣ уполномоченнаго отъ всѣхъ заимодавцевъ. Такимъ обра",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b54dd4c476acf2129e70820c4d5a13b22e1c6bdd3fe0f7b3221dc47953fa4e4e",
+      "headnote_sha256": "0bca57d0d651978fa288a7ad1bffd95464bf99f830f133b277275e3d5616d6d0",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-045",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-045?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+552&law=1897-045%3A%D0%A3%D0%A1%D0%A2%3A552%3Atext%3A1376&at=1376&end=1383",
+      "source_warning": null,
+      "passage_id": "1897-045:0-1660",
+      "sources": [
+        {
+          "page": 155,
+          "page_method": "header",
+          "file": "p0088_R.txt",
+          "start": 1376,
+          "end": 1383
+        }
+      ],
+      "printed_pages": [
+        155
+      ],
+      "scans": [
+        {
+          "file": "p0088_R.txt",
+          "page": 155,
+          "full": "scans/1897/pages/p0088_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1486,
+          "ocr_sha256": "f78a705768ec008cb9e6093eeed8c94e7db5548602e172d6a1636c2948ce8289",
+          "pdf_page": 176,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1376,
+          "end": 1399,
+          "quote_original": "ст. 552 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1376,
+          "end": 1383,
+          "quote_original": "ст. 552",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1376,
+              "end": 1399,
+              "quote_original": "ст. 552 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-108:УСТ:552:text:4002",
+      "statute": "УСТ ст. 552",
+      "code": "УСТ",
+      "article": "ст. 552",
+      "decision_id": "1904-108",
+      "year": 1904,
+      "decision_number": 108,
+      "field": "text",
+      "start": 4002,
+      "end": 4020,
+      "quote_original": "ст. 509, 524 и 552",
+      "context_original": "управленія, долговыя претензіи должны быть только заявлены, а не классифицированы по роду и разряду, а также степени достовѣрности ихъ (ср. ст. 509, 524 и 552 уст. судопр. торг.); что въ такомъ общемъ собраніи принимаютъ участіе, какъ кредиторы по претензіямъ безспорнымъ, такъ и спорнымъ (ср. ст.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "cab131583feb8a551fb7edcffdf86563dcff94478c5ba2fe53ca6ad6b3a741de",
+      "headnote_sha256": "6839e4af1d0b5d101af493d67bad0bc8422dd8939d13419ece7cd124ab1c667a",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-108",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-108?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+552&law=1904-108%3A%D0%A3%D0%A1%D0%A2%3A552%3Atext%3A4002&at=4002&end=4020",
+      "source_warning": null,
+      "passage_id": "1904-108:2963-4725",
+      "sources": [
+        {
+          "page": 299,
+          "page_method": "header",
+          "file": "p0150_R.txt",
+          "start": 4002,
+          "end": 4020
+        }
+      ],
+      "printed_pages": [
+        299
+      ],
+      "scans": [
+        {
+          "file": "p0150_R.txt",
+          "page": 299,
+          "full": "scans/1904/pages/p0150_R.webp",
+          "width": 1100,
+          "height": 1630,
+          "ocr_sha256": "4d8a332ac4bc3be28d9953ff8d8223466279efe0b3fc4ba84ea177a97ec6ad07",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 4002,
+          "end": 4039,
+          "quote_original": "ст. 509, 524 и 552 уст. судопр. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4002,
+          "end": 4020,
+          "quote_original": "ст. 509, 524 и 552",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4002,
+              "end": 4039,
+              "quote_original": "ст. 509, 524 и 552 уст. судопр. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-080:УСТ:572:text:2444",
+      "statute": "УСТ ст. 572",
+      "code": "УСТ",
+      "article": "ст. 572",
+      "decision_id": "1897-080",
+      "year": 1897,
+      "decision_number": 80,
+      "field": "text",
+      "start": 2444,
+      "end": 2451,
+      "quote_original": "ст. 572",
+      "context_original": "Гражд. 1897 г. 17* ихъ въ распоряженіе конкурснаго управленія (ст. 572 уст. суд. торг.). Искъ баронессы Таубе основанъ на нарушеніи залоговаго права ея продажею заложенныхъ лѣсныхъ матеріаловъ не Пальмеромъ, а",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "d3013323920ac5410c4e352f2c6cea72b5770af3bb2d1646d4ab04fddbad4ad6",
+      "headnote_sha256": "ae3420a30800a1cd396831b0c67e824387425686ef36b02c76ed7c551c51860e",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-080",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-080?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+572&law=1897-080%3A%D0%A3%D0%A1%D0%A2%3A572%3Atext%3A2444&at=2444&end=2451",
+      "source_warning": null,
+      "passage_id": "1897-080:1510-3186",
+      "sources": [
+        {
+          "page": 260,
+          "page_method": "header",
+          "file": "p0141_L.txt",
+          "start": 2444,
+          "end": 2451
+        }
+      ],
+      "printed_pages": [
+        260
+      ],
+      "scans": [
+        {
+          "file": "p0141_L.txt",
+          "page": 260,
+          "full": "scans/1897/pages/p0141_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1551,
+          "ocr_sha256": "5d1e4e30f09d47a4516545b374f1eff95a07e82aed35207d880dde6e9156e019",
+          "pdf_page": 281,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2444,
+          "end": 2467,
+          "quote_original": "ст. 572 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2444,
+          "end": 2451,
+          "quote_original": "ст. 572",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2444,
+              "end": 2467,
+              "quote_original": "ст. 572 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-014:УСТ:604:text:5275",
+      "statute": "УСТ ст. 604",
+      "code": "УСТ",
+      "article": "ст. 604",
+      "decision_id": "1897-014",
+      "year": 1897,
+      "decision_number": 14,
+      "field": "text",
+      "start": 5275,
+      "end": 5293,
+      "quote_original": "ст. 480, 604 и 620",
+      "context_original": "ъ самимъ кредиторамъ имѣть въ семъ отношеніи попеченіе о своихъ интересахъ, пользуясь притомъ, какъ явствуетъ изъ указаній, содержащихся въ ст. 480, 604 и 620 уст. суд. торг., большимъ просторомъ, нежели конкурсное управленіе при составленіи имъ заключеній о причинахъ упадка должника. Признавать п",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "73b48469b14fe7eac451ff81880a629f81698622e5ddbe1fe642624e3ae002b6",
+      "headnote_sha256": "21ba2aa3f42c37d5b7e564825191951bfaecd8ab62914c10e1c381944196c437",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-014",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-014?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+604&law=1897-014%3A%D0%A3%D0%A1%D0%A2%3A604%3Atext%3A5275&at=5275&end=5293",
+      "source_warning": null,
+      "passage_id": "1897-014:4224-5880",
+      "sources": [
+        {
+          "page": 59,
+          "page_method": "header",
+          "file": "p0040_R.txt",
+          "start": 5275,
+          "end": 5293
+        }
+      ],
+      "printed_pages": [
+        59
+      ],
+      "scans": [
+        {
+          "file": "p0040_R.txt",
+          "page": 59,
+          "full": "scans/1897/pages/p0040_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1539,
+          "ocr_sha256": "7fe41753eb8f84814cf637679cb1610ceda3895ff0ccdadfd7800de7ee740913",
+          "pdf_page": 80,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 5275,
+          "end": 5309,
+          "quote_original": "ст. 480, 604 и 620 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5275,
+          "end": 5293,
+          "quote_original": "ст. 480, 604 и 620",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 5275,
+              "end": 5309,
+              "quote_original": "ст. 480, 604 и 620 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-014:УСТ:620:text:5275",
+      "statute": "УСТ ст. 620",
+      "code": "УСТ",
+      "article": "ст. 620",
+      "decision_id": "1897-014",
+      "year": 1897,
+      "decision_number": 14,
+      "field": "text",
+      "start": 5275,
+      "end": 5293,
+      "quote_original": "ст. 480, 604 и 620",
+      "context_original": "ъ самимъ кредиторамъ имѣть въ семъ отношеніи попеченіе о своихъ интересахъ, пользуясь притомъ, какъ явствуетъ изъ указаній, содержащихся въ ст. 480, 604 и 620 уст. суд. торг., большимъ просторомъ, нежели конкурсное управленіе при составленіи имъ заключеній о причинахъ упадка должника. Признавать п",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "73b48469b14fe7eac451ff81880a629f81698622e5ddbe1fe642624e3ae002b6",
+      "headnote_sha256": "21ba2aa3f42c37d5b7e564825191951bfaecd8ab62914c10e1c381944196c437",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-014",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-014?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+620&law=1897-014%3A%D0%A3%D0%A1%D0%A2%3A620%3Atext%3A5275&at=5275&end=5293",
+      "source_warning": null,
+      "passage_id": "1897-014:4224-5880",
+      "sources": [
+        {
+          "page": 59,
+          "page_method": "header",
+          "file": "p0040_R.txt",
+          "start": 5275,
+          "end": 5293
+        }
+      ],
+      "printed_pages": [
+        59
+      ],
+      "scans": [
+        {
+          "file": "p0040_R.txt",
+          "page": 59,
+          "full": "scans/1897/pages/p0040_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1539,
+          "ocr_sha256": "7fe41753eb8f84814cf637679cb1610ceda3895ff0ccdadfd7800de7ee740913",
+          "pdf_page": 80,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 5275,
+          "end": 5309,
+          "quote_original": "ст. 480, 604 и 620 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5275,
+          "end": 5293,
+          "quote_original": "ст. 480, 604 и 620",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 5275,
+              "end": 5309,
+              "quote_original": "ст. 480, 604 и 620 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-011:УСТ:622:text:1049",
+      "statute": "УСТ ст. 622",
+      "code": "УСТ",
+      "article": "ст. 622",
+      "decision_id": "1904-011",
+      "year": 1904,
+      "decision_number": 11,
+      "field": "text",
+      "start": 1049,
+      "end": 1056,
+      "quote_original": "ст. 622",
+      "context_original": "вопросъ о томъ, обязано ли представлять кассаціонный залогъ лицо, признанное несостоятельнымъ должникомъ неосторожнымъ съ послѣдствіями по ст. 622 уст. суд. торг. (ст. 529 по изд. 1903 г.), причемъ вопросъ этотъ разрѣшенъ отрицательно потому, что, по ст. 623 (ст. 530), такое лицо лишае",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "be58b5e84c2a4b9bc590fb2e81cf14eb6d415dab1dcb5cfa9086b6ebabd71306",
+      "headnote_sha256": "fffd2b8cad4a471a5129fedc43d8fe09b77e3bbccf207b204819fa8efead9f3b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-011?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+622&law=1904-011%3A%D0%A3%D0%A1%D0%A2%3A622%3Atext%3A1049&at=1049&end=1056",
+      "source_warning": null,
+      "passage_id": "1904-011:0-1974",
+      "sources": [
+        {
+          "page": 32,
+          "page_method": "header",
+          "file": "p0017_L.txt",
+          "start": 1049,
+          "end": 1056
+        }
+      ],
+      "printed_pages": [
+        32
+      ],
+      "scans": [
+        {
+          "file": "p0017_L.txt",
+          "page": 32,
+          "full": "scans/1904/pages/p0017_L.webp",
+          "width": 1100,
+          "height": 1629,
+          "ocr_sha256": "fbed8d88c4cab02be1822f41d8c19cc8c6c33768275f09972a8a95a2a19bfb51",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1049,
+          "end": 1072,
+          "quote_original": "ст. 622 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1049,
+          "end": 1056,
+          "quote_original": "ст. 622",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1049,
+              "end": 1072,
+              "quote_original": "ст. 622 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-011:УСТ:623:text:1161",
+      "statute": "УСТ ст. 623",
+      "code": "УСТ",
+      "article": "ст. 623",
+      "decision_id": "1904-011",
+      "year": 1904,
+      "decision_number": 11,
+      "field": "text",
+      "start": 1161,
+      "end": 1168,
+      "quote_original": "ст. 623",
+      "context_original": "рожнымъ съ послѣдствіями по ст. 622 уст. суд. торг. (ст. 529 по изд. 1903 г.), причемъ вопросъ этотъ разрѣшенъ отрицательно потому, что, по ст. 623 (ст. 530), такое лицо лишается всякаго имущества и даже возможности пріобрѣсти что либо, такъ какъ „если дойдетъ какое-либо имущество по на",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "be58b5e84c2a4b9bc590fb2e81cf14eb6d415dab1dcb5cfa9086b6ebabd71306",
+      "headnote_sha256": "fffd2b8cad4a471a5129fedc43d8fe09b77e3bbccf207b204819fa8efead9f3b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-011?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+623&law=1904-011%3A%D0%A3%D0%A1%D0%A2%3A623%3Atext%3A1161&at=1161&end=1168",
+      "source_warning": null,
+      "passage_id": "1904-011:0-1974",
+      "sources": [
+        {
+          "page": 32,
+          "page_method": "header",
+          "file": "p0017_L.txt",
+          "start": 1161,
+          "end": 1168
+        }
+      ],
+      "printed_pages": [
+        32
+      ],
+      "scans": [
+        {
+          "file": "p0017_L.txt",
+          "page": 32,
+          "full": "scans/1904/pages/p0017_L.webp",
+          "width": 1100,
+          "height": 1629,
+          "ocr_sha256": "fbed8d88c4cab02be1822f41d8c19cc8c6c33768275f09972a8a95a2a19bfb51",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 4740,
+          "end": 4759,
+          "quote_original": "523, 622, 623 — 11.",
+          "heading": {
+            "start": 4682,
+            "end": 4728,
+            "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+          },
+          "edition_continuation": null,
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1161,
+          "end": 1168,
+          "quote_original": "ст. 623",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 4740,
+              "end": 4759,
+              "quote_original": "523, 622, 623 — 11.",
+              "heading": {
+                "start": 4682,
+                "end": 4728,
+                "quote_original": "Уставъ судопроизводства торговаго изд. 1893 г."
+              },
+              "edition_continuation": null,
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-014:УСТ:642:text:9375",
+      "statute": "УСТ ст. 642",
+      "code": "УСТ",
+      "article": "ст. 642",
+      "decision_id": "1897-014",
+      "year": 1897,
+      "decision_number": 14,
+      "field": "text",
+      "start": 9375,
+      "end": 9382,
+      "quote_original": "ст. 642",
+      "context_original": "ъ окончаніи возложеннаго на него временнаго труда по производству дѣла о несостоятельности, такъ и въ скорѣйшемъ полученіи опредѣленнаго въ ст. 642 уст. суд. торг. вознагражденія и пріобрѣтеніи льготъ, предоставленныхъ слѣдующею 643 ст. за скорое окончаніе конкурснаго дѣла. Наконецъ, об",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "73b48469b14fe7eac451ff81880a629f81698622e5ddbe1fe642624e3ae002b6",
+      "headnote_sha256": "21ba2aa3f42c37d5b7e564825191951bfaecd8ab62914c10e1c381944196c437",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-014",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-014?mode=laws&c=%D0%A3%D0%A1%D0%A2&q=%D1%81%D1%82.+642&law=1897-014%3A%D0%A3%D0%A1%D0%A2%3A642%3Atext%3A9375&at=9375&end=9382",
+      "source_warning": null,
+      "passage_id": "1897-014:8541-10144",
+      "sources": [
+        {
+          "page": 60,
+          "page_method": "header",
+          "file": "p0041_L.txt",
+          "start": 9375,
+          "end": 9382
+        }
+      ],
+      "printed_pages": [
+        60
+      ],
+      "scans": [
+        {
+          "file": "p0041_L.txt",
+          "page": 60,
+          "full": "scans/1897/pages/p0041_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1592,
+          "ocr_sha256": "e380ead248993f3fe63e2847a3712ac800405cfb573ad7ba6a13e8c0a8adb8b1",
+          "pdf_page": 81,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 9375,
+          "end": 9398,
+          "quote_original": "ст. 642 уст. суд. торг.",
+          "act_code": "УСТ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 9375,
+          "end": 9382,
+          "quote_original": "ст. 642",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 9375,
+              "end": 9398,
+              "quote_original": "ст. 642 уст. суд. торг.",
+              "act_code": "УСТ"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

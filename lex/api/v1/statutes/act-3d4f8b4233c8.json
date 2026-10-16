@@ -1,24 +1,14 @@
 {
   "api_version": "v1",
-  "contract_version": "1.4.0",
-  "data_revision": "sha256:6ac98d54af90894c26d5b151ea6fa7560f3c59eb9c7573bdfa175192587860d6",
+  "contract_version": "1.5.0",
+  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
   "resource": "statutes",
   "scope": {
     "code": "УЖД",
     "id": "act-3d4f8b4233c8"
   },
-  "count": 42,
+  "count": 43,
   "items": [
-    {
-      "statute": "УЖД ст. 21",
-      "code": "УЖД",
-      "article": "ст. 21",
-      "mentions": 1,
-      "decision_id": "1896-029",
-      "year": 1896,
-      "decision_number": 29,
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-029"
-    },
     {
       "statute": "УЖД ст. 55",
       "code": "УЖД",
@@ -33,11 +23,31 @@
       "statute": "УЖД ст. 153",
       "code": "УЖД",
       "article": "ст. 153",
-      "mentions": 3,
+      "mentions": 4,
       "decision_id": "1897-019",
       "year": 1897,
       "decision_number": 19,
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-019"
+    },
+    {
+      "statute": "УЖД ст. 127",
+      "code": "УЖД",
+      "article": "ст. 127",
+      "mentions": 1,
+      "decision_id": "1897-042",
+      "year": 1897,
+      "decision_number": 42,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-042"
+    },
+    {
+      "statute": "УЖД ст. 128",
+      "code": "УЖД",
+      "article": "ст. 128",
+      "mentions": 1,
+      "decision_id": "1897-042",
+      "year": 1897,
+      "decision_number": 42,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-042"
     },
     {
       "statute": "УЖД ст. 68",
@@ -83,7 +93,7 @@
       "statute": "УЖД ст. 110",
       "code": "УЖД",
       "article": "ст. 110",
-      "mentions": 2,
+      "mentions": 3,
       "decision_id": "1904-030",
       "year": 1904,
       "decision_number": 30,
@@ -120,16 +130,6 @@
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060"
     },
     {
-      "statute": "УЖД ст. 409",
-      "code": "УЖД",
-      "article": "ст. 409",
-      "mentions": 1,
-      "decision_id": "1904-091",
-      "year": 1904,
-      "decision_number": 91,
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-091"
-    },
-    {
       "statute": "УЖД ст. 80",
       "code": "УЖД",
       "article": "ст. 80",
@@ -158,6 +158,16 @@
       "year": 1904,
       "decision_number": 93,
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-093"
+    },
+    {
+      "statute": "УЖД ст. 138",
+      "code": "УЖД",
+      "article": "ст. 138",
+      "mentions": 1,
+      "decision_id": "1904-100",
+      "year": 1904,
+      "decision_number": 100,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-100"
     },
     {
       "statute": "УЖД ст. 135",
@@ -213,16 +223,16 @@
       "statute": "УЖД ст. 51",
       "code": "УЖД",
       "article": "ст. 51",
-      "mentions": 2,
+      "mentions": 4,
       "decision_id": "1904-106",
       "year": 1904,
       "decision_number": 106,
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-106"
     },
     {
-      "statute": "УЖД ст. 81",
+      "statute": "УЖД ст. 52",
       "code": "УЖД",
-      "article": "ст. 81",
+      "article": "ст. 52",
       "mentions": 1,
       "decision_id": "1904-106",
       "year": 1904,
@@ -350,6 +360,16 @@
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-062"
     },
     {
+      "statute": "УЖД ст. 49",
+      "code": "УЖД",
+      "article": "ст. 49",
+      "mentions": 1,
+      "decision_id": "1905-064",
+      "year": 1905,
+      "decision_number": 64,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-064"
+    },
+    {
       "statute": "УЖД ст. 69",
       "code": "УЖД",
       "article": "ст. 69",
@@ -383,16 +403,6 @@
       "statute": "УЖД ст. 109",
       "code": "УЖД",
       "article": "ст. 109",
-      "mentions": 1,
-      "decision_id": "1905-090",
-      "year": 1905,
-      "decision_number": 90,
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-090"
-    },
-    {
-      "statute": "УЖД ст. 258",
-      "code": "УЖД",
-      "article": "ст. 258",
       "mentions": 1,
       "decision_id": "1905-090",
       "year": 1905,

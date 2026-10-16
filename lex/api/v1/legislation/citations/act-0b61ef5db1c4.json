@@ -1,0 +1,260 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.5.0",
+  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "resource": "legislation-citations",
+  "scope": {
+    "code": "ЗС",
+    "id": "act-0b61ef5db1c4"
+  },
+  "count": 3,
+  "items": [
+    {
+      "id": "1897-065:ЗС:1093:text:7656",
+      "statute": "ЗС ст. 1093",
+      "code": "ЗС",
+      "article": "ст. 1093",
+      "decision_id": "1897-065",
+      "year": 1897,
+      "decision_number": 65,
+      "field": "text",
+      "start": 7656,
+      "end": 7664,
+      "quote_original": "ст. 1093",
+      "context_original": "ю къ раскольникамъ, для коихъ внесеніе событія брака въ метрическія книги необязательно, а зависитъ отъ ихъ желанія (ст. 11 и 16 прилож. къ ст. 1093 зак. о сост. изд. 1876 г.). Введенныя правилами 19 апрѣля 1874 года метрическія книги имѣютъ цѣлью только регистрацію браковъ и рожденій у",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "c8ca1cf9840bd59db111d04a61d174d177f739b172683d462ac96958b9866076",
+      "headnote_sha256": "79b730f4a3f2ae6b7747666528ed501fcc4fb54222f1ce5b03f5e9c42cd069fd",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-065",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-065?mode=laws&c=%D0%97%D0%A1&q=%D1%81%D1%82.+1093&law=1897-065%3A%D0%97%D0%A1%3A1093%3Atext%3A7656&at=7656&end=7664",
+      "source_warning": null,
+      "passage_id": "1897-065:6602-8159",
+      "sources": [
+        {
+          "page": 215,
+          "page_method": "header",
+          "file": "p0118_R.txt",
+          "start": 7656,
+          "end": 7664
+        }
+      ],
+      "printed_pages": [
+        215
+      ],
+      "scans": [
+        {
+          "file": "p0118_R.txt",
+          "page": 215,
+          "full": "scans/1897/pages/p0118_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1525,
+          "ocr_sha256": "5f40107b12da50e817a888fa9d3882ae7c68cbf5ce2c3cb4ff7972a466e6e99d",
+          "pdf_page": 236,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 7656,
+          "end": 7677,
+          "quote_original": "ст. 1093 зак. о сост.",
+          "act_code": "ЗС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7656,
+          "end": 7664,
+          "quote_original": "ст. 1093",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 7656,
+              "end": 7677,
+              "quote_original": "ст. 1093 зак. о сост.",
+              "act_code": "ЗС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-012:ЗС:413:text:6667",
+      "statute": "ЗС ст. 413",
+      "code": "ЗС",
+      "article": "ст. 413",
+      "decision_id": "1897-012",
+      "year": 1897,
+      "decision_number": 12,
+      "field": "text",
+      "start": 6667,
+      "end": 6674,
+      "quote_original": "ст. 413",
+      "context_original": "овленія денежныхъ капиталовъ. То обстоятельство, что умершій Вассіанъ, имѣвшій санъ игумена, принадлежалъ къ числу монашествующихъ властей (ст. 413 т. IX зак. сост.), не измѣ- няетъ изложенныхъ выше выводовъ; ибо дѣйствіе общаго правила закона (1025 и 1186 ст. I ч. X т.), дозволяющаго м",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "3df28d76e171f2013a7de5fcf354d639a8e11a33a538591bd41312ef53b0de87",
+      "headnote_sha256": "01eae0dc085a5a22fb8ff14b3dcb10d74c6218b57b705a151e2eb7c8d8486011",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-012",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-012?mode=laws&c=%D0%97%D0%A1&q=%D1%81%D1%82.+413&law=1897-012%3A%D0%97%D0%A1%3A413%3Atext%3A6667&at=6667&end=6674",
+      "source_warning": null,
+      "passage_id": "1897-012:5844-7582",
+      "sources": [
+        {
+          "page": 55,
+          "page_method": "header",
+          "file": "p0038_R.txt",
+          "start": 6667,
+          "end": 6674
+        }
+      ],
+      "printed_pages": [
+        55
+      ],
+      "scans": [
+        {
+          "file": "p0038_R.txt",
+          "page": 55,
+          "full": "scans/1897/pages/p0038_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1561,
+          "ocr_sha256": "12a8abc833b78a2e9454703ae5af8e997d9df4aace7a5bcad9f7de5910e63a51",
+          "pdf_page": 76,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1897.txt",
+          "source_sha256": "942b1330f3c0919f3d97ce8b33f6499c064fb061ba4669c0f2a9bbcab05dc60b",
+          "start": 1287,
+          "end": 1300,
+          "quote_original": "394 и 413 12.",
+          "heading": {
+            "start": 1230,
+            "end": 1251,
+            "quote_original": "Законы о состояніяхъ."
+          },
+          "edition_continuation": null,
+          "act_code": "ЗС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 6667,
+          "end": 6674,
+          "quote_original": "ст. 413",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1897.txt",
+              "source_sha256": "942b1330f3c0919f3d97ce8b33f6499c064fb061ba4669c0f2a9bbcab05dc60b",
+              "start": 1287,
+              "end": 1300,
+              "quote_original": "394 и 413 12.",
+              "heading": {
+                "start": 1230,
+                "end": 1251,
+                "quote_original": "Законы о состояніяхъ."
+              },
+              "edition_continuation": null,
+              "act_code": "ЗС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-095:ЗС:780:text:2158",
+      "statute": "ЗС ст. 780",
+      "code": "ЗС",
+      "article": "ст. 780",
+      "decision_id": "1905-095",
+      "year": 1905,
+      "decision_number": 95,
+      "field": "text",
+      "start": 2158,
+      "end": 2165,
+      "quote_original": "ст. 780",
+      "context_original": "ленія ихъ въ купеческія гильдіи и съ предоставленіемъ имъ правъ, для евреевъ русскихъ подданныхъ установленныхъ“. А такъ какъ, на основаніи ст. 780 зак. о сост., евреи, русскіе подданные, вездѣ, гдѣ имъ дозволено постоянное пребываніе, могутъ пріобрѣтать недвижимую собственность, то отс",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "a8b06a6b6d2c359f93b0d1535d1ad54cc864bbe0bc82afa09977e0d4929ffea4",
+      "headnote_sha256": "d08204976cb159aa3c23b5eac839800333c002ba25dcf64edd4daa5e5537ae95",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-095",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-095?mode=laws&c=%D0%97%D0%A1&q=%D1%81%D1%82.+780&law=1905-095%3A%D0%97%D0%A1%3A780%3Atext%3A2158&at=2158&end=2165",
+      "source_warning": null,
+      "passage_id": "1905-095:1165-3038",
+      "sources": [
+        {
+          "page": 259,
+          "page_method": "header",
+          "file": "p0130_R.txt",
+          "start": 2158,
+          "end": 2165
+        }
+      ],
+      "printed_pages": [
+        259
+      ],
+      "scans": [
+        {
+          "file": "p0130_R.txt",
+          "page": 259,
+          "full": "scans/1905/pages/p0130_R.webp",
+          "width": 1100,
+          "height": 1595,
+          "ocr_sha256": "e39abfd53a12ac247bc21c2a23f7e819860ec6bba5c03ff661157dcae0e8d7aa",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2158,
+          "end": 2178,
+          "quote_original": "ст. 780 зак. о сост.",
+          "act_code": "ЗС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2158,
+          "end": 2165,
+          "quote_original": "ст. 780",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2158,
+              "end": 2178,
+              "quote_original": "ст. 780 зак. о сост.",
+              "act_code": "ЗС"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

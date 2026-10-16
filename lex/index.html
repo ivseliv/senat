@@ -138,6 +138,12 @@ dl.meta dt { font-size: 12px; color: var(--ink2); } dl.meta dd { margin: 0; }
 .law-citations { max-height: 420px; overflow: auto; padding-right: 6px; }
 .law-quote { font: 15px/1.45 var(--serif); margin: 3px 0; }
 .law-note { margin-top: 16px; }
+.law-citation,.law-proof {overflow-wrap:anywhere;min-width:0;}
+.law-status {margin:6px 0;}
+.law-proof .source-quote {max-height:260px;overflow:auto;}
+.law-pagination {display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:12px;}
+.law-pagination p {margin:0;}
+.law-grid>.map-node {min-width:0;}
 .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; min-width: 0; }
 .panel h3 { margin: 0 0 4px; font-size: 16px; }
 .bars { display: grid; gap: 4px; margin-top: 10px; }
@@ -263,7 +269,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
       <select id="laws-code" aria-label="Исторический акт"><option value="">Все акты</option></select>
       <button class="btn" type="submit">Найти</button><button class="btn ghost" id="laws-reset" type="button">Сбросить</button>
     </form>
-    <p class="muted small">Указатель показывает, на какие нормы ссылался Сенат в доступных томах. Название акта сверено с историческими источниками; номер статьи извлечён из OCR, поэтому рядом всегда остаются буквальная цитата, решение и путь к скану.</p>
+    <p class="muted small">Указатель показывает упоминания норм в доступных решениях, включая доводы сторон и нижестоящих судов. Привязки с буквальным основанием, прежние непроверенные и ссылки без установленного акта отмечены отдельно. Номер взят из OCR; редакция и текст статьи здесь не удостоверяются.</p>
     <div id="laws-status" aria-live="polite"></div><div id="laws-results"></div>
   </section>
 

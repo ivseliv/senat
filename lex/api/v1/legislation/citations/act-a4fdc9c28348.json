@@ -1,754 +1,1880 @@
 {
   "api_version": "v1",
-  "contract_version": "1.4.0",
-  "data_revision": "sha256:6ac98d54af90894c26d5b151ea6fa7560f3c59eb9c7573bdfa175192587860d6",
+  "contract_version": "1.5.0",
+  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
   "resource": "legislation-citations",
   "scope": {
     "code": "УН",
     "id": "act-a4fdc9c28348"
   },
-  "count": 39,
+  "count": 31,
   "items": [
     {
-      "id": "1905-031:УН:1085:6326",
+      "id": "1905-031:УН:1085:text:6326",
       "statute": "УН ст. 1085",
       "code": "УН",
       "article": "ст. 1085",
       "decision_id": "1905-031",
       "year": 1905,
       "decision_number": 31,
+      "field": "text",
       "start": 6326,
       "end": 6334,
       "quote_original": "ст. 1085",
       "context_original": "изнанъ уголовнымъ судомъ виновнымъ въ нарушеніи § 41 инструкціи машинистамъ и приговоренъ за допущеніе неосторож- ности и небрежности (2 ч. ст. 1085 улож. о нак.) къ аресту на 7 дней, такъ какъ уголовный судъ разрѣшилъ лишь вопросъ о личной отвѣтственности Галіота, не касаясь, какъ то ус",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "71b9bc6f2319914749490fe77c196a666429c7c78d2e7f33932a9669160b1d8c",
+      "headnote_sha256": "0bab9e2fd882b209af5d8d0cbdf855ead8a92ddc189dc0b1ad29ee7d4b263113",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-031",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-031?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+1085&law=1905-031%3A%D0%A3%D0%9D%3A1085%3Atext%3A6326&at=6326&end=6334",
+      "source_warning": null,
       "passage_id": "1905-031:5851-7288",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-031?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+1085&at=5851&end=7288",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 84,
+          "page_method": "header",
+          "file": "p0043_L.txt",
+          "start": 6326,
+          "end": 6334
+        }
+      ],
+      "printed_pages": [
+        84
+      ],
+      "scans": [
+        {
+          "file": "p0043_L.txt",
+          "page": 84,
+          "full": "scans/1905/pages/p0043_L.webp",
+          "width": 1100,
+          "height": 1529,
+          "ocr_sha256": "95bd082745310ab481278cd5fdb5f9698cc0aef30f48602476b3526566063240",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 6326,
+          "end": 6347,
+          "quote_original": "ст. 1085 улож. о нак.",
+          "act_code": "УН"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 6326,
+          "end": 6334,
+          "quote_original": "ст. 1085",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 6326,
+              "end": 6347,
+              "quote_original": "ст. 1085 улож. о нак.",
+              "act_code": "УН"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1896-011:УН:135:7239",
-      "statute": "УН ст. 135",
+      "id": "1897-006:УН:1166:text:24360",
+      "statute": "УН ст. 1166",
       "code": "УН",
-      "article": "ст. 135",
-      "decision_id": "1896-011",
-      "year": 1896,
-      "decision_number": 11,
-      "start": 7239,
-      "end": 7246,
-      "quote_original": "ст. 135",
-      "context_original": "4 года о разъясненіи ст. 201 уст. о наказ., Правительствующій Сенатъ находитъ, что опредѣленіе это* не служитъ препятствіемъ къ примѣ ненію ст. 135 уст. угол. суд. въ дѣ лахъ о лѣсоистребленіяхъ въ частныхъ дачахъ, такъ какъ: во 1) оно вовсе не касается вопроса о такомъ примѣне ніи, и в",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011",
-      "passage_id": "1896-011:6745-8019",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+135&at=6745&end=8019",
-      "scan_available": true
-    },
-    {
-      "id": "1897-081:УН:142:7829",
-      "statute": "УН ст. 142",
-      "code": "УН",
-      "article": "ст. 142",
-      "decision_id": "1897-081",
+      "article": "ст. 1166",
+      "decision_id": "1897-006",
       "year": 1897,
-      "decision_number": 81,
-      "start": 7829,
-      "end": 7836,
-      "quote_original": "ст. 142",
-      "context_original": "матерью, начать даже уголовное противъ нея дѣло лишь за то, что та добивалась свиданія съ дочерью. Но дѣло по обвиненію Анны Дмитріевой по ст. 142 уст. о нак., налаг. мировыми судьями, было поднято уже послѣ того, какъ между супругами Дмитріевыми и княгинею Трубецкою возникли недоразум",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-081",
-      "passage_id": "1897-081:6681-8217",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-081?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+142&at=6681&end=8217",
-      "scan_available": true
+      "decision_number": 6,
+      "field": "text",
+      "start": 24360,
+      "end": 24368,
+      "quote_original": "ст. 1166",
+      "context_original": "усматриваемыя ими въ обжалованномъ рѣшеніи нарушенія законовъ, Правительствующій Сенатъ останавливается на слѣдующихъ соображеніяхъ: 1) по ст. 1166 улож. нак., изъ лицъ, не производящихъ торговли, признается должникомъ злостнымъ тотъ, о коемъ доказано, что онъ, впавши въ неоплатные долг",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "c0dee0e0224b8ef6ee56e83dcd3ab15650eab8784cb433503a6c0f040267aae6",
+      "headnote_sha256": "435c3ebee0591e46b69427925ebce9bc751871f902884df55323a3cf3440b992",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-006",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-006?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+1166&law=1897-006%3A%D0%A3%D0%9D%3A1166%3Atext%3A24360&at=24360&end=24368",
+      "source_warning": null,
+      "passage_id": "1897-006:23283-25053",
+      "sources": [
+        {
+          "page": 29,
+          "page_method": "header",
+          "file": "p0025_R.txt",
+          "start": 24360,
+          "end": 24368
+        }
+      ],
+      "printed_pages": [
+        29
+      ],
+      "scans": [
+        {
+          "file": "p0025_R.txt",
+          "page": 29,
+          "full": "scans/1897/pages/p0025_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1602,
+          "ocr_sha256": "cfafd365b232405111e75888b132c4b04c12cf3f125aedd15c58a4d7ce8e9375",
+          "pdf_page": 50,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1897.txt",
+          "source_sha256": "942b1330f3c0919f3d97ce8b33f6499c064fb061ba4669c0f2a9bbcab05dc60b",
+          "start": 5186,
+          "end": 5195,
+          "quote_original": "1166 | 6.",
+          "heading": {
+            "start": 5139,
+            "end": 5174,
+            "quote_original": "Уложеніе о наказаніяхъ изд. 1885 г."
+          },
+          "edition_continuation": null,
+          "act_code": "УН"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 24360,
+          "end": 24368,
+          "quote_original": "ст. 1166",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1897.txt",
+              "source_sha256": "942b1330f3c0919f3d97ce8b33f6499c064fb061ba4669c0f2a9bbcab05dc60b",
+              "start": 5186,
+              "end": 5195,
+              "quote_original": "1166 | 6.",
+              "heading": {
+                "start": 5139,
+                "end": 5174,
+                "quote_original": "Уложеніе о наказаніяхъ изд. 1885 г."
+              },
+              "edition_continuation": null,
+              "act_code": "УН"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 40272,
+          "end": 40280,
+          "quote_original": "ст. 1166",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1897.txt",
+              "source_sha256": "942b1330f3c0919f3d97ce8b33f6499c064fb061ba4669c0f2a9bbcab05dc60b",
+              "start": 5186,
+              "end": 5195,
+              "quote_original": "1166 | 6.",
+              "heading": {
+                "start": 5139,
+                "end": 5174,
+                "quote_original": "Уложеніе о наказаніяхъ изд. 1885 г."
+              },
+              "edition_continuation": null,
+              "act_code": "УН"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1896-042:УН:152:566",
-      "statute": "УН ст. 152",
-      "code": "УН",
-      "article": "ст. 152",
-      "decision_id": "1896-042",
-      "year": 1896,
-      "decision_number": 42,
-      "start": 566,
-      "end": 573,
-      "quote_original": "ст. 152",
-      "context_original": "Н. Булдаковъ) Выслушавъ заключеніе Исполн. обяз. Товарища Оберъ-Прокурора, Правитель ствующій Сенатъ находитъ: 1) что въ силу примѣчанія къ ст. 152 уст. о нак., налаг. мир. суд, виновные въ само вольномъ пользованіи чужимъ имущест вомъ или въ поврежденьи онаго (ст. 145 — 152) присуждают",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-042",
-      "passage_id": "1896-042:0-1905",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-042?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+152&at=0&end=1905",
-      "scan_available": true
-    },
-    {
-      "id": "1897-029:УН:152:4748",
-      "statute": "УН ст. 152",
-      "code": "УН",
-      "article": "ст. 152",
-      "decision_id": "1897-029",
-      "year": 1897,
-      "decision_number": 29,
-      "start": 4748,
-      "end": 4755,
-      "quote_original": "ст. 152",
-      "context_original": "-го и кассаціонныхъ департаментовъ Правительствующаго Сената 7 октября 1896 г., причемъ общее собраніе нашло; 1) что, въ силу примѣчанія къ ст. 152 уст. о нак., налаг. мир. суд., виновные въ самовольномъ пользованіи чужимъ имуществомъ или въ поврежденіи онаго (ст. 145—152) присуждаются,",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-029",
-      "passage_id": "1897-029:4209-5918",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-029?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+152&at=4209&end=5918",
-      "scan_available": true
-    },
-    {
-      "id": "1896-011:УН:155:5859",
+      "id": "1896-011:УН:155:text:5859",
       "statute": "УН ст. 155",
       "code": "УН",
       "article": "ст. 155",
       "decision_id": "1896-011",
       "year": 1896,
       "decision_number": 11,
+      "field": "text",
       "start": 5859,
       "end": 5866,
       "quote_original": "ст. 155",
       "context_original": "ст. 201 уст. о наказ., самовольный порубщикъ чу жого лѣса имѣетъ право прекратить производство о немъ дѣла уплатою, какъ назначеннаго 1 п. ст. 155 уст. о наказ. денежнаго штрафа, такъ и слѣдующаго лѣсовладѣльцу, по ст. 158 того, же устава, _ вознагражденія, то лѣсовладѣлецъ, согласно с",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "c1c5224f6eafe03c3cba2b66aabb0eb0d4225c870d2ffd9398bd83d3926230a3",
+      "headnote_sha256": "3e2a379bc737512445c87dae3b4374176654fb0d9c9f22ab265daecb65f816ea",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+155&law=1896-011%3A%D0%A3%D0%9D%3A155%3Atext%3A5859&at=5859&end=5866",
+      "source_warning": null,
       "passage_id": "1896-011:5402-6948",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+155&at=5402&end=6948",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 724,
+          "page_method": "header",
+          "file": "p0017.txt",
+          "start": 5859,
+          "end": 5866
+        }
+      ],
+      "printed_pages": [
+        724
+      ],
+      "scans": [
+        {
+          "file": "p0017.txt",
+          "page": 724,
+          "full": "scans/1896/pages/p0017-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1675,
+          "ocr_sha256": "0500bcd26ff4767025c9acf83cc891651a83eb798aa5335047a0661ade4aaf3f",
+          "pdf_page": 17,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1896-011:УН:156:6314",
+      "id": "1896-011:УН:156:text:6314",
       "statute": "УН ст. 156",
       "code": "УН",
       "article": "ст. 156",
       "decision_id": "1896-011",
       "year": 1896,
       "decision_number": 11,
+      "field": "text",
       "start": 6314,
       "end": 6321,
       "quote_original": "ст. 156",
       "context_original": "ми, которыя могутъ влечь за собою присужденіе виновнаго не къ денежному штрафу, а къ аресту или къ тюремному заключенію (2 и 3 п. ст. 155 и ст. 156 уст. о наказ. (рѣш. 1895 года № 11). Такимъ образомъ, все изложенное приводитъ къ заклю ченію, что вопросъ о возможности при миренія лѣсовл",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "c1c5224f6eafe03c3cba2b66aabb0eb0d4225c870d2ffd9398bd83d3926230a3",
+      "headnote_sha256": "3e2a379bc737512445c87dae3b4374176654fb0d9c9f22ab265daecb65f816ea",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+156&law=1896-011%3A%D0%A3%D0%9D%3A156%3Atext%3A6314&at=6314&end=6321",
+      "source_warning": null,
       "passage_id": "1896-011:5402-6948",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+156&at=5402&end=6948",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 724,
+          "page_method": "header",
+          "file": "p0017.txt",
+          "start": 6314,
+          "end": 6321
+        }
+      ],
+      "printed_pages": [
+        724
+      ],
+      "scans": [
+        {
+          "file": "p0017.txt",
+          "page": 724,
+          "full": "scans/1896/pages/p0017-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1675,
+          "ocr_sha256": "0500bcd26ff4767025c9acf83cc891651a83eb798aa5335047a0661ade4aaf3f",
+          "pdf_page": 17,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1896-011:УН:158:5935",
+      "id": "1896-011:УН:158:text:5935",
       "statute": "УН ст. 158",
       "code": "УН",
       "article": "ст. 158",
       "decision_id": "1896-011",
       "year": 1896,
       "decision_number": 11,
+      "field": "text",
       "start": 5935,
       "end": 5942,
       "quote_original": "ст. 158",
       "context_original": "ратить производство о немъ дѣла уплатою, какъ назначеннаго 1 п. ст. 155 уст. о наказ. денежнаго штрафа, такъ и слѣдующаго лѣсовладѣльцу, по ст. 158 того, же устава, _ вознагражденія, то лѣсовладѣлецъ, согласно ст. 692 уст. лѣсн., имѣетъ право, примирившись съ порубщикомъ, вовсе не возбу",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "c1c5224f6eafe03c3cba2b66aabb0eb0d4225c870d2ffd9398bd83d3926230a3",
+      "headnote_sha256": "3e2a379bc737512445c87dae3b4374176654fb0d9c9f22ab265daecb65f816ea",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+158&law=1896-011%3A%D0%A3%D0%9D%3A158%3Atext%3A5935&at=5935&end=5942",
+      "source_warning": null,
       "passage_id": "1896-011:5402-6948",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+158&at=5402&end=6948",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 724,
+          "page_method": "header",
+          "file": "p0017.txt",
+          "start": 5935,
+          "end": 5942
+        }
+      ],
+      "printed_pages": [
+        724
+      ],
+      "scans": [
+        {
+          "file": "p0017.txt",
+          "page": 724,
+          "full": "scans/1896/pages/p0017-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1675,
+          "ocr_sha256": "0500bcd26ff4767025c9acf83cc891651a83eb798aa5335047a0661ade4aaf3f",
+          "pdf_page": 17,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1896-011:УН:162:2623",
+      "id": "1896-011:УН:162:text:2623",
       "statute": "УН ст. 162",
       "code": "УН",
       "article": "ст. 162",
       "decision_id": "1896-011",
       "year": 1896,
       "decision_number": 11,
+      "field": "text",
       "start": 2623,
       "end": 2630,
       "quote_original": "ст. 162",
       "context_original": "хъ, согласно примѣча нію къ ст. 2127 улож., могли начи наться не иначе, какъ по жалобамъ понесшихъ вредъ или убытки, а затѣмъ, на основаніи ст. 162 улож., и подле жали прекращенію вслѣдствіе примире нія потерпѣвшаго съ виновнымъ. По рядокъ этотъ сохранилъ свою силу и впослѣдствіи времен",
-      "association": "акт определён по контексту решения",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "c1c5224f6eafe03c3cba2b66aabb0eb0d4225c870d2ffd9398bd83d3926230a3",
+      "headnote_sha256": "3e2a379bc737512445c87dae3b4374176654fb0d9c9f22ab265daecb65f816ea",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+162&law=1896-011%3A%D0%A3%D0%9D%3A162%3Atext%3A2623&at=2623&end=2630",
+      "source_warning": null,
       "passage_id": "1896-011:1040-2712",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+162&at=1040&end=2712",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 723,
+          "page_method": "header",
+          "file": "p0016.txt",
+          "start": 2623,
+          "end": 2630
+        }
+      ],
+      "printed_pages": [
+        723
+      ],
+      "scans": [
+        {
+          "file": "p0016.txt",
+          "page": 723,
+          "full": "scans/1896/pages/p0016-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1676,
+          "ocr_sha256": "34d4cde5f409723eaed524a11baa44ba5ca62d78d508d298168eee4aa4ef451a",
+          "pdf_page": 16,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1896-011:УН:1625:3381",
+      "id": "1896-011:УН:1625:text:3381",
       "statute": "УН ст. 1625",
       "code": "УН",
       "article": "ст. 1625",
       "decision_id": "1896-011",
       "year": 1896,
       "decision_number": 11,
+      "field": "text",
       "start": 3381,
       "end": 3389,
       "quote_original": "ст. 1625",
       "context_original": "подлежащей власти о послѣдовавшемъ нарушеніи. Тоже самое повторено и въ ст. 691 и 692 уст. лѣсн. изд. 1893 г. Наконецъ, и въ примѣчаніи къ ст. 1625 улож. о наказ. прямо выражено, что дѣла объ истребленіи и поврежденіи чужаго лѣса, а слѣдовательно, и самовольныя поруб ки онаго, начинаютс",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "c1c5224f6eafe03c3cba2b66aabb0eb0d4225c870d2ffd9398bd83d3926230a3",
+      "headnote_sha256": "3e2a379bc737512445c87dae3b4374176654fb0d9c9f22ab265daecb65f816ea",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+1625&law=1896-011%3A%D0%A3%D0%9D%3A1625%3Atext%3A3381&at=3381&end=3389",
+      "source_warning": null,
       "passage_id": "1896-011:2496-4105",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+1625&at=2496&end=4105",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 723,
+          "page_method": "header",
+          "file": "p0016.txt",
+          "start": 3381,
+          "end": 3389
+        }
+      ],
+      "printed_pages": [
+        723
+      ],
+      "scans": [
+        {
+          "file": "p0016.txt",
+          "page": 723,
+          "full": "scans/1896/pages/p0016-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1676,
+          "ocr_sha256": "34d4cde5f409723eaed524a11baa44ba5ca62d78d508d298168eee4aa4ef451a",
+          "pdf_page": 16,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3381,
+          "end": 3404,
+          "quote_original": "ст. 1625 улож. о наказ.",
+          "act_code": "УН"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3381,
+          "end": 3389,
+          "quote_original": "ст. 1625",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3381,
+              "end": 3404,
+              "quote_original": "ст. 1625 улож. о наказ.",
+              "act_code": "УН"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1896-011:УН:171:2804",
+      "id": "1896-011:УН:171:text:2804",
       "statute": "УН ст. 171",
       "code": "УН",
       "article": "ст. 171",
       "decision_id": "1896-011",
       "year": 1896,
       "decision_number": 11,
+      "field": "text",
       "start": 2804,
       "end": 2811,
       "quote_original": "ст. 171",
       "context_original": "слѣдствіе примире нія потерпѣвшаго съ виновнымъ. По рядокъ этотъ сохранилъ свою силу и впослѣдствіи времени (ст. 2179,примѣч. къ ст. 2206 и ст. 171 улож. изд. 1857 г.) и не только не былъ измѣненъ за кономъ 15 мая 1867 г, (полн. собр. зак. № 44587), но прямо подтверж денъ этимъ закономъ",
-      "association": "акт определён по контексту решения",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "c1c5224f6eafe03c3cba2b66aabb0eb0d4225c870d2ffd9398bd83d3926230a3",
+      "headnote_sha256": "3e2a379bc737512445c87dae3b4374176654fb0d9c9f22ab265daecb65f816ea",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+171&law=1896-011%3A%D0%A3%D0%9D%3A171%3Atext%3A2804&at=2804&end=2811",
+      "source_warning": null,
       "passage_id": "1896-011:2496-4105",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+171&at=2496&end=4105",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 723,
+          "page_method": "header",
+          "file": "p0016.txt",
+          "start": 2804,
+          "end": 2811
+        }
+      ],
+      "printed_pages": [
+        723
+      ],
+      "scans": [
+        {
+          "file": "p0016.txt",
+          "page": 723,
+          "full": "scans/1896/pages/p0016-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1676,
+          "ocr_sha256": "34d4cde5f409723eaed524a11baa44ba5ca62d78d508d298168eee4aa4ef451a",
+          "pdf_page": 16,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1896-011:УН:18:1280",
+      "id": "1896-011:УН:18:text:1280",
       "statute": "УН ст. 18",
       "code": "УН",
       "article": "ст. 18",
       "decision_id": "1896-011",
       "year": 1896,
       "decision_number": 11,
+      "field": "text",
       "start": 1280,
       "end": 1286,
       "quote_original": "ст. 18",
       "context_original": "еніяхъ въ частныхъ дачахъ, необходимо опредѣлить: возможно ли по этимъ дѣламъ примирен е лѣсовла дѣльца съ нарушителемъ его правъ? Хо тя въ ст. 18 уст. о наказ., въ числѣ проступковъ противъ правъ частныхъ лицъ, «подлежащихъ наказаніямъ не иначе, какъ по жалобѣ потерпѣвшаго вредъ или \"",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "c1c5224f6eafe03c3cba2b66aabb0eb0d4225c870d2ffd9398bd83d3926230a3",
+      "headnote_sha256": "3e2a379bc737512445c87dae3b4374176654fb0d9c9f22ab265daecb65f816ea",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+18&law=1896-011%3A%D0%A3%D0%9D%3A18%3Atext%3A1280&at=1280&end=1286",
+      "source_warning": null,
       "passage_id": "1896-011:1040-2712",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+18&at=1040&end=2712",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 723,
+          "page_method": "header",
+          "file": "p0016.txt",
+          "start": 1280,
+          "end": 1286
+        }
+      ],
+      "printed_pages": [
+        723
+      ],
+      "scans": [
+        {
+          "file": "p0016.txt",
+          "page": 723,
+          "full": "scans/1896/pages/p0016-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1676,
+          "ocr_sha256": "34d4cde5f409723eaed524a11baa44ba5ca62d78d508d298168eee4aa4ef451a",
+          "pdf_page": 16,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1897-003:УН:180:683",
+      "id": "1897-003:УН:180:text:683",
       "statute": "УН ст. 180",
       "code": "УН",
       "article": "ст. 180",
       "decision_id": "1897-003",
       "year": 1897,
       "decision_number": 3,
+      "field": "text",
       "start": 683,
       "end": 690,
       "quote_original": "ст. 180",
       "context_original": "нные ему Ляминымъ взысканіемъ денегъ по неустоичной записи, на томъ основаніи, что эта запись, въ виду ст. 1529 и 2023 св. зак. т. X ч. 1 и ст. 180 уст. о наказ., должна быть признана недѣйствительной. Симферопольскій окружный судъ, принимая во вниманіе: 1) что, по ст. 1583 св. зак. т.",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "57a8f06ac2c2b90b80d378a414ded4bfd4ff658d9c7a2a248f8dd291efb2b501",
+      "headnote_sha256": "33e3984fd56b976a876d9fb14c7aab725813e1a82cd8a7e82b330a02d7978c1f",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-003",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-003?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+180&law=1897-003%3A%D0%A3%D0%9D%3A180%3Atext%3A683&at=683&end=690",
+      "source_warning": null,
       "passage_id": "1897-003:0-1418",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-003?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+180&at=0&end=1418",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 15,
+          "page_method": "header",
+          "file": "p0018_R.txt",
+          "start": 683,
+          "end": 690
+        }
+      ],
+      "printed_pages": [
+        15
+      ],
+      "scans": [
+        {
+          "file": "p0018_R.txt",
+          "page": 15,
+          "full": "scans/1897/pages/p0018_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1573,
+          "ocr_sha256": "6dad221c86d880d8b5361e9189b54912e26adc33ee0f7468191cf6b24157da3a",
+          "pdf_page": 36,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1897-003:УН:180²:1199",
+      "id": "1897-003:УН:180²:text:1199",
       "statute": "УН ст. 180²",
       "code": "УН",
       "article": "ст. 180²",
       "decision_id": "1897-003",
       "year": 1897,
       "decision_number": 3,
+      "field": "text",
       "start": 1199,
       "end": 1207,
       "quote_original": "ст. 180²",
       "context_original": "имѣть безусловное примѣненіе лишь въ томъ случаѣ, когда стороны не заключили особаго договора о порядкѣ уплаты долга; 3) что ссылка Куна на ст. 180² уст. о нак. не заслуживаетъ уваженія, такъ какъ имъ не доказанъ ростовщическій характеръ его сдѣлки съ Ляминымъ; 4) что требуемая Куномъ за",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "57a8f06ac2c2b90b80d378a414ded4bfd4ff658d9c7a2a248f8dd291efb2b501",
+      "headnote_sha256": "33e3984fd56b976a876d9fb14c7aab725813e1a82cd8a7e82b330a02d7978c1f",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-003",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-003?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+180%C2%B2&law=1897-003%3A%D0%A3%D0%9D%3A180%C2%B2%3Atext%3A1199&at=1199&end=1207",
+      "source_warning": null,
       "passage_id": "1897-003:0-1418",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-003?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+180%C2%B2&at=0&end=1418",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 15,
+          "page_method": "header",
+          "file": "p0018_R.txt",
+          "start": 1199,
+          "end": 1207
+        }
+      ],
+      "printed_pages": [
+        15
+      ],
+      "scans": [
+        {
+          "file": "p0018_R.txt",
+          "page": 15,
+          "full": "scans/1897/pages/p0018_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1573,
+          "ocr_sha256": "6dad221c86d880d8b5361e9189b54912e26adc33ee0f7468191cf6b24157da3a",
+          "pdf_page": 36,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1896-011:УН:20:1468",
+      "id": "1896-011:УН:20:text:1468",
       "statute": "УН ст. 20",
       "code": "УН",
       "article": "ст. 20",
       "decision_id": "1896-011",
       "year": 1896,
       "decision_number": 11,
+      "field": "text",
       "start": 1468,
       "end": 1474,
       "quote_original": "ст. 20",
       "context_original": "въ правъ частныхъ лицъ, «подлежащихъ наказаніямъ не иначе, какъ по жалобѣ потерпѣвшаго вредъ или \"убытокъ и не влекущихъ за собой, согласно ст. 20 того же уста ва, наказанія въ случаѣ примиренія по терпѣвшаго съ виновнымъ, и не упомя нуты 155 и слѣдующія статьи устава, опредѣляющія взы",
-      "association": "акт определён по контексту решения",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "c1c5224f6eafe03c3cba2b66aabb0eb0d4225c870d2ffd9398bd83d3926230a3",
+      "headnote_sha256": "3e2a379bc737512445c87dae3b4374176654fb0d9c9f22ab265daecb65f816ea",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+20&law=1896-011%3A%D0%A3%D0%9D%3A20%3Atext%3A1468&at=1468&end=1474",
+      "source_warning": null,
       "passage_id": "1896-011:1040-2712",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+20&at=1040&end=2712",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 723,
+          "page_method": "header",
+          "file": "p0016.txt",
+          "start": 1468,
+          "end": 1474
+        }
+      ],
+      "printed_pages": [
+        723
+      ],
+      "scans": [
+        {
+          "file": "p0016.txt",
+          "page": 723,
+          "full": "scans/1896/pages/p0016-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1676,
+          "ocr_sha256": "34d4cde5f409723eaed524a11baa44ba5ca62d78d508d298168eee4aa4ef451a",
+          "pdf_page": 16,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1896-011:УН:201:282",
+      "id": "1896-011:УН:201:text:282",
       "statute": "УН ст. 201",
       "code": "УН",
       "article": "ст. 201",
       "decision_id": "1896-011",
       "year": 1896,
       "decision_number": 11,
+      "field": "text",
       "start": 282,
       "end": 289,
       "quote_original": "ст. 201",
       "context_original": "прекращенію, на, основаніи ст. 135 уст. угол. суд., въ случаѣ неявки част наго обвинителя къ разбору дѣла мировымъ судьею, или- же, въ виду ст. 201 уст. о нак. и рѣшенія Соединеннаго Присутствія 1 и Уголовнаго Кассаціоннаго Департамен товъ Правительствующаго Сената 22 января 1894 г., дѣ",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "c1c5224f6eafe03c3cba2b66aabb0eb0d4225c870d2ffd9398bd83d3926230a3",
+      "headnote_sha256": "3e2a379bc737512445c87dae3b4374176654fb0d9c9f22ab265daecb65f816ea",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+201&law=1896-011%3A%D0%A3%D0%9D%3A201%3Atext%3A282&at=282&end=289",
+      "source_warning": null,
       "passage_id": "1896-011:0-1270",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+201&at=0&end=1270",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 722,
+          "page_method": "neighbors",
+          "file": "p0015.txt",
+          "start": 282,
+          "end": 289
+        }
+      ],
+      "printed_pages": [
+        722
+      ],
+      "scans": [
+        {
+          "file": "p0015.txt",
+          "page": 722,
+          "full": "scans/1896/pages/p0015-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1659,
+          "ocr_sha256": "8ca10ade6623ddb25db4730921ef2fc3c232f340cffd5e2ba3ab4918684c219e",
+          "pdf_page": 15,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1896-011:УН:2100:2148",
+      "id": "1896-011:УН:2100:text:2148",
       "statute": "УН ст. 2100",
       "code": "УН",
       "article": "ст. 2100",
       "decision_id": "1896-011",
       "year": 1896,
       "decision_number": 11,
+      "field": "text",
       "start": 2148,
       "end": 2156,
       "quote_original": "ст. 2100",
       "context_original": "я или взысканья ни налага лись за нарушеніе законовъ о част ныхъ лѣсахъ, всегда всецѣло зависѣли отъ самихъ лѣсовладѣльцевъ. Такъ, хо тя по ст. 2100 улож. о наказ. 1845 г. за самовольную порубку и похищеніе деревъ на чужой землѣ виновный под вергался наказаніямъ и взысканіямъ, опредѣленн",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "c1c5224f6eafe03c3cba2b66aabb0eb0d4225c870d2ffd9398bd83d3926230a3",
+      "headnote_sha256": "3e2a379bc737512445c87dae3b4374176654fb0d9c9f22ab265daecb65f816ea",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+2100&law=1896-011%3A%D0%A3%D0%9D%3A2100%3Atext%3A2148&at=2148&end=2156",
+      "source_warning": null,
       "passage_id": "1896-011:1040-2712",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+2100&at=1040&end=2712",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 723,
+          "page_method": "header",
+          "file": "p0016.txt",
+          "start": 2148,
+          "end": 2156
+        }
+      ],
+      "printed_pages": [
+        723
+      ],
+      "scans": [
+        {
+          "file": "p0016.txt",
+          "page": 723,
+          "full": "scans/1896/pages/p0016-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1676,
+          "ocr_sha256": "34d4cde5f409723eaed524a11baa44ba5ca62d78d508d298168eee4aa4ef451a",
+          "pdf_page": 16,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2148,
+          "end": 2171,
+          "quote_original": "ст. 2100 улож. о наказ.",
+          "act_code": "УН"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2148,
+          "end": 2156,
+          "quote_original": "ст. 2100",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2148,
+              "end": 2171,
+              "quote_original": "ст. 2100 улож. о наказ.",
+              "act_code": "УН"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1896-011:УН:2127:2511",
+      "id": "1896-011:УН:2127:text:2511",
       "statute": "УН ст. 2127",
       "code": "УН",
       "article": "ст. 2127",
       "decision_id": "1896-011",
       "year": 1896,
       "decision_number": 11,
+      "field": "text",
       "start": 2511,
       "end": 2519,
       "quote_original": "ст. 2127",
       "context_original": "къ за воровство-кражу, и де нежному взысканію, равному цѣнѣ все го похищеннаго лѣса, но дѣла объ этихъ проступкахъ, согласно примѣча нію къ ст. 2127 улож., могли начи наться не иначе, какъ по жалобамъ понесшихъ вредъ или убытки, а затѣмъ, на основаніи ст. 162 улож., и подле жали прекраще",
-      "association": "акт определён по контексту решения",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "c1c5224f6eafe03c3cba2b66aabb0eb0d4225c870d2ffd9398bd83d3926230a3",
+      "headnote_sha256": "3e2a379bc737512445c87dae3b4374176654fb0d9c9f22ab265daecb65f816ea",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+2127&law=1896-011%3A%D0%A3%D0%9D%3A2127%3Atext%3A2511&at=2511&end=2519",
+      "source_warning": null,
       "passage_id": "1896-011:1040-2712",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+2127&at=1040&end=2712",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 723,
+          "page_method": "header",
+          "file": "p0016.txt",
+          "start": 2511,
+          "end": 2519
+        }
+      ],
+      "printed_pages": [
+        723
+      ],
+      "scans": [
+        {
+          "file": "p0016.txt",
+          "page": 723,
+          "full": "scans/1896/pages/p0016-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1676,
+          "ocr_sha256": "34d4cde5f409723eaed524a11baa44ba5ca62d78d508d298168eee4aa4ef451a",
+          "pdf_page": 16,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1896-011:УН:2179:2773",
+      "id": "1896-011:УН:2179:text:2773",
       "statute": "УН ст. 2179",
       "code": "УН",
       "article": "ст. 2179",
       "decision_id": "1896-011",
       "year": 1896,
       "decision_number": 11,
+      "field": "text",
       "start": 2773,
       "end": 2781,
       "quote_original": "ст. 2179",
       "context_original": "ож., и подле жали прекращенію вслѣдствіе примире нія потерпѣвшаго съ виновнымъ. По рядокъ этотъ сохранилъ свою силу и впослѣдствіи времени (ст. 2179,примѣч. къ ст. 2206 и ст. 171 улож. изд. 1857 г.) и не только не былъ измѣненъ за кономъ 15 мая 1867 г, (полн. собр. зак. № 44587), но прям",
-      "association": "акт определён по контексту решения",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "c1c5224f6eafe03c3cba2b66aabb0eb0d4225c870d2ffd9398bd83d3926230a3",
+      "headnote_sha256": "3e2a379bc737512445c87dae3b4374176654fb0d9c9f22ab265daecb65f816ea",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+2179&law=1896-011%3A%D0%A3%D0%9D%3A2179%3Atext%3A2773&at=2773&end=2781",
+      "source_warning": null,
       "passage_id": "1896-011:2496-4105",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+2179&at=2496&end=4105",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 723,
+          "page_method": "header",
+          "file": "p0016.txt",
+          "start": 2773,
+          "end": 2781
+        }
+      ],
+      "printed_pages": [
+        723
+      ],
+      "scans": [
+        {
+          "file": "p0016.txt",
+          "page": 723,
+          "full": "scans/1896/pages/p0016-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1676,
+          "ocr_sha256": "34d4cde5f409723eaed524a11baa44ba5ca62d78d508d298168eee4aa4ef451a",
+          "pdf_page": 16,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1896-011:УН:2206:2793",
+      "id": "1896-011:УН:2206:text:2793",
       "statute": "УН ст. 2206",
       "code": "УН",
       "article": "ст. 2206",
       "decision_id": "1896-011",
       "year": 1896,
       "decision_number": 11,
+      "field": "text",
       "start": 2793,
       "end": 2801,
       "quote_original": "ст. 2206",
       "context_original": "екращенію вслѣдствіе примире нія потерпѣвшаго съ виновнымъ. По рядокъ этотъ сохранилъ свою силу и впослѣдствіи времени (ст. 2179,примѣч. къ ст. 2206 и ст. 171 улож. изд. 1857 г.) и не только не былъ измѣненъ за кономъ 15 мая 1867 г, (полн. собр. зак. № 44587), но прямо подтверж денъ этим",
-      "association": "акт определён по контексту решения",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "c1c5224f6eafe03c3cba2b66aabb0eb0d4225c870d2ffd9398bd83d3926230a3",
+      "headnote_sha256": "3e2a379bc737512445c87dae3b4374176654fb0d9c9f22ab265daecb65f816ea",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+2206&law=1896-011%3A%D0%A3%D0%9D%3A2206%3Atext%3A2793&at=2793&end=2801",
+      "source_warning": null,
       "passage_id": "1896-011:2496-4105",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+2206&at=2496&end=4105",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 723,
+          "page_method": "header",
+          "file": "p0016.txt",
+          "start": 2793,
+          "end": 2801
+        }
+      ],
+      "printed_pages": [
+        723
+      ],
+      "scans": [
+        {
+          "file": "p0016.txt",
+          "page": 723,
+          "full": "scans/1896/pages/p0016-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1676,
+          "ocr_sha256": "34d4cde5f409723eaed524a11baa44ba5ca62d78d508d298168eee4aa4ef451a",
+          "pdf_page": 16,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1896-037:УН:29:2198",
-      "statute": "УН ст. 29",
-      "code": "УН",
-      "article": "ст. 29",
-      "decision_id": "1896-037",
-      "year": 1896,
-      "decision_number": 37,
-      "start": 2198,
-      "end": 2204,
-      "quote_original": "29 ст.",
-      "context_original": "на относительно причины вывоза изъ склада 5 бочекъ сельдей не заслуживаютъ уваженія, въ виду чего онъ долженъ подлежать от вѣтственности по 29 ст. уст. о нак., что вопросъ о конфискаціи тѣхъ бо чекъ отпадаетъ за ненахожденіемъ ихъ въ наличности, и что вырученныя отъ публичной продажи т",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-037",
-      "passage_id": "1896-037:1742-3607",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-037?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+29&at=1742&end=3607",
-      "scan_available": true
-    },
-    {
-      "id": "1896-024:УН:31:1029",
+      "id": "1896-024:УН:31:text:1029",
       "statute": "УН ст. 31",
       "code": "УН",
       "article": "ст. 31",
       "decision_id": "1896-024",
       "year": 1896,
       "decision_number": 24,
+      "field": "text",
       "start": 1029,
       "end": 1035,
       "quote_original": "31 ст.",
       "context_original": "ть означенный вопросъ на обсужденіе и ныхъ судей, при исполненіи ими обя занностей службы, признавалось про ступкомъ, предусмотрѣннымъ 2 ч. 31 ст. уст. о нак. Съ изданіемъ закона 12 іюля 1889 г. (прил. къ ст. 93, прим. 3, особ. прил. къ т. IX, зак. сост., по прод. 1890 г.), прежній' вз",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "0429c65ec7ad8983aeb73faf6a9a88aaee7159ffe0f5b4207c55e9d5e148a9cc",
+      "headnote_sha256": "f04a207393bd17abd7db583da85c51ace8a0ab7e05e467103f60ef3b9de97992",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-024",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-024?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+31&law=1896-024%3A%D0%A3%D0%9D%3A31%3Atext%3A1029&at=1029&end=1035",
+      "source_warning": "Вводная мотивировка этого решения обрывается и частично находится в OCR предыдущего решения №23. Постановка вопроса и последующее собственное рассуждение №24 различимы.",
       "passage_id": "1896-024:0-1519",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-024?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+31&at=0&end=1519",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 751,
+          "page_method": "header",
+          "file": "p0044.txt",
+          "start": 1029,
+          "end": 1035
+        }
+      ],
+      "printed_pages": [
+        751
+      ],
+      "scans": [
+        {
+          "file": "p0044.txt",
+          "page": 751,
+          "full": "scans/1896/pages/p0044-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1677,
+          "ocr_sha256": "475c0c721e43c1e3a07c5b3dfb12f0b7e3433fd67094a6f78fbf9b4a04e276cc",
+          "pdf_page": 44,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1896-042:УН:31:931",
+      "id": "1896-042:УН:31:text:931",
       "statute": "УН ст. 31",
       "code": "УН",
       "article": "ст. 31",
       "decision_id": "1896-042",
       "year": 1896,
       "decision_number": 42,
+      "field": "text",
       "start": 931,
       "end": 937,
       "quote_original": "ст. 31",
       "context_original": "дѣлен наго въ положен и о губернски <ъ и уѣздныхъ по крестьянскимъ дѣламъ уч режденіяхъ (Особ. прил. къ т. IX зак. о сост. изд. 1876 г. III ст. 31, при- мѣч. 1,прилож. прав. 1), — 2) \"что за неимѣніемъ въ губерн яхъ Ца :ства Польскаго уѣздныхъ по к е тьянскимъ дѣламъ присутствій, обяза",
-      "association": "акт определён по контексту решения",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "b0804f49c4612bd08d5d56fc2132f0cd97283e92fcc9666fcf20381085e2cb74",
+      "headnote_sha256": "1a7ea460e46d98f6ae77b79a257761789973fb6d0a73cd068ada3fb34d062e20",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-042",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-042?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+31&law=1896-042%3A%D0%A3%D0%9D%3A31%3Atext%3A931&at=931&end=937",
+      "source_warning": null,
       "passage_id": "1896-042:0-1905",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-042?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+31&at=0&end=1905",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 785,
+          "page_method": "header",
+          "file": "p0078.txt",
+          "start": 931,
+          "end": 937
+        }
+      ],
+      "printed_pages": [
+        785
+      ],
+      "scans": [
+        {
+          "file": "p0078.txt",
+          "page": 785,
+          "full": "scans/1896/pages/p0078-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1668,
+          "ocr_sha256": "a9c38f8f67b67fcd61da8303f740fdea9de4a48e1ad7cbc1644df6abb97d69e7",
+          "pdf_page": 78,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1897-029:УН:31:5108",
+      "id": "1897-029:УН:31:text:5108",
       "statute": "УН ст. 31",
       "code": "УН",
       "article": "ст. 31",
       "decision_id": "1897-029",
       "year": 1897,
       "decision_number": 29,
+      "field": "text",
       "start": 5108,
       "end": 5114,
       "quote_original": "ст. 31",
       "context_original": "едѣленнаго въ положеніи о губернскихъ и уѣздныхъ по крестьянскимъ дѣламъ учрежденіяхъ (особ. прил. къ т. IX зак. о сост., изд. 1876 г., III ст. 31, примѣч. 1, прилож. прав. 1); 2) что, за неимѣніемъ въ губерніяхъ Царства Польскаго уѣздныхъ по крестьянскимъ дѣламъ присутствій, обязаннос",
-      "association": "акт определён по контексту решения",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "a3f9bfaf1420b1e9b93c23476406e8c94d813e1f9c5329cd05920f063bd701fd",
+      "headnote_sha256": "d44b75efcf9bc5a0433172a4ff93dfb1883a7622dde9eda1cff5b8616f21b2ab",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-029",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-029?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+31&law=1897-029%3A%D0%A3%D0%9D%3A31%3Atext%3A5108&at=5108&end=5114",
+      "source_warning": null,
       "passage_id": "1897-029:4209-5918",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-029?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+31&at=4209&end=5918",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 106,
+          "page_method": "header",
+          "file": "p0064_L.txt",
+          "start": 5108,
+          "end": 5114
+        }
+      ],
+      "printed_pages": [
+        106
+      ],
+      "scans": [
+        {
+          "file": "p0064_L.txt",
+          "page": 106,
+          "full": "scans/1897/pages/p0064_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1569,
+          "ocr_sha256": "6b65da1c5a0e0c742c8c0ea7b91c9407718f10ed93454f08793093b8969de454",
+          "pdf_page": 127,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-086:УН:51²:771",
-      "statute": "УН ст. 51²",
-      "code": "УН",
-      "article": "ст. 51²",
-      "decision_id": "1905-086",
-      "year": 1905,
-      "decision_number": 86,
-      "start": 771,
-      "end": 778,
-      "quote_original": "51² ст.",
-      "context_original": "собр. узак. 3 мая 1893 г. (такъ въ подлинникѣ), продажа крѣпкихъ напитковъ изъ распивочнаго заведенія въ долгъ преслѣдуется закономъ (51¹ и 51² ст. уст. о нак.); что буфеты приравниваются къ распивочнымъ заведеніямъ (ст. 573 уст. объ акц. сбор.), берущимъ патентъ на право продажи крѣпки",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-086",
-      "passage_id": "1905-086:0-1692",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-086?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+51%C2%B2&at=0&end=1692",
-      "scan_available": true
-    },
-    {
-      "id": "1905-086:УН:51¹:2754",
-      "statute": "УН ст. 51¹",
-      "code": "УН",
-      "article": "ст. 51¹",
-      "decision_id": "1905-086",
-      "year": 1905,
-      "decision_number": 86,
-      "start": 2754,
-      "end": 2761,
-      "quote_original": "ст. 51¹",
-      "context_original": "ченіе исп. обяз. товарища оберъ-прокурора, Правительствующій Сенатъ находитъ, что въ настоящемъ дѣлѣ возбуждается вопросъ о томъ, могутъ-ли ст. 51¹ и 51² уст. о нак. быть примѣнены къ продажѣ крѣпкихъ напитковъ въ буфетѣ клуба или общественнаго собранія. Вопросъ этотъ не можетъ быть раз",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-086",
-      "passage_id": "1905-086:1459-2945",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-086?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+51%C2%B9&at=1459&end=2945",
-      "scan_available": true
-    },
-    {
-      "id": "1905-086:УН:51⁷:5588",
-      "statute": "УН ст. 51⁷",
-      "code": "УН",
-      "article": "ст. 51⁷",
-      "decision_id": "1905-086",
-      "year": 1905,
-      "decision_number": 86,
-      "start": 5588,
-      "end": 5595,
-      "quote_original": "ст. 51⁷",
-      "context_original": "ни цѣли этого ограничительнаго закона, ни характеру производимой изъ названныхъ заведеній—торговли,—Правительствующій Сенатъ признаетъ, что ст. 51⁷ и 51⁸ уст. о нак. не могутъ быть примѣнены къ продажѣ крѣпкихъ напитковъ изъ буфетовъ клуба или общественнаго собранія. Принимая, засимъ, в",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-086",
-      "passage_id": "1905-086:4068-6214",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-086?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+51%E2%81%B7&at=4068&end=6214",
-      "scan_available": true
-    },
-    {
-      "id": "1905-086:УН:51⁸:5900",
-      "statute": "УН ст. 51⁸",
-      "code": "УН",
-      "article": "ст. 51⁸",
-      "decision_id": "1905-086",
-      "year": 1905,
-      "decision_number": 86,
-      "start": 5900,
-      "end": 5907,
-      "quote_original": "51⁸ ст.",
-      "context_original": "щему дѣлу съѣздъ отвергъ искъ Бертина въ части, касающейся отпущенныхъ отвѣтчику изъ буфета при клубѣ крѣпкихъ напитковъ, ссылаясь на 51⁷ и 51⁸ ст. уст. о наказ.,—Правительствующій Сенатъ опредѣляетъ: обжалованное рѣшеніе, въ части отказа въ требованіи за забранные въ долгъ крѣпкіе напи",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-086",
-      "passage_id": "1905-086:4068-6214",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-086?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+51%E2%81%B8&at=4068&end=6214",
-      "scan_available": true
-    },
-    {
-      "id": "1905-086:УН:573:848",
+      "id": "1905-086:УН:573:text:848",
       "statute": "УН ст. 573",
       "code": "УН",
       "article": "ст. 573",
       "decision_id": "1905-086",
       "year": 1905,
       "decision_number": 86,
+      "field": "text",
       "start": 848,
       "end": 855,
       "quote_original": "ст. 573",
       "context_original": "ъ распивочнаго заведенія въ долгъ преслѣдуется закономъ (51¹ и 51² ст. уст. о нак.); что буфеты приравниваются къ распивочнымъ заведеніямъ (ст. 573 уст. объ акц. сбор.), берущимъ патентъ на право продажи крѣпкихъ напитковъ, а потому не могутъ быть закрытыми заведеніями; что возраженіе о",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "a42af57d938d652642a8b3afb225538df020e10083c22c59ec06f9d7e9aee7d7",
+      "headnote_sha256": "def027e8fba0ae53d9176ee33244db00f17c25dc1b5208d3e1e9bed9971576ff",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-086",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-086?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+573&law=1905-086%3A%D0%A3%D0%9D%3A573%3Atext%3A848&at=848&end=855",
+      "source_warning": null,
       "passage_id": "1905-086:0-1692",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-086?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+573&at=0&end=1692",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 235,
+          "page_method": "header",
+          "file": "p0118_R.txt",
+          "start": 848,
+          "end": 855
+        }
+      ],
+      "printed_pages": [
+        235
+      ],
+      "scans": [
+        {
+          "file": "p0118_R.txt",
+          "page": 235,
+          "full": "scans/1905/pages/p0118_R.webp",
+          "width": 1100,
+          "height": 1575,
+          "ocr_sha256": "743b4c6930ecb9d677e7b69d9521aa2bfb352c115ddd00ea5d806762957f39f4",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-070:УН:59:1679",
+      "id": "1904-070:УН:59:text:7194",
       "statute": "УН ст. 59",
       "code": "УН",
       "article": "ст. 59",
       "decision_id": "1904-070",
       "year": 1904,
       "decision_number": 70,
-      "start": 1679,
-      "end": 1685,
-      "quote_original": "59 ст.",
-      "context_original": "585 ст. улож. о нак., совершеннаго послѣднимъ. Виновный въ совершеніи какого-либо преступленія или проступка, на основ. 644 ст. X т. ч. 1 и 59 ст. улож. о нак., обязанъ вознаградить за всѣ непосредственно причиненные симъ дѣяніемъ его вредъ и убытки и, въ силу 61 ст. улож. о нак., взыс",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "field": "text",
+      "start": 7194,
+      "end": 7205,
+      "quote_original": "ст. 59 и 61",
+      "context_original": "ч., нарушила точный смыслъ этихъ законовъ,—Правительствующій Сенатъ опредѣляетъ: рѣшеніе Саратовской судебной палаты отмѣнить по нарушенію ст. 59 и 61 улож. о нак. и ст. 644—674 т. X ч. 1 и передать дѣло на разсмотрѣніе Казанской судебной палаты.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "908fa3cb3a66935929abc0b3d5fd0a8a7c79799b21c28969ac0b1e75ca412f80",
+      "headnote_sha256": "1bae2880658eb38aafc287dc282b3eed97cf979dd1dcf2c8792d607ec9e0f934",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-070",
-      "passage_id": "1904-070:1339-2775",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-070?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+59&at=1339&end=2775",
-      "scan_available": true
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-070?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+59&law=1904-070%3A%D0%A3%D0%9D%3A59%3Atext%3A7194&at=7194&end=7205",
+      "source_warning": null,
+      "passage_id": "1904-070:5734-7301",
+      "sources": [
+        {
+          "page": 203,
+          "page_method": "header",
+          "file": "p0102_R.txt",
+          "start": 7194,
+          "end": 7205
+        }
+      ],
+      "printed_pages": [
+        203
+      ],
+      "scans": [
+        {
+          "file": "p0102_R.txt",
+          "page": 203,
+          "full": "scans/1904/pages/p0102_R.webp",
+          "width": 1100,
+          "height": 1585,
+          "ocr_sha256": "e9b9c2bc36184be816c2bc697c1176cefff2aa171e64f815b41381be60ae8775",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 7194,
+          "end": 7218,
+          "quote_original": "ст. 59 и 61 улож. о нак.",
+          "act_code": "УН"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7194,
+          "end": 7205,
+          "quote_original": "ст. 59 и 61",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 7194,
+              "end": 7218,
+              "quote_original": "ст. 59 и 61 улож. о нак.",
+              "act_code": "УН"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1905-086:УН:594:2946",
+      "id": "1905-086:УН:594:text:2946",
       "statute": "УН ст. 594",
       "code": "УН",
       "article": "ст. 594",
       "decision_id": "1905-086",
       "year": 1905,
       "decision_number": 86,
+      "field": "text",
       "start": 2946,
       "end": 2953,
       "quote_original": "Ст. 594",
       "context_original": "крѣпкихъ напитковъ въ буфетѣ клуба или общественнаго собранія. Вопросъ этотъ не можетъ быть разрѣшенъ иначе, какъ въ отрицательномъ смыслѣ. Ст. 594 (для мѣстностей казенной продажи питей) и 703 (для мѣстностей, гдѣ таковая продажа не введена) уст. акц. сб. изд. 1901 года воспрещаютъ про",
-      "association": "акт определён по контексту решения",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "a42af57d938d652642a8b3afb225538df020e10083c22c59ec06f9d7e9aee7d7",
+      "headnote_sha256": "def027e8fba0ae53d9176ee33244db00f17c25dc1b5208d3e1e9bed9971576ff",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-086",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-086?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+594&law=1905-086%3A%D0%A3%D0%9D%3A594%3Atext%3A2946&at=2946&end=2953",
+      "source_warning": null,
       "passage_id": "1905-086:2715-4315",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-086?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+594&at=2715&end=4315",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 236,
+          "page_method": "header",
+          "file": "p0119_L.txt",
+          "start": 2946,
+          "end": 2953
+        }
+      ],
+      "printed_pages": [
+        236
+      ],
+      "scans": [
+        {
+          "file": "p0119_L.txt",
+          "page": 236,
+          "full": "scans/1905/pages/p0119_L.webp",
+          "width": 1100,
+          "height": 1530,
+          "ocr_sha256": "3bd8a650ea7024cb1e1b7b004ced35f8fc2717fc65f59e81646d07af5aadf469",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-096:УН:6:7878",
-      "statute": "УН ст. 6",
-      "code": "УН",
-      "article": "ст. 6",
-      "decision_id": "1904-096",
-      "year": 1904,
-      "decision_number": 96,
-      "start": 7878,
-      "end": 7883,
-      "quote_original": "ст. 6",
-      "context_original": "ж. о наказ.) и, въ случаѣ основательности сего послѣдняго обвиненія, предъявить къ нему въ установленномъ закономъ порядкѣ (уст. угол. суд. ст. 6 и 7) искъ о вознагражденіи за понесенные вредъ и убытки. По изложеннымъ основаніямъ, Правительствующій Сенатъ въ общемъ собраніи кассаціонн",
-      "association": "акт определён по контексту решения",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096",
-      "passage_id": "1904-096:6483-8172",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+6&at=6483&end=8172",
-      "scan_available": true
-    },
-    {
-      "id": "1904-070:УН:61:1800",
+      "id": "1904-070:УН:61:text:7194",
       "statute": "УН ст. 61",
       "code": "УН",
       "article": "ст. 61",
       "decision_id": "1904-070",
       "year": 1904,
       "decision_number": 70,
-      "start": 1800,
-      "end": 1806,
-      "quote_original": "61 ст.",
-      "context_original": "44 ст. X т. ч. 1 и 59 ст. улож. о нак., обязанъ вознаградить за всѣ непосредственно причиненные симъ дѣяніемъ его вредъ и убытки и, въ силу 61 ст. улож. о нак., взысканіе этого вознагражденія, въ случаѣ смерти виновнаго, распространяется на его наслѣдниковъ, но требуется только изъ тог",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "field": "text",
+      "start": 7194,
+      "end": 7205,
+      "quote_original": "ст. 59 и 61",
+      "context_original": "ч., нарушила точный смыслъ этихъ законовъ,—Правительствующій Сенатъ опредѣляетъ: рѣшеніе Саратовской судебной палаты отмѣнить по нарушенію ст. 59 и 61 улож. о нак. и ст. 644—674 т. X ч. 1 и передать дѣло на разсмотрѣніе Казанской судебной палаты.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "908fa3cb3a66935929abc0b3d5fd0a8a7c79799b21c28969ac0b1e75ca412f80",
+      "headnote_sha256": "1bae2880658eb38aafc287dc282b3eed97cf979dd1dcf2c8792d607ec9e0f934",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-070",
-      "passage_id": "1904-070:1339-2775",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-070?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+61&at=1339&end=2775",
-      "scan_available": true
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-070?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+61&law=1904-070%3A%D0%A3%D0%9D%3A61%3Atext%3A7194&at=7194&end=7205",
+      "source_warning": null,
+      "passage_id": "1904-070:5734-7301",
+      "sources": [
+        {
+          "page": 203,
+          "page_method": "header",
+          "file": "p0102_R.txt",
+          "start": 7194,
+          "end": 7205
+        }
+      ],
+      "printed_pages": [
+        203
+      ],
+      "scans": [
+        {
+          "file": "p0102_R.txt",
+          "page": 203,
+          "full": "scans/1904/pages/p0102_R.webp",
+          "width": 1100,
+          "height": 1585,
+          "ocr_sha256": "e9b9c2bc36184be816c2bc697c1176cefff2aa171e64f815b41381be60ae8775",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 7194,
+          "end": 7218,
+          "quote_original": "ст. 59 и 61 улож. о нак.",
+          "act_code": "УН"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7194,
+          "end": 7205,
+          "quote_original": "ст. 59 и 61",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 7194,
+              "end": 7218,
+              "quote_original": "ст. 59 и 61 улож. о нак.",
+              "act_code": "УН"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1896-011:УН:691:3314",
+      "id": "1896-011:УН:691:text:3314",
       "statute": "УН ст. 691",
       "code": "УН",
       "article": "ст. 691",
       "decision_id": "1896-011",
       "year": 1896,
       "decision_number": 11,
+      "field": "text",
       "start": 3314,
       "end": 3321,
       "quote_original": "ст. 691",
       "context_original": "чаѣ, отъ лѣсовладѣльца, или замѣняющаго его лица, зависитъ объявить подлежащей власти о послѣдовавшемъ нарушеніи. Тоже самое повторено и въ ст. 691 и 692 уст. лѣсн. изд. 1893 г. Наконецъ, и въ примѣчаніи къ ст. 1625 улож. о наказ. прямо выражено, что дѣла объ истребленіи и поврежденіи ч",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "c1c5224f6eafe03c3cba2b66aabb0eb0d4225c870d2ffd9398bd83d3926230a3",
+      "headnote_sha256": "3e2a379bc737512445c87dae3b4374176654fb0d9c9f22ab265daecb65f816ea",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+691&law=1896-011%3A%D0%A3%D0%9D%3A691%3Atext%3A3314&at=3314&end=3321",
+      "source_warning": null,
       "passage_id": "1896-011:2496-4105",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+691&at=2496&end=4105",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 723,
+          "page_method": "header",
+          "file": "p0016.txt",
+          "start": 3314,
+          "end": 3321
+        }
+      ],
+      "printed_pages": [
+        723
+      ],
+      "scans": [
+        {
+          "file": "p0016.txt",
+          "page": 723,
+          "full": "scans/1896/pages/p0016-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1676,
+          "ocr_sha256": "34d4cde5f409723eaed524a11baa44ba5ca62d78d508d298168eee4aa4ef451a",
+          "pdf_page": 16,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1896-011:УН:692:6005",
+      "id": "1896-011:УН:692:text:6005",
       "statute": "УН ст. 692",
       "code": "УН",
       "article": "ст. 692",
       "decision_id": "1896-011",
       "year": 1896,
       "decision_number": 11,
+      "field": "text",
       "start": 6005,
       "end": 6012,
       "quote_original": "ст. 692",
       "context_original": "5 уст. о наказ. денежнаго штрафа, такъ и слѣдующаго лѣсовладѣльцу, по ст. 158 того, же устава, _ вознагражденія, то лѣсовладѣлецъ, согласно ст. 692 уст. лѣсн., имѣетъ право, примирившись съ порубщикомъ, вовсе не возбуждать, дѣ ла о порубкѣ его лѣса, хотя бы по рубки эти и сопровождались",
-      "association": "акт определён по контексту решения",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "c1c5224f6eafe03c3cba2b66aabb0eb0d4225c870d2ffd9398bd83d3926230a3",
+      "headnote_sha256": "3e2a379bc737512445c87dae3b4374176654fb0d9c9f22ab265daecb65f816ea",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+692&law=1896-011%3A%D0%A3%D0%9D%3A692%3Atext%3A6005&at=6005&end=6012",
+      "source_warning": null,
       "passage_id": "1896-011:5402-6948",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+692&at=5402&end=6948",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 724,
+          "page_method": "header",
+          "file": "p0017.txt",
+          "start": 6005,
+          "end": 6012
+        }
+      ],
+      "printed_pages": [
+        724
+      ],
+      "scans": [
+        {
+          "file": "p0017.txt",
+          "page": 724,
+          "full": "scans/1896/pages/p0017-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1675,
+          "ocr_sha256": "0500bcd26ff4767025c9acf83cc891651a83eb798aa5335047a0661ade4aaf3f",
+          "pdf_page": 17,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-086:УН:703:3126",
+      "id": "1905-086:УН:703:text:3126",
       "statute": "УН ст. 703",
       "code": "УН",
       "article": "ст. 703",
       "decision_id": "1905-086",
       "year": 1905,
       "decision_number": 86,
+      "field": "text",
       "start": 3126,
       "end": 3133,
       "quote_original": "ст. 703",
       "context_original": "питей) и 703 (для мѣстностей, гдѣ таковая продажа не введена) уст. акц. сб. изд. 1901 года воспрещаютъ продажу изъ мѣстъ продажи питей (въ ст. 703 только изъ мѣстъ раздробительной, въ статьѣ же 594 также и изъ мѣстъ оптовой продажи) и отпускъ таковыхъ въ долгъ, а отвѣтственность за так",
-      "association": "акт определён по контексту решения",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "a42af57d938d652642a8b3afb225538df020e10083c22c59ec06f9d7e9aee7d7",
+      "headnote_sha256": "def027e8fba0ae53d9176ee33244db00f17c25dc1b5208d3e1e9bed9971576ff",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-086",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-086?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+703&law=1905-086%3A%D0%A3%D0%9D%3A703%3Atext%3A3126&at=3126&end=3133",
+      "source_warning": null,
       "passage_id": "1905-086:2715-4315",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-086?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+703&at=2715&end=4315",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 236,
+          "page_method": "header",
+          "file": "p0119_L.txt",
+          "start": 3126,
+          "end": 3133
+        }
+      ],
+      "printed_pages": [
+        236
+      ],
+      "scans": [
+        {
+          "file": "p0119_L.txt",
+          "page": 236,
+          "full": "scans/1905/pages/p0119_L.webp",
+          "width": 1100,
+          "height": 1530,
+          "ocr_sha256": "3bd8a650ea7024cb1e1b7b004ced35f8fc2717fc65f59e81646d07af5aadf469",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-096:УН:940:7727",
+      "id": "1904-096:УН:940:text:7727",
       "statute": "УН ст. 940",
       "code": "УН",
       "article": "ст. 940",
       "decision_id": "1904-096",
       "year": 1904,
       "decision_number": 96,
+      "field": "text",
       "start": 7727,
       "end": 7734,
       "quote_original": "ст. 940",
       "context_original": "возбудить противъ объявителя (ст. 298 и 299 уст. угол. суд.) или жалобщика (тамъ же ст. 301) преслѣдованіе по обвиненію въ ложномъ доносѣ (ст. 940 улож. о наказ.) и, въ случаѣ основательности сего послѣдняго обвиненія, предъявить къ нему въ установленномъ закономъ порядкѣ (уст. угол. с",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "677785a4e7f9f0eda10602861f321e2cbc264f61c0ae18893c83317c122e7e05",
+      "headnote_sha256": "671c1ab7cb8fb45ec03c8d3ca3757e22ed05cd98249a73d20b10243fffb2e16b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+940&law=1904-096%3A%D0%A3%D0%9D%3A940%3Atext%3A7727&at=7727&end=7734",
+      "source_warning": null,
       "passage_id": "1904-096:6483-8172",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+940&at=6483&end=8172",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 268,
+          "page_method": "header",
+          "file": "p0135_L.txt",
+          "start": 7727,
+          "end": 7734
+        }
+      ],
+      "printed_pages": [
+        268
+      ],
+      "scans": [
+        {
+          "file": "p0135_L.txt",
+          "page": 268,
+          "full": "scans/1904/pages/p0135_L.webp",
+          "width": 1100,
+          "height": 1585,
+          "ocr_sha256": "63c3637210a5de04802d5b5e292ffb2e8488674cb4658d63dcc129d29da46948",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 7727,
+          "end": 7749,
+          "quote_original": "ст. 940 улож. о наказ.",
+          "act_code": "УН"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7727,
+          "end": 7734,
+          "quote_original": "ст. 940",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 7727,
+              "end": 7749,
+              "quote_original": "ст. 940 улож. о наказ.",
+              "act_code": "УН"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1896-011:УН:941:2303",
+      "id": "1896-011:УН:941:text:2303",
       "statute": "УН ст. 941",
       "code": "УН",
       "article": "ст. 941",
       "decision_id": "1896-011",
       "year": 1896,
       "decision_number": 11,
+      "field": "text",
       "start": 2303,
       "end": 2310,
       "quote_original": "ст. 941",
       "context_original": "о наказ. 1845 г. за самовольную порубку и похищеніе деревъ на чужой землѣ виновный под вергался наказаніямъ и взысканіямъ, опредѣленнымъ въ ст. 941 уложенія за похищеніе деревъ изъ казенныхъ лѣсовъ, т. е., какъ за воровство-кражу, и де нежному взысканію, равному цѣнѣ все го похищеннаго",
-      "association": "акт определён по контексту решения",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "c1c5224f6eafe03c3cba2b66aabb0eb0d4225c870d2ffd9398bd83d3926230a3",
+      "headnote_sha256": "3e2a379bc737512445c87dae3b4374176654fb0d9c9f22ab265daecb65f816ea",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+941&law=1896-011%3A%D0%A3%D0%9D%3A941%3Atext%3A2303&at=2303&end=2310",
+      "source_warning": null,
       "passage_id": "1896-011:1040-2712",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+941&at=1040&end=2712",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 723,
+          "page_method": "header",
+          "file": "p0016.txt",
+          "start": 2303,
+          "end": 2310
+        }
+      ],
+      "printed_pages": [
+        723
+      ],
+      "scans": [
+        {
+          "file": "p0016.txt",
+          "page": 723,
+          "full": "scans/1896/pages/p0016-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1676,
+          "ocr_sha256": "34d4cde5f409723eaed524a11baa44ba5ca62d78d508d298168eee4aa4ef451a",
+          "pdf_page": 16,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-116:УН:994:182",
+      "id": "1904-070:УН:994:text:5809",
+      "statute": "УН ст. 994",
+      "code": "УН",
+      "article": "ст. 994",
+      "decision_id": "1904-070",
+      "year": 1904,
+      "decision_number": 70,
+      "field": "text",
+      "start": 5809,
+      "end": 5816,
+      "quote_original": "Ст. 994",
+      "context_original": "чи помѣщена въ главѣ о преступленіяхъ противъ чести и цѣломудрія женщинъ, имѣетъ совершенно иное основаніе, чѣмъ то, которое имѣетъ 994 ст. Ст. 994 опредѣляетъ исполненіе лишь сожителемъ и только гражданской обязанности, потому что имѣетъ въ виду сожитіе по взаимному согласію безъ прест",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "908fa3cb3a66935929abc0b3d5fd0a8a7c79799b21c28969ac0b1e75ca412f80",
+      "headnote_sha256": "1bae2880658eb38aafc287dc282b3eed97cf979dd1dcf2c8792d607ec9e0f934",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-070",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-070?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+994&law=1904-070%3A%D0%A3%D0%9D%3A994%3Atext%3A5809&at=5809&end=5816",
+      "source_warning": null,
+      "passage_id": "1904-070:4382-5991",
+      "sources": [
+        {
+          "page": 202,
+          "page_method": "header",
+          "file": "p0102_L.txt",
+          "start": 5809,
+          "end": 5816
+        }
+      ],
+      "printed_pages": [
+        202
+      ],
+      "scans": [
+        {
+          "file": "p0102_L.txt",
+          "page": 202,
+          "full": "scans/1904/pages/p0102_L.webp",
+          "width": 1100,
+          "height": 1585,
+          "ocr_sha256": "fd780adeda6f6e6c4569628073934bf2e61f4ed4a74d3cca3dc21fab225cb534",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 6361,
+          "end": 6375,
+          "quote_original": "994 — 70, 116.",
+          "heading": {
+            "start": 6261,
+            "end": 6325,
+            "quote_original": "Уложеніе о наказаніяхъ уголовныхъ и исправительныхъ изд. 1885 г."
+          },
+          "edition_continuation": null,
+          "act_code": "УН"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5809,
+          "end": 5816,
+          "quote_original": "Ст. 994",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 6361,
+              "end": 6375,
+              "quote_original": "994 — 70, 116.",
+              "heading": {
+                "start": 6261,
+                "end": 6325,
+                "quote_original": "Уложеніе о наказаніяхъ уголовныхъ и исправительныхъ изд. 1885 г."
+              },
+              "edition_continuation": null,
+              "act_code": "УН"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-116:УН:994:text:1273",
       "statute": "УН ст. 994",
       "code": "УН",
       "article": "ст. 994",
       "decision_id": "1904-116",
       "year": 1904,
       "decision_number": 116,
-      "start": 182,
-      "end": 189,
-      "quote_original": "994 ст.",
-      "context_original": "о настоящему дѣлу вопросъ: взысканіе присужденныхъ съ лица, признаннаго виновнымъ въ противозаконномъ сожитіи, на основаніи отмѣненной нынѣ 994 ст. улож. о наказ., періодическихъ платежей на содержаніе прижитаго внѣбрачнаго дитяти, подвергнутое по вступленіи приговора въ законную силу и",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "field": "text",
+      "start": 1273,
+      "end": 1280,
+      "quote_original": "ст. 994",
+      "context_original": "зъясненіемъ рѣшеніе судебной палаты по настоящему дѣлу оставлено въ силѣ быть не можетъ,—Правительствующій Сенатъ определяетъ: по нарушенію ст. 994 улож. о нак., опредѣленіе С.-Петербургской судебной палаты отмѣнить и передать дѣло на разсмотрѣніе другаго ея департамента.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "38ac6f02c67d9036107f71a0e0c6cdae5be2e59ac90bde4945f5a331b135c77d",
+      "headnote_sha256": "0e5f89a9fd7053fb141b46c73c79ad68e4ed51d1f44077ae0b8da58d41a1ceea",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-116",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-116?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+994&law=1904-116%3A%D0%A3%D0%9D%3A994%3Atext%3A1273&at=1273&end=1280",
+      "source_warning": null,
       "passage_id": "1904-116:0-1405",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-116?mode=laws&c=%D0%A3%D0%9D&q=%D1%81%D1%82.+994&at=0&end=1405",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 320,
+          "page_method": "header",
+          "file": "p0161_L.txt",
+          "start": 1273,
+          "end": 1280
+        }
+      ],
+      "printed_pages": [
+        320
+      ],
+      "scans": [
+        {
+          "file": "p0161_L.txt",
+          "page": 320,
+          "full": "scans/1904/pages/p0161_L.webp",
+          "width": 1100,
+          "height": 1577,
+          "ocr_sha256": "65317ee2ec6305aac10d50c271c0754be12bacb8016f57cdfb91e164782d80ca",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1273,
+          "end": 1293,
+          "quote_original": "ст. 994 улож. о нак.",
+          "act_code": "УН"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1273,
+          "end": 1280,
+          "quote_original": "ст. 994",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1273,
+              "end": 1293,
+              "quote_original": "ст. 994 улож. о нак.",
+              "act_code": "УН"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

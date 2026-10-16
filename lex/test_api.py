@@ -39,6 +39,26 @@ class ApiTest(unittest.TestCase):
         cls.guides = read(ROOT / 'data' / 'guides.json')
         cls.catalog = read(ROOT / 'data' / 'topic-catalog.json')
 
+    def test_legislation_attribution_contract(self):
+        laws=read(ROOT/'data/laws.json')
+        unresolved=read(API/'legislation/unresolved.json')
+        attribution=read(API/'legislation/attribution.json')
+        self.assertEqual(unresolved['count'],laws['attribution_summary']['remaining_unknown'])
+        self.assertEqual(attribution['item'],laws['attribution_summary'])
+        self.assertTrue(all(r['code']=='?' and r['verification_status']=='act_unknown' for r in unresolved['items']))
+        schema=read(API/'schema.json')['$defs']['LegislationCitation']
+        self.assertIn('source_sha256',schema['required'])
+        self.assertIn('verification_status',schema['required'])
+        self.assertIn('evidence',schema['required'])
+        baseline=read(ROOT/'law-attributions-source.json')
+        facets=read(API/'facets.json')['item']
+        self.assertTrue({s for d in baseline['decisions'].values() for s in d['statutes']} <= {r['label'] for r in facets['article']})
+        for row in facets['article']:
+            if row['count']==0:
+                item=read(API/('indexes/article/'+row['id']+'.json'))
+                self.assertEqual(item['decision_ids'],[])
+                self.assertEqual(item['status'],'no_current_matches')
+
     def test_manifest_is_complete_and_hashes_match(self):
         self.assertEqual(self.manifest['api_version'], API_VERSION)
         self.assertEqual(self.manifest['contract_version'], CONTRACT_VERSION)

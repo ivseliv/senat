@@ -1,13 +1,13 @@
 {
   "api_version": "v1",
-  "contract_version": "1.4.0",
-  "data_revision": "sha256:6ac98d54af90894c26d5b151ea6fa7560f3c59eb9c7573bdfa175192587860d6",
+  "contract_version": "1.5.0",
+  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
   "resource": "statutes",
   "scope": {
     "code": "УТ",
     "id": "act-a9c431c76667"
   },
-  "count": 41,
+  "count": 39,
   "items": [
     {
       "statute": "УТ ст. 100",
@@ -50,40 +50,10 @@
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-050"
     },
     {
-      "statute": "УТ ст. 105",
-      "code": "УТ",
-      "article": "ст. 105",
-      "mentions": 1,
-      "decision_id": "1897-059",
-      "year": 1897,
-      "decision_number": 59,
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-059"
-    },
-    {
-      "statute": "УТ ст. 257",
-      "code": "УТ",
-      "article": "ст. 257",
-      "mentions": 1,
-      "decision_id": "1897-062",
-      "year": 1897,
-      "decision_number": 62,
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-062"
-    },
-    {
-      "statute": "УТ ст. 258",
-      "code": "УТ",
-      "article": "ст. 258",
-      "mentions": 1,
-      "decision_id": "1897-062",
-      "year": 1897,
-      "decision_number": 62,
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-062"
-    },
-    {
       "statute": "УТ ст. 617",
       "code": "УТ",
       "article": "ст. 617",
-      "mentions": 1,
+      "mentions": 2,
       "decision_id": "1897-067",
       "year": 1897,
       "decision_number": 67,
@@ -93,7 +63,7 @@
       "statute": "УТ ст. 618",
       "code": "УТ",
       "article": "ст. 618",
-      "mentions": 1,
+      "mentions": 2,
       "decision_id": "1897-067",
       "year": 1897,
       "decision_number": 67,
@@ -153,6 +123,16 @@
       "statute": "УТ ст. 67",
       "code": "УТ",
       "article": "ст. 67",
+      "mentions": 1,
+      "decision_id": "1904-087",
+      "year": 1904,
+      "decision_number": 87,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-087"
+    },
+    {
+      "statute": "УТ ст. 68",
+      "code": "УТ",
+      "article": "ст. 68",
       "mentions": 1,
       "decision_id": "1904-087",
       "year": 1904,
