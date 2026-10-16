@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.3.0",
-  "data_revision": "sha256:8400c8a693eb04d86632cb3357c5a969674d15807cd143e7558bf9c04d5e5867",
+  "contract_version": "1.4.0",
+  "data_revision": "sha256:6ac98d54af90894c26d5b151ea6fa7560f3c59eb9c7573bdfa175192587860d6",
   "resource": "facets",
   "item": {
     "act": [
@@ -8598,6 +8598,164 @@
         "label": "УУС ст. 784",
         "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c6ce66a7904d.json"
+      }
+    ],
+    "catalog-topic": [
+      {
+        "id": "church",
+        "label": "church",
+        "count": 8,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/church.json"
+      },
+      {
+        "id": "commerce-transport",
+        "label": "commerce-transport",
+        "count": 38,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/commerce-transport.json"
+      },
+      {
+        "id": "companies",
+        "label": "companies",
+        "count": 25,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/companies.json"
+      },
+      {
+        "id": "contracts",
+        "label": "contracts",
+        "count": 62,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/contracts.json"
+      },
+      {
+        "id": "costs",
+        "label": "costs",
+        "count": 46,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/costs.json"
+      },
+      {
+        "id": "criminal",
+        "label": "criminal",
+        "count": 17,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/criminal.json"
+      },
+      {
+        "id": "damages",
+        "label": "damages",
+        "count": 40,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/damages.json"
+      },
+      {
+        "id": "deadlines",
+        "label": "deadlines",
+        "count": 38,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/deadlines.json"
+      },
+      {
+        "id": "debt",
+        "label": "debt",
+        "count": 44,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/debt.json"
+      },
+      {
+        "id": "enforcement",
+        "label": "enforcement",
+        "count": 39,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/enforcement.json"
+      },
+      {
+        "id": "evidence",
+        "label": "evidence",
+        "count": 41,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/evidence.json"
+      },
+      {
+        "id": "family",
+        "label": "family",
+        "count": 27,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/family.json"
+      },
+      {
+        "id": "guardianship",
+        "label": "guardianship",
+        "count": 8,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/guardianship.json"
+      },
+      {
+        "id": "inheritance",
+        "label": "inheritance",
+        "count": 68,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/inheritance.json"
+      },
+      {
+        "id": "insolvency",
+        "label": "insolvency",
+        "count": 15,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/insolvency.json"
+      },
+      {
+        "id": "insurance",
+        "label": "insurance",
+        "count": 5,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/insurance.json"
+      },
+      {
+        "id": "intellectual",
+        "label": "intellectual",
+        "count": 3,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/intellectual.json"
+      },
+      {
+        "id": "local-law",
+        "label": "local-law",
+        "count": 80,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/local-law.json"
+      },
+      {
+        "id": "notary",
+        "label": "notary",
+        "count": 32,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/notary.json"
+      },
+      {
+        "id": "peasants",
+        "label": "peasants",
+        "count": 35,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/peasants.json"
+      },
+      {
+        "id": "procedure",
+        "label": "procedure",
+        "count": 99,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/procedure.json"
+      },
+      {
+        "id": "property",
+        "label": "property",
+        "count": 74,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/property.json"
+      },
+      {
+        "id": "rent",
+        "label": "rent",
+        "count": 22,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/rent.json"
+      },
+      {
+        "id": "state",
+        "label": "state",
+        "count": 36,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/state.json"
+      },
+      {
+        "id": "taxes",
+        "label": "taxes",
+        "count": 8,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/taxes.json"
+      },
+      {
+        "id": "work",
+        "label": "work",
+        "count": 7,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/catalog-topic/work.json"
       }
     ],
     "guide": [

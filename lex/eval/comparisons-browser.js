@@ -4,7 +4,7 @@ const lex=path.resolve(__dirname,'..'),base=process.env.LEX_TEST_URL||'http://12
 const out=process.env.LEX_SCREENSHOTS||path.resolve(lex,'../../comparative-guides-2026-10/browser');
 fs.mkdirSync(out,{recursive:true});
 const data=JSON.parse(fs.readFileSync(path.join(lex,'data/guides.json'),'utf8'));
-const link=(g,e)=>base+'#/d/'+e.decision+'?'+new URLSearchParams({mode:'guides',g:g.id,at:e.start,end:e.end});
+const link=(g,e)=>base+'#/d/'+e.decision+'?'+new URLSearchParams({mode:'guides',g:g.id,compare:'1',at:e.start,end:e.end});
 (async()=>{
  const browser=await chromium.launch({headless:true,executablePath:process.env.LEX_CHROMIUM||'/Applications/Chromium.app/Contents/MacOS/Chromium'});
  const errors=[],scans=[];
@@ -16,15 +16,15 @@ const link=(g,e)=>base+'#/d/'+e.decision+'?'+new URLSearchParams({mode:'guides',
   await context.route('https://fonts.googleapis.com/**',r=>r.fulfill({status:200,contentType:'text/css',body:''}));
   await context.route('https://fonts.gstatic.com/**',r=>r.abort());
   page.on('request',r=>{if(/\/scans\//.test(r.url()))scans.push(r.url());});
-  await page.goto(base+'#/guides');await page.waitForSelector('.guide');
-  assert.equal(await page.locator('.guide').count(),3);
+  await page.goto(base+'#/guides');await page.waitForSelector('.topic-card');
+  assert((await page.locator('.topic-card').count())>3);
   assert.equal(await page.locator('.guide-comparison').count(),0);
   assert.equal(scans.length,0,'Обзор тем не должен загружать сканы');
   await page.screenshot({path:path.join(out,'themes-desktop.png')});
   let checked=0;
   for(const g of data.guides){
    const comp=g.comparison;
-   await page.goto(base+'#/guides?g='+g.id);await page.waitForSelector('.guide-comparison');
+   await page.goto(base+'#/guides?g='+g.id+'&compare=1');await page.waitForSelector('.guide-comparison');
    await page.waitForFunction(id=>document.querySelector('.guide')?.dataset.guide===id,g.id);
    assert.equal(await page.locator('.comparison-case').count(),comp.cases.length);
    assert.equal(await page.locator('.guide-contrast').count(),comp.comparisons.length);
@@ -50,7 +50,7 @@ const link=(g,e)=>base+'#/d/'+e.decision+'?'+new URLSearchParams({mode:'guides',
     assert((await page.locator('.scan-dialog img').getAttribute('src')).endsWith(ev.scans[0].full));
     await page.keyboard.press('Escape');await page.reload();
     await page.waitForFunction(text=>[...document.querySelectorAll('.passage-focus')].map(x=>x.textContent).join('\n\n')===text,ev.text);
-    await page.click('#detail-close');await page.waitForURL('**/#/guides?g='+g.id);
+    await page.click('#detail-close');await page.waitForURL('**/#/guides?g='+g.id+'&compare=1');
     await page.waitForFunction(id=>document.querySelector('.guide')?.dataset.guide===id,g.id);
     checked++;
    }
@@ -73,10 +73,10 @@ const link=(g,e)=>base+'#/d/'+e.decision+'?'+new URLSearchParams({mode:'guides',
   await page.setViewportSize({width:390,height:844});await page.click('#theme');
   assert.equal(await page.locator('html').getAttribute('data-theme'),'dark');
   for(const guide of data.guides){
-   await page.goto(base+'#/guides?g='+guide.id);await page.waitForFunction(id=>document.querySelector('.guide')?.dataset.guide===id,guide.id);
+   await page.goto(base+'#/guides?g='+guide.id+'&compare=1');await page.waitForFunction(id=>document.querySelector('.guide')?.dataset.guide===id,guide.id);
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Мобильный экран: '+guide.id);
   }
-  await page.goto(base+'#/guides?g='+g.id);await page.waitForFunction(id=>document.querySelector('.guide')?.dataset.guide===id,g.id);
+  await page.goto(base+'#/guides?g='+g.id+'&compare=1');await page.waitForFunction(id=>document.querySelector('.guide')?.dataset.guide===id,g.id);
   await page.screenshot({path:path.join(out,'comparison-mobile-dark.png')});
   await page.goto(base+'#/guides?g=unknown');await page.waitForSelector('#guides-results .empty');
   assert.equal(await page.locator('.guide').count(),0);
@@ -84,7 +84,7 @@ const link=(g,e)=>base+'#/d/'+e.decision+'?'+new URLSearchParams({mode:'guides',
   const offline=await browser.newContext({viewport:{width:390,height:844}}),op=await offline.newPage(),requests=[];
   op.on('pageerror',e=>errors.push(e.message));op.on('request',r=>requests.push(r.url()));
   await offline.route('http**://**',r=>r.abort());
-  await op.goto('file://'+path.join(lex,'dist/senat-lex.html')+'#/guides?g='+g.id);
+  await op.goto('file://'+path.join(lex,'dist/senat-lex.html')+'#/guides?g='+g.id+'&compare=1');
   await op.waitForSelector('.guide-comparison');assert.equal(await op.locator('.comparison-case').count(),2);
   await op.goto('file://'+path.join(lex,'dist/senat-lex.html')+link(g,note).slice(base.length));
   await op.waitForSelector('#passage-target');

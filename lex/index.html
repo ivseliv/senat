@@ -166,6 +166,13 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
 .comparison-case { min-width: 0; border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
 .comparison-case h4 { margin: 0; font-size: 17px; }.comparison-case h5 { margin: 20px 0 5px; font-size: 15px; }
 .comparison-case .source-quote { overflow-wrap: anywhere; }.comparison-limits h3 { margin-top: 0; }
+.topic-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,280px),1fr)); gap: 16px; }
+.topic-card h3 { margin-top: 0; }.topic-card { margin-bottom: 0; }.topic-count { font-weight: 600; color: var(--accent-ink); }
+.topic-comparison { padding: 14px; margin: 22px 0; border: 1px solid var(--line); border-radius: 8px; }
+.topic-comparison > summary { font-weight: 600; }.catalog-cases { margin-top: 20px; }
+.catalog-case h3 { margin-top: 0; }.catalog-headnote { margin-top: 12px; }
+#guides-status { margin: 16px 0; color: var(--muted); }#guides-filter { display: flex; align-items: end; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+#guides-filter label { display: grid; gap: 5px; min-width: 0; max-width: 100%; }#guides-filter .guide-query { flex: 1 1 280px; }#guides-q { width: 100%; }#guides-year { max-width: 100%; min-width: 0; }
 .decision-analysis h3 { margin-top: 0; }.analysis-label,.analysis-speaker { color: var(--accent-ink); font-size: 13px; font-weight: 600; margin: 4px 0; }.analysis-item { border-top: 1px solid var(--line); padding-top: 12px; margin-top: 12px; }.analysis-item h4 { margin: 0; font-size: 16px; }.analysis-evidence { margin-top: 8px; }.source-quote { margin: 10px 0; padding-left: 12px; border-left: 2px solid var(--line); font-family: "Noto Serif", Georgia, serif; white-space: pre-wrap; }.analysis-card h3 { margin-top: 0; }
 </style>
 </head>
@@ -282,10 +289,12 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
   </section>
 
   <section id="view-guides" hidden>
-    <h2>Сравнить решения по теме</h2>
-    <p>Как обстоятельства и применённые нормы влияют на ответ Сената: сравнения с буквальными цитатами и страницами издания.</p>
-    <p class="muted small">В каждой теме сохранён широкий список для дальнейшего чтения. Сравнения охватывают выбранные дела и не формулируют правило современного права.</p>
-    <div id="guides-results"></div>
+    <h2>Каталог тем</h2>
+    <p class="muted small">Редакционная разметка и современные пояснения подготовлены с помощью ИИ.</p>
+    <p>Современные названия и пояснения помогают найти дела по предмету спора или судебному вопросу. Каждое включение в тему можно проверить по цитате и странице издания.</p>
+    <details class="muted small"><summary>Как составлен каталог</summary><p>Тематическая разметка подготовлена с помощью ИИ по заголовкам, изложению и аннотациям пассажей; спорные места уточнялись по полному тексту. Одно дело может входить в несколько разделов. Это редакционная навигация: полнота всех возможных тем и юридическая экспертиза не заявляются. Неуточнённые дела остаются доступны в общем списке. Автоматические метки вкладки «Поиск» сохраняются отдельно.</p></details>
+    <form id="guides-filter"><label>Том<select id="guides-year" aria-label="Том каталога"></select></label><label class="guide-query"><span id="guides-q-label">Найти тему</span><input id="guides-q" type="search"></label><button class="btn" type="submit">Найти</button></form>
+    <div id="guides-status" aria-live="polite"></div><div id="guides-results"></div>
   </section>
 
   <section id="view-api" hidden>

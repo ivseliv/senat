@@ -18,7 +18,7 @@ from guide_comparisons import guide_decisions
 ROOT = Path(__file__).resolve().parent.parent
 PUBLIC = 'https://ivseliv.github.io/senat/lex/'
 API_VERSION = 'v1'
-CONTRACT_VERSION = '1.3.0'
+CONTRACT_VERSION = '1.4.0'
 
 
 def read_json(path):
@@ -153,6 +153,23 @@ def schema_document():
                     }},
                 },
             },
+            'TopicCatalog': {
+                'type': 'object',
+                'required': ['schema_version', 'count', 'classified', 'topic_count', 'memberships', 'topics', 'decisions', 'unclassified'],
+                'properties': {
+                    'schema_version': {'const': 1},
+                    **{k: {'type': 'integer', 'minimum': 0} for k in ('count','classified','topic_count','memberships')},
+                    'topics': {'type': 'array', 'items': {'type': 'object', 'required': ['id','title','description','decision_ids','count','by_year']}},
+                    'decisions': {'type': 'object', 'additionalProperties': {
+                        'type': 'object', 'required': ['id','source_sha256','year','department','title','summary','topics'],
+                        'properties': {'topics': {'type': 'array', 'items': {
+                            'type': 'object', 'required': ['id','evidence'],
+                            'properties': {'id': {'type':'string'}, 'evidence': {'$ref': '#/$defs/EditorialEvidence'}},
+                        }}},
+                    }},
+                    'unclassified': {'type': 'array', 'items': {'type': 'string'}},
+                },
+            },
         },
         'description': 'UTF-8. Смещения start/end — полуоткрытый диапазон Unicode-кодовых точек [start,end), а не UTF-16-индексы JavaScript.',
     }
@@ -182,6 +199,7 @@ def openapi_document(years, act_ids):
             '/scans/{year}.json': {'get': {'summary': 'Привязки к страницам и координатам', 'parameters': year_parameter, 'responses': response}},
             '/editorial/analyses.json': {'get': {'summary': 'Редакционные разборы', 'responses': response}},
             '/editorial/guides.json': {'get': {'summary': 'Тематические подборки и сравнительные разборы', 'responses': response}},
+            '/editorial/topics.json': {'get': {'summary': 'Каталог тем с подтверждёнными цитатами включениями решений', 'responses': response}},
             '/bulk.json': {'get': {'summary': 'Полные JSON/CSV-выгрузки', 'responses': response}},
         },
         'components': {'schemas': {'Envelope': {'$ref': './schema.json#/$defs/Envelope'}, 'Decision': {'$ref': './schema.json#/$defs/Decision'}, 'Passage': {'$ref': './schema.json#/$defs/Passage'}, 'PrecedentReference': {'$ref':'./schema.json#/$defs/PrecedentReference'}}},
@@ -233,10 +251,11 @@ def build_api(root=ROOT):
     precedents = read_json(export / 'precedents.json')
     analyses = read_json(data / 'decision-analyses.json')
     guides = read_json(data / 'guides.json')
+    catalog = read_json(data / 'topic-catalog.json')
     analytics = read_json(data / 'analytics.json')
     glossary = read_json(data / 'concepts.json')
     export_manifest = read_json(export / 'manifest.json')
-    revision = digest_files([export / 'manifest.json', data / 'decision-analyses.json', data / 'guides.json', data / 'analytics.json', data / 'concepts.json'])
+    revision = digest_files([export / 'manifest.json', data / 'decision-analyses.json', data / 'guides.json', data / 'topic-catalog.json', data / 'analytics.json', data / 'concepts.json'])
     years = [volume['year'] for volume in meta['volumes']]
     codes = [act['code'] for act in acts]
 
@@ -327,6 +346,7 @@ def build_api(root=ROOT):
     emit('legislation/acts.json', envelope('legislation-acts', items=acts))
     emit('editorial/analyses.json', envelope('editorial-analyses', item=analyses, links={'web': PUBLIC + '#/analyses'}))
     emit('editorial/guides.json', envelope('editorial-guides', item=guides, links={'web': PUBLIC + '#/guides'}))
+    emit('editorial/topics.json', envelope('topic-catalog', item=catalog, links={'web': PUBLIC + '#/guides'}))
     emit('analytics.json', envelope('analytics', item=analytics))
     emit('glossary.json', envelope('concepts', item=glossary))
 
@@ -344,6 +364,10 @@ def build_api(root=ROOT):
     counts['guides'] = len(guides['guides'])
     counts['guide_comparisons'] = guides.get('comparison_count', 0)
     counts['guide_comparison_decisions'] = len({c['id'] for g in guides['guides'] for c in g.get('comparison', {}).get('cases', [])})
+    counts['catalog_topics'] = catalog['topic_count']
+    counts['catalog_decisions'] = catalog['count']
+    counts['catalog_classified'] = catalog['classified']
+    counts['catalog_memberships'] = catalog['memberships']
     coverage = {'volumes': volumes, 'counts': counts}
     emit('volumes.json', envelope('volumes', items=volumes))
     emit('corpus.json', envelope('corpus', item={
@@ -393,12 +417,15 @@ def build_api(root=ROOT):
     for guide in guides['guides']:
         for ident in guide_decisions(guide):
             add_facet('guide', guide['id'], ident)
+    for topic in catalog['topics']:
+        for ident in topic['decision_ids']:
+            add_facet('catalog-topic', topic['id'], ident)
 
     facets = {}
     for kind, labels in sorted(facet_groups.items()):
         rows = []
         for label, ids in sorted(labels.items(), key=lambda pair: (pair[0].casefold(), pair[0])):
-            facet_id = str(label) if kind in ('year', 'participant', 'guide') else stable_id(kind, label)
+            facet_id = str(label) if kind in ('year', 'participant', 'guide', 'catalog-topic') else stable_id(kind, label)
             ids = sorted(ids, key=lambda ident: (decision_by_id[ident]['year'], decision_by_id[ident]['number']))
             relative = f'indexes/{kind}/{facet_id}.json'
             emit(relative, {
@@ -412,6 +439,7 @@ def build_api(root=ROOT):
     emit('facets.json', envelope('facets', item=facets))
 
     datasets = [
+        {'id': 'topic-catalog', 'description': 'Редакционный каталог всех решений с современными пояснениями и цитатами тематических включений.', 'href': href('editorial/topics.json'), 'item_schema': 'TopicCatalog'},
         {'id': 'decisions', 'description': 'Полные решения по годам и по постоянному ID.', 'href_template': href('decisions/{year}.json'), 'values': years, 'item_schema': 'Decision'},
         {'id': 'passages', 'description': 'Пассажи поиска и пояснения по годам.', 'href_template': href('passages/{year}.json'), 'values': years, 'item_schema': 'Passage'},
         {'id':'precedents','description':'Ссылки на прежние решения с подтверждающей цитатой и статусом привязки.','href_template':href('precedents/{year}.json'),'values':years,'item_schema':'PrecedentReference'},
