@@ -485,6 +485,95 @@
           }
         }
       }
+    },
+    "TopicCatalog": {
+      "type": "object",
+      "required": [
+        "schema_version",
+        "count",
+        "classified",
+        "topic_count",
+        "memberships",
+        "topics",
+        "decisions",
+        "unclassified"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "classified": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "topic_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "memberships": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "topics": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "description",
+              "decision_ids",
+              "count",
+              "by_year"
+            ]
+          }
+        },
+        "decisions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "required": [
+              "id",
+              "source_sha256",
+              "year",
+              "department",
+              "title",
+              "summary",
+              "topics"
+            ],
+            "properties": {
+              "topics": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "evidence"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "evidence": {
+                      "$ref": "#/$defs/EditorialEvidence"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "unclassified": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
     }
   },
   "description": "UTF-8. Смещения start/end — полуоткрытый диапазон Unicode-кодовых точек [start,end), а не UTF-16-индексы JavaScript."

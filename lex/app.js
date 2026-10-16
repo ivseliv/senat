@@ -31,7 +31,7 @@
     laws: { q: '', code: '', data: null, promise: null, token: 0 },
     analyses: { data: null, promise: null },
     precedents: { data: null, promise: null },
-    guides: { data: null, promise: null },
+    guides: { data: null, promise: null, catalog: null, catalogPromise: null, token: 0, shown: 30, key: '' },
     api: { data: null, promise: null },
     participants: {q:'', year:'', shown:60}, participantMap: new Map(),
     f: { q: '', year: '', outcome: '', topic: '', code: '', statute: '', procedure: '', person: '', participant: '', gender: '', age: '', family: '', estate: '', entity: '', role: '', sort: 'rel' }, shown: 20, hits: [], sentinel: 0,
@@ -105,6 +105,10 @@
   async function loadGuides() {
     if (!S.guides.promise) S.guides.promise = loadJSON('guides.json').then(data => (S.guides.data = data));
     return S.guides.promise;
+  }
+  async function loadTopicCatalog() {
+    if (!S.guides.catalogPromise) S.guides.catalogPromise=loadJSON('topic-catalog.json').then(data=>(S.guides.catalog=data)).catch(err=>{S.guides.catalogPromise=null;throw err;});
+    return S.guides.catalogPromise;
   }
   function apiURL(name) {
     return (window.LEX_INLINE ? 'https://ivseliv.github.io/senat/lex/api/v1/' : 'api/v1/') + name;
@@ -238,39 +242,85 @@
     if (tab === 'about') renderCorpus();
     window.scrollTo(0, path.startsWith('d/') ? window.scrollY : 0);
   }
-  async function renderGuides() {
-    const box=$('#guides-results'); box.replaceChildren(h('p',{class:'muted'},'Загрузка тематических подборок…'));
+  async function renderGuides(more=false) {
+    const box=$('#guides-results'),status=$('#guides-status'),token=++S.guides.token;
+    const params=readHash().p,requested=params.get('g')||'',year=params.get('y')||'',query=params.get('q')||'';
+    if(!more)box.replaceChildren(h('p',{class:'muted'},'Загрузка каталога тем…'));
     try {
-      const [data]=await Promise.all([loadGuides(),loadAnalyses()]);
-      const selected=readHash().p.get('g');
-      const visible=selected ? data.guides.filter(g=>g.id===selected) : data.guides;
-      const nav=h('nav',{class:'chips guide-nav','aria-label':'Темы сравнительных разборов'},
-        h('a',{class:'chip',href:'#/guides'},'Все темы'),
-        ...data.guides.map(g=>h('a',{class:'chip',href:'#/guides?g='+g.id,'aria-current':g.id===selected?'page':null},g.title)));
-      box.replaceChildren(nav,...visible.map(guide => {
-        const groups=guide.groups.map(group => {
-          const items=group.decisions.map(id => {
-            const d=S.meta.decisions.find(x=>x.id===id);
-            const hasAnalysis=S.analyses.data && S.analyses.data.decisions && S.analyses.data.decisions[id];
-            return h('li',{},h('a',{href:'#/d/'+id+'?mode=guides&g='+guide.id},`${d.vol} г. № ${d.num} — ${M(d.headnote)}`),
-              h('span',{class:'muted small'},' · '+d.outcome),hasAnalysis?' · ':'',hasAnalysis?h('a',{href:'#/d/'+id+'?mode=analyses'},'разбор'):'');
-          });
-          return h('section',{class:'guide-group'},h('h3',{},group.title),h('p',{class:'muted small'},group.description),h('ul',{},items));
+      const [data,catalog]=await Promise.all([loadGuides(),loadTopicCatalog(),loadAnalyses()]);
+      if(token!==S.guides.token || $('#view-guides').hidden)return;
+      const selected=catalog.route_aliases[requested]||requested;
+      const key=[selected,year,query].join('|');
+      if(key!==S.guides.key){S.guides.key=key;S.guides.shown=30;}
+      const topic=catalog.topics.find(t=>t.id===selected),listing=!!selected;
+      const scoped=c=>!year || String(c.year)===year;
+      const normalize=t=>L.modernize(t).toLocaleLowerCase('ru').replace(/ё/g,'е');
+      const words=normalize(query).trim().split(/\s+/).filter(Boolean);
+      const matches=t=>words.every(w=>normalize(t).includes(w));
+      const link=(id,extra={})=>'#/guides?'+new URLSearchParams(Object.entries({g:id,y:year,...(id?{catalog:'1'}:{}),...extra}).filter(([,v])=>v));
+      const select=$('#guides-year');
+      select.replaceChildren(h('option',{value:''},'Все тома'),...S.meta.volumes.map(v=>h('option',{value:v.year},`${v.year} · ${v.dept}`)));
+      select.value=year;
+      $('#guides-q-label').textContent=listing?'Найти решение в этом разделе':'Найти тему';
+      $('#guides-q').placeholder=listing?'Современное название, предмет или участник':'Например: алименты, банкротство, наследство';
+      $('#guides-q').value=query;
+      const submit=()=>go('guides',{g:requested,y:select.value,q:$('#guides-q').value.trim(),catalog:params.get('catalog')||'',compare:params.get('compare')||''});
+      select.onchange=submit;$('#guides-filter').onsubmit=e=>{e.preventDefault();submit();};
+      const nav=h('nav',{class:'chips guide-nav','aria-label':'Каталог тем'},
+        h('a',{class:'chip',href:link('')},'Все темы'),h('a',{class:'chip',href:link('all')},'Все решения'),
+        catalog.unclassified.length?h('a',{class:'chip',href:link('unclassified')},'Требуют уточнения: '+catalog.unclassified.length):null);
+      const coverage=`${catalog.topic_count} тем · ${catalog.count} решений · тематически размечено ${catalog.classified}/${catalog.count}.`;
+      if(!listing){
+        const topics=catalog.topics.filter(t=>t.count && matches([t.title,t.description,...(t.keywords||[])].join(' ')));
+        status.textContent=coverage+` Показано тем: ${topics.length}. Одно дело может входить в несколько разделов.`;
+        const cards=topics.map(t=>{
+          const count=t.decision_ids.filter(id=>scoped(catalog.decisions[id])).length;
+          const comp=data.guides.find(g=>g.id===t.comparison_guide)?.comparison;
+          return h('article',{class:'card topic-card','data-topic':t.id},h('h3',{},h('a',{href:link(t.id)},t.title)),
+            h('p',{},t.description),h('p',{class:'topic-count'},`${count} ${plural(count,'решение','решения','решений')}`+(year?' в выбранном томе':'')),
+            h('a',{href:link(t.id)},'Открыть решения →'),
+            comp?h('p',{class:'small'},h('a',{href:link(t.id,{compare:'1'})},'Подробное сравнение '+comp.cases.length+' дел')):null);
         });
-        const comp=guide.comparison;
-        return h('article',{class:'guide','data-guide':guide.id},h('h2',{},comp?comp.title:guide.title),
-          comp?h('p',{class:'guide-question'},comp.question):'',
-          comp?h('p',{},comp.scope):h('p',{},guide.description),
-          comp&&selected?comparisonSection(guide):comp?h('p',{},h('a',{class:'btn',href:'#/guides?g='+guide.id},'Сравнить '+comp.cases.length+' '+plural(comp.cases.length,'решение','решения','решений')+' →')):'',
-          h('details',{class:'guide-reading'},h('summary',{},'Ещё решения по теме: '+guide.title),
-            h('p',{class:'preliminary-note'},guide.label),h('p',{},guide.description),h('p',{class:'muted small'},guide.notice),...groups));
-      }));
-      if (!visible.length) box.append(h('p',{class:'empty'},'Тема не найдена. Откройте одну из тем выше.'));
-    } catch(err) { box.replaceChildren(h('p',{class:'empty'},'Не удалось загрузить подборки: '+err.message)); }
+        box.replaceChildren(nav,h('div',{class:'topic-grid'},...cards),!cards.length?h('p',{class:'empty'},'Такая тема не найдена. Попробуйте другое название или откройте все темы.'):null);
+        return;
+      }
+      if(!topic && !['all','unclassified'].includes(selected)){
+        status.textContent=coverage;
+        box.replaceChildren(nav,h('p',{class:'empty'},'Тема не найдена. Откройте каталог тем выше.'));return;
+      }
+      const ids=topic?topic.decision_ids:selected==='all'?Object.keys(catalog.decisions):catalog.unclassified;
+      const cases=ids.map(id=>catalog.decisions[id]).filter(scoped).filter(c=>matches(c.title+' '+c.summary+' '+S.meta.decisions.find(d=>d.id===c.id).headnote));
+      status.textContent=coverage+` В разделе ${ids.length}, с учётом фильтров ${cases.length}; показано ${Math.min(cases.length,S.guides.shown)}.`;
+      const guide=topic&&data.guides.find(g=>g.id===topic.comparison_guide),comp=guide&&guide.comparison;
+      const legacyComparison=!params.has('catalog') && data.guides.some(g=>g.id===requested);
+      const comparison=comp?h('details',{class:'topic-comparison',open:params.get('compare')==='1'||legacyComparison},
+        h('summary',{},'Сравнение выбранных дел (все тома): '+comp.title),comparisonSection(guide)):null;
+      const cards=cases.slice(0,S.guides.shown).map(c=>{
+        const d=S.meta.decisions.find(x=>x.id===c.id),ev=c.topics.find(t=>t.id===selected)?.evidence;
+        const origin={mode:'guides',g:requested,catalog:'1',...(year?{y:year}:{}),...(query?{q:query}:{})};
+        return h('article',{class:'card catalog-case','data-id':c.id},
+          h('h3',{},h('a',{href:'#/d/'+c.id+'?'+new URLSearchParams(origin)},c.title)),
+          h('p',{class:'muted small'},`${c.year} г. № ${d.num} · ${c.department}`),h('p',{},c.summary),
+          c.review_note?h('p',{class:'preliminary-note'},c.review_note):null,
+          h('div',{class:'chips'},...c.topics.map(t=>h('a',{class:'chip',href:link(t.id)},catalog.topics.find(x=>x.id===t.id).title))),
+          ev?sourceEvidence(c.id,ev,origin):null,
+          h('p',{},h('a',{href:'#/d/'+c.id+'?'+new URLSearchParams(origin)},'Текст и сканы'),
+            S.analyses.data.decisions[c.id]?[' · ',h('a',{href:'#/d/'+c.id+'?mode=analyses'},'Подробный разбор')]:null),
+          h('details',{class:'catalog-headnote'},h('summary',{},'Заголовок издания (OCR)'),h('p',{},M(d.headnote))),sourceWarning(d));
+      });
+      const moreButton=cases.length>S.guides.shown?h('button',{class:'btn',id:'guides-more',onclick:()=>{S.guides.shown+=30;renderGuides(true);}},'Показать ещё'):null;
+      const legacy=guide?h('details',{class:'guide-reading'},h('summary',{},'Прежняя смежная подборка: '+guide.title),
+        h('p',{class:'muted small'},guide.notice),...guide.groups.map(group=>h('section',{class:'guide-group'},h('h3',{},group.title),
+          h('ul',{},...group.decisions.map(id=>{const d=S.meta.decisions.find(x=>x.id===id);return h('li',{},h('a',{href:'#/d/'+id+'?mode=guides&g='+requested},`${d.vol} г. № ${d.num} — ${M(d.headnote)}`));}))))):null;
+      box.replaceChildren(nav,h('article',{class:'guide','data-guide':requested},
+        h('h2',{},topic?topic.title:selected==='all'?'Все решения корпуса':'Тема требует уточнения'),
+        h('p',{},topic?topic.description:selected==='all'?'Все опубликованные решения, включая дела с неуточнённой темой.':'Эти дела доступны для чтения, но надёжная тема пока не выбрана.'),
+        comparison,h('div',{class:'catalog-cases'},...cards),!cases.length?h('p',{class:'empty'},'В этом разделе по выбранным фильтрам решений не найдено.'):null,moreButton,legacy));
+    } catch(err) {if(token===S.guides.token){status.textContent='';box.replaceChildren(h('p',{class:'empty'},'Не удалось загрузить каталог: '+err.message));}}
   }
   function comparisonSection(guide) {
     const comp=guide.comparison;
-    const quote=ev=>sourceEvidence(ev.decision,ev,{mode:'guides',g:guide.id});
+    const quote=ev=>sourceEvidence(ev.decision,ev,{mode:'guides',g:guide.id,compare:'1'});
     return h('section',{class:'guide-comparison','aria-label':comp.title},
       h('p',{class:'analysis-label'},comp.label),
       h('p',{class:'muted small'},'Полные тексты прочитаны по контексту. Каждое сопоставление связано с цитатами разных дел. Новая сплошная сверка изображений и независимая юридическая экспертиза не проводились.'),
@@ -282,7 +332,7 @@
         h('p',{class:'muted small'},c.department),
         ...c.sections.map(s=>h('section',{class:'comparison-case-section'},h('h5',{},s.heading),
           h('p',{class:'analysis-speaker'},s.speaker),h('p',{},s.summary),...s.evidence.map(quote))),
-        h('p',{},h('a',{href:'#/d/'+c.id+'?mode=guides&g='+guide.id},'Полный текст решения'))))),
+        h('p',{},h('a',{href:'#/d/'+c.id+'?mode=guides&g='+guide.id+'&compare=1'},'Полный текст решения'))))),
       h('aside',{class:'preliminary-note comparison-limits'},h('h3',{},'Пределы сравнения'),h('p',{},comp.limits)));
   }
   async function renderApi() {
@@ -505,9 +555,10 @@
     if (!d) { box.replaceChildren(h('p', {}, 'Решение не найдено')); $('#detail').hidden = false; return; }
     $('#detail').hidden = false; document.body.classList.add('modal');
     box.replaceChildren(h('p',{class:'muted'},'Загрузка решения…'));
-    const [text, analyses, precedents, guides] = await Promise.all([textOf(d), loadAnalyses(),
+    const [text, analyses, precedents, guides, catalog] = await Promise.all([textOf(d), loadAnalyses(),
       loadPrecedents().catch(()=>({references:[],unavailable:true})),
-      readHash().p.get('mode')==='guides'?loadGuides():null]);
+      readHash().p.get('mode')==='guides'?loadGuides():null,
+      readHash().p.get('mode')==='guides'?loadTopicCatalog():null]);
     if (S.detailId !== id || $('#detail').hidden) return;
     const params = readHash().p, inSense = ['sense','map','passage','laws','analysis','guides'].includes(params.get('mode'));
     let target = null, senseTerms = [], partialMissing = [];
@@ -516,9 +567,13 @@
       const ref=precedents.references.find(r=>r.id===params.get('ref') && r.source_id===id);
       if(ref) target={id:ref.passage_id || ref.id,start:ref.start,end:ref.end,pages:ref.pages,sources:ref.sources,precedent:true};
     } else if (params.get('mode') === 'guides' && guides) {
-      const guide=guides.guides.find(g=>g.id===params.get('g'));
+      const topicId=catalog.route_aliases[params.get('g')]||params.get('g');
+      const topic=catalog.topics.find(t=>t.id===topicId);
+      const guide=guides.guides.find(g=>g.id===(topic&&topic.comparison_guide||params.get('g')));
       const comp=guide&&guide.comparison;
-      const evidence=comp&&[...comp.cases.flatMap(c=>c.sections.flatMap(s=>s.evidence)),...comp.comparisons.flatMap(c=>c.evidence)]
+      const comparisonEvidence=comp?[...comp.cases.flatMap(c=>c.sections.flatMap(s=>s.evidence)),...comp.comparisons.flatMap(c=>c.evidence)]:[];
+      const catalogEvidence=(catalog.decisions[id]?.topics||[]).filter(t=>t.id===topicId).map(t=>t.evidence);
+      const evidence=[...comparisonEvidence,...catalogEvidence]
         .find(e=>e.decision===id && String(e.start)===params.get('at') && String(e.end)===params.get('end'));
       if(evidence) target={id:evidence.passage_id,start:evidence.start,end:evidence.end,pages:evidence.printed_pages || [],sources:evidence.sources || [],scans:evidence.scans,editorial_note:evidence.editorial_note,ai:{source_warning:evidence.source_warning}};
     } else if (params.get('mode') === 'analysis' && analysis) {

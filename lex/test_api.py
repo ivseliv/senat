@@ -37,6 +37,7 @@ class ApiTest(unittest.TestCase):
         cls.passages = read(EXPORT / 'passages.json')
         cls.participants = read(EXPORT / 'participants.json')
         cls.guides = read(ROOT / 'data' / 'guides.json')
+        cls.catalog = read(ROOT / 'data' / 'topic-catalog.json')
 
     def test_manifest_is_complete_and_hashes_match(self):
         self.assertEqual(self.manifest['api_version'], API_VERSION)
@@ -82,6 +83,7 @@ class ApiTest(unittest.TestCase):
         decisions = {row['id']: row for row in self.decisions}
         participant_map = {row['id']: row for row in self.participants}
         guide_ids = {guide['id']: set(guide_decisions(guide)) for guide in self.guides['guides']}
+        catalog_ids = {t['id']: set(t['decision_ids']) for t in self.catalog['topics']}
         for kind, rows in facets.items():
             for facet in rows:
                 index = read(API / 'indexes' / kind / f'{facet["id"]}.json')
@@ -101,7 +103,9 @@ class ApiTest(unittest.TestCase):
                     elif kind in ('presiding', 'reporter', 'prosecutor'): self.assertEqual(decision[kind], label)
                     elif kind == 'participant': self.assertIn(ident, participant_map[label]['decisions'])
                     elif kind == 'guide': self.assertIn(ident, guide_ids[label])
+                    elif kind == 'catalog-topic': self.assertIn(ident, catalog_ids[label])
                 if kind == 'guide': self.assertEqual(set(ids),guide_ids[label])
+                if kind == 'catalog-topic': self.assertEqual(set(ids),catalog_ids[label])
 
     def test_comparisons_are_in_editorial_resource_and_coverage(self):
         resource=read(API/'editorial/guides.json')['item']
@@ -110,6 +114,14 @@ class ApiTest(unittest.TestCase):
         self.assertEqual(counts['guide_comparisons'],3)
         self.assertEqual(counts['guide_comparison_decisions'],8)
         self.assertIn('GuideComparison',read(API/'schema.json')['$defs'])
+
+    def test_catalog_is_available_with_exact_coverage(self):
+        self.assertEqual(read(API/'editorial/topics.json')['item'],self.catalog)
+        counts=self.manifest['coverage']['counts']
+        self.assertEqual(counts['catalog_decisions'],len(self.decisions))
+        self.assertEqual(counts['catalog_topics'],self.catalog['topic_count'])
+        self.assertEqual(counts['catalog_memberships'],sum(len(c['topics']) for c in self.catalog['decisions'].values()))
+        self.assertIn('TopicCatalog',read(API/'schema.json')['$defs'])
 
     def test_openapi_and_scan_contract(self):
         spec = read(API / 'openapi.json')
