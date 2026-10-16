@@ -8,6 +8,7 @@ fs.mkdirSync(out,{recursive:true});
  const browser=await chromium.launch({headless:true,...(process.env.LEX_CHROMIUM ? {executablePath:process.env.LEX_CHROMIUM} : {})});
  try {
   const context=await browser.newContext({viewport:{width:1280,height:900}}),page=await context.newPage();
+  if(process.env.LEX_TEST_SCAN_URL)await context.addInitScript(url=>{window.LEX_SCAN_URL=url;},process.env.LEX_TEST_SCAN_URL);
   const errors=[],requests=[];
   page.on('pageerror',e=>errors.push(e.message));
   page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
@@ -113,9 +114,9 @@ fs.mkdirSync(out,{recursive:true});
   // Законодательство: карточка исторического акта, буквальная цитата и путь к скану.
   await page.goto(base+'#/laws?q=1524');
   await page.waitForSelector('#view-laws:not([hidden]) [data-map-node="law-СЗГ"]');
-  assert((await page.locator('#laws-status').innerText()).includes('ссыл'));
+  assert((await page.locator('#laws-status').innerText()).includes('пар'));
   assert(await page.locator('.law-citation').count()>0);
-  assert((await page.locator('#laws-results').innerText()).includes('скан пассажа'));
+  assert((await page.locator('#laws-results').innerText()).includes('скан точного места'));
   await page.locator('.law-citation a').first().click();
   await page.waitForSelector('#passage-target');
   assert(page.url().includes('mode=laws'));
@@ -134,7 +135,7 @@ fs.mkdirSync(out,{recursive:true});
    await page.goto(base+'#/search?y=1904');
    await page.waitForFunction(()=>document.querySelector('#status').textContent.includes('120'));
    assert.equal(await page.locator('#f-year').inputValue(),'1904');
-   assert((await page.locator('#corpus-summary').innerText()).includes('335'));
+   assert((await page.locator('#corpus-summary').innerText()).includes(String(metadata.decisions.length)));
    await page.goto(base+'#/d/1904-042');await page.waitForSelector('#detail-body h2');
    const date42=await page.locator('#detail-body').innerText();
    assert(date42.includes('1903/₄ года декабря 17 / февраля 11'));

@@ -1,13 +1,13 @@
 {
   "api_version": "v1",
-  "contract_version": "1.4.0",
-  "data_revision": "sha256:6ac98d54af90894c26d5b151ea6fa7560f3c59eb9c7573bdfa175192587860d6",
+  "contract_version": "1.5.0",
+  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
   "resource": "statutes",
   "scope": {
     "code": "СЗГ",
     "id": "act-d2a3c58c7b33"
   },
-  "count": 417,
+  "count": 421,
   "items": [
     {
       "statute": "СЗГ ст. 698",
@@ -143,7 +143,7 @@
       "statute": "СЗГ ст. 420",
       "code": "СЗГ",
       "article": "ст. 420",
-      "mentions": 7,
+      "mentions": 8,
       "decision_id": "1896-030",
       "year": 1896,
       "decision_number": 30,
@@ -803,7 +803,7 @@
       "statute": "СЗГ ст. 1529",
       "code": "СЗГ",
       "article": "ст. 1529",
-      "mentions": 1,
+      "mentions": 2,
       "decision_id": "1897-052",
       "year": 1897,
       "decision_number": 52,
@@ -813,7 +813,7 @@
       "statute": "СЗГ ст. 1317",
       "code": "СЗГ",
       "article": "ст. 1317",
-      "mentions": 2,
+      "mentions": 3,
       "decision_id": "1897-058",
       "year": 1897,
       "decision_number": 58,
@@ -923,16 +923,6 @@
       "statute": "СЗГ ст. 1066¹⁰",
       "code": "СЗГ",
       "article": "ст. 1066¹⁰",
-      "mentions": 1,
-      "decision_id": "1897-065",
-      "year": 1897,
-      "decision_number": 65,
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-065"
-    },
-    {
-      "statute": "СЗГ ст. 1093",
-      "code": "СЗГ",
-      "article": "ст. 1093",
       "mentions": 1,
       "decision_id": "1897-065",
       "year": 1897,
@@ -1293,16 +1283,6 @@
       "statute": "СЗГ ст. 1401–1408",
       "code": "СЗГ",
       "article": "ст. 1401–1408",
-      "mentions": 1,
-      "decision_id": "1897-071",
-      "year": 1897,
-      "decision_number": 71,
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-071"
-    },
-    {
-      "statute": "СЗГ ст. 1408",
-      "code": "СЗГ",
-      "article": "ст. 1408",
       "mentions": 1,
       "decision_id": "1897-071",
       "year": 1897,
@@ -1933,7 +1913,7 @@
       "statute": "СЗГ ст. 1301",
       "code": "СЗГ",
       "article": "ст. 1301",
-      "mentions": 1,
+      "mentions": 3,
       "decision_id": "1904-023",
       "year": 1904,
       "decision_number": 23,
@@ -2010,6 +1990,16 @@
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-028"
     },
     {
+      "statute": "СЗГ ст. 1681",
+      "code": "СЗГ",
+      "article": "ст. 1681",
+      "mentions": 1,
+      "decision_id": "1904-028",
+      "year": 1904,
+      "decision_number": 28,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-028"
+    },
+    {
       "statute": "СЗГ ст. 1685",
       "code": "СЗГ",
       "article": "ст. 1685",
@@ -2020,10 +2010,20 @@
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-028"
     },
     {
+      "statute": "СЗГ ст. 1687",
+      "code": "СЗГ",
+      "article": "ст. 1687",
+      "mentions": 2,
+      "decision_id": "1904-028",
+      "year": 1904,
+      "decision_number": 28,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-028"
+    },
+    {
       "statute": "СЗГ ст. 1688",
       "code": "СЗГ",
       "article": "ст. 1688",
-      "mentions": 2,
+      "mentions": 3,
       "decision_id": "1904-028",
       "year": 1904,
       "decision_number": 28,
@@ -2033,7 +2033,7 @@
       "statute": "СЗГ ст. 1689",
       "code": "СЗГ",
       "article": "ст. 1689",
-      "mentions": 1,
+      "mentions": 2,
       "decision_id": "1904-028",
       "year": 1904,
       "decision_number": 28,
@@ -2080,6 +2080,16 @@
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-040"
     },
     {
+      "statute": "СЗГ ст. 1294",
+      "code": "СЗГ",
+      "article": "ст. 1294",
+      "mentions": 1,
+      "decision_id": "1904-040",
+      "year": 1904,
+      "decision_number": 40,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-040"
+    },
+    {
       "statute": "СЗГ ст. 2",
       "code": "СЗГ",
       "article": "ст. 2",
@@ -2100,6 +2110,26 @@
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-040"
     },
     {
+      "statute": "СЗГ ст. 1692",
+      "code": "СЗГ",
+      "article": "ст. 1692",
+      "mentions": 1,
+      "decision_id": "1904-041",
+      "year": 1904,
+      "decision_number": 41,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-041"
+    },
+    {
+      "statute": "СЗГ ст. 1693",
+      "code": "СЗГ",
+      "article": "ст. 1693",
+      "mentions": 1,
+      "decision_id": "1904-041",
+      "year": 1904,
+      "decision_number": 41,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-041"
+    },
+    {
       "statute": "СЗГ ст. 1",
       "code": "СЗГ",
       "article": "ст. 1",
@@ -2113,7 +2143,7 @@
       "statute": "СЗГ ст. 1068",
       "code": "СЗГ",
       "article": "ст. 1068",
-      "mentions": 6,
+      "mentions": 7,
       "decision_id": "1904-042",
       "year": 1904,
       "decision_number": 42,
@@ -2123,7 +2153,7 @@
       "statute": "СЗГ ст. 1077",
       "code": "СЗГ",
       "article": "ст. 1077",
-      "mentions": 4,
+      "mentions": 5,
       "decision_id": "1904-042",
       "year": 1904,
       "decision_number": 42,
@@ -2203,7 +2233,7 @@
       "statute": "СЗГ ст. 1104",
       "code": "СЗГ",
       "article": "ст. 1104",
-      "mentions": 1,
+      "mentions": 2,
       "decision_id": "1904-048",
       "year": 1904,
       "decision_number": 48,
@@ -2463,7 +2493,7 @@
       "statute": "СЗГ ст. 1005",
       "code": "СЗГ",
       "article": "ст. 1005",
-      "mentions": 3,
+      "mentions": 4,
       "decision_id": "1904-076",
       "year": 1904,
       "decision_number": 76,
@@ -2610,6 +2640,16 @@
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-080"
     },
     {
+      "statute": "СЗГ ст. 1010",
+      "code": "СЗГ",
+      "article": "ст. 1010",
+      "mentions": 1,
+      "decision_id": "1904-085",
+      "year": 1904,
+      "decision_number": 85,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-085"
+    },
+    {
       "statute": "СЗГ ст. 1 п. 1744",
       "code": "СЗГ",
       "article": "ст. 1 п. 1744",
@@ -2683,7 +2723,7 @@
       "statute": "СЗГ ст. 1314",
       "code": "СЗГ",
       "article": "ст. 1314",
-      "mentions": 2,
+      "mentions": 3,
       "decision_id": "1904-088",
       "year": 1904,
       "decision_number": 88,
@@ -2710,16 +2750,6 @@
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090"
     },
     {
-      "statute": "СЗГ ст. 371–376",
-      "code": "СЗГ",
-      "article": "ст. 371–376",
-      "mentions": 1,
-      "decision_id": "1904-090",
-      "year": 1904,
-      "decision_number": 90,
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090"
-    },
-    {
       "statute": "СЗГ ст. 574",
       "code": "СЗГ",
       "article": "ст. 574",
@@ -2733,7 +2763,7 @@
       "statute": "СЗГ ст. 641",
       "code": "СЗГ",
       "article": "ст. 641",
-      "mentions": 2,
+      "mentions": 3,
       "decision_id": "1904-090",
       "year": 1904,
       "decision_number": 90,
@@ -2790,6 +2820,26 @@
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-094"
     },
     {
+      "statute": "СЗГ ст. 574",
+      "code": "СЗГ",
+      "article": "ст. 574",
+      "mentions": 1,
+      "decision_id": "1904-096",
+      "year": 1904,
+      "decision_number": 96,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096"
+    },
+    {
+      "statute": "СЗГ ст. 684",
+      "code": "СЗГ",
+      "article": "ст. 684",
+      "mentions": 1,
+      "decision_id": "1904-096",
+      "year": 1904,
+      "decision_number": 96,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096"
+    },
+    {
       "statute": "СЗГ ст. 1068",
       "code": "СЗГ",
       "article": "ст. 1068",
@@ -2814,16 +2864,6 @@
       "code": "СЗГ",
       "article": "ст. 1086",
       "mentions": 2,
-      "decision_id": "1904-099",
-      "year": 1904,
-      "decision_number": 99,
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-099"
-    },
-    {
-      "statute": "СЗГ ст. 416",
-      "code": "СЗГ",
-      "article": "ст. 416",
-      "mentions": 1,
       "decision_id": "1904-099",
       "year": 1904,
       "decision_number": 99,
@@ -3203,6 +3243,16 @@
       "statute": "СЗГ ст. 132¹⁴",
       "code": "СЗГ",
       "article": "ст. 132¹⁴",
+      "mentions": 1,
+      "decision_id": "1905-024",
+      "year": 1905,
+      "decision_number": 24,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-024"
+    },
+    {
+      "statute": "СЗГ ст. 156¹",
+      "code": "СЗГ",
+      "article": "ст. 156¹",
       "mentions": 1,
       "decision_id": "1905-024",
       "year": 1905,
@@ -4098,16 +4148,6 @@
       "year": 1905,
       "decision_number": 97,
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-097"
-    },
-    {
-      "statute": "СЗГ ст. 495",
-      "code": "СЗГ",
-      "article": "ст. 495",
-      "mentions": 1,
-      "decision_id": "1905-100",
-      "year": 1905,
-      "decision_number": 100,
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-100"
     },
     {
       "statute": "СЗГ ст. 1259",

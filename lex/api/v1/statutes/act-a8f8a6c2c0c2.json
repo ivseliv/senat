@@ -1,23 +1,43 @@
 {
   "api_version": "v1",
-  "contract_version": "1.4.0",
-  "data_revision": "sha256:6ac98d54af90894c26d5b151ea6fa7560f3c59eb9c7573bdfa175192587860d6",
+  "contract_version": "1.5.0",
+  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
   "resource": "statutes",
   "scope": {
     "code": "УУС",
     "id": "act-a8f8a6c2c0c2"
   },
-  "count": 10,
+  "count": 37,
   "items": [
     {
       "statute": "УУС ст. 135",
       "code": "УУС",
       "article": "ст. 135",
-      "mentions": 2,
+      "mentions": 5,
       "decision_id": "1896-011",
       "year": 1896,
       "decision_number": 11,
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011"
+    },
+    {
+      "statute": "УУС ст. 135",
+      "code": "УУС",
+      "article": "ст. 135",
+      "mentions": 2,
+      "decision_id": "1896-012",
+      "year": 1896,
+      "decision_number": 12,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-012"
+    },
+    {
+      "statute": "УУС ст. 277",
+      "code": "УУС",
+      "article": "ст. 277",
+      "mentions": 1,
+      "decision_id": "1896-025",
+      "year": 1896,
+      "decision_number": 25,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-025"
     },
     {
       "statute": "УУС ст. 583",
@@ -70,6 +90,26 @@
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-039"
     },
     {
+      "statute": "УУС ст. 933",
+      "code": "УУС",
+      "article": "ст. 933",
+      "mentions": 1,
+      "decision_id": "1896-041",
+      "year": 1896,
+      "decision_number": 41,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-041"
+    },
+    {
+      "statute": "УУС ст. 975",
+      "code": "УУС",
+      "article": "ст. 975",
+      "mentions": 2,
+      "decision_id": "1896-041",
+      "year": 1896,
+      "decision_number": 41,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-041"
+    },
+    {
       "statute": "УУС ст. 1077–1102",
       "code": "УУС",
       "article": "ст. 1077–1102",
@@ -90,10 +130,160 @@
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-047"
     },
     {
+      "statute": "УУС ст. 34 п. 3",
+      "code": "УУС",
+      "article": "ст. 34 п. 3",
+      "mentions": 1,
+      "decision_id": "1896-049",
+      "year": 1896,
+      "decision_number": 49,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-049"
+    },
+    {
+      "statute": "УУС ст. 30",
+      "code": "УУС",
+      "article": "ст. 30",
+      "mentions": 1,
+      "decision_id": "1897-073",
+      "year": 1897,
+      "decision_number": 73,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-073"
+    },
+    {
+      "statute": "УУС ст. 1124",
+      "code": "УУС",
+      "article": "ст. 1124",
+      "mentions": 1,
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090"
+    },
+    {
+      "statute": "УУС ст. 1125",
+      "code": "УУС",
+      "article": "ст. 1125",
+      "mentions": 1,
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090"
+    },
+    {
+      "statute": "УУС ст. 1137",
+      "code": "УУС",
+      "article": "ст. 1137",
+      "mentions": 1,
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090"
+    },
+    {
+      "statute": "УУС ст. 1137–1139",
+      "code": "УУС",
+      "article": "ст. 1137–1139",
+      "mentions": 1,
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090"
+    },
+    {
+      "statute": "УУС ст. 1149",
+      "code": "УУС",
+      "article": "ст. 1149",
+      "mentions": 2,
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090"
+    },
+    {
+      "statute": "УУС ст. 1162",
+      "code": "УУС",
+      "article": "ст. 1162",
+      "mentions": 2,
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090"
+    },
+    {
+      "statute": "УУС ст. 1163",
+      "code": "УУС",
+      "article": "ст. 1163",
+      "mentions": 3,
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090"
+    },
+    {
+      "statute": "УУС ст. 1165",
+      "code": "УУС",
+      "article": "ст. 1165",
+      "mentions": 1,
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090"
+    },
+    {
+      "statute": "УУС ст. 1203",
+      "code": "УУС",
+      "article": "ст. 1203",
+      "mentions": 1,
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090"
+    },
+    {
+      "statute": "УУС ст. 371",
+      "code": "УУС",
+      "article": "ст. 371",
+      "mentions": 1,
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090"
+    },
+    {
+      "statute": "УУС ст. 371–376",
+      "code": "УУС",
+      "article": "ст. 371–376",
+      "mentions": 1,
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090"
+    },
+    {
+      "statute": "УУС ст. 776",
+      "code": "УУС",
+      "article": "ст. 776",
+      "mentions": 1,
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090"
+    },
+    {
+      "statute": "УУС ст. 777",
+      "code": "УУС",
+      "article": "ст. 777",
+      "mentions": 1,
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090"
+    },
+    {
       "statute": "УУС ст. 783",
       "code": "УУС",
       "article": "ст. 783",
-      "mentions": 1,
+      "mentions": 2,
       "decision_id": "1904-090",
       "year": 1904,
       "decision_number": 90,
@@ -103,11 +293,91 @@
       "statute": "УУС ст. 784",
       "code": "УУС",
       "article": "ст. 784",
-      "mentions": 1,
+      "mentions": 2,
       "decision_id": "1904-090",
       "year": 1904,
       "decision_number": 90,
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090"
+    },
+    {
+      "statute": "УУС ст. 298",
+      "code": "УУС",
+      "article": "ст. 298",
+      "mentions": 1,
+      "decision_id": "1904-096",
+      "year": 1904,
+      "decision_number": 96,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096"
+    },
+    {
+      "statute": "УУС ст. 299",
+      "code": "УУС",
+      "article": "ст. 299",
+      "mentions": 1,
+      "decision_id": "1904-096",
+      "year": 1904,
+      "decision_number": 96,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096"
+    },
+    {
+      "statute": "УУС ст. 6",
+      "code": "УУС",
+      "article": "ст. 6",
+      "mentions": 1,
+      "decision_id": "1904-096",
+      "year": 1904,
+      "decision_number": 96,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096"
+    },
+    {
+      "statute": "УУС ст. 7",
+      "code": "УУС",
+      "article": "ст. 7",
+      "mentions": 1,
+      "decision_id": "1904-096",
+      "year": 1904,
+      "decision_number": 96,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096"
+    },
+    {
+      "statute": "УУС ст. 776",
+      "code": "УУС",
+      "article": "ст. 776",
+      "mentions": 1,
+      "decision_id": "1904-096",
+      "year": 1904,
+      "decision_number": 96,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096"
+    },
+    {
+      "statute": "УУС ст. 781",
+      "code": "УУС",
+      "article": "ст. 781",
+      "mentions": 1,
+      "decision_id": "1904-096",
+      "year": 1904,
+      "decision_number": 96,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096"
+    },
+    {
+      "statute": "УУС ст. 782",
+      "code": "УУС",
+      "article": "ст. 782",
+      "mentions": 1,
+      "decision_id": "1904-096",
+      "year": 1904,
+      "decision_number": 96,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096"
+    },
+    {
+      "statute": "УУС ст. 785",
+      "code": "УУС",
+      "article": "ст. 785",
+      "mentions": 1,
+      "decision_id": "1904-096",
+      "year": 1904,
+      "decision_number": 96,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096"
     }
   ]
 }

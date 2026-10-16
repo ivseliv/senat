@@ -1,0 +1,43 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.5.0",
+  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "resource": "statutes",
+  "scope": {
+    "code": "ЗС",
+    "id": "act-0b61ef5db1c4"
+  },
+  "count": 3,
+  "items": [
+    {
+      "statute": "ЗС ст. 413",
+      "code": "ЗС",
+      "article": "ст. 413",
+      "mentions": 1,
+      "decision_id": "1897-012",
+      "year": 1897,
+      "decision_number": 12,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-012"
+    },
+    {
+      "statute": "ЗС ст. 1093",
+      "code": "ЗС",
+      "article": "ст. 1093",
+      "mentions": 1,
+      "decision_id": "1897-065",
+      "year": 1897,
+      "decision_number": 65,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-065"
+    },
+    {
+      "statute": "ЗС ст. 780",
+      "code": "ЗС",
+      "article": "ст. 780",
+      "mentions": 1,
+      "decision_id": "1905-095",
+      "year": 1905,
+      "decision_number": 95,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-095"
+    }
+  ]
+}

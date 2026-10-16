@@ -35,22 +35,23 @@
     "decisions": 384,
     "passages": 2152,
     "participants": 790,
-    "statute_mentions": 2034,
-    "legislation_acts": 9,
-    "legislation_citations": 832,
+    "statute_mentions": 1991,
+    "legislation_acts": 21,
+    "legislation_citations": 1141,
+    "legislation_unresolved": 789,
     "scan_passage_refs": 3293,
     "precedent_references": 826
   },
   "files": [
     {
       "name": "decisions.json",
-      "sha256": "82f9d7519b3b69deac21af55330c350db5d8f90f64e7b72290a451f869aec27a",
-      "bytes": 8384310
+      "sha256": "57c057d66f75496caeb5549225e8d6b1440512153f6c26bab6ffd75ebda27a5d",
+      "bytes": 8384430
     },
     {
       "name": "decisions.csv",
-      "sha256": "e14fdf413feba6de9fe2bbd509259314e05871f63354432b69819e072818aef5",
-      "bytes": 7829945
+      "sha256": "32f7c2e41573b9d2144deeb2fde422ebe43099108764190a664fd359df42d282",
+      "bytes": 7830323
     },
     {
       "name": "passages.json",
@@ -74,33 +75,43 @@
     },
     {
       "name": "statutes.json",
-      "sha256": "7962dc6f4d1e46e56b81b7200d5b23e0af1d52ecfa690234f00bc74a14086d08",
-      "bytes": 520642
+      "sha256": "b63964d0130e1d7ef797d5a0f6eba27101b41cf83bd16fd6088aa46990619555",
+      "bytes": 512194
     },
     {
       "name": "statutes.csv",
-      "sha256": "bc47bddc8402a0e8c6d786f94d88f60e88de3a3325f7e09ed9cd84bb8c588c66",
-      "bytes": 199343
+      "sha256": "b389f201d9747344e5f90637b219b8623035d8514fecaf2bfbf0ae748b7c8cdf",
+      "bytes": 197689
     },
     {
       "name": "legislation-acts.json",
-      "sha256": "78be535c125ec7e1e13a33b5ba37345417da67329bf0e79dfc2178076fdec7b0",
-      "bytes": 63200
+      "sha256": "39d859a52d037a9a676a31aaeeeb4fb84fd5e5179e1ffb936632bd4de9bd6f2b",
+      "bytes": 95169
     },
     {
       "name": "legislation-acts.csv",
-      "sha256": "60f03c91039aca1763a49ed5a926047d97fca248d448b3fd7f9cf6d661ad0372",
-      "bytes": 40072
+      "sha256": "1e881e66c317024552e94c231fddd7a8a67992559ad53c29c889f33ba878d5ba",
+      "bytes": 61336
     },
     {
       "name": "legislation-citations.json",
-      "sha256": "2b69d6c429418cdc8a9c29f5d4c0279b760a5a9ab209ef99f78011ace4f2833d",
-      "bytes": 1064106
+      "sha256": "661bab7239a7fb3ca8194a346c1813ed10f577d9e0dd46857ba2235d7939ea2d",
+      "bytes": 3434441
     },
     {
       "name": "legislation-citations.csv",
-      "sha256": "24bd003e74728e360b00aa00e08b28553285ce34fe7e0fe6c59f7af268d13324",
-      "bytes": 778051
+      "sha256": "473d5f73b393c97a933f35febbb2c2cade1d2229071338b10cdcfe157194424b",
+      "bytes": 2371895
+    },
+    {
+      "name": "legislation-unresolved.json",
+      "sha256": "678d0cd23437407e8e70c3af33239de7a36f0d6c417b9024448c6ad10cccb51a",
+      "bytes": 1963754
+    },
+    {
+      "name": "legislation-unresolved.csv",
+      "sha256": "a85dfeb5d0ae73511eabdb45e467b01b72b52fd919f0f22bc2d10a93f504327c",
+      "bytes": 1342577
     },
     {
       "name": "scan-passages.json",
@@ -124,8 +135,8 @@
     },
     {
       "name": "README.md",
-      "sha256": "b58be59ba8c2852093af9728cebb91e8acc578fafe7ca2e84df3edc3c25701e2",
-      "bytes": 4203
+      "sha256": "3ec472e6d59592a3eccf91fc08e2daf2274686eb10eb5b144f742b801a6f07f2",
+      "bytes": 4604
     }
   ],
   "notes": "Сборка детерминирована из lex/data; даты выгрузки намеренно не записываются."

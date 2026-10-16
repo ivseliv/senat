@@ -1,0 +1,780 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.5.0",
+  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "resource": "legislation-citations",
+  "scope": {
+    "code": "УПШ",
+    "id": "act-fcdce945345d"
+  },
+  "count": 9,
+  "items": [
+    {
+      "id": "1896-017:УПШ:154:text:3449",
+      "statute": "УПШ ст. 154",
+      "code": "УПШ",
+      "article": "ст. 154",
+      "decision_id": "1896-017",
+      "year": 1896,
+      "decision_number": 17,
+      "field": "text",
+      "start": 3449,
+      "end": 3456,
+      "quote_original": "ст. 154",
+      "context_original": "ослѣднихъ, а скорѣе разстрой ство и замѣшательство въ ихъ дѣлахъ; въ виду сего, освобожденіе ближайшихъ родственниковъ, упомянутыхъ въ п. 1 ст. 154 уст. о пошл., отъ уплаты на лога представляется вполнѣ справедли вымъ. По ст. 72 основ. госуд. зак. (т. 1 ч. 1 св. зак., изд. 1892 г.), зак",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "0b96255ad4cc666cbdaa6a28eb9d59c08d4f6a585a031b0e6e294c2dd1642f31",
+      "headnote_sha256": "b18c92226d2af84605eaedacc9bfc2d6529dd708ee69bb52e508f224c88c93c1",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-017",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-017?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+154&law=1896-017%3A%D0%A3%D0%9F%D0%A8%3A154%3Atext%3A3449&at=3449&end=3456",
+      "source_warning": "В OCR нарушена последовательность колонок; в первых двух пассажах присутствует конец предыдущего решения №16 о найме жилья. Пояснение относится только к ясно читаемому налоговому вопросу №17.",
+      "passage_id": "1896-017:2175-3818",
+      "sources": [
+        {
+          "page": 736,
+          "page_method": "header",
+          "file": "p0029.txt",
+          "start": 3449,
+          "end": 3456
+        }
+      ],
+      "printed_pages": [
+        736
+      ],
+      "scans": [
+        {
+          "file": "p0029.txt",
+          "page": 736,
+          "full": "scans/1896/pages/p0029-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1675,
+          "ocr_sha256": "b77a39317f27bd18337e23725b81756ff89cec95b3fd4daa8e9bf31e18cd4929",
+          "pdf_page": 29,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3449,
+          "end": 3469,
+          "quote_original": "ст. 154 уст. о пошл.",
+          "act_code": "УПШ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3449,
+          "end": 3456,
+          "quote_original": "ст. 154",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3449,
+              "end": 3469,
+              "quote_original": "ст. 154 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 4018,
+          "end": 4025,
+          "quote_original": "ст. 154",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4018,
+              "end": 4040,
+              "quote_original": "ст. 154 уст. о пошлин.",
+              "act_code": "УПШ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-074:УПШ:161:text:4633",
+      "statute": "УПШ ст. 161",
+      "code": "УПШ",
+      "article": "ст. 161",
+      "decision_id": "1904-074",
+      "year": 1904,
+      "decision_number": 74,
+      "field": "text",
+      "start": 4633,
+      "end": 4640,
+      "quote_original": "ст. 161",
+      "context_original": "бжалованію казенными палатами такихъ судебныхъ опредѣленій по дѣламъ о наслѣдственныхъ пошлинахъ, копіи съ которыхъ, въ силу ст. 7 прил. къ ст. 161 уст. о пошл. изд. 1893 г. (нынѣ по изд. 1903 г. прил. къ ст. 212), подлежатъ обязательному доставленію судомъ въ мѣстную казенную палату, а",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "14e07b037e610be71209d8e2da7da968c11258e86f46f6b68bb92351a93d045b",
+      "headnote_sha256": "06683cd6cc910b900a7b568c37eef26a2310b220cb1f1c954a6f394d67597a96",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-074",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-074?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+161&law=1904-074%3A%D0%A3%D0%9F%D0%A8%3A161%3Atext%3A4633&at=4633&end=4640",
+      "source_warning": null,
+      "passage_id": "1904-074:4137-6076",
+      "sources": [
+        {
+          "page": 209,
+          "page_method": "header",
+          "file": "p0105_R.txt",
+          "start": 4633,
+          "end": 4640
+        }
+      ],
+      "printed_pages": [
+        209
+      ],
+      "scans": [
+        {
+          "file": "p0105_R.txt",
+          "page": 209,
+          "full": "scans/1904/pages/p0105_R.webp",
+          "width": 1100,
+          "height": 1599,
+          "ocr_sha256": "b98391ebeb26738477764048fd7e226b3002762bc27afeaa6e069c28d9accf81",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 4633,
+          "end": 4653,
+          "quote_original": "ст. 161 уст. о пошл.",
+          "act_code": "УПШ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 278,
+          "end": 285,
+          "quote_original": "ст. 161",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "field": "text",
+              "start": 4633,
+              "end": 4653,
+              "quote_original": "ст. 161 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 4633,
+          "end": 4640,
+          "quote_original": "ст. 161",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4633,
+              "end": 4653,
+              "quote_original": "ст. 161 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-004:УПШ:161:text:1024",
+      "statute": "УПШ ст. 161",
+      "code": "УПШ",
+      "article": "ст. 161",
+      "decision_id": "1905-004",
+      "year": 1905,
+      "decision_number": 4,
+      "field": "text",
+      "start": 1024,
+      "end": 1031,
+      "quote_original": "ст. 161",
+      "context_original": "асилась и судебная палата. Принесенною по настоящему дѣлу кассаціонною жалобою казенной палаты возбуждается вопросъ: правило 4 ст. прил. къ ст. 161 уст. о пошл. изд. 1893 г. о взысканіи пени за пропущеніе установленнаго для подачи заявленій о составѣ наслѣдства трехмѣсячнаго срока со дн",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b3dcd84d75c1b48d97d65b26065d32cba1d462a6e3d57b2c16c170fa1f35a731",
+      "headnote_sha256": "3989c808e6c2c3c482a9be49293024a3a59fbf420b63525c293ada89dcdcc0d5",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-004",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-004?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+161&law=1905-004%3A%D0%A3%D0%9F%D0%A8%3A161%3Atext%3A1024&at=1024&end=1031",
+      "source_warning": null,
+      "passage_id": "1905-004:0-1927",
+      "sources": [
+        {
+          "page": 9,
+          "page_method": "header",
+          "file": "p0005_R.txt",
+          "start": 1024,
+          "end": 1031
+        }
+      ],
+      "printed_pages": [
+        9
+      ],
+      "scans": [
+        {
+          "file": "p0005_R.txt",
+          "page": 9,
+          "full": "scans/1905/pages/p0005_R.webp",
+          "width": 1100,
+          "height": 1524,
+          "ocr_sha256": "f264be668ba8f6b8a872a41035663983d9cdcbb41eaa6702777a20bbacd335f0",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1024,
+          "end": 1044,
+          "quote_original": "ст. 161 уст. о пошл.",
+          "act_code": "УПШ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1024,
+          "end": 1031,
+          "quote_original": "ст. 161",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1024,
+              "end": 1044,
+              "quote_original": "ст. 161 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 1801,
+          "end": 1808,
+          "quote_original": "ст. 161",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1801,
+              "end": 1821,
+              "quote_original": "ст. 161 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-036:УПШ:162:text:2749",
+      "statute": "УПШ ст. 162",
+      "code": "УПШ",
+      "article": "ст. 162",
+      "decision_id": "1896-036",
+      "year": 1896,
+      "decision_number": 36,
+      "field": "text",
+      "start": 2749,
+      "end": 2756,
+      "quote_original": "ст. 162",
+      "context_original": "ихъ уменьшается на нѣкогггрое время только доходность имущества, но не измѣняется его стоимость, пред ставляется неправильнымъ, потому что ст. 162 уст. о пошл. не дѣлаетъ раз личія между долгами, которые могутъ князьямъ Гагаринымъ имущества, но .'быть выплачены изъ доходовъ съ имѣ- не",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "85a5675f64a35e818c715ad3ecc3e3b8fc7f6d3dd9afafa22102e44511925664",
+      "headnote_sha256": "0e56130a667cc2ffaa86c695b982dcf9efdaf2dc29daa110f52c7097cdc8aae0",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-036",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-036?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+162&law=1896-036%3A%D0%A3%D0%9F%D0%A8%3A162%3Atext%3A2749&at=2749&end=2756",
+      "source_warning": "В исходном тексте чередуются строки двух колонок: изложение позиции нижестоящих судов перемежается собственным рассуждением Сената. Разграничение выполнено по полному контексту; OCR не исправлен.",
+      "passage_id": "1896-036:1378-3129",
+      "sources": [
+        {
+          "page": 775,
+          "page_method": "neighbors",
+          "file": "p0068.txt",
+          "start": 2749,
+          "end": 2756
+        }
+      ],
+      "printed_pages": [
+        775
+      ],
+      "scans": [
+        {
+          "file": "p0068.txt",
+          "page": 775,
+          "full": "scans/1896/pages/p0068-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1676,
+          "ocr_sha256": "cff13dedf79d48081d678a4d3c7a129a307f042a599f582b1379d9ee6b440025",
+          "pdf_page": 68,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2749,
+          "end": 2769,
+          "quote_original": "ст. 162 уст. о пошл.",
+          "act_code": "УПШ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2749,
+          "end": 2756,
+          "quote_original": "ст. 162",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2749,
+              "end": 2769,
+              "quote_original": "ст. 162 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-109:УПШ:195:text:592",
+      "statute": "УПШ ст. 195",
+      "code": "УПШ",
+      "article": "ст. 195",
+      "decision_id": "1904-109",
+      "year": 1904,
+      "decision_number": 109,
+      "field": "text",
+      "start": 592,
+      "end": 599,
+      "quote_original": "ст. 195",
+      "context_original": "шлины. Мировой съѣздъ опредѣленіемъ своимъ, постановленнымъ 18 іюня 1902 г., отказъ этотъ признаЛъ правильнымъ, принявъ во вниманіе, что въ ст. 195 устава о пошл. перечислены случаи освобожденія отъ платежа крѣпостныхъ пошлинъ «по особой привилегіи», что потому законъ этотъ, устанавлива",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "86b195127fe57aae5f74d792c6fc95c2dff99f405ac4af6ef7c0ca72cddf224a",
+      "headnote_sha256": "b68672a2a4696b3a20970f7ec72abd94c1b4937d69a38b33637008026c33cb2c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-109",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-109?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+195&law=1904-109%3A%D0%A3%D0%9F%D0%A8%3A195%3Atext%3A592&at=592&end=599",
+      "source_warning": null,
+      "passage_id": "1904-109:0-1666",
+      "sources": [
+        {
+          "page": 302,
+          "page_method": "header",
+          "file": "p0152_L.txt",
+          "start": 592,
+          "end": 599
+        }
+      ],
+      "printed_pages": [
+        302
+      ],
+      "scans": [
+        {
+          "file": "p0152_L.txt",
+          "page": 302,
+          "full": "scans/1904/pages/p0152_L.webp",
+          "width": 1100,
+          "height": 1594,
+          "ocr_sha256": "7d9547a45d63a4eb9d828420e70a47d00804163e6c489a29074b005e423f027b",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 592,
+          "end": 614,
+          "quote_original": "ст. 195 устава о пошл.",
+          "act_code": "УПШ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 592,
+          "end": 599,
+          "quote_original": "ст. 195",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 592,
+              "end": 614,
+              "quote_original": "ст. 195 устава о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-032:УПШ:236:text:1826",
+      "statute": "УПШ ст. 236",
+      "code": "УПШ",
+      "article": "ст. 236",
+      "decision_id": "1896-032",
+      "year": 1896,
+      "decision_number": 32,
+      "field": "text",
+      "start": 1826,
+      "end": 1833,
+      "quote_original": "ст. 236",
+      "context_original": "естьянами Эстляндской губерніи участковъ кресть янской * и мызной земли, а равно укрѣпленія закладныхъ правъ на эги уча стки, согласно 4 п. ст. 236 уст. о пошл., подлежатъ освобожденію отъ канцелярской актовой трехрублевой пошлины, о чемъ и представила на благоусмотрѣніе Департамента Не",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "8322abda8bbae5b1446506399de39a8b1fec02715c3562fa2a95ae71aa0fbbb4",
+      "headnote_sha256": "c2b41c52276f4cfe0ed241a07c35001cbfd1a90796639a278dc6c1f0e6aa6cdf",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-032",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-032?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+236&law=1896-032%3A%D0%A3%D0%9F%D0%A8%3A236%3Atext%3A1826&at=1826&end=1833",
+      "source_warning": null,
+      "passage_id": "1896-032:880-2775",
+      "sources": [
+        {
+          "page": 769,
+          "page_method": "header",
+          "file": "p0062.txt",
+          "start": 1826,
+          "end": 1833
+        }
+      ],
+      "printed_pages": [
+        769
+      ],
+      "scans": [
+        {
+          "file": "p0062.txt",
+          "page": 769,
+          "full": "scans/1896/pages/p0062-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1670,
+          "ocr_sha256": "b380df37f2336149b4a6e2087428b384ca707eb265c98361602cfdf08324ee80",
+          "pdf_page": 62,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1826,
+          "end": 1846,
+          "quote_original": "ст. 236 уст. о пошл.",
+          "act_code": "УПШ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1826,
+          "end": 1833,
+          "quote_original": "ст. 236",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1826,
+              "end": 1846,
+              "quote_original": "ст. 236 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-036:УПШ:33:text:4965",
+      "statute": "УПШ ст. 33",
+      "code": "УПШ",
+      "article": "ст. 33",
+      "decision_id": "1896-036",
+      "year": 1896,
+      "decision_number": 36,
+      "field": "text",
+      "start": 4965,
+      "end": 4971,
+      "quote_original": "ст. 33",
+      "context_original": "ли пожизненномъ правѣ. Такъ, при опредѣленіи цѣны гербовой бумаги для актовъ или доку ментовъ, по которымъ производятся безсрочные платежи, ст. 33 уст. о пошл. устанавливаетъ двѣнадцатилѣт нюю сложность выговоренныхъ суммъ, а ст. 273 уст. гр. суд. опредѣляетъ цѣ ну исковъ о правѣ, кото",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "85a5675f64a35e818c715ad3ecc3e3b8fc7f6d3dd9afafa22102e44511925664",
+      "headnote_sha256": "0e56130a667cc2ffaa86c695b982dcf9efdaf2dc29daa110f52c7097cdc8aae0",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-036",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-036?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+33&law=1896-036%3A%D0%A3%D0%9F%D0%A8%3A33%3Atext%3A4965&at=4965&end=4971",
+      "source_warning": null,
+      "passage_id": "1896-036:4363-5872",
+      "sources": [
+        {
+          "page": 776,
+          "page_method": "neighbors",
+          "file": "p0069.txt",
+          "start": 4965,
+          "end": 4971
+        }
+      ],
+      "printed_pages": [
+        776
+      ],
+      "scans": [
+        {
+          "file": "p0069.txt",
+          "page": 776,
+          "full": "scans/1896/pages/p0069-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1676,
+          "ocr_sha256": "93fccd9c6c630a7b6296cb567410bc1ed7fc8796355b2b8cbd9496eab0820d24",
+          "pdf_page": 69,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 4965,
+          "end": 4984,
+          "quote_original": "ст. 33 уст. о пошл.",
+          "act_code": "УПШ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4965,
+          "end": 4971,
+          "quote_original": "ст. 33",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4965,
+              "end": 4984,
+              "quote_original": "ст. 33 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 5376,
+          "end": 5382,
+          "quote_original": "ст. 33",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 5376,
+              "end": 5395,
+              "quote_original": "ст. 33 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-007:УПШ:363:text:1378",
+      "statute": "УПШ ст. 363",
+      "code": "УПШ",
+      "article": "ст. 363",
+      "decision_id": "1896-007",
+      "year": 1896,
+      "decision_number": 7,
+      "field": "text",
+      "start": 1378,
+      "end": 1385,
+      "quote_original": "ст. 363",
+      "context_original": "го начала, подверглась измѣненію и дополненію ст. 28уст. о герб. сборѣ (изд. 1886 эта же статья, по силѣ ст. 1573” уст. гр. суд. и прим. къ ст. 363 уст. о пошл. (по прод. 1886 г.), распро страняется и на губерніи Царства Поль скаго, то и возникаетъ вопросъ о томъ: —въ какой степени уста",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b0549607b534483125742fe80c31962f3d7a99cd640304aba5fd56a21b04d398",
+      "headnote_sha256": "701191e7ff2244c56e8c208f56c3dc2529568748ff287f9a85dfa91459b55fd5",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-007",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-007?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+363&law=1896-007%3A%D0%A3%D0%9F%D0%A8%3A363%3Atext%3A1378&at=1378&end=1385",
+      "source_warning": null,
+      "passage_id": "1896-007:0-1615",
+      "sources": [
+        {
+          "page": 718,
+          "page_method": "header",
+          "file": "p0011.txt",
+          "start": 1378,
+          "end": 1385
+        }
+      ],
+      "printed_pages": [
+        718
+      ],
+      "scans": [
+        {
+          "file": "p0011.txt",
+          "page": 718,
+          "full": "scans/1896/pages/p0011-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1647,
+          "ocr_sha256": "f503df5b074f2aa04c4ee8b317f9b69494f3f3005f1161052a422d4fba2d3cd1",
+          "pdf_page": 11,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1378,
+          "end": 1398,
+          "quote_original": "ст. 363 уст. о пошл.",
+          "act_code": "УПШ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1378,
+          "end": 1385,
+          "quote_original": "ст. 363",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1378,
+              "end": 1398,
+              "quote_original": "ст. 363 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-007:УПШ:47:text:2512",
+      "statute": "УПШ ст. 47",
+      "code": "УПШ",
+      "article": "ст. 47",
+      "decision_id": "1896-007",
+      "year": 1896,
+      "decision_number": 7,
+      "field": "text",
+      "start": 2512,
+      "end": 2518,
+      "quote_original": "ст. 47",
+      "context_original": "тной пошлины, могутъ быть принимаемы за основаніе не всѣ законныя оцѣнки, исчисленныя въ ст. 38 и примѣч. уст. о герб. сбо рѣ изд. 1886 г. (ст. 47 уст. о пошл. изд. 1893 г.), а только: 1) оцѣнка по табели, приложенной къ этой ст. 38 —для имѣній, находящихся въ уѣздѣ, и 2) оцѣнки городс",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b0549607b534483125742fe80c31962f3d7a99cd640304aba5fd56a21b04d398",
+      "headnote_sha256": "701191e7ff2244c56e8c208f56c3dc2529568748ff287f9a85dfa91459b55fd5",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-007",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-007?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+47&law=1896-007%3A%D0%A3%D0%9F%D0%A8%3A47%3Atext%3A2512&at=2512&end=2518",
+      "source_warning": null,
+      "passage_id": "1896-007:1409-2787",
+      "sources": [
+        {
+          "page": 718,
+          "page_method": "header",
+          "file": "p0011.txt",
+          "start": 2512,
+          "end": 2518
+        }
+      ],
+      "printed_pages": [
+        718
+      ],
+      "scans": [
+        {
+          "file": "p0011.txt",
+          "page": 718,
+          "full": "scans/1896/pages/p0011-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1647,
+          "ocr_sha256": "f503df5b074f2aa04c4ee8b317f9b69494f3f3005f1161052a422d4fba2d3cd1",
+          "pdf_page": 11,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2512,
+          "end": 2531,
+          "quote_original": "ст. 47 уст. о пошл.",
+          "act_code": "УПШ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2512,
+          "end": 2518,
+          "quote_original": "ст. 47",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2512,
+              "end": 2531,
+              "quote_original": "ст. 47 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

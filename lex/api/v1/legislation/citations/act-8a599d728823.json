@@ -1,1286 +1,3078 @@
 {
   "api_version": "v1",
-  "contract_version": "1.4.0",
-  "data_revision": "sha256:6ac98d54af90894c26d5b151ea6fa7560f3c59eb9c7573bdfa175192587860d6",
+  "contract_version": "1.5.0",
+  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
   "resource": "legislation-citations",
   "scope": {
     "code": "ГКП",
     "id": "act-8a599d728823"
   },
-  "count": 67,
+  "count": 61,
   "items": [
     {
-      "id": "1904-065:ГКП:1007:226",
+      "id": "1904-065:ГКП:1007:text:226",
       "statute": "ГКП ст. 1007",
       "code": "ГКП",
       "article": "ст. 1007",
       "decision_id": "1904-065",
       "year": 1904,
       "decision_number": 65,
+      "field": "text",
       "start": 226,
       "end": 234,
       "quote_original": "ст. 1007",
       "context_original": "берніи, Карла Дзеконскаго.—Дзеконскій умеръ, оставивъ два собственноручныхъ духовныхъ завѣщанія, составленныхъ и опубликованныхъ въ порядкѣ ст. 1007 гр. код., по коимъ вышесказанный депозитъ отказалъ въ собственность своей женѣ, Ядвигѣ. Братъ покойнаго, Иванъ, исходатайствовавъ опредѣлен",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "e06a9221597ece0530bd1570e1da2dca87473688dcbafcca0936ce20dc70609e",
+      "headnote_sha256": "fda48bfb90a392b168d4e9fd1424536f918edcfcec1d751820a7b3bf19205c25",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-065",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-065?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1007&law=1904-065%3A%D0%93%D0%9A%D0%9F%3A1007%3Atext%3A226&at=226&end=234",
+      "source_warning": null,
       "passage_id": "1904-065:0-1603",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-065?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1007&at=0&end=1603",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 187,
+          "page_method": "header",
+          "file": "p0094_R.txt",
+          "start": 226,
+          "end": 234
+        }
+      ],
+      "printed_pages": [
+        187
+      ],
+      "scans": [
+        {
+          "file": "p0094_R.txt",
+          "page": 187,
+          "full": "scans/1904/pages/p0094_R.webp",
+          "width": 1100,
+          "height": 1601,
+          "ocr_sha256": "a717588ee19823efe29c5e48b6db3135c83b6d12bcd6fab5e83868b49eafe4ca",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1897-091:ГКП:1010:1640",
+      "id": "1897-091:ГКП:1010:text:1640",
       "statute": "ГКП ст. 1010",
       "code": "ГКП",
       "article": "ст. 1010",
       "decision_id": "1897-091",
       "year": 1897,
       "decision_number": 91,
+      "field": "text",
       "start": 1640,
       "end": 1648,
       "quote_original": "ст. 1010",
       "context_original": "ршаго, которые, будучи призваны къ наслѣдованію по волѣ закона (ab intestat ст. 724, 731, 756 гр. код. и др.) или завѣщателя (loco haeredis ст. 1010 гр. код.), являются участниками общаго наслѣдства, принадлежащаго имъ, въ идеальныхъ доляхъ, на правѣ собственности. Сюда принадлежитъ, меж",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "b69ef8c18ce773fce8591ddd1533b1cbfebb1f37bb920a7ecd1ed9c2d37db2d6",
+      "headnote_sha256": "151cf7a069436f9dfc905275d1acb2cc5b63964612b014565d683a6baea64279",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-091",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1010&law=1897-091%3A%D0%93%D0%9A%D0%9F%3A1010%3Atext%3A1640&at=1640&end=1648",
+      "source_warning": null,
       "passage_id": "1897-091:0-1765",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1010&at=0&end=1765",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 296,
+          "page_method": "header",
+          "file": "p0159_L.txt",
+          "start": 1640,
+          "end": 1648
+        }
+      ],
+      "printed_pages": [
+        296
+      ],
+      "scans": [
+        {
+          "file": "p0159_L.txt",
+          "page": 296,
+          "full": "scans/1897/pages/p0159_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1556,
+          "ocr_sha256": "9919d074b55e2862c4d7405383596ea13c373952172ad374422da33ae85635f5",
+          "pdf_page": 317,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-065:ГКП:1011:4638",
+      "id": "1904-065:ГКП:1011:text:4638",
       "statute": "ГКП ст. 1011",
       "code": "ГКП",
       "article": "ст. 1011",
       "decision_id": "1904-065",
       "year": 1904,
       "decision_number": 65,
+      "field": "text",
       "start": 4638,
       "end": 4646,
       "quote_original": "ст. 1011",
       "context_original": "ст. 1011 гр. код. (ст. 1014 гр. код.). При такомъ различіи правъ и обязанностей наслѣдника и частнаго легатарія, не представляется возможнымъ отожес",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "e06a9221597ece0530bd1570e1da2dca87473688dcbafcca0936ce20dc70609e",
+      "headnote_sha256": "fda48bfb90a392b168d4e9fd1424536f918edcfcec1d751820a7b3bf19205c25",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-065",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-065?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1011&law=1904-065%3A%D0%93%D0%9A%D0%9F%3A1011%3Atext%3A4638&at=4638&end=4646",
+      "source_warning": null,
       "passage_id": "1904-065:4393-6689",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-065?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1011&at=4393&end=6689",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 189,
+          "page_method": "neighbors",
+          "file": "p0095_R.txt",
+          "start": 4638,
+          "end": 4646
+        }
+      ],
+      "printed_pages": [
+        189
+      ],
+      "scans": [
+        {
+          "file": "p0095_R.txt",
+          "page": 189,
+          "full": "scans/1904/pages/p0095_R.webp",
+          "width": 1100,
+          "height": 1640,
+          "ocr_sha256": "6c9df5884e693b1a6f32f8fa15967ea934121bc4b1093c0a0f784829bc01c329",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-065:ГКП:1014:4657",
+      "id": "1904-065:ГКП:1014:text:4657",
       "statute": "ГКП ст. 1014",
       "code": "ГКП",
       "article": "ст. 1014",
       "decision_id": "1904-065",
       "year": 1904,
       "decision_number": 65,
+      "field": "text",
       "start": 4657,
       "end": 4665,
       "quote_original": "ст. 1014",
       "context_original": "ст. 1011 гр. код. (ст. 1014 гр. код.). При такомъ различіи правъ и обязанностей наслѣдника и частнаго легатарія, не представляется возможнымъ отожествленіе обоихъ выра",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "e06a9221597ece0530bd1570e1da2dca87473688dcbafcca0936ce20dc70609e",
+      "headnote_sha256": "fda48bfb90a392b168d4e9fd1424536f918edcfcec1d751820a7b3bf19205c25",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-065",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-065?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1014&law=1904-065%3A%D0%93%D0%9A%D0%9F%3A1014%3Atext%3A4657&at=4657&end=4665",
+      "source_warning": null,
       "passage_id": "1904-065:4393-6689",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-065?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1014&at=4393&end=6689",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 189,
+          "page_method": "neighbors",
+          "file": "p0095_R.txt",
+          "start": 4657,
+          "end": 4665
+        }
+      ],
+      "printed_pages": [
+        189
+      ],
+      "scans": [
+        {
+          "file": "p0095_R.txt",
+          "page": 189,
+          "full": "scans/1904/pages/p0095_R.webp",
+          "width": 1100,
+          "height": 1640,
+          "ocr_sha256": "6c9df5884e693b1a6f32f8fa15967ea934121bc4b1093c0a0f784829bc01c329",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-065:ГКП:1024:4370",
+      "id": "1904-065:ГКП:1024:text:4370",
       "statute": "ГКП ст. 1024",
       "code": "ГКП",
       "article": "ст. 1024",
       "decision_id": "1904-065",
       "year": 1904,
       "decision_number": 65,
+      "field": "text",
       "start": 4370,
       "end": 4378,
       "quote_original": "ст. 1024",
       "context_original": "го, по силѣ самого закона, вступаютъ въ обладаніе наслѣдствомъ (ст. 724 и 1006 гр. код.). Между тѣмъ, частный легатарій, по общему правилу (ст. 1024 гр. код.), не отвѣтствуетъ своимъ имуществомъ за долги наслѣдодателя и не вступаетъ непосредственно во владѣніе отказанною вещью, а обязанъ",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "e06a9221597ece0530bd1570e1da2dca87473688dcbafcca0936ce20dc70609e",
+      "headnote_sha256": "fda48bfb90a392b168d4e9fd1424536f918edcfcec1d751820a7b3bf19205c25",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-065",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-065?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1024&law=1904-065%3A%D0%93%D0%9A%D0%9F%3A1024%3Atext%3A4370&at=4370&end=4378",
+      "source_warning": null,
       "passage_id": "1904-065:2640-4636",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-065?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1024&at=2640&end=4636",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 188,
+          "page_method": "header",
+          "file": "p0095_L.txt",
+          "start": 4370,
+          "end": 4378
+        }
+      ],
+      "printed_pages": [
+        188
+      ],
+      "scans": [
+        {
+          "file": "p0095_L.txt",
+          "page": 188,
+          "full": "scans/1904/pages/p0095_L.webp",
+          "width": 1100,
+          "height": 1640,
+          "ocr_sha256": "bf2a0eb2dc65b67e683c7d6b8fcf1388c577c1130d44b16b1f06723f8dbf7f59",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-043:ГКП:1026:2036",
+      "id": "1905-043:ГКП:1026:text:2036",
       "statute": "ГКП ст. 1026",
       "code": "ГКП",
       "article": "ст. 1026",
       "decision_id": "1905-043",
       "year": 1905,
       "decision_number": 43,
+      "field": "text",
       "start": 2036,
       "end": 2044,
       "quote_original": "ст. 1026",
       "context_original": "Янковская не въ правѣ была уполномочивать душеприказчиковъ принять въ свое владѣніе и управленіе оставшіяся послѣ нея недвижимости, ибо, по ст. 1026 гр. код., завѣщательница могла предоставить въ завѣдываніе душеприказчиковъ только свою движимость, какъ это разъяснилъ и Правительствующій",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "3cb14d917700792266262bd041873ce8b5f485fa90f622c79aa94b4c94e0b46c",
+      "headnote_sha256": "d9982d46af1ca622505f0df09fa4559998dede7658b7bbe3a6a2547477261a5c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-043",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-043?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1026&law=1905-043%3A%D0%93%D0%9A%D0%9F%3A1026%3Atext%3A2036&at=2036&end=2044",
+      "source_warning": null,
       "passage_id": "1905-043:1509-3138",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-043?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1026&at=1509&end=3138",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 117,
+          "page_method": "header",
+          "file": "p0059_R.txt",
+          "start": 2036,
+          "end": 2044
+        }
+      ],
+      "printed_pages": [
+        117
+      ],
+      "scans": [
+        {
+          "file": "p0059_R.txt",
+          "page": 117,
+          "full": "scans/1905/pages/p0059_R.webp",
+          "width": 1100,
+          "height": 1590,
+          "ocr_sha256": "db282dc695c1f53be0b07beb7fcf1a4f24c85a0a363d7a288774958fefe0843e",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-091:ГКП:1076:1791",
+      "id": "1905-091:ГКП:1076:text:1791",
       "statute": "ГКП ст. 1076",
       "code": "ГКП",
       "article": "ст. 1076",
       "decision_id": "1905-091",
       "year": 1905,
       "decision_number": 91,
+      "field": "text",
       "start": 1791,
       "end": 1799,
       "quote_original": "1076 ст.",
       "context_original": "мировую сдѣлку, а не актъ раздѣла наслѣдственнаго имущества, которое уже было ранѣе того раздѣлено самимъ наслѣдодателемъ, согласно 1075 и 1076 ст. гр. код., посредствомъ акта завѣщательнаго, неоспореннаго наслѣдниками. Ходатайствуя въ кассаціонной жалобѣ объ отмѣнѣ рѣшенія палаты, супр",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "6ba688906b22154e6ef2913a7b8ff91ebb89a7af186c9f2ae2d772924a7be33b",
+      "headnote_sha256": "553a0c058f33003be151b139dece3334ca6f7f90ef7d4693c189684c5417210c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1076&law=1905-091%3A%D0%93%D0%9A%D0%9F%3A1076%3Atext%3A1791&at=1791&end=1799",
+      "source_warning": null,
       "passage_id": "1905-091:0-1871",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1076&at=0&end=1871",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 246,
+          "page_method": "header",
+          "file": "p0124_L.txt",
+          "start": 1791,
+          "end": 1799
+        }
+      ],
+      "printed_pages": [
+        246
+      ],
+      "scans": [
+        {
+          "file": "p0124_L.txt",
+          "page": 246,
+          "full": "scans/1905/pages/p0124_L.webp",
+          "width": 1100,
+          "height": 1560,
+          "ocr_sha256": "b8aa8d66f19445fc6c1505296ef06a3c06eef72273704da78a897898a6b8d42f",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-091:ГКП:1079:6178",
+      "id": "1905-091:ГКП:1079:text:6178",
       "statute": "ГКП ст. 1079",
       "code": "ГКП",
       "article": "ст. 1079",
       "decision_id": "1905-091",
       "year": 1905,
       "decision_number": 91,
+      "field": "text",
       "start": 6178,
       "end": 6186,
       "quote_original": "ст. 1079",
       "context_original": "изъ сего, въ связи съ изложеннымъ выше, само собою вытекаетъ, что оспариванію по причинѣ убыточности могло подлежать только это завѣщаніе (ст. 1079 гр. код.), но никоимъ образомъ не какое-либо позднѣйшее между сонаслѣдниками соглашеніе, которое, въ чемъ бы оно ни заключалось, и какъ бы",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "6ba688906b22154e6ef2913a7b8ff91ebb89a7af186c9f2ae2d772924a7be33b",
+      "headnote_sha256": "553a0c058f33003be151b139dece3334ca6f7f90ef7d4693c189684c5417210c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1079&law=1905-091%3A%D0%93%D0%9A%D0%9F%3A1079%3Atext%3A6178&at=6178&end=6186",
+      "source_warning": null,
       "passage_id": "1905-091:4555-6589",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1079&at=4555&end=6589",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 247,
+          "page_method": "header",
+          "file": "p0124_R.txt",
+          "start": 6178,
+          "end": 6186
+        }
+      ],
+      "printed_pages": [
+        247
+      ],
+      "scans": [
+        {
+          "file": "p0124_R.txt",
+          "page": 247,
+          "full": "scans/1905/pages/p0124_R.webp",
+          "width": 1100,
+          "height": 1560,
+          "ocr_sha256": "c87c37440109222f3aeb644a3a3ebbdc777178606b1f7c63c366df82827081f7",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-032:ГКП:1108:5052",
+      "id": "1905-032:ГКП:1108:text:5052",
       "statute": "ГКП ст. 1108",
       "code": "ГКП",
       "article": "ст. 1108",
       "decision_id": "1905-032",
       "year": 1905,
       "decision_number": 32,
+      "field": "text",
       "start": 5052,
       "end": 5060,
       "quote_original": "ст. 1108",
       "context_original": "ать на себя обязательства по имуществу; принятыя же ею на себя, вопреки 2 п. 184 ст. гр. улож., обязательства признаются недѣйствительными (ст. 1108 гр. код.). Что касается недѣйствительности имущественныхъ договоровъ, заключенныхъ безъ содѣйствія или дозволенія мужа, и проистекающихъ из",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "4cc0494ea1ab11d8ff83b6909ff74ef439f1f5b59ce16df8c3cf4ba44bd05eaf",
+      "headnote_sha256": "563c575f742feeec834d2c8665075b5fb875074db759fd3671d16d153df2f605",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1108&law=1905-032%3A%D0%93%D0%9A%D0%9F%3A1108%3Atext%3A5052&at=5052&end=5060",
+      "source_warning": null,
       "passage_id": "1905-032:4487-5859",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1108&at=4487&end=5859",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 86,
+          "page_method": "header",
+          "file": "p0044_L.txt",
+          "start": 5052,
+          "end": 5060
+        }
+      ],
+      "printed_pages": [
+        86
+      ],
+      "scans": [
+        {
+          "file": "p0044_L.txt",
+          "page": 86,
+          "full": "scans/1905/pages/p0044_L.webp",
+          "width": 1100,
+          "height": 1531,
+          "ocr_sha256": "9b8c90880f53c9cd590d6272d001b1390e157075cb8a7d05d84d09964948825f",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-032:ГКП:1115:5426",
+      "id": "1905-032:ГКП:1115:text:5426",
       "statute": "ГКП ст. 1115",
       "code": "ГКП",
       "article": "ст. 1115",
       "decision_id": "1905-032",
       "year": 1905,
       "decision_number": 32,
+      "field": "text",
       "start": 5426,
       "end": 5434,
       "quote_original": "ст. 1115",
       "context_original": "тельною. По ст. 188 гр. улож. споры о недѣйствительности по недостатку законнаго уполномочія не могутъ быть возбуждаемы контрагентомъ жены (ст. 1115 гр. код.), а лишь самой женой, мужемъ или ихъ наслѣдниками и при томъ совершенно независимо отъ существованія брака и отъ условій договора",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "4cc0494ea1ab11d8ff83b6909ff74ef439f1f5b59ce16df8c3cf4ba44bd05eaf",
+      "headnote_sha256": "563c575f742feeec834d2c8665075b5fb875074db759fd3671d16d153df2f605",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1115&law=1905-032%3A%D0%93%D0%9A%D0%9F%3A1115%3Atext%3A5426&at=5426&end=5434",
+      "source_warning": null,
       "passage_id": "1905-032:4487-5859",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1115&at=4487&end=5859",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 86,
+          "page_method": "header",
+          "file": "p0044_L.txt",
+          "start": 5426,
+          "end": 5434
+        }
+      ],
+      "printed_pages": [
+        86
+      ],
+      "scans": [
+        {
+          "file": "p0044_L.txt",
+          "page": 86,
+          "full": "scans/1905/pages/p0044_L.webp",
+          "width": 1100,
+          "height": 1531,
+          "ocr_sha256": "9b8c90880f53c9cd590d6272d001b1390e157075cb8a7d05d84d09964948825f",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-091:ГКП:1118:2130",
+      "id": "1905-091:ГКП:1118:text:2130",
       "statute": "ГКП ст. 1118",
       "code": "ГКП",
       "article": "ст. 1118",
       "decision_id": "1905-091",
       "year": 1905,
       "decision_number": 91,
+      "field": "text",
       "start": 2130,
       "end": 2138,
       "quote_original": "ст. 1118",
       "context_original": "Выслушавъ заключеніе товарища оберъ-прокурора, Правительствующій Сенатъ находитъ, что законъ (ст. 1118 и 1313 гр. код.), какъ общее правило, постановляетъ, что убыточность не имѣетъ вліянія на дѣйствительность договоровъ за исключеніемъ лишь",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "6ba688906b22154e6ef2913a7b8ff91ebb89a7af186c9f2ae2d772924a7be33b",
+      "headnote_sha256": "553a0c058f33003be151b139dece3334ca6f7f90ef7d4693c189684c5417210c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1118&law=1905-091%3A%D0%93%D0%9A%D0%9F%3A1118%3Atext%3A2130&at=2130&end=2138",
+      "source_warning": null,
       "passage_id": "1905-091:1601-3435",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1118&at=1601&end=3435",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 246,
+          "page_method": "header",
+          "file": "p0124_L.txt",
+          "start": 2130,
+          "end": 2138
+        }
+      ],
+      "printed_pages": [
+        246
+      ],
+      "scans": [
+        {
+          "file": "p0124_L.txt",
+          "page": 246,
+          "full": "scans/1905/pages/p0124_L.webp",
+          "width": 1100,
+          "height": 1560,
+          "ocr_sha256": "b8aa8d66f19445fc6c1505296ef06a3c06eef72273704da78a897898a6b8d42f",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-049:ГКП:1135:901",
+      "id": "1904-049:ГКП:1135:text:901",
       "statute": "ГКП ст. 1135",
       "code": "ГКП",
       "article": "ст. 1135",
       "decision_id": "1904-049",
       "year": 1904,
       "decision_number": 49,
+      "field": "text",
       "start": 901,
       "end": 909,
       "quote_original": "ст. 1135",
       "context_original": "казываетъ на нарушеніе: 1) 1590 ст. гр. код.—такъ какъ она относится только къ договорамъ продажи, а къ другимъ договорамъ не примѣнима; 2) ст. 1135 гр. код. и 129 уст. гр. суд.—тѣмъ, что онъ, Радинъ, неправильно признанъ нарушителемъ договора, и 3) ст. 1737 гр. код.—такъ какъ она не имѣ",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "fc25d1d3ba3ec85305586110c109a955f617f2651334e66f5b14b021e0149e68",
+      "headnote_sha256": "bce56c3de68aeb5d07dcd3098c8f28372a2b483e345d0bf08fff65440fa37060",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-049",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-049?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1135&law=1904-049%3A%D0%93%D0%9A%D0%9F%3A1135%3Atext%3A901&at=901&end=909",
+      "source_warning": null,
       "passage_id": "1904-049:0-1590",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-049?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1135&at=0&end=1590",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 136,
+          "page_method": "header",
+          "file": "p0069_L.txt",
+          "start": 901,
+          "end": 909
+        }
+      ],
+      "printed_pages": [
+        136
+      ],
+      "scans": [
+        {
+          "file": "p0069_L.txt",
+          "page": 136,
+          "full": "scans/1904/pages/p0069_L.webp",
+          "width": 1100,
+          "height": 1640,
+          "ocr_sha256": "b87a808d71521b02d7a24d7fdc0ccef87c0f93edd4206f7aebd5b852379eabae",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-026:ГКП:1149:2268",
+      "id": "1904-026:ГКП:1149:text:2268",
       "statute": "ГКП ст. 1149",
       "code": "ГКП",
       "article": "ст. 1149",
       "decision_id": "1904-026",
       "year": 1904,
       "decision_number": 26,
+      "field": "text",
       "start": 2268,
       "end": 2276,
       "quote_original": "ст. 1149",
       "context_original": "бязанности лежитъ доказать свое требованіе (ст. 81 и 366 уст. гражд. суд.), т.-е. какъ наличность, такъ и размѣръ понесенныхъ имъ убытковъ (ст. 1149 гр. код.), и отъ хозяина-отвѣтчика зависитъ опровергать это требованіе, цѣликомъ или частью, доказываніемъ того, что истецъ, получивъ друго",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "ba9383351ca8b0229fc9027feca0cbb0184e16405f1313bb8e3d5f0b843d2b4c",
+      "headnote_sha256": "d12ca56b8037ef11eaa879523b5f26613f483dd272ead703b00efec1d370a90b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-026",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-026?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1149&law=1904-026%3A%D0%93%D0%9A%D0%9F%3A1149%3Atext%3A2268&at=2268&end=2276",
+      "source_warning": null,
       "passage_id": "1904-026:1221-2764",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-026?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1149&at=1221&end=2764",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 63,
+          "page_method": "header",
+          "file": "p0032_R.txt",
+          "start": 2268,
+          "end": 2276
+        }
+      ],
+      "printed_pages": [
+        63
+      ],
+      "scans": [
+        {
+          "file": "p0032_R.txt",
+          "page": 63,
+          "full": "scans/1904/pages/p0032_R.webp",
+          "width": 1100,
+          "height": 1610,
+          "ocr_sha256": "424257ecfcb0d2f83b475c5b0655e95cc05ca51ccfff17b802617b55d29bb874",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-026:ГКП:1152:6394",
+      "id": "1904-026:ГКП:1152:text:6394",
       "statute": "ГКП ст. 1152",
       "code": "ГКП",
       "article": "ст. 1152",
       "decision_id": "1904-026",
       "year": 1904,
       "decision_number": 26,
+      "field": "text",
       "start": 6394,
       "end": 6402,
       "quote_original": "ст. 1152",
       "context_original": "ся на полученіе этой неустойки не можетъ, вообще, находиться въ зависимости отъ размѣра понесенныхъ имъ отъ неисполненія договора убытковъ (ст. 1152 и 1229 гр. код.), изъ чего само собою слѣдуетъ, что наниматель, уволивъ слугу безъ законной причины, не можетъ уклониться отъ обязанности у",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "ba9383351ca8b0229fc9027feca0cbb0184e16405f1313bb8e3d5f0b843d2b4c",
+      "headnote_sha256": "d12ca56b8037ef11eaa879523b5f26613f483dd272ead703b00efec1d370a90b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-026",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-026?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1152&law=1904-026%3A%D0%93%D0%9A%D0%9F%3A1152%3Atext%3A6394&at=6394&end=6402",
+      "source_warning": null,
       "passage_id": "1904-026:5276-6897",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-026?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1152&at=5276&end=6897",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 64,
+          "page_method": "header",
+          "file": "p0033_L.txt",
+          "start": 6394,
+          "end": 6402
+        }
+      ],
+      "printed_pages": [
+        64
+      ],
+      "scans": [
+        {
+          "file": "p0033_L.txt",
+          "page": 64,
+          "full": "scans/1904/pages/p0033_L.webp",
+          "width": 1100,
+          "height": 1580,
+          "ocr_sha256": "8421af7c9af319a6e3df0a5529bb371c6bf0ec596f7aa4076e29fb0695f3e7cb",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-005:ГКП:1174:1699",
+      "id": "1904-005:ГКП:1174:text:1699",
       "statute": "ГКП ст. 1174",
       "code": "ГКП",
       "article": "ст. 1174",
       "decision_id": "1904-005",
       "year": 1904,
       "decision_number": 5,
+      "field": "text",
       "start": 1699,
       "end": 1707,
       "quote_original": "1174 ст.",
       "context_original": "ее признаетъ это необходимымъ для пользы существующей въ гор. Томашовѣ постгалтеріи; такое условіе не можетъ считаться недѣйствительнымъ по 1174 ст. гр. код., ибо оно зависитъ не отъ одного произвола почтоваго управленія, но ставитъ въ зависимость существованіе аренды и отъ существованія",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "01ed7264fbea66b85c623c5299c7ac63a8341ae5b9ba5575d1e86b3356151ba5",
+      "headnote_sha256": "3b4eb7253e8bf83634ca4fadc4b388fb3d0b47f8003c8dbf93aad89130f2391c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-005",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-005?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1174&law=1904-005%3A%D0%93%D0%9A%D0%9F%3A1174%3Atext%3A1699&at=1699&end=1707",
+      "source_warning": null,
       "passage_id": "1904-005:1358-3254",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-005?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1174&at=1358&end=3254",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 15,
+          "page_method": "header",
+          "file": "p0008_R.txt",
+          "start": 1699,
+          "end": 1707
+        }
+      ],
+      "printed_pages": [
+        15
+      ],
+      "scans": [
+        {
+          "file": "p0008_R.txt",
+          "page": 15,
+          "full": "scans/1904/pages/p0008_R.webp",
+          "width": 1100,
+          "height": 1594,
+          "ocr_sha256": "6d5964aac54977262a73b1f7472a33bf71126d5ce1793db4792cb48b61e24070",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1897-048:ГКП:1290:1131",
+      "id": "1897-048:ГКП:1290:text:1131",
       "statute": "ГКП ст. 1290",
       "code": "ГКП",
       "article": "ст. 1290",
       "decision_id": "1897-048",
       "year": 1897,
       "decision_number": 48,
+      "field": "text",
       "start": 1131,
       "end": 1139,
       "quote_original": "ст. 1290",
       "context_original": "ательно, не существовало указаннаго въ ст. 1291 гр. код. условія для допущенія зачета. Въ кассаціонной жалобѣ Натансонъ объясняетъ, что, по ст. 1290 и 1295 гр. код., зачетъ долговъ долженъ быть допущенъ при одновременномъ существованіи ихъ и что не допускается только зачетъ долга возникш",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "143b87103280973bd4c50176635b487e27572f77cd24983383b4ab87b3621be3",
+      "headnote_sha256": "0812e0b96f611798355a8c501af2087307bbc9375436df2df2bad2b1f43c863a",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-048",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-048?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1290&law=1897-048%3A%D0%93%D0%9A%D0%9F%3A1290%3Atext%3A1131&at=1131&end=1139",
+      "source_warning": null,
       "passage_id": "1897-048:0-1653",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-048?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1290&at=0&end=1653",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 162,
+          "page_method": "header",
+          "file": "p0092_L.txt",
+          "start": 1131,
+          "end": 1139
+        }
+      ],
+      "printed_pages": [
+        162
+      ],
+      "scans": [
+        {
+          "file": "p0092_L.txt",
+          "page": 162,
+          "full": "scans/1897/pages/p0092_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1571,
+          "ocr_sha256": "ad8f5faabefec51120291dfbedf7d47f5e57bbb3188428566c3e1ce650e8a7e1",
+          "pdf_page": 183,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1897-048:ГКП:1291:1030",
+      "id": "1897-048:ГКП:1291:text:1030",
       "statute": "ГКП ст. 1291",
       "code": "ГКП",
       "article": "ст. 1291",
       "decision_id": "1897-048",
       "year": 1897,
       "decision_number": 48,
+      "field": "text",
       "start": 1030,
       "end": 1038,
       "quote_original": "ст. 1291",
       "context_original": "ъ Натансона квартирной платы, должные Бальчинскою Натансону 600 р. уплатѣ еще не подлежали, а, слѣдовательно, не существовало указаннаго въ ст. 1291 гр. код. условія для допущенія зачета. Въ кассаціонной жалобѣ Натансонъ объясняетъ, что, по ст. 1290 и 1295 гр. код., зачетъ долговъ должен",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "143b87103280973bd4c50176635b487e27572f77cd24983383b4ab87b3621be3",
+      "headnote_sha256": "0812e0b96f611798355a8c501af2087307bbc9375436df2df2bad2b1f43c863a",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-048",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-048?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1291&law=1897-048%3A%D0%93%D0%9A%D0%9F%3A1291%3Atext%3A1030&at=1030&end=1038",
+      "source_warning": null,
       "passage_id": "1897-048:0-1653",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-048?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1291&at=0&end=1653",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 162,
+          "page_method": "header",
+          "file": "p0092_L.txt",
+          "start": 1030,
+          "end": 1038
+        }
+      ],
+      "printed_pages": [
+        162
+      ],
+      "scans": [
+        {
+          "file": "p0092_L.txt",
+          "page": 162,
+          "full": "scans/1897/pages/p0092_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1571,
+          "ocr_sha256": "ad8f5faabefec51120291dfbedf7d47f5e57bbb3188428566c3e1ce650e8a7e1",
+          "pdf_page": 183,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1897-048:ГКП:1295:1498",
+      "id": "1897-048:ГКП:1295:text:1498",
       "statute": "ГКП ст. 1295",
       "code": "ГКП",
       "article": "ст. 1295",
       "decision_id": "1897-048",
       "year": 1897,
       "decision_number": 48,
+      "field": "text",
       "start": 1498,
       "end": 1506,
       "quote_original": "ст. 1295",
       "context_original": "варища оберъ-прокурора, Правительствующій Сенатъ находитъ, что въ настоящемъ дѣлѣ возбуждается вопросъ: въ случаѣ, указанномъ во 2-ой части ст. 1295 гр. код., подлежитъ ли зачету долгъ, возникшій до указаннаго въ этой статьѣ заявленія, но сдѣлавшійся способнымъ къ зачету послѣ такого зая",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "143b87103280973bd4c50176635b487e27572f77cd24983383b4ab87b3621be3",
+      "headnote_sha256": "0812e0b96f611798355a8c501af2087307bbc9375436df2df2bad2b1f43c863a",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-048",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-048?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1295&law=1897-048%3A%D0%93%D0%9A%D0%9F%3A1295%3Atext%3A1498&at=1498&end=1506",
+      "source_warning": null,
       "passage_id": "1897-048:0-1653",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-048?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1295&at=0&end=1653",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 162,
+          "page_method": "header",
+          "file": "p0092_L.txt",
+          "start": 1498,
+          "end": 1506
+        }
+      ],
+      "printed_pages": [
+        162
+      ],
+      "scans": [
+        {
+          "file": "p0092_L.txt",
+          "page": 162,
+          "full": "scans/1897/pages/p0092_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1571,
+          "ocr_sha256": "ad8f5faabefec51120291dfbedf7d47f5e57bbb3188428566c3e1ce650e8a7e1",
+          "pdf_page": 183,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1897-074:ГКП:1356:5889",
+      "id": "1897-074:ГКП:1356:text:5889",
       "statute": "ГКП ст. 1356",
       "code": "ГКП",
       "article": "ст. 1356",
       "decision_id": "1897-074",
       "year": 1897,
       "decision_number": 74,
+      "field": "text",
       "start": 5889,
       "end": 5897,
       "quote_original": "ст. 1356",
       "context_original": ", теряетъ всякое значеніе и не можетъ имѣть вліяніе на отмѣну рѣшенія съѣзда. Кромѣ того, Екатерина Куронь указываетъ на нарушеніе съѣздомъ ст. 1356 гр. код. тѣмъ, что мировой съѣздъ, согласно требованію Маріанны Пущецъ, заявленному въ апелляціонной жалобѣ, исключилъ изъ наслѣдственнаго",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "ce69ad8a2bb41d529ade3a9fbc910bdcbe7484a32c36335109a1353a31b27b48",
+      "headnote_sha256": "0780cb664bb8296d8a6202e4f74d912259e449c791134bfcef97a10fd55436fc",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-074",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-074?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1356&law=1897-074%3A%D0%93%D0%9A%D0%9F%3A1356%3Atext%3A5889&at=5889&end=5897",
+      "source_warning": null,
       "passage_id": "1897-074:5033-7205",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-074?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1356&at=5033&end=7205",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 244,
+          "page_method": "header",
+          "file": "p0133_L.txt",
+          "start": 5889,
+          "end": 5897
+        }
+      ],
+      "printed_pages": [
+        244
+      ],
+      "scans": [
+        {
+          "file": "p0133_L.txt",
+          "page": 244,
+          "full": "scans/1897/pages/p0133_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1519,
+          "ocr_sha256": "ee4e62529ed346cde537ac1a2e94a8641a213f7f18d95243cb9938879328470a",
+          "pdf_page": 265,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-066:ГКП:1384:1095",
+      "id": "1904-066:ГКП:1384:text:1095",
       "statute": "ГКП ст. 1384",
       "code": "ГКП",
       "article": "ст. 1384",
       "decision_id": "1904-066",
       "year": 1904,
       "decision_number": 66,
+      "field": "text",
       "start": 1095,
       "end": 1103,
       "quote_original": "1384 ст.",
       "context_original": "а была привязана, несмотря на протестъ пассажира, сзади къ другому экипажу, а потому передъ истцомъ отвѣчаетъ не казна, а возчикъ, согласно 1384 ст. гр. код., за вредъ, причиненный его служителемъ, и 4) что наличность въ корзинѣ пропавшихъ вещей удостовѣрена свидѣтельскими показаніями и",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "a748b76d19fb1eee3d25a938efafdd5b934a1e2f84d37281b205c4f5468aed88",
+      "headnote_sha256": "f0256a965de9c25fd7e607f8793da220d4cf91680d30600ada28670ca8f79053",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1384&law=1904-066%3A%D0%93%D0%9A%D0%9F%3A1384%3Atext%3A1095&at=1095&end=1103",
+      "source_warning": null,
       "passage_id": "1904-066:0-1330",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1384&at=0&end=1330",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 190,
+          "page_method": "header",
+          "file": "p0096_L.txt",
+          "start": 1095,
+          "end": 1103
+        }
+      ],
+      "printed_pages": [
+        190
+      ],
+      "scans": [
+        {
+          "file": "p0096_L.txt",
+          "page": 190,
+          "full": "scans/1904/pages/p0096_L.webp",
+          "width": 1100,
+          "height": 1602,
+          "ocr_sha256": "c81d141aa8860cb2a4d1d9e3786d22241e7041e95718b426bf93d3be8243b456",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-049:ГКП:1589:1528",
+      "id": "1904-049:ГКП:1589:text:1528",
       "statute": "ГКП ст. 1589",
       "code": "ГКП",
       "article": "ст. 1589",
       "decision_id": "1904-049",
       "year": 1904,
       "decision_number": 49,
+      "field": "text",
       "start": 1528,
       "end": 1536,
       "quote_original": "ст. 1589",
       "context_original": "ѣ общихъ правилъ о задаткѣ не содержится, и о послѣдствіяхъ выдачи задатка по другимъ сдѣлкамъ, кромѣ сдѣлки объ обѣщаніи продать что-либо (ст. 1589 и 1590 гр. код.), нигдѣ въ этомъ законѣ не говорится. Тѣмъ не менѣе, не подлежитъ никакому сомнѣнію—и это признаютъ и комментаторы французс",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "fc25d1d3ba3ec85305586110c109a955f617f2651334e66f5b14b021e0149e68",
+      "headnote_sha256": "bce56c3de68aeb5d07dcd3098c8f28372a2b483e345d0bf08fff65440fa37060",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-049",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-049?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1589&law=1904-049%3A%D0%93%D0%9A%D0%9F%3A1589%3Atext%3A1528&at=1528&end=1536",
+      "source_warning": null,
       "passage_id": "1904-049:0-1590",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-049?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1589&at=0&end=1590",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 136,
+          "page_method": "header",
+          "file": "p0069_L.txt",
+          "start": 1528,
+          "end": 1536
+        }
+      ],
+      "printed_pages": [
+        136
+      ],
+      "scans": [
+        {
+          "file": "p0069_L.txt",
+          "page": 136,
+          "full": "scans/1904/pages/p0069_L.webp",
+          "width": 1100,
+          "height": 1640,
+          "ocr_sha256": "b87a808d71521b02d7a24d7fdc0ccef87c0f93edd4206f7aebd5b852379eabae",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-049:ГКП:1590:788",
+      "id": "1904-049:ГКП:1590:text:788",
       "statute": "ГКП ст. 1590",
       "code": "ГКП",
       "article": "ст. 1590",
       "decision_id": "1904-049",
       "year": 1904,
       "decision_number": 49,
+      "field": "text",
       "start": 788,
       "end": 796,
       "quote_original": "1590 ст.",
       "context_original": "артиру, и что онъ обязанъ возвратить задатокъ въ двойномъ количествѣ. Въ кассаціонной жалобѣ проситель, Радинъ, указываетъ на нарушеніе: 1) 1590 ст. гр. код.—такъ какъ она относится только къ договорамъ продажи, а къ другимъ договорамъ не примѣнима; 2) ст. 1135 гр. код. и 129 уст. гр. су",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "fc25d1d3ba3ec85305586110c109a955f617f2651334e66f5b14b021e0149e68",
+      "headnote_sha256": "bce56c3de68aeb5d07dcd3098c8f28372a2b483e345d0bf08fff65440fa37060",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-049",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-049?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1590&law=1904-049%3A%D0%93%D0%9A%D0%9F%3A1590%3Atext%3A788&at=788&end=796",
+      "source_warning": null,
       "passage_id": "1904-049:0-1590",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-049?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1590&at=0&end=1590",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 136,
+          "page_method": "header",
+          "file": "p0069_L.txt",
+          "start": 788,
+          "end": 796
+        }
+      ],
+      "printed_pages": [
+        136
+      ],
+      "scans": [
+        {
+          "file": "p0069_L.txt",
+          "page": 136,
+          "full": "scans/1904/pages/p0069_L.webp",
+          "width": 1100,
+          "height": 1640,
+          "ocr_sha256": "b87a808d71521b02d7a24d7fdc0ccef87c0f93edd4206f7aebd5b852379eabae",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-005:ГКП:1709:4083",
+      "id": "1904-005:ГКП:1709:text:4083",
       "statute": "ГКП ст. 1709",
       "code": "ГКП",
       "article": "ст. 1709",
       "decision_id": "1904-005",
       "year": 1904,
       "decision_number": 5,
+      "field": "text",
       "start": 4083,
       "end": 4091,
       "quote_original": "ст. 1709",
       "context_original": "одной изъ сторонъ, былъ для другой стороны безусловно обязателенъ и не подлежалъ въ извѣстныхъ случаяхъ измѣненію или сокращенію. Согласно ст. 1709 гр. код., необходимымъ условіемъ всякаго договора срочной аренды является соглашеніе сторонъ о продолжительности дѣйствія онаго. Въ самомъ",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "01ed7264fbea66b85c623c5299c7ac63a8341ae5b9ba5575d1e86b3356151ba5",
+      "headnote_sha256": "3b4eb7253e8bf83634ca4fadc4b388fb3d0b47f8003c8dbf93aad89130f2391c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-005",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-005?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1709&law=1904-005%3A%D0%93%D0%9A%D0%9F%3A1709%3Atext%3A4083&at=4083&end=4091",
+      "source_warning": null,
       "passage_id": "1904-005:2995-4737",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-005?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1709&at=2995&end=4737",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 15,
+          "page_method": "header",
+          "file": "p0008_R.txt",
+          "start": 4083,
+          "end": 4091
+        }
+      ],
+      "printed_pages": [
+        15
+      ],
+      "scans": [
+        {
+          "file": "p0008_R.txt",
+          "page": 15,
+          "full": "scans/1904/pages/p0008_R.webp",
+          "width": 1100,
+          "height": 1594,
+          "ocr_sha256": "6d5964aac54977262a73b1f7472a33bf71126d5ce1793db4792cb48b61e24070",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-049:ГКП:1737:484",
+      "id": "1904-049:ГКП:1737:text:484",
       "statute": "ГКП ст. 1737",
       "code": "ГКП",
       "article": "ст. 1737",
       "decision_id": "1904-049",
       "year": 1904,
       "decision_number": 49,
+      "field": "text",
       "start": 484,
       "end": 492,
       "quote_original": "1737 ст.",
       "context_original": "говора, не приготовивъ квартиру къ сроку договора; что возраженіе Радина о непоставленіи его въ просрочку неправильно въ виду того, что, по 1737 ст. гр. код., истцы не были къ этому обязаны, такъ какъ, при существованіи письменнаго договора, Радинъ хорошо зналъ о срокѣ, когда истцы должн",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "fc25d1d3ba3ec85305586110c109a955f617f2651334e66f5b14b021e0149e68",
+      "headnote_sha256": "bce56c3de68aeb5d07dcd3098c8f28372a2b483e345d0bf08fff65440fa37060",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-049",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-049?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1737&law=1904-049%3A%D0%93%D0%9A%D0%9F%3A1737%3Atext%3A484&at=484&end=492",
+      "source_warning": null,
       "passage_id": "1904-049:0-1590",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-049?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1737&at=0&end=1590",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 136,
+          "page_method": "header",
+          "file": "p0069_L.txt",
+          "start": 484,
+          "end": 492
+        }
+      ],
+      "printed_pages": [
+        136
+      ],
+      "scans": [
+        {
+          "file": "p0069_L.txt",
+          "page": 136,
+          "full": "scans/1904/pages/p0069_L.webp",
+          "width": 1100,
+          "height": 1640,
+          "ocr_sha256": "b87a808d71521b02d7a24d7fdc0ccef87c0f93edd4206f7aebd5b852379eabae",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-030:ГКП:1743:3497",
+      "id": "1905-030:ГКП:1743:text:3497",
       "statute": "ГКП ст. 1743",
       "code": "ГКП",
       "article": "ст. 1743",
       "decision_id": "1905-030",
       "year": 1905,
       "decision_number": 30,
+      "field": "text",
       "start": 3497,
       "end": 3505,
       "quote_original": "1743 ст.",
       "context_original": "ъ указанныхъ 3 морговъ Витковскій продалъ Самборскому, который не желаетъ исполнить вышеупомянутый контрактъ, обязательный для него какъ по 1743 ст. гражд. код., такъ и потому, что Самборскій, при покупкѣ участка, зналъ о правахъ Шацевъ на этотъ участокъ. Возраженіе же Самборскаго, что в",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "b56718c40655934f46402df8ed5c80ec21eec0964c8ab75f3e3aa9459548e034",
+      "headnote_sha256": "57b83dda415ffb880f370db6e1c516e1017b51e66e505ee49795b135ad0638a4",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-030",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-030?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1743&law=1905-030%3A%D0%93%D0%9A%D0%9F%3A1743%3Atext%3A3497&at=3497&end=3505",
+      "source_warning": null,
       "passage_id": "1905-030:2805-4199",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-030?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1743&at=2805&end=4199",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 75,
+          "page_method": "header",
+          "file": "p0038_R.txt",
+          "start": 3497,
+          "end": 3505
+        }
+      ],
+      "printed_pages": [
+        75
+      ],
+      "scans": [
+        {
+          "file": "p0038_R.txt",
+          "page": 75,
+          "full": "scans/1905/pages/p0038_R.webp",
+          "width": 1100,
+          "height": 1516,
+          "ocr_sha256": "64afb251b6f73f04389ca58b471063f2adee5a1bd74c20d195bf606295f9ca80",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-066:ГКП:1782:707",
+      "id": "1904-066:ГКП:1782:text:707",
       "statute": "ГКП ст. 1782",
       "code": "ГКП",
       "article": "ст. 1782",
       "decision_id": "1904-066",
       "year": 1904,
       "decision_number": 66,
+      "field": "text",
       "start": 707,
       "end": 715,
       "quote_original": "ст. 1782",
       "context_original": "періи, въ которыхъ объ отвѣтственности почтосодержателей за пропажу вещей не упоминается, а потому къ настоящему дѣлу должны быть примѣнены ст. 1782, 1784, 1952 и 1953 гр. код.; 3) что Козловскій ѣхалъ не въ экипажѣ, назначенномъ для корреспонденціи, а для пассажировъ; вещи его, по небре",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "a748b76d19fb1eee3d25a938efafdd5b934a1e2f84d37281b205c4f5468aed88",
+      "headnote_sha256": "f0256a965de9c25fd7e607f8793da220d4cf91680d30600ada28670ca8f79053",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1782&law=1904-066%3A%D0%93%D0%9A%D0%9F%3A1782%3Atext%3A707&at=707&end=715",
+      "source_warning": null,
       "passage_id": "1904-066:0-1330",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1782&at=0&end=1330",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 190,
+          "page_method": "header",
+          "file": "p0096_L.txt",
+          "start": 707,
+          "end": 715
+        }
+      ],
+      "printed_pages": [
+        190
+      ],
+      "scans": [
+        {
+          "file": "p0096_L.txt",
+          "page": 190,
+          "full": "scans/1904/pages/p0096_L.webp",
+          "width": 1100,
+          "height": 1602,
+          "ocr_sha256": "c81d141aa8860cb2a4d1d9e3786d22241e7041e95718b426bf93d3be8243b456",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-066:ГКП:1786:7648",
+      "id": "1904-066:ГКП:1786:text:7648",
       "statute": "ГКП ст. 1786",
       "code": "ГКП",
       "article": "ст. 1786",
       "decision_id": "1904-066",
       "year": 1904,
       "decision_number": 66,
+      "field": "text",
       "start": 7648,
       "end": 7656,
       "quote_original": "ст. 1786",
       "context_original": "ло, и статьи эти ничего противорѣчащаго изданнымъ впослѣдствіи, по почтовой части, правиламъ и съ ними несовмѣстимаго въ себѣ не содержатъ (ст. 1786 гражд. код.), то слѣдуетъ признать, что ст. 357, 362, 380 и 473 сборника 1860 г. сохраняютъ—и за изданіемъ сборника 1885 года—свою силу. За",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "a748b76d19fb1eee3d25a938efafdd5b934a1e2f84d37281b205c4f5468aed88",
+      "headnote_sha256": "f0256a965de9c25fd7e607f8793da220d4cf91680d30600ada28670ca8f79053",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1786&law=1904-066%3A%D0%93%D0%9A%D0%9F%3A1786%3Atext%3A7648&at=7648&end=7656",
+      "source_warning": null,
       "passage_id": "1904-066:6709-8468",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1786&at=6709&end=8468",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 192,
+          "page_method": "header",
+          "file": "p0097_L.txt",
+          "start": 7648,
+          "end": 7656
+        }
+      ],
+      "printed_pages": [
+        192
+      ],
+      "scans": [
+        {
+          "file": "p0097_L.txt",
+          "page": 192,
+          "full": "scans/1904/pages/p0097_L.webp",
+          "width": 1100,
+          "height": 1595,
+          "ocr_sha256": "052c370f784268399651162f3bca9a1aa9063a94d3539897a2de0388a33a4be3",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-032:ГКП:184:4805",
-      "statute": "ГКП ст. 184",
-      "code": "ГКП",
-      "article": "ст. 184",
-      "decision_id": "1905-032",
-      "year": 1905,
-      "decision_number": 32,
-      "start": 4805,
-      "end": 4812,
-      "quote_original": "184 ст.",
-      "context_original": "твѣ, подчиняется общимъ правиламъ о пользовладѣніи (ст. 192 гр. улож. и 587 гр. код.). Такимъ образомъ, оказывается, что, на основаніи 2 п. 184 ст. гр. улож., жена, безъ личнаго содѣйствія мужа или безъ письменнаго его дозволенія, не можетъ принимать на себя обязательства по имуществу;",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032",
-      "passage_id": "1905-032:4487-5859",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+184&at=4487&end=5859",
-      "scan_available": true
-    },
-    {
-      "id": "1905-032:ГКП:188:1269",
-      "statute": "ГКП ст. 188",
-      "code": "ГКП",
-      "article": "ст. 188",
-      "decision_id": "1905-032",
-      "year": 1905,
-      "decision_number": 32,
-      "start": 1269,
-      "end": 1276,
-      "quote_original": "188 ст.",
-      "context_original": "заннаго векселя, либо, зная о выдачѣ таковаго, положительно или безмолвно утвердилъ это дѣйствіе своей жены; 4) что, въ виду сего и по силѣ 188 ст. гр. ул. 1825 г., 1108 и 1124 ст. гр. код., упомянутый вексель по отношенію къ Ѳеклѣ Жуковской недѣйствителенъ; 5) что мнѣніе Цециліи Ляндау",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032",
-      "passage_id": "1905-032:0-1881",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+188&at=0&end=1881",
-      "scan_available": true
-    },
-    {
-      "id": "1905-032:ГКП:192:4717",
-      "statute": "ГКП ст. 192",
-      "code": "ГКП",
-      "article": "ст. 192",
-      "decision_id": "1905-032",
-      "year": 1905,
-      "decision_number": 32,
-      "start": 4717,
-      "end": 4724,
-      "quote_original": "ст. 192",
-      "context_original": "который въ отношеніи принадлежащихъ женѣ вещей потребляемыхъ (res fungibiles), въ существѣ, подчиняется общимъ правиламъ о пользовладѣніи (ст. 192 гр. улож. и 587 гр. код.). Такимъ образомъ, оказывается, что, на основаніи 2 п. 184 ст. гр. улож., жена, безъ личнаго содѣйствія мужа или б",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032",
-      "passage_id": "1905-032:3106-4751",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+192&at=3106&end=4751",
-      "scan_available": true
-    },
-    {
-      "id": "1904-065:ГКП:1939:955",
+      "id": "1904-065:ГКП:1939:text:955",
       "statute": "ГКП ст. 1939",
       "code": "ГКП",
       "article": "ст. 1939",
       "decision_id": "1904-065",
       "year": 1904,
       "decision_number": 65,
+      "field": "text",
       "start": 955,
       "end": 963,
       "quote_original": "1939 ст.",
       "context_original": "ми, въ общемъ количествѣ 19027 руб. съ дальнѣйшими процентами. Банкъ защищался противъ иска тѣмъ, между прочимъ, возраженіемъ, что, по силѣ 1939 ст. гр. код., Ядвига Дзеконская, будучи частнымъ легатаріемъ, а не наслѣдницей своего мужа, не имѣетъ права требовать отъ банка принятой имъ от",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "e06a9221597ece0530bd1570e1da2dca87473688dcbafcca0936ce20dc70609e",
+      "headnote_sha256": "fda48bfb90a392b168d4e9fd1424536f918edcfcec1d751820a7b3bf19205c25",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-065",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-065?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1939&law=1904-065%3A%D0%93%D0%9A%D0%9F%3A1939%3Atext%3A955&at=955&end=963",
+      "source_warning": null,
       "passage_id": "1904-065:0-1603",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-065?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1939&at=0&end=1603",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 187,
+          "page_method": "header",
+          "file": "p0094_R.txt",
+          "start": 955,
+          "end": 963
+        }
+      ],
+      "printed_pages": [
+        187
+      ],
+      "scans": [
+        {
+          "file": "p0094_R.txt",
+          "page": 187,
+          "full": "scans/1904/pages/p0094_R.webp",
+          "width": 1100,
+          "height": 1601,
+          "ocr_sha256": "a717588ee19823efe29c5e48b6db3135c83b6d12bcd6fab5e83868b49eafe4ca",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-066:ГКП:1953:12193",
+      "id": "1904-066:ГКП:1953:text:12193",
       "statute": "ГКП ст. 1953",
       "code": "ГКП",
       "article": "ст. 1953",
       "decision_id": "1904-066",
       "year": 1904,
       "decision_number": 66,
+      "field": "text",
       "start": 12193,
       "end": 12201,
       "quote_original": "1953 ст.",
       "context_original": "специальныхъ нормирующихъ таковую законовъ, должна быть опредѣлена по общимъ законамъ края (ст. 1786 гр. код.). Согласно 1782—1786, 1952 и 1953 ст. гражд. код., отвѣтственность содержателей общественныхъ заведеній для перевозки лицъ или вещей за утрату или повреждѣніе ввѣренныхъ имъ вещ",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "a748b76d19fb1eee3d25a938efafdd5b934a1e2f84d37281b205c4f5468aed88",
+      "headnote_sha256": "f0256a965de9c25fd7e607f8793da220d4cf91680d30600ada28670ca8f79053",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1953&law=1904-066%3A%D0%93%D0%9A%D0%9F%3A1953%3Atext%3A12193&at=12193&end=12201",
+      "source_warning": null,
       "passage_id": "1904-066:11430-12857",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1953&at=11430&end=12857",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 193,
+          "page_method": "header",
+          "file": "p0097_R.txt",
+          "start": 12193,
+          "end": 12201
+        }
+      ],
+      "printed_pages": [
+        193
+      ],
+      "scans": [
+        {
+          "file": "p0097_R.txt",
+          "page": 193,
+          "full": "scans/1904/pages/p0097_R.webp",
+          "width": 1100,
+          "height": 1595,
+          "ocr_sha256": "82a1c6136e8ce944d3a8fed72018cb07d9e72ad59700fcf51030108ce52a134d",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-033:ГКП:1965:634",
+      "id": "1905-033:ГКП:1965:text:634",
       "statute": "ГКП ст. 1965",
       "code": "ГКП",
       "article": "ст. 1965",
       "decision_id": "1905-033",
       "year": 1905,
       "decision_number": 33,
+      "field": "text",
       "start": 634,
       "end": 642,
       "quote_original": "1965 ст.",
       "context_original": "общества просилъ въ искѣ отказать, какъ вслѣдствіе неимѣнія истцомъ права на искъ, ибо его исковыя требованія вытекаютъ изъ азартной игры (1965 ст. гр. код.), такъ и по неосновательности иска по существу, ибо билеты продавались послѣ того, какъ лошади уже были пущены на скачку, каковое",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "1217fb7249ebe953bcf39c4228f5913268c99f87fe5895d3c7e0736da59ecda6",
+      "headnote_sha256": "38d45dff3f81c9176c9fbec5a11ab297b1aaef810ffb4dd0e70dddff938bea32",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-033",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-033?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1965&law=1905-033%3A%D0%93%D0%9A%D0%9F%3A1965%3Atext%3A634&at=634&end=642",
+      "source_warning": null,
       "passage_id": "1905-033:0-1515",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-033?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1965&at=0&end=1515",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 87,
+          "page_method": "header",
+          "file": "p0044_R.txt",
+          "start": 634,
+          "end": 642
+        }
+      ],
+      "printed_pages": [
+        87
+      ],
+      "scans": [
+        {
+          "file": "p0044_R.txt",
+          "page": 87,
+          "full": "scans/1905/pages/p0044_R.webp",
+          "width": 1100,
+          "height": 1531,
+          "ocr_sha256": "df3caaafa9b609ee44096e835db6a2344f405275d56a6e5a86c36277345910df",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-033:ГКП:1966:1312",
+      "id": "1905-033:ГКП:1966:text:1312",
       "statute": "ГКП ст. 1966",
       "code": "ГКП",
       "article": "ст. 1966",
       "decision_id": "1905-033",
       "year": 1905,
       "decision_number": 33,
+      "field": "text",
       "start": 1312,
       "end": 1320,
       "quote_original": "1966 ст.",
       "context_original": "тельствомъ, имѣютъ свой утвержденный правительствомъ уставъ, и поэтому вытекающіе изъ означеннаго спорта иски должны пользоваться, согласно 1966 ст. гр. код., правомъ судебной защиты. Признавъ, засимъ, второе возраженіе отвѣтчика незаслуживающимъ уваженія, мировой съѣздъ присудилъ съ ска",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "1217fb7249ebe953bcf39c4228f5913268c99f87fe5895d3c7e0736da59ecda6",
+      "headnote_sha256": "38d45dff3f81c9176c9fbec5a11ab297b1aaef810ffb4dd0e70dddff938bea32",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-033",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-033?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1966&law=1905-033%3A%D0%93%D0%9A%D0%9F%3A1966%3Atext%3A1312&at=1312&end=1320",
+      "source_warning": null,
       "passage_id": "1905-033:0-1515",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-033?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1966&at=0&end=1515",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 87,
+          "page_method": "header",
+          "file": "p0044_R.txt",
+          "start": 1312,
+          "end": 1320
+        }
+      ],
+      "printed_pages": [
+        87
+      ],
+      "scans": [
+        {
+          "file": "p0044_R.txt",
+          "page": 87,
+          "full": "scans/1905/pages/p0044_R.webp",
+          "width": 1100,
+          "height": 1531,
+          "ocr_sha256": "df3caaafa9b609ee44096e835db6a2344f405275d56a6e5a86c36277345910df",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1897-041:ГКП:2038:1418",
+      "id": "1897-041:ГКП:2038:text:1418",
       "statute": "ГКП ст. 2038",
       "code": "ГКП",
       "article": "ст. 2038",
       "decision_id": "1897-041",
       "year": 1897,
       "decision_number": 41,
+      "field": "text",
       "start": 1418,
       "end": 1426,
       "quote_original": "ст. 2038",
       "context_original": "судъ призналъ, что въ моментъ уплаты 2000 р. Юліею Бышевскою солидарное поручительство Лауры Скаржинской силою самаго закона уничтожилось (ст. 2038 гр. код.), и Бышевская, уплативъ собственный свой долгъ, не была вправѣ переуступать другому лицу гарантію за уплату этого долга, вслѣдстві",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "95bc07e465a862e473a69af0a11b864e419de16fac81f343a8d91b8dd44777b2",
+      "headnote_sha256": "167b31e0717d76251e16040937de4e6ae707d4ac152410062b1d3fd0fdfa6dbf",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-041",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-041?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+2038&law=1897-041%3A%D0%93%D0%9A%D0%9F%3A2038%3Atext%3A1418&at=1418&end=1426",
+      "source_warning": null,
       "passage_id": "1897-041:0-1709",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-041?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+2038&at=0&end=1709",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 130,
+          "page_method": "header",
+          "file": "p0076_L.txt",
+          "start": 1418,
+          "end": 1426
+        }
+      ],
+      "printed_pages": [
+        130
+      ],
+      "scans": [
+        {
+          "file": "p0076_L.txt",
+          "page": 130,
+          "full": "scans/1897/pages/p0076_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1553,
+          "ocr_sha256": "0c00fa999404f7172490670421bcea0b4e59ad1b46057a443b9b86712c042bc3",
+          "pdf_page": 151,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-091:ГКП:2052:2498",
+      "id": "1905-091:ГКП:2052:text:2498",
       "statute": "ГКП ст. 2052",
       "code": "ГКП",
       "article": "ст. 2052",
       "decision_id": "1905-091",
       "year": 1905,
       "decision_number": 91,
+      "field": "text",
       "start": 2498,
       "end": 2506,
       "quote_original": "ст. 2052",
       "context_original": "Внѣ этихъ случаевъ, никто не можетъ требовать уничтоженія договора по причинѣ его убыточности. Въ частности, относительно мировыхъ сдѣлокъ, ст. 2052 гр. код. постановляетъ, что онѣ не могутъ быть оспариваемы по причинѣ убыточности. Такимъ образомъ, постановленіе 887 и 888 ст. гр. код., д",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "6ba688906b22154e6ef2913a7b8ff91ebb89a7af186c9f2ae2d772924a7be33b",
+      "headnote_sha256": "553a0c058f33003be151b139dece3334ca6f7f90ef7d4693c189684c5417210c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+2052&law=1905-091%3A%D0%93%D0%9A%D0%9F%3A2052%3Atext%3A2498&at=2498&end=2506",
+      "source_warning": null,
       "passage_id": "1905-091:1601-3435",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+2052&at=1601&end=3435",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 246,
+          "page_method": "header",
+          "file": "p0124_L.txt",
+          "start": 2498,
+          "end": 2506
+        }
+      ],
+      "printed_pages": [
+        246
+      ],
+      "scans": [
+        {
+          "file": "p0124_L.txt",
+          "page": 246,
+          "full": "scans/1905/pages/p0124_L.webp",
+          "width": 1100,
+          "height": 1560,
+          "ocr_sha256": "b8aa8d66f19445fc6c1505296ef06a3c06eef72273704da78a897898a6b8d42f",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-057:ГКП:2265:685",
+      "id": "1905-057:ГКП:2265:text:685",
       "statute": "ГКП ст. 2265",
       "code": "ГКП",
       "article": "ст. 2265",
       "decision_id": "1905-057",
       "year": 1905,
       "decision_number": 57,
+      "field": "text",
       "start": 685,
       "end": 693,
       "quote_original": "ст. 2265",
       "context_original": "въ тотъ же гминный судъ для производства раздѣла. Въ кассаціонной жалобѣ Иванъ Гумели проситъ объ отмѣнѣ рѣшенія съѣзда, какъ по нарушенію ст. 2265 гражд. код., такъ и по нарушенію ст. 11 и 12 уст. гр. суд., усматриваемому имъ въ томъ, что съѣздъ, будучи обязанъ постановить, вмѣсто отмѣ",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "0d1891fee108022da1ffdd2aea954f3ec0a1565b13b7d07a127701e7fdbeedee",
+      "headnote_sha256": "41c4e66410d69fb898a4fdcaf97b9f85faa88420d0c06984beb4c990ddd90250",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-057",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-057?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+2265&law=1905-057%3A%D0%93%D0%9A%D0%9F%3A2265%3Atext%3A685&at=685&end=693",
+      "source_warning": null,
       "passage_id": "1905-057:0-1590",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-057?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+2265&at=0&end=1590",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 155,
+          "page_method": "header",
+          "file": "p0078_R.txt",
+          "start": 685,
+          "end": 693
+        }
+      ],
+      "printed_pages": [
+        155
+      ],
+      "scans": [
+        {
+          "file": "p0078_R.txt",
+          "page": 155,
+          "full": "scans/1905/pages/p0078_R.webp",
+          "width": 1100,
+          "height": 1577,
+          "ocr_sha256": "a7251a7578feb28e38c215a4b725ec0b54ef4c0ccf21d49c0bee0c63784596db",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-030:ГКП:2268:6197",
+      "id": "1905-030:ГКП:2268:text:6197",
       "statute": "ГКП ст. 2268",
       "code": "ГКП",
       "article": "ст. 2268",
       "decision_id": "1905-030",
       "year": 1905,
       "decision_number": 30,
+      "field": "text",
       "start": 6197,
       "end": 6205,
       "quote_original": "ст. 2268",
       "context_original": "авахъ Шацевъ на добываніе глины послѣ 1 апрѣля 1898 года, то это рѣшительно ничѣмъ не установлено, недобросовѣстность же не предполагается (ст. 2268 гр. код.), а должна быть точно доказана. Хотя же въ актѣ о пріобрѣтеніи Самборскимъ земли имѣется указаніе на № [?] и число акта отъ 14 апр",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "b56718c40655934f46402df8ed5c80ec21eec0964c8ab75f3e3aa9459548e034",
+      "headnote_sha256": "57b83dda415ffb880f370db6e1c516e1017b51e66e505ee49795b135ad0638a4",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-030",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-030?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+2268&law=1905-030%3A%D0%93%D0%9A%D0%9F%3A2268%3Atext%3A6197&at=6197&end=6205",
+      "source_warning": null,
       "passage_id": "1905-030:5376-7028",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-030?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+2268&at=5376&end=7028",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 76,
+          "page_method": "header",
+          "file": "p0039_L.txt",
+          "start": 6197,
+          "end": 6205
+        }
+      ],
+      "printed_pages": [
+        76
+      ],
+      "scans": [
+        {
+          "file": "p0039_L.txt",
+          "page": 76,
+          "full": "scans/1905/pages/p0039_L.webp",
+          "width": 1100,
+          "height": 1511,
+          "ocr_sha256": "843bf187ff9a1eb995fad82e001be54b4beda73534f7959336775143f8c4fb97",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1897-087:ГКП:232:1570",
-      "statute": "ГКП ст. 232",
-      "code": "ГКП",
-      "article": "ст. 232",
-      "decision_id": "1897-087",
-      "year": 1897,
-      "decision_number": 87,
-      "start": 1570,
-      "end": 1577,
-      "quote_original": "ст. 232",
-      "context_original": "о „исключается примѣненіемъ ст. 754“. Въ присужде- ніи просительницѣ 1/2 имущества Григорія Пивоварскаго въ пожизненное пользованіе по силѣ ст. 232 гр. улож. 1825 г. мировой съѣздъ отказалъ на томъ основаніи, что порядокъ наслѣдованія, указанный въ этомъ законѣ, могъ существовать для пр",
-      "association": "акт определён по контексту решения",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-087",
-      "passage_id": "1897-087:1226-2972",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-087?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+232&at=1226&end=2972",
-      "scan_available": true
-    },
-    {
-      "id": "1897-091:ГКП:233:1857",
-      "statute": "ГКП ст. 233",
-      "code": "ГКП",
-      "article": "ст. 233",
-      "decision_id": "1897-091",
-      "year": 1897,
-      "decision_number": 91,
-      "start": 1857,
-      "end": 1864,
-      "quote_original": "ст. 233",
-      "context_original": "ъ, въ идеальныхъ доляхъ, на правѣ собственности. Сюда принадлежитъ, между прочимъ, и пережившій супругъ въ тѣхъ случаяхъ, когда, по закону (ст. 233 гр. улож. Ц. П. и р. 1880 г. № 108) или по завѣщанію, къ нему переходитъ въ собственность такая доля изъ общаго состава наслѣдства, но не т",
-      "association": "акт определён по контексту решения",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-091",
-      "passage_id": "1897-091:1532-3394",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+233&at=1532&end=3394",
-      "scan_available": true
-    },
-    {
-      "id": "1904-050:ГКП:303:4692",
-      "statute": "ГКП ст. 303",
-      "code": "ГКП",
-      "article": "ст. 303",
-      "decision_id": "1904-050",
-      "year": 1904,
-      "decision_number": 50,
-      "start": 4692,
-      "end": 4699,
-      "quote_original": "ст. 303",
-      "context_original": "ктъ признанія присваиваетъ ему опредѣленное семейное положеніе, семейственныя и наслѣдственныя права въ имуществѣ признавшаго его родителя (ст. 303 гр. улож. и 756 гражд. код.), коихъ оно безъ этого, въ силу закона, не имѣло-бы. Въ виду такой важности соединенныхъ съ нимъ послѣдствій, з",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-050",
-      "passage_id": "1904-050:3878-5455",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-050?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+303&at=3878&end=5455",
-      "scan_available": true
-    },
-    {
-      "id": "1904-066:ГКП:357:7697",
+      "id": "1904-066:ГКП:357:text:7697",
       "statute": "ГКП ст. 357",
       "code": "ГКП",
       "article": "ст. 357",
       "decision_id": "1904-066",
       "year": 1904,
       "decision_number": 66,
+      "field": "text",
       "start": 7697,
       "end": 7704,
       "quote_original": "ст. 357",
       "context_original": "впослѣдствіи, по почтовой части, правиламъ и съ ними несовмѣстимаго въ себѣ не содержатъ (ст. 1786 гражд. код.), то слѣдуетъ признать, что ст. 357, 362, 380 и 473 сборника 1860 г. сохраняютъ—и за изданіемъ сборника 1885 года—свою силу. Засимъ, въ ст. 357, 362 и 380 сборника 1860 г. гов",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "a748b76d19fb1eee3d25a938efafdd5b934a1e2f84d37281b205c4f5468aed88",
+      "headnote_sha256": "f0256a965de9c25fd7e607f8793da220d4cf91680d30600ada28670ca8f79053",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+357&law=1904-066%3A%D0%93%D0%9A%D0%9F%3A357%3Atext%3A7697&at=7697&end=7704",
+      "source_warning": null,
       "passage_id": "1904-066:6709-8468",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+357&at=6709&end=8468",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 192,
+          "page_method": "header",
+          "file": "p0097_L.txt",
+          "start": 7697,
+          "end": 7704
+        }
+      ],
+      "printed_pages": [
+        192
+      ],
+      "scans": [
+        {
+          "file": "p0097_L.txt",
+          "page": 192,
+          "full": "scans/1904/pages/p0097_L.webp",
+          "width": 1100,
+          "height": 1595,
+          "ocr_sha256": "052c370f784268399651162f3bca9a1aa9063a94d3539897a2de0388a33a4be3",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-066:ГКП:362:1996",
+      "id": "1904-066:ГКП:362:text:1996",
       "statute": "ГКП ст. 362",
       "code": "ГКП",
       "article": "ст. 362",
       "decision_id": "1904-066",
       "year": 1904,
       "decision_number": 66,
+      "field": "text",
       "start": 1996,
       "end": 2003,
       "quote_original": "362 ст.",
       "context_original": "щается (ст. 357 сбор. 1860 г.); 4) что истецъ не заявлялъ просителю о вещахъ, а сдалъ ихъ почтальону Качмарскому въ своей квартирѣ, вопреки 362 ст. сборн. 1860 г., слѣдовательно, самъ вступилъ въ договоръ съ почтальономъ, помимо Ленковскаго, и послѣдній за пропажу не отвѣчаетъ, и 5) что",
-      "association": "акт определён по контексту решения",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "a748b76d19fb1eee3d25a938efafdd5b934a1e2f84d37281b205c4f5468aed88",
+      "headnote_sha256": "f0256a965de9c25fd7e607f8793da220d4cf91680d30600ada28670ca8f79053",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+362&law=1904-066%3A%D0%93%D0%9A%D0%9F%3A362%3Atext%3A1996&at=1996&end=2003",
+      "source_warning": null,
       "passage_id": "1904-066:1068-2967",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+362&at=1068&end=2967",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 190,
+          "page_method": "header",
+          "file": "p0096_L.txt",
+          "start": 1996,
+          "end": 2003
+        }
+      ],
+      "printed_pages": [
+        190
+      ],
+      "scans": [
+        {
+          "file": "p0096_L.txt",
+          "page": 190,
+          "full": "scans/1904/pages/p0096_L.webp",
+          "width": 1100,
+          "height": 1602,
+          "ocr_sha256": "c81d141aa8860cb2a4d1d9e3786d22241e7041e95718b426bf93d3be8243b456",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-066:ГКП:380:13111",
+      "id": "1904-066:ГКП:380:text:13111",
       "statute": "ГКП ст. 380",
       "code": "ГКП",
       "article": "ст. 380",
       "decision_id": "1904-066",
       "year": 1904,
       "decision_number": 66,
+      "field": "text",
       "start": 13111,
       "end": 13118,
       "quote_original": "380 ст.",
       "context_original": "олненіи возложенныхъ на нихъ обязанностей, пассажирскаго багажа для перевозки, несоблюденіе при этомъ порядка, установленнаго по 357, 362 и 380 ст. почтовыхъ правилъ 1860 г., не можетъ, само по себѣ, устранить установленную закономъ и не обусловленную соблюденіемъ этихъ правилъ отвѣтств",
-      "association": "акт определён по контексту решения",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "a748b76d19fb1eee3d25a938efafdd5b934a1e2f84d37281b205c4f5468aed88",
+      "headnote_sha256": "f0256a965de9c25fd7e607f8793da220d4cf91680d30600ada28670ca8f79053",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+380&law=1904-066%3A%D0%93%D0%9A%D0%9F%3A380%3Atext%3A13111&at=13111&end=13118",
+      "source_warning": null,
       "passage_id": "1904-066:12595-14197",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+380&at=12595&end=14197",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 194,
+          "page_method": "header",
+          "file": "p0098_L.txt",
+          "start": 13111,
+          "end": 13118
+        }
+      ],
+      "printed_pages": [
+        194
+      ],
+      "scans": [
+        {
+          "file": "p0098_L.txt",
+          "page": 194,
+          "full": "scans/1904/pages/p0098_L.webp",
+          "width": 1100,
+          "height": 1611,
+          "ocr_sha256": "23521a005049e2a0392eb4699b30c0548fcb77fc161762ed6601bbfcae6d1699",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-066:ГКП:473:2217",
+      "id": "1904-066:ГКП:473:text:2217",
       "statute": "ГКП ст. 473",
       "code": "ГКП",
       "article": "ст. 473",
       "decision_id": "1904-066",
       "year": 1904,
       "decision_number": 66,
+      "field": "text",
       "start": 2217,
       "end": 2224,
       "quote_original": "473 ст.",
       "context_original": "помимо Ленковскаго, и послѣдній за пропажу не отвѣчаетъ, и 5) что цифра иска ничѣмъ не доказана. Такимъ образомъ, нарушены 357, 362, 380 и 473 ст. сборника.",
-      "association": "акт определён по контексту решения",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "a748b76d19fb1eee3d25a938efafdd5b934a1e2f84d37281b205c4f5468aed88",
+      "headnote_sha256": "f0256a965de9c25fd7e607f8793da220d4cf91680d30600ada28670ca8f79053",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+473&law=1904-066%3A%D0%93%D0%9A%D0%9F%3A473%3Atext%3A2217&at=2217&end=2224",
+      "source_warning": null,
       "passage_id": "1904-066:1068-2967",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+473&at=1068&end=2967",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 190,
+          "page_method": "header",
+          "file": "p0096_L.txt",
+          "start": 2217,
+          "end": 2224
+        }
+      ],
+      "printed_pages": [
+        190
+      ],
+      "scans": [
+        {
+          "file": "p0096_L.txt",
+          "page": 190,
+          "full": "scans/1904/pages/p0096_L.webp",
+          "width": 1100,
+          "height": 1602,
+          "ocr_sha256": "c81d141aa8860cb2a4d1d9e3786d22241e7041e95718b426bf93d3be8243b456",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1897-038:ГКП:524:307",
+      "id": "1897-038:ГКП:524:text:307",
       "statute": "ГКП ст. 524",
       "code": "ГКП",
       "article": "ст. 524",
       "decision_id": "1897-038",
       "year": 1897,
       "decision_number": 38,
+      "field": "text",
       "start": 307,
       "end": 314,
       "quote_original": "524 ст.",
       "context_original": "арствѣ Польскомъ въ настоящемъ дѣлѣ подлежатъ разрѣшенію два вопроса: 1) подходятъ ли подъ понятіе „недвижимостей по назначенію“, въ смыслѣ 524 ст. гр. код., коровы, жеребята, бычки и яловки? 2) слѣдуетъ-ли, при примѣненіи этого закона къ дѣламъ, производящимся въ Варшавскомъ судебномъ",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "94570c7c6a37ceadc141243ff8026ea56331f7bd95fad7b7127e1d953de6b71c",
+      "headnote_sha256": "eb812c67ad58f6f0038f5955e49b02c7cb3891d9161e7a5a8f1b7ba79e1ffb6e",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-038",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-038?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+524&law=1897-038%3A%D0%93%D0%9A%D0%9F%3A524%3Atext%3A307&at=307&end=314",
+      "source_warning": null,
       "passage_id": "1897-038:0-1779",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-038?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+524&at=0&end=1779",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 127,
+          "page_method": "header",
+          "file": "p0074_R.txt",
+          "start": 307,
+          "end": 314
+        }
+      ],
+      "printed_pages": [
+        127
+      ],
+      "scans": [
+        {
+          "file": "p0074_R.txt",
+          "page": 127,
+          "full": "scans/1897/pages/p0074_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1531,
+          "ocr_sha256": "eff66e30ebbf473e678508e0a04a5947feaeea7c93f34f0723d45d568c4a67a2",
+          "pdf_page": 148,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-005:ГКП:543:2218",
+      "id": "1904-005:ГКП:543:text:2218",
       "statute": "ГКП ст. 543",
       "code": "ГКП",
       "article": "ст. 543",
       "decision_id": "1904-005",
       "year": 1904,
       "decision_number": 5,
+      "field": "text",
       "start": 2218,
       "end": 2225,
       "quote_original": "ст. 543",
       "context_original": "одлежитъ изъятію изъ владѣнія отвѣтчика. Въ кассаціонной на это рѣшеніе жалобѣ повѣренный графа Островскаго указываетъ на нарушеніе палатою ст. 543, 544, 711, 578, 637, 1174 и 1709 гр. код. и 29 пост. учр. ком. отъ 12/24 іюня 1870 г. (дн. зак. т. 70 стр. 172).",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "01ed7264fbea66b85c623c5299c7ac63a8341ae5b9ba5575d1e86b3356151ba5",
+      "headnote_sha256": "3b4eb7253e8bf83634ca4fadc4b388fb3d0b47f8003c8dbf93aad89130f2391c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-005",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-005?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+543&law=1904-005%3A%D0%93%D0%9A%D0%9F%3A543%3Atext%3A2218&at=2218&end=2225",
+      "source_warning": null,
       "passage_id": "1904-005:1358-3254",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-005?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+543&at=1358&end=3254",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 15,
+          "page_method": "header",
+          "file": "p0008_R.txt",
+          "start": 2218,
+          "end": 2225
+        }
+      ],
+      "printed_pages": [
+        15
+      ],
+      "scans": [
+        {
+          "file": "p0008_R.txt",
+          "page": 15,
+          "full": "scans/1904/pages/p0008_R.webp",
+          "width": 1100,
+          "height": 1594,
+          "ocr_sha256": "6d5964aac54977262a73b1f7472a33bf71126d5ce1793db4792cb48b61e24070",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-030:ГКП:544:12932",
+      "id": "1905-030:ГКП:544:text:12932",
       "statute": "ГКП ст. 544",
       "code": "ГКП",
       "article": "ст. 544",
       "decision_id": "1905-030",
       "year": 1905,
       "decision_number": 30,
+      "field": "text",
       "start": 12932,
       "end": 12939,
       "quote_original": "ст. 544",
       "context_original": "ъ ипотечную книгу, имѣетъ вещное право собственности, т.-е. право пользоваться и распоряжаться своимъ имуществомъ безъ всякихъ ограниченій (ст. 544 и 552 гражд. код.), насколько такія ограниченія не установлены законнымъ порядкомъ. Законнымъ же ограниченіемъ права собственности права и",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "b56718c40655934f46402df8ed5c80ec21eec0964c8ab75f3e3aa9459548e034",
+      "headnote_sha256": "57b83dda415ffb880f370db6e1c516e1017b51e66e505ee49795b135ad0638a4",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-030",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-030?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+544&law=1905-030%3A%D0%93%D0%9A%D0%9F%3A544%3Atext%3A12932&at=12932&end=12939",
+      "source_warning": null,
       "passage_id": "1905-030:12170-14094",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-030?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+544&at=12170&end=14094",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 78,
+          "page_method": "header",
+          "file": "p0040_L.txt",
+          "start": 12932,
+          "end": 12939
+        }
+      ],
+      "printed_pages": [
+        78
+      ],
+      "scans": [
+        {
+          "file": "p0040_L.txt",
+          "page": 78,
+          "full": "scans/1905/pages/p0040_L.webp",
+          "width": 1100,
+          "height": 1521,
+          "ocr_sha256": "48eddf29b1838eed8a72ba1ac0bbf32b53f88b4fc93ae7610aa33818cf63b9dc",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-066:ГКП:60:13510",
+      "id": "1904-066:ГКП:60:text:13510",
       "statute": "ГКП ст. 60",
       "code": "ГКП",
       "article": "ст. 60",
       "decision_id": "1904-066",
       "year": 1904,
       "decision_number": 66,
+      "field": "text",
       "start": 13510,
       "end": 13516,
       "quote_original": "ст. 60",
       "context_original": "ержателя, а засимъ невозможно признать, чтобы нарушеніе оныхъ самимъ почтосодержателемъ или его служащими, за дѣйствія коихъ онъ отвѣчаетъ (ст. 60 сборн. 1860 г. и ст. 1384 гр. код.), могло бы служить основаніемъ къ сложенію съ него законной отвѣтственности, тѣмъ болѣе, что принятіе ве",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "a748b76d19fb1eee3d25a938efafdd5b934a1e2f84d37281b205c4f5468aed88",
+      "headnote_sha256": "f0256a965de9c25fd7e607f8793da220d4cf91680d30600ada28670ca8f79053",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+60&law=1904-066%3A%D0%93%D0%9A%D0%9F%3A60%3Atext%3A13510&at=13510&end=13516",
+      "source_warning": null,
       "passage_id": "1904-066:12595-14197",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+60&at=12595&end=14197",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 194,
+          "page_method": "header",
+          "file": "p0098_L.txt",
+          "start": 13510,
+          "end": 13516
+        }
+      ],
+      "printed_pages": [
+        194
+      ],
+      "scans": [
+        {
+          "file": "p0098_L.txt",
+          "page": 194,
+          "full": "scans/1904/pages/p0098_L.webp",
+          "width": 1100,
+          "height": 1611,
+          "ocr_sha256": "23521a005049e2a0392eb4699b30c0548fcb77fc161762ed6601bbfcae6d1699",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-071:ГКП:671:326",
+      "id": "1905-071:ГКП:671:text:326",
       "statute": "ГКП ст. 671",
       "code": "ГКП",
       "article": "ст. 671",
       "decision_id": "1905-071",
       "year": 1905,
       "decision_number": 71,
+      "field": "text",
       "start": 326,
       "end": 333,
       "quote_original": "ст. 671",
       "context_original": "й чертѣ, отдѣляющей полосу желѣзной дороги отъ его земель, произведено насажденіе высокоствольныхъ деревьевъ безъ соблюденія установленнаго ст. 671 гр. код.",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "510ded0441661e15dd68855cf2ec18cb167f2fff3b315e1f9da43c7ebdaa806d",
+      "headnote_sha256": "7873a98148a7f7e5ce007f44724dca360367c2c26980b3f08028f6f5b7d33ab9",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-071",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-071?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+671&law=1905-071%3A%D0%93%D0%9A%D0%9F%3A671%3Atext%3A326&at=326&end=333",
+      "source_warning": null,
       "passage_id": "1905-071:0-1906",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-071?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+671&at=0&end=1906",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 192,
+          "page_method": "header",
+          "file": "p0097_L.txt",
+          "start": 326,
+          "end": 333
+        }
+      ],
+      "printed_pages": [
+        192
+      ],
+      "scans": [
+        {
+          "file": "p0097_L.txt",
+          "page": 192,
+          "full": "scans/1905/pages/p0097_L.webp",
+          "width": 1100,
+          "height": 1537,
+          "ocr_sha256": "7cbd82437135ac7f4bcbdd4b9c90b02de71386f856aeea97da2124d2aeaaa025",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-071:ГКП:672:4595",
+      "id": "1905-071:ГКП:672:text:4595",
       "statute": "ГКП ст. 672",
       "code": "ГКП",
       "article": "ст. 672",
       "decision_id": "1905-071",
       "year": 1905,
       "decision_number": 71,
+      "field": "text",
       "start": 4595,
       "end": 4602,
       "quote_original": "672 ст.",
       "context_original": "у, слѣдуетъ признать, что въ этомъ отношеніи дѣйствуютъ общіе законы, и, слѣдовательно, въ губерніяхъ Царства Польскаго—вышеуказанныя 671 и 672 ст. гр. код.—Выводъ этотъ слѣдуетъ признать правильнымъ и въ томъ случаѣ, когда, въ силу особаго постановленія Верховной власти, самое отчужден",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "510ded0441661e15dd68855cf2ec18cb167f2fff3b315e1f9da43c7ebdaa806d",
+      "headnote_sha256": "7873a98148a7f7e5ce007f44724dca360367c2c26980b3f08028f6f5b7d33ab9",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-071",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-071?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+672&law=1905-071%3A%D0%93%D0%9A%D0%9F%3A672%3Atext%3A4595&at=4595&end=4602",
+      "source_warning": null,
       "passage_id": "1905-071:3107-5244",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-071?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+672&at=3107&end=5244",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 194,
+          "page_method": "header",
+          "file": "p0098_L.txt",
+          "start": 4595,
+          "end": 4602
+        }
+      ],
+      "printed_pages": [
+        194
+      ],
+      "scans": [
+        {
+          "file": "p0098_L.txt",
+          "page": 194,
+          "full": "scans/1905/pages/p0098_L.webp",
+          "width": 1100,
+          "height": 1532,
+          "ocr_sha256": "0f86efede869d71f5d4a2ba46626592b5811eca62069e4530c384b11fbda0953",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1897-091:ГКП:724:1576",
+      "id": "1897-091:ГКП:724:text:1576",
       "statute": "ГКП ст. 724",
       "code": "ГКП",
       "article": "ст. 724",
       "decision_id": "1897-091",
       "year": 1897,
       "decision_number": 91,
+      "field": "text",
       "start": 1576,
       "end": 1583,
       "quote_original": "ст. 724",
       "context_original": "тавляется лишь сонаслѣдникамъ, т. е. общимъ правопреемникамъ умершаго, которые, будучи призваны къ наслѣдованію по волѣ закона (ab intestat ст. 724, 731, 756 гр. код. и др.) или завѣщателя (loco haeredis ст. 1010 гр. код.), являются участниками общаго наслѣдства, принадлежащаго имъ, въ",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "b69ef8c18ce773fce8591ddd1533b1cbfebb1f37bb920a7ecd1ed9c2d37db2d6",
+      "headnote_sha256": "151cf7a069436f9dfc905275d1acb2cc5b63964612b014565d683a6baea64279",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-091",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+724&law=1897-091%3A%D0%93%D0%9A%D0%9F%3A724%3Atext%3A1576&at=1576&end=1583",
+      "source_warning": null,
       "passage_id": "1897-091:0-1765",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+724&at=0&end=1765",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 296,
+          "page_method": "header",
+          "file": "p0159_L.txt",
+          "start": 1576,
+          "end": 1583
+        }
+      ],
+      "printed_pages": [
+        296
+      ],
+      "scans": [
+        {
+          "file": "p0159_L.txt",
+          "page": 296,
+          "full": "scans/1897/pages/p0159_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1556,
+          "ocr_sha256": "9919d074b55e2862c4d7405383596ea13c373952172ad374422da33ae85635f5",
+          "pdf_page": 317,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-065:ГКП:724:4294",
+      "id": "1904-065:ГКП:724:text:4294",
       "statute": "ГКП ст. 724",
       "code": "ГКП",
       "article": "ст. 724",
       "decision_id": "1904-065",
       "year": 1904,
       "decision_number": 65,
+      "field": "text",
       "start": 4294,
       "end": 4301,
       "quote_original": "ст. 724",
       "context_original": "ревышалъ активъ, и которыя, являясь, такимъ образомъ, представителями умершаго, по силѣ самого закона, вступаютъ въ обладаніе наслѣдствомъ (ст. 724 и 1006 гр. код.). Между тѣмъ, частный легатарій, по общему правилу (ст. 1024 гр. код.), не отвѣтствуетъ своимъ имуществомъ за долги наслѣдо",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "e06a9221597ece0530bd1570e1da2dca87473688dcbafcca0936ce20dc70609e",
+      "headnote_sha256": "fda48bfb90a392b168d4e9fd1424536f918edcfcec1d751820a7b3bf19205c25",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-065",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-065?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+724&law=1904-065%3A%D0%93%D0%9A%D0%9F%3A724%3Atext%3A4294&at=4294&end=4301",
+      "source_warning": null,
       "passage_id": "1904-065:2640-4636",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-065?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+724&at=2640&end=4636",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 188,
+          "page_method": "header",
+          "file": "p0095_L.txt",
+          "start": 4294,
+          "end": 4301
+        }
+      ],
+      "printed_pages": [
+        188
+      ],
+      "scans": [
+        {
+          "file": "p0095_L.txt",
+          "page": 188,
+          "full": "scans/1904/pages/p0095_L.webp",
+          "width": 1100,
+          "height": 1640,
+          "ocr_sha256": "bf2a0eb2dc65b67e683c7d6b8fcf1388c577c1130d44b16b1f06723f8dbf7f59",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1897-087:ГКП:751:908",
+      "id": "1897-087:ГКП:751:text:908",
       "statute": "ГКП ст. 751",
       "code": "ГКП",
       "article": "ст. 751",
       "decision_id": "1897-087",
       "year": 1897,
       "decision_number": 87,
+      "field": "text",
       "start": 908,
       "end": 915,
       "quote_original": "ст. 751",
       "context_original": "изъ ея денегъ для пріобрѣтенія наслѣдственной усадьбы, отрицая полученіе ею означеннаго движимаго имущества. Мировой съѣздъ, основываясь на ст. 751 и 754 гр. код., опредѣлилъ: изъ денегъ, вырученныхъ чрезъ продажу наслѣдственаго имущества, съ присоединеніемъ къ нимъ стоимости вышеуказан",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "fccec50a64f95906d4d6b2d113972460c104219f68ae159e2a0df64ab71d0817",
+      "headnote_sha256": "cced8a76eacffcb456f4bfb9f96d8669ddff670adb720d0db3f8eb18459be6f5",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-087",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-087?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+751&law=1897-087%3A%D0%93%D0%9A%D0%9F%3A751%3Atext%3A908&at=908&end=915",
+      "source_warning": null,
       "passage_id": "1897-087:0-1467",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-087?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+751&at=0&end=1467",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 284,
+          "page_method": "header",
+          "file": "p0153_L.txt",
+          "start": 908,
+          "end": 915
+        }
+      ],
+      "printed_pages": [
+        284
+      ],
+      "scans": [
+        {
+          "file": "p0153_L.txt",
+          "page": 284,
+          "full": "scans/1897/pages/p0153_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1574,
+          "ocr_sha256": "7eff2ad636431181e61601c593e51400f27abd5d803499f1bb256e0efcba09a2",
+          "pdf_page": 305,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1897-087:ГКП:753:1268",
+      "id": "1897-087:ГКП:753:text:1268",
       "statute": "ГКП ст. 753",
       "code": "ГКП",
       "article": "ст. 753",
       "decision_id": "1897-087",
       "year": 1897,
       "decision_number": 87,
+      "field": "text",
       "start": 1268,
       "end": 1275,
       "quote_original": "ст. 753",
       "context_original": "1/3 изъ остальныхъ 3/4 въ пожизненное пользованіе, а остальную сумму раздѣлить между Пивоварскими и Розаліей Вырастъ. Въ примѣненіи къ дѣлу ст. 753 гр. код., по которой Сливка считала себя вправѣ получить въ собственность 1/2 наслѣдственнаго имущества, мировой съѣздъ отказалъ на томъ ос",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "fccec50a64f95906d4d6b2d113972460c104219f68ae159e2a0df64ab71d0817",
+      "headnote_sha256": "cced8a76eacffcb456f4bfb9f96d8669ddff670adb720d0db3f8eb18459be6f5",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-087",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-087?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+753&law=1897-087%3A%D0%93%D0%9A%D0%9F%3A753%3Atext%3A1268&at=1268&end=1275",
+      "source_warning": null,
       "passage_id": "1897-087:0-1467",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-087?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+753&at=0&end=1467",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 284,
+          "page_method": "header",
+          "file": "p0153_L.txt",
+          "start": 1268,
+          "end": 1275
+        }
+      ],
+      "printed_pages": [
+        284
+      ],
+      "scans": [
+        {
+          "file": "p0153_L.txt",
+          "page": 284,
+          "full": "scans/1897/pages/p0153_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1574,
+          "ocr_sha256": "7eff2ad636431181e61601c593e51400f27abd5d803499f1bb256e0efcba09a2",
+          "pdf_page": 305,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1897-087:ГКП:754:3413",
+      "id": "1897-087:ГКП:754:text:3413",
       "statute": "ГКП ст. 754",
       "code": "ГКП",
       "article": "ст. 754",
       "decision_id": "1897-087",
       "year": 1897,
       "decision_number": 87,
+      "field": "text",
       "start": 3413,
       "end": 3420,
       "quote_original": "ст. 754",
       "context_original": "асть наслѣдственнаго имущества, какъ полагаетъ съѣздъ, а 1/2, какъ правильно объясняетъ просительница, причемъ сопоставленіе этой статьи со ст. 754 гр. код., вопреки мнѣнію съѣзда, не даетъ никакого основанія къ выводу, что первая исключается послѣднею, ибо онѣ относятся къ различнымъ п",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "fccec50a64f95906d4d6b2d113972460c104219f68ae159e2a0df64ab71d0817",
+      "headnote_sha256": "cced8a76eacffcb456f4bfb9f96d8669ddff670adb720d0db3f8eb18459be6f5",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-087",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-087?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+754&law=1897-087%3A%D0%93%D0%9A%D0%9F%3A754%3Atext%3A3413&at=3413&end=3420",
+      "source_warning": null,
       "passage_id": "1897-087:2707-4416",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-087?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+754&at=2707&end=4416",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 285,
+          "page_method": "header",
+          "file": "p0153_R.txt",
+          "start": 3413,
+          "end": 3420
+        }
+      ],
+      "printed_pages": [
+        285
+      ],
+      "scans": [
+        {
+          "file": "p0153_R.txt",
+          "page": 285,
+          "full": "scans/1897/pages/p0153_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1489,
+          "ocr_sha256": "982a61efdb37e0000a36612e3f92f3c50c971882c374c879b45c8b579bc677bc",
+          "pdf_page": 306,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1904-050:ГКП:757:2709",
+      "id": "1904-050:ГКП:757:text:2709",
       "statute": "ГКП ст. 757",
       "code": "ГКП",
       "article": "ст. 757",
       "decision_id": "1904-050",
       "year": 1904,
       "decision_number": 50,
+      "field": "text",
       "start": 2709,
       "end": 2716,
       "quote_original": "ст. 757",
       "context_original": "й средствъ къ содержанію и воспитанію (ст. 303 гр. улож.), а равно полученіе возможности въ будущемъ участвовать въ раздѣлѣ ихъ наслѣдства (ст. 757 и 758 гр. код.). Посему, если съ момента составленія акта о признаніи возникаютъ означенныя права, то, очевидно, они не могутъ быть разруше",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "6196285b46ecc890bc7280f09391714d8fc97846375f073e25013321464b609a",
+      "headnote_sha256": "8f9f5f3c3ded5e5758679e098b98f5c70a736e912e215c1a8e4befaa7ed403ee",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-050",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-050?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+757&law=1904-050%3A%D0%93%D0%9A%D0%9F%3A757%3Atext%3A2709&at=2709&end=2716",
+      "source_warning": null,
       "passage_id": "1904-050:1314-2733",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-050?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+757&at=1314&end=2733",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 138,
+          "page_method": "header",
+          "file": "p0070_L.txt",
+          "start": 2709,
+          "end": 2716
+        }
+      ],
+      "printed_pages": [
+        138
+      ],
+      "scans": [
+        {
+          "file": "p0070_L.txt",
+          "page": 138,
+          "full": "scans/1904/pages/p0070_L.webp",
+          "width": 1100,
+          "height": 1640,
+          "ocr_sha256": "730cd4c70390346a1b39c2f0805711768dd777fad4a484d53522f27b63c76fcf",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-091:ГКП:783:2315",
+      "id": "1905-091:ГКП:783:text:2315",
       "statute": "ГКП ст. 783",
       "code": "ГКП",
       "article": "ст. 783",
       "decision_id": "1905-091",
       "year": 1905,
       "decision_number": 91,
+      "field": "text",
       "start": 2315,
       "end": 2322,
       "quote_original": "ст. 783",
       "context_original": ", постановляетъ, что убыточность не имѣетъ вліянія на дѣйствительность договоровъ за исключеніемъ лишь точно указанныхъ въ законѣ случаевъ (ст. 783, 887, 1079, 1305 и 1674 гр. код.). Внѣ этихъ случаевъ, никто не можетъ требовать уничтоженія договора по причинѣ его убыточности. Въ частно",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "6ba688906b22154e6ef2913a7b8ff91ebb89a7af186c9f2ae2d772924a7be33b",
+      "headnote_sha256": "553a0c058f33003be151b139dece3334ca6f7f90ef7d4693c189684c5417210c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+783&law=1905-091%3A%D0%93%D0%9A%D0%9F%3A783%3Atext%3A2315&at=2315&end=2322",
+      "source_warning": null,
       "passage_id": "1905-091:1601-3435",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+783&at=1601&end=3435",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 246,
+          "page_method": "header",
+          "file": "p0124_L.txt",
+          "start": 2315,
+          "end": 2322
+        }
+      ],
+      "printed_pages": [
+        246
+      ],
+      "scans": [
+        {
+          "file": "p0124_L.txt",
+          "page": 246,
+          "full": "scans/1905/pages/p0124_L.webp",
+          "width": 1100,
+          "height": 1560,
+          "ocr_sha256": "b8aa8d66f19445fc6c1505296ef06a3c06eef72273704da78a897898a6b8d42f",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-091:ГКП:815:3038",
+      "id": "1905-091:ГКП:815:text:3038",
       "statute": "ГКП ст. 815",
       "code": "ГКП",
       "article": "ст. 815",
       "decision_id": "1905-091",
       "year": 1905,
       "decision_number": 91,
+      "field": "text",
       "start": 3038,
       "end": 3045,
       "quote_original": "ст. 815",
       "context_original": "87 гр. код. имѣетъ въ виду исключительно раздѣлъ наслѣдства, прекращающій нераздѣльное владѣніе сонаслѣдниковъ наслѣдственнымъ имуществомъ (ст. 815 гр. код.), и, согласно сему, ст. 888, развивая постановленіе 887 ст. о возможности уничтоженія, по причинѣ убыточности, раздѣла наслѣдства,",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "6ba688906b22154e6ef2913a7b8ff91ebb89a7af186c9f2ae2d772924a7be33b",
+      "headnote_sha256": "553a0c058f33003be151b139dece3334ca6f7f90ef7d4693c189684c5417210c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+815&law=1905-091%3A%D0%93%D0%9A%D0%9F%3A815%3Atext%3A3038&at=3038&end=3045",
+      "source_warning": null,
       "passage_id": "1905-091:1601-3435",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+815&at=1601&end=3435",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 246,
+          "page_method": "header",
+          "file": "p0124_L.txt",
+          "start": 3038,
+          "end": 3045
+        }
+      ],
+      "printed_pages": [
+        246
+      ],
+      "scans": [
+        {
+          "file": "p0124_L.txt",
+          "page": 246,
+          "full": "scans/1905/pages/p0124_L.webp",
+          "width": 1100,
+          "height": 1560,
+          "ocr_sha256": "b8aa8d66f19445fc6c1505296ef06a3c06eef72273704da78a897898a6b8d42f",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1897-074:ГКП:82:3838",
+      "id": "1897-074:ГКП:82:text:3838",
       "statute": "ГКП ст. 82",
       "code": "ГКП",
       "article": "ст. 82",
       "decision_id": "1897-074",
       "year": 1897,
       "decision_number": 74,
+      "field": "text",
       "start": 3838,
       "end": 3844,
       "quote_original": "ст. 82",
       "context_original": "доли въ наслѣдственномъ имуществѣ въ натурѣ; если же подлежащее раздѣлу недвижимое имущество не можетъ быть раздѣлено въ натурѣ, то оно, по ст. 82 код., должно быть продано съ публичнаго торга. Первая изъ этихъ статей, какъ относящаяся къ матеріальному гражданскому праву, въ виду приве",
-      "association": "акт определён по контексту решения",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "ce69ad8a2bb41d529ade3a9fbc910bdcbe7484a32c36335109a1353a31b27b48",
+      "headnote_sha256": "0780cb664bb8296d8a6202e4f74d912259e449c791134bfcef97a10fd55436fc",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-074",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-074?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+82&law=1897-074%3A%D0%93%D0%9A%D0%9F%3A82%3Atext%3A3838&at=3838&end=3844",
+      "source_warning": null,
       "passage_id": "1897-074:2787-4142",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-074?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+82&at=2787&end=4142",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 243,
+          "page_method": "header",
+          "file": "p0132_R.txt",
+          "start": 3838,
+          "end": 3844
+        }
+      ],
+      "printed_pages": [
+        243
+      ],
+      "scans": [
+        {
+          "file": "p0132_R.txt",
+          "page": 243,
+          "full": "scans/1897/pages/p0132_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1515,
+          "ocr_sha256": "ba6591b3733c63023510a174d85acf60066fcc55520fa5f54488174c8a7ecfcc",
+          "pdf_page": 264,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1897-074:ГКП:826:3622",
+      "id": "1897-074:ГКП:826:text:3622",
       "statute": "ГКП ст. 826",
       "code": "ГКП",
       "article": "ст. 826",
       "decision_id": "1897-074",
       "year": 1897,
       "decision_number": 74,
+      "field": "text",
       "start": 3622,
       "end": 3629,
       "quote_original": "ст. 826",
       "context_original": "положительнаго воспрещенія закона, примѣнимаго къ дѣлу. Къ числу такихъ вопросовъ относится и тотъ, который нынѣ подлежитъ разсмотрѣнію. По ст. 826 гражд. код. каждый наслѣдникъ имѣетъ право требовать выдѣла ему его доли въ наслѣдственномъ имуществѣ въ натурѣ; если же подлежащее раздѣлу",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "ce69ad8a2bb41d529ade3a9fbc910bdcbe7484a32c36335109a1353a31b27b48",
+      "headnote_sha256": "0780cb664bb8296d8a6202e4f74d912259e449c791134bfcef97a10fd55436fc",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-074",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-074?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+826&law=1897-074%3A%D0%93%D0%9A%D0%9F%3A826%3Atext%3A3622&at=3622&end=3629",
+      "source_warning": null,
       "passage_id": "1897-074:2787-4142",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-074?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+826&at=2787&end=4142",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 243,
+          "page_method": "header",
+          "file": "p0132_R.txt",
+          "start": 3622,
+          "end": 3629
+        }
+      ],
+      "printed_pages": [
+        243
+      ],
+      "scans": [
+        {
+          "file": "p0132_R.txt",
+          "page": 243,
+          "full": "scans/1897/pages/p0132_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1515,
+          "ocr_sha256": "ba6591b3733c63023510a174d85acf60066fcc55520fa5f54488174c8a7ecfcc",
+          "pdf_page": 264,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1897-090:ГКП:841:384",
+      "id": "1897-090:ГКП:841:text:384",
       "statute": "ГКП ст. 841",
       "code": "ГКП",
       "article": "ст. 841",
       "decision_id": "1897-090",
       "year": 1897,
       "decision_number": 90,
+      "field": "text",
       "start": 384,
       "end": 391,
       "quote_original": "ст. 841",
       "context_original": "твенную долю, устранено отъ раздѣла наслѣдства наслѣдникомъ того изъ наслѣдниковъ, отъ котораго эта доля дошла къ такому постороннему лицу (ст. 841 гр. код)? По ст. 841 гр. код., лицо, не наслѣдующее послѣ умершаго, въ случаѣ, если бы кто изъ сонаслѣдниковъ уступилъ ему свое наслѣдствен",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "95256faab54f9993b56b80803ae9209358ef0df33c4cbdc58ecc762b6c33ca73",
+      "headnote_sha256": "260469288c67843157f453f4c72c10653acb2d1fa918102d3e768d7d1a1c79f0",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-090",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-090?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+841&law=1897-090%3A%D0%93%D0%9A%D0%9F%3A841%3Atext%3A384&at=384&end=391",
+      "source_warning": null,
       "passage_id": "1897-090:0-1713",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-090?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+841&at=0&end=1713",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 293,
+          "page_method": "header",
+          "file": "p0157_R.txt",
+          "start": 384,
+          "end": 391
+        }
+      ],
+      "printed_pages": [
+        293
+      ],
+      "scans": [
+        {
+          "file": "p0157_R.txt",
+          "page": 293,
+          "full": "scans/1897/pages/p0157_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1498,
+          "ocr_sha256": "c24fa48e17759d6f4c47d957e30c4c79b9bd07459877e7bed5a7b327fa4e127c",
+          "pdf_page": 314,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1897-091:ГКП:841:278",
+      "id": "1897-091:ГКП:841:text:278",
       "statute": "ГКП ст. 841",
       "code": "ГКП",
       "article": "ст. 841",
       "decision_id": "1897-091",
       "year": 1897,
       "decision_number": 91,
+      "field": "text",
       "start": 278,
       "end": 285,
       "quote_original": "841 ст.",
       "context_original": "вичъ. Въ настоящемъ дѣлѣ подлежитъ разрѣшенію вопросъ: можетъ ли вдова наслѣдодателя по праву пожизненной владѣлица требовать, на основаніи 841 ст. гр. код., устраненія отъ раздѣла наслѣдства посторонняго лица, пріобрѣвшаго отъ одного изъ сонаслѣдниковъ его наслѣдственную долю? По ст. 8",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "b69ef8c18ce773fce8591ddd1533b1cbfebb1f37bb920a7ecd1ed9c2d37db2d6",
+      "headnote_sha256": "151cf7a069436f9dfc905275d1acb2cc5b63964612b014565d683a6baea64279",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-091",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+841&law=1897-091%3A%D0%93%D0%9A%D0%9F%3A841%3Atext%3A278&at=278&end=285",
+      "source_warning": null,
       "passage_id": "1897-091:0-1765",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+841&at=0&end=1765",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 296,
+          "page_method": "header",
+          "file": "p0159_L.txt",
+          "start": 278,
+          "end": 285
+        }
+      ],
+      "printed_pages": [
+        296
+      ],
+      "scans": [
+        {
+          "file": "p0159_L.txt",
+          "page": 296,
+          "full": "scans/1897/pages/p0159_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1556,
+          "ocr_sha256": "9919d074b55e2862c4d7405383596ea13c373952172ad374422da33ae85635f5",
+          "pdf_page": 317,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-077:ГКП:841:541",
+      "id": "1905-077:ГКП:841:text:541",
       "statute": "ГКП ст. 841",
       "code": "ГКП",
       "article": "ст. 841",
       "decision_id": "1905-077",
       "year": 1905,
       "decision_number": 77,
+      "field": "text",
       "start": 541,
       "end": 548,
       "quote_original": "841 ст.",
       "context_original": "мъ наслѣдствѣ. Мировой съѣздъ, куда дѣло перешло по апелляціонной жалобѣ истца, признавая, что на Іосифа Флорчака распространяется дѣйствіе 841 ст. гр. код., исковыя требованія Антона Палка удовлетворилъ.",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "afae0c10822fe0188ab1149c70f64709bf175e0fd8bcab84bececfd265125514",
+      "headnote_sha256": "123f60eccf4cec740bd586eee49945b510e4e3c13766e3d7d7bff4991cac238b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-077",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-077?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+841&law=1905-077%3A%D0%93%D0%9A%D0%9F%3A841%3Atext%3A541&at=541&end=548",
+      "source_warning": null,
       "passage_id": "1905-077:0-1741",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-077?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+841&at=0&end=1741",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 215,
+          "page_method": "header",
+          "file": "p0108_R.txt",
+          "start": 541,
+          "end": 548
+        }
+      ],
+      "printed_pages": [
+        215
+      ],
+      "scans": [
+        {
+          "file": "p0108_R.txt",
+          "page": 215,
+          "full": "scans/1905/pages/p0108_R.webp",
+          "width": 1100,
+          "height": 1520,
+          "ocr_sha256": "39b0f17a9446e4fbded495160d7366e7265dad4b8e6ffcea542f9d9a139e4669",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-091:ГКП:887:821",
+      "id": "1905-091:ГКП:887:text:821",
       "statute": "ГКП ст. 887",
       "code": "ГКП",
       "article": "ст. 887",
       "decision_id": "1905-091",
       "year": 1905,
       "decision_number": 91,
+      "field": "text",
       "start": 821,
       "end": 828,
       "quote_original": "887 ст.",
       "context_original": "предъявила искъ о признаніи совершеннаго по сему акту раздѣла наслѣдства недѣйствительнымъ и объ уничтоженіи его со всѣми послѣдствіями по 887 ст. гр. код., въ виду того, что раздѣлъ этотъ для нея убыточенъ болѣе чѣмъ на ¹/₄ часть. Окружный судъ въ искѣ этомъ отказалъ на основаніи 888",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "6ba688906b22154e6ef2913a7b8ff91ebb89a7af186c9f2ae2d772924a7be33b",
+      "headnote_sha256": "553a0c058f33003be151b139dece3334ca6f7f90ef7d4693c189684c5417210c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+887&law=1905-091%3A%D0%93%D0%9A%D0%9F%3A887%3Atext%3A821&at=821&end=828",
+      "source_warning": null,
       "passage_id": "1905-091:0-1871",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+887&at=0&end=1871",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 246,
+          "page_method": "header",
+          "file": "p0124_L.txt",
+          "start": 821,
+          "end": 828
+        }
+      ],
+      "printed_pages": [
+        246
+      ],
+      "scans": [
+        {
+          "file": "p0124_L.txt",
+          "page": 246,
+          "full": "scans/1905/pages/p0124_L.webp",
+          "width": 1100,
+          "height": 1560,
+          "ocr_sha256": "b8aa8d66f19445fc6c1505296ef06a3c06eef72273704da78a897898a6b8d42f",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-091:ГКП:888:1492",
+      "id": "1905-091:ГКП:888:text:1492",
       "statute": "ГКП ст. 888",
       "code": "ГКП",
       "article": "ст. 888",
       "decision_id": "1905-091",
       "year": 1905,
       "decision_number": 91,
+      "field": "text",
       "start": 1492,
       "end": 1499,
       "quote_original": "888 ст.",
       "context_original": "въ собственность недвижимость № 175 и сапожную лавку, совершили мировую сдѣлку, названную ими актомъ раздѣла, и что, посему, въ силу 2-й ч. 888 ст. гр. код., истица, Пикульская, не въ правѣ оспаривать означенный актъ по случаю его убыточности, такъ какъ актъ этотъ, по содержанію своему,",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "6ba688906b22154e6ef2913a7b8ff91ebb89a7af186c9f2ae2d772924a7be33b",
+      "headnote_sha256": "553a0c058f33003be151b139dece3334ca6f7f90ef7d4693c189684c5417210c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+888&law=1905-091%3A%D0%93%D0%9A%D0%9F%3A888%3Atext%3A1492&at=1492&end=1499",
+      "source_warning": null,
       "passage_id": "1905-091:0-1871",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-091?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+888&at=0&end=1871",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 246,
+          "page_method": "header",
+          "file": "p0124_L.txt",
+          "start": 1492,
+          "end": 1499
+        }
+      ],
+      "printed_pages": [
+        246
+      ],
+      "scans": [
+        {
+          "file": "p0124_L.txt",
+          "page": 246,
+          "full": "scans/1905/pages/p0124_L.webp",
+          "width": 1100,
+          "height": 1560,
+          "ocr_sha256": "b8aa8d66f19445fc6c1505296ef06a3c06eef72273704da78a897898a6b8d42f",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
-      "id": "1905-057:ГКП:913:453",
+      "id": "1905-057:ГКП:913:text:453",
       "statute": "ГКП ст. 913",
       "code": "ГКП",
       "article": "ст. 913",
       "decision_id": "1905-057",
       "year": 1905,
       "decision_number": 57,
+      "field": "text",
       "start": 453,
       "end": 460,
       "quote_original": "ст. 913",
       "context_original": "и по отношенію къ половинѣ усадьбы, владѣемой Иваномъ Гумели на основаніи духовнаго завѣщанія, совершеннаго Дмитріемъ Гумели съ нарушеніемъ ст. 913 гр. код., подлежитъ удовлетворенію, рѣшеніе гминнаго суда отмѣнилъ и возвратилъ дѣло въ тотъ же гминный судъ для производства раздѣла. Въ к",
-      "association": "прямое название акта рядом с номером",
-      "citation_status": "номер статьи извлечён из OCR; сверяйте со сканом",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "0d1891fee108022da1ffdd2aea954f3ec0a1565b13b7d07a127701e7fdbeedee",
+      "headnote_sha256": "41c4e66410d69fb898a4fdcaf97b9f85faa88420d0c06984beb4c990ddd90250",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-057",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-057?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+913&law=1905-057%3A%D0%93%D0%9A%D0%9F%3A913%3Atext%3A453&at=453&end=460",
+      "source_warning": null,
       "passage_id": "1905-057:0-1590",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-057?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+913&at=0&end=1590",
-      "scan_available": true
+      "sources": [
+        {
+          "page": 155,
+          "page_method": "header",
+          "file": "p0078_R.txt",
+          "start": 453,
+          "end": 460
+        }
+      ],
+      "printed_pages": [
+        155
+      ],
+      "scans": [
+        {
+          "file": "p0078_R.txt",
+          "page": 155,
+          "full": "scans/1905/pages/p0078_R.webp",
+          "width": 1100,
+          "height": 1577,
+          "ocr_sha256": "a7251a7578feb28e38c215a4b725ec0b54ef4c0ccf21d49c0bee0c63784596db",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     }
   ]
 }

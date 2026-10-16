@@ -1,14 +1,14 @@
 {
   "api_version": "v1",
-  "contract_version": "1.4.0",
-  "data_revision": "sha256:6ac98d54af90894c26d5b151ea6fa7560f3c59eb9c7573bdfa175192587860d6",
+  "contract_version": "1.5.0",
+  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
   "resource": "decision-set",
   "filter": {
     "kind": "act",
     "id": "act-3d4f8b4233c8",
     "label": "УЖД"
   },
-  "count": 20,
+  "count": 22,
   "decision_ids": [
     "1896-029",
     "1897-019",
@@ -19,6 +19,7 @@
     "1904-091",
     "1904-092",
     "1904-093",
+    "1904-100",
     "1904-101",
     "1904-102",
     "1904-106",
@@ -27,6 +28,7 @@
     "1905-022",
     "1905-028",
     "1905-062",
+    "1905-064",
     "1905-068",
     "1905-090",
     "1905-101"
@@ -42,6 +44,7 @@
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-091.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-092.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-093.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-100.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-101.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-102.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-106.json",
@@ -50,6 +53,7 @@
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-022.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-028.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-062.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-064.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-068.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-090.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-101.json"

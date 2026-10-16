@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.4.0",
-  "data_revision": "sha256:6ac98d54af90894c26d5b151ea6fa7560f3c59eb9c7573bdfa175192587860d6",
+  "contract_version": "1.5.0",
+  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
   "resource": "decision",
   "scope": {
     "id": "1905-108",
@@ -36,10 +36,10 @@
       ]
     },
     "statutes": {
-      "? ст. 74": 1,
       "? ст. 77": 2,
-      "? ст. 78": 1,
-      "? ст. 80": 1
+      "УВ ст. 74": 1,
+      "УВ ст. 78": 1,
+      "УВ ст. 80": 1
     },
     "cites": [],
     "participant_ids": [

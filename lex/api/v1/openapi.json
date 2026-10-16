@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Решения Правительствующего Сената — Static API",
-    "version": "1.4.0",
+    "version": "1.5.0",
     "description": "Статические JSON-файлы: доступны GET и HEAD, query-параметров и серверного поиска нет."
   },
   "servers": [
@@ -242,11 +242,57 @@
                 "act-a4fdc9c28348",
                 "act-8a599d728823",
                 "act-09c9ca212564",
+                "act-43057a02dbce",
+                "act-0409227854e7",
+                "act-2f1c15d56997",
+                "act-bc01efbdb350",
+                "act-fcdce945345d",
+                "act-6017b1723e79",
+                "act-24d4d7ce13de",
+                "act-c325e0a23fc5",
+                "act-0b61ef5db1c4",
+                "act-c78edf831dda",
+                "act-40a72ea949f0",
+                "act-e90cea88e46e",
                 "act-8a8de823d5ed"
               ]
             }
           }
         ],
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/legislation/unresolved.json": {
+      "get": {
+        "summary": "Неустановленные акты: буквальный контекст и точные места",
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/legislation/attribution.json": {
+      "get": {
+        "summary": "Покрытие и единица счёта атрибуции актов",
         "responses": {
           "200": {
             "description": "JSON UTF-8",
@@ -298,6 +344,18 @@
                 "act-a4fdc9c28348",
                 "act-8a599d728823",
                 "act-09c9ca212564",
+                "act-43057a02dbce",
+                "act-0409227854e7",
+                "act-2f1c15d56997",
+                "act-bc01efbdb350",
+                "act-fcdce945345d",
+                "act-6017b1723e79",
+                "act-24d4d7ce13de",
+                "act-c325e0a23fc5",
+                "act-0b61ef5db1c4",
+                "act-c78edf831dda",
+                "act-40a72ea949f0",
+                "act-e90cea88e46e",
                 "act-8a8de823d5ed"
               ]
             }

@@ -1,13 +1,13 @@
 {
   "api_version": "v1",
-  "contract_version": "1.4.0",
-  "data_revision": "sha256:6ac98d54af90894c26d5b151ea6fa7560f3c59eb9c7573bdfa175192587860d6",
+  "contract_version": "1.5.0",
+  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
   "resource": "statutes",
   "scope": {
     "code": "УСУ",
     "id": "act-8fbc1823c2eb"
   },
-  "count": 24,
+  "count": 23,
   "items": [
     {
       "statute": "УСУ ст. 2591",
@@ -73,7 +73,7 @@
       "statute": "УСУ ст. 400",
       "code": "УСУ",
       "article": "ст. 400",
-      "mentions": 4,
+      "mentions": 5,
       "decision_id": "1897-062",
       "year": 1897,
       "decision_number": 62,
@@ -158,16 +158,6 @@
       "year": 1904,
       "decision_number": 72,
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-072"
-    },
-    {
-      "statute": "УСУ ст. 32",
-      "code": "УСУ",
-      "article": "ст. 32",
-      "mentions": 1,
-      "decision_id": "1904-075",
-      "year": 1904,
-      "decision_number": 75,
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-075"
     },
     {
       "statute": "УСУ ст. 36",

@@ -1,14 +1,14 @@
 {
   "api_version": "v1",
-  "contract_version": "1.4.0",
-  "data_revision": "sha256:6ac98d54af90894c26d5b151ea6fa7560f3c59eb9c7573bdfa175192587860d6",
+  "contract_version": "1.5.0",
+  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
   "resource": "facets",
   "item": {
     "act": [
       {
         "id": "act-8a8de823d5ed",
         "label": "?",
-        "count": 253,
+        "count": 220,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/act/act-8a8de823d5ed.json"
       },
       {
@@ -18,28 +18,82 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/act/act-8a599d728823.json"
       },
       {
+        "id": "act-6017b1723e79",
+        "label": "ГУП1825",
+        "count": 6,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/act/act-6017b1723e79.json"
+      },
+      {
+        "id": "act-0b61ef5db1c4",
+        "label": "ЗС",
+        "count": 3,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/act/act-0b61ef5db1c4.json"
+      },
+      {
+        "id": "act-2f1c15d56997",
+        "label": "ПНЧ",
+        "count": 10,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/act/act-2f1c15d56997.json"
+      },
+      {
         "id": "act-d2a3c58c7b33",
         "label": "СЗГ",
-        "count": 136,
+        "count": 138,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/act/act-d2a3c58c7b33.json"
+      },
+      {
+        "id": "act-43057a02dbce",
+        "label": "СМУО",
+        "count": 7,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/act/act-43057a02dbce.json"
+      },
+      {
+        "id": "act-24d4d7ce13de",
+        "label": "УВ",
+        "count": 5,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/act/act-24d4d7ce13de.json"
       },
       {
         "id": "act-7fdf2cd82a35",
         "label": "УГС",
-        "count": 128,
+        "count": 144,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/act/act-7fdf2cd82a35.json"
+      },
+      {
+        "id": "act-bc01efbdb350",
+        "label": "УГСБ",
+        "count": 6,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/act/act-bc01efbdb350.json"
       },
       {
         "id": "act-3d4f8b4233c8",
         "label": "УЖД",
-        "count": 20,
+        "count": 22,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/act/act-3d4f8b4233c8.json"
       },
       {
         "id": "act-a4fdc9c28348",
         "label": "УН",
-        "count": 13,
+        "count": 12,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/act/act-a4fdc9c28348.json"
+      },
+      {
+        "id": "act-e90cea88e46e",
+        "label": "УНМС",
+        "count": 5,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/act/act-e90cea88e46e.json"
+      },
+      {
+        "id": "act-fcdce945345d",
+        "label": "УПШ",
+        "count": 7,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/act/act-fcdce945345d.json"
+      },
+      {
+        "id": "act-0409227854e7",
+        "label": "УСТ",
+        "count": 17,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/act/act-0409227854e7.json"
       },
       {
         "id": "act-8fbc1823c2eb",
@@ -50,13 +104,13 @@
       {
         "id": "act-a9c431c76667",
         "label": "УТ",
-        "count": 17,
+        "count": 15,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/act/act-a9c431c76667.json"
       },
       {
         "id": "act-a8f8a6c2c0c2",
         "label": "УУС",
-        "count": 7,
+        "count": 13,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/act/act-a8f8a6c2c0c2.json"
       }
     ],
@@ -76,7 +130,7 @@
       {
         "id": "article-cb06d0e4635a",
         "label": "? ст. 1005",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-cb06d0e4635a.json"
       },
       {
@@ -94,7 +148,7 @@
       {
         "id": "article-71377275631c",
         "label": "? ст. 1010",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-71377275631c.json"
       },
       {
@@ -202,7 +256,7 @@
       {
         "id": "article-01514f86cc43",
         "label": "? ст. 1065",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-01514f86cc43.json"
       },
       {
@@ -226,7 +280,7 @@
       {
         "id": "article-551842a7029e",
         "label": "? ст. 1068",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-551842a7029e.json"
       },
       {
@@ -238,7 +292,7 @@
       {
         "id": "article-ee6c3713f88b",
         "label": "? ст. 1077",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-ee6c3713f88b.json"
       },
       {
@@ -268,19 +322,19 @@
       {
         "id": "article-621a2637eeee",
         "label": "? ст. 110",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-621a2637eeee.json"
       },
       {
         "id": "article-0bad4c3fcbe1",
         "label": "? ст. 1103",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0bad4c3fcbe1.json"
       },
       {
         "id": "article-b585be6b2735",
         "label": "? ст. 1104",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-b585be6b2735.json"
       },
       {
@@ -304,13 +358,13 @@
       {
         "id": "article-8639273abaad",
         "label": "? ст. 1124",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-8639273abaad.json"
       },
       {
         "id": "article-69cb662c15ee",
         "label": "? ст. 1125",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-69cb662c15ee.json"
       },
       {
@@ -322,31 +376,31 @@
       {
         "id": "article-a8ac0aba3d12",
         "label": "? ст. 113",
-        "count": 3,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-a8ac0aba3d12.json"
       },
       {
         "id": "article-d18f183a5d8b",
         "label": "? ст. 1133",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-d18f183a5d8b.json"
       },
       {
         "id": "article-088fb2a364f2",
         "label": "? ст. 1134",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-088fb2a364f2.json"
       },
       {
         "id": "article-f4de3a4e1ab9",
         "label": "? ст. 1137",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-f4de3a4e1ab9.json"
       },
       {
         "id": "article-796d33ef3ad0",
         "label": "? ст. 1137–1139",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-796d33ef3ad0.json"
       },
       {
@@ -364,7 +418,7 @@
       {
         "id": "article-f29f34a9f49a",
         "label": "? ст. 1149",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-f29f34a9f49a.json"
       },
       {
@@ -388,31 +442,31 @@
       {
         "id": "article-3a527e65f722",
         "label": "? ст. 1161",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-3a527e65f722.json"
       },
       {
         "id": "article-c4e99575d2d5",
         "label": "? ст. 1162",
-        "count": 3,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c4e99575d2d5.json"
       },
       {
         "id": "article-498a1eee25cd",
         "label": "? ст. 1163",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-498a1eee25cd.json"
       },
       {
         "id": "article-cad79ebfbb9d",
         "label": "? ст. 1165",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-cad79ebfbb9d.json"
       },
       {
         "id": "article-1b8c99d7f5e6",
         "label": "? ст. 1166",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-1b8c99d7f5e6.json"
       },
       {
@@ -430,7 +484,7 @@
       {
         "id": "article-2c2ab1849ef2",
         "label": "? ст. 1171",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-2c2ab1849ef2.json"
       },
       {
@@ -442,7 +496,7 @@
       {
         "id": "article-9f42b7796bc8",
         "label": "? ст. 1176",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-9f42b7796bc8.json"
       },
       {
@@ -466,7 +520,7 @@
       {
         "id": "article-e56ab228059b",
         "label": "? ст. 1203",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-e56ab228059b.json"
       },
       {
@@ -520,13 +574,13 @@
       {
         "id": "article-af3c963ba010",
         "label": "? ст. 127",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-af3c963ba010.json"
       },
       {
         "id": "article-66e55140f1a5",
         "label": "? ст. 128",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-66e55140f1a5.json"
       },
       {
@@ -538,13 +592,13 @@
       {
         "id": "article-932717c82b04",
         "label": "? ст. 128–132",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-932717c82b04.json"
       },
       {
         "id": "article-ba3c6e3e3890",
         "label": "? ст. 129",
-        "count": 4,
+        "count": 3,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-ba3c6e3e3890.json"
       },
       {
@@ -562,19 +616,19 @@
       {
         "id": "article-5be4eeb29bdf",
         "label": "? ст. 1292",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-5be4eeb29bdf.json"
       },
       {
         "id": "article-a6d21879498b",
         "label": "? ст. 1293",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-a6d21879498b.json"
       },
       {
         "id": "article-23c295c8c65e",
         "label": "? ст. 1294",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-23c295c8c65e.json"
       },
       {
@@ -592,7 +646,7 @@
       {
         "id": "article-342143613642",
         "label": "? ст. 1301",
-        "count": 3,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-342143613642.json"
       },
       {
@@ -622,19 +676,19 @@
       {
         "id": "article-bbdbefb219f2",
         "label": "? ст. 1314",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-bbdbefb219f2.json"
       },
       {
         "id": "article-e8d06717457c",
         "label": "? ст. 1317",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-e8d06717457c.json"
       },
       {
         "id": "article-fb8c23659349",
         "label": "? ст. 132",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-fb8c23659349.json"
       },
       {
@@ -682,7 +736,7 @@
       {
         "id": "article-0445f1a4a909",
         "label": "? ст. 135",
-        "count": 2,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0445f1a4a909.json"
       },
       {
@@ -724,7 +778,7 @@
       {
         "id": "article-66917d76233a",
         "label": "? ст. 138",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-66917d76233a.json"
       },
       {
@@ -754,7 +808,7 @@
       {
         "id": "article-635458cfe877",
         "label": "? ст. 1400",
-        "count": 3,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-635458cfe877.json"
       },
       {
@@ -778,7 +832,7 @@
       {
         "id": "article-4cff970ebb18",
         "label": "? ст. 145",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-4cff970ebb18.json"
       },
       {
@@ -808,13 +862,13 @@
       {
         "id": "article-39524cc4be39",
         "label": "? ст. 1456",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-39524cc4be39.json"
       },
       {
         "id": "article-10a6e6a68ce2",
         "label": "? ст. 145²",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-10a6e6a68ce2.json"
       },
       {
@@ -832,7 +886,7 @@
       {
         "id": "article-eb473034c556",
         "label": "? ст. 1460²",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-eb473034c556.json"
       },
       {
@@ -844,19 +898,19 @@
       {
         "id": "article-f3591d704489",
         "label": "? ст. 147",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-f3591d704489.json"
       },
       {
         "id": "article-3df1b5ac5acf",
         "label": "? ст. 1478",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-3df1b5ac5acf.json"
       },
       {
         "id": "article-c4edde3c8289",
         "label": "? ст. 1479",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c4edde3c8289.json"
       },
       {
@@ -916,19 +970,19 @@
       {
         "id": "article-fd202d527f9c",
         "label": "? ст. 1529",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-fd202d527f9c.json"
       },
       {
         "id": "article-7873ecc95944",
         "label": "? ст. 153",
-        "count": 4,
+        "count": 3,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-7873ecc95944.json"
       },
       {
         "id": "article-cd7a37c9fc87",
         "label": "? ст. 154",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-cd7a37c9fc87.json"
       },
       {
@@ -952,19 +1006,19 @@
       {
         "id": "article-8bdd3aece975",
         "label": "? ст. 1566",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-8bdd3aece975.json"
       },
       {
         "id": "article-93807f00c520",
         "label": "? ст. 1567",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-93807f00c520.json"
       },
       {
         "id": "article-21f6d795b539",
         "label": "? ст. 156¹",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-21f6d795b539.json"
       },
       {
@@ -988,25 +1042,25 @@
       {
         "id": "article-d8fc8f81eb1c",
         "label": "? ст. 161",
-        "count": 5,
+        "count": 3,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-d8fc8f81eb1c.json"
       },
       {
         "id": "article-58891d8ea59e",
         "label": "? ст. 162",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-58891d8ea59e.json"
       },
       {
         "id": "article-3a7b69d458eb",
         "label": "? ст. 1625",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-3a7b69d458eb.json"
       },
       {
         "id": "article-0c77145dcedd",
         "label": "? ст. 164",
-        "count": 4,
+        "count": 3,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0c77145dcedd.json"
       },
       {
@@ -1030,7 +1084,7 @@
       {
         "id": "article-091c2c37f200",
         "label": "? ст. 167",
-        "count": 3,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-091c2c37f200.json"
       },
       {
@@ -1042,49 +1096,49 @@
       {
         "id": "article-cb3bec7925b3",
         "label": "? ст. 1681",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-cb3bec7925b3.json"
       },
       {
         "id": "article-b998e1cbba28",
         "label": "? ст. 1687",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-b998e1cbba28.json"
       },
       {
         "id": "article-6d10e1e60100",
         "label": "? ст. 1688",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-6d10e1e60100.json"
       },
       {
         "id": "article-575f5eebf504",
         "label": "? ст. 1689",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-575f5eebf504.json"
       },
       {
         "id": "article-2cfe6994424f",
         "label": "? ст. 169",
-        "count": 3,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-2cfe6994424f.json"
       },
       {
         "id": "article-55594a179429",
         "label": "? ст. 1692",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-55594a179429.json"
       },
       {
         "id": "article-4794df4a7172",
         "label": "? ст. 1693",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-4794df4a7172.json"
       },
       {
         "id": "article-72f91a5afc88",
         "label": "? ст. 169–171",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-72f91a5afc88.json"
       },
       {
@@ -1114,7 +1168,7 @@
       {
         "id": "article-c7dab02b1637",
         "label": "? ст. 173–175",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c7dab02b1637.json"
       },
       {
@@ -1198,7 +1252,7 @@
       {
         "id": "article-92d59a22ac2a",
         "label": "? ст. 184",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-92d59a22ac2a.json"
       },
       {
@@ -1210,13 +1264,13 @@
       {
         "id": "article-1b1b5e86b216",
         "label": "? ст. 187",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-1b1b5e86b216.json"
       },
       {
         "id": "article-670c0daa59e4",
         "label": "? ст. 188",
-        "count": 3,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-670c0daa59e4.json"
       },
       {
@@ -1246,7 +1300,7 @@
       {
         "id": "article-eacd2142d48f",
         "label": "? ст. 191–193",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-eacd2142d48f.json"
       },
       {
@@ -1258,13 +1312,13 @@
       {
         "id": "article-482c33fe56cc",
         "label": "? ст. 194",
-        "count": 3,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-482c33fe56cc.json"
       },
       {
         "id": "article-41e2ea5f92da",
         "label": "? ст. 195",
-        "count": 2,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-41e2ea5f92da.json"
       },
       {
@@ -1276,7 +1330,7 @@
       {
         "id": "article-1d6916ee5274",
         "label": "? ст. 197",
-        "count": 4,
+        "count": 3,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-1d6916ee5274.json"
       },
       {
@@ -1288,7 +1342,7 @@
       {
         "id": "article-88a85b35d032",
         "label": "? ст. 198",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-88a85b35d032.json"
       },
       {
@@ -1324,13 +1378,13 @@
       {
         "id": "article-be17d20b6478",
         "label": "? ст. 201",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-be17d20b6478.json"
       },
       {
         "id": "article-1f63ccad2916",
         "label": "? ст. 202",
-        "count": 4,
+        "count": 3,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-1f63ccad2916.json"
       },
       {
@@ -1468,7 +1522,7 @@
       {
         "id": "article-9f7dac292789",
         "label": "? ст. 213",
-        "count": 4,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-9f7dac292789.json"
       },
       {
@@ -1582,13 +1636,13 @@
       {
         "id": "article-35dd2b43b273",
         "label": "? ст. 232",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-35dd2b43b273.json"
       },
       {
         "id": "article-fd2e4e887d25",
         "label": "? ст. 236",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-fd2e4e887d25.json"
       },
       {
@@ -1618,13 +1672,13 @@
       {
         "id": "article-b5c21d5acfb1",
         "label": "? ст. 243",
-        "count": 3,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-b5c21d5acfb1.json"
       },
       {
         "id": "article-3b814f2761ab",
         "label": "? ст. 244",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-3b814f2761ab.json"
       },
       {
@@ -1648,7 +1702,7 @@
       {
         "id": "article-d6f24164b275",
         "label": "? ст. 24–26",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-d6f24164b275.json"
       },
       {
@@ -1684,13 +1738,13 @@
       {
         "id": "article-5d4979a69088",
         "label": "? ст. 258",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-5d4979a69088.json"
       },
       {
         "id": "article-dea2112ffbda",
         "label": "? ст. 259",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-dea2112ffbda.json"
       },
       {
@@ -1708,7 +1762,7 @@
       {
         "id": "article-f456b028e754",
         "label": "? ст. 260",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-f456b028e754.json"
       },
       {
@@ -1738,7 +1792,7 @@
       {
         "id": "article-0293c6db65f2",
         "label": "? ст. 265",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0293c6db65f2.json"
       },
       {
@@ -1786,13 +1840,13 @@
       {
         "id": "article-c55d423bc1c2",
         "label": "? ст. 276",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c55d423bc1c2.json"
       },
       {
         "id": "article-14f8f32a30ff",
         "label": "? ст. 277",
-        "count": 5,
+        "count": 3,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-14f8f32a30ff.json"
       },
       {
@@ -1804,7 +1858,7 @@
       {
         "id": "article-c0d7030f8a77",
         "label": "? ст. 278",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c0d7030f8a77.json"
       },
       {
@@ -1888,7 +1942,7 @@
       {
         "id": "article-93753fbfe4e0",
         "label": "? ст. 2922",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-93753fbfe4e0.json"
       },
       {
@@ -1912,7 +1966,7 @@
       {
         "id": "article-8adfc6c6f546",
         "label": "? ст. 298",
-        "count": 2,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-8adfc6c6f546.json"
       },
       {
@@ -1924,25 +1978,25 @@
       {
         "id": "article-c85e4ce36e80",
         "label": "? ст. 298–307",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c85e4ce36e80.json"
       },
       {
         "id": "article-41f925217bed",
         "label": "? ст. 299",
-        "count": 3,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-41f925217bed.json"
       },
       {
         "id": "article-0bfc76cf6bdd",
         "label": "? ст. 2993",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0bfc76cf6bdd.json"
       },
       {
         "id": "article-1fe97f129916",
         "label": "? ст. 2994",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-1fe97f129916.json"
       },
       {
@@ -1954,13 +2008,13 @@
       {
         "id": "article-f15ed781cc3e",
         "label": "? ст. 30",
-        "count": 3,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-f15ed781cc3e.json"
       },
       {
         "id": "article-57cdd6efa7b9",
         "label": "? ст. 300",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-57cdd6efa7b9.json"
       },
       {
@@ -1978,31 +2032,31 @@
       {
         "id": "article-809f784e09f1",
         "label": "? ст. 303",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-809f784e09f1.json"
       },
       {
         "id": "article-14b47f2050e9",
         "label": "? ст. 303–369",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-14b47f2050e9.json"
       },
       {
         "id": "article-6a885f330eb1",
         "label": "? ст. 304",
-        "count": 3,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-6a885f330eb1.json"
       },
       {
         "id": "article-f47c4325176f",
         "label": "? ст. 305",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-f47c4325176f.json"
       },
       {
         "id": "article-1bb05fd2c829",
         "label": "? ст. 306",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-1bb05fd2c829.json"
       },
       {
@@ -2050,7 +2104,7 @@
       {
         "id": "article-97e21af76047",
         "label": "? ст. 312",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-97e21af76047.json"
       },
       {
@@ -2098,7 +2152,7 @@
       {
         "id": "article-9619748c2513",
         "label": "? ст. 317",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-9619748c2513.json"
       },
       {
@@ -2110,7 +2164,7 @@
       {
         "id": "article-bc9f45cdfb1b",
         "label": "? ст. 319",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-bc9f45cdfb1b.json"
       },
       {
@@ -2122,7 +2176,7 @@
       {
         "id": "article-f4b25f4698c7",
         "label": "? ст. 320",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-f4b25f4698c7.json"
       },
       {
@@ -2152,7 +2206,7 @@
       {
         "id": "article-58b42894dded",
         "label": "? ст. 3214",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-58b42894dded.json"
       },
       {
@@ -2170,7 +2224,7 @@
       {
         "id": "article-129feadfc364",
         "label": "? ст. 33",
-        "count": 3,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-129feadfc364.json"
       },
       {
@@ -2206,7 +2260,7 @@
       {
         "id": "article-8e669f3bd3a1",
         "label": "? ст. 339",
-        "count": 3,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-8e669f3bd3a1.json"
       },
       {
@@ -2218,13 +2272,13 @@
       {
         "id": "article-9e3bd67b73fc",
         "label": "? ст. 34 п. 3",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-9e3bd67b73fc.json"
       },
       {
         "id": "article-814b99a7a4e2",
         "label": "? ст. 340",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-814b99a7a4e2.json"
       },
       {
@@ -2242,7 +2296,7 @@
       {
         "id": "article-936995bdcf98",
         "label": "? ст. 3444",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-936995bdcf98.json"
       },
       {
@@ -2254,7 +2308,7 @@
       {
         "id": "article-68f0f9a62fb7",
         "label": "? ст. 3482",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-68f0f9a62fb7.json"
       },
       {
@@ -2308,31 +2362,31 @@
       {
         "id": "article-92d66fb8396e",
         "label": "? ст. 36",
-        "count": 4,
+        "count": 3,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-92d66fb8396e.json"
       },
       {
         "id": "article-d90b795464f4",
         "label": "? ст. 360",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-d90b795464f4.json"
       },
       {
         "id": "article-1ac59a154e00",
         "label": "? ст. 360–363",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-1ac59a154e00.json"
       },
       {
         "id": "article-7073a085a9d7",
         "label": "? ст. 361",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-7073a085a9d7.json"
       },
       {
         "id": "article-274542a8a752",
         "label": "? ст. 362",
-        "count": 3,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-274542a8a752.json"
       },
       {
@@ -2350,7 +2404,7 @@
       {
         "id": "article-71c18bedacbc",
         "label": "? ст. 363",
-        "count": 6,
+        "count": 5,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-71c18bedacbc.json"
       },
       {
@@ -2368,13 +2422,13 @@
       {
         "id": "article-66ecdd4eac9b",
         "label": "? ст. 3656",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-66ecdd4eac9b.json"
       },
       {
         "id": "article-a9d35ebc4ed4",
         "label": "? ст. 366",
-        "count": 5,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-a9d35ebc4ed4.json"
       },
       {
@@ -2410,7 +2464,7 @@
       {
         "id": "article-c2a658665631",
         "label": "? ст. 371",
-        "count": 3,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c2a658665631.json"
       },
       {
@@ -2452,25 +2506,25 @@
       {
         "id": "article-88313a1c8510",
         "label": "? ст. 387",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-88313a1c8510.json"
       },
       {
         "id": "article-038bf0db9752",
         "label": "? ст. 388",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-038bf0db9752.json"
       },
       {
         "id": "article-5a05bcff4946",
         "label": "? ст. 389",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-5a05bcff4946.json"
       },
       {
         "id": "article-e6c9559e4d8b",
         "label": "? ст. 39",
-        "count": 7,
+        "count": 6,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-e6c9559e4d8b.json"
       },
       {
@@ -2494,7 +2548,7 @@
       {
         "id": "article-55acc2e8149a",
         "label": "? ст. 395–403",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-55acc2e8149a.json"
       },
       {
@@ -2506,19 +2560,19 @@
       {
         "id": "article-2ce827f4f053",
         "label": "? ст. 397",
-        "count": 4,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-2ce827f4f053.json"
       },
       {
         "id": "article-b2d52aebc8d6",
         "label": "? ст. 398",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-b2d52aebc8d6.json"
       },
       {
         "id": "article-a8c4b051d492",
         "label": "? ст. 399",
-        "count": 2,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-a8c4b051d492.json"
       },
       {
@@ -2530,13 +2584,13 @@
       {
         "id": "article-1cfbabbb2376",
         "label": "? ст. 400",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-1cfbabbb2376.json"
       },
       {
         "id": "article-4304d64dce82",
         "label": "? ст. 402",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-4304d64dce82.json"
       },
       {
@@ -2554,7 +2608,7 @@
       {
         "id": "article-9ff1a064e808",
         "label": "? ст. 409",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-9ff1a064e808.json"
       },
       {
@@ -2572,13 +2626,13 @@
       {
         "id": "article-970acd1eee75",
         "label": "? ст. 413",
-        "count": 3,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-970acd1eee75.json"
       },
       {
         "id": "article-8a839b4d87e8",
         "label": "? ст. 415",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-8a839b4d87e8.json"
       },
       {
@@ -2614,7 +2668,7 @@
       {
         "id": "article-ae816e2536cc",
         "label": "? ст. 420",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-ae816e2536cc.json"
       },
       {
@@ -2650,7 +2704,7 @@
       {
         "id": "article-46ad4accc578",
         "label": "? ст. 4268",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-46ad4accc578.json"
       },
       {
@@ -2662,7 +2716,7 @@
       {
         "id": "article-04e53ea912a7",
         "label": "? ст. 4271",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-04e53ea912a7.json"
       },
       {
@@ -2674,19 +2728,19 @@
       {
         "id": "article-6da105071485",
         "label": "? ст. 428",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-6da105071485.json"
       },
       {
         "id": "article-0337119268b6",
         "label": "? ст. 4294",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0337119268b6.json"
       },
       {
         "id": "article-53a9e93caded",
         "label": "? ст. 43",
-        "count": 5,
+        "count": 4,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-53a9e93caded.json"
       },
       {
@@ -2728,7 +2782,7 @@
       {
         "id": "article-0651378b4ae1",
         "label": "? ст. 443",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0651378b4ae1.json"
       },
       {
@@ -2794,7 +2848,7 @@
       {
         "id": "article-a60c997ff298",
         "label": "? ст. 47",
-        "count": 3,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-a60c997ff298.json"
       },
       {
@@ -2812,7 +2866,7 @@
       {
         "id": "article-c790dcdc5407",
         "label": "? ст. 477",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c790dcdc5407.json"
       },
       {
@@ -2824,13 +2878,13 @@
       {
         "id": "article-4e5b5e1c102b",
         "label": "? ст. 480",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-4e5b5e1c102b.json"
       },
       {
         "id": "article-523168aeeee4",
         "label": "? ст. 480–482",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-523168aeeee4.json"
       },
       {
@@ -2866,7 +2920,7 @@
       {
         "id": "article-1f28ebc97509",
         "label": "? ст. 488",
-        "count": 3,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-1f28ebc97509.json"
       },
       {
@@ -2890,13 +2944,13 @@
       {
         "id": "article-586889caf6a1",
         "label": "? ст. 489–521",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-586889caf6a1.json"
       },
       {
         "id": "article-c35a91c6030d",
         "label": "? ст. 49",
-        "count": 3,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c35a91c6030d.json"
       },
       {
@@ -2920,7 +2974,7 @@
       {
         "id": "article-541bcbdbc066",
         "label": "? ст. 50",
-        "count": 7,
+        "count": 5,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-541bcbdbc066.json"
       },
       {
@@ -2932,7 +2986,7 @@
       {
         "id": "article-91d9c6a8da2b",
         "label": "? ст. 509",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-91d9c6a8da2b.json"
       },
       {
@@ -2944,7 +2998,7 @@
       {
         "id": "article-a92384eb8709",
         "label": "? ст. 51",
-        "count": 7,
+        "count": 4,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-a92384eb8709.json"
       },
       {
@@ -2962,7 +3016,7 @@
       {
         "id": "article-bd7bd68b4313",
         "label": "? ст. 515",
-        "count": 2,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-bd7bd68b4313.json"
       },
       {
@@ -2986,13 +3040,13 @@
       {
         "id": "article-5ba4c79e9ba2",
         "label": "? ст. 518",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-5ba4c79e9ba2.json"
       },
       {
         "id": "article-09bef906fadf",
         "label": "? ст. 52",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-09bef906fadf.json"
       },
       {
@@ -3004,7 +3058,7 @@
       {
         "id": "article-f8a63f219e0b",
         "label": "? ст. 524",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-f8a63f219e0b.json"
       },
       {
@@ -3016,19 +3070,19 @@
       {
         "id": "article-cb8e97aa67b0",
         "label": "? ст. 527",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-cb8e97aa67b0.json"
       },
       {
         "id": "article-5f44367ff486",
         "label": "? ст. 528",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-5f44367ff486.json"
       },
       {
         "id": "article-1d62559f0749",
         "label": "? ст. 529",
-        "count": 2,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-1d62559f0749.json"
       },
       {
@@ -3046,19 +3100,19 @@
       {
         "id": "article-ce37da31cad0",
         "label": "? ст. 530",
-        "count": 2,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-ce37da31cad0.json"
       },
       {
         "id": "article-b2983ba3af71",
         "label": "? ст. 531",
-        "count": 3,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-b2983ba3af71.json"
       },
       {
         "id": "article-a3325e9f036a",
         "label": "? ст. 532",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-a3325e9f036a.json"
       },
       {
@@ -3076,7 +3130,7 @@
       {
         "id": "article-651f86359988",
         "label": "? ст. 538",
-        "count": 2,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-651f86359988.json"
       },
       {
@@ -3094,7 +3148,7 @@
       {
         "id": "article-5ac3380478d1",
         "label": "? ст. 542",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-5ac3380478d1.json"
       },
       {
@@ -3124,7 +3178,7 @@
       {
         "id": "article-ae65e99ab0a6",
         "label": "? ст. 552",
-        "count": 3,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-ae65e99ab0a6.json"
       },
       {
@@ -3136,7 +3190,7 @@
       {
         "id": "article-e9e6ecd61ec6",
         "label": "? ст. 555–565",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-e9e6ecd61ec6.json"
       },
       {
@@ -3178,7 +3232,7 @@
       {
         "id": "article-2173c7038ec3",
         "label": "? ст. 572",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-2173c7038ec3.json"
       },
       {
@@ -3190,7 +3244,7 @@
       {
         "id": "article-7820b71d038c",
         "label": "? ст. 574",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-7820b71d038c.json"
       },
       {
@@ -3250,7 +3304,7 @@
       {
         "id": "article-f30705e3f700",
         "label": "? ст. 589",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-f30705e3f700.json"
       },
       {
@@ -3310,7 +3364,7 @@
       {
         "id": "article-e692b72f0815",
         "label": "? ст. 604",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-e692b72f0815.json"
       },
       {
@@ -3388,13 +3442,13 @@
       {
         "id": "article-c2a7792fa97f",
         "label": "? ст. 617",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c2a7792fa97f.json"
       },
       {
         "id": "article-904e11425685",
         "label": "? ст. 618",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-904e11425685.json"
       },
       {
@@ -3406,7 +3460,7 @@
       {
         "id": "article-396b229dcf2b",
         "label": "? ст. 620",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-396b229dcf2b.json"
       },
       {
@@ -3418,13 +3472,13 @@
       {
         "id": "article-d28cd0126692",
         "label": "? ст. 622",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-d28cd0126692.json"
       },
       {
         "id": "article-c0d6bd85197f",
         "label": "? ст. 623",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c0d6bd85197f.json"
       },
       {
@@ -3454,13 +3508,13 @@
       {
         "id": "article-f70050188674",
         "label": "? ст. 641",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-f70050188674.json"
       },
       {
         "id": "article-fcd9a291ba0a",
         "label": "? ст. 642",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-fcd9a291ba0a.json"
       },
       {
@@ -3532,7 +3586,7 @@
       {
         "id": "article-eca36b23a06e",
         "label": "? ст. 68",
-        "count": 6,
+        "count": 5,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-eca36b23a06e.json"
       },
       {
@@ -3544,7 +3598,7 @@
       {
         "id": "article-cb88c75d8f19",
         "label": "? ст. 681",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-cb88c75d8f19.json"
       },
       {
@@ -3562,7 +3616,7 @@
       {
         "id": "article-289e7160bfb7",
         "label": "? ст. 684",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-289e7160bfb7.json"
       },
       {
@@ -3574,19 +3628,19 @@
       {
         "id": "article-ae4bdeae4ca9",
         "label": "? ст. 687",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-ae4bdeae4ca9.json"
       },
       {
         "id": "article-aff015b933cc",
         "label": "? ст. 689",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-aff015b933cc.json"
       },
       {
         "id": "article-59445f7e264a",
         "label": "? ст. 690",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-59445f7e264a.json"
       },
       {
@@ -3670,13 +3724,13 @@
       {
         "id": "article-ff8185037193",
         "label": "? ст. 706",
-        "count": 4,
+        "count": 3,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-ff8185037193.json"
       },
       {
         "id": "article-578f9b4a771c",
         "label": "? ст. 711",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-578f9b4a771c.json"
       },
       {
@@ -3700,7 +3754,7 @@
       {
         "id": "article-0d11fa852763",
         "label": "? ст. 718 п. 2",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0d11fa852763.json"
       },
       {
@@ -3712,7 +3766,7 @@
       {
         "id": "article-84ee3c077402",
         "label": "? ст. 719¹",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-84ee3c077402.json"
       },
       {
@@ -3724,19 +3778,19 @@
       {
         "id": "article-dce40db1ba93",
         "label": "? ст. 725",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-dce40db1ba93.json"
       },
       {
         "id": "article-61d913732e5d",
         "label": "? ст. 726",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-61d913732e5d.json"
       },
       {
         "id": "article-74d8ac41b983",
         "label": "? ст. 728",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-74d8ac41b983.json"
       },
       {
@@ -3766,7 +3820,7 @@
       {
         "id": "article-93f75016c7c7",
         "label": "? ст. 734",
-        "count": 3,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-93f75016c7c7.json"
       },
       {
@@ -3790,7 +3844,7 @@
       {
         "id": "article-11cd65c759ef",
         "label": "? ст. 74",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-11cd65c759ef.json"
       },
       {
@@ -3838,19 +3892,19 @@
       {
         "id": "article-16f1482343dd",
         "label": "? ст. 774",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-16f1482343dd.json"
       },
       {
         "id": "article-35dce1eae356",
         "label": "? ст. 776",
-        "count": 2,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-35dce1eae356.json"
       },
       {
         "id": "article-aea007890ea2",
         "label": "? ст. 777",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-aea007890ea2.json"
       },
       {
@@ -3862,25 +3916,25 @@
       {
         "id": "article-938222a51041",
         "label": "? ст. 78",
-        "count": 4,
+        "count": 3,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-938222a51041.json"
       },
       {
         "id": "article-c2c8bd771f48",
         "label": "? ст. 780",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c2c8bd771f48.json"
       },
       {
         "id": "article-199ac69c1841",
         "label": "? ст. 781",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-199ac69c1841.json"
       },
       {
         "id": "article-e0cd2c3e00dc",
         "label": "? ст. 782",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-e0cd2c3e00dc.json"
       },
       {
@@ -3898,7 +3952,7 @@
       {
         "id": "article-4441e050ccfc",
         "label": "? ст. 785",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-4441e050ccfc.json"
       },
       {
@@ -3916,13 +3970,13 @@
       {
         "id": "article-47293d75d01d",
         "label": "? ст. 79",
-        "count": 4,
+        "count": 3,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-47293d75d01d.json"
       },
       {
         "id": "article-783658f3a624",
         "label": "? ст. 793",
-        "count": 4,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-783658f3a624.json"
       },
       {
@@ -3952,7 +4006,7 @@
       {
         "id": "article-fa9f34d70d8d",
         "label": "? ст. 80",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-fa9f34d70d8d.json"
       },
       {
@@ -3970,19 +4024,19 @@
       {
         "id": "article-9f130bf7bde8",
         "label": "? ст. 81",
-        "count": 3,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-9f130bf7bde8.json"
       },
       {
         "id": "article-0ddddcc334c8",
         "label": "? ст. 816–831",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0ddddcc334c8.json"
       },
       {
         "id": "article-f618bc879961",
         "label": "? ст. 816–838",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-f618bc879961.json"
       },
       {
@@ -4024,7 +4078,7 @@
       {
         "id": "article-c681c1a88f57",
         "label": "? ст. 83",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c681c1a88f57.json"
       },
       {
@@ -4048,13 +4102,13 @@
       {
         "id": "article-648bffa293c3",
         "label": "? ст. 84–105",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-648bffa293c3.json"
       },
       {
         "id": "article-199460aa4652",
         "label": "? ст. 853",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-199460aa4652.json"
       },
       {
@@ -4090,7 +4144,7 @@
       {
         "id": "article-58d0ca14e056",
         "label": "? ст. 868",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-58d0ca14e056.json"
       },
       {
@@ -4102,7 +4156,7 @@
       {
         "id": "article-04dd0696b094",
         "label": "? ст. 870",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-04dd0696b094.json"
       },
       {
@@ -4138,13 +4192,13 @@
       {
         "id": "article-6f5892adab4f",
         "label": "? ст. 886",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-6f5892adab4f.json"
       },
       {
         "id": "article-37376ac8acb7",
         "label": "? ст. 89",
-        "count": 2,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-37376ac8acb7.json"
       },
       {
@@ -4186,7 +4240,7 @@
       {
         "id": "article-d2601242e6c7",
         "label": "? ст. 933",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-d2601242e6c7.json"
       },
       {
@@ -4240,7 +4294,7 @@
       {
         "id": "article-d75de31f5529",
         "label": "? ст. 975",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-d75de31f5529.json"
       },
       {
@@ -4288,7 +4342,7 @@
       {
         "id": "article-66d07e712a40",
         "label": "? ст. 994",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-66d07e712a40.json"
       },
       {
@@ -4510,19 +4564,19 @@
       {
         "id": "article-e0f51295c081",
         "label": "ГКП ст. 184",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-e0f51295c081.json"
       },
       {
         "id": "article-c5b9d0232ce5",
         "label": "ГКП ст. 188",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c5b9d0232ce5.json"
       },
       {
         "id": "article-1268068f5b4f",
         "label": "ГКП ст. 192",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-1268068f5b4f.json"
       },
       {
@@ -4594,19 +4648,19 @@
       {
         "id": "article-1c80c4cefa6b",
         "label": "ГКП ст. 232",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-1c80c4cefa6b.json"
       },
       {
         "id": "article-d13d171d4ea1",
         "label": "ГКП ст. 233",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-d13d171d4ea1.json"
       },
       {
         "id": "article-d1f9c0baa68b",
         "label": "ГКП ст. 303",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-d1f9c0baa68b.json"
       },
       {
@@ -4796,6 +4850,240 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-e5c523cd04d9.json"
       },
       {
+        "id": "article-9db156cd119d",
+        "label": "ГУП1825 ст. 184",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-9db156cd119d.json"
+      },
+      {
+        "id": "article-34ad1a5b1d67",
+        "label": "ГУП1825 ст. 188",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-34ad1a5b1d67.json"
+      },
+      {
+        "id": "article-0f34a655bad9",
+        "label": "ГУП1825 ст. 191–193",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0f34a655bad9.json"
+      },
+      {
+        "id": "article-da61918aafec",
+        "label": "ГУП1825 ст. 192",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-da61918aafec.json"
+      },
+      {
+        "id": "article-4832ebe27954",
+        "label": "ГУП1825 ст. 194",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-4832ebe27954.json"
+      },
+      {
+        "id": "article-2492436f81de",
+        "label": "ГУП1825 ст. 201",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-2492436f81de.json"
+      },
+      {
+        "id": "article-ab55dd8b4376",
+        "label": "ГУП1825 ст. 213",
+        "count": 2,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-ab55dd8b4376.json"
+      },
+      {
+        "id": "article-34712a543254",
+        "label": "ГУП1825 ст. 232",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-34712a543254.json"
+      },
+      {
+        "id": "article-609c3d809171",
+        "label": "ГУП1825 ст. 233",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-609c3d809171.json"
+      },
+      {
+        "id": "article-fb923f0822bb",
+        "label": "ГУП1825 ст. 265",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-fb923f0822bb.json"
+      },
+      {
+        "id": "article-ee5fbe1f34fe",
+        "label": "ГУП1825 ст. 298",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-ee5fbe1f34fe.json"
+      },
+      {
+        "id": "article-5d5e4a4ea29a",
+        "label": "ГУП1825 ст. 298–307",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-5d5e4a4ea29a.json"
+      },
+      {
+        "id": "article-b71bb5f62186",
+        "label": "ГУП1825 ст. 303",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-b71bb5f62186.json"
+      },
+      {
+        "id": "article-24228c122de5",
+        "label": "ГУП1825 ст. 305",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-24228c122de5.json"
+      },
+      {
+        "id": "article-b738aa60830e",
+        "label": "ГУП1825 ст. 306",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-b738aa60830e.json"
+      },
+      {
+        "id": "article-9a71c38dd781",
+        "label": "ГУП1825 ст. 489–521",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-9a71c38dd781.json"
+      },
+      {
+        "id": "article-2897bf2acf35",
+        "label": "ГУП1825 ст. 490",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-2897bf2acf35.json"
+      },
+      {
+        "id": "article-fbd72a442cee",
+        "label": "ЗС ст. 1093",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-fbd72a442cee.json"
+      },
+      {
+        "id": "article-356eab062351",
+        "label": "ЗС ст. 413",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-356eab062351.json"
+      },
+      {
+        "id": "article-c1d4ad981163",
+        "label": "ЗС ст. 780",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c1d4ad981163.json"
+      },
+      {
+        "id": "article-5312f94a20c2",
+        "label": "ПНЧ ст. 169",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-5312f94a20c2.json"
+      },
+      {
+        "id": "article-b73b06a28035",
+        "label": "ПНЧ ст. 187",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-b73b06a28035.json"
+      },
+      {
+        "id": "article-38a6638f6beb",
+        "label": "ПНЧ ст. 188",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-38a6638f6beb.json"
+      },
+      {
+        "id": "article-c1cef67c130e",
+        "label": "ПНЧ ст. 195",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c1cef67c130e.json"
+      },
+      {
+        "id": "article-bf5eebb030f4",
+        "label": "ПНЧ ст. 197",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-bf5eebb030f4.json"
+      },
+      {
+        "id": "article-41f6bfd221ab",
+        "label": "ПНЧ ст. 198",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-41f6bfd221ab.json"
+      },
+      {
+        "id": "article-477e2c6a15f7",
+        "label": "ПНЧ ст. 202",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-477e2c6a15f7.json"
+      },
+      {
+        "id": "article-9893272d7931",
+        "label": "ПНЧ ст. 244",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-9893272d7931.json"
+      },
+      {
+        "id": "article-8dc9277b8cc9",
+        "label": "ПНЧ ст. 303–369",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-8dc9277b8cc9.json"
+      },
+      {
+        "id": "article-d60a3bf2ddbb",
+        "label": "ПНЧ ст. 304",
+        "count": 2,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-d60a3bf2ddbb.json"
+      },
+      {
+        "id": "article-83c24b66d5b0",
+        "label": "ПНЧ ст. 320",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-83c24b66d5b0.json"
+      },
+      {
+        "id": "article-0d0be850edef",
+        "label": "ПНЧ ст. 340",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0d0be850edef.json"
+      },
+      {
+        "id": "article-239503c03253",
+        "label": "ПНЧ ст. 352",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-239503c03253.json"
+      },
+      {
+        "id": "article-4fd2688431f4",
+        "label": "ПНЧ ст. 360",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-4fd2688431f4.json"
+      },
+      {
+        "id": "article-a7d5d3b9f117",
+        "label": "ПНЧ ст. 360–363",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-a7d5d3b9f117.json"
+      },
+      {
+        "id": "article-652408e00914",
+        "label": "ПНЧ ст. 361",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-652408e00914.json"
+      },
+      {
+        "id": "article-2f1558951aa9",
+        "label": "ПНЧ ст. 363",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-2f1558951aa9.json"
+      },
+      {
+        "id": "article-cb061cb0245a",
+        "label": "ПНЧ ст. 84–105",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-cb061cb0245a.json"
+      },
+      {
+        "id": "article-cbd90a4e2d7d",
+        "label": "ПНЧ ст. 89",
+        "count": 2,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-cbd90a4e2d7d.json"
+      },
+      {
         "id": "article-f332aeb8ac8f",
         "label": "СЗГ ст. 1",
         "count": 5,
@@ -4840,7 +5128,7 @@
       {
         "id": "article-c842224d65d5",
         "label": "СЗГ ст. 1010",
-        "count": 1,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c842224d65d5.json"
       },
       {
@@ -4990,7 +5278,7 @@
       {
         "id": "article-69369872d2ce",
         "label": "СЗГ ст. 1093",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-69369872d2ce.json"
       },
       {
@@ -5240,6 +5528,12 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-f86a7c62e52f.json"
       },
       {
+        "id": "article-8fedb0b2ed32",
+        "label": "СЗГ ст. 1294",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-8fedb0b2ed32.json"
+      },
+      {
         "id": "article-027357b2b813",
         "label": "СЗГ ст. 1301",
         "count": 2,
@@ -5380,7 +5674,7 @@
       {
         "id": "article-5a8b59423cce",
         "label": "СЗГ ст. 1408",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-5a8b59423cce.json"
       },
       {
@@ -5528,6 +5822,12 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-3c794097798b.json"
       },
       {
+        "id": "article-2f1c8eb53404",
+        "label": "СЗГ ст. 156¹",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-2f1c8eb53404.json"
+      },
+      {
         "id": "article-b198f7ab075f",
         "label": "СЗГ ст. 1575",
         "count": 1,
@@ -5600,6 +5900,12 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-3616e19696a1.json"
       },
       {
+        "id": "article-7a32b059f062",
+        "label": "СЗГ ст. 1681",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-7a32b059f062.json"
+      },
+      {
         "id": "article-08fa4b4f852c",
         "label": "СЗГ ст. 1685",
         "count": 1,
@@ -5612,6 +5918,12 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-62096067f5a4.json"
       },
       {
+        "id": "article-33c0f5f998d5",
+        "label": "СЗГ ст. 1687",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-33c0f5f998d5.json"
+      },
+      {
         "id": "article-ceb575583c91",
         "label": "СЗГ ст. 1688",
         "count": 3,
@@ -5622,6 +5934,18 @@
         "label": "СЗГ ст. 1689",
         "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-d15f8019213c.json"
+      },
+      {
+        "id": "article-e90a6e9dcdd1",
+        "label": "СЗГ ст. 1692",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-e90a6e9dcdd1.json"
+      },
+      {
+        "id": "article-5ac3cec9c0fd",
+        "label": "СЗГ ст. 1693",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-5ac3cec9c0fd.json"
       },
       {
         "id": "article-3cf7cabba3bd",
@@ -6004,7 +6328,7 @@
       {
         "id": "article-55eb8de8f1c2",
         "label": "СЗГ ст. 371–376",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-55eb8de8f1c2.json"
       },
       {
@@ -6076,7 +6400,7 @@
       {
         "id": "article-bab01c3fd71b",
         "label": "СЗГ ст. 416",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-bab01c3fd71b.json"
       },
       {
@@ -6124,7 +6448,7 @@
       {
         "id": "article-f4d89defbcea",
         "label": "СЗГ ст. 495",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-f4d89defbcea.json"
       },
       {
@@ -6274,7 +6598,7 @@
       {
         "id": "article-5bb53eecc705",
         "label": "СЗГ ст. 574",
-        "count": 3,
+        "count": 4,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-5bb53eecc705.json"
       },
       {
@@ -6352,7 +6676,7 @@
       {
         "id": "article-543d61599d2a",
         "label": "СЗГ ст. 684",
-        "count": 12,
+        "count": 13,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-543d61599d2a.json"
       },
       {
@@ -6488,6 +6812,126 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-2217daf477f5.json"
       },
       {
+        "id": "article-e8b1a7b683c4",
+        "label": "СМУО ст. 1103",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-e8b1a7b683c4.json"
+      },
+      {
+        "id": "article-a59c7807eba9",
+        "label": "СМУО ст. 1456",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-a59c7807eba9.json"
+      },
+      {
+        "id": "article-33d3d80fa956",
+        "label": "СМУО ст. 1478",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-33d3d80fa956.json"
+      },
+      {
+        "id": "article-7d552b0c0b56",
+        "label": "СМУО ст. 1479",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-7d552b0c0b56.json"
+      },
+      {
+        "id": "article-b51938e035d2",
+        "label": "СМУО ст. 2922",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-b51938e035d2.json"
+      },
+      {
+        "id": "article-845a0f7418cc",
+        "label": "СМУО ст. 2993",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-845a0f7418cc.json"
+      },
+      {
+        "id": "article-833bb3391606",
+        "label": "СМУО ст. 2994",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-833bb3391606.json"
+      },
+      {
+        "id": "article-99fbcfaba9f9",
+        "label": "СМУО ст. 3214",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-99fbcfaba9f9.json"
+      },
+      {
+        "id": "article-71fa3fdc77dd",
+        "label": "СМУО ст. 3444",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-71fa3fdc77dd.json"
+      },
+      {
+        "id": "article-30352118ce94",
+        "label": "СМУО ст. 3482",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-30352118ce94.json"
+      },
+      {
+        "id": "article-8f9b9f77e811",
+        "label": "СМУО ст. 4268",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-8f9b9f77e811.json"
+      },
+      {
+        "id": "article-70c66863bc7f",
+        "label": "СМУО ст. 4271",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-70c66863bc7f.json"
+      },
+      {
+        "id": "article-8dcb5174ac75",
+        "label": "СМУО ст. 4294",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-8dcb5174ac75.json"
+      },
+      {
+        "id": "article-d3f7199b4223",
+        "label": "УВ ст. 105",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-d3f7199b4223.json"
+      },
+      {
+        "id": "article-bb4b635ffc0e",
+        "label": "УВ ст. 24–26",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-bb4b635ffc0e.json"
+      },
+      {
+        "id": "article-ddc1043887fa",
+        "label": "УВ ст. 50",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-ddc1043887fa.json"
+      },
+      {
+        "id": "article-cda9acdb9fdd",
+        "label": "УВ ст. 74",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-cda9acdb9fdd.json"
+      },
+      {
+        "id": "article-1aebe3934841",
+        "label": "УВ ст. 78",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-1aebe3934841.json"
+      },
+      {
+        "id": "article-1a1d8804688f",
+        "label": "УВ ст. 79",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-1a1d8804688f.json"
+      },
+      {
+        "id": "article-deb52fc1dd57",
+        "label": "УВ ст. 80",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-deb52fc1dd57.json"
+      },
+      {
         "id": "article-e1c4fb6883b2",
         "label": "УГС ст. 1",
         "count": 14,
@@ -6538,7 +6982,7 @@
       {
         "id": "article-c49075ae720e",
         "label": "УГС ст. 1133",
-        "count": 1,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c49075ae720e.json"
       },
       {
@@ -6574,8 +7018,14 @@
       {
         "id": "article-56cfa27fb4d6",
         "label": "УГС ст. 1161",
-        "count": 1,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-56cfa27fb4d6.json"
+      },
+      {
+        "id": "article-821e97886bfe",
+        "label": "УГС ст. 1162",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-821e97886bfe.json"
       },
       {
         "id": "article-dbe5837f5bc9",
@@ -6594,6 +7044,18 @@
         "label": "УГС ст. 1170–1176",
         "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-ac984073dd2c.json"
+      },
+      {
+        "id": "article-6e57159f06be",
+        "label": "УГС ст. 1171",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-6e57159f06be.json"
+      },
+      {
+        "id": "article-f390058af525",
+        "label": "УГС ст. 1176",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-f390058af525.json"
       },
       {
         "id": "article-898d3111b4c5",
@@ -6656,6 +7118,12 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-98e31717c576.json"
       },
       {
+        "id": "article-0cb0b4892a9c",
+        "label": "УГС ст. 1292",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0cb0b4892a9c.json"
+      },
+      {
         "id": "article-49b1d6c6c972",
         "label": "УГС ст. 1293",
         "count": 1,
@@ -6666,6 +7134,12 @@
         "label": "УГС ст. 130",
         "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-3e7b6a178939.json"
+      },
+      {
+        "id": "article-f69aab48ec19",
+        "label": "УГС ст. 132",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-f69aab48ec19.json"
       },
       {
         "id": "article-5b7cec2fc7a9",
@@ -6718,7 +7192,7 @@
       {
         "id": "article-fad1fd8c8c5b",
         "label": "УГС ст. 138–141",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-fad1fd8c8c5b.json"
       },
       {
@@ -6730,13 +7204,13 @@
       {
         "id": "article-a34178842293",
         "label": "УГС ст. 1400",
-        "count": 5,
+        "count": 6,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-a34178842293.json"
       },
       {
         "id": "article-16eed72d2cc1",
         "label": "УГС ст. 1408",
-        "count": 2,
+        "count": 3,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-16eed72d2cc1.json"
       },
       {
@@ -6748,7 +7222,7 @@
       {
         "id": "article-ddded69ba518",
         "label": "УГС ст. 141",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-ddded69ba518.json"
       },
       {
@@ -6800,6 +7274,12 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-573041714941.json"
       },
       {
+        "id": "article-4ae9bdcdf3ab",
+        "label": "УГС ст. 145",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-4ae9bdcdf3ab.json"
+      },
+      {
         "id": "article-c27e4232da45",
         "label": "УГС ст. 1451",
         "count": 2,
@@ -6816,6 +7296,18 @@
         "label": "УГС ст. 1453",
         "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-6a69b568786a.json"
+      },
+      {
+        "id": "article-1167981ec96c",
+        "label": "УГС ст. 145²",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-1167981ec96c.json"
+      },
+      {
+        "id": "article-ff12f9822cd1",
+        "label": "УГС ст. 1460²",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-ff12f9822cd1.json"
       },
       {
         "id": "article-3177fbb7329e",
@@ -6900,6 +7392,12 @@
         "label": "УГС ст. 1598",
         "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-e12fc49faab0.json"
+      },
+      {
+        "id": "article-de2931ab12fc",
+        "label": "УГС ст. 1625",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-de2931ab12fc.json"
       },
       {
         "id": "article-4df63a0057b8",
@@ -7166,6 +7664,12 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-24d7c55e0c02.json"
       },
       {
+        "id": "article-638930991c1a",
+        "label": "УГС ст. 260",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-638930991c1a.json"
+      },
+      {
         "id": "article-df2fd46236fb",
         "label": "УГС ст. 2619",
         "count": 1,
@@ -7214,6 +7718,24 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-772f25b7e343.json"
       },
       {
+        "id": "article-35e4b09d08da",
+        "label": "УГС ст. 276",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-35e4b09d08da.json"
+      },
+      {
+        "id": "article-25a3efecc3d0",
+        "label": "УГС ст. 277",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-25a3efecc3d0.json"
+      },
+      {
+        "id": "article-2f5a4e786fd7",
+        "label": "УГС ст. 278",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-2f5a4e786fd7.json"
+      },
+      {
         "id": "article-f1f2291a457c",
         "label": "УГС ст. 28",
         "count": 1,
@@ -7246,13 +7768,31 @@
       {
         "id": "article-c9cc30013872",
         "label": "УГС ст. 300",
-        "count": 1,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c9cc30013872.json"
+      },
+      {
+        "id": "article-0fb5cd64d93e",
+        "label": "УГС ст. 312",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0fb5cd64d93e.json"
+      },
+      {
+        "id": "article-a354ab30749c",
+        "label": "УГС ст. 317",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-a354ab30749c.json"
+      },
+      {
+        "id": "article-81564f39fc66",
+        "label": "УГС ст. 319",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-81564f39fc66.json"
       },
       {
         "id": "article-f550ffadc62c",
         "label": "УГС ст. 339",
-        "count": 12,
+        "count": 14,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-f550ffadc62c.json"
       },
       {
@@ -7264,19 +7804,31 @@
       {
         "id": "article-14d7a47d7cf8",
         "label": "УГС ст. 352",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-14d7a47d7cf8.json"
+      },
+      {
+        "id": "article-21ac4d7b5346",
+        "label": "УГС ст. 362",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-21ac4d7b5346.json"
       },
       {
         "id": "article-0d4371c011e7",
         "label": "УГС ст. 363",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0d4371c011e7.json"
+      },
+      {
+        "id": "article-4b3240ea2d4b",
+        "label": "УГС ст. 3656",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-4b3240ea2d4b.json"
       },
       {
         "id": "article-1e2e293720be",
         "label": "УГС ст. 366",
-        "count": 4,
+        "count": 6,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-1e2e293720be.json"
       },
       {
@@ -7292,6 +7844,12 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-1ec519c9e07f.json"
       },
       {
+        "id": "article-b29c71663574",
+        "label": "УГС ст. 39",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-b29c71663574.json"
+      },
+      {
         "id": "article-d3b2cc350430",
         "label": "УГС ст. 4",
         "count": 4,
@@ -7300,7 +7858,7 @@
       {
         "id": "article-633b04747317",
         "label": "УГС ст. 409",
-        "count": 3,
+        "count": 4,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-633b04747317.json"
       },
       {
@@ -7378,7 +7936,7 @@
       {
         "id": "article-4915456891ef",
         "label": "УГС ст. 490",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-4915456891ef.json"
       },
       {
@@ -7396,14 +7954,26 @@
       {
         "id": "article-9e5bf3ed8341",
         "label": "УГС ст. 509",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-9e5bf3ed8341.json"
+      },
+      {
+        "id": "article-80007a853f4d",
+        "label": "УГС ст. 515",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-80007a853f4d.json"
       },
       {
         "id": "article-7fb65efea2a2",
         "label": "УГС ст. 55",
         "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-7fb65efea2a2.json"
+      },
+      {
+        "id": "article-9ac62901ede8",
+        "label": "УГС ст. 555–565",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-9ac62901ede8.json"
       },
       {
         "id": "article-8b7af9758b1b",
@@ -7432,7 +8002,7 @@
       {
         "id": "article-5bb76f8142b3",
         "label": "УГС ст. 589",
-        "count": 3,
+        "count": 4,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-5bb76f8142b3.json"
       },
       {
@@ -7502,10 +8072,22 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-9864acd014c0.json"
       },
       {
+        "id": "article-0075711462e1",
+        "label": "УГС ст. 681",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0075711462e1.json"
+      },
+      {
         "id": "article-4339beccc542",
         "label": "УГС ст. 684",
         "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-4339beccc542.json"
+      },
+      {
+        "id": "article-29f33241f37a",
+        "label": "УГС ст. 687",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-29f33241f37a.json"
       },
       {
         "id": "article-6abe47d453d6",
@@ -7514,10 +8096,22 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-6abe47d453d6.json"
       },
       {
+        "id": "article-33b7f39d8142",
+        "label": "УГС ст. 689",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-33b7f39d8142.json"
+      },
+      {
         "id": "article-77bf0e874e2b",
         "label": "УГС ст. 69",
         "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-77bf0e874e2b.json"
+      },
+      {
+        "id": "article-9852301af233",
+        "label": "УГС ст. 690",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-9852301af233.json"
       },
       {
         "id": "article-56123112638e",
@@ -7540,7 +8134,7 @@
       {
         "id": "article-3ab525016639",
         "label": "УГС ст. 706",
-        "count": 1,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-3ab525016639.json"
       },
       {
@@ -7552,8 +8146,26 @@
       {
         "id": "article-e40512a24691",
         "label": "УГС ст. 711",
-        "count": 11,
+        "count": 12,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-e40512a24691.json"
+      },
+      {
+        "id": "article-5ede43214c01",
+        "label": "УГС ст. 718 п. 2",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-5ede43214c01.json"
+      },
+      {
+        "id": "article-b27b25a42345",
+        "label": "УГС ст. 719¹",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-b27b25a42345.json"
+      },
+      {
+        "id": "article-c5a28d5c00c1",
+        "label": "УГС ст. 725",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c5a28d5c00c1.json"
       },
       {
         "id": "article-1cea9c948c9a",
@@ -7604,15 +8216,21 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-50408cc21723.json"
       },
       {
+        "id": "article-d95e678114af",
+        "label": "УГС ст. 774",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-d95e678114af.json"
+      },
+      {
         "id": "article-eaee9a7b12f1",
         "label": "УГС ст. 783",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-eaee9a7b12f1.json"
       },
       {
         "id": "article-ba166d589c81",
         "label": "УГС ст. 784",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-ba166d589c81.json"
       },
       {
@@ -7636,7 +8254,7 @@
       {
         "id": "article-a64f8419e30e",
         "label": "УГС ст. 793",
-        "count": 16,
+        "count": 20,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-a64f8419e30e.json"
       },
       {
@@ -7660,8 +8278,20 @@
       {
         "id": "article-fd840678edc2",
         "label": "УГС ст. 81",
-        "count": 2,
+        "count": 4,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-fd840678edc2.json"
+      },
+      {
+        "id": "article-46c9dc567f13",
+        "label": "УГС ст. 816–831",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-46c9dc567f13.json"
+      },
+      {
+        "id": "article-35b33af372e9",
+        "label": "УГС ст. 816–838",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-35b33af372e9.json"
       },
       {
         "id": "article-b096ab1c46ad",
@@ -7722,6 +8352,12 @@
         "label": "УГС ст. 867–873",
         "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-a32eb24a87a1.json"
+      },
+      {
+        "id": "article-75694514c52b",
+        "label": "УГС ст. 868",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-75694514c52b.json"
       },
       {
         "id": "article-e558065bfcb3",
@@ -7820,6 +8456,102 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-4a251cbc305a.json"
       },
       {
+        "id": "article-329a0ce250a9",
+        "label": "УГСБ ст. 113",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-329a0ce250a9.json"
+      },
+      {
+        "id": "article-013c7562bbd2",
+        "label": "УГСБ ст. 128–132",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-013c7562bbd2.json"
+      },
+      {
+        "id": "article-7c005d8701df",
+        "label": "УГСБ ст. 129",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-7c005d8701df.json"
+      },
+      {
+        "id": "article-328a2ad35fd9",
+        "label": "УГСБ ст. 138–141",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-328a2ad35fd9.json"
+      },
+      {
+        "id": "article-6b84724e4626",
+        "label": "УГСБ ст. 141",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-6b84724e4626.json"
+      },
+      {
+        "id": "article-6f7e4e28a746",
+        "label": "УГСБ ст. 147",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-6f7e4e28a746.json"
+      },
+      {
+        "id": "article-5fda66145e51",
+        "label": "УГСБ ст. 164",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-5fda66145e51.json"
+      },
+      {
+        "id": "article-aa289cb84905",
+        "label": "УГСБ ст. 167",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-aa289cb84905.json"
+      },
+      {
+        "id": "article-447b9ed5b774",
+        "label": "УГСБ ст. 169–171",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-447b9ed5b774.json"
+      },
+      {
+        "id": "article-a066be3ccebc",
+        "label": "УГСБ ст. 173–175",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-a066be3ccebc.json"
+      },
+      {
+        "id": "article-514845131173",
+        "label": "УГСБ ст. 21",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-514845131173.json"
+      },
+      {
+        "id": "article-5df31f762e3d",
+        "label": "УГСБ ст. 32",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-5df31f762e3d.json"
+      },
+      {
+        "id": "article-acea863108d5",
+        "label": "УГСБ ст. 36",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-acea863108d5.json"
+      },
+      {
+        "id": "article-410b19247672",
+        "label": "УГСБ ст. 50",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-410b19247672.json"
+      },
+      {
+        "id": "article-c3fc1ae26815",
+        "label": "УГСБ ст. 51",
+        "count": 2,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c3fc1ae26815.json"
+      },
+      {
+        "id": "article-88697abe043d",
+        "label": "УГСБ ст. 83",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-88697abe043d.json"
+      },
+      {
         "id": "article-1cf2f51f478c",
         "label": "УЖД ст. 1",
         "count": 1,
@@ -7898,10 +8630,28 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-da4db69ba372.json"
       },
       {
+        "id": "article-89afa6899a7f",
+        "label": "УЖД ст. 127",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-89afa6899a7f.json"
+      },
+      {
+        "id": "article-e32e0b519e1d",
+        "label": "УЖД ст. 128",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-e32e0b519e1d.json"
+      },
+      {
         "id": "article-6d09fbc8465a",
         "label": "УЖД ст. 135",
         "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-6d09fbc8465a.json"
+      },
+      {
+        "id": "article-ff2f0f733cfe",
+        "label": "УЖД ст. 138",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-ff2f0f733cfe.json"
       },
       {
         "id": "article-830236184f3d",
@@ -7918,13 +8668,13 @@
       {
         "id": "article-3f8407a6b77b",
         "label": "УЖД ст. 21",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-3f8407a6b77b.json"
       },
       {
         "id": "article-f516912ab496",
         "label": "УЖД ст. 258",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-f516912ab496.json"
       },
       {
@@ -7936,7 +8686,7 @@
       {
         "id": "article-8a9386a9469c",
         "label": "УЖД ст. 409",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-8a9386a9469c.json"
       },
       {
@@ -7948,7 +8698,7 @@
       {
         "id": "article-7e01bcff8449",
         "label": "УЖД ст. 49",
-        "count": 1,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-7e01bcff8449.json"
       },
       {
@@ -7956,6 +8706,12 @@
         "label": "УЖД ст. 51",
         "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-6449440c97cc.json"
+      },
+      {
+        "id": "article-6e8ac3b5da15",
+        "label": "УЖД ст. 52",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-6e8ac3b5da15.json"
       },
       {
         "id": "article-f4ce2858f351",
@@ -8002,7 +8758,7 @@
       {
         "id": "article-61caf0756678",
         "label": "УЖД ст. 81",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-61caf0756678.json"
       },
       {
@@ -8024,9 +8780,15 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-93f6035c6429.json"
       },
       {
+        "id": "article-dc1011541d33",
+        "label": "УН ст. 1166",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-dc1011541d33.json"
+      },
+      {
         "id": "article-722f2110a400",
         "label": "УН ст. 135",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-722f2110a400.json"
       },
       {
@@ -8038,7 +8800,7 @@
       {
         "id": "article-8cfeb4ca0408",
         "label": "УН ст. 142",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-8cfeb4ca0408.json"
       },
       {
@@ -8056,7 +8818,7 @@
       {
         "id": "article-89d6ef85a661",
         "label": "УН ст. 152",
-        "count": 2,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-89d6ef85a661.json"
       },
       {
@@ -8158,7 +8920,7 @@
       {
         "id": "article-d33c42491c54",
         "label": "УН ст. 29",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-d33c42491c54.json"
       },
       {
@@ -8170,25 +8932,25 @@
       {
         "id": "article-c7e0a5750c68",
         "label": "УН ст. 51²",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c7e0a5750c68.json"
       },
       {
         "id": "article-301a69b99770",
         "label": "УН ст. 51¹",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-301a69b99770.json"
       },
       {
         "id": "article-70b108a3c686",
         "label": "УН ст. 51⁷",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-70b108a3c686.json"
       },
       {
         "id": "article-69b84470a2d7",
         "label": "УН ст. 51⁸",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-69b84470a2d7.json"
       },
       {
@@ -8212,7 +8974,7 @@
       {
         "id": "article-2535dc7968d5",
         "label": "УН ст. 6",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-2535dc7968d5.json"
       },
       {
@@ -8236,7 +8998,7 @@
       {
         "id": "article-d0488ebdd0c9",
         "label": "УН ст. 7",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-d0488ebdd0c9.json"
       },
       {
@@ -8260,8 +9022,344 @@
       {
         "id": "article-8a6398e81cc7",
         "label": "УН ст. 994",
-        "count": 1,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-8a6398e81cc7.json"
+      },
+      {
+        "id": "article-0396c37ce9f8",
+        "label": "УНМС ст. 142",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0396c37ce9f8.json"
+      },
+      {
+        "id": "article-7c1980b242cc",
+        "label": "УНМС ст. 152",
+        "count": 2,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-7c1980b242cc.json"
+      },
+      {
+        "id": "article-c92309a532e5",
+        "label": "УНМС ст. 29",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c92309a532e5.json"
+      },
+      {
+        "id": "article-e8865c15159a",
+        "label": "УНМС ст. 51²",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-e8865c15159a.json"
+      },
+      {
+        "id": "article-9813b460dba4",
+        "label": "УНМС ст. 51¹",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-9813b460dba4.json"
+      },
+      {
+        "id": "article-82e03a5ce7d2",
+        "label": "УНМС ст. 51⁷",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-82e03a5ce7d2.json"
+      },
+      {
+        "id": "article-79c2b8a49eb8",
+        "label": "УНМС ст. 51⁸",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-79c2b8a49eb8.json"
+      },
+      {
+        "id": "article-7e57938cc77a",
+        "label": "УПШ ст. 154",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-7e57938cc77a.json"
+      },
+      {
+        "id": "article-3133fb93a369",
+        "label": "УПШ ст. 161",
+        "count": 2,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-3133fb93a369.json"
+      },
+      {
+        "id": "article-8a7c2efd0442",
+        "label": "УПШ ст. 162",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-8a7c2efd0442.json"
+      },
+      {
+        "id": "article-d1d6a674a548",
+        "label": "УПШ ст. 195",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-d1d6a674a548.json"
+      },
+      {
+        "id": "article-59183691706a",
+        "label": "УПШ ст. 236",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-59183691706a.json"
+      },
+      {
+        "id": "article-3df6353099b5",
+        "label": "УПШ ст. 33",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-3df6353099b5.json"
+      },
+      {
+        "id": "article-74a5cb3f07f8",
+        "label": "УПШ ст. 363",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-74a5cb3f07f8.json"
+      },
+      {
+        "id": "article-2f8b877d3bd4",
+        "label": "УПШ ст. 47",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-2f8b877d3bd4.json"
+      },
+      {
+        "id": "article-1df87876d50f",
+        "label": "УСТ ст. 257",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-1df87876d50f.json"
+      },
+      {
+        "id": "article-814fee828b98",
+        "label": "УСТ ст. 258",
+        "count": 2,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-814fee828b98.json"
+      },
+      {
+        "id": "article-47c0841ce7e1",
+        "label": "УСТ ст. 259",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-47c0841ce7e1.json"
+      },
+      {
+        "id": "article-5d61ad251fdf",
+        "label": "УСТ ст. 387",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-5d61ad251fdf.json"
+      },
+      {
+        "id": "article-4599a8a4e26d",
+        "label": "УСТ ст. 388",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-4599a8a4e26d.json"
+      },
+      {
+        "id": "article-0f9d5d3779c2",
+        "label": "УСТ ст. 389",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0f9d5d3779c2.json"
+      },
+      {
+        "id": "article-38988c33a592",
+        "label": "УСТ ст. 395–403",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-38988c33a592.json"
+      },
+      {
+        "id": "article-634980275c5a",
+        "label": "УСТ ст. 397",
+        "count": 2,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-634980275c5a.json"
+      },
+      {
+        "id": "article-c56103e6b6e8",
+        "label": "УСТ ст. 398",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c56103e6b6e8.json"
+      },
+      {
+        "id": "article-bc456ef4420a",
+        "label": "УСТ ст. 399",
+        "count": 2,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-bc456ef4420a.json"
+      },
+      {
+        "id": "article-3dcae868617f",
+        "label": "УСТ ст. 402",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-3dcae868617f.json"
+      },
+      {
+        "id": "article-88419dc27b69",
+        "label": "УСТ ст. 413",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-88419dc27b69.json"
+      },
+      {
+        "id": "article-d8149c310aa9",
+        "label": "УСТ ст. 415",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-d8149c310aa9.json"
+      },
+      {
+        "id": "article-4ebf0dce97ad",
+        "label": "УСТ ст. 416",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-4ebf0dce97ad.json"
+      },
+      {
+        "id": "article-3bface8e1a3d",
+        "label": "УСТ ст. 428",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-3bface8e1a3d.json"
+      },
+      {
+        "id": "article-f5b5c0e09778",
+        "label": "УСТ ст. 43",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-f5b5c0e09778.json"
+      },
+      {
+        "id": "article-ee42dcd7e051",
+        "label": "УСТ ст. 443",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-ee42dcd7e051.json"
+      },
+      {
+        "id": "article-fffc550e2bc0",
+        "label": "УСТ ст. 477",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-fffc550e2bc0.json"
+      },
+      {
+        "id": "article-39fbecd34f46",
+        "label": "УСТ ст. 480",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-39fbecd34f46.json"
+      },
+      {
+        "id": "article-5e58c3fd1aa0",
+        "label": "УСТ ст. 480–482",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-5e58c3fd1aa0.json"
+      },
+      {
+        "id": "article-905f24acc46c",
+        "label": "УСТ ст. 488",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-905f24acc46c.json"
+      },
+      {
+        "id": "article-d4c398f9a084",
+        "label": "УСТ ст. 495",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-d4c398f9a084.json"
+      },
+      {
+        "id": "article-e4a56db0b160",
+        "label": "УСТ ст. 509",
+        "count": 2,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-e4a56db0b160.json"
+      },
+      {
+        "id": "article-c5b4d4882fcb",
+        "label": "УСТ ст. 515",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c5b4d4882fcb.json"
+      },
+      {
+        "id": "article-00cf1e0976e6",
+        "label": "УСТ ст. 518",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-00cf1e0976e6.json"
+      },
+      {
+        "id": "article-250b62490a36",
+        "label": "УСТ ст. 524",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-250b62490a36.json"
+      },
+      {
+        "id": "article-ecc3f30cf803",
+        "label": "УСТ ст. 527",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-ecc3f30cf803.json"
+      },
+      {
+        "id": "article-60cf4948550d",
+        "label": "УСТ ст. 528",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-60cf4948550d.json"
+      },
+      {
+        "id": "article-95201429d675",
+        "label": "УСТ ст. 529",
+        "count": 2,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-95201429d675.json"
+      },
+      {
+        "id": "article-dcbc7211ad19",
+        "label": "УСТ ст. 530",
+        "count": 2,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-dcbc7211ad19.json"
+      },
+      {
+        "id": "article-9a25194aba71",
+        "label": "УСТ ст. 531",
+        "count": 2,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-9a25194aba71.json"
+      },
+      {
+        "id": "article-f5f285b2a1bc",
+        "label": "УСТ ст. 532",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-f5f285b2a1bc.json"
+      },
+      {
+        "id": "article-b08afec1c979",
+        "label": "УСТ ст. 538",
+        "count": 2,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-b08afec1c979.json"
+      },
+      {
+        "id": "article-0ff887aafa7c",
+        "label": "УСТ ст. 542",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0ff887aafa7c.json"
+      },
+      {
+        "id": "article-2433124e3414",
+        "label": "УСТ ст. 552",
+        "count": 2,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-2433124e3414.json"
+      },
+      {
+        "id": "article-1b9c80bfc2aa",
+        "label": "УСТ ст. 572",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-1b9c80bfc2aa.json"
+      },
+      {
+        "id": "article-0c560b788b40",
+        "label": "УСТ ст. 604",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0c560b788b40.json"
+      },
+      {
+        "id": "article-c3c7f58ffc4b",
+        "label": "УСТ ст. 620",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c3c7f58ffc4b.json"
+      },
+      {
+        "id": "article-002226e5243c",
+        "label": "УСТ ст. 622",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-002226e5243c.json"
+      },
+      {
+        "id": "article-7c7a73755a3c",
+        "label": "УСТ ст. 623",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-7c7a73755a3c.json"
+      },
+      {
+        "id": "article-a5c6977e2b76",
+        "label": "УСТ ст. 642",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-a5c6977e2b76.json"
       },
       {
         "id": "article-f0a1b6f4710d",
@@ -8272,7 +9370,7 @@
       {
         "id": "article-ea887ed33c53",
         "label": "УСУ ст. 32",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-ea887ed33c53.json"
       },
       {
@@ -8338,7 +9436,7 @@
       {
         "id": "article-d3180dbab0f0",
         "label": "УТ ст. 105",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-d3180dbab0f0.json"
       },
       {
@@ -8386,13 +9484,13 @@
       {
         "id": "article-60b72e16eed0",
         "label": "УТ ст. 257",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-60b72e16eed0.json"
       },
       {
         "id": "article-0027caeb269a",
         "label": "УТ ст. 258",
-        "count": 1,
+        "count": 0,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0027caeb269a.json"
       },
       {
@@ -8512,7 +9610,7 @@
       {
         "id": "article-d1b848e524a7",
         "label": "УТ ст. 68",
-        "count": 1,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-d1b848e524a7.json"
       },
       {
@@ -8552,6 +9650,60 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-12de8636fcf3.json"
       },
       {
+        "id": "article-2fa61886f673",
+        "label": "УУС ст. 1124",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-2fa61886f673.json"
+      },
+      {
+        "id": "article-e2624ee3c18e",
+        "label": "УУС ст. 1125",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-e2624ee3c18e.json"
+      },
+      {
+        "id": "article-8bd8f72e6ebf",
+        "label": "УУС ст. 1137",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-8bd8f72e6ebf.json"
+      },
+      {
+        "id": "article-4e6fb336acf1",
+        "label": "УУС ст. 1137–1139",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-4e6fb336acf1.json"
+      },
+      {
+        "id": "article-441399832dfa",
+        "label": "УУС ст. 1149",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-441399832dfa.json"
+      },
+      {
+        "id": "article-944c113a02d2",
+        "label": "УУС ст. 1162",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-944c113a02d2.json"
+      },
+      {
+        "id": "article-a33d2025df70",
+        "label": "УУС ст. 1163",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-a33d2025df70.json"
+      },
+      {
+        "id": "article-bb16defa3719",
+        "label": "УУС ст. 1165",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-bb16defa3719.json"
+      },
+      {
+        "id": "article-6ea04a273c57",
+        "label": "УУС ст. 1203",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-6ea04a273c57.json"
+      },
+      {
         "id": "article-f4f021a5078c",
         "label": "УУС ст. 126",
         "count": 1,
@@ -8560,7 +9712,7 @@
       {
         "id": "article-4ea051823676",
         "label": "УУС ст. 135",
-        "count": 1,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-4ea051823676.json"
       },
       {
@@ -8568,6 +9720,48 @@
         "label": "УУС ст. 223",
         "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-6d0dc0a4f95f.json"
+      },
+      {
+        "id": "article-8ce486666143",
+        "label": "УУС ст. 277",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-8ce486666143.json"
+      },
+      {
+        "id": "article-be4f85a74160",
+        "label": "УУС ст. 298",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-be4f85a74160.json"
+      },
+      {
+        "id": "article-9136fd155ca1",
+        "label": "УУС ст. 299",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-9136fd155ca1.json"
+      },
+      {
+        "id": "article-fd0d8e2b0380",
+        "label": "УУС ст. 30",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-fd0d8e2b0380.json"
+      },
+      {
+        "id": "article-5d38e214af57",
+        "label": "УУС ст. 34 п. 3",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-5d38e214af57.json"
+      },
+      {
+        "id": "article-6d44a936b8f4",
+        "label": "УУС ст. 371",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-6d44a936b8f4.json"
+      },
+      {
+        "id": "article-2c0fdaffebdb",
+        "label": "УУС ст. 371–376",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-2c0fdaffebdb.json"
       },
       {
         "id": "article-3346afe32c2c",
@@ -8588,6 +9782,42 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-73f13615e290.json"
       },
       {
+        "id": "article-09f0eb49a83b",
+        "label": "УУС ст. 6",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-09f0eb49a83b.json"
+      },
+      {
+        "id": "article-3b24028ca22c",
+        "label": "УУС ст. 7",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-3b24028ca22c.json"
+      },
+      {
+        "id": "article-728818b1332a",
+        "label": "УУС ст. 776",
+        "count": 2,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-728818b1332a.json"
+      },
+      {
+        "id": "article-7bf93cd187b4",
+        "label": "УУС ст. 777",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-7bf93cd187b4.json"
+      },
+      {
+        "id": "article-30a46d745b60",
+        "label": "УУС ст. 781",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-30a46d745b60.json"
+      },
+      {
+        "id": "article-9092a757653e",
+        "label": "УУС ст. 782",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-9092a757653e.json"
+      },
+      {
         "id": "article-002129c5f157",
         "label": "УУС ст. 783",
         "count": 1,
@@ -8598,6 +9828,24 @@
         "label": "УУС ст. 784",
         "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c6ce66a7904d.json"
+      },
+      {
+        "id": "article-1e04e294f33b",
+        "label": "УУС ст. 785",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-1e04e294f33b.json"
+      },
+      {
+        "id": "article-010dad3d267b",
+        "label": "УУС ст. 933",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-010dad3d267b.json"
+      },
+      {
+        "id": "article-0bd8d451b69b",
+        "label": "УУС ст. 975",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0bd8d451b69b.json"
       }
     ],
     "catalog-topic": [

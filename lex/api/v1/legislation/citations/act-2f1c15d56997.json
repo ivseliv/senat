@@ -1,0 +1,1664 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.5.0",
+  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "resource": "legislation-citations",
+  "scope": {
+    "code": "ПНЧ",
+    "id": "act-2f1c15d56997"
+  },
+  "count": 21,
+  "items": [
+    {
+      "id": "1897-094:ПНЧ:169:text:1466",
+      "statute": "ПНЧ ст. 169",
+      "code": "ПНЧ",
+      "article": "ст. 169",
+      "decision_id": "1897-094",
+      "year": 1897,
+      "decision_number": 94,
+      "field": "text",
+      "start": 1466,
+      "end": 1473,
+      "quote_original": "ст. 169",
+      "context_original": "въ, коими пожизненные владѣльцы отказываются отъ самаго права пожизненнаго владѣнія, въ случаѣ продажи имѣнія съ публичнаго торга, то ни въ ст. 169 нот. пол., предусматривающей акты, касающіеся пожизненнаго владѣнія, ни въ другихъ статьяхъ сего положенія въ числѣ актовъ, требующихъ крѣп",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "6d853f716c4312f936ef3c7bf196e26df8f6e124e20d1b7696c846df1b41cee0",
+      "headnote_sha256": "67be7cc5eef167fc5dc646171053e53a4fed5e5a38c8651c4b1d35e19c3e3f99",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-094",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-094?mode=laws&c=%D0%9F%D0%9D%D0%A7&q=%D1%81%D1%82.+169&law=1897-094%3A%D0%9F%D0%9D%D0%A7%3A169%3Atext%3A1466&at=1466&end=1473",
+      "source_warning": null,
+      "passage_id": "1897-094:0-1669",
+      "sources": [
+        {
+          "page": 305,
+          "page_method": "header",
+          "file": "p0163_R.txt",
+          "start": 1466,
+          "end": 1473
+        }
+      ],
+      "printed_pages": [
+        305
+      ],
+      "scans": [
+        {
+          "file": "p0163_R.txt",
+          "page": 305,
+          "full": "scans/1897/pages/p0163_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1498,
+          "ocr_sha256": "55f63ca6ed68286ca5960b55d9f86d587ea3aa666da7251680a23be6e9fb2353",
+          "pdf_page": 326,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1466,
+          "end": 1483,
+          "quote_original": "ст. 169 нот. пол.",
+          "act_code": "ПНЧ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1466,
+          "end": 1473,
+          "quote_original": "ст. 169",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1466,
+              "end": 1483,
+              "quote_original": "ст. 169 нот. пол.",
+              "act_code": "ПНЧ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-094:ПНЧ:187:headnote:147",
+      "statute": "ПНЧ ст. 187",
+      "code": "ПНЧ",
+      "article": "ст. 187",
+      "decision_id": "1897-094",
+      "year": 1897,
+      "decision_number": 94,
+      "field": "headnote",
+      "start": 147,
+      "end": 160,
+      "quote_original": "ст. 187 и 188",
+      "context_original": "дложенный оберъ-прокуроромъ, по порученію министра юстиціи, вопросъ о томъ, обязаны ли старшіе нотаріусы отмѣчать порядкомъ, установленнымъ ст. 187 и 188 нот. пол., въ реестрахъ крѣпостныхъ дѣлъ и вносить въ крѣпостныя книги акты, коими пожизненные владѣльцы имѣній, изъявляя согласіе на откры",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "6d853f716c4312f936ef3c7bf196e26df8f6e124e20d1b7696c846df1b41cee0",
+      "headnote_sha256": "67be7cc5eef167fc5dc646171053e53a4fed5e5a38c8651c4b1d35e19c3e3f99",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-094",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-094?mode=laws&c=%D0%9F%D0%9D%D0%A7&q=%D1%81%D1%82.+187&law=1897-094%3A%D0%9F%D0%9D%D0%A7%3A187%3Aheadnote%3A147&at=147&end=160",
+      "passage_id": null,
+      "sources": [],
+      "printed_pages": [],
+      "scans": [],
+      "scan_available": false,
+      "source_warning": null,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "headnote",
+          "start": 147,
+          "end": 170,
+          "quote_original": "ст. 187 и 188 нот. пол.",
+          "act_code": "ПНЧ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "headnote",
+          "start": 147,
+          "end": 160,
+          "quote_original": "ст. 187 и 188",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "headnote",
+              "start": 147,
+              "end": 170,
+              "quote_original": "ст. 187 и 188 нот. пол.",
+              "act_code": "ПНЧ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-094:ПНЧ:188:headnote:147",
+      "statute": "ПНЧ ст. 188",
+      "code": "ПНЧ",
+      "article": "ст. 188",
+      "decision_id": "1897-094",
+      "year": 1897,
+      "decision_number": 94,
+      "field": "headnote",
+      "start": 147,
+      "end": 160,
+      "quote_original": "ст. 187 и 188",
+      "context_original": "дложенный оберъ-прокуроромъ, по порученію министра юстиціи, вопросъ о томъ, обязаны ли старшіе нотаріусы отмѣчать порядкомъ, установленнымъ ст. 187 и 188 нот. пол., въ реестрахъ крѣпостныхъ дѣлъ и вносить въ крѣпостныя книги акты, коими пожизненные владѣльцы имѣній, изъявляя согласіе на откры",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "6d853f716c4312f936ef3c7bf196e26df8f6e124e20d1b7696c846df1b41cee0",
+      "headnote_sha256": "67be7cc5eef167fc5dc646171053e53a4fed5e5a38c8651c4b1d35e19c3e3f99",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-094",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-094?mode=laws&c=%D0%9F%D0%9D%D0%A7&q=%D1%81%D1%82.+188&law=1897-094%3A%D0%9F%D0%9D%D0%A7%3A188%3Aheadnote%3A147&at=147&end=160",
+      "passage_id": null,
+      "sources": [],
+      "printed_pages": [],
+      "scans": [],
+      "scan_available": false,
+      "source_warning": null,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "headnote",
+          "start": 147,
+          "end": 170,
+          "quote_original": "ст. 187 и 188 нот. пол.",
+          "act_code": "ПНЧ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "headnote",
+          "start": 147,
+          "end": 160,
+          "quote_original": "ст. 187 и 188",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "headnote",
+              "start": 147,
+              "end": 170,
+              "quote_original": "ст. 187 и 188 нот. пол.",
+              "act_code": "ПНЧ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-098:ПНЧ:195:text:1263",
+      "statute": "ПНЧ ст. 195",
+      "code": "ПНЧ",
+      "article": "ст. 195",
+      "decision_id": "1904-098",
+      "year": 1904,
+      "decision_number": 98,
+      "field": "text",
+      "start": 1263,
+      "end": 1281,
+      "quote_original": "ст. 195, 197 и 198",
+      "context_original": "подлежитъ разрѣшенію только на основаніи уст. о герб. сборѣ, какъ спеціальнаго по сему предмету закона. На этотъ уставъ сдѣланы ссылки и въ ст. 195, 197 и 198 полож. о нот. части, предписывающихъ лишь въ указанныхъ въ нихъ случаяхъ руководствоваться правилами того же устава, ни въ чемъ въ тѣхъ ста",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "2a611813daabc7d840a66f3fe993c204ac517837efe3f7513d5223dab23fdf7a",
+      "headnote_sha256": "0409bb6b72879b167e2c4768d9ab390a9d12e1799a7e3089f0e7464821df8779",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-098",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-098?mode=laws&c=%D0%9F%D0%9D%D0%A7&q=%D1%81%D1%82.+195&law=1904-098%3A%D0%9F%D0%9D%D0%A7%3A195%3Atext%3A1263&at=1263&end=1281",
+      "source_warning": null,
+      "passage_id": "1904-098:0-1460",
+      "sources": [
+        {
+          "page": 272,
+          "page_method": "header",
+          "file": "p0137_L.txt",
+          "start": 1263,
+          "end": 1281
+        }
+      ],
+      "printed_pages": [
+        272
+      ],
+      "scans": [
+        {
+          "file": "p0137_L.txt",
+          "page": 272,
+          "full": "scans/1904/pages/p0137_L.webp",
+          "width": 1100,
+          "height": 1599,
+          "ocr_sha256": "3422da69f7afae057784cb941c6cee3629fc63894dec713bfca68cadfb6d99eb",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1263,
+          "end": 1301,
+          "quote_original": "ст. 195, 197 и 198 полож. о нот. части",
+          "act_code": "ПНЧ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1263,
+          "end": 1281,
+          "quote_original": "ст. 195, 197 и 198",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1263,
+              "end": 1301,
+              "quote_original": "ст. 195, 197 и 198 полож. о нот. части",
+              "act_code": "ПНЧ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-098:ПНЧ:197:text:1263",
+      "statute": "ПНЧ ст. 197",
+      "code": "ПНЧ",
+      "article": "ст. 197",
+      "decision_id": "1904-098",
+      "year": 1904,
+      "decision_number": 98,
+      "field": "text",
+      "start": 1263,
+      "end": 1281,
+      "quote_original": "ст. 195, 197 и 198",
+      "context_original": "подлежитъ разрѣшенію только на основаніи уст. о герб. сборѣ, какъ спеціальнаго по сему предмету закона. На этотъ уставъ сдѣланы ссылки и въ ст. 195, 197 и 198 полож. о нот. части, предписывающихъ лишь въ указанныхъ въ нихъ случаяхъ руководствоваться правилами того же устава, ни въ чемъ въ тѣхъ ста",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "2a611813daabc7d840a66f3fe993c204ac517837efe3f7513d5223dab23fdf7a",
+      "headnote_sha256": "0409bb6b72879b167e2c4768d9ab390a9d12e1799a7e3089f0e7464821df8779",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-098",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-098?mode=laws&c=%D0%9F%D0%9D%D0%A7&q=%D1%81%D1%82.+197&law=1904-098%3A%D0%9F%D0%9D%D0%A7%3A197%3Atext%3A1263&at=1263&end=1281",
+      "source_warning": null,
+      "passage_id": "1904-098:0-1460",
+      "sources": [
+        {
+          "page": 272,
+          "page_method": "header",
+          "file": "p0137_L.txt",
+          "start": 1263,
+          "end": 1281
+        }
+      ],
+      "printed_pages": [
+        272
+      ],
+      "scans": [
+        {
+          "file": "p0137_L.txt",
+          "page": 272,
+          "full": "scans/1904/pages/p0137_L.webp",
+          "width": 1100,
+          "height": 1599,
+          "ocr_sha256": "3422da69f7afae057784cb941c6cee3629fc63894dec713bfca68cadfb6d99eb",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1263,
+          "end": 1301,
+          "quote_original": "ст. 195, 197 и 198 полож. о нот. части",
+          "act_code": "ПНЧ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1263,
+          "end": 1281,
+          "quote_original": "ст. 195, 197 и 198",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1263,
+              "end": 1301,
+              "quote_original": "ст. 195, 197 и 198 полож. о нот. части",
+              "act_code": "ПНЧ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-098:ПНЧ:198:text:1263",
+      "statute": "ПНЧ ст. 198",
+      "code": "ПНЧ",
+      "article": "ст. 198",
+      "decision_id": "1904-098",
+      "year": 1904,
+      "decision_number": 98,
+      "field": "text",
+      "start": 1263,
+      "end": 1281,
+      "quote_original": "ст. 195, 197 и 198",
+      "context_original": "подлежитъ разрѣшенію только на основаніи уст. о герб. сборѣ, какъ спеціальнаго по сему предмету закона. На этотъ уставъ сдѣланы ссылки и въ ст. 195, 197 и 198 полож. о нот. части, предписывающихъ лишь въ указанныхъ въ нихъ случаяхъ руководствоваться правилами того же устава, ни въ чемъ въ тѣхъ ста",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "2a611813daabc7d840a66f3fe993c204ac517837efe3f7513d5223dab23fdf7a",
+      "headnote_sha256": "0409bb6b72879b167e2c4768d9ab390a9d12e1799a7e3089f0e7464821df8779",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-098",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-098?mode=laws&c=%D0%9F%D0%9D%D0%A7&q=%D1%81%D1%82.+198&law=1904-098%3A%D0%9F%D0%9D%D0%A7%3A198%3Atext%3A1263&at=1263&end=1281",
+      "source_warning": null,
+      "passage_id": "1904-098:0-1460",
+      "sources": [
+        {
+          "page": 272,
+          "page_method": "header",
+          "file": "p0137_L.txt",
+          "start": 1263,
+          "end": 1281
+        }
+      ],
+      "printed_pages": [
+        272
+      ],
+      "scans": [
+        {
+          "file": "p0137_L.txt",
+          "page": 272,
+          "full": "scans/1904/pages/p0137_L.webp",
+          "width": 1100,
+          "height": 1599,
+          "ocr_sha256": "3422da69f7afae057784cb941c6cee3629fc63894dec713bfca68cadfb6d99eb",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1263,
+          "end": 1301,
+          "quote_original": "ст. 195, 197 и 198 полож. о нот. части",
+          "act_code": "ПНЧ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1263,
+          "end": 1281,
+          "quote_original": "ст. 195, 197 и 198",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1263,
+              "end": 1301,
+              "quote_original": "ст. 195, 197 и 198 полож. о нот. части",
+              "act_code": "ПНЧ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-055:ПНЧ:202:text:1361",
+      "statute": "ПНЧ ст. 202",
+      "code": "ПНЧ",
+      "article": "ст. 202",
+      "decision_id": "1904-055",
+      "year": 1904,
+      "decision_number": 55,
+      "field": "text",
+      "start": 1361,
+      "end": 1368,
+      "quote_original": "ст. 202",
+      "context_original": "ъявленъ, за исключеніемъ тѣхъ обязательствъ и договоровъ, кои изъяты отъ сего сбора по закону.—Къ числу же актовъ, изъятыхъ отъ сего сбора, ст. 202 нотар. полож. относитъ акты, утверждаемые старшимъ нотаріусомъ, за исключеніемъ тѣхъ изъ нихъ, съ коихъ сборъ этотъ именно опредѣленъ въ за",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "97cd50548899933b08418ab441e68806dc092551a9881b34ab8b2a6854618107",
+      "headnote_sha256": "a66d7e88b2696832850fa2527ef5b89fee9e2db1df666c2c8f424bb15d792ef2",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-055",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-055?mode=laws&c=%D0%9F%D0%9D%D0%A7&q=%D1%81%D1%82.+202&law=1904-055%3A%D0%9F%D0%9D%D0%A7%3A202%3Atext%3A1361&at=1361&end=1368",
+      "source_warning": null,
+      "passage_id": "1904-055:0-1901",
+      "sources": [
+        {
+          "page": 154,
+          "page_method": "header",
+          "file": "p0078_L.txt",
+          "start": 1361,
+          "end": 1368
+        }
+      ],
+      "printed_pages": [
+        154
+      ],
+      "scans": [
+        {
+          "file": "p0078_L.txt",
+          "page": 154,
+          "full": "scans/1904/pages/p0078_L.webp",
+          "width": 1100,
+          "height": 1605,
+          "ocr_sha256": "665a23141eaeb28bc40b65dcaaec0618034ad9922c9841c229f77bf67eee39a7",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1361,
+          "end": 1382,
+          "quote_original": "ст. 202 нотар. полож.",
+          "act_code": "ПНЧ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1361,
+          "end": 1368,
+          "quote_original": "ст. 202",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1361,
+              "end": 1382,
+              "quote_original": "ст. 202 нотар. полож.",
+              "act_code": "ПНЧ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-041:ПНЧ:244:text:11205",
+      "statute": "ПНЧ ст. 244",
+      "code": "ПНЧ",
+      "article": "ст. 244",
+      "decision_id": "1897-041",
+      "year": 1897,
+      "decision_number": 41,
+      "field": "text",
+      "start": 11205,
+      "end": 11212,
+      "quote_original": "ст. 244",
+      "context_original": "соображенія должны имѣть примѣненіе и къ совершенію нотаріусами Варшавскаго судебнаго округа тѣхъ оффиціальныхъ, или нотаріальныхъ актовъ (ст. 244 нот. полож.), сущность которыхъ, касаясь имѣнія и правъ, обезпеченныхъ ипотекою, подлежитъ внесенію въ ипотечный указатель (17 ст. ипот. ус",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "95bc07e465a862e473a69af0a11b864e419de16fac81f343a8d91b8dd44777b2",
+      "headnote_sha256": "167b31e0717d76251e16040937de4e6ae707d4ac152410062b1d3fd0fdfa6dbf",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-041",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-041?mode=laws&c=%D0%9F%D0%9D%D0%A7&q=%D1%81%D1%82.+244&law=1897-041%3A%D0%9F%D0%9D%D0%A7%3A244%3Atext%3A11205&at=11205&end=11212",
+      "source_warning": null,
+      "passage_id": "1897-041:9693-11364",
+      "sources": [
+        {
+          "page": 134,
+          "page_method": "header",
+          "file": "p0078_L.txt",
+          "start": 11205,
+          "end": 11212
+        }
+      ],
+      "printed_pages": [
+        134
+      ],
+      "scans": [
+        {
+          "file": "p0078_L.txt",
+          "page": 134,
+          "full": "scans/1897/pages/p0078_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1555,
+          "ocr_sha256": "b50d9800b80af8285fb964e431f1f4cf76b495e63ac4861acbc2535c928818eb",
+          "pdf_page": 155,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 11205,
+          "end": 11224,
+          "quote_original": "ст. 244 нот. полож.",
+          "act_code": "ПНЧ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 11205,
+          "end": 11212,
+          "quote_original": "ст. 244",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 11205,
+              "end": 11224,
+              "quote_original": "ст. 244 нот. полож.",
+              "act_code": "ПНЧ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-021:ПНЧ:303–369:text:4734",
+      "statute": "ПНЧ ст. 303–369",
+      "code": "ПНЧ",
+      "article": "ст. 303–369",
+      "decision_id": "1896-021",
+      "year": 1896,
+      "decision_number": 21,
+      "field": "text",
+      "start": 4734,
+      "end": 4745,
+      "quote_original": "ст. 303—369",
+      "context_original": "астки въ бывшихъ уѣздныхъ судахъ означенной Губерніи, а именно: 1) контракты сіи подлежатъ нынѣ укрѣп ленію общимъ порядкомъ, указаннымъ въ ст. 303—369 полож. о нот. части въ губ. Прибалтійскихъ (т. XVI ч. 1 изд. 1892 года), т.-е., посредствомъ утвержденія ихъ состоящими при ми ровыхъ съѣзд",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "c8818b474f7ccc7b904380652aef446537208296a258e714b42c453eb5fd4b21",
+      "headnote_sha256": "b4e8bbe0e4339072e9c63ddfa1625bb8a48fdcaad9d713b136cdd61543a01854",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-021",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-021?mode=laws&c=%D0%9F%D0%9D%D0%A7&q=%D1%81%D1%82.+303%E2%80%93369&law=1896-021%3A%D0%9F%D0%9D%D0%A7%3A303%E2%80%93369%3Atext%3A4734&at=4734&end=4745",
+      "source_warning": null,
+      "passage_id": "1896-021:3880-5990",
+      "sources": [
+        {
+          "page": 745,
+          "page_method": "neighbors",
+          "file": "p0038.txt",
+          "start": 4734,
+          "end": 4745
+        }
+      ],
+      "printed_pages": [
+        745
+      ],
+      "scans": [
+        {
+          "file": "p0038.txt",
+          "page": 745,
+          "full": "scans/1896/pages/p0038-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1670,
+          "ocr_sha256": "fc4058971d79f995bcab1703ba3d8ef1dbe341a69c803b4654fc06af94be3b88",
+          "pdf_page": 38,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 4734,
+          "end": 4765,
+          "quote_original": "ст. 303—369 полож. о нот. части",
+          "act_code": "ПНЧ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4734,
+          "end": 4745,
+          "quote_original": "ст. 303—369",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4734,
+              "end": 4765,
+              "quote_original": "ст. 303—369 полож. о нот. части",
+              "act_code": "ПНЧ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-012:ПНЧ:304:text:19821",
+      "statute": "ПНЧ ст. 304",
+      "code": "ПНЧ",
+      "article": "ст. 304",
+      "decision_id": "1896-012",
+      "year": 1896,
+      "decision_number": 12,
+      "field": "text",
+      "start": 19821,
+      "end": 19849,
+      "quote_original": "ст. 304, 340, 360, 361 и 363",
+      "context_original": "ществѣ; по погашеніи же долга, оба экземпляра возвращаются должнику. — Между тѣмъ, по ст. 3, 39, 59, 60 и 62 врем. прав. 9-го іюля 1889 г. (ст. 304, 340, 360, 361 и 363 нот. пол. изд. 1892 года), подлинные акты, а не копіи, пріобщаются къ крѣ постнымъ книгамъ, а лицамъ, заинте ресованнымъ, выдаются, крѣпост",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "dcf8ffb0fb5baec6df080f0aa577e6af0d2505d1e59bf60dfcfdbc9eb6a05854",
+      "headnote_sha256": "2d2602010105a65ef15c245f1578e3f7e92bd2a1a4c405d1a44ad2346e38b86f",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-012",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-012?mode=laws&c=%D0%9F%D0%9D%D0%A7&q=%D1%81%D1%82.+304&law=1896-012%3A%D0%9F%D0%9D%D0%A7%3A304%3Atext%3A19821&at=19821&end=19849",
+      "source_warning": null,
+      "passage_id": "1896-012:18976-20294",
+      "sources": [
+        {
+          "page": 729,
+          "page_method": "neighbors",
+          "file": "p0022.txt",
+          "start": 19821,
+          "end": 19849
+        }
+      ],
+      "printed_pages": [
+        729
+      ],
+      "scans": [
+        {
+          "file": "p0022.txt",
+          "page": 729,
+          "full": "scans/1896/pages/p0022-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1666,
+          "ocr_sha256": "c1b66d69f732c78ed92cf5cd6e2ab3b99b613441238c54700b13ca277c543092",
+          "pdf_page": 22,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 19821,
+          "end": 19859,
+          "quote_original": "ст. 304, 340, 360, 361 и 363 нот. пол.",
+          "act_code": "ПНЧ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 19821,
+          "end": 19849,
+          "quote_original": "ст. 304, 340, 360, 361 и 363",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 19821,
+              "end": 19859,
+              "quote_original": "ст. 304, 340, 360, 361 и 363 нот. пол.",
+              "act_code": "ПНЧ"
+            }
+          ],
+          "attribution_note": "В исходном OCR перемежены фрагменты соседних дел. Акт установлен у строки, но её принадлежность этому решению требует сверки оригинала."
+        }
+      ],
+      "attribution_note": "В исходном OCR перемежены фрагменты соседних дел. Акт установлен у строки, но её принадлежность этому решению требует сверки оригинала."
+    },
+    {
+      "id": "1904-110:ПНЧ:304:text:5678",
+      "statute": "ПНЧ ст. 304",
+      "code": "ПНЧ",
+      "article": "ст. 304",
+      "decision_id": "1904-110",
+      "year": 1904,
+      "decision_number": 110,
+      "field": "text",
+      "start": 5678,
+      "end": 5691,
+      "quote_original": "ст. 304 и 320",
+      "context_original": "случаѣ, если господствующее имѣніе занесено въ крѣпостныя книги и въ реестрѣ оныхъ уже означенъ установленный въ пользу его сервитутъ (ср. ст. 304 и 320 пол. о нотар. части). По симъ соображеніямъ признавая, что начальникъ крѣпостнаго отдѣленія и съѣздъ не имѣли законнаго основанія отказать",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "f8da4f9453d8e42fa6c9dfe7864aee9492339aae01440ed355ca9da635ba4b21",
+      "headnote_sha256": "558af48eed862a95661f7a644cd0275a04cca966b8cb2286909b3fea4d788571",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-110",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-110?mode=laws&c=%D0%9F%D0%9D%D0%A7&q=%D1%81%D1%82.+304&law=1904-110%3A%D0%9F%D0%9D%D0%A7%3A304%3Atext%3A5678&at=5678&end=5691",
+      "source_warning": null,
+      "passage_id": "1904-110:4227-6204",
+      "sources": [
+        {
+          "page": 306,
+          "page_method": "header",
+          "file": "p0154_L.txt",
+          "start": 5678,
+          "end": 5691
+        }
+      ],
+      "printed_pages": [
+        306
+      ],
+      "scans": [
+        {
+          "file": "p0154_L.txt",
+          "page": 306,
+          "full": "scans/1904/pages/p0154_L.webp",
+          "width": 1100,
+          "height": 1597,
+          "ocr_sha256": "bfeabf5d70b4fd9078c97dcfb69726b89f66f101ced683a0075800bf64dfbeb8",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 5678,
+          "end": 5711,
+          "quote_original": "ст. 304 и 320 пол. о нотар. части",
+          "act_code": "ПНЧ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5678,
+          "end": 5691,
+          "quote_original": "ст. 304 и 320",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 5678,
+              "end": 5711,
+              "quote_original": "ст. 304 и 320 пол. о нотар. части",
+              "act_code": "ПНЧ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-110:ПНЧ:320:text:5678",
+      "statute": "ПНЧ ст. 320",
+      "code": "ПНЧ",
+      "article": "ст. 320",
+      "decision_id": "1904-110",
+      "year": 1904,
+      "decision_number": 110,
+      "field": "text",
+      "start": 5678,
+      "end": 5691,
+      "quote_original": "ст. 304 и 320",
+      "context_original": "случаѣ, если господствующее имѣніе занесено въ крѣпостныя книги и въ реестрѣ оныхъ уже означенъ установленный въ пользу его сервитутъ (ср. ст. 304 и 320 пол. о нотар. части). По симъ соображеніямъ признавая, что начальникъ крѣпостнаго отдѣленія и съѣздъ не имѣли законнаго основанія отказать",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "f8da4f9453d8e42fa6c9dfe7864aee9492339aae01440ed355ca9da635ba4b21",
+      "headnote_sha256": "558af48eed862a95661f7a644cd0275a04cca966b8cb2286909b3fea4d788571",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-110",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-110?mode=laws&c=%D0%9F%D0%9D%D0%A7&q=%D1%81%D1%82.+320&law=1904-110%3A%D0%9F%D0%9D%D0%A7%3A320%3Atext%3A5678&at=5678&end=5691",
+      "source_warning": null,
+      "passage_id": "1904-110:4227-6204",
+      "sources": [
+        {
+          "page": 306,
+          "page_method": "header",
+          "file": "p0154_L.txt",
+          "start": 5678,
+          "end": 5691
+        }
+      ],
+      "printed_pages": [
+        306
+      ],
+      "scans": [
+        {
+          "file": "p0154_L.txt",
+          "page": 306,
+          "full": "scans/1904/pages/p0154_L.webp",
+          "width": 1100,
+          "height": 1597,
+          "ocr_sha256": "bfeabf5d70b4fd9078c97dcfb69726b89f66f101ced683a0075800bf64dfbeb8",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 5678,
+          "end": 5711,
+          "quote_original": "ст. 304 и 320 пол. о нотар. части",
+          "act_code": "ПНЧ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5678,
+          "end": 5691,
+          "quote_original": "ст. 304 и 320",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 5678,
+              "end": 5711,
+              "quote_original": "ст. 304 и 320 пол. о нотар. части",
+              "act_code": "ПНЧ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-012:ПНЧ:340:text:13595",
+      "statute": "ПНЧ ст. 340",
+      "code": "ПНЧ",
+      "article": "ст. 340",
+      "decision_id": "1896-012",
+      "year": 1896,
+      "decision_number": 12,
+      "field": "text",
+      "start": 13595,
+      "end": 13602,
+      "quote_original": "ст. 340",
+      "context_original": "рища Оберъ ч Прокурора, Прави тельствующій Сенатъ, въ Общемъ Соб раніи Перваго и Кассаціонныхъ Депар І таментовъ, находить по 1 вопросу: по ст. 340 нот. пол. т. XVI ч. 1 изд. 1892 года, вмѣстѣ съ заявленіемъ о производствѣ укрѣпленія, должны быть представлены всѣ /акты и документы, коим",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "dcf8ffb0fb5baec6df080f0aa577e6af0d2505d1e59bf60dfcfdbc9eb6a05854",
+      "headnote_sha256": "2d2602010105a65ef15c245f1578e3f7e92bd2a1a4c405d1a44ad2346e38b86f",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-012",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-012?mode=laws&c=%D0%9F%D0%9D%D0%A7&q=%D1%81%D1%82.+340&law=1896-012%3A%D0%9F%D0%9D%D0%A7%3A340%3Atext%3A13595&at=13595&end=13602",
+      "source_warning": null,
+      "passage_id": "1896-012:12583-14399",
+      "sources": [
+        {
+          "page": 727,
+          "page_method": "neighbors",
+          "file": "p0020.txt",
+          "start": 13595,
+          "end": 13602
+        }
+      ],
+      "printed_pages": [
+        727
+      ],
+      "scans": [
+        {
+          "file": "p0020.txt",
+          "page": 727,
+          "full": "scans/1896/pages/p0020-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1680,
+          "ocr_sha256": "2c18749110e08e85b09baefed4db96e038b81d3acf0deadddb31327a9366ed96",
+          "pdf_page": 20,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 13595,
+          "end": 13612,
+          "quote_original": "ст. 340 нот. пол.",
+          "act_code": "ПНЧ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 13595,
+          "end": 13602,
+          "quote_original": "ст. 340",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 13595,
+              "end": 13612,
+              "quote_original": "ст. 340 нот. пол.",
+              "act_code": "ПНЧ"
+            }
+          ],
+          "attribution_note": "В исходном OCR перемежены фрагменты соседних дел. Акт установлен у строки, но её принадлежность этому решению требует сверки оригинала."
+        },
+        {
+          "field": "text",
+          "start": 19194,
+          "end": 19201,
+          "quote_original": "ст. 340",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 19194,
+              "end": 19211,
+              "quote_original": "ст. 340 нот. пол.",
+              "act_code": "ПНЧ"
+            }
+          ],
+          "attribution_note": "В исходном OCR перемежены фрагменты соседних дел. Акт установлен у строки, но её принадлежность этому решению требует сверки оригинала."
+        },
+        {
+          "field": "text",
+          "start": 19821,
+          "end": 19849,
+          "quote_original": "ст. 304, 340, 360, 361 и 363",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 19821,
+              "end": 19859,
+              "quote_original": "ст. 304, 340, 360, 361 и 363 нот. пол.",
+              "act_code": "ПНЧ"
+            }
+          ],
+          "attribution_note": "В исходном OCR перемежены фрагменты соседних дел. Акт установлен у строки, но её принадлежность этому решению требует сверки оригинала."
+        }
+      ],
+      "attribution_note": "В исходном OCR перемежены фрагменты соседних дел. Акт установлен у строки, но её принадлежность этому решению требует сверки оригинала."
+    },
+    {
+      "id": "1905-041:ПНЧ:352:text:7614",
+      "statute": "ПНЧ ст. 352",
+      "code": "ПНЧ",
+      "article": "ст. 352",
+      "decision_id": "1905-041",
+      "year": 1905,
+      "decision_number": 41,
+      "field": "text",
+      "start": 7614,
+      "end": 7621,
+      "quote_original": "ст. 352",
+      "context_original": "ора недѣйствительнымъ и для отказа во внесеніи его въ крѣпостную книгу. Вслѣдствіе сего, Правительствующій Сенатъ опредѣляетъ: по нарушенію ст. 352 пол. о нот. части, 129 и 142 ст. уст. гр. суд., опредѣленіе Юрьево-Верроскаго мироваго съѣзда отмѣнить и передать дѣло въ Венденъ-Валкскій",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "438052f05ab65e9c93d510f1473055c553fb6f4b3e8ff62b826121c2fc684791",
+      "headnote_sha256": "889bb9b392adec3f4e0c2ab0164cfa7287d2502babdc51495f0239c0d86e0112",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-041",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-041?mode=laws&c=%D0%9F%D0%9D%D0%A7&q=%D1%81%D1%82.+352&law=1905-041%3A%D0%9F%D0%9D%D0%A7%3A352%3Atext%3A7614&at=7614&end=7621",
+      "source_warning": null,
+      "passage_id": "1905-041:5838-7776",
+      "sources": [
+        {
+          "page": 112,
+          "page_method": "header",
+          "file": "p0057_L.txt",
+          "start": 7614,
+          "end": 7621
+        }
+      ],
+      "printed_pages": [
+        112
+      ],
+      "scans": [
+        {
+          "file": "p0057_L.txt",
+          "page": 112,
+          "full": "scans/1905/pages/p0057_L.webp",
+          "width": 1100,
+          "height": 1565,
+          "ocr_sha256": "565c3690fefd659810f100f0b61f42458d5ed7169ade2f3efd3b3c3ecec2e087",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 7614,
+          "end": 7639,
+          "quote_original": "ст. 352 пол. о нот. части",
+          "act_code": "ПНЧ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7614,
+          "end": 7621,
+          "quote_original": "ст. 352",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 7614,
+              "end": 7639,
+              "quote_original": "ст. 352 пол. о нот. части",
+              "act_code": "ПНЧ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-012:ПНЧ:360:text:19821",
+      "statute": "ПНЧ ст. 360",
+      "code": "ПНЧ",
+      "article": "ст. 360",
+      "decision_id": "1896-012",
+      "year": 1896,
+      "decision_number": 12,
+      "field": "text",
+      "start": 19821,
+      "end": 19849,
+      "quote_original": "ст. 304, 340, 360, 361 и 363",
+      "context_original": "ществѣ; по погашеніи же долга, оба экземпляра возвращаются должнику. — Между тѣмъ, по ст. 3, 39, 59, 60 и 62 врем. прав. 9-го іюля 1889 г. (ст. 304, 340, 360, 361 и 363 нот. пол. изд. 1892 года), подлинные акты, а не копіи, пріобщаются къ крѣ постнымъ книгамъ, а лицамъ, заинте ресованнымъ, выдаются, крѣпост",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "dcf8ffb0fb5baec6df080f0aa577e6af0d2505d1e59bf60dfcfdbc9eb6a05854",
+      "headnote_sha256": "2d2602010105a65ef15c245f1578e3f7e92bd2a1a4c405d1a44ad2346e38b86f",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-012",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-012?mode=laws&c=%D0%9F%D0%9D%D0%A7&q=%D1%81%D1%82.+360&law=1896-012%3A%D0%9F%D0%9D%D0%A7%3A360%3Atext%3A19821&at=19821&end=19849",
+      "source_warning": null,
+      "passage_id": "1896-012:18976-20294",
+      "sources": [
+        {
+          "page": 729,
+          "page_method": "neighbors",
+          "file": "p0022.txt",
+          "start": 19821,
+          "end": 19849
+        }
+      ],
+      "printed_pages": [
+        729
+      ],
+      "scans": [
+        {
+          "file": "p0022.txt",
+          "page": 729,
+          "full": "scans/1896/pages/p0022-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1666,
+          "ocr_sha256": "c1b66d69f732c78ed92cf5cd6e2ab3b99b613441238c54700b13ca277c543092",
+          "pdf_page": 22,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 19821,
+          "end": 19859,
+          "quote_original": "ст. 304, 340, 360, 361 и 363 нот. пол.",
+          "act_code": "ПНЧ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 19821,
+          "end": 19849,
+          "quote_original": "ст. 304, 340, 360, 361 и 363",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 19821,
+              "end": 19859,
+              "quote_original": "ст. 304, 340, 360, 361 и 363 нот. пол.",
+              "act_code": "ПНЧ"
+            }
+          ],
+          "attribution_note": "В исходном OCR перемежены фрагменты соседних дел. Акт установлен у строки, но её принадлежность этому решению требует сверки оригинала."
+        }
+      ],
+      "attribution_note": "В исходном OCR перемежены фрагменты соседних дел. Акт установлен у строки, но её принадлежность этому решению требует сверки оригинала."
+    },
+    {
+      "id": "1897-046:ПНЧ:360–363:text:5253",
+      "statute": "ПНЧ ст. 360–363",
+      "code": "ПНЧ",
+      "article": "ст. 360–363",
+      "decision_id": "1897-046",
+      "year": 1897,
+      "decision_number": 46,
+      "field": "text",
+      "start": 5253,
+      "end": 5264,
+      "quote_original": "ст. 360—363",
+      "context_original": ". 1893 г.—облагаетъ этою пошлиною лишь акты крѣпостные, и выраженію этому по отношенію къ Прибалтійскимъ губерніямъ нотаріальное положеніе (ст. 360—363) придаетъ вполнѣ опредѣленное понятіе. Законодателю и не предстояло, слѣдовательно, надобности пояснять въ 237 ст. особо, что изъ опредѣлен",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "061b56033085c4059233b860d053661640314b6580fb02a7007eb7386cfeffc2",
+      "headnote_sha256": "acc809b29758ee69cc4811ccf084a8d84896a6d2573d431aa7a4e326a3365d11",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-046",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-046?mode=laws&c=%D0%9F%D0%9D%D0%A7&q=%D1%81%D1%82.+360%E2%80%93363&law=1897-046%3A%D0%9F%D0%9D%D0%A7%3A360%E2%80%93363%3Atext%3A5253&at=5253&end=5264",
+      "source_warning": null,
+      "passage_id": "1897-046:4112-5573",
+      "sources": [
+        {
+          "page": 158,
+          "page_method": "header",
+          "file": "p0090_L.txt",
+          "start": 5253,
+          "end": 5264
+        }
+      ],
+      "printed_pages": [
+        158
+      ],
+      "scans": [
+        {
+          "file": "p0090_L.txt",
+          "page": 158,
+          "full": "scans/1897/pages/p0090_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1576,
+          "ocr_sha256": "0efda25175ef87a36c606cf88c14a4c2b5753ca2b40d694769889fe35f54e28b",
+          "pdf_page": 179,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 5229,
+          "end": 5264,
+          "quote_original": "нотаріальное положеніе (ст. 360—363",
+          "act_code": "ПНЧ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5253,
+          "end": 5264,
+          "quote_original": "ст. 360—363",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 5229,
+              "end": 5264,
+              "quote_original": "нотаріальное положеніе (ст. 360—363",
+              "act_code": "ПНЧ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-012:ПНЧ:361:text:19821",
+      "statute": "ПНЧ ст. 361",
+      "code": "ПНЧ",
+      "article": "ст. 361",
+      "decision_id": "1896-012",
+      "year": 1896,
+      "decision_number": 12,
+      "field": "text",
+      "start": 19821,
+      "end": 19849,
+      "quote_original": "ст. 304, 340, 360, 361 и 363",
+      "context_original": "ществѣ; по погашеніи же долга, оба экземпляра возвращаются должнику. — Между тѣмъ, по ст. 3, 39, 59, 60 и 62 врем. прав. 9-го іюля 1889 г. (ст. 304, 340, 360, 361 и 363 нот. пол. изд. 1892 года), подлинные акты, а не копіи, пріобщаются къ крѣ постнымъ книгамъ, а лицамъ, заинте ресованнымъ, выдаются, крѣпост",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "dcf8ffb0fb5baec6df080f0aa577e6af0d2505d1e59bf60dfcfdbc9eb6a05854",
+      "headnote_sha256": "2d2602010105a65ef15c245f1578e3f7e92bd2a1a4c405d1a44ad2346e38b86f",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-012",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-012?mode=laws&c=%D0%9F%D0%9D%D0%A7&q=%D1%81%D1%82.+361&law=1896-012%3A%D0%9F%D0%9D%D0%A7%3A361%3Atext%3A19821&at=19821&end=19849",
+      "source_warning": null,
+      "passage_id": "1896-012:18976-20294",
+      "sources": [
+        {
+          "page": 729,
+          "page_method": "neighbors",
+          "file": "p0022.txt",
+          "start": 19821,
+          "end": 19849
+        }
+      ],
+      "printed_pages": [
+        729
+      ],
+      "scans": [
+        {
+          "file": "p0022.txt",
+          "page": 729,
+          "full": "scans/1896/pages/p0022-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1666,
+          "ocr_sha256": "c1b66d69f732c78ed92cf5cd6e2ab3b99b613441238c54700b13ca277c543092",
+          "pdf_page": 22,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 19821,
+          "end": 19859,
+          "quote_original": "ст. 304, 340, 360, 361 и 363 нот. пол.",
+          "act_code": "ПНЧ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 19821,
+          "end": 19849,
+          "quote_original": "ст. 304, 340, 360, 361 и 363",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 19821,
+              "end": 19859,
+              "quote_original": "ст. 304, 340, 360, 361 и 363 нот. пол.",
+              "act_code": "ПНЧ"
+            }
+          ],
+          "attribution_note": "В исходном OCR перемежены фрагменты соседних дел. Акт установлен у строки, но её принадлежность этому решению требует сверки оригинала."
+        }
+      ],
+      "attribution_note": "В исходном OCR перемежены фрагменты соседних дел. Акт установлен у строки, но её принадлежность этому решению требует сверки оригинала."
+    },
+    {
+      "id": "1896-012:ПНЧ:363:text:17465",
+      "statute": "ПНЧ ст. 363",
+      "code": "ПНЧ",
+      "article": "ст. 363",
+      "decision_id": "1896-012",
+      "year": 1896,
+      "decision_number": 12,
+      "field": "text",
+      "start": 17465,
+      "end": 17472,
+      "quote_original": "ст. 363",
+      "context_original": "ло изъято изъ какого бы то ни было обращенія, согласно категори ческому о томъ требованію закона (ст. 3538 св. мѣстн. узак. Приб. губ.). По ст. 363 полож. о нот. части, при вне сеніи въ книги укрѣпленій, уничтожаю щихъ установившіяся права, выданный по первоначальному укрѣпленію крѣпо с",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "dcf8ffb0fb5baec6df080f0aa577e6af0d2505d1e59bf60dfcfdbc9eb6a05854",
+      "headnote_sha256": "2d2602010105a65ef15c245f1578e3f7e92bd2a1a4c405d1a44ad2346e38b86f",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-012",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-012?mode=laws&c=%D0%9F%D0%9D%D0%A7&q=%D1%81%D1%82.+363&law=1896-012%3A%D0%9F%D0%9D%D0%A7%3A363%3Atext%3A17465&at=17465&end=17472",
+      "source_warning": null,
+      "passage_id": "1896-012:16827-18018",
+      "sources": [
+        {
+          "page": 728,
+          "page_method": "header",
+          "file": "p0021.txt",
+          "start": 17465,
+          "end": 17472
+        }
+      ],
+      "printed_pages": [
+        728
+      ],
+      "scans": [
+        {
+          "file": "p0021.txt",
+          "page": 728,
+          "full": "scans/1896/pages/p0021-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1660,
+          "ocr_sha256": "6f9f248167e768c7a5d9365889920ed0846065269d50fa4eb9bb9a72d5032a56",
+          "pdf_page": 21,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 17465,
+          "end": 17492,
+          "quote_original": "ст. 363 полож. о нот. части",
+          "act_code": "ПНЧ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 17465,
+          "end": 17472,
+          "quote_original": "ст. 363",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 17465,
+              "end": 17492,
+              "quote_original": "ст. 363 полож. о нот. части",
+              "act_code": "ПНЧ"
+            }
+          ],
+          "attribution_note": "В исходном OCR перемежены фрагменты соседних дел. Акт установлен у строки, но её принадлежность этому решению требует сверки оригинала."
+        },
+        {
+          "field": "text",
+          "start": 19821,
+          "end": 19849,
+          "quote_original": "ст. 304, 340, 360, 361 и 363",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 19821,
+              "end": 19859,
+              "quote_original": "ст. 304, 340, 360, 361 и 363 нот. пол.",
+              "act_code": "ПНЧ"
+            }
+          ],
+          "attribution_note": "В исходном OCR перемежены фрагменты соседних дел. Акт установлен у строки, но её принадлежность этому решению требует сверки оригинала."
+        }
+      ],
+      "attribution_note": "В исходном OCR перемежены фрагменты соседних дел. Акт установлен у строки, но её принадлежность этому решению требует сверки оригинала."
+    },
+    {
+      "id": "1905-076:ПНЧ:84–105:text:12539",
+      "statute": "ПНЧ ст. 84–105",
+      "code": "ПНЧ",
+      "article": "ст. 84–105",
+      "decision_id": "1905-076",
+      "year": 1905,
+      "decision_number": 76,
+      "field": "text",
+      "start": 12539,
+      "end": 12549,
+      "quote_original": "ст. 84—105",
+      "context_original": "роны неосновательными по слѣдующимъ соображеніямъ: самый обрядъ совершенія нотаріальныхъ актовъ, заключающійся въ правилахъ, изложенныхъ въ ст. 84—105 пол. о нот. части, исключаетъ возможность и необходимость означенія переписчика, т.-е. того, кѣмъ внесенъ актъ въ актовую книгу, и поэтому",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "a8d382a64880eeaee65b4f6bff43e36be81839e462ec58555e6074981227a0a0",
+      "headnote_sha256": "ca3522a903d4ec9a71b08e7f095f43739721e6d2980e4cc1d6efca4472c2b657",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-076",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-076?mode=laws&c=%D0%9F%D0%9D%D0%A7&q=%D1%81%D1%82.+84%E2%80%93105&law=1905-076%3A%D0%9F%D0%9D%D0%A7%3A84%E2%80%93105%3Atext%3A12539&at=12539&end=12549",
+      "source_warning": null,
+      "passage_id": "1905-076:11444-13281",
+      "sources": [
+        {
+          "page": 210,
+          "page_method": "header",
+          "file": "p0106_L.txt",
+          "start": 12539,
+          "end": 12549
+        }
+      ],
+      "printed_pages": [
+        210
+      ],
+      "scans": [
+        {
+          "file": "p0106_L.txt",
+          "page": 210,
+          "full": "scans/1905/pages/p0106_L.webp",
+          "width": 1100,
+          "height": 1525,
+          "ocr_sha256": "e8afc518d587124a52866799c315fd1bdc78c6caa23c79df5400c41f530256e6",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 12539,
+          "end": 12567,
+          "quote_original": "ст. 84—105 пол. о нот. части",
+          "act_code": "ПНЧ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 12539,
+          "end": 12549,
+          "quote_original": "ст. 84—105",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 12539,
+              "end": 12567,
+              "quote_original": "ст. 84—105 пол. о нот. части",
+              "act_code": "ПНЧ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-041:ПНЧ:89:text:3517",
+      "statute": "ПНЧ ст. 89",
+      "code": "ПНЧ",
+      "article": "ст. 89",
+      "decision_id": "1897-041",
+      "year": 1897,
+      "decision_number": 41,
+      "field": "text",
+      "start": 3517,
+      "end": 3523,
+      "quote_original": "ст. 89",
+      "context_original": "е сдѣлалъ; что объясненіе Милевскаго о томъ, что стороны обязаны сами заботиться о разъясненіи существа пріобрѣтенныхъ правъ, несогласно со ст. 89 нотар. полож., которая возлагаетъ на нотаріуса уразумѣть существо переуступаемыхъ правъ согласно объясненіямъ сторонъ и приложеннымъ къ акт",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "95bc07e465a862e473a69af0a11b864e419de16fac81f343a8d91b8dd44777b2",
+      "headnote_sha256": "167b31e0717d76251e16040937de4e6ae707d4ac152410062b1d3fd0fdfa6dbf",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-041",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-041?mode=laws&c=%D0%9F%D0%9D%D0%A7&q=%D1%81%D1%82.+89&law=1897-041%3A%D0%9F%D0%9D%D0%A7%3A89%3Atext%3A3517&at=3517&end=3523",
+      "source_warning": null,
+      "passage_id": "1897-041:2291-3851",
+      "sources": [
+        {
+          "page": 131,
+          "page_method": "header",
+          "file": "p0076_R.txt",
+          "start": 3517,
+          "end": 3523
+        }
+      ],
+      "printed_pages": [
+        131
+      ],
+      "scans": [
+        {
+          "file": "p0076_R.txt",
+          "page": 131,
+          "full": "scans/1897/pages/p0076_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1511,
+          "ocr_sha256": "82e0e1240d93200cb8ad60fe8f6aa3552d0db79cc43608fc47be70a0d00b37c3",
+          "pdf_page": 152,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3517,
+          "end": 3537,
+          "quote_original": "ст. 89 нотар. полож.",
+          "act_code": "ПНЧ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3517,
+          "end": 3523,
+          "quote_original": "ст. 89",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3517,
+              "end": 3537,
+              "quote_original": "ст. 89 нотар. полож.",
+              "act_code": "ПНЧ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-076:ПНЧ:89:text:14312",
+      "statute": "ПНЧ ст. 89",
+      "code": "ПНЧ",
+      "article": "ст. 89",
+      "decision_id": "1905-076",
+      "year": 1905,
+      "decision_number": 76,
+      "field": "text",
+      "start": 14312,
+      "end": 14318,
+      "quote_original": "ст. 89",
+      "context_original": "тъ признать, что, при условіи удостовѣренія подписью нотаріуса доброй воли совершающаго актъ и пониманія послѣднимъ смысла и значенія акта (ст. 89 пол. о нот. части), а подписями прочихъ свидѣтелей—самоличности совершающаго актъ и что актъ совершенъ именно этимъ извѣстнымъ имъ лицомъ,—",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "a8d382a64880eeaee65b4f6bff43e36be81839e462ec58555e6074981227a0a0",
+      "headnote_sha256": "ca3522a903d4ec9a71b08e7f095f43739721e6d2980e4cc1d6efca4472c2b657",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-076",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-076?mode=laws&c=%D0%9F%D0%9D%D0%A7&q=%D1%81%D1%82.+89&law=1905-076%3A%D0%9F%D0%9D%D0%A7%3A89%3Atext%3A14312&at=14312&end=14318",
+      "source_warning": null,
+      "passage_id": "1905-076:13071-14728",
+      "sources": [
+        {
+          "page": 211,
+          "page_method": "header",
+          "file": "p0106_R.txt",
+          "start": 14312,
+          "end": 14318
+        }
+      ],
+      "printed_pages": [
+        211
+      ],
+      "scans": [
+        {
+          "file": "p0106_R.txt",
+          "page": 211,
+          "full": "scans/1905/pages/p0106_R.webp",
+          "width": 1100,
+          "height": 1525,
+          "ocr_sha256": "1e1acc8dfc0090cb7a7698680807a8615d15693f3636967db7d50c38e1cbc27b",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 14312,
+          "end": 14336,
+          "quote_original": "ст. 89 пол. о нот. части",
+          "act_code": "ПНЧ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 14312,
+          "end": 14318,
+          "quote_original": "ст. 89",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 14312,
+              "end": 14336,
+              "quote_original": "ст. 89 пол. о нот. части",
+              "act_code": "ПНЧ"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
