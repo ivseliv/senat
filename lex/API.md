@@ -56,6 +56,7 @@ console.log(items.filter(d => d.outcome));
 | `statutes/index.json`, `statutes/{act_id}.json` | упоминания исторических норм; `act_id` берётся из индекса |
 | `legislation/unresolved.json`, `legislation/attribution.json` | остаток без установленного акта и покрытие сверки |
 | `legislation/acts.json`, `legislation/citations/{act_id}.json` | названия актов и буквальные контексты ссылок |
+| `legislation/historical-references.json` | сохранённые записи предыдущих версий, исключённые из текущих подсчётов |
 | `facets.json`, `indexes/...` | материализованные фильтры по годам, темам, исходам, процедуре, нормам, участникам, должностным лицам и подборкам |
 | `analytics.json`, `glossary.json` | данные аналитики и словарь понятийного поиска |
 | `editorial/analyses.json`, `editorial/guides.json` | редакционные разборы и тематические подборки |
@@ -110,6 +111,23 @@ SHA-256 исходного текста и прямой ссылкой на ме
 смешивайте данные разных снимков.
 
 ## Степень достоверности
+
+Контракт **1.6.0** добавляет `legislation/historical-references.json`
+(`HistoricalLegislationReference`) и полную JSON/CSV-выгрузку
+`legislation-historical-references`. Они сохраняют ссылки, исчезнувшие из
+активного указателя после уточнения акта: прежний `id`, буквальные места,
+SHA источников, основания и отдельную пометку `historical_note`. Прежний
+`verification_status` описывает сохранённую запись, а не её актуальность.
+Поле `current_references` перечисляет текущие записи того же решения с тем
+же обозначением статьи: `id`, `code`, `article`, абсолютный `passage_url`
+(или `null`). Список может быть пустым или содержать несколько записей;
+он не устанавливает единственного преемника старой ссылки. JSON и CSV
+сохраняют этот список; в CSV он записан JSON-массивом в одной ячейке.
+Для текущих привязок используйте `legislation/citations/{act_id}.json` и
+`legislation/unresolved.json`. История не включается в текущие ссылки,
+`statutes`, фасеты и их счётчики; отдельный
+`legislation_historical_references` считает только сохранённые записи.
+Пустая история представлена `count=0` и `items=[]`. Старые пути API сохранены.
 
 Контракт **1.5.0** добавляет `legislation/unresolved.json` и
 `legislation/attribution.json`. В цитатах законодательства `verification_status`

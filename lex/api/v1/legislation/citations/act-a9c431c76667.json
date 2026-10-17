@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.5.0",
-  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
   "resource": "legislation-citations",
   "scope": {
     "code": "УТ",
@@ -2062,7 +2062,7 @@
       ]
     },
     {
-      "id": "1905-044:УТ:68:text:5326",
+      "id": "1905-044:УТ:68:text:6839",
       "statute": "УТ ст. 68",
       "code": "УТ",
       "article": "ст. 68",
@@ -2070,46 +2070,73 @@
       "year": 1905,
       "decision_number": 44,
       "field": "text",
-      "start": 5326,
-      "end": 5332,
-      "quote_original": "ст. 68",
-      "context_original": "траціи надъ торговымъ домомъ, отъ членовъ онаго всецѣло зависитъ передача въ распоряженіе администраціи имъ лично принадлежащаго имущества (ст. 68 уст. торгов.), къ числу каковаго принадлежатъ заемныя письма, векселя, закладныя и обязательства всякаго рода (ст. 402 т. X ч. 1). Для уста",
-      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
-      "verification_status": "legacy_unverified",
+      "start": 6839,
+      "end": 6847,
+      "quote_original": "ст. 68 и",
+      "context_original": "означеннаго закона, устанавливающаго отвѣтственность товарищей торговаго дома за всѣ долги онаго вообще и порознь всѣмъ имуществомъ своимъ (ст. 68 изд. 1903 г.), къ тому случаю, когда лицо, входившее въ составъ полнаго товарищества, не только не изъявило согласія на поступленіе въ распор",
+      "association": "повторная ссылка с явным указанием на тот же акт",
+      "verification_status": "context_verified",
       "source_sha256": "af9b0186776ab624a9a621c0dc3be27cf8d9461cb89ba3b2b5f0d3a6ea4d91d4",
       "headnote_sha256": "6db598b69f19556ef71b0a0097d339927fcc01c0335b88463657c2f5b3994cb8",
       "number_status": "ocr_unverified",
-      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-044",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-044?mode=laws&c=%D0%A3%D0%A2&q=%D1%81%D1%82.+68&law=1905-044%3A%D0%A3%D0%A2%3A68%3Atext%3A5326&at=5326&end=5332",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-044?mode=laws&c=%D0%A3%D0%A2&q=%D1%81%D1%82.+68&law=1905-044%3A%D0%A3%D0%A2%3A68%3Atext%3A6839&at=6839&end=6847",
       "source_warning": null,
-      "passage_id": "1905-044:4526-6125",
+      "passage_id": "1905-044:5951-7649",
       "sources": [
         {
-          "page": 122,
+          "page": 123,
           "page_method": "header",
-          "file": "p0062_L.txt",
-          "start": 5326,
-          "end": 5332
+          "file": "p0062_R.txt",
+          "start": 6839,
+          "end": 6847
         }
       ],
       "printed_pages": [
-        122
+        123
       ],
       "scans": [
         {
-          "file": "p0062_L.txt",
-          "page": 122,
-          "full": "scans/1905/pages/p0062_L.webp",
+          "file": "p0062_R.txt",
+          "page": 123,
+          "full": "scans/1905/pages/p0062_R.webp",
           "width": 1100,
           "height": 1540,
-          "ocr_sha256": "c8401cbe7011ebb6d885fe924035825e241709129a93ed1ad7375e9e653b5a33",
+          "ocr_sha256": "b6e3b192f7635c642f8e20518eb03ff89a880f98a1853c94968ec0e553261263",
           "kind": "page"
         }
       ],
       "scan_available": true,
-      "evidence": [],
-      "occurrences": []
+      "evidence": [
+        {
+          "kind": "repeat",
+          "act_code": "УТ",
+          "field": "text",
+          "start": 5326,
+          "end": 5345,
+          "quote_original": "ст. 68 уст. торгов."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 6839,
+          "end": 6847,
+          "quote_original": "ст. 68 и",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УТ",
+              "field": "text",
+              "start": 5326,
+              "end": 5345,
+              "quote_original": "ст. 68 уст. торгов."
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "1904-118:УТ:680:text:13392",

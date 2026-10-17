@@ -566,7 +566,7 @@
     let target = null, senseTerms = [], partialMissing = [];
     const analysis = analyses.decisions && analyses.decisions[id];
     if (params.get('mode') === 'laws' && params.has('law')) {
-      const row = [...laws.citations, ...(laws.unresolved || [])].find(r=>r.id===params.get('law') && r.decision_id===id);
+      const row = [...laws.citations, ...(laws.unresolved || []), ...(laws.historical_references || [])].find(r=>r.id===params.get('law') && r.decision_id===id);
       if (row) target = await lawDetailTarget(d, row, params);
       if (S.detailId !== id || $('#detail').hidden) return;
     } else if (params.get('mode') === 'precedent') {
@@ -622,6 +622,9 @@
         h('span', { class: 'badge big' }, d.outcome)),
       target && target.field==='headnote' ? h('div', {class:'headnote',html:paint(d.headnote,'headnote')}) : h('p', { class: 'headnote' }, M(d.headnote)),
       target && target.law ? h('section',{class:'law-detail','data-law-id':target.law.id},
+        target.law.historical_note ? h('p',{class:'preliminary-note law-historical-note'},target.law.historical_note) : '',
+        target.law.historical_note && target.law.current_references?.length ? h('p',{class:'law-current-references'},
+          'Текущая привязка: ',target.law.current_references.map((r,i)=>h('span',{},i ? '; ' : '',h('a',{href:r.passage_url},r.code+' '+r.article)))) : '',
         h('h3',{},'Законодательная ссылка · '+target.law.article),
         h('p',{class:'law-status small'},lawStatus(target.law)),
         h('blockquote',{class:'source-quote law-exact-quote'},target.quote_original),
@@ -955,6 +958,7 @@
     return terms.every(term => hay.includes(term));
   }
   function lawStatus(row) {
+    if (row.historical_note) return 'Ссылка предыдущей версии: акт мог быть уточнён';
     return row.verification_status==='context_verified' ? 'Акт подтверждён по контексту' :
       row.verification_status==='act_unknown' ? 'Акт не установлен' : 'Прежняя привязка: акт отдельно не проверен';
   }

@@ -1,13 +1,13 @@
 {
   "api_version": "v1",
-  "contract_version": "1.5.0",
-  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
   "resource": "legislation-citations",
   "scope": {
     "code": "УУС",
     "id": "act-a8f8a6c2c0c2"
   },
-  "count": 36,
+  "count": 37,
   "items": [
     {
       "id": "1904-090:УУС:1124:text:2305",
@@ -1561,6 +1561,83 @@
               "end": 242,
               "quote_original": "ст. 30 уст. угол. суд.",
               "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-096:УУС:301:text:7672",
+      "statute": "УУС ст. 301",
+      "code": "УУС",
+      "article": "ст. 301",
+      "decision_id": "1904-096",
+      "year": 1904,
+      "decision_number": 96,
+      "field": "text",
+      "start": 7672,
+      "end": 7679,
+      "quote_original": "ст. 301",
+      "context_original": "обвиненіе своимъ послѣдствіемъ преданіе суду или нѣтъ, возбудить противъ объявителя (ст. 298 и 299 уст. угол. суд.) или жалобщика (тамъ же ст. 301) преслѣдованіе по обвиненію въ ложномъ доносѣ (ст. 940 улож. о наказ.) и, въ случаѣ основательности сего послѣдняго обвиненія, предъявить к",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "677785a4e7f9f0eda10602861f321e2cbc264f61c0ae18893c83317c122e7e05",
+      "headnote_sha256": "671c1ab7cb8fb45ec03c8d3ca3757e22ed05cd98249a73d20b10243fffb2e16b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+301&law=1904-096%3A%D0%A3%D0%A3%D0%A1%3A301%3Atext%3A7672&at=7672&end=7679",
+      "source_warning": null,
+      "passage_id": "1904-096:6483-8172",
+      "sources": [
+        {
+          "page": 268,
+          "page_method": "header",
+          "file": "p0135_L.txt",
+          "start": 7672,
+          "end": 7679
+        }
+      ],
+      "printed_pages": [
+        268
+      ],
+      "scans": [
+        {
+          "file": "p0135_L.txt",
+          "page": 268,
+          "full": "scans/1904/pages/p0135_L.webp",
+          "width": 1100,
+          "height": 1585,
+          "ocr_sha256": "63c3637210a5de04802d5b5e292ffb2e8488674cb4658d63dcc129d29da46948",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УУС",
+          "field": "text",
+          "start": 7598,
+          "end": 7680,
+          "quote_original": "противъ объявителя (ст. 298 и 299 уст. угол. суд.) или жалобщика (тамъ же ст. 301)"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7672,
+          "end": 7679,
+          "quote_original": "ст. 301",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УУС",
+              "field": "text",
+              "start": 7598,
+              "end": 7680,
+              "quote_original": "противъ объявителя (ст. 298 и 299 уст. угол. суд.) или жалобщика (тамъ же ст. 301)"
             }
           ]
         }

@@ -1,21 +1,33 @@
 {
   "api_version": "v1",
-  "contract_version": "1.5.0",
-  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
   "resource": "statute-index",
-  "count": 22,
+  "count": 30,
   "items": [
     {
       "id": "act-8a8de823d5ed",
       "code": "?",
-      "mentions": 789,
+      "mentions": 533,
       "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-8a8de823d5ed.json"
+    },
+    {
+      "id": "act-9e7de1ffd315",
+      "code": "ВСУ",
+      "mentions": 2,
+      "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-9e7de1ffd315.json"
     },
     {
       "id": "act-8a599d728823",
       "code": "ГКП",
-      "mentions": 81,
+      "mentions": 85,
       "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-8a599d728823.json"
+    },
+    {
+      "id": "act-639a0a6a65cd",
+      "code": "ГП",
+      "mentions": 3,
+      "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-639a0a6a65cd.json"
     },
     {
       "id": "act-6017b1723e79",
@@ -26,25 +38,31 @@
     {
       "id": "act-0b61ef5db1c4",
       "code": "ЗС",
-      "mentions": 3,
+      "mentions": 13,
       "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-0b61ef5db1c4.json"
     },
     {
       "id": "act-c78edf831dda",
       "code": "ИУ1818",
-      "mentions": 0,
+      "mentions": 8,
       "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-c78edf831dda.json"
     },
     {
       "id": "act-c325e0a23fc5",
       "code": "ОГЗ",
-      "mentions": 0,
+      "mentions": 7,
       "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-c325e0a23fc5.json"
+    },
+    {
+      "id": "act-fab21e95da4f",
+      "code": "ОПК",
+      "mentions": 2,
+      "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-fab21e95da4f.json"
     },
     {
       "id": "act-2f1c15d56997",
       "code": "ПНЧ",
-      "mentions": 21,
+      "mentions": 25,
       "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-2f1c15d56997.json"
     },
     {
@@ -56,38 +74,62 @@
     {
       "id": "act-d2a3c58c7b33",
       "code": "СЗГ",
-      "mentions": 421,
+      "mentions": 449,
       "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-d2a3c58c7b33.json"
     },
     {
       "id": "act-43057a02dbce",
       "code": "СМУО",
-      "mentions": 13,
+      "mentions": 52,
       "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-43057a02dbce.json"
+    },
+    {
+      "id": "act-6f03ce48683b",
+      "code": "УАС",
+      "mentions": 5,
+      "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-6f03ce48683b.json"
     },
     {
       "id": "act-24d4d7ce13de",
       "code": "УВ",
-      "mentions": 7,
+      "mentions": 12,
       "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-24d4d7ce13de.json"
+    },
+    {
+      "id": "act-4d5ee77b3c4f",
+      "code": "УГОР",
+      "mentions": 3,
+      "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-4d5ee77b3c4f.json"
     },
     {
       "id": "act-7fdf2cd82a35",
       "code": "УГС",
-      "mentions": 377,
+      "mentions": 393,
       "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-7fdf2cd82a35.json"
     },
     {
       "id": "act-bc01efbdb350",
       "code": "УГСБ",
-      "mentions": 17,
+      "mentions": 30,
       "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-bc01efbdb350.json"
     },
     {
       "id": "act-3d4f8b4233c8",
       "code": "УЖД",
-      "mentions": 43,
+      "mentions": 49,
       "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-3d4f8b4233c8.json"
+    },
+    {
+      "id": "act-6445c184f31b",
+      "code": "УК",
+      "mentions": 18,
+      "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-6445c184f31b.json"
+    },
+    {
+      "id": "act-33481835d090",
+      "code": "УЛ",
+      "mentions": 8,
+      "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-33481835d090.json"
     },
     {
       "id": "act-a4fdc9c28348",
@@ -104,19 +146,25 @@
     {
       "id": "act-40a72ea949f0",
       "code": "УОП",
-      "mentions": 0,
+      "mentions": 3,
       "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-40a72ea949f0.json"
+    },
+    {
+      "id": "act-ee78e5934084",
+      "code": "УПР",
+      "mentions": 8,
+      "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-ee78e5934084.json"
     },
     {
       "id": "act-fcdce945345d",
       "code": "УПШ",
-      "mentions": 9,
+      "mentions": 32,
       "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-fcdce945345d.json"
     },
     {
       "id": "act-0409227854e7",
       "code": "УСТ",
-      "mentions": 50,
+      "mentions": 68,
       "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-0409227854e7.json"
     },
     {
@@ -134,7 +182,7 @@
     {
       "id": "act-a8f8a6c2c0c2",
       "code": "УУС",
-      "mentions": 37,
+      "mentions": 38,
       "href": "https://ivseliv.github.io/senat/lex/api/v1/statutes/act-a8f8a6c2c0c2.json"
     }
   ]

@@ -1,13 +1,13 @@
 {
   "api_version": "v1",
-  "contract_version": "1.5.0",
-  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
   "resource": "statutes",
   "scope": {
     "code": "ГКП",
     "id": "act-8a599d728823"
   },
-  "count": 81,
+  "count": 85,
   "items": [
     {
       "statute": "ГКП ст. 524",
@@ -43,7 +43,7 @@
       "statute": "ГКП ст. 1290",
       "code": "ГКП",
       "article": "ст. 1290",
-      "mentions": 2,
+      "mentions": 3,
       "decision_id": "1897-048",
       "year": 1897,
       "decision_number": 48,
@@ -53,7 +53,7 @@
       "statute": "ГКП ст. 1291",
       "code": "ГКП",
       "article": "ст. 1291",
-      "mentions": 2,
+      "mentions": 3,
       "decision_id": "1897-048",
       "year": 1897,
       "decision_number": 48,
@@ -540,6 +540,26 @@
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-066"
     },
     {
+      "statute": "ГКП ст. 789",
+      "code": "ГКП",
+      "article": "ст. 789",
+      "mentions": 1,
+      "decision_id": "1905-006",
+      "year": 1905,
+      "decision_number": 6,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-006"
+    },
+    {
+      "statute": "ГКП ст. 2220",
+      "code": "ГКП",
+      "article": "ст. 2220",
+      "mentions": 1,
+      "decision_id": "1905-020",
+      "year": 1905,
+      "decision_number": 20,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-020"
+    },
+    {
       "statute": "ГКП ст. 1743",
       "code": "ГКП",
       "article": "ст. 1743",
@@ -583,7 +603,7 @@
       "statute": "ГКП ст. 1108",
       "code": "ГКП",
       "article": "ст. 1108",
-      "mentions": 1,
+      "mentions": 2,
       "decision_id": "1905-032",
       "year": 1905,
       "decision_number": 32,
@@ -593,6 +613,26 @@
       "statute": "ГКП ст. 1115",
       "code": "ГКП",
       "article": "ст. 1115",
+      "mentions": 1,
+      "decision_id": "1905-032",
+      "year": 1905,
+      "decision_number": 32,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032"
+    },
+    {
+      "statute": "ГКП ст. 1124",
+      "code": "ГКП",
+      "article": "ст. 1124",
+      "mentions": 1,
+      "decision_id": "1905-032",
+      "year": 1905,
+      "decision_number": 32,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032"
+    },
+    {
+      "statute": "ГКП ст. 1125",
+      "code": "ГКП",
+      "article": "ст. 1125",
       "mentions": 1,
       "decision_id": "1905-032",
       "year": 1905,
@@ -613,7 +653,7 @@
       "statute": "ГКП ст. 1966",
       "code": "ГКП",
       "article": "ст. 1966",
-      "mentions": 2,
+      "mentions": 3,
       "decision_id": "1905-033",
       "year": 1905,
       "decision_number": 33,

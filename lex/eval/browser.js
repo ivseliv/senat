@@ -117,7 +117,9 @@ fs.mkdirSync(out,{recursive:true});
   assert((await page.locator('#laws-status').innerText()).includes('пар'));
   assert(await page.locator('.law-citation').count()>0);
   assert((await page.locator('#laws-results').innerText()).includes('скан точного места'));
-  await page.locator('.law-citation a').first().click();
+  // Query words also match surrounding context. Select the requested article
+  // explicitly: the first result may cite another article alongside 1524.
+  await page.locator('.law-citation a.law-open').filter({hasText:/· СЗГ · ст\. 1524$/}).first().click();
   await page.waitForSelector('#passage-target');
   assert(page.url().includes('mode=laws'));
   await page.reload(); await page.waitForSelector('#passage-target');

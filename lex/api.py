@@ -18,7 +18,7 @@ from guide_comparisons import guide_decisions
 ROOT = Path(__file__).resolve().parent.parent
 PUBLIC = 'https://ivseliv.github.io/senat/lex/'
 API_VERSION = 'v1'
-CONTRACT_VERSION = '1.5.0'
+CONTRACT_VERSION = '1.6.0'
 
 
 def read_json(path):
@@ -168,6 +168,22 @@ def schema_document():
                 },
                 'description':'Единица — решение и обозначение статьи. field определяет исходное поле Unicode-смещений; SHA полного текста и заголовка закреплены отдельно. Подтверждение акта не удостоверяет номер OCR или редакцию нормы.',
             },
+            'HistoricalLegislationReference': {
+                'allOf': [{'$ref': '#/$defs/LegislationCitation'}],
+                'type': 'object',
+                'required': ['historical_note', 'current_references'],
+                'properties': {
+                    'historical_note': {'type': 'string'},
+                    'current_references': {'type': 'array', 'items': {
+                        'type': 'object', 'required': ['id', 'code', 'article', 'passage_url'],
+                        'properties': {
+                            **{key: {'type': 'string'} for key in ('id', 'code', 'article')},
+                            'passage_url': {'type': ['string', 'null'], 'format': 'uri'},
+                        },
+                    }, 'description': 'Текущие записи того же решения и обозначения статьи. Список может быть пустым или содержать несколько записей; passage_url является абсолютным публичным URL.'},
+                },
+                'description': 'Сохранённая запись прежнего указателя: ID, исходные места и прежняя атрибуция остаются доступными. Не является текущей привязкой акта и не входит в активные счётчики, фасеты или наборы статей.',
+            },
             'TopicCatalog': {
                 'type': 'object',
                 'required': ['schema_version', 'count', 'classified', 'topic_count', 'memberships', 'topics', 'decisions', 'unclassified'],
@@ -210,6 +226,7 @@ def openapi_document(years, act_ids):
             '/participants/{year}.json': {'get': {'summary': 'Строки указателя за год', 'parameters': year_parameter, 'responses': response}},
             '/statutes/{act_id}.json': {'get': {'summary': 'Упоминания статей одного акта; act_id берётся из statutes/index.json', 'parameters': act_parameter, 'responses': response}},
             '/legislation/unresolved.json': {'get': {'summary': 'Неустановленные акты: буквальный контекст и точные места', 'responses': response}},
+            '/legislation/historical-references.json': {'get': {'summary': 'Сохранённые ссылки прежних версий вне текущих подсчётов', 'responses': response}},
             '/legislation/attribution.json': {'get': {'summary': 'Покрытие и единица счёта атрибуции актов', 'responses': response}},
             '/legislation/acts.json': {'get': {'summary': 'Исторические названия актов', 'responses': response}},
             '/legislation/citations/{act_id}.json': {'get': {'summary': 'Контексты ссылок на один акт; act_id берётся из statutes/index.json', 'parameters': act_parameter, 'responses': response}},
@@ -265,6 +282,7 @@ def build_api(root=ROOT):
     acts = read_json(export / 'legislation-acts.json')
     citations = read_json(export / 'legislation-citations.json')
     unresolved = read_json(export / 'legislation-unresolved.json')
+    historical_references = read_json(export / 'legislation-historical-references.json')
     law_index = read_json(data / 'laws.json')
     scan_refs = read_json(export / 'scan-passages.json')
     precedents = read_json(export / 'precedents.json')
@@ -363,6 +381,7 @@ def build_api(root=ROOT):
         emit(f'statutes/{code_id}.json', envelope('statutes', scope={'code': code, 'id': code_id}, items=statutes_by_code[code]))
     emit('statutes/index.json', envelope('statute-index', items=sorted(statute_index, key=lambda row: row['code'])))
     emit('legislation/unresolved.json', envelope('legislation-unresolved', items=unresolved))
+    emit('legislation/historical-references.json', envelope('legislation-historical-references', items=historical_references))
     emit('legislation/attribution.json', envelope('legislation-attribution', item=law_index['attribution_summary']))
     emit('legislation/acts.json', envelope('legislation-acts', items=acts))
     emit('editorial/analyses.json', envelope('editorial-analyses', item=analyses, links={'web': PUBLIC + '#/analyses'}))
@@ -398,6 +417,7 @@ def build_api(root=ROOT):
         'scan_geometry': 'box — [x0,y0,x1,y1] в долях ширины и высоты; при null используйте full_page_url.',
         'automated_fields': ['topics', 'outcome', 'procedure', 'participant_groups', 'statutes', 'ai_summary', 'ai_concepts'],
         'precedents': 'Переход устанавливается только по департаменту, году и номеру; неопределённые ссылки сохранены с контекстом без target_id. Старые пары cites не пригодны для переходов.',
+        'historical_legislation_references': 'legislation/historical-references.json сохраняет записи предыдущих версий с прежними ID и местами. Они исключены из текущих ссылок и фасетов; отдельный счётчик legislation_historical_references считает только сохранённые записи.',
         'source_warning': 'Непустая строка у пассажа сообщает об установленном дефекте порядка или атрибуции OCR. Его пояснение не индексируется в обогащённом поиске; исходный текст сохранён.',
         'guide_comparisons': 'Редакционные сопоставления выбранных дел: закреплённые SHA полных текстов и буквальные цитаты со страницами. Не являются независимой юридической экспертизой или доказательством развития практики.',
     }))
@@ -470,6 +490,7 @@ def build_api(root=ROOT):
 
     datasets = [
         {'id':'legislation-unresolved','description':'Ссылки без установленного акта: контекст, Unicode-смещения, SHA источника.','href':href('legislation/unresolved.json'),'item_schema':'LegislationCitation'},
+        {'id':'legislation-historical-references','description':'Записи прежних версий с исходными ID, местами и пометкой historical_note; вне текущих подсчётов.','href':href('legislation/historical-references.json'),'item_schema':'HistoricalLegislationReference'},
         {'id':'legislation-attribution','description':'Результат сверки актов, единица счёта и остаток неопределённых ссылок.','href':href('legislation/attribution.json')},
         {'id': 'topic-catalog', 'description': 'Редакционный каталог всех решений с современными пояснениями и цитатами тематических включений.', 'href': href('editorial/topics.json'), 'item_schema': 'TopicCatalog'},
         {'id': 'decisions', 'description': 'Полные решения по годам и по постоянному ID.', 'href_template': href('decisions/{year}.json'), 'values': years, 'item_schema': 'Decision'},

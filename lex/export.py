@@ -20,6 +20,8 @@ def read(name):
 
 
 def url(path):
+    if path.startswith(('https://', 'http://')):
+        return path
     return PUBLIC + path.lstrip('/')
 
 
@@ -172,11 +174,17 @@ def build_export(root=ROOT):
     law_unresolved_rows = [{**row, 'decision_url': url(row['decision_url']),
                             'passage_url': url(row['passage_url']) if row.get('passage_url') else None}
                            for row in laws.get('unresolved', [])]
+    law_historical_rows = [{**row, 'decision_url': url(row['decision_url']),
+                            'passage_url': url(row['passage_url']) if row.get('passage_url') else None,
+                            'current_references': [{**ref, 'passage_url': url(ref['passage_url']) if ref.get('passage_url') else None}
+                                                   for ref in row.get('current_references', [])]}
+                           for row in laws.get('historical_references', [])]
     law_citation_fields += ['field','verification_status','source_sha256','headnote_sha256','evidence','occurrences','sources','printed_pages','scans','number_status','source_warning','attribution_note']
 
     counts = {'decisions': len(decision_rows), 'passages': len(passage_rows), 'participants': len(participant_rows),
               'statute_mentions': len(statute_rows), 'legislation_acts': len(law_act_rows),
-              'legislation_citations': len(law_citation_rows), 'legislation_unresolved': len(law_unresolved_rows), 'scan_passage_refs': len(scan_rows),
+              'legislation_citations': len(law_citation_rows), 'legislation_unresolved': len(law_unresolved_rows),
+              'legislation_historical_references': len(law_historical_rows), 'scan_passage_refs': len(scan_rows),
               'precedent_references': len(precedent_rows)}
     years = ', '.join(str(volume['year']) for volume in meta['volumes'])
     files = []
@@ -185,6 +193,7 @@ def build_export(root=ROOT):
         ('participants', participant_rows, participant_fields), ('statutes', statute_rows, statute_fields),
         ('legislation-acts', law_act_rows, law_act_fields), ('legislation-citations', law_citation_rows, law_citation_fields),
         ('legislation-unresolved', law_unresolved_rows, law_citation_fields + ['mentions']),
+        ('legislation-historical-references', law_historical_rows, law_citation_fields + ['mentions', 'historical_note', 'current_references']),
         ('scan-passages', scan_rows, scan_fields),
         ('precedents', precedent_rows, list(precedent_rows[0]) if precedent_rows else ['id','source_id','department','year','number','status','target_id','quote_original','source_url','target_url']),
     ):
@@ -203,6 +212,7 @@ def build_export(root=ROOT):
 | `legislation-acts` | Исторические названия и источники карточек актов, используемых в разделе «Законодательство». |
 | `legislation-citations` | Ссылки с актом: `context_verified` содержит буквальные основания; `legacy_unverified` обозначает прежнюю непроверенную привязку. Редакция и правильность номера в OCR отдельно не подтверждены. |
 | `legislation-unresolved` | Все оставшиеся пары «решение + обозначение статьи» без установленного акта, исходный счётчик `mentions`, точные места и контекст. |
+| `legislation-historical-references` | Ссылки предыдущих версий, исчезнувшие из активного указателя после сверки. Сохранены ID, исходные места, основания и `historical_note`; `current_references` перечисляет текущие записи того же решения и обозначения статьи с публичными ссылками. История не входит в текущие счётчики ссылок. |
 | `scan-passages` | Привязка пассажа к странице и, когда она надёжна, координатам `box` в долях ширины/высоты: `[x0,y0,x1,y1]`. |
 | `precedents` | Упоминания прежних решений: департамент, год, номер, статус привязки, буквальная цитата, контекст и точное место в источнике. |
 

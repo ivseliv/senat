@@ -1,0 +1,43 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
+  "resource": "statutes",
+  "scope": {
+    "code": "ГП",
+    "id": "act-639a0a6a65cd"
+  },
+  "count": 3,
+  "items": [
+    {
+      "statute": "ГП ст. 63",
+      "code": "ГП",
+      "article": "ст. 63",
+      "mentions": 1,
+      "decision_id": "1905-039",
+      "year": 1905,
+      "decision_number": 39,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-039"
+    },
+    {
+      "statute": "ГП ст. 131",
+      "code": "ГП",
+      "article": "ст. 131",
+      "mentions": 2,
+      "decision_id": "1905-075",
+      "year": 1905,
+      "decision_number": 75,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-075"
+    },
+    {
+      "statute": "ГП ст. 132",
+      "code": "ГП",
+      "article": "ст. 132",
+      "mentions": 3,
+      "decision_id": "1905-075",
+      "year": 1905,
+      "decision_number": 75,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-075"
+    }
+  ]
+}

@@ -1,0 +1,669 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
+  "resource": "legislation-citations",
+  "scope": {
+    "code": "УЛ",
+    "id": "act-33481835d090"
+  },
+  "count": 8,
+  "items": [
+    {
+      "id": "1905-051:УЛ:215:text:2438",
+      "statute": "УЛ ст. 215",
+      "code": "УЛ",
+      "article": "ст. 215",
+      "decision_id": "1905-051",
+      "year": 1905,
+      "decision_number": 51,
+      "field": "text",
+      "start": 2438,
+      "end": 2447,
+      "quote_original": "ст. 215 и",
+      "context_original": "гр. суд.), могутъ-ли имѣть примѣненіе къ дѣламъ, возникающимъ изъ договоровъ о продажѣ съ торговъ лѣсныхъ матеріаловъ изъ казенныхъ лѣсовъ (ст. 215 и слѣд. уст. лѣсн.), въ виду § 212 напечатанной въ собр. узак. и распор. прав. за 1901 годъ № 7 ст. 74 инструкціи для отпуска лѣсныхъ матеріа",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "8aea2fa63414b831f0644e27cfe0fb3eb3a55fd1c484d0c52bbaaa448d82337b",
+      "headnote_sha256": "ff0c28ff29bb3b8a803e0e7af5d0495a541ac1cabc62adbd0a0f4010b262e456",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-051",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-051?mode=laws&c=%D0%A3%D0%9B&q=%D1%81%D1%82.+215&law=1905-051%3A%D0%A3%D0%9B%3A215%3Atext%3A2438&at=2438&end=2447",
+      "source_warning": null,
+      "passage_id": "1905-051:1699-3394",
+      "sources": [
+        {
+          "page": 138,
+          "page_method": "header",
+          "file": "p0070_L.txt",
+          "start": 2438,
+          "end": 2447
+        }
+      ],
+      "printed_pages": [
+        138
+      ],
+      "scans": [
+        {
+          "file": "p0070_L.txt",
+          "page": 138,
+          "full": "scans/1905/pages/p0070_L.webp",
+          "width": 1100,
+          "height": 1555,
+          "ocr_sha256": "bd60372deea4d76ff35fc88d6fbf754fd31e1920418054efe30ac4bc215a3a8c",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2358,
+          "end": 2542,
+          "quote_original": "ъ изъ договоровъ о продажѣ съ торговъ лѣсныхъ матеріаловъ изъ казенныхъ лѣсовъ (ст. 215 и слѣд. уст. лѣсн.), въ виду § 212 напечатанной въ собр. узак. и распор. прав. за 1901 годъ № 7 ",
+          "act_code": "УЛ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2438,
+          "end": 2447,
+          "quote_original": "ст. 215 и",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2358,
+              "end": 2542,
+              "quote_original": "ъ изъ договоровъ о продажѣ съ торговъ лѣсныхъ матеріаловъ изъ казенныхъ лѣсовъ (ст. 215 и слѣд. уст. лѣсн.), въ виду § 212 напечатанной въ собр. узак. и распор. прав. за 1901 годъ № 7 ",
+              "act_code": "УЛ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-028:УЛ:681–685:text:2971",
+      "statute": "УЛ ст. 681–685",
+      "code": "УЛ",
+      "article": "ст. 681–685",
+      "decision_id": "1897-028",
+      "year": 1897,
+      "decision_number": 28,
+      "field": "text",
+      "start": 2971,
+      "end": 2984,
+      "quote_original": "ст. 681—685 и",
+      "context_original": "мѣ этого правила, ограждающаго сохранность лѣса въ спорныхъ дачахъ во время межеванія, въ 784—788 ст. уст. лѣсн. 1 ч. VIII т. изд. 1893 г. (ст. 681—685 изд. 1857 г.) содержатся правила сохраненія лѣсныхъ дачъ, состоящихъ во владѣніи частныхъ лицъ, на которыя со стороны казеннаго управленія пр",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "f3ee7fb09f3b37199d4d0aa6899e875a81787410cf5e91f3c95c060b416b1cc0",
+      "headnote_sha256": "8d8dfa59cc18ec5b79be82a6b75fd188f51cbcab58a2434ca418cf05c9a69d4b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-028",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-028?mode=laws&c=%D0%A3%D0%9B&q=%D1%81%D1%82.+681%E2%80%93685&law=1897-028%3A%D0%A3%D0%9B%3A681%E2%80%93685%3Atext%3A2971&at=2971&end=2984",
+      "source_warning": null,
+      "passage_id": "1897-028:2642-4102",
+      "sources": [
+        {
+          "page": 103,
+          "page_method": "header",
+          "file": "p0062_R.txt",
+          "start": 2971,
+          "end": 2984
+        }
+      ],
+      "printed_pages": [
+        103
+      ],
+      "scans": [
+        {
+          "file": "p0062_R.txt",
+          "page": 103,
+          "full": "scans/1897/pages/p0062_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1510,
+          "ocr_sha256": "d368c74344611fece250225bdf18829dd217e7ab92e51c6f769463ee786c7090",
+          "pdf_page": 124,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2891,
+          "end": 3079,
+          "quote_original": "дачахъ во время межеванія, въ 784—788 ст. уст. лѣсн. 1 ч. VIII т. изд. 1893 г. (ст. 681—685 изд. 1857 г.) содержатся правила сохраненія лѣсныхъ дачъ, состоящихъ во владѣніи частныхъ лицъ, ",
+          "act_code": "УЛ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2971,
+          "end": 2984,
+          "quote_original": "ст. 681—685 и",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2891,
+              "end": 3079,
+              "quote_original": "дачахъ во время межеванія, въ 784—788 ст. уст. лѣсн. 1 ч. VIII т. изд. 1893 г. (ст. 681—685 изд. 1857 г.) содержатся правила сохраненія лѣсныхъ дачъ, состоящихъ во владѣніи частныхъ лицъ, ",
+              "act_code": "УЛ"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 4302,
+          "end": 4313,
+          "quote_original": "ст. 681—685",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4222,
+              "end": 4408,
+              "quote_original": "зложенныя въ 681—685 ст. уст. лѣсн. изд. 1876 г., представляются невѣрными, ибо ст. 681—685 уст. лѣсн. извлечены изъ Высочайшаго указа 30 апрѣля 1838 г. (полн. собр. № 11,189), какъ это ",
+              "act_code": "УЛ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-011:УЛ:691:text:3314",
+      "statute": "УЛ ст. 691",
+      "code": "УЛ",
+      "article": "ст. 691",
+      "decision_id": "1896-011",
+      "year": 1896,
+      "decision_number": 11,
+      "field": "text",
+      "start": 3314,
+      "end": 3327,
+      "quote_original": "ст. 691 и 692",
+      "context_original": "чаѣ, отъ лѣсовладѣльца, или замѣняющаго его лица, зависитъ объявить подлежащей власти о послѣдовавшемъ нарушеніи. Тоже самое повторено и въ ст. 691 и 692 уст. лѣсн. изд. 1893 г. Наконецъ, и въ примѣчаніи къ ст. 1625 улож. о наказ. прямо выражено, что дѣла объ истребленіи и поврежденіи чужаго",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "c1c5224f6eafe03c3cba2b66aabb0eb0d4225c870d2ffd9398bd83d3926230a3",
+      "headnote_sha256": "3e2a379bc737512445c87dae3b4374176654fb0d9c9f22ab265daecb65f816ea",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9B&q=%D1%81%D1%82.+691&law=1896-011%3A%D0%A3%D0%9B%3A691%3Atext%3A3314&at=3314&end=3327",
+      "source_warning": null,
+      "passage_id": "1896-011:2496-4105",
+      "sources": [
+        {
+          "page": 723,
+          "page_method": "header",
+          "file": "p0016.txt",
+          "start": 3314,
+          "end": 3327
+        }
+      ],
+      "printed_pages": [
+        723
+      ],
+      "scans": [
+        {
+          "file": "p0016.txt",
+          "page": 723,
+          "full": "scans/1896/pages/p0016-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1676,
+          "ocr_sha256": "34d4cde5f409723eaed524a11baa44ba5ca62d78d508d298168eee4aa4ef451a",
+          "pdf_page": 16,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3194,
+          "end": 3417,
+          "quote_original": "ца, или замѣняющаго его лица, зависитъ объявить подлежащей власти о послѣдовавшемъ нарушеніи. Тоже самое повторено и въ ст. 691 и 692 уст. лѣсн. изд. 1893 г. Наконецъ, и въ примѣчаніи къ ст. 1625 улож. о наказ. прямо выраже",
+          "act_code": "УЛ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3314,
+          "end": 3327,
+          "quote_original": "ст. 691 и 692",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3194,
+              "end": 3417,
+              "quote_original": "ца, или замѣняющаго его лица, зависитъ объявить подлежащей власти о послѣдовавшемъ нарушеніи. Тоже самое повторено и въ ст. 691 и 692 уст. лѣсн. изд. 1893 г. Наконецъ, и въ примѣчаніи къ ст. 1625 улож. о наказ. прямо выраже",
+              "act_code": "УЛ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-011:УЛ:692:text:3314",
+      "statute": "УЛ ст. 692",
+      "code": "УЛ",
+      "article": "ст. 692",
+      "decision_id": "1896-011",
+      "year": 1896,
+      "decision_number": 11,
+      "field": "text",
+      "start": 3314,
+      "end": 3327,
+      "quote_original": "ст. 691 и 692",
+      "context_original": "чаѣ, отъ лѣсовладѣльца, или замѣняющаго его лица, зависитъ объявить подлежащей власти о послѣдовавшемъ нарушеніи. Тоже самое повторено и въ ст. 691 и 692 уст. лѣсн. изд. 1893 г. Наконецъ, и въ примѣчаніи къ ст. 1625 улож. о наказ. прямо выражено, что дѣла объ истребленіи и поврежденіи чужаго",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "c1c5224f6eafe03c3cba2b66aabb0eb0d4225c870d2ffd9398bd83d3926230a3",
+      "headnote_sha256": "3e2a379bc737512445c87dae3b4374176654fb0d9c9f22ab265daecb65f816ea",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%9B&q=%D1%81%D1%82.+692&law=1896-011%3A%D0%A3%D0%9B%3A692%3Atext%3A3314&at=3314&end=3327",
+      "source_warning": null,
+      "passage_id": "1896-011:2496-4105",
+      "sources": [
+        {
+          "page": 723,
+          "page_method": "header",
+          "file": "p0016.txt",
+          "start": 3314,
+          "end": 3327
+        }
+      ],
+      "printed_pages": [
+        723
+      ],
+      "scans": [
+        {
+          "file": "p0016.txt",
+          "page": 723,
+          "full": "scans/1896/pages/p0016-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1676,
+          "ocr_sha256": "34d4cde5f409723eaed524a11baa44ba5ca62d78d508d298168eee4aa4ef451a",
+          "pdf_page": 16,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3194,
+          "end": 3417,
+          "quote_original": "ца, или замѣняющаго его лица, зависитъ объявить подлежащей власти о послѣдовавшемъ нарушеніи. Тоже самое повторено и въ ст. 691 и 692 уст. лѣсн. изд. 1893 г. Наконецъ, и въ примѣчаніи къ ст. 1625 улож. о наказ. прямо выраже",
+          "act_code": "УЛ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3314,
+          "end": 3327,
+          "quote_original": "ст. 691 и 692",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3194,
+              "end": 3417,
+              "quote_original": "ца, или замѣняющаго его лица, зависитъ объявить подлежащей власти о послѣдовавшемъ нарушеніи. Тоже самое повторено и въ ст. 691 и 692 уст. лѣсн. изд. 1893 г. Наконецъ, и въ примѣчаніи къ ст. 1625 улож. о наказ. прямо выраже",
+              "act_code": "УЛ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-042:УЛ:698:text:1328",
+      "statute": "УЛ ст. 698",
+      "code": "УЛ",
+      "article": "ст. 698",
+      "decision_id": "1896-042",
+      "year": 1896,
+      "decision_number": 42,
+      "field": "text",
+      "start": 1328,
+      "end": 1335,
+      "quote_original": "ст. 698",
+      "context_original": "на губерн. по крестьянскимъ дѣламъ п иотствіяхъ коимъ по закону предоставлено окон чательное утвержден'е упомянутыхъ таксъ (тамъ же п. 3 и ст. 698 уст. лѣсн. изд. 1893 г.), и 3) что п и раз рѣшеніи, какъ дѣлъ< о проступкахъ, предусмотрѣнныхъ 145 —- 152 ст. уст. о нак., налаг. мир. суд.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b0804f49c4612bd08d5d56fc2132f0cd97283e92fcc9666fcf20381085e2cb74",
+      "headnote_sha256": "1a7ea460e46d98f6ae77b79a257761789973fb6d0a73cd068ada3fb34d062e20",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-042",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-042?mode=laws&c=%D0%A3%D0%9B&q=%D1%81%D1%82.+698&law=1896-042%3A%D0%A3%D0%9B%3A698%3Atext%3A1328&at=1328&end=1335",
+      "source_warning": null,
+      "passage_id": "1896-042:0-1905",
+      "sources": [
+        {
+          "page": 785,
+          "page_method": "header",
+          "file": "p0078.txt",
+          "start": 1328,
+          "end": 1335
+        }
+      ],
+      "printed_pages": [
+        785
+      ],
+      "scans": [
+        {
+          "file": "p0078.txt",
+          "page": 785,
+          "full": "scans/1896/pages/p0078-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1668,
+          "ocr_sha256": "a9c38f8f67b67fcd61da8303f740fdea9de4a48e1ad7cbc1644df6abb97d69e7",
+          "pdf_page": 78,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1208,
+          "end": 1425,
+          "quote_original": "ьянскимъ дѣламъ п иотствіяхъ коимъ по закону предоставлено окон чательное утвержден'е упомянутыхъ таксъ (тамъ же п. 3 и ст. 698 уст. лѣсн. изд. 1893 г.), и 3) что п и раз рѣшеніи, какъ дѣлъ< о проступкахъ, предусмотрѣ",
+          "act_code": "УЛ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1328,
+          "end": 1335,
+          "quote_original": "ст. 698",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1208,
+              "end": 1425,
+              "quote_original": "ьянскимъ дѣламъ п иотствіяхъ коимъ по закону предоставлено окон чательное утвержден'е упомянутыхъ таксъ (тамъ же п. 3 и ст. 698 уст. лѣсн. изд. 1893 г.), и 3) что п и раз рѣшеніи, какъ дѣлъ< о проступкахъ, предусмотрѣ",
+              "act_code": "УЛ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-029:УЛ:698:text:5502",
+      "statute": "УЛ ст. 698",
+      "code": "УЛ",
+      "article": "ст. 698",
+      "decision_id": "1897-029",
+      "year": 1897,
+      "decision_number": 29,
+      "field": "text",
+      "start": 5502,
+      "end": 5509,
+      "quote_original": "ст. 698",
+      "context_original": "убернскихъ по крестьянскимъ дѣламъ присутствіяхъ, коимъ по закону предоставлено окончательное утвержденіе упомянутыхъ таксъ (тамъ же п. 3 и ст. 698 уст. лѣсн., изд. 1893 г.), и 3) что при разрѣшеніи какъ дѣлъ о проступкахъ, предусмотрѣнныхъ 145—152 ст. уст. о нак., налаг. мир. суд., так",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "a3f9bfaf1420b1e9b93c23476406e8c94d813e1f9c5329cd05920f063bd701fd",
+      "headnote_sha256": "d44b75efcf9bc5a0433172a4ff93dfb1883a7622dde9eda1cff5b8616f21b2ab",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-029",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-029?mode=laws&c=%D0%A3%D0%9B&q=%D1%81%D1%82.+698&law=1897-029%3A%D0%A3%D0%9B%3A698%3Atext%3A5502&at=5502&end=5509",
+      "source_warning": null,
+      "passage_id": "1897-029:4209-5918",
+      "sources": [
+        {
+          "page": 106,
+          "page_method": "header",
+          "file": "p0064_L.txt",
+          "start": 5502,
+          "end": 5509
+        }
+      ],
+      "printed_pages": [
+        106
+      ],
+      "scans": [
+        {
+          "file": "p0064_L.txt",
+          "page": 106,
+          "full": "scans/1897/pages/p0064_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1569,
+          "ocr_sha256": "6b65da1c5a0e0c742c8c0ea7b91c9407718f10ed93454f08793093b8969de454",
+          "pdf_page": 127,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 5422,
+          "end": 5604,
+          "quote_original": "акону предоставлено окончательное утвержденіе упомянутыхъ таксъ (тамъ же п. 3 и ст. 698 уст. лѣсн., изд. 1893 г.), и 3) что при разрѣшеніи какъ дѣлъ о проступкахъ, предусмотрѣнныхъ 1",
+          "act_code": "УЛ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5502,
+          "end": 5509,
+          "quote_original": "ст. 698",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 5422,
+              "end": 5604,
+              "quote_original": "акону предоставлено окончательное утвержденіе упомянутыхъ таксъ (тамъ же п. 3 и ст. 698 уст. лѣсн., изд. 1893 г.), и 3) что при разрѣшеніи какъ дѣлъ о проступкахъ, предусмотрѣнныхъ 1",
+              "act_code": "УЛ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-028:УЛ:784–788:text:5101",
+      "statute": "УЛ ст. 784–788",
+      "code": "УЛ",
+      "article": "ст. 784–788",
+      "decision_id": "1897-028",
+      "year": 1897,
+      "decision_number": 28,
+      "field": "text",
+      "start": 5101,
+      "end": 5112,
+      "quote_original": "ст. 784—788",
+      "context_original": "ъ съ воспрещеніемъ рубки лѣса кромѣ того количества, которое необходимо для подержанія заведеннаго въ имѣніи хозяйства. Находя поэтому, что ст. 784—788 1 ч. VIII т. уст. лѣсн, а также 610 и 611 ст. уст. гр. суд. не имѣютъ примѣненія къ спорамъ, возникающимъ при межеваніи, и что въ этомъ пос",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "f3ee7fb09f3b37199d4d0aa6899e875a81787410cf5e91f3c95c060b416b1cc0",
+      "headnote_sha256": "8d8dfa59cc18ec5b79be82a6b75fd188f51cbcab58a2434ca418cf05c9a69d4b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-028",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-028?mode=laws&c=%D0%A3%D0%9B&q=%D1%81%D1%82.+784%E2%80%93788&law=1897-028%3A%D0%A3%D0%9B%3A784%E2%80%93788%3Atext%3A5101&at=5101&end=5112",
+      "source_warning": null,
+      "passage_id": "1897-028:4812-6056",
+      "sources": [
+        {
+          "page": 104,
+          "page_method": "header",
+          "file": "p0063_L.txt",
+          "start": 5101,
+          "end": 5112
+        }
+      ],
+      "printed_pages": [
+        104
+      ],
+      "scans": [
+        {
+          "file": "p0063_L.txt",
+          "page": 104,
+          "full": "scans/1897/pages/p0063_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1581,
+          "ocr_sha256": "d94c71529116ef4d0a3cb385fd38051c8a251b089ff6283d4c72943c4be9e0df",
+          "pdf_page": 125,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 5021,
+          "end": 5207,
+          "quote_original": " необходимо для подержанія заведеннаго въ имѣніи хозяйства. Находя поэтому, что ст. 784—788 1 ч. VIII т. уст. лѣсн, а также 610 и 611 ст. уст. гр. суд. не имѣютъ примѣненія къ спорамъ, в",
+          "act_code": "УЛ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5101,
+          "end": 5112,
+          "quote_original": "ст. 784—788",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 5021,
+              "end": 5207,
+              "quote_original": " необходимо для подержанія заведеннаго въ имѣніи хозяйства. Находя поэтому, что ст. 784—788 1 ч. VIII т. уст. лѣсн, а также 610 и 611 ст. уст. гр. суд. не имѣютъ примѣненія къ спорамъ, в",
+              "act_code": "УЛ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-028:УЛ:787:text:3260",
+      "statute": "УЛ ст. 787",
+      "code": "УЛ",
+      "article": "ст. 787",
+      "decision_id": "1897-028",
+      "year": 1897,
+      "decision_number": 28,
+      "field": "text",
+      "start": 3260,
+      "end": 3269,
+      "quote_original": "ст. 787 и",
+      "context_original": "я предъявленъ споръ. На основаніи 785 ст. такія лѣсныя дачи берутся подъ присмотръ полиціи совокупно съ мѣстнымъ лѣснымъ управленіемъ, а по ст. 787 изъ поступившаго въ присмотръ спорнаго лѣса до окончанія тяжбы не можетъ быть дозволяемо никакихъ порубокъ и отпусковъ лѣса, кромѣ развѣ изъ",
+      "association": "повторная ссылка с явным указанием на тот же акт",
+      "verification_status": "context_verified",
+      "source_sha256": "f3ee7fb09f3b37199d4d0aa6899e875a81787410cf5e91f3c95c060b416b1cc0",
+      "headnote_sha256": "8d8dfa59cc18ec5b79be82a6b75fd188f51cbcab58a2434ca418cf05c9a69d4b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-028",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-028?mode=laws&c=%D0%A3%D0%9B&q=%D1%81%D1%82.+787&law=1897-028%3A%D0%A3%D0%9B%3A787%3Atext%3A3260&at=3260&end=3269",
+      "source_warning": null,
+      "passage_id": "1897-028:2642-4102",
+      "sources": [
+        {
+          "page": 103,
+          "page_method": "header",
+          "file": "p0062_R.txt",
+          "start": 3260,
+          "end": 3269
+        }
+      ],
+      "printed_pages": [
+        103
+      ],
+      "scans": [
+        {
+          "file": "p0062_R.txt",
+          "page": 103,
+          "full": "scans/1897/pages/p0062_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1510,
+          "ocr_sha256": "d368c74344611fece250225bdf18829dd217e7ab92e51c6f769463ee786c7090",
+          "pdf_page": 124,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2918,
+          "end": 3039,
+          "quote_original": "въ 784—788 ст. уст. лѣсн. 1 ч. VIII т. изд. 1893 г. (ст. 681—685 изд. 1857 г.) содержатся правила сохраненія лѣсныхъ дачъ",
+          "act_code": "УЛ"
+        },
+        {
+          "kind": "repeat",
+          "field": "text",
+          "start": 3225,
+          "end": 3399,
+          "quote_original": "ѣстнымъ лѣснымъ управленіемъ, а по ст. 787 изъ поступившаго въ присмотръ спорнаго лѣса до окончанія тяжбы не можетъ быть дозволяемо никакихъ порубокъ и отпусковъ лѣса, кромѣ ",
+          "act_code": "УЛ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3260,
+          "end": 3269,
+          "quote_original": "ст. 787 и",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2918,
+              "end": 3039,
+              "quote_original": "въ 784—788 ст. уст. лѣсн. 1 ч. VIII т. изд. 1893 г. (ст. 681—685 изд. 1857 г.) содержатся правила сохраненія лѣсныхъ дачъ",
+              "act_code": "УЛ"
+            },
+            {
+              "kind": "repeat",
+              "field": "text",
+              "start": 3225,
+              "end": 3399,
+              "quote_original": "ѣстнымъ лѣснымъ управленіемъ, а по ст. 787 изъ поступившаго въ присмотръ спорнаго лѣса до окончанія тяжбы не можетъ быть дозволяемо никакихъ порубокъ и отпусковъ лѣса, кромѣ ",
+              "act_code": "УЛ"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

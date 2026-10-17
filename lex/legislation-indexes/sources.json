@@ -29,6 +29,31 @@
         "sha256": "c9efdee40d5994781d2c77a3aaea197388001d8d6ec76e585c362cb2bcd00067"
       },
       "trailing_blank_lines_removed": 1
+    },
+    {
+      "year": 1905,
+      "path": "legislation-indexes/1905.txt",
+      "sha256": "ec8e16f90923dc288eae0bc41e05926a9ef6c034b183c86159fd1fa76b74c01a",
+      "offset_unit": "Unicode code points; end exclusive",
+      "byte_length": 24623,
+      "origin_path": "lex/data/backmatter-1905.txt",
+      "origin_sha256": "60196f21130fe77110b29bce6f4c057e5144144140e6bc0c13a7413d3a68b61d",
+      "origin_start_offset": 9607,
+      "origin_start_line": 530,
+      "origin_stop_line_exclusive": 1542,
+      "trailing_whitespace_normalized": true,
+      "visual_review": {
+        "pdf_source_sha256": "23f76b0179fcf72db50890414293d1da880b76b877da7d1ec882c259e59ed3ee",
+        "pdf_pages": [
+          163,
+          164
+        ],
+        "printed_pages": [
+          "III",
+          "IV"
+        ],
+        "scope": "Рубрика Законов гражданских и отдельная строка1066⁸→83 проверены по изображению. Весь указатель по изображениям не сверялся."
+      }
     }
   ]
 }

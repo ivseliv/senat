@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.5.0",
-  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
   "resource": "corpus",
   "item": {
     "volumes": [
@@ -58,10 +58,11 @@
       "decisions": 384,
       "passages": 2152,
       "participants": 790,
-      "statute_mentions": 1991,
-      "legislation_acts": 21,
-      "legislation_citations": 1141,
-      "legislation_unresolved": 789,
+      "statute_mentions": 1969,
+      "legislation_acts": 29,
+      "legislation_citations": 1375,
+      "legislation_unresolved": 533,
+      "legislation_historical_references": 267,
       "scan_passage_refs": 3293,
       "precedent_references": 826,
       "editorial_analyses": 40,
@@ -87,6 +88,7 @@
       "ai_concepts"
     ],
     "precedents": "Переход устанавливается только по департаменту, году и номеру; неопределённые ссылки сохранены с контекстом без target_id. Старые пары cites не пригодны для переходов.",
+    "historical_legislation_references": "legislation/historical-references.json сохраняет записи предыдущих версий с прежними ID и местами. Они исключены из текущих ссылок и фасетов; отдельный счётчик legislation_historical_references считает только сохранённые записи.",
     "source_warning": "Непустая строка у пассажа сообщает об установленном дефекте порядка или атрибуции OCR. Его пояснение не индексируется в обогащённом поиске; исходный текст сохранён.",
     "guide_comparisons": "Редакционные сопоставления выбранных дел: закреплённые SHA полных текстов и буквальные цитаты со страницами. Не являются независимой юридической экспертизой или доказательством развития практики."
   }

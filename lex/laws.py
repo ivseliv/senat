@@ -125,7 +125,7 @@ def location_info(text, start, end, passages, manifest):
 
 
 def build_law_index(root=ROOT):
-    from law_attribution import apply_attributions, check_quote, sha, texts_by_id
+    from law_attribution import apply_attributions, check_quote, check_proof, sha, texts_by_id
     from urllib.parse import urlencode
     root = Path(root); data = root/'lex/data'
     source = apply_attributions(root)
@@ -204,6 +204,7 @@ def build_law_index(root=ROOT):
         row = make_row(doc,item['statute'],occurrence,'act_unknown')
         row.update(association='акт не установлен: опубликованного контекста и однозначных оснований недостаточно',
                    citation_status='Не включается в указатель конкретного акта.',mentions=item['mentions'],occurrences=occurrences)
+        if item.get('attribution_note'): row['attribution_note']=item['attribution_note']
         unresolved.append(row)
     unknown_count = sum(k.startswith('? ') for d in meta['decisions'] for k in d['statutes'])
     if unknown_count != len(unresolved): raise ValueError('Не все неопределённые ссылки показаны')
@@ -223,7 +224,34 @@ def build_law_index(root=ROOT):
                    remaining_legacy_occurrences=sum(r['mentions'] for r in unresolved),new_resolution_occurrences_by_method=dict(methods),
                    by_year={str(v['year']):dict(resolved=sum(ident.startswith(str(v['year'])) for ident,k in new_keys),
                                                unresolved=sum(r['year']==v['year'] for r in unresolved)) for v in meta['volumes']})
-    output = dict(version=2,sources=catalog['sources'],acts=output_acts,
+    # Старые ссылки содержат ID/диапазоны прежнего снимка. Не включаем их
+    # в текущие подсчёты, но сохраняем точное место с явной пометкой версии.
+    history_path=root/'lex/law-reference-history.json'
+    history=[]
+    if history_path.exists():
+        active_ids={r['id'] for r in citations+unresolved}
+        seen_history=set()
+        for old in read_json(history_path)['references']:
+            if old['id'] in seen_history: raise ValueError('Повтор сохранённой законодательной ссылки')
+            seen_history.add(old['id'])
+            if old['id'] in active_ids: continue
+            doc=docs[old['decision_id']]
+            if sha(texts[doc['id']])!=old['source_sha256'] or sha(doc['headnote'])!=old['headnote_sha256']:
+                raise ValueError('Устарел источник сохранённой законодательной ссылки')
+            fields={'text':texts[doc['id']], 'headnote':doc['headnote']}
+            if old['field'] not in fields: raise ValueError('Неизвестное поле сохранённой ссылки')
+            original=fields[old['field']]
+            check_quote(original,old)
+            for proof in old.get('evidence',[]): check_proof(root,fields,proof,old['code'])
+            for occurrence in old.get('occurrences',[]):
+                if occurrence['field'] not in fields: raise ValueError('Неизвестное поле сохранённого вхождения')
+                check_quote(fields[occurrence['field']],occurrence)
+                for proof in occurrence.get('evidence',[]): check_proof(root,fields,proof,old['code'])
+            current=[{k:r[k] for k in ('id','code','article','passage_url')}
+                     for r in citations+unresolved if r['decision_id']==old['decision_id'] and r['article']==old['article']]
+            old=dict(old,historical_note='Сохранённая ссылка предыдущей версии. Акт мог быть уточнён; эта запись не входит в текущую статистику.',current_references=current)
+            history.append(old)
+    output = dict(version=2,sources=catalog['sources'],acts=output_acts,historical_references=history,
         citations=sorted(citations,key=lambda r:(r['code'],r['article'],r['year'],r['decision_number'],r['start'])),
         unresolved=unresolved,attribution_summary=summary,corrected_legacy_assignments=corrected,
         unknown_act_mentions=unknown_count,unlocated_known_mentions=unlocated,

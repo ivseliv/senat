@@ -1,13 +1,13 @@
 {
   "api_version": "v1",
-  "contract_version": "1.5.0",
-  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
   "resource": "legislation-citations",
   "scope": {
     "code": "ГКП",
     "id": "act-8a599d728823"
   },
-  "count": 61,
+  "count": 65,
   "items": [
     {
       "id": "1904-065:ГКП:1007:text:226",
@@ -411,7 +411,7 @@
       "occurrences": []
     },
     {
-      "id": "1905-032:ГКП:1108:text:5052",
+      "id": "1905-032:ГКП:1108:text:2130",
       "statute": "ГКП ст. 1108",
       "code": "ГКП",
       "article": "ст. 1108",
@@ -419,46 +419,75 @@
       "year": 1905,
       "decision_number": 32,
       "field": "text",
-      "start": 5052,
-      "end": 5060,
-      "quote_original": "ст. 1108",
-      "context_original": "ать на себя обязательства по имуществу; принятыя же ею на себя, вопреки 2 п. 184 ст. гр. улож., обязательства признаются недѣйствительными (ст. 1108 гр. код.). Что касается недѣйствительности имущественныхъ договоровъ, заключенныхъ безъ содѣйствія или дозволенія мужа, и проистекающихъ из",
-      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
-      "verification_status": "legacy_unverified",
+      "start": 2130,
+      "end": 2151,
+      "quote_original": "ст. 1108, 1124 и 1125",
+      "context_original": "онной жалобѣ помощникъ присяжнаго повѣреннаго Гольдбаумъ, ходатайствуя отъ имени наслѣдниковъ Ляндау объ отмѣнѣ рѣшенія палаты по нарушенію ст. 1108, 1124 и 1125 код. Нап. и 184 и 188 ст. гр. улож., объясняетъ, что ограниченіе дѣеспособности замужней женщины установлено закономъ лишь въ интересахъ об",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
       "source_sha256": "4cc0494ea1ab11d8ff83b6909ff74ef439f1f5b59ce16df8c3cf4ba44bd05eaf",
       "headnote_sha256": "563c575f742feeec834d2c8665075b5fb875074db759fd3671d16d153df2f605",
       "number_status": "ocr_unverified",
-      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1108&law=1905-032%3A%D0%93%D0%9A%D0%9F%3A1108%3Atext%3A5052&at=5052&end=5060",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1108&law=1905-032%3A%D0%93%D0%9A%D0%9F%3A1108%3Atext%3A2130&at=2130&end=2151",
       "source_warning": null,
-      "passage_id": "1905-032:4487-5859",
+      "passage_id": "1905-032:1637-3358",
       "sources": [
         {
-          "page": 86,
+          "page": 85,
           "page_method": "header",
-          "file": "p0044_L.txt",
-          "start": 5052,
-          "end": 5060
+          "file": "p0043_R.txt",
+          "start": 2130,
+          "end": 2151
         }
       ],
       "printed_pages": [
-        86
+        85
       ],
       "scans": [
         {
-          "file": "p0044_L.txt",
-          "page": 86,
-          "full": "scans/1905/pages/p0044_L.webp",
+          "file": "p0043_R.txt",
+          "page": 85,
+          "full": "scans/1905/pages/p0043_R.webp",
           "width": 1100,
-          "height": 1531,
-          "ocr_sha256": "9b8c90880f53c9cd590d6272d001b1390e157075cb8a7d05d84d09964948825f",
+          "height": 1529,
+          "ocr_sha256": "e3614c278315eda29d37cd9db9e893982392a69e2c2df2190e40fc187e6e5e4d",
           "kind": "page"
         }
       ],
       "scan_available": true,
-      "evidence": [],
-      "occurrences": []
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "ГКП",
+          "field": "text",
+          "start": 2130,
+          "end": 2161,
+          "quote_original": "ст. 1108, 1124 и 1125 код. Нап."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2130,
+          "end": 2151,
+          "quote_original": "ст. 1108, 1124 и 1125",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "ГКП",
+              "field": "text",
+              "start": 2130,
+              "end": 2161,
+              "quote_original": "ст. 1108, 1124 и 1125 код. Нап."
+            }
+          ],
+          "attribution_note": "Кодекс Наполеона прямо назван; польский контекст установлен всем делом и Варшавской судебной палатой. Уложение 1825 года в решении названо отдельно."
+        }
+      ],
+      "attribution_note": "Кодекс Наполеона прямо назван; польский контекст установлен всем делом и Варшавской судебной палатой. Уложение 1825 года в решении названо отдельно."
     },
     {
       "id": "1905-032:ГКП:1115:text:5426",
@@ -559,6 +588,164 @@
       "scan_available": true,
       "evidence": [],
       "occurrences": []
+    },
+    {
+      "id": "1905-032:ГКП:1124:text:2130",
+      "statute": "ГКП ст. 1124",
+      "code": "ГКП",
+      "article": "ст. 1124",
+      "decision_id": "1905-032",
+      "year": 1905,
+      "decision_number": 32,
+      "field": "text",
+      "start": 2130,
+      "end": 2151,
+      "quote_original": "ст. 1108, 1124 и 1125",
+      "context_original": "онной жалобѣ помощникъ присяжнаго повѣреннаго Гольдбаумъ, ходатайствуя отъ имени наслѣдниковъ Ляндау объ отмѣнѣ рѣшенія палаты по нарушенію ст. 1108, 1124 и 1125 код. Нап. и 184 и 188 ст. гр. улож., объясняетъ, что ограниченіе дѣеспособности замужней женщины установлено закономъ лишь въ интересахъ об",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "4cc0494ea1ab11d8ff83b6909ff74ef439f1f5b59ce16df8c3cf4ba44bd05eaf",
+      "headnote_sha256": "563c575f742feeec834d2c8665075b5fb875074db759fd3671d16d153df2f605",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1124&law=1905-032%3A%D0%93%D0%9A%D0%9F%3A1124%3Atext%3A2130&at=2130&end=2151",
+      "source_warning": null,
+      "passage_id": "1905-032:1637-3358",
+      "sources": [
+        {
+          "page": 85,
+          "page_method": "header",
+          "file": "p0043_R.txt",
+          "start": 2130,
+          "end": 2151
+        }
+      ],
+      "printed_pages": [
+        85
+      ],
+      "scans": [
+        {
+          "file": "p0043_R.txt",
+          "page": 85,
+          "full": "scans/1905/pages/p0043_R.webp",
+          "width": 1100,
+          "height": 1529,
+          "ocr_sha256": "e3614c278315eda29d37cd9db9e893982392a69e2c2df2190e40fc187e6e5e4d",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "ГКП",
+          "field": "text",
+          "start": 2130,
+          "end": 2161,
+          "quote_original": "ст. 1108, 1124 и 1125 код. Нап."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2130,
+          "end": 2151,
+          "quote_original": "ст. 1108, 1124 и 1125",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "ГКП",
+              "field": "text",
+              "start": 2130,
+              "end": 2161,
+              "quote_original": "ст. 1108, 1124 и 1125 код. Нап."
+            }
+          ],
+          "attribution_note": "Кодекс Наполеона прямо назван; польский контекст установлен всем делом и Варшавской судебной палатой. Уложение 1825 года в решении названо отдельно."
+        }
+      ],
+      "attribution_note": "Кодекс Наполеона прямо назван; польский контекст установлен всем делом и Варшавской судебной палатой. Уложение 1825 года в решении названо отдельно."
+    },
+    {
+      "id": "1905-032:ГКП:1125:text:2130",
+      "statute": "ГКП ст. 1125",
+      "code": "ГКП",
+      "article": "ст. 1125",
+      "decision_id": "1905-032",
+      "year": 1905,
+      "decision_number": 32,
+      "field": "text",
+      "start": 2130,
+      "end": 2151,
+      "quote_original": "ст. 1108, 1124 и 1125",
+      "context_original": "онной жалобѣ помощникъ присяжнаго повѣреннаго Гольдбаумъ, ходатайствуя отъ имени наслѣдниковъ Ляндау объ отмѣнѣ рѣшенія палаты по нарушенію ст. 1108, 1124 и 1125 код. Нап. и 184 и 188 ст. гр. улож., объясняетъ, что ограниченіе дѣеспособности замужней женщины установлено закономъ лишь въ интересахъ об",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "4cc0494ea1ab11d8ff83b6909ff74ef439f1f5b59ce16df8c3cf4ba44bd05eaf",
+      "headnote_sha256": "563c575f742feeec834d2c8665075b5fb875074db759fd3671d16d153df2f605",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1125&law=1905-032%3A%D0%93%D0%9A%D0%9F%3A1125%3Atext%3A2130&at=2130&end=2151",
+      "source_warning": null,
+      "passage_id": "1905-032:1637-3358",
+      "sources": [
+        {
+          "page": 85,
+          "page_method": "header",
+          "file": "p0043_R.txt",
+          "start": 2130,
+          "end": 2151
+        }
+      ],
+      "printed_pages": [
+        85
+      ],
+      "scans": [
+        {
+          "file": "p0043_R.txt",
+          "page": 85,
+          "full": "scans/1905/pages/p0043_R.webp",
+          "width": 1100,
+          "height": 1529,
+          "ocr_sha256": "e3614c278315eda29d37cd9db9e893982392a69e2c2df2190e40fc187e6e5e4d",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "ГКП",
+          "field": "text",
+          "start": 2130,
+          "end": 2161,
+          "quote_original": "ст. 1108, 1124 и 1125 код. Нап."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2130,
+          "end": 2151,
+          "quote_original": "ст. 1108, 1124 и 1125",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "ГКП",
+              "field": "text",
+              "start": 2130,
+              "end": 2161,
+              "quote_original": "ст. 1108, 1124 и 1125 код. Нап."
+            }
+          ],
+          "attribution_note": "Кодекс Наполеона прямо назван; польский контекст установлен всем делом и Варшавской судебной палатой. Уложение 1825 года в решении названо отдельно."
+        }
+      ],
+      "attribution_note": "Кодекс Наполеона прямо назван; польский контекст установлен всем делом и Варшавской судебной палатой. Уложение 1825 года в решении названо отдельно."
     },
     {
       "id": "1904-049:ГКП:1135:text:901",
@@ -761,7 +948,7 @@
       "occurrences": []
     },
     {
-      "id": "1897-048:ГКП:1290:text:1131",
+      "id": "1897-048:ГКП:1290:text:2353",
       "statute": "ГКП ст. 1290",
       "code": "ГКП",
       "article": "ст. 1290",
@@ -769,50 +956,91 @@
       "year": 1897,
       "decision_number": 48,
       "field": "text",
-      "start": 1131,
-      "end": 1139,
-      "quote_original": "ст. 1290",
-      "context_original": "ательно, не существовало указаннаго въ ст. 1291 гр. код. условія для допущенія зачета. Въ кассаціонной жалобѣ Натансонъ объясняетъ, что, по ст. 1290 и 1295 гр. код., зачетъ долговъ долженъ быть допущенъ при одновременномъ существованіи ихъ и что не допускается только зачетъ долга возникш",
-      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
-      "verification_status": "legacy_unverified",
+      "start": 2353,
+      "end": 2368,
+      "quote_original": "ст. 1290 и 1291",
+      "context_original": "долгами, возникшими послѣ извѣщенія, въ этомъ законѣ подразумѣваются непремѣнно такіе долги, которые способны къ зачету по опредѣленнымъ въ ст. 1290 и 1291 условіямъ; слѣдовательно, если начало существованія даннаго долга и предшествуетъ извѣщенію о передачѣ права на оный, но долгъ этотъ являет",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
       "source_sha256": "143b87103280973bd4c50176635b487e27572f77cd24983383b4ab87b3621be3",
       "headnote_sha256": "0812e0b96f611798355a8c501af2087307bbc9375436df2df2bad2b1f43c863a",
       "number_status": "ocr_unverified",
-      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-048",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-048?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1290&law=1897-048%3A%D0%93%D0%9A%D0%9F%3A1290%3Atext%3A1131&at=1131&end=1139",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-048?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1290&law=1897-048%3A%D0%93%D0%9A%D0%9F%3A1290%3Atext%3A2353&at=2353&end=2368",
       "source_warning": null,
-      "passage_id": "1897-048:0-1653",
+      "passage_id": "1897-048:1417-3283",
       "sources": [
         {
-          "page": 162,
+          "page": 163,
           "page_method": "header",
-          "file": "p0092_L.txt",
-          "start": 1131,
-          "end": 1139
+          "file": "p0092_R.txt",
+          "start": 2353,
+          "end": 2368
         }
       ],
       "printed_pages": [
-        162
+        163
       ],
       "scans": [
         {
-          "file": "p0092_L.txt",
-          "page": 162,
-          "full": "scans/1897/pages/p0092_L-b8b267d5742f75d0.webp",
+          "file": "p0092_R.txt",
+          "page": 163,
+          "full": "scans/1897/pages/p0092_R-b8b267d5742f75d0.webp",
           "width": 1100,
-          "height": 1571,
-          "ocr_sha256": "ad8f5faabefec51120291dfbedf7d47f5e57bbb3188428566c3e1ce650e8a7e1",
-          "pdf_page": 183,
+          "height": 1503,
+          "ocr_sha256": "722a4e34f37829c2b9e42b091d30818a028121153510dd768b9ad738472ed4db",
+          "pdf_page": 184,
           "kind": "page"
         }
       ],
       "scan_available": true,
-      "evidence": [],
-      "occurrences": []
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1897.txt",
+          "source_sha256": "942b1330f3c0919f3d97ce8b33f6499c064fb061ba4669c0f2a9bbcab05dc60b",
+          "start": 12579,
+          "end": 12601,
+          "quote_original": "1290, 1291, 1295 — 48.",
+          "heading": {
+            "start": 12464,
+            "end": 12484,
+            "quote_original": "Гражданскій кодексъ."
+          },
+          "edition_continuation": null,
+          "act_code": "ГКП"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2353,
+          "end": 2368,
+          "quote_original": "ст. 1290 и 1291",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1897.txt",
+              "source_sha256": "942b1330f3c0919f3d97ce8b33f6499c064fb061ba4669c0f2a9bbcab05dc60b",
+              "start": 12579,
+              "end": 12601,
+              "quote_original": "1290, 1291, 1295 — 48.",
+              "heading": {
+                "start": 12464,
+                "end": 12484,
+                "quote_original": "Гражданскій кодексъ."
+              },
+              "edition_continuation": null,
+              "act_code": "ГКП"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1897-048:ГКП:1291:text:1030",
+      "id": "1897-048:ГКП:1291:text:2353",
       "statute": "ГКП ст. 1291",
       "code": "ГКП",
       "article": "ст. 1291",
@@ -820,47 +1048,88 @@
       "year": 1897,
       "decision_number": 48,
       "field": "text",
-      "start": 1030,
-      "end": 1038,
-      "quote_original": "ст. 1291",
-      "context_original": "ъ Натансона квартирной платы, должные Бальчинскою Натансону 600 р. уплатѣ еще не подлежали, а, слѣдовательно, не существовало указаннаго въ ст. 1291 гр. код. условія для допущенія зачета. Въ кассаціонной жалобѣ Натансонъ объясняетъ, что, по ст. 1290 и 1295 гр. код., зачетъ долговъ должен",
-      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
-      "verification_status": "legacy_unverified",
+      "start": 2353,
+      "end": 2368,
+      "quote_original": "ст. 1290 и 1291",
+      "context_original": "долгами, возникшими послѣ извѣщенія, въ этомъ законѣ подразумѣваются непремѣнно такіе долги, которые способны къ зачету по опредѣленнымъ въ ст. 1290 и 1291 условіямъ; слѣдовательно, если начало существованія даннаго долга и предшествуетъ извѣщенію о передачѣ права на оный, но долгъ этотъ являет",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
       "source_sha256": "143b87103280973bd4c50176635b487e27572f77cd24983383b4ab87b3621be3",
       "headnote_sha256": "0812e0b96f611798355a8c501af2087307bbc9375436df2df2bad2b1f43c863a",
       "number_status": "ocr_unverified",
-      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-048",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-048?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1291&law=1897-048%3A%D0%93%D0%9A%D0%9F%3A1291%3Atext%3A1030&at=1030&end=1038",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-048?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1291&law=1897-048%3A%D0%93%D0%9A%D0%9F%3A1291%3Atext%3A2353&at=2353&end=2368",
       "source_warning": null,
-      "passage_id": "1897-048:0-1653",
+      "passage_id": "1897-048:1417-3283",
       "sources": [
         {
-          "page": 162,
+          "page": 163,
           "page_method": "header",
-          "file": "p0092_L.txt",
-          "start": 1030,
-          "end": 1038
+          "file": "p0092_R.txt",
+          "start": 2353,
+          "end": 2368
         }
       ],
       "printed_pages": [
-        162
+        163
       ],
       "scans": [
         {
-          "file": "p0092_L.txt",
-          "page": 162,
-          "full": "scans/1897/pages/p0092_L-b8b267d5742f75d0.webp",
+          "file": "p0092_R.txt",
+          "page": 163,
+          "full": "scans/1897/pages/p0092_R-b8b267d5742f75d0.webp",
           "width": 1100,
-          "height": 1571,
-          "ocr_sha256": "ad8f5faabefec51120291dfbedf7d47f5e57bbb3188428566c3e1ce650e8a7e1",
-          "pdf_page": 183,
+          "height": 1503,
+          "ocr_sha256": "722a4e34f37829c2b9e42b091d30818a028121153510dd768b9ad738472ed4db",
+          "pdf_page": 184,
           "kind": "page"
         }
       ],
       "scan_available": true,
-      "evidence": [],
-      "occurrences": []
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1897.txt",
+          "source_sha256": "942b1330f3c0919f3d97ce8b33f6499c064fb061ba4669c0f2a9bbcab05dc60b",
+          "start": 12579,
+          "end": 12601,
+          "quote_original": "1290, 1291, 1295 — 48.",
+          "heading": {
+            "start": 12464,
+            "end": 12484,
+            "quote_original": "Гражданскій кодексъ."
+          },
+          "edition_continuation": null,
+          "act_code": "ГКП"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2353,
+          "end": 2368,
+          "quote_original": "ст. 1290 и 1291",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1897.txt",
+              "source_sha256": "942b1330f3c0919f3d97ce8b33f6499c064fb061ba4669c0f2a9bbcab05dc60b",
+              "start": 12579,
+              "end": 12601,
+              "quote_original": "1290, 1291, 1295 — 48.",
+              "heading": {
+                "start": 12464,
+                "end": 12484,
+                "quote_original": "Гражданскій кодексъ."
+              },
+              "edition_continuation": null,
+              "act_code": "ГКП"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "1897-048:ГКП:1295:text:1498",
@@ -1515,7 +1784,7 @@
       "occurrences": []
     },
     {
-      "id": "1905-033:ГКП:1966:text:1312",
+      "id": "1905-033:ГКП:1966:text:2755",
       "statute": "ГКП ст. 1966",
       "code": "ГКП",
       "article": "ст. 1966",
@@ -1523,46 +1792,75 @@
       "year": 1905,
       "decision_number": 33,
       "field": "text",
-      "start": 1312,
-      "end": 1320,
-      "quote_original": "1966 ст.",
-      "context_original": "тельствомъ, имѣютъ свой утвержденный правительствомъ уставъ, и поэтому вытекающіе изъ означеннаго спорта иски должны пользоваться, согласно 1966 ст. гр. код., правомъ судебной защиты. Признавъ, засимъ, второе возраженіе отвѣтчика незаслуживающимъ уваженія, мировой съѣздъ присудилъ съ ска",
-      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
-      "verification_status": "legacy_unverified",
+      "start": 2755,
+      "end": 2763,
+      "quote_original": "ст. 1966",
+      "context_original": "Не касаясь въ настоящее время невозбуждаемаго настоящимъ дѣломъ вопроса о томъ, не слѣдовало-ли признать, что, по законодательнымъ мотивамъ ст. 1966 (Locré т. 15 стр. 171 и слѣд.), истинный смыслъ этой статьи относитъ ее и къ договору пари между участниками въ перечисленныхъ въ ней играх",
+      "association": "повторная ссылка с явным указанием на тот же акт",
+      "verification_status": "context_verified",
       "source_sha256": "1217fb7249ebe953bcf39c4228f5913268c99f87fe5895d3c7e0736da59ecda6",
       "headnote_sha256": "38d45dff3f81c9176c9fbec5a11ab297b1aaef810ffb4dd0e70dddff938bea32",
       "number_status": "ocr_unverified",
-      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-033",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-033?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1966&law=1905-033%3A%D0%93%D0%9A%D0%9F%3A1966%3Atext%3A1312&at=1312&end=1320",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-033?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+1966&law=1905-033%3A%D0%93%D0%9A%D0%9F%3A1966%3Atext%3A2755&at=2755&end=2763",
       "source_warning": null,
-      "passage_id": "1905-033:0-1515",
+      "passage_id": "1905-033:2385-4034",
       "sources": [
         {
-          "page": 87,
+          "page": 88,
           "page_method": "header",
-          "file": "p0044_R.txt",
-          "start": 1312,
-          "end": 1320
+          "file": "p0045_L.txt",
+          "start": 2755,
+          "end": 2763
         }
       ],
       "printed_pages": [
-        87
+        88
       ],
       "scans": [
         {
-          "file": "p0044_R.txt",
-          "page": 87,
-          "full": "scans/1905/pages/p0044_R.webp",
+          "file": "p0045_L.txt",
+          "page": 88,
+          "full": "scans/1905/pages/p0045_L.webp",
           "width": 1100,
-          "height": 1531,
-          "ocr_sha256": "df3caaafa9b609ee44096e835db6a2344f405275d56a6e5a86c36277345910df",
+          "height": 1537,
+          "ocr_sha256": "5f14fea9f76f64c71128be0c1c5e3c454c606117a13a9263d9fc8ccbb611eda2",
           "kind": "page"
         }
       ],
       "scan_available": true,
-      "evidence": [],
-      "occurrences": []
+      "evidence": [
+        {
+          "kind": "repeat",
+          "act_code": "ГКП",
+          "field": "text",
+          "start": 1312,
+          "end": 1329,
+          "quote_original": "1966 ст. гр. код."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2755,
+          "end": 2763,
+          "quote_original": "ст. 1966",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "ГКП",
+              "field": "text",
+              "start": 1312,
+              "end": 1329,
+              "quote_original": "1966 ст. гр. код."
+            }
+          ],
+          "attribution_note": "Польский контекст установлен делом Варшавского скакового общества и судами Варшавы; указан французский законодательный источник Locré. Цепочка ссылок повторяет прямо названную статью1966 гр.кодекса."
+        }
+      ],
+      "attribution_note": "Польский контекст установлен делом Варшавского скакового общества и судами Варшавы; указан французский законодательный источник Locré. Цепочка ссылок повторяет прямо названную статью1966 гр.кодекса."
     },
     {
       "id": "1897-041:ГКП:2038:text:1418",
@@ -1664,6 +1962,83 @@
       "scan_available": true,
       "evidence": [],
       "occurrences": []
+    },
+    {
+      "id": "1905-020:ГКП:2220:text:2706",
+      "statute": "ГКП ст. 2220",
+      "code": "ГКП",
+      "article": "ст. 2220",
+      "decision_id": "1905-020",
+      "year": 1905,
+      "decision_number": 20,
+      "field": "text",
+      "start": 2706,
+      "end": 2714,
+      "quote_original": "ст. 2220",
+      "context_original": "ъ указать, что хотя въ нашемъ законодательствѣ не содержится, какъ въ нѣкоторыхъ иностранныхъ законодательствахъ и въ гражданскомъ кодексѣ (ст. 2220), дѣйствующемъ въ Царствѣ Польскомъ, прямаго воспрещенія предварительныхъ соглашеній объ отказѣ отъ давности или объ измѣненіи установленны",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "8375740ab320ba693faa10b9144cc24320d91178bd3b6f03c507b9c82b959d8e",
+      "headnote_sha256": "cac2b62ea3f5a7a98837d26df40040f9c6171eaa0a9c05c91a42f6923e97daec",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-020",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-020?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+2220&law=1905-020%3A%D0%93%D0%9A%D0%9F%3A2220%3Atext%3A2706&at=2706&end=2714",
+      "source_warning": null,
+      "passage_id": "1905-020:1534-3386",
+      "sources": [
+        {
+          "page": 49,
+          "page_method": "header",
+          "file": "p0025_R.txt",
+          "start": 2706,
+          "end": 2714
+        }
+      ],
+      "printed_pages": [
+        49
+      ],
+      "scans": [
+        {
+          "file": "p0025_R.txt",
+          "page": 49,
+          "full": "scans/1905/pages/p0025_R.webp",
+          "width": 1100,
+          "height": 1522,
+          "ocr_sha256": "ddbedb1fa882a0f4fcf6e8643800ec39878eaf4084890c3977ca0657ae215459",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "ГКП",
+          "field": "text",
+          "start": 2301,
+          "end": 3114,
+          "quote_original": "утвердительнаго отвѣта, слѣдуетъ-ли признать правильнымъ и опредѣленіе мировымъ съѣздомъ времени, съ котораго давностный срокъ по сему дѣлу долженъ быть исчисленъ? Обращаясь къ разрѣшенію перваго вопроса, Правительствующій Сенатъ, прежде всего, считаетъ необходимымъ указать, что хотя въ нашемъ законодательствѣ не содержится, какъ въ нѣкоторыхъ иностранныхъ законодательствахъ и въ гражданскомъ кодексѣ (ст. 2220), дѣйствующемъ въ Царствѣ Польскомъ, прямаго воспрещенія предварительныхъ соглашеній объ отказѣ отъ давности или объ измѣненіи установленныхъ для нея сроковъ, но тѣмъ не менѣе недопущеніе такихъ соглашеній, какъ общее правило, съ несомнѣнностью само собою вытекаетъ (ст. 9 уст. гр. суд.) изъ цѣли, руководившей и нашего законодателя при установленіи давности. Имъ при этомъ имѣлось въ виду, главнымъ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2706,
+          "end": 2714,
+          "quote_original": "ст. 2220",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "ГКП",
+              "field": "text",
+              "start": 2301,
+              "end": 3114,
+              "quote_original": "утвердительнаго отвѣта, слѣдуетъ-ли признать правильнымъ и опредѣленіе мировымъ съѣздомъ времени, съ котораго давностный срокъ по сему дѣлу долженъ быть исчисленъ? Обращаясь къ разрѣшенію перваго вопроса, Правительствующій Сенатъ, прежде всего, считаетъ необходимымъ указать, что хотя въ нашемъ законодательствѣ не содержится, какъ въ нѣкоторыхъ иностранныхъ законодательствахъ и въ гражданскомъ кодексѣ (ст. 2220), дѣйствующемъ въ Царствѣ Польскомъ, прямаго воспрещенія предварительныхъ соглашеній объ отказѣ отъ давности или объ измѣненіи установленныхъ для нея сроковъ, но тѣмъ не менѣе недопущеніе такихъ соглашеній, какъ общее правило, съ несомнѣнностью само собою вытекаетъ (ст. 9 уст. гр. суд.) изъ цѣли, руководившей и нашего законодателя при установленіи давности. Имъ при этомъ имѣлось въ виду, главнымъ"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "1905-057:ГКП:2265:text:685",
@@ -2619,6 +2994,83 @@
       "scan_available": true,
       "evidence": [],
       "occurrences": []
+    },
+    {
+      "id": "1905-006:ГКП:789:text:1859",
+      "statute": "ГКП ст. 789",
+      "code": "ГКП",
+      "article": "ст. 789",
+      "decision_id": "1905-006",
+      "year": 1905,
+      "decision_number": 6,
+      "field": "text",
+      "start": 1859,
+      "end": 1868,
+      "quote_original": "ст. 789 и",
+      "context_original": "аніе имуществами, правами и исками умершаго, принимая на себя и всѣ обремененія наслѣдства. По буквѣ этой статьи, могло бы казаться, что въ ст. 789 идетъ лишь рѣчь о потерѣ со стороны наслѣдника права выбора между принятіемъ и отреченіемъ отъ наслѣдства, а потому, вступивъ, въ силу 724 ст",
+      "association": "повторная ссылка с явным указанием на тот же акт",
+      "verification_status": "context_verified",
+      "source_sha256": "96cb1a9e40acffef54cdafb73c208af3577199db321dfed6f2523a5e4ac300cf",
+      "headnote_sha256": "7f1c76da9302edcb5a5e93600dfa4617625bb340a04743c0685097e64d28513b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-006",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-006?mode=laws&c=%D0%93%D0%9A%D0%9F&q=%D1%81%D1%82.+789&law=1905-006%3A%D0%93%D0%9A%D0%9F%3A789%3Atext%3A1859&at=1859&end=1868",
+      "source_warning": null,
+      "passage_id": "1905-006:1551-3344",
+      "sources": [
+        {
+          "page": 12,
+          "page_method": "header",
+          "file": "p0007_L.txt",
+          "start": 1859,
+          "end": 1868
+        }
+      ],
+      "printed_pages": [
+        12
+      ],
+      "scans": [
+        {
+          "file": "p0007_L.txt",
+          "page": 12,
+          "full": "scans/1905/pages/p0007_L.webp",
+          "width": 1100,
+          "height": 1519,
+          "ocr_sha256": "1dbc465920e6d269a107a5cab7abbdc301298dbd395218ff5aff8c2c081586e6",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "repeat",
+          "act_code": "ГКП",
+          "field": "text",
+          "start": 241,
+          "end": 281,
+          "quote_original": "789 ст. гражд. кодекса Царства Польскаго"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1859,
+          "end": 1868,
+          "quote_original": "ст. 789 и",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "ГКП",
+              "field": "text",
+              "start": 241,
+              "end": 281,
+              "quote_original": "789 ст. гражд. кодекса Царства Польскаго"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "1905-091:ГКП:815:text:3038",

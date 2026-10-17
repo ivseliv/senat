@@ -5,7 +5,7 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
-from law_attribution import apply_attributions, check_quote, sha, texts_by_id
+from law_attribution import apply_attributions, check_quote, sha, statute_digest, texts_by_id
 from laws import build_law_index, context
 
 ROOT=Path(__file__).resolve().parent.parent
@@ -55,7 +55,7 @@ class AttributionTest(unittest.TestCase):
 
     def test_distinct_acts_and_private_reference_stay_distinct(self):
         doc={d['id']:d for d in self.meta['decisions']}
-        self.assertIn('? ст. 497–500',doc['1897-014']['statutes'])
+        self.assertIn('УСТ ст. 497–500',doc['1897-014']['statutes'])
         self.assertIn('УСТ ст. 538',doc['1897-014']['statutes'])
         self.assertNotIn('УГС ст. 497–500',doc['1897-014']['statutes'])
         self.assertIn('? ст. 39',doc['1904-002']['statutes']) # Устав акционерного общества.
@@ -64,6 +64,33 @@ class AttributionTest(unittest.TestCase):
         # Article numbers are not silently repaired or collapsed to a base number.
         self.assertIn('УГС ст. 3656',doc['1896-049']['statutes'])
         self.assertTrue(any('¹' in r['article'] for r in self.laws['citations']))
+
+    def test_same_number_can_split_between_acts_and_appendices_are_qualified(self):
+        row=next(r for r in self.source['resolutions'] if r['decision_id']=='1904-060' and r['from_statute']=='? ст. 57')
+        self.assertEqual({t['code']:t['mentions'] for t in row['targets']},{'ОГЗ':1,'УЖД':1})
+        selected=[r for r in self.laws['citations'] if (r['decision_id'],r['statute']) in
+                  [('1897-014','УГС ст. 22–25'),('1905-054','УПШ ст. 161'),('1904-071','ЗС ст. 857')]]
+        self.assertEqual(len(selected),3)
+        self.assertTrue(all('прилож' in r['attribution_note'].lower() for r in selected))
+
+    def test_previous_reference_urls_keep_exact_sources_and_current_targets(self):
+        history=self.laws['historical_references'];self.assertTrue(history)
+        active={r['id']:r for r in self.laws['citations']+self.laws['unresolved']}
+        docs={d['id']:d for d in self.meta['decisions']}
+        self.assertEqual(len(history),len({r['id'] for r in history}))
+        for row in history:
+            self.assertNotIn(row['id'],active)
+            self.assertTrue(row['historical_note'])
+            self.assertTrue(row['current_references'])
+            fields={'text':self.texts[row['decision_id']],'headnote':docs[row['decision_id']]['headnote']}
+            check_quote(fields[row['field']],row)
+            self.assertEqual(row['source_sha256'],sha(fields['text']))
+            self.assertEqual(row['headnote_sha256'],sha(fields['headnote']))
+            for ref in row['current_references']:
+                current=active[ref['id']]
+                self.assertEqual(current['decision_id'],row['decision_id'])
+                self.assertEqual(current['article'],row['article'])
+                self.assertEqual(ref,{k:current[k] for k in ('id','code','article','passage_url')})
 
     def test_exact_citation_and_source_field(self):
         docs={d['id']:d for d in self.meta['decisions']}
@@ -104,6 +131,21 @@ class AttributionTest(unittest.TestCase):
             source['resolutions'].reverse();write(root/'lex/law-attributions-source.json',source)
             apply_attributions(root)
             self.assertEqual(read(root/'lex/data/meta.json')['decisions'][0]['statutes'],{'УГС ст. 40':3})
+
+    def test_previous_published_projection_is_explicit_and_not_a_wildcard(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);source=self.fixture(root)
+            # A later pass can accept a precise prior projection, while the
+            # immutable raw extractor counters continue to define the base.
+            prior={'? ст. 40':2,'УГС ст. 40':1}
+            source['previous_projection_sha256']={'2000-001':[statute_digest(prior)]}
+            meta=read(root/'lex/data/meta.json');meta['decisions'][0]['statutes']=prior
+            write(root/'lex/law-attributions-source.json',source);write(root/'lex/data/meta.json',meta)
+            apply_attributions(root)
+            self.assertEqual(read(root/'lex/data/meta.json')['decisions'][0]['statutes'],{'УГС ст. 40':3})
+            meta['decisions'][0]['statutes']={'? ст. 40':3}
+            write(root/'lex/data/meta.json',meta)
+            with self.assertRaises(ValueError):apply_attributions(root)
 
     def test_fail_closed_stale_sha_quote_count_act_and_duplicates(self):
         mutations=[lambda s:s['decisions']['2000-001'].update(text_sha256='0'*64),

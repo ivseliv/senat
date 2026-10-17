@@ -1,38 +1,38 @@
 {
   "api_version": "v1",
-  "contract_version": "1.5.0",
-  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
   "resource": "legislation-attribution",
   "item": {
     "unit": "уникальная пара «решение + извлечённое обозначение статьи»",
     "baseline_unknown": 1035,
-    "resolved_unknown": 246,
-    "remaining_unknown": 789,
+    "resolved_unknown": 502,
+    "remaining_unknown": 533,
     "corrected_known": 38,
-    "confirmed_citations": 895,
-    "legacy_unverified_citations": 246,
-    "remaining_legacy_occurrences": 1038,
+    "confirmed_citations": 1140,
+    "legacy_unverified_citations": 235,
+    "remaining_legacy_occurrences": 681,
     "new_resolution_occurrences_by_method": {
-      "direct": 203,
-      "repeat": 4,
-      "printed_index": 81
+      "direct": 458,
+      "repeat": 82,
+      "printed_index": 105
     },
     "by_year": {
       "1896": {
-        "resolved": 21,
-        "unresolved": 149
+        "resolved": 30,
+        "unresolved": 140
       },
       "1897": {
-        "resolved": 76,
-        "unresolved": 225
+        "resolved": 126,
+        "unresolved": 175
       },
       "1904": {
-        "resolved": 115,
-        "unresolved": 188
+        "resolved": 167,
+        "unresolved": 136
       },
       "1905": {
-        "resolved": 34,
-        "unresolved": 227
+        "resolved": 179,
+        "unresolved": 82
       }
     }
   }

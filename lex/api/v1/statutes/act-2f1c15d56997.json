@@ -1,13 +1,13 @@
 {
   "api_version": "v1",
-  "contract_version": "1.5.0",
-  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
   "resource": "statutes",
   "scope": {
     "code": "ПНЧ",
     "id": "act-2f1c15d56997"
   },
-  "count": 21,
+  "count": 25,
   "items": [
     {
       "statute": "ПНЧ ст. 304",
@@ -100,6 +100,36 @@
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-046"
     },
     {
+      "statute": "ПНЧ ст. 279",
+      "code": "ПНЧ",
+      "article": "ст. 279",
+      "mentions": 1,
+      "decision_id": "1897-047",
+      "year": 1897,
+      "decision_number": 47,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-047"
+    },
+    {
+      "statute": "ПНЧ ст. 285¹",
+      "code": "ПНЧ",
+      "article": "ст. 285¹",
+      "mentions": 2,
+      "decision_id": "1897-047",
+      "year": 1897,
+      "decision_number": 47,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-047"
+    },
+    {
+      "statute": "ПНЧ ст. 352",
+      "code": "ПНЧ",
+      "article": "ст. 352",
+      "mentions": 1,
+      "decision_id": "1897-047",
+      "year": 1897,
+      "decision_number": 47,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-047"
+    },
+    {
       "statute": "ПНЧ ст. 169",
       "code": "ПНЧ",
       "article": "ст. 169",
@@ -138,6 +168,16 @@
       "year": 1904,
       "decision_number": 55,
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-055"
+    },
+    {
+      "statute": "ПНЧ ст. 223",
+      "code": "ПНЧ",
+      "article": "ст. 223",
+      "mentions": 1,
+      "decision_id": "1904-060",
+      "year": 1904,
+      "decision_number": 60,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060"
     },
     {
       "statute": "ПНЧ ст. 195",

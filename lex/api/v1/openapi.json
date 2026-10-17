@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Решения Правительствующего Сената — Static API",
-    "version": "1.5.0",
+    "version": "1.6.0",
     "description": "Статические JSON-файлы: доступны GET и HEAD, query-параметров и серверного поиска нет."
   },
   "servers": [
@@ -254,6 +254,14 @@
                 "act-c78edf831dda",
                 "act-40a72ea949f0",
                 "act-e90cea88e46e",
+                "act-9e7de1ffd315",
+                "act-6445c184f31b",
+                "act-33481835d090",
+                "act-ee78e5934084",
+                "act-6f03ce48683b",
+                "act-fab21e95da4f",
+                "act-639a0a6a65cd",
+                "act-4d5ee77b3c4f",
                 "act-8a8de823d5ed"
               ]
             }
@@ -276,6 +284,23 @@
     "/legislation/unresolved.json": {
       "get": {
         "summary": "Неустановленные акты: буквальный контекст и точные места",
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/legislation/historical-references.json": {
+      "get": {
+        "summary": "Сохранённые ссылки прежних версий вне текущих подсчётов",
         "responses": {
           "200": {
             "description": "JSON UTF-8",
@@ -356,6 +381,14 @@
                 "act-c78edf831dda",
                 "act-40a72ea949f0",
                 "act-e90cea88e46e",
+                "act-9e7de1ffd315",
+                "act-6445c184f31b",
+                "act-33481835d090",
+                "act-ee78e5934084",
+                "act-6f03ce48683b",
+                "act-fab21e95da4f",
+                "act-639a0a6a65cd",
+                "act-4d5ee77b3c4f",
                 "act-8a8de823d5ed"
               ]
             }
