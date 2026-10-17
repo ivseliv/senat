@@ -587,7 +587,7 @@ def build_single():
     blob = json.dumps(inline, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
     js = lambda n: open(os.path.join(d, n), encoding='utf-8').read().replace('</script', '<\\/script')
     html = html.replace('<script src="lex.js"></script>', '<script>window.LEX_INLINE=' + blob + '</script>\n<script>' + js('lex.js') + '</script>')
-    for script in ('concept.js', 'app.js'):
+    for script in ('concept.js', 'reader.js', 'reader-export.js', 'reader-ui.js', 'app.js'):
         html = html.replace(f'<script src="{script}"></script>', '<script>' + js(script) + '</script>')
     html = html.replace('<title>Решения Сената: поиск и аналитика</title>', '<title>Сенат: поиск решений</title>')
     os.makedirs(os.path.join(d, 'dist'), exist_ok=True)
