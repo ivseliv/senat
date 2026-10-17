@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.5.0",
-  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
   "resource": "decision",
   "scope": {
     "id": "1905-111",
@@ -28,12 +28,12 @@
     ],
     "participant_groups": {},
     "statutes": {
-      "? ст. 170": 7,
-      "? ст. 129": 2,
-      "? ст. 107": 3,
       "? ст. 76": 1,
       "УГСБ ст. 50": 1,
-      "УГСБ ст. 51": 1
+      "УГСБ ст. 51": 1,
+      "УГСБ ст. 170": 7,
+      "УГСБ ст. 129": 2,
+      "УГСБ ст. 107": 3
     },
     "cites": [
       [

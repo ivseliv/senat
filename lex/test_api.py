@@ -59,6 +59,36 @@ class ApiTest(unittest.TestCase):
                 self.assertEqual(item['decision_ids'],[])
                 self.assertEqual(item['status'],'no_current_matches')
 
+    def test_historical_legislation_is_a_separate_compatible_resource(self):
+        history = read(API / 'legislation/historical-references.json')
+        exported = read(EXPORT / 'legislation-historical-references.json')
+        self.assertEqual(history['resource'], 'legislation-historical-references')
+        self.assertEqual(history['items'], exported)
+        self.assertEqual(history['count'], len(exported))
+        self.assertEqual(self.manifest['coverage']['counts']['legislation_historical_references'], len(exported))
+        dataset = next(row for row in self.manifest['datasets'] if row['id'] == 'legislation-historical-references')
+        self.assertTrue(dataset['href'].endswith('/legislation/historical-references.json'))
+        self.assertEqual(dataset['item_schema'], 'HistoricalLegislationReference')
+        schema = read(API / 'schema.json')['$defs']['HistoricalLegislationReference']
+        self.assertIn('historical_note', schema['required'])
+        self.assertIn('current_references', schema['required'])
+        self.assertIn('/legislation/historical-references.json', read(API / 'openapi.json')['paths'])
+        laws = read(ROOT / 'data/laws.json')
+        self.assertEqual(self.manifest['coverage']['counts']['legislation_citations'], len(laws['citations']))
+        self.assertEqual(self.manifest['coverage']['counts']['legislation_unresolved'], len(laws['unresolved']))
+        active_ids = {row['id'] for row in read(API / 'legislation/unresolved.json')['items']}
+        for act in read(API / 'statutes/index.json')['items']:
+            path = API / 'legislation/citations' / (act['id'] + '.json')
+            if path.exists():
+                active_ids.update(row['id'] for row in read(path)['items'])
+        self.assertFalse(active_ids & {row['id'] for row in exported})
+        self.assertTrue(all(row.get('historical_note') for row in exported))
+        for row in exported:
+            for current in row['current_references']:
+                self.assertIn(current['id'], active_ids)
+                if current['passage_url'] is not None:
+                    self.assertTrue(current['passage_url'].startswith('https://ivseliv.github.io/senat/lex/'))
+
     def test_manifest_is_complete_and_hashes_match(self):
         self.assertEqual(self.manifest['api_version'], API_VERSION)
         self.assertEqual(self.manifest['contract_version'], CONTRACT_VERSION)

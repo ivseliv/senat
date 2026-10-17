@@ -1,6 +1,6 @@
 /* Настоящий Chromium: новые привязки, неопределённые статьи и буквальные основания.
  * LEX_TEST_URL points at the served lex/ directory; LEX_CHROMIUM is optional.
- * No fixed article, year counts or decision IDs: assertions follow fresh data.
+ * Counts and expected quotations follow fresh data; the historical split has an explicit regression case.
  */
 const {chromium}=require('playwright');
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
@@ -29,6 +29,24 @@ assert(data.unresolved.length>0,'Оставшиеся неопределённы
 assert.equal(data.attribution_summary.remaining_unknown,data.unresolved.length);
 assert.equal(data.attribution_summary.confirmed_citations,data.citations.filter(r=>r.verification_status==='context_verified').length);
 assert.equal(data.attribution_summary.legacy_unverified_citations,data.citations.filter(r=>r.verification_status==='legacy_unverified').length);
+const history=data.historical_references;
+assert(Array.isArray(history) && history.length>0,'Нужны сохранённые ссылки предыдущей версии');
+assert(history.every(row=>Array.isArray(row.current_references)),'У исторических ссылок отсутствует current_references');
+const currentById=new Map(all.map(row=>[row.id,row]));
+const historicalCases=new Map();
+const historicalCase=(kind,row)=>{
+ assert(row,'Отсутствует исторический сценарий: '+kind);
+ const existing=historicalCases.get(row.id);
+ if(existing)existing.kinds.push(kind);else historicalCases.set(row.id,{kinds:[kind],row});
+};
+historicalCase('unknown-to-known',history.find(row=>row.code==='?' && row.current_references.some(ref=>ref.code!=='?')));
+historicalCase('known-primary-moved',history.find(row=>row.code!=='?' && row.current_references.some(ref=>{
+ const current=currentById.get(ref.id);
+ return current && current.start!==row.start;
+})));
+const historicalHeadnote=history.find(row=>row.field==='headnote');
+if(historicalHeadnote)historicalCase('headnote',historicalHeadnote);
+historicalCase('1904-060-split',history.find(row=>row.decision_id==='1904-060' && ['ОГЗ','УЖД'].every(code=>row.current_references.some(ref=>ref.code===code))));
 
 (async()=>{
  const executable=process.env.LEX_CHROMIUM || (fs.existsSync('/Applications/Chromium.app/Contents/MacOS/Chromium')?'/Applications/Chromium.app/Contents/MacOS/Chromium':null);
@@ -56,17 +74,46 @@ assert.equal(data.attribution_summary.legacy_unverified_citations,data.citations
    assert(await page.locator('#laws-results .law-citation').count()<=80,'В DOM не больше одной страницы цитат');
    return expected;
   };
-  const exact=async(row,span=row)=>{
-   await page.waitForSelector('.law-detail[data-law-id="'+row.id+'"]');
-   await page.waitForFunction(quote=>[...document.querySelectorAll('.passage-focus')].map(x=>x.textContent).join('\n\n')===quote,span.quote_original);
-   assert.equal(await page.locator('.law-exact-quote').textContent(),span.quote_original);
-   assert.equal(await page.locator('#tab-laws').getAttribute('aria-current'),'page');
+  const exactOn=async(targetPage,row,span=row)=>{
+   await targetPage.waitForSelector('.law-detail[data-law-id="'+row.id+'"]');
+   await targetPage.waitForFunction(quote=>[...document.querySelectorAll('.passage-focus')].map(x=>x.textContent).join('\n\n')===quote,span.quote_original);
+   assert.equal(await targetPage.locator('.law-exact-quote').textContent(),span.quote_original);
+   assert.equal(await targetPage.locator('#tab-laws').getAttribute('aria-current'),'page');
    if((span.field || row.field)==='headnote'){
-    assert(await page.locator('.headnote .passage-focus').count());
-    assert.equal(await page.locator('#detail-body > .text .passage-focus').count(),0,'Смещения заголовка нельзя применять к телу решения');
+    assert(await targetPage.locator('.headnote .passage-focus').count());
+    assert.equal(await targetPage.locator('#detail-body > .text .passage-focus').count(),0,'Смещения заголовка нельзя применять к телу решения');
    }
-   if(row.source_warning)assert((await page.locator('#detail-body .source-warning').allTextContents()).some(s=>s.includes(row.source_warning)));
-   if(row.attribution_note)assert((await page.locator('.law-detail').textContent()).includes(row.attribution_note));
+   if(row.source_warning)assert((await targetPage.locator('#detail-body .source-warning').allTextContents()).some(s=>s.includes(row.source_warning)));
+   if(row.attribution_note)assert((await targetPage.locator('.law-detail').textContent()).includes(row.attribution_note));
+  };
+  const exact=async(row,span=row)=>exactOn(page,row,span);
+  const historical=async(targetPage,prefix,{kinds,row})=>{
+   assert(row.historical_note,'Нет пометки сохранённой версии: '+row.id);
+   assert(Array.isArray(row.current_references) && row.current_references.length>0,'Нет перехода к текущей привязке: '+row.id);
+   assert(!currentById.has(row.id),'Историческая строка попала в текущий каталог: '+row.id);
+   const old=async()=>{
+    await exactOn(targetPage,row);
+    const detail=targetPage.locator('.law-detail[data-law-id="'+row.id+'"]'),note=detail.locator('.law-historical-note');
+    await note.waitFor({state:'visible'});
+    assert.equal(await note.textContent(),row.historical_note);
+    for(const ref of row.current_references){
+     const current=currentById.get(ref.id);assert(current,'Нет текущей строки: '+ref.id);
+     assert.equal(ref.code,current.code);assert.equal(ref.article,current.article);assert.equal(ref.passage_url,current.passage_url);
+     assert.equal(await detail.locator('a').evaluateAll((links,href)=>links.filter(a=>a.getAttribute('href')===href).length,ref.passage_url),1,'Нет однозначной текущей ссылки: '+ref.id);
+    }
+    if(targetPage.viewportSize().width<=480)assert(await targetPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth && document.querySelector('#detail').scrollWidth<=innerWidth),'Мобильное переполнение исторической карточки');
+   };
+   await targetPage.goto(prefix+row.passage_url);await old();
+   await targetPage.reload();await old();
+   for(const [index,ref] of row.current_references.entries()){
+    if(index){await targetPage.goto(prefix+row.passage_url);await old();}
+    const currentLink=targetPage.locator('.law-detail[data-law-id="'+row.id+'"] a[href='+JSON.stringify(ref.passage_url)+']');
+    assert.equal(await currentLink.count(),1);await currentLink.click();
+    const current=currentById.get(ref.id);await exactOn(targetPage,current);
+    assert.equal(new URL(targetPage.url()).hash,new URL(prefix+ref.passage_url).hash);
+    assert.equal(await targetPage.locator('.law-historical-note').count(),0,'Текущая карточка осталась помечена исторической');
+   }
+   checked.push({historical:kinds,id:row.id,surface:prefix.startsWith('file:')?'standalone':targetPage.viewportSize().width<=480?'mobile':'desktop',current:row.current_references.map(ref=>ref.id)});
   };
   const open=async(row)=>{await page.goto(base+row.passage_url);await exact(row);};
   const returned=async(row)=>{
@@ -160,6 +207,7 @@ assert.equal(data.attribution_summary.legacy_unverified_citations,data.citations
   await returned(headnote);
   const warned=all.find(r=>r.source_warning),noted=all.find(r=>r.attribution_note);
   for(const row of new Set([warned,noted].filter(Boolean))){await open(row);await exact(row);await returned(row);}
+  for(const scenario of historicalCases.values())await historical(page,base,scenario);
 
   // Existing mode=laws links pointed to a complete passage and have no law row ID.
   const oldRow=data.citations.find(r=>r.passage_id && r.field==='text'),passages=JSON.parse(fs.readFileSync(path.join(lex,`data/passages-${oldRow.year}.json`),'utf8'));
@@ -180,6 +228,7 @@ assert.equal(data.attribution_summary.legacy_unverified_citations,data.citations
   await open(fresh[0]);await page.locator('.law-detail .law-evidence > summary').first().click();
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth && document.querySelector('#detail').scrollWidth<=innerWidth),'Мобильное переполнение карточки');
   await page.locator('.law-detail').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(out,'laws-proof-mobile-dark.png')});
+  await historical(page,base,historicalCases.values().next().value);
   const offline=await browser.newContext(),op=await offline.newPage(),offlineRequests=[];
   await offline.route('http**://**',r=>r.abort());
   op.on('pageerror',e=>errors.push(e.message));op.on('request',r=>offlineRequests.push(r.url()));
@@ -191,10 +240,11 @@ assert.equal(data.attribution_summary.legacy_unverified_citations,data.citations
   await op.locator('.law-detail .law-evidence > summary').click();
   const href=await op.locator('.law-detail .law-index-source').first().getAttribute('href');
   assert(href.startsWith('https://ivseliv.github.io/senat/lex/legislation-indexes/'));
+  await historical(op,file,historicalCases.values().next().value);
   assert(!offlineRequests.some(u=>/\/data\//.test(u)),'Офлайн-указатель использует встроенные данные');
   await offline.close();
   assert.deepEqual(errors,[]);
   console.log(JSON.stringify({version:data.version,fresh:fresh.length,remainingUnknown:data.unresolved.length,checked,
-   checkedFeatures:'буквальные основания, прямые/повторные/печатные привязки, заголовки, старые ссылки, точные цитаты, четыре тома и сканы, поиск/пагинация/перезагрузка/возврат, тёмная тема и телефон',errors,screenshots:out},null,2));
+   checkedFeatures:'буквальные основания, прямые/повторные/печатные привязки, заголовки, старые и исторические ссылки с переходом к текущим, точные цитаты, четыре тома и сканы, поиск/пагинация/перезагрузка/возврат, тёмная тема и телефон, standalone',errors,screenshots:out},null,2));
  } finally {await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.5.0",
-  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
   "resource": "decision",
   "scope": {
     "id": "1905-024",
@@ -30,12 +30,10 @@
     ],
     "participant_groups": {},
     "statutes": {
-      "СЗГ ст. 132¹⁴": 1,
-      "СЗГ ст. 132¹²": 1,
+      "СЗГ ст. 132¹⁴": 2,
+      "СЗГ ст. 132¹²": 4,
       "СЗГ ст. 1135": 1,
-      "? ст. 132¹²": 3,
       "? ст. 28–33": 1,
-      "? ст. 132¹⁴": 1,
       "СЗГ ст. 156¹": 1
     },
     "cites": [],

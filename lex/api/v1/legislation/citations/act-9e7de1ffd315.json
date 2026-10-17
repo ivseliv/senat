@@ -1,0 +1,169 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
+  "resource": "legislation-citations",
+  "scope": {
+    "code": "ВСУ",
+    "id": "act-9e7de1ffd315"
+  },
+  "count": 2,
+  "items": [
+    {
+      "id": "1896-047:ВСУ:246:text:3511",
+      "statute": "ВСУ ст. 246",
+      "code": "ВСУ",
+      "article": "ст. 246",
+      "decision_id": "1896-047",
+      "year": 1896,
+      "decision_number": 47,
+      "field": "text",
+      "start": 3511,
+      "end": 3518,
+      "quote_original": "ст. 246",
+      "context_original": "ачьихъ войскъ, за преступленія, учиненныя въ бытность. ихъ на службѣ по военнымъ войско вымъ учрежденіямъ, подлежатъ, на точ номъ основаніи ст. 246 военно судебна го устава и соотвѣтствующей ей ст. 223 уст. уг. суд , суду военному. Выслушавъ заключен’ю Исп. обязан. Товарища Оберъ-Прокур",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "77cc655dae8e3181e8b6871e0a8b6fed81afa8a16a5ef934fb5fbb267e3651af",
+      "headnote_sha256": "1f27c4ed15d56ecfc6e91855ece1d5141443fb0b5e3f56bf571ae5028ee78ccf",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-047",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-047?mode=laws&c=%D0%92%D0%A1%D0%A3&q=%D1%81%D1%82.+246&law=1896-047%3A%D0%92%D0%A1%D0%A3%3A246%3Atext%3A3511&at=3511&end=3518",
+      "source_warning": null,
+      "passage_id": "1896-047:2597-4449",
+      "sources": [
+        {
+          "page": 790,
+          "page_method": "header",
+          "file": "p0083.txt",
+          "start": 3511,
+          "end": 3518
+        }
+      ],
+      "printed_pages": [
+        790
+      ],
+      "scans": [
+        {
+          "file": "p0083.txt",
+          "page": 790,
+          "full": "scans/1896/pages/p0083-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1678,
+          "ocr_sha256": "a2543bb61846ceadc062e399e06a4d7aeff45f0a8ccb04599de26fd49ebd604d",
+          "pdf_page": 83,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3391,
+          "end": 3608,
+          "quote_original": "еступленія, учиненныя въ бытность. ихъ на службѣ по военнымъ войско вымъ учрежденіямъ, подлежатъ, на точ номъ основаніи ст. 246 военно судебна го устава и соотвѣтствующей ей ст. 223 уст. уг. суд , суду военному. Выслу",
+          "act_code": "ВСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3511,
+          "end": 3518,
+          "quote_original": "ст. 246",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3391,
+              "end": 3608,
+              "quote_original": "еступленія, учиненныя въ бытность. ихъ на службѣ по военнымъ войско вымъ учрежденіямъ, подлежатъ, на точ номъ основаніи ст. 246 военно судебна го устава и соотвѣтствующей ей ст. 223 уст. уг. суд , суду военному. Выслу",
+              "act_code": "ВСУ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-008:ВСУ:338:text:2721",
+      "statute": "ВСУ ст. 338",
+      "code": "ВСУ",
+      "article": "ст. 338",
+      "decision_id": "1896-008",
+      "year": 1896,
+      "decision_number": 8,
+      "field": "text",
+      "start": 2721,
+      "end": 2728,
+      "quote_original": "ст. 338",
+      "context_original": "енно-окружному суду, тре буютъ обслѣдованія путемъ предвари тельнаго слѣдствія, чрезъ слѣдователя гражданскаго вѣдомства, при условіяхъ, въ ст. 338 воен. суд. уст, указанныхъ и 4) что хотя дѣло о кражѣ арбузовъ (предусм. 3 п. 171 ст. уст. о нак.), въ которой обвиняется Столярекъ, подсуд",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "bcd772c003fc6daf340807a07115aafdf4a880580493e95512066780cd083bb3",
+      "headnote_sha256": "e12f4ad065c59fa570fcb14458ca2943c3a0d00f42a6aa78ab7cf3110643208b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-008",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-008?mode=laws&c=%D0%92%D0%A1%D0%A3&q=%D1%81%D1%82.+338&law=1896-008%3A%D0%92%D0%A1%D0%A3%3A338%3Atext%3A2721&at=2721&end=2728",
+      "source_warning": null,
+      "passage_id": "1896-008:1403-3531",
+      "sources": [
+        {
+          "page": 719,
+          "page_method": "header",
+          "file": "p0012.txt",
+          "start": 2721,
+          "end": 2728
+        }
+      ],
+      "printed_pages": [
+        719
+      ],
+      "scans": [
+        {
+          "file": "p0012.txt",
+          "page": 719,
+          "full": "scans/1896/pages/p0012-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1695,
+          "ocr_sha256": "e6f46938f10a30f46baf0627257adb80b3d66679fc7c58f65476de412dd69305",
+          "pdf_page": 12,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2601,
+          "end": 2818,
+          "quote_original": " тре буютъ обслѣдованія путемъ предвари тельнаго слѣдствія, чрезъ слѣдователя гражданскаго вѣдомства, при условіяхъ, въ ст. 338 воен. суд. уст, указанныхъ и 4) что хотя дѣло о кражѣ арбузовъ (предусм. 3 п. 171 ст. уст",
+          "act_code": "ВСУ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2721,
+          "end": 2728,
+          "quote_original": "ст. 338",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2601,
+              "end": 2818,
+              "quote_original": " тре буютъ обслѣдованія путемъ предвари тельнаго слѣдствія, чрезъ слѣдователя гражданскаго вѣдомства, при условіяхъ, въ ст. 338 воен. суд. уст, указанныхъ и 4) что хотя дѣло о кражѣ арбузовъ (предусм. 3 п. 171 ст. уст",
+              "act_code": "ВСУ"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

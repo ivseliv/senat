@@ -1,0 +1,169 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
+  "resource": "legislation-citations",
+  "scope": {
+    "code": "ОПК",
+    "id": "act-fab21e95da4f"
+  },
+  "count": 2,
+  "items": [
+    {
+      "id": "1904-006:ОПК:52–55:text:5523",
+      "statute": "ОПК ст. 52–55",
+      "code": "ОПК",
+      "article": "ст. 52–55",
+      "decision_id": "1904-006",
+      "year": 1904,
+      "decision_number": 6,
+      "field": "text",
+      "start": 5523,
+      "end": 5532,
+      "quote_original": "ст. 52—55",
+      "context_original": "по изд. 1876 г.; по изд. 1902 г.—ст. 52—55 общ. пол.), что распредѣленіе между сельскими обществами земель, надѣленныхъ имъ сообща, можетъ послѣдовать не иначе, какъ по приговору, со",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "d3946e5513800e8d486eee91688c25351631be36fde8eedade3527187a596969",
+      "headnote_sha256": "151d14e8583c29f3117ddc8071b9659a70bbd3738cfc9906685451487df7760e",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-006",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-006?mode=laws&c=%D0%9E%D0%9F%D0%9A&q=%D1%81%D1%82.+52%E2%80%9355&law=1904-006%3A%D0%9E%D0%9F%D0%9A%3A52%E2%80%9355%3Atext%3A5523&at=5523&end=5532",
+      "source_warning": null,
+      "passage_id": "1904-006:4548-6162",
+      "sources": [
+        {
+          "page": 19,
+          "page_method": "header",
+          "file": "p0010_R.txt",
+          "start": 5523,
+          "end": 5532
+        }
+      ],
+      "printed_pages": [
+        19
+      ],
+      "scans": [
+        {
+          "file": "p0010_R.txt",
+          "page": 19,
+          "full": "scans/1904/pages/p0010_R.webp",
+          "width": 1100,
+          "height": 1589,
+          "ocr_sha256": "0f98d7f085fca1e1fa065df3d383a48ba9eba7c5abe54a4f5c52346ca3da6f8c",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 5451,
+          "end": 5543,
+          "quote_original": "(прим. 7 къ ст. 54 общ. пол. о крест.\n\nпо изд. 1876 г.; по изд. 1902 г.—ст. 52—55 общ. пол.)",
+          "act_code": "ОПК"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5523,
+          "end": 5532,
+          "quote_original": "ст. 52—55",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 5451,
+              "end": 5543,
+              "quote_original": "(прим. 7 къ ст. 54 общ. пол. о крест.\n\nпо изд. 1876 г.; по изд. 1902 г.—ст. 52—55 общ. пол.)",
+              "act_code": "ОПК"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-006:ОПК:54:text:5463",
+      "statute": "ОПК ст. 54",
+      "code": "ОПК",
+      "article": "ст. 54",
+      "decision_id": "1904-006",
+      "year": 1904,
+      "decision_number": 6,
+      "field": "text",
+      "start": 5463,
+      "end": 5469,
+      "quote_original": "ст. 54",
+      "context_original": "ласія на это прочихъ обществъ. Затѣмъ, въ рѣшеніи общаго собранія 1890 г. № 37 пояснено, со ссылкою на законъ 24 апрѣля 1887 г. (прим. 7 къ ст. 54 общ. пол. о крест.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "d3946e5513800e8d486eee91688c25351631be36fde8eedade3527187a596969",
+      "headnote_sha256": "151d14e8583c29f3117ddc8071b9659a70bbd3738cfc9906685451487df7760e",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-006",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-006?mode=laws&c=%D0%9E%D0%9F%D0%9A&q=%D1%81%D1%82.+54&law=1904-006%3A%D0%9E%D0%9F%D0%9A%3A54%3Atext%3A5463&at=5463&end=5469",
+      "source_warning": null,
+      "passage_id": "1904-006:4548-6162",
+      "sources": [
+        {
+          "page": 18,
+          "page_method": "header",
+          "file": "p0010_L.txt",
+          "start": 5463,
+          "end": 5469
+        }
+      ],
+      "printed_pages": [
+        18
+      ],
+      "scans": [
+        {
+          "file": "p0010_L.txt",
+          "page": 18,
+          "full": "scans/1904/pages/p0010_L.webp",
+          "width": 1100,
+          "height": 1589,
+          "ocr_sha256": "d88e8efd853cd4e2d642c18c81b37659230cbd5ea56d13764486daad6ef6feba",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 5451,
+          "end": 5543,
+          "quote_original": "(прим. 7 къ ст. 54 общ. пол. о крест.\n\nпо изд. 1876 г.; по изд. 1902 г.—ст. 52—55 общ. пол.)",
+          "act_code": "ОПК"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5463,
+          "end": 5469,
+          "quote_original": "ст. 54",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 5451,
+              "end": 5543,
+              "quote_original": "(прим. 7 къ ст. 54 общ. пол. о крест.\n\nпо изд. 1876 г.; по изд. 1902 г.—ст. 52—55 общ. пол.)",
+              "act_code": "ОПК"
+            }
+          ],
+          "attribution_note": "В цитате названо примечание 7 к статье 54 Общего положения о крестьянах по изданию 1876 года; это не основной текст статьи 54. Сопоставление с 52–55 издания 1902 года приведено самим решением и не унифицируется."
+        }
+      ],
+      "attribution_note": "В цитате названо примечание 7 к статье 54 Общего положения о крестьянах по изданию 1876 года; это не основной текст статьи 54. Сопоставление с 52–55 издания 1902 года приведено самим решением и не унифицируется."
+    }
+  ]
+}

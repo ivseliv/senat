@@ -18,6 +18,10 @@ def sha(text):
     return hashlib.sha256(text.encode('utf-8')).hexdigest()
 
 
+def statute_digest(statutes):
+    return sha(json.dumps(statutes, ensure_ascii=False, sort_keys=True, separators=(',', ':')))
+
+
 def read(path):
     return json.loads(Path(path).read_text(encoding='utf-8'))
 
@@ -39,6 +43,29 @@ def check_quote(text, item):
         raise ValueError('Неверный диапазон законодательной ссылки')
     if text[start:end] != item['quote_original']:
         raise ValueError('Буквальная законодательная цитата изменилась')
+
+
+def check_proof(root, fields, proof, code):
+    if proof['act_code'] != code:
+        raise ValueError('Основание относится к другому акту')
+    if proof['kind'] in ('direct', 'repeat'):
+        if proof['field'] not in fields:
+            raise ValueError('Неизвестное поле основания')
+        check_quote(fields[proof['field']], proof)
+    elif proof['kind'] == 'printed_index':
+        relative = Path(proof['path'])
+        if relative.parts[:1] != ('legislation-indexes',) or '..' in relative.parts or relative.suffix != '.txt':
+            raise ValueError('Неизвестный источник печатного указателя')
+        index = (Path(root)/'lex'/relative).read_text(encoding='utf-8')
+        if sha(index) != proof['source_sha256']:
+            raise ValueError('Печатный указатель изменился')
+        check_quote(index, proof)
+        check_quote(index, proof['heading'])
+        edition = proof.get('edition_continuation')
+        if edition:
+            check_quote(index, dict(edition, quote_original=edition.get('quote_original', edition.get('quote'))))
+    else:
+        raise ValueError('Неизвестный способ привязки')
 
 
 def apply_attributions(root=ROOT):
@@ -81,33 +108,14 @@ def apply_attributions(root=ROOT):
                     if not occurrence['evidence']:
                         raise ValueError('Нет основания привязки')
                     for proof in occurrence['evidence']:
-                        if proof['act_code'] != target['code']:
-                            raise ValueError('Основание относится к другому акту')
-                        if proof['kind'] in ('direct', 'repeat'):
-                            if proof['field'] not in ('text','headnote'):
-                                raise ValueError('Неизвестное поле основания')
-                            check_quote(texts[ident] if proof['field'] == 'text' else doc['headnote'], proof)
-                        elif proof['kind'] == 'printed_index':
-                            relative = Path(proof['path'])
-                            if relative.parts[:1] != ('legislation-indexes',) or '..' in relative.parts or relative.suffix != '.txt':
-                                raise ValueError('Неизвестный источник печатного указателя')
-                            path = root/'lex'/relative
-                            index = path.read_text(encoding='utf-8')
-                            if sha(index) != proof['source_sha256']:
-                                raise ValueError('Печатный указатель изменился')
-                            check_quote(index, proof)
-                            check_quote(index, proof['heading'])
-                            edition=proof.get('edition_continuation')
-                            if edition:
-                                check_quote(index, dict(edition,quote_original=edition.get('quote_original',edition.get('quote'))))
-                        else:
-                            raise ValueError('Неизвестный способ привязки')
+                        check_proof(root, {'text':texts[ident], 'headnote':doc['headnote']}, proof, target['code'])
                 _, _, article = row['from_statute'].partition(' ')
                 projected[f'{target["code"]} {article}'] += target['mentions']
         projected = {key:count for key,count in projected.items() if count}
         if any(count < 0 for count in projected.values()) or sum(projected.values()) != sum(base['statutes'].values()):
             raise ValueError('Перенос изменил суммарное число извлечённых упоминаний')
-        if doc['statutes'] not in (base['statutes'], projected):
+        previous = source.get('previous_projection_sha256', {}).get(ident, [])
+        if doc['statutes'] not in (base['statutes'], projected) and statute_digest(doc['statutes']) not in previous:
             raise ValueError('Несогласованные метаданные законодательной сверки: ' + ident)
         doc['statutes'] = projected
     if set(by_doc) - set(texts):

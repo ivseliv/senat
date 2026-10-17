@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.5.0",
-  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
   "resource": "decision",
   "scope": {
     "id": "1897-048",
@@ -26,11 +26,9 @@
     "topics": [],
     "participant_groups": {},
     "statutes": {
-      "ГКП ст. 1291": 2,
-      "ГКП ст. 1290": 2,
-      "ГКП ст. 1295": 3,
-      "? ст. 1290": 1,
-      "? ст. 1291": 1
+      "ГКП ст. 1291": 3,
+      "ГКП ст. 1290": 3,
+      "ГКП ст. 1295": 3
     },
     "cites": [],
     "participant_ids": [

@@ -561,6 +561,55 @@
       },
       "description": "Единица — решение и обозначение статьи. field определяет исходное поле Unicode-смещений; SHA полного текста и заголовка закреплены отдельно. Подтверждение акта не удостоверяет номер OCR или редакцию нормы."
     },
+    "HistoricalLegislationReference": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/LegislationCitation"
+        }
+      ],
+      "type": "object",
+      "required": [
+        "historical_note",
+        "current_references"
+      ],
+      "properties": {
+        "historical_note": {
+          "type": "string"
+        },
+        "current_references": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "code",
+              "article",
+              "passage_url"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "code": {
+                "type": "string"
+              },
+              "article": {
+                "type": "string"
+              },
+              "passage_url": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "uri"
+              }
+            }
+          },
+          "description": "Текущие записи того же решения и обозначения статьи. Список может быть пустым или содержать несколько записей; passage_url является абсолютным публичным URL."
+        }
+      },
+      "description": "Сохранённая запись прежнего указателя: ID, исходные места и прежняя атрибуция остаются доступными. Не является текущей привязкой акта и не входит в активные счётчики, фасеты или наборы статей."
+    },
     "TopicCatalog": {
       "type": "object",
       "required": [

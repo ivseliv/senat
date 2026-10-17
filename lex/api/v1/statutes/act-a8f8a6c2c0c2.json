@@ -1,13 +1,13 @@
 {
   "api_version": "v1",
-  "contract_version": "1.5.0",
-  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
   "resource": "statutes",
   "scope": {
     "code": "УУС",
     "id": "act-a8f8a6c2c0c2"
   },
-  "count": 37,
+  "count": 38,
   "items": [
     {
       "statute": "УУС ст. 135",
@@ -313,6 +313,16 @@
       "statute": "УУС ст. 299",
       "code": "УУС",
       "article": "ст. 299",
+      "mentions": 1,
+      "decision_id": "1904-096",
+      "year": 1904,
+      "decision_number": 96,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096"
+    },
+    {
+      "statute": "УУС ст. 301",
+      "code": "УУС",
+      "article": "ст. 301",
       "mentions": 1,
       "decision_id": "1904-096",
       "year": 1904,

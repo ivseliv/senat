@@ -1,20 +1,18 @@
 {
   "api_version": "v1",
-  "contract_version": "1.5.0",
-  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
   "resource": "decision-set",
   "filter": {
     "kind": "article",
     "id": "article-36cc90a0d26f",
     "label": "? ст. 681–685"
   },
-  "count": 1,
-  "decision_ids": [
-    "1897-028"
-  ],
+  "count": 0,
+  "decision_ids": [],
   "links": {
-    "decisions": [
-      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-028.json"
-    ]
-  }
+    "decisions": []
+  },
+  "status": "no_current_matches",
+  "note": "Прежний URL фасета сохранён; после сверки актов текущих совпадений нет."
 }

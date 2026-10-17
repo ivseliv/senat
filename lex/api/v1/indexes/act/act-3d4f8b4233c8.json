@@ -1,14 +1,14 @@
 {
   "api_version": "v1",
-  "contract_version": "1.5.0",
-  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
   "resource": "decision-set",
   "filter": {
     "kind": "act",
     "id": "act-3d4f8b4233c8",
     "label": "УЖД"
   },
-  "count": 22,
+  "count": 23,
   "decision_ids": [
     "1896-029",
     "1897-019",
@@ -30,6 +30,7 @@
     "1905-062",
     "1905-064",
     "1905-068",
+    "1905-071",
     "1905-090",
     "1905-101"
   ],
@@ -55,6 +56,7 @@
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-062.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-064.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-068.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-071.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-090.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-101.json"
     ]

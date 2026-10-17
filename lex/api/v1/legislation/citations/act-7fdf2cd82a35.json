@@ -1,13 +1,13 @@
 {
   "api_version": "v1",
-  "contract_version": "1.5.0",
-  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
   "resource": "legislation-citations",
   "scope": {
     "code": "УГС",
     "id": "act-7fdf2cd82a35"
   },
-  "count": 351,
+  "count": 367,
   "items": [
     {
       "id": "1896-009:УГС:1:text:3609",
@@ -1621,7 +1621,7 @@
       ]
     },
     {
-      "id": "1905-089:УГС:1133:text:1507",
+      "id": "1905-089:УГС:1133:text:1960",
       "statute": "УГС ст. 1133",
       "code": "УГС",
       "article": "ст. 1133",
@@ -1629,46 +1629,124 @@
       "year": 1905,
       "decision_number": 89,
       "field": "text",
-      "start": 1507,
-      "end": 1515,
+      "start": 1960,
+      "end": 1968,
       "quote_original": "ст. 1133",
-      "context_original": "зникаетъ слѣдующій общій вопросъ: распространяется-ли правило ст. 1567 уст. гр. суд. на городскія недвижимости, имѣющія уѣздную ипотеку? По ст. 1133 уст. гр. суд., дѣйствующей, какъ это видно изъ ст. 1556 и 1566 того же устава, и въ губерніяхъ Варшавскаго судебнаго округа, недвижимыя имѣ",
-      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
-      "verification_status": "legacy_unverified",
+      "context_original": "е всѣ имѣнія, лежащія въ уѣздѣ того города, гдѣ находится окружный судъ, продаются при семъ судѣ, а, по ст. 1567, составляю- щей дополненіе ст. 1133, недвижимыя имущества сельскихъ жителей, поступившія въ ихъ собственность на основаніи Высочайшихъ указовъ 19 февраля (2 марта) 1864 г., а",
+      "association": "повторная ссылка с явным указанием на тот же акт",
+      "verification_status": "context_verified",
       "source_sha256": "4d4b6fe1a28b48e87f08adaffcd0225fee9d66f79c3184fa62aab5700a92a757",
       "headnote_sha256": "d1c983a16e8c925b329d3db47cd39309b96364d5463bea395451818a1144db66",
       "number_status": "ocr_unverified",
-      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-089",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-089?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+1133&law=1905-089%3A%D0%A3%D0%93%D0%A1%3A1133%3Atext%3A1507&at=1507&end=1515",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-089?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+1133&law=1905-089%3A%D0%A3%D0%93%D0%A1%3A1133%3Atext%3A1960&at=1960&end=1968",
       "source_warning": null,
       "passage_id": "1905-089:1209-3138",
       "sources": [
         {
-          "page": 240,
+          "page": 241,
           "page_method": "header",
-          "file": "p0121_L.txt",
-          "start": 1507,
-          "end": 1515
+          "file": "p0121_R.txt",
+          "start": 1960,
+          "end": 1968
         }
       ],
       "printed_pages": [
-        240
+        241
       ],
       "scans": [
         {
-          "file": "p0121_L.txt",
-          "page": 240,
-          "full": "scans/1905/pages/p0121_L.webp",
+          "file": "p0121_R.txt",
+          "page": 241,
+          "full": "scans/1905/pages/p0121_R.webp",
           "width": 1100,
           "height": 1554,
-          "ocr_sha256": "1866f1c3f5f5a81c1ee3283ebb4a4cd69151088b8f18fe1b8738605ea1004ccf",
+          "ocr_sha256": "b0df16b85bee73ba99c13f7fe2bee18d5720b7d2379529eee24fc532797c47e8",
           "kind": "page"
         }
       ],
       "scan_available": true,
-      "evidence": [],
-      "occurrences": []
+      "evidence": [
+        {
+          "kind": "repeat",
+          "act_code": "УГС",
+          "field": "text",
+          "start": 1507,
+          "end": 1529,
+          "quote_original": "ст. 1133 уст. гр. суд."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1960,
+          "end": 1968,
+          "quote_original": "ст. 1133",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 1507,
+              "end": 1529,
+              "quote_original": "ст. 1133 уст. гр. суд."
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 2608,
+          "end": 2616,
+          "quote_original": "ст. 1133",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 1507,
+              "end": 1529,
+              "quote_original": "ст. 1133 уст. гр. суд."
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 4473,
+          "end": 4481,
+          "quote_original": "ст. 1133",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 1507,
+              "end": 1529,
+              "quote_original": "ст. 1133 уст. гр. суд."
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 4750,
+          "end": 4758,
+          "quote_original": "ст. 1133",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 1507,
+              "end": 1529,
+              "quote_original": "ст. 1133 уст. гр. суд."
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "1904-056:УГС:1134:text:11445",
@@ -2060,6 +2138,23 @@
               "act_code": "УГС"
             }
           ]
+        },
+        {
+          "field": "text",
+          "start": 1325,
+          "end": 1345,
+          "quote_original": "ст. 1161, 1162, 1170",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 1325,
+              "end": 1397,
+              "quote_original": "ст. 1161, 1162, 1170 (п. 3) и 1176 (по прод. 1890 года) уст. гражд. суд."
+            }
+          ]
         }
       ]
     },
@@ -2149,6 +2244,84 @@
               },
               "edition_continuation": null,
               "act_code": "УГС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-018:УГС:1162:text:1325",
+      "statute": "УГС ст. 1162",
+      "code": "УГС",
+      "article": "ст. 1162",
+      "decision_id": "1897-018",
+      "year": 1897,
+      "decision_number": 18,
+      "field": "text",
+      "start": 1325,
+      "end": 1345,
+      "quote_original": "ст. 1161, 1162, 1170",
+      "context_original": "массѣ, которая имѣетъ быть выручена за имѣніе. Въ кассаціонной жалобѣ повѣренный Брехова проситъ объ отмѣнѣ определенія палаты по нарушенію ст. 1161, 1162, 1170 (п. 3) и 1176 (по прод. 1890 года) уст. гражд. суд.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "98fce36b9ead0ca3ad03e78ad3c22c51a7fb47928648a1083920f67a68e2b4f3",
+      "headnote_sha256": "215c022ada7141ff9c19cd263e6f6f030a71e43a744686dff1b8fdaabdf2e2d2",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-018",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-018?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+1162&law=1897-018%3A%D0%A3%D0%93%D0%A1%3A1162%3Atext%3A1325&at=1325&end=1345",
+      "source_warning": null,
+      "passage_id": "1897-018:0-1397",
+      "sources": [
+        {
+          "page": 74,
+          "page_method": "header",
+          "file": "p0048_L.txt",
+          "start": 1325,
+          "end": 1345
+        }
+      ],
+      "printed_pages": [
+        74
+      ],
+      "scans": [
+        {
+          "file": "p0048_L.txt",
+          "page": 74,
+          "full": "scans/1897/pages/p0048_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1579,
+          "ocr_sha256": "2e67cd8005690d3c11db92a28c50fe8b6910ecd67f4902ae3e8325560c258976",
+          "pdf_page": 95,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УГС",
+          "field": "text",
+          "start": 1325,
+          "end": 1397,
+          "quote_original": "ст. 1161, 1162, 1170 (п. 3) и 1176 (по прод. 1890 года) уст. гражд. суд."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1325,
+          "end": 1345,
+          "quote_original": "ст. 1161, 1162, 1170",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 1325,
+              "end": 1397,
+              "quote_original": "ст. 1161, 1162, 1170 (п. 3) и 1176 (по прод. 1890 года) уст. гражд. суд."
             }
           ]
         }
@@ -2317,6 +2490,84 @@
               "end": 4591,
               "quote_original": "ст. 1164 уст. гр. суд.",
               "act_code": "УГС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-018:УГС:1170:text:1325",
+      "statute": "УГС ст. 1170",
+      "code": "УГС",
+      "article": "ст. 1170",
+      "decision_id": "1897-018",
+      "year": 1897,
+      "decision_number": 18,
+      "field": "text",
+      "start": 1325,
+      "end": 1345,
+      "quote_original": "ст. 1161, 1162, 1170",
+      "context_original": "массѣ, которая имѣетъ быть выручена за имѣніе. Въ кассаціонной жалобѣ повѣренный Брехова проситъ объ отмѣнѣ определенія палаты по нарушенію ст. 1161, 1162, 1170 (п. 3) и 1176 (по прод. 1890 года) уст. гражд. суд.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "98fce36b9ead0ca3ad03e78ad3c22c51a7fb47928648a1083920f67a68e2b4f3",
+      "headnote_sha256": "215c022ada7141ff9c19cd263e6f6f030a71e43a744686dff1b8fdaabdf2e2d2",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-018",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-018?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+1170&law=1897-018%3A%D0%A3%D0%93%D0%A1%3A1170%3Atext%3A1325&at=1325&end=1345",
+      "source_warning": null,
+      "passage_id": "1897-018:0-1397",
+      "sources": [
+        {
+          "page": 74,
+          "page_method": "header",
+          "file": "p0048_L.txt",
+          "start": 1325,
+          "end": 1345
+        }
+      ],
+      "printed_pages": [
+        74
+      ],
+      "scans": [
+        {
+          "file": "p0048_L.txt",
+          "page": 74,
+          "full": "scans/1897/pages/p0048_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1579,
+          "ocr_sha256": "2e67cd8005690d3c11db92a28c50fe8b6910ecd67f4902ae3e8325560c258976",
+          "pdf_page": 95,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УГС",
+          "field": "text",
+          "start": 1325,
+          "end": 1397,
+          "quote_original": "ст. 1161, 1162, 1170 (п. 3) и 1176 (по прод. 1890 года) уст. гражд. суд."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1325,
+          "end": 1345,
+          "quote_original": "ст. 1161, 1162, 1170",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 1325,
+              "end": 1397,
+              "quote_original": "ст. 1161, 1162, 1170 (п. 3) и 1176 (по прод. 1890 года) уст. гражд. суд."
             }
           ]
         }
@@ -2613,6 +2864,23 @@
               "end": 1398,
               "quote_original": "ст. 1170—1176 уст. гр. суд.",
               "act_code": "УГС"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 4221,
+          "end": 4234,
+          "quote_original": "ст. 1170-1176",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 1371,
+              "end": 1398,
+              "quote_original": "ст. 1170—1176 уст. гр. суд."
             }
           ]
         }
@@ -3798,6 +4066,83 @@
       ]
     },
     {
+      "id": "1904-112:УГС:129:text:5719",
+      "statute": "УГС ст. 129",
+      "code": "УГС",
+      "article": "ст. 129",
+      "decision_id": "1904-112",
+      "year": 1904,
+      "decision_number": 112,
+      "field": "text",
+      "start": 5719,
+      "end": 5732,
+      "quote_original": "ст. 129 и 142",
+      "context_original": "авлено въ силѣ. По изложеннымъ соображеніямъ, Правительствующій Сенатъ опредѣляетъ: рѣшеніе С.-Петербургскаго мироваго съѣзда, по нарушенію ст. 129 и 142 у. г. с., отмѣнить и передать дѣло на разсмотрѣніе того же съѣзда въ другомъ составѣ присутствія.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "29109066b3bdf43d6089d743cc2e6519ad7f3bdc5010409b58c0b96481e77df5",
+      "headnote_sha256": "6887c90de36dda40a18d04b02c84294fb337bc360e584e3dd47943a1e5a0ea52",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-112",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-112?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+129&law=1904-112%3A%D0%A3%D0%93%D0%A1%3A129%3Atext%3A5719&at=5719&end=5732",
+      "source_warning": null,
+      "passage_id": "1904-112:4205-5830",
+      "sources": [
+        {
+          "page": 310,
+          "page_method": "header",
+          "file": "p0156_L.txt",
+          "start": 5719,
+          "end": 5732
+        }
+      ],
+      "printed_pages": [
+        310
+      ],
+      "scans": [
+        {
+          "file": "p0156_L.txt",
+          "page": 310,
+          "full": "scans/1904/pages/p0156_L.webp",
+          "width": 1100,
+          "height": 1612,
+          "ocr_sha256": "0f4f8b0252a4c753ed4e9d53f6ce6c73d21c04ef9a7e5599935f8bc4739b1327",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УГС",
+          "field": "text",
+          "start": 5719,
+          "end": 5741,
+          "quote_original": "ст. 129 и 142 у. г. с."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5719,
+          "end": 5732,
+          "quote_original": "ст. 129 и 142",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 5719,
+              "end": 5741,
+              "quote_original": "ст. 129 и 142 у. г. с."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "1905-015:УГС:129:text:1741",
       "statute": "УГС ст. 129",
       "code": "УГС",
@@ -4291,6 +4636,83 @@
               "end": 5417,
               "quote_original": "ст. 130 уст. гр. суд.",
               "act_code": "УГС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-057:УГС:1303:text:1751",
+      "statute": "УГС ст. 1303",
+      "code": "УГС",
+      "article": "ст. 1303",
+      "decision_id": "1904-057",
+      "year": 1904,
+      "decision_number": 57,
+      "field": "text",
+      "start": 1751,
+      "end": 1759,
+      "quote_original": "ст. 1303",
+      "context_original": "убыткамъ, возникающимъ изъ нарушенія не договора, а закона, тѣмъ болѣе, что искъ Касабова не подходитъ ни подъ одинъ изъ трехъ параграфовъ ст. 1303.",
+      "association": "повторная ссылка с явным указанием на тот же акт",
+      "verification_status": "context_verified",
+      "source_sha256": "186379e9b8c6ae8541e9b03c24563bd75e7a20b0b8dcc63c0cbc8cdb0de76d43",
+      "headnote_sha256": "2eea58076791c375182ea42eda9bfa3f3d9fbca507f4d0f40fea8e729509c932",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-057",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-057?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+1303&law=1904-057%3A%D0%A3%D0%93%D0%A1%3A1303%3Atext%3A1751&at=1751&end=1759",
+      "source_warning": null,
+      "passage_id": "1904-057:0-1760",
+      "sources": [
+        {
+          "page": 161,
+          "page_method": "header",
+          "file": "p0081_R.txt",
+          "start": 1751,
+          "end": 1759
+        }
+      ],
+      "printed_pages": [
+        161
+      ],
+      "scans": [
+        {
+          "file": "p0081_R.txt",
+          "page": 161,
+          "full": "scans/1904/pages/p0081_R.webp",
+          "width": 1100,
+          "height": 1604,
+          "ocr_sha256": "62909fd0bba136c1a58e29b15dc9a7b8fe309e556af490216ea3314728fe8f7b",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "repeat",
+          "act_code": "УГС",
+          "field": "text",
+          "start": 1485,
+          "end": 1759,
+          "quote_original": "правило 1303 ст. уст. гр. суд., какъ правило ограничительное, не можетъ быть толкуемо распространительно и имѣть примѣненіе къ убыткамъ, возникающимъ изъ нарушенія не договора, а закона, тѣмъ болѣе, что искъ Касабова не подходитъ ни подъ одинъ изъ трехъ параграфовъ ст. 1303"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1751,
+          "end": 1759,
+          "quote_original": "ст. 1303",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 1485,
+              "end": 1759,
+              "quote_original": "правило 1303 ст. уст. гр. суд., какъ правило ограничительное, не можетъ быть толкуемо распространительно и имѣть примѣненіе къ убыткамъ, возникающимъ изъ нарушенія не договора, а закона, тѣмъ болѣе, что искъ Касабова не подходитъ ни подъ одинъ изъ трехъ параграфовъ ст. 1303"
             }
           ]
         }
@@ -5822,6 +6244,83 @@
       ]
     },
     {
+      "id": "1904-112:УГС:142:text:5719",
+      "statute": "УГС ст. 142",
+      "code": "УГС",
+      "article": "ст. 142",
+      "decision_id": "1904-112",
+      "year": 1904,
+      "decision_number": 112,
+      "field": "text",
+      "start": 5719,
+      "end": 5732,
+      "quote_original": "ст. 129 и 142",
+      "context_original": "авлено въ силѣ. По изложеннымъ соображеніямъ, Правительствующій Сенатъ опредѣляетъ: рѣшеніе С.-Петербургскаго мироваго съѣзда, по нарушенію ст. 129 и 142 у. г. с., отмѣнить и передать дѣло на разсмотрѣніе того же съѣзда въ другомъ составѣ присутствія.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "29109066b3bdf43d6089d743cc2e6519ad7f3bdc5010409b58c0b96481e77df5",
+      "headnote_sha256": "6887c90de36dda40a18d04b02c84294fb337bc360e584e3dd47943a1e5a0ea52",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-112",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-112?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+142&law=1904-112%3A%D0%A3%D0%93%D0%A1%3A142%3Atext%3A5719&at=5719&end=5732",
+      "source_warning": null,
+      "passage_id": "1904-112:4205-5830",
+      "sources": [
+        {
+          "page": 310,
+          "page_method": "header",
+          "file": "p0156_L.txt",
+          "start": 5719,
+          "end": 5732
+        }
+      ],
+      "printed_pages": [
+        310
+      ],
+      "scans": [
+        {
+          "file": "p0156_L.txt",
+          "page": 310,
+          "full": "scans/1904/pages/p0156_L.webp",
+          "width": 1100,
+          "height": 1612,
+          "ocr_sha256": "0f4f8b0252a4c753ed4e9d53f6ce6c73d21c04ef9a7e5599935f8bc4739b1327",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УГС",
+          "field": "text",
+          "start": 5719,
+          "end": 5741,
+          "quote_original": "ст. 129 и 142 у. г. с."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5719,
+          "end": 5732,
+          "quote_original": "ст. 129 и 142",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 5719,
+              "end": 5741,
+              "quote_original": "ст. 129 и 142 у. г. с."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "1905-022:УГС:142:text:2791",
       "statute": "УГС ст. 142",
       "code": "УГС",
@@ -6458,7 +6957,7 @@
       ]
     },
     {
-      "id": "1905-097:УГС:1451:text:1605",
+      "id": "1905-097:УГС:1451:text:3235",
       "statute": "УГС ст. 1451",
       "code": "УГС",
       "article": "ст. 1451",
@@ -6466,27 +6965,27 @@
       "year": 1905,
       "decision_number": 97,
       "field": "text",
-      "start": 1605,
-      "end": 1613,
+      "start": 3235,
+      "end": 3243,
       "quote_original": "ст. 1451",
-      "context_original": "заявить о каждомъ кредиторѣ въ отдѣльности, нашла просьбу опеки надъ имуществомъ гр. Тышкевичъ неподлежащею удовлетворенію потому, что, по ст. 1451 уст. гр. суд., право ходатайствовать о признаніи извѣстнаго лица безвѣстно-отсутствующимъ принадлежитъ только лицамъ, имѣющимъ какія-либо п",
-      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
-      "verification_status": "legacy_unverified",
+      "context_original": "ать—супругъ или супруга безвѣстно-отсутствующаго, дѣти и вообще всѣ наслѣдники его, а также лица прокурорскаго надзора. Въ развитіе правила ст. 1451 Правительствующимъ Сенатомъ признано (рѣш. 1890 г. № 129), что возбудить производство объ удостовѣреніи въ безвѣстномъ отсутствіи можетъ и",
+      "association": "повторная ссылка с явным указанием на тот же акт",
+      "verification_status": "context_verified",
       "source_sha256": "934a93d666e90a816730fca28eea57d4085f39916c1c641636296ce15e0d34a0",
       "headnote_sha256": "bef6d107186403fe22af28e27d1cda4b934609bffb65dcef3d417900a405a0f1",
       "number_status": "ocr_unverified",
-      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-097",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-097?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+1451&law=1905-097%3A%D0%A3%D0%93%D0%A1%3A1451%3Atext%3A1605&at=1605&end=1613",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-097?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+1451&law=1905-097%3A%D0%A3%D0%93%D0%A1%3A1451%3Atext%3A3235&at=3235&end=3243",
       "source_warning": null,
-      "passage_id": "1905-097:0-1880",
+      "passage_id": "1905-097:2950-4614",
       "sources": [
         {
           "page": 262,
           "page_method": "header",
           "file": "p0132_L.txt",
-          "start": 1605,
-          "end": 1613
+          "start": 3235,
+          "end": 3243
         }
       ],
       "printed_pages": [
@@ -6504,8 +7003,52 @@
         }
       ],
       "scan_available": true,
-      "evidence": [],
-      "occurrences": []
+      "evidence": [
+        {
+          "kind": "repeat",
+          "act_code": "УГС",
+          "field": "text",
+          "start": 1605,
+          "end": 1627,
+          "quote_original": "ст. 1451 уст. гр. суд."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3235,
+          "end": 3243,
+          "quote_original": "ст. 1451",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 1605,
+              "end": 1627,
+              "quote_original": "ст. 1451 уст. гр. суд."
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 3773,
+          "end": 3783,
+          "quote_original": "ст. 1451 и",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 1605,
+              "end": 1627,
+              "quote_original": "ст. 1451 уст. гр. суд."
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "1905-097:УГС:1451–1460:text:6188",
@@ -6673,6 +7216,101 @@
               "end": 10539,
               "quote_original": "ст. 1453 уст. гр. суд.",
               "act_code": "УГС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-097:УГС:1453:text:3898",
+      "statute": "УГС ст. 1453",
+      "code": "УГС",
+      "article": "ст. 1453",
+      "decision_id": "1905-097",
+      "year": 1905,
+      "decision_number": 97,
+      "field": "text",
+      "start": 3898,
+      "end": 3906,
+      "quote_original": "ст. 1453",
+      "context_original": "ановленнымъ въ ст. 1451 и слѣд. порядкомъ удостовѣренія безвѣстнаго отсутствія съ цѣлью вызова въ судъ опекуна, который будетъ назначенъ по ст. 1453 для защиты правъ безвѣстно-отсутствующаго и для охраненія его имущества, оно не въ правѣ, такъ какъ для вызова въ судъ отвѣтчиковъ, находящ",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "934a93d666e90a816730fca28eea57d4085f39916c1c641636296ce15e0d34a0",
+      "headnote_sha256": "bef6d107186403fe22af28e27d1cda4b934609bffb65dcef3d417900a405a0f1",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-097",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-097?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+1453&law=1905-097%3A%D0%A3%D0%93%D0%A1%3A1453%3Atext%3A3898&at=3898&end=3906",
+      "source_warning": null,
+      "passage_id": "1905-097:2950-4614",
+      "sources": [
+        {
+          "page": 263,
+          "page_method": "header",
+          "file": "p0132_R.txt",
+          "start": 3898,
+          "end": 3906
+        }
+      ],
+      "printed_pages": [
+        263
+      ],
+      "scans": [
+        {
+          "file": "p0132_R.txt",
+          "page": 263,
+          "full": "scans/1905/pages/p0132_R.webp",
+          "width": 1100,
+          "height": 1575,
+          "ocr_sha256": "ae2efaaa3373a40b09da5df163fb1c17d33ba13cf311a4712ae84b30d47f6485",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УГС",
+          "field": "text",
+          "start": 3496,
+          "end": 4312,
+          "quote_original": "безвѣстно-отсутствующаго могутъ вытекать не только изъ наслѣдственнаго и выморочнаго права, но и изъ другихъ основаній, но если лицо для осуществленія своего притязанія къ имуществу безвѣстно-отсутствующаго обязано предъявить искъ въ судѣ, то воспользоваться установленнымъ въ ст. 1451 и слѣд. порядкомъ удостовѣренія безвѣстнаго отсутствія съ цѣлью вызова въ судъ опекуна, который будетъ назначенъ по ст. 1453 для защиты правъ безвѣстно-отсутствующаго и для охраненія его имущества, оно не въ правѣ, такъ какъ для вызова въ судъ отвѣтчиковъ, находящихся въ безвѣстномъ отсутствіи, установленъ въ законѣ (ст. 293 уст. гр. суд.) особый способъ—публикація въ вѣдомостяхъ. Слѣдуетъ замѣтить, что въ ст. 293 уст. гр. суд. публикація установлена для вызова такого отвѣтчика, мѣстожительство котораго не могло быть указано"
+        },
+        {
+          "kind": "direct",
+          "act_code": "УГС",
+          "field": "text",
+          "start": 1605,
+          "end": 1627,
+          "quote_original": "ст. 1451 уст. гр. суд.",
+          "role": "act_identity"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3898,
+          "end": 3906,
+          "quote_original": "ст. 1453",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 3496,
+              "end": 4312,
+              "quote_original": "безвѣстно-отсутствующаго могутъ вытекать не только изъ наслѣдственнаго и выморочнаго права, но и изъ другихъ основаній, но если лицо для осуществленія своего притязанія къ имуществу безвѣстно-отсутствующаго обязано предъявить искъ въ судѣ, то воспользоваться установленнымъ въ ст. 1451 и слѣд. порядкомъ удостовѣренія безвѣстнаго отсутствія съ цѣлью вызова въ судъ опекуна, который будетъ назначенъ по ст. 1453 для защиты правъ безвѣстно-отсутствующаго и для охраненія его имущества, оно не въ правѣ, такъ какъ для вызова въ судъ отвѣтчиковъ, находящихся въ безвѣстномъ отсутствіи, установленъ въ законѣ (ст. 293 уст. гр. суд.) особый способъ—публикація въ вѣдомостяхъ. Слѣдуетъ замѣтить, что въ ст. 293 уст. гр. суд. публикація установлена для вызова такого отвѣтчика, мѣстожительство котораго не могло быть указано"
+            },
+            {
+              "kind": "direct",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 1605,
+              "end": 1627,
+              "quote_original": "ст. 1451 уст. гр. суд.",
+              "role": "act_identity"
             }
           ]
         }
@@ -7841,6 +8479,91 @@
               "act_code": "УГС"
             }
           ]
+        },
+        {
+          "field": "text",
+          "start": 1924,
+          "end": 1932,
+          "quote_original": "ст. 1567",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 545,
+              "end": 567,
+              "quote_original": "ст. 1567 уст. гр. суд."
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 3021,
+          "end": 3029,
+          "quote_original": "ст. 1567",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 545,
+              "end": 567,
+              "quote_original": "ст. 1567 уст. гр. суд."
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 4394,
+          "end": 4402,
+          "quote_original": "ст. 1567",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 545,
+              "end": 567,
+              "quote_original": "ст. 1567 уст. гр. суд."
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 5330,
+          "end": 5338,
+          "quote_original": "ст. 1567",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 545,
+              "end": 567,
+              "quote_original": "ст. 1567 уст. гр. суд."
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 7384,
+          "end": 7392,
+          "quote_original": "ст. 1567",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 545,
+              "end": 567,
+              "quote_original": "ст. 1567 уст. гр. суд."
+            }
+          ]
         }
       ]
     },
@@ -8101,6 +8824,83 @@
       ]
     },
     {
+      "id": "1905-089:УГС:166:text:8650",
+      "statute": "УГС ст. 166",
+      "code": "УГС",
+      "article": "ст. 166",
+      "decision_id": "1905-089",
+      "year": 1905,
+      "decision_number": 89,
+      "field": "text",
+      "start": 8650,
+      "end": 8657,
+      "quote_original": "ст. 166",
+      "context_original": "овой просьбы, отзыва или апелляціонной жалобы и на опредѣленія по просьбамъ объ обезпеченіи иска или о предварительномъ исполненіи рѣшенія (ст. 166); всѣ же другія частныя жалобы, подаваемыя по самостоятельнымъ частнымъ производствамъ, въ томъ числѣ и по спорамъ и жалобамъ, возникающимъ",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "4d4b6fe1a28b48e87f08adaffcd0225fee9d66f79c3184fa62aab5700a92a757",
+      "headnote_sha256": "d1c983a16e8c925b329d3db47cd39309b96364d5463bea395451818a1144db66",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-089",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-089?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+166&law=1905-089%3A%D0%A3%D0%93%D0%A1%3A166%3Atext%3A8650&at=8650&end=8657",
+      "source_warning": null,
+      "passage_id": "1905-089:7784-9349",
+      "sources": [
+        {
+          "page": 243,
+          "page_method": "header",
+          "file": "p0122_R.txt",
+          "start": 8650,
+          "end": 8657
+        }
+      ],
+      "printed_pages": [
+        243
+      ],
+      "scans": [
+        {
+          "file": "p0122_R.txt",
+          "page": 243,
+          "full": "scans/1905/pages/p0122_R.webp",
+          "width": 1100,
+          "height": 1549,
+          "ocr_sha256": "b82020a3dd5a53ed72b2ccdf9fcbda03ca21505f7b0e3cc77f9f66dda4906e61",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УГС",
+          "field": "text",
+          "start": 7956,
+          "end": 8658,
+          "quote_original": "ст. 171 уст. гр. суд., извѣщеніе сторонъ о днѣ слушанія дѣла было обязательно для съѣзда. Ст. 169 устава, на которую сослался съѣздъ, говоритъ, что частныя жалобы разсматриваются въ мировомъ съѣздѣ безъ вызова сторонъ; но постановленіе это, какъ сіе явствуетъ изъ самаго текста 169 ст., гдѣ сказано, „жалобы эти“, относится, очевидно, только до тѣхъ частныхъ жалобъ, о которыхъ говорится въ трехъ предыдущихъ статьяхъ 166—168, т.-е. до частныхъ жалобъ, подаваемыхъ во время производства исковаго дѣла, а именно до жалобъ на медленность, на непринятіе исковой просьбы, отзыва или апелляціонной жалобы и на опредѣленія по просьбамъ объ обезпеченіи иска или о предварительномъ исполненіи рѣшенія (ст. 166)"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8650,
+          "end": 8657,
+          "quote_original": "ст. 166",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 7956,
+              "end": 8658,
+              "quote_original": "ст. 171 уст. гр. суд., извѣщеніе сторонъ о днѣ слушанія дѣла было обязательно для съѣзда. Ст. 169 устава, на которую сослался съѣздъ, говоритъ, что частныя жалобы разсматриваются въ мировомъ съѣздѣ безъ вызова сторонъ; но постановленіе это, какъ сіе явствуетъ изъ самаго текста 169 ст., гдѣ сказано, „жалобы эти“, относится, очевидно, только до тѣхъ частныхъ жалобъ, о которыхъ говорится въ трехъ предыдущихъ статьяхъ 166—168, т.-е. до частныхъ жалобъ, подаваемыхъ во время производства исковаго дѣла, а именно до жалобъ на медленность, на непринятіе исковой просьбы, отзыва или апелляціонной жалобы и на опредѣленія по просьбамъ объ обезпеченіи иска или о предварительномъ исполненіи рѣшенія (ст. 166)"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "1905-001:УГС:1673:text:1753",
       "statute": "УГС ст. 1673",
       "code": "УГС",
@@ -8354,7 +9154,7 @@
       "occurrences": []
     },
     {
-      "id": "1905-089:УГС:169:text:8046",
+      "id": "1905-089:УГС:169:text:8827",
       "statute": "УГС ст. 169",
       "code": "УГС",
       "article": "ст. 169",
@@ -8362,18 +9162,18 @@
       "year": 1905,
       "decision_number": 89,
       "field": "text",
-      "start": 8046,
-      "end": 8053,
-      "quote_original": "Ст. 169",
-      "context_original": "новлено безъ вызова сторонъ. Между тѣмъ, согласно ст. 171 уст. гр. суд., извѣщеніе сторонъ о днѣ слушанія дѣла было обязательно для съѣзда. Ст. 169 устава, на которую сослался съѣздъ, говоритъ, что частныя жалобы разсматриваются въ мировомъ съѣздѣ безъ вызова сторонъ; но постановленіе э",
-      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
-      "verification_status": "legacy_unverified",
+      "start": 8827,
+      "end": 8834,
+      "quote_original": "ст. 169",
+      "context_original": "ы, подаваемыя по самостоятельнымъ частнымъ производствамъ, въ томъ числѣ и по спорамъ и жалобамъ, возникающимъ при исполненіи рѣшенія, подъ ст. 169 не подходятъ, и дѣла по такимъ частнымъ жалобамъ должны слушаться въ съѣздѣ не иначе, какъ, согласно ст. 171, съ вызовомъ сторонъ. Такимъ о",
+      "association": "повторная ссылка с явным указанием на тот же акт",
+      "verification_status": "context_verified",
       "source_sha256": "4d4b6fe1a28b48e87f08adaffcd0225fee9d66f79c3184fa62aab5700a92a757",
       "headnote_sha256": "d1c983a16e8c925b329d3db47cd39309b96364d5463bea395451818a1144db66",
       "number_status": "ocr_unverified",
-      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-089",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-089?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+169&law=1905-089%3A%D0%A3%D0%93%D0%A1%3A169%3Atext%3A8046&at=8046&end=8053",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-089?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+169&law=1905-089%3A%D0%A3%D0%93%D0%A1%3A169%3Atext%3A8827&at=8827&end=8834",
       "source_warning": null,
       "passage_id": "1905-089:7784-9349",
       "sources": [
@@ -8381,8 +9181,8 @@
           "page": 243,
           "page_method": "header",
           "file": "p0122_R.txt",
-          "start": 8046,
-          "end": 8053
+          "start": 8827,
+          "end": 8834
         }
       ],
       "printed_pages": [
@@ -8400,11 +9200,38 @@
         }
       ],
       "scan_available": true,
-      "evidence": [],
-      "occurrences": []
+      "evidence": [
+        {
+          "kind": "repeat",
+          "act_code": "УГС",
+          "field": "text",
+          "start": 9069,
+          "end": 9096,
+          "quote_original": "ст. 169 и 171 уст. гр. суд."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8827,
+          "end": 8834,
+          "quote_original": "ст. 169",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 9069,
+              "end": 9096,
+              "quote_original": "ст. 169 и 171 уст. гр. суд."
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "1905-089:УГС:171:text:7956",
+      "id": "1905-089:УГС:171:text:8936",
       "statute": "УГС ст. 171",
       "code": "УГС",
       "article": "ст. 171",
@@ -8412,27 +9239,27 @@
       "year": 1905,
       "decision_number": 89,
       "field": "text",
-      "start": 7956,
-      "end": 7963,
+      "start": 8936,
+      "end": 8943,
       "quote_original": "ст. 171",
-      "context_original": "опредѣленіе это постановлено безъ вызова сторонъ. Между тѣмъ, согласно ст. 171 уст. гр. суд., извѣщеніе сторонъ о днѣ слушанія дѣла было обязательно для съѣзда. Ст. 169 устава, на которую сослался съѣздъ, говоритъ, что",
-      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
-      "verification_status": "legacy_unverified",
+      "context_original": "ъ при исполненіи рѣшенія, подъ ст. 169 не подходятъ, и дѣла по такимъ частнымъ жалобамъ должны слушаться въ съѣздѣ не иначе, какъ, согласно ст. 171, съ вызовомъ сторонъ. Такимъ образомъ, нельзя не признать, что въ настоящемъ дѣлѣ мировымъ съѣздомъ допущено также нарушеніе ст. 169 и 171",
+      "association": "повторная ссылка с явным указанием на тот же акт",
+      "verification_status": "context_verified",
       "source_sha256": "4d4b6fe1a28b48e87f08adaffcd0225fee9d66f79c3184fa62aab5700a92a757",
       "headnote_sha256": "d1c983a16e8c925b329d3db47cd39309b96364d5463bea395451818a1144db66",
       "number_status": "ocr_unverified",
-      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-089",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-089?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+171&law=1905-089%3A%D0%A3%D0%93%D0%A1%3A171%3Atext%3A7956&at=7956&end=7963",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-089?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+171&law=1905-089%3A%D0%A3%D0%93%D0%A1%3A171%3Atext%3A8936&at=8936&end=8943",
       "source_warning": null,
-      "passage_id": "1905-089:6507-8045",
+      "passage_id": "1905-089:7784-9349",
       "sources": [
         {
           "page": 243,
           "page_method": "header",
           "file": "p0122_R.txt",
-          "start": 7956,
-          "end": 7963
+          "start": 8936,
+          "end": 8943
         }
       ],
       "printed_pages": [
@@ -8450,8 +9277,35 @@
         }
       ],
       "scan_available": true,
-      "evidence": [],
-      "occurrences": []
+      "evidence": [
+        {
+          "kind": "repeat",
+          "act_code": "УГС",
+          "field": "text",
+          "start": 9069,
+          "end": 9096,
+          "quote_original": "ст. 169 и 171 уст. гр. суд."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8936,
+          "end": 8943,
+          "quote_original": "ст. 171",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 9069,
+              "end": 9096,
+              "quote_original": "ст. 169 и 171 уст. гр. суд."
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "1897-074:УГС:1767:text:2538",
@@ -9963,6 +10817,84 @@
       ]
     },
     {
+      "id": "1897-053:УГС:204–206:text:2490",
+      "statute": "УГС ст. 204–206",
+      "code": "УГС",
+      "article": "ст. 204–206",
+      "decision_id": "1897-053",
+      "year": 1897,
+      "decision_number": 53,
+      "field": "text",
+      "start": 2490,
+      "end": 2501,
+      "quote_original": "ст. 204—206",
+      "context_original": "ранному имъ мѣсту пребыванія (ст. 309) а если о немъ не было заявлено въ канцеляріи суда, то по указанному суду мѣсту жительства отвѣтчика (ст. 204—206). Въ этомъ законѣ не сдѣлано никакого различія между заочнымъ рѣшеніемъ, постановленнымъ всецѣло или частью въ пользу истца противъ отвѣтчи",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "0241782548ac332a3d1bec64e9fd150e591716ce5e5e4ba37a57a70d31ac03f6",
+      "headnote_sha256": "b800611c34abf9bd0005a3abf05a1b5df24014db34fb538caa14cf411e242e6c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-053",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-053?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+204%E2%80%93206&law=1897-053%3A%D0%A3%D0%93%D0%A1%3A204%E2%80%93206%3Atext%3A2490&at=2490&end=2501",
+      "source_warning": null,
+      "passage_id": "1897-053:1353-2901",
+      "sources": [
+        {
+          "page": 175,
+          "page_method": "header",
+          "file": "p0098_R.txt",
+          "start": 2490,
+          "end": 2501
+        }
+      ],
+      "printed_pages": [
+        175
+      ],
+      "scans": [
+        {
+          "file": "p0098_R.txt",
+          "page": 175,
+          "full": "scans/1897/pages/p0098_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1477,
+          "ocr_sha256": "51af18db255ec4956b594e47a4533e92e8f840b71ccbc74c09d97ff81e28a25a",
+          "pdf_page": 196,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УГС",
+          "field": "text",
+          "start": 2230,
+          "end": 2502,
+          "quote_original": "По статьѣ 725 уст. гр. суд. заочное рѣшеніе объявляется отвѣтчику доставленіемъ ему выписки изъ рѣшенія (ст. 716) по избранному имъ мѣсту пребыванія (ст. 309) а если о немъ не было заявлено въ канцеляріи суда, то по указанному суду мѣсту жительства отвѣтчика (ст. 204—206)"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2490,
+          "end": 2501,
+          "quote_original": "ст. 204—206",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 2230,
+              "end": 2502,
+              "quote_original": "По статьѣ 725 уст. гр. суд. заочное рѣшеніе объявляется отвѣтчику доставленіемъ ему выписки изъ рѣшенія (ст. 716) по избранному имъ мѣсту пребыванія (ст. 309) а если о немъ не было заявлено въ канцеляріи суда, то по указанному суду мѣсту жительства отвѣтчика (ст. 204—206)"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "1897-010:УГС:2079:text:5512",
       "statute": "УГС ст. 2079",
       "code": "УГС",
@@ -10415,6 +11347,86 @@
           ]
         }
       ]
+    },
+    {
+      "id": "1897-014:УГС:22–25:text:15438",
+      "statute": "УГС ст. 22–25",
+      "code": "УГС",
+      "article": "ст. 22–25",
+      "decision_id": "1897-014",
+      "year": 1897,
+      "decision_number": 14,
+      "field": "text",
+      "start": 15438,
+      "end": 15450,
+      "quote_original": "ст. 1, 22—25",
+      "context_original": "езультатъ приведенія судомъ въ извѣстность имущества должника (уст. суд. торг. ст. 497—500, уст. гражд. суд. ст. 1400, прим., прил. III, 1; ст. 1, 22—25), но предположеніе это можетъ впослѣдствіи, по розысканіи конкурснымъ управленіемъ имущества и долговъ лица, объявленнаго несостоятельнымъ,",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "73b48469b14fe7eac451ff81880a629f81698622e5ddbe1fe642624e3ae002b6",
+      "headnote_sha256": "21ba2aa3f42c37d5b7e564825191951bfaecd8ab62914c10e1c381944196c437",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-014",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-014?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+22%E2%80%9325&law=1897-014%3A%D0%A3%D0%93%D0%A1%3A22%E2%80%9325%3Atext%3A15438&at=15438&end=15450",
+      "source_warning": null,
+      "passage_id": "1897-014:14299-16107",
+      "sources": [
+        {
+          "page": 62,
+          "page_method": "header",
+          "file": "p0042_L.txt",
+          "start": 15438,
+          "end": 15450
+        }
+      ],
+      "printed_pages": [
+        62
+      ],
+      "scans": [
+        {
+          "file": "p0042_L.txt",
+          "page": 62,
+          "full": "scans/1897/pages/p0042_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1572,
+          "ocr_sha256": "000d0793f3af000d1ab6e7017c552934cce800ca758ac449cae8debe4cfff50c",
+          "pdf_page": 83,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УГС",
+          "field": "text",
+          "start": 15390,
+          "end": 15450,
+          "quote_original": "уст. гражд. суд. ст. 1400, прим., прил. III, 1; ст. 1, 22—25"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 15438,
+          "end": 15450,
+          "quote_original": "ст. 1, 22—25",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 15390,
+              "end": 15450,
+              "quote_original": "уст. гражд. суд. ст. 1400, прим., прил. III, 1; ст. 1, 22—25"
+            }
+          ],
+          "attribution_note": "Речь о статьях 22–25 приложения III, отделения 1, к статье 1400 (примечание) УГС, а не об основных статьях 22–25 УГС. Исходное извлечённое обозначение сохранено."
+        }
+      ],
+      "attribution_note": "Речь о статьях 22–25 приложения III, отделения 1, к статье 1400 (примечание) УГС, а не об основных статьях 22–25 УГС. Исходное извлечённое обозначение сохранено."
     },
     {
       "id": "1897-087:УГС:232:text:1570",
@@ -11244,6 +12256,23 @@
               "act_code": "УГС"
             }
           ]
+        },
+        {
+          "field": "text",
+          "start": 1455,
+          "end": 1462,
+          "quote_original": "ст. 258",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 654,
+              "end": 675,
+              "quote_original": "258 ст. уст. гр. суд."
+            }
+          ]
         }
       ]
     },
@@ -11384,6 +12413,83 @@
               },
               "edition_continuation": null,
               "act_code": "УГС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-060:УГС:263:text:9788",
+      "statute": "УГС ст. 263",
+      "code": "УГС",
+      "article": "ст. 263",
+      "decision_id": "1904-060",
+      "year": 1904,
+      "decision_number": 60,
+      "field": "text",
+      "start": 9788,
+      "end": 9807,
+      "quote_original": "ст. 263, 755, 801 и",
+      "context_original": "снить, что представлять копіи прилагаемыхъ къ дѣлу тарифовъ или отдѣльныхъ статей для противной стороны тяжущіеся не обязаны, ибо закономъ (ст. 263, 755, 801 и др. уст. гражд. судопр.) вмѣнено имъ въ обязанность приложеніе такихъ копій только съ бумагъ процессуальныхъ, а также съ актовъ и документо",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "8cd7686db11e31857da400962f1b7769f803d8b4f6a21fc692c6f381cdf06618",
+      "headnote_sha256": "fb210ec4439e63a5f1be51c4e6b12881922cc415064fbbcde88a24aee4031075",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+263&law=1904-060%3A%D0%A3%D0%93%D0%A1%3A263%3Atext%3A9788&at=9788&end=9807",
+      "source_warning": null,
+      "passage_id": "1904-060:8696-10869",
+      "sources": [
+        {
+          "page": 171,
+          "page_method": "header",
+          "file": "p0086_R.txt",
+          "start": 9788,
+          "end": 9807
+        }
+      ],
+      "printed_pages": [
+        171
+      ],
+      "scans": [
+        {
+          "file": "p0086_R.txt",
+          "page": 171,
+          "full": "scans/1904/pages/p0086_R.webp",
+          "width": 1100,
+          "height": 1646,
+          "ocr_sha256": "9d876a451bc651c39d7a8f1361aaa622cfb244d7ff465dbc268332cb80710310",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УГС",
+          "field": "text",
+          "start": 9788,
+          "end": 9831,
+          "quote_original": "ст. 263, 755, 801 и др. уст. гражд. судопр."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 9788,
+          "end": 9807,
+          "quote_original": "ст. 263, 755, 801 и",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 9788,
+              "end": 9831,
+              "quote_original": "ст. 263, 755, 801 и др. уст. гражд. судопр."
             }
           ]
         }
@@ -13220,6 +14326,84 @@
       ]
     },
     {
+      "id": "1897-053:УГС:309:text:2380",
+      "statute": "УГС ст. 309",
+      "code": "УГС",
+      "article": "ст. 309",
+      "decision_id": "1897-053",
+      "year": 1897,
+      "decision_number": 53,
+      "field": "text",
+      "start": 2380,
+      "end": 2387,
+      "quote_original": "ст. 309",
+      "context_original": "725 уст. гр. суд. заочное рѣшеніе объявляется отвѣтчику доставленіемъ ему выписки изъ рѣшенія (ст. 716) по избранному имъ мѣсту пребыванія (ст. 309) а если о немъ не было заявлено въ канцеляріи суда, то по указанному суду мѣсту жительства отвѣтчика (ст. 204—206). Въ этомъ законѣ не сдѣл",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "0241782548ac332a3d1bec64e9fd150e591716ce5e5e4ba37a57a70d31ac03f6",
+      "headnote_sha256": "b800611c34abf9bd0005a3abf05a1b5df24014db34fb538caa14cf411e242e6c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-053",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-053?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+309&law=1897-053%3A%D0%A3%D0%93%D0%A1%3A309%3Atext%3A2380&at=2380&end=2387",
+      "source_warning": null,
+      "passage_id": "1897-053:1353-2901",
+      "sources": [
+        {
+          "page": 175,
+          "page_method": "header",
+          "file": "p0098_R.txt",
+          "start": 2380,
+          "end": 2387
+        }
+      ],
+      "printed_pages": [
+        175
+      ],
+      "scans": [
+        {
+          "file": "p0098_R.txt",
+          "page": 175,
+          "full": "scans/1897/pages/p0098_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1477,
+          "ocr_sha256": "51af18db255ec4956b594e47a4533e92e8f840b71ccbc74c09d97ff81e28a25a",
+          "pdf_page": 196,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УГС",
+          "field": "text",
+          "start": 2230,
+          "end": 2502,
+          "quote_original": "По статьѣ 725 уст. гр. суд. заочное рѣшеніе объявляется отвѣтчику доставленіемъ ему выписки изъ рѣшенія (ст. 716) по избранному имъ мѣсту пребыванія (ст. 309) а если о немъ не было заявлено въ канцеляріи суда, то по указанному суду мѣсту жительства отвѣтчика (ст. 204—206)"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2380,
+          "end": 2387,
+          "quote_original": "ст. 309",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 2230,
+              "end": 2502,
+              "quote_original": "По статьѣ 725 уст. гр. суд. заочное рѣшеніе объявляется отвѣтчику доставленіемъ ему выписки изъ рѣшенія (ст. 716) по избранному имъ мѣсту пребыванія (ст. 309) а если о немъ не было заявлено въ канцеляріи суда, то по указанному суду мѣсту жительства отвѣтчика (ст. 204—206)"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "1897-063:УГС:312:text:10983",
       "statute": "УГС ст. 312",
       "code": "УГС",
@@ -14624,6 +15808,166 @@
       "scan_available": true,
       "evidence": [],
       "occurrences": []
+    },
+    {
+      "id": "1904-108:УГС:35:text:3245",
+      "statute": "УГС ст. 35",
+      "code": "УГС",
+      "article": "ст. 35",
+      "decision_id": "1904-108",
+      "year": 1904,
+      "decision_number": 108,
+      "field": "text",
+      "start": 3245,
+      "end": 3260,
+      "quote_original": "ст.\n\n5, 22 и 35",
+      "context_original": "ьшей степени и кредиторами личными несостоятельнаго должника. Правила о производствѣ дѣлъ о несостоятельности въ губерніяхъ Прибалтійскихъ (ст.\n\n5, 22 и 35 прилож. къ 1899 ст. уст. гражд. судопр.), установляя для ипотечныхъ кредиторовъ отдѣльное отъ конкурса удовлетвореніе, очевидно, также имѣю",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "cab131583feb8a551fb7edcffdf86563dcff94478c5ba2fe53ca6ad6b3a741de",
+      "headnote_sha256": "6839e4af1d0b5d101af493d67bad0bc8422dd8939d13419ece7cd124ab1c667a",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-108",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-108?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+35&law=1904-108%3A%D0%A3%D0%93%D0%A1%3A35%3Atext%3A3245&at=3245&end=3260",
+      "source_warning": null,
+      "passage_id": "1904-108:2963-4725",
+      "sources": [
+        {
+          "page": 298,
+          "page_method": "header",
+          "file": "p0150_L.txt",
+          "start": 3245,
+          "end": 3248
+        },
+        {
+          "page": 299,
+          "page_method": "header",
+          "file": "p0150_R.txt",
+          "start": 3250,
+          "end": 3260
+        }
+      ],
+      "printed_pages": [
+        298,
+        299
+      ],
+      "scans": [
+        {
+          "file": "p0150_L.txt",
+          "page": 298,
+          "full": "scans/1904/pages/p0150_L.webp",
+          "width": 1100,
+          "height": 1630,
+          "ocr_sha256": "6399adc2498251d4441101014a88f7b084f6d1a68c724c290a26fb216821005c",
+          "kind": "page"
+        },
+        {
+          "file": "p0150_R.txt",
+          "page": 299,
+          "full": "scans/1904/pages/p0150_R.webp",
+          "width": 1100,
+          "height": 1630,
+          "ocr_sha256": "4d8a332ac4bc3be28d9953ff8d8223466279efe0b3fc4ba84ea177a97ec6ad07",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 8063,
+          "end": 8112,
+          "quote_original": "прил. къ ст. 1899 (ст. 5, 14, 18, 22, 34—37) 108.",
+          "heading": {
+            "start": 6496,
+            "end": 6531,
+            "quote_original": "Уставъ гражданск. судопроизводства."
+          },
+          "edition_continuation": null,
+          "act_code": "УГС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3245,
+          "end": 3260,
+          "quote_original": "ст.\n\n5, 22 и 35",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 8063,
+              "end": 8112,
+              "quote_original": "прил. къ ст. 1899 (ст. 5, 14, 18, 22, 34—37) 108.",
+              "heading": {
+                "start": 6496,
+                "end": 6531,
+                "quote_original": "Уставъ гражданск. судопроизводства."
+              },
+              "edition_continuation": null,
+              "act_code": "УГС"
+            }
+          ],
+          "attribution_note": "Речь о статье 35 приложения к статье 1899 УГС (правила о производстве дел о несостоятельности в Прибалтийских губерниях), а не об основной статье 35 УГС. Исходное извлечённое обозначение сохранено."
+        },
+        {
+          "field": "text",
+          "start": 7505,
+          "end": 7511,
+          "quote_original": "ст. 35",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 8063,
+              "end": 8112,
+              "quote_original": "прил. къ ст. 1899 (ст. 5, 14, 18, 22, 34—37) 108.",
+              "heading": {
+                "start": 6496,
+                "end": 6531,
+                "quote_original": "Уставъ гражданск. судопроизводства."
+              },
+              "edition_continuation": null,
+              "act_code": "УГС"
+            }
+          ],
+          "attribution_note": "Речь о статье 35 приложения к статье 1899 УГС (правила о производстве дел о несостоятельности в Прибалтийских губерниях), а не об основной статье 35 УГС. Исходное извлечённое обозначение сохранено."
+        },
+        {
+          "field": "text",
+          "start": 7668,
+          "end": 7674,
+          "quote_original": "ст. 35",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 8063,
+              "end": 8112,
+              "quote_original": "прил. къ ст. 1899 (ст. 5, 14, 18, 22, 34—37) 108.",
+              "heading": {
+                "start": 6496,
+                "end": 6531,
+                "quote_original": "Уставъ гражданск. судопроизводства."
+              },
+              "edition_continuation": null,
+              "act_code": "УГС"
+            }
+          ],
+          "attribution_note": "Речь о статье 35 приложения к статье 1899 УГС (правила о производстве дел о несостоятельности в Прибалтийских губерниях), а не об основной статье 35 УГС. Исходное извлечённое обозначение сохранено."
+        }
+      ],
+      "attribution_note": "Речь о статье 35 приложения к статье 1899 УГС (правила о производстве дел о несостоятельности в Прибалтийских губерниях), а не об основной статье 35 УГС. Исходное извлечённое обозначение сохранено."
     },
     {
       "id": "1897-063:УГС:362:text:10983",
@@ -16976,6 +18320,83 @@
               "end": 2560,
               "quote_original": "уст. гр. суд. ст. 46, 47, 247 и 248",
               "act_code": "УГС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-035:УГС:480:text:3917",
+      "statute": "УГС ст. 480",
+      "code": "УГС",
+      "article": "ст. 480",
+      "decision_id": "1905-035",
+      "year": 1905,
+      "decision_number": 35,
+      "field": "text",
+      "start": 3917,
+      "end": 3924,
+      "quote_original": "ст. 480",
+      "context_original": "щимися и которыя, будучи признаны однимъ изъ нихъ, почитаются нетребующими представленія другимъ дальнѣйшихъ доказательствъ. Слѣдовательно, ст. 480 не можетъ имѣть примѣненія къ такому объясненію тяжущагося, которое касается не обстоятельствъ дѣла, а относится или къ истолкованію закона",
+      "association": "повторная ссылка с явным указанием на тот же акт",
+      "verification_status": "context_verified",
+      "source_sha256": "5b99b6925704ac74fa343d02c685c01e71f4ae24bc69db77b54cf5fe38dc3891",
+      "headnote_sha256": "fcb170179685b59b68eed50a7e5fb1d8fee10dbc3afe4b178c427c93534bb767",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-035",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-035?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+480&law=1905-035%3A%D0%A3%D0%93%D0%A1%3A480%3Atext%3A3917&at=3917&end=3924",
+      "source_warning": null,
+      "passage_id": "1905-035:2967-5266",
+      "sources": [
+        {
+          "page": 93,
+          "page_method": "header",
+          "file": "p0047_R.txt",
+          "start": 3917,
+          "end": 3924
+        }
+      ],
+      "printed_pages": [
+        93
+      ],
+      "scans": [
+        {
+          "file": "p0047_R.txt",
+          "page": 93,
+          "full": "scans/1905/pages/p0047_R.webp",
+          "width": 1100,
+          "height": 1565,
+          "ocr_sha256": "03fd2538e66cc5a34192288f6cffbeb19542023f14edb2f121b0f77a7139c311",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "repeat",
+          "act_code": "УГС",
+          "field": "text",
+          "start": 3587,
+          "end": 3608,
+          "quote_original": "480 ст. уст. гр. суд."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3917,
+          "end": 3924,
+          "quote_original": "ст. 480",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 3587,
+              "end": 3608,
+              "quote_original": "480 ст. уст. гр. суд."
             }
           ]
         }
@@ -20676,6 +22097,84 @@
       ]
     },
     {
+      "id": "1897-053:УГС:716:text:2335",
+      "statute": "УГС ст. 716",
+      "code": "УГС",
+      "article": "ст. 716",
+      "decision_id": "1897-053",
+      "year": 1897,
+      "decision_number": 53,
+      "field": "text",
+      "start": 2335,
+      "end": 2342,
+      "quote_original": "ст. 716",
+      "context_original": "ема отвѣтчику выписка изъ рѣшенія? По статьѣ 725 уст. гр. суд. заочное рѣшеніе объявляется отвѣтчику доставленіемъ ему выписки изъ рѣшенія (ст. 716) по избранному имъ мѣсту пребыванія (ст. 309) а если о немъ не было заявлено въ канцеляріи суда, то по указанному суду мѣсту жительства отв",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "0241782548ac332a3d1bec64e9fd150e591716ce5e5e4ba37a57a70d31ac03f6",
+      "headnote_sha256": "b800611c34abf9bd0005a3abf05a1b5df24014db34fb538caa14cf411e242e6c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-053",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-053?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+716&law=1897-053%3A%D0%A3%D0%93%D0%A1%3A716%3Atext%3A2335&at=2335&end=2342",
+      "source_warning": null,
+      "passage_id": "1897-053:1353-2901",
+      "sources": [
+        {
+          "page": 175,
+          "page_method": "header",
+          "file": "p0098_R.txt",
+          "start": 2335,
+          "end": 2342
+        }
+      ],
+      "printed_pages": [
+        175
+      ],
+      "scans": [
+        {
+          "file": "p0098_R.txt",
+          "page": 175,
+          "full": "scans/1897/pages/p0098_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1477,
+          "ocr_sha256": "51af18db255ec4956b594e47a4533e92e8f840b71ccbc74c09d97ff81e28a25a",
+          "pdf_page": 196,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УГС",
+          "field": "text",
+          "start": 2230,
+          "end": 2502,
+          "quote_original": "По статьѣ 725 уст. гр. суд. заочное рѣшеніе объявляется отвѣтчику доставленіемъ ему выписки изъ рѣшенія (ст. 716) по избранному имъ мѣсту пребыванія (ст. 309) а если о немъ не было заявлено въ канцеляріи суда, то по указанному суду мѣсту жительства отвѣтчика (ст. 204—206)"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2335,
+          "end": 2342,
+          "quote_original": "ст. 716",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 2230,
+              "end": 2502,
+              "quote_original": "По статьѣ 725 уст. гр. суд. заочное рѣшеніе объявляется отвѣтчику доставленіемъ ему выписки изъ рѣшенія (ст. 716) по избранному имъ мѣсту пребыванія (ст. 309) а если о немъ не было заявлено въ канцеляріи суда, то по указанному суду мѣсту жительства отвѣтчика (ст. 204—206)"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "1897-042:УГС:718 п. 2:text:11452",
       "statute": "УГС ст. 718 п. 2",
       "code": "УГС",
@@ -21689,6 +23188,83 @@
       ]
     },
     {
+      "id": "1904-060:УГС:755:text:9788",
+      "statute": "УГС ст. 755",
+      "code": "УГС",
+      "article": "ст. 755",
+      "decision_id": "1904-060",
+      "year": 1904,
+      "decision_number": 60,
+      "field": "text",
+      "start": 9788,
+      "end": 9807,
+      "quote_original": "ст. 263, 755, 801 и",
+      "context_original": "снить, что представлять копіи прилагаемыхъ къ дѣлу тарифовъ или отдѣльныхъ статей для противной стороны тяжущіеся не обязаны, ибо закономъ (ст. 263, 755, 801 и др. уст. гражд. судопр.) вмѣнено имъ въ обязанность приложеніе такихъ копій только съ бумагъ процессуальныхъ, а также съ актовъ и документо",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "8cd7686db11e31857da400962f1b7769f803d8b4f6a21fc692c6f381cdf06618",
+      "headnote_sha256": "fb210ec4439e63a5f1be51c4e6b12881922cc415064fbbcde88a24aee4031075",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+755&law=1904-060%3A%D0%A3%D0%93%D0%A1%3A755%3Atext%3A9788&at=9788&end=9807",
+      "source_warning": null,
+      "passage_id": "1904-060:8696-10869",
+      "sources": [
+        {
+          "page": 171,
+          "page_method": "header",
+          "file": "p0086_R.txt",
+          "start": 9788,
+          "end": 9807
+        }
+      ],
+      "printed_pages": [
+        171
+      ],
+      "scans": [
+        {
+          "file": "p0086_R.txt",
+          "page": 171,
+          "full": "scans/1904/pages/p0086_R.webp",
+          "width": 1100,
+          "height": 1646,
+          "ocr_sha256": "9d876a451bc651c39d7a8f1361aaa622cfb244d7ff465dbc268332cb80710310",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УГС",
+          "field": "text",
+          "start": 9788,
+          "end": 9831,
+          "quote_original": "ст. 263, 755, 801 и др. уст. гражд. судопр."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 9788,
+          "end": 9807,
+          "quote_original": "ст. 263, 755, 801 и",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 9788,
+              "end": 9831,
+              "quote_original": "ст. 263, 755, 801 и др. уст. гражд. судопр."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "1904-079:УГС:756:text:9951",
       "statute": "УГС ст. 756",
       "code": "УГС",
@@ -21837,6 +23413,23 @@
               "end": 4199,
               "quote_original": "ст. 760 уст. гр. суд.",
               "act_code": "УГС"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 5629,
+          "end": 5636,
+          "quote_original": "ст. 760",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 4178,
+              "end": 4199,
+              "quote_original": "ст. 760 уст. гр. суд."
             }
           ]
         }
@@ -23941,6 +25534,83 @@
               "end": 14759,
               "quote_original": "ст. 801 уст. гр. суд.",
               "act_code": "УГС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-060:УГС:801:text:9788",
+      "statute": "УГС ст. 801",
+      "code": "УГС",
+      "article": "ст. 801",
+      "decision_id": "1904-060",
+      "year": 1904,
+      "decision_number": 60,
+      "field": "text",
+      "start": 9788,
+      "end": 9807,
+      "quote_original": "ст. 263, 755, 801 и",
+      "context_original": "снить, что представлять копіи прилагаемыхъ къ дѣлу тарифовъ или отдѣльныхъ статей для противной стороны тяжущіеся не обязаны, ибо закономъ (ст. 263, 755, 801 и др. уст. гражд. судопр.) вмѣнено имъ въ обязанность приложеніе такихъ копій только съ бумагъ процессуальныхъ, а также съ актовъ и документо",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "8cd7686db11e31857da400962f1b7769f803d8b4f6a21fc692c6f381cdf06618",
+      "headnote_sha256": "fb210ec4439e63a5f1be51c4e6b12881922cc415064fbbcde88a24aee4031075",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+801&law=1904-060%3A%D0%A3%D0%93%D0%A1%3A801%3Atext%3A9788&at=9788&end=9807",
+      "source_warning": null,
+      "passage_id": "1904-060:8696-10869",
+      "sources": [
+        {
+          "page": 171,
+          "page_method": "header",
+          "file": "p0086_R.txt",
+          "start": 9788,
+          "end": 9807
+        }
+      ],
+      "printed_pages": [
+        171
+      ],
+      "scans": [
+        {
+          "file": "p0086_R.txt",
+          "page": 171,
+          "full": "scans/1904/pages/p0086_R.webp",
+          "width": 1100,
+          "height": 1646,
+          "ocr_sha256": "9d876a451bc651c39d7a8f1361aaa622cfb244d7ff465dbc268332cb80710310",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УГС",
+          "field": "text",
+          "start": 9788,
+          "end": 9831,
+          "quote_original": "ст. 263, 755, 801 и др. уст. гражд. судопр."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 9788,
+          "end": 9807,
+          "quote_original": "ст. 263, 755, 801 и",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УГС",
+              "field": "text",
+              "start": 9788,
+              "end": 9831,
+              "quote_original": "ст. 263, 755, 801 и др. уст. гражд. судопр."
             }
           ]
         }

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.5.0",
-  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
   "resource": "decision",
   "scope": {
     "id": "1905-094",
@@ -48,11 +48,11 @@
       ]
     },
     "statutes": {
-      "? ст. 1529": 1,
-      "? ст. 33": 5,
-      "? ст. 34": 6,
-      "? ст. 981": 1,
-      "? ст. 299": 1
+      "СЗГ ст. 1529": 1,
+      "УОП ст. 33": 5,
+      "УОП ст. 34": 6,
+      "СЗГ ст. 981": 1,
+      "УОП ст. 299": 1
     },
     "cites": [
       [

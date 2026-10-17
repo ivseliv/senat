@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.5.0",
-  "data_revision": "sha256:4162e6e0c3628feb12934b017dee8a11ddb166555912674dcc35818d44e76210",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
   "resource": "decision",
   "scope": {
     "id": "1905-071",
@@ -33,11 +33,11 @@
     },
     "statutes": {
       "ГКП ст. 671": 8,
-      "? ст. 153": 2,
       "ГКП ст. 672": 2,
       "СЗГ ст. 420": 1,
       "СЗГ ст. 584": 1,
-      "СЗГ ст. 684": 1
+      "СЗГ ст. 684": 1,
+      "УЖД ст. 153": 2
     },
     "cites": [],
     "participant_ids": [
