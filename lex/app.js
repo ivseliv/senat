@@ -24,7 +24,7 @@
   ];
 
   const S = {
-    meta: null, index: null, an: null, engine: null, texts: {}, stemCache: new Map(),
+    meta: null, index: null, an: null, engine: null, texts: {}, stemCache: new Map(), reader: null,
     opts: { modern: false, gloss: true }, detailId: null,
     sense: { config: null, engines: [], promise: null, q: '', hits: [], shown: 10, token: 0, partial: false, suggested: 0 },
     map: { q: '', topic: '', token: 0 },
@@ -202,9 +202,9 @@
   }
   function route() {
     const { path, p } = readHash();
-    const requested = path.startsWith('d/') ? (['sense','participants','map','laws','analyses','analysis','guides'].includes(p.get('mode')) ? (p.get('mode') === 'analysis' ? 'analyses' : p.get('mode')) : 'search') : (path.split('/')[0] || 'search');
-    const tab = ['search','sense','map','laws','participants','guides','analyses','api','analytics','about'].includes(requested) ? requested : 'search';
-    for (const t of ['search','sense','map','laws','participants','guides','analyses','api','analytics','about']) {
+    const requested = path.startsWith('d/') ? (['sense','participants','map','laws','analyses','analysis','guides','reader','quote'].includes(p.get('mode')) ? (p.get('mode') === 'analysis' ? 'analyses' : p.get('mode') === 'quote' ? 'reader' : p.get('mode')) : 'search') : (path.split('/')[0] || 'search');
+    const tab = ['search','sense','map','laws','participants','guides','analyses','reader','api','analytics','about'].includes(requested) ? requested : 'search';
+    for (const t of ['search','sense','map','laws','participants','guides','analyses','reader','api','analytics','about']) {
       $('#view-' + t).hidden = t !== tab;
       $('#tab-' + t).setAttribute('aria-current', t === tab ? 'page' : 'false');
     }
@@ -235,6 +235,9 @@
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
     } else if (tab === 'guides') {
       renderGuides();
+      if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
+    } else if (tab === 'reader') {
+      S.reader.render();
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
     } else if (tab === 'api') {
       renderApi(); closeDetail();
@@ -501,6 +504,7 @@
         h('div', { class: 'chips participant-chips' }, groupItems(d).slice(0, 8).map(g => h('button', { class: 'chip group', title: 'Фильтровать решения по этому признаку', onclick: () => selectFacet(g.key, g.label) }, g.label))));
       card.addEventListener('click', e => { if (!e.target.closest('button,a')) openFromList(d.id); });
       card.addEventListener('keydown', e => { if (e.key === 'Enter' && e.target === card) openFromList(d.id); });
+      card.append(S.reader.saveButton(d));
       box.append(card);
     }
     $('#more').hidden = total <= S.shown;
@@ -551,6 +555,7 @@
 
   /* ---------------------------------------------------------------- карточка решения */
   async function openDetail(id) {
+    S.reader.clearDetail();
     S.detailId = id;
     const d = S.meta.decisions.find(x => x.id === id); const box = $('#detail-body');
     if (!d) { box.replaceChildren(h('p', {}, 'Решение не найдено')); $('#detail').hidden = false; return; }
@@ -562,10 +567,14 @@
       readHash().p.get('mode')==='guides'?loadTopicCatalog():null,
       readHash().p.get('mode')==='laws'&&readHash().p.has('law')?loadLaws():null]);
     if (S.detailId !== id || $('#detail').hidden) return;
-    const params = readHash().p, inSense = ['sense','map','passage','laws','analysis','guides'].includes(params.get('mode'));
-    let target = null, senseTerms = [], partialMissing = [];
+    const params = readHash().p, inSense = ['sense','map','passage','laws','analysis','guides','quote'].includes(params.get('mode'));
+    let target = null, senseTerms = [], partialMissing = [], quoteWarning = '';
     const analysis = analyses.decisions && analyses.decisions[id];
-    if (params.get('mode') === 'laws' && params.has('law')) {
+    if (params.get('mode') === 'quote') {
+      target = await S.reader.resolveQuote(d,text,params);
+      if (target.warning) { quoteWarning=target.warning; target=null; }
+      if (S.detailId !== id || $('#detail').hidden) return;
+    } else if (params.get('mode') === 'laws' && params.has('law')) {
       const row = [...laws.citations, ...(laws.unresolved || []), ...(laws.historical_references || [])].find(r=>r.id===params.get('law') && r.decision_id===id);
       if (row) target = await lawDetailTarget(d, row, params);
       if (S.detailId !== id || $('#detail').hidden) return;
@@ -610,7 +619,8 @@
         if (a < b) {
           html = paintPiece(window.Concept.slice(par,0,a)) + '<span class="passage-focus"' + (first ? ' id="passage-target" tabindex="-1"' : '') + '>' + paintPiece(window.Concept.slice(par,a,b)) + '</span>' + paintPiece(window.Concept.slice(par,b)); first = false;
         } else html = paintPiece(par);
-        offset += length+2; return '<p>'+html+'</p>';
+        const attrs=' data-reader-field="'+field+'" data-reader-start="'+offset+'" data-reader-end="'+(offset+length)+'"';
+        offset += length+2; return '<p'+attrs+'>'+html+'</p>';
       }).join('');
     };
     const cite = `Решение ${d.dept === 'Общее собрание' ? 'Общего собрания' : d.dept.replace('кий', 'кого').replace('ый', 'ого')} Правительствующего Сената ${d.vol} г. № ${d.num}` + (target ? ', ' + (target.field==='headnote'?'заголовок издания':pageLabel(target)) : '');
@@ -620,7 +630,7 @@
         h('h2', {}, `№ ${d.num} · ${fmtDate(d.date, d.date_label)}`),
         h('div', { class: 'muted' }, `${d.dept}, том ${d.vol}`),
         h('span', { class: 'badge big' }, d.outcome)),
-      target && target.field==='headnote' ? h('div', {class:'headnote',html:paint(d.headnote,'headnote')}) : h('p', { class: 'headnote' }, M(d.headnote)),
+      target && target.field==='headnote' ? h('div', {class:'headnote',html:paint(d.headnote,'headnote')}) : h('p', { class: 'headnote', 'data-reader-field':'headnote', 'data-reader-start':0, 'data-reader-end':Array.from(d.headnote).length }, M(d.headnote)),
       target && target.law ? h('section',{class:'law-detail','data-law-id':target.law.id},
         target.law.historical_note ? h('p',{class:'preliminary-note law-historical-note'},target.law.historical_note) : '',
         target.law.historical_note && target.law.current_references?.length ? h('p',{class:'law-current-references'},
@@ -655,6 +665,7 @@
         h('button', { class: 'btn', onclick: e => { const btn = e.target; const txt = cite + '\n' + location.href; const done = ok => { btn.textContent = ok ? 'Скопировано ✓' : 'Не удалось скопировать — выделите текст вручную'; setTimeout(() => btn.textContent = 'Скопировать ссылку и цитату', 2000); }; try { navigator.clipboard.writeText(txt).then(() => done(true), () => done(false)); } catch (err) { done(false); } } }, 'Скопировать ссылку и цитату')),
       target && target.ai && target.ai.source_warning ? h('p',{class:'preliminary-note source-warning'},'Ограничение источника: '+target.ai.source_warning) : sourceWarning(d),
       target && target.editorial_note ? h('p',{class:'preliminary-note editorial-note'},target.editorial_note) : '',
+      quoteWarning ? h('p',{class:'preliminary-note reader-source-warning',role:'status'},quoteWarning) : '',
       body,
       h('p', { class: 'muted small' }, 'Текст получен автоматическим распознаванием скана (модель ИИ) и может содержать ошибки: числа, номера статей и фамилии сверяйте с изданием. Современная орфография — автоматическая, для удобства чтения.'),
       outgoing.length ? h('section', {class:'precedents-out'}, h('h3', {}, 'Ссылки на прежние решения'),
@@ -677,6 +688,7 @@
       } catch(err) {scanSection.append(h('p',{class:'small'},'Не удалось загрузить список страниц. Закройте и откройте этот раздел для повторной попытки.'));}
     });
     body.before(scanSection);
+    S.reader.attachDetail({d,text,body,headnote:box.querySelector('.headnote'),target});
     $('#detail').scrollTop = 0;
     if (target) {
       const anchor = $('#passage-target');
@@ -697,7 +709,7 @@
     return out + L.esc(par.slice(pos));
   }
   function personLink(name) { return h('a', { href: '#/search?p=' + encodeURIComponent(name) }, name); }
-  function closeDetail() { $('#detail').hidden = true; document.body.classList.remove('modal'); }
+  function closeDetail() { S.reader.clearDetail(); $('#detail').hidden = true; document.body.classList.remove('modal'); }
 
   /* ---------------------------------------------------------------- элементы управления */
   function fillSelect(sel, items, first) {
@@ -743,7 +755,7 @@
     $('#gloss').addEventListener('change', e => { S.opts.gloss = e.target.checked; runSearch(); });
     $('#more').addEventListener('click', () => { S.shown += 20; renderResults(++runToken); });
     $('#reset').addEventListener('click', () => go('search'));
-    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const requested = p.get('mode'); const mode = requested === 'passage' ? 'sense' : (requested === 'analysis' ? 'analyses' : (['sense','participants','map','laws','guides','analyses','api'].includes(requested) ? requested : 'search')); p.delete('at'); p.delete('end'); p.delete('mode'); p.delete('ref'); p.delete('law'); p.delete('field'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
+    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const requested = p.get('mode'); const mode = requested === 'quote' ? 'reader' : requested === 'passage' ? 'sense' : (requested === 'analysis' ? 'analyses' : (['sense','participants','map','laws','guides','analyses','api','reader'].includes(requested) ? requested : 'search')); p.delete('at'); p.delete('end'); p.delete('mode'); p.delete('ref'); p.delete('law'); p.delete('field'); p.delete('sha'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !document.querySelector('.scan-dialog[open]') && !$('#detail').hidden) $('#detail-close').click(); });
     $('#examples').append(...['недействительность сделки', 'возмещение убытков', 'исковая давность', 'договор аренды', 'банкротство', 'страховое возмещение', 'перевозка грузов', 'исполнитель завещания']
       .map(x => h('button', { class: 'chip', onclick: () => go('search', { q: x }) }, x)));
@@ -1163,6 +1175,7 @@
       $('#corpus-summary').textContent = `В корпусе: ${meta.volumes.map(v=>v.year).join(', ')} · ${meta.decisions.length} ${plural(meta.decisions.length,'решение','решения','решений')}`;
       $('#corpus-summary').hidden = false;
       S.engine = L.makeEngine(index, meta.decisions);
+      S.reader=window.SenatReaderUI.create({meta,textOf,loadJSON,loadScans,formatDate:fmtDate,setModern,isModern:()=>S.opts.modern,warningOf:d=>(S.an.source_warnings?.[d.id]?.messages||[]).join(' ')});
       $('#loading').hidden = true; setupControls(); route(); addEventListener('hashchange', route);
     } catch (e) {
       $('#loading').textContent = 'Не удалось загрузить данные: ' + e.message + '. Откройте страницу через веб-сервер (например, `python3 -m http.server` в папке lex).';

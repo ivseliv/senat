@@ -180,16 +180,35 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
 #guides-status { margin: 16px 0; color: var(--muted); }#guides-filter { display: flex; align-items: end; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
 #guides-filter label { display: grid; gap: 5px; min-width: 0; max-width: 100%; }#guides-filter .guide-query { flex: 1 1 280px; }#guides-q { width: 100%; }#guides-year { max-width: 100%; min-width: 0; }
 .decision-analysis h3 { margin-top: 0; }.analysis-label,.analysis-speaker { color: var(--accent-ink); font-size: 13px; font-weight: 600; margin: 4px 0; }.analysis-item { border-top: 1px solid var(--line); padding-top: 12px; margin-top: 12px; }.analysis-item h4 { margin: 0; font-size: 16px; }.analysis-evidence { margin-top: 8px; }.source-quote { margin: 10px 0; padding-left: 12px; border-left: 2px solid var(--line); font-family: "Noto Serif", Georgia, serif; white-space: pre-wrap; }.analysis-card h3 { margin-top: 0; }
+
+/* Личная подборка: заметки, точные цитаты и сравнение дел. */
+.reader-fields,.reader-note-label { display:grid; gap:8px; margin:16px 0; }
+.reader-fields label { display:grid; gap:6px; }.reader-fields input { width:100%; }
+#view-reader textarea { width:100%; min-height:80px; resize:vertical; padding:10px; border:1px solid var(--line); border-radius:6px; background:var(--surface); color:var(--ink); font:inherit; }
+.reader-actions,.reader-item-top { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin:12px 0; }
+.reader-item-top h3 { flex:1; margin:0; }.reader-item-top label { white-space:nowrap; }
+.reader-import-label { display:grid; gap:6px; margin:18px 0; }#reader-import { max-width:100%; }
+.reader-quote { border-top:1px solid var(--line); padding-top:12px; margin-top:18px; }
+.reader-quote-original,.reader-preserve { white-space:pre-wrap; overflow-wrap:anywhere; }
+.reader-error { color:var(--accent-ink); font-weight:600; }.reader-detail-tools { margin:20px 0; padding:12px; border:1px solid var(--line); border-radius:8px; }
+.reader-compare-grid { display:grid; grid-template-columns:repeat(var(--reader-columns),minmax(0,1fr)); gap:14px; align-items:start; }
+.reader-compare-case { min-width:0; overflow-wrap:anywhere; padding:14px; border:1px solid var(--line); border-radius:8px; background:var(--surface); }
+.reader-compare-case h3 { margin-top:0; }.reader-compare-case dd { margin:0 0 10px; }.reader-compare-case dt { font-weight:600; }
+.reader-full-original { font-family:var(--serif); white-space:pre-wrap; max-height:65vh; overflow:auto; margin-top:12px; padding:4px; }
+#reader-compare-panel { margin:24px 0; }.reader-scan-links { padding-left:20px; overflow-wrap:anywhere; }
+#reader-notice:empty { display:none; }#reader-status { margin:14px 0; }.reader-save-decision { margin-top:10px; }
+@media(max-width:760px) { .reader-compare-grid { grid-template-columns:1fr; }.reader-item-top { align-items:flex-start; }.reader-item-top h3 { flex-basis:100%; }.reader-actions .btn { max-width:100%; }.reader-full-original { max-height:55vh; } }
 </style>
 </head>
 <body>
 <header><div class="wrap">
   <div class="top"><h1>Решения Правительствующего Сената</h1><span class="sub">поиск и аналитика · прототип</span><span class="spacer"></span>
     <button class="btn ghost" id="theme" title="Светлая / тёмная тема">◐ тема</button></div>
-  <nav aria-label="Разделы"><a id="tab-search" href="#/search">Поиск</a><a id="tab-sense" href="#/sense">По смыслу</a><a id="tab-laws" href="#/laws">Законодательство</a><a id="tab-map" href="#/map">Карта</a><a id="tab-participants" href="#/participants">Участники</a><a id="tab-guides" href="#/guides">Темы</a><a id="tab-analyses" href="#/analyses">Разборы</a><a id="tab-api" href="#/api">API</a><a id="tab-analytics" href="#/analytics">Аналитика</a><a id="tab-about" href="#/about">О проекте</a></nav>
+  <nav aria-label="Разделы"><a id="tab-search" href="#/search">Поиск</a><a id="tab-sense" href="#/sense">По смыслу</a><a id="tab-laws" href="#/laws">Законодательство</a><a id="tab-map" href="#/map">Карта</a><a id="tab-participants" href="#/participants">Участники</a><a id="tab-guides" href="#/guides">Темы</a><a id="tab-analyses" href="#/analyses">Разборы</a><a id="tab-reader" href="#/reader">Подборка</a><a id="tab-api" href="#/api">API</a><a id="tab-analytics" href="#/analytics">Аналитика</a><a id="tab-about" href="#/about">О проекте</a></nav>
 </div></header>
 
 <main class="wrap">
+<p id="reader-global-warning" class="preliminary-note" hidden></p>
   <div id="loading">Загрузка данных…</div>
   <p id="corpus-summary" class="muted small" hidden></p>
 
@@ -301,6 +320,32 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     <details class="muted small"><summary>Как составлен каталог</summary><p>Тематическая разметка подготовлена с помощью ИИ по заголовкам, изложению и аннотациям пассажей; спорные места уточнялись по полному тексту. Одно дело может входить в несколько разделов. Это редакционная навигация: полнота всех возможных тем и юридическая экспертиза не заявляются. Неуточнённые дела остаются доступны в общем списке. Автоматические метки вкладки «Поиск» сохраняются отдельно.</p></details>
     <form id="guides-filter"><label>Том<select id="guides-year" aria-label="Том каталога"></select></label><label class="guide-query"><span id="guides-q-label">Найти тему</span><input id="guides-q" type="search"></label><button class="btn" type="submit">Найти</button></form>
     <div id="guides-status" aria-live="polite"></div><div id="guides-results"></div>
+  </section>
+
+  <section id="view-reader" hidden>
+    <h2>Рабочая подборка</h2>
+    <p class="muted">Решения, оригинальные цитаты и ваши заметки — без регистрации. Они хранятся в этом браузере и не отправляются на сервер. Копия сайта в другом браузере или офлайн-файле имеет отдельную подборку.</p>
+    <p class="small">Заметки сохраняются при вводе. Скачивайте JSON-копию: очистка данных браузера удалит подборку. Редактируйте её в одном окне; изменения из других вкладок подхватываются при записи.</p>
+    <div id="reader-status" role="status"></div>
+    <p id="reader-storage-warning" class="preliminary-note" hidden></p>
+    <p id="reader-notice" role="status"></p>
+    <div class="reader-fields">
+      <label>Название подборки<input id="reader-title" maxlength="200"></label>
+      <label>Общая заметка<textarea id="reader-note" rows="3" maxlength="20000"></textarea></label>
+    </div>
+    <div class="reader-actions" aria-label="Выгрузка подборки">
+      <button id="reader-export-json" class="btn">JSON — копия и перенос</button>
+      <button id="reader-export-markdown" class="btn ghost">Markdown</button>
+      <button id="reader-export-html" class="btn ghost">HTML для печати</button>
+      <button id="reader-export-csv" class="btn ghost">CSV</button>
+    </div>
+    <p class="small muted">Экспорт содержит заметки, оригинальные цитаты, печатные страницы и ссылки на сканы. Полные тексты дел и изображения в него не встраиваются.</p>
+    <label class="reader-import-label">Объединить с JSON-копией<input type="file" id="reader-import" accept="application/json,.json"></label>
+    <p class="small muted">При импорте цитаты проверяются по текущему корпусу; страницы и ссылки определяются заново. Уже сохранённые заметки не заменяются.</p>
+    <div class="reader-actions"><button id="reader-retry" class="btn ghost">Повторить сохранение</button><button id="reader-export-original" class="btn ghost" hidden>Скачать исходную запись</button><button id="reader-recover" class="btn ghost" hidden>Восстановить хранилище</button></div>
+    <div class="reader-actions"><button id="reader-compare" class="btn" disabled>Сравнить выбранные дела</button><span id="reader-compare-count" class="small"></span></div>
+    <div id="reader-compare-panel"></div>
+    <div id="reader-items"></div>
   </section>
 
   <section id="view-api" hidden>
@@ -711,6 +756,740 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
   if(typeof module!=='undefined'&&module.exports) module.exports=api; else root.Concept=api;
 })(typeof window!=='undefined'?window:globalThis);
 </script>
+<script>/* Локальная рабочая подборка. Не отправляет данные в сеть. Смещения — Unicode code points. */
+(function (root, factory) {
+  'use strict';
+  const api = factory();
+  if (typeof module === 'object' && module.exports) module.exports = api;
+  else root.SenatReader = api;
+})(typeof globalThis !== 'undefined' ? globalThis : this, function () {
+  'use strict';
+  const VERSION = 1, KEY = 'senat-reader-v1';
+  const PUBLIC = 'https://ivseliv.github.io/senat/lex/';
+  const YEARS = new Set([1896, 1897, 1904, 1905]);
+  const LIMITS = Object.freeze({bytes: 4000000, items: 500, quotes: 100, totalQuotes: 2000,
+    title: 200, note: 20000, headnote: 5000, quote: 30000, references: 100, url: 1500});
+  const clone = value => JSON.parse(JSON.stringify(value));
+  const count = value => Array.from(value).length;
+  const now = () => new Date().toISOString();
+  function fail(message, code) { const e = new Error(message); e.code = code || 'INVALID_DATA'; throw e; }
+  function object(value, name, allowed) {
+    if (!value || typeof value !== 'object' || Array.isArray(value) ||
+        ![Object.prototype, null].includes(Object.getPrototypeOf(value))) fail(name + ': ожидался объект');
+    for (const key of Object.keys(value)) if (!allowed.includes(key)) fail(name + ': неизвестное поле ' + key);
+    return value;
+  }
+  function string(value, name, max, fallback) {
+    if (value == null && fallback !== undefined) return fallback;
+    if (typeof value !== 'string' || count(value) > max || /\u0000/.test(value)) fail(name + ': недопустимый текст');
+    // Одинокий суррогат не задаёт корректный Unicode-срез: такой импорт отклоняем.
+    for (const c of value) if (c.length === 1 && /[\uD800-\uDFFF]/.test(c)) fail(name + ': повреждённый Unicode');
+    return value;
+  }
+  function integer(value, name, min, max) {
+    if (!Number.isSafeInteger(value) || value < min || value > max) fail(name + ': недопустимое число');
+    return value;
+  }
+  function timestamp(value, name) {
+    string(value, name, 30);
+    if (!/^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3}Z$/.test(value) || !Number.isFinite(Date.parse(value))) fail(name + ': недопустимая дата');
+    return value;
+  }
+  function decisionId(value) {
+    if (typeof value !== 'string' || !/^(1896|1897|1904|1905)-\d{3}$/.test(value)) fail('Недопустимый ID решения');
+    return value;
+  }
+  function decisionURL(value, id) {
+    string(value, 'url', LIMITS.url);
+    if (/[\s\\\u0000-\u001F\u007F]/.test(value)) fail('Недопустимая ссылка решения');
+    const hash = value.startsWith('#/') ? value : value.startsWith(PUBLIC + '#/') ? value.slice(PUBLIC.length) : null;
+    if (!hash) fail('Ссылка должна вести в опубликованный корпус Сената');
+    const m = hash.match(/^#\/d\/((?:1896|1897|1904|1905)-\d{3})(?:\?([^#]*))?$/);
+    if (!m || m[1] !== id) fail('Ссылка ведёт к другому решению');
+    if (m[2]) {
+      const params = new URLSearchParams(m[2]);
+      const names = ['mode', 'at', 'end', 'field', 'sha', 'p', 'q', 'law', 'ref', 'g', 'y', 'partial', 'orth'];
+      for (const [key, val] of params) {
+        if (!names.includes(key) || /[\u0000-\u001F\u007F]/.test(val)) fail('Недопустимый параметр ссылки');
+        if (['at', 'end'].includes(key) && !/^\d{1,8}$/.test(val)) fail('Недопустимое смещение в ссылке');
+        if (key === 'field' && !['text', 'headnote'].includes(val)) fail('Недопустимое поле ссылки');
+        if (key === 'sha' && !/^[a-f0-9]{64}$/.test(val)) fail('Недопустимый SHA ссылки');
+      }
+    }
+    return value;
+  }
+  function scanURL(value) {
+    string(value, 'scan URL', LIMITS.url);
+    const path = value.startsWith(PUBLIC) ? value.slice(PUBLIC.length) : value;
+    if (!/^scans\/(1896|1897|1904|1905)\/(pages|fragments)\/[A-Za-z0-9_-]+\.webp$/.test(path)) fail('Недопустимая ссылка скана');
+    return value;
+  }
+  function page(value) { return value == null ? null : integer(value, 'page', 1, 100000); }
+  function refs(value, name, parse) {
+    if (value == null) return [];
+    if (!Array.isArray(value) || value.length > LIMITS.references) fail(name + ': слишком много ссылок');
+    return value.map(parse);
+  }
+  function source(value) {
+    object(value, 'source', ['file', 'page', 'page_method', 'start', 'end']);
+    const file = string(value.file, 'source.file', 100);
+    if (!/^[A-Za-z0-9_-]+\.txt$/.test(file)) fail('Недопустимое имя листа OCR');
+    const out = {file, page: page(value.page)};
+    if (value.page_method != null) out.page_method = string(value.page_method, 'page_method', 80);
+    out.start = integer(value.start, 'source.start', 0, 10000000);
+    out.end = integer(value.end, 'source.end', out.start + 1, 10000000);
+    return out;
+  }
+  function scan(value) {
+    object(value, 'scan', ['file', 'page', 'full', 'kind', 'image', 'width', 'height', 'box', 'coverage']);
+    const file = string(value.file, 'scan.file', 100);
+    if (!/^[A-Za-z0-9_-]+\.txt$/.test(file)) fail('Недопустимое имя листа скана');
+    if (!['page', 'fragment'].includes(value.kind)) fail('Недопустимый вид скана');
+    const out = {file, page: page(value.page), full: scanURL(value.full), kind: value.kind,
+      image: scanURL(value.image || value.full), width: integer(value.width, 'width', 1, 50000),
+      height: integer(value.height, 'height', 1, 50000)};
+    if (value.box != null) {
+      if (!Array.isArray(value.box) || value.box.length !== 4 || value.box.some(x => !Number.isFinite(x) || x < 0 || x > 1) ||
+          value.box[0] >= value.box[2] || value.box[1] >= value.box[3]) fail('Недопустимые координаты скана');
+      out.box = value.box.slice();
+    }
+    if (value.coverage != null) {
+      if (!Number.isFinite(value.coverage) || value.coverage < 0 || value.coverage > 1) fail('Недопустимое покрытие скана');
+      out.coverage = value.coverage;
+    }
+    return out;
+  }
+  function decision(value) {
+    object(value, 'decision', ['id', 'year', 'number', 'department', 'date_label', 'headnote', 'url', 'source_sha256', 'printed_pages', 'scans', 'source_warning']);
+    const id = decisionId(value.id), year = integer(value.year, 'year', 1896, 1905);
+    if (!YEARS.has(year) || String(year) !== id.slice(0, 4)) fail('Год не согласован с ID решения');
+    const number = integer(value.number, 'number', 1, 999);
+    if (number !== Number(id.slice(5))) fail('Номер не согласован с ID решения');
+    if (value.source_sha256 && !/^[a-f0-9]{64}$/.test(value.source_sha256)) fail('Недопустимый SHA решения');
+    return {id, year, number, department: string(value.department, 'department', 150, ''),
+      date_label: string(value.date_label, 'date_label', 200, ''),
+      headnote: string(value.headnote, 'headnote', LIMITS.headnote, ''),
+      url: decisionURL(value.url || '#/d/' + id, id),
+      source_sha256: value.source_sha256 == null ? '' : string(value.source_sha256, 'decision SHA', 64),
+      printed_pages: [...new Set(refs(value.printed_pages, 'decision pages', x=>integer(x,'page',1,100000)))],
+      scans: refs(value.scans, 'decision scans', scan), source_warning:string(value.source_warning,'source_warning',LIMITS.note,'')};
+  }
+  function quoteId(q) { return q.field + ':' + q.start + '-' + q.end + ':' + q.source_sha256.slice(0, 16); }
+  function quote(value, id, requireId) {
+    object(value, 'quote', ['id', 'field', 'start', 'end', 'text_original', 'source_sha256', 'printed_pages', 'sources', 'scans', 'url', 'note', 'source_warning']);
+    if (!['text', 'headnote'].includes(value.field)) fail('Цитировать можно исходный текст или заголовок');
+    const start = integer(value.start, 'start', 0, 10000000), end = integer(value.end, 'end', start + 1, 10000000);
+    const text = string(value.text_original, 'text_original', LIMITS.quote);
+    if (count(text) !== end - start || !text.trim()) fail('Смещения Unicode не согласованы с длиной цитаты');
+    if (typeof value.source_sha256 !== 'string' || !/^[a-f0-9]{64}$/.test(value.source_sha256)) fail('Для цитаты нужен SHA-256 исходного поля');
+    const pages = refs(value.printed_pages, 'printed_pages', x => integer(x, 'printed_page', 1, 100000));
+    if (new Set(pages).size !== pages.length) fail('Повтор печатной страницы');
+    const out = {field: value.field, start, end, text_original: text, source_sha256: value.source_sha256,
+      printed_pages: pages, sources: refs(value.sources, 'sources', source), scans: refs(value.scans, 'scans', scan),
+      url: decisionURL(value.url || '#/d/' + id + '?mode=quote&at=' + start + '&end=' + end + '&field=' + value.field + '&sha=' + value.source_sha256, id),
+      note: string(value.note, 'quote.note', LIMITS.note, ''), source_warning:string(value.source_warning,'source_warning',LIMITS.note,'')};
+    out.id = quoteId(out);
+    if ((requireId || value.id != null) && value.id !== out.id) fail('ID цитаты не согласован с её источником');
+    const p = new URLSearchParams(out.url.split('?')[1] || '');
+    if (p.get('mode') !== 'quote' || Number(p.get('at')) !== start || Number(p.get('end')) !== end ||
+        p.get('field') !== out.field || p.get('sha') !== out.source_sha256) fail('Ссылка цитаты не согласована с источником и смещениями');
+    return out;
+  }
+  function item(value) {
+    object(value, 'item', ['id', 'decision', 'note', 'quotes', 'saved_at', 'updated_at']);
+    const d = decision(value.decision);
+    if (value.id !== d.id) fail('ID записи не согласован с решением');
+    if (!Array.isArray(value.quotes) || value.quotes.length > LIMITS.quotes) fail('Слишком много цитат в решении');
+    const quotes = value.quotes.map(q => quote(q, d.id, true));
+    if (new Set(quotes.map(q => q.id)).size !== quotes.length) fail('Повтор ID цитаты');
+    return {id: d.id, decision: d, note: string(value.note, 'item.note', LIMITS.note, ''), quotes,
+      saved_at: timestamp(value.saved_at, 'saved_at'), updated_at: timestamp(value.updated_at, 'updated_at')};
+  }
+  function serialized(value) {
+    let raw;
+    try { raw = JSON.stringify(value); } catch (_) { fail('Подборку нельзя прочитать как JSON'); }
+    if (typeof raw !== 'string' || new TextEncoder().encode(raw).length > LIMITS.bytes) fail('Файл подборки слишком большой');
+    return raw;
+  }
+  function validate(data) {
+    if (typeof data === 'string') {
+      if (new TextEncoder().encode(data).length > LIMITS.bytes) fail('Файл подборки слишком большой');
+      try { data = JSON.parse(data); } catch (_) { fail('Повреждённый JSON'); }
+    }
+    serialized(data);
+    object(data, 'collection', ['schema_version', 'offset_unit', 'title', 'note', 'items', 'revision']);
+    if (data.schema_version !== VERSION) fail('Версия подборки не поддерживается', 'UNSUPPORTED_VERSION');
+    if (data.offset_unit != null && data.offset_unit !== 'unicode_code_points') fail('Неизвестные единицы смещений');
+    if (!Array.isArray(data.items) || data.items.length > LIMITS.items) fail('Слишком много решений');
+    const items = data.items.map(item);
+    if (new Set(items.map(x => x.id)).size !== items.length) fail('Повтор решения');
+    if (items.reduce((n, x) => n + x.quotes.length, 0) > LIMITS.totalQuotes) fail('Слишком много цитат');
+    return {schema_version: VERSION, offset_unit:'unicode_code_points', title: string(data.title, 'title', LIMITS.title, ''),
+      note: string(data.note, 'note', LIMITS.note, ''), items, revision: integer(data.revision, 'revision', 0, Number.MAX_SAFE_INTEGER)};
+  }
+  function empty() { return {schema_version: VERSION, offset_unit:'unicode_code_points', title: 'Моя подборка', note: '', items: [], revision: 0}; }
+  function mergeNote(old, incoming) {
+    if (!incoming || incoming === old || old.includes(incoming)) return old;
+    if (!old || incoming.includes(old)) return incoming;
+    const combined = old + '\n\n—— Импортированная заметка ——\n\n' + incoming;
+    if (count(combined) > LIMITS.note) fail('Объединённая заметка превышает допустимый размер');
+    return combined;
+  }
+  function mergeState(current, incoming) {
+    const out = clone(current);
+    // Текущее название сохраняем; другое импортированное название добавляем в общую заметку.
+    if ((!out.title || out.title === 'Моя подборка') && incoming.title) out.title = incoming.title;
+    else if (incoming.title && incoming.title !== out.title && incoming.title !== 'Моя подборка')
+      out.note = mergeNote(out.note, 'Название импортированной подборки: ' + incoming.title);
+    out.note = mergeNote(out.note, incoming.note);
+    for (const add of incoming.items) {
+      const old = out.items.find(x => x.id === add.id);
+      if (!old) { out.items.push(clone(add)); continue; }
+      old.note = mergeNote(old.note, add.note);
+      for (const q of add.quotes) {
+        const found = old.quotes.find(x => x.id === q.id);
+        if (!found) old.quotes.push(clone(q));
+        else {
+          if (found.text_original !== q.text_original) fail('Одинаковый ID цитаты имеет разный текст');
+          found.note = mergeNote(found.note, q.note);
+        }
+      }
+      old.saved_at = old.saved_at < add.saved_at ? old.saved_at : add.saved_at;
+      old.updated_at = old.updated_at > add.updated_at ? old.updated_at : add.updated_at;
+    }
+    return validate(out);
+  }
+  function createStore(options) {
+    options = options || {};
+    const storage = options.storage, key = options.key || KEY, listeners = new Set();
+    let state = empty(), pending = [], blocked = false, persistent = true, lastError = null;
+    function report(err, code) {
+      lastError = {code: code || err.code || 'STORAGE_ERROR', message: String(err.message || err)};
+      if (typeof options.onError === 'function') { try { options.onError(clone(lastError)); } catch (_) { /* Ошибка интерфейса не нарушает сохранение. */ } }
+    }
+    function read() {
+      if (!storage || typeof storage.getItem !== 'function') { persistent = false; return null; }
+      let raw;
+      try { raw = storage.getItem(key); }
+      catch (e) { persistent = false; report(e, 'STORAGE_READ'); return null; }
+      if (raw == null) return empty();
+      try { return validate(raw); }
+      catch (e) { blocked = true; persistent = false; report(e, 'STORAGE_INVALID'); return null; }
+    }
+    const initial = read();
+    if (initial) state = initial;
+    function notify() { const snapshot = clone(state); for (const fn of listeners) { try { fn(clone(snapshot)); } catch (_) { /* Ошибка одного обработчика не прерывает остальные. */ } } }
+    function persist() {
+      if (blocked) return false;
+      if (!storage || typeof storage.setItem !== 'function') { persistent = false; report(new Error('Хранилище браузера недоступно'), 'STORAGE_WRITE'); return false; }
+      try { storage.setItem(key, serialized(state)); persistent = true; pending = []; lastError = null; return true; }
+      catch (e) { persistent = false; report(e, 'STORAGE_WRITE'); return false; }
+    }
+    function mutate(op) {
+      let fresh = blocked ? null : read();
+      let base = fresh || clone(state);
+      // После отказа записи храним операции и применяем их к свежим данным другой вкладки.
+      if (fresh) for (const apply of pending) base = apply(base);
+      const next = op(base);
+      next.revision = Math.max(base.revision, state.revision) + 1;
+      state = validate(next);
+      pending.push(op);
+      persist(); notify();
+      return clone(state);
+    }
+    function changeItem(id, fn) {
+      decisionId(id);
+      return mutate(s => { const out = clone(s), found = out.items.find(x => x.id === id); if (!found) fail('Решение не сохранено'); fn(found); found.updated_at = now(); return out; });
+    }
+    return {
+      key,
+      getState: () => clone(state),
+      getStatus: () => ({persistent, blocked, error: lastError && clone(lastError)}),
+      subscribe(fn) { if (typeof fn !== 'function') fail('Ожидался обработчик'); listeners.add(fn); return () => listeners.delete(fn); },
+      sync() {
+        if (blocked) return clone(state);
+        const fresh = read();
+        if (fresh) {
+          let merged = fresh;
+          for (const apply of pending) merged = apply(merged);
+          state = validate(merged); notify();
+        }
+        return clone(state);
+      },
+      flush() { return mutate(s => clone(s)); },
+      recoverStorage() { blocked = false; pending = []; if (!persist()) return false; notify(); return true; },
+      setTitle(value) { const title = string(value, 'title', LIMITS.title); return mutate(s => Object.assign(clone(s), {title})); },
+      setNote(value) { const note = string(value, 'note', LIMITS.note); return mutate(s => Object.assign(clone(s), {note})); },
+      saveDecision(snapshot) {
+        const d = decision(snapshot);
+        return mutate(s => { const out = clone(s); if (!out.items.some(x => x.id === d.id)) { const date = now(); out.items.push({id: d.id, decision: d, note: '', quotes: [], saved_at: date, updated_at: date}); } return out; });
+      },
+      addQuote(snapshot, value) {
+        const d = decision(snapshot), q = quote(value, d.id, false);
+        return mutate(s => { const out = clone(s); let found = out.items.find(x => x.id === d.id); if (!found) { const date = now(); found = {id: d.id, decision: d, note: '', quotes: [], saved_at: date, updated_at: date}; out.items.push(found); }
+          const existing = found.quotes.find(x => x.id === q.id);
+          if (!existing) found.quotes.push(q); else { if (existing.text_original !== q.text_original) fail('Источник цитаты изменился'); existing.note = mergeNote(existing.note, q.note); }
+          found.updated_at = now(); return out; });
+      },
+      updateItem(id, patch) {
+        object(patch, 'patch', ['note']); const note = string(patch.note, 'note', LIMITS.note);
+        return changeItem(id, item => { item.note = note; });
+      },
+      updateQuote(id, qid, patch) {
+        object(patch, 'patch', ['note']); const note = string(patch.note, 'note', LIMITS.note);
+        return changeItem(id, item => { const q = item.quotes.find(x => x.id === qid); if (!q) fail('Цитата не найдена'); q.note = note; });
+      },
+      removeItem(id) { decisionId(id); return mutate(s => Object.assign(clone(s), {items: s.items.filter(x => x.id !== id)})); },
+      removeQuote(id, qid) { return changeItem(id, item => { item.quotes = item.quotes.filter(x => x.id !== qid); }); },
+      importJSON(data, opts) {
+        const imported = validate(data);
+        if (opts && opts.merge === false) fail('Импорт заменой отключён: существующие заметки сохраняются');
+        return mutate(s => mergeState(s, imported));
+      },
+      exportJSON() { return JSON.stringify(state, null, 2); }
+    };
+  }
+  return Object.freeze({createStore, validate, LIMITS, VERSION, KEY, PUBLIC, count, decisionURL, scanURL});
+});
+</script>
+<script>/* Читательская подборка: автономный экспорт без сети и сторонних библиотек. */
+(function (root, factory) {
+  'use strict';
+  const api = factory();
+  if (typeof module === 'object' && module.exports) module.exports = api;
+  else root.SenatReaderExport = api;
+})(typeof globalThis !== 'undefined' ? globalThis : this, function () {
+  'use strict';
+  const PUBLIC = 'https://ivseliv.github.io/senat/lex/';
+  const ID = /^(?:1896|1897|1904|1905)-\d{3}$/;
+  const SHA = /^[a-f0-9]{64}$/i;
+  const positive = x => Number.isSafeInteger(x) && x > 0;
+  const str = x => x == null ? '' : String(x);
+  const array = x => Array.isArray(x) ? x : [];
+  const escapeHTML = x => str(x).replace(/[&<>"']/g, c => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
+  // Включая HTML и начало новой Markdown-конструкции: заметки остаются текстом.
+  const escapeMD = x => str(x).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/[\\`*_{}\[\]()#+\-.!|]/g, '\\$&');
+  const mdText = x => escapeMD(x).replace(/\r\n?/g, '\n').replace(/\n/g, '  \n');
+  const quoteMD = x => str(x).replace(/\r\n?/g, '\n').split('\n').map(line => '> ' + escapeMD(line)).join('\n');
+  const linkMD = (label, url) => '[' + escapeMD(label) + '](<' + url.replace(/[<>]/g, c => c === '<' ? '%3C' : '%3E') + '>)';
+  const linkHTML = (label, url) => '<a href="' + escapeHTML(url) + '" rel="noopener noreferrer">' + escapeHTML(label) + '</a>';
+
+  function decisionURL(decision) {
+    const id = str(decision && decision.id);
+    return ID.test(id) ? PUBLIC + '#/d/' + id : '';
+  }
+  function quoteURL(decision, quote) {
+    if (!decisionURL(decision) || !quote || !['text', 'headnote'].includes(quote.field) ||
+        !Number.isSafeInteger(quote.start) || quote.start < 0 || !Number.isSafeInteger(quote.end) ||
+        quote.end <= quote.start || quote.end - quote.start !== Array.from(str(quote.text_original)).length ||
+        !SHA.test(str(quote.source_sha256))) return '';
+    const query = new URLSearchParams({mode:'quote', field:quote.field, at:str(quote.start), end:str(quote.end), sha:quote.source_sha256.toLowerCase()});
+    return decisionURL(decision) + '?' + query.toString();
+  }
+  function scanURL(value, kind) {
+    if (typeof value !== 'string' || !value || /[\u0000-\u0020\u007f\\]/.test(value)) return '';
+    let url;
+    try { url = new URL(value, PUBLIC); } catch (_) { return ''; }
+    if (url.origin !== 'https://ivseliv.github.io' || url.username || url.password || url.search || url.hash) return '';
+    const folder = kind === 'page' ? 'pages' : 'fragments';
+    const pattern = new RegExp('^/senat/lex/scans/(?:1896|1897|1904|1905)/' + folder + '/[A-Za-z0-9_-][A-Za-z0-9_.-]*\\.webp$');
+    return pattern.test(url.pathname) ? url.href : '';
+  }
+  function scanLinks(quote) {
+    const found = [], seen = new Set();
+    function add(url, kind, page) {
+      if (!url || seen.has(url)) return;
+      seen.add(url); found.push({url, kind, page:positive(page) ? page : null});
+    }
+    for (const scan of array(quote && quote.scans)) {
+      if (!scan || typeof scan !== 'object') continue;
+      add(scanURL(scan.full, 'page'), 'page', scan.page);
+      // Координаты относятся к пассажу: у нового выделения нет своей геометрии.
+      if (scan.kind === 'fragment') add(scanURL(scan.image, 'fragment'), 'fragment', scan.page);
+    }
+    return found;
+  }
+  function pages(quote) {
+    // pdf_page и внутренний номер файла не являются печатным номером страницы.
+    return [...new Set([
+      ...array(quote && quote.printed_pages),
+      ...array(quote && quote.sources).map(s => s && s.page),
+      ...array(quote && quote.scans).map(s => s && s.page)
+    ].filter(positive))].sort((a,b) => a-b);
+  }
+  function pageLabel(quote) {
+    const value = pages(quote);
+    return value.length ? 'Печатные страницы: ' + value.join(', ') + '.' : 'Печатные страницы не определены.';
+  }
+  function scanLabel(scan) {
+    return (scan.kind === 'fragment' ? 'Фрагмент пассажа' : 'Полная страница') + (scan.page ? ', с. ' + scan.page : ', печатная страница не определена');
+  }
+  function decisionLabel(decision) {
+    const d = decision || {}, year = str(d.year), number = str(d.number);
+    return [year ? 'Том ' + year : '', number ? 'решение № ' + number : '', !year && !number ? str(d.id) : ''].filter(Boolean).join(', ') || 'Решение';
+  }
+  function fieldLabel(quote) {
+    return quote && quote.field === 'headnote' ? 'Заголовок издания' : quote && quote.field === 'text' ? 'Основной текст решения' : 'Поле источника не определено';
+  }
+  function sourceLabel(quote) {
+    const q = quote || {}, range = Number.isSafeInteger(q.start) && q.start >= 0 && Number.isSafeInteger(q.end) && q.end > q.start ? '; символы ' + q.start + '–' + q.end + ' (Unicode)' : '';
+    return fieldLabel(q) + range + '.';
+  }
+  function items(state) { return array(state && state.items).filter(x => x && typeof x === 'object'); }
+  function title(state) { return str(state && state.title) || 'Читательская подборка Сената'; }
+  const LIMITS = 'Это личная читательская подборка. Заметки принадлежат читателю; цитаты сохранены в исходной орфографии. Печатные страницы и сканы указаны для решений и цитат, где есть проверенная привязка. Фрагмент пассажа может быть шире выделенной цитаты. Для открытия публичных ссылок и сканов нужен интернет.';
+
+  function markdown(state) {
+    const lines = ['# ' + escapeMD(title(state)), '', LIMITS, ''];
+    if (state && state.note) lines.push('## Заметка к подборке', '', mdText(state.note), '');
+    const selected = items(state);
+    if (!selected.length) lines.push('Подборка пуста.', '');
+    selected.forEach((item, i) => {
+      const d = item.decision || {}, url = decisionURL(d);
+      lines.push('## ' + (i + 1) + '. ' + escapeMD(decisionLabel(d)), '');
+      if (d.department) lines.push(mdText(d.department), '');
+      if (d.date_label) lines.push('Дата в издании: ' + mdText(d.date_label), '');
+      if (d.headnote) lines.push('### Заголовок издания', '', quoteMD(d.headnote), '');
+      lines.push(url ? linkMD('Открыть решение', url) : 'Публичная ссылка на решение не определена.', '');
+      if(d.source_warning)lines.push('Ограничение источника: '+mdText(d.source_warning),'');
+      if (item.note) lines.push('### Заметка читателя', '', mdText(item.note), '');
+      const quotes = array(item.quotes).filter(q => q && typeof q === 'object');
+      lines.push(pageLabel(d), '');
+      const decisionScans=scanLinks(d);
+      if(decisionScans.length)lines.push(...decisionScans.map(s=>'- '+linkMD(scanLabel(s),s.url)), '');
+      else lines.push('Сканы решения не определены.', '');
+      if (!quotes.length) lines.push('Сохранённых цитат нет.', '');
+      quotes.forEach((q, qi) => {
+        const place = quoteURL(d, q), scans = scanLinks(q);
+        lines.push('### Цитата ' + (qi + 1), '', quoteMD(q.text_original), '', pageLabel(q), '', sourceLabel(q), '');
+        lines.push(place ? linkMD('Открыть место в решении', place) : 'Проверяемая ссылка на место не определена.', '');
+        if (SHA.test(str(q.source_sha256))) lines.push('SHA\-256 исходного поля: `' + q.source_sha256.toLowerCase() + '`', '');
+        if (scans.length) lines.push(...scans.map(s => '- ' + linkMD(scanLabel(s), s.url)), '');
+        else lines.push('Ссылки на сканы для этой цитаты не определены.', '');
+        if(q.source_warning)lines.push('Ограничение источника: '+mdText(q.source_warning),'');
+        if (q.note) lines.push('Заметка читателя к цитате:', '', mdText(q.note), '');
+      });
+    });
+    return lines.join('\n');
+  }
+
+  function html(state) {
+    const selected = items(state), parts = [];
+    if (state && state.note) parts.push('<section><h2>Заметка к подборке</h2><p class="reader-note">' + escapeHTML(state.note) + '</p></section>');
+    if (!selected.length) parts.push('<p>Подборка пуста.</p>');
+    selected.forEach((item, i) => {
+      const d = item.decision || {}, url = decisionURL(d);
+      const content = ['<article><h2>' + (i + 1) + '. ' + escapeHTML(decisionLabel(d)) + '</h2>'];
+      if (d.department) content.push('<p>' + escapeHTML(d.department) + '</p>');
+      if (d.date_label) content.push('<p>Дата в издании: ' + escapeHTML(d.date_label) + '</p>');
+      if (d.headnote) content.push('<h3>Заголовок издания</h3><blockquote class="original">' + escapeHTML(d.headnote) + '</blockquote>');
+      content.push('<p>' + (url ? linkHTML('Открыть решение', url) : 'Публичная ссылка на решение не определена.') + '</p>');
+      if(d.source_warning)content.push('<p class="metadata">Ограничение источника: '+escapeHTML(d.source_warning)+'</p>');
+      if (item.note) content.push('<h3>Заметка читателя</h3><p class="reader-note">' + escapeHTML(item.note) + '</p>');
+      const quotes = array(item.quotes).filter(q => q && typeof q === 'object');
+      content.push('<p>'+escapeHTML(pageLabel(d))+'</p>');
+      const decisionScans=scanLinks(d);
+      if(decisionScans.length)content.push('<ul>'+decisionScans.map(s=>'<li>'+linkHTML(scanLabel(s),s.url)+'</li>').join('')+'</ul>');
+      else content.push('<p class="metadata">Сканы решения не определены.</p>');
+      if (!quotes.length) content.push('<p class="metadata">Сохранённых цитат нет.</p>');
+      quotes.forEach((q, qi) => {
+        const place = quoteURL(d, q), scans = scanLinks(q);
+        content.push('<section class="saved-quote"><h3>Цитата ' + (qi + 1) + '</h3><blockquote class="original">' + escapeHTML(q.text_original) + '</blockquote>');
+        content.push('<p>' + escapeHTML(pageLabel(q)) + '</p><p class="metadata">' + escapeHTML(sourceLabel(q)) + '</p>');
+        content.push('<p>' + (place ? linkHTML('Открыть место в решении', place) : 'Проверяемая ссылка на место не определена.') + '</p>');
+        if (SHA.test(str(q.source_sha256))) content.push('<p class="metadata">SHA-256 исходного поля: <code>' + q.source_sha256.toLowerCase() + '</code></p>');
+        if (scans.length) content.push('<ul>' + scans.map(s => '<li>' + linkHTML(scanLabel(s), s.url) + '</li>').join('') + '</ul>');
+        else content.push('<p class="metadata">Ссылки на сканы для этой цитаты не определены.</p>');
+        if(q.source_warning)content.push('<p class="metadata">Ограничение источника: '+escapeHTML(q.source_warning)+'</p>');
+        if (q.note) content.push('<h4>Заметка читателя к цитате</h4><p class="reader-note">' + escapeHTML(q.note) + '</p>');
+        content.push('</section>');
+      });
+      content.push('</article>'); parts.push(content.join('\n'));
+    });
+    return '<!doctype html>\n<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' +
+      '<meta http-equiv="Content-Security-Policy" content="default-src \'none\'; style-src \'unsafe-inline\'; base-uri \'none\'; form-action \'none\'">' +
+      '<title>' + escapeHTML(title(state)) + '</title><style>' +
+      'html{color-scheme:light}body{max-width:860px;margin:2rem auto;padding:0 1.2rem;color:#202020;background:#fff;font:18px/1.6 Georgia,"Times New Roman",serif}' +
+      'h1,h2,h3,h4{line-height:1.3;overflow-wrap:anywhere}h1{font-size:1.8em}h2{font-size:1.4em;margin-top:2rem}h3{font-size:1.1em}' +
+      'a{color:#17458a;overflow-wrap:anywhere}article{border-top:1px solid #bbb;margin-top:2rem;padding-top:.7rem}' +
+      '.original,.reader-note{white-space:pre-wrap;overflow-wrap:anywhere}.original{border-left:3px solid #999;margin:1rem 0;padding:.4rem 0 .4rem 1rem}' +
+      '.metadata,.limits{font-size:.86em;color:#555}code{font-size:.86em;overflow-wrap:anywhere}li{margin:.3em 0}' +
+      '@page{margin:20mm}@media print{body{max-width:none;margin:0;padding:0;font-size:11pt;color:#000}.metadata,.limits{color:#333}h1,h2,h3,h4{break-after:avoid}article{break-inside:auto}a{color:#000;text-decoration:underline}a[href]::after{content:" (" attr(href) ")";font-size:8pt;overflow-wrap:anywhere}}' +
+      '</style></head><body><header><h1>' + escapeHTML(title(state)) + '</h1><p class="limits">' + escapeHTML(LIMITS) + '</p></header>\n' + parts.join('\n') + '\n</body></html>\n';
+  }
+
+  function csv(state) {
+    const fields = ['row_type','collection_title','collection_note','decision_id','volume_year','decision_number','department','date_label','decision_url','decision_note','quote_id','field','start','end','text_original','quote_note','source_sha256','source_warning','printed_pages','quote_url','scan_urls','saved_at','updated_at'];
+    const rows = [];
+    for (const item of items(state)) {
+      const d = item.decision || {}, base = {collection_title:title(state), collection_note:state && state.note, decision_id:d.id, volume_year:d.year, decision_number:d.number, department:d.department, date_label:d.date_label, decision_url:decisionURL(d), decision_note:item.note, saved_at:item.saved_at, updated_at:item.updated_at};
+      rows.push({...base, row_type:'decision', source_sha256:d.source_sha256, source_warning:d.source_warning, printed_pages:pages(d).join('; '), scan_urls:scanLinks(d).map(s=>scanLabel(s)+': '+s.url).join('\n')});
+      for (const q of array(item.quotes).filter(q => q && typeof q === 'object')) rows.push({...base, row_type:'quote', quote_id:q.id, field:q.field, start:q.start, end:q.end, text_original:q.text_original, quote_note:q.note, source_sha256:q.source_sha256, source_warning:q.source_warning, printed_pages:pages(q).join('; '), quote_url:quoteURL(d,q), scan_urls:scanLinks(q).map(s => scanLabel(s) + ': ' + s.url).join('\n')});
+    }
+    if (!rows.length) rows.push({row_type:'collection', collection_title:title(state), collection_note:state && state.note});
+    // Апостроф защищает открытие CSV в таблицах от выполнения пользовательских формул.
+    const cell = value => {
+      let text = str(value);
+      if (/^[\s\u0000-\u001f]*[=+@-]/.test(text)) text = "'" + text;
+      return '"' + text.replace(/"/g, '""') + '"';
+    };
+    return '\uFEFF' + [fields.map(cell).join(','), ...rows.map(row => fields.map(field => cell(row[field])).join(','))].join('\r\n') + '\r\n';
+  }
+  function filename(value, ext) {
+    const extension = str(ext).replace(/^\./, '').toLowerCase();
+    if (!['md','html','csv','json','txt'].includes(extension)) throw new TypeError('Неподдерживаемый формат экспорта');
+    const name = str(value).normalize('NFKC').replace(/[\u0000-\u001f\u007f-\u009f\u200b-\u200f\u202a-\u202e\u2066-\u2069/\\:*?"<>|]/g, ' ')
+      .replace(/\s+/g, ' ').replace(/^[.\s]+|[.\s]+$/g, '');
+    const short = Array.from(name).slice(0, 90).join('').replace(/[.\s]+$/g, '');
+    return (short || 'Сенат — подборка') + '.' + extension;
+  }
+  return {markdown, html, csv, filename};
+});
+</script>
+<script>/* Рабочая подборка читателя. Личные записи остаются в браузере. */
+(function (root) {
+  'use strict';
+  const R=root.SenatReader, E=root.SenatReaderExport, PUBLIC=R.PUBLIC;
+  const $=id=>document.getElementById(id), cp=text=>Array.from(text), cut=(s,a,b)=>cp(s).slice(a,b).join('');
+  function h(tag,attrs,...children) {
+    const el=document.createElement(tag);
+    for(const [key,value] of Object.entries(attrs||{})) {
+      if(value==null || value===false)continue;
+      if(key==='class')el.className=value;
+      else if(key.startsWith('on'))el.addEventListener(key.slice(2),value);
+      else el.setAttribute(key,value===true?'':value);
+    }
+    for(const child of children.flat(Infinity))if(child!=null && child!==false)el.append(child.nodeType?child:document.createTextNode(String(child)));
+    return el;
+  }
+  function selectionFromRange(range,container,fields) {
+    function endpoint(node,offset) {
+      const element=node.nodeType===Node.ELEMENT_NODE?node:node.parentElement;
+      const p=element && element.closest('[data-reader-start][data-reader-end][data-reader-field]');
+      if(!p || !container.contains(p) || !p.contains(node))throw Error('Выделите только текст одного решения или его заголовок.');
+      const field=p.dataset.readerField, source=fields[field], a=Number(p.dataset.readerStart),b=Number(p.dataset.readerEnd);
+      if(typeof source!=='string' || p.textContent!==cut(source,a,b))throw Error('Для точной цитаты включите оригинальную орфографию.');
+      const prefix=document.createRange();prefix.selectNodeContents(p);prefix.setEnd(node,offset);
+      return {field,position:a+cp(prefix.toString()).length};
+    }
+    const a=endpoint(range.startContainer,range.startOffset),b=endpoint(range.endContainer,range.endOffset);
+    if(a.field!==b.field || a.position>=b.position)throw Error('Выделите непустую цитату в одном поле источника.');
+    const text=cut(fields[a.field],a.position,b.position);
+    if(!text.trim() || cp(text).length>R.LIMITS.quote)throw Error('Цитата должна содержать от 1 до '+R.LIMITS.quote+' символов.');
+    return {field:a.field,start:a.position,end:b.position,text_original:text};
+  }
+  function create(adapter) {
+    let storage;try{storage=localStorage;}catch(_){storage=null;}
+    const store=R.createStore({storage}), compareIds=new Set(), hashes=new Map(), volumes=new Map();
+    let detail=null,selected=null,token=0,notice='',noticeError=false;
+    const docs=new Map(adapter.meta.decisions.map(d=>[d.id,d]));
+    const message=(text,error=false)=>{notice=text;noticeError=error;status();};
+    function status() {
+      const s=store.getState(),flags=store.getStatus(),n=s.items.reduce((n,i)=>n+i.quotes.length,0);
+      $('tab-reader').textContent='Подборка'+(s.items.length?' ('+s.items.length+')':'');
+      $('reader-status').textContent=`Решений: ${s.items.length} · Цитат: ${n}. `+(flags.persistent?'Сохранено в этом браузере.':'Сейчас записи хранятся только в памяти: сохраните JSON-копию до закрытия страницы.');
+      $('reader-storage-warning').hidden=flags.persistent;
+      $('reader-storage-warning').textContent=flags.blocked?'Сохранённый файл браузера повреждён или имеет другую версию. Его содержимое не перезаписано. Выгрузите доступные записи; восстановление хранилища требует отдельного подтверждения.':'Браузер запретил запись или его хранилище заполнено. Текущую подборку можно выгрузить в JSON; после перезагрузки изменения могут пропасть.';
+      if($('reader-global-warning')) {
+        $('reader-global-warning').hidden=flags.persistent;
+        $('reader-global-warning').replaceChildren('Подборка сейчас хранится только в памяти. ',h('a',{href:'#/reader'},'Откройте подборку и скачайте JSON-копию.'));
+      }
+      for(const hint of document.querySelectorAll('.reader-persistence-hint')) {
+        hint.hidden=flags.persistent;hint.textContent='Подборка не записана в хранилище браузера. До закрытия страницы откройте подборку и скачайте JSON-копию.';
+      }
+      $('reader-recover').hidden=!flags.blocked;
+      $('reader-export-original').hidden=!flags.blocked;
+      $('reader-notice').textContent=notice;$('reader-notice').classList.toggle('reader-error',noticeError);
+      for(const btn of document.querySelectorAll('.reader-save-decision')) {
+        const saved=s.items.some(i=>i.id===btn.dataset.decision);
+        btn.textContent=saved?'В подборке ✓':'В подборку';btn.setAttribute('aria-pressed',String(saved));
+      }
+    }
+    const guarded=fn=>async event=>{try{await fn(event);}catch(err){message(err.message,true);if(detail)$('reader-selection-status').textContent=err.message;}};
+    async function hash(text) {
+      if(!hashes.has(text))hashes.set(text,crypto.subtle.digest('SHA-256',new TextEncoder().encode(text)).then(bytes=>Array.from(new Uint8Array(bytes),b=>b.toString(16).padStart(2,'0')).join('')));
+      return hashes.get(text);
+    }
+    function passages(year) {
+      if(!volumes.has(year))volumes.set(year,adapter.loadJSON('passages-'+year+'.json'));
+      return volumes.get(year);
+    }
+    function cleanScan(ref) {
+      return {file:ref.file,page:ref.page??null,full:ref.full,image:ref.full,kind:'page',width:ref.width,height:ref.height};
+    }
+    async function location(d,start,end,field='text') {
+      if(field==='headnote')return {printed_pages:[],sources:[],scans:[],source_warning:''};
+      const [data,scans]=await Promise.all([passages(d.vol),adapter.loadScans(d.vol)]), found=new Map(), warnings=new Set();
+      for(const p of data.passages.filter(p=>p.decision===d.id && p.start<end && p.end>start)) {
+        if(p.ai && p.ai.source_warning)warnings.add(p.ai.source_warning);
+        for(const s of p.sources||[]) {
+        const a=Math.max(start,s.start),b=Math.min(end,s.end);if(a>=b)continue;
+        const key=s.file+':'+a+'-'+b;found.set(key,{file:s.file,page:s.page??null,start:a,end:b,...(s.page_method?{page_method:s.page_method}:{})});
+      }}
+      const sources=[];
+      for(const part of [...found.values()].sort((a,b)=>a.start-b.start || a.end-b.end)) {
+        const last=sources[sources.length-1];
+        if(last && last.file===part.file && last.page===part.page && last.end>=part.start)last.end=Math.max(last.end,part.end);
+        else sources.push({...part});
+      }
+      const files=[...new Set(sources.map(s=>s.file))];
+      return {source_warning:[...warnings].join(' '),sources,printed_pages:[...new Set(sources.map(s=>s.page).filter(Number.isInteger))].sort((a,b)=>a-b),scans:files.map(file=>scans.pages[file]).filter(Boolean).map(cleanScan)};
+    }
+    async function snapshot(d) {
+      const [text,scans]=await Promise.all([adapter.textOf(d),adapter.loadScans(d.vol)]);
+      const refs=(scans.decisions[d.id]||[]).map(file=>scans.pages[file]).filter(Boolean).map(cleanScan);
+      return {id:d.id,year:d.vol,number:d.num,department:d.dept,date_label:d.date_label||adapter.formatDate(d.date,d.date_label),headnote:d.headnote,
+        url:PUBLIC+'#/d/'+d.id,source_sha256:await hash(text),printed_pages:[...new Set(refs.map(r=>r.page).filter(Number.isInteger))].sort((a,b)=>a-b),scans:refs,source_warning:adapter.warningOf?adapter.warningOf(d):''};
+    }
+    function quoteURL(d,q) {return PUBLIC+'#/d/'+d.id+'?'+new URLSearchParams({mode:'quote',field:q.field,at:q.start,end:q.end,sha:q.source_sha256});}
+    async function makeQuote(d,field,start,end,text,note='') {
+      const source=field==='headnote'?d.headnote:text, original=cut(source,start,end);
+      if(!Number.isSafeInteger(start)||!Number.isSafeInteger(end)||start<0||end>cp(source).length||end<=start||!original.trim())throw Error('Диапазон цитаты не соответствует источнику.');
+      const q={field,start,end,text_original:original,source_sha256:await hash(source),note,...await location(d,start,end,field)};
+      q.url=quoteURL(d,q);return q;
+    }
+    async function save(d) {store.saveDecision(await snapshot(d));status();message('Решение добавлено в подборку.');}
+    function saveButton(d) {const btn=h('button',{class:'btn ghost reader-save-decision','data-decision':d.id,'aria-pressed':String(store.getState().items.some(i=>i.id===d.id)),onclick:guarded(()=>save(d))},store.getState().items.some(i=>i.id===d.id)?'В подборке ✓':'В подборку');return btn;}
+    function download(type) {
+      const state=store.getState(), formats={json:()=>['application/json',store.exportJSON()],markdown:()=>['text/markdown;charset=utf-8',E.markdown(state)],html:()=>['text/html;charset=utf-8',E.html(state)],csv:()=>['text/csv;charset=utf-8',E.csv(state)]};
+      const [mime,content]=formats[type](),url=URL.createObjectURL(new Blob([content],{type:mime}));
+      const a=h('a',{href:url,download:E.filename(state.title,type==='markdown'?'md':type)});document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);
+      message(type==='json'?'JSON-копия содержит всю подборку и подходит для переноса и восстановления.':'Подборка выгружена. Ссылки на сайт и сканы требуют интернета.');
+    }
+    async function importFile(file) {
+      if(!file)return;if(file.size>R.LIMITS.bytes)throw Error('Файл подборки превышает 4 МБ.');
+      const incoming=R.validate(await file.text()), prepared=JSON.parse(JSON.stringify(incoming));
+      for(const item of prepared.items) {
+        const d=docs.get(item.id);if(!d)throw Error('В корпусе нет решения '+item.id+'. Подборка не изменена.');
+        const text=await adapter.textOf(d);item.decision=await snapshot(d);
+        for(let i=0;i<item.quotes.length;i++) {
+          const q=item.quotes[i],source=q.field==='headnote'?d.headnote:text;
+          if(await hash(source)!==q.source_sha256 || cut(source,q.start,q.end)!==q.text_original)throw Error('Цитата '+item.id+' не совпадает с текущим источником. Файл сохранён у вас, подборка не изменена.');
+          item.quotes[i]={...await makeQuote(d,q.field,q.start,q.end,text,q.note),id:q.id};
+        }
+      }
+      store.importJSON(prepared,{merge:true});render();message('Подборка объединена с текущей. Существующие заметки и цитаты сохранены.');
+    }
+    function noteBox(value,label,save,className) {
+      const input=h('textarea',{class:className,rows:3,maxlength:R.LIMITS.note,'aria-label':label,oninput:()=>{try{save(input.value);}catch(err){message(err.message,true);}}});input.value=value;
+      return h('label',{class:'reader-note-label'},label,input);
+    }
+    function render() {
+      token++;
+      const s=store.getState();$('reader-title').value=s.title;$('reader-note').value=s.note;
+      for(const id of [...compareIds])if(!s.items.some(i=>i.id===id))compareIds.delete(id);
+      const cards=s.items.map(item=>{
+        const d=docs.get(item.id),label=`${item.decision.year} г. № ${item.decision.number}`;
+        const remove=h('button',{class:'btn ghost reader-remove',onclick:()=>{
+          if(confirm('Удалить '+label+' из подборки вместе с заметкой и цитатами?')){store.removeItem(item.id);compareIds.delete(item.id);render();}
+        }},'Удалить из подборки');
+        const toggle=h('input',{type:'checkbox',class:'reader-compare-toggle','aria-label':'Сравнить '+label,onchange:e=>{
+          if(e.target.checked && compareIds.size>=4){e.target.checked=false;message('Рядом можно сравнить от 2 до 4 решений.',true);return;}
+          if(e.target.checked)compareIds.add(item.id);else compareIds.delete(item.id);compareStatus();
+        }});toggle.checked=compareIds.has(item.id);
+        return h('article',{class:'card reader-item','data-reader-id':item.id,'data-decision-id':item.id},
+          h('div',{class:'reader-item-top'},h('h3',{},h('a',{href:'#/d/'+item.id+'?mode=reader'},label)),h('label',{},toggle,' Сравнить'),remove),
+          h('p',{class:'muted small'},item.decision.department+' · '+item.decision.date_label),h('p',{class:'reader-headnote'},item.decision.headnote),
+          item.decision.source_warning?h('p',{class:'preliminary-note'},item.decision.source_warning):null,
+          h('p',{class:'small reader-pages'},E.pageLabel?E.pageLabel(item.decision):pageLabel(item.decision)),
+          !d?h('p',{class:'reader-error'},'Это решение отсутствует в текущей версии корпуса. Сохранённые цитаты и заметки доступны в экспорте.'):null,
+          noteBox(item.note,'Заметка к решению '+label,value=>store.updateItem(item.id,{note:value}),'reader-item-note'),
+          h('div',{class:'reader-quotes'},item.quotes.map(q=>h('section',{class:'reader-quote','data-quote-id':q.id},
+            h('blockquote',{class:'source-quote reader-quote-original'},q.text_original),
+            q.source_warning?h('p',{class:'preliminary-note'},q.source_warning):null,
+            h('p',{class:'small reader-quote-pages'},(q.field==='headnote'?'Заголовок издания. ':'')+pageLabel(q)),
+            h('a',{class:'reader-quote-open',href:localQuoteURL(item.id,q)},'Открыть это место'),
+            h('ul',{class:'reader-scan-links'},q.scans.map(scan=>h('li',{},h('a',{href:PUBLIC+scan.full.replace(PUBLIC,''),target:'_blank',rel:'noopener'},'Полная страница'+(scan.page==null?' без печатного номера':', с. '+scan.page))))),
+            noteBox(q.note,'Заметка к цитате '+label,value=>store.updateQuote(item.id,q.id,{note:value}),'reader-quote-note'),
+            h('button',{class:'btn ghost reader-remove-quote',onclick:()=>{if(confirm('Удалить эту цитату и заметку к ней?')){store.removeQuote(item.id,q.id);render();}}},'Удалить цитату')))));
+      });
+      $('reader-items').replaceChildren(...(cards.length?cards:[h('p',{class:'empty'},'Подборка пуста. Нажмите «В подборку» у решения. В карточке можно выделить оригинальный текст и сохранить цитату.')]));
+      $('reader-compare-panel').replaceChildren();compareStatus();status();
+    }
+    function pageLabel(q) {return q.printed_pages.length?'Печатные страницы: '+q.printed_pages.join(', ')+'.':'Печатные страницы не определены.';}
+    function localQuoteURL(id,q){return '#/d/'+id+'?'+new URLSearchParams({mode:'quote',field:q.field,at:q.start,end:q.end,sha:q.source_sha256});}
+    function compareStatus() {$('reader-compare').disabled=compareIds.size<2;$('reader-compare-count').textContent='Выбрано для сравнения: '+compareIds.size+' из 4.';}
+    async function compare() {
+      const current=++token,s=store.getState(), selected=s.items.filter(i=>compareIds.has(i.id));if(selected.length<2)return;
+      const box=$('reader-compare-panel');box.replaceChildren(h('p',{},'Загружаем решения для сравнения…'));
+      const cases=await Promise.all(selected.map(async item=>{
+        const d=docs.get(item.id);if(!d)return h('article',{class:'reader-compare-case'},item.id,' — текст отсутствует в этой версии корпуса.');
+        const text=await adapter.textOf(d),pieces=[];let at=0;
+        const digest=await hash(text);
+        const currentQuotes=item.quotes.filter(q=>q.field==='text' && q.source_sha256===digest && cut(text,q.start,q.end)===q.text_original);
+        const spans=currentQuotes.map(q=>({start:q.start,end:q.end})).sort((a,b)=>a.start-b.start);
+        // Не подсвечиваем старые координаты после изменения OCR.
+        const valid=digest===item.decision.source_sha256 && currentQuotes.length===item.quotes.filter(q=>q.field==='text').length;
+        const merged=[];for(const span of spans){const last=merged[merged.length-1];if(last && last.end>=span.start)last.end=Math.max(last.end,span.end);else merged.push({...span});}
+        for(const span of merged){pieces.push(cut(text,at,span.start),h('mark',{},cut(text,span.start,span.end)));at=span.end;}pieces.push(cut(text,at));
+        return h('article',{class:'reader-compare-case','data-decision-id':item.id},
+          h('h3',{},h('a',{href:'#/d/'+item.id+'?mode=reader'},d.vol+' г. № '+d.num)),h('p',{class:'muted small'},d.dept+' · '+adapter.formatDate(d.date,d.date_label)),
+          h('p',{},d.headnote),item.decision.source_warning?h('p',{class:'preliminary-note'},item.decision.source_warning):null,h('dl',{},h('dt',{},'Исход (автоматическая метка)'),h('dd',{},d.outcome),h('dt',{},'Темы'),h('dd',{},d.topics.join('; '))),
+          h('details',{},h('summary',{},'Упомянутые статьи ('+Object.keys(d.statutes).length+')'),h('ul',{},Object.keys(d.statutes).map(s=>h('li',{},s)))),
+          h('h4',{},'Заметка читателя'),h('p',{class:'reader-preserve'},item.note||'Нет заметки.'),
+          item.quotes.map(q=>h('section',{},h('blockquote',{class:'source-quote'},q.text_original),q.source_warning?h('p',{class:'preliminary-note'},q.source_warning):null,h('p',{class:'small'},pageLabel(q)),h('a',{href:localQuoteURL(item.id,q)},'Открыть цитату'),q.note?h('p',{class:'reader-preserve'},q.note):null)),
+          !valid?h('p',{class:'preliminary-note'},'Текст изменился со времени сохранения. Сохранённые цитаты показаны отдельно; старые координаты не подсвечиваются.'):null,
+          h('details',{class:'reader-compare-text'},h('summary',{},'Полный оригинальный текст'),h('div',{class:'reader-full-original'},pieces)));
+      }));
+      if(current!==token)return;box.replaceChildren(h('h2',{},'Сравнение решений'),h('p',{class:'muted small'},'Оригинальные тексты. Подсветка отмечает ваши сохранённые цитаты; заметки принадлежат читателю.'),h('div',{class:'reader-compare-grid',style:'--reader-columns:'+cases.length},cases));box.scrollIntoView({block:'start'});
+    }
+    function clearDetail() {detail=null;selected=null;}
+    function attachDetail(info) {
+      detail=info;selected=null;
+      const selectionStatus=h('p',{id:'reader-selection-status',class:'small',role:'status'},adapter.isModern()?'Для выделения цитаты включите дореформенную орфографию.':'Выделите текст в оригинале и нажмите «Сохранить цитату».');
+      const quoteButton=h('button',{id:'reader-save-quote',class:'btn ghost',disabled:true,onclick:guarded(async()=>{
+        if(!selected || !detail)throw Error('Сначала выделите оригинальный текст.');
+        const q={...selected},d=detail.d,text=detail.text;
+        store.addQuote(await snapshot(d),await makeQuote(d,q.field,q.start,q.end,text));message('Цитата сохранена вместе с печатными страницами и ссылками на сканы.');
+        selectionStatus.textContent='Цитата сохранена в подборке.';
+      })},'Сохранить цитату');
+      quoteButton.addEventListener('pointerdown',event=>event.preventDefault());
+      for(const source of [info.body,info.headnote].filter(Boolean))source.addEventListener('pointerdown',()=>{selected=null;quoteButton.disabled=true;});
+      const tools=h('section',{class:'reader-detail-tools'},h('div',{class:'reader-actions'},saveButton(info.d),quoteButton,h('a',{href:'#/reader'},'Открыть подборку')),selectionStatus,h('p',{class:'preliminary-note reader-persistence-hint',hidden:true,role:'status'}));
+      if(adapter.isModern())tools.append(h('button',{class:'btn ghost reader-original',onclick:()=>adapter.setModern(false)},'Включить оригинал для цитирования'));
+      if(info.target && !info.target.warning && Number.isSafeInteger(info.target.start))tools.append(h('button',{id:'reader-save-target',class:'btn ghost',onclick:guarded(async()=>{
+        store.addQuote(await snapshot(info.d),await makeQuote(info.d,info.target.field||'text',info.target.start,info.target.end,info.text));selectionStatus.textContent='Фрагмент сохранён в оригинальной орфографии.';
+      })},'Сохранить открытый фрагмент'));
+      info.body.before(tools);status();
+    }
+    async function resolveQuote(d,text,params) {
+      const field=params.get('field'),start=Number(params.get('at')),end=Number(params.get('end')),digest=params.get('sha');
+      if(!['text','headnote'].includes(field)||!/^\d+$/.test(params.get('at')||'')||!/^\d+$/.test(params.get('end')||'')||!digest||!/^[a-f0-9]{64}$/.test(digest))return {warning:'Ссылка на цитату повреждена или не содержит данных для проверки. Открыто решение целиком.'};
+      const source=field==='headnote'?d.headnote:text;
+      if(!Number.isSafeInteger(start)||!Number.isSafeInteger(end)||start<0||end>cp(source).length||start>=end||end-start>R.LIMITS.quote||await hash(source)!==digest)return {warning:'Сохранённая цитата не соответствует этой версии текста. Открыто решение целиком; проверьте цитату в подборке или её JSON-копии.'};
+      const found=await location(d,start,end,field);
+      return {id:d.id+':reader:'+start+'-'+end,field,start,end,pages:found.printed_pages,sources:found.sources,scans:found.scans,quote_original:cut(source,start,end),ai:{source_warning:found.source_warning}};
+    }
+    document.addEventListener('selectionchange',()=>{
+      if(!detail || !document.contains(detail.body))return;
+      const selection=getSelection(),button=$('reader-save-quote');if(!button)return;
+      if(adapter.isModern()){button.disabled=true;return;}
+      if(!selection || selection.isCollapsed || !selection.rangeCount){button.disabled=!selected;return;}
+      try {
+        selected=selectionFromRange(selection.getRangeAt(0),$('detail-body'),{text:detail.text,headnote:detail.d.headnote});button.disabled=false;
+        $('reader-selection-status').textContent='Выделено символов: '+cp(selected.text_original).length+'. Сохранится оригинальный текст.';
+      }catch(_){selected=null;button.disabled=true;}
+    });
+    $('reader-title').addEventListener('input',event=>{try{store.setTitle(event.target.value);}catch(err){message(err.message,true);}});
+    $('reader-note').addEventListener('input',event=>{try{store.setNote(event.target.value);}catch(err){message(err.message,true);}});
+    $('reader-compare').addEventListener('click',guarded(compare));
+    for(const type of ['json','markdown','html','csv'])$('reader-export-'+type).addEventListener('click',()=>download(type));
+    $('reader-import').addEventListener('change',guarded(async event=>{const file=event.target.files[0];event.target.value='';await importFile(file);}));
+    $('reader-recover').addEventListener('click',()=>{if(confirm('Перезаписать повреждённое хранилище текущими доступными записями? Сначала сохраните JSON-копию.')){store.recoverStorage();status();}});
+    $('reader-export-original').addEventListener('click',guarded(()=>{
+      const raw=storage && storage.getItem(store.key);if(raw==null)throw Error('Исходная запись хранилища недоступна.');
+      const url=URL.createObjectURL(new Blob([raw],{type:'text/plain;charset=utf-8'}));
+      const link=h('a',{href:url,download:'Сенат — исходная запись подборки.txt'});document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);
+    }));
+    $('reader-retry').addEventListener('click',()=>{try{store.flush();status();}catch(err){message(err.message,true);}});
+    store.subscribe(status);
+    addEventListener('storage',event=>{if(event.key===store.key){store.sync();if(!document.activeElement.matches('#view-reader textarea,#reader-title'))render();}});
+    status();return {render,saveButton,attachDetail,clearDetail,resolveQuote,store,importFile};
+  }
+  root.SenatReaderUI={create,selectionFromRange};
+})(window);
+</script>
 <script>/* Интерфейс: поиск по решениям Сената и аналитика. Зависит от lex.js (Lex). */
 (function () {
   'use strict';
@@ -737,7 +1516,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
   ];
 
   const S = {
-    meta: null, index: null, an: null, engine: null, texts: {}, stemCache: new Map(),
+    meta: null, index: null, an: null, engine: null, texts: {}, stemCache: new Map(), reader: null,
     opts: { modern: false, gloss: true }, detailId: null,
     sense: { config: null, engines: [], promise: null, q: '', hits: [], shown: 10, token: 0, partial: false, suggested: 0 },
     map: { q: '', topic: '', token: 0 },
@@ -915,9 +1694,9 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
   }
   function route() {
     const { path, p } = readHash();
-    const requested = path.startsWith('d/') ? (['sense','participants','map','laws','analyses','analysis','guides'].includes(p.get('mode')) ? (p.get('mode') === 'analysis' ? 'analyses' : p.get('mode')) : 'search') : (path.split('/')[0] || 'search');
-    const tab = ['search','sense','map','laws','participants','guides','analyses','api','analytics','about'].includes(requested) ? requested : 'search';
-    for (const t of ['search','sense','map','laws','participants','guides','analyses','api','analytics','about']) {
+    const requested = path.startsWith('d/') ? (['sense','participants','map','laws','analyses','analysis','guides','reader','quote'].includes(p.get('mode')) ? (p.get('mode') === 'analysis' ? 'analyses' : p.get('mode') === 'quote' ? 'reader' : p.get('mode')) : 'search') : (path.split('/')[0] || 'search');
+    const tab = ['search','sense','map','laws','participants','guides','analyses','reader','api','analytics','about'].includes(requested) ? requested : 'search';
+    for (const t of ['search','sense','map','laws','participants','guides','analyses','reader','api','analytics','about']) {
       $('#view-' + t).hidden = t !== tab;
       $('#tab-' + t).setAttribute('aria-current', t === tab ? 'page' : 'false');
     }
@@ -948,6 +1727,9 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
     } else if (tab === 'guides') {
       renderGuides();
+      if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
+    } else if (tab === 'reader') {
+      S.reader.render();
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
     } else if (tab === 'api') {
       renderApi(); closeDetail();
@@ -1214,6 +1996,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
         h('div', { class: 'chips participant-chips' }, groupItems(d).slice(0, 8).map(g => h('button', { class: 'chip group', title: 'Фильтровать решения по этому признаку', onclick: () => selectFacet(g.key, g.label) }, g.label))));
       card.addEventListener('click', e => { if (!e.target.closest('button,a')) openFromList(d.id); });
       card.addEventListener('keydown', e => { if (e.key === 'Enter' && e.target === card) openFromList(d.id); });
+      card.append(S.reader.saveButton(d));
       box.append(card);
     }
     $('#more').hidden = total <= S.shown;
@@ -1264,6 +2047,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
 
   /* ---------------------------------------------------------------- карточка решения */
   async function openDetail(id) {
+    S.reader.clearDetail();
     S.detailId = id;
     const d = S.meta.decisions.find(x => x.id === id); const box = $('#detail-body');
     if (!d) { box.replaceChildren(h('p', {}, 'Решение не найдено')); $('#detail').hidden = false; return; }
@@ -1275,10 +2059,14 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
       readHash().p.get('mode')==='guides'?loadTopicCatalog():null,
       readHash().p.get('mode')==='laws'&&readHash().p.has('law')?loadLaws():null]);
     if (S.detailId !== id || $('#detail').hidden) return;
-    const params = readHash().p, inSense = ['sense','map','passage','laws','analysis','guides'].includes(params.get('mode'));
-    let target = null, senseTerms = [], partialMissing = [];
+    const params = readHash().p, inSense = ['sense','map','passage','laws','analysis','guides','quote'].includes(params.get('mode'));
+    let target = null, senseTerms = [], partialMissing = [], quoteWarning = '';
     const analysis = analyses.decisions && analyses.decisions[id];
-    if (params.get('mode') === 'laws' && params.has('law')) {
+    if (params.get('mode') === 'quote') {
+      target = await S.reader.resolveQuote(d,text,params);
+      if (target.warning) { quoteWarning=target.warning; target=null; }
+      if (S.detailId !== id || $('#detail').hidden) return;
+    } else if (params.get('mode') === 'laws' && params.has('law')) {
       const row = [...laws.citations, ...(laws.unresolved || []), ...(laws.historical_references || [])].find(r=>r.id===params.get('law') && r.decision_id===id);
       if (row) target = await lawDetailTarget(d, row, params);
       if (S.detailId !== id || $('#detail').hidden) return;
@@ -1323,7 +2111,8 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
         if (a < b) {
           html = paintPiece(window.Concept.slice(par,0,a)) + '<span class="passage-focus"' + (first ? ' id="passage-target" tabindex="-1"' : '') + '>' + paintPiece(window.Concept.slice(par,a,b)) + '</span>' + paintPiece(window.Concept.slice(par,b)); first = false;
         } else html = paintPiece(par);
-        offset += length+2; return '<p>'+html+'</p>';
+        const attrs=' data-reader-field="'+field+'" data-reader-start="'+offset+'" data-reader-end="'+(offset+length)+'"';
+        offset += length+2; return '<p'+attrs+'>'+html+'</p>';
       }).join('');
     };
     const cite = `Решение ${d.dept === 'Общее собрание' ? 'Общего собрания' : d.dept.replace('кий', 'кого').replace('ый', 'ого')} Правительствующего Сената ${d.vol} г. № ${d.num}` + (target ? ', ' + (target.field==='headnote'?'заголовок издания':pageLabel(target)) : '');
@@ -1333,7 +2122,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
         h('h2', {}, `№ ${d.num} · ${fmtDate(d.date, d.date_label)}`),
         h('div', { class: 'muted' }, `${d.dept}, том ${d.vol}`),
         h('span', { class: 'badge big' }, d.outcome)),
-      target && target.field==='headnote' ? h('div', {class:'headnote',html:paint(d.headnote,'headnote')}) : h('p', { class: 'headnote' }, M(d.headnote)),
+      target && target.field==='headnote' ? h('div', {class:'headnote',html:paint(d.headnote,'headnote')}) : h('p', { class: 'headnote', 'data-reader-field':'headnote', 'data-reader-start':0, 'data-reader-end':Array.from(d.headnote).length }, M(d.headnote)),
       target && target.law ? h('section',{class:'law-detail','data-law-id':target.law.id},
         target.law.historical_note ? h('p',{class:'preliminary-note law-historical-note'},target.law.historical_note) : '',
         target.law.historical_note && target.law.current_references?.length ? h('p',{class:'law-current-references'},
@@ -1368,6 +2157,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
         h('button', { class: 'btn', onclick: e => { const btn = e.target; const txt = cite + '\n' + location.href; const done = ok => { btn.textContent = ok ? 'Скопировано ✓' : 'Не удалось скопировать — выделите текст вручную'; setTimeout(() => btn.textContent = 'Скопировать ссылку и цитату', 2000); }; try { navigator.clipboard.writeText(txt).then(() => done(true), () => done(false)); } catch (err) { done(false); } } }, 'Скопировать ссылку и цитату')),
       target && target.ai && target.ai.source_warning ? h('p',{class:'preliminary-note source-warning'},'Ограничение источника: '+target.ai.source_warning) : sourceWarning(d),
       target && target.editorial_note ? h('p',{class:'preliminary-note editorial-note'},target.editorial_note) : '',
+      quoteWarning ? h('p',{class:'preliminary-note reader-source-warning',role:'status'},quoteWarning) : '',
       body,
       h('p', { class: 'muted small' }, 'Текст получен автоматическим распознаванием скана (модель ИИ) и может содержать ошибки: числа, номера статей и фамилии сверяйте с изданием. Современная орфография — автоматическая, для удобства чтения.'),
       outgoing.length ? h('section', {class:'precedents-out'}, h('h3', {}, 'Ссылки на прежние решения'),
@@ -1390,6 +2180,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
       } catch(err) {scanSection.append(h('p',{class:'small'},'Не удалось загрузить список страниц. Закройте и откройте этот раздел для повторной попытки.'));}
     });
     body.before(scanSection);
+    S.reader.attachDetail({d,text,body,headnote:box.querySelector('.headnote'),target});
     $('#detail').scrollTop = 0;
     if (target) {
       const anchor = $('#passage-target');
@@ -1410,7 +2201,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     return out + L.esc(par.slice(pos));
   }
   function personLink(name) { return h('a', { href: '#/search?p=' + encodeURIComponent(name) }, name); }
-  function closeDetail() { $('#detail').hidden = true; document.body.classList.remove('modal'); }
+  function closeDetail() { S.reader.clearDetail(); $('#detail').hidden = true; document.body.classList.remove('modal'); }
 
   /* ---------------------------------------------------------------- элементы управления */
   function fillSelect(sel, items, first) {
@@ -1456,7 +2247,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     $('#gloss').addEventListener('change', e => { S.opts.gloss = e.target.checked; runSearch(); });
     $('#more').addEventListener('click', () => { S.shown += 20; renderResults(++runToken); });
     $('#reset').addEventListener('click', () => go('search'));
-    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const requested = p.get('mode'); const mode = requested === 'passage' ? 'sense' : (requested === 'analysis' ? 'analyses' : (['sense','participants','map','laws','guides','analyses','api'].includes(requested) ? requested : 'search')); p.delete('at'); p.delete('end'); p.delete('mode'); p.delete('ref'); p.delete('law'); p.delete('field'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
+    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const requested = p.get('mode'); const mode = requested === 'quote' ? 'reader' : requested === 'passage' ? 'sense' : (requested === 'analysis' ? 'analyses' : (['sense','participants','map','laws','guides','analyses','api','reader'].includes(requested) ? requested : 'search')); p.delete('at'); p.delete('end'); p.delete('mode'); p.delete('ref'); p.delete('law'); p.delete('field'); p.delete('sha'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !document.querySelector('.scan-dialog[open]') && !$('#detail').hidden) $('#detail-close').click(); });
     $('#examples').append(...['недействительность сделки', 'возмещение убытков', 'исковая давность', 'договор аренды', 'банкротство', 'страховое возмещение', 'перевозка грузов', 'исполнитель завещания']
       .map(x => h('button', { class: 'chip', onclick: () => go('search', { q: x }) }, x)));
@@ -1876,6 +2667,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
       $('#corpus-summary').textContent = `В корпусе: ${meta.volumes.map(v=>v.year).join(', ')} · ${meta.decisions.length} ${plural(meta.decisions.length,'решение','решения','решений')}`;
       $('#corpus-summary').hidden = false;
       S.engine = L.makeEngine(index, meta.decisions);
+      S.reader=window.SenatReaderUI.create({meta,textOf,loadJSON,loadScans,formatDate:fmtDate,setModern,isModern:()=>S.opts.modern,warningOf:d=>(S.an.source_warnings?.[d.id]?.messages||[]).join(' ')});
       $('#loading').hidden = true; setupControls(); route(); addEventListener('hashchange', route);
     } catch (e) {
       $('#loading').textContent = 'Не удалось загрузить данные: ' + e.message + '. Откройте страницу через веб-сервер (например, `python3 -m http.server` в папке lex).';

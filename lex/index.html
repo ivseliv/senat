@@ -180,16 +180,35 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
 #guides-status { margin: 16px 0; color: var(--muted); }#guides-filter { display: flex; align-items: end; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
 #guides-filter label { display: grid; gap: 5px; min-width: 0; max-width: 100%; }#guides-filter .guide-query { flex: 1 1 280px; }#guides-q { width: 100%; }#guides-year { max-width: 100%; min-width: 0; }
 .decision-analysis h3 { margin-top: 0; }.analysis-label,.analysis-speaker { color: var(--accent-ink); font-size: 13px; font-weight: 600; margin: 4px 0; }.analysis-item { border-top: 1px solid var(--line); padding-top: 12px; margin-top: 12px; }.analysis-item h4 { margin: 0; font-size: 16px; }.analysis-evidence { margin-top: 8px; }.source-quote { margin: 10px 0; padding-left: 12px; border-left: 2px solid var(--line); font-family: "Noto Serif", Georgia, serif; white-space: pre-wrap; }.analysis-card h3 { margin-top: 0; }
+
+/* Личная подборка: заметки, точные цитаты и сравнение дел. */
+.reader-fields,.reader-note-label { display:grid; gap:8px; margin:16px 0; }
+.reader-fields label { display:grid; gap:6px; }.reader-fields input { width:100%; }
+#view-reader textarea { width:100%; min-height:80px; resize:vertical; padding:10px; border:1px solid var(--line); border-radius:6px; background:var(--surface); color:var(--ink); font:inherit; }
+.reader-actions,.reader-item-top { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin:12px 0; }
+.reader-item-top h3 { flex:1; margin:0; }.reader-item-top label { white-space:nowrap; }
+.reader-import-label { display:grid; gap:6px; margin:18px 0; }#reader-import { max-width:100%; }
+.reader-quote { border-top:1px solid var(--line); padding-top:12px; margin-top:18px; }
+.reader-quote-original,.reader-preserve { white-space:pre-wrap; overflow-wrap:anywhere; }
+.reader-error { color:var(--accent-ink); font-weight:600; }.reader-detail-tools { margin:20px 0; padding:12px; border:1px solid var(--line); border-radius:8px; }
+.reader-compare-grid { display:grid; grid-template-columns:repeat(var(--reader-columns),minmax(0,1fr)); gap:14px; align-items:start; }
+.reader-compare-case { min-width:0; overflow-wrap:anywhere; padding:14px; border:1px solid var(--line); border-radius:8px; background:var(--surface); }
+.reader-compare-case h3 { margin-top:0; }.reader-compare-case dd { margin:0 0 10px; }.reader-compare-case dt { font-weight:600; }
+.reader-full-original { font-family:var(--serif); white-space:pre-wrap; max-height:65vh; overflow:auto; margin-top:12px; padding:4px; }
+#reader-compare-panel { margin:24px 0; }.reader-scan-links { padding-left:20px; overflow-wrap:anywhere; }
+#reader-notice:empty { display:none; }#reader-status { margin:14px 0; }.reader-save-decision { margin-top:10px; }
+@media(max-width:760px) { .reader-compare-grid { grid-template-columns:1fr; }.reader-item-top { align-items:flex-start; }.reader-item-top h3 { flex-basis:100%; }.reader-actions .btn { max-width:100%; }.reader-full-original { max-height:55vh; } }
 </style>
 </head>
 <body>
 <header><div class="wrap">
   <div class="top"><h1>Решения Правительствующего Сената</h1><span class="sub">поиск и аналитика · прототип</span><span class="spacer"></span>
     <button class="btn ghost" id="theme" title="Светлая / тёмная тема">◐ тема</button></div>
-  <nav aria-label="Разделы"><a id="tab-search" href="#/search">Поиск</a><a id="tab-sense" href="#/sense">По смыслу</a><a id="tab-laws" href="#/laws">Законодательство</a><a id="tab-map" href="#/map">Карта</a><a id="tab-participants" href="#/participants">Участники</a><a id="tab-guides" href="#/guides">Темы</a><a id="tab-analyses" href="#/analyses">Разборы</a><a id="tab-api" href="#/api">API</a><a id="tab-analytics" href="#/analytics">Аналитика</a><a id="tab-about" href="#/about">О проекте</a></nav>
+  <nav aria-label="Разделы"><a id="tab-search" href="#/search">Поиск</a><a id="tab-sense" href="#/sense">По смыслу</a><a id="tab-laws" href="#/laws">Законодательство</a><a id="tab-map" href="#/map">Карта</a><a id="tab-participants" href="#/participants">Участники</a><a id="tab-guides" href="#/guides">Темы</a><a id="tab-analyses" href="#/analyses">Разборы</a><a id="tab-reader" href="#/reader">Подборка</a><a id="tab-api" href="#/api">API</a><a id="tab-analytics" href="#/analytics">Аналитика</a><a id="tab-about" href="#/about">О проекте</a></nav>
 </div></header>
 
 <main class="wrap">
+<p id="reader-global-warning" class="preliminary-note" hidden></p>
   <div id="loading">Загрузка данных…</div>
   <p id="corpus-summary" class="muted small" hidden></p>
 
@@ -303,6 +322,32 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     <div id="guides-status" aria-live="polite"></div><div id="guides-results"></div>
   </section>
 
+  <section id="view-reader" hidden>
+    <h2>Рабочая подборка</h2>
+    <p class="muted">Решения, оригинальные цитаты и ваши заметки — без регистрации. Они хранятся в этом браузере и не отправляются на сервер. Копия сайта в другом браузере или офлайн-файле имеет отдельную подборку.</p>
+    <p class="small">Заметки сохраняются при вводе. Скачивайте JSON-копию: очистка данных браузера удалит подборку. Редактируйте её в одном окне; изменения из других вкладок подхватываются при записи.</p>
+    <div id="reader-status" role="status"></div>
+    <p id="reader-storage-warning" class="preliminary-note" hidden></p>
+    <p id="reader-notice" role="status"></p>
+    <div class="reader-fields">
+      <label>Название подборки<input id="reader-title" maxlength="200"></label>
+      <label>Общая заметка<textarea id="reader-note" rows="3" maxlength="20000"></textarea></label>
+    </div>
+    <div class="reader-actions" aria-label="Выгрузка подборки">
+      <button id="reader-export-json" class="btn">JSON — копия и перенос</button>
+      <button id="reader-export-markdown" class="btn ghost">Markdown</button>
+      <button id="reader-export-html" class="btn ghost">HTML для печати</button>
+      <button id="reader-export-csv" class="btn ghost">CSV</button>
+    </div>
+    <p class="small muted">Экспорт содержит заметки, оригинальные цитаты, печатные страницы и ссылки на сканы. Полные тексты дел и изображения в него не встраиваются.</p>
+    <label class="reader-import-label">Объединить с JSON-копией<input type="file" id="reader-import" accept="application/json,.json"></label>
+    <p class="small muted">При импорте цитаты проверяются по текущему корпусу; страницы и ссылки определяются заново. Уже сохранённые заметки не заменяются.</p>
+    <div class="reader-actions"><button id="reader-retry" class="btn ghost">Повторить сохранение</button><button id="reader-export-original" class="btn ghost" hidden>Скачать исходную запись</button><button id="reader-recover" class="btn ghost" hidden>Восстановить хранилище</button></div>
+    <div class="reader-actions"><button id="reader-compare" class="btn" disabled>Сравнить выбранные дела</button><span id="reader-compare-count" class="small"></span></div>
+    <div id="reader-compare-panel"></div>
+    <div id="reader-items"></div>
+  </section>
+
   <section id="view-api" hidden>
     <h2>API и данные</h2>
     <p>Версионированный статический API для исследований: решения, пассажи, привязки к сканам, указатель, законодательство и материализованные фильтры. Работает без ключа и сервера.</p>
@@ -349,6 +394,9 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
 
 <script src="lex.js"></script>
 <script src="concept.js"></script>
+<script src="reader.js"></script>
+<script src="reader-export.js"></script>
+<script src="reader-ui.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
