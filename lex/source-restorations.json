@@ -1,0 +1,417 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-19",
+  "version": "1896-restored-20261019",
+  "year": 1896,
+  "pdf_sha256": "798ba3ebc3471affe8c3827293ec31a887ebfc194014006431040a8bbc093250",
+  "scope": "Восстановлен порядок двух колонок на 40 листах: 38 первоначально проблемных, а также PDF63 и PDF75. Проверены границы 49 решений и конец №49 на печатной странице796. Выпавшие строки переписаны по изображениям того же PDF. Это структурная реставрация, не сплошная вычитка букв, фамилий и чисел.",
+  "limits": "В исходном распознавании остаются ошибки отдельных слов. Номер статьи и имя проверяйте по скану. Старая ссылка с диапазоном без метки этой версии открывает полный текст без неподтверждённой подсветки. Сохранённые цитаты читателя проверяются по SHA текста.",
+  "changed_pages": [
+    {
+      "file": "p0017.txt",
+      "old_sha256": "0500bcd26ff4767025c9acf83cc891651a83eb798aa5335047a0661ade4aaf3f",
+      "sha256": "93e75cc73b9dce1d73c07bd3454028ab59171a3ce3b0dda130f6ed69a7c5bfe1"
+    },
+    {
+      "file": "p0018.txt",
+      "old_sha256": "34d6ca8cec11a62057877377a20bffff8b485192c1ed32c6a95b450db8c11ddb",
+      "sha256": "cd24fc15aeb9f04a58060058b7b0b3f90a7156fc5609b6743e28efb119f0a5a4"
+    },
+    {
+      "file": "p0023.txt",
+      "old_sha256": "24be93059262ce4d0c53a6732ef32b7067df5305c2fcc648c630b43e49e3156a",
+      "sha256": "cfc1ff004e4d326a6c2dca95013349c17455b7b6b6f5c43c3e886dc4b923dd82"
+    },
+    {
+      "file": "p0024.txt",
+      "old_sha256": "83c38cb92d0a221fa7097da335232c0a54ccb6389fd0a199dd2e9ba625f193dc",
+      "sha256": "de66b9f4750a780fda2cc492187a74a8bc9c2c7e552e842d53aac6463a8d57b8"
+    },
+    {
+      "file": "p0025.txt",
+      "old_sha256": "641973d4445511d8e94e18001652a3dfae713136b5f113b6ad13675cd4b4bada",
+      "sha256": "eebcd942d17983ad4c0d4474292f27364cd8469909ff9ea5c21e5be65628cc26"
+    },
+    {
+      "file": "p0027.txt",
+      "old_sha256": "90b5bbaeb73406e41345bf01db29b7d8b4a4edcf23ea2a4cca20e165e2cd00ac",
+      "sha256": "bbf86a5a1cdc8314a671baceefc48a8bce0257d0876e21cab23e4d87e59e784e"
+    },
+    {
+      "file": "p0028.txt",
+      "old_sha256": "9f70ff803f047b3006c0c3446017c8ba71cb057fc1c1fda4ec84c6d740f1a81b",
+      "sha256": "73cce46058e922d77cfb48e9f23831bd3da8c2b739557111f33508c6881bb42c"
+    },
+    {
+      "file": "p0029.txt",
+      "old_sha256": "b77a39317f27bd18337e23725b81756ff89cec95b3fd4daa8e9bf31e18cd4929",
+      "sha256": "e0bf462c6e78dc77b971c070ded77188d6588b8756882311fe5ea92c5570464b"
+    },
+    {
+      "file": "p0033.txt",
+      "old_sha256": "105d07e924d2a154653e5db6a86e0c0a9dcf6bdae22fc1f85d4b9ba2a84e6f39",
+      "sha256": "a65856d87b37c7c2e9537373ad7825a6b4a26a794a0ba9e169670b7e06bf0b07"
+    },
+    {
+      "file": "p0034.txt",
+      "old_sha256": "671341cfad1d7178cb2d2a1fb6968c93a51f970eb0b2d1ea4f771812b3e1a1b5",
+      "sha256": "bc254d11e68e4fb9136ba0520ea9974f788f257744a6b267fd7c1f30287ae6f9"
+    },
+    {
+      "file": "p0039.txt",
+      "old_sha256": "28df326b2a0d916aec259e6f002eab8b051a7d512258ebf2a995aeb183a29ba0",
+      "sha256": "fd1db1164c23979418fda34b379cd7b3006937a9a8031bd5216150098845e1d5"
+    },
+    {
+      "file": "p0040.txt",
+      "old_sha256": "19aa707732e5c9d116bacedfbf5c549e4478d78c9724b8c54dcfd78a713c4ce1",
+      "sha256": "44304f6a06a6512469bbfc35cc4962b2306e9bc402ccfc00b5e17f1bd4a108f3"
+    },
+    {
+      "file": "p0041.txt",
+      "old_sha256": "a84bfc0eca75407020cc90102ff92454456246b63494b652aae01513f1e06560",
+      "sha256": "fe5c3ca39de36b16e81be09e8ba4e1445adad9837f07bb76d09c0c0fc368f64f"
+    },
+    {
+      "file": "p0043.txt",
+      "old_sha256": "21be87112ff1aeaccd6a83427ef2a3988686a21b01265b774689e071066b016e",
+      "sha256": "2ac06d3a724c6543abcccbb6d4bbdfcee270d301be6211c23fe0963175c03dbb"
+    },
+    {
+      "file": "p0044.txt",
+      "old_sha256": "475c0c721e43c1e3a07c5b3dfb12f0b7e3433fd67094a6f78fbf9b4a04e276cc",
+      "sha256": "ad387c5d063a26712ad2b636414c804d9852484431125ce6f20cff1f34bf1c3c"
+    },
+    {
+      "file": "p0048.txt",
+      "old_sha256": "58aa2929cd6cdb6ebf8f701fd4fa2d73b47273dea4614bb58190f7b43fc6c428",
+      "sha256": "f7086683b3fa877ec0724e379883c4e1494fae4313459079e0ab3a96fc172c0a"
+    },
+    {
+      "file": "p0049.txt",
+      "old_sha256": "e1fa67b9b89f71bae399bcdb9ffe49c946d71a275fe6c3bf8fd7a75ca4cb2a19",
+      "sha256": "98dd605a77a1ed117d1565b4427ba406479c9fd011dad6bb21d073b0485b715d"
+    },
+    {
+      "file": "p0055.txt",
+      "old_sha256": "b376f3299c8d162c133e9242f4516a0d64fd4689ae5dbf626c1c9ab877471b65",
+      "sha256": "04d80b3ce2bf47b47a8af8aabd956cb6d008b0322d9529d244ca96c24bd39fab"
+    },
+    {
+      "file": "p0056.txt",
+      "old_sha256": "ba1a9c4179e187508020f5d53e0ef1878566cada3bbc3afddf345ef2a2f51574",
+      "sha256": "b99e4dcebcb6bd7b7cce5c90d0261e54c763e09860feb4028cf122b52bd158eb"
+    },
+    {
+      "file": "p0058.txt",
+      "old_sha256": "427e8b06ba1f727d4ee4a5d80c623417dd43181841216abf91ea7be2d3935a48",
+      "sha256": "24fae55681a430a591069cf2d6b199977d5f67303f8996a9d56ff7950c53d6a7"
+    },
+    {
+      "file": "p0059.txt",
+      "old_sha256": "525364710ec7ad56173b3612a13cc4cf4d5a34ee45e8d4295f3cf4d9e1ecc2df",
+      "sha256": "31f6c274f979cfbd5c52cdee8c28d6052752e4e0dff3d55cfaefbc2847f633c3"
+    },
+    {
+      "file": "p0060.txt",
+      "old_sha256": "82ae60afdb3be0a2a47d8b5c75d30dd286ca76e0572484afb13c9cd967360d8d",
+      "sha256": "7451a08a4fb13e4a8509cd91d5cf424afe19ae49c83ebe70d63b892d1fab4b19"
+    },
+    {
+      "file": "p0061.txt",
+      "old_sha256": "41e2a5c1d70e24ef7472f183ce45ba6b4530e3554d8f2363daf50804fabbd994",
+      "sha256": "a86c548f89403514eba6ab08619b331f8ab4e12eb85d566c25836ab5adab8964"
+    },
+    {
+      "file": "p0063.txt",
+      "old_sha256": "c7f07910e5ec9abaa242abd671ba07edf2c6c9a5f2713c2a65eb964da3da4c30",
+      "sha256": "19a5ebb1457c8b8d8dccda30ccb108a5184af53e0d8de69957a5590b1e67df34"
+    },
+    {
+      "file": "p0064.txt",
+      "old_sha256": "4eed4578462f44363774cf2bab86ecb7d243db6ef307bb592e6cd1fba44053d5",
+      "sha256": "9a78804c3c4e2acee1e0efa0a278bf65a7feeb19b2d59d85d29c4957c4fcd37a"
+    },
+    {
+      "file": "p0065.txt",
+      "old_sha256": "4548f85c2a181ce21c1e4e231432b1bc1b29c98579d14dbc2fe74f2335a6036e",
+      "sha256": "ba786cbaa89225f1b00aee4f28b1ddd8d311a11e04ef0dfe49be2b329100e81d"
+    },
+    {
+      "file": "p0066.txt",
+      "old_sha256": "d876ab21db51c3bbe9ea175d5057802489e518050690b843f011d1a01ac84a04",
+      "sha256": "f19c2fabe2cae495544538665d92eb344632b8e8fa01b3db358b78129e9eb59b"
+    },
+    {
+      "file": "p0067.txt",
+      "old_sha256": "d47e8872f7198584d2b783e1193f9016681d28726afe749e880719a267f5781b",
+      "sha256": "f7dfb08db70b2b5d8db903c7045e4870771c6c03b70393d3586ab0d8fccb9127"
+    },
+    {
+      "file": "p0068.txt",
+      "old_sha256": "cff13dedf79d48081d678a4d3c7a129a307f042a599f582b1379d9ee6b440025",
+      "sha256": "05f05e0cc93f7f383ba1e0337951fa6f6acb91ccde8a6707ef120a8397d98ba8"
+    },
+    {
+      "file": "p0069.txt",
+      "old_sha256": "93fccd9c6c630a7b6296cb567410bc1ed7fc8796355b2b8cbd9496eab0820d24",
+      "sha256": "0be37be90a86713ac4f9627be7b92c354976f60b4ee4a4979c95ddf9293893fe"
+    },
+    {
+      "file": "p0070.txt",
+      "old_sha256": "a02349a8136a1f57ac122b113adb1e461d42635102f666c4fba53046eba9b5ac",
+      "sha256": "1c7256b3213c2957d6513045c4745fc878d3e8c47999c8e7f04b84bb1b05f54c"
+    },
+    {
+      "file": "p0071.txt",
+      "old_sha256": "4ceb9c3daa7137a23c039f819ee14de4f78687374f80e930734d99e9afd75c76",
+      "sha256": "a59c5f8cc7182909f9fc84b0daea0af8e2f1aaf806c61e50763d0caeba87137e"
+    },
+    {
+      "file": "p0072.txt",
+      "old_sha256": "720018817512d63a6ebb12ca1ebc3a68db42ae40d13fe4e54322a36b8ba74edd",
+      "sha256": "cad7d7cebb1aa6bcc48219003d312d1c099b58d8a7a81cb7c3e1efc6e1b7f9e2"
+    },
+    {
+      "file": "p0075.txt",
+      "old_sha256": "eab41d8354fab234c1a7ba4ba6f003ac743765a0f613e5e892e5850cfcf86460",
+      "sha256": "696f5d3d16c880ec9e03b4cfe815c4535b7e6d25209ddfa35a1361ec660d2c6f"
+    },
+    {
+      "file": "p0076.txt",
+      "old_sha256": "3d9519b17c0252d0cc6f578f7ddeedb2846dd29bd3208519792891fd0aef6312",
+      "sha256": "a10ed8a606c8e378c044b53cd5f8fd0a204713609a3920f780cf4980f8fa4223"
+    },
+    {
+      "file": "p0079.txt",
+      "old_sha256": "73c6c224fcd350d012af145f9cc5ce7ba87ab796b9e8befd865326b4091baaa5",
+      "sha256": "2b850ac1ac11be5455f22d8b970ac49869a8be5618380d3c70da9c692c16ff49"
+    },
+    {
+      "file": "p0081.txt",
+      "old_sha256": "68b1c6b12b40f31f479cb452b40ed87100035a873c5f3841cd5411b8c072108c",
+      "sha256": "a38fc4c06f2018cdc6669e90f46f5390abd2f5efd2e60889a7ed130a180f1355"
+    },
+    {
+      "file": "p0085.txt",
+      "old_sha256": "a765cd55b9fea6995e5527e7dbc4659ec9f0890bc207864ab2943a8af203a111",
+      "sha256": "1bbbcdc9c82593bf8d4b8f64b791bddd7e9a02a7231167a79431c8508754205d"
+    },
+    {
+      "file": "p0086.txt",
+      "old_sha256": "f762755f8af3984531fb3ea6bd29031a63120c273e5e0cd5ad6a11bb54ba55f9",
+      "sha256": "06003626aa4710e83619b411b73b95956b8e3b877a7ca41fbc07cd4d0c83d3ed"
+    },
+    {
+      "file": "p0087.txt",
+      "old_sha256": "19e4295c510a02971b040291c6dfb880ab40d07ec8744072115199dc13b8ada5",
+      "sha256": "841f96785d081b2d7322a394b2773d0e960fc8adf7273d847c01399b527881a4"
+    }
+  ],
+  "manual_line_repairs": [
+    {
+      "pdf_page": 18,
+      "reason": "Выпавшая строка о закладных банка"
+    },
+    {
+      "pdf_page": 48,
+      "reason": "Пропущенные строки вопроса№27"
+    },
+    {
+      "pdf_page": 63,
+      "reason": "Окончание ссылки на публикацию1877года и продолжение фразы"
+    },
+    {
+      "pdf_page": 66,
+      "reason": "Заголовок№35"
+    },
+    {
+      "pdf_page": 70,
+      "reason": "Пропущенные строки о пределах полномочий городской думы"
+    },
+    {
+      "pdf_page": 71,
+      "reason": "Заголовок№38"
+    },
+    {
+      "pdf_page": 75,
+      "reason": "Начало№40"
+    },
+    {
+      "pdf_page": 81,
+      "reason": "Заголовки№45/46, граница решений"
+    },
+    {
+      "pdf_page": 86,
+      "reason": "Окончание слова «введены»"
+    },
+    {
+      "pdf_page": 87,
+      "reason": "Окончание слов «коммерческого суда»"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "1896-011",
+      "previous_sha256": "c1c5224f6eafe03c3cba2b66aabb0eb0d4225c870d2ffd9398bd83d3926230a3",
+      "sha256": "90656a68a23a34e60753718875113547f46e22ba6a95b127e74704cc208c19af"
+    },
+    {
+      "id": "1896-012",
+      "previous_sha256": "dcf8ffb0fb5baec6df080f0aa577e6af0d2505d1e59bf60dfcfdbc9eb6a05854",
+      "sha256": "1b42818fae380d46c2d34f10c48ea80081986c65f7761bf0f9714a0fc4720d60"
+    },
+    {
+      "id": "1896-013",
+      "previous_sha256": "aced227baa8caf600d1148446e81cf215e4e2d298c5baf9827e343c22d5d1f99",
+      "sha256": "a2b132b79f184567c8daf8eae521fe2a12fe056e44817e40b6b5cfa29da8028b"
+    },
+    {
+      "id": "1896-014",
+      "previous_sha256": "c949b96f7a8adbc375153c543a88ad06d2b71cb1a9a2727b54081afa0f3556a3",
+      "sha256": "f9978d84ada2c2ac66a66b601e8c4de6cbfcb5f0a1f5c018b3fa987c6a32d3e7"
+    },
+    {
+      "id": "1896-016",
+      "previous_sha256": "0de7fdf734520eaaf41585144664895af83bf137417f1b73922800711d1d3450",
+      "sha256": "c28bf089dd866bd3a6b1d9157d605f43d810208babca369920979d9cc6028d54"
+    },
+    {
+      "id": "1896-017",
+      "previous_sha256": "0b96255ad4cc666cbdaa6a28eb9d59c08d4f6a585a031b0e6e294c2dd1642f31",
+      "sha256": "7b3cf87d7b47ed0106eb57a78f5fc998dcd94c0564f58163df3db55f5d70e4ed"
+    },
+    {
+      "id": "1896-019",
+      "previous_sha256": "444246ecd35a734acf3a7c1947d027d5178a75c863b9656d1ba73d4b312b683e",
+      "sha256": "41ce3e420f34027fe04466693d20d334fd21105a0be7eb89d9e6bfebee8ca07b"
+    },
+    {
+      "id": "1896-020",
+      "previous_sha256": "4450e262854d560f132a834bea6930ebdbcac49685ac3b3d33557ec02ba69ff6",
+      "sha256": "b2a9eef5085209742fba02b072c82cb328639883b115303e2c817c45079d9de9"
+    },
+    {
+      "id": "1896-021",
+      "previous_sha256": "c8818b474f7ccc7b904380652aef446537208296a258e714b42c453eb5fd4b21",
+      "sha256": "4b11b3763be5d73c986245e6150ac6d1ecad2b11efb0508e98e951046d59a550"
+    },
+    {
+      "id": "1896-022",
+      "previous_sha256": "a50a718dc186332582180696b739131572f04acd4ddc3ba5ce80892161a661eb",
+      "sha256": "8355e3aa71a5e89d094016b8eb758e5416e47f2629c7184302760b5b2bf336db"
+    },
+    {
+      "id": "1896-023",
+      "previous_sha256": "4ee210871a88daaef6ceb42cf1dc9d23d5cd95bda5c613bb9adb1caf9862f728",
+      "sha256": "830002b13d2e3a290017a167fc3218b26d608368b7b6b7db55a59bdaf16fe40c"
+    },
+    {
+      "id": "1896-024",
+      "previous_sha256": "0429c65ec7ad8983aeb73faf6a9a88aaee7159ffe0f5b4207c55e9d5e148a9cc",
+      "sha256": "f9ec052426f6a99caf003d3299a7ec354166046f16861b5b183b72f8fcf43c10"
+    },
+    {
+      "id": "1896-026",
+      "previous_sha256": "2984f1cf0223437db17c44ffde624822e6d88086af0a32251cc39618e211f7c4",
+      "sha256": "7ce5d614a51b0d7058ea5a24d2911d5900d655b6576190cc7942c9b168c3d50c"
+    },
+    {
+      "id": "1896-027",
+      "previous_sha256": "afafc980d2ecb9eb6f139bcfc980ae8c018841ab3bb2d40776bfa23d68af88f4",
+      "sha256": "a272df9aec9eda5bb7c4f8ac4802fcc53c924e9cc84ef73faa5dffc056182a2c"
+    },
+    {
+      "id": "1896-030",
+      "previous_sha256": "6a76ed12976e110a6b97232dffc50dd32b0922b5589ed9790ee01fbee363f2cf",
+      "sha256": "cd95a8f74545ff04fe0ad1282b62ef9737c35932c7093a5c53860e1276a9b2f4"
+    },
+    {
+      "id": "1896-031",
+      "previous_sha256": "52753bb6fb3721e142c30e9bbe8cfcd7fc2cfb99b7ed43fe1337179b0f81c9db",
+      "sha256": "ea2e6420d8df726719c6e0f89dc11945af3a215fe6775b4c8eb3021c9df81dee"
+    },
+    {
+      "id": "1896-032",
+      "previous_sha256": "8322abda8bbae5b1446506399de39a8b1fec02715c3562fa2a95ae71aa0fbbb4",
+      "sha256": "e4c2cb17d6b78fcc4ddcd49d7eb68c721cf3c3922897a667d46dd9a605d3c4c6"
+    },
+    {
+      "id": "1896-033",
+      "previous_sha256": "77ab5f47277932fd68a580daa8dc2dd6d428dfbe845e86f4aacd711db4ebdd7d",
+      "sha256": "62f1a182a87d998798cc93c6be960eb1e79a5107cdf67a75eaf84333f08e8cde"
+    },
+    {
+      "id": "1896-034",
+      "previous_sha256": "181a2a83ed25a8294913df58e7af605461f8b49add03c2a826c2efc9d424f92c",
+      "sha256": "81dd18aa1fb39b758af8c545e2870269d5951fef248686cea44310e2fd8dca6d"
+    },
+    {
+      "id": "1896-035",
+      "previous_sha256": "b9faa1e3db1c66e99c6787770678f6bc621839737e8dab1a5e0a642f39a23596",
+      "sha256": "9a6daf520aa9b77c7743cdbb7f038d222fd4e2864a23c2f95f0a820ee419da5d"
+    },
+    {
+      "id": "1896-036",
+      "previous_sha256": "85a5675f64a35e818c715ad3ecc3e3b8fc7f6d3dd9afafa22102e44511925664",
+      "sha256": "18ce04f0b533a51dd96351c730e1417e44ac9d044cc8ce7910368628fb9f7ff3"
+    },
+    {
+      "id": "1896-037",
+      "previous_sha256": "b94f0868fcd22424d6816864edfa60fe9866ab118fe57d2162278d06ad0e513b",
+      "sha256": "cd7a8bb959091d87e57a4717c4bbf0ac77c4d8e1be881080278bbbda1cdcc31d"
+    },
+    {
+      "id": "1896-038",
+      "previous_sha256": "f0fa793f9b0d766057c89acf35c5d861f8ceef60dabbff02f8e784e0c27d3029",
+      "sha256": "49ae491f374c7b2ce3f59c1b79792f8c3429ac8f517e9c73e47bd6b8a2af62f4"
+    },
+    {
+      "id": "1896-039",
+      "previous_sha256": "6c79f9583a001f3f12182a792fbd84a3c42d95121d8bae890003ac5ebdbff198",
+      "sha256": "11b9936c3c6f31017154475546a3a8a81aef8049ec23dc5af290cac8840d590a"
+    },
+    {
+      "id": "1896-040",
+      "previous_sha256": "ab0121ad4c1235743ce386feadaabcc2e3957c07d2f062cf94b3ad36e8ef1df2",
+      "sha256": "c7a82aa9d17e7474403b84833ef03318bf485cf6acca1a3ddc95e280305620f6"
+    },
+    {
+      "id": "1896-043",
+      "previous_sha256": "214989a3a17f5c96951bd01a1be175a6341c92372a50d372ba099d554530c15b",
+      "sha256": "338d714d7fe61e6d88963bb21c09478e23bc4cbd3ae7dfb6930d170ba3a0aa92"
+    },
+    {
+      "id": "1896-044",
+      "previous_sha256": "ba8da6537ac6dad8ffc75dd8f41088ed799e607f3deb5123ce026041a7690e83",
+      "sha256": "d61f9b58b975b2ed11a7e03f6a14deee0ede8f2a471aac177d475faa8e2c8fc3"
+    },
+    {
+      "id": "1896-045",
+      "previous_sha256": "f8ff79d10e8e12426517ada3a4bd13133a200d9eb92bc44b5057c88a46f5e0f0",
+      "sha256": "3ce2857b81178d5289efaf8fa145131aa1a3b4f64147f04ec61a3a9817c9ba9d"
+    },
+    {
+      "id": "1896-046",
+      "previous_sha256": "49987781cf82bddb246b7049f822a49c1ab6cd192bda964e3f65896ca6bef763",
+      "sha256": "cf844ba235540dc55e748b2fb44a3bf856aae619584b8697f9ad88753186be9b"
+    },
+    {
+      "id": "1896-049",
+      "previous_sha256": "caf0e73a23d34d2fd5dbc48cf7cc721a14eff1d8fbecd08ce4997a662ada2c3c",
+      "sha256": "fc5bcdf5849262ff9ef726679b0f724d149df88cff9e58b2ddc820453912a573"
+    }
+  ],
+  "annotation_review": {
+    "newly_authored": 88,
+    "content_equivalent_transfers": 64,
+    "current_passages": 275
+  },
+  "law_baseline": {
+    "previous_raw_mentions": 2713,
+    "raw_mentions": 2717,
+    "previous_unknown_pairs": 1035,
+    "unknown_pairs": 1037,
+    "note": "Повторные заголовки и перестановка колонок меняют эвристическое извлечение. Это не новые найденные нормы. Прежние ошибочные135 из№12 больше не переносятся наУУС. Неоднозначные новые ссылки оставлены неопределёнными."
+  }
+}

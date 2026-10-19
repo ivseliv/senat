@@ -42,10 +42,20 @@
     for (const [k, v] of Object.entries(attrs || {})) {
       if (v == null || v === false) continue;
       if (k === 'class') el.className = v; else if (k === 'html') el.innerHTML = v;
-      else if (k.startsWith('on')) el.addEventListener(k.slice(2), v); else el.setAttribute(k, v === true ? '' : v);
+      else if (k.startsWith('on')) el.addEventListener(k.slice(2), v); else el.setAttribute(k, k==='href' ? versionedLink(v) : v === true ? '' : v);
     }
     for (const k of kids.flat()) if (k != null && k !== false) el.append(k.nodeType ? k : document.createTextNode(k));
     return el;
+  }
+  function versionedLink(value) {
+    if (typeof value!=='string') return value;
+    const match=value.match(/^(?:https:\/\/ivseliv\.github\.io\/senat\/lex\/)?#\/d\/(\d{4}-\d{3})\?(.*)$/);
+    const revision=match && S.an?.source_revisions?.[match[1]];
+    if (!revision) return value;
+    const params=new URLSearchParams(match[2]);
+    if (!params.has('at') || params.has('v')) return value;
+    params.set('v',revision.version);
+    return value.slice(0,value.indexOf('?')+1)+params;
   }
   const M = t => S.opts.modern ? L.modernize(t) : t;
   const fmtDate = (iso, label) => { if (!iso) return label ? M(label) : ''; const [y, m, d] = iso.split('-').map(Number); return `${d} ${MONTHS[m - 1]} ${y}`; };
@@ -58,7 +68,8 @@
     const note = S.an.source_warnings && S.an.source_warnings[d.id];
     return note ? h('details',{class:'preliminary-note source-warning'},
       h('summary',{},`Ограничение источника: дефекты OCR в ${note.passages.length} фрагментах`),
-      ...note.messages.map(message=>h('p',{},message))) : null;
+      ...note.messages.map(message=>h('p',{},message))) : S.an.source_revisions?.[d.id] ?
+      h('p',{class:'small muted'},'Порядок колонок и границы решения восстановлены по скану. Отдельные буквы, имена и числа не вычитаны сплошь.') : null;
   }
 
   async function loadJSON(name) { if (window.LEX_INLINE && window.LEX_INLINE[name]) return window.LEX_INLINE[name]; const r = await fetch(DATA + name); if (!r.ok) throw new Error(name + ': ' + r.status); return r.json(); }
@@ -603,7 +614,13 @@
         const result = window.Concept.searchAll(S.sense.engines.map(e=>e.engine),params.get('q') || '',S.sense.config.method,{partial:params.get('partial')==='1'}).hits.find(h=>h.passage.id===target.id);
         senseTerms = [params.get('q') || '', ...(result ? result.matched : [])];
         partialMissing = result && result.partial ? result.missing : [];
+        if (result?.context) target={...target,context:result.context};
       }
+    }
+    const revision=S.an.source_revisions?.[id];
+    if (revision && params.has('at') && params.get('mode')!=='quote' && params.get('v')!==revision.version) {
+      target=null; senseTerms=[];
+      quoteWarning='Порядок колонок и границы этого решения восстановлены. Диапазон в старой ссылке не подтверждён; открыт полный текст. Найдите цитату заново через поиск или разбор решения.';
     }
     const outgoing = precedents.references.filter(r=>r.source_id===id);
     const incoming = precedents.references.filter(r=>r.status==='linked' && r.target_id===id && precedentTarget(r));
@@ -666,8 +683,9 @@
       target && target.ai && target.ai.source_warning ? h('p',{class:'preliminary-note source-warning'},'Ограничение источника: '+target.ai.source_warning) : sourceWarning(d),
       target && target.editorial_note ? h('p',{class:'preliminary-note editorial-note'},target.editorial_note) : '',
       quoteWarning ? h('p',{class:'preliminary-note reader-source-warning',role:'status'},quoteWarning) : '',
+      target?.context ? contextEvidence(d,text,target.context,senseTerms) : '',
       body,
-      h('p', { class: 'muted small' }, 'Текст получен автоматическим распознаванием скана (модель ИИ) и может содержать ошибки: числа, номера статей и фамилии сверяйте с изданием. Современная орфография — автоматическая, для удобства чтения.'),
+      h('p', { class: 'muted small' }, 'Текст получен автоматическим распознаванием скана и может содержать ошибки: числа, номера статей и фамилии сверяйте с изданием. Современная орфография — автоматическая, для удобства чтения.'),
       outgoing.length ? h('section', {class:'precedents-out'}, h('h3', {}, 'Ссылки на прежние решения'),
         h('p',{class:'muted small'},'Переход установлен только при совпадении департамента, года и номера. Цитата показывает упоминание, а не обязательное согласие Сената с ним.'),
         h('ul',{},precedentGroups(outgoing).map(refs=>precedentEntry(refs,false)))) : '',
@@ -825,6 +843,14 @@
     const partial = p.pages.length && p.sources.some(s=>s.page===null);
     return (p.pages.length ? 'с. ' + p.pages.join(', ') : 'страница не определена') + (recovered ? ' (номер восстановлен по соседним колонтитулам)' : '') + (partial ? ' (часть страниц не определена)' : '');
   }
+  function contextEvidence(d,text,passages,terms) {
+    return h('details',{class:'search-context'},
+      h('summary',{},'Часть совпадений найдена в соседнем фрагменте этого решения'),
+      h('p',{class:'small muted'},'Совпадение относится к небольшому контексту; отдельный фрагмент может содержать лишь часть слов запроса.'),
+      ...passages.map(p=>h('section',{},
+        h('blockquote',{class:'source-quote',html:window.Concept.highlight(M(window.Concept.slice(text,p.start,p.end)),terms)}),
+        h('a',{href:'#/d/'+d.id+'?'+new URLSearchParams({mode:'passage',at:p.start,end:p.end})},'Открыть соседний фрагмент · '+pageLabel(p)))));
+  }
   async function renderSense(token) {
     const box = $('#sense-results'); box.replaceChildren();
     const hits = S.sense.hits;
@@ -846,11 +872,13 @@
       const terms=[S.sense.q,...hit.matched];
       const link='#/d/'+d.id+'?'+new URLSearchParams({mode:'sense',q:S.sense.q,at:String(p.start),end:String(p.end),...(hit.partial ? {partial:'1'} : {})});
       box.append(h('article', {class:'card passage', 'data-passage':p.id},
+        hit.context ? h('p',{class:'small search-context-label'},'Совпадение с учётом соседнего контекста') : '',
         hit.partial ? h('p',{class:'search-partial-note'},'Частичное совпадение. Не найдена часть запроса: '+hit.missing.map(w=>'«'+w+'»').join(', ')+'.') : '',
         p.ai && p.ai.source_warning ? h('p',{class:'preliminary-note source-warning'},'Ограничение источника: '+p.ai.source_warning) : '',
         h('div', {class:'passage-text',html:(p.start ? '… ' : '') + window.Concept.highlightEvidence(M(original),terms,p.ai ? M(p.ai.evidence) : '') + (p.end < Array.from(text).length ? ' …' : '')}),
         p.ai ? h('div', {class:'ai-note'}, h('strong', {}, 'Пояснение ИИ: '), p.ai.summary,
           h('details', {}, h('summary', {}, 'Цитата, на которой основано пояснение'), h('p', {}, '«… ' + M(p.ai.evidence) + ' …»'))) : '',
+        hit.context ? contextEvidence(d,text,hit.context,terms) : '',
         h('div', {class:'card-top'}, h('span', {class:'num'}, `№ ${d.num}`), h('span', {class:'muted'}, `${fmtDate(d.date, d.date_label)} · том ${d.vol} · ${pageLabel(p)}`), h('span', {class:'badge'}, d.outcome)),
         h('p', {class:'small'}, h('a', {href:link}, 'Открыть в карточке на этом месте'))));
       try {
@@ -890,9 +918,9 @@
     if (q) {
       try {
         await loadSense(); if(token!==S.map.token)return;
-        const results=S.sense.engines.map(e=>e.engine.search(q,S.sense.config.method));
-        concepts=results[0] ? results[0].concepts : [];
-        matched=results.flatMap(r=>r.hits).sort((a,b)=>b.score-a.score || a.passage.id.localeCompare(b.passage.id));
+        const result=window.Concept.searchAll(S.sense.engines.map(e=>e.engine),q,S.sense.config.method);
+        concepts=result.concepts;
+        matched=result.hits;
         if(topic) matched=matched.filter(hit=>S.meta.decisions.find(d=>d.id===hit.passage.decision).topics.includes(topic));
         // У карты есть граница релевантности: связи выводятся из верхних фрагментов,
         // а не из каждого случайного совпадения в полном тексте.
@@ -931,6 +959,7 @@
         const p=hit.passage,d=S.meta.decisions.find(x=>x.id===p.decision),text=await textOf(d); if(token!==S.map.token)return;
         const original=window.Concept.slice(text,p.start,p.end), link=mapDecisionHref(d,hit);
         sourceItems.push(h('li',{},h('a',{href:link},`№ ${d.num}, ${d.vol} г. · ${pageLabel(p)}`),
+          hit.context ? h('p',{class:'small search-context-label'},'Совпадение с учётом соседнего контекста') : '',
           h('div',{class:'small',html:'«… '+window.Concept.highlightEvidence(M(original),[q,...hit.matched],p.ai ? M(p.ai.evidence) : '')+' …»'})));
       }
       grid.append(mapNode('Фрагменты первоисточника','Каждая связь начинается с ранжированного фрагмента; ссылка открывает точное место и его скан.',h('ol',{class:'map-list map-sources'},sourceItems),'sources'));

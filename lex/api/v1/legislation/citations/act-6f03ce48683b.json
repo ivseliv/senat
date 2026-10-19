@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
   "contract_version": "1.6.0",
-  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
+  "data_revision": "sha256:a59b8d9fef758eb7b6a94319cb261e00f6dd70ee57b65af303dac62df2538883",
   "resource": "legislation-citations",
   "scope": {
     "code": "УАС",
@@ -10,7 +10,7 @@
   "count": 5,
   "items": [
     {
-      "id": "1896-046:УАС:263:text:1013",
+      "id": "1896-046:УАС:263:text:1141",
       "statute": "УАС ст. 263",
       "code": "УАС",
       "article": "ст. 263",
@@ -18,27 +18,27 @@
       "year": 1896,
       "decision_number": 46,
       "field": "text",
-      "start": 1013,
-      "end": 1022,
-      "quote_original": "ст. 263 и",
-      "context_original": "гоДа, которымъ установлено различіе между сельско-хозяйственными и про мышленными заведеніями этого рода (св. зак. т. V уст. объ акц. сбор. ст. 263 и сл.), видно, что введеньемъ сель ско-хозяйственнаго винокуренія имѣ лось* въ виду измѣнить не отвѣчавшее интересамъ народнаго хозяйства и ц",
+      "start": 1141,
+      "end": 1151,
+      "quote_original": "ст. 263 и ",
+      "context_original": "гоДа, которымъ установлено различіе между сельско-хозяйственными и про мышленными заведеніями этого рода (св. зак. т. V уст. объ акц. сбор. ст. 263 и сл.), видно, что введеньемъ сель ско-хозяйственнаго винокуренія имѣ лось* въ виду измѣнить не отвѣчавшее интересамъ народнаго хозяйства и цѣ",
       "association": "акт прямо назван при этой ссылке",
       "verification_status": "context_verified",
-      "source_sha256": "49987781cf82bddb246b7049f822a49c1ab6cd192bda964e3f65896ca6bef763",
-      "headnote_sha256": "77a651f681b0560fedce5f0f0240b9a191fa127b3b502621bd89d914934e89a9",
+      "source_sha256": "cf844ba235540dc55e748b2fb44a3bf856aae619584b8697f9ad88753186be9b",
+      "headnote_sha256": "ff30684e5bcbef6c04563af713137a4de50fb08dc76df8b0e71b100d20ef8a6d",
       "number_status": "ocr_unverified",
       "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-046",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-046?mode=laws&c=%D0%A3%D0%90%D0%A1&q=%D1%81%D1%82.+263&law=1896-046%3A%D0%A3%D0%90%D0%A1%3A263%3Atext%3A1013&at=1013&end=1022",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-046?mode=laws&c=%D0%A3%D0%90%D0%A1&q=%D1%81%D1%82.+263&law=1896-046%3A%D0%A3%D0%90%D0%A1%3A263%3Atext%3A1141&at=1141&end=1151&v=1896-restored-20261019",
       "source_warning": null,
-      "passage_id": "1896-046:0-1605",
+      "passage_id": "1896-046:0-1733",
       "sources": [
         {
           "page": 789,
           "page_method": "neighbors",
           "file": "p0082.txt",
-          "start": 1013,
-          "end": 1022
+          "start": 1141,
+          "end": 1151
         }
       ],
       "printed_pages": [
@@ -61,8 +61,8 @@
         {
           "kind": "direct",
           "field": "text",
-          "start": 893,
-          "end": 1112,
+          "start": 1021,
+          "end": 1240,
           "quote_original": "овлено различіе между сельско-хозяйственными и про мышленными заведеніями этого рода (св. зак. т. V уст. объ акц. сбор. ст. 263 и сл.), видно, что введеньемъ сель ско-хозяйственнаго винокуренія имѣ лось* въ виду измѣнит",
           "act_code": "УАС"
         }
@@ -70,16 +70,16 @@
       "occurrences": [
         {
           "field": "text",
-          "start": 1013,
-          "end": 1022,
-          "quote_original": "ст. 263 и",
+          "start": 1141,
+          "end": 1151,
+          "quote_original": "ст. 263 и ",
           "method": "direct",
           "evidence": [
             {
               "kind": "direct",
               "field": "text",
-              "start": 893,
-              "end": 1112,
+              "start": 1021,
+              "end": 1240,
               "quote_original": "овлено различіе между сельско-хозяйственными и про мышленными заведеніями этого рода (св. зак. т. V уст. объ акц. сбор. ст. 263 и сл.), видно, что введеньемъ сель ско-хозяйственнаго винокуренія имѣ лось* въ виду измѣнит",
               "act_code": "УАС"
             }
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "id": "1896-046:УАС:264:text:1930",
+      "id": "1896-046:УАС:264:text:2058",
       "statute": "УАС ст. 264",
       "code": "УАС",
       "article": "ст. 264",
@@ -96,27 +96,27 @@
       "year": 1896,
       "decision_number": 46,
       "field": "text",
-      "start": 1930,
-      "end": 1937,
+      "start": 2058,
+      "end": 2065,
       "quote_original": "ст. 264",
       "context_original": ", въ соотвѣт ствіе съ количествомъ земли, подлежа щей обработкѣ въ предѣлахъ того имѣнія, при которомъ заводъ устроенъ (уст. объ акц. сбор. ст. 264). Въ ви ду вышеизложеннаго, слѣдуеіъ придти къ заключенію, что сельско-хозяйствен ные винокуренные представля ютъ собою не какое либо незав",
       "association": "акт прямо назван при этой ссылке",
       "verification_status": "context_verified",
-      "source_sha256": "49987781cf82bddb246b7049f822a49c1ab6cd192bda964e3f65896ca6bef763",
-      "headnote_sha256": "77a651f681b0560fedce5f0f0240b9a191fa127b3b502621bd89d914934e89a9",
+      "source_sha256": "cf844ba235540dc55e748b2fb44a3bf856aae619584b8697f9ad88753186be9b",
+      "headnote_sha256": "ff30684e5bcbef6c04563af713137a4de50fb08dc76df8b0e71b100d20ef8a6d",
       "number_status": "ocr_unverified",
       "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-046",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-046?mode=laws&c=%D0%A3%D0%90%D0%A1&q=%D1%81%D1%82.+264&law=1896-046%3A%D0%A3%D0%90%D0%A1%3A264%3Atext%3A1930&at=1930&end=1937",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-046?mode=laws&c=%D0%A3%D0%90%D0%A1&q=%D1%81%D1%82.+264&law=1896-046%3A%D0%A3%D0%90%D0%A1%3A264%3Atext%3A2058&at=2058&end=2065&v=1896-restored-20261019",
       "source_warning": null,
-      "passage_id": "1896-046:1337-3117",
+      "passage_id": "1896-046:1465-3245",
       "sources": [
         {
           "page": 789,
           "page_method": "neighbors",
           "file": "p0082.txt",
-          "start": 1930,
-          "end": 1937
+          "start": 2058,
+          "end": 2065
         }
       ],
       "printed_pages": [
@@ -139,8 +139,8 @@
         {
           "kind": "direct",
           "field": "text",
-          "start": 1810,
-          "end": 2027,
+          "start": 1938,
+          "end": 2155,
           "quote_original": "ъ количествомъ земли, подлежа щей обработкѣ въ предѣлахъ того имѣнія, при которомъ заводъ устроенъ (уст. объ акц. сбор. ст. 264). Въ ви ду вышеизложеннаго, слѣдуеіъ придти къ заключенію, что сельско-хозяйствен ные вин",
           "act_code": "УАС"
         }
@@ -148,16 +148,16 @@
       "occurrences": [
         {
           "field": "text",
-          "start": 1930,
-          "end": 1937,
+          "start": 2058,
+          "end": 2065,
           "quote_original": "ст. 264",
           "method": "direct",
           "evidence": [
             {
               "kind": "direct",
               "field": "text",
-              "start": 1810,
-              "end": 2027,
+              "start": 1938,
+              "end": 2155,
               "quote_original": "ъ количествомъ земли, подлежа щей обработкѣ въ предѣлахъ того имѣнія, при которомъ заводъ устроенъ (уст. объ акц. сбор. ст. 264). Въ ви ду вышеизложеннаго, слѣдуеіъ придти къ заключенію, что сельско-хозяйствен ные вин",
               "act_code": "УАС"
             }

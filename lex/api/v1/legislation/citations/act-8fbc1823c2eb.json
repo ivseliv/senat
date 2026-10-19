@@ -1,16 +1,16 @@
 {
   "api_version": "v1",
   "contract_version": "1.6.0",
-  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
+  "data_revision": "sha256:a59b8d9fef758eb7b6a94319cb261e00f6dd70ee57b65af303dac62df2538883",
   "resource": "legislation-citations",
   "scope": {
     "code": "УСУ",
     "id": "act-8fbc1823c2eb"
   },
-  "count": 23,
+  "count": 22,
   "items": [
     {
-      "id": "1896-012:УСУ:2591:text:1627",
+      "id": "1896-012:УСУ:2591:text:1167",
       "statute": "УСУ ст. 2591",
       "code": "УСУ",
       "article": "ст. 2591",
@@ -18,27 +18,27 @@
       "year": 1896,
       "decision_number": 12,
       "field": "text",
-      "start": 1627,
-      "end": 1635,
+      "start": 1167,
+      "end": 1175,
       "quote_original": "ст. 2591",
       "context_original": "но важнымъ, за Министра Юсти ціи, Сенаторъ Завадскій! ордеромъ отъ 27-го іюля 1895 года за № 20221, поручилъ Оберъ-Прокурору, на основа ніи ст. 2591 учр. суд. уст., предложить означенные вопросы , на разсмотрѣніе м законное постановленіе Общаго Соб ранія Перваго и Кассаціонныхъ Де партам",
       "association": "акт прямо назван при этой ссылке",
       "verification_status": "context_verified",
-      "source_sha256": "dcf8ffb0fb5baec6df080f0aa577e6af0d2505d1e59bf60dfcfdbc9eb6a05854",
-      "headnote_sha256": "2d2602010105a65ef15c245f1578e3f7e92bd2a1a4c405d1a44ad2346e38b86f",
+      "source_sha256": "1b42818fae380d46c2d34f10c48ea80081986c65f7761bf0f9714a0fc4720d60",
+      "headnote_sha256": "998e52a7de45ab5f2bdf24dacf704f207c3dd2ef5044eefad103b9129d78ddde",
       "number_status": "ocr_unverified",
       "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-012",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-012?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+2591&law=1896-012%3A%D0%A3%D0%A1%D0%A3%3A2591%3Atext%3A1627&at=1627&end=1635",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-012?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+2591&law=1896-012%3A%D0%A3%D0%A1%D0%A3%3A2591%3Atext%3A1167&at=1167&end=1175&v=1896-restored-20261019",
       "source_warning": null,
-      "passage_id": "1896-012:1061-2689",
+      "passage_id": "1896-012:0-1518",
       "sources": [
         {
           "page": 725,
           "page_method": "header",
           "file": "p0018.txt",
-          "start": 1627,
-          "end": 1635
+          "start": 1167,
+          "end": 1175
         }
       ],
       "printed_pages": [
@@ -51,7 +51,7 @@
           "full": "scans/1896/pages/p0018-798ba3ebc3471aff.webp",
           "width": 1100,
           "height": 1676,
-          "ocr_sha256": "34d6ca8cec11a62057877377a20bffff8b485192c1ed32c6a95b450db8c11ddb",
+          "ocr_sha256": "cd24fc15aeb9f04a58060058b7b0b3f90a7156fc5609b6743e28efb119f0a5a4",
           "pdf_page": 18,
           "kind": "page"
         }
@@ -61,8 +61,8 @@
         {
           "kind": "direct",
           "field": "text",
-          "start": 1627,
-          "end": 1650,
+          "start": 1167,
+          "end": 1190,
           "quote_original": "ст. 2591 учр. суд. уст.",
           "act_code": "УСУ"
         }
@@ -70,16 +70,16 @@
       "occurrences": [
         {
           "field": "text",
-          "start": 1627,
-          "end": 1635,
+          "start": 1167,
+          "end": 1175,
           "quote_original": "ст. 2591",
           "method": "direct",
           "evidence": [
             {
               "kind": "direct",
               "field": "text",
-              "start": 1627,
-              "end": 1650,
+              "start": 1167,
+              "end": 1190,
               "quote_original": "ст. 2591 учр. суд. уст.",
               "act_code": "УСУ"
             }
@@ -90,7 +90,7 @@
       "attribution_note": "В исходном OCR перемежены фрагменты соседних дел. Акт установлен у строки, но её принадлежность этому решению требует сверки оригинала."
     },
     {
-      "id": "1896-024:УСУ:2591:text:856",
+      "id": "1896-024:УСУ:2591:text:857",
       "statute": "УСУ ст. 2591",
       "code": "УСУ",
       "article": "ст. 2591",
@@ -98,27 +98,27 @@
       "year": 1896,
       "decision_number": 24,
       "field": "text",
-      "start": 856,
-      "end": 864,
+      "start": 857,
+      "end": 865,
       "quote_original": "ст. 2591",
-      "context_original": "отъ 15 февраля сего года за № 4613, Оберъ-Прокурору Общаго Со- браьй Кассаціонныхъ Департаментовъ Правительствующаго Сената, на осно ваніи ст. 2591 учр. суд. уст., предложить означенный вопросъ на обсужденіе и ныхъ судей, при исполненіи ими обя занностей службы, признавалось про ступком",
+      "context_original": "отъ 15 февраля сего года за № 4613, Оберъ-Прокурору Общаго Со- браьй Кассаціонныхъ Департаментовъ Правительствующаго Сената, на осно ваніи ст. 2591 учр. суд. уст., предложить означенный вопросъ на обсужденіе и эаконное постановленіе Правительству ющаго Сената. Выслушавъ заключеніе испол",
       "association": "акт прямо назван при этой ссылке",
       "verification_status": "context_verified",
-      "source_sha256": "0429c65ec7ad8983aeb73faf6a9a88aaee7159ffe0f5b4207c55e9d5e148a9cc",
+      "source_sha256": "f9ec052426f6a99caf003d3299a7ec354166046f16861b5b183b72f8fcf43c10",
       "headnote_sha256": "f04a207393bd17abd7db583da85c51ace8a0ab7e05e467103f60ef3b9de97992",
       "number_status": "ocr_unverified",
       "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-024",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-024?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+2591&law=1896-024%3A%D0%A3%D0%A1%D0%A3%3A2591%3Atext%3A856&at=856&end=864",
-      "source_warning": "Вводная мотивировка этого решения обрывается и частично находится в OCR предыдущего решения №23. Постановка вопроса и последующее собственное рассуждение №24 различимы.",
-      "passage_id": "1896-024:0-1519",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-024?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+2591&law=1896-024%3A%D0%A3%D0%A1%D0%A3%3A2591%3Atext%3A857&at=857&end=865&v=1896-restored-20261019",
+      "source_warning": null,
+      "passage_id": "1896-024:0-1540",
       "sources": [
         {
           "page": 751,
           "page_method": "header",
           "file": "p0044.txt",
-          "start": 856,
-          "end": 864
+          "start": 857,
+          "end": 865
         }
       ],
       "printed_pages": [
@@ -131,7 +131,7 @@
           "full": "scans/1896/pages/p0044-798ba3ebc3471aff.webp",
           "width": 1100,
           "height": 1677,
-          "ocr_sha256": "475c0c721e43c1e3a07c5b3dfb12f0b7e3433fd67094a6f78fbf9b4a04e276cc",
+          "ocr_sha256": "ad387c5d063a26712ad2b636414c804d9852484431125ce6f20cff1f34bf1c3c",
           "pdf_page": 44,
           "kind": "page"
         }
@@ -141,8 +141,8 @@
         {
           "kind": "direct",
           "field": "text",
-          "start": 856,
-          "end": 879,
+          "start": 857,
+          "end": 880,
           "quote_original": "ст. 2591 учр. суд. уст.",
           "act_code": "УСУ"
         }
@@ -150,16 +150,16 @@
       "occurrences": [
         {
           "field": "text",
-          "start": 856,
-          "end": 864,
+          "start": 857,
+          "end": 865,
           "quote_original": "ст. 2591",
           "method": "direct",
           "evidence": [
             {
               "kind": "direct",
               "field": "text",
-              "start": 856,
-              "end": 879,
+              "start": 857,
+              "end": 880,
               "quote_original": "ст. 2591 учр. суд. уст.",
               "act_code": "УСУ"
             }
@@ -670,7 +670,7 @@
       ]
     },
     {
-      "id": "1896-019:УСУ:457:text:3923",
+      "id": "1896-019:УСУ:457:text:3925",
       "statute": "УСУ ст. 457",
       "code": "УСУ",
       "article": "ст. 457",
@@ -678,27 +678,27 @@
       "year": 1896,
       "decision_number": 19,
       "field": "text",
-      "start": 3923,
-      "end": 3930,
+      "start": 3925,
+      "end": 3932,
       "quote_original": "ст. 457",
       "context_original": "азднить; при этомъ обязанности, лежавшія на меже выхъ коммисіяхъ, Высочайше повелѣно : изложить на окружные суды. Соот вѣтственно сему и въ ст. 457 учр. суд уст. (суд. уст. Императора Александра II, изд. 1892 года) выражено, что на Тифлисскую судебную палату и на под вѣдомственные ей ок",
       "association": "акт прямо назван при этой ссылке",
       "verification_status": "context_verified",
-      "source_sha256": "444246ecd35a734acf3a7c1947d027d5178a75c863b9656d1ba73d4b312b683e",
+      "source_sha256": "41ce3e420f34027fe04466693d20d334fd21105a0be7eb89d9e6bfebee8ca07b",
       "headnote_sha256": "ff155063853e00327f8c77e31534ae8641e9a12c2e52bffc0a3791ed33e37316",
       "number_status": "ocr_unverified",
       "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-019",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-019?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+457&law=1896-019%3A%D0%A3%D0%A1%D0%A3%3A457%3Atext%3A3923&at=3923&end=3930",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-019?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+457&law=1896-019%3A%D0%A3%D0%A1%D0%A3%3A457%3Atext%3A3925&at=3925&end=3932&v=1896-restored-20261019",
       "source_warning": null,
-      "passage_id": "1896-019:3631-5569",
+      "passage_id": "1896-019:3633-5572",
       "sources": [
         {
           "page": 740,
           "page_method": "header",
           "file": "p0033.txt",
-          "start": 3923,
-          "end": 3930
+          "start": 3925,
+          "end": 3932
         }
       ],
       "printed_pages": [
@@ -711,7 +711,7 @@
           "full": "scans/1896/pages/p0033-798ba3ebc3471aff.webp",
           "width": 1100,
           "height": 1674,
-          "ocr_sha256": "105d07e924d2a154653e5db6a86e0c0a9dcf6bdae22fc1f85d4b9ba2a84e6f39",
+          "ocr_sha256": "a65856d87b37c7c2e9537373ad7825a6b4a26a794a0ba9e169670b7e06bf0b07",
           "pdf_page": 33,
           "kind": "page"
         }
@@ -721,8 +721,8 @@
         {
           "kind": "direct",
           "field": "text",
-          "start": 3923,
-          "end": 3944,
+          "start": 3925,
+          "end": 3946,
           "quote_original": "ст. 457 учр. суд уст.",
           "act_code": "УСУ"
         }
@@ -730,16 +730,16 @@
       "occurrences": [
         {
           "field": "text",
-          "start": 3923,
-          "end": 3930,
+          "start": 3925,
+          "end": 3932,
           "quote_original": "ст. 457",
           "method": "direct",
           "evidence": [
             {
               "kind": "direct",
               "field": "text",
-              "start": 3923,
-              "end": 3944,
+              "start": 3925,
+              "end": 3946,
               "quote_original": "ст. 457 учр. суд уст.",
               "act_code": "УСУ"
             }
@@ -1847,57 +1847,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "1896-024:УСУ:93:text:1094",
-      "statute": "УСУ ст. 93",
-      "code": "УСУ",
-      "article": "ст. 93",
-      "decision_id": "1896-024",
-      "year": 1896,
-      "decision_number": 24,
-      "field": "text",
-      "start": 1094,
-      "end": 1100,
-      "quote_original": "ст. 93",
-      "context_original": "ими обя занностей службы, признавалось про ступкомъ, предусмотрѣннымъ 2 ч. 31 ст. уст. о нак. Съ изданіемъ закона 12 іюля 1889 г. (прил. къ ст. 93, прим. 3, особ. прил. къ т. IX, зак. сост., по прод. 1890 г.), прежній' взглядъ на значеніе волостнаго суда долженъ былъ существенно измѣни",
-      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
-      "verification_status": "legacy_unverified",
-      "source_sha256": "0429c65ec7ad8983aeb73faf6a9a88aaee7159ffe0f5b4207c55e9d5e148a9cc",
-      "headnote_sha256": "f04a207393bd17abd7db583da85c51ace8a0ab7e05e467103f60ef3b9de97992",
-      "number_status": "ocr_unverified",
-      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-024",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-024?mode=laws&c=%D0%A3%D0%A1%D0%A3&q=%D1%81%D1%82.+93&law=1896-024%3A%D0%A3%D0%A1%D0%A3%3A93%3Atext%3A1094&at=1094&end=1100",
-      "source_warning": "Вводная мотивировка этого решения обрывается и частично находится в OCR предыдущего решения №23. Постановка вопроса и последующее собственное рассуждение №24 различимы.",
-      "passage_id": "1896-024:0-1519",
-      "sources": [
-        {
-          "page": 751,
-          "page_method": "header",
-          "file": "p0044.txt",
-          "start": 1094,
-          "end": 1100
-        }
-      ],
-      "printed_pages": [
-        751
-      ],
-      "scans": [
-        {
-          "file": "p0044.txt",
-          "page": 751,
-          "full": "scans/1896/pages/p0044-798ba3ebc3471aff.webp",
-          "width": 1100,
-          "height": 1677,
-          "ocr_sha256": "475c0c721e43c1e3a07c5b3dfb12f0b7e3433fd67094a6f78fbf9b4a04e276cc",
-          "pdf_page": 44,
-          "kind": "page"
-        }
-      ],
-      "scan_available": true,
-      "evidence": [],
-      "occurrences": []
     }
   ]
 }

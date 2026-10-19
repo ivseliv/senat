@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
   "contract_version": "1.6.0",
-  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
+  "data_revision": "sha256:a59b8d9fef758eb7b6a94319cb261e00f6dd70ee57b65af303dac62df2538883",
   "resource": "decision",
   "scope": {
     "id": "1897-006",
@@ -56,13 +56,7 @@
         66
       ]
     ],
-    "participant_ids": [
-      "1897-2b5c8494b3e9",
-      "1897-058dc79fb21f",
-      "1897-1ec1ec0b4bf0",
-      "1897-53dcbf8366b5",
-      "1897-46a77754891c"
-    ],
+    "participant_ids": [],
     "precedents": [
       {
         "id": "1897-006:1882:66:4673",

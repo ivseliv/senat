@@ -44,7 +44,11 @@ class AttributionTest(unittest.TestCase):
 
     def test_conservation_and_unresolved_are_complete(self):
         base=self.source['decisions'];stats=self.laws['attribution_summary']
-        self.assertEqual(stats['baseline_unknown'],1035)
+        # Восстановление колонок1896 изменило исходную эвристическую выборку;
+        # прежние1035 сохраняются в протоколе, новые ссылки не выданы за нормы.
+        restoration=read(ROOT/'lex/source-restorations.json')['law_baseline']
+        self.assertEqual(restoration['previous_unknown_pairs'],1035)
+        self.assertEqual(stats['baseline_unknown'],restoration['unknown_pairs'])
         self.assertEqual(stats['baseline_unknown'],stats['resolved_unknown']+stats['remaining_unknown'])
         for doc in self.meta['decisions']:
             self.assertEqual(sum(doc['statutes'].values()),sum(base[doc['id']]['statutes'].values()))

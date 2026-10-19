@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
   "contract_version": "1.6.0",
-  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
+  "data_revision": "sha256:a59b8d9fef758eb7b6a94319cb261e00f6dd70ee57b65af303dac62df2538883",
   "resource": "legislation-citations",
   "scope": {
     "code": "УТ",
@@ -10,7 +10,7 @@
   "count": 35,
   "items": [
     {
-      "id": "1896-040:УТ:100:text:2322",
+      "id": "1896-040:УТ:100:text:3329",
       "statute": "УТ ст. 100",
       "code": "УТ",
       "article": "ст. 100",
@@ -18,27 +18,27 @@
       "year": 1896,
       "decision_number": 40,
       "field": "text",
-      "start": 2322,
-      "end": 2329,
+      "start": 3329,
+      "end": 3336,
       "quote_original": "ст. 100",
-      "context_original": "еніями Министерства Внутрен- судовъ, Пермское губернское присут-. нихъ Дѣлъ, находитъ, что изложенный ствіе входило въ сношеніе съ глав- въ ст. 100 уст. о промышл. т. XI ч. 2 нымъ начальникомъ уральскихъ гор ныхъ заводовъ, причемъ просило его разъяснить подвѣдомственнымъ ему за водоупра",
+      "context_original": "авительствующаго Сената^ впол- нѣ соглашаясь съ изложенными выше соображеніями Министерства Внутрен- нихъ Дѣлъ, находитъ, что изложенный въ ст. 100 уст. о промышл. т. XI ч. 2 изд. 1893 г. порядокъ удержанія изъ рабочей платы взысканій на уплатуіихъ долговъ былъ установленъ закономъ 3 ію",
       "association": "прежняя автоматическая привязка; отдельно не подтверждена",
       "verification_status": "legacy_unverified",
-      "source_sha256": "ab0121ad4c1235743ce386feadaabcc2e3957c07d2f062cf94b3ad36e8ef1df2",
-      "headnote_sha256": "77a651f681b0560fedce5f0f0240b9a191fa127b3b502621bd89d914934e89a9",
+      "source_sha256": "c7a82aa9d17e7474403b84833ef03318bf485cf6acca1a3ddc95e280305620f6",
+      "headnote_sha256": "39971b6b56ee958261714fed6ddf7b2762ba85986b11603dd3c5b78db27f4f37",
       "number_status": "ocr_unverified",
       "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-040",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-040?mode=laws&c=%D0%A3%D0%A2&q=%D1%81%D1%82.+100&law=1896-040%3A%D0%A3%D0%A2%3A100%3Atext%3A2322&at=2322&end=2329",
-      "source_warning": "Изложение ведомственного спора и начало вывода Сената перемежаются из-за порядка колонок. Позиции различены по полному контексту; исходный текст сохранён.",
-      "passage_id": "1896-040:1499-3243",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-040?mode=laws&c=%D0%A3%D0%A2&q=%D1%81%D1%82.+100&law=1896-040%3A%D0%A3%D0%A2%3A100%3Atext%3A3329&at=3329&end=3336&v=1896-restored-20261019",
+      "source_warning": null,
+      "passage_id": "1896-040:2856-4460",
       "sources": [
         {
           "page": 783,
           "page_method": "header",
           "file": "p0076.txt",
-          "start": 2322,
-          "end": 2329
+          "start": 3329,
+          "end": 3336
         }
       ],
       "printed_pages": [
@@ -51,7 +51,7 @@
           "full": "scans/1896/pages/p0076-798ba3ebc3471aff.webp",
           "width": 1100,
           "height": 1659,
-          "ocr_sha256": "3d9519b17c0252d0cc6f578f7ddeedb2846dd29bd3208519792891fd0aef6312",
+          "ocr_sha256": "a10ed8a606c8e378c044b53cd5f8fd0a204713609a3920f780cf4980f8fa4223",
           "pdf_page": 76,
           "kind": "page"
         }

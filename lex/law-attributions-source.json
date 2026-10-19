@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "date": "2026-10-17",
+  "date": "2026-10-19",
   "unit": "пара решение / извлечённое обозначение статьи; mentions — старый счётчик, не независимая разметка всех статей",
   "decisions": {
     "1896-001": {
@@ -93,10 +93,10 @@
       }
     },
     "1896-011": {
-      "text_sha256": "c1c5224f6eafe03c3cba2b66aabb0eb0d4225c870d2ffd9398bd83d3926230a3",
+      "text_sha256": "90656a68a23a34e60753718875113547f46e22ba6a95b127e74704cc208c19af",
       "headnote_sha256": "3e2a379bc737512445c87dae3b4374176654fb0d9c9f22ab265daecb65f816ea",
       "statutes": {
-        "? ст. 135": 2,
+        "? ст. 135": 3,
         "УН ст. 201": 7,
         "УУС ст. 135": 2,
         "УН ст. 18": 2,
@@ -120,10 +120,9 @@
       }
     },
     "1896-012": {
-      "text_sha256": "dcf8ffb0fb5baec6df080f0aa577e6af0d2505d1e59bf60dfcfdbc9eb6a05854",
-      "headnote_sha256": "2d2602010105a65ef15c245f1578e3f7e92bd2a1a4c405d1a44ad2346e38b86f",
+      "text_sha256": "1b42818fae380d46c2d34f10c48ea80081986c65f7761bf0f9714a0fc4720d60",
+      "headnote_sha256": "998e52a7de45ab5f2bdf24dacf704f207c3dd2ef5044eefad103b9129d78ddde",
       "statutes": {
-        "? ст. 135": 2,
         "УСУ ст. 2591": 1,
         "? ст. 62": 3,
         "? ст. 3538": 2,
@@ -147,16 +146,16 @@
       }
     },
     "1896-013": {
-      "text_sha256": "aced227baa8caf600d1148446e81cf215e4e2d298c5baf9827e343c22d5d1f99",
+      "text_sha256": "a2b132b79f184567c8daf8eae521fe2a12fe056e44817e40b6b5cfa29da8028b",
       "headnote_sha256": "ebee2830d112565b5ae80ca1f902ea4881065a0ec2d79ab516486beda4fd8bf1",
       "statutes": {}
     },
     "1896-014": {
-      "text_sha256": "c949b96f7a8adbc375153c543a88ad06d2b71cb1a9a2727b54081afa0f3556a3",
-      "headnote_sha256": "5178c7c79dedddad9e604dcdc7e87511b5ab56020e12a2f5213620adc102f0a9",
+      "text_sha256": "f9978d84ada2c2ac66a66b601e8c4de6cbfcb5f0a1f5c018b3fa987c6a32d3e7",
+      "headnote_sha256": "6c7f87c266d581517109339c41e6c43a7a82ac63983161f5aaa4620a3498b21e",
       "statutes": {
-        "СЗГ ст. 560": 2,
-        "СЗГ ст. 557": 1
+        "СЗГ ст. 557": 1,
+        "СЗГ ст. 560": 2
       }
     },
     "1896-015": {
@@ -167,7 +166,7 @@
       }
     },
     "1896-016": {
-      "text_sha256": "0de7fdf734520eaaf41585144664895af83bf137417f1b73922800711d1d3450",
+      "text_sha256": "c28bf089dd866bd3a6b1d9157d605f43d810208babca369920979d9cc6028d54",
       "headnote_sha256": "f5e7aab2c3116049bc5da35d600859f0c86e451ea6454286e1bfda6ae119415b",
       "statutes": {
         "? ст. 821": 3,
@@ -175,8 +174,8 @@
       }
     },
     "1896-017": {
-      "text_sha256": "0b96255ad4cc666cbdaa6a28eb9d59c08d4f6a585a031b0e6e294c2dd1642f31",
-      "headnote_sha256": "b18c92226d2af84605eaedacc9bfc2d6529dd708ee69bb52e508f224c88c93c1",
+      "text_sha256": "7b3cf87d7b47ed0106eb57a78f5fc998dcd94c0564f58163df3db55f5d70e4ed",
+      "headnote_sha256": "ea949590af200b81f7154c63c8e6c8d11f121e19f9b511d07eb28ce84393a7ea",
       "statutes": {
         "? ст. 153": 2,
         "? ст. 177": 1,
@@ -203,20 +202,20 @@
       }
     },
     "1896-019": {
-      "text_sha256": "444246ecd35a734acf3a7c1947d027d5178a75c863b9656d1ba73d4b312b683e",
+      "text_sha256": "41ce3e420f34027fe04466693d20d334fd21105a0be7eb89d9e6bfebee8ca07b",
       "headnote_sha256": "ff155063853e00327f8c77e31534ae8641e9a12c2e52bffc0a3791ed33e37316",
       "statutes": {
         "УСУ ст. 457": 1
       }
     },
     "1896-020": {
-      "text_sha256": "4450e262854d560f132a834bea6930ebdbcac49685ac3b3d33557ec02ba69ff6",
-      "headnote_sha256": "4dc98d4e5d57ea376825593e83090eb37b77b0e33893df7ffb3f675b81605444",
+      "text_sha256": "b2a9eef5085209742fba02b072c82cb328639883b115303e2c817c45079d9de9",
+      "headnote_sha256": "99191c0b5cf1074773ec10d55edd50594e1a607b7d5b32ade820ed0c68305c85",
       "statutes": {
+        "? ст. 166": 1,
         "? ст. 176": 2,
         "? ст. 167": 1,
         "? ст. 170": 1,
-        "? ст. 166": 1,
         "? ст. 164": 2,
         "? ст. 736": 2,
         "СЗГ ст. 715": 1,
@@ -228,8 +227,8 @@
       }
     },
     "1896-021": {
-      "text_sha256": "c8818b474f7ccc7b904380652aef446537208296a258e714b42c453eb5fd4b21",
-      "headnote_sha256": "b4e8bbe0e4339072e9c63ddfa1625bb8a48fdcaad9d713b136cdd61543a01854",
+      "text_sha256": "4b11b3763be5d73c986245e6150ac6d1ecad2b11efb0508e98e951046d59a550",
+      "headnote_sha256": "262192cdad807ef4c84dcda18d0e7e8c909c89e0b578c369dc102cc6499269bb",
       "statutes": {
         "? ст. 303–369": 1,
         "? ст. 286": 1,
@@ -241,26 +240,26 @@
       }
     },
     "1896-022": {
-      "text_sha256": "a50a718dc186332582180696b739131572f04acd4ddc3ba5ce80892161a661eb",
+      "text_sha256": "8355e3aa71a5e89d094016b8eb758e5416e47f2629c7184302760b5b2bf336db",
       "headnote_sha256": "b41ab6c97731b537c499d11d3864d6be0d9da4e41122ce2aa948b3196eafb3fa",
       "statutes": {
         "? ст. 281": 2
       }
     },
     "1896-023": {
-      "text_sha256": "4ee210871a88daaef6ceb42cf1dc9d23d5cd95bda5c613bb9adb1caf9862f728",
+      "text_sha256": "830002b13d2e3a290017a167fc3218b26d608368b7b6b7db55a59bdaf16fe40c",
       "headnote_sha256": "6d9e8a8ef8b615e7026f7c55732e9c41314ea2046a40a893f9fdd09fa2545139",
       "statutes": {
         "? ст. 60": 3
       }
     },
     "1896-024": {
-      "text_sha256": "0429c65ec7ad8983aeb73faf6a9a88aaee7159ffe0f5b4207c55e9d5e148a9cc",
+      "text_sha256": "f9ec052426f6a99caf003d3299a7ec354166046f16861b5b183b72f8fcf43c10",
       "headnote_sha256": "f04a207393bd17abd7db583da85c51ace8a0ab7e05e467103f60ef3b9de97992",
       "statutes": {
         "? ст. 282": 3,
         "УСУ ст. 2591": 1,
-        "УСУ ст. 93": 1,
+        "? ст. 93": 2,
         "? ст. 1 –7": 1,
         "? ст. 8–12": 1,
         "? ст. 22 –29": 1,
@@ -271,7 +270,6 @@
         "? ст. 38": 1,
         "УН ст. 31": 1,
         "? ст. 31": 5,
-        "? ст. 93": 1,
         "? ст. 288": 1
       }
     },
@@ -288,15 +286,15 @@
       }
     },
     "1896-026": {
-      "text_sha256": "2984f1cf0223437db17c44ffde624822e6d88086af0a32251cc39618e211f7c4",
+      "text_sha256": "7ce5d614a51b0d7058ea5a24d2911d5900d655b6576190cc7942c9b168c3d50c",
       "headnote_sha256": "49b5366358268c11723bfce067db7ad2174ff07fa7970ed90a33a7e76a38dfb7",
       "statutes": {
         "? ст. 68": 2
       }
     },
     "1896-027": {
-      "text_sha256": "afafc980d2ecb9eb6f139bcfc980ae8c018841ab3bb2d40776bfa23d68af88f4",
-      "headnote_sha256": "8debeb1fec316d2e2e4f6180a3f1f44c5f3da1ca00367d849b78899de2e51215",
+      "text_sha256": "a272df9aec9eda5bb7c4f8ac4802fcc53c924e9cc84ef73faa5dffc056182a2c",
+      "headnote_sha256": "865718237053b4744e071ddab76fa3f3903b18097d1a65de3cee7e98079f2f45",
       "statutes": {
         "УУС ст. 583": 1,
         "УУС ст. 592": 1,
@@ -326,66 +324,72 @@
       }
     },
     "1896-030": {
-      "text_sha256": "6a76ed12976e110a6b97232dffc50dd32b0922b5589ed9790ee01fbee363f2cf",
+      "text_sha256": "cd95a8f74545ff04fe0ad1282b62ef9737c35932c7093a5c53860e1276a9b2f4",
       "headnote_sha256": "12d528b848c404889cfc926497a53aa6b3b29f7241c2e5885f79fd7a04380810",
       "statutes": {
         "СЗГ ст. 420": 7,
         "СЗГ ст. 42": 2,
         "СЗГ ст. 14": 2,
         "? ст. 41": 1,
+        "УГС ст. 9": 1,
+        "УГС ст. 12": 1,
         "? ст. 420": 1
       }
     },
     "1896-031": {
-      "text_sha256": "52753bb6fb3721e142c30e9bbe8cfcd7fc2cfb99b7ed43fe1337179b0f81c9db",
+      "text_sha256": "ea2e6420d8df726719c6e0f89dc11945af3a215fe6775b4c8eb3021c9df81dee",
       "headnote_sha256": "b481e620600059cb0a4752b8dab0cfd1dba75b85e698814dbea077527d08a438",
       "statutes": {
+        "СЗГ ст. 640": 1,
         "СЗГ ст. 691": 2,
         "СЗГ ст. 1661": 1,
         "СЗГ ст. 1512": 1,
         "? ст. 277": 3,
         "? ст. 1384": 1,
+        "? ст. 1511": 1,
+        "? ст. 1512": 1,
         "? ст. 1664": 1,
         "УУС ст. 126": 1,
-        "УУС ст. 375": 2,
+        "УУС ст. 777": 1,
+        "УУС ст. 375": 1,
+        "? ст. 375": 4,
         "? ст. 126": 1,
-        "? ст. 375": 3,
         "? ст. 777": 1
       }
     },
     "1896-032": {
-      "text_sha256": "8322abda8bbae5b1446506399de39a8b1fec02715c3562fa2a95ae71aa0fbbb4",
-      "headnote_sha256": "c2b41c52276f4cfe0ed241a07c35001cbfd1a90796639a278dc6c1f0e6aa6cdf",
+      "text_sha256": "e4c2cb17d6b78fcc4ddcd49d7eb68c721cf3c3922897a667d46dd9a605d3c4c6",
+      "headnote_sha256": "f7115f74f609b858728ded2e569ca847b938c38731043ff2ab2921831eddae0a",
       "statutes": {
         "? ст. 202": 3,
         "? ст. 236": 1,
-        "? ст. 508": 2
+        "? ст. 508": 3
       }
     },
     "1896-033": {
-      "text_sha256": "77ab5f47277932fd68a580daa8dc2dd6d428dfbe845e86f4aacd711db4ebdd7d",
+      "text_sha256": "62f1a182a87d998798cc93c6be960eb1e79a5107cdf67a75eaf84333f08e8cde",
       "headnote_sha256": "f3d4ad9514d2212dabf642d02508168e2d9bcacf68e77a195099a574d7526f20",
       "statutes": {
         "УГС ст. 1": 1
       }
     },
     "1896-034": {
-      "text_sha256": "181a2a83ed25a8294913df58e7af605461f8b49add03c2a826c2efc9d424f92c",
-      "headnote_sha256": "5509c17e1c562c11c4430457b3519f9dcf1a90ecb20cc5a5451d580166750984",
+      "text_sha256": "81dd18aa1fb39b758af8c545e2870269d5951fef248686cea44310e2fd8dca6d",
+      "headnote_sha256": "46daae5ba0709eb610ee5f4119ceda9f4b78de2120cbfe758bf87b9e469f8865",
       "statutes": {
-        "? ст. 1216 – 1220": 2,
-        "? ст. 1215": 2,
+        "? ст. 1216 – 1220": 1,
+        "? ст. 1215": 1,
         "? ст. 1079": 1,
         "? ст. 108": 1
       }
     },
     "1896-035": {
-      "text_sha256": "b9faa1e3db1c66e99c6787770678f6bc621839737e8dab1a5e0a642f39a23596",
-      "headnote_sha256": "0706b6ae0f5ee512551c9062e37a58ef1350fd4a19dd248e2fb8d6d87601254b",
+      "text_sha256": "9a6daf520aa9b77c7743cdbb7f038d222fd4e2864a23c2f95f0a820ee419da5d",
+      "headnote_sha256": "e3419bbfc2aabe3bf563b4035e36caa7f06c3bc3afa8b41084159bad226c668e",
       "statutes": {}
     },
     "1896-036": {
-      "text_sha256": "85a5675f64a35e818c715ad3ecc3e3b8fc7f6d3dd9afafa22102e44511925664",
+      "text_sha256": "18ce04f0b533a51dd96351c730e1417e44ac9d044cc8ce7910368628fb9f7ff3",
       "headnote_sha256": "0e56130a667cc2ffaa86c695b982dcf9efdaf2dc29daa110f52c7097cdc8aae0",
       "statutes": {
         "? ст. 599–603": 1,
@@ -395,7 +399,7 @@
       }
     },
     "1896-037": {
-      "text_sha256": "b94f0868fcd22424d6816864edfa60fe9866ab118fe57d2162278d06ad0e513b",
+      "text_sha256": "cd7a8bb959091d87e57a4717c4bbf0ac77c4d8e1be881080278bbbda1cdcc31d",
       "headnote_sha256": "85639a1f1e04bfdec355f203268d63d0e3f56bc93271c2ad154708d17fcae9ac",
       "statutes": {
         "? ст. 161": 1,
@@ -403,8 +407,8 @@
       }
     },
     "1896-038": {
-      "text_sha256": "f0fa793f9b0d766057c89acf35c5d861f8ceef60dabbff02f8e784e0c27d3029",
-      "headnote_sha256": "35331bf4be924813177f200d3142f35e98115e087e1aa414ee941372b0872f11",
+      "text_sha256": "49ae491f374c7b2ce3f59c1b79792f8c3429ac8f517e9c73e47bd6b8a2af62f4",
+      "headnote_sha256": "f6904101ac667b3c1878b95ba1a408977ca4cf87f8864363d7bdb674a71d3634",
       "statutes": {
         "? ст. 526": 1,
         "? ст. 314": 1,
@@ -413,7 +417,7 @@
       }
     },
     "1896-039": {
-      "text_sha256": "6c79f9583a001f3f12182a792fbd84a3c42d95121d8bae890003ac5ebdbff198",
+      "text_sha256": "11b9936c3c6f31017154475546a3a8a81aef8049ec23dc5af290cac8840d590a",
       "headnote_sha256": "65071bb5d433f450cd41aba0d60b7a269b2a81c9caab0ce2c25df171ca52e158",
       "statutes": {
         "УУС ст. 223": 1,
@@ -425,13 +429,13 @@
       }
     },
     "1896-040": {
-      "text_sha256": "ab0121ad4c1235743ce386feadaabcc2e3957c07d2f062cf94b3ad36e8ef1df2",
-      "headnote_sha256": "77a651f681b0560fedce5f0f0240b9a191fa127b3b502621bd89d914934e89a9",
+      "text_sha256": "c7a82aa9d17e7474403b84833ef03318bf485cf6acca1a3ddc95e280305620f6",
+      "headnote_sha256": "39971b6b56ee958261714fed6ddf7b2762ba85986b11603dd3c5b78db27f4f37",
       "statutes": {
-        "? ст. 100": 4,
-        "? ст. 43": 1,
-        "УТ ст. 100": 2,
+        "? ст. 100": 5,
         "? ст. 93": 1,
+        "? ст. 43": 1,
+        "УТ ст. 100": 1,
         "? ст. 105": 1
       }
     },
@@ -454,14 +458,14 @@
       }
     },
     "1896-043": {
-      "text_sha256": "214989a3a17f5c96951bd01a1be175a6341c92372a50d372ba099d554530c15b",
+      "text_sha256": "338d714d7fe61e6d88963bb21c09478e23bc4cbd3ae7dfb6930d170ba3a0aa92",
       "headnote_sha256": "94e5603fc0439ab701691cc38fca51367ac2beff2bdce5628283b054481043c2",
       "statutes": {
         "? ст. 959": 2
       }
     },
     "1896-044": {
-      "text_sha256": "ba8da6537ac6dad8ffc75dd8f41088ed799e607f3deb5123ce026041a7690e83",
+      "text_sha256": "d61f9b58b975b2ed11a7e03f6a14deee0ede8f2a471aac177d475faa8e2c8fc3",
       "headnote_sha256": "57300a683a2851d37743c2d9c414103da889dae57a79ea31abc2f17912cbbbc7",
       "statutes": {
         "СЗГ ст. 556": 1,
@@ -469,16 +473,16 @@
       }
     },
     "1896-045": {
-      "text_sha256": "f8ff79d10e8e12426517ada3a4bd13133a200d9eb92bc44b5057c88a46f5e0f0",
-      "headnote_sha256": "26cc68d8c17baa7eb9460a675a6abe00e814211df275de75f4e8a1727ffaa3bf",
+      "text_sha256": "3ce2857b81178d5289efaf8fa145131aa1a3b4f64147f04ec61a3a9817c9ba9d",
+      "headnote_sha256": "b96baebaa43b622da144fa2071a51b37417a900703bfe9744f8ed1af305c8e91",
       "statutes": {
-        "УУС ст. 1077–1102": 2,
+        "УУС ст. 1077–1102": 1,
         "? ст. 978": 1
       }
     },
     "1896-046": {
-      "text_sha256": "49987781cf82bddb246b7049f822a49c1ab6cd192bda964e3f65896ca6bef763",
-      "headnote_sha256": "77a651f681b0560fedce5f0f0240b9a191fa127b3b502621bd89d914934e89a9",
+      "text_sha256": "cf844ba235540dc55e748b2fb44a3bf856aae619584b8697f9ad88753186be9b",
+      "headnote_sha256": "ff30684e5bcbef6c04563af713137a4de50fb08dc76df8b0e71b100d20ef8a6d",
       "statutes": {
         "? ст. 263": 1,
         "? ст. 264": 1
@@ -503,17 +507,18 @@
       }
     },
     "1896-049": {
-      "text_sha256": "caf0e73a23d34d2fd5dbc48cf7cc721a14eff1d8fbecd08ce4997a662ada2c3c",
+      "text_sha256": "fc5bcdf5849262ff9ef726679b0f724d149df88cff9e58b2ddc820453912a573",
       "headnote_sha256": "759c4aa44bc27bbeb145a9808a1b4de42d454e7c0ec10cd909b215e4aa598399",
       "statutes": {
         "? ст. 103": 2,
         "? ст. 104": 1,
         "? ст. 736": 1,
         "? ст. 3656": 1,
+        "? ст. 59": 1,
         "? ст. 63": 1,
         "? ст. 61": 1,
-        "? ст. 50": 1,
         "? ст. 35": 1,
+        "? ст. 50": 1,
         "? ст. 1300 п. 1": 1,
         "? ст. 1303": 1,
         "? ст. 42 п. 1": 1,
@@ -4518,11 +4523,11 @@
     {
       "decision_id": "1896-011",
       "from_statute": "? ст. 135",
-      "mentions": 2,
+      "mentions": 3,
       "targets": [
         {
           "code": "УУС",
-          "mentions": 2,
+          "mentions": 3,
           "occurrences": [
             {
               "field": "headnote",
@@ -4545,6 +4550,23 @@
               "field": "text",
               "start": 169,
               "end": 176,
+              "quote_original": "ст. 135",
+              "method": "direct",
+              "evidence": [
+                {
+                  "kind": "direct",
+                  "field": "text",
+                  "start": 169,
+                  "end": 192,
+                  "quote_original": "ст. 135 уст. угол. суд.",
+                  "act_code": "УУС"
+                }
+              ]
+            },
+            {
+              "field": "text",
+              "start": 6714,
+              "end": 6721,
               "quote_original": "ст. 135",
               "method": "direct",
               "evidence": [
@@ -4590,16 +4612,16 @@
             },
             {
               "field": "text",
-              "start": 7998,
-              "end": 8005,
+              "start": 8424,
+              "end": 8431,
               "quote_original": "ст. 135",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 7998,
-                  "end": 8019,
+                  "start": 818,
+                  "end": 839,
                   "quote_original": "ст. 135 уст. уг. суд.",
                   "act_code": "УУС"
                 }
@@ -4680,69 +4702,20 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 7239,
-              "end": 7246,
+              "start": 7665,
+              "end": 7672,
               "quote_original": "ст. 135",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 7239,
-                  "end": 7262,
+                  "start": 169,
+                  "end": 192,
                   "quote_original": "ст. 135 уст. угол. суд.",
                   "act_code": "УУС"
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-012",
-      "from_statute": "? ст. 135",
-      "mentions": 2,
-      "targets": [
-        {
-          "code": "УУС",
-          "mentions": 2,
-          "occurrences": [
-            {
-              "field": "headnote",
-              "start": 247,
-              "end": 254,
-              "quote_original": "ст. 135",
-              "method": "direct",
-              "evidence": [
-                {
-                  "kind": "direct",
-                  "field": "headnote",
-                  "start": 247,
-                  "end": 270,
-                  "quote_original": "ст. 135 уст. угол. суд.",
-                  "act_code": "УУС"
-                }
-              ],
-              "attribution_note": "В исходном OCR перемежены фрагменты соседних дел. Акт установлен у строки, но её принадлежность этому решению требует сверки оригинала."
-            },
-            {
-              "field": "text",
-              "start": 275,
-              "end": 282,
-              "quote_original": "ст. 135",
-              "method": "direct",
-              "evidence": [
-                {
-                  "kind": "direct",
-                  "field": "text",
-                  "start": 275,
-                  "end": 298,
-                  "quote_original": "ст. 135 уст. угол. суд.",
-                  "act_code": "УУС"
-                }
-              ],
-              "attribution_note": "В исходном OCR перемежены фрагменты соседних дел. Акт установлен у строки, но её принадлежность этому решению требует сверки оригинала."
             }
           ]
         }
@@ -4759,16 +4732,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 1627,
-              "end": 1635,
+              "start": 1167,
+              "end": 1175,
               "quote_original": "ст. 2591",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 1627,
-                  "end": 1650,
+                  "start": 1167,
+                  "end": 1190,
                   "quote_original": "ст. 2591 учр. суд. уст.",
                   "act_code": "УСУ"
                 }
@@ -4790,16 +4763,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 13595,
-              "end": 13602,
+              "start": 13205,
+              "end": 13212,
               "quote_original": "ст. 340",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 13595,
-                  "end": 13612,
+                  "start": 13205,
+                  "end": 13222,
                   "quote_original": "ст. 340 нот. пол.",
                   "act_code": "ПНЧ"
                 }
@@ -4808,16 +4781,16 @@
             },
             {
               "field": "text",
-              "start": 19194,
-              "end": 19201,
+              "start": 18804,
+              "end": 18811,
               "quote_original": "ст. 340",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 19194,
-                  "end": 19211,
+                  "start": 13205,
+                  "end": 13222,
                   "quote_original": "ст. 340 нот. пол.",
                   "act_code": "ПНЧ"
                 }
@@ -4826,16 +4799,16 @@
             },
             {
               "field": "text",
-              "start": 19821,
-              "end": 19849,
+              "start": 19431,
+              "end": 19459,
               "quote_original": "ст. 304, 340, 360, 361 и 363",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 19821,
-                  "end": 19859,
+                  "start": 19431,
+                  "end": 19469,
                   "quote_original": "ст. 304, 340, 360, 361 и 363 нот. пол.",
                   "act_code": "ПНЧ"
                 }
@@ -4857,16 +4830,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 17465,
-              "end": 17472,
+              "start": 17075,
+              "end": 17082,
               "quote_original": "ст. 363",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 17465,
-                  "end": 17492,
+                  "start": 17075,
+                  "end": 17102,
                   "quote_original": "ст. 363 полож. о нот. части",
                   "act_code": "ПНЧ"
                 }
@@ -4875,16 +4848,16 @@
             },
             {
               "field": "text",
-              "start": 19821,
-              "end": 19849,
+              "start": 19431,
+              "end": 19459,
               "quote_original": "ст. 304, 340, 360, 361 и 363",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 19821,
-                  "end": 19859,
+                  "start": 19431,
+                  "end": 19469,
                   "quote_original": "ст. 304, 340, 360, 361 и 363 нот. пол.",
                   "act_code": "ПНЧ"
                 }
@@ -4906,16 +4879,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 19821,
-              "end": 19849,
+              "start": 19431,
+              "end": 19459,
               "quote_original": "ст. 304, 340, 360, 361 и 363",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 19821,
-                  "end": 19859,
+                  "start": 19431,
+                  "end": 19469,
                   "quote_original": "ст. 304, 340, 360, 361 и 363 нот. пол.",
                   "act_code": "ПНЧ"
                 }
@@ -4937,16 +4910,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 19821,
-              "end": 19849,
+              "start": 19431,
+              "end": 19459,
               "quote_original": "ст. 304, 340, 360, 361 и 363",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 19821,
-                  "end": 19859,
+                  "start": 19431,
+                  "end": 19469,
                   "quote_original": "ст. 304, 340, 360, 361 и 363 нот. пол.",
                   "act_code": "ПНЧ"
                 }
@@ -4968,16 +4941,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 19821,
-              "end": 19849,
+              "start": 19431,
+              "end": 19459,
               "quote_original": "ст. 304, 340, 360, 361 и 363",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 19821,
-                  "end": 19859,
+                  "start": 19431,
+                  "end": 19469,
                   "quote_original": "ст. 304, 340, 360, 361 и 363 нот. пол.",
                   "act_code": "ПНЧ"
                 }
@@ -4999,16 +4972,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 890,
-              "end": 898,
+              "start": 2831,
+              "end": 2839,
               "quote_original": "560 ст. ",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 890,
-                  "end": 907,
+                  "start": 2831,
+                  "end": 2848,
                   "quote_original": "560 ст. X т. 1 ч.",
                   "act_code": "СЗГ"
                 }
@@ -5016,16 +4989,16 @@
             },
             {
               "field": "text",
-              "start": 1747,
-              "end": 1755,
+              "start": 3254,
+              "end": 3262,
               "quote_original": "560 ст. ",
-              "method": "repeat",
+              "method": "direct",
               "evidence": [
                 {
-                  "kind": "repeat",
+                  "kind": "direct",
                   "field": "text",
-                  "start": 890,
-                  "end": 907,
+                  "start": 2831,
+                  "end": 2848,
                   "quote_original": "560 ст. X т. 1 ч.",
                   "act_code": "СЗГ"
                 }
@@ -5046,16 +5019,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 3449,
-              "end": 3456,
+              "start": 2512,
+              "end": 2519,
               "quote_original": "ст. 154",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 3449,
-                  "end": 3469,
+                  "start": 2512,
+                  "end": 2532,
                   "quote_original": "ст. 154 уст. о пошл.",
                   "act_code": "УПШ"
                 }
@@ -5063,17 +5036,17 @@
             },
             {
               "field": "text",
-              "start": 4018,
-              "end": 4025,
+              "start": 3081,
+              "end": 3088,
               "quote_original": "ст. 154",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 4018,
-                  "end": 4040,
-                  "quote_original": "ст. 154 уст. о пошлин.",
+                  "start": 2512,
+                  "end": 2532,
+                  "quote_original": "ст. 154 уст. о пошл.",
                   "act_code": "УПШ"
                 }
               ]
@@ -5093,16 +5066,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 4448,
-              "end": 4456,
+              "start": 3511,
+              "end": 3519,
               "quote_original": "ст. 1254",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 4448,
-                  "end": 4468,
+                  "start": 3511,
+                  "end": 3531,
                   "quote_original": "ст. 1254 зак. гражд.",
                   "act_code": "СЗГ"
                 }
@@ -5230,16 +5203,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 3923,
-              "end": 3930,
+              "start": 3925,
+              "end": 3932,
               "quote_original": "ст. 457",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 3923,
-                  "end": 3944,
+                  "start": 3925,
+                  "end": 3946,
                   "quote_original": "ст. 457 учр. суд уст.",
                   "act_code": "УСУ"
                 }
@@ -5290,16 +5263,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 856,
-              "end": 864,
+              "start": 857,
+              "end": 865,
               "quote_original": "ст. 2591",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 856,
-                  "end": 879,
+                  "start": 857,
+                  "end": 880,
                   "quote_original": "ст. 2591 учр. суд. уст.",
                   "act_code": "УСУ"
                 }
@@ -5350,16 +5323,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 3786,
-              "end": 3799,
+              "start": 3299,
+              "end": 3312,
               "quote_original": "ст. 583 и 592",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 3786,
-                  "end": 3812,
+                  "start": 3299,
+                  "end": 3325,
                   "quote_original": "ст. 583 и 592 уст. уг. суд",
                   "act_code": "УУС"
                 }
@@ -5380,16 +5353,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 3786,
-              "end": 3799,
+              "start": 3299,
+              "end": 3312,
               "quote_original": "ст. 583 и 592",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 3786,
-                  "end": 3812,
+                  "start": 3299,
+                  "end": 3325,
                   "quote_original": "ст. 583 и 592 уст. уг. суд",
                   "act_code": "УУС"
                 }
@@ -5470,8 +5443,8 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 6983,
-              "end": 6993,
+              "start": 4887,
+              "end": 4897,
               "quote_original": "ст. 420, 1",
               "method": "repeat",
               "evidence": [
@@ -5501,16 +5474,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 2697,
-              "end": 2705,
+              "start": 4552,
+              "end": 4560,
               "quote_original": "691 ст. ",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 2697,
-                  "end": 2714,
+                  "start": 4552,
+                  "end": 4569,
                   "quote_original": "691 ст. X т. 1 ч.",
                   "act_code": "СЗГ"
                 }
@@ -5518,16 +5491,16 @@
             },
             {
               "field": "text",
-              "start": 6209,
-              "end": 6216,
+              "start": 6326,
+              "end": 6333,
               "quote_original": "ст. 691",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 6209,
-                  "end": 6226,
+                  "start": 6326,
+                  "end": 6343,
                   "quote_original": "ст. 691 X т. 1 ч.",
                   "act_code": "СЗГ"
                 }
@@ -5548,16 +5521,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 12411,
-              "end": 12420,
+              "start": 12403,
+              "end": 12412,
               "quote_original": "1661 ст. ",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 12411,
-                  "end": 12429,
+                  "start": 12403,
+                  "end": 12421,
                   "quote_original": "1661 ст. X т. 1 ч.",
                   "act_code": "СЗГ"
                 }
@@ -5578,16 +5551,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 13619,
-              "end": 13628,
+              "start": 13612,
+              "end": 13621,
               "quote_original": "1512 ст. ",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 13619,
-                  "end": 13636,
+                  "start": 13612,
+                  "end": 13629,
                   "quote_original": "1512 ст. X т. 1 ч",
                   "act_code": "СЗГ"
                 }
@@ -5608,16 +5581,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 1826,
-              "end": 1833,
+              "start": 1828,
+              "end": 1835,
               "quote_original": "ст. 236",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 1826,
-                  "end": 1846,
+                  "start": 1828,
+                  "end": 1848,
                   "quote_original": "ст. 236 уст. о пошл.",
                   "act_code": "УПШ"
                 }
@@ -5638,16 +5611,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 1949,
-              "end": 1954,
+              "start": 1936,
+              "end": 1941,
               "quote_original": "ст. 1",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 1949,
-                  "end": 1968,
+                  "start": 1936,
+                  "end": 1955,
                   "quote_original": "ст. 1 уст. гр. суд.",
                   "act_code": "УГС"
                 }
@@ -5668,16 +5641,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 2749,
-              "end": 2756,
+              "start": 3562,
+              "end": 3569,
               "quote_original": "ст. 162",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 2749,
-                  "end": 2769,
+                  "start": 3562,
+                  "end": 3582,
                   "quote_original": "ст. 162 уст. о пошл.",
                   "act_code": "УПШ"
                 }
@@ -5698,16 +5671,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 4965,
-              "end": 4971,
+              "start": 4937,
+              "end": 4943,
               "quote_original": "ст. 33",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 4965,
-                  "end": 4984,
+                  "start": 4937,
+                  "end": 4956,
                   "quote_original": "ст. 33 уст. о пошл.",
                   "act_code": "УПШ"
                 }
@@ -5715,16 +5688,16 @@
             },
             {
               "field": "text",
-              "start": 5376,
-              "end": 5382,
+              "start": 5348,
+              "end": 5354,
               "quote_original": "ст. 33",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 5376,
-                  "end": 5395,
+                  "start": 4937,
+                  "end": 4956,
                   "quote_original": "ст. 33 уст. о пошл.",
                   "act_code": "УПШ"
                 }
@@ -5745,16 +5718,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 5051,
-              "end": 5058,
+              "start": 5023,
+              "end": 5030,
               "quote_original": "ст. 273",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 5051,
-                  "end": 5072,
+                  "start": 5023,
+                  "end": 5044,
                   "quote_original": "ст. 273 уст. гр. суд.",
                   "act_code": "УГС"
                 }
@@ -5775,16 +5748,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 6228,
-              "end": 6234,
+              "start": 6332,
+              "end": 6338,
               "quote_original": "ст. 29",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 6228,
-                  "end": 6246,
+                  "start": 6332,
+                  "end": 6350,
                   "quote_original": "ст. 29 уст. о нак.",
                   "act_code": "УНМС"
                 }
@@ -5942,16 +5915,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 3708,
-              "end": 3716,
+              "start": 3694,
+              "end": 3702,
               "quote_original": "556 ст. ",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 3708,
-                  "end": 3725,
+                  "start": 3694,
+                  "end": 3711,
                   "quote_original": "556 ст. 1 ч. X т.",
                   "act_code": "СЗГ"
                 }
@@ -6122,16 +6095,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 2698,
-              "end": 2706,
+              "start": 2951,
+              "end": 2959,
               "quote_original": "ст. 3656",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 2698,
-                  "end": 2723,
+                  "start": 2951,
+                  "end": 2976,
                   "quote_original": "ст. 3656 уст. гражд. суд.",
                   "act_code": "УГС"
                 }
@@ -6153,16 +6126,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 8783,
-              "end": 8794,
+              "start": 8789,
+              "end": 8800,
               "quote_original": "ст. 34 п. 3",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 8767,
-                  "end": 8794,
+                  "start": 8773,
+                  "end": 8800,
                   "quote_original": "уст. угол. суд. ст. 34 п. 3",
                   "act_code": "УУС"
                 }
@@ -45621,41 +45594,24 @@
     {
       "decision_id": "1896-040",
       "from_statute": "? ст. 100",
-      "mentions": 4,
+      "mentions": 5,
       "targets": [
         {
           "code": "УПР",
-          "mentions": 4,
+          "mentions": 5,
           "occurrences": [
             {
               "field": "text",
-              "start": 702,
-              "end": 709,
+              "start": 779,
+              "end": 786,
               "quote_original": "ст. 100",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 582,
-                  "end": 799,
-                  "quote_original": "губернаторъ, представилъ въ Ми нистерство копію постановленія губерн скаго присутствія по вопросу о примѣ неніи правилъ ст. 100 уст. пром. иед. 1893 г., къ исполненію рѣшеній волост- нрисутствіе поступило представлені",
-                  "act_code": "УПР"
-                }
-              ]
-            },
-            {
-              "field": "text",
-              "start": 1170,
-              "end": 1177,
-              "quote_original": "ст. 100",
-              "method": "direct",
-              "evidence": [
-                {
-                  "kind": "direct",
-                  "field": "text",
-                  "start": 1050,
-                  "end": 1267,
+                  "start": 2427,
+                  "end": 2644,
                   "quote_original": " мнѣнію, хотя буквальное содержаніе ст. 24 врем. ирав. вол. суд. (прил. къ ст. 43 прил. 3 о(Цц. нол. по прод, 1893 г. и ст. 100 уст. о промышл. не даетъ основанія къ примѣнен ю послѣдней статьи къ исполнен.ю рѣшеній в",
                   "act_code": "УПР"
                 }
@@ -45663,34 +45619,68 @@
             },
             {
               "field": "text",
-              "start": 2934,
-              "end": 2941,
+              "start": 1352,
+              "end": 1359,
               "quote_original": "ст. 100",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 2814,
-                  "end": 3031,
-                  "quote_original": " увѣдо милъ присутствіе, что ни въ ст. 29 врем. прав. вол. суд. (прил. къ ст. 93 прил. 3 общ. пол., по прод. 1893 г.) и ст. 100 уст. пром. (изд. 1893 г), ни въ другихъ узаконеніяхъ не встрѣчает ся указаній на обязанно",
+                  "start": 2427,
+                  "end": 2644,
+                  "quote_original": " мнѣнію, хотя буквальное содержаніе ст. 24 врем. ирав. вол. суд. (прил. къ ст. 43 прил. 3 о(Цц. нол. по прод, 1893 г. и ст. 100 уст. о промышл. не даетъ основанія къ примѣнен ю послѣдней статьи къ исполнен.ю рѣшеній в",
                   "act_code": "УПР"
                 }
               ]
             },
             {
               "field": "text",
-              "start": 4152,
-              "end": 4159,
+              "start": 1790,
+              "end": 1797,
               "quote_original": "ст. 100",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 4032,
-                  "end": 4249,
-                  "quote_original": "лга удостовѣрена исполнительнымъ листомъ, т. е. судеб нымъ рѣшеніемъ. Выраженіе „исполни тельный листъ “ употреблеиэ въ ст. 100 уст. о промышл. несомнѣнно пото му, что, при изданіи сего закона (въ 1886 г.), по судебны",
+                  "start": 2427,
+                  "end": 2644,
+                  "quote_original": " мнѣнію, хотя буквальное содержаніе ст. 24 врем. ирав. вол. суд. (прил. къ ст. 43 прил. 3 о(Цц. нол. по прод, 1893 г. и ст. 100 уст. о промышл. не даетъ основанія къ примѣнен ю послѣдней статьи къ исполнен.ю рѣшеній в",
+                  "act_code": "УПР"
+                }
+              ]
+            },
+            {
+              "field": "text",
+              "start": 2547,
+              "end": 2554,
+              "quote_original": "ст. 100",
+              "method": "direct",
+              "evidence": [
+                {
+                  "kind": "direct",
+                  "field": "text",
+                  "start": 2427,
+                  "end": 2644,
+                  "quote_original": " мнѣнію, хотя буквальное содержаніе ст. 24 врем. ирав. вол. суд. (прил. къ ст. 43 прил. 3 о(Цц. нол. по прод, 1893 г. и ст. 100 уст. о промышл. не даетъ основанія къ примѣнен ю послѣдней статьи къ исполнен.ю рѣшеній в",
+                  "act_code": "УПР"
+                }
+              ]
+            },
+            {
+              "field": "text",
+              "start": 4230,
+              "end": 4237,
+              "quote_original": "ст. 100",
+              "method": "direct",
+              "evidence": [
+                {
+                  "kind": "direct",
+                  "field": "text",
+                  "start": 2427,
+                  "end": 2644,
+                  "quote_original": " мнѣнію, хотя буквальное содержаніе ст. 24 врем. ирав. вол. суд. (прил. къ ст. 43 прил. 3 о(Цц. нол. по прод, 1893 г. и ст. 100 уст. о промышл. не даетъ основанія къ примѣнен ю послѣдней статьи къ исполнен.ю рѣшеній в",
                   "act_code": "УПР"
                 }
               ]
@@ -45710,16 +45700,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 5257,
-              "end": 5264,
+              "start": 5335,
+              "end": 5342,
               "quote_original": "ст. 105",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 5132,
-                  "end": 5354,
+                  "start": 5210,
+                  "end": 5432,
                   "quote_original": "другихъ судебны гъ установле ній. Въ виду изложеннаго, къ дозволяе мымъ статьею 100 уст. о промышл. т. XI ч. 2 изд. 1893 г. (ст. 105 по изд. 1887 г.) вычетамъ изъ заработной пла ты, послѣ изданія закона 12 іюля 1889 года, ",
                   "act_code": "УПР"
                 }
@@ -45740,16 +45730,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 1013,
-              "end": 1022,
-              "quote_original": "ст. 263 и",
+              "start": 1141,
+              "end": 1151,
+              "quote_original": "ст. 263 и ",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 893,
-                  "end": 1112,
+                  "start": 1021,
+                  "end": 1240,
                   "quote_original": "овлено различіе между сельско-хозяйственными и про мышленными заведеніями этого рода (св. зак. т. V уст. объ акц. сбор. ст. 263 и сл.), видно, что введеньемъ сель ско-хозяйственнаго винокуренія имѣ лось* въ виду измѣнит",
                   "act_code": "УАС"
                 }
@@ -45770,16 +45760,16 @@
           "occurrences": [
             {
               "field": "text",
-              "start": 1930,
-              "end": 1937,
+              "start": 2058,
+              "end": 2065,
               "quote_original": "ст. 264",
               "method": "direct",
               "evidence": [
                 {
                   "kind": "direct",
                   "field": "text",
-                  "start": 1810,
-                  "end": 2027,
+                  "start": 1938,
+                  "end": 2155,
                   "quote_original": "ъ количествомъ земли, подлежа щей обработкѣ въ предѣлахъ того имѣнія, при которомъ заводъ устроенъ (уст. объ акц. сбор. ст. 264). Въ ви ду вышеизложеннаго, слѣдуеіъ придти къ заключенію, что сельско-хозяйствен ные вин",
                   "act_code": "УАС"
                 }
@@ -48245,218 +48235,6 @@
       ]
     },
     {
-      "decision_id": "1896-012",
-      "statute": "? ст. 62",
-      "mentions": 3,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 5356,
-          "end": 5362,
-          "quote_original": "ст. 62"
-        },
-        {
-          "field": "text",
-          "start": 8374,
-          "end": 8380,
-          "quote_original": "ст. 62"
-        },
-        {
-          "field": "text",
-          "start": 19767,
-          "end": 19789,
-          "quote_original": "ст. 3, 39, 59, 60 и 62"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-012",
-      "statute": "? ст. 3538",
-      "mentions": 2,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 8234,
-          "end": 8249,
-          "quote_original": "ст. 3538 и 3540"
-        },
-        {
-          "field": "text",
-          "start": 17423,
-          "end": 17431,
-          "quote_original": "ст. 3538"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-012",
-      "statute": "? ст. 3540",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 8234,
-          "end": 8249,
-          "quote_original": "ст. 3538 и 3540"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-012",
-      "statute": "? ст. 344",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 8591,
-          "end": 8598,
-          "quote_original": "ст. 344"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-012",
-      "statute": "? ст. 341",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 14035,
-          "end": 14042,
-          "quote_original": "ст. 341"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-012",
-      "statute": "? ст. 362",
-      "mentions": 2,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 15026,
-          "end": 15033,
-          "quote_original": "ст. 362"
-        },
-        {
-          "field": "text",
-          "start": 18325,
-          "end": 18345,
-          "quote_original": "ст. 362, 364 и 369 и"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-012",
-      "statute": "? ст. 3123",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 15865,
-          "end": 15880,
-          "quote_original": "ст. 3123 и 3473"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-012",
-      "statute": "? ст. 3473",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 15865,
-          "end": 15880,
-          "quote_original": "ст. 3123 и 3473"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-012",
-      "statute": "? ст. 2081",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 17672,
-          "end": 17680,
-          "quote_original": "ст. 2081"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-012",
-      "statute": "? ст. 364",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 18325,
-          "end": 18345,
-          "quote_original": "ст. 362, 364 и 369 и"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-012",
-      "statute": "? ст. 369",
-      "mentions": 2,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 18325,
-          "end": 18345,
-          "quote_original": "ст. 362, 364 и 369 и"
-        },
-        {
-          "field": "text",
-          "start": 18360,
-          "end": 18367,
-          "quote_original": "ст. 369"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-012",
-      "statute": "? ст. 39",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 19767,
-          "end": 19789,
-          "quote_original": "ст. 3, 39, 59, 60 и 62"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-012",
-      "statute": "? ст. 59",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 19767,
-          "end": 19789,
-          "quote_original": "ст. 3, 39, 59, 60 и 62"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-012",
-      "statute": "? ст. 60",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 19767,
-          "end": 19789,
-          "quote_original": "ст. 3, 39, 59, 60 и 62"
-        }
-      ]
-    },
-    {
       "decision_id": "1896-015",
       "statute": "? ст. 37",
       "mentions": 2,
@@ -48472,128 +48250,6 @@
           "start": 251,
           "end": 257,
           "quote_original": "ст. 37"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-016",
-      "statute": "? ст. 821",
-      "mentions": 3,
-      "occurrences": [
-        {
-          "field": "headnote",
-          "start": 114,
-          "end": 121,
-          "quote_original": "ст. 821"
-        },
-        {
-          "field": "text",
-          "start": 143,
-          "end": 150,
-          "quote_original": "ст. 821"
-        },
-        {
-          "field": "text",
-          "start": 1300,
-          "end": 1307,
-          "quote_original": "ст. 821"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-016",
-      "statute": "? ст. 65",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 5789,
-          "end": 5795,
-          "quote_original": "ст. 65"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-017",
-      "statute": "? ст. 153",
-      "mentions": 2,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 661,
-          "end": 668,
-          "quote_original": "ст. 153"
-        },
-        {
-          "field": "text",
-          "start": 1318,
-          "end": 1325,
-          "quote_original": "ст. 153"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-017",
-      "statute": "? ст. 177",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 808,
-          "end": 815,
-          "quote_original": "ст. 177"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-017",
-      "statute": "? ст. 152",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 863,
-          "end": 870,
-          "quote_original": "ст. 152"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-017",
-      "statute": "? ст. 421",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 2235,
-          "end": 2242,
-          "quote_original": "ст. 421"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-017",
-      "statute": "? ст. 72",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 3531,
-          "end": 3537,
-          "quote_original": "ст. 72"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-017",
-      "statute": "? ст. 63",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 3678,
-          "end": 3684,
-          "quote_original": "ст. 63"
         }
       ]
     },
@@ -48646,468 +48302,6 @@
           "start": 4288,
           "end": 4306,
           "quote_original": "ст. 880, 883 и 965"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-020",
-      "statute": "? ст. 176",
-      "mentions": 2,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 1788,
-          "end": 1795,
-          "quote_original": "ст. 176"
-        },
-        {
-          "field": "text",
-          "start": 10028,
-          "end": 10035,
-          "quote_original": "ст. 176"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-020",
-      "statute": "? ст. 167",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 2460,
-          "end": 2473,
-          "quote_original": "ст. 167 и 170"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-020",
-      "statute": "? ст. 170",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 2460,
-          "end": 2473,
-          "quote_original": "ст. 167 и 170"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-020",
-      "statute": "? ст. 166",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 2929,
-          "end": 2936,
-          "quote_original": "ст. 166"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-020",
-      "statute": "? ст. 164",
-      "mentions": 2,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 4710,
-          "end": 4717,
-          "quote_original": "ст. 164"
-        },
-        {
-          "field": "text",
-          "start": 9784,
-          "end": 9791,
-          "quote_original": "ст. 164"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-020",
-      "statute": "? ст. 736",
-      "mentions": 2,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 5175,
-          "end": 5182,
-          "quote_original": "ст. 736"
-        },
-        {
-          "field": "text",
-          "start": 9435,
-          "end": 9453,
-          "quote_original": "ст. 733, 734 и 736"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-020",
-      "statute": "? ст. 733",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 9435,
-          "end": 9453,
-          "quote_original": "ст. 733, 734 и 736"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-020",
-      "statute": "? ст. 734",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 9435,
-          "end": 9453,
-          "quote_original": "ст. 733, 734 и 736"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-020",
-      "statute": "? ст. 160",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 9544,
-          "end": 9551,
-          "quote_original": "ст. 160"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-020",
-      "statute": "? ст. 32",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 12614,
-          "end": 12620,
-          "quote_original": "ст. 32"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-021",
-      "statute": "? ст. 286",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 4915,
-          "end": 4922,
-          "quote_original": "ст. 286"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-021",
-      "statute": "? ст. 354",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 5065,
-          "end": 5072,
-          "quote_original": "ст. 354"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-021",
-      "statute": "? ст. 370 – 377",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 5340,
-          "end": 5353,
-          "quote_original": "ст. 370 — 377"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-021",
-      "statute": "? ст. 278",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 10179,
-          "end": 10186,
-          "quote_original": "ст. 278"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-021",
-      "statute": "? ст. 370",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 17938,
-          "end": 17945,
-          "quote_original": "ст. 370"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-021",
-      "statute": "? ст. 371",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 18034,
-          "end": 18041,
-          "quote_original": "ст. 371"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-022",
-      "statute": "? ст. 281",
-      "mentions": 2,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 1669,
-          "end": 1676,
-          "quote_original": "ст. 281"
-        },
-        {
-          "field": "text",
-          "start": 1753,
-          "end": 1760,
-          "quote_original": "ст. 281"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-023",
-      "statute": "? ст. 60",
-      "mentions": 3,
-      "occurrences": [
-        {
-          "field": "headnote",
-          "start": 268,
-          "end": 274,
-          "quote_original": "ст. 60"
-        },
-        {
-          "field": "text",
-          "start": 268,
-          "end": 274,
-          "quote_original": "ст. 60"
-        },
-        {
-          "field": "text",
-          "start": 839,
-          "end": 845,
-          "quote_original": "ст. 60"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-024",
-      "statute": "? ст. 282",
-      "mentions": 3,
-      "occurrences": [
-        {
-          "field": "headnote",
-          "start": 243,
-          "end": 250,
-          "quote_original": "ст. 282"
-        },
-        {
-          "field": "text",
-          "start": 275,
-          "end": 282,
-          "quote_original": "ст. 282"
-        },
-        {
-          "field": "text",
-          "start": 6881,
-          "end": 6888,
-          "quote_original": "ст. 282"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-024",
-      "statute": "? ст. 1 –7",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 1935,
-          "end": 1943,
-          "quote_original": "ст. 1 —7"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-024",
-      "statute": "? ст. 8–12",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 2029,
-          "end": 2045,
-          "quote_original": "ст. 8—12, 22 -29"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-024",
-      "statute": "? ст. 22 –29",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 2029,
-          "end": 2045,
-          "quote_original": "ст. 8—12, 22 -29"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-024",
-      "statute": "? ст. 30–32",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 2143,
-          "end": 2157,
-          "quote_original": "ст. 30—32 и 13"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-024",
-      "statute": "? ст. 34",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 2428,
-          "end": 2449,
-          "quote_original": "ст. 17, 34, 35,36, 38"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-024",
-      "statute": "? ст. 35",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 2428,
-          "end": 2449,
-          "quote_original": "ст. 17, 34, 35,36, 38"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-024",
-      "statute": "? ст. 36",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 2428,
-          "end": 2449,
-          "quote_original": "ст. 17, 34, 35,36, 38"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-024",
-      "statute": "? ст. 38",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 2428,
-          "end": 2449,
-          "quote_original": "ст. 17, 34, 35,36, 38"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-024",
-      "statute": "? ст. 31",
-      "mentions": 5,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 3780,
-          "end": 3786,
-          "quote_original": "ст. 31"
-        },
-        {
-          "field": "text",
-          "start": 3907,
-          "end": 3913,
-          "quote_original": "ст. 31"
-        },
-        {
-          "field": "text",
-          "start": 4169,
-          "end": 4175,
-          "quote_original": "ст. 31"
-        },
-        {
-          "field": "text",
-          "start": 4328,
-          "end": 4334,
-          "quote_original": "ст. 31"
-        },
-        {
-          "field": "text",
-          "start": 6430,
-          "end": 6436,
-          "quote_original": "ст. 31"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-024",
-      "statute": "? ст. 93",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 4008,
-          "end": 4014,
-          "quote_original": "ст. 93"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-024",
-      "statute": "? ст. 288",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 6596,
-          "end": 6603,
-          "quote_original": "ст. 288"
         }
       ]
     },
@@ -49179,38 +48373,6 @@
           "start": 5466,
           "end": 5479,
           "quote_original": "ст. 363 и 553"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-026",
-      "statute": "? ст. 68",
-      "mentions": 2,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 1168,
-          "end": 1174,
-          "quote_original": "ст. 68"
-        },
-        {
-          "field": "text",
-          "start": 4623,
-          "end": 4629,
-          "quote_original": "ст. 68"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-027",
-      "statute": "? ст. 60",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 4524,
-          "end": 4529,
-          "quote_original": "ст 60"
         }
       ]
     },
@@ -49345,713 +48507,6 @@
           "start": 4282,
           "end": 4289,
           "quote_original": "ст. 713"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-030",
-      "statute": "? ст. 41",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 2333,
-          "end": 2344,
-          "quote_original": "ст. 22 и 41"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-031",
-      "statute": "? ст. 277",
-      "mentions": 3,
-      "occurrences": [
-        {
-          "field": "headnote",
-          "start": 192,
-          "end": 199,
-          "quote_original": "ст. 277"
-        },
-        {
-          "field": "text",
-          "start": 222,
-          "end": 229,
-          "quote_original": "ст. 277"
-        },
-        {
-          "field": "text",
-          "start": 5042,
-          "end": 5049,
-          "quote_original": "ст. 277"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-031",
-      "statute": "? ст. 1384",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 3729,
-          "end": 3737,
-          "quote_original": "ст. 1384"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-031",
-      "statute": "? ст. 1664",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 4852,
-          "end": 4860,
-          "quote_original": "ст. 1664"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-031",
-      "statute": "? ст. 126",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 7886,
-          "end": 7904,
-          "quote_original": "ст. 126, 375 и 777"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-031",
-      "statute": "? ст. 375",
-      "mentions": 3,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 7886,
-          "end": 7904,
-          "quote_original": "ст. 126, 375 и 777"
-        },
-        {
-          "field": "text",
-          "start": 9018,
-          "end": 9025,
-          "quote_original": "ст. 375"
-        },
-        {
-          "field": "text",
-          "start": 10443,
-          "end": 10450,
-          "quote_original": "ст. 375"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-031",
-      "statute": "? ст. 777",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 7886,
-          "end": 7904,
-          "quote_original": "ст. 126, 375 и 777"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-032",
-      "statute": "? ст. 202",
-      "mentions": 3,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 1615,
-          "end": 1622,
-          "quote_original": "ст. 202"
-        },
-        {
-          "field": "text",
-          "start": 4243,
-          "end": 4250,
-          "quote_original": "ст. 202"
-        },
-        {
-          "field": "text",
-          "start": 5269,
-          "end": 5276,
-          "quote_original": "ст. 202"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-032",
-      "statute": "? ст. 508",
-      "mentions": 2,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 4616,
-          "end": 4623,
-          "quote_original": "ст. 508"
-        },
-        {
-          "field": "text",
-          "start": 6795,
-          "end": 6802,
-          "quote_original": "ст. 508"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-034",
-      "statute": "? ст. 1216 – 1220",
-      "mentions": 2,
-      "occurrences": [
-        {
-          "field": "headnote",
-          "start": 545,
-          "end": 560,
-          "quote_original": "ст. 1216 — 1220"
-        },
-        {
-          "field": "text",
-          "start": 572,
-          "end": 587,
-          "quote_original": "ст. 1216 — 1220"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-034",
-      "statute": "? ст. 1215",
-      "mentions": 2,
-      "occurrences": [
-        {
-          "field": "headnote",
-          "start": 598,
-          "end": 606,
-          "quote_original": "ст. 1215"
-        },
-        {
-          "field": "text",
-          "start": 625,
-          "end": 633,
-          "quote_original": "ст. 1215"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-034",
-      "statute": "? ст. 1079",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 2038,
-          "end": 2051,
-          "quote_original": "ст. 1079 и 10"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-034",
-      "statute": "? ст. 108",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 2081,
-          "end": 2088,
-          "quote_original": "ст. 108"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-036",
-      "statute": "? ст. 599–603",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 1873,
-          "end": 1884,
-          "quote_original": "ст. 599—603"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-037",
-      "statute": "? ст. 161",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 4521,
-          "end": 4528,
-          "quote_original": "ст. 161"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-038",
-      "statute": "? ст. 526",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 5020,
-          "end": 5027,
-          "quote_original": "ст. 526"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-038",
-      "statute": "? ст. 314",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 7563,
-          "end": 7581,
-          "quote_original": "ст. 314, 337 и 338"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-038",
-      "statute": "? ст. 337",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 7563,
-          "end": 7581,
-          "quote_original": "ст. 314, 337 и 338"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-038",
-      "statute": "? ст. 338",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 7563,
-          "end": 7581,
-          "quote_original": "ст. 314, 337 и 338"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-039",
-      "statute": "? ст. 314",
-      "mentions": 4,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 4247,
-          "end": 4254,
-          "quote_original": "ст. 314"
-        },
-        {
-          "field": "text",
-          "start": 7329,
-          "end": 7336,
-          "quote_original": "ст. 314"
-        },
-        {
-          "field": "text",
-          "start": 10644,
-          "end": 10651,
-          "quote_original": "ст. 314"
-        },
-        {
-          "field": "text",
-          "start": 10992,
-          "end": 11010,
-          "quote_original": "ст. 314, 337 и 338"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-039",
-      "statute": "? ст. 337",
-      "mentions": 2,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 6122,
-          "end": 6140,
-          "quote_original": "ст. 337 и 2 п. 314"
-        },
-        {
-          "field": "text",
-          "start": 10992,
-          "end": 11010,
-          "quote_original": "ст. 314, 337 и 338"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-039",
-      "statute": "? ст. 2 п. 314",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 6122,
-          "end": 6140,
-          "quote_original": "ст. 337 и 2 п. 314"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-039",
-      "statute": "? ст. 275",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 6621,
-          "end": 6628,
-          "quote_original": "ст. 275"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-039",
-      "statute": "? ст. 338",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 10992,
-          "end": 11010,
-          "quote_original": "ст. 314, 337 и 338"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-040",
-      "statute": "? ст. 43",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 1125,
-          "end": 1131,
-          "quote_original": "ст. 43"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-040",
-      "statute": "? ст. 93",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 2888,
-          "end": 2894,
-          "quote_original": "ст. 93"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-043",
-      "statute": "? ст. 959",
-      "mentions": 2,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 919,
-          "end": 926,
-          "quote_original": "ст. 959"
-        },
-        {
-          "field": "text",
-          "start": 1021,
-          "end": 1028,
-          "quote_original": "ст. 959"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-044",
-      "statute": "? ст. 44",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 833,
-          "end": 839,
-          "quote_original": "ст. 44"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-045",
-      "statute": "? ст. 978",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 2129,
-          "end": 2136,
-          "quote_original": "ст. 978"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-049",
-      "statute": "? ст. 103",
-      "mentions": 2,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 1618,
-          "end": 1625,
-          "quote_original": "ст. 103"
-        },
-        {
-          "field": "text",
-          "start": 14969,
-          "end": 14976,
-          "quote_original": "ст. 103"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-049",
-      "statute": "? ст. 104",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 1666,
-          "end": 1673,
-          "quote_original": "ст. 104"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-049",
-      "statute": "? ст. 736",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 2030,
-          "end": 2037,
-          "quote_original": "ст. 736"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-049",
-      "statute": "? ст. 63",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 4774,
-          "end": 4780,
-          "quote_original": "ст. 63"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-049",
-      "statute": "? ст. 61",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 4819,
-          "end": 4825,
-          "quote_original": "ст. 61"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-049",
-      "statute": "? ст. 50",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 5119,
-          "end": 5125,
-          "quote_original": "ст. 50"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-049",
-      "statute": "? ст. 35",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 5810,
-          "end": 5816,
-          "quote_original": "ст. 35"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-049",
-      "statute": "? ст. 1300 п. 1",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 8217,
-          "end": 8238,
-          "quote_original": "ст. 1300 п. 1, 1303 и"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-049",
-      "statute": "? ст. 1303",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 8217,
-          "end": 8238,
-          "quote_original": "ст. 1300 п. 1, 1303 и"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-049",
-      "statute": "? ст. 42 п. 1",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 8250,
-          "end": 8261,
-          "quote_original": "ст. 42 п. 1"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-049",
-      "statute": "? ст. 31 п. 3",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 8750,
-          "end": 8765,
-          "quote_original": "ст. 28, 31 п. 3"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-049",
-      "statute": "? ст. 51",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 9281,
-          "end": 9289,
-          "quote_original": "ст. 51 и"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-049",
-      "statute": "? ст. 1138",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 9493,
-          "end": 9503,
-          "quote_original": "ст. 1138 и"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-049",
-      "statute": "? ст. 105",
-      "mentions": 2,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 10158,
-          "end": 10165,
-          "quote_original": "ст. 105"
-        },
-        {
-          "field": "text",
-          "start": 11207,
-          "end": 11214,
-          "quote_original": "ст. 105"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-049",
-      "statute": "? ст. 653–655",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 11167,
-          "end": 11178,
-          "quote_original": "ст. 653—655"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-049",
-      "statute": "? ст. 413",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 13521,
-          "end": 13528,
-          "quote_original": "ст. 413"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-049",
-      "statute": "? ст. 93",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 16465,
-          "end": 16471,
-          "quote_original": "СТ. 93"
-        }
-      ]
-    },
-    {
-      "decision_id": "1896-049",
-      "statute": "? ст. 21 п. 3",
-      "mentions": 1,
-      "occurrences": [
-        {
-          "field": "text",
-          "start": 16975,
-          "end": 16986,
-          "quote_original": "ст. 21 п. 3"
         }
       ]
     },
@@ -55755,6 +54210,1586 @@
           "quote_original": "ст. 146"
         }
       ]
+    },
+    {
+      "decision_id": "1896-012",
+      "statute": "? ст. 62",
+      "mentions": 3,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4966,
+          "end": 4972,
+          "quote_original": "ст. 62"
+        },
+        {
+          "field": "text",
+          "start": 7984,
+          "end": 7990,
+          "quote_original": "ст. 62"
+        },
+        {
+          "field": "text",
+          "start": 19377,
+          "end": 19399,
+          "quote_original": "ст. 3, 39, 59, 60 и 62"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-012",
+      "statute": "? ст. 3538",
+      "mentions": 2,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7844,
+          "end": 7859,
+          "quote_original": "ст. 3538 и 3540"
+        },
+        {
+          "field": "text",
+          "start": 17033,
+          "end": 17041,
+          "quote_original": "ст. 3538"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-012",
+      "statute": "? ст. 3540",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7844,
+          "end": 7859,
+          "quote_original": "ст. 3538 и 3540"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-012",
+      "statute": "? ст. 344",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8201,
+          "end": 8208,
+          "quote_original": "ст. 344"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-012",
+      "statute": "? ст. 341",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 13645,
+          "end": 13652,
+          "quote_original": "ст. 341"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-012",
+      "statute": "? ст. 362",
+      "mentions": 2,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 14636,
+          "end": 14643,
+          "quote_original": "ст. 362"
+        },
+        {
+          "field": "text",
+          "start": 17935,
+          "end": 17956,
+          "quote_original": "ст. 362, 364 и 369 и "
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-012",
+      "statute": "? ст. 3123",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 15475,
+          "end": 15490,
+          "quote_original": "ст. 3123 и 3473"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-012",
+      "statute": "? ст. 3473",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 15475,
+          "end": 15490,
+          "quote_original": "ст. 3123 и 3473"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-012",
+      "statute": "? ст. 2081",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 17282,
+          "end": 17290,
+          "quote_original": "ст. 2081"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-012",
+      "statute": "? ст. 364",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 17935,
+          "end": 17956,
+          "quote_original": "ст. 362, 364 и 369 и "
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-012",
+      "statute": "? ст. 369",
+      "mentions": 2,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 17935,
+          "end": 17956,
+          "quote_original": "ст. 362, 364 и 369 и "
+        },
+        {
+          "field": "text",
+          "start": 17970,
+          "end": 17977,
+          "quote_original": "ст. 369"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-012",
+      "statute": "? ст. 39",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 19377,
+          "end": 19399,
+          "quote_original": "ст. 3, 39, 59, 60 и 62"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-012",
+      "statute": "? ст. 59",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 19377,
+          "end": 19399,
+          "quote_original": "ст. 3, 39, 59, 60 и 62"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-012",
+      "statute": "? ст. 60",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 19377,
+          "end": 19399,
+          "quote_original": "ст. 3, 39, 59, 60 и 62"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-016",
+      "statute": "? ст. 821",
+      "mentions": 3,
+      "occurrences": [
+        {
+          "field": "headnote",
+          "start": 114,
+          "end": 121,
+          "quote_original": "ст. 821"
+        },
+        {
+          "field": "text",
+          "start": 143,
+          "end": 150,
+          "quote_original": "ст. 821"
+        },
+        {
+          "field": "text",
+          "start": 1300,
+          "end": 1307,
+          "quote_original": "ст. 821"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-016",
+      "statute": "? ст. 65",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5790,
+          "end": 5796,
+          "quote_original": "ст. 65"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-017",
+      "statute": "? ст. 153",
+      "mentions": 2,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 661,
+          "end": 668,
+          "quote_original": "ст. 153"
+        },
+        {
+          "field": "text",
+          "start": 1133,
+          "end": 1140,
+          "quote_original": "ст. 153"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-017",
+      "statute": "? ст. 177",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 808,
+          "end": 815,
+          "quote_original": "ст. 177"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-017",
+      "statute": "? ст. 152",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 863,
+          "end": 870,
+          "quote_original": "ст. 152"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-017",
+      "statute": "? ст. 421",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1369,
+          "end": 1376,
+          "quote_original": "ст. 421"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-017",
+      "statute": "? ст. 72",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2594,
+          "end": 2600,
+          "quote_original": "ст. 72"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-017",
+      "statute": "? ст. 63",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2741,
+          "end": 2747,
+          "quote_original": "ст. 63"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-020",
+      "statute": "? ст. 166",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1549,
+          "end": 1556,
+          "quote_original": "ст. 166"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-020",
+      "statute": "? ст. 176",
+      "mentions": 2,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2602,
+          "end": 2611,
+          "quote_original": "ст. 176, "
+        },
+        {
+          "field": "text",
+          "start": 10030,
+          "end": 10037,
+          "quote_original": "ст. 176"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-020",
+      "statute": "? ст. 167",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3275,
+          "end": 3288,
+          "quote_original": "ст. 167 и 170"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-020",
+      "statute": "? ст. 170",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3275,
+          "end": 3288,
+          "quote_original": "ст. 167 и 170"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-020",
+      "statute": "? ст. 164",
+      "mentions": 2,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4712,
+          "end": 4719,
+          "quote_original": "ст. 164"
+        },
+        {
+          "field": "text",
+          "start": 9786,
+          "end": 9793,
+          "quote_original": "ст. 164"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-020",
+      "statute": "? ст. 736",
+      "mentions": 2,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5177,
+          "end": 5184,
+          "quote_original": "ст. 736"
+        },
+        {
+          "field": "text",
+          "start": 9437,
+          "end": 9455,
+          "quote_original": "ст. 733, 734 и 736"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-020",
+      "statute": "? ст. 733",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 9437,
+          "end": 9455,
+          "quote_original": "ст. 733, 734 и 736"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-020",
+      "statute": "? ст. 734",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 9437,
+          "end": 9455,
+          "quote_original": "ст. 733, 734 и 736"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-020",
+      "statute": "? ст. 160",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 9546,
+          "end": 9553,
+          "quote_original": "ст. 160"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-020",
+      "statute": "? ст. 32",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 12616,
+          "end": 12622,
+          "quote_original": "ст. 32"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-021",
+      "statute": "? ст. 286",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4915,
+          "end": 4922,
+          "quote_original": "ст. 286"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-021",
+      "statute": "? ст. 354",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5065,
+          "end": 5072,
+          "quote_original": "ст. 354"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-021",
+      "statute": "? ст. 370 – 377",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5340,
+          "end": 5353,
+          "quote_original": "ст. 370 — 377"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-021",
+      "statute": "? ст. 278",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 10179,
+          "end": 10188,
+          "quote_original": "ст. 278, "
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-021",
+      "statute": "? ст. 370",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 17785,
+          "end": 17792,
+          "quote_original": "ст. 370"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-021",
+      "statute": "? ст. 371",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 17881,
+          "end": 17888,
+          "quote_original": "ст. 371"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-022",
+      "statute": "? ст. 281",
+      "mentions": 2,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1670,
+          "end": 1677,
+          "quote_original": "ст. 281"
+        },
+        {
+          "field": "text",
+          "start": 1754,
+          "end": 1761,
+          "quote_original": "ст. 281"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-023",
+      "statute": "? ст. 60",
+      "mentions": 3,
+      "occurrences": [
+        {
+          "field": "headnote",
+          "start": 268,
+          "end": 274,
+          "quote_original": "ст. 60"
+        },
+        {
+          "field": "text",
+          "start": 268,
+          "end": 274,
+          "quote_original": "ст. 60"
+        },
+        {
+          "field": "text",
+          "start": 839,
+          "end": 845,
+          "quote_original": "ст. 60"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-024",
+      "statute": "? ст. 282",
+      "mentions": 3,
+      "occurrences": [
+        {
+          "field": "headnote",
+          "start": 243,
+          "end": 250,
+          "quote_original": "ст. 282"
+        },
+        {
+          "field": "text",
+          "start": 275,
+          "end": 282,
+          "quote_original": "ст. 282"
+        },
+        {
+          "field": "text",
+          "start": 7374,
+          "end": 7381,
+          "quote_original": "ст. 282"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-024",
+      "statute": "? ст. 93",
+      "mentions": 2,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1587,
+          "end": 1595,
+          "quote_original": "ст. 93, "
+        },
+        {
+          "field": "text",
+          "start": 4501,
+          "end": 4509,
+          "quote_original": "ст. 93, "
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-024",
+      "statute": "? ст. 1 –7",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2428,
+          "end": 2436,
+          "quote_original": "ст. 1 —7"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-024",
+      "statute": "? ст. 8–12",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2522,
+          "end": 2538,
+          "quote_original": "ст. 8—12, 22 -29"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-024",
+      "statute": "? ст. 22 –29",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2522,
+          "end": 2538,
+          "quote_original": "ст. 8—12, 22 -29"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-024",
+      "statute": "? ст. 30–32",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2636,
+          "end": 2650,
+          "quote_original": "ст. 30—32 и 13"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-024",
+      "statute": "? ст. 34",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2921,
+          "end": 2942,
+          "quote_original": "ст. 17, 34, 35,36, 38"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-024",
+      "statute": "? ст. 35",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2921,
+          "end": 2942,
+          "quote_original": "ст. 17, 34, 35,36, 38"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-024",
+      "statute": "? ст. 36",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2921,
+          "end": 2942,
+          "quote_original": "ст. 17, 34, 35,36, 38"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-024",
+      "statute": "? ст. 38",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2921,
+          "end": 2942,
+          "quote_original": "ст. 17, 34, 35,36, 38"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-024",
+      "statute": "? ст. 31",
+      "mentions": 5,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4273,
+          "end": 4279,
+          "quote_original": "ст. 31"
+        },
+        {
+          "field": "text",
+          "start": 4400,
+          "end": 4406,
+          "quote_original": "ст. 31"
+        },
+        {
+          "field": "text",
+          "start": 4662,
+          "end": 4668,
+          "quote_original": "ст. 31"
+        },
+        {
+          "field": "text",
+          "start": 4821,
+          "end": 4829,
+          "quote_original": "ст. 31, "
+        },
+        {
+          "field": "text",
+          "start": 6923,
+          "end": 6929,
+          "quote_original": "ст. 31"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-024",
+      "statute": "? ст. 288",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7089,
+          "end": 7096,
+          "quote_original": "ст. 288"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-026",
+      "statute": "? ст. 68",
+      "mentions": 2,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1168,
+          "end": 1174,
+          "quote_original": "ст. 68"
+        },
+        {
+          "field": "text",
+          "start": 5306,
+          "end": 5312,
+          "quote_original": "ст. 68"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-027",
+      "statute": "? ст. 60",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4037,
+          "end": 4044,
+          "quote_original": "ст 60, "
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-030",
+      "statute": "? ст. 41",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2333,
+          "end": 2344,
+          "quote_original": "ст. 22 и 41"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-031",
+      "statute": "? ст. 277",
+      "mentions": 3,
+      "occurrences": [
+        {
+          "field": "headnote",
+          "start": 192,
+          "end": 199,
+          "quote_original": "ст. 277"
+        },
+        {
+          "field": "text",
+          "start": 222,
+          "end": 229,
+          "quote_original": "ст. 277"
+        },
+        {
+          "field": "text",
+          "start": 3614,
+          "end": 3621,
+          "quote_original": "ст. 277"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-031",
+      "statute": "? ст. 1384",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5077,
+          "end": 5087,
+          "quote_original": "ст. 1384, "
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-031",
+      "statute": "? ст. 1511",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5330,
+          "end": 5347,
+          "quote_original": "ст. 1511 и 1512, "
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-031",
+      "statute": "? ст. 1512",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5330,
+          "end": 5347,
+          "quote_original": "ст. 1511 и 1512, "
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-031",
+      "statute": "? ст. 1664",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5635,
+          "end": 5645,
+          "quote_original": "ст. 1664, "
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-031",
+      "statute": "? ст. 375",
+      "mentions": 4,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7744,
+          "end": 7751,
+          "quote_original": "ст. 375"
+        },
+        {
+          "field": "text",
+          "start": 8454,
+          "end": 8461,
+          "quote_original": "ст. 375"
+        },
+        {
+          "field": "text",
+          "start": 9106,
+          "end": 9113,
+          "quote_original": "ст. 375"
+        },
+        {
+          "field": "text",
+          "start": 9330,
+          "end": 9348,
+          "quote_original": "ст. 126, 375 и 777"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-031",
+      "statute": "? ст. 126",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 9330,
+          "end": 9348,
+          "quote_original": "ст. 126, 375 и 777"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-031",
+      "statute": "? ст. 777",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 9330,
+          "end": 9348,
+          "quote_original": "ст. 126, 375 и 777"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-032",
+      "statute": "? ст. 202",
+      "mentions": 3,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1617,
+          "end": 1624,
+          "quote_original": "ст. 202"
+        },
+        {
+          "field": "text",
+          "start": 4245,
+          "end": 4252,
+          "quote_original": "ст. 202"
+        },
+        {
+          "field": "text",
+          "start": 5271,
+          "end": 5278,
+          "quote_original": "ст. 202"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-032",
+      "statute": "? ст. 508",
+      "mentions": 3,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4618,
+          "end": 4625,
+          "quote_original": "ст. 508"
+        },
+        {
+          "field": "text",
+          "start": 6797,
+          "end": 6804,
+          "quote_original": "ст. 508"
+        },
+        {
+          "field": "text",
+          "start": 8930,
+          "end": 8937,
+          "quote_original": "ст. 508"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-034",
+      "statute": "? ст. 1216 – 1220",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2209,
+          "end": 2224,
+          "quote_original": "ст. 1216 — 1220"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-034",
+      "statute": "? ст. 1215",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2262,
+          "end": 2270,
+          "quote_original": "ст. 1215"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-034",
+      "statute": "? ст. 1079",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2969,
+          "end": 2982,
+          "quote_original": "ст. 1079 и 10"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-034",
+      "statute": "? ст. 108",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3012,
+          "end": 3019,
+          "quote_original": "ст. 108"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-036",
+      "statute": "? ст. 599–603",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2686,
+          "end": 2697,
+          "quote_original": "ст. 599—603"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-037",
+      "statute": "? ст. 161",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4522,
+          "end": 4529,
+          "quote_original": "ст. 161"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-038",
+      "statute": "? ст. 526",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5143,
+          "end": 5150,
+          "quote_original": "ст. 526"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-038",
+      "statute": "? ст. 314",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7687,
+          "end": 7705,
+          "quote_original": "ст. 314, 337 и 338"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-038",
+      "statute": "? ст. 337",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7687,
+          "end": 7705,
+          "quote_original": "ст. 314, 337 и 338"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-038",
+      "statute": "? ст. 338",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7687,
+          "end": 7705,
+          "quote_original": "ст. 314, 337 и 338"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-039",
+      "statute": "? ст. 314",
+      "mentions": 4,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4247,
+          "end": 4254,
+          "quote_original": "ст. 314"
+        },
+        {
+          "field": "text",
+          "start": 7329,
+          "end": 7336,
+          "quote_original": "ст. 314"
+        },
+        {
+          "field": "text",
+          "start": 10648,
+          "end": 10655,
+          "quote_original": "ст. 314"
+        },
+        {
+          "field": "text",
+          "start": 10996,
+          "end": 11014,
+          "quote_original": "ст. 314, 337 и 338"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-039",
+      "statute": "? ст. 337",
+      "mentions": 2,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 6122,
+          "end": 6140,
+          "quote_original": "ст. 337 и 2 п. 314"
+        },
+        {
+          "field": "text",
+          "start": 10996,
+          "end": 11014,
+          "quote_original": "ст. 314, 337 и 338"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-039",
+      "statute": "? ст. 2 п. 314",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 6122,
+          "end": 6140,
+          "quote_original": "ст. 337 и 2 п. 314"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-039",
+      "statute": "? ст. 275",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 6621,
+          "end": 6628,
+          "quote_original": "ст. 275"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-039",
+      "statute": "? ст. 338",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 10996,
+          "end": 11014,
+          "quote_original": "ст. 314, 337 и 338"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-040",
+      "statute": "? ст. 93",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1744,
+          "end": 1750,
+          "quote_original": "ст. 93"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-040",
+      "statute": "? ст. 43",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2502,
+          "end": 2508,
+          "quote_original": "ст. 43"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-043",
+      "statute": "? ст. 959",
+      "mentions": 2,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 919,
+          "end": 926,
+          "quote_original": "ст. 959"
+        },
+        {
+          "field": "text",
+          "start": 1021,
+          "end": 1028,
+          "quote_original": "ст. 959"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-044",
+      "statute": "? ст. 44",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 833,
+          "end": 839,
+          "quote_original": "ст. 44"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-045",
+      "statute": "? ст. 978",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2508,
+          "end": 2515,
+          "quote_original": "ст. 978"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-049",
+      "statute": "? ст. 103",
+      "mentions": 2,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1618,
+          "end": 1625,
+          "quote_original": "ст. 103"
+        },
+        {
+          "field": "text",
+          "start": 14984,
+          "end": 14991,
+          "quote_original": "ст. 103"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-049",
+      "statute": "? ст. 104",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1666,
+          "end": 1673,
+          "quote_original": "ст. 104"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-049",
+      "statute": "? ст. 736",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2030,
+          "end": 2037,
+          "quote_original": "ст. 736"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-049",
+      "statute": "? ст. 59",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4438,
+          "end": 4444,
+          "quote_original": "ст. 59"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-049",
+      "statute": "? ст. 63",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4774,
+          "end": 4780,
+          "quote_original": "ст. 63"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-049",
+      "statute": "? ст. 61",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4819,
+          "end": 4827,
+          "quote_original": "ст. 61, "
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-049",
+      "statute": "? ст. 35",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5451,
+          "end": 5457,
+          "quote_original": "ст. 35"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-049",
+      "statute": "? ст. 50",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 6859,
+          "end": 6865,
+          "quote_original": "ст. 50"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-049",
+      "statute": "? ст. 1300 п. 1",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8380,
+          "end": 8399,
+          "quote_original": "ст. 1300 п. 1, 1303"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-049",
+      "statute": "? ст. 1303",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8380,
+          "end": 8399,
+          "quote_original": "ст. 1300 п. 1, 1303"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-049",
+      "statute": "? ст. 42 п. 1",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8423,
+          "end": 8434,
+          "quote_original": "ст. 42 п. 1"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-049",
+      "statute": "? ст. 31 п. 3",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8756,
+          "end": 8771,
+          "quote_original": "ст. 28, 31 п. 3"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-049",
+      "statute": "? ст. 51",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 9287,
+          "end": 9296,
+          "quote_original": "ст. 51 и "
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-049",
+      "statute": "? ст. 1138",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 9499,
+          "end": 9510,
+          "quote_original": "ст. 1138 и "
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-049",
+      "statute": "? ст. 105",
+      "mentions": 2,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 10164,
+          "end": 10171,
+          "quote_original": "ст. 105"
+        },
+        {
+          "field": "text",
+          "start": 11213,
+          "end": 11220,
+          "quote_original": "ст. 105"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-049",
+      "statute": "? ст. 653–655",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 11173,
+          "end": 11184,
+          "quote_original": "ст. 653—655"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-049",
+      "statute": "? ст. 413",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 13536,
+          "end": 13543,
+          "quote_original": "ст. 413"
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-049",
+      "statute": "? ст. 93",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 16480,
+          "end": 16488,
+          "quote_original": "СТ. 93, "
+        }
+      ]
+    },
+    {
+      "decision_id": "1896-049",
+      "statute": "? ст. 21 п. 3",
+      "mentions": 1,
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 16990,
+          "end": 17001,
+          "quote_original": "ст. 21 п. 3"
+        }
+      ]
     }
   ],
   "previous_projection_sha256": {
@@ -56924,5 +56959,16 @@
       "remaining_unknown": 533,
       "previous_source_sha256": "3175f69ca417813841eb53fd533c319f9eda0061fedcd9b456fe1a20cb1391b8"
     }
-  ]
+  ],
+  "restoration_review": {
+    "date": "2026-10-19",
+    "scope": "1896: восстановление колонок и границ; сохранены только заново проверяемые буквальные основания",
+    "deferred": [
+      {
+        "decision": "1896-012",
+        "key": "? ст. 135",
+        "status": "reference no longer extracted"
+      }
+    ]
+  }
 }
