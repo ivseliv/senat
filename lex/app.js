@@ -24,7 +24,7 @@
   ];
 
   const S = {
-    meta: null, index: null, an: null, engine: null, texts: {}, stemCache: new Map(), reader: null,
+    meta: null, index: null, an: null, engine: null, texts: {}, stemCache: new Map(), reader: null, research: null,
     opts: { modern: false, gloss: true }, detailId: null,
     sense: { config: null, engines: [], promise: null, q: '', hits: [], shown: 10, token: 0, partial: false, suggested: 0 },
     map: { q: '', topic: '', token: 0 },
@@ -44,7 +44,7 @@
       if (k === 'class') el.className = v; else if (k === 'html') el.innerHTML = v;
       else if (k.startsWith('on')) el.addEventListener(k.slice(2), v); else el.setAttribute(k, k==='href' ? versionedLink(v) : v === true ? '' : v);
     }
-    for (const k of kids.flat()) if (k != null && k !== false) el.append(k.nodeType ? k : document.createTextNode(k));
+    for (const k of kids.flat(Infinity)) if (k != null && k !== false) el.append(k.nodeType ? k : document.createTextNode(k));
     return el;
   }
   function versionedLink(value) {
@@ -213,9 +213,10 @@
   }
   function route() {
     const { path, p } = readHash();
-    const requested = path.startsWith('d/') ? (['sense','participants','map','laws','analyses','analysis','guides','reader','quote'].includes(p.get('mode')) ? (p.get('mode') === 'analysis' ? 'analyses' : p.get('mode') === 'quote' ? 'reader' : p.get('mode')) : 'search') : (path.split('/')[0] || 'search');
-    const tab = ['search','sense','map','laws','participants','guides','analyses','reader','api','analytics','about'].includes(requested) ? requested : 'search';
-    for (const t of ['search','sense','map','laws','participants','guides','analyses','reader','api','analytics','about']) {
+    const requested = path.startsWith('d/') ? (['sense','participants','map','laws','analyses','analysis','guides','reader','quote','research'].includes(p.get('mode')) ? (p.get('mode') === 'analysis' ? 'analyses' : p.get('mode') === 'quote' ? 'reader' : p.get('mode')) : 'search') : (path.split('/')[0] || 'search');
+    const tab = ['research','search','sense','map','laws','participants','guides','analyses','reader','api','analytics','about'].includes(requested) ? requested : 'search';
+    if(tab!=='research')S.research.cancel();
+    for (const t of ['research','search','sense','map','laws','participants','guides','analyses','reader','api','analytics','about']) {
       $('#view-' + t).hidden = t !== tab;
       $('#tab-' + t).setAttribute('aria-current', t === tab ? 'page' : 'false');
     }
@@ -246,6 +247,9 @@
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
     } else if (tab === 'guides') {
       renderGuides();
+      if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
+    } else if (tab === 'research') {
+      S.research.render(p);
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
     } else if (tab === 'reader') {
       S.reader.render();
@@ -338,6 +342,7 @@
     const quote=ev=>sourceEvidence(ev.decision,ev,{mode:'guides',g:guide.id,compare:'1'});
     return h('section',{class:'guide-comparison','aria-label':comp.title},
       h('p',{class:'analysis-label'},comp.label),
+      h('p',{},h('a',{class:'btn ghost',href:'#/research?'+new URLSearchParams({q:comp.question,terms:guide.title,ids:comp.cases.map(c=>c.id).join(',')})},'Открыть исследование, сравнить и поделиться')),
       h('p',{class:'muted small'},'Полные тексты прочитаны по контексту. Каждое сопоставление связано с цитатами разных дел. Новая сплошная сверка изображений и независимая юридическая экспертиза не проводились.'),
       h('h3',{},'Что меняет ответ Сената'),
       ...comp.comparisons.map(c=>h('section',{class:'guide-contrast'},h('h4',{},c.heading),h('p',{},c.summary),...c.evidence.map(quote))),
@@ -578,13 +583,17 @@
       readHash().p.get('mode')==='guides'?loadTopicCatalog():null,
       readHash().p.get('mode')==='laws'&&readHash().p.has('law')?loadLaws():null]);
     if (S.detailId !== id || $('#detail').hidden) return;
-    const params = readHash().p, inSense = ['sense','map','passage','laws','analysis','guides','quote'].includes(params.get('mode'));
+    const params = readHash().p, inSense = ['sense','map','passage','laws','analysis','guides','quote','research'].includes(params.get('mode'));
     let target = null, senseTerms = [], partialMissing = [], quoteWarning = '';
     const analysis = analyses.decisions && analyses.decisions[id];
-    if (params.get('mode') === 'quote') {
+    if (params.get('mode') === 'quote' || params.get('mode') === 'research') {
+      if (params.get('mode') === 'research' && !params.has('at')) {
+        target = null;
+      } else {
       target = await S.reader.resolveQuote(d,text,params);
       if (target.warning) { quoteWarning=target.warning; target=null; }
       if (S.detailId !== id || $('#detail').hidden) return;
+      }
     } else if (params.get('mode') === 'laws' && params.has('law')) {
       const row = [...laws.citations, ...(laws.unresolved || []), ...(laws.historical_references || [])].find(r=>r.id===params.get('law') && r.decision_id===id);
       if (row) target = await lawDetailTarget(d, row, params);
@@ -618,7 +627,7 @@
       }
     }
     const revision=S.an.source_revisions?.[id];
-    if (revision && params.has('at') && params.get('mode')!=='quote' && params.get('v')!==revision.version) {
+    if (revision && params.has('at') && !['quote','research'].includes(params.get('mode')) && params.get('v')!==revision.version) {
       target=null; senseTerms=[];
       quoteWarning='Порядок колонок и границы этого решения восстановлены. Диапазон в старой ссылке не подтверждён; открыт полный текст. Найдите цитату заново через поиск или разбор решения.';
     }
@@ -773,7 +782,11 @@
     $('#gloss').addEventListener('change', e => { S.opts.gloss = e.target.checked; runSearch(); });
     $('#more').addEventListener('click', () => { S.shown += 20; renderResults(++runToken); });
     $('#reset').addEventListener('click', () => go('search'));
-    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const requested = p.get('mode'); const mode = requested === 'quote' ? 'reader' : requested === 'passage' ? 'sense' : (requested === 'analysis' ? 'analyses' : (['sense','participants','map','laws','guides','analyses','api','reader'].includes(requested) ? requested : 'search')); p.delete('at'); p.delete('end'); p.delete('mode'); p.delete('ref'); p.delete('law'); p.delete('field'); p.delete('sha'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
+    $('#detail-close').addEventListener('click', () => {
+      const { p } = readHash(); const requested = p.get('mode');
+      if (requested==='research') {location.hash='#/research'+(p.get('back')?'?'+new URLSearchParams({share:p.get('back')}):'');return;}
+      const mode = requested === 'quote' ? 'reader' : requested === 'passage' ? 'sense' : (requested === 'analysis' ? 'analyses' : (['sense','participants','map','laws','guides','analyses','api','reader'].includes(requested) ? requested : 'search')); p.delete('at'); p.delete('end'); p.delete('mode'); p.delete('ref'); p.delete('law'); p.delete('field'); p.delete('sha'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : '');
+    });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !document.querySelector('.scan-dialog[open]') && !$('#detail').hidden) $('#detail-close').click(); });
     $('#examples').append(...['недействительность сделки', 'возмещение убытков', 'исковая давность', 'договор аренды', 'банкротство', 'страховое возмещение', 'перевозка грузов', 'исполнитель завещания']
       .map(x => h('button', { class: 'chip', onclick: () => go('search', { q: x }) }, x)));
@@ -857,6 +870,7 @@
     $('#sense-status').replaceChildren(h('strong', {}, `${hits.length} ${plural(hits.length,'фрагмент','фрагмента','фрагментов')}`),
       h('span', {class:'muted'}, S.sense.concepts && S.sense.concepts.length ? ' · понятия: '+S.sense.concepts.map(c=>c.concept).join(', ') : ''),
       S.sense.partial ? h('span',{class:'search-partial-note'},' · частичные совпадения') : '');
+    if(hits.length)$('#sense-status').append(h('p',{},h('a',{class:'btn ghost',href:'#/research?'+new URLSearchParams({q:S.sense.q,terms:S.sense.q})},'Собрать справку и сравнить дела')));
     if (!hits.length) {
       box.append(h('p', {class:'empty'}, 'Подходящие фрагменты в доступных томах не найдены. Это не доказывает отсутствия такой практики: попробуйте другое понятие или обычный поиск.'));
       if (S.sense.suggested) box.append(h('p',{class:'small'},'Есть фрагменты, в которых совпадает всё, кроме одной части запроса.'),
@@ -1205,6 +1219,11 @@
       $('#corpus-summary').hidden = false;
       S.engine = L.makeEngine(index, meta.decisions);
       S.reader=window.SenatReaderUI.create({meta,textOf,loadJSON,loadScans,formatDate:fmtDate,setModern,isModern:()=>S.opts.modern,warningOf:d=>(S.an.source_warnings?.[d.id]?.messages||[]).join(' ')});
+      S.research=window.SenatResearchUI.create({meta,analytics:an,reader:S.reader,prepare:async()=>{
+        await loadSense();const [analyses,guides]=await Promise.all([loadAnalyses(),loadGuides()]);
+        return {engines:S.sense.engines,config:S.sense.config,context:window.SenatResearch.context({meta,analytics:an,analyses,guides,config:S.sense.config,
+          volumes:S.sense.engines.map(e=>e.data),textOf,loadScans})};
+      }});
       $('#loading').hidden = true; setupControls(); route(); addEventListener('hashchange', route);
     } catch (e) {
       $('#loading').textContent = 'Не удалось загрузить данные: ' + e.message + '. Откройте страницу через веб-сервер (например, `python3 -m http.server` в папке lex).';

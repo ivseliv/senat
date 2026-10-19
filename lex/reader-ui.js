@@ -160,7 +160,7 @@
     }
     function pageLabel(q) {return q.printed_pages.length?'Печатные страницы: '+q.printed_pages.join(', ')+'.':'Печатные страницы не определены.';}
     function localQuoteURL(id,q){return '#/d/'+id+'?'+new URLSearchParams({mode:'quote',field:q.field,at:q.start,end:q.end,sha:q.source_sha256});}
-    function compareStatus() {$('reader-compare').disabled=compareIds.size<2;$('reader-compare-count').textContent='Выбрано для сравнения: '+compareIds.size+' из 4.';}
+    function compareStatus() {$('reader-compare').disabled=compareIds.size<2;$('reader-research').disabled=compareIds.size<2;$('reader-compare-count').textContent='Выбрано для сравнения: '+compareIds.size+' из 4.';}
     async function compare() {
       const current=++token,s=store.getState(), selected=s.items.filter(i=>compareIds.has(i.id));if(selected.length<2)return;
       const box=$('reader-compare-panel');box.replaceChildren(h('p',{},'Загружаем решения для сравнения…'));
@@ -197,7 +197,7 @@
       })},'Сохранить цитату');
       quoteButton.addEventListener('pointerdown',event=>event.preventDefault());
       for(const source of [info.body,info.headnote].filter(Boolean))source.addEventListener('pointerdown',()=>{selected=null;quoteButton.disabled=true;});
-      const tools=h('section',{class:'reader-detail-tools'},h('div',{class:'reader-actions'},saveButton(info.d),quoteButton,h('a',{href:'#/reader'},'Открыть подборку')),selectionStatus,h('p',{class:'preliminary-note reader-persistence-hint',hidden:true,role:'status'}));
+      const tools=h('section',{class:'reader-detail-tools'},h('div',{class:'reader-actions'},saveButton(info.d),quoteButton,h('a',{href:'#/reader'},'Открыть подборку'),h('a',{href:'#/research?ids='+info.d.id},'Исследовать это дело')),selectionStatus,h('p',{class:'preliminary-note reader-persistence-hint',hidden:true,role:'status'}));
       if(adapter.isModern())tools.append(h('button',{class:'btn ghost reader-original',onclick:()=>adapter.setModern(false)},'Включить оригинал для цитирования'));
       if(info.target && !info.target.warning && Number.isSafeInteger(info.target.start))tools.append(h('button',{id:'reader-save-target',class:'btn ghost',onclick:guarded(async()=>{
         store.addQuote(await snapshot(info.d),await makeQuote(info.d,info.target.field||'text',info.target.start,info.target.end,info.text));selectionStatus.textContent='Фрагмент сохранён в оригинальной орфографии.';
@@ -225,6 +225,7 @@
     $('reader-title').addEventListener('input',event=>{try{store.setTitle(event.target.value);}catch(err){message(err.message,true);}});
     $('reader-note').addEventListener('input',event=>{try{store.setNote(event.target.value);}catch(err){message(err.message,true);}});
     $('reader-compare').addEventListener('click',guarded(compare));
+    $('reader-research').addEventListener('click',()=>{location.hash='#/research?'+new URLSearchParams({ids:[...compareIds].join(',')});});
     for(const type of ['json','markdown','html','csv'])$('reader-export-'+type).addEventListener('click',()=>download(type));
     $('reader-import').addEventListener('change',guarded(async event=>{const file=event.target.files[0];event.target.value='';await importFile(file);}));
     $('reader-recover').addEventListener('click',()=>{if(confirm('Перезаписать повреждённое хранилище текущими доступными записями? Сначала сохраните JSON-копию.')){store.recoverStorage();status();}});
