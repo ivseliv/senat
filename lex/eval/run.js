@@ -11,6 +11,8 @@ function option(name) {
  return args[i+1];
 }
 const suiteFile=option('--suite')||'eval/queries.json';
+const partial=args.includes('--partial');
+const outputDir=option('--output-dir') ? path.resolve(ROOT,option('--output-dir')) : __dirname;
 const config=read('data/concepts.json'), suite=read(suiteFile);
 const selectedYears=option('--years')?.split(',').map(Number);
 if(selectedYears?.some(year=>!config.volumes.some(v=>v.year===year)))throw Error('Неизвестный том в --years');
@@ -31,12 +33,13 @@ const methods=['baseline','glossary','enriched','hybrid'];
 function relevant(p,g) {return p.decision===g.decision && p.start<=g.start && p.end>=g.end;}
 const rows=[];
 for(const q of queries) for(const method of methods) {
-  const hits=engines.flatMap(e=>e.search(q.query,method).hits).sort((a,b)=>b.score-a.score||a.passage.id.localeCompare(b.passage.id));
+  const result=partial ? C.searchAll(engines,q.query,method,{partial:true}) : {hits:engines.flatMap(e=>e.search(q.query,method).hits).sort((a,b)=>b.score-a.score||a.passage.id.localeCompare(b.passage.id)),partial:false};
+  const hits=result.hits;
   const recall=k=>q.expected.length ? q.expected.filter(g=>hits.slice(0,k).some(h=>relevant(h.passage,g))).length/q.expected.length : null;
   const rank=hits.findIndex(h=>q.expected.some(g=>relevant(h.passage,g)));
   rows.push({id:q.id,query:q.query,split:q.split,method,recall5:recall(5),recall10:recall(10),mrr:q.expected.length?(rank<0?0:1/(rank+1)):null,
-    negativeFalsePositive:q.expected.length?null:hits.length>0,results:hits.length,
-    top10:hits.slice(0,10).map(h=>({passage:h.passage.id,decision:h.passage.decision,pages:h.passage.pages,score:Number(h.score.toFixed(5)),relevant:q.expected.some(g=>relevant(h.passage,g))}))});
+    negativeFalsePositive:q.expected.length?null:hits.length>0,results:hits.length,...(partial ? {partial:result.partial} : {}),
+    top10:hits.slice(0,10).map(h=>({passage:h.passage.id,decision:h.passage.decision,pages:h.passage.pages,score:Number(h.score.toFixed(5)),relevant:q.expected.some(g=>relevant(h.passage,g)),...(partial ? {missing:h.missing} : {})}))});
 }
 const average=(rs,key)=>rs.length?rs.reduce((n,r)=>n+r[key],0)/rs.length:0;
 const aggregates=[];
@@ -48,22 +51,26 @@ for(const group of ['dev','test','positive','negative']) for(const method of met
     recall10:positive.length?average(positive,'recall10'):null,mrr:positive.length?average(positive,'mrr'):null,
     falsePositives:negative.length?negative.filter(r=>r.negativeFalsePositive).length:null});
 }
-const result={queriesSha256:crypto.createHash('sha256').update(fs.readFileSync(path.join(ROOT,suiteFile))).digest('hex'),
-  protocol:suite.protocol,volumes:scope.map(v=>v.year),split,aggregates,rows};
+const suiteLabel=path.basename(suiteFile);
+const result={suite:suiteLabel,queriesSha256:crypto.createHash('sha256').update(fs.readFileSync(path.join(ROOT,suiteFile))).digest('hex'),
+  protocol:suite.protocol,volumes:scope.map(v=>v.year),split,...(partial ? {matching:'Полное совпадение по всему корпусу; при его отсутствии — явно запрошенное частичное совпадение без одной необязательной группы.'} : {}),aggregates,rows};
 let filename=suiteFile==='eval/queries.json'?'metrics':path.basename(suiteFile,'.json').replace(/^queries/,'metrics');
 if(split!=='all')filename+='-'+split;
 if(selectedYears)filename+='-'+scope.map(v=>v.year).join('-');
-fs.writeFileSync(path.join(__dirname,filename+'.json'),JSON.stringify(result,null,2)+'\n');
+if(partial)filename+='-partial';
+fs.mkdirSync(outputDir,{recursive:true});
+fs.writeFileSync(path.join(outputDir,filename+'.json'),JSON.stringify(result,null,2)+'\n');
 const f=n=>n===null?'—':n.toFixed(3);
 let md='# Сравнение понятийного поиска\n\n'+suite.protocol+'\n\n'+
 'Поиск по томам: '+scope.map(v=>v.year).join(', ')+'. Эталоны из томов: '+[...new Set(suite.queries.flatMap(q=>q.expected.map(g=>g.decision.split('-')[0])))].join(', ')+'.\n\n'+
+(partial ? result.matching+' Это отдельный режим по кнопке, он не заменяет оценку поиска по всему запросу.\n\n' : '')+
 'Релевантным считается пассаж, содержащий целиком размеченную цитату рассуждения. Recall измеряется по эталонным цитатам, MRR — по первому такому пассажу во всей выдаче. Отрицательные запросы исключены из средних recall и MRR.\n\n'+
 '| Часть | Подход | Запросов | Recall@5 | Recall@10 | MRR | Ложные ответы |\n|---|---|---:|---:|---:|---:|---:|\n';
 for(const a of aggregates) md+=`| ${a.split} | ${a.method} | ${a.n} | ${f(a.recall5)} | ${f(a.recall10)} | ${f(a.mrr)} | ${a.falsePositives===null?'—':a.falsePositives} |\n`;
 md+='\n| Запрос | Часть | Подход | Recall@5 | Recall@10 | MRR |\n|---|---|---|---:|---:|---:|\n';
 for(const r of rows) md+=`| ${r.query} | ${r.split} | ${r.method} | ${f(r.recall5)} | ${f(r.recall10)} | ${f(r.mrr)} |\n`;
-md+='\nКонтрольная сумма queries.json: `'+result.queriesSha256+'`.\n';
-fs.writeFileSync(path.join(__dirname,filename+'.md'),md);
+md+='\nКонтрольная сумма '+suiteLabel+': `'+result.queriesSha256+'`.\n';
+fs.writeFileSync(path.join(outputDir,filename+'.md'),md);
 console.table(aggregates);
 if(args.includes('--fail-on-regression')) {
  const a=aggregates.find(a=>a.split==='positive'&&a.method===config.method);

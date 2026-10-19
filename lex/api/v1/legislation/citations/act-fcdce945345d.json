@@ -1,0 +1,2909 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:2433ea245c39e57a199c959245d64c887e26d851eed1b4249f20b59c5405b965",
+  "resource": "legislation-citations",
+  "scope": {
+    "code": "УПШ",
+    "id": "act-fcdce945345d"
+  },
+  "count": 32,
+  "items": [
+    {
+      "id": "1904-046:УПШ:152:text:1587",
+      "statute": "УПШ ст. 152",
+      "code": "УПШ",
+      "article": "ст. 152",
+      "decision_id": "1904-046",
+      "year": 1904,
+      "decision_number": 46,
+      "field": "text",
+      "start": 1587,
+      "end": 1594,
+      "quote_original": "ст. 152",
+      "context_original": "лѣ, и что поэтому надлежитъ кассаціонную жалобу его оставить безъ послѣдствій, по слѣдующимъ основаніямъ: По общему правилу, изложенному въ ст. 152 уст. о пошл. изд. 1893 г. (ст. 201 изд. 1903 г.), имущества, переходящія отъ одного лица къ другому безмездными способами, подлежатъ оплатѣ",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "e2da3924d57815739de24a5314467f9ca8e8088b3a389dab98fe1f0b0266fdeb",
+      "headnote_sha256": "f28c3afbe066e61ec55dd2a3cc8421fe4074d3c15e9db2ee9f85725180498b42",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-046",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-046?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+152&law=1904-046%3A%D0%A3%D0%9F%D0%A8%3A152%3Atext%3A1587&at=1587&end=1594",
+      "source_warning": null,
+      "passage_id": "1904-046:0-1843",
+      "sources": [
+        {
+          "page": 130,
+          "page_method": "header",
+          "file": "p0066_L.txt",
+          "start": 1587,
+          "end": 1594
+        }
+      ],
+      "printed_pages": [
+        130
+      ],
+      "scans": [
+        {
+          "file": "p0066_L.txt",
+          "page": 130,
+          "full": "scans/1904/pages/p0066_L.webp",
+          "width": 1100,
+          "height": 1646,
+          "ocr_sha256": "29b72f29cea3b81a34d72de60e2877f89cd7e37c61ff2ff649a8f407e0411500",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 1587,
+          "end": 1643,
+          "quote_original": "ст. 152 уст. о пошл. изд. 1893 г. (ст. 201 изд. 1903 г.)"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1587,
+          "end": 1594,
+          "quote_original": "ст. 152",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 1587,
+              "end": 1643,
+              "quote_original": "ст. 152 уст. о пошл. изд. 1893 г. (ст. 201 изд. 1903 г.)"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 4769,
+          "end": 4778,
+          "quote_original": "ст. 152 и",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 1587,
+              "end": 1643,
+              "quote_original": "ст. 152 уст. о пошл. изд. 1893 г. (ст. 201 изд. 1903 г.)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-046:УПШ:153:text:822",
+      "statute": "УПШ ст. 153",
+      "code": "УПШ",
+      "article": "ст. 153",
+      "decision_id": "1904-046",
+      "year": 1904,
+      "decision_number": 46,
+      "field": "text",
+      "start": 822,
+      "end": 829,
+      "quote_original": "ст. 153",
+      "context_original": "сходъ кассаціонной жалобы Маркова, который всѣми доводами, изложенными въ его жалобѣ, стремится доказать, что судебная палата нарушила п. 3 ст. 153 уст. о пошл. изд. 1893 г., постановивъ о взысканіи 1600 руб. наслѣдственныхъ пошлинъ съ капиталовъ, завѣщанныхъ въ распоряженіе Касимовской",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "e2da3924d57815739de24a5314467f9ca8e8088b3a389dab98fe1f0b0266fdeb",
+      "headnote_sha256": "f28c3afbe066e61ec55dd2a3cc8421fe4074d3c15e9db2ee9f85725180498b42",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-046",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-046?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+153&law=1904-046%3A%D0%A3%D0%9F%D0%A8%3A153%3Atext%3A822&at=822&end=829",
+      "source_warning": null,
+      "passage_id": "1904-046:0-1843",
+      "sources": [
+        {
+          "page": 130,
+          "page_method": "header",
+          "file": "p0066_L.txt",
+          "start": 822,
+          "end": 829
+        }
+      ],
+      "printed_pages": [
+        130
+      ],
+      "scans": [
+        {
+          "file": "p0066_L.txt",
+          "page": 130,
+          "full": "scans/1904/pages/p0066_L.webp",
+          "width": 1100,
+          "height": 1646,
+          "ocr_sha256": "29b72f29cea3b81a34d72de60e2877f89cd7e37c61ff2ff649a8f407e0411500",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 817,
+          "end": 855,
+          "quote_original": "п. 3 ст. 153 уст. о пошл. изд. 1893 г."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 822,
+          "end": 829,
+          "quote_original": "ст. 153",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 817,
+              "end": 855,
+              "quote_original": "п. 3 ст. 153 уст. о пошл. изд. 1893 г."
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 1799,
+          "end": 1808,
+          "quote_original": "ст. 153 и",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 1553,
+              "end": 1842,
+              "quote_original": "По общему правилу, изложенному въ ст. 152 уст. о пошл. изд. 1893 г. (ст. 201 изд. 1903 г.), имущества, переходящія отъ одного лица къ другому безмездными способами, подлежатъ оплатѣ пошлиною; исключенія же изъ этого общаго правила перечислены въ ст. 153 изд. 1893 г. (ст. 202 изд. 1903 г.)"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 1862,
+          "end": 1869,
+          "quote_original": "ст. 153",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 1844,
+              "end": 1893,
+              "quote_original": "На основаніи п. 3 ст. 153 уст. пошл. изд. 1893 г."
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 2627,
+          "end": 2634,
+          "quote_original": "ст. 153",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 2622,
+              "end": 2648,
+              "quote_original": "п. 3 ст. 153 уст. о пошл.,"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 3777,
+          "end": 3786,
+          "quote_original": "ст. 153 и",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 2622,
+              "end": 2648,
+              "quote_original": "п. 3 ст. 153 уст. о пошл.,"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 4067,
+          "end": 4074,
+          "quote_original": "ст. 153",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 2622,
+              "end": 2648,
+              "quote_original": "п. 3 ст. 153 уст. о пошл.,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-017:УПШ:154:text:2512",
+      "statute": "УПШ ст. 154",
+      "code": "УПШ",
+      "article": "ст. 154",
+      "decision_id": "1896-017",
+      "year": 1896,
+      "decision_number": 17,
+      "field": "text",
+      "start": 2512,
+      "end": 2519,
+      "quote_original": "ст. 154",
+      "context_original": "ослѣднихъ, а скорѣе разстрой ство и замѣшательство въ ихъ дѣлахъ; въ виду сего, освобожденіе ближайшихъ родственниковъ, упомянутыхъ въ п. 1 ст. 154 уст. о пошл., отъ уплаты на лога представляется вполнѣ справедли вымъ. По ст. 72 основ. госуд. зак. (т. 1 ч. 1 св. зак., изд. 1892 г.), зак",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "7b3cf87d7b47ed0106eb57a78f5fc998dcd94c0564f58163df3db55f5d70e4ed",
+      "headnote_sha256": "ea949590af200b81f7154c63c8e6c8d11f121e19f9b511d07eb28ce84393a7ea",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-017",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-017?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+154&law=1896-017%3A%D0%A3%D0%9F%D0%A8%3A154%3Atext%3A2512&at=2512&end=2519&v=1896-restored-20261019",
+      "source_warning": null,
+      "passage_id": "1896-017:1309-2881",
+      "sources": [
+        {
+          "page": 736,
+          "page_method": "header",
+          "file": "p0029.txt",
+          "start": 2512,
+          "end": 2519
+        }
+      ],
+      "printed_pages": [
+        736
+      ],
+      "scans": [
+        {
+          "file": "p0029.txt",
+          "page": 736,
+          "full": "scans/1896/pages/p0029-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1675,
+          "ocr_sha256": "e0bf462c6e78dc77b971c070ded77188d6588b8756882311fe5ea92c5570464b",
+          "pdf_page": 29,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2512,
+          "end": 2532,
+          "quote_original": "ст. 154 уст. о пошл.",
+          "act_code": "УПШ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2512,
+          "end": 2519,
+          "quote_original": "ст. 154",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2512,
+              "end": 2532,
+              "quote_original": "ст. 154 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 3081,
+          "end": 3088,
+          "quote_original": "ст. 154",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2512,
+              "end": 2532,
+              "quote_original": "ст. 154 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-110:УПШ:157:text:400",
+      "statute": "УПШ ст. 157",
+      "code": "УПШ",
+      "article": "ст. 157",
+      "decision_id": "1905-110",
+      "year": 1905,
+      "decision_number": 110,
+      "field": "text",
+      "start": 400,
+      "end": 407,
+      "quote_original": "ст. 157",
+      "context_original": "кою единовѣрческою церковью 2800 р., и что никакихъ документовъ, какъ доказательствъ долга, нѣтъ, окружнымъ судомъ, согласно 1 п. 154 ст. и ст. 157 уст. о пошл., было постановлено: взыскать съ наслѣдниковъ при полученіи удовлетворенія по долговымъ претензіямъ завѣщателя наслѣдственную п",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "c74cb52dfd50a790795389e2bfb53a16036e8300791c060b02f7cdfdaafc7aa5",
+      "headnote_sha256": "b3fc5398daee4cabde979f4fbf9138d6b1f1b0c2b3f8c338d876d6a749888c12",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-110",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-110?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+157&law=1905-110%3A%D0%A3%D0%9F%D0%A8%3A157%3Atext%3A400&at=400&end=407",
+      "source_warning": null,
+      "passage_id": "1905-110:0-1924",
+      "sources": [
+        {
+          "page": 301,
+          "page_method": "header",
+          "file": "p0151_R.txt",
+          "start": 400,
+          "end": 407
+        }
+      ],
+      "printed_pages": [
+        301
+      ],
+      "scans": [
+        {
+          "file": "p0151_R.txt",
+          "page": 301,
+          "full": "scans/1905/pages/p0151_R.webp",
+          "width": 1100,
+          "height": 1497,
+          "ocr_sha256": "e650b29903217500483f17f0e58898eb86701c0158daa50624ad583aad843dd1",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 0,
+          "end": 809,
+          "quote_original": "При утвержденіи къ исполненію домашняго духовнаго завѣщанія Петра Аксенова, въ виду заявленія наслѣдниковъ о томъ, что переходящее по сему акту имущество заключается только въ должныхъ завѣщателю за произведенныя имъ работы купцомъ Силуановымъ 630 руб. и Троицкою единовѣрческою церковью 2800 р., и что никакихъ документовъ, какъ доказательствъ долга, нѣтъ, окружнымъ судомъ, согласно 1 п. 154 ст. и ст. 157 уст. о пошл., было постановлено: взыскать съ наслѣдниковъ при полученіи удовлетворенія по долговымъ претензіямъ завѣщателя наслѣдственную пошлину въ размѣрѣ 1% съ суммы платежа. Принесенную на это опредѣленіе Московскою казенною палатою частную жалобу судебная палата оставила безъ последствій, находя домогательство жалобщика объ исчисленіи съ имущества умершаго Аксенова къ немедленному взысканію 34"
+        },
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 2683,
+          "end": 2739,
+          "quote_original": "Ст. 157 уст. о пошл. изд. 1893 г. (ст. 207 изд. 1903 г.)",
+          "role": "act_identity"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 400,
+          "end": 407,
+          "quote_original": "ст. 157",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 0,
+              "end": 809,
+              "quote_original": "При утвержденіи къ исполненію домашняго духовнаго завѣщанія Петра Аксенова, въ виду заявленія наслѣдниковъ о томъ, что переходящее по сему акту имущество заключается только въ должныхъ завѣщателю за произведенныя имъ работы купцомъ Силуановымъ 630 руб. и Троицкою единовѣрческою церковью 2800 р., и что никакихъ документовъ, какъ доказательствъ долга, нѣтъ, окружнымъ судомъ, согласно 1 п. 154 ст. и ст. 157 уст. о пошл., было постановлено: взыскать съ наслѣдниковъ при полученіи удовлетворенія по долговымъ претензіямъ завѣщателя наслѣдственную пошлину въ размѣрѣ 1% съ суммы платежа. Принесенную на это опредѣленіе Московскою казенною палатою частную жалобу судебная палата оставила безъ последствій, находя домогательство жалобщика объ исчисленіи съ имущества умершаго Аксенова къ немедленному взысканію 34"
+            },
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 2683,
+              "end": 2739,
+              "quote_original": "Ст. 157 уст. о пошл. изд. 1893 г. (ст. 207 изд. 1903 г.)",
+              "role": "act_identity"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 1409,
+          "end": 1422,
+          "quote_original": "ст. 157 и 166",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 1000,
+              "end": 1832,
+              "quote_original": "существованіе въ составѣ наслѣдства долговаго имущества, причитающаяся за переходъ этой части имущества пошлина должна была быть взыскиваема немедленно, независимо отъ того, сколько наслѣдниками будетъ въ дѣйствительности получено изъ этого имущества съ должниковъ умершаго наслѣдодателя. Въ кассаціонной жалобѣ управляющій Московскою казенною палатою проситъ объ отмѣнѣ этого опредѣленія палаты по нарушенію ст. 157 и 166 т. V уст. о пошл.\n\nВыслушавъ заключеніе исп. обяз. товарища оберъ-прокурора, Правительствующій Сенатъ находитъ, что въ настоящемъ дѣлѣ разрѣшенію его подлежитъ слѣдующій вопросъ: въ правѣ-ли судъ потребовать немедленной уплаты наслѣдственной пошлины съ тѣхъ входящихъ въ составъ наслѣдства долговыхъ претензій, поступленіе пошлины по которымъ, при полученіи слѣдующихъ по нимъ суммъ, не можетъ быть обеспечено"
+            },
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 2683,
+              "end": 2739,
+              "quote_original": "Ст. 157 уст. о пошл. изд. 1893 г. (ст. 207 изд. 1903 г.)",
+              "role": "act_identity"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 2683,
+          "end": 2690,
+          "quote_original": "Ст. 157",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 2281,
+              "end": 3092,
+              "quote_original": "такому долговому имуществу наслѣдодателя, на которое, по заявленію о составѣ наслѣдства, нѣтъ никакихъ долговыхъ документовъ, на коихъ могла бы быть сдѣлана обезпечительная надпись, напримѣръ, какъ въ данномъ случаѣ, когда долговое имущество наслѣдодателя заключается въ правѣ требованія платежа за произведенныя, очевидно, по словесному договору работы. Такое мнѣніе просителя безусловно неправильно. Ст. 157 уст. о пошл. изд. 1893 г. (ст. 207 изд. 1903 г.) гласитъ: «въ составъ цѣны имущества, подлежащаго оплатѣ пошлиной, входитъ стоимость, какъ всего наличнаго, такъ равно долговыхъ и спорныхъ имуществъ. Но съ долговыхъ претензій и спорныхъ имуществъ пошлина взыскивается при полученіи наслѣдникомъ или пріобрѣтателемъ слѣдующихъ по симъ претензіямъ суммъ или состоявшаго въ спорѣ имущества. При этомъ, для"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-074:УПШ:161:text:4633",
+      "statute": "УПШ ст. 161",
+      "code": "УПШ",
+      "article": "ст. 161",
+      "decision_id": "1904-074",
+      "year": 1904,
+      "decision_number": 74,
+      "field": "text",
+      "start": 4633,
+      "end": 4640,
+      "quote_original": "ст. 161",
+      "context_original": "бжалованію казенными палатами такихъ судебныхъ опредѣленій по дѣламъ о наслѣдственныхъ пошлинахъ, копіи съ которыхъ, въ силу ст. 7 прил. къ ст. 161 уст. о пошл. изд. 1893 г. (нынѣ по изд. 1903 г. прил. къ ст. 212), подлежатъ обязательному доставленію судомъ въ мѣстную казенную палату, а",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "14e07b037e610be71209d8e2da7da968c11258e86f46f6b68bb92351a93d045b",
+      "headnote_sha256": "06683cd6cc910b900a7b568c37eef26a2310b220cb1f1c954a6f394d67597a96",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-074",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-074?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+161&law=1904-074%3A%D0%A3%D0%9F%D0%A8%3A161%3Atext%3A4633&at=4633&end=4640",
+      "source_warning": null,
+      "passage_id": "1904-074:4137-6076",
+      "sources": [
+        {
+          "page": 209,
+          "page_method": "header",
+          "file": "p0105_R.txt",
+          "start": 4633,
+          "end": 4640
+        }
+      ],
+      "printed_pages": [
+        209
+      ],
+      "scans": [
+        {
+          "file": "p0105_R.txt",
+          "page": 209,
+          "full": "scans/1904/pages/p0105_R.webp",
+          "width": 1100,
+          "height": 1599,
+          "ocr_sha256": "b98391ebeb26738477764048fd7e226b3002762bc27afeaa6e069c28d9accf81",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 4633,
+          "end": 4653,
+          "quote_original": "ст. 161 уст. о пошл.",
+          "act_code": "УПШ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 278,
+          "end": 285,
+          "quote_original": "ст. 161",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "field": "text",
+              "start": 4633,
+              "end": 4653,
+              "quote_original": "ст. 161 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 4633,
+          "end": 4640,
+          "quote_original": "ст. 161",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4633,
+              "end": 4653,
+              "quote_original": "ст. 161 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-004:УПШ:161:text:1024",
+      "statute": "УПШ ст. 161",
+      "code": "УПШ",
+      "article": "ст. 161",
+      "decision_id": "1905-004",
+      "year": 1905,
+      "decision_number": 4,
+      "field": "text",
+      "start": 1024,
+      "end": 1031,
+      "quote_original": "ст. 161",
+      "context_original": "асилась и судебная палата. Принесенною по настоящему дѣлу кассаціонною жалобою казенной палаты возбуждается вопросъ: правило 4 ст. прил. къ ст. 161 уст. о пошл. изд. 1893 г. о взысканіи пени за пропущеніе установленнаго для подачи заявленій о составѣ наслѣдства трехмѣсячнаго срока со дн",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b3dcd84d75c1b48d97d65b26065d32cba1d462a6e3d57b2c16c170fa1f35a731",
+      "headnote_sha256": "3989c808e6c2c3c482a9be49293024a3a59fbf420b63525c293ada89dcdcc0d5",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-004",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-004?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+161&law=1905-004%3A%D0%A3%D0%9F%D0%A8%3A161%3Atext%3A1024&at=1024&end=1031",
+      "source_warning": null,
+      "passage_id": "1905-004:0-1927",
+      "sources": [
+        {
+          "page": 9,
+          "page_method": "header",
+          "file": "p0005_R.txt",
+          "start": 1024,
+          "end": 1031
+        }
+      ],
+      "printed_pages": [
+        9
+      ],
+      "scans": [
+        {
+          "file": "p0005_R.txt",
+          "page": 9,
+          "full": "scans/1905/pages/p0005_R.webp",
+          "width": 1100,
+          "height": 1524,
+          "ocr_sha256": "f264be668ba8f6b8a872a41035663983d9cdcbb41eaa6702777a20bbacd335f0",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1024,
+          "end": 1044,
+          "quote_original": "ст. 161 уст. о пошл.",
+          "act_code": "УПШ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1024,
+          "end": 1031,
+          "quote_original": "ст. 161",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1024,
+              "end": 1044,
+              "quote_original": "ст. 161 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 1801,
+          "end": 1808,
+          "quote_original": "ст. 161",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1801,
+              "end": 1821,
+              "quote_original": "ст. 161 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-054:УПШ:161:text:3455",
+      "statute": "УПШ ст. 161",
+      "code": "УПШ",
+      "article": "ст. 161",
+      "decision_id": "1905-054",
+      "year": 1905,
+      "decision_number": 54,
+      "field": "text",
+      "start": 3455,
+      "end": 3462,
+      "quote_original": "ст. 161",
+      "context_original": "опредѣленія окружнаго суда, но не можетъ вести къ расширенію правъ, предоставленныхъ казеннымъ палатамъ вышеприведенною 8 статьею прил. къ ст. 161 уст. пошл. Составленіе казенною палатою расчета дополнительной пошлины не можетъ быть оправдываемо и тѣмъ указываемымъ просителемъ обстояте",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "e93f546851192bcf0479a5dd6c2837ecc4900583fbc7ef22f10c9d09ea676621",
+      "headnote_sha256": "9b07a42a0ba8ea13541ac96da5dd4102fa22cad415ca13c05595e4382a5f405d",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-054",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-054?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+161&law=1905-054%3A%D0%A3%D0%9F%D0%A8%3A161%3Atext%3A3455&at=3455&end=3462",
+      "source_warning": null,
+      "passage_id": "1905-054:2820-4145",
+      "sources": [
+        {
+          "page": 147,
+          "page_method": "header",
+          "file": "p0074_R.txt",
+          "start": 3455,
+          "end": 3462
+        }
+      ],
+      "printed_pages": [
+        147
+      ],
+      "scans": [
+        {
+          "file": "p0074_R.txt",
+          "page": 147,
+          "full": "scans/1905/pages/p0074_R.webp",
+          "width": 1100,
+          "height": 1549,
+          "ocr_sha256": "c96eb5e77a106f77f002d4e0f48b91810afecc439b8f5e6de2f223dcfde8d874",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 3436,
+          "end": 3473,
+          "quote_original": "8 статьею прил. къ ст. 161 уст. пошл."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3455,
+          "end": 3462,
+          "quote_original": "ст. 161",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 3436,
+              "end": 3473,
+              "quote_original": "8 статьею прил. къ ст. 161 уст. пошл."
+            }
+          ],
+          "attribution_note": "Установлен акт и якорь приложения; основная статья 161 не подтверждается как самостоятельная обсуждаемая норма. Здесь речь о статье 8 приложения к ней. В цитате речь о статье 8 приложения к статье 161 Устава о пошлинах. Установлен акт, а вложенная статья не заменена основной статьёй 161."
+        }
+      ],
+      "attribution_note": "Установлен акт и якорь приложения; основная статья 161 не подтверждается как самостоятельная обсуждаемая норма. Здесь речь о статье 8 приложения к ней. В цитате речь о статье 8 приложения к статье 161 Устава о пошлинах. Установлен акт, а вложенная статья не заменена основной статьёй 161."
+    },
+    {
+      "id": "1896-036:УПШ:162:text:3562",
+      "statute": "УПШ ст. 162",
+      "code": "УПШ",
+      "article": "ст. 162",
+      "decision_id": "1896-036",
+      "year": 1896,
+      "decision_number": 36,
+      "field": "text",
+      "start": 3562,
+      "end": 3569,
+      "quote_original": "ст. 162",
+      "context_original": "ихъ уменьшается на нѣкогггрое время только доходность имущества, но не измѣняется его стоимость, пред ставляется неправильнымъ, потому что ст. 162 уст. о пошл. не дѣлаетъ раз личія между долгами, которые могутъ .'быть выплачены изъ доходовъ съ имѣ- нія, и тѣми, которые выпла иваются из",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "18ce04f0b533a51dd96351c730e1417e44ac9d044cc8ce7910368628fb9f7ff3",
+      "headnote_sha256": "0e56130a667cc2ffaa86c695b982dcf9efdaf2dc29daa110f52c7097cdc8aae0",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-036",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-036?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+162&law=1896-036%3A%D0%A3%D0%9F%D0%A8%3A162%3Atext%3A3562&at=3562&end=3569&v=1896-restored-20261019",
+      "source_warning": null,
+      "passage_id": "1896-036:2888-4569",
+      "sources": [
+        {
+          "page": 775,
+          "page_method": "neighbors",
+          "file": "p0068.txt",
+          "start": 3562,
+          "end": 3569
+        }
+      ],
+      "printed_pages": [
+        775
+      ],
+      "scans": [
+        {
+          "file": "p0068.txt",
+          "page": 775,
+          "full": "scans/1896/pages/p0068-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1676,
+          "ocr_sha256": "05f05e0cc93f7f383ba1e0337951fa6f6acb91ccde8a6707ef120a8397d98ba8",
+          "pdf_page": 68,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3562,
+          "end": 3582,
+          "quote_original": "ст. 162 уст. о пошл.",
+          "act_code": "УПШ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3562,
+          "end": 3569,
+          "quote_original": "ст. 162",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3562,
+              "end": 3582,
+              "quote_original": "ст. 162 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-110:УПШ:164:text:3338",
+      "statute": "УПШ ст. 164",
+      "code": "УПШ",
+      "article": "ст. 164",
+      "decision_id": "1905-110",
+      "year": 1905,
+      "decision_number": 110,
+      "field": "text",
+      "start": 3338,
+      "end": 3345,
+      "quote_original": "ст. 164",
+      "context_original": "азомъ, статья эта совершенно ясно и точно опредѣляетъ время взысканія пошлины съ долговыхъ претензій и спорныхъ имуществъ точно также, какъ ст. 164 (ст. 215 изд. 1903 г.) опредѣляетъ время взысканія пошлинъ съ имущества наличнаго. Постановленіе этой 157 ст. вполнѣ самостоятельно и ничег",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "c74cb52dfd50a790795389e2bfb53a16036e8300791c060b02f7cdfdaafc7aa5",
+      "headnote_sha256": "b3fc5398daee4cabde979f4fbf9138d6b1f1b0c2b3f8c338d876d6a749888c12",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-110",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-110?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+164&law=1905-110%3A%D0%A3%D0%9F%D0%A8%3A164%3Atext%3A3338&at=3338&end=3345",
+      "source_warning": null,
+      "passage_id": "1905-110:1650-3428",
+      "sources": [
+        {
+          "page": 302,
+          "page_method": "header",
+          "file": "p0152_L.txt",
+          "start": 3338,
+          "end": 3345
+        }
+      ],
+      "printed_pages": [
+        302
+      ],
+      "scans": [
+        {
+          "file": "p0152_L.txt",
+          "page": 302,
+          "full": "scans/1905/pages/p0152_L.webp",
+          "width": 1100,
+          "height": 1540,
+          "ocr_sha256": "c41fdd501c50344db286abfb466534950cdbc3e6d062f423794f93beb2750974",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 2683,
+          "end": 3523,
+          "quote_original": "Ст. 157 уст. о пошл. изд. 1893 г. (ст. 207 изд. 1903 г.) гласитъ: «въ составъ цѣны имущества, подлежащаго оплатѣ пошлиной, входитъ стоимость, какъ всего наличнаго, такъ равно долговыхъ и спорныхъ имуществъ. Но съ долговыхъ претензій и спорныхъ имуществъ пошлина взыскивается при полученіи наслѣдникомъ или пріобрѣтателемъ слѣдующихъ по симъ претензіямъ суммъ или состоявшаго въ спорѣ имущества. При этомъ, для обезпеченія поступленія пошлины, на долговыхъ документахъ дѣлается надлежащая о семъ надпись». Такимъ образомъ, статья эта совершенно ясно и точно опредѣляетъ время взысканія пошлины съ долговыхъ претензій и спорныхъ имуществъ точно также, какъ ст. 164 (ст. 215 изд. 1903 г.) опредѣляетъ время взысканія пошлинъ съ имущества наличнаго. Постановленіе этой 157 ст. вполнѣ самостоятельно и ничего общаго съ ст. 165 (216 изд. 1903 г.)"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3338,
+          "end": 3345,
+          "quote_original": "ст. 164",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 2683,
+              "end": 3523,
+              "quote_original": "Ст. 157 уст. о пошл. изд. 1893 г. (ст. 207 изд. 1903 г.) гласитъ: «въ составъ цѣны имущества, подлежащаго оплатѣ пошлиной, входитъ стоимость, какъ всего наличнаго, такъ равно долговыхъ и спорныхъ имуществъ. Но съ долговыхъ претензій и спорныхъ имуществъ пошлина взыскивается при полученіи наслѣдникомъ или пріобрѣтателемъ слѣдующихъ по симъ претензіямъ суммъ или состоявшаго въ спорѣ имущества. При этомъ, для обезпеченія поступленія пошлины, на долговыхъ документахъ дѣлается надлежащая о семъ надпись». Такимъ образомъ, статья эта совершенно ясно и точно опредѣляетъ время взысканія пошлины съ долговыхъ претензій и спорныхъ имуществъ точно также, какъ ст. 164 (ст. 215 изд. 1903 г.) опредѣляетъ время взысканія пошлинъ съ имущества наличнаго. Постановленіе этой 157 ст. вполнѣ самостоятельно и ничего общаго съ ст. 165 (216 изд. 1903 г.)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-110:УПШ:165:text:3497",
+      "statute": "УПШ ст. 165",
+      "code": "УПШ",
+      "article": "ст. 165",
+      "decision_id": "1905-110",
+      "year": 1905,
+      "decision_number": 110,
+      "field": "text",
+      "start": 3497,
+      "end": 3504,
+      "quote_original": "ст. 165",
+      "context_original": "д. 1903 г.) опредѣляетъ время взысканія пошлинъ съ имущества наличнаго. Постановленіе этой 157 ст. вполнѣ самостоятельно и ничего общаго съ ст. 165 (216 изд. 1903 г.), говорящей объ отсрочкѣ и разсрочкѣ взноса пошлины, не имѣетъ. Разрѣшеніе отсрочки или разсрочки зависитъ отъ суда. Судъ",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "c74cb52dfd50a790795389e2bfb53a16036e8300791c060b02f7cdfdaafc7aa5",
+      "headnote_sha256": "b3fc5398daee4cabde979f4fbf9138d6b1f1b0c2b3f8c338d876d6a749888c12",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-110",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-110?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+165&law=1905-110%3A%D0%A3%D0%9F%D0%A8%3A165%3Atext%3A3497&at=3497&end=3504",
+      "source_warning": null,
+      "passage_id": "1905-110:3188-5022",
+      "sources": [
+        {
+          "page": 303,
+          "page_method": "header",
+          "file": "p0152_R.txt",
+          "start": 3497,
+          "end": 3504
+        }
+      ],
+      "printed_pages": [
+        303
+      ],
+      "scans": [
+        {
+          "file": "p0152_R.txt",
+          "page": 303,
+          "full": "scans/1905/pages/p0152_R.webp",
+          "width": 1100,
+          "height": 1540,
+          "ocr_sha256": "a8ac3b9c959ee3b51761408296335955af8b5c07e07130500037a76e95f22865",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 2683,
+          "end": 3523,
+          "quote_original": "Ст. 157 уст. о пошл. изд. 1893 г. (ст. 207 изд. 1903 г.) гласитъ: «въ составъ цѣны имущества, подлежащаго оплатѣ пошлиной, входитъ стоимость, какъ всего наличнаго, такъ равно долговыхъ и спорныхъ имуществъ. Но съ долговыхъ претензій и спорныхъ имуществъ пошлина взыскивается при полученіи наслѣдникомъ или пріобрѣтателемъ слѣдующихъ по симъ претензіямъ суммъ или состоявшаго въ спорѣ имущества. При этомъ, для обезпеченія поступленія пошлины, на долговыхъ документахъ дѣлается надлежащая о семъ надпись». Такимъ образомъ, статья эта совершенно ясно и точно опредѣляетъ время взысканія пошлины съ долговыхъ претензій и спорныхъ имуществъ точно также, какъ ст. 164 (ст. 215 изд. 1903 г.) опредѣляетъ время взысканія пошлинъ съ имущества наличнаго. Постановленіе этой 157 ст. вполнѣ самостоятельно и ничего общаго съ ст. 165 (216 изд. 1903 г.)"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3497,
+          "end": 3504,
+          "quote_original": "ст. 165",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 2683,
+              "end": 3523,
+              "quote_original": "Ст. 157 уст. о пошл. изд. 1893 г. (ст. 207 изд. 1903 г.) гласитъ: «въ составъ цѣны имущества, подлежащаго оплатѣ пошлиной, входитъ стоимость, какъ всего наличнаго, такъ равно долговыхъ и спорныхъ имуществъ. Но съ долговыхъ претензій и спорныхъ имуществъ пошлина взыскивается при полученіи наслѣдникомъ или пріобрѣтателемъ слѣдующихъ по симъ претензіямъ суммъ или состоявшаго въ спорѣ имущества. При этомъ, для обезпеченія поступленія пошлины, на долговыхъ документахъ дѣлается надлежащая о семъ надпись». Такимъ образомъ, статья эта совершенно ясно и точно опредѣляетъ время взысканія пошлины съ долговыхъ претензій и спорныхъ имуществъ точно также, какъ ст. 164 (ст. 215 изд. 1903 г.) опредѣляетъ время взысканія пошлинъ съ имущества наличнаго. Постановленіе этой 157 ст. вполнѣ самостоятельно и ничего общаго съ ст. 165 (216 изд. 1903 г.)"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 4133,
+          "end": 4140,
+          "quote_original": "ст. 165",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 2683,
+              "end": 3523,
+              "quote_original": "Ст. 157 уст. о пошл. изд. 1893 г. (ст. 207 изд. 1903 г.) гласитъ: «въ составъ цѣны имущества, подлежащаго оплатѣ пошлиной, входитъ стоимость, какъ всего наличнаго, такъ равно долговыхъ и спорныхъ имуществъ. Но съ долговыхъ претензій и спорныхъ имуществъ пошлина взыскивается при полученіи наслѣдникомъ или пріобрѣтателемъ слѣдующихъ по симъ претензіямъ суммъ или состоявшаго въ спорѣ имущества. При этомъ, для обезпеченія поступленія пошлины, на долговыхъ документахъ дѣлается надлежащая о семъ надпись». Такимъ образомъ, статья эта совершенно ясно и точно опредѣляетъ время взысканія пошлины съ долговыхъ претензій и спорныхъ имуществъ точно также, какъ ст. 164 (ст. 215 изд. 1903 г.) опредѣляетъ время взысканія пошлинъ съ имущества наличнаго. Постановленіе этой 157 ст. вполнѣ самостоятельно и ничего общаго съ ст. 165 (216 изд. 1903 г.)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-110:УПШ:166:text:1409",
+      "statute": "УПШ ст. 166",
+      "code": "УПШ",
+      "article": "ст. 166",
+      "decision_id": "1905-110",
+      "year": 1905,
+      "decision_number": 110,
+      "field": "text",
+      "start": 1409,
+      "end": 1422,
+      "quote_original": "ст. 157 и 166",
+      "context_original": "шаго наслѣдодателя. Въ кассаціонной жалобѣ управляющій Московскою казенною палатою проситъ объ отмѣнѣ этого опредѣленія палаты по нарушенію ст. 157 и 166 т. V уст. о пошл.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "c74cb52dfd50a790795389e2bfb53a16036e8300791c060b02f7cdfdaafc7aa5",
+      "headnote_sha256": "b3fc5398daee4cabde979f4fbf9138d6b1f1b0c2b3f8c338d876d6a749888c12",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-110",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-110?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+166&law=1905-110%3A%D0%A3%D0%9F%D0%A8%3A166%3Atext%3A1409&at=1409&end=1422",
+      "source_warning": null,
+      "passage_id": "1905-110:0-1924",
+      "sources": [
+        {
+          "page": 302,
+          "page_method": "header",
+          "file": "p0152_L.txt",
+          "start": 1409,
+          "end": 1422
+        }
+      ],
+      "printed_pages": [
+        302
+      ],
+      "scans": [
+        {
+          "file": "p0152_L.txt",
+          "page": 302,
+          "full": "scans/1905/pages/p0152_L.webp",
+          "width": 1100,
+          "height": 1540,
+          "ocr_sha256": "c41fdd501c50344db286abfb466534950cdbc3e6d062f423794f93beb2750974",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 1000,
+          "end": 1832,
+          "quote_original": "существованіе въ составѣ наслѣдства долговаго имущества, причитающаяся за переходъ этой части имущества пошлина должна была быть взыскиваема немедленно, независимо отъ того, сколько наслѣдниками будетъ въ дѣйствительности получено изъ этого имущества съ должниковъ умершаго наслѣдодателя. Въ кассаціонной жалобѣ управляющій Московскою казенною палатою проситъ объ отмѣнѣ этого опредѣленія палаты по нарушенію ст. 157 и 166 т. V уст. о пошл.\n\nВыслушавъ заключеніе исп. обяз. товарища оберъ-прокурора, Правительствующій Сенатъ находитъ, что въ настоящемъ дѣлѣ разрѣшенію его подлежитъ слѣдующій вопросъ: въ правѣ-ли судъ потребовать немедленной уплаты наслѣдственной пошлины съ тѣхъ входящихъ въ составъ наслѣдства долговыхъ претензій, поступленіе пошлины по которымъ, при полученіи слѣдующихъ по нимъ суммъ, не можетъ быть обеспечено"
+        },
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 2683,
+          "end": 2739,
+          "quote_original": "Ст. 157 уст. о пошл. изд. 1893 г. (ст. 207 изд. 1903 г.)",
+          "role": "act_identity"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1409,
+          "end": 1422,
+          "quote_original": "ст. 157 и 166",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 1000,
+              "end": 1832,
+              "quote_original": "существованіе въ составѣ наслѣдства долговаго имущества, причитающаяся за переходъ этой части имущества пошлина должна была быть взыскиваема немедленно, независимо отъ того, сколько наслѣдниками будетъ въ дѣйствительности получено изъ этого имущества съ должниковъ умершаго наслѣдодателя. Въ кассаціонной жалобѣ управляющій Московскою казенною палатою проситъ объ отмѣнѣ этого опредѣленія палаты по нарушенію ст. 157 и 166 т. V уст. о пошл.\n\nВыслушавъ заключеніе исп. обяз. товарища оберъ-прокурора, Правительствующій Сенатъ находитъ, что въ настоящемъ дѣлѣ разрѣшенію его подлежитъ слѣдующій вопросъ: въ правѣ-ли судъ потребовать немедленной уплаты наслѣдственной пошлины съ тѣхъ входящихъ въ составъ наслѣдства долговыхъ претензій, поступленіе пошлины по которымъ, при полученіи слѣдующихъ по нимъ суммъ, не можетъ быть обеспечено"
+            },
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 2683,
+              "end": 2739,
+              "quote_original": "Ст. 157 уст. о пошл. изд. 1893 г. (ст. 207 изд. 1903 г.)",
+              "role": "act_identity"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 2037,
+          "end": 2044,
+          "quote_original": "ст. 166",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 1631,
+              "end": 2453,
+              "quote_original": "немедленной уплаты наслѣдственной пошлины съ тѣхъ входящихъ въ составъ наслѣдства долговыхъ претензій, поступленіе пошлины по которымъ, при полученіи слѣдующихъ по нимъ суммъ, не можетъ быть обеспечено учиненіемъ о семъ на долговыхъ документахъ надписи за несуществованіемъ такихъ документовъ? Проситель находитъ, что вопросъ этотъ подлежитъ разрѣшенію въ утвердительномъ смыслѣ. Основываясь на содержаніи ст. 166 уст. о пошл. изд. 1893 года (ст. 219 изд. 1903 г.), онъ полагаетъ, что причитающаяся казнѣ наслѣдственная пошлина, уплата коей, по какой бы то ни было причинѣ, не можетъ быть обезпечена, подлежитъ безотлагательному взносу, хотя бы и по такому долговому имуществу наслѣдодателя, на которое, по заявленію о составѣ наслѣдства, нѣтъ никакихъ долговыхъ документовъ, на коихъ могла бы быть сдѣлана обезпечительная"
+            },
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 2683,
+              "end": 2739,
+              "quote_original": "Ст. 157 уст. о пошл. изд. 1893 г. (ст. 207 изд. 1903 г.)",
+              "role": "act_identity"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 3808,
+          "end": 3815,
+          "quote_original": "ст. 166",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 2037,
+              "end": 2095,
+              "quote_original": "ст. 166 уст. о пошл. изд. 1893 года (ст. 219 изд. 1903 г.)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-037:УПШ:182:text:6233",
+      "statute": "УПШ ст. 182",
+      "code": "УПШ",
+      "article": "ст. 182",
+      "decision_id": "1904-037",
+      "year": 1904,
+      "decision_number": 37,
+      "field": "text",
+      "start": 6233,
+      "end": 6251,
+      "quote_original": "ст. 182, 183 и 203",
+      "context_original": "иною. Признавая, въ виду вышеизложеннаго, обжалованное определѣніе палаты неправильнымъ, Правительствующій Сенатъ опредѣляетъ: по нарушенію ст. 182, 183 и 203 уст. пошл. изд. 1893 г. и ст. 214 и 246 уст. земск. кред. общества губ. Ц. П., опредѣленіе Варшавской судебной палаты отмѣнить и передать д",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "37511b9a837ca87b2eba8ca358b6cd27769c071ef847293a17b6b645811b15e6",
+      "headnote_sha256": "f0f3bdb7ba333d24f3ea4bf0a99c684865c59794f350b1d0f44ec3977b84d808",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-037",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-037?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+182&law=1904-037%3A%D0%A3%D0%9F%D0%A8%3A182%3Atext%3A6233&at=6233&end=6251",
+      "source_warning": null,
+      "passage_id": "1904-037:4415-6446",
+      "sources": [
+        {
+          "page": 100,
+          "page_method": "header",
+          "file": "p0051_L.txt",
+          "start": 6233,
+          "end": 6251
+        }
+      ],
+      "printed_pages": [
+        100
+      ],
+      "scans": [
+        {
+          "file": "p0051_L.txt",
+          "page": 100,
+          "full": "scans/1904/pages/p0051_L.webp",
+          "width": 1100,
+          "height": 1661,
+          "ocr_sha256": "779865bc31b278db298aa8d42a19e618077cd0a2bae8730133769345cc7899c2",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 6233,
+          "end": 6275,
+          "quote_original": "ст. 182, 183 и 203 уст. пошл. изд. 1893 г."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 6233,
+          "end": 6251,
+          "quote_original": "ст. 182, 183 и 203",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 6233,
+              "end": 6275,
+              "quote_original": "ст. 182, 183 и 203 уст. пошл. изд. 1893 г."
+            }
+          ],
+          "attribution_note": "Ссылка на устав земского кредитного общества губерний Царства Польского. Решение прямо помещает его в раздел XII Устава кредитного (том XI, часть 2); номер сохраняется внутри этого раздела."
+        }
+      ],
+      "attribution_note": "Ссылка на устав земского кредитного общества губерний Царства Польского. Решение прямо помещает его в раздел XII Устава кредитного (том XI, часть 2); номер сохраняется внутри этого раздела."
+    },
+    {
+      "id": "1904-037:УПШ:183:text:6233",
+      "statute": "УПШ ст. 183",
+      "code": "УПШ",
+      "article": "ст. 183",
+      "decision_id": "1904-037",
+      "year": 1904,
+      "decision_number": 37,
+      "field": "text",
+      "start": 6233,
+      "end": 6251,
+      "quote_original": "ст. 182, 183 и 203",
+      "context_original": "иною. Признавая, въ виду вышеизложеннаго, обжалованное определѣніе палаты неправильнымъ, Правительствующій Сенатъ опредѣляетъ: по нарушенію ст. 182, 183 и 203 уст. пошл. изд. 1893 г. и ст. 214 и 246 уст. земск. кред. общества губ. Ц. П., опредѣленіе Варшавской судебной палаты отмѣнить и передать д",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "37511b9a837ca87b2eba8ca358b6cd27769c071ef847293a17b6b645811b15e6",
+      "headnote_sha256": "f0f3bdb7ba333d24f3ea4bf0a99c684865c59794f350b1d0f44ec3977b84d808",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-037",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-037?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+183&law=1904-037%3A%D0%A3%D0%9F%D0%A8%3A183%3Atext%3A6233&at=6233&end=6251",
+      "source_warning": null,
+      "passage_id": "1904-037:4415-6446",
+      "sources": [
+        {
+          "page": 100,
+          "page_method": "header",
+          "file": "p0051_L.txt",
+          "start": 6233,
+          "end": 6251
+        }
+      ],
+      "printed_pages": [
+        100
+      ],
+      "scans": [
+        {
+          "file": "p0051_L.txt",
+          "page": 100,
+          "full": "scans/1904/pages/p0051_L.webp",
+          "width": 1100,
+          "height": 1661,
+          "ocr_sha256": "779865bc31b278db298aa8d42a19e618077cd0a2bae8730133769345cc7899c2",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 6233,
+          "end": 6275,
+          "quote_original": "ст. 182, 183 и 203 уст. пошл. изд. 1893 г."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 6233,
+          "end": 6251,
+          "quote_original": "ст. 182, 183 и 203",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 6233,
+              "end": 6275,
+              "quote_original": "ст. 182, 183 и 203 уст. пошл. изд. 1893 г."
+            }
+          ],
+          "attribution_note": "Ссылка на устав земского кредитного общества губерний Царства Польского. Решение прямо помещает его в раздел XII Устава кредитного (том XI, часть 2); номер сохраняется внутри этого раздела."
+        }
+      ],
+      "attribution_note": "Ссылка на устав земского кредитного общества губерний Царства Польского. Решение прямо помещает его в раздел XII Устава кредитного (том XI, часть 2); номер сохраняется внутри этого раздела."
+    },
+    {
+      "id": "1904-109:УПШ:195:text:592",
+      "statute": "УПШ ст. 195",
+      "code": "УПШ",
+      "article": "ст. 195",
+      "decision_id": "1904-109",
+      "year": 1904,
+      "decision_number": 109,
+      "field": "text",
+      "start": 592,
+      "end": 599,
+      "quote_original": "ст. 195",
+      "context_original": "шлины. Мировой съѣздъ опредѣленіемъ своимъ, постановленнымъ 18 іюня 1902 г., отказъ этотъ признаЛъ правильнымъ, принявъ во вниманіе, что въ ст. 195 устава о пошл. перечислены случаи освобожденія отъ платежа крѣпостныхъ пошлинъ «по особой привилегіи», что потому законъ этотъ, устанавлива",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "86b195127fe57aae5f74d792c6fc95c2dff99f405ac4af6ef7c0ca72cddf224a",
+      "headnote_sha256": "b68672a2a4696b3a20970f7ec72abd94c1b4937d69a38b33637008026c33cb2c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-109",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-109?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+195&law=1904-109%3A%D0%A3%D0%9F%D0%A8%3A195%3Atext%3A592&at=592&end=599",
+      "source_warning": null,
+      "passage_id": "1904-109:0-1666",
+      "sources": [
+        {
+          "page": 302,
+          "page_method": "header",
+          "file": "p0152_L.txt",
+          "start": 592,
+          "end": 599
+        }
+      ],
+      "printed_pages": [
+        302
+      ],
+      "scans": [
+        {
+          "file": "p0152_L.txt",
+          "page": 302,
+          "full": "scans/1904/pages/p0152_L.webp",
+          "width": 1100,
+          "height": 1594,
+          "ocr_sha256": "7d9547a45d63a4eb9d828420e70a47d00804163e6c489a29074b005e423f027b",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 592,
+          "end": 614,
+          "quote_original": "ст. 195 устава о пошл.",
+          "act_code": "УПШ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 592,
+          "end": 599,
+          "quote_original": "ст. 195",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 592,
+              "end": 614,
+              "quote_original": "ст. 195 устава о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-046:УПШ:201:text:1622",
+      "statute": "УПШ ст. 201",
+      "code": "УПШ",
+      "article": "ст. 201",
+      "decision_id": "1904-046",
+      "year": 1904,
+      "decision_number": 46,
+      "field": "text",
+      "start": 1622,
+      "end": 1631,
+      "quote_original": "ст. 201 и",
+      "context_original": "онную жалобу его оставить безъ послѣдствій, по слѣдующимъ основаніямъ: По общему правилу, изложенному въ ст. 152 уст. о пошл. изд. 1893 г. (ст. 201 изд. 1903 г.), имущества, переходящія отъ одного лица къ другому безмездными способами, подлежатъ оплатѣ пошлиною; исключенія же изъ этого об",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "e2da3924d57815739de24a5314467f9ca8e8088b3a389dab98fe1f0b0266fdeb",
+      "headnote_sha256": "f28c3afbe066e61ec55dd2a3cc8421fe4074d3c15e9db2ee9f85725180498b42",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-046",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-046?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+201&law=1904-046%3A%D0%A3%D0%9F%D0%A8%3A201%3Atext%3A1622&at=1622&end=1631",
+      "source_warning": null,
+      "passage_id": "1904-046:0-1843",
+      "sources": [
+        {
+          "page": 130,
+          "page_method": "header",
+          "file": "p0066_L.txt",
+          "start": 1622,
+          "end": 1631
+        }
+      ],
+      "printed_pages": [
+        130
+      ],
+      "scans": [
+        {
+          "file": "p0066_L.txt",
+          "page": 130,
+          "full": "scans/1904/pages/p0066_L.webp",
+          "width": 1100,
+          "height": 1646,
+          "ocr_sha256": "29b72f29cea3b81a34d72de60e2877f89cd7e37c61ff2ff649a8f407e0411500",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 1587,
+          "end": 1643,
+          "quote_original": "ст. 152 уст. о пошл. изд. 1893 г. (ст. 201 изд. 1903 г.)"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1622,
+          "end": 1631,
+          "quote_original": "ст. 201 и",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 1587,
+              "end": 1643,
+              "quote_original": "ст. 152 уст. о пошл. изд. 1893 г. (ст. 201 изд. 1903 г.)"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 4791,
+          "end": 4800,
+          "quote_original": "ст. 201 и",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "repeat",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 1587,
+              "end": 1643,
+              "quote_original": "ст. 152 уст. о пошл. изд. 1893 г. (ст. 201 изд. 1903 г.)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-046:УПШ:202:text:378",
+      "statute": "УПШ ст. 202",
+      "code": "УПШ",
+      "article": "ст. 202",
+      "decision_id": "1904-046",
+      "year": 1904,
+      "decision_number": 46,
+      "field": "text",
+      "start": 378,
+      "end": 387,
+      "quote_original": "ст. 202 и",
+      "context_original": "аго повѣреннаго Маркова, Сенату надлежитъ обсудить вопросъ о томъ: подлежитъ-ли, въ силу 3 п. 153 ст. устав. о пошлинахъ изд. 1893 г. (п. 4 ст. 202 изд. 1903 г.), освобожденію отъ обложенія наслѣдственною пошлиною капиталъ, внесенный вѣчнымъ вкладомъ въ государственный банкъ съ тѣмъ, чтоб",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "e2da3924d57815739de24a5314467f9ca8e8088b3a389dab98fe1f0b0266fdeb",
+      "headnote_sha256": "f28c3afbe066e61ec55dd2a3cc8421fe4074d3c15e9db2ee9f85725180498b42",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-046",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-046?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+202&law=1904-046%3A%D0%A3%D0%9F%D0%A8%3A202%3Atext%3A378&at=378&end=387",
+      "source_warning": null,
+      "passage_id": "1904-046:0-1843",
+      "sources": [
+        {
+          "page": 130,
+          "page_method": "header",
+          "file": "p0066_L.txt",
+          "start": 378,
+          "end": 387
+        }
+      ],
+      "printed_pages": [
+        130
+      ],
+      "scans": [
+        {
+          "file": "p0066_L.txt",
+          "page": 130,
+          "full": "scans/1904/pages/p0066_L.webp",
+          "width": 1100,
+          "height": 1646,
+          "ocr_sha256": "29b72f29cea3b81a34d72de60e2877f89cd7e37c61ff2ff649a8f407e0411500",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 327,
+          "end": 399,
+          "quote_original": "3 п. 153 ст. устав. о пошлинахъ изд. 1893 г. (п. 4 ст. 202 изд. 1903 г.)"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 378,
+          "end": 387,
+          "quote_original": "ст. 202 и",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 327,
+              "end": 399,
+              "quote_original": "3 п. 153 ст. устав. о пошлинахъ изд. 1893 г. (п. 4 ст. 202 изд. 1903 г.)"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 1821,
+          "end": 1830,
+          "quote_original": "ст. 202 и",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 1553,
+              "end": 1842,
+              "quote_original": "По общему правилу, изложенному въ ст. 152 уст. о пошл. изд. 1893 г. (ст. 201 изд. 1903 г.), имущества, переходящія отъ одного лица къ другому безмездными способами, подлежатъ оплатѣ пошлиною; исключенія же изъ этого общаго правила перечислены въ ст. 153 изд. 1893 г. (ст. 202 изд. 1903 г.)"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 1900,
+          "end": 1909,
+          "quote_original": "ст. 202 и",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 1844,
+              "end": 1921,
+              "quote_original": "На основаніи п. 3 ст. 153 уст. пошл. изд. 1893 г. (п. 4 ст. 202 изд. 1903 г.)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-040:УПШ:202 п. 1:text:5678",
+      "statute": "УПШ ст. 202 п. 1",
+      "code": "УПШ",
+      "article": "ст. 202 п. 1",
+      "decision_id": "1905-040",
+      "year": 1905,
+      "decision_number": 40,
+      "field": "text",
+      "start": 5678,
+      "end": 5696,
+      "quote_original": "ст. 202 п. 1 и 206",
+      "context_original": "овнымъ завѣщаніемъ возложена на наслѣдниковъ обязанность произвести другимъ лицамъ денежныя выдачи, превышающія тысячу рублей на одно лицо (ст. 202 п. 1 и 206), то наслѣдники уплачиваютъ всю причитающуюся съ наслѣдственнаго имущества пошлину и, затѣмъ, имѣютъ право удержать слѣдующія съ означенных",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "cc80634898a730cf133cf0b1ee413f752c1c442b7a7a87c6123b6a52d2839a36",
+      "headnote_sha256": "48b246fb3c33249a3f2259a69daa409c91e2762ad16ed8e60bf8c8f2e67fe3d7",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-040",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-040?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+202+%D0%BF.+1&law=1905-040%3A%D0%A3%D0%9F%D0%A8%3A202+%D0%BF.+1%3Atext%3A5678&at=5678&end=5696",
+      "source_warning": null,
+      "passage_id": "1905-040:4034-5897",
+      "sources": [
+        {
+          "page": 108,
+          "page_method": "header",
+          "file": "p0055_L.txt",
+          "start": 5678,
+          "end": 5696
+        }
+      ],
+      "printed_pages": [
+        108
+      ],
+      "scans": [
+        {
+          "file": "p0055_L.txt",
+          "page": 108,
+          "full": "scans/1905/pages/p0055_L.webp",
+          "width": 1100,
+          "height": 1554,
+          "ocr_sha256": "0c43aa8f5cd90c47b0908e36361981d4990dd6efc1715454f12bdf2774db5672",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 5292,
+          "end": 5697,
+          "quote_original": "статей 212 и 213 уст. о пошл. изд. 1903 г. (161 и 162 ст. изд. 1893 г.), размѣръ наслѣдственной пошлины опредѣляется сообразно наличной цѣнности наслѣдственнаго имущества, а на основаніи 214 ст. (163 ст. по изд. 1893 г.) того же устава, когда духовнымъ завѣщаніемъ возложена на наслѣдниковъ обязанность произвести другимъ лицамъ денежныя выдачи, превышающія тысячу рублей на одно лицо (ст. 202 п. 1 и 206)"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5678,
+          "end": 5696,
+          "quote_original": "ст. 202 п. 1 и 206",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 5292,
+              "end": 5697,
+              "quote_original": "статей 212 и 213 уст. о пошл. изд. 1903 г. (161 и 162 ст. изд. 1893 г.), размѣръ наслѣдственной пошлины опредѣляется сообразно наличной цѣнности наслѣдственнаго имущества, а на основаніи 214 ст. (163 ст. по изд. 1893 г.) того же устава, когда духовнымъ завѣщаніемъ возложена на наслѣдниковъ обязанность произвести другимъ лицамъ денежныя выдачи, превышающія тысячу рублей на одно лицо (ст. 202 п. 1 и 206)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-037:УПШ:203:text:1261",
+      "statute": "УПШ ст. 203",
+      "code": "УПШ",
+      "article": "ст. 203",
+      "decision_id": "1904-037",
+      "year": 1904,
+      "decision_number": 37,
+      "field": "text",
+      "start": 1261,
+      "end": 1268,
+      "quote_original": "ст. 203",
+      "context_original": "бу, Варшавская судебная палата, въ которой Брудницкая поддерживала свое ходатайство лишь относительно крѣпостныхъ пошлинъ, нашла: 1) что по ст. 203 уст. пошл. изд. 1893 г., крѣпостныя пошлины взимаются при возмездномъ переходѣ права собственности на недвижимое имущество; 2) что, при про",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "37511b9a837ca87b2eba8ca358b6cd27769c071ef847293a17b6b645811b15e6",
+      "headnote_sha256": "f0f3bdb7ba333d24f3ea4bf0a99c684865c59794f350b1d0f44ec3977b84d808",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-037",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-037?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+203&law=1904-037%3A%D0%A3%D0%9F%D0%A8%3A203%3Atext%3A1261&at=1261&end=1268",
+      "source_warning": null,
+      "passage_id": "1904-037:0-1748",
+      "sources": [
+        {
+          "page": 99,
+          "page_method": "header",
+          "file": "p0050_R.txt",
+          "start": 1261,
+          "end": 1268
+        }
+      ],
+      "printed_pages": [
+        99
+      ],
+      "scans": [
+        {
+          "file": "p0050_R.txt",
+          "page": 99,
+          "full": "scans/1904/pages/p0050_R.webp",
+          "width": 1100,
+          "height": 1635,
+          "ocr_sha256": "7f545daccc347cc2290a18483c14f0319051b6e70ffb336d844b4e24fb539862",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 1261,
+          "end": 1292,
+          "quote_original": "ст. 203 уст. пошл. изд. 1893 г."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1261,
+          "end": 1268,
+          "quote_original": "ст. 203",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 1261,
+              "end": 1292,
+              "quote_original": "ст. 203 уст. пошл. изд. 1893 г."
+            }
+          ],
+          "attribution_note": "Ссылка на устав земского кредитного общества губерний Царства Польского. Решение прямо помещает его в раздел XII Устава кредитного (том XI, часть 2); номер сохраняется внутри этого раздела."
+        },
+        {
+          "field": "text",
+          "start": 6233,
+          "end": 6251,
+          "quote_original": "ст. 182, 183 и 203",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 6233,
+              "end": 6275,
+              "quote_original": "ст. 182, 183 и 203 уст. пошл. изд. 1893 г."
+            }
+          ],
+          "attribution_note": "Ссылка на устав земского кредитного общества губерний Царства Польского. Решение прямо помещает его в раздел XII Устава кредитного (том XI, часть 2); номер сохраняется внутри этого раздела."
+        }
+      ],
+      "attribution_note": "Ссылка на устав земского кредитного общества губерний Царства Польского. Решение прямо помещает его в раздел XII Устава кредитного (том XI, часть 2); номер сохраняется внутри этого раздела."
+    },
+    {
+      "id": "1905-040:УПШ:206:text:5678",
+      "statute": "УПШ ст. 206",
+      "code": "УПШ",
+      "article": "ст. 206",
+      "decision_id": "1905-040",
+      "year": 1905,
+      "decision_number": 40,
+      "field": "text",
+      "start": 5678,
+      "end": 5696,
+      "quote_original": "ст. 202 п. 1 и 206",
+      "context_original": "овнымъ завѣщаніемъ возложена на наслѣдниковъ обязанность произвести другимъ лицамъ денежныя выдачи, превышающія тысячу рублей на одно лицо (ст. 202 п. 1 и 206), то наслѣдники уплачиваютъ всю причитающуюся съ наслѣдственнаго имущества пошлину и, затѣмъ, имѣютъ право удержать слѣдующія съ означенных",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "cc80634898a730cf133cf0b1ee413f752c1c442b7a7a87c6123b6a52d2839a36",
+      "headnote_sha256": "48b246fb3c33249a3f2259a69daa409c91e2762ad16ed8e60bf8c8f2e67fe3d7",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-040",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-040?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+206&law=1905-040%3A%D0%A3%D0%9F%D0%A8%3A206%3Atext%3A5678&at=5678&end=5696",
+      "source_warning": null,
+      "passage_id": "1905-040:4034-5897",
+      "sources": [
+        {
+          "page": 108,
+          "page_method": "header",
+          "file": "p0055_L.txt",
+          "start": 5678,
+          "end": 5696
+        }
+      ],
+      "printed_pages": [
+        108
+      ],
+      "scans": [
+        {
+          "file": "p0055_L.txt",
+          "page": 108,
+          "full": "scans/1905/pages/p0055_L.webp",
+          "width": 1100,
+          "height": 1554,
+          "ocr_sha256": "0c43aa8f5cd90c47b0908e36361981d4990dd6efc1715454f12bdf2774db5672",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 5292,
+          "end": 5697,
+          "quote_original": "статей 212 и 213 уст. о пошл. изд. 1903 г. (161 и 162 ст. изд. 1893 г.), размѣръ наслѣдственной пошлины опредѣляется сообразно наличной цѣнности наслѣдственнаго имущества, а на основаніи 214 ст. (163 ст. по изд. 1893 г.) того же устава, когда духовнымъ завѣщаніемъ возложена на наслѣдниковъ обязанность произвести другимъ лицамъ денежныя выдачи, превышающія тысячу рублей на одно лицо (ст. 202 п. 1 и 206)"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5678,
+          "end": 5696,
+          "quote_original": "ст. 202 п. 1 и 206",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 5292,
+              "end": 5697,
+              "quote_original": "статей 212 и 213 уст. о пошл. изд. 1903 г. (161 и 162 ст. изд. 1893 г.), размѣръ наслѣдственной пошлины опредѣляется сообразно наличной цѣнности наслѣдственнаго имущества, а на основаніи 214 ст. (163 ст. по изд. 1893 г.) того же устава, когда духовнымъ завѣщаніемъ возложена на наслѣдниковъ обязанность произвести другимъ лицамъ денежныя выдачи, превышающія тысячу рублей на одно лицо (ст. 202 п. 1 и 206)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-047:УПШ:207:text:5022",
+      "statute": "УПШ ст. 207",
+      "code": "УПШ",
+      "article": "ст. 207",
+      "decision_id": "1897-047",
+      "year": 1897,
+      "decision_number": 47,
+      "field": "text",
+      "start": 5022,
+      "end": 5031,
+      "quote_original": "ст. 207 и",
+      "context_original": "о съ симъ ущерба казенныхъ сборовъ особая законная оцѣнка различнымъ родамъ имѣній, ниже которой оныя не могутъ быть писаны въ крѣпостяхъ“ (ст. 207 и слѣд. ст. уст. пошл.). Безъ этихъ данныхъ произвести точную провѣрку правильности взысканія нотаріусомъ крѣпостной пошлины по акту въ больш",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "c8de6c231bc9933f20cc00395639beea1381b747cc9a78d241190ceed4434c40",
+      "headnote_sha256": "7da859e246fd4d67e6bd1e5a641c223ca640b81e8e9d2dcbfafc3fe2de5efd70",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-047",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-047?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+207&law=1897-047%3A%D0%A3%D0%9F%D0%A8%3A207%3Atext%3A5022&at=5022&end=5031",
+      "source_warning": null,
+      "passage_id": "1897-047:4443-5927",
+      "sources": [
+        {
+          "page": 160,
+          "page_method": "header",
+          "file": "p0091_L.txt",
+          "start": 5022,
+          "end": 5031
+        }
+      ],
+      "printed_pages": [
+        160
+      ],
+      "scans": [
+        {
+          "file": "p0091_L.txt",
+          "page": 160,
+          "full": "scans/1897/pages/p0091_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1571,
+          "ocr_sha256": "1c94e4e4c85229815e98a7403e7eb2074241e6a9449dec48e5e0dbc8298e45b2",
+          "pdf_page": 181,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 5022,
+          "end": 5052,
+          "quote_original": "ст. 207 и слѣд. ст. уст. пошл."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5022,
+          "end": 5031,
+          "quote_original": "ст. 207 и",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 5022,
+              "end": 5052,
+              "quote_original": "ст. 207 и слѣд. ст. уст. пошл."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-110:УПШ:207:text:2718",
+      "statute": "УПШ ст. 207",
+      "code": "УПШ",
+      "article": "ст. 207",
+      "decision_id": "1905-110",
+      "year": 1905,
+      "decision_number": 110,
+      "field": "text",
+      "start": 2718,
+      "end": 2727,
+      "quote_original": "ст. 207 и",
+      "context_original": "а произведенныя, очевидно, по словесному договору работы. Такое мнѣніе просителя безусловно неправильно. Ст. 157 уст. о пошл. изд. 1893 г. (ст. 207 изд. 1903 г.) гласитъ: «въ составъ цѣны имущества, подлежащаго оплатѣ пошлиной, входитъ стоимость, какъ всего наличнаго, такъ равно долговыхъ",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "c74cb52dfd50a790795389e2bfb53a16036e8300791c060b02f7cdfdaafc7aa5",
+      "headnote_sha256": "b3fc5398daee4cabde979f4fbf9138d6b1f1b0c2b3f8c338d876d6a749888c12",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-110",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-110?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+207&law=1905-110%3A%D0%A3%D0%9F%D0%A8%3A207%3Atext%3A2718&at=2718&end=2727",
+      "source_warning": null,
+      "passage_id": "1905-110:1650-3428",
+      "sources": [
+        {
+          "page": 302,
+          "page_method": "header",
+          "file": "p0152_L.txt",
+          "start": 2718,
+          "end": 2727
+        }
+      ],
+      "printed_pages": [
+        302
+      ],
+      "scans": [
+        {
+          "file": "p0152_L.txt",
+          "page": 302,
+          "full": "scans/1905/pages/p0152_L.webp",
+          "width": 1100,
+          "height": 1540,
+          "ocr_sha256": "c41fdd501c50344db286abfb466534950cdbc3e6d062f423794f93beb2750974",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 2308,
+          "end": 3128,
+          "quote_original": "наслѣдодателя, на которое, по заявленію о составѣ наслѣдства, нѣтъ никакихъ долговыхъ документовъ, на коихъ могла бы быть сдѣлана обезпечительная надпись, напримѣръ, какъ въ данномъ случаѣ, когда долговое имущество наслѣдодателя заключается въ правѣ требованія платежа за произведенныя, очевидно, по словесному договору работы. Такое мнѣніе просителя безусловно неправильно. Ст. 157 уст. о пошл. изд. 1893 г. (ст. 207 изд. 1903 г.) гласитъ: «въ составъ цѣны имущества, подлежащаго оплатѣ пошлиной, входитъ стоимость, какъ всего наличнаго, такъ равно долговыхъ и спорныхъ имуществъ. Но съ долговыхъ претензій и спорныхъ имуществъ пошлина взыскивается при полученіи наслѣдникомъ или пріобрѣтателемъ слѣдующихъ по симъ претензіямъ суммъ или состоявшаго въ спорѣ имущества. При этомъ, для обезпеченія поступленія пошлины, на"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2718,
+          "end": 2727,
+          "quote_original": "ст. 207 и",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 2308,
+              "end": 3128,
+              "quote_original": "наслѣдодателя, на которое, по заявленію о составѣ наслѣдства, нѣтъ никакихъ долговыхъ документовъ, на коихъ могла бы быть сдѣлана обезпечительная надпись, напримѣръ, какъ въ данномъ случаѣ, когда долговое имущество наслѣдодателя заключается въ правѣ требованія платежа за произведенныя, очевидно, по словесному договору работы. Такое мнѣніе просителя безусловно неправильно. Ст. 157 уст. о пошл. изд. 1893 г. (ст. 207 изд. 1903 г.) гласитъ: «въ составъ цѣны имущества, подлежащаго оплатѣ пошлиной, входитъ стоимость, какъ всего наличнаго, такъ равно долговыхъ и спорныхъ имуществъ. Но съ долговыхъ претензій и спорныхъ имуществъ пошлина взыскивается при полученіи наслѣдникомъ или пріобрѣтателемъ слѣдующихъ по симъ претензіямъ суммъ или состоявшаго въ спорѣ имущества. При этомъ, для обезпеченія поступленія пошлины, на"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-040:УПШ:208:text:5066",
+      "statute": "УПШ ст. 208",
+      "code": "УПШ",
+      "article": "ст. 208",
+      "decision_id": "1905-040",
+      "year": 1905,
+      "decision_number": 40,
+      "field": "text",
+      "start": 5066,
+      "end": 5073,
+      "quote_original": "ст. 208",
+      "context_original": "другимъ лицамъ денежныя выдачи въ размѣрѣ, превышающемъ цѣну имущества, съ коей, въ силу 158 ст. уст. о пошл. изд. 1893 г. (по изд. 1903 г. ст. 208), взимается наслѣдственная пошлина, сія послѣдняя должна-ли быть исчисляема не по этой именно цѣнѣ, а по суммѣ выдачъ. Обращаясь къ разрѣше",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "cc80634898a730cf133cf0b1ee413f752c1c442b7a7a87c6123b6a52d2839a36",
+      "headnote_sha256": "48b246fb3c33249a3f2259a69daa409c91e2762ad16ed8e60bf8c8f2e67fe3d7",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-040",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-040?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+208&law=1905-040%3A%D0%A3%D0%9F%D0%A8%3A208%3Atext%3A5066&at=5066&end=5073",
+      "source_warning": null,
+      "passage_id": "1905-040:4034-5897",
+      "sources": [
+        {
+          "page": 108,
+          "page_method": "header",
+          "file": "p0055_L.txt",
+          "start": 5066,
+          "end": 5073
+        }
+      ],
+      "printed_pages": [
+        108
+      ],
+      "scans": [
+        {
+          "file": "p0055_L.txt",
+          "page": 108,
+          "full": "scans/1905/pages/p0055_L.webp",
+          "width": 1100,
+          "height": 1554,
+          "ocr_sha256": "0c43aa8f5cd90c47b0908e36361981d4990dd6efc1715454f12bdf2774db5672",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 5015,
+          "end": 5074,
+          "quote_original": "158 ст. уст. о пошл. изд. 1893 г. (по изд. 1903 г. ст. 208)"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5066,
+          "end": 5073,
+          "quote_original": "ст. 208",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 5015,
+              "end": 5074,
+              "quote_original": "158 ст. уст. о пошл. изд. 1893 г. (по изд. 1903 г. ст. 208)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-004:УПШ:212:text:1867",
+      "statute": "УПШ ст. 212",
+      "code": "УПШ",
+      "article": "ст. 212",
+      "decision_id": "1905-004",
+      "year": 1905,
+      "decision_number": 4,
+      "field": "text",
+      "start": 1867,
+      "end": 1874,
+      "quote_original": "ст. 212",
+      "context_original": "я съ наслѣдника по духовному завѣщанію пени, установленной 4 ст. прил. къ ст. 161 уст. о пошл. изд. 1893 г. (по изд. 1903 г. 4 ст. прил. къ ст. 212) за пропускъ срока въ подачѣ заявленія о наслѣдствѣ. Закономъ этимъ, какъ именно въ послѣдней части онаго выражено, пеня взыскивается за пр",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b3dcd84d75c1b48d97d65b26065d32cba1d462a6e3d57b2c16c170fa1f35a731",
+      "headnote_sha256": "3989c808e6c2c3c482a9be49293024a3a59fbf420b63525c293ada89dcdcc0d5",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-004",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-004?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+212&law=1905-004%3A%D0%A3%D0%9F%D0%A8%3A212%3Atext%3A1867&at=1867&end=1874",
+      "source_warning": null,
+      "passage_id": "1905-004:0-1927",
+      "sources": [
+        {
+          "page": 9,
+          "page_method": "header",
+          "file": "p0005_R.txt",
+          "start": 1867,
+          "end": 1874
+        }
+      ],
+      "printed_pages": [
+        9
+      ],
+      "scans": [
+        {
+          "file": "p0005_R.txt",
+          "page": 9,
+          "full": "scans/1905/pages/p0005_R.webp",
+          "width": 1100,
+          "height": 1524,
+          "ocr_sha256": "f264be668ba8f6b8a872a41035663983d9cdcbb41eaa6702777a20bbacd335f0",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 1786,
+          "end": 1875,
+          "quote_original": "4 ст. прил. къ ст. 161 уст. о пошл. изд. 1893 г. (по изд. 1903 г. 4 ст. прил. къ ст. 212)"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1867,
+          "end": 1874,
+          "quote_original": "ст. 212",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 1786,
+              "end": 1875,
+              "quote_original": "4 ст. прил. къ ст. 161 уст. о пошл. изд. 1893 г. (по изд. 1903 г. 4 ст. прил. къ ст. 212)"
+            }
+          ],
+          "attribution_note": "Обсуждается статья 4 приложения к статье 212 Устава о пошлинах издания 1903 года (в прежней редакции — приложение к 161), а не обязательно основная статья 212. Исходное извлечённое обозначение сохранено. Установлен акт и якорь приложения; основная статья 212 не подтверждается как самостоятельная обсуждаемая норма. Здесь речь о статье 4 приложения."
+        }
+      ],
+      "attribution_note": "Обсуждается статья 4 приложения к статье 212 Устава о пошлинах издания 1903 года (в прежней редакции — приложение к 161), а не обязательно основная статья 212. Исходное извлечённое обозначение сохранено. Установлен акт и якорь приложения; основная статья 212 не подтверждается как самостоятельная обсуждаемая норма. Здесь речь о статье 4 приложения."
+    },
+    {
+      "id": "1904-085:УПШ:213:text:2577",
+      "statute": "УПШ ст. 213",
+      "code": "УПШ",
+      "article": "ст. 213",
+      "decision_id": "1904-085",
+      "year": 1904,
+      "decision_number": 85,
+      "field": "text",
+      "start": 2577,
+      "end": 2584,
+      "quote_original": "ст. 213",
+      "context_original": "ущества, по распредѣленію его между наслѣдниками и т. п. Расходы же эти, по точному смыслу 162 ст. уст. пошл. изд. 1893 г. (по изд. 1903 г. ст. 213), исключенію изъ цѣнности наслѣдства не подлежатъ. Въ виду сего, судебная палата имѣла правильное основаніе признать подлежащею на общемъ о",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "5c6c0982e52eee4877118f047c2d874b54168a873006b7bb3826a0baa571ceab",
+      "headnote_sha256": "eb990bdcb4be03e47f66bb272a6ed896ff2639d8ee8c66758552e7aa094d3f29",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-085",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-085?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+213&law=1904-085%3A%D0%A3%D0%9F%D0%A8%3A213%3Atext%3A2577&at=2577&end=2584",
+      "source_warning": null,
+      "passage_id": "1904-085:1699-2962",
+      "sources": [
+        {
+          "page": 235,
+          "page_method": "header",
+          "file": "p0118_R.txt",
+          "start": 2577,
+          "end": 2584
+        }
+      ],
+      "printed_pages": [
+        235
+      ],
+      "scans": [
+        {
+          "file": "p0118_R.txt",
+          "page": 235,
+          "full": "scans/1904/pages/p0118_R.webp",
+          "width": 1100,
+          "height": 1569,
+          "ocr_sha256": "0868b5a64f94116ebaad64758bebabcbdc770010142163f200d84da2cef05908",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 2528,
+          "end": 2585,
+          "quote_original": "162 ст. уст. пошл. изд. 1893 г. (по изд. 1903 г. ст. 213)"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2577,
+          "end": 2584,
+          "quote_original": "ст. 213",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 2528,
+              "end": 2585,
+              "quote_original": "162 ст. уст. пошл. изд. 1893 г. (по изд. 1903 г. ст. 213)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-110:УПШ:215:text:3347",
+      "statute": "УПШ ст. 215",
+      "code": "УПШ",
+      "article": "ст. 215",
+      "decision_id": "1905-110",
+      "year": 1905,
+      "decision_number": 110,
+      "field": "text",
+      "start": 3347,
+      "end": 3356,
+      "quote_original": "ст. 215 и",
+      "context_original": "атья эта совершенно ясно и точно опредѣляетъ время взысканія пошлины съ долговыхъ претензій и спорныхъ имуществъ точно также, какъ ст. 164 (ст. 215 изд. 1903 г.) опредѣляетъ время взысканія пошлинъ съ имущества наличнаго. Постановленіе этой 157 ст. вполнѣ самостоятельно и ничего общаго съ",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "c74cb52dfd50a790795389e2bfb53a16036e8300791c060b02f7cdfdaafc7aa5",
+      "headnote_sha256": "b3fc5398daee4cabde979f4fbf9138d6b1f1b0c2b3f8c338d876d6a749888c12",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-110",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-110?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+215&law=1905-110%3A%D0%A3%D0%9F%D0%A8%3A215%3Atext%3A3347&at=3347&end=3356",
+      "source_warning": null,
+      "passage_id": "1905-110:1650-3428",
+      "sources": [
+        {
+          "page": 302,
+          "page_method": "header",
+          "file": "p0152_L.txt",
+          "start": 3347,
+          "end": 3356
+        }
+      ],
+      "printed_pages": [
+        302
+      ],
+      "scans": [
+        {
+          "file": "p0152_L.txt",
+          "page": 302,
+          "full": "scans/1905/pages/p0152_L.webp",
+          "width": 1100,
+          "height": 1540,
+          "ocr_sha256": "c41fdd501c50344db286abfb466534950cdbc3e6d062f423794f93beb2750974",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 2683,
+          "end": 3523,
+          "quote_original": "Ст. 157 уст. о пошл. изд. 1893 г. (ст. 207 изд. 1903 г.) гласитъ: «въ составъ цѣны имущества, подлежащаго оплатѣ пошлиной, входитъ стоимость, какъ всего наличнаго, такъ равно долговыхъ и спорныхъ имуществъ. Но съ долговыхъ претензій и спорныхъ имуществъ пошлина взыскивается при полученіи наслѣдникомъ или пріобрѣтателемъ слѣдующихъ по симъ претензіямъ суммъ или состоявшаго въ спорѣ имущества. При этомъ, для обезпеченія поступленія пошлины, на долговыхъ документахъ дѣлается надлежащая о семъ надпись». Такимъ образомъ, статья эта совершенно ясно и точно опредѣляетъ время взысканія пошлины съ долговыхъ претензій и спорныхъ имуществъ точно также, какъ ст. 164 (ст. 215 изд. 1903 г.) опредѣляетъ время взысканія пошлинъ съ имущества наличнаго. Постановленіе этой 157 ст. вполнѣ самостоятельно и ничего общаго съ ст. 165 (216 изд. 1903 г.)"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3347,
+          "end": 3356,
+          "quote_original": "ст. 215 и",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 2683,
+              "end": 3523,
+              "quote_original": "Ст. 157 уст. о пошл. изд. 1893 г. (ст. 207 изд. 1903 г.) гласитъ: «въ составъ цѣны имущества, подлежащаго оплатѣ пошлиной, входитъ стоимость, какъ всего наличнаго, такъ равно долговыхъ и спорныхъ имуществъ. Но съ долговыхъ претензій и спорныхъ имуществъ пошлина взыскивается при полученіи наслѣдникомъ или пріобрѣтателемъ слѣдующихъ по симъ претензіямъ суммъ или состоявшаго въ спорѣ имущества. При этомъ, для обезпеченія поступленія пошлины, на долговыхъ документахъ дѣлается надлежащая о семъ надпись». Такимъ образомъ, статья эта совершенно ясно и точно опредѣляетъ время взысканія пошлины съ долговыхъ претензій и спорныхъ имуществъ точно также, какъ ст. 164 (ст. 215 изд. 1903 г.) опредѣляетъ время взысканія пошлинъ съ имущества наличнаго. Постановленіе этой 157 ст. вполнѣ самостоятельно и ничего общаго съ ст. 165 (216 изд. 1903 г.)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-110:УПШ:219:text:2074",
+      "statute": "УПШ ст. 219",
+      "code": "УПШ",
+      "article": "ст. 219",
+      "decision_id": "1905-110",
+      "year": 1905,
+      "decision_number": 110,
+      "field": "text",
+      "start": 2074,
+      "end": 2083,
+      "quote_original": "ст. 219 и",
+      "context_original": "находитъ, что вопросъ этотъ подлежитъ разрѣшенію въ утвердительномъ смыслѣ. Основываясь на содержаніи ст. 166 уст. о пошл. изд. 1893 года (ст. 219 изд. 1903 г.), онъ полагаетъ, что причитающаяся казнѣ наслѣдственная пошлина, уплата коей, по какой бы то ни было причинѣ, не можетъ быть обе",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "c74cb52dfd50a790795389e2bfb53a16036e8300791c060b02f7cdfdaafc7aa5",
+      "headnote_sha256": "b3fc5398daee4cabde979f4fbf9138d6b1f1b0c2b3f8c338d876d6a749888c12",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-110",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-110?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+219&law=1905-110%3A%D0%A3%D0%9F%D0%A8%3A219%3Atext%3A2074&at=2074&end=2083",
+      "source_warning": null,
+      "passage_id": "1905-110:1650-3428",
+      "sources": [
+        {
+          "page": 302,
+          "page_method": "header",
+          "file": "p0152_L.txt",
+          "start": 2074,
+          "end": 2083
+        }
+      ],
+      "printed_pages": [
+        302
+      ],
+      "scans": [
+        {
+          "file": "p0152_L.txt",
+          "page": 302,
+          "full": "scans/1905/pages/p0152_L.webp",
+          "width": 1100,
+          "height": 1540,
+          "ocr_sha256": "c41fdd501c50344db286abfb466534950cdbc3e6d062f423794f93beb2750974",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 1673,
+          "end": 2489,
+          "quote_original": "съ тѣхъ входящихъ въ составъ наслѣдства долговыхъ претензій, поступленіе пошлины по которымъ, при полученіи слѣдующихъ по нимъ суммъ, не можетъ быть обеспечено учиненіемъ о семъ на долговыхъ документахъ надписи за несуществованіемъ такихъ документовъ? Проситель находитъ, что вопросъ этотъ подлежитъ разрѣшенію въ утвердительномъ смыслѣ. Основываясь на содержаніи ст. 166 уст. о пошл. изд. 1893 года (ст. 219 изд. 1903 г.), онъ полагаетъ, что причитающаяся казнѣ наслѣдственная пошлина, уплата коей, по какой бы то ни было причинѣ, не можетъ быть обезпечена, подлежитъ безотлагательному взносу, хотя бы и по такому долговому имуществу наслѣдодателя, на которое, по заявленію о составѣ наслѣдства, нѣтъ никакихъ долговыхъ документовъ, на коихъ могла бы быть сдѣлана обезпечительная надпись, напримѣръ, какъ въ данномъ"
+        },
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 2683,
+          "end": 2739,
+          "quote_original": "Ст. 157 уст. о пошл. изд. 1893 г. (ст. 207 изд. 1903 г.)",
+          "role": "act_identity"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2074,
+          "end": 2083,
+          "quote_original": "ст. 219 и",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 1673,
+              "end": 2489,
+              "quote_original": "съ тѣхъ входящихъ въ составъ наслѣдства долговыхъ претензій, поступленіе пошлины по которымъ, при полученіи слѣдующихъ по нимъ суммъ, не можетъ быть обеспечено учиненіемъ о семъ на долговыхъ документахъ надписи за несуществованіемъ такихъ документовъ? Проситель находитъ, что вопросъ этотъ подлежитъ разрѣшенію въ утвердительномъ смыслѣ. Основываясь на содержаніи ст. 166 уст. о пошл. изд. 1893 года (ст. 219 изд. 1903 г.), онъ полагаетъ, что причитающаяся казнѣ наслѣдственная пошлина, уплата коей, по какой бы то ни было причинѣ, не можетъ быть обезпечена, подлежитъ безотлагательному взносу, хотя бы и по такому долговому имуществу наслѣдодателя, на которое, по заявленію о составѣ наслѣдства, нѣтъ никакихъ долговыхъ документовъ, на коихъ могла бы быть сдѣлана обезпечительная надпись, напримѣръ, какъ въ данномъ"
+            },
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 2683,
+              "end": 2739,
+              "quote_original": "Ст. 157 уст. о пошл. изд. 1893 г. (ст. 207 изд. 1903 г.)",
+              "role": "act_identity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-032:УПШ:236:text:1828",
+      "statute": "УПШ ст. 236",
+      "code": "УПШ",
+      "article": "ст. 236",
+      "decision_id": "1896-032",
+      "year": 1896,
+      "decision_number": 32,
+      "field": "text",
+      "start": 1828,
+      "end": 1835,
+      "quote_original": "ст. 236",
+      "context_original": "естьянами Эстляндской губерніи участковъ кресть янской * и мызной земли, а равно укрѣпленія закладныхъ правъ на эги уча стки, согласно 4 п. ст. 236 уст. о пошл., подлежатъ освобожденію отъ канцелярской актовой трехрублевой пошлины, о чемъ и представила на благоусмотрѣніе Департамента Не",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "e4c2cb17d6b78fcc4ddcd49d7eb68c721cf3c3922897a667d46dd9a605d3c4c6",
+      "headnote_sha256": "f7115f74f609b858728ded2e569ca847b938c38731043ff2ab2921831eddae0a",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-032",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-032?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+236&law=1896-032%3A%D0%A3%D0%9F%D0%A8%3A236%3Atext%3A1828&at=1828&end=1835&v=1896-restored-20261019",
+      "source_warning": null,
+      "passage_id": "1896-032:882-2777",
+      "sources": [
+        {
+          "page": 769,
+          "page_method": "header",
+          "file": "p0062.txt",
+          "start": 1828,
+          "end": 1835
+        }
+      ],
+      "printed_pages": [
+        769
+      ],
+      "scans": [
+        {
+          "file": "p0062.txt",
+          "page": 769,
+          "full": "scans/1896/pages/p0062-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1670,
+          "ocr_sha256": "b380df37f2336149b4a6e2087428b384ca707eb265c98361602cfdf08324ee80",
+          "pdf_page": 62,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1828,
+          "end": 1848,
+          "quote_original": "ст. 236 уст. о пошл.",
+          "act_code": "УПШ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1828,
+          "end": 1835,
+          "quote_original": "ст. 236",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1828,
+              "end": 1848,
+              "quote_original": "ст. 236 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-046:УПШ:237:text:600",
+      "statute": "УПШ ст. 237",
+      "code": "УПШ",
+      "article": "ст. 237",
+      "decision_id": "1897-046",
+      "year": 1897,
+      "decision_number": 46,
+      "field": "text",
+      "start": 600,
+      "end": 607,
+      "quote_original": "ст. 237",
+      "context_original": "о сполна капиталъ съ процентами. Начальникъ крѣпостнаго отдѣленія оставилъ ходатайство это безъ последствій, за непредставленіемъ требуемой ст. 237 уст. о пошл. актовой пошлины. Съѣздъ мировыхъ судей нашелъ опредѣленіе Начальника крѣпостнаго отдѣленія вполнѣ согласнымъ съ требованіемъ 2",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "061b56033085c4059233b860d053661640314b6580fb02a7007eb7386cfeffc2",
+      "headnote_sha256": "acc809b29758ee69cc4811ccf084a8d84896a6d2573d431aa7a4e326a3365d11",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-046",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-046?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+237&law=1897-046%3A%D0%A3%D0%9F%D0%A8%3A237%3Atext%3A600&at=600&end=607",
+      "source_warning": null,
+      "passage_id": "1897-046:0-1749",
+      "sources": [
+        {
+          "page": 156,
+          "page_method": "header",
+          "file": "p0089_L.txt",
+          "start": 600,
+          "end": 607
+        }
+      ],
+      "printed_pages": [
+        156
+      ],
+      "scans": [
+        {
+          "file": "p0089_L.txt",
+          "page": 156,
+          "full": "scans/1897/pages/p0089_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1539,
+          "ocr_sha256": "5f48c0bbed7e73bd1d146b03ef0b6bc17375f55d38a5260f0e29b88c69531284",
+          "pdf_page": 177,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 600,
+          "end": 620,
+          "quote_original": "ст. 237 уст. о пошл."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 600,
+          "end": 607,
+          "quote_original": "ст. 237",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 600,
+              "end": 620,
+              "quote_original": "ст. 237 уст. о пошл."
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 2854,
+          "end": 2861,
+          "quote_original": "ст. 237",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 2785,
+              "end": 2861,
+              "quote_original": "ст. 442 уст. пошл. (по прод. 1886 г.), составляющемъ по изд. 1893 г. ст. 237"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-036:УПШ:33:text:4937",
+      "statute": "УПШ ст. 33",
+      "code": "УПШ",
+      "article": "ст. 33",
+      "decision_id": "1896-036",
+      "year": 1896,
+      "decision_number": 36,
+      "field": "text",
+      "start": 4937,
+      "end": 4943,
+      "quote_original": "ст. 33",
+      "context_original": "ли пожизненномъ правѣ. Такъ, при опредѣленіи цѣны гербовой бумаги для актовъ или доку ментовъ, по которымъ производятся безсрочные платежи, ст. 33 уст. о пошл. устанавливаетъ двѣнадцатилѣт нюю сложность выговоренныхъ суммъ, а ст. 273 уст. гр. суд. опредѣляетъ цѣ ну исковъ о правѣ, кото",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "18ce04f0b533a51dd96351c730e1417e44ac9d044cc8ce7910368628fb9f7ff3",
+      "headnote_sha256": "0e56130a667cc2ffaa86c695b982dcf9efdaf2dc29daa110f52c7097cdc8aae0",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-036",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-036?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+33&law=1896-036%3A%D0%A3%D0%9F%D0%A8%3A33%3Atext%3A4937&at=4937&end=4943&v=1896-restored-20261019",
+      "source_warning": null,
+      "passage_id": "1896-036:4278-5845",
+      "sources": [
+        {
+          "page": 776,
+          "page_method": "neighbors",
+          "file": "p0069.txt",
+          "start": 4937,
+          "end": 4943
+        }
+      ],
+      "printed_pages": [
+        776
+      ],
+      "scans": [
+        {
+          "file": "p0069.txt",
+          "page": 776,
+          "full": "scans/1896/pages/p0069-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1676,
+          "ocr_sha256": "0be37be90a86713ac4f9627be7b92c354976f60b4ee4a4979c95ddf9293893fe",
+          "pdf_page": 69,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 4937,
+          "end": 4956,
+          "quote_original": "ст. 33 уст. о пошл.",
+          "act_code": "УПШ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4937,
+          "end": 4943,
+          "quote_original": "ст. 33",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4937,
+              "end": 4956,
+              "quote_original": "ст. 33 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 5348,
+          "end": 5354,
+          "quote_original": "ст. 33",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4937,
+              "end": 4956,
+              "quote_original": "ст. 33 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-007:УПШ:363:text:1378",
+      "statute": "УПШ ст. 363",
+      "code": "УПШ",
+      "article": "ст. 363",
+      "decision_id": "1896-007",
+      "year": 1896,
+      "decision_number": 7,
+      "field": "text",
+      "start": 1378,
+      "end": 1385,
+      "quote_original": "ст. 363",
+      "context_original": "го начала, подверглась измѣненію и дополненію ст. 28уст. о герб. сборѣ (изд. 1886 эта же статья, по силѣ ст. 1573” уст. гр. суд. и прим. къ ст. 363 уст. о пошл. (по прод. 1886 г.), распро страняется и на губерніи Царства Поль скаго, то и возникаетъ вопросъ о томъ: —въ какой степени уста",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b0549607b534483125742fe80c31962f3d7a99cd640304aba5fd56a21b04d398",
+      "headnote_sha256": "701191e7ff2244c56e8c208f56c3dc2529568748ff287f9a85dfa91459b55fd5",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-007",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-007?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+363&law=1896-007%3A%D0%A3%D0%9F%D0%A8%3A363%3Atext%3A1378&at=1378&end=1385",
+      "source_warning": null,
+      "passage_id": "1896-007:0-1615",
+      "sources": [
+        {
+          "page": 718,
+          "page_method": "header",
+          "file": "p0011.txt",
+          "start": 1378,
+          "end": 1385
+        }
+      ],
+      "printed_pages": [
+        718
+      ],
+      "scans": [
+        {
+          "file": "p0011.txt",
+          "page": 718,
+          "full": "scans/1896/pages/p0011-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1647,
+          "ocr_sha256": "f503df5b074f2aa04c4ee8b317f9b69494f3f3005f1161052a422d4fba2d3cd1",
+          "pdf_page": 11,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1378,
+          "end": 1398,
+          "quote_original": "ст. 363 уст. о пошл.",
+          "act_code": "УПШ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1378,
+          "end": 1385,
+          "quote_original": "ст. 363",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1378,
+              "end": 1398,
+              "quote_original": "ст. 363 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-046:УПШ:442:text:2785",
+      "statute": "УПШ ст. 442",
+      "code": "УПШ",
+      "article": "ст. 442",
+      "decision_id": "1897-046",
+      "year": 1897,
+      "decision_number": 46,
+      "field": "text",
+      "start": 2785,
+      "end": 2792,
+      "quote_original": "ст. 442",
+      "context_original": "8 іюня 1893 г. Правила эти остались въ сущности безъ измѣненія и по изданію сего закона. Имъ, между прочимъ, повелѣно въ примѣчаніи 4-мъ къ ст. 442 уст. пошл. (по прод. 1886 г.), составляющемъ по изд. 1893 г. ст. 237, послѣ словъ: „въ губерніяхъ Царства Польскаго“ включить слова „и Приб",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "061b56033085c4059233b860d053661640314b6580fb02a7007eb7386cfeffc2",
+      "headnote_sha256": "acc809b29758ee69cc4811ccf084a8d84896a6d2573d431aa7a4e326a3365d11",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-046",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-046?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+442&law=1897-046%3A%D0%A3%D0%9F%D0%A8%3A442%3Atext%3A2785&at=2785&end=2792",
+      "source_warning": null,
+      "passage_id": "1897-046:1525-2944",
+      "sources": [
+        {
+          "page": 157,
+          "page_method": "header",
+          "file": "p0089_R.txt",
+          "start": 2785,
+          "end": 2792
+        }
+      ],
+      "printed_pages": [
+        157
+      ],
+      "scans": [
+        {
+          "file": "p0089_R.txt",
+          "page": 157,
+          "full": "scans/1897/pages/p0089_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1523,
+          "ocr_sha256": "d5a6b2b42c319075d13fd44f3703a0bb94ee86bc58cd07f3e49e2856f6c59d01",
+          "pdf_page": 178,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УПШ",
+          "field": "text",
+          "start": 2785,
+          "end": 2822,
+          "quote_original": "ст. 442 уст. пошл. (по прод. 1886 г.)"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2785,
+          "end": 2792,
+          "quote_original": "ст. 442",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УПШ",
+              "field": "text",
+              "start": 2785,
+              "end": 2822,
+              "quote_original": "ст. 442 уст. пошл. (по прод. 1886 г.)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-007:УПШ:47:text:2512",
+      "statute": "УПШ ст. 47",
+      "code": "УПШ",
+      "article": "ст. 47",
+      "decision_id": "1896-007",
+      "year": 1896,
+      "decision_number": 7,
+      "field": "text",
+      "start": 2512,
+      "end": 2518,
+      "quote_original": "ст. 47",
+      "context_original": "тной пошлины, могутъ быть принимаемы за основаніе не всѣ законныя оцѣнки, исчисленныя въ ст. 38 и примѣч. уст. о герб. сбо рѣ изд. 1886 г. (ст. 47 уст. о пошл. изд. 1893 г.), а только: 1) оцѣнка по табели, приложенной къ этой ст. 38 —для имѣній, находящихся въ уѣздѣ, и 2) оцѣнки городс",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b0549607b534483125742fe80c31962f3d7a99cd640304aba5fd56a21b04d398",
+      "headnote_sha256": "701191e7ff2244c56e8c208f56c3dc2529568748ff287f9a85dfa91459b55fd5",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-007",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-007?mode=laws&c=%D0%A3%D0%9F%D0%A8&q=%D1%81%D1%82.+47&law=1896-007%3A%D0%A3%D0%9F%D0%A8%3A47%3Atext%3A2512&at=2512&end=2518",
+      "source_warning": null,
+      "passage_id": "1896-007:1409-2787",
+      "sources": [
+        {
+          "page": 718,
+          "page_method": "header",
+          "file": "p0011.txt",
+          "start": 2512,
+          "end": 2518
+        }
+      ],
+      "printed_pages": [
+        718
+      ],
+      "scans": [
+        {
+          "file": "p0011.txt",
+          "page": 718,
+          "full": "scans/1896/pages/p0011-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1647,
+          "ocr_sha256": "f503df5b074f2aa04c4ee8b317f9b69494f3f3005f1161052a422d4fba2d3cd1",
+          "pdf_page": 11,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2512,
+          "end": 2531,
+          "quote_original": "ст. 47 уст. о пошл.",
+          "act_code": "УПШ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2512,
+          "end": 2518,
+          "quote_original": "ст. 47",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2512,
+              "end": 2531,
+              "quote_original": "ст. 47 уст. о пошл.",
+              "act_code": "УПШ"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

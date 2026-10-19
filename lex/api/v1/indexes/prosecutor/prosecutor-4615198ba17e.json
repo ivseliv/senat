@@ -1,0 +1,36 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:2433ea245c39e57a199c959245d64c887e26d851eed1b4249f20b59c5405b965",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "prosecutor",
+    "id": "prosecutor-4615198ba17e",
+    "label": "Бедняков А. Т."
+  },
+  "count": 9,
+  "decision_ids": [
+    "1905-003",
+    "1905-004",
+    "1905-024",
+    "1905-025",
+    "1905-026",
+    "1905-060",
+    "1905-088",
+    "1905-111",
+    "1905-112"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-003.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-004.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-024.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-025.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-026.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-060.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-088.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-111.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-112.json"
+    ]
+  }
+}

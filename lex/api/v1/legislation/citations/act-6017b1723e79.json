@@ -1,0 +1,1958 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:2433ea245c39e57a199c959245d64c887e26d851eed1b4249f20b59c5405b965",
+  "resource": "legislation-citations",
+  "scope": {
+    "code": "ГУП1825",
+    "id": "act-6017b1723e79"
+  },
+  "count": 18,
+  "items": [
+    {
+      "id": "1905-032:ГУП1825:184:text:2783",
+      "statute": "ГУП1825 ст. 184",
+      "code": "ГУП1825",
+      "article": "ст. 184",
+      "decision_id": "1905-032",
+      "year": 1905,
+      "decision_number": 32,
+      "field": "text",
+      "start": 2783,
+      "end": 2796,
+      "quote_original": "ст. 184 и 188",
+      "context_original": "ею денегъ. Въ объясненіи на кассаціонную жалобу присяжный повѣренный Марчевскій, повѣренный Жуковской, указываетъ на то, что, на основаніи ст. 184 и 188 гр. улож., замужняя женщина, вступившая безъ согласія ея мужа въ договоръ по отношенію къ имуществу, состоящему въ управленіи ея мужа, въ п",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "4cc0494ea1ab11d8ff83b6909ff74ef439f1f5b59ce16df8c3cf4ba44bd05eaf",
+      "headnote_sha256": "563c575f742feeec834d2c8665075b5fb875074db759fd3671d16d153df2f605",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032?mode=laws&c=%D0%93%D0%A3%D0%9F1825&q=%D1%81%D1%82.+184&law=1905-032%3A%D0%93%D0%A3%D0%9F1825%3A184%3Atext%3A2783&at=2783&end=2796",
+      "source_warning": null,
+      "passage_id": "1905-032:1637-3358",
+      "sources": [
+        {
+          "page": 85,
+          "page_method": "header",
+          "file": "p0043_R.txt",
+          "start": 2783,
+          "end": 2796
+        }
+      ],
+      "printed_pages": [
+        85
+      ],
+      "scans": [
+        {
+          "file": "p0043_R.txt",
+          "page": 85,
+          "full": "scans/1905/pages/p0043_R.webp",
+          "width": 1100,
+          "height": 1529,
+          "ocr_sha256": "e3614c278315eda29d37cd9db9e893982392a69e2c2df2190e40fc187e6e5e4d",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2783,
+          "end": 2806,
+          "quote_original": "ст. 184 и 188 гр. улож.",
+          "act_code": "ГУП1825"
+        },
+        {
+          "kind": "direct",
+          "role": "act_identity",
+          "act_code": "ГУП1825",
+          "field": "text",
+          "start": 522,
+          "quote_original": "2 п. 184 ст. гр. улож. 1825 г.",
+          "end": 552
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2783,
+          "end": 2796,
+          "quote_original": "ст. 184 и 188",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2783,
+              "end": 2806,
+              "quote_original": "ст. 184 и 188 гр. улож.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 522,
+              "quote_original": "2 п. 184 ст. гр. улож. 1825 г.",
+              "end": 552
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 6738,
+          "end": 6751,
+          "quote_original": "ст. 184 и 188",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 6738,
+              "end": 6761,
+              "quote_original": "ст. 184 и 188 гр. улож.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 522,
+              "quote_original": "2 п. 184 ст. гр. улож. 1825 г.",
+              "end": 552
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-032:ГУП1825:188:text:2783",
+      "statute": "ГУП1825 ст. 188",
+      "code": "ГУП1825",
+      "article": "ст. 188",
+      "decision_id": "1905-032",
+      "year": 1905,
+      "decision_number": 32,
+      "field": "text",
+      "start": 2783,
+      "end": 2796,
+      "quote_original": "ст. 184 и 188",
+      "context_original": "ею денегъ. Въ объясненіи на кассаціонную жалобу присяжный повѣренный Марчевскій, повѣренный Жуковской, указываетъ на то, что, на основаніи ст. 184 и 188 гр. улож., замужняя женщина, вступившая безъ согласія ея мужа въ договоръ по отношенію къ имуществу, состоящему въ управленіи ея мужа, въ п",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "4cc0494ea1ab11d8ff83b6909ff74ef439f1f5b59ce16df8c3cf4ba44bd05eaf",
+      "headnote_sha256": "563c575f742feeec834d2c8665075b5fb875074db759fd3671d16d153df2f605",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032?mode=laws&c=%D0%93%D0%A3%D0%9F1825&q=%D1%81%D1%82.+188&law=1905-032%3A%D0%93%D0%A3%D0%9F1825%3A188%3Atext%3A2783&at=2783&end=2796",
+      "source_warning": null,
+      "passage_id": "1905-032:1637-3358",
+      "sources": [
+        {
+          "page": 85,
+          "page_method": "header",
+          "file": "p0043_R.txt",
+          "start": 2783,
+          "end": 2796
+        }
+      ],
+      "printed_pages": [
+        85
+      ],
+      "scans": [
+        {
+          "file": "p0043_R.txt",
+          "page": 85,
+          "full": "scans/1905/pages/p0043_R.webp",
+          "width": 1100,
+          "height": 1529,
+          "ocr_sha256": "e3614c278315eda29d37cd9db9e893982392a69e2c2df2190e40fc187e6e5e4d",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2783,
+          "end": 2806,
+          "quote_original": "ст. 184 и 188 гр. улож.",
+          "act_code": "ГУП1825"
+        },
+        {
+          "kind": "direct",
+          "role": "act_identity",
+          "act_code": "ГУП1825",
+          "field": "text",
+          "start": 522,
+          "quote_original": "2 п. 184 ст. гр. улож. 1825 г.",
+          "end": 552
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2783,
+          "end": 2796,
+          "quote_original": "ст. 184 и 188",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2783,
+              "end": 2806,
+              "quote_original": "ст. 184 и 188 гр. улож.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 522,
+              "quote_original": "2 п. 184 ст. гр. улож. 1825 г.",
+              "end": 552
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 5298,
+          "end": 5305,
+          "quote_original": "ст. 188",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 5298,
+              "end": 5315,
+              "quote_original": "ст. 188 гр. улож.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 522,
+              "quote_original": "2 п. 184 ст. гр. улож. 1825 г.",
+              "end": 552
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 6738,
+          "end": 6751,
+          "quote_original": "ст. 184 и 188",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 6738,
+              "end": 6761,
+              "quote_original": "ст. 184 и 188 гр. улож.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 522,
+              "quote_original": "2 п. 184 ст. гр. улож. 1825 г.",
+              "end": 552
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-032:ГУП1825:191–193:text:6159",
+      "statute": "ГУП1825 ст. 191–193",
+      "code": "ГУП1825",
+      "article": "ст. 191–193",
+      "decision_id": "1905-032",
+      "year": 1905,
+      "decision_number": 32,
+      "field": "text",
+      "start": 6159,
+      "end": 6170,
+      "quote_original": "ст. 191—193",
+      "context_original": "вой Ѳеклой Жуковскою векселя, служащаго основаніемъ предъявленнаго къ ней иска, Жуковская состояла въ бракѣ и мужу ея принадлежало, въ силу ст. 191—193 гр. улож., управленіе имуществомъ его жены, и что истицею не доказано, чтобы покойный Жуковскій изъявилъ согласіе на выдачу его женою означ",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "4cc0494ea1ab11d8ff83b6909ff74ef439f1f5b59ce16df8c3cf4ba44bd05eaf",
+      "headnote_sha256": "563c575f742feeec834d2c8665075b5fb875074db759fd3671d16d153df2f605",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032?mode=laws&c=%D0%93%D0%A3%D0%9F1825&q=%D1%81%D1%82.+191%E2%80%93193&law=1905-032%3A%D0%93%D0%A3%D0%9F1825%3A191%E2%80%93193%3Atext%3A6159&at=6159&end=6170",
+      "source_warning": null,
+      "passage_id": "1905-032:5601-7019",
+      "sources": [
+        {
+          "page": 87,
+          "page_method": "header",
+          "file": "p0044_R.txt",
+          "start": 6159,
+          "end": 6170
+        }
+      ],
+      "printed_pages": [
+        87
+      ],
+      "scans": [
+        {
+          "file": "p0044_R.txt",
+          "page": 87,
+          "full": "scans/1905/pages/p0044_R.webp",
+          "width": 1100,
+          "height": 1531,
+          "ocr_sha256": "df3caaafa9b609ee44096e835db6a2344f405275d56a6e5a86c36277345910df",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 6159,
+          "end": 6180,
+          "quote_original": "ст. 191—193 гр. улож.",
+          "act_code": "ГУП1825"
+        },
+        {
+          "kind": "direct",
+          "role": "act_identity",
+          "act_code": "ГУП1825",
+          "field": "text",
+          "start": 522,
+          "quote_original": "2 п. 184 ст. гр. улож. 1825 г.",
+          "end": 552
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 6159,
+          "end": 6170,
+          "quote_original": "ст. 191—193",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 6159,
+              "end": 6180,
+              "quote_original": "ст. 191—193 гр. улож.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 522,
+              "quote_original": "2 п. 184 ст. гр. улож. 1825 г.",
+              "end": 552
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-032:ГУП1825:192:text:4717",
+      "statute": "ГУП1825 ст. 192",
+      "code": "ГУП1825",
+      "article": "ст. 192",
+      "decision_id": "1905-032",
+      "year": 1905,
+      "decision_number": 32,
+      "field": "text",
+      "start": 4717,
+      "end": 4724,
+      "quote_original": "ст. 192",
+      "context_original": "который въ отношеніи принадлежащихъ женѣ вещей потребляемыхъ (res fungibiles), въ существѣ, подчиняется общимъ правиламъ о пользовладѣніи (ст. 192 гр. улож. и 587 гр. код.). Такимъ образомъ, оказывается, что, на основаніи 2 п. 184 ст. гр. улож., жена, безъ личнаго содѣйствія мужа или б",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "4cc0494ea1ab11d8ff83b6909ff74ef439f1f5b59ce16df8c3cf4ba44bd05eaf",
+      "headnote_sha256": "563c575f742feeec834d2c8665075b5fb875074db759fd3671d16d153df2f605",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032?mode=laws&c=%D0%93%D0%A3%D0%9F1825&q=%D1%81%D1%82.+192&law=1905-032%3A%D0%93%D0%A3%D0%9F1825%3A192%3Atext%3A4717&at=4717&end=4724",
+      "source_warning": null,
+      "passage_id": "1905-032:3106-4751",
+      "sources": [
+        {
+          "page": 86,
+          "page_method": "header",
+          "file": "p0044_L.txt",
+          "start": 4717,
+          "end": 4724
+        }
+      ],
+      "printed_pages": [
+        86
+      ],
+      "scans": [
+        {
+          "file": "p0044_L.txt",
+          "page": 86,
+          "full": "scans/1905/pages/p0044_L.webp",
+          "width": 1100,
+          "height": 1531,
+          "ocr_sha256": "9b8c90880f53c9cd590d6272d001b1390e157075cb8a7d05d84d09964948825f",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 4717,
+          "end": 4734,
+          "quote_original": "ст. 192 гр. улож.",
+          "act_code": "ГУП1825"
+        },
+        {
+          "kind": "direct",
+          "role": "act_identity",
+          "act_code": "ГУП1825",
+          "field": "text",
+          "start": 522,
+          "quote_original": "2 п. 184 ст. гр. улож. 1825 г.",
+          "end": 552
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4717,
+          "end": 4724,
+          "quote_original": "ст. 192",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4717,
+              "end": 4734,
+              "quote_original": "ст. 192 гр. улож.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 522,
+              "quote_original": "2 п. 184 ст. гр. улож. 1825 г.",
+              "end": 552
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-087:ГУП1825:194:text:5011",
+      "statute": "ГУП1825 ст. 194",
+      "code": "ГУП1825",
+      "article": "ст. 194",
+      "decision_id": "1897-087",
+      "year": 1897,
+      "decision_number": 87,
+      "field": "text",
+      "start": 5011,
+      "end": 5018,
+      "quote_original": "ст. 194",
+      "context_original": "ленія этого доказательства невозможно, а слѣдуетъ обратиться къ тѣмъ способамъ удостовѣренія наличности имущества жены, которыми указаны въ ст. 194 гр. улож. 1825 г. 4) Что же касается той части рѣшенія мирового съѣзда, которая относится къ спору о движимомъ имуществѣ Пивоварскаго, то о",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "fccec50a64f95906d4d6b2d113972460c104219f68ae159e2a0df64ab71d0817",
+      "headnote_sha256": "cced8a76eacffcb456f4bfb9f96d8669ddff670adb720d0db3f8eb18459be6f5",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-087",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-087?mode=laws&c=%D0%93%D0%A3%D0%9F1825&q=%D1%81%D1%82.+194&law=1897-087%3A%D0%93%D0%A3%D0%9F1825%3A194%3Atext%3A5011&at=5011&end=5018",
+      "source_warning": null,
+      "passage_id": "1897-087:4172-5845",
+      "sources": [
+        {
+          "page": 286,
+          "page_method": "header",
+          "file": "p0154_L.txt",
+          "start": 5011,
+          "end": 5018
+        }
+      ],
+      "printed_pages": [
+        286
+      ],
+      "scans": [
+        {
+          "file": "p0154_L.txt",
+          "page": 286,
+          "full": "scans/1897/pages/p0154_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1559,
+          "ocr_sha256": "61585de0b1f826dc108b886068324f7150b5941b44061c0b53b1ef790ca61174",
+          "pdf_page": 307,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 5011,
+          "end": 5036,
+          "quote_original": "ст. 194 гр. улож. 1825 г.",
+          "act_code": "ГУП1825"
+        },
+        {
+          "kind": "direct",
+          "role": "act_identity",
+          "act_code": "ГУП1825",
+          "field": "text",
+          "start": 1570,
+          "quote_original": "ст. 232 гр. улож. 1825 г.",
+          "end": 1595
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5011,
+          "end": 5018,
+          "quote_original": "ст. 194",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 5011,
+              "end": 5036,
+              "quote_original": "ст. 194 гр. улож. 1825 г.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 1570,
+              "quote_original": "ст. 232 гр. улож. 1825 г.",
+              "end": 1595
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-022:ГУП1825:201:text:971",
+      "statute": "ГУП1825 ст. 201",
+      "code": "ГУП1825",
+      "article": "ст. 201",
+      "decision_id": "1897-022",
+      "year": 1897,
+      "decision_number": 22,
+      "field": "text",
+      "start": 971,
+      "end": 984,
+      "quote_original": "ст. 201 и 213",
+      "context_original": "ъ имуществомъ ничего изъ таковаго своему мужу, вопреки 201 и 213 ст. гражд. улож. 1825 г., не даетъ, проживая отдѣльно отъ мужа; 2) что, по ст. 201 и 213 гражд. улож., жена, сохранившая за собою по предбрачному договору пользовладѣніе своимъ имуществомъ, какъ и та, которой это пользовладѣніе",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "1ee4b35f9d8d362f57c90eeeb9ce328e8ea6ed23c4ac0fb2411d0bf522748737",
+      "headnote_sha256": "bda12493ab9d6f24fbf48675ddd590e67d634d99ffa08c9d6df9c7c12fd83a71",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-022",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-022?mode=laws&c=%D0%93%D0%A3%D0%9F1825&q=%D1%81%D1%82.+201&law=1897-022%3A%D0%93%D0%A3%D0%9F1825%3A201%3Atext%3A971&at=971&end=984",
+      "source_warning": null,
+      "passage_id": "1897-022:0-1640",
+      "sources": [
+        {
+          "page": 82,
+          "page_method": "header",
+          "file": "p0052_L.txt",
+          "start": 971,
+          "end": 984
+        }
+      ],
+      "printed_pages": [
+        82
+      ],
+      "scans": [
+        {
+          "file": "p0052_L.txt",
+          "page": 82,
+          "full": "scans/1897/pages/p0052_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1581,
+          "ocr_sha256": "ce6045fd6b33f3a6ba6d3673d59cfeee1ea754938e6ee191ff6ae27047c7a015",
+          "pdf_page": 103,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 971,
+          "end": 997,
+          "quote_original": "ст. 201 и 213 гражд. улож.",
+          "act_code": "ГУП1825"
+        },
+        {
+          "kind": "direct",
+          "role": "act_identity",
+          "act_code": "ГУП1825",
+          "field": "text",
+          "start": 886,
+          "quote_original": "201 и 213 ст. гражд. улож. 1825 г.",
+          "end": 920
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 971,
+          "end": 984,
+          "quote_original": "ст. 201 и 213",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 971,
+              "end": 997,
+              "quote_original": "ст. 201 и 213 гражд. улож.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 886,
+              "quote_original": "201 и 213 ст. гражд. улож. 1825 г.",
+              "end": 920
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 4375,
+          "end": 4388,
+          "quote_original": "ст. 201 и 213",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4375,
+              "end": 4401,
+              "quote_original": "ст. 201 и 213 гражд. улож.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 886,
+              "quote_original": "201 и 213 ст. гражд. улож. 1825 г.",
+              "end": 920
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-022:ГУП1825:213:text:971",
+      "statute": "ГУП1825 ст. 213",
+      "code": "ГУП1825",
+      "article": "ст. 213",
+      "decision_id": "1897-022",
+      "year": 1897,
+      "decision_number": 22,
+      "field": "text",
+      "start": 971,
+      "end": 984,
+      "quote_original": "ст. 201 и 213",
+      "context_original": "ъ имуществомъ ничего изъ таковаго своему мужу, вопреки 201 и 213 ст. гражд. улож. 1825 г., не даетъ, проживая отдѣльно отъ мужа; 2) что, по ст. 201 и 213 гражд. улож., жена, сохранившая за собою по предбрачному договору пользовладѣніе своимъ имуществомъ, какъ и та, которой это пользовладѣніе",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "1ee4b35f9d8d362f57c90eeeb9ce328e8ea6ed23c4ac0fb2411d0bf522748737",
+      "headnote_sha256": "bda12493ab9d6f24fbf48675ddd590e67d634d99ffa08c9d6df9c7c12fd83a71",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-022",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-022?mode=laws&c=%D0%93%D0%A3%D0%9F1825&q=%D1%81%D1%82.+213&law=1897-022%3A%D0%93%D0%A3%D0%9F1825%3A213%3Atext%3A971&at=971&end=984",
+      "source_warning": null,
+      "passage_id": "1897-022:0-1640",
+      "sources": [
+        {
+          "page": 82,
+          "page_method": "header",
+          "file": "p0052_L.txt",
+          "start": 971,
+          "end": 984
+        }
+      ],
+      "printed_pages": [
+        82
+      ],
+      "scans": [
+        {
+          "file": "p0052_L.txt",
+          "page": 82,
+          "full": "scans/1897/pages/p0052_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1581,
+          "ocr_sha256": "ce6045fd6b33f3a6ba6d3673d59cfeee1ea754938e6ee191ff6ae27047c7a015",
+          "pdf_page": 103,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 971,
+          "end": 997,
+          "quote_original": "ст. 201 и 213 гражд. улож.",
+          "act_code": "ГУП1825"
+        },
+        {
+          "kind": "direct",
+          "role": "act_identity",
+          "act_code": "ГУП1825",
+          "field": "text",
+          "start": 886,
+          "quote_original": "201 и 213 ст. гражд. улож. 1825 г.",
+          "end": 920
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 971,
+          "end": 984,
+          "quote_original": "ст. 201 и 213",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 971,
+              "end": 997,
+              "quote_original": "ст. 201 и 213 гражд. улож.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 886,
+              "quote_original": "201 и 213 ст. гражд. улож. 1825 г.",
+              "end": 920
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 4375,
+          "end": 4388,
+          "quote_original": "ст. 201 и 213",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4375,
+              "end": 4401,
+              "quote_original": "ст. 201 и 213 гражд. улож.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 886,
+              "quote_original": "201 и 213 ст. гражд. улож. 1825 г.",
+              "end": 920
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-032:ГУП1825:213:text:4464",
+      "statute": "ГУП1825 ст. 213",
+      "code": "ГУП1825",
+      "article": "ст. 213",
+      "decision_id": "1905-032",
+      "year": 1905,
+      "decision_number": 32,
+      "field": "text",
+      "start": 4464,
+      "end": 4471,
+      "quote_original": "ст. 213",
+      "context_original": "ному договору, заключенному супругами; что лишь при установленіи раздѣльности имущества сохраняется за женою пользовладѣніе ея имуществомъ (ст. 213 гр. улож.); во всѣхъ остальныхъ случаяхъ женино имущество поступаетъ въ пользовладѣніе и управленіе мужа, который въ отношеніи принадлежащи",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "4cc0494ea1ab11d8ff83b6909ff74ef439f1f5b59ce16df8c3cf4ba44bd05eaf",
+      "headnote_sha256": "563c575f742feeec834d2c8665075b5fb875074db759fd3671d16d153df2f605",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-032?mode=laws&c=%D0%93%D0%A3%D0%9F1825&q=%D1%81%D1%82.+213&law=1905-032%3A%D0%93%D0%A3%D0%9F1825%3A213%3Atext%3A4464&at=4464&end=4471",
+      "source_warning": null,
+      "passage_id": "1905-032:3106-4751",
+      "sources": [
+        {
+          "page": 86,
+          "page_method": "header",
+          "file": "p0044_L.txt",
+          "start": 4464,
+          "end": 4471
+        }
+      ],
+      "printed_pages": [
+        86
+      ],
+      "scans": [
+        {
+          "file": "p0044_L.txt",
+          "page": 86,
+          "full": "scans/1905/pages/p0044_L.webp",
+          "width": 1100,
+          "height": 1531,
+          "ocr_sha256": "9b8c90880f53c9cd590d6272d001b1390e157075cb8a7d05d84d09964948825f",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 4464,
+          "end": 4481,
+          "quote_original": "ст. 213 гр. улож.",
+          "act_code": "ГУП1825"
+        },
+        {
+          "kind": "direct",
+          "role": "act_identity",
+          "act_code": "ГУП1825",
+          "field": "text",
+          "start": 522,
+          "quote_original": "2 п. 184 ст. гр. улож. 1825 г.",
+          "end": 552
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4464,
+          "end": 4471,
+          "quote_original": "ст. 213",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4464,
+              "end": 4481,
+              "quote_original": "ст. 213 гр. улож.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 522,
+              "quote_original": "2 п. 184 ст. гр. улож. 1825 г.",
+              "end": 552
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-087:ГУП1825:232:text:1570",
+      "statute": "ГУП1825 ст. 232",
+      "code": "ГУП1825",
+      "article": "ст. 232",
+      "decision_id": "1897-087",
+      "year": 1897,
+      "decision_number": 87,
+      "field": "text",
+      "start": 1570,
+      "end": 1577,
+      "quote_original": "ст. 232",
+      "context_original": "о „исключается примѣненіемъ ст. 754“. Въ присужде- ніи просительницѣ 1/2 имущества Григорія Пивоварскаго въ пожизненное пользованіе по силѣ ст. 232 гр. улож. 1825 г. мировой съѣздъ отказалъ на томъ основаніи, что порядокъ наслѣдованія, указанный въ этомъ законѣ, могъ существовать для пр",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "fccec50a64f95906d4d6b2d113972460c104219f68ae159e2a0df64ab71d0817",
+      "headnote_sha256": "cced8a76eacffcb456f4bfb9f96d8669ddff670adb720d0db3f8eb18459be6f5",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-087",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-087?mode=laws&c=%D0%93%D0%A3%D0%9F1825&q=%D1%81%D1%82.+232&law=1897-087%3A%D0%93%D0%A3%D0%9F1825%3A232%3Atext%3A1570&at=1570&end=1577",
+      "source_warning": null,
+      "passage_id": "1897-087:1226-2972",
+      "sources": [
+        {
+          "page": 285,
+          "page_method": "header",
+          "file": "p0153_R.txt",
+          "start": 1570,
+          "end": 1577
+        }
+      ],
+      "printed_pages": [
+        285
+      ],
+      "scans": [
+        {
+          "file": "p0153_R.txt",
+          "page": 285,
+          "full": "scans/1897/pages/p0153_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1489,
+          "ocr_sha256": "982a61efdb37e0000a36612e3f92f3c50c971882c374c879b45c8b579bc677bc",
+          "pdf_page": 306,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1570,
+          "end": 1595,
+          "quote_original": "ст. 232 гр. улож. 1825 г.",
+          "act_code": "ГУП1825"
+        },
+        {
+          "kind": "direct",
+          "role": "act_identity",
+          "act_code": "ГУП1825",
+          "field": "text",
+          "start": 1570,
+          "quote_original": "ст. 232 гр. улож. 1825 г.",
+          "end": 1595
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1570,
+          "end": 1577,
+          "quote_original": "ст. 232",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1570,
+              "end": 1595,
+              "quote_original": "ст. 232 гр. улож. 1825 г.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 1570,
+              "quote_original": "ст. 232 гр. улож. 1825 г.",
+              "end": 1595
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 4136,
+          "end": 4143,
+          "quote_original": "ст. 232",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1897.txt",
+              "source_sha256": "942b1330f3c0919f3d97ce8b33f6499c064fb061ba4669c0f2a9bbcab05dc60b",
+              "start": 12662,
+              "end": 12687,
+              "quote_original": "194, 207, 209 и 232 | 87.",
+              "heading": {
+                "start": 12632,
+                "end": 12660,
+                "quote_original": "Гражданское уложеніе 1825 г."
+              },
+              "edition_continuation": null,
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 1570,
+              "quote_original": "ст. 232 гр. улож. 1825 г.",
+              "end": 1595
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-091:ГУП1825:233:text:1857",
+      "statute": "ГУП1825 ст. 233",
+      "code": "ГУП1825",
+      "article": "ст. 233",
+      "decision_id": "1897-091",
+      "year": 1897,
+      "decision_number": 91,
+      "field": "text",
+      "start": 1857,
+      "end": 1864,
+      "quote_original": "ст. 233",
+      "context_original": "ъ, въ идеальныхъ доляхъ, на правѣ собственности. Сюда принадлежитъ, между прочимъ, и пережившій супругъ въ тѣхъ случаяхъ, когда, по закону (ст. 233 гр. улож. Ц. П. и р. 1880 г. № 108) или по завѣщанію, къ нему переходитъ въ собственность такая доля изъ общаго состава наслѣдства, но не т",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b69ef8c18ce773fce8591ddd1533b1cbfebb1f37bb920a7ecd1ed9c2d37db2d6",
+      "headnote_sha256": "151cf7a069436f9dfc905275d1acb2cc5b63964612b014565d683a6baea64279",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-091",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-091?mode=laws&c=%D0%93%D0%A3%D0%9F1825&q=%D1%81%D1%82.+233&law=1897-091%3A%D0%93%D0%A3%D0%9F1825%3A233%3Atext%3A1857&at=1857&end=1864",
+      "source_warning": null,
+      "passage_id": "1897-091:1532-3394",
+      "sources": [
+        {
+          "page": 296,
+          "page_method": "header",
+          "file": "p0159_L.txt",
+          "start": 1857,
+          "end": 1864
+        }
+      ],
+      "printed_pages": [
+        296
+      ],
+      "scans": [
+        {
+          "file": "p0159_L.txt",
+          "page": 296,
+          "full": "scans/1897/pages/p0159_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1556,
+          "ocr_sha256": "9919d074b55e2862c4d7405383596ea13c373952172ad374422da33ae85635f5",
+          "pdf_page": 317,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1857,
+          "end": 1874,
+          "quote_original": "ст. 233 гр. улож.",
+          "act_code": "ГУП1825"
+        },
+        {
+          "kind": "direct",
+          "role": "act_identity",
+          "act_code": "ГУП1825",
+          "field": "text",
+          "start": 1857,
+          "quote_original": "ст. 233 гр. улож. Ц. П.",
+          "end": 1880
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1857,
+          "end": 1864,
+          "quote_original": "ст. 233",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1857,
+              "end": 1874,
+              "quote_original": "ст. 233 гр. улож.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 1857,
+              "quote_original": "ст. 233 гр. улож. Ц. П.",
+              "end": 1880
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-022:ГУП1825:265:text:1560",
+      "statute": "ГУП1825 ст. 265",
+      "code": "ГУП1825",
+      "article": "ст. 265",
+      "decision_id": "1897-022",
+      "year": 1897,
+      "decision_number": 22,
+      "field": "text",
+      "start": 1560,
+      "end": 1567,
+      "quote_original": "ст. 265",
+      "context_original": "аго суда второй степени, состоявшимся 8 марта 1895 года, супруги Льнискіе, по винѣ ихъ обоихъ, разлучены отъ стола и ложа на 5 лѣтъ; 4) что ст. 265 гражд. улож. къ настоящему дѣлу, вопреки мнѣнію Льнискаго, не примѣнима. Въ виду изложеннаго судебная палата опредѣлила: рѣшеніе окружнаго",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "1ee4b35f9d8d362f57c90eeeb9ce328e8ea6ed23c4ac0fb2411d0bf522748737",
+      "headnote_sha256": "bda12493ab9d6f24fbf48675ddd590e67d634d99ffa08c9d6df9c7c12fd83a71",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-022",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-022?mode=laws&c=%D0%93%D0%A3%D0%9F1825&q=%D1%81%D1%82.+265&law=1897-022%3A%D0%93%D0%A3%D0%9F1825%3A265%3Atext%3A1560&at=1560&end=1567",
+      "source_warning": null,
+      "passage_id": "1897-022:0-1640",
+      "sources": [
+        {
+          "page": 82,
+          "page_method": "header",
+          "file": "p0052_L.txt",
+          "start": 1560,
+          "end": 1567
+        }
+      ],
+      "printed_pages": [
+        82
+      ],
+      "scans": [
+        {
+          "file": "p0052_L.txt",
+          "page": 82,
+          "full": "scans/1897/pages/p0052_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1581,
+          "ocr_sha256": "ce6045fd6b33f3a6ba6d3673d59cfeee1ea754938e6ee191ff6ae27047c7a015",
+          "pdf_page": 103,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1560,
+          "end": 1580,
+          "quote_original": "ст. 265 гражд. улож.",
+          "act_code": "ГУП1825"
+        },
+        {
+          "kind": "direct",
+          "role": "act_identity",
+          "act_code": "ГУП1825",
+          "field": "text",
+          "start": 886,
+          "quote_original": "201 и 213 ст. гражд. улож. 1825 г.",
+          "end": 920
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1560,
+          "end": 1567,
+          "quote_original": "ст. 265",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1560,
+              "end": 1580,
+              "quote_original": "ст. 265 гражд. улож.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 886,
+              "quote_original": "201 и 213 ст. гражд. улож. 1825 г.",
+              "end": 920
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 5667,
+          "end": 5674,
+          "quote_original": "ст. 265",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 5667,
+              "end": 5687,
+              "quote_original": "ст. 265 гражд. улож.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 886,
+              "quote_original": "201 и 213 ст. гражд. улож. 1825 г.",
+              "end": 920
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-050:ГУП1825:298:text:5250",
+      "statute": "ГУП1825 ст. 298",
+      "code": "ГУП1825",
+      "article": "ст. 298",
+      "decision_id": "1904-050",
+      "year": 1904,
+      "decision_number": 50,
+      "field": "text",
+      "start": 5250,
+      "end": 5257,
+      "quote_original": "ст. 298",
+      "context_original": "ы признаніе, если оно не сдѣлано въ самомъ актѣ о рожденіи внѣбрачнаго ребенка, было облечено въ офиціальный актъ, совершаемый у потаріуса (ст. 298 гражд. улож. и 1662 уст. гражд. суд.). Актъ этотъ, на основаніи 101 ст. гражд. улож., записывается въ метрическую книгу, и о семъ дѣлается",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "6196285b46ecc890bc7280f09391714d8fc97846375f073e25013321464b609a",
+      "headnote_sha256": "8f9f5f3c3ded5e5758679e098b98f5c70a736e912e215c1a8e4befaa7ed403ee",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-050",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-050?mode=laws&c=%D0%93%D0%A3%D0%9F1825&q=%D1%81%D1%82.+298&law=1904-050%3A%D0%93%D0%A3%D0%9F1825%3A298%3Atext%3A5250&at=5250&end=5257",
+      "source_warning": null,
+      "passage_id": "1904-050:3878-5455",
+      "sources": [
+        {
+          "page": 139,
+          "page_method": "header",
+          "file": "p0070_R.txt",
+          "start": 5250,
+          "end": 5257
+        }
+      ],
+      "printed_pages": [
+        139
+      ],
+      "scans": [
+        {
+          "file": "p0070_R.txt",
+          "page": 139,
+          "full": "scans/1904/pages/p0070_R.webp",
+          "width": 1100,
+          "height": 1640,
+          "ocr_sha256": "af5104bdeeda726ae961f85bc95b82aee9186c9bf934b7aa57267e58137a2bf1",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 5250,
+          "end": 5270,
+          "quote_original": "ст. 298 гражд. улож.",
+          "act_code": "ГУП1825"
+        },
+        {
+          "kind": "direct",
+          "role": "act_identity",
+          "act_code": "ГУП1825",
+          "field": "text",
+          "start": 3583,
+          "quote_original": "по дѣйствующимъ въ Царствѣ Польскомъ законамъ (ст. 298—307 гражд. улож. 1825 г.)",
+          "end": 3663
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5250,
+          "end": 5257,
+          "quote_original": "ст. 298",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 5250,
+              "end": 5270,
+              "quote_original": "ст. 298 гражд. улож.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 3583,
+              "quote_original": "по дѣйствующимъ въ Царствѣ Польскомъ законамъ (ст. 298—307 гражд. улож. 1825 г.)",
+              "end": 3663
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-050:ГУП1825:298–307:text:3630",
+      "statute": "ГУП1825 ст. 298–307",
+      "code": "ГУП1825",
+      "article": "ст. 298–307",
+      "decision_id": "1904-050",
+      "year": 1904,
+      "decision_number": 50,
+      "field": "text",
+      "start": 3630,
+      "end": 3641,
+      "quote_original": "ст. 298—307",
+      "context_original": "яжнымъ повѣреннымъ Пашковичемъ, кассаціонную жалобу, Правительствующій Сенатъ находитъ, что, по дѣйствующимъ въ Царствѣ Польскомъ законамъ (ст. 298—307 гражд. улож. 1825 г.), рожденное внѣ брака дитя, непризнанное своими родителями, въ отношеніи къ послѣднимъ имѣетъ одно только право—отыски",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "6196285b46ecc890bc7280f09391714d8fc97846375f073e25013321464b609a",
+      "headnote_sha256": "8f9f5f3c3ded5e5758679e098b98f5c70a736e912e215c1a8e4befaa7ed403ee",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-050",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-050?mode=laws&c=%D0%93%D0%A3%D0%9F1825&q=%D1%81%D1%82.+298%E2%80%93307&law=1904-050%3A%D0%93%D0%A3%D0%9F1825%3A298%E2%80%93307%3Atext%3A3630&at=3630&end=3641",
+      "source_warning": null,
+      "passage_id": "1904-050:2503-4147",
+      "sources": [
+        {
+          "page": 138,
+          "page_method": "header",
+          "file": "p0070_L.txt",
+          "start": 3630,
+          "end": 3641
+        }
+      ],
+      "printed_pages": [
+        138
+      ],
+      "scans": [
+        {
+          "file": "p0070_L.txt",
+          "page": 138,
+          "full": "scans/1904/pages/p0070_L.webp",
+          "width": 1100,
+          "height": 1640,
+          "ocr_sha256": "730cd4c70390346a1b39c2f0805711768dd777fad4a484d53522f27b63c76fcf",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3630,
+          "end": 3662,
+          "quote_original": "ст. 298—307 гражд. улож. 1825 г.",
+          "act_code": "ГУП1825"
+        },
+        {
+          "kind": "direct",
+          "role": "act_identity",
+          "act_code": "ГУП1825",
+          "field": "text",
+          "start": 3583,
+          "quote_original": "по дѣйствующимъ въ Царствѣ Польскомъ законамъ (ст. 298—307 гражд. улож. 1825 г.)",
+          "end": 3663
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3630,
+          "end": 3641,
+          "quote_original": "ст. 298—307",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3630,
+              "end": 3662,
+              "quote_original": "ст. 298—307 гражд. улож. 1825 г.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 3583,
+              "quote_original": "по дѣйствующимъ въ Царствѣ Польскомъ законамъ (ст. 298—307 гражд. улож. 1825 г.)",
+              "end": 3663
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-050:ГУП1825:303:text:2608",
+      "statute": "ГУП1825 ст. 303",
+      "code": "ГУП1825",
+      "article": "ст. 303",
+      "decision_id": "1904-050",
+      "year": 1904,
+      "decision_number": 50,
+      "field": "text",
+      "start": 2608,
+      "end": 2615,
+      "quote_original": "ст. 303",
+      "context_original": "твія, а именно возникновеніе права для признаннаго ребенка на требованіе отъ признавшихъ его родителей средствъ къ содержанію и воспитанію (ст. 303 гр. улож.), а равно полученіе возможности въ будущемъ участвовать въ раздѣлѣ ихъ наслѣдства (ст. 757 и 758 гр. код.). Посему, если съ момен",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "6196285b46ecc890bc7280f09391714d8fc97846375f073e25013321464b609a",
+      "headnote_sha256": "8f9f5f3c3ded5e5758679e098b98f5c70a736e912e215c1a8e4befaa7ed403ee",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-050",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-050?mode=laws&c=%D0%93%D0%A3%D0%9F1825&q=%D1%81%D1%82.+303&law=1904-050%3A%D0%93%D0%A3%D0%9F1825%3A303%3Atext%3A2608&at=2608&end=2615",
+      "source_warning": null,
+      "passage_id": "1904-050:1314-2733",
+      "sources": [
+        {
+          "page": 138,
+          "page_method": "header",
+          "file": "p0070_L.txt",
+          "start": 2608,
+          "end": 2615
+        }
+      ],
+      "printed_pages": [
+        138
+      ],
+      "scans": [
+        {
+          "file": "p0070_L.txt",
+          "page": 138,
+          "full": "scans/1904/pages/p0070_L.webp",
+          "width": 1100,
+          "height": 1640,
+          "ocr_sha256": "730cd4c70390346a1b39c2f0805711768dd777fad4a484d53522f27b63c76fcf",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2608,
+          "end": 2625,
+          "quote_original": "ст. 303 гр. улож.",
+          "act_code": "ГУП1825"
+        },
+        {
+          "kind": "direct",
+          "role": "act_identity",
+          "act_code": "ГУП1825",
+          "field": "text",
+          "start": 3583,
+          "quote_original": "по дѣйствующимъ въ Царствѣ Польскомъ законамъ (ст. 298—307 гражд. улож. 1825 г.)",
+          "end": 3663
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2608,
+          "end": 2615,
+          "quote_original": "ст. 303",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2608,
+              "end": 2625,
+              "quote_original": "ст. 303 гр. улож.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 3583,
+              "quote_original": "по дѣйствующимъ въ Царствѣ Польскомъ законамъ (ст. 298—307 гражд. улож. 1825 г.)",
+              "end": 3663
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 4692,
+          "end": 4699,
+          "quote_original": "ст. 303",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4692,
+              "end": 4709,
+              "quote_original": "ст. 303 гр. улож.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 3583,
+              "quote_original": "по дѣйствующимъ въ Царствѣ Польскомъ законамъ (ст. 298—307 гражд. улож. 1825 г.)",
+              "end": 3663
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-050:ГУП1825:305:text:4138",
+      "statute": "ГУП1825 ст. 305",
+      "code": "ГУП1825",
+      "article": "ст. 305",
+      "decision_id": "1904-050",
+      "year": 1904,
+      "decision_number": 50,
+      "field": "text",
+      "start": 4138,
+      "end": 4145,
+      "quote_original": "ст. 305",
+      "context_original": "итель можетъ быть, по требованію заинтересованныхъ сторонъ, признанъ отцомъ ребенка, зачатаго во время, совпадающее со временемъ похищенія (ст. 305). Кромѣ указанныхъ случаевъ, родственная связь между рожденнымъ внѣ брака и его родителями, съ проистекающими изъ нея для обѣихъ сторонъ пр",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "6196285b46ecc890bc7280f09391714d8fc97846375f073e25013321464b609a",
+      "headnote_sha256": "8f9f5f3c3ded5e5758679e098b98f5c70a736e912e215c1a8e4befaa7ed403ee",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-050",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-050?mode=laws&c=%D0%93%D0%A3%D0%9F1825&q=%D1%81%D1%82.+305&law=1904-050%3A%D0%93%D0%A3%D0%9F1825%3A305%3Atext%3A4138&at=4138&end=4145",
+      "source_warning": null,
+      "passage_id": "1904-050:2503-4147",
+      "sources": [
+        {
+          "page": 139,
+          "page_method": "header",
+          "file": "p0070_R.txt",
+          "start": 4138,
+          "end": 4145
+        }
+      ],
+      "printed_pages": [
+        139
+      ],
+      "scans": [
+        {
+          "file": "p0070_R.txt",
+          "page": 139,
+          "full": "scans/1904/pages/p0070_R.webp",
+          "width": 1100,
+          "height": 1640,
+          "ocr_sha256": "af5104bdeeda726ae961f85bc95b82aee9186c9bf934b7aa57267e58137a2bf1",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 8804,
+          "end": 8822,
+          "quote_original": "101, 298—307 — 50.",
+          "heading": {
+            "start": 8762,
+            "end": 8790,
+            "quote_original": "Гражданское уложеніе 1825 г."
+          },
+          "edition_continuation": null,
+          "act_code": "ГУП1825"
+        },
+        {
+          "kind": "direct",
+          "role": "act_identity",
+          "act_code": "ГУП1825",
+          "field": "text",
+          "start": 3583,
+          "quote_original": "по дѣйствующимъ въ Царствѣ Польскомъ законамъ (ст. 298—307 гражд. улож. 1825 г.)",
+          "end": 3663
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4138,
+          "end": 4145,
+          "quote_original": "ст. 305",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 8804,
+              "end": 8822,
+              "quote_original": "101, 298—307 — 50.",
+              "heading": {
+                "start": 8762,
+                "end": 8790,
+                "quote_original": "Гражданское уложеніе 1825 г."
+              },
+              "edition_continuation": null,
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 3583,
+              "quote_original": "по дѣйствующимъ въ Царствѣ Польскомъ законамъ (ст. 298—307 гражд. улож. 1825 г.)",
+              "end": 3663
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-050:ГУП1825:306:text:3890",
+      "statute": "ГУП1825 ст. 306",
+      "code": "ГУП1825",
+      "article": "ст. 306",
+      "decision_id": "1904-050",
+      "year": 1904,
+      "decision_number": 50,
+      "field": "text",
+      "start": 3890,
+      "end": 3897,
+      "quote_original": "ст. 306",
+      "context_original": "имѣетъ одно только право—отыскивать свою мать, т.-е. домогаться судебнымъ порядкомъ признанія его происхожденія отъ указываемой имъ матери (ст. 306 гражд. улож.). Отыскивать же отца запрещается, за исключеніемъ случая похищенія женщины, когда похититель можетъ быть, по требованію заинте",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "6196285b46ecc890bc7280f09391714d8fc97846375f073e25013321464b609a",
+      "headnote_sha256": "8f9f5f3c3ded5e5758679e098b98f5c70a736e912e215c1a8e4befaa7ed403ee",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-050",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-050?mode=laws&c=%D0%93%D0%A3%D0%9F1825&q=%D1%81%D1%82.+306&law=1904-050%3A%D0%93%D0%A3%D0%9F1825%3A306%3Atext%3A3890&at=3890&end=3897",
+      "source_warning": null,
+      "passage_id": "1904-050:2503-4147",
+      "sources": [
+        {
+          "page": 139,
+          "page_method": "header",
+          "file": "p0070_R.txt",
+          "start": 3890,
+          "end": 3897
+        }
+      ],
+      "printed_pages": [
+        139
+      ],
+      "scans": [
+        {
+          "file": "p0070_R.txt",
+          "page": 139,
+          "full": "scans/1904/pages/p0070_R.webp",
+          "width": 1100,
+          "height": 1640,
+          "ocr_sha256": "af5104bdeeda726ae961f85bc95b82aee9186c9bf934b7aa57267e58137a2bf1",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3890,
+          "end": 3910,
+          "quote_original": "ст. 306 гражд. улож.",
+          "act_code": "ГУП1825"
+        },
+        {
+          "kind": "direct",
+          "role": "act_identity",
+          "act_code": "ГУП1825",
+          "field": "text",
+          "start": 3583,
+          "quote_original": "по дѣйствующимъ въ Царствѣ Польскомъ законамъ (ст. 298—307 гражд. улож. 1825 г.)",
+          "end": 3663
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3890,
+          "end": 3897,
+          "quote_original": "ст. 306",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3890,
+              "end": 3910,
+              "quote_original": "ст. 306 гражд. улож.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 3583,
+              "quote_original": "по дѣйствующимъ въ Царствѣ Польскомъ законамъ (ст. 298—307 гражд. улож. 1825 г.)",
+              "end": 3663
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-001:ГУП1825:489–521:text:1587",
+      "statute": "ГУП1825 ст. 489–521",
+      "code": "ГУП1825",
+      "article": "ст. 489–521",
+      "decision_id": "1905-001",
+      "year": 1905,
+      "decision_number": 1,
+      "field": "text",
+      "start": 1587,
+      "end": 1598,
+      "quote_original": "ст. 489—521",
+      "context_original": "34 устава объ особыхъ производствахъ въ Варшавскомъ судебномъ округѣ спеціальныя правила, содержащія прямое указаніе на сохраненіе дѣйствія ст. 489—521 гражданскаго уложенія Царства Польскаго 1825 г., касающихся законнаго прещенія и ограниченія дѣеспособности. Изъ точнаго смысла ст. 27 уст.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "cb96611070ef66f3e9faa9b617c8d668b2b19d0876d9c407a7222e24eb03bee6",
+      "headnote_sha256": "b07c577a5fca27c236476b4ec0c946e983875547459eaa6be349b6f20dc67cf4",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-001",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-001?mode=laws&c=%D0%93%D0%A3%D0%9F1825&q=%D1%81%D1%82.+489%E2%80%93521&law=1905-001%3A%D0%93%D0%A3%D0%9F1825%3A489%E2%80%93521%3Atext%3A1587&at=1587&end=1598",
+      "source_warning": null,
+      "passage_id": "1905-001:0-1707",
+      "sources": [
+        {
+          "page": 4,
+          "page_method": "header",
+          "file": "p0003_L.txt",
+          "start": 1587,
+          "end": 1598
+        }
+      ],
+      "printed_pages": [
+        4
+      ],
+      "scans": [
+        {
+          "file": "p0003_L.txt",
+          "page": 4,
+          "full": "scans/1905/pages/p0003_L.webp",
+          "width": 1100,
+          "height": 1507,
+          "ocr_sha256": "8bc1238ea3d9685c6791e91cae49c9fbb47511314d95c9a88f3378094d832ce2",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1587,
+          "end": 1646,
+          "quote_original": "ст. 489—521 гражданскаго уложенія Царства Польскаго 1825 г.",
+          "act_code": "ГУП1825"
+        },
+        {
+          "kind": "direct",
+          "role": "act_identity",
+          "act_code": "ГУП1825",
+          "field": "text",
+          "start": 1587,
+          "quote_original": "ст. 489—521 гражданскаго уложенія Царства Польскаго 1825 г.",
+          "end": 1646
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1587,
+          "end": 1598,
+          "quote_original": "ст. 489—521",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1587,
+              "end": 1646,
+              "quote_original": "ст. 489—521 гражданскаго уложенія Царства Польскаго 1825 г.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 1587,
+              "quote_original": "ст. 489—521 гражданскаго уложенія Царства Польскаго 1825 г.",
+              "end": 1646
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-001:ГУП1825:490:text:2387",
+      "statute": "ГУП1825 ст. 490",
+      "code": "ГУП1825",
+      "article": "ст. 490",
+      "decision_id": "1905-001",
+      "year": 1905,
+      "decision_number": 1,
+      "field": "text",
+      "start": 2387,
+      "end": 2394,
+      "quote_original": "ст. 490",
+      "context_original": "судъ по мѣсту жительства сего лица и разсматривается судомъ либо по ходатайству лицъ, непосредственно заинтересованныхъ въ судьбѣ больнаго (ст. 490 гр. улож.), либо по предложенію прокурора, въ огражденіе какъ самого больнаго, такъ и общественнаго порядка. Притомъ въ законѣ не содержитс",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "cb96611070ef66f3e9faa9b617c8d668b2b19d0876d9c407a7222e24eb03bee6",
+      "headnote_sha256": "b07c577a5fca27c236476b4ec0c946e983875547459eaa6be349b6f20dc67cf4",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-001",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-001?mode=laws&c=%D0%93%D0%A3%D0%9F1825&q=%D1%81%D1%82.+490&law=1905-001%3A%D0%93%D0%A3%D0%9F1825%3A490%3Atext%3A2387&at=2387&end=2394",
+      "source_warning": null,
+      "passage_id": "1905-001:1417-3105",
+      "sources": [
+        {
+          "page": 4,
+          "page_method": "header",
+          "file": "p0003_L.txt",
+          "start": 2387,
+          "end": 2394
+        }
+      ],
+      "printed_pages": [
+        4
+      ],
+      "scans": [
+        {
+          "file": "p0003_L.txt",
+          "page": 4,
+          "full": "scans/1905/pages/p0003_L.webp",
+          "width": 1100,
+          "height": 1507,
+          "ocr_sha256": "8bc1238ea3d9685c6791e91cae49c9fbb47511314d95c9a88f3378094d832ce2",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2387,
+          "end": 2404,
+          "quote_original": "ст. 490 гр. улож.",
+          "act_code": "ГУП1825"
+        },
+        {
+          "kind": "direct",
+          "role": "act_identity",
+          "act_code": "ГУП1825",
+          "field": "text",
+          "start": 1587,
+          "quote_original": "ст. 489—521 гражданскаго уложенія Царства Польскаго 1825 г.",
+          "end": 1646
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2387,
+          "end": 2394,
+          "quote_original": "ст. 490",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2387,
+              "end": 2404,
+              "quote_original": "ст. 490 гр. улож.",
+              "act_code": "ГУП1825"
+            },
+            {
+              "kind": "direct",
+              "role": "act_identity",
+              "act_code": "ГУП1825",
+              "field": "text",
+              "start": 1587,
+              "quote_original": "ст. 489—521 гражданскаго уложенія Царства Польскаго 1825 г.",
+              "end": 1646
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

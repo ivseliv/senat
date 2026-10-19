@@ -1,0 +1,46 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:2433ea245c39e57a199c959245d64c887e26d851eed1b4249f20b59c5405b965",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "topic",
+    "id": "topic-1a126ecfb9b3",
+    "label": "Несостоятельность"
+  },
+  "count": 14,
+  "decision_ids": [
+    "1897-006",
+    "1897-014",
+    "1897-015",
+    "1897-045",
+    "1897-080",
+    "1904-011",
+    "1904-022",
+    "1904-072",
+    "1904-099",
+    "1904-108",
+    "1905-016",
+    "1905-042",
+    "1905-100",
+    "1905-112"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-006.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-014.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-015.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-045.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-080.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-011.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-022.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-072.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-099.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-108.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-016.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-042.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-100.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-112.json"
+    ]
+  }
+}

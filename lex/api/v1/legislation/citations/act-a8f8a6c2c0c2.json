@@ -1,0 +1,3103 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:2433ea245c39e57a199c959245d64c887e26d851eed1b4249f20b59c5405b965",
+  "resource": "legislation-citations",
+  "scope": {
+    "code": "УУС",
+    "id": "act-a8f8a6c2c0c2"
+  },
+  "count": 37,
+  "items": [
+    {
+      "id": "1904-090:УУС:1124:text:2305",
+      "statute": "УУС ст. 1124",
+      "code": "УУС",
+      "article": "ст. 1124",
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "field": "text",
+      "start": 2305,
+      "end": 2320,
+      "quote_original": "ст. 1124 и 1125",
+      "context_original": "нному разбирательству карантинно-таможеннаго управленія, или же преслѣдуются судебнымъ порядкомъ по правиламъ устава угол. суд., въ силу же ст. 1124 и 1125 уст. угол. суд., дѣло о чаѣ, задержанномъ у купцовъ Джинчарадзе и Туманова, подлежало вѣдѣнію судебной власти, а не таможенному разбиратель",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b50abd438e2bb3258d41c9cba366946d478d51ca55e8670ba8407f96536fdbdb",
+      "headnote_sha256": "364f4acbb30f914939debbb59e6e6ce8674a65a7228968b50f1fecea4227f9d8",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+1124&law=1904-090%3A%D0%A3%D0%A3%D0%A1%3A1124%3Atext%3A2305&at=2305&end=2320",
+      "source_warning": null,
+      "passage_id": "1904-090:950-2552",
+      "sources": [
+        {
+          "page": 248,
+          "page_method": "header",
+          "file": "p0125_L.txt",
+          "start": 2305,
+          "end": 2320
+        }
+      ],
+      "printed_pages": [
+        248
+      ],
+      "scans": [
+        {
+          "file": "p0125_L.txt",
+          "page": 248,
+          "full": "scans/1904/pages/p0125_L.webp",
+          "width": 1100,
+          "height": 1557,
+          "ocr_sha256": "f1caf33dfb660e8b0065bf908b49877c4f8ed5e2f9d0acac8ee9f0cfb2655f5e",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2305,
+          "end": 2336,
+          "quote_original": "ст. 1124 и 1125 уст. угол. суд.",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2305,
+          "end": 2320,
+          "quote_original": "ст. 1124 и 1125",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2305,
+              "end": 2336,
+              "quote_original": "ст. 1124 и 1125 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-090:УУС:1125:text:2305",
+      "statute": "УУС ст. 1125",
+      "code": "УУС",
+      "article": "ст. 1125",
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "field": "text",
+      "start": 2305,
+      "end": 2320,
+      "quote_original": "ст. 1124 и 1125",
+      "context_original": "нному разбирательству карантинно-таможеннаго управленія, или же преслѣдуются судебнымъ порядкомъ по правиламъ устава угол. суд., въ силу же ст. 1124 и 1125 уст. угол. суд., дѣло о чаѣ, задержанномъ у купцовъ Джинчарадзе и Туманова, подлежало вѣдѣнію судебной власти, а не таможенному разбиратель",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b50abd438e2bb3258d41c9cba366946d478d51ca55e8670ba8407f96536fdbdb",
+      "headnote_sha256": "364f4acbb30f914939debbb59e6e6ce8674a65a7228968b50f1fecea4227f9d8",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+1125&law=1904-090%3A%D0%A3%D0%A3%D0%A1%3A1125%3Atext%3A2305&at=2305&end=2320",
+      "source_warning": null,
+      "passage_id": "1904-090:950-2552",
+      "sources": [
+        {
+          "page": 248,
+          "page_method": "header",
+          "file": "p0125_L.txt",
+          "start": 2305,
+          "end": 2320
+        }
+      ],
+      "printed_pages": [
+        248
+      ],
+      "scans": [
+        {
+          "file": "p0125_L.txt",
+          "page": 248,
+          "full": "scans/1904/pages/p0125_L.webp",
+          "width": 1100,
+          "height": 1557,
+          "ocr_sha256": "f1caf33dfb660e8b0065bf908b49877c4f8ed5e2f9d0acac8ee9f0cfb2655f5e",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2305,
+          "end": 2336,
+          "quote_original": "ст. 1124 и 1125 уст. угол. суд.",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2305,
+          "end": 2320,
+          "quote_original": "ст. 1124 и 1125",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2305,
+              "end": 2336,
+              "quote_original": "ст. 1124 и 1125 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-090:УУС:1137:text:13098",
+      "statute": "УУС ст. 1137",
+      "code": "УУС",
+      "article": "ст. 1137",
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "field": "text",
+      "start": 13098,
+      "end": 13108,
+      "quote_original": "ст. 1137 и",
+      "context_original": "лужить къ обнаруженію преступленія и къ уликѣ преступника (ст. 371 уст.), задержаніе товаровъ и другихъ подлежащихъ конфискаціи предметовъ (ст. 1137 и послѣд.) имѣетъ цѣлью обезпеченіе правъ казны на полученіе удовлетворенія въ причиненномъ ей имущественномъ ущербѣ (рѣш. угол. касс. деп. 1",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "b50abd438e2bb3258d41c9cba366946d478d51ca55e8670ba8407f96536fdbdb",
+      "headnote_sha256": "364f4acbb30f914939debbb59e6e6ce8674a65a7228968b50f1fecea4227f9d8",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+1137&law=1904-090%3A%D0%A3%D0%A3%D0%A1%3A1137%3Atext%3A13098&at=13098&end=13108",
+      "source_warning": null,
+      "passage_id": "1904-090:11914-13614",
+      "sources": [
+        {
+          "page": 251,
+          "page_method": "header",
+          "file": "p0126_R.txt",
+          "start": 13098,
+          "end": 13108
+        }
+      ],
+      "printed_pages": [
+        251
+      ],
+      "scans": [
+        {
+          "file": "p0126_R.txt",
+          "page": 251,
+          "full": "scans/1904/pages/p0126_R.webp",
+          "width": 1100,
+          "height": 1601,
+          "ocr_sha256": "4e30d324167c52a47d3e0cbbc9aaaaf6f00b94c1b562588ae22fcf6fb65b766b",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 8482,
+          "end": 8524,
+          "quote_original": "783, 784, 1137, 1139, 1149, 1162, 1163 90.",
+          "heading": {
+            "start": 8366,
+            "end": 8401,
+            "quote_original": "Уставъ уголовнаго судопроизводства."
+          },
+          "edition_continuation": null,
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 13098,
+          "end": 13108,
+          "quote_original": "ст. 1137 и",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 8482,
+              "end": 8524,
+              "quote_original": "783, 784, 1137, 1139, 1149, 1162, 1163 90.",
+              "heading": {
+                "start": 8366,
+                "end": 8401,
+                "quote_original": "Уставъ уголовнаго судопроизводства."
+              },
+              "edition_continuation": null,
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-090:УУС:1137–1139:text:12869",
+      "statute": "УУС ст. 1137–1139",
+      "code": "УУС",
+      "article": "ст. 1137–1139",
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "field": "text",
+      "start": 12869,
+      "end": 12882,
+      "quote_original": "ст. 1137—1139",
+      "context_original": "задержанные товары или иные предметы, подлежащіе конфискаціи при обнаруженіи нарушенія уставовъ казеннаго управленія, о коихъ говорится въ ст. 1137—1139 уст. угол. суд. Въ то время, какъ назначеніе вещественныхъ доказательствъ—служить къ обнаруженію преступленія и къ уликѣ преступника (ст. 3",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b50abd438e2bb3258d41c9cba366946d478d51ca55e8670ba8407f96536fdbdb",
+      "headnote_sha256": "364f4acbb30f914939debbb59e6e6ce8674a65a7228968b50f1fecea4227f9d8",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+1137%E2%80%931139&law=1904-090%3A%D0%A3%D0%A3%D0%A1%3A1137%E2%80%931139%3Atext%3A12869&at=12869&end=12882",
+      "source_warning": null,
+      "passage_id": "1904-090:11914-13614",
+      "sources": [
+        {
+          "page": 251,
+          "page_method": "header",
+          "file": "p0126_R.txt",
+          "start": 12869,
+          "end": 12882
+        }
+      ],
+      "printed_pages": [
+        251
+      ],
+      "scans": [
+        {
+          "file": "p0126_R.txt",
+          "page": 251,
+          "full": "scans/1904/pages/p0126_R.webp",
+          "width": 1100,
+          "height": 1601,
+          "ocr_sha256": "4e30d324167c52a47d3e0cbbc9aaaaf6f00b94c1b562588ae22fcf6fb65b766b",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 12869,
+          "end": 12898,
+          "quote_original": "ст. 1137—1139 уст. угол. суд.",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 12869,
+          "end": 12882,
+          "quote_original": "ст. 1137—1139",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 12869,
+              "end": 12898,
+              "quote_original": "ст. 1137—1139 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-090:УУС:1149:text:1714",
+      "statute": "УУС ст. 1149",
+      "code": "УУС",
+      "article": "ст. 1149",
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "field": "text",
+      "start": 1714,
+      "end": 1729,
+      "quote_original": "ст. 1149 и 1165",
+      "context_original": "іе, и 3) доказана-ли сумма ихъ требованія?—Первый изъ этихъ вопросовъ палата разрѣшила отрицательно въ виду слѣдующихъ соображеній: въ силу ст. 1149 и 1165 уст. угол. суд., въ случаѣ нарушенія устава таможеннаго, задержанные товары отправляются на храненіе въ помѣщенія таможни, если она не далѣ",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b50abd438e2bb3258d41c9cba366946d478d51ca55e8670ba8407f96536fdbdb",
+      "headnote_sha256": "364f4acbb30f914939debbb59e6e6ce8674a65a7228968b50f1fecea4227f9d8",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+1149&law=1904-090%3A%D0%A3%D0%A3%D0%A1%3A1149%3Atext%3A1714&at=1714&end=1729",
+      "source_warning": null,
+      "passage_id": "1904-090:950-2552",
+      "sources": [
+        {
+          "page": 247,
+          "page_method": "header",
+          "file": "p0124_R.txt",
+          "start": 1714,
+          "end": 1729
+        }
+      ],
+      "printed_pages": [
+        247
+      ],
+      "scans": [
+        {
+          "file": "p0124_R.txt",
+          "page": 247,
+          "full": "scans/1904/pages/p0124_R.webp",
+          "width": 1100,
+          "height": 1566,
+          "ocr_sha256": "9edf4b99e63f09c58233e36fa5d8aa0c5a772edb862a4682af8b2843de249a4c",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1714,
+          "end": 1745,
+          "quote_original": "ст. 1149 и 1165 уст. угол. суд.",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1714,
+          "end": 1729,
+          "quote_original": "ст. 1149 и 1165",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1714,
+              "end": 1745,
+              "quote_original": "ст. 1149 и 1165 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 13604,
+          "end": 13612,
+          "quote_original": "ст. 1149",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 8482,
+              "end": 8524,
+              "quote_original": "783, 784, 1137, 1139, 1149, 1162, 1163 90.",
+              "heading": {
+                "start": 8366,
+                "end": 8401,
+                "quote_original": "Уставъ уголовнаго судопроизводства."
+              },
+              "edition_continuation": null,
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-090:УУС:1162:text:15369",
+      "statute": "УУС ст. 1162",
+      "code": "УУС",
+      "article": "ст. 1162",
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "field": "text",
+      "start": 15369,
+      "end": 15377,
+      "quote_original": "ст. 1162",
+      "context_original": "ъ. Что касается того, имѣлось-ли законное основаніе для продажи задержаннаго чая, то въ этомъ отношеніи имѣетъ рѣшающее значеніе содержаніе ст. 1162 уст. угол. суд., по силѣ коей, какъ сказано, арестованный товаръ можетъ быть проданъ и до рѣшенія дѣла, если онъ относится къ подлежащему п",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b50abd438e2bb3258d41c9cba366946d478d51ca55e8670ba8407f96536fdbdb",
+      "headnote_sha256": "364f4acbb30f914939debbb59e6e6ce8674a65a7228968b50f1fecea4227f9d8",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+1162&law=1904-090%3A%D0%A3%D0%A3%D0%A1%3A1162%3Atext%3A15369&at=15369&end=15377",
+      "source_warning": null,
+      "passage_id": "1904-090:14997-16601",
+      "sources": [
+        {
+          "page": 252,
+          "page_method": "header",
+          "file": "p0127_L.txt",
+          "start": 15369,
+          "end": 15377
+        }
+      ],
+      "printed_pages": [
+        252
+      ],
+      "scans": [
+        {
+          "file": "p0127_L.txt",
+          "page": 252,
+          "full": "scans/1904/pages/p0127_L.webp",
+          "width": 1100,
+          "height": 1604,
+          "ocr_sha256": "b02971d2d5244aa51eaedab44bf1c549bee9de8ea6756305805183cc9d65e0b7",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 15369,
+          "end": 15393,
+          "quote_original": "ст. 1162 уст. угол. суд.",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 15369,
+          "end": 15377,
+          "quote_original": "ст. 1162",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 15369,
+              "end": 15393,
+              "quote_original": "ст. 1162 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 16410,
+          "end": 16418,
+          "quote_original": "ст. 1162",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 16410,
+              "end": 16434,
+              "quote_original": "ст. 1162 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-090:УУС:1163:text:14776",
+      "statute": "УУС ст. 1163",
+      "code": "УУС",
+      "article": "ст. 1163",
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "field": "text",
+      "start": 14776,
+      "end": 14784,
+      "quote_original": "ст. 1163",
+      "context_original": "ь таможенное вѣдомство, и имѣлось-ли для такой продажи законное основаніе? На первый изъ этихъ вопросовъ содержится положительный отвѣтъ въ ст. 1163 уст. угол. суд., которая указываетъ, что продажа задержаннаго товара совершается по правиламъ, предписаннымъ въ подлежащихъ уставахъ казенн",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b50abd438e2bb3258d41c9cba366946d478d51ca55e8670ba8407f96536fdbdb",
+      "headnote_sha256": "364f4acbb30f914939debbb59e6e6ce8674a65a7228968b50f1fecea4227f9d8",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+1163&law=1904-090%3A%D0%A3%D0%A3%D0%A1%3A1163%3Atext%3A14776&at=14776&end=14784",
+      "source_warning": null,
+      "passage_id": "1904-090:13361-15231",
+      "sources": [
+        {
+          "page": 252,
+          "page_method": "header",
+          "file": "p0127_L.txt",
+          "start": 14776,
+          "end": 14784
+        }
+      ],
+      "printed_pages": [
+        252
+      ],
+      "scans": [
+        {
+          "file": "p0127_L.txt",
+          "page": 252,
+          "full": "scans/1904/pages/p0127_L.webp",
+          "width": 1100,
+          "height": 1604,
+          "ocr_sha256": "b02971d2d5244aa51eaedab44bf1c549bee9de8ea6756305805183cc9d65e0b7",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 14776,
+          "end": 14800,
+          "quote_original": "ст. 1163 уст. угол. суд.",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3215,
+          "end": 3223,
+          "quote_original": "ст. 1163",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 8482,
+              "end": 8524,
+              "quote_original": "783, 784, 1137, 1139, 1149, 1162, 1163 90.",
+              "heading": {
+                "start": 8366,
+                "end": 8401,
+                "quote_original": "Уставъ уголовнаго судопроизводства."
+              },
+              "edition_continuation": null,
+              "act_code": "УУС"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 14104,
+          "end": 14112,
+          "quote_original": "ст. 1163",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 8482,
+              "end": 8524,
+              "quote_original": "783, 784, 1137, 1139, 1149, 1162, 1163 90.",
+              "heading": {
+                "start": 8366,
+                "end": 8401,
+                "quote_original": "Уставъ уголовнаго судопроизводства."
+              },
+              "edition_continuation": null,
+              "act_code": "УУС"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 14776,
+          "end": 14784,
+          "quote_original": "ст. 1163",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 14776,
+              "end": 14800,
+              "quote_original": "ст. 1163 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-090:УУС:1165:text:1714",
+      "statute": "УУС ст. 1165",
+      "code": "УУС",
+      "article": "ст. 1165",
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "field": "text",
+      "start": 1714,
+      "end": 1729,
+      "quote_original": "ст. 1149 и 1165",
+      "context_original": "іе, и 3) доказана-ли сумма ихъ требованія?—Первый изъ этихъ вопросовъ палата разрѣшила отрицательно въ виду слѣдующихъ соображеній: въ силу ст. 1149 и 1165 уст. угол. суд., въ случаѣ нарушенія устава таможеннаго, задержанные товары отправляются на храненіе въ помѣщенія таможни, если она не далѣ",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b50abd438e2bb3258d41c9cba366946d478d51ca55e8670ba8407f96536fdbdb",
+      "headnote_sha256": "364f4acbb30f914939debbb59e6e6ce8674a65a7228968b50f1fecea4227f9d8",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+1165&law=1904-090%3A%D0%A3%D0%A3%D0%A1%3A1165%3Atext%3A1714&at=1714&end=1729",
+      "source_warning": null,
+      "passage_id": "1904-090:950-2552",
+      "sources": [
+        {
+          "page": 247,
+          "page_method": "header",
+          "file": "p0124_R.txt",
+          "start": 1714,
+          "end": 1729
+        }
+      ],
+      "printed_pages": [
+        247
+      ],
+      "scans": [
+        {
+          "file": "p0124_R.txt",
+          "page": 247,
+          "full": "scans/1904/pages/p0124_R.webp",
+          "width": 1100,
+          "height": 1566,
+          "ocr_sha256": "9edf4b99e63f09c58233e36fa5d8aa0c5a772edb862a4682af8b2843de249a4c",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1714,
+          "end": 1745,
+          "quote_original": "ст. 1149 и 1165 уст. угол. суд.",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1714,
+          "end": 1729,
+          "quote_original": "ст. 1149 и 1165",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1714,
+              "end": 1745,
+              "quote_original": "ст. 1149 и 1165 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-090:УУС:1203:text:2527",
+      "statute": "УУС ст. 1203",
+      "code": "УУС",
+      "article": "ст. 1203",
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "field": "text",
+      "start": 2527,
+      "end": 2535,
+      "quote_original": "ст. 1203",
+      "context_original": "Туманова, подлежало вѣдѣнію судебной власти, а не таможенному разбирательству, а потому сопоставленіе приведенныхъ статей закона, а равно и ст. 1203 уст. угол. суд., привело палату къ заключенію, что въ томъ случаѣ, когда дѣло о тайномъ провозѣ товаровъ передается въ вѣдѣніе судебно-слѣд",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b50abd438e2bb3258d41c9cba366946d478d51ca55e8670ba8407f96536fdbdb",
+      "headnote_sha256": "364f4acbb30f914939debbb59e6e6ce8674a65a7228968b50f1fecea4227f9d8",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+1203&law=1904-090%3A%D0%A3%D0%A3%D0%A1%3A1203%3Atext%3A2527&at=2527&end=2535",
+      "source_warning": null,
+      "passage_id": "1904-090:950-2552",
+      "sources": [
+        {
+          "page": 248,
+          "page_method": "header",
+          "file": "p0125_L.txt",
+          "start": 2527,
+          "end": 2535
+        }
+      ],
+      "printed_pages": [
+        248
+      ],
+      "scans": [
+        {
+          "file": "p0125_L.txt",
+          "page": 248,
+          "full": "scans/1904/pages/p0125_L.webp",
+          "width": 1100,
+          "height": 1557,
+          "ocr_sha256": "f1caf33dfb660e8b0065bf908b49877c4f8ed5e2f9d0acac8ee9f0cfb2655f5e",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2527,
+          "end": 2551,
+          "quote_original": "ст. 1203 уст. угол. суд.",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2527,
+          "end": 2535,
+          "quote_original": "ст. 1203",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2527,
+              "end": 2551,
+              "quote_original": "ст. 1203 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-031:УУС:126:text:6915",
+      "statute": "УУС ст. 126",
+      "code": "УУС",
+      "article": "ст. 126",
+      "decision_id": "1896-031",
+      "year": 1896,
+      "decision_number": 31,
+      "field": "text",
+      "start": 6915,
+      "end": 6922,
+      "quote_original": "ст. 126",
+      "context_original": "женію, ки вещи отбираются, у кого бы онѣ пи оказались, хотя бы объ этомъ и не было предъявлено иска. Право это принадлежитъ не только суду (ст. 126 и 777 уст. уг. суд.), но и судебному слѣдователю (ст. 375 того же устава), Право суда возвращать предметы, не- посредственно добытые престу",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "ea2e6420d8df726719c6e0f89dc11945af3a215fe6775b4c8eb3021c9df81dee",
+      "headnote_sha256": "b481e620600059cb0a4752b8dab0cfd1dba75b85e698814dbea077527d08a438",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-031",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-031?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+126&law=1896-031%3A%D0%A3%D0%A3%D0%A1%3A126%3Atext%3A6915&at=6915&end=6922&v=1896-restored-20261019",
+      "source_warning": null,
+      "passage_id": "1896-031:6345-8031",
+      "sources": [
+        {
+          "page": 767,
+          "page_method": "neighbors",
+          "file": "p0060.txt",
+          "start": 6915,
+          "end": 6922
+        }
+      ],
+      "printed_pages": [
+        767
+      ],
+      "scans": [
+        {
+          "file": "p0060.txt",
+          "page": 767,
+          "full": "scans/1896/pages/p0060-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1672,
+          "ocr_sha256": "7451a08a4fb13e4a8509cd91d5cf424afe19ae49c83ebe70d63b892d1fab4b19",
+          "pdf_page": 60,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
+    },
+    {
+      "id": "1896-011:УУС:135:text:169",
+      "statute": "УУС ст. 135",
+      "code": "УУС",
+      "article": "ст. 135",
+      "decision_id": "1896-011",
+      "year": 1896,
+      "decision_number": 11,
+      "field": "text",
+      "start": 169,
+      "end": 176,
+      "quote_original": "ст. 135",
+      "context_original": "я. По внесенному Перво присутствующимъ вопросу о томъ: подлежатъ-ли дѣла о пѣсоистребленіяхъ въ част ныхъ лѣсахъ прекращенію, на, основаніи ст. 135 уст. угол. суд., въ случаѣ неявки част наго обвинителя къ разбору дѣла мировымъ судьею, или- же, въ виду ст. 201 уст. о нак. и рѣшенія Соед",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "90656a68a23a34e60753718875113547f46e22ba6a95b127e74704cc208c19af",
+      "headnote_sha256": "3e2a379bc737512445c87dae3b4374176654fb0d9c9f22ab265daecb65f816ea",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+135&law=1896-011%3A%D0%A3%D0%A3%D0%A1%3A135%3Atext%3A169&at=169&end=176&v=1896-restored-20261019",
+      "source_warning": null,
+      "passage_id": "1896-011:0-1270",
+      "sources": [
+        {
+          "page": 722,
+          "page_method": "neighbors",
+          "file": "p0015.txt",
+          "start": 169,
+          "end": 176
+        }
+      ],
+      "printed_pages": [
+        722
+      ],
+      "scans": [
+        {
+          "file": "p0015.txt",
+          "page": 722,
+          "full": "scans/1896/pages/p0015-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1659,
+          "ocr_sha256": "8ca10ade6623ddb25db4730921ef2fc3c232f340cffd5e2ba3ab4918684c219e",
+          "pdf_page": 15,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 169,
+          "end": 192,
+          "quote_original": "ст. 135 уст. угол. суд.",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "headnote",
+          "start": 137,
+          "end": 144,
+          "quote_original": "ст. 135",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "headnote",
+              "start": 137,
+              "end": 160,
+              "quote_original": "ст. 135 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 169,
+          "end": 176,
+          "quote_original": "ст. 135",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 169,
+              "end": 192,
+              "quote_original": "ст. 135 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 6714,
+          "end": 6721,
+          "quote_original": "ст. 135",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 169,
+              "end": 192,
+              "quote_original": "ст. 135 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 818,
+          "end": 825,
+          "quote_original": "ст. 135",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 818,
+              "end": 839,
+              "quote_original": "ст. 135 уст. уг. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 8424,
+          "end": 8431,
+          "quote_original": "ст. 135",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 818,
+              "end": 839,
+              "quote_original": "ст. 135 уст. уг. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 7665,
+          "end": 7672,
+          "quote_original": "ст. 135",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 169,
+              "end": 192,
+              "quote_original": "ст. 135 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-039:УУС:223:text:1765",
+      "statute": "УУС ст. 223",
+      "code": "УУС",
+      "article": "ст. 223",
+      "decision_id": "1896-039",
+      "year": 1896,
+      "decision_number": 39,
+      "field": "text",
+      "start": 1765,
+      "end": 1772,
+      "quote_original": "ст. 223",
+      "context_original": "дебнаго слѣдователя 2-го участка Донецкаго округа, но послѣдній нашелъ, что в ^ед- варительное слѣдствіе по сему дѣлу, подсудному, за силою ст. 223 уст. уг. суд., военному суду, должно произво диться, согласно 337 и 338 ст. воен. суд. устава, военнымъ слѣдователемъ, такъ какъ кража хотя",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "11b9936c3c6f31017154475546a3a8a81aef8049ec23dc5af290cac8840d590a",
+      "headnote_sha256": "65071bb5d433f450cd41aba0d60b7a269b2a81c9caab0ce2c25df171ca52e158",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-039",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-039?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+223&law=1896-039%3A%D0%A3%D0%A3%D0%A1%3A223%3Atext%3A1765&at=1765&end=1772&v=1896-restored-20261019",
+      "source_warning": null,
+      "passage_id": "1896-039:1100-3046",
+      "sources": [
+        {
+          "page": 780,
+          "page_method": "neighbors",
+          "file": "p0073.txt",
+          "start": 1765,
+          "end": 1772
+        }
+      ],
+      "printed_pages": [
+        780
+      ],
+      "scans": [
+        {
+          "file": "p0073.txt",
+          "page": 780,
+          "full": "scans/1896/pages/p0073-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1684,
+          "ocr_sha256": "54f465494745459e06e707265fbd8713670d1d1aae92e1e1f23e5e9d8f234dec",
+          "pdf_page": 73,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1765,
+          "end": 1786,
+          "quote_original": "ст. 223 уст. уг. суд.",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1765,
+          "end": 1772,
+          "quote_original": "ст. 223",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1765,
+              "end": 1786,
+              "quote_original": "ст. 223 уст. уг. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-047:УУС:223:text:3565",
+      "statute": "УУС ст. 223",
+      "code": "УУС",
+      "article": "ст. 223",
+      "decision_id": "1896-047",
+      "year": 1896,
+      "decision_number": 47,
+      "field": "text",
+      "start": 3565,
+      "end": 3572,
+      "quote_original": "ст. 223",
+      "context_original": "ихъ на службѣ по военнымъ войско вымъ учрежденіямъ, подлежатъ, на точ номъ основаніи ст. 246 военно судебна го устава и соотвѣтствующей ей ст. 223 уст. уг. суд , суду военному. Выслушавъ заключен’ю Исп. обязан. Товарища Оберъ-Прокурора и призна вая указанныя выше соображенія На чальник",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "77cc655dae8e3181e8b6871e0a8b6fed81afa8a16a5ef934fb5fbb267e3651af",
+      "headnote_sha256": "1f27c4ed15d56ecfc6e91855ece1d5141443fb0b5e3f56bf571ae5028ee78ccf",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-047",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-047?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+223&law=1896-047%3A%D0%A3%D0%A3%D0%A1%3A223%3Atext%3A3565&at=3565&end=3572",
+      "source_warning": null,
+      "passage_id": "1896-047:2597-4449",
+      "sources": [
+        {
+          "page": 790,
+          "page_method": "header",
+          "file": "p0083.txt",
+          "start": 3565,
+          "end": 3572
+        }
+      ],
+      "printed_pages": [
+        790
+      ],
+      "scans": [
+        {
+          "file": "p0083.txt",
+          "page": 790,
+          "full": "scans/1896/pages/p0083-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1678,
+          "ocr_sha256": "a2543bb61846ceadc062e399e06a4d7aeff45f0a8ccb04599de26fd49ebd604d",
+          "pdf_page": 83,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3565,
+          "end": 3585,
+          "quote_original": "ст. 223 уст. уг. суд",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3565,
+          "end": 3572,
+          "quote_original": "ст. 223",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3565,
+              "end": 3585,
+              "quote_original": "ст. 223 уст. уг. суд",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-025:УУС:277:text:2111",
+      "statute": "УУС ст. 277",
+      "code": "УУС",
+      "article": "ст. 277",
+      "decision_id": "1896-025",
+      "year": 1896,
+      "decision_number": 25,
+      "field": "text",
+      "start": 2111,
+      "end": 2118,
+      "quote_original": "ст. 277",
+      "context_original": "ъ своей стороны, временно-ко мандующій бригадою, основываясь на заключеніи военнаго прокурора Одес скаго военно-окружнаго суда, нашелъ, что ст. 277 уст. угол. суд. не преду сматриваетъ того случая, когда по дѣ лу, подлежащему по мнѣн'ю судебнаго слѣдователя, за недостаточностью уликъ, п",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "aa7a49bfbf7417c0f50f120b2391c6bbcf9054bafe9ac0c8dd4bf62e3b3342a4",
+      "headnote_sha256": "8dcb46a5545697d7446a41d187e2271f0cd21070402ed1a01372a46ca5d29fac",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-025",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-025?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+277&law=1896-025%3A%D0%A3%D0%A3%D0%A1%3A277%3Atext%3A2111&at=2111&end=2118",
+      "source_warning": null,
+      "passage_id": "1896-025:1198-2654",
+      "sources": [
+        {
+          "page": 753,
+          "page_method": "header",
+          "file": "p0046.txt",
+          "start": 2111,
+          "end": 2118
+        }
+      ],
+      "printed_pages": [
+        753
+      ],
+      "scans": [
+        {
+          "file": "p0046.txt",
+          "page": 753,
+          "full": "scans/1896/pages/p0046-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1675,
+          "ocr_sha256": "1c082099298edca15e6af363891e65deaa431add43e2514df015a598c34054c5",
+          "pdf_page": 46,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2111,
+          "end": 2134,
+          "quote_original": "ст. 277 уст. угол. суд.",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2111,
+          "end": 2118,
+          "quote_original": "ст. 277",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2111,
+              "end": 2134,
+              "quote_original": "ст. 277 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-096:УУС:298:text:7618",
+      "statute": "УУС ст. 298",
+      "code": "УУС",
+      "article": "ст. 298",
+      "decision_id": "1904-096",
+      "year": 1904,
+      "decision_number": 96,
+      "field": "text",
+      "start": 7618,
+      "end": 7631,
+      "quote_original": "ст. 298 и 299",
+      "context_original": "бвиненія его убытки, независимо отъ того, имѣло-ли это обвиненіе своимъ послѣдствіемъ преданіе суду или нѣтъ, возбудить противъ объявителя (ст. 298 и 299 уст. угол. суд.) или жалобщика (тамъ же ст. 301) преслѣдованіе по обвиненію въ ложномъ доносѣ (ст. 940 улож. о наказ.) и, въ случаѣ основат",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "677785a4e7f9f0eda10602861f321e2cbc264f61c0ae18893c83317c122e7e05",
+      "headnote_sha256": "671c1ab7cb8fb45ec03c8d3ca3757e22ed05cd98249a73d20b10243fffb2e16b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+298&law=1904-096%3A%D0%A3%D0%A3%D0%A1%3A298%3Atext%3A7618&at=7618&end=7631",
+      "source_warning": null,
+      "passage_id": "1904-096:6483-8172",
+      "sources": [
+        {
+          "page": 268,
+          "page_method": "header",
+          "file": "p0135_L.txt",
+          "start": 7618,
+          "end": 7631
+        }
+      ],
+      "printed_pages": [
+        268
+      ],
+      "scans": [
+        {
+          "file": "p0135_L.txt",
+          "page": 268,
+          "full": "scans/1904/pages/p0135_L.webp",
+          "width": 1100,
+          "height": 1585,
+          "ocr_sha256": "63c3637210a5de04802d5b5e292ffb2e8488674cb4658d63dcc129d29da46948",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 7618,
+          "end": 7647,
+          "quote_original": "ст. 298 и 299 уст. угол. суд.",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7618,
+          "end": 7631,
+          "quote_original": "ст. 298 и 299",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 7618,
+              "end": 7647,
+              "quote_original": "ст. 298 и 299 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-096:УУС:299:text:7618",
+      "statute": "УУС ст. 299",
+      "code": "УУС",
+      "article": "ст. 299",
+      "decision_id": "1904-096",
+      "year": 1904,
+      "decision_number": 96,
+      "field": "text",
+      "start": 7618,
+      "end": 7631,
+      "quote_original": "ст. 298 и 299",
+      "context_original": "бвиненія его убытки, независимо отъ того, имѣло-ли это обвиненіе своимъ послѣдствіемъ преданіе суду или нѣтъ, возбудить противъ объявителя (ст. 298 и 299 уст. угол. суд.) или жалобщика (тамъ же ст. 301) преслѣдованіе по обвиненію въ ложномъ доносѣ (ст. 940 улож. о наказ.) и, въ случаѣ основат",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "677785a4e7f9f0eda10602861f321e2cbc264f61c0ae18893c83317c122e7e05",
+      "headnote_sha256": "671c1ab7cb8fb45ec03c8d3ca3757e22ed05cd98249a73d20b10243fffb2e16b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+299&law=1904-096%3A%D0%A3%D0%A3%D0%A1%3A299%3Atext%3A7618&at=7618&end=7631",
+      "source_warning": null,
+      "passage_id": "1904-096:6483-8172",
+      "sources": [
+        {
+          "page": 268,
+          "page_method": "header",
+          "file": "p0135_L.txt",
+          "start": 7618,
+          "end": 7631
+        }
+      ],
+      "printed_pages": [
+        268
+      ],
+      "scans": [
+        {
+          "file": "p0135_L.txt",
+          "page": 268,
+          "full": "scans/1904/pages/p0135_L.webp",
+          "width": 1100,
+          "height": 1585,
+          "ocr_sha256": "63c3637210a5de04802d5b5e292ffb2e8488674cb4658d63dcc129d29da46948",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 7618,
+          "end": 7647,
+          "quote_original": "ст. 298 и 299 уст. угол. суд.",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7618,
+          "end": 7631,
+          "quote_original": "ст. 298 и 299",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 7618,
+              "end": 7647,
+              "quote_original": "ст. 298 и 299 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-073:УУС:30:text:220",
+      "statute": "УУС ст. 30",
+      "code": "УУС",
+      "article": "ст. 30",
+      "decision_id": "1897-073",
+      "year": 1897,
+      "decision_number": 73,
+      "field": "text",
+      "start": 220,
+      "end": 226,
+      "quote_original": "ст. 30",
+      "context_original": "удомъ, коимъ заложенная вещь признана непохищенною, судебное постановленіе уголовнаго суда о признаніи этой вещи похищенною можетъ, въ виду ст. 30 уст. угол. суд., служить такимъ новымъ обстоятельствомъ, вслѣдствіе котораго допускается, по ст. 794 уст. гр. суд., пересмотръ состоявшагос",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "5f12bae4159475d2e53fa5605463a8763fba442547a28e323c93c827c7a2132f",
+      "headnote_sha256": "8629ad5392f5d577217f812aa6e956dce8f7838faf2f6727fae2835dd5c28a99",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-073",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-073?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+30&law=1897-073%3A%D0%A3%D0%A3%D0%A1%3A30%3Atext%3A220&at=220&end=226",
+      "source_warning": null,
+      "passage_id": "1897-073:0-1262",
+      "sources": [
+        {
+          "page": 241,
+          "page_method": "header",
+          "file": "p0131_R.txt",
+          "start": 220,
+          "end": 226
+        }
+      ],
+      "printed_pages": [
+        241
+      ],
+      "scans": [
+        {
+          "file": "p0131_R.txt",
+          "page": 241,
+          "full": "scans/1897/pages/p0131_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1523,
+          "ocr_sha256": "e27100a65b2e02a0290a2f775b1ae5bf746b6bec21d29dbd8b08cbd348dd58aa",
+          "pdf_page": 262,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 220,
+          "end": 242,
+          "quote_original": "ст. 30 уст. угол. суд.",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 220,
+          "end": 226,
+          "quote_original": "ст. 30",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 220,
+              "end": 242,
+              "quote_original": "ст. 30 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-096:УУС:301:text:7672",
+      "statute": "УУС ст. 301",
+      "code": "УУС",
+      "article": "ст. 301",
+      "decision_id": "1904-096",
+      "year": 1904,
+      "decision_number": 96,
+      "field": "text",
+      "start": 7672,
+      "end": 7679,
+      "quote_original": "ст. 301",
+      "context_original": "обвиненіе своимъ послѣдствіемъ преданіе суду или нѣтъ, возбудить противъ объявителя (ст. 298 и 299 уст. угол. суд.) или жалобщика (тамъ же ст. 301) преслѣдованіе по обвиненію въ ложномъ доносѣ (ст. 940 улож. о наказ.) и, въ случаѣ основательности сего послѣдняго обвиненія, предъявить к",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "677785a4e7f9f0eda10602861f321e2cbc264f61c0ae18893c83317c122e7e05",
+      "headnote_sha256": "671c1ab7cb8fb45ec03c8d3ca3757e22ed05cd98249a73d20b10243fffb2e16b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+301&law=1904-096%3A%D0%A3%D0%A3%D0%A1%3A301%3Atext%3A7672&at=7672&end=7679",
+      "source_warning": null,
+      "passage_id": "1904-096:6483-8172",
+      "sources": [
+        {
+          "page": 268,
+          "page_method": "header",
+          "file": "p0135_L.txt",
+          "start": 7672,
+          "end": 7679
+        }
+      ],
+      "printed_pages": [
+        268
+      ],
+      "scans": [
+        {
+          "file": "p0135_L.txt",
+          "page": 268,
+          "full": "scans/1904/pages/p0135_L.webp",
+          "width": 1100,
+          "height": 1585,
+          "ocr_sha256": "63c3637210a5de04802d5b5e292ffb2e8488674cb4658d63dcc129d29da46948",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УУС",
+          "field": "text",
+          "start": 7598,
+          "end": 7680,
+          "quote_original": "противъ объявителя (ст. 298 и 299 уст. угол. суд.) или жалобщика (тамъ же ст. 301)"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7672,
+          "end": 7679,
+          "quote_original": "ст. 301",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УУС",
+              "field": "text",
+              "start": 7598,
+              "end": 7680,
+              "quote_original": "противъ объявителя (ст. 298 и 299 уст. угол. суд.) или жалобщика (тамъ же ст. 301)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-049:УУС:34 п. 3:text:8789",
+      "statute": "УУС ст. 34 п. 3",
+      "code": "УУС",
+      "article": "ст. 34 п. 3",
+      "decision_id": "1896-049",
+      "year": 1896,
+      "decision_number": 49,
+      "field": "text",
+      "start": 8789,
+      "end": 8800,
+      "quote_original": "ст. 34 п. 3",
+      "context_original": "хъ судовгь, какъ напримѣръ, коммерче- скихъ н крестьянскихъ, о коихъ они сами упоминаютъ (уст, гражд. суд. ст. 28, 31 п. 3; уст. угол. суд. ст. 34 п. 3), не имѣютъ также въ виду и изъ ятія изъ вѣдомства этихъ особыхъ су довъ какихъ либо категорій дѣлъ, ибо нъ положеніи 19 го октября 1865 го",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "fc5bcdf5849262ff9ef726679b0f724d149df88cff9e58b2ddc820453912a573",
+      "headnote_sha256": "759c4aa44bc27bbeb145a9808a1b4de42d454e7c0ec10cd909b215e4aa598399",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-049",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-049?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+34+%D0%BF.+3&law=1896-049%3A%D0%A3%D0%A3%D0%A1%3A34+%D0%BF.+3%3Atext%3A8789&at=8789&end=8800&v=1896-restored-20261019",
+      "source_warning": null,
+      "passage_id": "1896-049:8307-9642",
+      "sources": [
+        {
+          "page": 794,
+          "page_method": "header",
+          "file": "p0087.txt",
+          "start": 8789,
+          "end": 8800
+        }
+      ],
+      "printed_pages": [
+        794
+      ],
+      "scans": [
+        {
+          "file": "p0087.txt",
+          "page": 794,
+          "full": "scans/1896/pages/p0087-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1664,
+          "ocr_sha256": "841f96785d081b2d7322a394b2773d0e960fc8adf7273d847c01399b527881a4",
+          "pdf_page": 87,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 8773,
+          "end": 8800,
+          "quote_original": "уст. угол. суд. ст. 34 п. 3",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8789,
+          "end": 8800,
+          "quote_original": "ст. 34 п. 3",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 8773,
+              "end": 8800,
+              "quote_original": "уст. угол. суд. ст. 34 п. 3",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-090:УУС:371:text:13017",
+      "statute": "УУС ст. 371",
+      "code": "УУС",
+      "article": "ст. 371",
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "field": "text",
+      "start": 13017,
+      "end": 13024,
+      "quote_original": "ст. 371",
+      "context_original": "—1139 уст. угол. суд. Въ то время, какъ назначеніе вещественныхъ доказательствъ—служить къ обнаруженію преступленія и къ уликѣ преступника (ст. 371 уст.), задержаніе товаровъ и другихъ подлежащихъ конфискаціи предметовъ (ст. 1137 и послѣд.) имѣетъ цѣлью обезпеченіе правъ казны на получе",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "b50abd438e2bb3258d41c9cba366946d478d51ca55e8670ba8407f96536fdbdb",
+      "headnote_sha256": "364f4acbb30f914939debbb59e6e6ce8674a65a7228968b50f1fecea4227f9d8",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+371&law=1904-090%3A%D0%A3%D0%A3%D0%A1%3A371%3Atext%3A13017&at=13017&end=13024",
+      "source_warning": null,
+      "passage_id": "1904-090:11914-13614",
+      "sources": [
+        {
+          "page": 251,
+          "page_method": "header",
+          "file": "p0126_R.txt",
+          "start": 13017,
+          "end": 13024
+        }
+      ],
+      "printed_pages": [
+        251
+      ],
+      "scans": [
+        {
+          "file": "p0126_R.txt",
+          "page": 251,
+          "full": "scans/1904/pages/p0126_R.webp",
+          "width": 1100,
+          "height": 1601,
+          "ocr_sha256": "4e30d324167c52a47d3e0cbbc9aaaaf6f00b94c1b562588ae22fcf6fb65b766b",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 8430,
+          "end": 8441,
+          "quote_original": "371—376 90.",
+          "heading": {
+            "start": 8366,
+            "end": 8401,
+            "quote_original": "Уставъ уголовнаго судопроизводства."
+          },
+          "edition_continuation": null,
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 13017,
+          "end": 13024,
+          "quote_original": "ст. 371",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 8430,
+              "end": 8441,
+              "quote_original": "371—376 90.",
+              "heading": {
+                "start": 8366,
+                "end": 8401,
+                "quote_original": "Уставъ уголовнаго судопроизводства."
+              },
+              "edition_continuation": null,
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-090:УУС:371–376:text:20082",
+      "statute": "УУС ст. 371–376",
+      "code": "УУС",
+      "article": "ст. 371–376",
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "field": "text",
+      "start": 20082,
+      "end": 20093,
+      "quote_original": "ст. 371—376",
+      "context_original": "подлежащимъ отмѣнѣ, по нарушенію указанныхъ законовъ,—Правительствующій Сенатъ опредѣляетъ: рѣшеніе Тифлисской судебной палаты по нарушенію ст. 371—376 уст. угол. суд., ст. 641 т. X ч. 1 и ст. 1747 т. VI уст. тамож. изд. 1857 г., отмѣнить и передать дѣло на разсмотрѣніе другаго департамента",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b50abd438e2bb3258d41c9cba366946d478d51ca55e8670ba8407f96536fdbdb",
+      "headnote_sha256": "364f4acbb30f914939debbb59e6e6ce8674a65a7228968b50f1fecea4227f9d8",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+371%E2%80%93376&law=1904-090%3A%D0%A3%D0%A3%D0%A1%3A371%E2%80%93376%3Atext%3A20082&at=20082&end=20093",
+      "source_warning": null,
+      "passage_id": "1904-090:18701-20248",
+      "sources": [
+        {
+          "page": 254,
+          "page_method": "header",
+          "file": "p0128_L.txt",
+          "start": 20082,
+          "end": 20093
+        }
+      ],
+      "printed_pages": [
+        254
+      ],
+      "scans": [
+        {
+          "file": "p0128_L.txt",
+          "page": 254,
+          "full": "scans/1904/pages/p0128_L.webp",
+          "width": 1100,
+          "height": 1610,
+          "ocr_sha256": "f193d2136e7b80162b49c40b14368f72eb0b2490e65de5fffc8c39c06b9b4112",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 20082,
+          "end": 20109,
+          "quote_original": "ст. 371—376 уст. угол. суд.",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 20082,
+          "end": 20093,
+          "quote_original": "ст. 371—376",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 20082,
+              "end": 20109,
+              "quote_original": "ст. 371—376 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-031:УУС:375:text:6973",
+      "statute": "УУС ст. 375",
+      "code": "УУС",
+      "article": "ст. 375",
+      "decision_id": "1896-031",
+      "year": 1896,
+      "decision_number": 31,
+      "field": "text",
+      "start": 6973,
+      "end": 6980,
+      "quote_original": "ст. 375",
+      "context_original": "я бы объ этомъ и не было предъявлено иска. Право это принадлежитъ не только суду (ст. 126 и 777 уст. уг. суд.), но и судебному слѣдователю (ст. 375 того же устава), Право суда возвращать предметы, не- посредственно добытые преступленіемъ, и помимо заявленія о семъ исковаго требованія, в",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "ea2e6420d8df726719c6e0f89dc11945af3a215fe6775b4c8eb3021c9df81dee",
+      "headnote_sha256": "b481e620600059cb0a4752b8dab0cfd1dba75b85e698814dbea077527d08a438",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-031",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-031?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+375&law=1896-031%3A%D0%A3%D0%A3%D0%A1%3A375%3Atext%3A6973&at=6973&end=6980&v=1896-restored-20261019",
+      "source_warning": null,
+      "passage_id": "1896-031:6345-8031",
+      "sources": [
+        {
+          "page": 767,
+          "page_method": "neighbors",
+          "file": "p0060.txt",
+          "start": 6973,
+          "end": 6980
+        }
+      ],
+      "printed_pages": [
+        767
+      ],
+      "scans": [
+        {
+          "file": "p0060.txt",
+          "page": 767,
+          "full": "scans/1896/pages/p0060-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1672,
+          "ocr_sha256": "7451a08a4fb13e4a8509cd91d5cf424afe19ae49c83ebe70d63b892d1fab4b19",
+          "pdf_page": 60,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
+    },
+    {
+      "id": "1896-027:УУС:583:text:3299",
+      "statute": "УУС ст. 583",
+      "code": "УУС",
+      "article": "ст. 583",
+      "decision_id": "1896-027",
+      "year": 1896,
+      "decision_number": 27,
+      "field": "text",
+      "start": 3299,
+      "end": 3312,
+      "quote_original": "ст. 583 и 592",
+      "context_original": "енныхъ къ нимъ обви неній, признавались настол ко суще ственными, что неявка подсудимыхъ вле кла безусловную отсрочку судебнаго за сѣданія (ст. 583 и 592 уст. уг. суд- 1864 г.); 2) что такое безусловное тре бованіе личнаго присутств я въ судѣ подсудимыхъ, безъ различія првступле ній, въ котор",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "a272df9aec9eda5bb7c4f8ac4802fcc53c924e9cc84ef73faa5dffc056182a2c",
+      "headnote_sha256": "865718237053b4744e071ddab76fa3f3903b18097d1a65de3cee7e98079f2f45",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-027",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-027?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+583&law=1896-027%3A%D0%A3%D0%A3%D0%A1%3A583%3Atext%3A3299&at=3299&end=3312&v=1896-restored-20261019",
+      "source_warning": null,
+      "passage_id": "1896-027:2454-3946",
+      "sources": [
+        {
+          "page": 756,
+          "page_method": "header",
+          "file": "p0049.txt",
+          "start": 3299,
+          "end": 3312
+        }
+      ],
+      "printed_pages": [
+        756
+      ],
+      "scans": [
+        {
+          "file": "p0049.txt",
+          "page": 756,
+          "full": "scans/1896/pages/p0049-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1659,
+          "ocr_sha256": "98dd605a77a1ed117d1565b4427ba406479c9fd011dad6bb21d073b0485b715d",
+          "pdf_page": 49,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3299,
+          "end": 3325,
+          "quote_original": "ст. 583 и 592 уст. уг. суд",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3299,
+          "end": 3312,
+          "quote_original": "ст. 583 и 592",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3299,
+              "end": 3325,
+              "quote_original": "ст. 583 и 592 уст. уг. суд",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-027:УУС:592:text:3299",
+      "statute": "УУС ст. 592",
+      "code": "УУС",
+      "article": "ст. 592",
+      "decision_id": "1896-027",
+      "year": 1896,
+      "decision_number": 27,
+      "field": "text",
+      "start": 3299,
+      "end": 3312,
+      "quote_original": "ст. 583 и 592",
+      "context_original": "енныхъ къ нимъ обви неній, признавались настол ко суще ственными, что неявка подсудимыхъ вле кла безусловную отсрочку судебнаго за сѣданія (ст. 583 и 592 уст. уг. суд- 1864 г.); 2) что такое безусловное тре бованіе личнаго присутств я въ судѣ подсудимыхъ, безъ различія првступле ній, въ котор",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "a272df9aec9eda5bb7c4f8ac4802fcc53c924e9cc84ef73faa5dffc056182a2c",
+      "headnote_sha256": "865718237053b4744e071ddab76fa3f3903b18097d1a65de3cee7e98079f2f45",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-027",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-027?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+592&law=1896-027%3A%D0%A3%D0%A3%D0%A1%3A592%3Atext%3A3299&at=3299&end=3312&v=1896-restored-20261019",
+      "source_warning": null,
+      "passage_id": "1896-027:2454-3946",
+      "sources": [
+        {
+          "page": 756,
+          "page_method": "header",
+          "file": "p0049.txt",
+          "start": 3299,
+          "end": 3312
+        }
+      ],
+      "printed_pages": [
+        756
+      ],
+      "scans": [
+        {
+          "file": "p0049.txt",
+          "page": 756,
+          "full": "scans/1896/pages/p0049-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1659,
+          "ocr_sha256": "98dd605a77a1ed117d1565b4427ba406479c9fd011dad6bb21d073b0485b715d",
+          "pdf_page": 49,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3299,
+          "end": 3325,
+          "quote_original": "ст. 583 и 592 уст. уг. суд",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3299,
+          "end": 3312,
+          "quote_original": "ст. 583 и 592",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3299,
+              "end": 3325,
+              "quote_original": "ст. 583 и 592 уст. уг. суд",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-096:УУС:6:text:7878",
+      "statute": "УУС ст. 6",
+      "code": "УУС",
+      "article": "ст. 6",
+      "decision_id": "1904-096",
+      "year": 1904,
+      "decision_number": 96,
+      "field": "text",
+      "start": 7878,
+      "end": 7887,
+      "quote_original": "ст. 6 и 7",
+      "context_original": "ж. о наказ.) и, въ случаѣ основательности сего послѣдняго обвиненія, предъявить къ нему въ установленномъ закономъ порядкѣ (уст. угол. суд. ст. 6 и 7) искъ о вознагражденіи за понесенные вредъ и убытки. По изложеннымъ основаніямъ, Правительствующій Сенатъ въ общемъ собраніи кассаціонныхъ",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "677785a4e7f9f0eda10602861f321e2cbc264f61c0ae18893c83317c122e7e05",
+      "headnote_sha256": "671c1ab7cb8fb45ec03c8d3ca3757e22ed05cd98249a73d20b10243fffb2e16b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+6&law=1904-096%3A%D0%A3%D0%A3%D0%A1%3A6%3Atext%3A7878&at=7878&end=7887",
+      "source_warning": null,
+      "passage_id": "1904-096:6483-8172",
+      "sources": [
+        {
+          "page": 268,
+          "page_method": "header",
+          "file": "p0135_L.txt",
+          "start": 7878,
+          "end": 7887
+        }
+      ],
+      "printed_pages": [
+        268
+      ],
+      "scans": [
+        {
+          "file": "p0135_L.txt",
+          "page": 268,
+          "full": "scans/1904/pages/p0135_L.webp",
+          "width": 1100,
+          "height": 1585,
+          "ocr_sha256": "63c3637210a5de04802d5b5e292ffb2e8488674cb4658d63dcc129d29da46948",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 7862,
+          "end": 7887,
+          "quote_original": "уст. угол. суд. ст. 6 и 7",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7878,
+          "end": 7887,
+          "quote_original": "ст. 6 и 7",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 7862,
+              "end": 7887,
+              "quote_original": "уст. угол. суд. ст. 6 и 7",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-096:УУС:7:text:7878",
+      "statute": "УУС ст. 7",
+      "code": "УУС",
+      "article": "ст. 7",
+      "decision_id": "1904-096",
+      "year": 1904,
+      "decision_number": 96,
+      "field": "text",
+      "start": 7878,
+      "end": 7887,
+      "quote_original": "ст. 6 и 7",
+      "context_original": "ж. о наказ.) и, въ случаѣ основательности сего послѣдняго обвиненія, предъявить къ нему въ установленномъ закономъ порядкѣ (уст. угол. суд. ст. 6 и 7) искъ о вознагражденіи за понесенные вредъ и убытки. По изложеннымъ основаніямъ, Правительствующій Сенатъ въ общемъ собраніи кассаціонныхъ",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "677785a4e7f9f0eda10602861f321e2cbc264f61c0ae18893c83317c122e7e05",
+      "headnote_sha256": "671c1ab7cb8fb45ec03c8d3ca3757e22ed05cd98249a73d20b10243fffb2e16b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+7&law=1904-096%3A%D0%A3%D0%A3%D0%A1%3A7%3Atext%3A7878&at=7878&end=7887",
+      "source_warning": null,
+      "passage_id": "1904-096:6483-8172",
+      "sources": [
+        {
+          "page": 268,
+          "page_method": "header",
+          "file": "p0135_L.txt",
+          "start": 7878,
+          "end": 7887
+        }
+      ],
+      "printed_pages": [
+        268
+      ],
+      "scans": [
+        {
+          "file": "p0135_L.txt",
+          "page": 268,
+          "full": "scans/1904/pages/p0135_L.webp",
+          "width": 1100,
+          "height": 1585,
+          "ocr_sha256": "63c3637210a5de04802d5b5e292ffb2e8488674cb4658d63dcc129d29da46948",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 7862,
+          "end": 7887,
+          "quote_original": "уст. угол. суд. ст. 6 и 7",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7878,
+          "end": 7887,
+          "quote_original": "ст. 6 и 7",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 7862,
+              "end": 7887,
+              "quote_original": "уст. угол. суд. ст. 6 и 7",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-090:УУС:776:text:13454",
+      "statute": "УУС ст. 776",
+      "code": "УУС",
+      "article": "ст. 776",
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "field": "text",
+      "start": 13454,
+      "end": 13467,
+      "quote_original": "ст. 776 и 777",
+      "context_original": "о дѣлу доказательства остаются въ распоряженіи судебнаго слѣдователя и затѣмъ суда, куда дѣло, къ которому они относятся, имѣетъ поступить (ст. 776 и 777 уст.), предметы, задержанные какъ подлежащіе конфискаціи, именно контрабандные товары, направляются для досмотра и храненія въ таможню (ст.",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "b50abd438e2bb3258d41c9cba366946d478d51ca55e8670ba8407f96536fdbdb",
+      "headnote_sha256": "364f4acbb30f914939debbb59e6e6ce8674a65a7228968b50f1fecea4227f9d8",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+776&law=1904-090%3A%D0%A3%D0%A3%D0%A1%3A776%3Atext%3A13454&at=13454&end=13467",
+      "source_warning": null,
+      "passage_id": "1904-090:11914-13614",
+      "sources": [
+        {
+          "page": 251,
+          "page_method": "header",
+          "file": "p0126_R.txt",
+          "start": 13454,
+          "end": 13467
+        }
+      ],
+      "printed_pages": [
+        251
+      ],
+      "scans": [
+        {
+          "file": "p0126_R.txt",
+          "page": 251,
+          "full": "scans/1904/pages/p0126_R.webp",
+          "width": 1100,
+          "height": 1601,
+          "ocr_sha256": "4e30d324167c52a47d3e0cbbc9aaaaf6f00b94c1b562588ae22fcf6fb65b766b",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 8450,
+          "end": 8461,
+          "quote_original": "776 90, 96.",
+          "heading": {
+            "start": 8366,
+            "end": 8401,
+            "quote_original": "Уставъ уголовнаго судопроизводства."
+          },
+          "edition_continuation": null,
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 13454,
+          "end": 13467,
+          "quote_original": "ст. 776 и 777",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 8450,
+              "end": 8461,
+              "quote_original": "776 90, 96.",
+              "heading": {
+                "start": 8366,
+                "end": 8401,
+                "quote_original": "Уставъ уголовнаго судопроизводства."
+              },
+              "edition_continuation": null,
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-096:УУС:776:text:5362",
+      "statute": "УУС ст. 776",
+      "code": "УУС",
+      "article": "ст. 776",
+      "decision_id": "1904-096",
+      "year": 1904,
+      "decision_number": 96,
+      "field": "text",
+      "start": 5362,
+      "end": 5369,
+      "quote_original": "ст. 776",
+      "context_original": "ими возлагается на обязанность суда, при постановленіи приговора, опредѣлять вознагражденіе за убытки, понесенные тою или другою стороною (ст. 776), и дозволяется отлагать разрѣшеніе гражданскаго иска лишь въ случаѣ необходимости произвести подробный расчетъ относительно требуемаго кот",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "677785a4e7f9f0eda10602861f321e2cbc264f61c0ae18893c83317c122e7e05",
+      "headnote_sha256": "671c1ab7cb8fb45ec03c8d3ca3757e22ed05cd98249a73d20b10243fffb2e16b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+776&law=1904-096%3A%D0%A3%D0%A3%D0%A1%3A776%3Atext%3A5362&at=5362&end=5369",
+      "source_warning": null,
+      "passage_id": "1904-096:3957-5556",
+      "sources": [
+        {
+          "page": 267,
+          "page_method": "header",
+          "file": "p0134_R.txt",
+          "start": 5362,
+          "end": 5369
+        }
+      ],
+      "printed_pages": [
+        267
+      ],
+      "scans": [
+        {
+          "file": "p0134_R.txt",
+          "page": 267,
+          "full": "scans/1904/pages/p0134_R.webp",
+          "width": 1100,
+          "height": 1585,
+          "ocr_sha256": "cdce7dc99779f06c30b829d5611dfdc5ab378cdc61753f5dce0364ed54e2477b",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 8450,
+          "end": 8461,
+          "quote_original": "776 90, 96.",
+          "heading": {
+            "start": 8366,
+            "end": 8401,
+            "quote_original": "Уставъ уголовнаго судопроизводства."
+          },
+          "edition_continuation": null,
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5362,
+          "end": 5369,
+          "quote_original": "ст. 776",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 8450,
+              "end": 8461,
+              "quote_original": "776 90, 96.",
+              "heading": {
+                "start": 8366,
+                "end": 8401,
+                "quote_original": "Уставъ уголовнаго судопроизводства."
+              },
+              "edition_continuation": null,
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-031:УУС:777:text:10517",
+      "statute": "УУС ст. 777",
+      "code": "УУС",
+      "article": "ст. 777",
+      "decision_id": "1896-031",
+      "year": 1896,
+      "decision_number": 31,
+      "field": "text",
+      "start": 10517,
+      "end": 10524,
+      "quote_original": "777 ст.",
+      "context_original": "зана его винов- ность въ совершеніи преступлен'я, что не исключаетъ возможности соверше- нія его другимъ лицомъ, то судъ обя занъ примѣнить 777 ст. уст. уг. суд., коль скоро принадлежность потерпѣв- шему отобраннаго отъ подсудимаго или третьихъ лицъ имущества не возбуж- даетъ сомнѣнія.",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "ea2e6420d8df726719c6e0f89dc11945af3a215fe6775b4c8eb3021c9df81dee",
+      "headnote_sha256": "b481e620600059cb0a4752b8dab0cfd1dba75b85e698814dbea077527d08a438",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-031",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-031?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+777&law=1896-031%3A%D0%A3%D0%A3%D0%A1%3A777%3Atext%3A10517&at=10517&end=10524&v=1896-restored-20261019",
+      "source_warning": null,
+      "passage_id": "1896-031:9391-11113",
+      "sources": [
+        {
+          "page": 767,
+          "page_method": "neighbors",
+          "file": "p0060.txt",
+          "start": 10517,
+          "end": 10524
+        }
+      ],
+      "printed_pages": [
+        767
+      ],
+      "scans": [
+        {
+          "file": "p0060.txt",
+          "page": 767,
+          "full": "scans/1896/pages/p0060-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1672,
+          "ocr_sha256": "7451a08a4fb13e4a8509cd91d5cf424afe19ae49c83ebe70d63b892d1fab4b19",
+          "pdf_page": 60,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
+    },
+    {
+      "id": "1904-090:УУС:777:text:13454",
+      "statute": "УУС ст. 777",
+      "code": "УУС",
+      "article": "ст. 777",
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "field": "text",
+      "start": 13454,
+      "end": 13467,
+      "quote_original": "ст. 776 и 777",
+      "context_original": "о дѣлу доказательства остаются въ распоряженіи судебнаго слѣдователя и затѣмъ суда, куда дѣло, къ которому они относятся, имѣетъ поступить (ст. 776 и 777 уст.), предметы, задержанные какъ подлежащіе конфискаціи, именно контрабандные товары, направляются для досмотра и храненія въ таможню (ст.",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "b50abd438e2bb3258d41c9cba366946d478d51ca55e8670ba8407f96536fdbdb",
+      "headnote_sha256": "364f4acbb30f914939debbb59e6e6ce8674a65a7228968b50f1fecea4227f9d8",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+777&law=1904-090%3A%D0%A3%D0%A3%D0%A1%3A777%3Atext%3A13454&at=13454&end=13467",
+      "source_warning": null,
+      "passage_id": "1904-090:11914-13614",
+      "sources": [
+        {
+          "page": 251,
+          "page_method": "header",
+          "file": "p0126_R.txt",
+          "start": 13454,
+          "end": 13467
+        }
+      ],
+      "printed_pages": [
+        251
+      ],
+      "scans": [
+        {
+          "file": "p0126_R.txt",
+          "page": 251,
+          "full": "scans/1904/pages/p0126_R.webp",
+          "width": 1100,
+          "height": 1601,
+          "ocr_sha256": "4e30d324167c52a47d3e0cbbc9aaaaf6f00b94c1b562588ae22fcf6fb65b766b",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 8462,
+          "end": 8469,
+          "quote_original": "777 90.",
+          "heading": {
+            "start": 8366,
+            "end": 8401,
+            "quote_original": "Уставъ уголовнаго судопроизводства."
+          },
+          "edition_continuation": null,
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 13454,
+          "end": 13467,
+          "quote_original": "ст. 776 и 777",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 8462,
+              "end": 8469,
+              "quote_original": "777 90.",
+              "heading": {
+                "start": 8366,
+                "end": 8401,
+                "quote_original": "Уставъ уголовнаго судопроизводства."
+              },
+              "edition_continuation": null,
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-096:УУС:781:text:6417",
+      "statute": "УУС ст. 781",
+      "code": "УУС",
+      "article": "ст. 781",
+      "decision_id": "1904-096",
+      "year": 1904,
+      "decision_number": 96,
+      "field": "text",
+      "start": 6417,
+      "end": 6430,
+      "quote_original": "ст. 781 и 782",
+      "context_original": "ми преніями, дабы въ справедливости и этой части приговора общество могло удостовѣриться (тамъ же ст. 394 и 395). Такимъ образомъ, значеніе ст. 781 и 782 уст. угол. суд., какъ по содержанію ихъ, такъ равно по соображеніямъ, на коихъ онѣ основаны, и по мѣсту, занимаемому ими въ уставѣ уголовна",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "677785a4e7f9f0eda10602861f321e2cbc264f61c0ae18893c83317c122e7e05",
+      "headnote_sha256": "671c1ab7cb8fb45ec03c8d3ca3757e22ed05cd98249a73d20b10243fffb2e16b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+781&law=1904-096%3A%D0%A3%D0%A3%D0%A1%3A781%3Atext%3A6417&at=6417&end=6430",
+      "source_warning": null,
+      "passage_id": "1904-096:5264-6760",
+      "sources": [
+        {
+          "page": 268,
+          "page_method": "header",
+          "file": "p0135_L.txt",
+          "start": 6417,
+          "end": 6430
+        }
+      ],
+      "printed_pages": [
+        268
+      ],
+      "scans": [
+        {
+          "file": "p0135_L.txt",
+          "page": 268,
+          "full": "scans/1904/pages/p0135_L.webp",
+          "width": 1100,
+          "height": 1585,
+          "ocr_sha256": "63c3637210a5de04802d5b5e292ffb2e8488674cb4658d63dcc129d29da46948",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 6417,
+          "end": 6446,
+          "quote_original": "ст. 781 и 782 уст. угол. суд.",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 6417,
+          "end": 6430,
+          "quote_original": "ст. 781 и 782",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 6417,
+              "end": 6446,
+              "quote_original": "ст. 781 и 782 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-096:УУС:782:text:6417",
+      "statute": "УУС ст. 782",
+      "code": "УУС",
+      "article": "ст. 782",
+      "decision_id": "1904-096",
+      "year": 1904,
+      "decision_number": 96,
+      "field": "text",
+      "start": 6417,
+      "end": 6430,
+      "quote_original": "ст. 781 и 782",
+      "context_original": "ми преніями, дабы въ справедливости и этой части приговора общество могло удостовѣриться (тамъ же ст. 394 и 395). Такимъ образомъ, значеніе ст. 781 и 782 уст. угол. суд., какъ по содержанію ихъ, такъ равно по соображеніямъ, на коихъ онѣ основаны, и по мѣсту, занимаемому ими въ уставѣ уголовна",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "677785a4e7f9f0eda10602861f321e2cbc264f61c0ae18893c83317c122e7e05",
+      "headnote_sha256": "671c1ab7cb8fb45ec03c8d3ca3757e22ed05cd98249a73d20b10243fffb2e16b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+782&law=1904-096%3A%D0%A3%D0%A3%D0%A1%3A782%3Atext%3A6417&at=6417&end=6430",
+      "source_warning": null,
+      "passage_id": "1904-096:5264-6760",
+      "sources": [
+        {
+          "page": 268,
+          "page_method": "header",
+          "file": "p0135_L.txt",
+          "start": 6417,
+          "end": 6430
+        }
+      ],
+      "printed_pages": [
+        268
+      ],
+      "scans": [
+        {
+          "file": "p0135_L.txt",
+          "page": 268,
+          "full": "scans/1904/pages/p0135_L.webp",
+          "width": 1100,
+          "height": 1585,
+          "ocr_sha256": "63c3637210a5de04802d5b5e292ffb2e8488674cb4658d63dcc129d29da46948",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 6417,
+          "end": 6446,
+          "quote_original": "ст. 781 и 782 уст. угол. суд.",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 6417,
+          "end": 6430,
+          "quote_original": "ст. 781 и 782",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 6417,
+              "end": 6446,
+              "quote_original": "ст. 781 и 782 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-090:УУС:783:text:10665",
+      "statute": "УУС ст. 783",
+      "code": "УУС",
+      "article": "ст. 783",
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "field": "text",
+      "start": 10665,
+      "end": 10678,
+      "quote_original": "ст. 783 и 784",
+      "context_original": "авительствующаго Сената, напечатанное въ сборникѣ за 1893 г. подъ № 2, относительно отвѣтственности казны предъ оправданнымъ подсудимымъ по ст. 783 и 784 уст. угол. суд. и по ст. 601 уст. гр. судопр. только при наличности неправильныхъ дѣйствій должностныхъ лицъ казеннаго управленія, не имѣет",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b50abd438e2bb3258d41c9cba366946d478d51ca55e8670ba8407f96536fdbdb",
+      "headnote_sha256": "364f4acbb30f914939debbb59e6e6ce8674a65a7228968b50f1fecea4227f9d8",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+783&law=1904-090%3A%D0%A3%D0%A3%D0%A1%3A783%3Atext%3A10665&at=10665&end=10678",
+      "source_warning": null,
+      "passage_id": "1904-090:8744-10849",
+      "sources": [
+        {
+          "page": 250,
+          "page_method": "header",
+          "file": "p0126_L.txt",
+          "start": 10665,
+          "end": 10678
+        }
+      ],
+      "printed_pages": [
+        250
+      ],
+      "scans": [
+        {
+          "file": "p0126_L.txt",
+          "page": 250,
+          "full": "scans/1904/pages/p0126_L.webp",
+          "width": 1100,
+          "height": 1601,
+          "ocr_sha256": "7daf9dfb66258d613e278668a62617aaa5aa3e315a6e9ba9a58c630f4a9e302c",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 10665,
+          "end": 10694,
+          "quote_original": "ст. 783 и 784 уст. угол. суд.",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 10665,
+          "end": 10678,
+          "quote_original": "ст. 783 и 784",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 10665,
+              "end": 10694,
+              "quote_original": "ст. 783 и 784 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 11007,
+          "end": 11020,
+          "quote_original": "ст. 783 и 784",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 11007,
+              "end": 11034,
+              "quote_original": "ст. 783 и 784 уст. уг. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-090:УУС:784:text:10665",
+      "statute": "УУС ст. 784",
+      "code": "УУС",
+      "article": "ст. 784",
+      "decision_id": "1904-090",
+      "year": 1904,
+      "decision_number": 90,
+      "field": "text",
+      "start": 10665,
+      "end": 10678,
+      "quote_original": "ст. 783 и 784",
+      "context_original": "авительствующаго Сената, напечатанное въ сборникѣ за 1893 г. подъ № 2, относительно отвѣтственности казны предъ оправданнымъ подсудимымъ по ст. 783 и 784 уст. угол. суд. и по ст. 601 уст. гр. судопр. только при наличности неправильныхъ дѣйствій должностныхъ лицъ казеннаго управленія, не имѣет",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b50abd438e2bb3258d41c9cba366946d478d51ca55e8670ba8407f96536fdbdb",
+      "headnote_sha256": "364f4acbb30f914939debbb59e6e6ce8674a65a7228968b50f1fecea4227f9d8",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-090?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+784&law=1904-090%3A%D0%A3%D0%A3%D0%A1%3A784%3Atext%3A10665&at=10665&end=10678",
+      "source_warning": null,
+      "passage_id": "1904-090:8744-10849",
+      "sources": [
+        {
+          "page": 250,
+          "page_method": "header",
+          "file": "p0126_L.txt",
+          "start": 10665,
+          "end": 10678
+        }
+      ],
+      "printed_pages": [
+        250
+      ],
+      "scans": [
+        {
+          "file": "p0126_L.txt",
+          "page": 250,
+          "full": "scans/1904/pages/p0126_L.webp",
+          "width": 1100,
+          "height": 1601,
+          "ocr_sha256": "7daf9dfb66258d613e278668a62617aaa5aa3e315a6e9ba9a58c630f4a9e302c",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 10665,
+          "end": 10694,
+          "quote_original": "ст. 783 и 784 уст. угол. суд.",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 10665,
+          "end": 10678,
+          "quote_original": "ст. 783 и 784",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 10665,
+              "end": 10694,
+              "quote_original": "ст. 783 и 784 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 11007,
+          "end": 11020,
+          "quote_original": "ст. 783 и 784",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 11007,
+              "end": 11034,
+              "quote_original": "ст. 783 и 784 уст. уг. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-096:УУС:785:text:5547",
+      "statute": "УУС ст. 785",
+      "code": "УУС",
+      "article": "ст. 785",
+      "decision_id": "1904-096",
+      "year": 1904,
+      "decision_number": 96,
+      "field": "text",
+      "start": 5547,
+      "end": 5554,
+      "quote_original": "ст. 785",
+      "context_original": "ражданскаго иска лишь въ случаѣ необходимости произвести подробный расчетъ относительно требуемаго которою либо изъ сторонъ вознагражденія (ст. 785). Столь ясное указаніе закона не оставляетъ сомнѣнія въ томъ, что гражданскій искъ въ уголовномъ дѣлѣ можетъ быть заявленъ не только потерп",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "677785a4e7f9f0eda10602861f321e2cbc264f61c0ae18893c83317c122e7e05",
+      "headnote_sha256": "671c1ab7cb8fb45ec03c8d3ca3757e22ed05cd98249a73d20b10243fffb2e16b",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-096?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+785&law=1904-096%3A%D0%A3%D0%A3%D0%A1%3A785%3Atext%3A5547&at=5547&end=5554",
+      "source_warning": null,
+      "passage_id": "1904-096:3957-5556",
+      "sources": [
+        {
+          "page": 267,
+          "page_method": "header",
+          "file": "p0134_R.txt",
+          "start": 5547,
+          "end": 5554
+        }
+      ],
+      "printed_pages": [
+        267
+      ],
+      "scans": [
+        {
+          "file": "p0134_R.txt",
+          "page": 267,
+          "full": "scans/1904/pages/p0134_R.webp",
+          "width": 1100,
+          "height": 1585,
+          "ocr_sha256": "cdce7dc99779f06c30b829d5611dfdc5ab378cdc61753f5dce0364ed54e2477b",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 8470,
+          "end": 8481,
+          "quote_original": "781—785 96.",
+          "heading": {
+            "start": 8366,
+            "end": 8401,
+            "quote_original": "Уставъ уголовнаго судопроизводства."
+          },
+          "edition_continuation": null,
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5547,
+          "end": 5554,
+          "quote_original": "ст. 785",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 8470,
+              "end": 8481,
+              "quote_original": "781—785 96.",
+              "heading": {
+                "start": 8366,
+                "end": 8401,
+                "quote_original": "Уставъ уголовнаго судопроизводства."
+              },
+              "edition_continuation": null,
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-041:УУС:933:text:1744",
+      "statute": "УУС ст. 933",
+      "code": "УУС",
+      "article": "ст. 933",
+      "decision_id": "1896-041",
+      "year": 1896,
+      "decision_number": 41,
+      "field": "text",
+      "start": 1744,
+      "end": 1751,
+      "quote_original": "ст. 933",
+      "context_original": "опредѣлена Уголовнаго Кассаціоннаго Департамента, если ими разъясняется точный смыслъ законовъ, примѣняется особое правило, изложен ное въ ст. 933 уст. угол. суд. — За таковымъ разрѣшеніемъ перваго изъ предложенныхъ Правительствую і ему Се нату вопросовъ, второй вопто.ъ не тре буетъ ра",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "f0ebcfcf416c0c8449f76548c09c2174cb62e8ee2b1db62c4ebd2f3b191f51ba",
+      "headnote_sha256": "109a4ff3f324a9d7051ccd00917ce5dffcdb01adb25050f2bd7ebc1b77bde557",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-041",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-041?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+933&law=1896-041%3A%D0%A3%D0%A3%D0%A1%3A933%3Atext%3A1744&at=1744&end=1751",
+      "source_warning": null,
+      "passage_id": "1896-041:1298-2475",
+      "sources": [
+        {
+          "page": 784,
+          "page_method": "header",
+          "file": "p0077.txt",
+          "start": 1744,
+          "end": 1751
+        }
+      ],
+      "printed_pages": [
+        784
+      ],
+      "scans": [
+        {
+          "file": "p0077.txt",
+          "page": 784,
+          "full": "scans/1896/pages/p0077-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1680,
+          "ocr_sha256": "965309d8c0d976ea4927f6af09463de558155d4ea210a6f8884016767c7d448a",
+          "pdf_page": 77,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1744,
+          "end": 1767,
+          "quote_original": "ст. 933 уст. угол. суд.",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1744,
+          "end": 1751,
+          "quote_original": "ст. 933",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1744,
+              "end": 1767,
+              "quote_original": "ст. 933 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-041:УУС:975:text:1087",
+      "statute": "УУС ст. 975",
+      "code": "УУС",
+      "article": "ст. 975",
+      "decision_id": "1896-041",
+      "year": 1896,
+      "decision_number": 41,
+      "field": "text",
+      "start": 1087,
+      "end": 1094,
+      "quote_original": "ст. 975",
+      "context_original": "ложенныхъ на его обсужден е вопро совъ долженъ быть разрѣшенъ въ отри цательномъ смыслѣ по слѣдующимъ со ображеніямъ: на точномъ основан и ст. 975 уст. угол. суд., публикуются, по просьбѣ оправданныхъ подсудимыхъ, въ сенатскихъ и мѣстныхъ губе нкихъ вѣдомостяхъ оправдательные п игово-",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "f0ebcfcf416c0c8449f76548c09c2174cb62e8ee2b1db62c4ebd2f3b191f51ba",
+      "headnote_sha256": "109a4ff3f324a9d7051ccd00917ce5dffcdb01adb25050f2bd7ebc1b77bde557",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-041",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-041?mode=laws&c=%D0%A3%D0%A3%D0%A1&q=%D1%81%D1%82.+975&law=1896-041%3A%D0%A3%D0%A3%D0%A1%3A975%3Atext%3A1087&at=1087&end=1094",
+      "source_warning": null,
+      "passage_id": "1896-041:0-1552",
+      "sources": [
+        {
+          "page": 784,
+          "page_method": "header",
+          "file": "p0077.txt",
+          "start": 1087,
+          "end": 1094
+        }
+      ],
+      "printed_pages": [
+        784
+      ],
+      "scans": [
+        {
+          "file": "p0077.txt",
+          "page": 784,
+          "full": "scans/1896/pages/p0077-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1680,
+          "ocr_sha256": "965309d8c0d976ea4927f6af09463de558155d4ea210a6f8884016767c7d448a",
+          "pdf_page": 77,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1087,
+          "end": 1110,
+          "quote_original": "ст. 975 уст. угол. суд.",
+          "act_code": "УУС"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1087,
+          "end": 1094,
+          "quote_original": "ст. 975",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1087,
+              "end": 1110,
+              "quote_original": "ст. 975 уст. угол. суд.",
+              "act_code": "УУС"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 2002,
+          "end": 2009,
+          "quote_original": "ст. 975",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2002,
+              "end": 2024,
+              "quote_original": "ст. 975 уст. угол. суд",
+              "act_code": "УУС"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:2433ea245c39e57a199c959245d64c887e26d851eed1b4249f20b59c5405b965",
+  "resource": "bulk-downloads",
+  "item": {
+    "description": "Полные JSON/CSV-выгрузки; имена, контрольные суммы и размеры определяет export/manifest.json.",
+    "manifest": "https://ivseliv.github.io/senat/lex/export/manifest.json",
+    "readme": "https://ivseliv.github.io/senat/lex/export/README.md",
+    "files": [
+      {
+        "name": "decisions.json",
+        "sha256": "8b5c2dde28d280c8b01d9990eb9fa3817f575e96cd79175dc5237f188de6fb9b",
+        "bytes": 8364381,
+        "href": "https://ivseliv.github.io/senat/lex/export/decisions.json"
+      },
+      {
+        "name": "decisions.csv",
+        "sha256": "f93c831e2506030ffdef0a21c0ab9929c242ae70000e945c3f62e7c86f77fe34",
+        "bytes": 7815323,
+        "href": "https://ivseliv.github.io/senat/lex/export/decisions.csv"
+      },
+      {
+        "name": "passages.json",
+        "sha256": "89c1e27f28d02acad43cd970635c8efd7adca55e5394577c1be2ff4f9cef232b",
+        "bytes": 12125398,
+        "href": "https://ivseliv.github.io/senat/lex/export/passages.json"
+      },
+      {
+        "name": "passages.csv",
+        "sha256": "2c119fc4b91ff4f26c30b939d496256f2774e4dc2f634c1ec17abdf04c359f20",
+        "bytes": 10758774,
+        "href": "https://ivseliv.github.io/senat/lex/export/passages.csv"
+      },
+      {
+        "name": "participants.json",
+        "sha256": "232de4b2128211f438a3b8decd359871c6b6ac1137013c186343458576e4367b",
+        "bytes": 413730,
+        "href": "https://ivseliv.github.io/senat/lex/export/participants.json"
+      },
+      {
+        "name": "participants.csv",
+        "sha256": "877543575006257c2ec764601f267da27b908d0dc70b03286ecf5c09086f9d5c",
+        "bytes": 270959,
+        "href": "https://ivseliv.github.io/senat/lex/export/participants.csv"
+      },
+      {
+        "name": "statutes.json",
+        "sha256": "c56550353fd0295cb012179ae9d64dca736ee26cbecde716959f4885041ecdfd",
+        "bytes": 510322,
+        "href": "https://ivseliv.github.io/senat/lex/export/statutes.json"
+      },
+      {
+        "name": "statutes.csv",
+        "sha256": "22f125c8a9b553812290434e8c6f5562e5ef27ba2cdc5969f59bdc25afcaad5a",
+        "bytes": 198503,
+        "href": "https://ivseliv.github.io/senat/lex/export/statutes.csv"
+      },
+      {
+        "name": "legislation-acts.json",
+        "sha256": "9e3dd49dbf86742e9fb9e3fd5053c290fe03a1f13f4d07d67745e4c24dd670d8",
+        "bytes": 121175,
+        "href": "https://ivseliv.github.io/senat/lex/export/legislation-acts.json"
+      },
+      {
+        "name": "legislation-acts.csv",
+        "sha256": "757f44a6a7cce58aa321597a46ed5c5993a9a026c83ec3d9c15d2b49891226ab",
+        "bytes": 78536,
+        "href": "https://ivseliv.github.io/senat/lex/export/legislation-acts.csv"
+      },
+      {
+        "name": "legislation-citations.json",
+        "sha256": "23d4a38b12b5bd48ca060ce493b8f9c553b16e75224c25f717d1e1db99f8021e",
+        "bytes": 4585469,
+        "href": "https://ivseliv.github.io/senat/lex/export/legislation-citations.json"
+      },
+      {
+        "name": "legislation-citations.csv",
+        "sha256": "c8a706aa20f613159828c057d6358caa74bfcc5c53cdf6450a81a4367b5dac22",
+        "bytes": 3271692,
+        "href": "https://ivseliv.github.io/senat/lex/export/legislation-citations.csv"
+      },
+      {
+        "name": "legislation-unresolved.json",
+        "sha256": "a1e8e2d39ab12a5b36a2aecd9265726e7e900b2d1c100ac3c9004384716cbf2a",
+        "bytes": 1328931,
+        "href": "https://ivseliv.github.io/senat/lex/export/legislation-unresolved.json"
+      },
+      {
+        "name": "legislation-unresolved.csv",
+        "sha256": "309f41424f62dedc7700861c81d4cd5dacc5e3dbfcfafca762a6351d701a531c",
+        "bytes": 907302,
+        "href": "https://ivseliv.github.io/senat/lex/export/legislation-unresolved.csv"
+      },
+      {
+        "name": "legislation-historical-references.json",
+        "sha256": "5b8df9df5773116ee92cd71c3c6803190b9fae4200780077505d0f2615d587f3",
+        "bytes": 822133,
+        "href": "https://ivseliv.github.io/senat/lex/export/legislation-historical-references.json"
+      },
+      {
+        "name": "legislation-historical-references.csv",
+        "sha256": "7ef9acf6442db8ffd63f981b294d0790bf09e17ed4dc5e19404a038826d7ed86",
+        "bytes": 583667,
+        "href": "https://ivseliv.github.io/senat/lex/export/legislation-historical-references.csv"
+      },
+      {
+        "name": "scan-passages.json",
+        "sha256": "1a16019fd030d3e7c14418ee826d1ae99fff9728647fc51e5e1c87e017690f5b",
+        "bytes": 1988483,
+        "href": "https://ivseliv.github.io/senat/lex/export/scan-passages.json"
+      },
+      {
+        "name": "scan-passages.csv",
+        "sha256": "11b784352ddff995d7370fb70466d0849b09f660b28017961132662fcf8b71b8",
+        "bytes": 1085145,
+        "href": "https://ivseliv.github.io/senat/lex/export/scan-passages.csv"
+      },
+      {
+        "name": "precedents.json",
+        "sha256": "a25d04cfd7c617b7c6d16cc6903001ba83e669f6463014d92bdc06dca278630e",
+        "bytes": 1653944,
+        "href": "https://ivseliv.github.io/senat/lex/export/precedents.json"
+      },
+      {
+        "name": "precedents.csv",
+        "sha256": "0f5f51c358009fdf8cce16ab353570cd068478102fb9b09b9c50ee964a4f879b",
+        "bytes": 1128967,
+        "href": "https://ivseliv.github.io/senat/lex/export/precedents.csv"
+      },
+      {
+        "name": "README.md",
+        "sha256": "14b20bc890d89eced34d10286edf29793d13f410713362be4856e174567a8430",
+        "bytes": 5142,
+        "href": "https://ivseliv.github.io/senat/lex/export/README.md"
+      }
+    ]
+  }
+}

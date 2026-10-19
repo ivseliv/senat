@@ -1,0 +1,40 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:2433ea245c39e57a199c959245d64c887e26d851eed1b4249f20b59c5405b965",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "prosecutor",
+    "id": "prosecutor-3d9e664b4ce5",
+    "label": "Мотовилов Н. Г."
+  },
+  "count": 11,
+  "decision_ids": [
+    "1904-012",
+    "1904-016",
+    "1904-034",
+    "1904-044",
+    "1904-114",
+    "1905-034",
+    "1905-073",
+    "1905-079",
+    "1905-097",
+    "1905-098",
+    "1905-105"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-012.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-016.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-034.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-044.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-114.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-034.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-073.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-079.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-097.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-098.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-105.json"
+    ]
+  }
+}

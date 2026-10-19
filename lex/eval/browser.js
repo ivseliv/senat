@@ -8,6 +8,7 @@ fs.mkdirSync(out,{recursive:true});
  const browser=await chromium.launch({headless:true,...(process.env.LEX_CHROMIUM ? {executablePath:process.env.LEX_CHROMIUM} : {})});
  try {
   const context=await browser.newContext({viewport:{width:1280,height:900}}),page=await context.newPage();
+  if(process.env.LEX_TEST_SCAN_URL)await context.addInitScript(url=>{window.LEX_SCAN_URL=url;},process.env.LEX_TEST_SCAN_URL);
   const errors=[],requests=[];
   page.on('pageerror',e=>errors.push(e.message));
   page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
@@ -36,8 +37,13 @@ fs.mkdirSync(out,{recursive:true});
   await page.screenshot({path:path.join(out,'detail.png'),fullPage:false});
   await page.reload(); await page.waitForSelector('#passage-target');
   assert((await page.locator('#passage-target').innerText()).length>0,'Прямая ссылка должна работать после перезагрузки');
+  // Стабильная ссылка из исследовательского экспорта не зависит от поискового запроса.
+  await page.goto(base+'#/d/1905-105?mode=passage&at=7281&end=9186'); await page.waitForSelector('#passage-target');
+  assert((await page.locator('#detail-body h2').innerText()).includes('№ 105'));
   await page.click('#detail-close'); await page.waitForSelector('#view-sense:not([hidden])');
-  assert.equal(await page.locator('#sense-q').inputValue(),'фиктивные сделки');
+  assert.equal(await page.locator('#sense-q').inputValue(),'');
+  await page.fill('#sense-q','фиктивные сделки'); await page.click('#sense-form button[type=submit]');
+  await page.waitForSelector('.passage');
   await page.check('input[name=sense-orth][value=new]');
   await page.waitForFunction(()=>!/[ѣі]/.test(document.querySelector('.passage-text').textContent));
   await page.reload(); await page.waitForSelector('.passage');
@@ -90,6 +96,39 @@ fs.mkdirSync(out,{recursive:true});
   assert((await page.locator('#participants-results').innerText()).includes('№ 55'));
   await page.reload(); await page.waitForSelector('#view-participants:not([hidden]) .participant-entry');
   assert.equal(await page.locator('#participants-year').inputValue(),'1905');
+  // Юридическая карта: понятие ведёт к источнику, решениям, нормам и указателю.
+  await page.goto(base+'#/map?q='+encodeURIComponent('фиктивные сделки'));
+  await page.waitForSelector('#view-map:not([hidden]) [data-map-node="sources"]');
+  assert((await page.locator('#map-status').innerText()).includes('решени'));
+  assert.equal(await page.locator('#map-results [data-map-node]').count(),5);
+  assert(await page.locator('[data-map-node="statutes"] .chip.stat').count()>0);
+  await page.locator('[data-map-node="sources"] a').first().click();
+  await page.waitForSelector('#passage-target');
+  assert(page.url().includes('mode=map'));
+  await page.reload(); await page.waitForSelector('#passage-target');
+  await page.click('#detail-close'); await page.waitForSelector('#view-map:not([hidden]) [data-map-node="sources"]');
+  assert.equal(await page.locator('#map-q').inputValue(),'фиктивные сделки');
+  await page.goto(base+'#/map?t='+encodeURIComponent('Наследство и завещания'));
+  await page.waitForSelector('#view-map:not([hidden]) [data-map-node="decisions"]');
+  assert.equal(await page.locator('[data-map-node="sources"]').count(),0);
+  // Законодательство: карточка исторического акта, буквальная цитата и путь к скану.
+  await page.goto(base+'#/laws?q=1524');
+  await page.waitForSelector('#view-laws:not([hidden]) [data-map-node="law-СЗГ"]');
+  assert((await page.locator('#laws-status').innerText()).includes('пар'));
+  assert(await page.locator('.law-citation').count()>0);
+  assert((await page.locator('#laws-results').innerText()).includes('скан точного места'));
+  // Query words also match surrounding context. Select the requested article
+  // explicitly: the first result may cite another article alongside 1524.
+  await page.locator('.law-citation a.law-open').filter({hasText:/· СЗГ · ст\. 1524$/}).first().click();
+  await page.waitForSelector('#passage-target');
+  assert(page.url().includes('mode=laws'));
+  await page.reload(); await page.waitForSelector('#passage-target');
+  await page.click('#detail-close'); await page.waitForSelector('#view-laws:not([hidden]) .law-citation');
+  assert.equal(await page.locator('#laws-q').inputValue(),'ст. 1524');
+  await page.goto(base+'#/laws?c='+encodeURIComponent('УГС')+'&q='+encodeURIComponent('ст. 793'));
+  await page.waitForSelector('#view-laws:not([hidden]) [data-map-node="law-УГС"]');
+  assert((await page.locator('#laws-results').innerText()).includes('ст. 793'));
+  assert.equal(await page.locator('#laws-code').inputValue(),'УГС');
   await page.click('#tab-analytics');await page.waitForSelector('.kpi');
   assert((await page.locator('#analytics-body').innerText()).includes('Пол прямо указан'));
   // Новый том: фильтр, составная дата, конец решения и ссылка на пассаж.
@@ -98,7 +137,7 @@ fs.mkdirSync(out,{recursive:true});
    await page.goto(base+'#/search?y=1904');
    await page.waitForFunction(()=>document.querySelector('#status').textContent.includes('120'));
    assert.equal(await page.locator('#f-year').inputValue(),'1904');
-   assert((await page.locator('#corpus-summary').innerText()).includes('335'));
+   assert((await page.locator('#corpus-summary').innerText()).includes(String(metadata.decisions.length)));
    await page.goto(base+'#/d/1904-042');await page.waitForSelector('#detail-body h2');
    const date42=await page.locator('#detail-body').innerText();
    assert(date42.includes('1903/₄ года декабря 17 / февраля 11'));
@@ -132,6 +171,8 @@ fs.mkdirSync(out,{recursive:true});
   }
   // Телефон и тёмная тема, без горизонтальной прокрутки.
   await page.setViewportSize({width:390,height:844});
+  await page.goto(base+'#/map?q='+encodeURIComponent('фиктивные сделки'));await page.waitForSelector('[data-map-node="sources"]');
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   await page.goto(base+'#/sense?q='+encodeURIComponent('фиктивные сделки'));await page.waitForSelector('.passage');
   await page.click('#theme');
   assert.equal(await page.locator('html').getAttribute('data-theme'),'dark');
@@ -149,6 +190,6 @@ fs.mkdirSync(out,{recursive:true});
   await standalone.waitForSelector('.passage');
   assert(!standaloneRequests.some(r=>/\/data\//.test(r)));
   assert.deepEqual(errors,[],'В консоли не должно быть ошибок');
-  console.log(JSON.stringify({checked:'desktop, mobile, dark, highlights, original, orthography persistence, source anchor, deep link, empty answer, old search, analytics, standalone',consoleErrors:errors,detailURL,screenshots:out},null,2));
+  console.log(JSON.stringify({checked:'desktop, mobile, dark, highlights, original, orthography persistence, source anchor, laws, deep links including export, empty answer, old search, analytics, standalone',consoleErrors:errors,detailURL,screenshots:out},null,2));
  } finally {await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

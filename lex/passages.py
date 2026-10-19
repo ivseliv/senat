@@ -11,6 +11,156 @@ LAT2CYR = str.maketrans('aeopcxyABCEHKMOPTX', 'аеорсхуАВСЕНКМОР�
 NOTE = re.compile(r'(нет печатного текста|Страница пустая|на скане нет|оборотная сторона|штрихкод|библиотечные пометки)', re.I)
 
 
+def _field_index(fields):
+    """Тот же BM25-индекс для первоначальной сборки и обновления аннотаций."""
+    post, lengths = {}, []
+    for i, ss in enumerate(fields):
+        lengths.append(len(ss))
+        for token, count in collections.Counter(ss).items():
+            post.setdefault(token, []).extend([i, count])
+    return dict(n=len(fields), avgdl=sum(lengths)/max(1, len(fields)),
+                len=lengths, post=post, hpost={})
+
+
+def validated_annotation(pid, ann, text, digest):
+    """Возвращает актуальную аннотацию либо None для старого SHA.
+
+    Совпавший SHA сам по себе недостаточен: цитата проверяется по буквальному
+    срезу опубликованного текста. Ошибку в актуальном ответе нельзя тихо скрыть.
+    """
+    if not isinstance(ann, dict):
+        raise ValueError(f'{pid}: некорректная аннотация')
+    if ann.get('sha256') != digest:
+        return None
+    quote, summary, concepts = (ann.get(k) for k in ('evidence', 'summary', 'concepts'))
+    if not isinstance(quote, str) or not quote.strip() or quote not in text:
+        raise ValueError(f'{pid}: цитата обогащения отсутствует в пассаже')
+    if (not isinstance(summary, str) or not summary.strip() or
+            not isinstance(concepts, list) or
+            any(not isinstance(c, str) or not c.strip() for c in concepts)):
+        raise ValueError(f'{pid}: некорректная аннотация')
+    result = dict(summary=summary, concepts=concepts, evidence=quote)
+    if 'source_warning' in ann:
+        warning = ann['source_warning']
+        if not isinstance(warning, str) or not warning.strip():
+            raise ValueError(f'{pid}: некорректное предупреждение об источнике')
+        result['source_warning'] = warning
+    return result
+
+
+def _published_corpus(root):
+    """Читает только опубликованные данные, не восстанавливая страницы OCR."""
+    data = Path(root)/'lex/data'
+    meta = json.loads((data/'meta.json').read_text(encoding='utf-8'))['decisions']
+    docs, texts = {}, {}
+    for year in sorted({d['vol'] for d in meta}):
+        volume_docs = [d for d in meta if d['vol'] == year]
+        volume_texts = json.loads((data/f'text-{year}.json').read_text(encoding='utf-8'))
+        if len(volume_docs) != len(volume_texts):
+            raise ValueError(f'{year}: число опубликованных текстов не совпадает с метаданными')
+        for doc, text in zip(volume_docs, volume_texts):
+            if doc['id'] in docs or not isinstance(text, str):
+                raise ValueError(f'{doc["id"]}: неоднозначный опубликованный текст')
+            docs[doc['id']], texts[doc['id']] = doc, text
+    volumes, corpus = [], {}
+    for path in sorted(data.glob('passages-*.json')):
+        obj = json.loads(path.read_text(encoding='utf-8'))
+        year = int(path.stem.removeprefix('passages-'))
+        for p in obj['passages']:
+            pid = p['id']
+            doc = docs.get(p['decision'])
+            if doc is None or doc['vol'] != year or p['doc'] != doc['i']:
+                raise ValueError(f'{pid}: пассаж не соответствует метаданным решения')
+            start, end = p['start'], p['end']
+            text = texts[p['decision']]
+            if (type(start) is not int or type(end) is not int or
+                    not 0 <= start < end <= len(text) or
+                    pid != f'{p["decision"]}:{start}-{end}' or pid in corpus):
+                raise ValueError(f'{pid}: неверные или повторные границы пассажа')
+            source = text[start:end]
+            if hashlib.sha256(source.encode('utf-8')).hexdigest() != p['sha256']:
+                raise ValueError(f'{pid}: SHA-256 не совпадает с опубликованным текстом')
+            corpus[pid] = dict(id=pid, sha256=p['sha256'], text=source,
+                               headnote=doc.get('headnote', ''))
+        volumes.append((year, path, obj))
+    return volumes, corpus
+
+
+def published_corpus(root):
+    """Проверенные срезы для экспорта/импорта без доступа к исходным OCR-листам."""
+    return list(_published_corpus(root)[1].values())
+
+
+def refresh_published_enrichment(root, stems):
+    """Обновляет ai и обогащённый индекс по существующим границам пассажей.
+
+    Сначала проверяет *все* тома и актуальные ответы; до окончания проверки
+    ничего не записывает. Не пересобирает original, страницы, источники, SHA
+    или границы и не утверждает новую проверку OCR. Старые ответы остаются в
+    enrichment как история, но не попадают в поиск. Повторный запуск идемпотентен.
+    """
+    root = Path(root)
+    volumes, corpus = _published_corpus(root)
+    concepts_path = root/'lex/data/concepts.json'
+    concepts = json.loads(concepts_path.read_text(encoding='utf-8'))
+    manifests = {v['year']: v for v in concepts['volumes']}
+    if len(manifests) != len(concepts['volumes']) or set(manifests) != {y for y, _, _ in volumes}:
+        raise ValueError('Список томов concepts.json не совпадает с опубликованными пассажами')
+    records = {}
+    for path in sorted((root/'lex/enrichment').glob('*.json')):
+        imported = json.loads(path.read_text(encoding='utf-8')).get('passages', {})
+        if not isinstance(imported, dict) or records.keys() & imported.keys():
+            raise ValueError(f'{path}: неверные или повторные id аннотаций')
+        records.update(imported)
+    valid, stale, unknown = {}, 0, 0
+    for pid, ann in records.items():
+        if pid not in corpus:
+            unknown += 1
+            continue
+        p = corpus[pid]
+        checked = validated_annotation(pid, ann, p['text'], p['sha256'])
+        if checked is None:
+            stale += 1
+        else:
+            valid[pid] = checked
+    output, coverage = {}, []
+    for year, path, obj in volumes:
+        manifest = manifests[year]
+        if manifest['file'] != path.name or manifest['passages'] != len(obj['passages']):
+            raise ValueError(f'{year}: покрытие concepts.json не совпадает с пассажами')
+        fields = []
+        for p in obj['passages']:
+            p.pop('ai', None)
+            if p['id'] in valid:
+                p['ai'] = valid[p['id']]
+            ai = p.get('ai', {})
+            # Повреждённый порядок колонок нельзя превращать в юридический
+            # поисковый тезис. Предупреждение доступно читателю через ai.
+            fields.append([] if ai.get('source_warning') else
+                          stems(' '.join([ai.get('summary', ''), *ai.get('concepts', [])])))
+        obj['enriched'] = _field_index(fields)
+        manifest['enriched'] = sum('ai' in p for p in obj['passages'])
+        manifest['source_warnings'] = sum(bool(p.get('ai', {}).get('source_warning')) for p in obj['passages'])
+        manifest['enrichment_searchable'] = manifest['enriched'] - manifest['source_warnings']
+        coverage.append(dict(year=year, passages=len(obj['passages']), enriched=manifest['enriched']))
+        output[path] = obj
+    output[concepts_path] = concepts
+    # Сериализация всех результатов также предшествует любой записи.
+    pending = {}
+    for path, obj in output.items():
+        before = path.read_bytes()
+        after = json.dumps(obj, ensure_ascii=False, separators=(',', ':')).encode('utf-8')
+        if before.endswith(b'\n'):
+            after += b'\n'
+        if before != after:
+            pending[path] = after
+    for path, content in pending.items():
+        path.write_bytes(content)
+    return dict(valid=len(valid), stale=stale, unknown=unknown,
+                ignored=stale+unknown, volumes=coverage,
+                changed_files=[path.name for path in pending])
+
+
 def source_pages(directory, raw):
     """Повторяет assemble.py, сохраняя диапазоны каждого листа; сверяет весь том.
 
@@ -125,14 +275,15 @@ def build_passages(root, docs, texts, stems, modernize, stem):
         records.update(json.loads(f.read_text(encoding='utf-8')).get('passages', {}))
     output, manifests = {}, []
     for year, volume_texts in texts.items():
-        raw = (root/f'ocr/{year}/volume.txt').read_text(encoding='utf-8')
+        source_dir = root/f'ocr/{year}'
         # Некоторые источники поступают единым текстом FineReader без
         # проверяемых OCR-листов. Обычный поиск по ним допустим, но для
         # понятийной выдачи нельзя выдумывать страницы и точные фрагменты.
-        if not list((root/f'ocr/{year}').glob('p*.txt')):
+        if not list(source_dir.glob('p*.txt')):
             print(f'  пассажи {year}: не собраны (нет проверяемых OCR-листов)')
             continue
-        spans = source_pages(root/f'ocr/{year}', raw)
+        raw = (source_dir/'volume.txt').read_text(encoding='utf-8')
+        spans = source_pages(source_dir, raw)
         vd = [d for d in docs if str(d['vol']) == year]
         items, text_fields, enrichment_fields, sequences = [], [], [], []
         for d, text in zip(vd, volume_texts):
@@ -148,31 +299,27 @@ def build_passages(root, docs, texts, stems, modernize, stem):
                 item = dict(id=pid, decision=d['id'], doc=d['i'], start=start, end=end, words=count,
                             pages=pages, sources=sources, sha256=digest)
                 ann = records.get(pid)
-                if ann and ann.get('sha256') == digest:
-                    # Цитата обязательна: устаревшие/чужие аннотации не индексируем.
-                    if not ann.get('evidence') or ann['evidence'] not in text[start:end]:
-                        raise ValueError(f'{pid}: цитата обогащения отсутствует в пассаже')
-                    item['ai'] = {k: ann[k] for k in ('summary','concepts','evidence')}
+                if ann is not None:
+                    checked = validated_annotation(pid, ann, text[start:end], digest)
+                    if checked is not None:
+                        item['ai'] = checked
                 items.append(item)
                 text_fields.append(stems(text[start:end]))
                 sequences.append([stem(w) for w in re.findall(r'[а-я0-9]+', modernize(text[start:end]).lower().replace('ё','е'))])
-                enrichment_fields.append(stems(' '.join([item.get('ai',{}).get('summary',''), *item.get('ai',{}).get('concepts',[])])))
-        def index(fields):
-            post, lengths = {}, []
-            for i, ss in enumerate(fields):
-                lengths.append(len(ss))
-                for s, n in collections.Counter(ss).items():
-                    post.setdefault(s, []).extend([i,n])
-            return dict(n=len(fields), avgdl=sum(lengths)/max(1,len(fields)), len=lengths, post=post, hpost={})
+                ai = item.get('ai', {})
+                enrichment_fields.append([] if ai.get('source_warning') else
+                                         stems(' '.join([ai.get('summary', ''), *ai.get('concepts', [])])))
         vocabulary = sorted(set(w for seq in sequences for w in seq))
         word_ids = {w:i for i,w in enumerate(vocabulary)}
-        original = index(text_fields)
+        original = _field_index(text_fields)
         original['vocabulary'] = vocabulary
         original['sequence'] = [[word_ids[w] for w in seq] for seq in sequences]
-        obj = dict(passages=items, original=original, enriched=index(enrichment_fields))
+        obj = dict(passages=items, original=original, enriched=_field_index(enrichment_fields))
         name = f'passages-{year}.json'
         output[name] = obj
         manifests.append(dict(year=int(year), file=name, passages=len(items), enriched=sum('ai' in p for p in items),
+                              source_warnings=sum(bool(p.get('ai', {}).get('source_warning')) for p in items),
+                              enrichment_searchable=sum('ai' in p and not p['ai'].get('source_warning') for p in items),
                               pages_known=sum(bool(p['pages']) for p in items)))
     # Выбранный режим хранится явно; оценка может запускать все варианты.
     config = json.loads((root/'lex/search-config.json').read_text(encoding='utf-8'))

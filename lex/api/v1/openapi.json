@@ -1,0 +1,529 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Решения Правительствующего Сената — Static API",
+    "version": "1.6.0",
+    "description": "Статические JSON-файлы: доступны GET и HEAD, query-параметров и серверного поиска нет."
+  },
+  "servers": [
+    {
+      "url": "https://ivseliv.github.io/senat/lex/api/v1"
+    }
+  ],
+  "paths": {
+    "/manifest.json": {
+      "get": {
+        "summary": "Точка входа и контрольные суммы",
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/corpus.json": {
+      "get": {
+        "summary": "Покрытие корпуса и ограничения",
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/decisions/index.json": {
+      "get": {
+        "summary": "Компактный указатель решений",
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/decisions/{year}.json": {
+      "get": {
+        "summary": "Полные решения за год",
+        "parameters": [
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "enum": [
+                1896,
+                1897,
+                1904,
+                1905
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/decisions/{id}.json": {
+      "get": {
+        "summary": "Решение по постоянному ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{3}$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/passages/{year}.json": {
+      "get": {
+        "summary": "Пассажи и пояснения за год",
+        "parameters": [
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "enum": [
+                1896,
+                1897,
+                1904,
+                1905
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/precedents/{year}.json": {
+      "get": {
+        "summary": "Ссылки на прежние решения с департаментом и буквальным контекстом",
+        "parameters": [
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "enum": [
+                1896,
+                1897,
+                1904,
+                1905
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/participants/{year}.json": {
+      "get": {
+        "summary": "Строки указателя за год",
+        "parameters": [
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "enum": [
+                1896,
+                1897,
+                1904,
+                1905
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/statutes/{act_id}.json": {
+      "get": {
+        "summary": "Упоминания статей одного акта; act_id берётся из statutes/index.json",
+        "parameters": [
+          {
+            "name": "act_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "act-d2a3c58c7b33",
+                "act-7fdf2cd82a35",
+                "act-8fbc1823c2eb",
+                "act-a8f8a6c2c0c2",
+                "act-a9c431c76667",
+                "act-3d4f8b4233c8",
+                "act-a4fdc9c28348",
+                "act-8a599d728823",
+                "act-09c9ca212564",
+                "act-43057a02dbce",
+                "act-0409227854e7",
+                "act-2f1c15d56997",
+                "act-bc01efbdb350",
+                "act-fcdce945345d",
+                "act-6017b1723e79",
+                "act-24d4d7ce13de",
+                "act-c325e0a23fc5",
+                "act-0b61ef5db1c4",
+                "act-c78edf831dda",
+                "act-40a72ea949f0",
+                "act-e90cea88e46e",
+                "act-9e7de1ffd315",
+                "act-6445c184f31b",
+                "act-33481835d090",
+                "act-ee78e5934084",
+                "act-6f03ce48683b",
+                "act-fab21e95da4f",
+                "act-639a0a6a65cd",
+                "act-4d5ee77b3c4f",
+                "act-8a8de823d5ed"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/legislation/unresolved.json": {
+      "get": {
+        "summary": "Неустановленные акты: буквальный контекст и точные места",
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/legislation/historical-references.json": {
+      "get": {
+        "summary": "Сохранённые ссылки прежних версий вне текущих подсчётов",
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/legislation/attribution.json": {
+      "get": {
+        "summary": "Покрытие и единица счёта атрибуции актов",
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/legislation/acts.json": {
+      "get": {
+        "summary": "Исторические названия актов",
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/legislation/citations/{act_id}.json": {
+      "get": {
+        "summary": "Контексты ссылок на один акт; act_id берётся из statutes/index.json",
+        "parameters": [
+          {
+            "name": "act_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "act-d2a3c58c7b33",
+                "act-7fdf2cd82a35",
+                "act-8fbc1823c2eb",
+                "act-a8f8a6c2c0c2",
+                "act-a9c431c76667",
+                "act-3d4f8b4233c8",
+                "act-a4fdc9c28348",
+                "act-8a599d728823",
+                "act-09c9ca212564",
+                "act-43057a02dbce",
+                "act-0409227854e7",
+                "act-2f1c15d56997",
+                "act-bc01efbdb350",
+                "act-fcdce945345d",
+                "act-6017b1723e79",
+                "act-24d4d7ce13de",
+                "act-c325e0a23fc5",
+                "act-0b61ef5db1c4",
+                "act-c78edf831dda",
+                "act-40a72ea949f0",
+                "act-e90cea88e46e",
+                "act-9e7de1ffd315",
+                "act-6445c184f31b",
+                "act-33481835d090",
+                "act-ee78e5934084",
+                "act-6f03ce48683b",
+                "act-fab21e95da4f",
+                "act-639a0a6a65cd",
+                "act-4d5ee77b3c4f",
+                "act-8a8de823d5ed"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/scans/{year}.json": {
+      "get": {
+        "summary": "Привязки к страницам и координатам",
+        "parameters": [
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "enum": [
+                1896,
+                1897,
+                1904,
+                1905
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/editorial/analyses.json": {
+      "get": {
+        "summary": "Редакционные разборы",
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/editorial/guides.json": {
+      "get": {
+        "summary": "Тематические подборки и сравнительные разборы",
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/editorial/topics.json": {
+      "get": {
+        "summary": "Каталог тем с подтверждёнными цитатами включениями решений",
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bulk.json": {
+      "get": {
+        "summary": "Полные JSON/CSV-выгрузки",
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Envelope": {
+        "$ref": "./schema.json#/$defs/Envelope"
+      },
+      "Decision": {
+        "$ref": "./schema.json#/$defs/Decision"
+      },
+      "Passage": {
+        "$ref": "./schema.json#/$defs/Passage"
+      },
+      "PrecedentReference": {
+        "$ref": "./schema.json#/$defs/PrecedentReference"
+      }
+    }
+  }
+}

@@ -15,11 +15,69 @@
 """
 import collections, glob, json, math, os, re, sys
 from pathlib import Path
-from passages import build_passages
+from passages import build_passages, refresh_published_enrichment
 from participants import load_participants
+from laws import build_law_index
+from export import build_export
+from decision_analyses import build as build_decision_analyses
+from guide_comparisons import build as build_guides
+from topic_catalog import build as build_topic_catalog
+from api import build_api
+from precedents import build_precedents
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 OUT = os.path.join(ROOT, 'lex', 'data')
+
+
+def build_published_artifacts():
+    """Пересобирает производные публичные данные и статический API из lex/data."""
+    law_index = build_law_index(ROOT)
+    print('  законодательство:', law_index['attribution_summary'])
+    enrichment = refresh_published_enrichment(ROOT, stems)
+    print('  актуальные пояснения:', enrichment['valid'], '; устаревшие записи:', enrichment['ignored'])
+    warnings = {}
+    for file in sorted(Path(OUT).glob('passages-*.json')):
+        for passage in json.loads(file.read_text(encoding='utf-8'))['passages']:
+            warning = passage.get('ai', {}).get('source_warning')
+            if warning:
+                item = warnings.setdefault(passage['decision'], dict(passages=[], messages=[]))
+                item['passages'].append(passage['id'])
+                if warning not in item['messages']:
+                    item['messages'].append(warning)
+    analytics_path = Path(OUT) / 'analytics.json'
+    analytics_data = json.loads(analytics_path.read_text(encoding='utf-8'))
+    analytics_data['source_warnings'] = warnings
+    restoration_path = Path(ROOT) / 'lex/source-restorations.json'
+    if restoration_path.exists():
+        restoration = json.loads(restoration_path.read_text(encoding='utf-8'))
+        from law_attribution import sha, texts_by_id
+        meta = json.loads((Path(OUT) / 'meta.json').read_text(encoding='utf-8'))
+        current_texts = texts_by_id(Path(ROOT), meta)
+        for record in restoration['decisions']:
+            if sha(current_texts[record['id']]) != record['sha256']:
+                raise ValueError('Устарел протокол восстановления: ' + record['id'])
+        analytics_data['source_revisions'] = {r['id']: dict(version=restoration['version'], sha256=r['sha256'])
+                                             for r in restoration['decisions']}
+    analytics_path.write_text(json.dumps(analytics_data, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+    precedents = build_precedents(ROOT)
+    print('  ссылки на решения:', len(precedents['references']), precedents['counts'])
+    export = build_export(ROOT)
+    print('  экспорт:', ', '.join(f'{key}={value}' for key, value in export['counts'].items()))
+    analyses = build_decision_analyses()
+    (Path(OUT) / 'decision-analyses.json').write_text(
+        json.dumps(analyses, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+    print(f'  редакционные разборы: {analyses["count"]}')
+    guides = build_guides()
+    (Path(OUT) / 'guides.json').write_text(
+        json.dumps(guides, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+    print(f'  сравнительные разборы: {guides["comparison_count"]}')
+    catalog = build_topic_catalog()
+    (Path(OUT) / 'topic-catalog.json').write_text(
+        json.dumps(catalog, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+    print(f'  каталог: {catalog["topic_count"]} тем; {catalog["classified"]}/{catalog["count"]} решений')
+    api = build_api(ROOT)
+    print('  API:', api['contract_version'], ', '.join(f'{key}={value}' for key, value in api['coverage']['counts'].items()))
+    return export, analyses, api
 
 # ---------------------------------------------------------------- нормализация
 
@@ -37,7 +95,9 @@ def modernize(s):
     s = re.sub(r'(?<![а-яА-ЯёЁ])чрез(?![а-яА-ЯёЁ])', 'через', s)
     return s
 
-ENDINGS = sorted(['иями', 'ями', 'ами', 'ыми', 'ими', 'ого', 'его', 'ому', 'ему', 'ать', 'ять', 'ить', 'еть', 'ыть', 'ует',
+# Полная группа падежных окончаний существительных на -ие/-ия:
+# «объяснение» и «объяснений», «сословию» и «сословия» должны иметь одну основу.
+ENDINGS = sorted(['иями', 'ией', 'ием', 'иям', 'иях', 'ие', 'ию', 'ями', 'ами', 'ыми', 'ими', 'ого', 'его', 'ому', 'ему', 'ать', 'ять', 'ить', 'еть', 'ыть', 'ует',
                   'ают', 'яет', 'ает', 'ой', 'ый', 'ий', 'ая', 'яя', 'ое', 'ее', 'ые', 'ие', 'ых', 'их', 'ов', 'ев', 'ей',
                   'ом', 'ем', 'ам', 'ям', 'ах', 'ях', 'ую', 'юю', 'ою', 'ею', 'ия', 'ии', 'ью', 'ье', 'ья', 'а', 'я', 'о',
                   'е', 'ы', 'и', 'у', 'ю', 'ь', 'й'], key=len, reverse=True)
@@ -343,6 +403,10 @@ def statute_code(statute):
 CITE = re.compile(r'(\d{4})\s*г(?:ода|\.)?[,\s]*(?:№|n)\s*(\d+(?:\s*(?:,|и)\s*(?:№\s*)?\d+)*)')
 
 def cites_for(text, own_year):
+    """Старые неполные пары для совместимости; не использовать для переходов.
+
+    Полный разбор по оригиналу, учреждению и цитате — в precedents.py.
+    """
     t = modernize(text).lower()
     found = set()
     for m in CITE.finditer(t):
@@ -370,8 +434,7 @@ def main():
         dept = department(front)
         nums = [d['num'] for d in decs]
         gaps = [n for n in range(min(nums), max(nums) + 1) if n not in nums] if nums else []
-        vols.append(dict(year=int(year), dept=dept, decisions=len(decs), gaps=gaps, file=f'text-{year}.json',
-                         scans=bool(list(Path(os.path.dirname(vf)).glob('p*.txt')))))
+        vols.append(dict(year=int(year), dept=dept, decisions=len(decs), gaps=gaps, file=f'text-{year}.json'))
         open(os.path.join(OUT, f'backmatter-{year}.txt'), 'w', encoding='utf-8').write(back)
         vt = []
         for d in decs:
@@ -431,6 +494,7 @@ def main():
         with open(os.path.join(OUT, f'text-{year}.json'), 'w', encoding='utf-8') as f:
             json.dump(vt, f, ensure_ascii=False, separators=(',', ':'))
     build_passages(ROOT, docs, texts, stems, modernize, stem)
+    build_published_artifacts()
     print(f'томов {len(vols)}, решений {len(docs)}, основ в индексе {len(post)}')
     for v in vols:
         print(f'  {v["year"]}: {v["decisions"]} решений, пропуски номеров: {v["gaps"] or "нет"}')
@@ -490,11 +554,13 @@ def analytics(docs, vols):
     A['statute_codes'] = dict(collections.Counter(
         statute_code(s) for d in docs for s in d['statutes']).most_common())
     A['codes'] = {c: n for c, n, _ in CODES}
-    cited = collections.Counter(); ids = {(d['vol'], d['num']): d['i'] for d in docs}
+    cited = collections.Counter()
     for d in docs:
         for y, n in d['cites']:
             cited[(y, n)] += 1
-    A['cited'] = [[y, n, c, ids.get((y, n))] for (y, n), c in cited.most_common(40)]
+    # Неполная пара год/номер не даёт перехода. Типизированные связи
+    # добавляет build_precedents после записи текстов.
+    A['cited'] = [[y, n, c, None] for (y, n), c in cited.most_common(40)]
     for role in ('presiding', 'reporter', 'prosecutor'):
         A[role] = collections.Counter(d[role] for d in docs if d[role]).most_common(25)
     A['words_median'] = sorted(d['words'] for d in docs)[len(docs) // 2] if docs else 0
@@ -534,7 +600,7 @@ def build_single():
     blob = json.dumps(inline, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
     js = lambda n: open(os.path.join(d, n), encoding='utf-8').read().replace('</script', '<\\/script')
     html = html.replace('<script src="lex.js"></script>', '<script>window.LEX_INLINE=' + blob + '</script>\n<script>' + js('lex.js') + '</script>')
-    for script in ('concept.js', 'app.js'):
+    for script in ('concept.js', 'reader.js', 'reader-export.js', 'reader-ui.js', 'app.js'):
         html = html.replace(f'<script src="{script}"></script>', '<script>' + js(script) + '</script>')
     html = html.replace('<title>Решения Сената: поиск и аналитика</title>', '<title>Сенат: поиск решений</title>')
     os.makedirs(os.path.join(d, 'dist'), exist_ok=True)
@@ -543,7 +609,16 @@ def build_single():
     print(f'единый файл: {out} ({os.path.getsize(out) / 1e6:.1f} МБ)')
 
 if __name__ == '__main__':
-    main()
-    validate_scans()
+    # Публичная ветка хранит готовые JSON, но не обязательно OCR-исходники.
+    # Офлайн-сборка в такой копии должна использовать их, а не обнулять корпус.
+    has_sources = any(Path(ROOT, 'ocr').glob('*/volume.txt'))
+    if has_sources:
+        main()
+        validate_scans()
+    elif '--single' not in sys.argv:
+        raise SystemExit('Нет OCR-исходников: обычная пересборка остановлена, чтобы не удалить готовые данные.')
+    else:
+        print('OCR-исходники отсутствуют: собирается офлайн-файл из проверенных lex/data/.')
+        build_published_artifacts()
     if '--single' in sys.argv:
         build_single()

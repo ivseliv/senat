@@ -1,0 +1,244 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:2433ea245c39e57a199c959245d64c887e26d851eed1b4249f20b59c5405b965",
+  "resource": "legislation-citations",
+  "scope": {
+    "code": "УГОР",
+    "id": "act-4d5ee77b3c4f"
+  },
+  "count": 3,
+  "items": [
+    {
+      "id": "1905-109:УГОР:197:text:11611",
+      "statute": "УГОР ст. 197",
+      "code": "УГОР",
+      "article": "ст. 197",
+      "decision_id": "1905-109",
+      "year": 1905,
+      "decision_number": 109,
+      "field": "text",
+      "start": 11611,
+      "end": 11618,
+      "quote_original": "ст. 197",
+      "context_original": "надлежитъ къ числу тѣхъ присвоенныхъ ему правъ, которыя неразрывно связаны съ владѣніемъ землями на поссессіонномъ правѣ. Въ виду того, что ст. 197 уст. горн. предоставляетъ поссессіоннымъ владѣльцамъ право разработки пріисковъ въ заводскихъ дачахъ не на общихъ основаніяхъ, установленны",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "d1622754307b118656959eac742039a3756c3370e11c5bf8508414b8136d8977",
+      "headnote_sha256": "d60a7f4d12a0c5f418ed5956630178530d63599ae2042cbb8971a8ad27130788",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-109",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-109?mode=laws&c=%D0%A3%D0%93%D0%9E%D0%A0&q=%D1%81%D1%82.+197&law=1905-109%3A%D0%A3%D0%93%D0%9E%D0%A0%3A197%3Atext%3A11611&at=11611&end=11618",
+      "source_warning": null,
+      "passage_id": "1905-109:11059-12654",
+      "sources": [
+        {
+          "page": 300,
+          "page_method": "header",
+          "file": "p0151_L.txt",
+          "start": 11611,
+          "end": 11618
+        }
+      ],
+      "printed_pages": [
+        300
+      ],
+      "scans": [
+        {
+          "file": "p0151_L.txt",
+          "page": 300,
+          "full": "scans/1905/pages/p0151_L.webp",
+          "width": 1100,
+          "height": 1497,
+          "ocr_sha256": "9dfd976f7212e1cc5d03c73c0dc723071ec7ab961843148415f1018fd31da46a",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 11531,
+          "end": 11713,
+          "quote_original": "зрывно связаны съ владѣніемъ землями на поссессіонномъ правѣ. Въ виду того, что ст. 197 уст. горн. предоставляетъ поссессіоннымъ владѣльцамъ право разработки пріисковъ въ заводскихъ ",
+          "act_code": "УГОР"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 11611,
+          "end": 11618,
+          "quote_original": "ст. 197",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 11531,
+              "end": 11713,
+              "quote_original": "зрывно связаны съ владѣніемъ землями на поссессіонномъ правѣ. Въ виду того, что ст. 197 уст. горн. предоставляетъ поссессіоннымъ владѣльцамъ право разработки пріисковъ въ заводскихъ ",
+              "act_code": "УГОР"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-109:УГОР:427:text:11051",
+      "statute": "УГОР ст. 427",
+      "code": "УГОР",
+      "article": "ст. 427",
+      "decision_id": "1905-109",
+      "year": 1905,
+      "decision_number": 109,
+      "field": "text",
+      "start": 11051,
+      "end": 11058,
+      "quote_original": "ст. 427",
+      "context_original": "емляхъ казенныхъ предоставляются золотопромышленникамъ не въ собственность, но во временное пользованіе впредь до выработки въ нихъ золота (ст. 427 уст. горн.), при чемъ право разработки такихъ пріисковъ, согласно 430 ст. уст. горн. и 403 ст. зак. гражд., признается имуществомъ движимым",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "d1622754307b118656959eac742039a3756c3370e11c5bf8508414b8136d8977",
+      "headnote_sha256": "d60a7f4d12a0c5f418ed5956630178530d63599ae2042cbb8971a8ad27130788",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-109",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-109?mode=laws&c=%D0%A3%D0%93%D0%9E%D0%A0&q=%D1%81%D1%82.+427&law=1905-109%3A%D0%A3%D0%93%D0%9E%D0%A0%3A427%3Atext%3A11051&at=11051&end=11058",
+      "source_warning": null,
+      "passage_id": "1905-109:9336-11300",
+      "sources": [
+        {
+          "page": 300,
+          "page_method": "header",
+          "file": "p0151_L.txt",
+          "start": 11051,
+          "end": 11058
+        }
+      ],
+      "printed_pages": [
+        300
+      ],
+      "scans": [
+        {
+          "file": "p0151_L.txt",
+          "page": 300,
+          "full": "scans/1905/pages/p0151_L.webp",
+          "width": 1100,
+          "height": 1497,
+          "ocr_sha256": "9dfd976f7212e1cc5d03c73c0dc723071ec7ab961843148415f1018fd31da46a",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 10971,
+          "end": 11153,
+          "quote_original": " собственность, но во временное пользованіе впредь до выработки въ нихъ золота (ст. 427 уст. горн.), при чемъ право разработки такихъ пріисковъ, согласно 430 ст. уст. горн. и 403 ст.",
+          "act_code": "УГОР"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 11051,
+          "end": 11058,
+          "quote_original": "ст. 427",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 10971,
+              "end": 11153,
+              "quote_original": " собственность, но во временное пользованіе впредь до выработки въ нихъ золота (ст. 427 уст. горн.), при чемъ право разработки такихъ пріисковъ, согласно 430 ст. уст. горн. и 403 ст.",
+              "act_code": "УГОР"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-109:УГОР:440–448:text:8694",
+      "statute": "УГОР ст. 440–448",
+      "code": "УГОР",
+      "article": "ст. 440–448",
+      "decision_id": "1905-109",
+      "year": 1905,
+      "decision_number": 109,
+      "field": "text",
+      "start": 8694,
+      "end": 8705,
+      "quote_original": "ст. 440—448",
+      "context_original": "соотвѣтственная земельная площадь для разработки открытыхъ имъ розсыпей и на произведенный въ натурѣ отводъ выдаются подлежащіе документы (ст. 440—448 уст. горн.).",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "d1622754307b118656959eac742039a3756c3370e11c5bf8508414b8136d8977",
+      "headnote_sha256": "d60a7f4d12a0c5f418ed5956630178530d63599ae2042cbb8971a8ad27130788",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-109",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-109?mode=laws&c=%D0%A3%D0%93%D0%9E%D0%A0&q=%D1%81%D1%82.+440%E2%80%93448&law=1905-109%3A%D0%A3%D0%93%D0%9E%D0%A0%3A440%E2%80%93448%3Atext%3A8694&at=8694&end=8705",
+      "source_warning": null,
+      "passage_id": "1905-109:7586-9630",
+      "sources": [
+        {
+          "page": 299,
+          "page_method": "header",
+          "file": "p0150_R.txt",
+          "start": 8694,
+          "end": 8705
+        }
+      ],
+      "printed_pages": [
+        299
+      ],
+      "scans": [
+        {
+          "file": "p0150_R.txt",
+          "page": 299,
+          "full": "scans/1905/pages/p0150_R.webp",
+          "width": 1100,
+          "height": 1520,
+          "ocr_sha256": "35bb545491bd838ab285023e1953a136ac43053f85bd22fb626e4a75c5e419e7",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 8614,
+          "end": 8800,
+          "quote_original": "имъ розсыпей и на произведенный въ натурѣ отводъ выдаются подлежащіе документы (ст. 440—448 уст. горн.).\n\nВсѣ эти правила, точнымъ соблюденіемъ которыхъ обусловливается разработка золоты",
+          "act_code": "УГОР"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8694,
+          "end": 8705,
+          "quote_original": "ст. 440—448",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 8614,
+              "end": 8800,
+              "quote_original": "имъ розсыпей и на произведенный въ натурѣ отводъ выдаются подлежащіе документы (ст. 440—448 уст. горн.).\n\nВсѣ эти правила, точнымъ соблюденіемъ которыхъ обусловливается разработка золоты",
+              "act_code": "УГОР"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

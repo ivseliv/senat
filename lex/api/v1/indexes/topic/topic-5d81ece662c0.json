@@ -1,0 +1,60 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:2433ea245c39e57a199c959245d64c887e26d851eed1b4249f20b59c5405b965",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "topic",
+    "id": "topic-5d81ece662c0",
+    "label": "Судебные издержки и пошлины"
+  },
+  "count": 21,
+  "decision_ids": [
+    "1896-007",
+    "1896-017",
+    "1896-028",
+    "1896-029",
+    "1896-046",
+    "1897-040",
+    "1897-047",
+    "1897-055",
+    "1904-046",
+    "1904-047",
+    "1904-074",
+    "1904-075",
+    "1904-098",
+    "1904-119",
+    "1905-003",
+    "1905-025",
+    "1905-027",
+    "1905-054",
+    "1905-060",
+    "1905-110",
+    "1905-111"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1896-007.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1896-017.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1896-028.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1896-029.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1896-046.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-040.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-047.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-055.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-046.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-047.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-074.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-075.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-098.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-119.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-003.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-025.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-027.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-054.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-060.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-110.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-111.json"
+    ]
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:2433ea245c39e57a199c959245d64c887e26d851eed1b4249f20b59c5405b965",
+  "resource": "legislation-citations",
+  "scope": {
+    "code": "ГП",
+    "id": "act-639a0a6a65cd"
+  },
+  "count": 3,
+  "items": [
+    {
+      "id": "1905-075:ГП:131:text:1859",
+      "statute": "ГП ст. 131",
+      "code": "ГП",
+      "article": "ст. 131",
+      "decision_id": "1905-075",
+      "year": 1905,
+      "decision_number": 75,
+      "field": "text",
+      "start": 1859,
+      "end": 1872,
+      "quote_original": "ст. 131 и 132",
+      "context_original": "ходатайство о возвратѣ такого сбора въ городскую кассу, взиманіе коего предоставлено городскому общественному управленію на основаніи п. 4 ст. 131 и 132 гор. пол. изд. 1892 года, какъ органу общественной власти, и въ отношеніи уплаты коего истецъ является именно плательщикомъ публичнаго горо",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "2d1f48590a1ff815d7b65b69d976f5b95a2304649f3ee2318b0c0386313a23e2",
+      "headnote_sha256": "11cefb6180c6d93f8d30db0e2b32e9daa8b502ce3a3e4cb84da29acc8106c25d",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-075",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-075?mode=laws&c=%D0%93%D0%9F&q=%D1%81%D1%82.+131&law=1905-075%3A%D0%93%D0%9F%3A131%3Atext%3A1859&at=1859&end=1872",
+      "source_warning": null,
+      "passage_id": "1905-075:1049-2662",
+      "sources": [
+        {
+          "page": 203,
+          "page_method": "header",
+          "file": "p0102_R.txt",
+          "start": 1859,
+          "end": 1872
+        }
+      ],
+      "printed_pages": [
+        203
+      ],
+      "scans": [
+        {
+          "file": "p0102_R.txt",
+          "page": 203,
+          "full": "scans/1905/pages/p0102_R.webp",
+          "width": 1100,
+          "height": 1542,
+          "ocr_sha256": "f84261d073a74098623222bf796418d0affdc2276d39511aaa37128be4f18537",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1779,
+          "end": 1967,
+          "quote_original": "маніе коего предоставлено городскому общественному управленію на основаніи п. 4 ст. 131 и 132 гор. пол. изд. 1892 года, какъ органу общественной власти, и въ отношеніи уплаты коего истецъ ",
+          "act_code": "ГП"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1859,
+          "end": 1872,
+          "quote_original": "ст. 131 и 132",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1779,
+              "end": 1967,
+              "quote_original": "маніе коего предоставлено городскому общественному управленію на основаніи п. 4 ст. 131 и 132 гор. пол. изд. 1892 года, какъ органу общественной власти, и въ отношеніи уплаты коего истецъ ",
+              "act_code": "ГП"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 8307,
+          "end": 8320,
+          "quote_original": "ст. 131 и 132",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 8227,
+              "end": 8415,
+              "quote_original": "ключенію судебной палаты, городскому общественному управленію на основаніи п. 4 ст. 131 и 132 гор. полож. 1892 г., какъ органу общественной власти, и въ отношеніи уплаты коего истецъ являе",
+              "act_code": "ГП"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-075:ГП:132:text:313",
+      "statute": "ГП ст. 132",
+      "code": "ГП",
+      "article": "ст. 132",
+      "decision_id": "1905-075",
+      "year": 1905,
+      "decision_number": 75,
+      "field": "text",
+      "start": 313,
+      "end": 320,
+      "quote_original": "ст. 132",
+      "context_original": "1 года Венденская городская управа взимала съ его довѣрителя за содержаніе двухъ питейныхъ заведеній въ гор. Венденѣ, сверхъ установленнаго ст. 132 гор. пол. 20-ти процентнаго питейнаго сбора, дополнительные платежи, именно въ 1884 году—87 руб. 50 коп., а начиная съ 1885 года и по 1890",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "2d1f48590a1ff815d7b65b69d976f5b95a2304649f3ee2318b0c0386313a23e2",
+      "headnote_sha256": "11cefb6180c6d93f8d30db0e2b32e9daa8b502ce3a3e4cb84da29acc8106c25d",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-075",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-075?mode=laws&c=%D0%93%D0%9F&q=%D1%81%D1%82.+132&law=1905-075%3A%D0%93%D0%9F%3A132%3Atext%3A313&at=313&end=320",
+      "source_warning": null,
+      "passage_id": "1905-075:0-1330",
+      "sources": [
+        {
+          "page": 202,
+          "page_method": "header",
+          "file": "p0102_L.txt",
+          "start": 313,
+          "end": 320
+        }
+      ],
+      "printed_pages": [
+        202
+      ],
+      "scans": [
+        {
+          "file": "p0102_L.txt",
+          "page": 202,
+          "full": "scans/1905/pages/p0102_L.webp",
+          "width": 1100,
+          "height": 1542,
+          "ocr_sha256": "d7afef89847f1a94629b32f0b590715c9ed37677de94061b530491535ead1785",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 233,
+          "end": 415,
+          "quote_original": " за содержаніе двухъ питейныхъ заведеній въ гор. Венденѣ, сверхъ установленнаго ст. 132 гор. пол. 20-ти процентнаго питейнаго сбора, дополнительные платежи, именно въ 1884 году—87 ру",
+          "act_code": "ГП"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 313,
+          "end": 320,
+          "quote_original": "ст. 132",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 233,
+              "end": 415,
+              "quote_original": " за содержаніе двухъ питейныхъ заведеній въ гор. Венденѣ, сверхъ установленнаго ст. 132 гор. пол. 20-ти процентнаго питейнаго сбора, дополнительные платежи, именно въ 1884 году—87 ру",
+              "act_code": "ГП"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 1859,
+          "end": 1872,
+          "quote_original": "ст. 131 и 132",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1779,
+              "end": 1967,
+              "quote_original": "маніе коего предоставлено городскому общественному управленію на основаніи п. 4 ст. 131 и 132 гор. пол. изд. 1892 года, какъ органу общественной власти, и въ отношеніи уплаты коего истецъ ",
+              "act_code": "ГП"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 8307,
+          "end": 8320,
+          "quote_original": "ст. 131 и 132",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 8227,
+              "end": 8415,
+              "quote_original": "ключенію судебной палаты, городскому общественному управленію на основаніи п. 4 ст. 131 и 132 гор. полож. 1892 г., какъ органу общественной власти, и въ отношеніи уплаты коего истецъ являе",
+              "act_code": "ГП"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-039:ГП:63:text:4950",
+      "statute": "ГП ст. 63",
+      "code": "ГП",
+      "article": "ст. 63",
+      "decision_id": "1905-039",
+      "year": 1905,
+      "decision_number": 39,
+      "field": "text",
+      "start": 4950,
+      "end": 4956,
+      "quote_original": "ст. 63",
+      "context_original": "ы изъ казны, которой они до того принадлежали, въ полную собственность городовъ, отъ которыхъ и зависитъ, согласно п. 2 ст. 2, ст. 7 и п. 9 ст. 63 город. пол. изд. 1892 г., опредѣленіе способовъ извлеченія доходовъ изъ принадлежащихъ имъ имуществъ, и что, такимъ образомъ, жалоба Пинцев",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "d2cb953b1494d4cd9cae1f3a0835bafc960c0599865726b0bae598e4d1af18dc",
+      "headnote_sha256": "0980432e903746e3d0ae68f82436115bb403bb7938590cfc00e664059ba623d9",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-039",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-039?mode=laws&c=%D0%93%D0%9F&q=%D1%81%D1%82.+63&law=1905-039%3A%D0%93%D0%9F%3A63%3Atext%3A4950&at=4950&end=4956",
+      "source_warning": null,
+      "passage_id": "1905-039:4157-5774",
+      "sources": [
+        {
+          "page": 105,
+          "page_method": "header",
+          "file": "p0053_R.txt",
+          "start": 4950,
+          "end": 4956
+        }
+      ],
+      "printed_pages": [
+        105
+      ],
+      "scans": [
+        {
+          "file": "p0053_R.txt",
+          "page": 105,
+          "full": "scans/1905/pages/p0053_R.webp",
+          "width": 1100,
+          "height": 1549,
+          "ocr_sha256": "1885e51f51a1332bb12c0a06dfdd5cf6f597991dbd90d29082bce535a7fc136b",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 4870,
+          "end": 5051,
+          "quote_original": "ственность городовъ, отъ которыхъ и зависитъ, согласно п. 2 ст. 2, ст. 7 и п. 9 ст. 63 город. пол. изд. 1892 г., опредѣленіе способовъ извлеченія доходовъ изъ принадлежащихъ имъ иму",
+          "act_code": "ГП"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4950,
+          "end": 4956,
+          "quote_original": "ст. 63",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4870,
+              "end": 5051,
+              "quote_original": "ственность городовъ, отъ которыхъ и зависитъ, согласно п. 2 ст. 2, ст. 7 и п. 9 ст. 63 город. пол. изд. 1892 г., опредѣленіе способовъ извлеченія доходовъ изъ принадлежащихъ имъ иму",
+              "act_code": "ГП"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

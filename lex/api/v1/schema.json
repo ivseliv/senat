@@ -1,0 +1,704 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ivseliv.github.io/senat/lex/api/v1/schema.json",
+  "title": "Статический API решений Правительствующего Сената, v1",
+  "type": "object",
+  "$defs": {
+    "Envelope": {
+      "type": "object",
+      "required": [
+        "api_version",
+        "contract_version",
+        "data_revision",
+        "resource"
+      ],
+      "properties": {
+        "api_version": {
+          "const": "v1"
+        },
+        "contract_version": {
+          "type": "string"
+        },
+        "data_revision": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        "resource": {
+          "type": "string"
+        },
+        "scope": {
+          "type": "object"
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "items": {
+          "type": "array"
+        },
+        "item": {
+          "type": "object"
+        },
+        "links": {
+          "type": "object"
+        }
+      }
+    },
+    "Decision": {
+      "type": "object",
+      "required": [
+        "id",
+        "year",
+        "number",
+        "department",
+        "headnote_original",
+        "text_original",
+        "url"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{3}$"
+        },
+        "year": {
+          "type": "integer"
+        },
+        "number": {
+          "type": "integer"
+        },
+        "date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "date_label": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "department": {
+          "type": "string"
+        },
+        "headnote_original": {
+          "type": "string"
+        },
+        "text_original": {
+          "type": "string"
+        },
+        "outcome": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "scan_pages": {
+          "type": "array"
+        },
+        "precedents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/PrecedentReference"
+          }
+        },
+        "cites": {
+          "type": "array",
+          "deprecated": true,
+          "description": "Старые пары год/номер без департамента. Не устанавливают тождество и не пригодны для переходов; используйте precedents."
+        }
+      }
+    },
+    "PrecedentReference": {
+      "type": "object",
+      "required": [
+        "id",
+        "source_id",
+        "source_sha256",
+        "department",
+        "year",
+        "number",
+        "status",
+        "target_id",
+        "start",
+        "end",
+        "quote_original",
+        "context_original",
+        "source_url",
+        "target_url"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "source_id": {
+          "type": "string"
+        },
+        "source_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "department": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "year": {
+          "type": "integer"
+        },
+        "number": {
+          "type": "integer"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "linked",
+            "not_in_corpus",
+            "department_unknown",
+            "ambiguous_target"
+          ]
+        },
+        "target_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "target_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "quote_original": {
+          "type": "string"
+        },
+        "context_original": {
+          "type": "string"
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "linked"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "department": {
+                "type": "string"
+              },
+              "target_id": {
+                "type": "string"
+              },
+              "target_url": {
+                "type": "string"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "target_id": {
+                "type": "null"
+              },
+              "target_url": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "Passage": {
+      "type": "object",
+      "required": [
+        "id",
+        "decision_id",
+        "year",
+        "start",
+        "end",
+        "sha256",
+        "text_original",
+        "url"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "decision_id": {
+          "type": "string"
+        },
+        "year": {
+          "type": "integer"
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "text_original": {
+          "type": "string"
+        },
+        "scan_refs": {
+          "type": "array"
+        },
+        "source_warning": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Предупреждение о порядке или атрибуции OCR; пояснение такого пассажа не участвует в обогащённом поиске."
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "ScanReference": {
+      "type": "object",
+      "properties": {
+        "page": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "box": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "image_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "full_page_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        }
+      }
+    },
+    "EditorialEvidence": {
+      "type": "object",
+      "required": [
+        "decision",
+        "text",
+        "start",
+        "end",
+        "passage_id",
+        "passage_ids",
+        "sources",
+        "printed_pages",
+        "scans"
+      ],
+      "properties": {
+        "decision": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{3}$"
+        },
+        "text": {
+          "type": "string"
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "passage_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "passage_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 1
+        },
+        "printed_pages": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "scans": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Страницы цитаты; full разрешается относительно корня lex/."
+        },
+        "editorial_note": {
+          "type": "string",
+          "description": "Редакционное примечание, отдельно от буквальной цитаты."
+        },
+        "source_warning": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "GuideComparison": {
+      "type": "object",
+      "required": [
+        "title",
+        "question",
+        "scope",
+        "limits",
+        "label",
+        "verification",
+        "cases",
+        "comparisons"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "question": {
+          "type": "string"
+        },
+        "scope": {
+          "type": "string"
+        },
+        "limits": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "verification": {
+          "type": "string"
+        },
+        "cases": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "source_sha256",
+              "title",
+              "year",
+              "department",
+              "sections"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "source_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "sections": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "heading",
+                    "speaker",
+                    "summary",
+                    "evidence"
+                  ],
+                  "properties": {
+                    "evidence": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "$ref": "#/$defs/EditorialEvidence"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "comparisons": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "heading",
+              "summary",
+              "evidence"
+            ],
+            "properties": {
+              "evidence": {
+                "type": "array",
+                "minItems": 2,
+                "items": {
+                  "$ref": "#/$defs/EditorialEvidence"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "LegislationCitation": {
+      "type": "object",
+      "required": [
+        "id",
+        "decision_id",
+        "code",
+        "article",
+        "field",
+        "start",
+        "end",
+        "quote_original",
+        "source_sha256",
+        "verification_status",
+        "evidence"
+      ],
+      "properties": {
+        "verification_status": {
+          "enum": [
+            "context_verified",
+            "legacy_unverified",
+            "act_unknown"
+          ]
+        },
+        "field": {
+          "enum": [
+            "text",
+            "headnote"
+          ]
+        },
+        "source_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "headnote_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "kind",
+              "start",
+              "end",
+              "quote_original"
+            ],
+            "properties": {
+              "kind": {
+                "enum": [
+                  "direct",
+                  "repeat",
+                  "printed_index"
+                ]
+              },
+              "quote_original": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "occurrences": {
+          "type": "array"
+        }
+      },
+      "description": "Единица — решение и обозначение статьи. field определяет исходное поле Unicode-смещений; SHA полного текста и заголовка закреплены отдельно. Подтверждение акта не удостоверяет номер OCR или редакцию нормы."
+    },
+    "HistoricalLegislationReference": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/LegislationCitation"
+        }
+      ],
+      "type": "object",
+      "required": [
+        "historical_note",
+        "current_references"
+      ],
+      "properties": {
+        "historical_note": {
+          "type": "string"
+        },
+        "current_references": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "code",
+              "article",
+              "passage_url"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "code": {
+                "type": "string"
+              },
+              "article": {
+                "type": "string"
+              },
+              "passage_url": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "uri"
+              }
+            }
+          },
+          "description": "Текущие записи того же решения и обозначения статьи. Список может быть пустым или содержать несколько записей; passage_url является абсолютным публичным URL."
+        }
+      },
+      "description": "Сохранённая запись прежнего указателя: ID, исходные места и прежняя атрибуция остаются доступными. Не является текущей привязкой акта и не входит в активные счётчики, фасеты или наборы статей."
+    },
+    "TopicCatalog": {
+      "type": "object",
+      "required": [
+        "schema_version",
+        "count",
+        "classified",
+        "topic_count",
+        "memberships",
+        "topics",
+        "decisions",
+        "unclassified"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "classified": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "topic_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "memberships": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "topics": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "description",
+              "decision_ids",
+              "count",
+              "by_year"
+            ]
+          }
+        },
+        "decisions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "required": [
+              "id",
+              "source_sha256",
+              "year",
+              "department",
+              "title",
+              "summary",
+              "topics"
+            ],
+            "properties": {
+              "topics": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "evidence"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "evidence": {
+                      "$ref": "#/$defs/EditorialEvidence"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "unclassified": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "description": "UTF-8. Смещения start/end — полуоткрытый диапазон Unicode-кодовых точек [start,end), а не UTF-16-индексы JavaScript."
+}

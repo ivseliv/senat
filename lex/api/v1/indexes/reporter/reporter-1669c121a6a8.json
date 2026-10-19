@@ -1,0 +1,40 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:2433ea245c39e57a199c959245d64c887e26d851eed1b4249f20b59c5405b965",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "reporter",
+    "id": "reporter-1669c121a6a8",
+    "label": "Змирлов К. П."
+  },
+  "count": 11,
+  "decision_ids": [
+    "1904-003",
+    "1904-004",
+    "1904-030",
+    "1904-064",
+    "1904-092",
+    "1905-006",
+    "1905-017",
+    "1905-018",
+    "1905-022",
+    "1905-025",
+    "1905-062"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-003.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-004.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-030.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-064.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-092.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-006.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-017.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-018.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-022.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-025.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-062.json"
+    ]
+  }
+}

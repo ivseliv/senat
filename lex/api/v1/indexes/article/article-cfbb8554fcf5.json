@@ -1,0 +1,34 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:2433ea245c39e57a199c959245d64c887e26d851eed1b4249f20b59c5405b965",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "article",
+    "id": "article-cfbb8554fcf5",
+    "label": "СЗГ ст. 1529"
+  },
+  "count": 8,
+  "decision_ids": [
+    "1897-003",
+    "1897-006",
+    "1897-052",
+    "1897-062",
+    "1897-093",
+    "1897-096",
+    "1905-094",
+    "1905-105"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-003.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-006.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-052.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-062.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-093.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-096.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-094.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-105.json"
+    ]
+  }
+}

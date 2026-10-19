@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "base_url": "https://ivseliv.github.io/senat/lex/",
+  "volumes": [
+    {
+      "year": 1896,
+      "dept": "Общее собрание",
+      "decisions": 49,
+      "gaps": [],
+      "file": "text-1896.json"
+    },
+    {
+      "year": 1897,
+      "dept": "Гражданский кассационный департамент",
+      "decisions": 100,
+      "gaps": [],
+      "file": "text-1897.json"
+    },
+    {
+      "year": 1904,
+      "dept": "Гражданский кассационный департамент",
+      "decisions": 120,
+      "gaps": [],
+      "file": "text-1904.json"
+    },
+    {
+      "year": 1905,
+      "dept": "Гражданский кассационный департамент",
+      "decisions": 115,
+      "gaps": [],
+      "file": "text-1905.json"
+    }
+  ],
+  "counts": {
+    "decisions": 384,
+    "passages": 2150,
+    "participants": 790,
+    "statute_mentions": 1974,
+    "legislation_acts": 29,
+    "legislation_citations": 1377,
+    "legislation_unresolved": 536,
+    "legislation_historical_references": 267,
+    "scan_passage_refs": 3296,
+    "precedent_references": 827
+  },
+  "files": [
+    {
+      "name": "decisions.json",
+      "sha256": "8b5c2dde28d280c8b01d9990eb9fa3817f575e96cd79175dc5237f188de6fb9b",
+      "bytes": 8364381
+    },
+    {
+      "name": "decisions.csv",
+      "sha256": "f93c831e2506030ffdef0a21c0ab9929c242ae70000e945c3f62e7c86f77fe34",
+      "bytes": 7815323
+    },
+    {
+      "name": "passages.json",
+      "sha256": "89c1e27f28d02acad43cd970635c8efd7adca55e5394577c1be2ff4f9cef232b",
+      "bytes": 12125398
+    },
+    {
+      "name": "passages.csv",
+      "sha256": "2c119fc4b91ff4f26c30b939d496256f2774e4dc2f634c1ec17abdf04c359f20",
+      "bytes": 10758774
+    },
+    {
+      "name": "participants.json",
+      "sha256": "232de4b2128211f438a3b8decd359871c6b6ac1137013c186343458576e4367b",
+      "bytes": 413730
+    },
+    {
+      "name": "participants.csv",
+      "sha256": "877543575006257c2ec764601f267da27b908d0dc70b03286ecf5c09086f9d5c",
+      "bytes": 270959
+    },
+    {
+      "name": "statutes.json",
+      "sha256": "c56550353fd0295cb012179ae9d64dca736ee26cbecde716959f4885041ecdfd",
+      "bytes": 510322
+    },
+    {
+      "name": "statutes.csv",
+      "sha256": "22f125c8a9b553812290434e8c6f5562e5ef27ba2cdc5969f59bdc25afcaad5a",
+      "bytes": 198503
+    },
+    {
+      "name": "legislation-acts.json",
+      "sha256": "9e3dd49dbf86742e9fb9e3fd5053c290fe03a1f13f4d07d67745e4c24dd670d8",
+      "bytes": 121175
+    },
+    {
+      "name": "legislation-acts.csv",
+      "sha256": "757f44a6a7cce58aa321597a46ed5c5993a9a026c83ec3d9c15d2b49891226ab",
+      "bytes": 78536
+    },
+    {
+      "name": "legislation-citations.json",
+      "sha256": "23d4a38b12b5bd48ca060ce493b8f9c553b16e75224c25f717d1e1db99f8021e",
+      "bytes": 4585469
+    },
+    {
+      "name": "legislation-citations.csv",
+      "sha256": "c8a706aa20f613159828c057d6358caa74bfcc5c53cdf6450a81a4367b5dac22",
+      "bytes": 3271692
+    },
+    {
+      "name": "legislation-unresolved.json",
+      "sha256": "a1e8e2d39ab12a5b36a2aecd9265726e7e900b2d1c100ac3c9004384716cbf2a",
+      "bytes": 1328931
+    },
+    {
+      "name": "legislation-unresolved.csv",
+      "sha256": "309f41424f62dedc7700861c81d4cd5dacc5e3dbfcfafca762a6351d701a531c",
+      "bytes": 907302
+    },
+    {
+      "name": "legislation-historical-references.json",
+      "sha256": "5b8df9df5773116ee92cd71c3c6803190b9fae4200780077505d0f2615d587f3",
+      "bytes": 822133
+    },
+    {
+      "name": "legislation-historical-references.csv",
+      "sha256": "7ef9acf6442db8ffd63f981b294d0790bf09e17ed4dc5e19404a038826d7ed86",
+      "bytes": 583667
+    },
+    {
+      "name": "scan-passages.json",
+      "sha256": "1a16019fd030d3e7c14418ee826d1ae99fff9728647fc51e5e1c87e017690f5b",
+      "bytes": 1988483
+    },
+    {
+      "name": "scan-passages.csv",
+      "sha256": "11b784352ddff995d7370fb70466d0849b09f660b28017961132662fcf8b71b8",
+      "bytes": 1085145
+    },
+    {
+      "name": "precedents.json",
+      "sha256": "a25d04cfd7c617b7c6d16cc6903001ba83e669f6463014d92bdc06dca278630e",
+      "bytes": 1653944
+    },
+    {
+      "name": "precedents.csv",
+      "sha256": "0f5f51c358009fdf8cce16ab353570cd068478102fb9b09b9c50ee964a4f879b",
+      "bytes": 1128967
+    },
+    {
+      "name": "README.md",
+      "sha256": "14b20bc890d89eced34d10286edf29793d13f410713362be4856e174567a8430",
+      "bytes": 5142
+    }
+  ],
+  "notes": "Сборка детерминирована из lex/data; даты выгрузки намеренно не записываются."
+}

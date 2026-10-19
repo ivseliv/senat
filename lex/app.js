@@ -24,9 +24,15 @@
   ];
 
   const S = {
-    meta: null, index: null, an: null, engine: null, texts: {}, stemCache: new Map(),
+    meta: null, index: null, an: null, engine: null, texts: {}, stemCache: new Map(), reader: null,
     opts: { modern: false, gloss: true }, detailId: null,
-    sense: { config: null, engines: [], promise: null, q: '', hits: [], shown: 10, token: 0 },
+    sense: { config: null, engines: [], promise: null, q: '', hits: [], shown: 10, token: 0, partial: false, suggested: 0 },
+    map: { q: '', topic: '', token: 0 },
+    laws: { q: '', code: '', page: 1, data: null, promise: null, token: 0, passages: {} },
+    analyses: { data: null, promise: null },
+    precedents: { data: null, promise: null },
+    guides: { data: null, promise: null, catalog: null, catalogPromise: null, token: 0, shown: 30, key: '' },
+    api: { data: null, promise: null },
     participants: {q:'', year:'', shown:60}, participantMap: new Map(),
     f: { q: '', year: '', outcome: '', topic: '', code: '', statute: '', procedure: '', person: '', participant: '', gender: '', age: '', family: '', estate: '', entity: '', role: '', sort: 'rel' }, shown: 20, hits: [], sentinel: 0,
   };
@@ -36,22 +42,95 @@
     for (const [k, v] of Object.entries(attrs || {})) {
       if (v == null || v === false) continue;
       if (k === 'class') el.className = v; else if (k === 'html') el.innerHTML = v;
-      else if (k.startsWith('on')) el.addEventListener(k.slice(2), v); else el.setAttribute(k, v === true ? '' : v);
+      else if (k.startsWith('on')) el.addEventListener(k.slice(2), v); else el.setAttribute(k, k==='href' ? versionedLink(v) : v === true ? '' : v);
     }
     for (const k of kids.flat()) if (k != null && k !== false) el.append(k.nodeType ? k : document.createTextNode(k));
     return el;
+  }
+  function versionedLink(value) {
+    if (typeof value!=='string') return value;
+    const match=value.match(/^(?:https:\/\/ivseliv\.github\.io\/senat\/lex\/)?#\/d\/(\d{4}-\d{3})\?(.*)$/);
+    const revision=match && S.an?.source_revisions?.[match[1]];
+    if (!revision) return value;
+    const params=new URLSearchParams(match[2]);
+    if (!params.has('at') || params.has('v')) return value;
+    params.set('v',revision.version);
+    return value.slice(0,value.indexOf('?')+1)+params;
   }
   const M = t => S.opts.modern ? L.modernize(t) : t;
   const fmtDate = (iso, label) => { if (!iso) return label ? M(label) : ''; const [y, m, d] = iso.split('-').map(Number); return `${d} ${MONTHS[m - 1]} ${y}`; };
   const CODE = () => S.an.codes;
   const statuteCode = s => s.split(' ', 1)[0];
-  const codeLabel = code => code === '?' ? 'Кодекс не определён' : (CODE()[code] || 'Иной акт');
+  const codeLabel = code => code === '?' ? 'Акт не установлен' : (CODE()[code] || 'Иной акт');
   const statLabel = s => { const [code, ...rest] = s.split(' '); return codeLabel(code) + ', ' + rest.join(' '); };
   const deptShort = d => d.replace(' департамент', '').replace('Гражданский кассационный', 'Гражд. касс. деп.');
+  function sourceWarning(d) {
+    const note = S.an.source_warnings && S.an.source_warnings[d.id];
+    return note ? h('details',{class:'preliminary-note source-warning'},
+      h('summary',{},`Ограничение источника: дефекты OCR в ${note.passages.length} фрагментах`),
+      ...note.messages.map(message=>h('p',{},message))) : S.an.source_revisions?.[d.id] ?
+      h('p',{class:'small muted'},'Порядок колонок и границы решения восстановлены по скану. Отдельные буквы, имена и числа не вычитаны сплошь.') : null;
+  }
 
   async function loadJSON(name) { if (window.LEX_INLINE && window.LEX_INLINE[name]) return window.LEX_INLINE[name]; const r = await fetch(DATA + name); if (!r.ok) throw new Error(name + ': ' + r.status); return r.json(); }
   async function loadVol(y) { if (!S.texts[y]) S.texts[y] = loadJSON(`text-${y}.json`); return S.texts[y]; }
   async function textOf(d) { return (await loadVol(d.vol))[localIndex(d)]; }
+  async function loadAnalyses() {
+    if (!S.analyses.promise) S.analyses.promise = loadJSON('decision-analyses.json').then(data => (S.analyses.data = data));
+    return S.analyses.promise;
+  }
+  async function loadPrecedents() {
+    if (!S.precedents.promise) S.precedents.promise=loadJSON('precedents.json').then(data=>(S.precedents.data=data)).catch(err=>{S.precedents.promise=null;throw err;});
+    return S.precedents.promise;
+  }
+  function precedentTarget(ref) {
+    return ref.status==='linked' && S.meta.decisions.find(d=>d.id===ref.target_id && d.dept===ref.department && d.vol===ref.year && d.num===ref.number);
+  }
+  function precedentLabel(ref) {
+    return (ref.department || 'Департамент не установлен')+' · '+ref.year+' г. № '+ref.number;
+  }
+  function precedentGroups(refs, incoming) {
+    const groups=new Map();
+    for(const ref of refs) {
+      const key=incoming ? ref.source_id : JSON.stringify([ref.department,ref.year,ref.number,ref.target_id,ref.status]);
+      if(!groups.has(key))groups.set(key,[]);
+      groups.get(key).push(ref);
+    }
+    return [...groups.values()];
+  }
+  function precedentEvidence(ref) {
+    return h('div',{},h('blockquote',{class:'precedent-context'},M(ref.context_original)),
+      h('p',{class:'small'},h('a',{class:'precedent-source',href:ref.source_url},'Показать место ссылки в тексте'+(ref.pages.length ? ' · с. '+ref.pages.join(', ') : ''))));
+  }
+  function precedentEntry(refs, incoming) {
+    const ref=refs[0], target=precedentTarget(ref), source=S.meta.decisions.find(d=>d.id===ref.source_id);
+    const label=incoming ? source.dept+' · '+source.vol+' г. № '+source.num : precedentLabel(ref);
+    const link=incoming ? ref.source_url : target ? '#/d/'+target.id : null;
+    const note=incoming || target ? '' : ref.status==='department_unknown' ? 'Департамент не указан в ссылке; тождество решения не установлено.' :
+      ref.status==='not_in_corpus' ? 'Решения этого департамента, года и номера нет в корпусе.' : 'Тождество решения неоднозначно; переход не установлен.';
+    return h('li',{'data-precedent-status':ref.status,'data-precedent-year':String(ref.year),'data-precedent-number':String(ref.number)},
+      link ? h('a',{class:incoming?'precedent-incoming':'precedent-target',href:link},label) : h('strong',{},label),
+      note ? h('p',{class:'muted small'},note) : '',precedentEvidence(ref),
+      refs.length>1 ? h('details',{},h('summary',{},'Ещё упоминания: '+(refs.length-1)),refs.slice(1).map(precedentEvidence)) : '');
+  }
+  async function loadGuides() {
+    if (!S.guides.promise) S.guides.promise = loadJSON('guides.json').then(data => (S.guides.data = data));
+    return S.guides.promise;
+  }
+  async function loadTopicCatalog() {
+    if (!S.guides.catalogPromise) S.guides.catalogPromise=loadJSON('topic-catalog.json').then(data=>(S.guides.catalog=data)).catch(err=>{S.guides.catalogPromise=null;throw err;});
+    return S.guides.catalogPromise;
+  }
+  function apiURL(name) {
+    return (window.LEX_INLINE ? 'https://ivseliv.github.io/senat/lex/api/v1/' : 'api/v1/') + name;
+  }
+  async function loadApi() {
+    if (!S.api.promise) S.api.promise = fetch(apiURL('manifest.json')).then(r => {
+      if (!r.ok) throw new Error('manifest.json: ' + r.status);
+      return r.json();
+    }).then(data => (S.api.data = data));
+    return S.api.promise;
+  }
   function localIndex(d) { return d.i - S.volStart[d.vol]; }
   async function stemsOf(d) {
     if (!S.stemCache.has(d.i)) S.stemCache.set(d.i, L.stems(d.headnote + '\n' + await textOf(d)));
@@ -134,9 +213,9 @@
   }
   function route() {
     const { path, p } = readHash();
-    const requested = path.startsWith('d/') ? (['sense','participants'].includes(p.get('mode')) ? p.get('mode') : 'search') : (path.split('/')[0] || 'search');
-    const tab = ['search','sense','participants','analytics','about'].includes(requested) ? requested : 'search';
-    for (const t of ['search', 'sense', 'participants', 'analytics', 'about']) {
+    const requested = path.startsWith('d/') ? (['sense','participants','map','laws','analyses','analysis','guides','reader','quote'].includes(p.get('mode')) ? (p.get('mode') === 'analysis' ? 'analyses' : p.get('mode') === 'quote' ? 'reader' : p.get('mode')) : 'search') : (path.split('/')[0] || 'search');
+    const tab = ['search','sense','map','laws','participants','guides','analyses','reader','api','analytics','about'].includes(requested) ? requested : 'search';
+    for (const t of ['search','sense','map','laws','participants','guides','analyses','reader','api','analytics','about']) {
       $('#view-' + t).hidden = t !== tab;
       $('#tab-' + t).setAttribute('aria-current', t === tab ? 'page' : 'false');
     }
@@ -149,14 +228,166 @@
     } else if (tab === 'sense') {
       S.sense.q = p.get('q') || ''; $('#sense-q').value = S.sense.q; runSense();
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
+    } else if (tab === 'map') {
+      S.map.q = p.get('q') || ''; S.map.topic = p.get('t') || '';
+      $('#map-q').value = S.map.q; $('#map-topic').value = S.map.topic; renderMap();
+      if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
+    } else if (tab === 'laws') {
+      S.laws.q = p.get('q') || ''; S.laws.code = p.get('c') || '';
+      S.laws.page = Math.max(1, parseInt(p.get('page'), 10) || 1);
+      $('#laws-q').value = S.laws.q; $('#laws-code').value = S.laws.code; renderLaws();
+      if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
     } else if (tab === 'participants') {
       Object.assign(S.participants, {q:p.get('q') || '', year:p.get('y') || '', shown:60});
       renderParticipants();
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
+    } else if (tab === 'analyses') {
+      renderAnalyses();
+      if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
+    } else if (tab === 'guides') {
+      renderGuides();
+      if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
+    } else if (tab === 'reader') {
+      S.reader.render();
+      if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
+    } else if (tab === 'api') {
+      renderApi(); closeDetail();
     } else closeDetail();
     if (tab === 'analytics') renderAnalytics();
     if (tab === 'about') renderCorpus();
     window.scrollTo(0, path.startsWith('d/') ? window.scrollY : 0);
+  }
+  async function renderGuides(more=false) {
+    const box=$('#guides-results'),status=$('#guides-status'),token=++S.guides.token;
+    const params=readHash().p,requested=params.get('g')||'',year=params.get('y')||'',query=params.get('q')||'';
+    if(!more)box.replaceChildren(h('p',{class:'muted'},'Загрузка каталога тем…'));
+    try {
+      const [data,catalog]=await Promise.all([loadGuides(),loadTopicCatalog(),loadAnalyses()]);
+      if(token!==S.guides.token || $('#view-guides').hidden)return;
+      const selected=catalog.route_aliases[requested]||requested;
+      const key=[selected,year,query].join('|');
+      if(key!==S.guides.key){S.guides.key=key;S.guides.shown=30;}
+      const topic=catalog.topics.find(t=>t.id===selected),listing=!!selected;
+      const scoped=c=>!year || String(c.year)===year;
+      const normalize=t=>L.modernize(t).toLocaleLowerCase('ru').replace(/ё/g,'е');
+      const words=normalize(query).trim().split(/\s+/).filter(Boolean);
+      const matches=t=>words.every(w=>normalize(t).includes(w));
+      const link=(id,extra={})=>'#/guides?'+new URLSearchParams(Object.entries({g:id,y:year,...(id?{catalog:'1'}:{}),...extra}).filter(([,v])=>v));
+      const select=$('#guides-year');
+      select.replaceChildren(h('option',{value:''},'Все тома'),...S.meta.volumes.map(v=>h('option',{value:v.year},`${v.year} · ${v.dept}`)));
+      select.value=year;
+      $('#guides-q-label').textContent=listing?'Найти решение в этом разделе':'Найти тему';
+      $('#guides-q').placeholder=listing?'Современное название, предмет или участник':'Например: алименты, банкротство, наследство';
+      $('#guides-q').value=query;
+      const submit=()=>go('guides',{g:requested,y:select.value,q:$('#guides-q').value.trim(),catalog:params.get('catalog')||'',compare:params.get('compare')||''});
+      select.onchange=submit;$('#guides-filter').onsubmit=e=>{e.preventDefault();submit();};
+      const nav=h('nav',{class:'chips guide-nav','aria-label':'Каталог тем'},
+        h('a',{class:'chip',href:link('')},'Все темы'),h('a',{class:'chip',href:link('all')},'Все решения'),
+        catalog.unclassified.length?h('a',{class:'chip',href:link('unclassified')},'Требуют уточнения: '+catalog.unclassified.length):null);
+      const coverage=`${catalog.topic_count} тем · ${catalog.count} решений · тематически размечено ${catalog.classified}/${catalog.count}.`;
+      if(!listing){
+        const topics=catalog.topics.filter(t=>t.count && matches([t.title,t.description,...(t.keywords||[])].join(' ')));
+        status.textContent=coverage+` Показано тем: ${topics.length}. Одно дело может входить в несколько разделов.`;
+        const cards=topics.map(t=>{
+          const count=t.decision_ids.filter(id=>scoped(catalog.decisions[id])).length;
+          const comp=data.guides.find(g=>g.id===t.comparison_guide)?.comparison;
+          return h('article',{class:'card topic-card','data-topic':t.id},h('h3',{},h('a',{href:link(t.id)},t.title)),
+            h('p',{},t.description),h('p',{class:'topic-count'},`${count} ${plural(count,'решение','решения','решений')}`+(year?' в выбранном томе':'')),
+            h('a',{href:link(t.id)},'Открыть решения →'),
+            comp?h('p',{class:'small'},h('a',{href:link(t.id,{compare:'1'})},'Подробное сравнение '+comp.cases.length+' дел')):null);
+        });
+        box.replaceChildren(nav,h('div',{class:'topic-grid'},...cards),!cards.length?h('p',{class:'empty'},'Такая тема не найдена. Попробуйте другое название или откройте все темы.'):null);
+        return;
+      }
+      if(!topic && !['all','unclassified'].includes(selected)){
+        status.textContent=coverage;
+        box.replaceChildren(nav,h('p',{class:'empty'},'Тема не найдена. Откройте каталог тем выше.'));return;
+      }
+      const ids=topic?topic.decision_ids:selected==='all'?Object.keys(catalog.decisions):catalog.unclassified;
+      const cases=ids.map(id=>catalog.decisions[id]).filter(scoped).filter(c=>matches(c.title+' '+c.summary+' '+S.meta.decisions.find(d=>d.id===c.id).headnote));
+      status.textContent=coverage+` В разделе ${ids.length}, с учётом фильтров ${cases.length}; показано ${Math.min(cases.length,S.guides.shown)}.`;
+      const guide=topic&&data.guides.find(g=>g.id===topic.comparison_guide),comp=guide&&guide.comparison;
+      const legacyComparison=!params.has('catalog') && data.guides.some(g=>g.id===requested);
+      const comparison=comp?h('details',{class:'topic-comparison',open:params.get('compare')==='1'||legacyComparison},
+        h('summary',{},'Сравнение выбранных дел (все тома): '+comp.title),comparisonSection(guide)):null;
+      const cards=cases.slice(0,S.guides.shown).map(c=>{
+        const d=S.meta.decisions.find(x=>x.id===c.id),ev=c.topics.find(t=>t.id===selected)?.evidence;
+        const origin={mode:'guides',g:requested,catalog:'1',...(year?{y:year}:{}),...(query?{q:query}:{})};
+        return h('article',{class:'card catalog-case','data-id':c.id},
+          h('h3',{},h('a',{href:'#/d/'+c.id+'?'+new URLSearchParams(origin)},c.title)),
+          h('p',{class:'muted small'},`${c.year} г. № ${d.num} · ${c.department}`),h('p',{},c.summary),
+          c.review_note?h('p',{class:'preliminary-note'},c.review_note):null,
+          h('div',{class:'chips'},...c.topics.map(t=>h('a',{class:'chip',href:link(t.id)},catalog.topics.find(x=>x.id===t.id).title))),
+          ev?sourceEvidence(c.id,ev,origin):null,
+          h('p',{},h('a',{href:'#/d/'+c.id+'?'+new URLSearchParams(origin)},'Текст и сканы'),
+            S.analyses.data.decisions[c.id]?[' · ',h('a',{href:'#/d/'+c.id+'?mode=analyses'},'Подробный разбор')]:null),
+          h('details',{class:'catalog-headnote'},h('summary',{},'Заголовок издания (OCR)'),h('p',{},M(d.headnote))),sourceWarning(d));
+      });
+      const moreButton=cases.length>S.guides.shown?h('button',{class:'btn',id:'guides-more',onclick:()=>{S.guides.shown+=30;renderGuides(true);}},'Показать ещё'):null;
+      const legacy=guide?h('details',{class:'guide-reading'},h('summary',{},'Прежняя смежная подборка: '+guide.title),
+        h('p',{class:'muted small'},guide.notice),...guide.groups.map(group=>h('section',{class:'guide-group'},h('h3',{},group.title),
+          h('ul',{},...group.decisions.map(id=>{const d=S.meta.decisions.find(x=>x.id===id);return h('li',{},h('a',{href:'#/d/'+id+'?mode=guides&g='+requested},`${d.vol} г. № ${d.num} — ${M(d.headnote)}`));}))))):null;
+      box.replaceChildren(nav,h('article',{class:'guide','data-guide':requested},
+        h('h2',{},topic?topic.title:selected==='all'?'Все решения корпуса':'Тема требует уточнения'),
+        h('p',{},topic?topic.description:selected==='all'?'Все опубликованные решения, включая дела с неуточнённой темой.':'Эти дела доступны для чтения, но надёжная тема пока не выбрана.'),
+        comparison,h('div',{class:'catalog-cases'},...cards),!cases.length?h('p',{class:'empty'},'В этом разделе по выбранным фильтрам решений не найдено.'):null,moreButton,legacy));
+    } catch(err) {if(token===S.guides.token){status.textContent='';box.replaceChildren(h('p',{class:'empty'},'Не удалось загрузить каталог: '+err.message));}}
+  }
+  function comparisonSection(guide) {
+    const comp=guide.comparison;
+    const quote=ev=>sourceEvidence(ev.decision,ev,{mode:'guides',g:guide.id,compare:'1'});
+    return h('section',{class:'guide-comparison','aria-label':comp.title},
+      h('p',{class:'analysis-label'},comp.label),
+      h('p',{class:'muted small'},'Полные тексты прочитаны по контексту. Каждое сопоставление связано с цитатами разных дел. Новая сплошная сверка изображений и независимая юридическая экспертиза не проводились.'),
+      h('h3',{},'Что меняет ответ Сената'),
+      ...comp.comparisons.map(c=>h('section',{class:'guide-contrast'},h('h4',{},c.heading),h('p',{},c.summary),...c.evidence.map(quote))),
+      h('h3',{},'Дела для сравнения'),
+      h('div',{class:'comparison-cases'},...comp.cases.map(c=>h('article',{class:'comparison-case','data-decision':c.id},
+        h('h4',{},`${c.year} г. № ${Number(c.id.split('-')[1])} · ${c.title}`),
+        h('p',{class:'muted small'},c.department),
+        ...c.sections.map(s=>h('section',{class:'comparison-case-section'},h('h5',{},s.heading),
+          h('p',{class:'analysis-speaker'},s.speaker),h('p',{},s.summary),...s.evidence.map(quote))),
+        h('p',{},h('a',{href:'#/d/'+c.id+'?mode=guides&g='+guide.id+'&compare=1'},'Полный текст решения'))))),
+      h('aside',{class:'preliminary-note comparison-limits'},h('h3',{},'Пределы сравнения'),h('p',{},comp.limits)));
+  }
+  async function renderApi() {
+    const box=$('#api-results'); box.replaceChildren(h('p',{class:'muted'},'Загрузка статического API…'));
+    if (window.LEX_INLINE && location.protocol==='file:') {
+      box.replaceChildren(h('p',{},'Офлайн-файл содержит интерфейс и корпус, но не дублирует API-файлы. ',
+        h('a',{href:'https://ivseliv.github.io/senat/lex/api/',target:'_blank',rel:'noopener'},'Открыть API на публичном сайте')));
+      return;
+    }
+    try {
+      const api=await loadApi(), counts=api.coverage.counts;
+      const docs=Object.entries(api.documents).map(([key,url])=>h('a',{href:url,target:'_blank',rel:'noopener'},key));
+      const statistics=h('p',{class:'muted'},`${counts.decisions} ${plural(counts.decisions,'решение','решения','решений')} · ${counts.passages} ${plural(counts.passages,'пассаж','пассажа','пассажей')} · ${counts.participants} строк указателя`);
+      const cards=api.datasets.map(dataset=>h('article',{class:'card'},h('h3',{},dataset.id),h('p',{},dataset.description),
+        dataset.href ? h('a',{href:dataset.href,target:'_blank',rel:'noopener'},'Открыть ресурс') : h('a',{href:dataset.href_template.replace('{year}',dataset.values[0] || '').replace('{act_id}',dataset.values[0] || ''),target:'_blank',rel:'noopener'},'Открыть пример ресурса')));
+      box.replaceChildren(h('p',{},'Версия контракта ',h('code',{},api.contract_version),' · снимок ',h('code',{},api.data_revision)),statistics,
+        h('p',{},'Это статические JSON-файлы: ключ и сервер не нужны; фильтры представлены готовыми индексами. ',...docs.flatMap((a,i)=>i?[', ',a]:[a])),
+        h('div',{class:'grid'},cards),h('p',{class:'muted small'},api.limitations[0]));
+    } catch(err) { box.replaceChildren(h('p',{class:'empty'},'Не удалось загрузить API: '+err.message)); }
+  }
+  async function renderAnalyses() {
+    const box = $('#analyses-results');
+    box.replaceChildren(h('p',{class:'muted'},'Загрузка разборов…'));
+    try {
+      const data = await loadAnalyses();
+      const all = Object.values(data.decisions), year = readHash().p.get('y') || '';
+      const select = $('#analyses-year');
+      select.replaceChildren(h('option',{value:''},'Все тома'),...S.meta.volumes.map(v=>h('option',{value:String(v.year)},String(v.year)+' · '+v.dept)));
+      select.value = year;
+      select.onchange = () => go('analyses',{y:select.value});
+      const items = all.filter(item=>!year || String(item.year)===year);
+      $('#analyses-status').textContent = `Разобрано ${all.length} из ${S.meta.decisions.length} решений; показано ${items.length}. Полное покрытие корпуса пока отсутствует.`;
+      box.replaceChildren(...items.map(item => {
+        const d = S.meta.decisions.find(x => x.id === item.id);
+        return h('article',{class:'card analysis-card'},h('h3',{},h('a',{href:'#/d/'+item.id+'?mode=analyses'},`${item.year} · № ${d.num}`)),
+          h('p',{class:'muted small'},d.dept),h('p',{},item.sections[0].summary),h('p',{class:'muted small'},item.selection),
+          h('details',{class:'small'},h('summary',{},'Заголовок издания (OCR)'),h('p',{},M(d.headnote))),
+          h('a',{href:'#/d/'+item.id+'?mode=analyses'},'Открыть разбор и первоисточник →'));
+      }));
+    } catch (err) { box.replaceChildren(h('p',{class:'empty'},'Не удалось загрузить редакционные разборы: '+err.message)); }
   }
   function pushSearch() {
     const f = S.f; const params = { q: f.q, y: f.year, o: f.outcome, t: f.topic, c: f.code, s: f.statute, r: f.procedure, p: f.person, u:f.participant, sort: f.sort === 'rel' ? '' : f.sort };
@@ -168,12 +399,13 @@
     try {
       const config = S.sense.config || await loadJSON('concepts.json');
       box.replaceChildren(h('table', {class:'tbl'},
-        h('thead', {}, h('tr', {}, ...['Том','Решений','Фрагментов с пояснением ИИ'].map(t=>h('th',{},t)))),
+        h('thead', {}, h('tr', {}, ...['Том','Решений','Пояснения ИИ','Дефекты OCR'].map(t=>h('th',{},t)))),
         h('tbody', {}, S.meta.volumes.map(v=>{
           const coverage=config.volumes.find(c=>c.year===v.year);
           return h('tr', {}, h('td',{},String(v.year)), h('td',{},String(v.decisions)),
-            h('td',{},coverage ? `${coverage.enriched} из ${coverage.passages}` : 'Нет: нет проверяемой привязки к листам'));
-        }))));
+            h('td',{},coverage ? `${coverage.enriched} из ${coverage.passages}` : 'Нет: нет проверяемой привязки к листам'),
+            h('td',{},String(coverage && coverage.source_warnings || 0)));
+        }))), h('p',{class:'muted small'},'Пояснения к фрагментам с дефектами источника видны с предупреждением, но не участвуют в обогащённом поисковом индексе.'));
     } catch (err) { box.textContent='Не удалось загрузить сведения о томах. Повторите открытие раздела.'; }
   }
 
@@ -277,11 +509,13 @@
           h('span', { class: 'badge' }, d.outcome)),
         h('h3', {}, h('a', { href: '#/d/' + d.id, onclick: e => { e.preventDefault(); openFromList(d.id); } }, M(d.headnote))),
         h('p', { class: 'snip', 'data-i': d.i }, ''),
+        S.an.source_warnings && S.an.source_warnings[d.id] ? h('p',{class:'small source-warning'},'Есть фрагменты с дефектами OCR. Ограничения указаны в карточке решения.') : '',
         h('div', { class: 'chips' }, d.topics.map(t => h('button', { class: 'chip', onclick: () => { S.f.topic = t; pushSearch(); } }, t))),
         d.procedure && d.procedure.length ? h('div', { class: 'chips' }, d.procedure.map(p => h('button', { class: 'chip group', title: 'Фильтровать по фокусу кассационного рассуждения', onclick: () => { S.f.procedure = p; pushSearch(); } }, p))) : '',
         h('div', { class: 'chips participant-chips' }, groupItems(d).slice(0, 8).map(g => h('button', { class: 'chip group', title: 'Фильтровать решения по этому признаку', onclick: () => selectFacet(g.key, g.label) }, g.label))));
       card.addEventListener('click', e => { if (!e.target.closest('button,a')) openFromList(d.id); });
       card.addEventListener('keydown', e => { if (e.key === 'Enter' && e.target === card) openFromList(d.id); });
+      card.append(S.reader.saveButton(d));
       box.append(card);
     }
     $('#more').hidden = total <= S.shown;
@@ -305,50 +539,129 @@
   const plural = (n, a, b, c) => { const m = n % 100, k = n % 10; return m > 10 && m < 20 ? c : k === 1 ? a : k > 1 && k < 5 ? b : c; };
   function openFromList(id) { const { p } = readHash(); location.hash = '#/d/' + id + (p.toString() ? '?' + p.toString() : ''); }
 
+  function sourceEvidence(id, ev, origin) {
+    const params=new URLSearchParams({...origin,at:String(ev.start),end:String(ev.end)});
+    const page=ev.printed_pages && ev.printed_pages.length ? 'с. '+ev.printed_pages.join(', ') : 'страница не определена';
+    const d=S.meta.decisions.find(x=>x.id===id);
+    return h('details',{class:'analysis-evidence'},
+      h('summary',{},`${d.vol} г. № ${d.num} · Цитата из источника · ${page}`),
+      ev.source_warning?h('p',{class:'preliminary-note source-warning'},'Ограничение источника: '+ev.source_warning):'',
+      ev.editorial_note?h('p',{class:'preliminary-note editorial-note'},ev.editorial_note):'',
+      h('blockquote',{class:'source-quote'},ev.text),
+      h('p',{class:'small muted'},h('a',{href:'#/d/'+id+'?'+params.toString()},'Открыть цитату и скан этой страницы')));
+  }
+  function analysisSection(d, analysis) {
+    if (!analysis) return null;
+    const sections = analysis.sections.map(section => {
+      const evidence = section.evidence.map(ev=>sourceEvidence(d.id,ev,{mode:'analysis'}));
+      return h('section',{class:'analysis-item'},h('h4',{},section.heading),
+        h('p',{class:'analysis-speaker'},section.speaker),h('p',{},section.summary),...evidence);
+    });
+    return h('section',{class:'decision-analysis','aria-label':'Что именно решил Сенат'},
+      h('h3',{},'Что именно решил Сенат'),
+      h('p',{class:'analysis-label'},'Редакционный разбор, подготовленный с помощью ИИ'),
+      h('p',{class:'muted small'},'Каждый тезис связан с полной буквальной цитатой и страницами, на которых она расположена. Разбор проверен по контексту опубликованного текста; независимая юридическая экспертиза и новая сплошная сверка сканов не проводились.'),
+      ...sections);
+  }
+
   /* ---------------------------------------------------------------- карточка решения */
   async function openDetail(id) {
+    S.reader.clearDetail();
     S.detailId = id;
     const d = S.meta.decisions.find(x => x.id === id); const box = $('#detail-body');
     if (!d) { box.replaceChildren(h('p', {}, 'Решение не найдено')); $('#detail').hidden = false; return; }
     $('#detail').hidden = false; document.body.classList.add('modal');
     box.replaceChildren(h('p',{class:'muted'},'Загрузка решения…'));
-    const text = await textOf(d);
+    const [text, analyses, precedents, guides, catalog, laws] = await Promise.all([textOf(d), loadAnalyses(),
+      loadPrecedents().catch(()=>({references:[],unavailable:true})),
+      readHash().p.get('mode')==='guides'?loadGuides():null,
+      readHash().p.get('mode')==='guides'?loadTopicCatalog():null,
+      readHash().p.get('mode')==='laws'&&readHash().p.has('law')?loadLaws():null]);
     if (S.detailId !== id || $('#detail').hidden) return;
-    const params = readHash().p, inSense = params.get('mode') === 'sense';
-    let target = null, senseTerms = [];
-    if (inSense) {
+    const params = readHash().p, inSense = ['sense','map','passage','laws','analysis','guides','quote'].includes(params.get('mode'));
+    let target = null, senseTerms = [], partialMissing = [], quoteWarning = '';
+    const analysis = analyses.decisions && analyses.decisions[id];
+    if (params.get('mode') === 'quote') {
+      target = await S.reader.resolveQuote(d,text,params);
+      if (target.warning) { quoteWarning=target.warning; target=null; }
+      if (S.detailId !== id || $('#detail').hidden) return;
+    } else if (params.get('mode') === 'laws' && params.has('law')) {
+      const row = [...laws.citations, ...(laws.unresolved || []), ...(laws.historical_references || [])].find(r=>r.id===params.get('law') && r.decision_id===id);
+      if (row) target = await lawDetailTarget(d, row, params);
+      if (S.detailId !== id || $('#detail').hidden) return;
+    } else if (params.get('mode') === 'precedent') {
+      const ref=precedents.references.find(r=>r.id===params.get('ref') && r.source_id===id);
+      if(ref) target={id:ref.passage_id || ref.id,start:ref.start,end:ref.end,pages:ref.pages,sources:ref.sources,precedent:true};
+    } else if (params.get('mode') === 'guides' && guides) {
+      const topicId=catalog.route_aliases[params.get('g')]||params.get('g');
+      const topic=catalog.topics.find(t=>t.id===topicId);
+      const guide=guides.guides.find(g=>g.id===(topic&&topic.comparison_guide||params.get('g')));
+      const comp=guide&&guide.comparison;
+      const comparisonEvidence=comp?[...comp.cases.flatMap(c=>c.sections.flatMap(s=>s.evidence)),...comp.comparisons.flatMap(c=>c.evidence)]:[];
+      const catalogEvidence=(catalog.decisions[id]?.topics||[]).filter(t=>t.id===topicId).map(t=>t.evidence);
+      const evidence=[...comparisonEvidence,...catalogEvidence]
+        .find(e=>e.decision===id && String(e.start)===params.get('at') && String(e.end)===params.get('end'));
+      if(evidence) target={id:evidence.passage_id,start:evidence.start,end:evidence.end,pages:evidence.printed_pages || [],sources:evidence.sources || [],scans:evidence.scans,editorial_note:evidence.editorial_note,ai:{source_warning:evidence.source_warning}};
+    } else if (params.get('mode') === 'analysis' && analysis) {
+      const at=Number(params.get('at')), end=Number(params.get('end'));
+      const evidence=analysis.sections.flatMap(s=>s.evidence).find(e=>e.start===at && e.end===end);
+      if (evidence) target={id:evidence.passage_id,start:evidence.start,end:evidence.end,pages:evidence.printed_pages || [],sources:evidence.sources || [],scans:evidence.scans,ai:{source_warning:evidence.source_warning}};
+    } else if (inSense) {
       await loadSense();
       if (S.detailId !== id || $('#detail').hidden) return;
       target = S.sense.engines.flatMap(e => e.data.passages).find(x => x.decision === id && String(x.start) === params.get('at') && String(x.end) === params.get('end'));
       if (target) {
-        const result = S.sense.engines.flatMap(e => e.engine.search(params.get('q') || '', S.sense.config.method).hits).find(h => h.passage.id === target.id);
+        const result = window.Concept.searchAll(S.sense.engines.map(e=>e.engine),params.get('q') || '',S.sense.config.method,{partial:params.get('partial')==='1'}).hits.find(h=>h.passage.id===target.id);
         senseTerms = [params.get('q') || '', ...(result ? result.matched : [])];
+        partialMissing = result && result.partial ? result.missing : [];
+        if (result?.context) target={...target,context:result.context};
       }
     }
-    const cited = S.meta.decisions.filter(x => x.cites.some(c => c[0] === d.vol && c[1] === d.num));
-    const inCorpus = ([y, n]) => S.meta.decisions.find(x => x.vol === y && x.num === n);
+    const revision=S.an.source_revisions?.[id];
+    if (revision && params.has('at') && params.get('mode')!=='quote' && params.get('v')!==revision.version) {
+      target=null; senseTerms=[];
+      quoteWarning='Порядок колонок и границы этого решения восстановлены. Диапазон в старой ссылке не подтверждён; открыт полный текст. Найдите цитату заново через поиск или разбор решения.';
+    }
+    const outgoing = precedents.references.filter(r=>r.source_id===id);
+    const incoming = precedents.references.filter(r=>r.status==='linked' && r.target_id===id && precedentTarget(r));
     const qs = inSense ? senseTerms.flatMap(L.stems) : queryStems();
     const paintPiece = t => qs.length ? highlight(M(t), qs) : L.esc(M(t));
-    const paint = t => {
+    const paint = (t, field='text') => {
       let offset = 0, first = true;
       return t.split('\n\n').map(par => {
         const length = Array.from(par).length;
-        const a = target ? Math.max(0, target.start-offset) : length, b = target ? Math.min(length, target.end-offset) : 0;
+        const applies = target && (target.field || 'text') === field;
+        const a = applies ? Math.max(0, target.start-offset) : length, b = applies ? Math.min(length, target.end-offset) : 0;
         let html;
         if (a < b) {
           html = paintPiece(window.Concept.slice(par,0,a)) + '<span class="passage-focus"' + (first ? ' id="passage-target" tabindex="-1"' : '') + '>' + paintPiece(window.Concept.slice(par,a,b)) + '</span>' + paintPiece(window.Concept.slice(par,b)); first = false;
         } else html = paintPiece(par);
-        offset += length+2; return '<p>'+html+'</p>';
+        const attrs=' data-reader-field="'+field+'" data-reader-start="'+offset+'" data-reader-end="'+(offset+length)+'"';
+        offset += length+2; return '<p'+attrs+'>'+html+'</p>';
       }).join('');
     };
-    const cite = `Решение ${d.dept === 'Общее собрание' ? 'Общего собрания' : d.dept.replace('кий', 'кого').replace('ый', 'ого')} Правительствующего Сената ${d.vol} г. № ${d.num}` + (target ? ', ' + pageLabel(target) : '');
+    const cite = `Решение ${d.dept === 'Общее собрание' ? 'Общего собрания' : d.dept.replace('кий', 'кого').replace('ый', 'ого')} Правительствующего Сената ${d.vol} г. № ${d.num}` + (target ? ', ' + (target.field==='headnote'?'заголовок издания':pageLabel(target)) : '');
     const body = h('div', { class: 'text', html: paint(text) });
     box.replaceChildren(
       h('div', { class: 'detail-head' },
         h('h2', {}, `№ ${d.num} · ${fmtDate(d.date, d.date_label)}`),
         h('div', { class: 'muted' }, `${d.dept}, том ${d.vol}`),
         h('span', { class: 'badge big' }, d.outcome)),
-      h('p', { class: 'headnote' }, M(d.headnote)),
+      target && target.field==='headnote' ? h('div', {class:'headnote',html:paint(d.headnote,'headnote')}) : h('p', { class: 'headnote', 'data-reader-field':'headnote', 'data-reader-start':0, 'data-reader-end':Array.from(d.headnote).length }, M(d.headnote)),
+      target && target.law ? h('section',{class:'law-detail','data-law-id':target.law.id},
+        target.law.historical_note ? h('p',{class:'preliminary-note law-historical-note'},target.law.historical_note) : '',
+        target.law.historical_note && target.law.current_references?.length ? h('p',{class:'law-current-references'},
+          'Текущая привязка: ',target.law.current_references.map((r,i)=>h('span',{},i ? '; ' : '',h('a',{href:r.passage_url},r.code+' '+r.article)))) : '',
+        h('h3',{},'Законодательная ссылка · '+target.law.article),
+        h('p',{class:'law-status small'},lawStatus(target.law)),
+        h('blockquote',{class:'source-quote law-exact-quote'},target.quote_original),
+        h('p',{class:'muted small'},target.law.citation_status),
+        target.law.attribution_note ? h('p',{class:'preliminary-note editorial-note'},target.law.attribution_note) : '',
+        lawEvidence(target.law)) : '',
+      precedents.unavailable ? h('div',{class:'precedents-unavailable small',role:'status'},
+        h('p',{},'Связи с прежними решениями пока недоступны.'),
+        h('button',{class:'btn ghost',id:'precedents-retry',onclick:()=>openDetail(id)},'Повторить загрузку связей')) : '',
+      partialMissing.length ? h('p',{class:'search-partial-note'},'Частичное совпадение. Не найдена часть запроса: '+partialMissing.map(w=>'«'+w+'»').join(', ')+'.') : '',
       h('dl', { class: 'meta' },
         d.presiding ? h('div', {}, h('dt', {}, 'Председательствовал'), h('dd', {}, personLink(d.presiding))) : '',
         d.reporter ? h('div', {}, h('dt', {}, 'Докладывал'), h('dd', {}, personLink(d.reporter))) : '',
@@ -359,6 +672,7 @@
       d.participant_ids && d.participant_ids.length ? h('section',{},h('h3',{},'Участники по указателю издания'),
         h('p',{class:'muted small'},'Записи печатного указателя, без определения роли в деле.'),
         h('ul',{},d.participant_ids.map(id=>h('li',{},participantLink(S.participantMap.get(id)))))) : '',
+      analysisSection(d, analysis),
       Object.keys(d.statutes).length ? h('section', {}, h('h3', {}, 'Упомянутые статьи'), h('div', { class: 'chips' },
         Object.keys(d.statutes).sort().map(s => h('button', { class: 'chip stat', title: 'Найти все решения с этой статьёй', onclick: () => go('search', { s }) }, statLabel(s))))) : '',
       h('div', { class: 'toolbar' },
@@ -366,22 +680,33 @@
           h('button', { class: 'seg-b', 'aria-pressed': String(!S.opts.modern), onclick: () => setModern(false) }, 'Дореформенная'),
           h('button', { class: 'seg-b', 'aria-pressed': String(S.opts.modern), onclick: () => setModern(true) }, 'Современная')),
         h('button', { class: 'btn', onclick: e => { const btn = e.target; const txt = cite + '\n' + location.href; const done = ok => { btn.textContent = ok ? 'Скопировано ✓' : 'Не удалось скопировать — выделите текст вручную'; setTimeout(() => btn.textContent = 'Скопировать ссылку и цитату', 2000); }; try { navigator.clipboard.writeText(txt).then(() => done(true), () => done(false)); } catch (err) { done(false); } } }, 'Скопировать ссылку и цитату')),
+      target && target.ai && target.ai.source_warning ? h('p',{class:'preliminary-note source-warning'},'Ограничение источника: '+target.ai.source_warning) : sourceWarning(d),
+      target && target.editorial_note ? h('p',{class:'preliminary-note editorial-note'},target.editorial_note) : '',
+      quoteWarning ? h('p',{class:'preliminary-note reader-source-warning',role:'status'},quoteWarning) : '',
+      target?.context ? contextEvidence(d,text,target.context,senseTerms) : '',
       body,
-      h('p', { class: 'muted small' }, 'Текст получен автоматическим распознаванием скана (модель ИИ) и может содержать ошибки: числа, номера статей и фамилии сверяйте с изданием. Современная орфография — автоматическая, для удобства чтения.'),
-      d.cites.length ? h('section', {}, h('h3', {}, 'Ссылается на решения'), h('ul', {}, d.cites.map(c => { const t = inCorpus(c); return h('li', {}, t ? h('a', { href: '#/d/' + t.id }, `${c[0]} г. № ${c[1]} — ${M(t.headnote).slice(0, 90)}…`) : `${c[0]} г. № ${c[1]} (нет в корпусе)`); }))) : '',
-      cited.length ? h('section', {}, h('h3', {}, 'Цитируется в'), h('ul', {}, cited.map(x => h('li', {}, h('a', { href: '#/d/' + x.id }, `${x.vol} г. № ${x.num} — ${M(x.headnote).slice(0, 90)}…`))))) : '',
+      h('p', { class: 'muted small' }, 'Текст получен автоматическим распознаванием скана и может содержать ошибки: числа, номера статей и фамилии сверяйте с изданием. Современная орфография — автоматическая, для удобства чтения.'),
+      outgoing.length ? h('section', {class:'precedents-out'}, h('h3', {}, 'Ссылки на прежние решения'),
+        h('p',{class:'muted small'},'Переход установлен только при совпадении департамента, года и номера. Цитата показывает упоминание, а не обязательное согласие Сената с ним.'),
+        h('ul',{},precedentGroups(outgoing).map(refs=>precedentEntry(refs,false)))) : '',
+      incoming.length ? h('section', {class:'precedents-in'}, h('h3', {}, 'Упоминается в других решениях'),
+        h('p',{class:'muted small'},'Наличие ссылки не означает согласия Сената с процитированным доводом. Сверяйте контекст.'),
+        h('ul',{},precedentGroups(incoming,true).map(refs=>precedentEntry(refs,true)))) : '',
       d.similar.length ? h('section', {}, h('h3', {}, 'Похожие решения'), h('ul', {}, d.similar.map(([j, sc]) => { const x = S.meta.decisions[j]; return h('li', {}, h('a', { href: '#/d/' + x.id }, `${x.vol} г. № ${x.num} — ${M(x.headnote).slice(0, 100)}…`), h('span', { class: 'muted' }, ` (сходство ${Math.round(sc * 100)}%)`)); }))) : '');
-    const scanSection=h('details',{class:'detail-scans'},h('summary',{},target?'Сканы найденного фрагмента':'Страницы решения в издании'));
+    const scanSection=h('details',{class:'detail-scans'},h('summary',{},target?(target.field==='headnote'?'Сканы заголовка издания':'Сканы найденного фрагмента'):'Страницы решения в издании'));
     scanSection.addEventListener('toggle',async()=>{
       if(!scanSection.open || scanSection.dataset.loaded)return;
       try {
         const scans=await loadScans(d.vol);
-        const refs=target?scans.passages[target.id]:(scans.decisions[d.id]||[]).map(file=>({...scans.pages[file],kind:'page'}));
+        let refs=target?(target.scans || scans.passages[target.id]):(scans.decisions[d.id]||[]).map(file=>({...scans.pages[file],kind:'page'}));
+        if(target && target.precedent && refs) refs=refs.filter(r=>target.sources.some(s=>s.file===r.file));
+        if(target && (!refs || !refs.length)) refs=(target.sources || []).map(s=>scans.pages[s.file]).filter(Boolean).map(p=>({...p,kind:'page'}));
         if(refs && refs.length) {scanSection.append(scanStrip(d,refs));scanSection.dataset.loaded='1';}
         else scanSection.append(h('p',{class:'small'},'Сканы этого места пока недоступны.'));
       } catch(err) {scanSection.append(h('p',{class:'small'},'Не удалось загрузить список страниц. Закройте и откройте этот раздел для повторной попытки.'));}
     });
     body.before(scanSection);
+    S.reader.attachDetail({d,text,body,headnote:box.querySelector('.headnote'),target});
     $('#detail').scrollTop = 0;
     if (target) {
       const anchor = $('#passage-target');
@@ -402,7 +727,7 @@
     return out + L.esc(par.slice(pos));
   }
   function personLink(name) { return h('a', { href: '#/search?p=' + encodeURIComponent(name) }, name); }
-  function closeDetail() { $('#detail').hidden = true; document.body.classList.remove('modal'); }
+  function closeDetail() { S.reader.clearDetail(); $('#detail').hidden = true; document.body.classList.remove('modal'); }
 
   /* ---------------------------------------------------------------- элементы управления */
   function fillSelect(sel, items, first) {
@@ -448,7 +773,7 @@
     $('#gloss').addEventListener('change', e => { S.opts.gloss = e.target.checked; runSearch(); });
     $('#more').addEventListener('click', () => { S.shown += 20; renderResults(++runToken); });
     $('#reset').addEventListener('click', () => go('search'));
-    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const mode = ['sense','participants'].includes(p.get('mode')) ? p.get('mode') : 'search'; p.delete('at'); p.delete('end'); p.delete('mode'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
+    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const requested = p.get('mode'); const mode = requested === 'quote' ? 'reader' : requested === 'passage' ? 'sense' : (requested === 'analysis' ? 'analyses' : (['sense','participants','map','laws','guides','analyses','api','reader'].includes(requested) ? requested : 'search')); p.delete('at'); p.delete('end'); p.delete('mode'); p.delete('ref'); p.delete('law'); p.delete('field'); p.delete('sha'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !document.querySelector('.scan-dialog[open]') && !$('#detail').hidden) $('#detail-close').click(); });
     $('#examples').append(...['недействительность сделки', 'возмещение убытков', 'исковая давность', 'договор аренды', 'банкротство', 'страховое возмещение', 'перевозка грузов', 'исполнитель завещания']
       .map(x => h('button', { class: 'chip', onclick: () => go('search', { q: x }) }, x)));
@@ -466,6 +791,14 @@
         }}, q))))));
     }
     $('#sense-more').addEventListener('click', () => { S.sense.shown += 10; renderSense(++S.sense.token); });
+    fillSelect($('#map-topic'), Object.entries(an.topics).map(([k, n]) => [k, `${k} (${n})`]), 'Все темы');
+    $('#map-form').addEventListener('submit', e => { e.preventDefault(); go('map', {q:$('#map-q').value.trim(),t:$('#map-topic').value}); });
+    $('#map-reset').addEventListener('click', () => go('map'));
+    $('#map-concepts .concept-catalog').append(...MODERN_CONCEPTS.map(([title, queries]) => h('section', {},
+      h('h3', {}, title), h('div', {class:'chips'}, queries.map(q => h('button', {class:'chip', onclick:()=>go('map',{q,t:S.map.topic})}, q))))));
+    $('#laws-form').addEventListener('submit', e => { e.preventDefault(); go('laws', {q:$('#laws-q').value.trim(),c:$('#laws-code').value}); });
+    $('#laws-reset').addEventListener('click', () => go('laws'));
+    $('#laws-code').addEventListener('change', () => go('laws', {q:$('#laws-q').value.trim(),c:$('#laws-code').value}));
     $('#theme').addEventListener('click', () => { const r = document.documentElement; const dark = r.dataset.theme === 'dark' || (!r.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches); r.dataset.theme = dark ? 'light' : 'dark'; });
   }
   function pushSearchOrRun() { const { path } = readHash(); if (path.startsWith('d/')) { closeDetail(); } pushSearch(); if (!location.hash.startsWith('#/search')) return; runSearch(); }
@@ -493,9 +826,12 @@
     $('#sense-results').replaceChildren();
     try {
       await loadSense(); if (token !== S.sense.token) return;
-      const results = S.sense.engines.map(e => e.engine.search(S.sense.q, S.sense.config.method));
-      S.sense.hits = results.flatMap(r=>r.hits).sort((a,b)=>b.score-a.score || a.passage.id.localeCompare(b.passage.id));
-      S.sense.concepts = results[0] ? results[0].concepts : [];
+      const result = window.Concept.searchAll(S.sense.engines.map(e=>e.engine),S.sense.q,S.sense.config.method,{partial:true});
+      const optedIn = readHash().p.get('partial') === '1';
+      S.sense.partial = result.partial && optedIn;
+      S.sense.suggested = result.partial && !optedIn ? result.hits.length : 0;
+      S.sense.hits = result.partial && !optedIn ? [] : result.hits;
+      S.sense.concepts = result.concepts;
       S.sense.shown = 10;
       await renderSense(token);
     } catch (err) {
@@ -507,24 +843,42 @@
     const partial = p.pages.length && p.sources.some(s=>s.page===null);
     return (p.pages.length ? 'с. ' + p.pages.join(', ') : 'страница не определена') + (recovered ? ' (номер восстановлен по соседним колонтитулам)' : '') + (partial ? ' (часть страниц не определена)' : '');
   }
+  function contextEvidence(d,text,passages,terms) {
+    return h('details',{class:'search-context'},
+      h('summary',{},'Часть совпадений найдена в соседнем фрагменте этого решения'),
+      h('p',{class:'small muted'},'Совпадение относится к небольшому контексту; отдельный фрагмент может содержать лишь часть слов запроса.'),
+      ...passages.map(p=>h('section',{},
+        h('blockquote',{class:'source-quote',html:window.Concept.highlight(M(window.Concept.slice(text,p.start,p.end)),terms)}),
+        h('a',{href:'#/d/'+d.id+'?'+new URLSearchParams({mode:'passage',at:p.start,end:p.end})},'Открыть соседний фрагмент · '+pageLabel(p)))));
+  }
   async function renderSense(token) {
     const box = $('#sense-results'); box.replaceChildren();
     const hits = S.sense.hits;
     $('#sense-status').replaceChildren(h('strong', {}, `${hits.length} ${plural(hits.length,'фрагмент','фрагмента','фрагментов')}`),
-      h('span', {class:'muted'}, S.sense.concepts && S.sense.concepts.length ? ' · понятия: '+S.sense.concepts.map(c=>c.concept).join(', ') : ''));
+      h('span', {class:'muted'}, S.sense.concepts && S.sense.concepts.length ? ' · понятия: '+S.sense.concepts.map(c=>c.concept).join(', ') : ''),
+      S.sense.partial ? h('span',{class:'search-partial-note'},' · частичные совпадения') : '');
     if (!hits.length) {
-      box.append(h('p', {class:'empty'}, 'Подходящие фрагменты в доступных томах не найдены. Это не доказывает отсутствия такой практики: попробуйте другое понятие или обычный поиск.')); return;
+      box.append(h('p', {class:'empty'}, 'Подходящие фрагменты в доступных томах не найдены. Это не доказывает отсутствия такой практики: попробуйте другое понятие или обычный поиск.'));
+      if (S.sense.suggested) box.append(h('p',{class:'small'},'Есть фрагменты, в которых совпадает всё, кроме одной части запроса.'),
+        h('button',{class:'btn ghost',id:'sense-partial',onclick:()=>go('sense',{q:S.sense.q,partial:'1'})},'Показать частичные совпадения ('+S.sense.suggested+')'));
+      return;
     }
+    if (S.sense.partial) box.append(h('p',{class:'search-partial-note'},'Совпадений по всему запросу нет. Ниже — фрагменты, где не совпала одна часть запроса; она указана в каждой карточке.'),
+      h('button',{class:'btn ghost',id:'sense-strict',onclick:()=>go('sense',{q:S.sense.q})},'Вернуться к полному запросу'));
     for (const hit of hits.slice(0,S.sense.shown)) {
       const p=hit.passage, d=S.meta.decisions.find(x=>x.id===p.decision);
       const text=await textOf(d); if(token!==S.sense.token) return;
       const original=window.Concept.slice(text,p.start,p.end);
       const terms=[S.sense.q,...hit.matched];
-      const link='#/d/'+d.id+'?'+new URLSearchParams({mode:'sense',q:S.sense.q,at:String(p.start),end:String(p.end)});
+      const link='#/d/'+d.id+'?'+new URLSearchParams({mode:'sense',q:S.sense.q,at:String(p.start),end:String(p.end),...(hit.partial ? {partial:'1'} : {})});
       box.append(h('article', {class:'card passage', 'data-passage':p.id},
+        hit.context ? h('p',{class:'small search-context-label'},'Совпадение с учётом соседнего контекста') : '',
+        hit.partial ? h('p',{class:'search-partial-note'},'Частичное совпадение. Не найдена часть запроса: '+hit.missing.map(w=>'«'+w+'»').join(', ')+'.') : '',
+        p.ai && p.ai.source_warning ? h('p',{class:'preliminary-note source-warning'},'Ограничение источника: '+p.ai.source_warning) : '',
         h('div', {class:'passage-text',html:(p.start ? '… ' : '') + window.Concept.highlightEvidence(M(original),terms,p.ai ? M(p.ai.evidence) : '') + (p.end < Array.from(text).length ? ' …' : '')}),
         p.ai ? h('div', {class:'ai-note'}, h('strong', {}, 'Пояснение ИИ: '), p.ai.summary,
           h('details', {}, h('summary', {}, 'Цитата, на которой основано пояснение'), h('p', {}, '«… ' + M(p.ai.evidence) + ' …»'))) : '',
+        hit.context ? contextEvidence(d,text,hit.context,terms) : '',
         h('div', {class:'card-top'}, h('span', {class:'num'}, `№ ${d.num}`), h('span', {class:'muted'}, `${fmtDate(d.date, d.date_label)} · том ${d.vol} · ${pageLabel(p)}`), h('span', {class:'badge'}, d.outcome)),
         h('p', {class:'small'}, h('a', {href:link}, 'Открыть в карточке на этом месте'))));
       try {
@@ -533,6 +887,252 @@
       } catch(err) { /* Скан не является условием доступа к первоисточнику. */ }
     }
     $('#sense-more').hidden=hits.length<=S.sense.shown;
+  }
+
+  /* ---------------------------------------------------------------- юридическая карта */
+  function mapNode(title, note, content, key) {
+    return h('section', {class:'map-node', 'data-map-node':key}, h('h3',{},title),
+      note ? h('p',{class:'muted small'},note) : '', content);
+  }
+  function mapDecisionHref(d, hit) {
+    const params={mode:'map',q:S.map.q,t:S.map.topic};
+    if (hit) { params.at=String(hit.passage.start); params.end=String(hit.passage.end); }
+    return '#/d/'+d.id+'?'+new URLSearchParams(params);
+  }
+  function mapDecisionList(items) {
+    return h('ol',{class:'map-list'},items.map(({d,hit})=>h('li',{},
+      h('a',{href:mapDecisionHref(d,hit)},`№ ${d.num}, ${d.vol} г.`), ' · ', M(d.headnote.slice(0,150))+(d.headnote.length>150?'…':''),
+      h('div',{class:'chips'},...d.topics.map(t=>h('button',{class:'chip',onclick:()=>go('map',{q:S.map.q,t})},t))))));
+  }
+  async function renderMap() {
+    const token=++S.map.token, q=S.map.q.trim(), topic=S.map.topic;
+    const status=$('#map-status'), box=$('#map-results'); box.replaceChildren();
+    if (!q && !topic) {
+      status.textContent='Выберите тему или введите современное понятие.';
+      box.append(mapNode('Темы корпуса','Метки определены автоматически по заголовкам и текстам; они служат навигацией, а не юридической квалификацией.',
+        h('div',{class:'chips'},...Object.entries(S.an.topics).sort((a,b)=>b[1]-a[1]).map(([t,n])=>h('button',{class:'chip',onclick:()=>go('map',{t})},`${t} (${n})`))),'themes'));
+      return;
+    }
+    status.textContent='Собираем связи по первоисточникам…';
+    let matched=[], concepts=[];
+    if (q) {
+      try {
+        await loadSense(); if(token!==S.map.token)return;
+        const result=window.Concept.searchAll(S.sense.engines.map(e=>e.engine),q,S.sense.config.method);
+        concepts=result.concepts;
+        matched=result.hits;
+        if(topic) matched=matched.filter(hit=>S.meta.decisions.find(d=>d.id===hit.passage.decision).topics.includes(topic));
+        // У карты есть граница релевантности: связи выводятся из верхних фрагментов,
+        // а не из каждого случайного совпадения в полном тексте.
+        matched=matched.slice(0,50);
+      } catch(err) {
+        if(token===S.map.token)status.textContent='Не удалось загрузить поиск по смыслу: '+err.message+'. Повторите запрос.';
+        return;
+      }
+    }
+    const byDecision=new Map();
+    for(const hit of matched) {
+      const d=S.meta.decisions.find(x=>x.id===hit.passage.decision);
+      if(!byDecision.has(d.id) || byDecision.get(d.id).hit.score<hit.score) byDecision.set(d.id,{d,hit});
+    }
+    let decisions=q ? [...byDecision.values()].sort((a,b)=>b.hit.score-a.hit.score || a.d.i-b.d.i) :
+      S.meta.decisions.filter(d=>d.topics.includes(topic)).map(d=>({d,hit:null}));
+    const statutes={}, participants=new Map(), topicCounts={};
+    for(const {d} of decisions) {
+      Object.entries(d.statutes).forEach(([s,n])=>statutes[s]=(statutes[s]||0)+n);
+      (d.participant_ids||[]).forEach(id=>{const entry=S.participantMap.get(id);if(entry)participants.set(id,entry);});
+      d.topics.forEach(t=>topicCounts[t]=(topicCounts[t]||0)+1);
+    }
+    const sources=matched.slice(0,8), topDecisions=decisions.slice(0,25);
+    const hasSources=Boolean(q);
+    status.replaceChildren(h('strong',{},`${decisions.length} ${plural(decisions.length,'решение','решения','решений')}`),
+      h('span',{class:'muted'},hasSources ? ` · связи по ${matched.length} ${plural(matched.length,'фрагменту','фрагментам','фрагментам')} в ранжированной выдаче` : ` · тема: ${topic}`),
+      concepts.length ? h('span',{class:'muted'},' · справочник: '+concepts.map(c=>c.concept).join(', ')) : '');
+    if(!decisions.length) {
+      box.append(h('p',{class:'empty'},'Связей не найдено. Это не доказывает отсутствия практики: смените понятие или снимите тематический фильтр.'));
+      return;
+    }
+    const grid=h('div',{class:'map-grid'});
+    if(hasSources) {
+      const sourceItems=[];
+      for(const hit of sources) {
+        const p=hit.passage,d=S.meta.decisions.find(x=>x.id===p.decision),text=await textOf(d); if(token!==S.map.token)return;
+        const original=window.Concept.slice(text,p.start,p.end), link=mapDecisionHref(d,hit);
+        sourceItems.push(h('li',{},h('a',{href:link},`№ ${d.num}, ${d.vol} г. · ${pageLabel(p)}`),
+          hit.context ? h('p',{class:'small search-context-label'},'Совпадение с учётом соседнего контекста') : '',
+          h('div',{class:'small',html:'«… '+window.Concept.highlightEvidence(M(original),[q,...hit.matched],p.ai ? M(p.ai.evidence) : '')+' …»'})));
+      }
+      grid.append(mapNode('Фрагменты первоисточника','Каждая связь начинается с ранжированного фрагмента; ссылка открывает точное место и его скан.',h('ol',{class:'map-list map-sources'},sourceItems),'sources'));
+    }
+    grid.append(mapNode('Решения','Показаны до 25 решений; в каждой карточке сохраняются исходная тема и прямая ссылка.',mapDecisionList(topDecisions),'decisions'));
+    const statRows=Object.entries(statutes).filter(([s])=>!s.startsWith('?')).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).slice(0,20);
+    grid.append(mapNode('Упомянутые нормы','Это извлечённые ссылки из найденных решений. Номер акта нужно сверять с изданием.', statRows.length ?
+      h('div',{class:'chips'},...statRows.map(([s,n])=>h('a',{class:'chip stat',href:'#/search?'+new URLSearchParams({s})},`${statLabel(s)} (${n})`))) : h('p',{class:'muted'},'Определённых ссылок на статьи нет.'),'statutes'));
+    const entries=[...participants.values()].sort((a,b)=>participantLabel(a).localeCompare(participantLabel(b),'ru')).slice(0,30);
+    grid.append(mapNode('Участники','Записи печатных указателей, связанные с найденными решениями. Они не устанавливают процессуальную роль или биографию.',entries.length ?
+      h('ul',{class:'map-list'},entries.map(entry=>h('li',{},participantLink(entry)))) : h('p',{class:'muted'},'В печатных указателях для этих решений записей нет.'),'participants'));
+    const relatedTopics=Object.entries(topicCounts).sort((a,b)=>b[1]-a[1]);
+    grid.append(mapNode('Темы в выборке','Автоматические темы — вход в другую ветвь карты.',h('div',{class:'chips'},...relatedTopics.map(([t,n])=>h('button',{class:'chip',onclick:()=>go('map',{q:S.map.q,t})},`${t} (${n})`))),'related-topics'));
+    box.append(grid);
+  }
+
+  /* ---------------------------------------------------------------- законодательство */
+  async function loadLaws() {
+    if (!S.laws.promise) S.laws.promise = loadJSON('laws.json').then(data => {
+      S.laws.data = data;
+      const select = $('#laws-code');
+      if (select.options.length <= 1) fillSelect(select,
+        [...data.acts.map(act => [act.code, `${act.code} · ${act.short_title}`]), ['?', 'Акт не установлен']], 'Все акты и неопределённые ссылки');
+      return data;
+    }).catch(err => { S.laws.promise = null; throw err; });
+    return S.laws.promise;
+  }
+  function lawText(value) {
+    return L.modernize(String(value || '')).toLowerCase().replace(/ё/g, 'е').replace(/[^а-я0-9]+/g, ' ').trim();
+  }
+  function lawTerms(query) {
+    return lawText(query).split(' ').filter(term=>term && !['ст','статья','статьи'].includes(term));
+  }
+  function lawActText(act) { return lawText(act ? [act.code, act.title, act.short_title, ...(act.aliases || [])].join(' ') : 'Акт не установлен неопределённая ссылка'); }
+  function lawCitationMatches(row, act, terms) {
+    const hay = lawActText(act) + ' ' + lawText([row.article, row.year, row.decision_number, row.decision_id, row.context_original].join(' '));
+    return terms.every(term => hay.includes(term));
+  }
+  function lawStatus(row) {
+    if (row.historical_note) return 'Ссылка предыдущей версии: акт мог быть уточнён';
+    return row.verification_status==='context_verified' ? 'Акт подтверждён по контексту' :
+      row.verification_status==='act_unknown' ? 'Акт не установлен' : 'Прежняя привязка: акт отдельно не проверен';
+  }
+  function lawRangeURL(row, span) {
+    const params = new URLSearchParams((row.passage_url || '').split('?')[1] || '');
+    params.set('mode','laws'); params.set('law',row.id); params.set('c',row.code); params.set('q',row.article);
+    params.set('at',String(span.start)); params.set('end',String(span.end));
+    if (span.field && span.field !== row.field) params.set('field',span.field);
+    return '#/d/'+row.decision_id+'?'+params;
+  }
+  function lawProofs(row) {
+    const proofs = [ ...(row.evidence || []), ...(row.occurrences || []).flatMap(o=>o.evidence || []) ];
+    return [...new Map(proofs.map(proof=>[JSON.stringify([proof.kind,proof.path,proof.field,proof.start,proof.end]),proof])).values()];
+  }
+  function lawProof(row, proof) {
+    const printed = proof.kind==='printed_index';
+    return h('section',{class:'law-proof','data-kind':proof.kind},
+      h('p',{class:'small'},printed ? 'Печатный указатель законов' : proof.role==='act_identity' ? 'Уточнение акта и территории по контексту' : proof.kind==='repeat' ? 'Повторная ссылка на тот же акт' : 'Прямое название акта в источнике',
+        !printed && proof.field==='headnote' ? ' · заголовок издания (OCR)' : ''),
+      printed && proof.heading ? h('div',{},h('p',{class:'small muted'},'Рубрика указателя (буквально):'),
+        h('blockquote',{class:'source-quote law-index-heading'},proof.heading.quote_original)) : '',
+      printed && proof.edition_continuation ? h('div',{},h('p',{class:'small muted'},'Продолжение рубрики / указание издания (буквально):'),
+        h('blockquote',{class:'source-quote law-index-edition'},typeof proof.edition_continuation==='string'?proof.edition_continuation:(proof.edition_continuation.quote_original || proof.edition_continuation.quote || proof.edition_continuation.line))) : '',
+      h('blockquote',{class:'source-quote law-proof-quote'},proof.quote_original),
+      h('p',{class:'small'},printed ? h('a',{class:'law-index-source',href:(window.LEX_INLINE?'https://ivseliv.github.io/senat/lex/':'')+proof.path,target:'_blank',rel:'noopener'},'Открыть полный OCR печатного указателя') :
+        h('a',{class:'law-proof-source',href:lawRangeURL(row,proof)},'Показать это основание в решении')));
+  }
+  function lawEvidence(row) {
+    const proofs = lawProofs(row), occurrences = row.occurrences || [];
+    const detail = h('details',{class:'analysis-evidence law-evidence'},
+      h('summary',{},proofs.length ? 'Основания привязки и буквальные цитаты' : row.verification_status==='act_unknown' ? 'Буквальная ссылка и доступные места в источнике' : 'Буквальная ссылка · основание акта требует проверки'));
+    detail.addEventListener('toggle',()=>{
+      if (!detail.open || detail.dataset.loaded) return;
+      detail.dataset.loaded='1';
+      detail.append(h('p',{class:'small muted'},row.field==='headnote'?'Цитата статьи в заголовке издания (OCR):':'Цитата статьи в тексте решения (OCR):'),
+        h('blockquote',{class:'source-quote law-citation-quote'},row.quote_original),
+        h('p',{class:'small'},h('a',{class:'law-citation-source',href:row.passage_url || row.decision_url},'Открыть точное место ссылки в решении')),
+        ...proofs.map(proof=>lawProof(row,proof)));
+      if (occurrences.length>1) detail.append(h('details',{class:'law-occurrences'},
+        h('summary',{},'Другие места этой ссылки в источнике'),
+        h('ul',{},occurrences.filter(o=>o.field!==row.field || o.start!==row.start || o.end!==row.end).map(o=>
+          h('li',{},h('a',{href:lawRangeURL(row,o)},o.field==='headnote'?'Заголовок издания':'Текст решения'),
+            h('blockquote',{class:'source-quote'},o.quote_original))))));
+    });
+    return detail;
+  }
+  async function lawDetailTarget(d, row, params) {
+    const at=Number(params.get('at')), end=Number(params.get('end'));
+    const spans=[row,...(row.occurrences || []),...lawProofs(row).filter(e=>e.kind!=='printed_index')];
+    const span=spans.find(s=>s.start===at && s.end===end && (!params.has('field') || s.field===params.get('field')));
+    if (!span) return null;
+    const field=span.field || row.field || 'text';
+    const target={id:row.passage_id || row.id,start:at,end,field,pages:[],sources:[],scans:[],law:row,quote_original:span.quote_original,ai:{source_warning:row.source_warning}};
+    if (field==='headnote') return target;
+    if (span===row) return {...target,pages:row.printed_pages || [],sources:row.sources || [],scans:row.scans || []};
+    // Additional occurrences and direct proofs have their own exact ranges.
+    // Their pages come from source spans, never from the primary citation.
+    try {
+      if (!S.laws.passages[d.vol]) S.laws.passages[d.vol]=loadJSON(`passages-${d.vol}.json`).catch(err=>{delete S.laws.passages[d.vol];throw err;});
+      const [data, scans]=await Promise.all([S.laws.passages[d.vol],loadScans(d.vol)]);
+      const passages=data.passages.filter(p=>p.decision===d.id && p.start<end && p.end>at);
+      target.sources=passages.flatMap(p=>p.sources || []).filter(s=>s.start<end && s.end>at);
+      target.pages=[...new Set(target.sources.map(s=>s.page).filter(p=>p!=null))];
+      target.scans=[...new Set(target.sources.map(s=>s.file))].map(file=>scans.pages[file]).filter(Boolean).map(s=>({...s,kind:'page'}));
+    } catch (err) { /* Exact text remains available when the page manifest is absent. */ }
+    return target;
+  }
+  function lawCitationItem(row) {
+    const source = row.field==='headnote' ? 'заголовок издания (OCR); страница не установлена' : row.scan_available ? 'скан точного места доступен' : 'скан этого места не опубликован';
+    return h('li', {class:'law-citation','data-law-id':row.id,'data-verification':row.verification_status,'data-year':String(row.year)},
+      h('a', {class:'law-open',href:row.passage_url || row.decision_url}, `${row.year} г. № ${row.decision_number} · ${row.code==='?'?'акт не установлен':row.code} · ${row.article}`),
+      h('p',{class:'law-status small'},lawStatus(row)),
+      h('div', {class:'law-quote'}, '«' + row.context_original + '»'),
+      row.source_warning ? h('p',{class:'preliminary-note source-warning'},'Ограничение источника: '+row.source_warning) : '',
+      row.attribution_note ? h('p',{class:'preliminary-note editorial-note'},row.attribution_note) : '',
+      h('p', {class:'muted small'}, row.association + ' · ' + source),lawEvidence(row));
+  }
+  function lawSummary(data) {
+    const summary=data.attribution_summary;
+    return h('div',{class:'law-summary'},
+      h('p',{class:'small'},'Единица счёта — уникальная пара «решение + обозначение статьи»; повторные упоминания внутри решения не увеличивают эти числа.'),
+      summary ? h('p',{class:'small'},`Из ${summary.baseline_unknown} исходных неопределённых пар акт установлен для ${summary.resolved_unknown}; осталось ${summary.remaining_unknown}. Подтверждено по контексту: ${summary.confirmed_citations}; прежних отдельно не проверенных привязок: ${summary.legacy_unverified_citations}. Исправлено прежних привязок: ${summary.corrected_known}.`) : '',
+      h('p',{class:'muted small'},`Известный акт, но точное место статьи в OCR не найдено: ${data.unlocated_known_mentions || 0} пар. Эти пары не входят в список цитат ниже.`));
+  }
+  async function renderLaws() {
+    const token = ++S.laws.token, status = $('#laws-status'), box = $('#laws-results');
+    box.replaceChildren(); status.textContent = 'Загружаем указатель законодательства…';
+    let data;
+    try { data = await loadLaws(); } catch (err) { if (token === S.laws.token) status.textContent = 'Не удалось загрузить указатель: ' + err.message; return; }
+    if (token !== S.laws.token) return;
+    $('#laws-code').value = S.laws.code;
+    const terms=lawTerms(S.laws.q), byCode=new Map(data.acts.map(act=>[act.code,act]));
+    const all=[...data.citations,...(data.unresolved || [])];
+    const rows=all.filter(row=>(!S.laws.code || row.code===S.laws.code) && lawCitationMatches(row,byCode.get(row.code),terms));
+    const hasQuery=Boolean(terms.length || S.laws.code), decisionCount=new Set(rows.map(row=>row.decision_id)).size;
+    const pages=Math.max(1,Math.ceil(rows.length/80)); S.laws.page=Math.min(S.laws.page,pages);
+    status.replaceChildren(h('strong',{},`${rows.length} ${plural(rows.length,'пара','пары','пар')} «решение + статья»`),
+      h('span',{class:'muted'},` · в ${decisionCount} ${plural(decisionCount,'решении','решениях','решениях')}`));
+    box.append(lawSummary(data));
+    const matchingActs=data.acts.filter(act=>(!S.laws.code || S.laws.code===act.code) && (!hasQuery || rows.some(row=>row.code===act.code)));
+    const sources=new Map(data.sources.map(source=>[source.id,source])), grid=h('div',{class:'map-grid law-grid'});
+    for (const act of matchingActs) {
+      const selected=rows.filter(row=>row.code===act.code), confirmed=selected.filter(row=>row.verification_status==='context_verified').length;
+      const articles=(hasQuery?act.articles.filter(item=>selected.some(row=>row.article===item.article)):act.articles).slice(0,18);
+      const links=(act.source_ids || []).map(id=>sources.get(id)).filter(Boolean).map(source=>h('a',{href:source.url,target:'_blank',rel:'noopener'},source.title));
+      grid.append(mapNode(`${act.code} · ${act.short_title}`,`${act.decisions} решений · ${act.citations} пар «решение + статья»`,[
+        h('p',{class:'muted small'},act.edition_note),
+        h('p',{class:'small law-sources'},'Источники названия акта: ',links.flatMap((link,i)=>i?[' · ',link]:[link])),
+        h('p',{class:'small'},`В выборке подтверждено по контексту: ${confirmed}; прежних непроверенных привязок: ${selected.length-confirmed}.`),
+        h('p',{},h('a',{class:'law-act-open',href:'#/laws?'+new URLSearchParams({c:act.code,q:S.laws.q})},'Показать ссылки на этот акт')),
+        articles.length ? h('div',{class:'chips'},articles.map(item=>h('a',{class:'chip stat',href:'#/laws?'+new URLSearchParams({c:act.code,q:item.article})},`${item.article} (${item.decisions})`))) : h('p',{class:'muted small'},'В привязанных ссылках статьи не выделены.')
+      ],'law-'+act.code));
+    }
+    const unknown=rows.filter(row=>row.code==='?');
+    if ((!S.laws.code || S.laws.code==='?') && (!hasQuery || unknown.length)) grid.append(mapNode('Акт не установлен',`${unknown.length} пар «решение + статья»`,[
+      h('p',{class:'small muted'},'Номер статьи сохранён из OCR. Опубликованных оснований недостаточно для привязки к конкретному акту.'),
+      h('a',{class:'law-unknown-open',href:'#/laws?'+new URLSearchParams({c:'?',q:S.laws.q})},'Посмотреть неопределённые ссылки')
+    ],'law-unknown'));
+    if (grid.childElementCount) box.append(grid);
+    if (!rows.length) box.append(h('p',{class:'empty'},'Не найдено. Ищите номер статьи, акт, год, номер решения или слова из контекста.'));
+    if (hasQuery && rows.length) {
+      const first=(S.laws.page-1)*80;
+      box.append(h('h3',{},S.laws.code==='?'?'Неопределённые ссылки':'Ссылки в решениях'),
+        h('ol',{class:'map-list law-citations',start:String(first+1)},rows.slice(first,first+80).map(lawCitationItem)));
+      if (pages>1) {
+        const change=page=>go('laws',{q:S.laws.q,c:S.laws.code,page:String(page)});
+        box.append(h('nav',{class:'law-pagination','aria-label':'Страницы законодательных ссылок'},
+          h('button',{class:'btn ghost',id:'laws-prev',disabled:S.laws.page===1,onclick:()=>change(S.laws.page-1)},'Назад'),
+          h('p',{class:'small'},`Страница ${S.laws.page} из ${pages} · показаны пары ${first+1}–${Math.min(first+80,rows.length)}`),
+          h('button',{class:'btn ghost',id:'laws-next',disabled:S.laws.page===pages,onclick:()=>change(S.laws.page+1)},'Далее')));
+      }
+    }
+    box.append(h('p',{class:'muted small law-note'},data.note));
   }
 
   /* ---------------------------------------------------------------- аналитика */
@@ -578,8 +1178,8 @@
         card('Кто председательствовал', 'Чаще всего в этом составе.', people('presiding')),
         card('Кто докладывал дело', '', people('reporter')),
         card('Кто давал заключение (прокуратура)', '', people('prosecutor')),
-        card('Какие прежние решения цитируются чаще всего', 'Ссылки вида «рѣш. 1887 г. № 16» — так виден «ядро» устойчивой практики. В корпус пока входят не все годы, поэтому ссылка не всегда ведёт к тексту.',
-          h('table', { class: 'tbl' }, h('thead', {}, h('tr', {}, h('th', {}, 'Решение'), h('th', {}, 'Ссылок'))), h('tbody', {}, an.cited.slice(0, 12).map(([y, n, c, i]) => h('tr', {}, h('td', {}, i != null ? h('a', { href: '#/d/' + S.meta.decisions[i].id }, `${y} г. № ${n}`) : `${y} г. № ${n}`), h('td', {}, String(c))))))),
+        card('Ссылки на прежние решения', 'Число решений, в которых встречается ссылка. Учреждения учитываются отдельно; ссылки без установленного департамента в эту таблицу не объединяются. Частота упоминаний сама по себе не определяет значение решения.',
+          h('table', { class: 'tbl' }, h('thead', {}, h('tr', {}, h('th', {}, 'Решение'), h('th', {}, 'Упоминается в'))), h('tbody', {}, (an.cited_decisions || []).slice(0, 12).map(ref=>h('tr',{},h('td',{},precedentTarget(ref) ? h('a',{href:'#/d/'+ref.target_id},precedentLabel(ref)) : precedentLabel(ref)),h('td',{},String(ref.decisions))))))),
         card('Как менялась частота слова по годам', 'Сколько раз слово встречается на 10 тысяч слов текста. Пока в корпусе мало томов — график станет содержательным по мере добавления.', trend)));
     drawTrend('железная дорога');
   }
@@ -604,6 +1204,7 @@
       $('#corpus-summary').textContent = `В корпусе: ${meta.volumes.map(v=>v.year).join(', ')} · ${meta.decisions.length} ${plural(meta.decisions.length,'решение','решения','решений')}`;
       $('#corpus-summary').hidden = false;
       S.engine = L.makeEngine(index, meta.decisions);
+      S.reader=window.SenatReaderUI.create({meta,textOf,loadJSON,loadScans,formatDate:fmtDate,setModern,isModern:()=>S.opts.modern,warningOf:d=>(S.an.source_warnings?.[d.id]?.messages||[]).join(' ')});
       $('#loading').hidden = true; setupControls(); route(); addEventListener('hashchange', route);
     } catch (e) {
       $('#loading').textContent = 'Не удалось загрузить данные: ' + e.message + '. Откройте страницу через веб-сервер (например, `python3 -m http.server` в папке lex).';

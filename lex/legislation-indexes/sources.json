@@ -1,0 +1,59 @@
+{
+  "sources": [
+    {
+      "year": 1897,
+      "path": "legislation-indexes/1897.txt",
+      "sha256": "942b1330f3c0919f3d97ce8b33f6499c064fb061ba4669c0f2a9bbcab05dc60b",
+      "offset_unit": "Unicode code points; end exclusive",
+      "byte_length": 21684,
+      "origin_path": "../search-quality-2026-10/source/ocr/1897/volume.txt",
+      "origin_sha256": "74047301b0811df322eff270634be322069d8cccbdd255fe79a117be4c9f33b7",
+      "origin_start_line": 550,
+      "origin_stop_line_exclusive": 1377,
+      "trailing_blank_lines_removed": 1
+    },
+    {
+      "year": 1904,
+      "path": "legislation-indexes/1904.txt",
+      "sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+      "offset_unit": "Unicode code points; end exclusive",
+      "byte_length": 29707,
+      "origin_path": "lex/data/backmatter-1904.txt",
+      "origin_sha256": "073d4f630e41decc93b6593d807a322e745751cb8d880069fb80ab7f9591ede3",
+      "origin_start_line": 457,
+      "origin_stop_line_exclusive": 1579,
+      "recovered_title_marker": {
+        "path": "../search-quality-2026-10/source/ocr/1904/p0173_R.txt",
+        "line": 1,
+        "literal": "[[К: УКАЗАТЕЛЬ ЗАКОНОВЪ,]]",
+        "sha256": "c9efdee40d5994781d2c77a3aaea197388001d8d6ec76e585c362cb2bcd00067"
+      },
+      "trailing_blank_lines_removed": 1
+    },
+    {
+      "year": 1905,
+      "path": "legislation-indexes/1905.txt",
+      "sha256": "ec8e16f90923dc288eae0bc41e05926a9ef6c034b183c86159fd1fa76b74c01a",
+      "offset_unit": "Unicode code points; end exclusive",
+      "byte_length": 24623,
+      "origin_path": "lex/data/backmatter-1905.txt",
+      "origin_sha256": "60196f21130fe77110b29bce6f4c057e5144144140e6bc0c13a7413d3a68b61d",
+      "origin_start_offset": 9607,
+      "origin_start_line": 530,
+      "origin_stop_line_exclusive": 1542,
+      "trailing_whitespace_normalized": true,
+      "visual_review": {
+        "pdf_source_sha256": "23f76b0179fcf72db50890414293d1da880b76b877da7d1ec882c259e59ed3ee",
+        "pdf_pages": [
+          163,
+          164
+        ],
+        "printed_pages": [
+          "III",
+          "IV"
+        ],
+        "scope": "Рубрика Законов гражданских и отдельная строка1066⁸→83 проверены по изображению. Весь указатель по изображениям не сверялся."
+      }
+    }
+  ]
+}

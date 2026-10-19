@@ -1,0 +1,38 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:2433ea245c39e57a199c959245d64c887e26d851eed1b4249f20b59c5405b965",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "prosecutor",
+    "id": "prosecutor-1f76a8d861a6",
+    "label": "Лещинский А. А."
+  },
+  "count": 10,
+  "decision_ids": [
+    "1904-011",
+    "1904-022",
+    "1904-023",
+    "1904-027",
+    "1904-029",
+    "1904-040",
+    "1904-073",
+    "1905-002",
+    "1905-008",
+    "1905-044"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-011.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-022.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-023.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-027.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-029.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-040.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-073.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-002.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-008.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-044.json"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:2433ea245c39e57a199c959245d64c887e26d851eed1b4249f20b59c5405b965",
+  "resource": "statutes",
+  "scope": {
+    "code": "ВСУ",
+    "id": "act-9e7de1ffd315"
+  },
+  "count": 2,
+  "items": [
+    {
+      "statute": "ВСУ ст. 338",
+      "code": "ВСУ",
+      "article": "ст. 338",
+      "mentions": 1,
+      "decision_id": "1896-008",
+      "year": 1896,
+      "decision_number": 8,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-008"
+    },
+    {
+      "statute": "ВСУ ст. 246",
+      "code": "ВСУ",
+      "article": "ст. 246",
+      "mentions": 1,
+      "decision_id": "1896-047",
+      "year": 1896,
+      "decision_number": 47,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-047"
+    }
+  ]
+}

@@ -1,0 +1,4097 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:2433ea245c39e57a199c959245d64c887e26d851eed1b4249f20b59c5405b965",
+  "resource": "legislation-citations",
+  "scope": {
+    "code": "УЖД",
+    "id": "act-3d4f8b4233c8"
+  },
+  "count": 49,
+  "items": [
+    {
+      "id": "1904-060:УЖД:1:text:7193",
+      "statute": "УЖД ст. 1",
+      "code": "УЖД",
+      "article": "ст. 1",
+      "decision_id": "1904-060",
+      "year": 1904,
+      "decision_number": 60,
+      "field": "text",
+      "start": 7193,
+      "end": 7198,
+      "quote_original": "ст. 1",
+      "context_original": "ыя на желѣзныхъ дорогахъ провозныя платы, дополнительныя и другія сборы, а равно правила примѣненія упомянутыхъ платъ и сборовъ (прим. I къ ст. 1 прилож. къ ст. 18 общ. уст. росс. жел. дор.). Эти последнія правила, если ими сопровождается изданіе тарифа, всегда должны быть въ виду суд",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "8cd7686db11e31857da400962f1b7769f803d8b4f6a21fc692c6f381cdf06618",
+      "headnote_sha256": "fb210ec4439e63a5f1be51c4e6b12881922cc415064fbbcde88a24aee4031075",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+1&law=1904-060%3A%D0%A3%D0%96%D0%94%3A1%3Atext%3A7193&at=7193&end=7198",
+      "source_warning": null,
+      "passage_id": "1904-060:5736-7467",
+      "sources": [
+        {
+          "page": 170,
+          "page_method": "header",
+          "file": "p0086_L.txt",
+          "start": 7193,
+          "end": 7198
+        }
+      ],
+      "printed_pages": [
+        170
+      ],
+      "scans": [
+        {
+          "file": "p0086_L.txt",
+          "page": 170,
+          "full": "scans/1904/pages/p0086_L.webp",
+          "width": 1100,
+          "height": 1646,
+          "ocr_sha256": "4cc7eebfc9049e21587c9b6bacb824c8fa2163bfb7b24071b1eb8d2d9061586e",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
+    },
+    {
+      "id": "1904-030:УЖД:10:text:21990",
+      "statute": "УЖД ст. 10",
+      "code": "УЖД",
+      "article": "ст. 10",
+      "decision_id": "1904-030",
+      "year": 1904,
+      "decision_number": 30,
+      "field": "text",
+      "start": 21990,
+      "end": 21996,
+      "quote_original": "ст. 10",
+      "context_original": "ніе С.-Петербургской судебной палаты, въ части, относящейся къ накладнымъ, признаннымъ палатою правильно перешедшими къ истцу, по нарушенію ст. 10 уст. жел. дор. и 711 ст. уст. гр. суд., отмѣнить, а въ остальной части оставить кассаціонную жалобу безъ послѣдствій; для новаго разсмотрѣн",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "d67ba7732b56ed5ab4776fbda46c296371f7568809e996ca16295d7a6f92bff9",
+      "headnote_sha256": "f98874ed8cc361d778e6e1f1bf9a2be1c8c9085b9ea73b5042ab9cd480de2ee5",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-030",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-030?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+10&law=1904-030%3A%D0%A3%D0%96%D0%94%3A10%3Atext%3A21990&at=21990&end=21996",
+      "source_warning": null,
+      "passage_id": "1904-030:20470-22203",
+      "sources": [
+        {
+          "page": 82,
+          "page_method": "header",
+          "file": "p0042_L.txt",
+          "start": 21990,
+          "end": 21996
+        }
+      ],
+      "printed_pages": [
+        82
+      ],
+      "scans": [
+        {
+          "file": "p0042_L.txt",
+          "page": 82,
+          "full": "scans/1904/pages/p0042_L.webp",
+          "width": 1100,
+          "height": 1617,
+          "ocr_sha256": "864587723e2207ba618d4672ced6ef28c8e7a5a8a38c9c4d574e55e0a13b9a65",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 21990,
+          "end": 22011,
+          "quote_original": "ст. 10 уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 21990,
+          "end": 21996,
+          "quote_original": "ст. 10",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 21990,
+              "end": 22011,
+              "quote_original": "ст. 10 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-106:УЖД:101:text:8153",
+      "statute": "УЖД ст. 101",
+      "code": "УЖД",
+      "article": "ст. 101",
+      "decision_id": "1904-106",
+      "year": 1904,
+      "decision_number": 106,
+      "field": "text",
+      "start": 8153,
+      "end": 8160,
+      "quote_original": "ст. 101",
+      "context_original": "подъ которымъ онъ тамъ записанъ, выражаетъ нумеръ предоставленной ему очереди (§ 7). Изъ сопоставленія приведенныхъ правилъ съ содержаніемъ ст. 101 уст. жел. дор. слѣдуетъ, прежде всего, признать, что нарушеніе очереди, дающее право на посуточное возна- гражденіе, есть произвольное, т.-",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "84df011b7cd7154ff710a934f60a446c0e9b0dde082086b9115ebda0db6268de",
+      "headnote_sha256": "d6e79033de1db9244a8a9eb614216b6a0ea40b9f0c4be318aaddc7aec0fa3d82",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-106",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-106?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+101&law=1904-106%3A%D0%A3%D0%96%D0%94%3A101%3Atext%3A8153&at=8153&end=8160",
+      "source_warning": null,
+      "passage_id": "1904-106:7421-9328",
+      "sources": [
+        {
+          "page": 293,
+          "page_method": "header",
+          "file": "p0147_R.txt",
+          "start": 8153,
+          "end": 8160
+        }
+      ],
+      "printed_pages": [
+        293
+      ],
+      "scans": [
+        {
+          "file": "p0147_R.txt",
+          "page": 293,
+          "full": "scans/1904/pages/p0147_R.webp",
+          "width": 1100,
+          "height": 1605,
+          "ocr_sha256": "27556e207dd3075e08bc9140b1c812704cfdf8e8b9fbe77c5173f634eec60922",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 8153,
+          "end": 8175,
+          "quote_original": "ст. 101 уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8153,
+          "end": 8160,
+          "quote_original": "ст. 101",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 8153,
+              "end": 8175,
+              "quote_original": "ст. 101 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 9400,
+          "end": 9412,
+          "quote_original": "ст. 51 и 101",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 9400,
+              "end": 9427,
+              "quote_original": "ст. 51 и 101 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 10006,
+          "end": 10013,
+          "quote_original": "ст. 101",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 10006,
+              "end": 10028,
+              "quote_original": "ст. 101 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 14047,
+          "end": 14054,
+          "quote_original": "ст. 101",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 14047,
+              "end": 14069,
+              "quote_original": "ст. 101 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-090:УЖД:102:text:3719",
+      "statute": "УЖД ст. 102",
+      "code": "УЖД",
+      "article": "ст. 102",
+      "decision_id": "1905-090",
+      "year": 1905,
+      "decision_number": 90,
+      "field": "text",
+      "start": 3719,
+      "end": 3740,
+      "quote_original": "ст. 97, 102, 107, 109",
+      "context_original": "ръ, изъ которыхъ однѣ иски были основаны на недостаткѣ въ количествѣ принятаго товара, а другіе—на порчѣ его при перевозкѣ, указавъ, что въ ст. 97, 102, 107, 109 уст. жел. дор., относящихся къ отвѣтственности желѣзныхъ дорогъ по договору перевозки, установлены правила какъ на случай утраты груза, так",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b9caedc801ec0d5538b8182443d89324e5c33f1c763637e616e32a99e03121a5",
+      "headnote_sha256": "42ea8bd37be0392f197d0dfdc47e6a90a919875dc53f70e68b377fb14574dee9",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-090",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-090?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+102&law=1905-090%3A%D0%A3%D0%96%D0%94%3A102%3Atext%3A3719&at=3719&end=3740",
+      "source_warning": null,
+      "passage_id": "1905-090:3055-5114",
+      "sources": [
+        {
+          "page": 244,
+          "page_method": "header",
+          "file": "p0123_L.txt",
+          "start": 3719,
+          "end": 3740
+        }
+      ],
+      "printed_pages": [
+        244
+      ],
+      "scans": [
+        {
+          "file": "p0123_L.txt",
+          "page": 244,
+          "full": "scans/1905/pages/p0123_L.webp",
+          "width": 1100,
+          "height": 1551,
+          "ocr_sha256": "ef678d06bcf47b754ec7aed5e904798a3508b318bdf802d72b84f9441a739999",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3719,
+          "end": 3755,
+          "quote_original": "ст. 97, 102, 107, 109 уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3719,
+          "end": 3740,
+          "quote_original": "ст. 97, 102, 107, 109",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3719,
+              "end": 3755,
+              "quote_original": "ст. 97, 102, 107, 109 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-092:УЖД:103:text:8505",
+      "statute": "УЖД ст. 103",
+      "code": "УЖД",
+      "article": "ст. 103",
+      "decision_id": "1904-092",
+      "year": 1904,
+      "decision_number": 92,
+      "field": "text",
+      "start": 8505,
+      "end": 8512,
+      "quote_original": "ст. 103",
+      "context_original": "льствующій Сенатъ, не входя въ обсужденіе остальныхъ кассаціонныхъ поводовъ, опредѣляетъ: рѣшеніе Одес- скаго мироваго съѣзда, по нарушенію ст. 103 уст. жел. дор., отмѣнить и дѣло передать на разсмотрѣніе Одесскаго окружнаго суда.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "81cfadbd2417e88e35b5e7770b035b22aadecb8dce8451a78bb411eef2a5912b",
+      "headnote_sha256": "46fe70081b8d9eb091f83504e2ce12d8bd0a3d8f5c331b39ee1c3129d9489a78",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-092",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-092?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+103&law=1904-092%3A%D0%A3%D0%96%D0%94%3A103%3Atext%3A8505&at=8505&end=8512",
+      "source_warning": null,
+      "passage_id": "1904-092:7253-8595",
+      "sources": [
+        {
+          "page": 259,
+          "page_method": "header",
+          "file": "p0130_R.txt",
+          "start": 8505,
+          "end": 8512
+        }
+      ],
+      "printed_pages": [
+        259
+      ],
+      "scans": [
+        {
+          "file": "p0130_R.txt",
+          "page": 259,
+          "full": "scans/1904/pages/p0130_R.webp",
+          "width": 1100,
+          "height": 1577,
+          "ocr_sha256": "ae5c5585b86ab9dd66b407d250ea89457e65d98ac97787ec4dd47a979a2affbd",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 8505,
+          "end": 8527,
+          "quote_original": "ст. 103 уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8505,
+          "end": 8512,
+          "quote_original": "ст. 103",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 8505,
+              "end": 8527,
+              "quote_original": "ст. 103 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-090:УЖД:107:text:1180",
+      "statute": "УЖД ст. 107",
+      "code": "УЖД",
+      "article": "ст. 107",
+      "decision_id": "1905-090",
+      "year": 1905,
+      "decision_number": 90,
+      "field": "text",
+      "start": 1180,
+      "end": 1187,
+      "quote_original": "ст. 107",
+      "context_original": "ь и, вмѣстѣ съ симъ, ходатайствовалъ, если съѣздъ не уважитъ означенной его просьбы, опредѣлить цѣну убытковъ за порчу грузовъ на основаніи ст. 107 уст. жел. дор., согласно представленной имъ справки Шадовскаго общественнаго управленія, по мѣсту станціи назначенія гор. Шадовъ, а не на о",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b9caedc801ec0d5538b8182443d89324e5c33f1c763637e616e32a99e03121a5",
+      "headnote_sha256": "42ea8bd37be0392f197d0dfdc47e6a90a919875dc53f70e68b377fb14574dee9",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-090",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-090?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+107&law=1905-090%3A%D0%A3%D0%96%D0%94%3A107%3Atext%3A1180&at=1180&end=1187",
+      "source_warning": null,
+      "passage_id": "1905-090:0-1856",
+      "sources": [
+        {
+          "page": 244,
+          "page_method": "header",
+          "file": "p0123_L.txt",
+          "start": 1180,
+          "end": 1187
+        }
+      ],
+      "printed_pages": [
+        244
+      ],
+      "scans": [
+        {
+          "file": "p0123_L.txt",
+          "page": 244,
+          "full": "scans/1905/pages/p0123_L.webp",
+          "width": 1100,
+          "height": 1551,
+          "ocr_sha256": "ef678d06bcf47b754ec7aed5e904798a3508b318bdf802d72b84f9441a739999",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1180,
+          "end": 1202,
+          "quote_original": "ст. 107 уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1180,
+          "end": 1187,
+          "quote_original": "ст. 107",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1180,
+              "end": 1202,
+              "quote_original": "ст. 107 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 3719,
+          "end": 3740,
+          "quote_original": "ст. 97, 102, 107, 109",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3719,
+              "end": 3755,
+              "quote_original": "ст. 97, 102, 107, 109 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 4928,
+          "end": 4935,
+          "quote_original": "ст. 107",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4928,
+              "end": 4950,
+              "quote_original": "ст. 107 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-090:УЖД:109:text:3719",
+      "statute": "УЖД ст. 109",
+      "code": "УЖД",
+      "article": "ст. 109",
+      "decision_id": "1905-090",
+      "year": 1905,
+      "decision_number": 90,
+      "field": "text",
+      "start": 3719,
+      "end": 3740,
+      "quote_original": "ст. 97, 102, 107, 109",
+      "context_original": "ръ, изъ которыхъ однѣ иски были основаны на недостаткѣ въ количествѣ принятаго товара, а другіе—на порчѣ его при перевозкѣ, указавъ, что въ ст. 97, 102, 107, 109 уст. жел. дор., относящихся къ отвѣтственности желѣзныхъ дорогъ по договору перевозки, установлены правила какъ на случай утраты груза, так",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b9caedc801ec0d5538b8182443d89324e5c33f1c763637e616e32a99e03121a5",
+      "headnote_sha256": "42ea8bd37be0392f197d0dfdc47e6a90a919875dc53f70e68b377fb14574dee9",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-090",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-090?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+109&law=1905-090%3A%D0%A3%D0%96%D0%94%3A109%3Atext%3A3719&at=3719&end=3740",
+      "source_warning": null,
+      "passage_id": "1905-090:3055-5114",
+      "sources": [
+        {
+          "page": 244,
+          "page_method": "header",
+          "file": "p0123_L.txt",
+          "start": 3719,
+          "end": 3740
+        }
+      ],
+      "printed_pages": [
+        244
+      ],
+      "scans": [
+        {
+          "file": "p0123_L.txt",
+          "page": 244,
+          "full": "scans/1905/pages/p0123_L.webp",
+          "width": 1100,
+          "height": 1551,
+          "ocr_sha256": "ef678d06bcf47b754ec7aed5e904798a3508b318bdf802d72b84f9441a739999",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3719,
+          "end": 3755,
+          "quote_original": "ст. 97, 102, 107, 109 уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3719,
+          "end": 3740,
+          "quote_original": "ст. 97, 102, 107, 109",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3719,
+              "end": 3755,
+              "quote_original": "ст. 97, 102, 107, 109 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-030:УЖД:110:text:499",
+      "statute": "УЖД ст. 110",
+      "code": "УЖД",
+      "article": "ст. 110",
+      "decision_id": "1904-030",
+      "year": 1904,
+      "decision_number": 30,
+      "field": "text",
+      "start": 499,
+      "end": 506,
+      "quote_original": "ст. 110",
+      "context_original": "цій Владикавказской желѣзной дороги для доставленія на станціи Самаркандъ и Бухара Закаспійской желѣзной дороги. За эту просрочку, согласно ст. 110 общаго устава росс. жел. дорогъ и дѣйствующимъ правиламъ о срокахъ доставки, причитается вознагражденіе въ суммѣ 29256 руб. 64 коп. На заяв",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "d67ba7732b56ed5ab4776fbda46c296371f7568809e996ca16295d7a6f92bff9",
+      "headnote_sha256": "f98874ed8cc361d778e6e1f1bf9a2be1c8c9085b9ea73b5042ab9cd480de2ee5",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-030",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-030?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+110&law=1904-030%3A%D0%A3%D0%96%D0%94%3A110%3Atext%3A499&at=499&end=506",
+      "source_warning": null,
+      "passage_id": "1904-030:0-1696",
+      "sources": [
+        {
+          "page": 74,
+          "page_method": "header",
+          "file": "p0038_L.txt",
+          "start": 499,
+          "end": 506
+        }
+      ],
+      "printed_pages": [
+        74
+      ],
+      "scans": [
+        {
+          "file": "p0038_L.txt",
+          "page": 74,
+          "full": "scans/1904/pages/p0038_L.webp",
+          "width": 1100,
+          "height": 1597,
+          "ocr_sha256": "31a70109d2a3e21375d75bdb968021b4a8fb6745ec3cb973b87641ebd41d1e89",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 499,
+          "end": 537,
+          "quote_original": "ст. 110 общаго устава росс. жел. дорог",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 499,
+          "end": 506,
+          "quote_original": "ст. 110",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 499,
+              "end": 537,
+              "quote_original": "ст. 110 общаго устава росс. жел. дорог",
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 9136,
+          "end": 9143,
+          "quote_original": "ст. 110",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 9136,
+              "end": 9170,
+              "quote_original": "ст. 110 общ. уст. росс. жел. дорог",
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 10332,
+          "end": 10339,
+          "quote_original": "ст. 110",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 10332,
+              "end": 10366,
+              "quote_original": "ст. 110 общ. уст. росс. жел. дорог",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-022:УЖД:110:text:3189",
+      "statute": "УЖД ст. 110",
+      "code": "УЖД",
+      "article": "ст. 110",
+      "decision_id": "1905-022",
+      "year": 1905,
+      "decision_number": 22,
+      "field": "text",
+      "start": 3189,
+      "end": 3196,
+      "quote_original": "ст. 110",
+      "context_original": "іи извѣстнаго условія (пробѣгъ спирта въ обратномъ направленіи въ 6-ти мѣсячный срокъ). 2) По той же причинѣ неправильна и ссылка съѣзда на ст. 110 уст. жел. дор. Взыскавъ плату за сданную ей къ перевозкѣ порожнюю цистерну и доставивъ эту цистерну не въ срокъ, дорога за это обязана упла",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "4baa157abdcaeea5f41fc77e13308c90f9e730ad18715ee3f86de38b7a8c6437",
+      "headnote_sha256": "c443fd4c400b4761ca2ab219e302442d1e009f5ce8ddb30fcbd72c317dba229c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-022",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-022?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+110&law=1905-022%3A%D0%A3%D0%96%D0%94%3A110%3Atext%3A3189&at=3189&end=3196",
+      "source_warning": null,
+      "passage_id": "1905-022:1348-3211",
+      "sources": [
+        {
+          "page": 54,
+          "page_method": "header",
+          "file": "p0028_L.txt",
+          "start": 3189,
+          "end": 3196
+        }
+      ],
+      "printed_pages": [
+        54
+      ],
+      "scans": [
+        {
+          "file": "p0028_L.txt",
+          "page": 54,
+          "full": "scans/1905/pages/p0028_L.webp",
+          "width": 1100,
+          "height": 1524,
+          "ocr_sha256": "69659363fab17e5c955495b22277b2c255a8b48f28107b7b6a69064852358f18",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3189,
+          "end": 3211,
+          "quote_original": "ст. 110 уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3189,
+          "end": 3196,
+          "quote_original": "ст. 110",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3189,
+              "end": 3211,
+              "quote_original": "ст. 110 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-101:УЖД:110:text:5943",
+      "statute": "УЖД ст. 110",
+      "code": "УЖД",
+      "article": "ст. 110",
+      "decision_id": "1905-101",
+      "year": 1905,
+      "decision_number": 101,
+      "field": "text",
+      "start": 5943,
+      "end": 5956,
+      "quote_original": "ст. 110 и 124",
+      "context_original": "ла въ съѣздѣ. По всѣмъ симъ соображеніямъ, Правительствующій Сенатъ опредѣляетъ: рѣшеніе Туккумъ-Тальсенскаго мироваго съѣзда, по нарушенію ст. 110 и 124 уст. жел. дор., отмѣнить и передать дѣло въ Митаво-Баускій мировой съѣздъ для новаго его разсмотрѣнія.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "3503aa52300427ad2030091f1fe97ce80a86138a75d613550131215502182007",
+      "headnote_sha256": "a75904f6b3269dbc3f65b9be5d17dca027ac4b073e35ce6aa63812f0c3360e56",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-101",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-101?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+110&law=1905-101%3A%D0%A3%D0%96%D0%94%3A110%3Atext%3A5943&at=5943&end=5956",
+      "source_warning": null,
+      "passage_id": "1905-101:4091-6059",
+      "sources": [
+        {
+          "page": 276,
+          "page_method": "header",
+          "file": "p0139_L.txt",
+          "start": 5943,
+          "end": 5956
+        }
+      ],
+      "printed_pages": [
+        276
+      ],
+      "scans": [
+        {
+          "file": "p0139_L.txt",
+          "page": 276,
+          "full": "scans/1905/pages/p0139_L.webp",
+          "width": 1100,
+          "height": 1521,
+          "ocr_sha256": "49855545924d56a8a7542fd46edb2ebd29d80b7804311490fe6e3915234876b6",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 5943,
+          "end": 5971,
+          "quote_original": "ст. 110 и 124 уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5943,
+          "end": 5956,
+          "quote_original": "ст. 110 и 124",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 5943,
+              "end": 5971,
+              "quote_original": "ст. 110 и 124 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-022:УЖД:111:text:3438",
+      "statute": "УЖД ст. 111",
+      "code": "УЖД",
+      "article": "ст. 111",
+      "decision_id": "1905-022",
+      "year": 1905,
+      "decision_number": 22,
+      "field": "text",
+      "start": 3438,
+      "end": 3451,
+      "quote_original": "ст. 111 и 121",
+      "context_original": "е въ срокъ, дорога за это обязана уплатить 5% съ взысканной провозной платы. Вознагражденіе это она обязана уплатить въ сроки, указанные въ ст. 111 и 121 уст. жел. дор. Отъ уплаты этого вознагражденія дорога, очевидно, не можетъ быть освобождена только потому, что по истеченіи 6 мѣсяцевъ со д",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "4baa157abdcaeea5f41fc77e13308c90f9e730ad18715ee3f86de38b7a8c6437",
+      "headnote_sha256": "c443fd4c400b4761ca2ab219e302442d1e009f5ce8ddb30fcbd72c317dba229c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-022",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-022?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+111&law=1905-022%3A%D0%A3%D0%96%D0%94%3A111%3Atext%3A3438&at=3438&end=3451",
+      "source_warning": null,
+      "passage_id": "1905-022:2990-4583",
+      "sources": [
+        {
+          "page": 54,
+          "page_method": "header",
+          "file": "p0028_L.txt",
+          "start": 3438,
+          "end": 3451
+        }
+      ],
+      "printed_pages": [
+        54
+      ],
+      "scans": [
+        {
+          "file": "p0028_L.txt",
+          "page": 54,
+          "full": "scans/1905/pages/p0028_L.webp",
+          "width": 1100,
+          "height": 1524,
+          "ocr_sha256": "69659363fab17e5c955495b22277b2c255a8b48f28107b7b6a69064852358f18",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3438,
+          "end": 3466,
+          "quote_original": "ст. 111 и 121 уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3438,
+          "end": 3451,
+          "quote_original": "ст. 111 и 121",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3438,
+              "end": 3466,
+              "quote_original": "ст. 111 и 121 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 3686,
+          "end": 3699,
+          "quote_original": "ст. 111 и 121",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3686,
+              "end": 3714,
+              "quote_original": "ст. 111 и 121 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-020:УЖД:114:text:1126",
+      "statute": "УЖД ст. 114",
+      "code": "УЖД",
+      "article": "ст. 114",
+      "decision_id": "1905-020",
+      "year": 1905,
+      "decision_number": 20,
+      "field": "text",
+      "start": 1126,
+      "end": 1133,
+      "quote_original": "ст. 114",
+      "context_original": "имѣнимъ ко взаимнымъ претензіямъ желѣзныхъ дорогъ по предметамъ обратнаго требованія (регресса) вознагражденія, уплаченнаго одною изъ нихъ (ст. 114 общ. уст. ж. д.), если о срокѣ такихъ требованій, какъ въ данномъ случаѣ, состоялись между дорогами особыя соглашенія, выписка изъ которыхъ",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "8375740ab320ba693faa10b9144cc24320d91178bd3b6f03c507b9c82b959d8e",
+      "headnote_sha256": "cac2b62ea3f5a7a98837d26df40040f9c6171eaa0a9c05c91a42f6923e97daec",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-020",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-020?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+114&law=1905-020%3A%D0%A3%D0%96%D0%94%3A114%3Atext%3A1126&at=1126&end=1133",
+      "source_warning": null,
+      "passage_id": "1905-020:0-1776",
+      "sources": [
+        {
+          "page": 48,
+          "page_method": "header",
+          "file": "p0025_L.txt",
+          "start": 1126,
+          "end": 1133
+        }
+      ],
+      "printed_pages": [
+        48
+      ],
+      "scans": [
+        {
+          "file": "p0025_L.txt",
+          "page": 48,
+          "full": "scans/1905/pages/p0025_L.webp",
+          "width": 1100,
+          "height": 1522,
+          "ocr_sha256": "3b21b10090b0feb8932d79c25c374302545a7d1a6332b3cc35cb1c9b86fb9976",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1126,
+          "end": 1149,
+          "quote_original": "ст. 114 общ. уст. ж. д.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1126,
+          "end": 1133,
+          "quote_original": "ст. 114",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1126,
+              "end": 1149,
+              "quote_original": "ст. 114 общ. уст. ж. д.",
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 3532,
+          "end": 3539,
+          "quote_original": "ст. 114",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3532,
+              "end": 3555,
+              "quote_original": "ст. 114 общ. уст. ж. д.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-020:УЖД:115–120:text:3976",
+      "statute": "УЖД ст. 115–120",
+      "code": "УЖД",
+      "article": "ст. 115–120",
+      "decision_id": "1905-020",
+      "year": 1905,
+      "decision_number": 20,
+      "field": "text",
+      "start": 3976,
+      "end": 3987,
+      "quote_original": "ст. 115-120",
+      "context_original": "ознагражденія, уплаченнаго одною изъ нихъ, но соглашенія эти допускаются не по всѣмъ предметамъ, а только по тѣмъ, которые предусмотрѣны въ ст. 115-120 устава, и, слѣдовательно, только постановленія, изложенныя въ тѣхъ статьяхъ, въ которыхъ о давности ничего не говорится, могутъ быть измѣня",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "8375740ab320ba693faa10b9144cc24320d91178bd3b6f03c507b9c82b959d8e",
+      "headnote_sha256": "cac2b62ea3f5a7a98837d26df40040f9c6171eaa0a9c05c91a42f6923e97daec",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-020",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-020?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+115%E2%80%93120&law=1905-020%3A%D0%A3%D0%96%D0%94%3A115%E2%80%93120%3Atext%3A3976&at=3976&end=3987",
+      "source_warning": null,
+      "passage_id": "1905-020:3115-5431",
+      "sources": [
+        {
+          "page": 49,
+          "page_method": "header",
+          "file": "p0025_R.txt",
+          "start": 3976,
+          "end": 3987
+        }
+      ],
+      "printed_pages": [
+        49
+      ],
+      "scans": [
+        {
+          "file": "p0025_R.txt",
+          "page": 49,
+          "full": "scans/1905/pages/p0025_R.webp",
+          "width": 1100,
+          "height": 1522,
+          "ocr_sha256": "ddbedb1fa882a0f4fcf6e8643800ec39878eaf4084890c3977ca0657ae215459",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УЖД",
+          "field": "text",
+          "start": 3387,
+          "end": 3994,
+          "quote_original": "Проситель утверждаетъ, что относительно срока для предъявленія требованій по взаимнымъ претензіямъ дорогъ предварительныя соглашенія допускаются ст. 114 общ. уст. ж. д., но такое утвержденіе неосновательно, ибо указанная статья закона, какъ видно изъ буквальнаго ея содержанія, предоставляетъ желѣзнымъ дорогамъ, участвующимъ въ перевозкѣ прямаго сообщенія, право входить между собою въ частныя соглашенія относительно условій обратнаго требованія вознагражденія, уплаченнаго одною изъ нихъ, но соглашенія эти допускаются не по всѣмъ предметамъ, а только по тѣмъ, которые предусмотрѣны въ ст. 115-120 устава"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3976,
+          "end": 3987,
+          "quote_original": "ст. 115-120",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УЖД",
+              "field": "text",
+              "start": 3387,
+              "end": 3994,
+              "quote_original": "Проситель утверждаетъ, что относительно срока для предъявленія требованій по взаимнымъ претензіямъ дорогъ предварительныя соглашенія допускаются ст. 114 общ. уст. ж. д., но такое утвержденіе неосновательно, ибо указанная статья закона, какъ видно изъ буквальнаго ея содержанія, предоставляетъ желѣзнымъ дорогамъ, участвующимъ въ перевозкѣ прямаго сообщенія, право входить между собою въ частныя соглашенія относительно условій обратнаго требованія вознагражденія, уплаченнаго одною изъ нихъ, но соглашенія эти допускаются не по всѣмъ предметамъ, а только по тѣмъ, которые предусмотрѣны въ ст. 115-120 устава"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-021:УЖД:1167:text:5474",
+      "statute": "УЖД ст. 1167",
+      "code": "УЖД",
+      "article": "ст. 1167",
+      "decision_id": "1905-021",
+      "year": 1905,
+      "decision_number": 21,
+      "field": "text",
+      "start": 5474,
+      "end": 5482,
+      "quote_original": "ст. 1167",
+      "context_original": "какъ при точномъ соблюденіи правилъ относительно составленія, публикаціи, введенія въ дѣйствіе и отмѣны тарифовъ (собр. узак. 1889 г. № 146 ст. 1167). А такъ какъ всякій дополнительный сборъ, вновь установляемый въ пользу одного изъ учрежденій, предусмотрѣнныхъ въ 10 ст. общ. уст., по мѣ",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "1e9d68e8a7fbd1f502a880ea286c6e2ccba3eaf694d5871609dbfe95c79972d4",
+      "headnote_sha256": "d671a5c3923129c06ae5eae5b9d84124cb08718ff4c0070062843ada1f3375dc",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-021",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-021?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+1167&law=1905-021%3A%D0%A3%D0%96%D0%94%3A1167%3Atext%3A5474&at=5474&end=5482",
+      "source_warning": null,
+      "passage_id": "1905-021:3740-5484",
+      "sources": [
+        {
+          "page": 52,
+          "page_method": "header",
+          "file": "p0027_L.txt",
+          "start": 5474,
+          "end": 5482
+        }
+      ],
+      "printed_pages": [
+        52
+      ],
+      "scans": [
+        {
+          "file": "p0027_L.txt",
+          "page": 52,
+          "full": "scans/1905/pages/p0027_L.webp",
+          "width": 1100,
+          "height": 1514,
+          "ocr_sha256": "c465b51520fe7a3cb6d85e4024ff6f7b2d97f5ae2fd66d404f5c04460927ca28",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
+    },
+    {
+      "id": "1905-022:УЖД:121:text:3438",
+      "statute": "УЖД ст. 121",
+      "code": "УЖД",
+      "article": "ст. 121",
+      "decision_id": "1905-022",
+      "year": 1905,
+      "decision_number": 22,
+      "field": "text",
+      "start": 3438,
+      "end": 3451,
+      "quote_original": "ст. 111 и 121",
+      "context_original": "е въ срокъ, дорога за это обязана уплатить 5% съ взысканной провозной платы. Вознагражденіе это она обязана уплатить въ сроки, указанные въ ст. 111 и 121 уст. жел. дор. Отъ уплаты этого вознагражденія дорога, очевидно, не можетъ быть освобождена только потому, что по истеченіи 6 мѣсяцевъ со д",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "4baa157abdcaeea5f41fc77e13308c90f9e730ad18715ee3f86de38b7a8c6437",
+      "headnote_sha256": "c443fd4c400b4761ca2ab219e302442d1e009f5ce8ddb30fcbd72c317dba229c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-022",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-022?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+121&law=1905-022%3A%D0%A3%D0%96%D0%94%3A121%3Atext%3A3438&at=3438&end=3451",
+      "source_warning": null,
+      "passage_id": "1905-022:2990-4583",
+      "sources": [
+        {
+          "page": 54,
+          "page_method": "header",
+          "file": "p0028_L.txt",
+          "start": 3438,
+          "end": 3451
+        }
+      ],
+      "printed_pages": [
+        54
+      ],
+      "scans": [
+        {
+          "file": "p0028_L.txt",
+          "page": 54,
+          "full": "scans/1905/pages/p0028_L.webp",
+          "width": 1100,
+          "height": 1524,
+          "ocr_sha256": "69659363fab17e5c955495b22277b2c255a8b48f28107b7b6a69064852358f18",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3438,
+          "end": 3466,
+          "quote_original": "ст. 111 и 121 уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3438,
+          "end": 3451,
+          "quote_original": "ст. 111 и 121",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3438,
+              "end": 3466,
+              "quote_original": "ст. 111 и 121 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 3686,
+          "end": 3699,
+          "quote_original": "ст. 111 и 121",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3686,
+              "end": 3714,
+              "quote_original": "ст. 111 и 121 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-101:УЖД:124:text:5943",
+      "statute": "УЖД ст. 124",
+      "code": "УЖД",
+      "article": "ст. 124",
+      "decision_id": "1905-101",
+      "year": 1905,
+      "decision_number": 101,
+      "field": "text",
+      "start": 5943,
+      "end": 5956,
+      "quote_original": "ст. 110 и 124",
+      "context_original": "ла въ съѣздѣ. По всѣмъ симъ соображеніямъ, Правительствующій Сенатъ опредѣляетъ: рѣшеніе Туккумъ-Тальсенскаго мироваго съѣзда, по нарушенію ст. 110 и 124 уст. жел. дор., отмѣнить и передать дѣло въ Митаво-Баускій мировой съѣздъ для новаго его разсмотрѣнія.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "3503aa52300427ad2030091f1fe97ce80a86138a75d613550131215502182007",
+      "headnote_sha256": "a75904f6b3269dbc3f65b9be5d17dca027ac4b073e35ce6aa63812f0c3360e56",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-101",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-101?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+124&law=1905-101%3A%D0%A3%D0%96%D0%94%3A124%3Atext%3A5943&at=5943&end=5956",
+      "source_warning": null,
+      "passage_id": "1905-101:4091-6059",
+      "sources": [
+        {
+          "page": 276,
+          "page_method": "header",
+          "file": "p0139_L.txt",
+          "start": 5943,
+          "end": 5956
+        }
+      ],
+      "printed_pages": [
+        276
+      ],
+      "scans": [
+        {
+          "file": "p0139_L.txt",
+          "page": 276,
+          "full": "scans/1905/pages/p0139_L.webp",
+          "width": 1100,
+          "height": 1521,
+          "ocr_sha256": "49855545924d56a8a7542fd46edb2ebd29d80b7804311490fe6e3915234876b6",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 5943,
+          "end": 5971,
+          "quote_original": "ст. 110 и 124 уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5943,
+          "end": 5956,
+          "quote_original": "ст. 110 и 124",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 5943,
+              "end": 5971,
+              "quote_original": "ст. 110 и 124 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-042:УЖД:127:text:853",
+      "statute": "УЖД ст. 127",
+      "code": "УЖД",
+      "article": "ст. 127",
+      "decision_id": "1897-042",
+      "year": 1897,
+      "decision_number": 42,
+      "field": "text",
+      "start": 853,
+      "end": 860,
+      "quote_original": "ст. 127",
+      "context_original": "ваніи 126 ст. общаго устава Росс. жел. дор., въ которой постановлено: „Если у одного и того же мироваго судьи или у разныхъ мировыхъ судей (ст. 127) одновременно окажется въ производствѣ нѣсколько дѣлъ по искамъ къ одной или нѣсколькимъ желѣзнымъ дорогамъ (ст. 128), начатыхъ однимъ и тѣ",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "5d6bb028890ff074c0cf61ce46bb43372e31cde7a0b3df4f26a1b7923d141c05",
+      "headnote_sha256": "6d46659852d217e7f8b58b61ff4f57de11eccf35b5ca7788468a5e8f6536a5e4",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-042",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-042?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+127&law=1897-042%3A%D0%A3%D0%96%D0%94%3A127%3Atext%3A853&at=853&end=860",
+      "source_warning": null,
+      "passage_id": "1897-042:0-1624",
+      "sources": [
+        {
+          "page": 135,
+          "page_method": "header",
+          "file": "p0078_R.txt",
+          "start": 853,
+          "end": 860
+        }
+      ],
+      "printed_pages": [
+        135
+      ],
+      "scans": [
+        {
+          "file": "p0078_R.txt",
+          "page": 135,
+          "full": "scans/1897/pages/p0078_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1509,
+          "ocr_sha256": "5bdcbc7d53f0ed7f3b78420c1dc4574d2756b8b6a2babc4741cf60545f46e6f4",
+          "pdf_page": 156,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1897.txt",
+          "source_sha256": "942b1330f3c0919f3d97ce8b33f6499c064fb061ba4669c0f2a9bbcab05dc60b",
+          "start": 4854,
+          "end": 4867,
+          "quote_original": "126—128 | 42.",
+          "heading": {
+            "start": 4748,
+            "end": 4783,
+            "quote_original": "Общій уставъ Россійск. жел. дорогъ."
+          },
+          "edition_continuation": null,
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 853,
+          "end": 860,
+          "quote_original": "ст. 127",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1897.txt",
+              "source_sha256": "942b1330f3c0919f3d97ce8b33f6499c064fb061ba4669c0f2a9bbcab05dc60b",
+              "start": 4854,
+              "end": 4867,
+              "quote_original": "126—128 | 42.",
+              "heading": {
+                "start": 4748,
+                "end": 4783,
+                "quote_original": "Общій уставъ Россійск. жел. дорогъ."
+              },
+              "edition_continuation": null,
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-042:УЖД:128:text:970",
+      "statute": "УЖД ст. 128",
+      "code": "УЖД",
+      "article": "ст. 128",
+      "decision_id": "1897-042",
+      "year": 1897,
+      "decision_number": 42,
+      "field": "text",
+      "start": 970,
+      "end": 977,
+      "quote_original": "ст. 128",
+      "context_original": "азныхъ мировыхъ судей (ст. 127) одновременно окажется въ производствѣ нѣсколько дѣлъ по искамъ къ одной или нѣсколькимъ желѣзнымъ дорогамъ (ст. 128), начатыхъ однимъ и тѣмъ же лицомъ и вытекающихъ изъ однородныхъ основаній, то, по требованію каждой дороги-отвѣтчицы, всѣ эти дѣла должны",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "5d6bb028890ff074c0cf61ce46bb43372e31cde7a0b3df4f26a1b7923d141c05",
+      "headnote_sha256": "6d46659852d217e7f8b58b61ff4f57de11eccf35b5ca7788468a5e8f6536a5e4",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-042",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-042?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+128&law=1897-042%3A%D0%A3%D0%96%D0%94%3A128%3Atext%3A970&at=970&end=977",
+      "source_warning": null,
+      "passage_id": "1897-042:0-1624",
+      "sources": [
+        {
+          "page": 135,
+          "page_method": "header",
+          "file": "p0078_R.txt",
+          "start": 970,
+          "end": 977
+        }
+      ],
+      "printed_pages": [
+        135
+      ],
+      "scans": [
+        {
+          "file": "p0078_R.txt",
+          "page": 135,
+          "full": "scans/1897/pages/p0078_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1509,
+          "ocr_sha256": "5bdcbc7d53f0ed7f3b78420c1dc4574d2756b8b6a2babc4741cf60545f46e6f4",
+          "pdf_page": 156,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1897.txt",
+          "source_sha256": "942b1330f3c0919f3d97ce8b33f6499c064fb061ba4669c0f2a9bbcab05dc60b",
+          "start": 4854,
+          "end": 4867,
+          "quote_original": "126—128 | 42.",
+          "heading": {
+            "start": 4748,
+            "end": 4783,
+            "quote_original": "Общій уставъ Россійск. жел. дорогъ."
+          },
+          "edition_continuation": null,
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 970,
+          "end": 977,
+          "quote_original": "ст. 128",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1897.txt",
+              "source_sha256": "942b1330f3c0919f3d97ce8b33f6499c064fb061ba4669c0f2a9bbcab05dc60b",
+              "start": 4854,
+              "end": 4867,
+              "quote_original": "126—128 | 42.",
+              "heading": {
+                "start": 4748,
+                "end": 4783,
+                "quote_original": "Общій уставъ Россійск. жел. дорогъ."
+              },
+              "edition_continuation": null,
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-101:УЖД:135:text:1582",
+      "statute": "УЖД ст. 135",
+      "code": "УЖД",
+      "article": "ст. 135",
+      "decision_id": "1904-101",
+      "year": 1904,
+      "decision_number": 101,
+      "field": "text",
+      "start": 1582,
+      "end": 1589,
+      "quote_original": "ст. 135",
+      "context_original": "аво желѣзной дороги на искъ о недоборѣ погашается годовою давностью со дня окончательнаго взноса провозной платы и дополнительныхъ сборовъ (ст. 135 и 3 п. 136 ст. уст. жел. дор.), то пропускъ давности на полученіе дорогою недобора давалъ лишь основаніе плательщику или возражать противъ",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "616bd28832249df4dc212c5bdaab4b996b91a256851663951507d6f4ebb86145",
+      "headnote_sha256": "ec4698831e999c56c1dca3a9d253d271fb18ffd8fc68925b74750b3a2f1a5573",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-101",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-101?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+135&law=1904-101%3A%D0%A3%D0%96%D0%94%3A135%3Atext%3A1582&at=1582&end=1589",
+      "source_warning": null,
+      "passage_id": "1904-101:1016-2792",
+      "sources": [
+        {
+          "page": 278,
+          "page_method": "header",
+          "file": "p0140_L.txt",
+          "start": 1582,
+          "end": 1589
+        }
+      ],
+      "printed_pages": [
+        278
+      ],
+      "scans": [
+        {
+          "file": "p0140_L.txt",
+          "page": 278,
+          "full": "scans/1904/pages/p0140_L.webp",
+          "width": 1100,
+          "height": 1620,
+          "ocr_sha256": "dd649617525eea7b11dd6b6d04792c2f481b2480620097770b9c2ae68f969651",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
+    },
+    {
+      "id": "1905-020:УЖД:135:text:822",
+      "statute": "УЖД ст. 135",
+      "code": "УЖД",
+      "article": "ст. 135",
+      "decision_id": "1905-020",
+      "year": 1905,
+      "decision_number": 20,
+      "field": "text",
+      "start": 822,
+      "end": 829,
+      "quote_original": "ст. 135",
+      "context_original": "овско-Кіево-Воронежской желѣзной дороги объ обратномъ взысканіи съ него означенной суммы, какъ неправильно, по истеченіи давностнаго срока (ст. 135 общ. уст. ж. д.), удержанной. Сущность возраженія общества Московско-Кіево-Воронежской желѣзной дороги состояла въ томъ, что указанный давн",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "8375740ab320ba693faa10b9144cc24320d91178bd3b6f03c507b9c82b959d8e",
+      "headnote_sha256": "cac2b62ea3f5a7a98837d26df40040f9c6171eaa0a9c05c91a42f6923e97daec",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-020",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-020?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+135&law=1905-020%3A%D0%A3%D0%96%D0%94%3A135%3Atext%3A822&at=822&end=829",
+      "source_warning": null,
+      "passage_id": "1905-020:0-1776",
+      "sources": [
+        {
+          "page": 48,
+          "page_method": "header",
+          "file": "p0025_L.txt",
+          "start": 822,
+          "end": 829
+        }
+      ],
+      "printed_pages": [
+        48
+      ],
+      "scans": [
+        {
+          "file": "p0025_L.txt",
+          "page": 48,
+          "full": "scans/1905/pages/p0025_L.webp",
+          "width": 1100,
+          "height": 1522,
+          "ocr_sha256": "3b21b10090b0feb8932d79c25c374302545a7d1a6332b3cc35cb1c9b86fb9976",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 822,
+          "end": 845,
+          "quote_original": "ст. 135 общ. уст. ж. д.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 822,
+          "end": 829,
+          "quote_original": "ст. 135",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 822,
+              "end": 845,
+              "quote_original": "ст. 135 общ. уст. ж. д.",
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 4255,
+          "end": 4262,
+          "quote_original": "ст. 135",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4255,
+              "end": 4278,
+              "quote_original": "ст. 135 общ. уст. ж. д.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-100:УЖД:138:text:2164",
+      "statute": "УЖД ст. 138",
+      "code": "УЖД",
+      "article": "ст. 138",
+      "decision_id": "1904-100",
+      "year": 1904,
+      "decision_number": 100,
+      "field": "text",
+      "start": 2164,
+      "end": 2171,
+      "quote_original": "ст. 138",
+      "context_original": "росс. жел. дор. въ главѣ «порядокъ взысканія присуждаемыхъ съ желѣзныхъ дорогъ суммъ» (ст. 138), не можетъ быть однако же разсматриваемо какъ относящееся исключительно къ случаямъ взысканій съ желѣзныхъ дорогъ: оно воспроизведено и въ",
+      "association": "печатный указатель законов и контекст решения",
+      "verification_status": "context_verified",
+      "source_sha256": "548b809dcff19daef28be29aeffbb47d9edaba482c017000d9b43cb736f948d7",
+      "headnote_sha256": "f24dbb914789b8deb006dac71a4bd7e0d0b58b6af6f1c6f53d7c43abcf3fd6db",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-100",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-100?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+138&law=1904-100%3A%D0%A3%D0%96%D0%94%3A138%3Atext%3A2164&at=2164&end=2171",
+      "source_warning": null,
+      "passage_id": "1904-100:1417-2781",
+      "sources": [
+        {
+          "page": 278,
+          "page_method": "header",
+          "file": "p0140_L.txt",
+          "start": 2164,
+          "end": 2171
+        }
+      ],
+      "printed_pages": [
+        278
+      ],
+      "scans": [
+        {
+          "file": "p0140_L.txt",
+          "page": 278,
+          "full": "scans/1904/pages/p0140_L.webp",
+          "width": 1100,
+          "height": 1620,
+          "ocr_sha256": "dd649617525eea7b11dd6b6d04792c2f481b2480620097770b9c2ae68f969651",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "printed_index",
+          "path": "legislation-indexes/1904.txt",
+          "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+          "start": 5731,
+          "end": 5741,
+          "quote_original": "138 — 100.",
+          "heading": {
+            "start": 5244,
+            "end": 5298,
+            "quote_original": "Общій уставъ россійскихъ желѣзныхъ дорогъ изд. 1886 г."
+          },
+          "edition_continuation": null,
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2164,
+          "end": 2171,
+          "quote_original": "ст. 138",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 5731,
+              "end": 5741,
+              "quote_original": "138 — 100.",
+              "heading": {
+                "start": 5244,
+                "end": 5298,
+                "quote_original": "Общій уставъ россійскихъ желѣзныхъ дорогъ изд. 1886 г."
+              },
+              "edition_continuation": null,
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-019:УЖД:153:text:3049",
+      "statute": "УЖД ст. 153",
+      "code": "УЖД",
+      "article": "ст. 153",
+      "decision_id": "1897-019",
+      "year": 1897,
+      "decision_number": 19,
+      "field": "text",
+      "start": 3049,
+      "end": 3056,
+      "quote_original": "ст. 153",
+      "context_original": "о устава жел. дорогъ, не могутъ быть признаны сохранившими свою силу; 2) что указаніе просителя на различіе постановленій, заключающихся въ ст. 153 общ. уст. жел. дор., по изданію 1885 г. и по изданію 1886 г., не имѣетъ правильнаго основанія, потому что въ изданіи 1886 г., какъ правильн",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "2875570491eb42de57e1832ee756ee21631de10a93f39a793bdbc2c72b803723",
+      "headnote_sha256": "1b895f4b9777fe06c182fe9c2c1c0fdb5f0fd494baaddcbba2d3e393d71c8ace",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-019",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-019?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+153&law=1897-019%3A%D0%A3%D0%96%D0%94%3A153%3Atext%3A3049&at=3049&end=3056",
+      "source_warning": null,
+      "passage_id": "1897-019:1664-3368",
+      "sources": [
+        {
+          "page": 76,
+          "page_method": "header",
+          "file": "p0049_L.txt",
+          "start": 3049,
+          "end": 3056
+        }
+      ],
+      "printed_pages": [
+        76
+      ],
+      "scans": [
+        {
+          "file": "p0049_L.txt",
+          "page": 76,
+          "full": "scans/1897/pages/p0049_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1620,
+          "ocr_sha256": "dcaae3639e493b83337919891ac8a74a1013bfe20846e2a1a6ee397b80a9c1bb",
+          "pdf_page": 97,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3049,
+          "end": 3076,
+          "quote_original": "ст. 153 общ. уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1429,
+          "end": 1436,
+          "quote_original": "ст. 153",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1897.txt",
+              "source_sha256": "942b1330f3c0919f3d97ce8b33f6499c064fb061ba4669c0f2a9bbcab05dc60b",
+              "start": 4935,
+              "end": 4944,
+              "quote_original": "153 | 19.",
+              "heading": {
+                "start": 4748,
+                "end": 4783,
+                "quote_original": "Общій уставъ Россійск. жел. дорогъ."
+              },
+              "edition_continuation": null,
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 3049,
+          "end": 3056,
+          "quote_original": "ст. 153",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3049,
+              "end": 3076,
+              "quote_original": "ст. 153 общ. уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 3380,
+          "end": 3387,
+          "quote_original": "ст. 153",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3380,
+              "end": 3407,
+              "quote_original": "ст. 153 общ. уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 3862,
+          "end": 3869,
+          "quote_original": "ст. 153",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3862,
+              "end": 3889,
+              "quote_original": "ст. 153 общ. уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-071:УЖД:153:text:1261",
+      "statute": "УЖД ст. 153",
+      "code": "УЖД",
+      "article": "ст. 153",
+      "decision_id": "1905-071",
+      "year": 1905,
+      "decision_number": 71,
+      "field": "text",
+      "start": 1261,
+      "end": 1268,
+      "quote_original": "ст. 153",
+      "context_original": "тя казенныя и частныя желѣзныя дороги руководствуются общимъ уставомъ россійскихъ желѣзныхъ дорогъ, но въ немъ опредѣлены, въ приложеніи къ ст. 153, лишь правила, установленныя въ огражденіе отчужденной подъ желѣзную дорогу полосы земли отъ сосѣднихъ землевладѣльцевъ, и не установлено н",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "510ded0441661e15dd68855cf2ec18cb167f2fff3b315e1f9da43c7ebdaa806d",
+      "headnote_sha256": "7873a98148a7f7e5ce007f44724dca360367c2c26980b3f08028f6f5b7d33ab9",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-071",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-071?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+153&law=1905-071%3A%D0%A3%D0%96%D0%94%3A153%3Atext%3A1261&at=1261&end=1268",
+      "source_warning": null,
+      "passage_id": "1905-071:0-1906",
+      "sources": [
+        {
+          "page": 193,
+          "page_method": "header",
+          "file": "p0097_R.txt",
+          "start": 1261,
+          "end": 1268
+        }
+      ],
+      "printed_pages": [
+        193
+      ],
+      "scans": [
+        {
+          "file": "p0097_R.txt",
+          "page": 193,
+          "full": "scans/1905/pages/p0097_R.webp",
+          "width": 1100,
+          "height": 1537,
+          "ocr_sha256": "4aaaa8bbf9268e7fb288b95ace35fc7ca2e3318c7523ac13574052b062ed1e4f",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УЖД",
+          "field": "text",
+          "start": 857,
+          "end": 1671,
+          "quote_original": "пользовладѣніе Ивана Жилинскаго, обязавъ управленіе дороги отодвинуть живую изгородь отъ межевыхъ граничныхъ знаковъ на 2 аршина 12,96 вершка. Мировой съѣздъ, разсмотрѣвъ апелляцію уполномоченнаго управленія С.-Петербурго-Варшавской желѣзной дороги, нашелъ, что хотя казенныя и частныя желѣзныя дороги руководствуются общимъ уставомъ россійскихъ желѣзныхъ дорогъ, но въ немъ опредѣлены, въ приложеніи къ ст. 153, лишь правила, установленныя въ огражденіе отчужденной подъ желѣзную дорогу полосы земли отъ сосѣднихъ землевладѣльцевъ, и не установлено никакихъ правилъ въ огражденіе этихъ сосѣднихъ землевладѣльцевъ отъ незаконныхъ или нарушающихъ ихъ права дѣйствій управленія желѣзной дороги. Въ виду этого, для разрѣшенія споровъ, возникающихъ между частными землевладѣльцами и желѣзными дорогами, если не имѣется"
+        },
+        {
+          "kind": "direct",
+          "act_code": "УЖД",
+          "field": "text",
+          "start": 3241,
+          "end": 3291,
+          "quote_original": "ст. 153 общаго устава россійскихъ желѣзныхъ дорогъ",
+          "role": "act_identity"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1261,
+          "end": 1268,
+          "quote_original": "ст. 153",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УЖД",
+              "field": "text",
+              "start": 857,
+              "end": 1671,
+              "quote_original": "пользовладѣніе Ивана Жилинскаго, обязавъ управленіе дороги отодвинуть живую изгородь отъ межевыхъ граничныхъ знаковъ на 2 аршина 12,96 вершка. Мировой съѣздъ, разсмотрѣвъ апелляцію уполномоченнаго управленія С.-Петербурго-Варшавской желѣзной дороги, нашелъ, что хотя казенныя и частныя желѣзныя дороги руководствуются общимъ уставомъ россійскихъ желѣзныхъ дорогъ, но въ немъ опредѣлены, въ приложеніи къ ст. 153, лишь правила, установленныя въ огражденіе отчужденной подъ желѣзную дорогу полосы земли отъ сосѣднихъ землевладѣльцевъ, и не установлено никакихъ правилъ въ огражденіе этихъ сосѣднихъ землевладѣльцевъ отъ незаконныхъ или нарушающихъ ихъ права дѣйствій управленія желѣзной дороги. Въ виду этого, для разрѣшенія споровъ, возникающихъ между частными землевладѣльцами и желѣзными дорогами, если не имѣется"
+            },
+            {
+              "kind": "direct",
+              "act_code": "УЖД",
+              "field": "text",
+              "start": 3241,
+              "end": 3291,
+              "quote_original": "ст. 153 общаго устава россійскихъ желѣзныхъ дорогъ",
+              "role": "act_identity"
+            }
+          ],
+          "attribution_note": "Ссылка относится к приложенным к статье 153 Общего устава российских железных дорог правилам о постройках, складах, раскопках и рассадках вблизи линии дорог, а не к основной статье 153. Исходный ключ сохранён. Установлен акт и якорь приложения153; обсуждаются приложенные правила о постройках и насаждениях. Основная статья153 не подтверждается как отдельная обсуждаемая норма."
+        },
+        {
+          "field": "text",
+          "start": 3241,
+          "end": 3248,
+          "quote_original": "ст. 153",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УЖД",
+              "field": "text",
+              "start": 2836,
+              "end": 3654,
+              "quote_original": "принадлежащемъ ему правѣ хозяйственной эксплоатаціи земли посредствомъ производства насажденій. Опредѣляя разстояніе отъ пограничной между сосѣдними имѣніями черты, ближе которой не дозволяется садить деревья и живыя изгороди, статья 671 гр. код. предоставляетъ, однако, въ семъ отношеніи преимущественное значеніе особымъ правиламъ или мѣстному обычаю. Та- кими особыми правилами являются приложенныя къ ст. 153 общаго устава россійскихъ желѣзныхъ дорогъ правила о постройкахъ, складахъ, раскопкахъ и разсадкахъ вблизи линіи желѣзныхъ дорогъ. Но правила эти не имѣютъ своимъ предметомъ опредѣленіе взаимныхъ отношеній между желѣзными дорогами и частными лицами, земли которыхъ граничатъ между собою, а содержатъ въ себѣ лишь указаніе на тѣ ограниченія, которымъ подлежатъ, въ хозяйственной эксплоатаціи своихъ имѣній,"
+            }
+          ],
+          "attribution_note": "Ссылка относится к приложенным к статье 153 Общего устава российских железных дорог правилам о постройках, складах, раскопках и рассадках вблизи линии дорог, а не к основной статье 153. Исходный ключ сохранён. Установлен акт и якорь приложения153; обсуждаются приложенные правила о постройках и насаждениях. Основная статья153 не подтверждается как отдельная обсуждаемая норма."
+        }
+      ],
+      "attribution_note": "Ссылка относится к приложенным к статье 153 Общего устава российских железных дорог правилам о постройках, складах, раскопках и рассадках вблизи линии дорог, а не к основной статье 153. Исходный ключ сохранён. Установлен акт и якорь приложения153; обсуждаются приложенные правила о постройках и насаждениях. Основная статья153 не подтверждается как отдельная обсуждаемая норма."
+    },
+    {
+      "id": "1904-060:УЖД:18:text:7210",
+      "statute": "УЖД ст. 18",
+      "code": "УЖД",
+      "article": "ст. 18",
+      "decision_id": "1904-060",
+      "year": 1904,
+      "decision_number": 60,
+      "field": "text",
+      "start": 7210,
+      "end": 7216,
+      "quote_original": "ст. 18",
+      "context_original": "орогахъ провозныя платы, дополнительныя и другія сборы, а равно правила примѣненія упомянутыхъ платъ и сборовъ (прим. I къ ст. 1 прилож. къ ст. 18 общ. уст. росс. жел. дор.). Эти последнія правила, если ими сопровождается изданіе тарифа, всегда должны быть въ виду судебнаго мѣста, ибо",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "8cd7686db11e31857da400962f1b7769f803d8b4f6a21fc692c6f381cdf06618",
+      "headnote_sha256": "fb210ec4439e63a5f1be51c4e6b12881922cc415064fbbcde88a24aee4031075",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+18&law=1904-060%3A%D0%A3%D0%96%D0%94%3A18%3Atext%3A7210&at=7210&end=7216",
+      "source_warning": null,
+      "passage_id": "1904-060:5736-7467",
+      "sources": [
+        {
+          "page": 170,
+          "page_method": "header",
+          "file": "p0086_L.txt",
+          "start": 7210,
+          "end": 7216
+        }
+      ],
+      "printed_pages": [
+        170
+      ],
+      "scans": [
+        {
+          "file": "p0086_L.txt",
+          "page": 170,
+          "full": "scans/1904/pages/p0086_L.webp",
+          "width": 1100,
+          "height": 1646,
+          "ocr_sha256": "4cc7eebfc9049e21587c9b6bacb824c8fa2163bfb7b24071b1eb8d2d9061586e",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 7210,
+          "end": 7242,
+          "quote_original": "ст. 18 общ. уст. росс. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7210,
+          "end": 7216,
+          "quote_original": "ст. 18",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 7210,
+              "end": 7242,
+              "quote_original": "ст. 18 общ. уст. росс. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-021:УЖД:18:text:5223",
+      "statute": "УЖД ст. 18",
+      "code": "УЖД",
+      "article": "ст. 18",
+      "decision_id": "1905-021",
+      "year": 1905,
+      "decision_number": 21,
+      "field": "text",
+      "start": 5223,
+      "end": 5229,
+      "quote_original": "ст. 18",
+      "context_original": "арифами и правилами о дополнительныхъ сборахъ, надлежаще опубликованными. Въ силу же ст. 13 положенія о желѣзнодорожныхъ тарифахъ (прил. къ ст. 18 прим. общ. уст. ж. д. по прод. 1893 г.), никакой новый тарифъ не можетъ быть введенъ въ дѣйствіе иначе, какъ при точномъ соблюденіи правилъ",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "1e9d68e8a7fbd1f502a880ea286c6e2ccba3eaf694d5871609dbfe95c79972d4",
+      "headnote_sha256": "d671a5c3923129c06ae5eae5b9d84124cb08718ff4c0070062843ada1f3375dc",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-021",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-021?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+18&law=1905-021%3A%D0%A3%D0%96%D0%94%3A18%3Atext%3A5223&at=5223&end=5229",
+      "source_warning": null,
+      "passage_id": "1905-021:3740-5484",
+      "sources": [
+        {
+          "page": 52,
+          "page_method": "header",
+          "file": "p0027_L.txt",
+          "start": 5223,
+          "end": 5229
+        }
+      ],
+      "printed_pages": [
+        52
+      ],
+      "scans": [
+        {
+          "file": "p0027_L.txt",
+          "page": 52,
+          "full": "scans/1905/pages/p0027_L.webp",
+          "width": 1100,
+          "height": 1514,
+          "ocr_sha256": "c465b51520fe7a3cb6d85e4024ff6f7b2d97f5ae2fd66d404f5c04460927ca28",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
+    },
+    {
+      "id": "1905-062:УЖД:18:text:4949",
+      "statute": "УЖД ст. 18",
+      "code": "УЖД",
+      "article": "ст. 18",
+      "decision_id": "1905-062",
+      "year": 1905,
+      "decision_number": 62,
+      "field": "text",
+      "start": 4949,
+      "end": 4955,
+      "quote_original": "ст. 18",
+      "context_original": "озяевамъ особыя, сверхъ перевозки грузовъ, услуги, а такое право предоставлено лишь тарифнымъ учрежденіямъ (ст. 68 и п. 3 и 4 приложенія къ ст. 18 уст. жел. дор.). Если, засимъ, до изданія закона 3 января 1905 г. и имѣлось нѣкоторое основаніе, въ силу примѣчанія къ 68 ст. уст. жел. дор",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "3d5b76860ec530183b6937b5a89d7d9966093339dbd33d98b70396f5fc65dc44",
+      "headnote_sha256": "cc072eab513d7bf2614d1b2185932b3bfa20c794921ba8ed890bf7a029468923",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-062",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-062?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+18&law=1905-062%3A%D0%A3%D0%96%D0%94%3A18%3Atext%3A4949&at=4949&end=4955",
+      "source_warning": null,
+      "passage_id": "1905-062:4285-5850",
+      "sources": [
+        {
+          "page": 169,
+          "page_method": "header",
+          "file": "p0085_R.txt",
+          "start": 4949,
+          "end": 4955
+        }
+      ],
+      "printed_pages": [
+        169
+      ],
+      "scans": [
+        {
+          "file": "p0085_R.txt",
+          "page": 169,
+          "full": "scans/1905/pages/p0085_R.webp",
+          "width": 1100,
+          "height": 1545,
+          "ocr_sha256": "75c91104f578c7ea88027aeaf3099e35b52519b227df0192f96e1e60b6c4bf9a",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 4949,
+          "end": 4970,
+          "quote_original": "ст. 18 уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4949,
+          "end": 4955,
+          "quote_original": "ст. 18",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4949,
+              "end": 4970,
+              "quote_original": "ст. 18 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-101:УЖД:3 п. 136:text:634",
+      "statute": "УЖД ст. 3 п. 136",
+      "code": "УЖД",
+      "article": "ст. 3 п. 136",
+      "decision_id": "1904-101",
+      "year": 1904,
+      "decision_number": 101,
+      "field": "text",
+      "start": 634,
+      "end": 646,
+      "quote_original": "3 п. 136 ст.",
+      "context_original": "торговаго дома, безъ всякихъ притомъ основаній, насчитанные по прежнимъ отправкамъ 2206 руб. 65 коп., несмотря на истеченіе годоваго срока (3 п. 136 ст. уст. жел. дор.), такъ какъ недоборы, начисленные, какъ видно изъ приложенныхъ квитанцій, въ началѣ 1896 г., взяты были съ торговаго дома во",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "616bd28832249df4dc212c5bdaab4b996b91a256851663951507d6f4ebb86145",
+      "headnote_sha256": "ec4698831e999c56c1dca3a9d253d271fb18ffd8fc68925b74750b3a2f1a5573",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-101",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-101?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+3+%D0%BF.+136&law=1904-101%3A%D0%A3%D0%96%D0%94%3A3+%D0%BF.+136%3Atext%3A634&at=634&end=646",
+      "source_warning": null,
+      "passage_id": "1904-101:0-1280",
+      "sources": [
+        {
+          "page": 278,
+          "page_method": "header",
+          "file": "p0140_L.txt",
+          "start": 634,
+          "end": 646
+        }
+      ],
+      "printed_pages": [
+        278
+      ],
+      "scans": [
+        {
+          "file": "p0140_L.txt",
+          "page": 278,
+          "full": "scans/1904/pages/p0140_L.webp",
+          "width": 1100,
+          "height": 1620,
+          "ocr_sha256": "dd649617525eea7b11dd6b6d04792c2f481b2480620097770b9c2ae68f969651",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
+    },
+    {
+      "id": "1905-022:УЖД:42–91:text:2206",
+      "statute": "УЖД ст. 42–91",
+      "code": "УЖД",
+      "article": "ст. 42–91",
+      "decision_id": "1905-022",
+      "year": 1905,
+      "decision_number": 22,
+      "field": "text",
+      "start": 2206,
+      "end": 2215,
+      "quote_original": "ст. 42—91",
+      "context_original": "накладной, не можетъ быть названа „грузомъ“ и что, поэтому, къ такой отправкѣ не могутъ быть примѣняемы правила о грузахъ, съѣздъ нарушилъ ст. 42—91 уст. жел. дор. Всякій предметъ, сдаваемый къ отправкѣ по накладной, называется грузомъ. Плата за перевозку принадлежащихъ частнымъ лицамъ в",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "4baa157abdcaeea5f41fc77e13308c90f9e730ad18715ee3f86de38b7a8c6437",
+      "headnote_sha256": "c443fd4c400b4761ca2ab219e302442d1e009f5ce8ddb30fcbd72c317dba229c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-022",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-022?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+42%E2%80%9391&law=1905-022%3A%D0%A3%D0%96%D0%94%3A42%E2%80%9391%3Atext%3A2206&at=2206&end=2215",
+      "source_warning": null,
+      "passage_id": "1905-022:1348-3211",
+      "sources": [
+        {
+          "page": 54,
+          "page_method": "header",
+          "file": "p0028_L.txt",
+          "start": 2206,
+          "end": 2215
+        }
+      ],
+      "printed_pages": [
+        54
+      ],
+      "scans": [
+        {
+          "file": "p0028_L.txt",
+          "page": 54,
+          "full": "scans/1905/pages/p0028_L.webp",
+          "width": 1100,
+          "height": 1524,
+          "ocr_sha256": "69659363fab17e5c955495b22277b2c255a8b48f28107b7b6a69064852358f18",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2206,
+          "end": 2230,
+          "quote_original": "ст. 42—91 уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2206,
+          "end": 2215,
+          "quote_original": "ст. 42—91",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2206,
+              "end": 2230,
+              "quote_original": "ст. 42—91 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-106:УЖД:49:text:6507",
+      "statute": "УЖД ст. 49",
+      "code": "УЖД",
+      "article": "ст. 49",
+      "decision_id": "1904-106",
+      "year": 1904,
+      "decision_number": 106,
+      "field": "text",
+      "start": 6507,
+      "end": 6513,
+      "quote_original": "ст. 49",
+      "context_original": "второй изъ нихъ, имѣющей своимъ предметомъ собственно „очередные грузы“, т.-е. такіе, которые не могутъ быть отправлены въ день ихъ ввоза (ст. 49 уст. жел. дор. и рѣш. 1894 г. № 60, 1898 г. № 77, 1899 г. № 28), и сказано, что они „подлежатъ отправкѣ съ соблюденіемъ постепенности, поря",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "84df011b7cd7154ff710a934f60a446c0e9b0dde082086b9115ebda0db6268de",
+      "headnote_sha256": "d6e79033de1db9244a8a9eb614216b6a0ea40b9f0c4be318aaddc7aec0fa3d82",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-106",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-106?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+49&law=1904-106%3A%D0%A3%D0%96%D0%94%3A49%3Atext%3A6507&at=6507&end=6513",
+      "source_warning": null,
+      "passage_id": "1904-106:6002-7671",
+      "sources": [
+        {
+          "page": 293,
+          "page_method": "header",
+          "file": "p0147_R.txt",
+          "start": 6507,
+          "end": 6513
+        }
+      ],
+      "printed_pages": [
+        293
+      ],
+      "scans": [
+        {
+          "file": "p0147_R.txt",
+          "page": 293,
+          "full": "scans/1904/pages/p0147_R.webp",
+          "width": 1100,
+          "height": 1605,
+          "ocr_sha256": "27556e207dd3075e08bc9140b1c812704cfdf8e8b9fbe77c5173f634eec60922",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 6507,
+          "end": 6528,
+          "quote_original": "ст. 49 уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 6507,
+          "end": 6513,
+          "quote_original": "ст. 49",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 6507,
+              "end": 6528,
+              "quote_original": "ст. 49 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 8638,
+          "end": 8644,
+          "quote_original": "ст. 49",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 8638,
+              "end": 8659,
+              "quote_original": "ст. 49 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 8939,
+          "end": 8945,
+          "quote_original": "ст. 49",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 8939,
+              "end": 8960,
+              "quote_original": "ст. 49 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-064:УЖД:49:text:4262",
+      "statute": "УЖД ст. 49",
+      "code": "УЖД",
+      "article": "ст. 49",
+      "decision_id": "1905-064",
+      "year": 1905,
+      "decision_number": 64,
+      "field": "text",
+      "start": 4262,
+      "end": 4268,
+      "quote_original": "ст. 49",
+      "context_original": "2 и 131 уст. гр. суд. Наконецъ, неправильнымъ представляется и послѣднее указаніе жалобщиковъ на нарушеніе окружнымъ судомъ п. 2 статьи 2 и ст. 49 уст. ж. д., такъ какъ замерзаніе Азовскаго моря въ декабрѣ мѣсяцѣ не можетъ быть приравнено къ пріостановкѣ перевозки грузовъ по распоряжен",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "54afc6166e3cfb6081fc4e14105dde690972c20b3fc678770ed87c91183f0a89",
+      "headnote_sha256": "74ddef9b47d4669003463b6e954e10ccc6590c3b1d3048a3945a717df5b53c5f",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-064",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-064?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+49&law=1905-064%3A%D0%A3%D0%96%D0%94%3A49%3Atext%3A4262&at=4262&end=4268",
+      "source_warning": null,
+      "passage_id": "1905-064:3059-4796",
+      "sources": [
+        {
+          "page": 175,
+          "page_method": "header",
+          "file": "p0088_R.txt",
+          "start": 4262,
+          "end": 4268
+        }
+      ],
+      "printed_pages": [
+        175
+      ],
+      "scans": [
+        {
+          "file": "p0088_R.txt",
+          "page": 175,
+          "full": "scans/1905/pages/p0088_R.webp",
+          "width": 1100,
+          "height": 1547,
+          "ocr_sha256": "fe41e7c9db3a8de5bbf4a85fa32c197d29e91be984aa3905bf72f694ddf4d50a",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 4262,
+          "end": 4279,
+          "quote_original": "ст. 49 уст. ж. д.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4262,
+          "end": 4268,
+          "quote_original": "ст. 49",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4262,
+              "end": 4279,
+              "quote_original": "ст. 49 уст. ж. д.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-106:УЖД:51:text:6321",
+      "statute": "УЖД ст. 51",
+      "code": "УЖД",
+      "article": "ст. 51",
+      "decision_id": "1904-106",
+      "year": 1904,
+      "decision_number": 106,
+      "field": "text",
+      "start": 6321,
+      "end": 6332,
+      "quote_original": "ст. 51 и 52",
+      "context_original": "тавить это министру путей сообщенія (отчетъ по Государственному Совѣту за 1885 г. стр. 344). Согласно этимъ указаніямъ и редактированы были ст. 51 и 52 общ. устава жел. дор., при чемъ во второй изъ нихъ, имѣющей своимъ предметомъ собственно „очередные грузы“, т.-е. такіе, которые не могутъ",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "84df011b7cd7154ff710a934f60a446c0e9b0dde082086b9115ebda0db6268de",
+      "headnote_sha256": "d6e79033de1db9244a8a9eb614216b6a0ea40b9f0c4be318aaddc7aec0fa3d82",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-106",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-106?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+51&law=1904-106%3A%D0%A3%D0%96%D0%94%3A51%3Atext%3A6321&at=6321&end=6332",
+      "source_warning": null,
+      "passage_id": "1904-106:6002-7671",
+      "sources": [
+        {
+          "page": 293,
+          "page_method": "header",
+          "file": "p0147_R.txt",
+          "start": 6321,
+          "end": 6332
+        }
+      ],
+      "printed_pages": [
+        293
+      ],
+      "scans": [
+        {
+          "file": "p0147_R.txt",
+          "page": 293,
+          "full": "scans/1904/pages/p0147_R.webp",
+          "width": 1100,
+          "height": 1605,
+          "ocr_sha256": "27556e207dd3075e08bc9140b1c812704cfdf8e8b9fbe77c5173f634eec60922",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 6321,
+          "end": 6354,
+          "quote_original": "ст. 51 и 52 общ. устава жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 6321,
+          "end": 6332,
+          "quote_original": "ст. 51 и 52",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 6321,
+              "end": 6354,
+              "quote_original": "ст. 51 и 52 общ. устава жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 9914,
+          "end": 9920,
+          "quote_original": "ст. 51",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 5342,
+              "end": 5359,
+              "quote_original": "49, 51, 52 — 106.",
+              "heading": {
+                "start": 5244,
+                "end": 5298,
+                "quote_original": "Общій уставъ россійскихъ желѣзныхъ дорогъ изд. 1886 г."
+              },
+              "edition_continuation": null,
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 9400,
+          "end": 9412,
+          "quote_original": "ст. 51 и 101",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 9400,
+              "end": 9427,
+              "quote_original": "ст. 51 и 101 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 9583,
+          "end": 9589,
+          "quote_original": "ст. 51",
+          "method": "printed_index",
+          "evidence": [
+            {
+              "kind": "printed_index",
+              "path": "legislation-indexes/1904.txt",
+              "source_sha256": "ac092c38ae4081ed87287478dd258b501a7b3ca04b0212acd546e75905826035",
+              "start": 5342,
+              "end": 5359,
+              "quote_original": "49, 51, 52 — 106.",
+              "heading": {
+                "start": 5244,
+                "end": 5298,
+                "quote_original": "Общій уставъ россійскихъ желѣзныхъ дорогъ изд. 1886 г."
+              },
+              "edition_continuation": null,
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-022:УЖД:51:text:684",
+      "statute": "УЖД ст. 51",
+      "code": "УЖД",
+      "article": "ст. 51",
+      "decision_id": "1905-022",
+      "year": 1905,
+      "decision_number": 22,
+      "field": "text",
+      "start": 684,
+      "end": 695,
+      "quote_original": "ст. 51 и 53",
+      "context_original": "твенна на основаніи первой изъ этихъ статей за просрочку въ доставкѣ грузовъ и что только для грузовъ установлены очередь и сроки отправки (ст. 51 и 53). Изъ совокупнаго же смысла подлежащихъ статей общаго устава и, въ частности, 68, 69, 72 и 73 ст. сего устава слѣдуетъ заключить, что подъ",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "4baa157abdcaeea5f41fc77e13308c90f9e730ad18715ee3f86de38b7a8c6437",
+      "headnote_sha256": "c443fd4c400b4761ca2ab219e302442d1e009f5ce8ddb30fcbd72c317dba229c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-022",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-022?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+51&law=1905-022%3A%D0%A3%D0%96%D0%94%3A51%3Atext%3A684&at=684&end=695",
+      "source_warning": null,
+      "passage_id": "1905-022:0-1605",
+      "sources": [
+        {
+          "page": 53,
+          "page_method": "header",
+          "file": "p0027_R.txt",
+          "start": 684,
+          "end": 695
+        }
+      ],
+      "printed_pages": [
+        53
+      ],
+      "scans": [
+        {
+          "file": "p0027_R.txt",
+          "page": 53,
+          "full": "scans/1905/pages/p0027_R.webp",
+          "width": 1100,
+          "height": 1514,
+          "ocr_sha256": "7c57407cd1fb8de326fe714f4a03e2df49391cba08ff208a94753bc48eb7f38c",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УЖД",
+          "field": "text",
+          "start": 441,
+          "end": 696,
+          "quote_original": "Сопоставляя 110 и 53 ст. общаго устава россійскихъ желѣзныхъ дорогъ, съѣздъ находитъ, что дорога отвѣтственна на основаніи первой изъ этихъ статей за просрочку въ доставкѣ грузовъ и что только для грузовъ установлены очередь и сроки отправки (ст. 51 и 53)"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 684,
+          "end": 695,
+          "quote_original": "ст. 51 и 53",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УЖД",
+              "field": "text",
+              "start": 441,
+              "end": 696,
+              "quote_original": "Сопоставляя 110 и 53 ст. общаго устава россійскихъ желѣзныхъ дорогъ, съѣздъ находитъ, что дорога отвѣтственна на основаніи первой изъ этихъ статей за просрочку въ доставкѣ грузовъ и что только для грузовъ установлены очередь и сроки отправки (ст. 51 и 53)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-106:УЖД:52:text:6321",
+      "statute": "УЖД ст. 52",
+      "code": "УЖД",
+      "article": "ст. 52",
+      "decision_id": "1904-106",
+      "year": 1904,
+      "decision_number": 106,
+      "field": "text",
+      "start": 6321,
+      "end": 6332,
+      "quote_original": "ст. 51 и 52",
+      "context_original": "тавить это министру путей сообщенія (отчетъ по Государственному Совѣту за 1885 г. стр. 344). Согласно этимъ указаніямъ и редактированы были ст. 51 и 52 общ. устава жел. дор., при чемъ во второй изъ нихъ, имѣющей своимъ предметомъ собственно „очередные грузы“, т.-е. такіе, которые не могутъ",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "84df011b7cd7154ff710a934f60a446c0e9b0dde082086b9115ebda0db6268de",
+      "headnote_sha256": "d6e79033de1db9244a8a9eb614216b6a0ea40b9f0c4be318aaddc7aec0fa3d82",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-106",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-106?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+52&law=1904-106%3A%D0%A3%D0%96%D0%94%3A52%3Atext%3A6321&at=6321&end=6332",
+      "source_warning": null,
+      "passage_id": "1904-106:6002-7671",
+      "sources": [
+        {
+          "page": 293,
+          "page_method": "header",
+          "file": "p0147_R.txt",
+          "start": 6321,
+          "end": 6332
+        }
+      ],
+      "printed_pages": [
+        293
+      ],
+      "scans": [
+        {
+          "file": "p0147_R.txt",
+          "page": 293,
+          "full": "scans/1904/pages/p0147_R.webp",
+          "width": 1100,
+          "height": 1605,
+          "ocr_sha256": "27556e207dd3075e08bc9140b1c812704cfdf8e8b9fbe77c5173f634eec60922",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 6321,
+          "end": 6354,
+          "quote_original": "ст. 51 и 52 общ. устава жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 6321,
+          "end": 6332,
+          "quote_original": "ст. 51 и 52",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 6321,
+              "end": 6354,
+              "quote_original": "ст. 51 и 52 общ. устава жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-022:УЖД:53:text:684",
+      "statute": "УЖД ст. 53",
+      "code": "УЖД",
+      "article": "ст. 53",
+      "decision_id": "1905-022",
+      "year": 1905,
+      "decision_number": 22,
+      "field": "text",
+      "start": 684,
+      "end": 695,
+      "quote_original": "ст. 51 и 53",
+      "context_original": "твенна на основаніи первой изъ этихъ статей за просрочку въ доставкѣ грузовъ и что только для грузовъ установлены очередь и сроки отправки (ст. 51 и 53). Изъ совокупнаго же смысла подлежащихъ статей общаго устава и, въ частности, 68, 69, 72 и 73 ст. сего устава слѣдуетъ заключить, что подъ",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "4baa157abdcaeea5f41fc77e13308c90f9e730ad18715ee3f86de38b7a8c6437",
+      "headnote_sha256": "c443fd4c400b4761ca2ab219e302442d1e009f5ce8ddb30fcbd72c317dba229c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-022",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-022?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+53&law=1905-022%3A%D0%A3%D0%96%D0%94%3A53%3Atext%3A684&at=684&end=695",
+      "source_warning": null,
+      "passage_id": "1905-022:0-1605",
+      "sources": [
+        {
+          "page": 53,
+          "page_method": "header",
+          "file": "p0027_R.txt",
+          "start": 684,
+          "end": 695
+        }
+      ],
+      "printed_pages": [
+        53
+      ],
+      "scans": [
+        {
+          "file": "p0027_R.txt",
+          "page": 53,
+          "full": "scans/1905/pages/p0027_R.webp",
+          "width": 1100,
+          "height": 1514,
+          "ocr_sha256": "7c57407cd1fb8de326fe714f4a03e2df49391cba08ff208a94753bc48eb7f38c",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УЖД",
+          "field": "text",
+          "start": 441,
+          "end": 696,
+          "quote_original": "Сопоставляя 110 и 53 ст. общаго устава россійскихъ желѣзныхъ дорогъ, съѣздъ находитъ, что дорога отвѣтственна на основаніи первой изъ этихъ статей за просрочку въ доставкѣ грузовъ и что только для грузовъ установлены очередь и сроки отправки (ст. 51 и 53)"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 684,
+          "end": 695,
+          "quote_original": "ст. 51 и 53",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УЖД",
+              "field": "text",
+              "start": 441,
+              "end": 696,
+              "quote_original": "Сопоставляя 110 и 53 ст. общаго устава россійскихъ желѣзныхъ дорогъ, съѣздъ находитъ, что дорога отвѣтственна на основаніи первой изъ этихъ статей за просрочку въ доставкѣ грузовъ и что только для грузовъ установлены очередь и сроки отправки (ст. 51 и 53)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-029:УЖД:55:text:7318",
+      "statute": "УЖД ст. 55",
+      "code": "УЖД",
+      "article": "ст. 55",
+      "decision_id": "1896-029",
+      "year": 1896,
+      "decision_number": 29,
+      "field": "text",
+      "start": 7318,
+      "end": 7324,
+      "quote_original": "ст. 55",
+      "context_original": "ги. А какъ на кладныя на товары и грузы при рѣч ныхъ и сухопутныхъ перевозкахъ хотя и могутъ быть причисляемы къ дого ворамъ двустороннимъ (ст. 55 общ. уст. росс. жел. дор.), но подлежатъ гербовому сбору не пропорціональному, по разборамъ актовой бумаги, а про стому въ десять копѣекъ з",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "25d41261f57855399f21fac0c4c197c5ed46231b0dd4d9eb42a366b96329d249",
+      "headnote_sha256": "6fca7fdb2c5acd5b4400ec53b00cebc0be004fc8fb93280a36227e90242caffb",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-029",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-029?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+55&law=1896-029%3A%D0%A3%D0%96%D0%94%3A55%3Atext%3A7318&at=7318&end=7324",
+      "source_warning": null,
+      "passage_id": "1896-029:6917-8794",
+      "sources": [
+        {
+          "page": 761,
+          "page_method": "neighbors",
+          "file": "p0054.txt",
+          "start": 7318,
+          "end": 7324
+        }
+      ],
+      "printed_pages": [
+        761
+      ],
+      "scans": [
+        {
+          "file": "p0054.txt",
+          "page": 761,
+          "full": "scans/1896/pages/p0054-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1669,
+          "ocr_sha256": "fbfc4e595ed85912875e30d33342c6348d76fc8863cdae808141952fb052bfb8",
+          "pdf_page": 54,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 7318,
+          "end": 7350,
+          "quote_original": "ст. 55 общ. уст. росс. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7318,
+          "end": 7324,
+          "quote_original": "ст. 55",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 7318,
+              "end": 7350,
+              "quote_original": "ст. 55 общ. уст. росс. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-060:УЖД:57:text:3690",
+      "statute": "УЖД ст. 57",
+      "code": "УЖД",
+      "article": "ст. 57",
+      "decision_id": "1904-060",
+      "year": 1904,
+      "decision_number": 60,
+      "field": "text",
+      "start": 3690,
+      "end": 3696,
+      "quote_original": "ст. 57",
+      "context_original": "ку желѣзной дороги на „правила употребленія накладной и ея дубликата\", составленныя министромъ путей сообщенія въ силу предоставленнаго ему ст. 57 общ. уст. росс. желѣзныхъ дорогъ права и опубликованныя въ сборникѣ тарифовъ,—на томъ основаніи, что правила эти въ собраніи узаконеній не",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "8cd7686db11e31857da400962f1b7769f803d8b4f6a21fc692c6f381cdf06618",
+      "headnote_sha256": "fb210ec4439e63a5f1be51c4e6b12881922cc415064fbbcde88a24aee4031075",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+57&law=1904-060%3A%D0%A3%D0%96%D0%94%3A57%3Atext%3A3690&at=3690&end=3696",
+      "source_warning": null,
+      "passage_id": "1904-060:2633-4297",
+      "sources": [
+        {
+          "page": 169,
+          "page_method": "header",
+          "file": "p0085_R.txt",
+          "start": 3690,
+          "end": 3696
+        }
+      ],
+      "printed_pages": [
+        169
+      ],
+      "scans": [
+        {
+          "file": "p0085_R.txt",
+          "page": 169,
+          "full": "scans/1904/pages/p0085_R.webp",
+          "width": 1100,
+          "height": 1606,
+          "ocr_sha256": "12d91d60dd302a0f4ecab581b4be70fd8c6a046ee27ffa3ba552cc9a38adb692",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УЖД",
+          "field": "text",
+          "start": 3690,
+          "end": 3729,
+          "quote_original": "ст. 57 общ. уст. росс. желѣзныхъ дорогъ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3690,
+          "end": 3696,
+          "quote_original": "ст. 57",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УЖД",
+              "field": "text",
+              "start": 3690,
+              "end": 3729,
+              "quote_original": "ст. 57 общ. уст. росс. желѣзныхъ дорогъ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-042:УЖД:68:text:39301",
+      "statute": "УЖД ст. 68",
+      "code": "УЖД",
+      "article": "ст. 68",
+      "decision_id": "1897-042",
+      "year": 1897,
+      "decision_number": 42,
+      "field": "text",
+      "start": 39301,
+      "end": 39307,
+      "quote_original": "ст. 68",
+      "context_original": "за необходимое для исполненія таможенныхъ формальностей задержаніе вагоновъ и не можетъ выводить изъ закона, изображеннаго въ примѣчаніи къ ст. 68 уст. жел. дор., которое посему и нельзя признать нарушеннымъ палатою. Но это примѣчаніе вмѣстѣ съ тѣмъ устраняетъ всякое право дороги—отвѣт",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "5d6bb028890ff074c0cf61ce46bb43372e31cde7a0b3df4f26a1b7923d141c05",
+      "headnote_sha256": "6d46659852d217e7f8b58b61ff4f57de11eccf35b5ca7788468a5e8f6536a5e4",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-042",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-042?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+68&law=1897-042%3A%D0%A3%D0%96%D0%94%3A68%3Atext%3A39301&at=39301&end=39307",
+      "source_warning": null,
+      "passage_id": "1897-042:38494-40129",
+      "sources": [
+        {
+          "page": 148,
+          "page_method": "header",
+          "file": "p0085_L.txt",
+          "start": 39301,
+          "end": 39307
+        }
+      ],
+      "printed_pages": [
+        148
+      ],
+      "scans": [
+        {
+          "file": "p0085_L.txt",
+          "page": 148,
+          "full": "scans/1897/pages/p0085_L-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1554,
+          "ocr_sha256": "7b9a3be5e77efc490d0314045bd3557673266fefd59caac98749f048ffd96cc6",
+          "pdf_page": 169,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 39301,
+          "end": 39322,
+          "quote_original": "ст. 68 уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 39301,
+          "end": 39307,
+          "quote_original": "ст. 68",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 39301,
+              "end": 39322,
+              "quote_original": "ст. 68 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-060:УЖД:68:text:2616",
+      "statute": "УЖД ст. 68",
+      "code": "УЖД",
+      "article": "ст. 68",
+      "decision_id": "1904-060",
+      "year": 1904,
+      "decision_number": 60,
+      "field": "text",
+      "start": 2616,
+      "end": 2622,
+      "quote_original": "ст. 68",
+      "context_original": "тавить точный ихъ списокъ (рѣш. 1875 г. № 968, 1889 г. № 7). Къ числу законнодѣйствующихъ правилъ относятся также и тарифныя постановленія (ст. 68 общ. уст. росс. жел. дор.), издаваемыя уполномоченными на то тарифными учрежденіями, а также и распоряженія другихъ властей (министровъ пут",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "8cd7686db11e31857da400962f1b7769f803d8b4f6a21fc692c6f381cdf06618",
+      "headnote_sha256": "fb210ec4439e63a5f1be51c4e6b12881922cc415064fbbcde88a24aee4031075",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+68&law=1904-060%3A%D0%A3%D0%96%D0%94%3A68%3Atext%3A2616&at=2616&end=2622",
+      "source_warning": null,
+      "passage_id": "1904-060:1238-2899",
+      "sources": [
+        {
+          "page": 168,
+          "page_method": "header",
+          "file": "p0085_L.txt",
+          "start": 2616,
+          "end": 2622
+        }
+      ],
+      "printed_pages": [
+        168
+      ],
+      "scans": [
+        {
+          "file": "p0085_L.txt",
+          "page": 168,
+          "full": "scans/1904/pages/p0085_L.webp",
+          "width": 1100,
+          "height": 1606,
+          "ocr_sha256": "6a77260f29aabbfc8556a343f35639151a4206efd2db04001f00cede901b6809",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2616,
+          "end": 2648,
+          "quote_original": "ст. 68 общ. уст. росс. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2616,
+          "end": 2622,
+          "quote_original": "ст. 68",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2616,
+              "end": 2648,
+              "quote_original": "ст. 68 общ. уст. росс. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 6852,
+          "end": 6858,
+          "quote_original": "ст. 68",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 6852,
+              "end": 6873,
+              "quote_original": "ст. 68 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-093:УЖД:68:text:2673",
+      "statute": "УЖД ст. 68",
+      "code": "УЖД",
+      "article": "ст. 68",
+      "decision_id": "1904-093",
+      "year": 1904,
+      "decision_number": 93,
+      "field": "text",
+      "start": 2673,
+      "end": 2679,
+      "quote_original": "ст. 68",
+      "context_original": "зная дорога въ правѣ взыскивать за дополнительные сборы, въ томъ числѣ и за нагрузку, лишь за дѣйствительно оказанныя услуги (примѣчаніе къ ст. 68 уст. жел. дор. и рѣш. гр. касс. д-та 1900 г. № 42), въ виду чего съѣздъ правильно и согласно съ 81 ст. уст. гр. суд. призналъ, что, при отс",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "d32c0eb3fea0d5ba71ff2a84a95c0cca5b083d7e3618f39ccafed986ec09c364",
+      "headnote_sha256": "2217415dc570e4401c4663df3c97541600abb8cd32e2e16ef0430fbc43f5eeae",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-093",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-093?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+68&law=1904-093%3A%D0%A3%D0%96%D0%94%3A68%3Atext%3A2673&at=2673&end=2679",
+      "source_warning": null,
+      "passage_id": "1904-093:1430-3040",
+      "sources": [
+        {
+          "page": 260,
+          "page_method": "header",
+          "file": "p0131_L.txt",
+          "start": 2673,
+          "end": 2679
+        }
+      ],
+      "printed_pages": [
+        260
+      ],
+      "scans": [
+        {
+          "file": "p0131_L.txt",
+          "page": 260,
+          "full": "scans/1904/pages/p0131_L.webp",
+          "width": 1100,
+          "height": 1595,
+          "ocr_sha256": "da5941a17b976fa36bcfba8d12184c2a828dfa06be05f0f348c6081447e2ed22",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2673,
+          "end": 2694,
+          "quote_original": "ст. 68 уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2673,
+          "end": 2679,
+          "quote_original": "ст. 68",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2673,
+              "end": 2694,
+              "quote_original": "ст. 68 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-022:УЖД:68:text:5934",
+      "statute": "УЖД ст. 68",
+      "code": "УЖД",
+      "article": "ст. 68",
+      "decision_id": "1905-022",
+      "year": 1905,
+      "decision_number": 22,
+      "field": "text",
+      "start": 5934,
+      "end": 5940,
+      "quote_original": "68 ст.",
+      "context_original": "ъ уставѣ желѣзныхъ дорогъ, такъ и въ изданныхъ установленнымъ порядкомъ, въ развитіе сего устава, правилахъ. Согласно 9, 10 и примѣчанія къ 68 ст. уст. жел. дор., вагоны и цистерны частныхъ лицъ, приписанные къ парку желѣзной дороги, считаются желѣзнодорожнымъ подвижнымъ составомъ этой",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "4baa157abdcaeea5f41fc77e13308c90f9e730ad18715ee3f86de38b7a8c6437",
+      "headnote_sha256": "c443fd4c400b4761ca2ab219e302442d1e009f5ce8ddb30fcbd72c317dba229c",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-022",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-022?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+68&law=1905-022%3A%D0%A3%D0%96%D0%94%3A68%3Atext%3A5934&at=5934&end=5940",
+      "source_warning": null,
+      "passage_id": "1905-022:5636-7082",
+      "sources": [
+        {
+          "page": 55,
+          "page_method": "header",
+          "file": "p0028_R.txt",
+          "start": 5934,
+          "end": 5940
+        }
+      ],
+      "printed_pages": [
+        55
+      ],
+      "scans": [
+        {
+          "file": "p0028_R.txt",
+          "page": 55,
+          "full": "scans/1905/pages/p0028_R.webp",
+          "width": 1100,
+          "height": 1524,
+          "ocr_sha256": "12e3d5f7c8a826a467447ae9aaac9bf6b669154860fc6e66e6bb1d0b7f5d0668",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
+    },
+    {
+      "id": "1905-062:УЖД:68:text:2596",
+      "statute": "УЖД ст. 68",
+      "code": "УЖД",
+      "article": "ст. 68",
+      "decision_id": "1905-062",
+      "year": 1905,
+      "decision_number": 62,
+      "field": "text",
+      "start": 2596,
+      "end": 2602,
+      "quote_original": "68 ст.",
+      "context_original": "лучаяхъ, при взвѣшиваніи дорогою груза, окажется, что отправитель указалъ вѣсъ груза менѣе дѣйствительнаго. Хотя ранѣе сего примѣчаніемъ къ 68 ст. уст. жел. дор. и установлено было право желѣзныхъ дорогъ на дополнительные сборы за оказываемыя товароотправителямъ услуги, въ томъ числѣ з",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "3d5b76860ec530183b6937b5a89d7d9966093339dbd33d98b70396f5fc65dc44",
+      "headnote_sha256": "cc072eab513d7bf2614d1b2185932b3bfa20c794921ba8ed890bf7a029468923",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-062",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-062?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+68&law=1905-062%3A%D0%A3%D0%96%D0%94%3A68%3Atext%3A2596&at=2596&end=2602",
+      "source_warning": null,
+      "passage_id": "1905-062:1244-3041",
+      "sources": [
+        {
+          "page": 168,
+          "page_method": "header",
+          "file": "p0085_L.txt",
+          "start": 2596,
+          "end": 2602
+        }
+      ],
+      "printed_pages": [
+        168
+      ],
+      "scans": [
+        {
+          "file": "p0085_L.txt",
+          "page": 168,
+          "full": "scans/1905/pages/p0085_L.webp",
+          "width": 1100,
+          "height": 1545,
+          "ocr_sha256": "0dd91d29c15567e99b66538f3addfd63c3c7f1d35e6bb66c8bca2cf7695c0a14",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
+    },
+    {
+      "id": "1905-068:УЖД:68:text:3514",
+      "statute": "УЖД ст. 68",
+      "code": "УЖД",
+      "article": "ст. 68",
+      "decision_id": "1905-068",
+      "year": 1905,
+      "decision_number": 68,
+      "field": "text",
+      "start": 3514,
+      "end": 3520,
+      "quote_original": "ст. 68",
+      "context_original": "о дополнительныхъ сборахъ въ одно общее постановленіе и включенный, затѣмъ, въ изданіе 1886 г. общ. уст. росс. жел. дорогъ въ примѣчаніе къ ст. 68, дѣйствуетъ и понынѣ съ дополненіемъ нѣкоторыхъ другихъ услугъ, также подлежащихъ оплатѣ, но списокъ дополнительныхъ сборовъ, изданный въ 1",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "ecb18d1373c854a1ca63b938c42dcd2d0c436d002175537894e873d523e248a7",
+      "headnote_sha256": "38770c1e3a92b6d7238ef93e9c1ef72aa374ef3f90cd12645618ff59eebfda89",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-068",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-068?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+68&law=1905-068%3A%D0%A3%D0%96%D0%94%3A68%3Atext%3A3514&at=3514&end=3520",
+      "source_warning": null,
+      "passage_id": "1905-068:3037-4440",
+      "sources": [
+        {
+          "page": 186,
+          "page_method": "header",
+          "file": "p0094_L.txt",
+          "start": 3514,
+          "end": 3520
+        }
+      ],
+      "printed_pages": [
+        186
+      ],
+      "scans": [
+        {
+          "file": "p0094_L.txt",
+          "page": 186,
+          "full": "scans/1905/pages/p0094_L.webp",
+          "width": 1100,
+          "height": 1560,
+          "ocr_sha256": "851d91d56317ce63c41f1289667f32d510e2b87571dd9856090a9c237d433fca",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "УЖД",
+          "field": "text",
+          "start": 3450,
+          "end": 3520,
+          "quote_original": "въ изданіе 1886 г. общ. уст. росс. жел. дорогъ въ примѣчаніе къ ст. 68"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3514,
+          "end": 3520,
+          "quote_original": "ст. 68",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "УЖД",
+              "field": "text",
+              "start": 3450,
+              "end": 3520,
+              "quote_original": "въ изданіе 1886 г. общ. уст. росс. жел. дорогъ въ примѣчаніе къ ст. 68"
+            }
+          ],
+          "attribution_note": "Цитируется примечание к статье 68 Общего устава российских железных дорог; номер и вид структурной части сохранены. Названо примечание к статье 68 Общего устава российских железных дорог издания 1886 года; подтверждение акта не означает ссылку на основной текст статьи 68."
+        }
+      ],
+      "attribution_note": "Цитируется примечание к статье 68 Общего устава российских железных дорог; номер и вид структурной части сохранены. Названо примечание к статье 68 Общего устава российских железных дорог издания 1886 года; подтверждение акта не означает ссылку на основной текст статьи 68."
+    },
+    {
+      "id": "1897-042:УЖД:68¹:text:36955",
+      "statute": "УЖД ст. 68¹",
+      "code": "УЖД",
+      "article": "ст. 68¹",
+      "decision_id": "1897-042",
+      "year": 1897,
+      "decision_number": 42,
+      "field": "text",
+      "start": 36955,
+      "end": 36962,
+      "quote_original": "ст. 68¹",
+      "context_original": "пользованіе истцомъ ея собственностью и 3) что признаніемъ этого вознагражденія лишеннымъ законнаго основанія палата нарушила примѣч. 1 къ ст. 68¹ уст. жел. дор., 103 ст. его и 711 ст. уст. гражд. суд. Объясненія эти не заслуживаютъ уваженія по слѣдующимъ основаніямъ: 1) Первая изъ при",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "5d6bb028890ff074c0cf61ce46bb43372e31cde7a0b3df4f26a1b7923d141c05",
+      "headnote_sha256": "6d46659852d217e7f8b58b61ff4f57de11eccf35b5ca7788468a5e8f6536a5e4",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-042",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-042?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+68%C2%B9&law=1897-042%3A%D0%A3%D0%96%D0%94%3A68%C2%B9%3Atext%3A36955&at=36955&end=36962",
+      "source_warning": null,
+      "passage_id": "1897-042:36108-37387",
+      "sources": [
+        {
+          "page": 147,
+          "page_method": "header",
+          "file": "p0084_R.txt",
+          "start": 36955,
+          "end": 36962
+        }
+      ],
+      "printed_pages": [
+        147
+      ],
+      "scans": [
+        {
+          "file": "p0084_R.txt",
+          "page": 147,
+          "full": "scans/1897/pages/p0084_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1518,
+          "ocr_sha256": "bf63f92b7ceebd9d954867a40dffa475efd327d182cb6f0a379e2ef745f24edc",
+          "pdf_page": 168,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 36955,
+          "end": 36977,
+          "quote_original": "ст. 68¹ уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 36955,
+          "end": 36962,
+          "quote_original": "ст. 68¹",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 36955,
+              "end": 36977,
+              "quote_original": "ст. 68¹ уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-068:УЖД:69:text:4825",
+      "statute": "УЖД ст. 69",
+      "code": "УЖД",
+      "article": "ст. 69",
+      "decision_id": "1905-068",
+      "year": 1905,
+      "decision_number": 68,
+      "field": "text",
+      "start": 4825,
+      "end": 4831,
+      "quote_original": "ст. 69",
+      "context_original": "зяевъ сбора за время нахожденія вагоновъ въ таможнѣ, какъ сбора за простой, ибо такой сборъ и въ настоящее время не разрѣшенъ, а по закону (ст. 69 общ. уст. росс. ж. д.) воспрещается желѣзнымъ дорогамъ взимать за перевозку грузовъ какіе-либо платежи кромѣ установленныхъ тарифами и прав",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "ecb18d1373c854a1ca63b938c42dcd2d0c436d002175537894e873d523e248a7",
+      "headnote_sha256": "38770c1e3a92b6d7238ef93e9c1ef72aa374ef3f90cd12645618ff59eebfda89",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-068",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-068?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+69&law=1905-068%3A%D0%A3%D0%96%D0%94%3A69%3Atext%3A4825&at=4825&end=4831",
+      "source_warning": null,
+      "passage_id": "1905-068:4165-5265",
+      "sources": [
+        {
+          "page": 186,
+          "page_method": "header",
+          "file": "p0094_L.txt",
+          "start": 4825,
+          "end": 4831
+        }
+      ],
+      "printed_pages": [
+        186
+      ],
+      "scans": [
+        {
+          "file": "p0094_L.txt",
+          "page": 186,
+          "full": "scans/1905/pages/p0094_L.webp",
+          "width": 1100,
+          "height": 1560,
+          "ocr_sha256": "851d91d56317ce63c41f1289667f32d510e2b87571dd9856090a9c237d433fca",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 4825,
+          "end": 4853,
+          "quote_original": "ст. 69 общ. уст. росс. ж. д.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 4825,
+          "end": 4831,
+          "quote_original": "ст. 69",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4825,
+              "end": 4853,
+              "quote_original": "ст. 69 общ. уст. росс. ж. д.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-020:УЖД:72:text:1783",
+      "statute": "УЖД ст. 72",
+      "code": "УЖД",
+      "article": "ст. 72",
+      "decision_id": "1904-020",
+      "year": 1904,
+      "decision_number": 20,
+      "field": "text",
+      "start": 1783,
+      "end": 1789,
+      "quote_original": "ст. 72",
+      "context_original": "о дня выставки реестра о переборахъ на станціи,—долженъ быть разрѣшенъ въ отрицательномъ смыслѣ, по слѣдующимъ соображеніямъ и законамъ: 1) ст. 72 уст. жел. дор. обязываетъ желѣзную дорогу излишне полученныя ею въ счетъ провозной платы и другихъ сборовъ деньги возвратить тому лицу, съ",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "3379a81cb6a7847bea5574f42fb5e3bce5efe8047bf76781fb62964770193bad",
+      "headnote_sha256": "9f4a0ecbe02185ee60ff2658d959e45df5d661b5702f57a1908317fbcb7ab323",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-020",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-020?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+72&law=1904-020%3A%D0%A3%D0%96%D0%94%3A72%3Atext%3A1783&at=1783&end=1789",
+      "source_warning": null,
+      "passage_id": "1904-020:1490-3219",
+      "sources": [
+        {
+          "page": 50,
+          "page_method": "header",
+          "file": "p0026_L.txt",
+          "start": 1783,
+          "end": 1789
+        }
+      ],
+      "printed_pages": [
+        50
+      ],
+      "scans": [
+        {
+          "file": "p0026_L.txt",
+          "page": 50,
+          "full": "scans/1904/pages/p0026_L.webp",
+          "width": 1100,
+          "height": 1659,
+          "ocr_sha256": "8265f30fcb1e127b72159616ae02fddba32bdc3321ea358160efe27b5d89aca1",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1783,
+          "end": 1804,
+          "quote_original": "ст. 72 уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1783,
+          "end": 1789,
+          "quote_original": "ст. 72",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1783,
+              "end": 1804,
+              "quote_original": "ст. 72 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 3535,
+          "end": 3541,
+          "quote_original": "ст. 72",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3535,
+              "end": 3556,
+              "quote_original": "ст. 72 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-102:УЖД:73:text:8505",
+      "statute": "УЖД ст. 73",
+      "code": "УЖД",
+      "article": "ст. 73",
+      "decision_id": "1904-102",
+      "year": 1904,
+      "decision_number": 102,
+      "field": "text",
+      "start": 8505,
+      "end": 8511,
+      "quote_original": "ст. 73",
+      "context_original": "ачетѣ перебора недоборомъ, начисленнымъ желѣзной дорогой по накладнымъ, положеннымъ въ основаніе иска, по нарушенію 129 ст. уст. гр. суд. и ст. 73 уст. жел. дор., отмѣнить, и дѣло, для разсмотрѣнія его въ этой части, передать въ тотъ же съѣздъ въ другомъ составѣ присутствія.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "108de43ae630377635d33856d8f29b8a3a9d1a53660caac5c089eb382ba20236",
+      "headnote_sha256": "1a97a46cc511117581d6c2f41934ba8f7c41de47e62422d6c1f9955ac72fa165",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-102",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-102?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+73&law=1904-102%3A%D0%A3%D0%96%D0%94%3A73%3Atext%3A8505&at=8505&end=8511",
+      "source_warning": null,
+      "passage_id": "1904-102:6759-8640",
+      "sources": [
+        {
+          "page": 283,
+          "page_method": "header",
+          "file": "p0142_R.txt",
+          "start": 8505,
+          "end": 8511
+        }
+      ],
+      "printed_pages": [
+        283
+      ],
+      "scans": [
+        {
+          "file": "p0142_R.txt",
+          "page": 283,
+          "full": "scans/1904/pages/p0142_R.webp",
+          "width": 1100,
+          "height": 1586,
+          "ocr_sha256": "16a427218791f0d177d84cc285fec828267ba1f2aa7cd7e64a6c7ba55ef51897",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 8505,
+          "end": 8526,
+          "quote_original": "ст. 73 уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8505,
+          "end": 8511,
+          "quote_original": "ст. 73",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 8505,
+              "end": 8526,
+              "quote_original": "ст. 73 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-091:УЖД:80:text:3295",
+      "statute": "УЖД ст. 80",
+      "code": "УЖД",
+      "article": "ст. 80",
+      "decision_id": "1904-091",
+      "year": 1904,
+      "decision_number": 91,
+      "field": "text",
+      "start": 3295,
+      "end": 3301,
+      "quote_original": "ст. 80",
+      "context_original": "ельствующаго Сената 1879 г. № 332 и 1893 г. № 57); 2) при разрѣшеніи возникшаго въ настоящемъ дѣлѣ указаннаго выше вопроса оказывается, что ст. 80 уст. жел. дор. требуетъ лишь, чтобы желѣзнодорожная станція во всѣхъ случаяхъ, когда въ накладной обозначенъ адресъ получателя груза, посыл",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "57187b15329975db68c07ed20f4af776e583640145fbd82f96958b2f14b4498e",
+      "headnote_sha256": "7e0f9eb186bfd0d6cd3191cbde3eac1310f944902bb527fe8c99e09872c9acc3",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-091",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-091?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+80&law=1904-091%3A%D0%A3%D0%96%D0%94%3A80%3Atext%3A3295&at=3295&end=3301",
+      "source_warning": null,
+      "passage_id": "1904-091:2580-4708",
+      "sources": [
+        {
+          "page": 255,
+          "page_method": "header",
+          "file": "p0128_R.txt",
+          "start": 3295,
+          "end": 3301
+        }
+      ],
+      "printed_pages": [
+        255
+      ],
+      "scans": [
+        {
+          "file": "p0128_R.txt",
+          "page": 255,
+          "full": "scans/1904/pages/p0128_R.webp",
+          "width": 1100,
+          "height": 1610,
+          "ocr_sha256": "a28e01d87fcf12da73394716b35cb3e6b7a4ec617a875f5393433a66f62cc158",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3295,
+          "end": 3316,
+          "quote_original": "ст. 80 уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3295,
+          "end": 3301,
+          "quote_original": "ст. 80",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3295,
+              "end": 3316,
+              "quote_original": "ст. 80 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 4616,
+          "end": 4622,
+          "quote_original": "ст. 80",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 4616,
+              "end": 4637,
+              "quote_original": "ст. 80 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-028:УЖД:92:text:2165",
+      "statute": "УЖД ст. 92",
+      "code": "УЖД",
+      "article": "ст. 92",
+      "decision_id": "1905-028",
+      "year": 1905,
+      "decision_number": 28,
+      "field": "text",
+      "start": 2165,
+      "end": 2171,
+      "quote_original": "ст. 92",
+      "context_original": "ніи за поврежденіе имущества, причиненное при эксплоатаціи желѣзныхъ дорогъ. Вопросъ этотъ долженъ быть разрѣшенъ отрицательно на основаніи ст. 92 уст. жел. дор., ст. 683 т. X ч. 1 и преподан- ныхъ Правительствующимъ Сенатомъ указаній въ рѣшеніяхъ его за 1896 г. № 113 и 1904 г. № 3 и 8",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "1ec376747e457e714b448774c33f959233a31d6abf64a18f78209d482daa94f0",
+      "headnote_sha256": "a1e7995077253506698d41f90ac787b3eace0741a55f896748791b11cd0f4ecf",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-028",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-028?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+92&law=1905-028%3A%D0%A3%D0%96%D0%94%3A92%3Atext%3A2165&at=2165&end=2171",
+      "source_warning": null,
+      "passage_id": "1905-028:1545-3059",
+      "sources": [
+        {
+          "page": 71,
+          "page_method": "header",
+          "file": "p0036_R.txt",
+          "start": 2165,
+          "end": 2171
+        }
+      ],
+      "printed_pages": [
+        71
+      ],
+      "scans": [
+        {
+          "file": "p0036_R.txt",
+          "page": 71,
+          "full": "scans/1905/pages/p0036_R.webp",
+          "width": 1100,
+          "height": 1532,
+          "ocr_sha256": "7418f38c32903f2b2ba3e70ca29ff314cc6b1b914356c9fcf8f7bb8c04be662d",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2165,
+          "end": 2186,
+          "quote_original": "ст. 92 уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2165,
+          "end": 2171,
+          "quote_original": "ст. 92",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2165,
+              "end": 2186,
+              "quote_original": "ст. 92 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 2336,
+          "end": 2342,
+          "quote_original": "ст. 92",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2336,
+              "end": 2357,
+              "quote_original": "ст. 92 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-090:УЖД:97:text:3719",
+      "statute": "УЖД ст. 97",
+      "code": "УЖД",
+      "article": "ст. 97",
+      "decision_id": "1905-090",
+      "year": 1905,
+      "decision_number": 90,
+      "field": "text",
+      "start": 3719,
+      "end": 3740,
+      "quote_original": "ст. 97, 102, 107, 109",
+      "context_original": "ръ, изъ которыхъ однѣ иски были основаны на недостаткѣ въ количествѣ принятаго товара, а другіе—на порчѣ его при перевозкѣ, указавъ, что въ ст. 97, 102, 107, 109 уст. жел. дор., относящихся къ отвѣтственности желѣзныхъ дорогъ по договору перевозки, установлены правила какъ на случай утраты груза, так",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "b9caedc801ec0d5538b8182443d89324e5c33f1c763637e616e32a99e03121a5",
+      "headnote_sha256": "42ea8bd37be0392f197d0dfdc47e6a90a919875dc53f70e68b377fb14574dee9",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-090",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-090?mode=laws&c=%D0%A3%D0%96%D0%94&q=%D1%81%D1%82.+97&law=1905-090%3A%D0%A3%D0%96%D0%94%3A97%3Atext%3A3719&at=3719&end=3740",
+      "source_warning": null,
+      "passage_id": "1905-090:3055-5114",
+      "sources": [
+        {
+          "page": 244,
+          "page_method": "header",
+          "file": "p0123_L.txt",
+          "start": 3719,
+          "end": 3740
+        }
+      ],
+      "printed_pages": [
+        244
+      ],
+      "scans": [
+        {
+          "file": "p0123_L.txt",
+          "page": 244,
+          "full": "scans/1905/pages/p0123_L.webp",
+          "width": 1100,
+          "height": 1551,
+          "ocr_sha256": "ef678d06bcf47b754ec7aed5e904798a3508b318bdf802d72b84f9441a739999",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 3719,
+          "end": 3755,
+          "quote_original": "ст. 97, 102, 107, 109 уст. жел. дор.",
+          "act_code": "УЖД"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3719,
+          "end": 3740,
+          "quote_original": "ст. 97, 102, 107, 109",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 3719,
+              "end": 3755,
+              "quote_original": "ст. 97, 102, 107, 109 уст. жел. дор.",
+              "act_code": "УЖД"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

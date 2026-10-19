@@ -1,0 +1,34 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:2433ea245c39e57a199c959245d64c887e26d851eed1b4249f20b59c5405b965",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "outcome",
+    "id": "outcome-23a2a9bfcf74",
+    "label": "Отменено"
+  },
+  "count": 8,
+  "decision_ids": [
+    "1896-003",
+    "1896-025",
+    "1896-047",
+    "1905-001",
+    "1905-012",
+    "1905-046",
+    "1905-080",
+    "1905-099"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1896-003.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1896-025.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1896-047.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-001.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-012.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-046.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-080.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-099.json"
+    ]
+  }
+}

@@ -1,0 +1,552 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:2433ea245c39e57a199c959245d64c887e26d851eed1b4249f20b59c5405b965",
+  "resource": "legislation-citations",
+  "scope": {
+    "code": "ОГЗ",
+    "id": "act-c325e0a23fc5"
+  },
+  "count": 7,
+  "items": [
+    {
+      "id": "1904-060:ОГЗ:48:text:1695",
+      "statute": "ОГЗ ст. 48",
+      "code": "ОГЗ",
+      "article": "ст. 48",
+      "decision_id": "1904-060",
+      "year": 1904,
+      "decision_number": 60,
+      "field": "text",
+      "start": 1695,
+      "end": 1706,
+      "quote_original": "ст. 57 и 48",
+      "context_original": "оченныхъ (рѣш. 1879 г. № 300, 1882 г. № 156, 157 и мн. др.), какъ обнародованныя во „всеобщее извѣстіе“ установленнымъ въ законѣ порядкомъ (ст. 57 и 48 т. I ч. 1 законовъ основныхъ и указъ 1-го департамента Правительствующаго Сената собр. узак. 1885 г. № 18 ст. 165), должны быть извѣстны ка",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "8cd7686db11e31857da400962f1b7769f803d8b4f6a21fc692c6f381cdf06618",
+      "headnote_sha256": "fb210ec4439e63a5f1be51c4e6b12881922cc415064fbbcde88a24aee4031075",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060?mode=laws&c=%D0%9E%D0%93%D0%97&q=%D1%81%D1%82.+48&law=1904-060%3A%D0%9E%D0%93%D0%97%3A48%3Atext%3A1695&at=1695&end=1706",
+      "source_warning": null,
+      "passage_id": "1904-060:1238-2899",
+      "sources": [
+        {
+          "page": 168,
+          "page_method": "header",
+          "file": "p0085_L.txt",
+          "start": 1695,
+          "end": 1706
+        }
+      ],
+      "printed_pages": [
+        168
+      ],
+      "scans": [
+        {
+          "file": "p0085_L.txt",
+          "page": 168,
+          "full": "scans/1904/pages/p0085_L.webp",
+          "width": 1100,
+          "height": 1606,
+          "ocr_sha256": "6a77260f29aabbfc8556a343f35639151a4206efd2db04001f00cede901b6809",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "ОГЗ",
+          "field": "text",
+          "start": 1695,
+          "end": 1735,
+          "quote_original": "ст. 57 и 48 т. I ч. 1 законовъ основныхъ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1695,
+          "end": 1706,
+          "quote_original": "ст. 57 и 48",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "ОГЗ",
+              "field": "text",
+              "start": 1695,
+              "end": 1735,
+              "quote_original": "ст. 57 и 48 т. I ч. 1 законовъ основныхъ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-020:ОГЗ:49:text:3036",
+      "statute": "ОГЗ ст. 49",
+      "code": "ОГЗ",
+      "article": "ст. 49",
+      "decision_id": "1904-020",
+      "year": 1904,
+      "decision_number": 20,
+      "field": "text",
+      "start": 3036,
+      "end": 3047,
+      "quote_original": "ст. 49 и 50",
+      "context_original": "езъ утвержденія Самодержавной Власти, а отмѣна закона существующаго совершается тѣмъ же порядкомъ, какой означенъ для составленія законовъ (ст. 49 и 50 того же тома и части св. зак.), а засимъ и выставка упомянутыхъ реестровъ не можетъ для лицъ, означенныхъ въ 72 ст. уст. жел. дор., имѣть к",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "3379a81cb6a7847bea5574f42fb5e3bce5efe8047bf76781fb62964770193bad",
+      "headnote_sha256": "9f4a0ecbe02185ee60ff2658d959e45df5d661b5702f57a1908317fbcb7ab323",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-020",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-020?mode=laws&c=%D0%9E%D0%93%D0%97&q=%D1%81%D1%82.+49&law=1904-020%3A%D0%9E%D0%93%D0%97%3A49%3Atext%3A3036&at=3036&end=3047",
+      "source_warning": null,
+      "passage_id": "1904-020:1490-3219",
+      "sources": [
+        {
+          "page": 51,
+          "page_method": "header",
+          "file": "p0026_R.txt",
+          "start": 3036,
+          "end": 3047
+        }
+      ],
+      "printed_pages": [
+        51
+      ],
+      "scans": [
+        {
+          "file": "p0026_R.txt",
+          "page": 51,
+          "full": "scans/1904/pages/p0026_R.webp",
+          "width": 1100,
+          "height": 1659,
+          "ocr_sha256": "f337511e8126b161fb94c625e3209a733a53efe1f9feb37ec411227fa7bd9465",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "ОГЗ",
+          "field": "text",
+          "start": 2703,
+          "end": 3077,
+          "quote_original": "ст. 51 и 73 т. I ч. 1 св. зак. (изд. 1892 г.), никакое мѣсто или правительство въ государствѣ не можетъ само собою установить новаго закона, и никакой законъ не можетъ имѣть своего совершенія безъ утвержденія Самодержавной Власти, а отмѣна закона существующаго совершается тѣмъ же порядкомъ, какой означенъ для составленія законовъ (ст. 49 и 50 того же тома и части св. зак."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3036,
+          "end": 3047,
+          "quote_original": "ст. 49 и 50",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "ОГЗ",
+              "field": "text",
+              "start": 2703,
+              "end": 3077,
+              "quote_original": "ст. 51 и 73 т. I ч. 1 св. зак. (изд. 1892 г.), никакое мѣсто или правительство въ государствѣ не можетъ само собою установить новаго закона, и никакой законъ не можетъ имѣть своего совершенія безъ утвержденія Самодержавной Власти, а отмѣна закона существующаго совершается тѣмъ же порядкомъ, какой означенъ для составленія законовъ (ст. 49 и 50 того же тома и части св. зак."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-020:ОГЗ:50:text:3036",
+      "statute": "ОГЗ ст. 50",
+      "code": "ОГЗ",
+      "article": "ст. 50",
+      "decision_id": "1904-020",
+      "year": 1904,
+      "decision_number": 20,
+      "field": "text",
+      "start": 3036,
+      "end": 3047,
+      "quote_original": "ст. 49 и 50",
+      "context_original": "езъ утвержденія Самодержавной Власти, а отмѣна закона существующаго совершается тѣмъ же порядкомъ, какой означенъ для составленія законовъ (ст. 49 и 50 того же тома и части св. зак.), а засимъ и выставка упомянутыхъ реестровъ не можетъ для лицъ, означенныхъ въ 72 ст. уст. жел. дор., имѣть к",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "3379a81cb6a7847bea5574f42fb5e3bce5efe8047bf76781fb62964770193bad",
+      "headnote_sha256": "9f4a0ecbe02185ee60ff2658d959e45df5d661b5702f57a1908317fbcb7ab323",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-020",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-020?mode=laws&c=%D0%9E%D0%93%D0%97&q=%D1%81%D1%82.+50&law=1904-020%3A%D0%9E%D0%93%D0%97%3A50%3Atext%3A3036&at=3036&end=3047",
+      "source_warning": null,
+      "passage_id": "1904-020:1490-3219",
+      "sources": [
+        {
+          "page": 51,
+          "page_method": "header",
+          "file": "p0026_R.txt",
+          "start": 3036,
+          "end": 3047
+        }
+      ],
+      "printed_pages": [
+        51
+      ],
+      "scans": [
+        {
+          "file": "p0026_R.txt",
+          "page": 51,
+          "full": "scans/1904/pages/p0026_R.webp",
+          "width": 1100,
+          "height": 1659,
+          "ocr_sha256": "f337511e8126b161fb94c625e3209a733a53efe1f9feb37ec411227fa7bd9465",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "ОГЗ",
+          "field": "text",
+          "start": 2703,
+          "end": 3077,
+          "quote_original": "ст. 51 и 73 т. I ч. 1 св. зак. (изд. 1892 г.), никакое мѣсто или правительство въ государствѣ не можетъ само собою установить новаго закона, и никакой законъ не можетъ имѣть своего совершенія безъ утвержденія Самодержавной Власти, а отмѣна закона существующаго совершается тѣмъ же порядкомъ, какой означенъ для составленія законовъ (ст. 49 и 50 того же тома и части св. зак."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3036,
+          "end": 3047,
+          "quote_original": "ст. 49 и 50",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "ОГЗ",
+              "field": "text",
+              "start": 2703,
+              "end": 3077,
+              "quote_original": "ст. 51 и 73 т. I ч. 1 св. зак. (изд. 1892 г.), никакое мѣсто или правительство въ государствѣ не можетъ само собою установить новаго закона, и никакой законъ не можетъ имѣть своего совершенія безъ утвержденія Самодержавной Власти, а отмѣна закона существующаго совершается тѣмъ же порядкомъ, какой означенъ для составленія законовъ (ст. 49 и 50 того же тома и части св. зак."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-020:ОГЗ:51:text:2703",
+      "statute": "ОГЗ ст. 51",
+      "code": "ОГЗ",
+      "article": "ст. 51",
+      "decision_id": "1904-020",
+      "year": 1904,
+      "decision_number": 20,
+      "field": "text",
+      "start": 2703,
+      "end": 2714,
+      "quote_original": "ст. 51 и 73",
+      "context_original": "какъ отмѣняющія существующій законъ, изображенный въ 72 ст. уст. жел. дор., не могутъ быть признаны законнодѣйствующими, такъ какъ, въ силу ст. 51 и 73 т. I ч. 1 св. зак. (изд. 1892 г.), никакое мѣсто или правительство въ государствѣ не можетъ само собою установить новаго закона, и никакой",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "3379a81cb6a7847bea5574f42fb5e3bce5efe8047bf76781fb62964770193bad",
+      "headnote_sha256": "9f4a0ecbe02185ee60ff2658d959e45df5d661b5702f57a1908317fbcb7ab323",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-020",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-020?mode=laws&c=%D0%9E%D0%93%D0%97&q=%D1%81%D1%82.+51&law=1904-020%3A%D0%9E%D0%93%D0%97%3A51%3Atext%3A2703&at=2703&end=2714",
+      "source_warning": null,
+      "passage_id": "1904-020:1490-3219",
+      "sources": [
+        {
+          "page": 51,
+          "page_method": "header",
+          "file": "p0026_R.txt",
+          "start": 2703,
+          "end": 2714
+        }
+      ],
+      "printed_pages": [
+        51
+      ],
+      "scans": [
+        {
+          "file": "p0026_R.txt",
+          "page": 51,
+          "full": "scans/1904/pages/p0026_R.webp",
+          "width": 1100,
+          "height": 1659,
+          "ocr_sha256": "f337511e8126b161fb94c625e3209a733a53efe1f9feb37ec411227fa7bd9465",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "ОГЗ",
+          "field": "text",
+          "start": 2703,
+          "end": 2748,
+          "quote_original": "ст. 51 и 73 т. I ч. 1 св. зак. (изд. 1892 г.)"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2703,
+          "end": 2714,
+          "quote_original": "ст. 51 и 73",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "ОГЗ",
+              "field": "text",
+              "start": 2703,
+              "end": 2748,
+              "quote_original": "ст. 51 и 73 т. I ч. 1 св. зак. (изд. 1892 г.)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-060:ОГЗ:57:text:1695",
+      "statute": "ОГЗ ст. 57",
+      "code": "ОГЗ",
+      "article": "ст. 57",
+      "decision_id": "1904-060",
+      "year": 1904,
+      "decision_number": 60,
+      "field": "text",
+      "start": 1695,
+      "end": 1706,
+      "quote_original": "ст. 57 и 48",
+      "context_original": "оченныхъ (рѣш. 1879 г. № 300, 1882 г. № 156, 157 и мн. др.), какъ обнародованныя во „всеобщее извѣстіе“ установленнымъ въ законѣ порядкомъ (ст. 57 и 48 т. I ч. 1 законовъ основныхъ и указъ 1-го департамента Правительствующаго Сената собр. узак. 1885 г. № 18 ст. 165), должны быть извѣстны ка",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "8cd7686db11e31857da400962f1b7769f803d8b4f6a21fc692c6f381cdf06618",
+      "headnote_sha256": "fb210ec4439e63a5f1be51c4e6b12881922cc415064fbbcde88a24aee4031075",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-060?mode=laws&c=%D0%9E%D0%93%D0%97&q=%D1%81%D1%82.+57&law=1904-060%3A%D0%9E%D0%93%D0%97%3A57%3Atext%3A1695&at=1695&end=1706",
+      "source_warning": null,
+      "passage_id": "1904-060:1238-2899",
+      "sources": [
+        {
+          "page": 168,
+          "page_method": "header",
+          "file": "p0085_L.txt",
+          "start": 1695,
+          "end": 1706
+        }
+      ],
+      "printed_pages": [
+        168
+      ],
+      "scans": [
+        {
+          "file": "p0085_L.txt",
+          "page": 168,
+          "full": "scans/1904/pages/p0085_L.webp",
+          "width": 1100,
+          "height": 1606,
+          "ocr_sha256": "6a77260f29aabbfc8556a343f35639151a4206efd2db04001f00cede901b6809",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "ОГЗ",
+          "field": "text",
+          "start": 1695,
+          "end": 1735,
+          "quote_original": "ст. 57 и 48 т. I ч. 1 законовъ основныхъ"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1695,
+          "end": 1706,
+          "quote_original": "ст. 57 и 48",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "ОГЗ",
+              "field": "text",
+              "start": 1695,
+              "end": 1735,
+              "quote_original": "ст. 57 и 48 т. I ч. 1 законовъ основныхъ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1905-098:ОГЗ:60:text:8842",
+      "statute": "ОГЗ ст. 60",
+      "code": "ОГЗ",
+      "article": "ст. 60",
+      "decision_id": "1905-098",
+      "year": 1905,
+      "decision_number": 98,
+      "field": "text",
+      "start": 8842,
+      "end": 8848,
+      "quote_original": "ст. 60",
+      "context_original": "етъ только на будущее время, обратнаго дѣйствія не имѣетъ и сила его не распространяется на дѣянія, совершившіяся прежде его обнародованія (ст. 60 т. I ч. 1 осн. зак. изд. 1892 г.). Согласно этому правилу и ст. 6 упомянутыхъ правилъ, предусматривающей обязательное разверстаніе и обмѣнъ",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "2f84d9dd4671b0d3c93958b4fcf70d91f9e4ee6b39d904f88067bd1e5beb0c46",
+      "headnote_sha256": "8e31fcac6d885718c6b5237988b7bdc95524a32c290b25d783145314bd9b8ff0",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-098",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1905-098?mode=laws&c=%D0%9E%D0%93%D0%97&q=%D1%81%D1%82.+60&law=1905-098%3A%D0%9E%D0%93%D0%97%3A60%3Atext%3A8842&at=8842&end=8848",
+      "source_warning": null,
+      "passage_id": "1905-098:7405-8883",
+      "sources": [
+        {
+          "page": 267,
+          "page_method": "header",
+          "file": "p0134_R.txt",
+          "start": 8842,
+          "end": 8848
+        }
+      ],
+      "printed_pages": [
+        267
+      ],
+      "scans": [
+        {
+          "file": "p0134_R.txt",
+          "page": 267,
+          "full": "scans/1905/pages/p0134_R.webp",
+          "width": 1100,
+          "height": 1569,
+          "ocr_sha256": "f5102797a23a5d1ab466539082814ac7133e003bfe34d1fa845451de59d050b2",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "ОГЗ",
+          "field": "text",
+          "start": 8842,
+          "end": 8881,
+          "quote_original": "ст. 60 т. I ч. 1 осн. зак. изд. 1892 г."
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8842,
+          "end": 8848,
+          "quote_original": "ст. 60",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "ОГЗ",
+              "field": "text",
+              "start": 8842,
+              "end": 8881,
+              "quote_original": "ст. 60 т. I ч. 1 осн. зак. изд. 1892 г."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-020:ОГЗ:73:text:2703",
+      "statute": "ОГЗ ст. 73",
+      "code": "ОГЗ",
+      "article": "ст. 73",
+      "decision_id": "1904-020",
+      "year": 1904,
+      "decision_number": 20,
+      "field": "text",
+      "start": 2703,
+      "end": 2714,
+      "quote_original": "ст. 51 и 73",
+      "context_original": "какъ отмѣняющія существующій законъ, изображенный въ 72 ст. уст. жел. дор., не могутъ быть признаны законнодѣйствующими, такъ какъ, въ силу ст. 51 и 73 т. I ч. 1 св. зак. (изд. 1892 г.), никакое мѣсто или правительство въ государствѣ не можетъ само собою установить новаго закона, и никакой",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "3379a81cb6a7847bea5574f42fb5e3bce5efe8047bf76781fb62964770193bad",
+      "headnote_sha256": "9f4a0ecbe02185ee60ff2658d959e45df5d661b5702f57a1908317fbcb7ab323",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-020",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-020?mode=laws&c=%D0%9E%D0%93%D0%97&q=%D1%81%D1%82.+73&law=1904-020%3A%D0%9E%D0%93%D0%97%3A73%3Atext%3A2703&at=2703&end=2714",
+      "source_warning": null,
+      "passage_id": "1904-020:1490-3219",
+      "sources": [
+        {
+          "page": 51,
+          "page_method": "header",
+          "file": "p0026_R.txt",
+          "start": 2703,
+          "end": 2714
+        }
+      ],
+      "printed_pages": [
+        51
+      ],
+      "scans": [
+        {
+          "file": "p0026_R.txt",
+          "page": 51,
+          "full": "scans/1904/pages/p0026_R.webp",
+          "width": 1100,
+          "height": 1659,
+          "ocr_sha256": "f337511e8126b161fb94c625e3209a733a53efe1f9feb37ec411227fa7bd9465",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "act_code": "ОГЗ",
+          "field": "text",
+          "start": 2703,
+          "end": 2748,
+          "quote_original": "ст. 51 и 73 т. I ч. 1 св. зак. (изд. 1892 г.)"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 2703,
+          "end": 2714,
+          "quote_original": "ст. 51 и 73",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "act_code": "ОГЗ",
+              "field": "text",
+              "start": 2703,
+              "end": 2748,
+              "quote_original": "ст. 51 и 73 т. I ч. 1 св. зак. (изд. 1892 г.)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

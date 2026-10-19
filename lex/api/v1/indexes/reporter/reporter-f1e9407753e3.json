@@ -1,0 +1,34 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:2433ea245c39e57a199c959245d64c887e26d851eed1b4249f20b59c5405b965",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "reporter",
+    "id": "reporter-f1e9407753e3",
+    "label": "Батурин А. Д."
+  },
+  "count": 8,
+  "decision_ids": [
+    "1904-044",
+    "1904-051",
+    "1904-069",
+    "1904-105",
+    "1905-066",
+    "1905-073",
+    "1905-087",
+    "1905-088"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-044.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-051.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-069.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-105.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-066.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-073.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-087.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-088.json"
+    ]
+  }
+}

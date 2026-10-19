@@ -1,0 +1,24 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:2433ea245c39e57a199c959245d64c887e26d851eed1b4249f20b59c5405b965",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "reporter",
+    "id": "reporter-857f5f50225b",
+    "label": "Проскуряков О. И."
+  },
+  "count": 3,
+  "decision_ids": [
+    "1897-022",
+    "1897-030",
+    "1897-086"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-022.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-030.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-086.json"
+    ]
+  }
+}

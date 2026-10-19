@@ -1,0 +1,43 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:2433ea245c39e57a199c959245d64c887e26d851eed1b4249f20b59c5405b965",
+  "resource": "statutes",
+  "scope": {
+    "code": "УОП",
+    "id": "act-40a72ea949f0"
+  },
+  "count": 3,
+  "items": [
+    {
+      "statute": "УОП ст. 299",
+      "code": "УОП",
+      "article": "ст. 299",
+      "mentions": 1,
+      "decision_id": "1905-094",
+      "year": 1905,
+      "decision_number": 94,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-094"
+    },
+    {
+      "statute": "УОП ст. 33",
+      "code": "УОП",
+      "article": "ст. 33",
+      "mentions": 5,
+      "decision_id": "1905-094",
+      "year": 1905,
+      "decision_number": 94,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-094"
+    },
+    {
+      "statute": "УОП ст. 34",
+      "code": "УОП",
+      "article": "ст. 34",
+      "mentions": 6,
+      "decision_id": "1905-094",
+      "year": 1905,
+      "decision_number": 94,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1905-094"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:2433ea245c39e57a199c959245d64c887e26d851eed1b4249f20b59c5405b965",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "catalog-topic",
+    "id": "church",
+    "label": "church"
+  },
+  "count": 8,
+  "decision_ids": [
+    "1897-012",
+    "1897-024",
+    "1897-039",
+    "1897-065",
+    "1897-089",
+    "1904-007",
+    "1904-036",
+    "1905-011"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-012.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-024.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-039.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-065.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-089.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-007.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-036.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-011.json"
+    ]
+  }
+}

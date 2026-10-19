@@ -1,0 +1,792 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:2433ea245c39e57a199c959245d64c887e26d851eed1b4249f20b59c5405b965",
+  "resource": "legislation-citations",
+  "scope": {
+    "code": "УПР",
+    "id": "act-ee78e5934084"
+  },
+  "count": 8,
+  "items": [
+    {
+      "id": "1896-040:УПР:100:text:779",
+      "statute": "УПР ст. 100",
+      "code": "УПР",
+      "article": "ст. 100",
+      "decision_id": "1896-040",
+      "year": 1896,
+      "decision_number": 40,
+      "field": "text",
+      "start": 779,
+      "end": 786,
+      "quote_original": "ст. 100",
+      "context_original": "о губернатора, вице-губернаторъ, представилъ въ Ми нистерство копію постановленія губерн скаго присутствія по вопросу о примѣ неніи правилъ ст. 100 уст. пром. иед. 1893 г., къ исполненію рѣшеній волост- ныхъ судовъ, коимиі присуждены взыска- нія съ заводскихъ рабочихъ. Изъ озна- чернаго",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "c7a82aa9d17e7474403b84833ef03318bf485cf6acca1a3ddc95e280305620f6",
+      "headnote_sha256": "39971b6b56ee958261714fed6ddf7b2762ba85986b11603dd3c5b78db27f4f37",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-040",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-040?mode=laws&c=%D0%A3%D0%9F%D0%A0&q=%D1%81%D1%82.+100&law=1896-040%3A%D0%A3%D0%9F%D0%A0%3A100%3Atext%3A779&at=779&end=786&v=1896-restored-20261019",
+      "source_warning": null,
+      "passage_id": "1896-040:0-1606",
+      "sources": [
+        {
+          "page": 783,
+          "page_method": "header",
+          "file": "p0076.txt",
+          "start": 779,
+          "end": 786
+        }
+      ],
+      "printed_pages": [
+        783
+      ],
+      "scans": [
+        {
+          "file": "p0076.txt",
+          "page": 783,
+          "full": "scans/1896/pages/p0076-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1659,
+          "ocr_sha256": "a10ed8a606c8e378c044b53cd5f8fd0a204713609a3920f780cf4980f8fa4223",
+          "pdf_page": 76,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 2427,
+          "end": 2644,
+          "quote_original": " мнѣнію, хотя буквальное содержаніе ст. 24 врем. ирав. вол. суд. (прил. къ ст. 43 прил. 3 о(Цц. нол. по прод, 1893 г. и ст. 100 уст. о промышл. не даетъ основанія къ примѣнен ю послѣдней статьи къ исполнен.ю рѣшеній в",
+          "act_code": "УПР"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 779,
+          "end": 786,
+          "quote_original": "ст. 100",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2427,
+              "end": 2644,
+              "quote_original": " мнѣнію, хотя буквальное содержаніе ст. 24 врем. ирав. вол. суд. (прил. къ ст. 43 прил. 3 о(Цц. нол. по прод, 1893 г. и ст. 100 уст. о промышл. не даетъ основанія къ примѣнен ю послѣдней статьи къ исполнен.ю рѣшеній в",
+              "act_code": "УПР"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 1352,
+          "end": 1359,
+          "quote_original": "ст. 100",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2427,
+              "end": 2644,
+              "quote_original": " мнѣнію, хотя буквальное содержаніе ст. 24 врем. ирав. вол. суд. (прил. къ ст. 43 прил. 3 о(Цц. нол. по прод, 1893 г. и ст. 100 уст. о промышл. не даетъ основанія къ примѣнен ю послѣдней статьи къ исполнен.ю рѣшеній в",
+              "act_code": "УПР"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 1790,
+          "end": 1797,
+          "quote_original": "ст. 100",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2427,
+              "end": 2644,
+              "quote_original": " мнѣнію, хотя буквальное содержаніе ст. 24 врем. ирав. вол. суд. (прил. къ ст. 43 прил. 3 о(Цц. нол. по прод, 1893 г. и ст. 100 уст. о промышл. не даетъ основанія къ примѣнен ю послѣдней статьи къ исполнен.ю рѣшеній в",
+              "act_code": "УПР"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 2547,
+          "end": 2554,
+          "quote_original": "ст. 100",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2427,
+              "end": 2644,
+              "quote_original": " мнѣнію, хотя буквальное содержаніе ст. 24 врем. ирав. вол. суд. (прил. къ ст. 43 прил. 3 о(Цц. нол. по прод, 1893 г. и ст. 100 уст. о промышл. не даетъ основанія къ примѣнен ю послѣдней статьи къ исполнен.ю рѣшеній в",
+              "act_code": "УПР"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 4230,
+          "end": 4237,
+          "quote_original": "ст. 100",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 2427,
+              "end": 2644,
+              "quote_original": " мнѣнію, хотя буквальное содержаніе ст. 24 врем. ирав. вол. суд. (прил. къ ст. 43 прил. 3 о(Цц. нол. по прод, 1893 г. и ст. 100 уст. о промышл. не даетъ основанія къ примѣнен ю послѣдней статьи къ исполнен.ю рѣшеній в",
+              "act_code": "УПР"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-076:УПР:102:text:7900",
+      "statute": "УПР ст. 102",
+      "code": "УПР",
+      "article": "ст. 102",
+      "decision_id": "1897-076",
+      "year": 1897,
+      "decision_number": 76,
+      "field": "text",
+      "start": 7900,
+      "end": 7907,
+      "quote_original": "ст. 102",
+      "context_original": ", доказывающихъ, что послѣдній доплатилъ къ средствамъ кассы изъ собственныхъ денегъ значительныя суммы. Касса была учреждена въ 1882 г., а ст. 102 уст. о пром. была помѣщена въ этомъ уставѣ лишь въ изданіи 1893 г. и съ тѣхъ поръ изъ кассы никакихъ расходовъ на леченіе и лекарства произ",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "05867d0498fe87c572173b59e99d70b8fdf8cbdadf95cd6fddefcd3b8788ebc2",
+      "headnote_sha256": "f033b75f0ed42d5579ca9a93b06fba6dfb84f7dba008eb355ce13ca3a29ef843",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-076",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-076?mode=laws&c=%D0%A3%D0%9F%D0%A0&q=%D1%81%D1%82.+102&law=1897-076%3A%D0%A3%D0%9F%D0%A0%3A102%3Atext%3A7900&at=7900&end=7907",
+      "source_warning": null,
+      "passage_id": "1897-076:7328-8991",
+      "sources": [
+        {
+          "page": 249,
+          "page_method": "header",
+          "file": "p0135_R.txt",
+          "start": 7900,
+          "end": 7907
+        }
+      ],
+      "printed_pages": [
+        249
+      ],
+      "scans": [
+        {
+          "file": "p0135_R.txt",
+          "page": 249,
+          "full": "scans/1897/pages/p0135_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1523,
+          "ocr_sha256": "ac076003f85e29bc1ceeb5d2029f73cae76828898faeadcd0bb8a904ed69a60f",
+          "pdf_page": 270,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 7820,
+          "end": 8002,
+          "quote_original": " изъ собственныхъ денегъ значительныя суммы. Касса была учреждена въ 1882 г., а ст. 102 уст. о пром. была помѣщена въ этомъ уставѣ лишь въ изданіи 1893 г. и съ тѣхъ поръ изъ кассы ни",
+          "act_code": "УПР"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 7900,
+          "end": 7907,
+          "quote_original": "ст. 102",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 7820,
+              "end": 8002,
+              "quote_original": " изъ собственныхъ денегъ значительныя суммы. Касса была учреждена въ 1882 г., а ст. 102 уст. о пром. была помѣщена въ этомъ уставѣ лишь въ изданіи 1893 г. и съ тѣхъ поръ изъ кассы ни",
+              "act_code": "УПР"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 12287,
+          "end": 12294,
+          "quote_original": "ст. 102",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 12207,
+              "end": 12389,
+              "quote_original": ", что условіе устава о производствѣ вычетовъ изъ заработной платы противорѣчитъ ст. 102 уст. о пром., такъ какъ эти вычеты предназначались, между прочимъ, на оказаніе рабочимъ медици",
+              "act_code": "УПР"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 13162,
+          "end": 13169,
+          "quote_original": "ст. 102",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 13082,
+              "end": 13264,
+              "quote_original": "аго запрещенія не заключалось. Посему, въ виду неприсвоенія означенному закону (ст. 102 уст. о пром. изд. 1893 г.) обратной силы, запрещеніе это не могло обеззаконить состоявшіяся въ",
+              "act_code": "УПР"
+            }
+          ]
+        },
+        {
+          "field": "text",
+          "start": 13337,
+          "end": 13344,
+          "quote_original": "ст. 102",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 13113,
+              "end": 13210,
+              "quote_original": "Посему, въ виду неприсвоенія означенному закону (ст. 102 уст. о пром. изд. 1893 г.) обратной силы",
+              "act_code": "УПР"
+            },
+            {
+              "kind": "repeat",
+              "field": "text",
+              "start": 13287,
+              "end": 13439,
+              "quote_original": "ошенія, слѣдовательно, съѣздъ, распространяя силу ст. 102 на время, предшествующее ея изданію, допустилъ нарушеніе ст. 60 осн. зак.; того-же, чтобы и по",
+              "act_code": "УПР"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1896-040:УПР:105:text:5335",
+      "statute": "УПР ст. 105",
+      "code": "УПР",
+      "article": "ст. 105",
+      "decision_id": "1896-040",
+      "year": 1896,
+      "decision_number": 40,
+      "field": "text",
+      "start": 5335,
+      "end": 5342,
+      "quote_original": "ст. 105",
+      "context_original": "какъ и рѣшенія другихъ судебны гъ установле ній. Въ виду изложеннаго, къ дозволяе мымъ статьею 100 уст. о промышл. т. XI ч. 2 изд. 1893 г. (ст. 105 по изд. 1887 г.) вычетамъ изъ заработной пла ты, послѣ изданія закона 12 іюля 1889 года, — должны быть отнесены и выче ты на основаніи рѣше",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "c7a82aa9d17e7474403b84833ef03318bf485cf6acca1a3ddc95e280305620f6",
+      "headnote_sha256": "39971b6b56ee958261714fed6ddf7b2762ba85986b11603dd3c5b78db27f4f37",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-040",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-040?mode=laws&c=%D0%A3%D0%9F%D0%A0&q=%D1%81%D1%82.+105&law=1896-040%3A%D0%A3%D0%9F%D0%A0%3A105%3Atext%3A5335&at=5335&end=5342&v=1896-restored-20261019",
+      "source_warning": null,
+      "passage_id": "1896-040:4215-5960",
+      "sources": [
+        {
+          "page": 784,
+          "page_method": "header",
+          "file": "p0077.txt",
+          "start": 5335,
+          "end": 5342
+        }
+      ],
+      "printed_pages": [
+        784
+      ],
+      "scans": [
+        {
+          "file": "p0077.txt",
+          "page": 784,
+          "full": "scans/1896/pages/p0077-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1680,
+          "ocr_sha256": "965309d8c0d976ea4927f6af09463de558155d4ea210a6f8884016767c7d448a",
+          "pdf_page": 77,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 5210,
+          "end": 5432,
+          "quote_original": "другихъ судебны гъ установле ній. Въ виду изложеннаго, къ дозволяе мымъ статьею 100 уст. о промышл. т. XI ч. 2 изд. 1893 г. (ст. 105 по изд. 1887 г.) вычетамъ изъ заработной пла ты, послѣ изданія закона 12 іюля 1889 года, ",
+          "act_code": "УПР"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 5335,
+          "end": 5342,
+          "quote_original": "ст. 105",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 5210,
+              "end": 5432,
+              "quote_original": "другихъ судебны гъ установле ній. Въ виду изложеннаго, къ дозволяе мымъ статьею 100 уст. о промышл. т. XI ч. 2 изд. 1893 г. (ст. 105 по изд. 1887 г.) вычетамъ изъ заработной пла ты, послѣ изданія закона 12 іюля 1889 года, ",
+              "act_code": "УПР"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-027:УПР:174:text:1390",
+      "statute": "УПР ст. 174",
+      "code": "УПР",
+      "article": "ст. 174",
+      "decision_id": "1904-027",
+      "year": 1904,
+      "decision_number": 27,
+      "field": "text",
+      "start": 1390,
+      "end": 1397,
+      "quote_original": "ст. 174",
+      "context_original": "оемъ описаніи способъ былъ извѣстенъ еще до 1887 г.; что описаніе Ауэра преподаетъ исключительно основныя начала, привилегированію, въ силу ст. 174 уст. о пром., не подлежащія; что въ описаніи упущены или утаены такие способы и пріемы, безъ которыхъ нельзя достигнуть надлежащей цѣли, т.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "58113aefa0a5b600fcdda11380bc4072cb02f2f300132493a46204b892d58dd6",
+      "headnote_sha256": "ccf9bb5c3af3391a57a1cac746f3ba8a1ed0623d17fc0540e556253464b991f9",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-027",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-027?mode=laws&c=%D0%A3%D0%9F%D0%A0&q=%D1%81%D1%82.+174&law=1904-027%3A%D0%A3%D0%9F%D0%A0%3A174%3Atext%3A1390&at=1390&end=1397",
+      "source_warning": null,
+      "passage_id": "1904-027:0-1683",
+      "sources": [
+        {
+          "page": 66,
+          "page_method": "header",
+          "file": "p0034_L.txt",
+          "start": 1390,
+          "end": 1397
+        }
+      ],
+      "printed_pages": [
+        66
+      ],
+      "scans": [
+        {
+          "file": "p0034_L.txt",
+          "page": 66,
+          "full": "scans/1904/pages/p0034_L.webp",
+          "width": 1100,
+          "height": 1627,
+          "ocr_sha256": "3762223fbf792cb27556199891b2720a9bf8e28035109084c589ad30e0b35483",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1310,
+          "end": 1492,
+          "quote_original": "саніе Ауэра преподаетъ исключительно основныя начала, привилегированію, въ силу ст. 174 уст. о пром., не подлежащія; что въ описаніи упущены или утаены такие способы и пріемы, безъ к",
+          "act_code": "УПР"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1390,
+          "end": 1397,
+          "quote_original": "ст. 174",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1310,
+              "end": 1492,
+              "quote_original": "саніе Ауэра преподаетъ исключительно основныя начала, привилегированію, въ силу ст. 174 уст. о пром., не подлежащія; что въ описаніи упущены или утаены такие способы и пріемы, безъ к",
+              "act_code": "УПР"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-027:УПР:185:text:1669",
+      "statute": "УПР ст. 185",
+      "code": "УПР",
+      "article": "ст. 185",
+      "decision_id": "1904-027",
+      "year": 1904,
+      "decision_number": 27,
+      "field": "text",
+      "start": 1669,
+      "end": 1676,
+      "quote_original": "ст. 185",
+      "context_original": "цѣли, т.-е. воспроизвести ожидаемое дѣйствіе, и что независимо отъ сего привилегія Ауэра подлежитъ прекращенію за истеченіемъ указаннаго въ ст. 185 срока. С.-Петербургская судебная палата нашла, что разрѣшеніе настоящаго дѣла въ предѣлахъ апелляціонныхъ жалобъ отвѣтчиковъ зависитъ отъ о",
+      "association": "повторная ссылка с явным указанием на тот же акт",
+      "verification_status": "context_verified",
+      "source_sha256": "58113aefa0a5b600fcdda11380bc4072cb02f2f300132493a46204b892d58dd6",
+      "headnote_sha256": "ccf9bb5c3af3391a57a1cac746f3ba8a1ed0623d17fc0540e556253464b991f9",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-027",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-027?mode=laws&c=%D0%A3%D0%9F%D0%A0&q=%D1%81%D1%82.+185&law=1904-027%3A%D0%A3%D0%9F%D0%A0%3A185%3Atext%3A1669&at=1669&end=1676",
+      "source_warning": null,
+      "passage_id": "1904-027:0-1683",
+      "sources": [
+        {
+          "page": 67,
+          "page_method": "header",
+          "file": "p0034_R.txt",
+          "start": 1669,
+          "end": 1676
+        }
+      ],
+      "printed_pages": [
+        67
+      ],
+      "scans": [
+        {
+          "file": "p0034_R.txt",
+          "page": 67,
+          "full": "scans/1904/pages/p0034_R.webp",
+          "width": 1100,
+          "height": 1627,
+          "ocr_sha256": "11e28c5c454d823ccf10bf843ab0b0d888275beb522a054780f054cfcf12ed9b",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1069,
+          "end": 1156,
+          "quote_original": "Основаніемъ своихъ исковъ истцы, со ссылкою на 174, 185 и 1 и 2 п. 197 ст. уст. о пром.",
+          "act_code": "УПР"
+        },
+        {
+          "kind": "repeat",
+          "field": "text",
+          "start": 1559,
+          "end": 1796,
+          "quote_original": "аемое дѣйствіе, и что независимо отъ сего привилегія Ауэра подлежитъ прекращенію за истеченіемъ указаннаго въ ст. 185 срока. С.-Петербургская судебная палата нашла, что разрѣшеніе настоящаго дѣла въ предѣлахъ апелляціонныхъ жалобъ отвѣтч",
+          "act_code": "УПР"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 1669,
+          "end": 1676,
+          "quote_original": "ст. 185",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1069,
+              "end": 1156,
+              "quote_original": "Основаніемъ своихъ исковъ истцы, со ссылкою на 174, 185 и 1 и 2 п. 197 ст. уст. о пром.",
+              "act_code": "УПР"
+            },
+            {
+              "kind": "repeat",
+              "field": "text",
+              "start": 1559,
+              "end": 1796,
+              "quote_original": "аемое дѣйствіе, и что независимо отъ сего привилегія Ауэра подлежитъ прекращенію за истеченіемъ указаннаго въ ст. 185 срока. С.-Петербургская судебная палата нашла, что разрѣшеніе настоящаго дѣла въ предѣлахъ апелляціонныхъ жалобъ отвѣтч",
+              "act_code": "УПР"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-027:УПР:197:text:8709",
+      "statute": "УПР ст. 197",
+      "code": "УПР",
+      "article": "ст. 197",
+      "decision_id": "1904-027",
+      "year": 1904,
+      "decision_number": 27,
+      "field": "text",
+      "start": 8709,
+      "end": 8716,
+      "quote_original": "ст. 197",
+      "context_original": "саціонной жалобы вопроса о правильности толкованія палатою смысла 194 и 5 п. 197 ст. уст. промышл., Правительствующій Сенатъ находитъ: 5 п. ст. 197 уст. пром. гласитъ: „Привилегіи прекращаются:.. п. 5) если впослѣдствіи откроется, что представленное описаніе не полно, что въ немъ упущен",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "58113aefa0a5b600fcdda11380bc4072cb02f2f300132493a46204b892d58dd6",
+      "headnote_sha256": "ccf9bb5c3af3391a57a1cac746f3ba8a1ed0623d17fc0540e556253464b991f9",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-027",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-027?mode=laws&c=%D0%A3%D0%9F%D0%A0&q=%D1%81%D1%82.+197&law=1904-027%3A%D0%A3%D0%9F%D0%A0%3A197%3Atext%3A8709&at=8709&end=8716",
+      "source_warning": null,
+      "passage_id": "1904-027:7340-9439",
+      "sources": [
+        {
+          "page": 69,
+          "page_method": "header",
+          "file": "p0035_R.txt",
+          "start": 8709,
+          "end": 8716
+        }
+      ],
+      "printed_pages": [
+        69
+      ],
+      "scans": [
+        {
+          "file": "p0035_R.txt",
+          "page": 69,
+          "full": "scans/1904/pages/p0035_R.webp",
+          "width": 1100,
+          "height": 1591,
+          "ocr_sha256": "75d30a3687e8c2b1abacae97668cea9f6f1050d726832aa9190d1f82ef722300",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 8629,
+          "end": 8811,
+          "quote_original": "мысла 194 и 5 п. 197 ст. уст. промышл., Правительствующій Сенатъ находитъ: 5 п. ст. 197 уст. пром. гласитъ: „Привилегіи прекращаются:.. п. 5) если впослѣдствіи откроется, что предста",
+          "act_code": "УПР"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 8709,
+          "end": 8716,
+          "quote_original": "ст. 197",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 8629,
+              "end": 8811,
+              "quote_original": "мысла 194 и 5 п. 197 ст. уст. промышл., Правительствующій Сенатъ находитъ: 5 п. ст. 197 уст. пром. гласитъ: „Привилегіи прекращаются:.. п. 5) если впослѣдствіи откроется, что предста",
+              "act_code": "УПР"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1904-027:УПР:197 п. 5:text:3506",
+      "statute": "УПР ст. 197 п. 5",
+      "code": "УПР",
+      "article": "ст. 197 п. 5",
+      "decision_id": "1904-027",
+      "year": 1904,
+      "decision_number": 27,
+      "field": "text",
+      "start": 3506,
+      "end": 3518,
+      "quote_original": "ст. 197 п. 5",
+      "context_original": "ваго описанія нельзя достигнуть надлежащей цѣли, и что на вопросъ о томъ, заключаются ли въ описаніи привилегіи Ауэра условія, указанныя въ ст. 197 п. 5, слѣдуетъ отвѣтить: „да, заключаются, такъ какъ при исполненіи въ немъ произошли столь существенныя измѣненія и усовершенствованія, что без",
+      "association": "повторная ссылка с явным указанием на тот же акт",
+      "verification_status": "context_verified",
+      "source_sha256": "58113aefa0a5b600fcdda11380bc4072cb02f2f300132493a46204b892d58dd6",
+      "headnote_sha256": "ccf9bb5c3af3391a57a1cac746f3ba8a1ed0623d17fc0540e556253464b991f9",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1904-027",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1904-027?mode=laws&c=%D0%A3%D0%9F%D0%A0&q=%D1%81%D1%82.+197+%D0%BF.+5&law=1904-027%3A%D0%A3%D0%9F%D0%A0%3A197+%D0%BF.+5%3Atext%3A3506&at=3506&end=3518",
+      "source_warning": null,
+      "passage_id": "1904-027:2940-4568",
+      "sources": [
+        {
+          "page": 67,
+          "page_method": "header",
+          "file": "p0034_R.txt",
+          "start": 3506,
+          "end": 3518
+        }
+      ],
+      "printed_pages": [
+        67
+      ],
+      "scans": [
+        {
+          "file": "p0034_R.txt",
+          "page": 67,
+          "full": "scans/1904/pages/p0034_R.webp",
+          "width": 1100,
+          "height": 1627,
+          "ocr_sha256": "11e28c5c454d823ccf10bf843ab0b0d888275beb522a054780f054cfcf12ed9b",
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 1843,
+          "end": 1993,
+          "quote_original": "подходитъ-ли привилегія, выданная въ 1887 г. Ауэру-фонъ-Вельсбаху, подъ дѣйствіе 2 и 3 п. 197 ст. уст. о промышленности фабрич. и заводск. (изд. 1887)",
+          "act_code": "УПР"
+        },
+        {
+          "kind": "repeat",
+          "field": "text",
+          "start": 3396,
+          "end": 3638,
+          "quote_original": "ь надлежащей цѣли, и что на вопросъ о томъ, заключаются ли въ описаніи привилегіи Ауэра условія, указанныя въ ст. 197 п. 5, слѣдуетъ отвѣтить: „да, заключаются, такъ какъ при исполненіи въ немъ произошли столь существенныя измѣненія и усоверш",
+          "act_code": "УПР"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 3506,
+          "end": 3518,
+          "quote_original": "ст. 197 п. 5",
+          "method": "repeat",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 1843,
+              "end": 1993,
+              "quote_original": "подходитъ-ли привилегія, выданная въ 1887 г. Ауэру-фонъ-Вельсбаху, подъ дѣйствіе 2 и 3 п. 197 ст. уст. о промышленности фабрич. и заводск. (изд. 1887)",
+              "act_code": "УПР"
+            },
+            {
+              "kind": "repeat",
+              "field": "text",
+              "start": 3396,
+              "end": 3638,
+              "quote_original": "ь надлежащей цѣли, и что на вопросъ о томъ, заключаются ли въ описаніи привилегіи Ауэра условія, указанныя въ ст. 197 п. 5, слѣдуетъ отвѣтить: „да, заключаются, такъ какъ при исполненіи въ немъ произошли столь существенныя измѣненія и усоверш",
+              "act_code": "УПР"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1897-076:УПР:50–60:text:13039",
+      "statute": "УПР ст. 50–60",
+      "code": "УПР",
+      "article": "ст. 50–60",
+      "decision_id": "1897-076",
+      "year": 1897,
+      "decision_number": 76,
+      "field": "text",
+      "start": 13039,
+      "end": 13048,
+      "quote_original": "ст. 50—60",
+      "context_original": "Сов. (собр. узак. 1886 г. іюля 15, ст. 639); въ дѣйствовавшихъ же до тѣхъ поръ правилахъ о наймѣ рабочихъ на фабрикахъ (глава III разд. II ст. 50—60 уст. о пром. изд. 1879 г.) подобнаго запрещенія не заключалось. Посему, въ виду неприсвоенія означенному закону (ст. 102 уст. о пром. изд.",
+      "association": "акт прямо назван при этой ссылке",
+      "verification_status": "context_verified",
+      "source_sha256": "05867d0498fe87c572173b59e99d70b8fdf8cbdadf95cd6fddefcd3b8788ebc2",
+      "headnote_sha256": "f033b75f0ed42d5579ca9a93b06fba6dfb84f7dba008eb355ce13ca3a29ef843",
+      "number_status": "ocr_unverified",
+      "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1897-076",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1897-076?mode=laws&c=%D0%A3%D0%9F%D0%A0&q=%D1%81%D1%82.+50%E2%80%9360&law=1897-076%3A%D0%A3%D0%9F%D0%A0%3A50%E2%80%9360%3Atext%3A13039&at=13039&end=13048",
+      "source_warning": null,
+      "passage_id": "1897-076:11594-13112",
+      "sources": [
+        {
+          "page": 251,
+          "page_method": "header",
+          "file": "p0136_R.txt",
+          "start": 13039,
+          "end": 13048
+        }
+      ],
+      "printed_pages": [
+        251
+      ],
+      "scans": [
+        {
+          "file": "p0136_R.txt",
+          "page": 251,
+          "full": "scans/1897/pages/p0136_R-b8b267d5742f75d0.webp",
+          "width": 1100,
+          "height": 1529,
+          "ocr_sha256": "b1b410e8f263bb78f82dbdcbb5177880ae0e3aacc3bb1b1a7bca51a87c23f782",
+          "pdf_page": 272,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [
+        {
+          "kind": "direct",
+          "field": "text",
+          "start": 12959,
+          "end": 13143,
+          "quote_original": "ихъ же до тѣхъ поръ правилахъ о наймѣ рабочихъ на фабрикахъ (глава III разд. II ст. 50—60 уст. о пром. изд. 1879 г.) подобнаго запрещенія не заключалось. Посему, въ виду неприсвоенія о",
+          "act_code": "УПР"
+        }
+      ],
+      "occurrences": [
+        {
+          "field": "text",
+          "start": 13039,
+          "end": 13048,
+          "quote_original": "ст. 50—60",
+          "method": "direct",
+          "evidence": [
+            {
+              "kind": "direct",
+              "field": "text",
+              "start": 12959,
+              "end": 13143,
+              "quote_original": "ихъ же до тѣхъ поръ правилахъ о наймѣ рабочихъ на фабрикахъ (глава III разд. II ст. 50—60 уст. о пром. изд. 1879 г.) подобнаго запрещенія не заключалось. Посему, въ виду неприсвоенія о",
+              "act_code": "УПР"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
