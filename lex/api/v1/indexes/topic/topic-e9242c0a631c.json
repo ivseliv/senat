@@ -1,18 +1,19 @@
 {
   "api_version": "v1",
   "contract_version": "1.6.0",
-  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
+  "data_revision": "sha256:a59b8d9fef758eb7b6a94319cb261e00f6dd70ee57b65af303dac62df2538883",
   "resource": "decision-set",
   "filter": {
     "kind": "topic",
     "id": "topic-e9242c0a631c",
     "label": "Наследство и завещания"
   },
-  "count": 60,
+  "count": 61,
   "decision_ids": [
     "1896-010",
     "1896-017",
     "1896-036",
+    "1896-046",
     "1897-005",
     "1897-010",
     "1897-011",
@@ -76,6 +77,7 @@
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1896-010.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1896-017.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1896-036.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1896-046.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-005.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-010.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-011.json",

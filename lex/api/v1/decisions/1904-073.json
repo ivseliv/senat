@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
   "contract_version": "1.6.0",
-  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
+  "data_revision": "sha256:a59b8d9fef758eb7b6a94319cb261e00f6dd70ee57b65af303dac62df2538883",
   "resource": "decision",
   "scope": {
     "id": "1904-073",
@@ -27,10 +27,7 @@
     "participant_groups": {},
     "statutes": {},
     "cites": [],
-    "participant_ids": [
-      "1904-13545ba45e30",
-      "1904-2c3dea19308f"
-    ],
+    "participant_ids": [],
     "precedents": [
       {
         "id": "1904-073:1875:957:1076",

@@ -8,6 +8,8 @@ import csv
 import hashlib
 import json
 from pathlib import Path
+from urllib.parse import parse_qsl, urlencode
+from functools import lru_cache
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / 'lex' / 'data'
@@ -19,10 +21,22 @@ def read(name):
     return json.loads((DATA / name).read_text(encoding='utf-8'))
 
 
+@lru_cache(maxsize=1)
+def _source_revisions(path, modified):
+    return json.loads(path.read_text(encoding='utf-8')).get('source_revisions', {})
+
+
 def url(path):
-    if path.startswith(('https://', 'http://')):
-        return path
-    return PUBLIC + path.lstrip('/')
+    absolute = path if path.startswith(('https://', 'http://')) else PUBLIC + path.lstrip('/')
+    if absolute.startswith(PUBLIC+'#/d/') and '?' in absolute:
+        base, query = absolute.split('?', 1)
+        analytics = DATA / 'analytics.json'
+        revision = _source_revisions(analytics, analytics.stat().st_mtime_ns).get(base.rsplit('/', 1)[1])
+        params = dict(parse_qsl(query))
+        if revision and 'at' in params and 'v' not in params:
+            params['v'] = revision['version']
+            return base + '?' + urlencode(params)
+    return absolute
 
 
 def decision_url(decision_id):
@@ -32,7 +46,7 @@ def decision_url(decision_id):
 def passage_url(passage):
     # Режим passage открывает карточку на исходном смещении, без подстановки
     # поискового запроса и без выдачи смыслового поиска.
-    return PUBLIC + f'#/d/{passage["decision"]}?mode=passage&at={passage["start"]}&end={passage["end"]}'
+    return url(f'#/d/{passage["decision"]}?mode=passage&at={passage["start"]}&end={passage["end"]}')
 
 
 def compact(value):

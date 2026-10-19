@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
   "contract_version": "1.6.0",
-  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
+  "data_revision": "sha256:a59b8d9fef758eb7b6a94319cb261e00f6dd70ee57b65af303dac62df2538883",
   "resource": "legislation-citations",
   "scope": {
     "code": "УНМС",
@@ -244,7 +244,7 @@
       ]
     },
     {
-      "id": "1896-037:УНМС:29:text:6228",
+      "id": "1896-037:УНМС:29:text:6332",
       "statute": "УНМС ст. 29",
       "code": "УНМС",
       "article": "ст. 29",
@@ -252,27 +252,27 @@
       "year": 1896,
       "decision_number": 37,
       "field": "text",
-      "start": 6228,
-      "end": 6234,
+      "start": 6332,
+      "end": 6338,
       "quote_original": "ст. 29",
       "context_original": "олненіи озна ченныхъ постаніовлецій привлекаются къ отвѣтственности на общемъ основаніи •и приговариваются къ взысканіямъ, опредѣленнымъ въ ст. 29 уст. о нак. налаг* мир. суд., если нарушеніе озна ченныхъ постановленій не предусмот рѣно другими статьями улож. о нак,. или уст. о нак. на",
       "association": "акт прямо назван при этой ссылке",
       "verification_status": "context_verified",
-      "source_sha256": "b94f0868fcd22424d6816864edfa60fe9866ab118fe57d2162278d06ad0e513b",
+      "source_sha256": "cd7a8bb959091d87e57a4717c4bbf0ac77c4d8e1be881080278bbbda1cdcc31d",
       "headnote_sha256": "85639a1f1e04bfdec355f203268d63d0e3f56bc93271c2ad154708d17fcae9ac",
       "number_status": "ocr_unverified",
       "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-037",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-037?mode=laws&c=%D0%A3%D0%9D%D0%9C%D0%A1&q=%D1%81%D1%82.+29&law=1896-037%3A%D0%A3%D0%9D%D0%9C%D0%A1%3A29%3Atext%3A6228&at=6228&end=6234",
-      "source_warning": "В рассуждение Сената вклинено продолжение местного правила о дисциплинарных взысканиях. Пояснение различает цитируемое городское правило и сенатский вывод; порядок колонок не исправлен.",
-      "passage_id": "1896-037:4890-6518",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-037?mode=laws&c=%D0%A3%D0%9D%D0%9C%D0%A1&q=%D1%81%D1%82.+29&law=1896-037%3A%D0%A3%D0%9D%D0%9C%D0%A1%3A29%3Atext%3A6332&at=6332&end=6338&v=1896-restored-20261019",
+      "source_warning": null,
+      "passage_id": "1896-037:4670-6362",
       "sources": [
         {
           "page": 777,
           "page_method": "neighbors",
           "file": "p0070.txt",
-          "start": 6228,
-          "end": 6234
+          "start": 6332,
+          "end": 6338
         }
       ],
       "printed_pages": [
@@ -285,7 +285,7 @@
           "full": "scans/1896/pages/p0070-798ba3ebc3471aff.webp",
           "width": 1100,
           "height": 1663,
-          "ocr_sha256": "a02349a8136a1f57ac122b113adb1e461d42635102f666c4fba53046eba9b5ac",
+          "ocr_sha256": "1c7256b3213c2957d6513045c4745fc878d3e8c47999c8e7f04b84bb1b05f54c",
           "pdf_page": 70,
           "kind": "page"
         }
@@ -295,8 +295,8 @@
         {
           "kind": "direct",
           "field": "text",
-          "start": 6228,
-          "end": 6246,
+          "start": 6332,
+          "end": 6350,
           "quote_original": "ст. 29 уст. о нак.",
           "act_code": "УНМС"
         }
@@ -304,16 +304,16 @@
       "occurrences": [
         {
           "field": "text",
-          "start": 6228,
-          "end": 6234,
+          "start": 6332,
+          "end": 6338,
           "quote_original": "ст. 29",
           "method": "direct",
           "evidence": [
             {
               "kind": "direct",
               "field": "text",
-              "start": 6228,
-              "end": 6246,
+              "start": 6332,
+              "end": 6350,
               "quote_original": "ст. 29 уст. о нак.",
               "act_code": "УНМС"
             }

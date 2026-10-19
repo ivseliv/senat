@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
   "contract_version": "1.6.0",
-  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
+  "data_revision": "sha256:a59b8d9fef758eb7b6a94319cb261e00f6dd70ee57b65af303dac62df2538883",
   "resource": "facets",
   "item": {
     "act": [
@@ -98,7 +98,7 @@
       {
         "id": "act-7fdf2cd82a35",
         "label": "УГС",
-        "count": 146,
+        "count": 147,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/act/act-7fdf2cd82a35.json"
       },
       {
@@ -176,7 +176,7 @@
       {
         "id": "act-a8f8a6c2c0c2",
         "label": "УУС",
-        "count": 13,
+        "count": 12,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/act/act-a8f8a6c2c0c2.json"
       }
     ],
@@ -1014,6 +1014,18 @@
         "label": "? ст. 1504",
         "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-43193d76d42a.json"
+      },
+      {
+        "id": "article-c0de5108ff17",
+        "label": "? ст. 1511",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c0de5108ff17.json"
+      },
+      {
+        "id": "article-1a85ba73cf0f",
+        "label": "? ст. 1512",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-1a85ba73cf0f.json"
       },
       {
         "id": "article-ae6242936b0a",
@@ -3388,7 +3400,7 @@
       {
         "id": "article-0c8319666f08",
         "label": "? ст. 59",
-        "count": 3,
+        "count": 4,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0c8319666f08.json"
       },
       {
@@ -7004,6 +7016,12 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-0762baf8d831.json"
       },
       {
+        "id": "article-c13ed79bc595",
+        "label": "СЗГ ст. 640",
+        "count": 1,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-c13ed79bc595.json"
+      },
+      {
         "id": "article-6de83b06ab8b",
         "label": "СЗГ ст. 641",
         "count": 2,
@@ -7780,7 +7798,7 @@
       {
         "id": "article-3813d8a9ac94",
         "label": "УГС ст. 12",
-        "count": 2,
+        "count": 3,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-3813d8a9ac94.json"
       },
       {
@@ -9184,7 +9202,7 @@
       {
         "id": "article-1b0998105fd3",
         "label": "УГС ст. 9",
-        "count": 6,
+        "count": 7,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-1b0998105fd3.json"
       },
       {
@@ -10670,12 +10688,6 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-4131464aa9b7.json"
       },
       {
-        "id": "article-955d88ced6d9",
-        "label": "УСУ ст. 93",
-        "count": 1,
-        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-955d88ced6d9.json"
-      },
-      {
         "id": "article-b23c8603cd85",
         "label": "УТ ст. 100",
         "count": 1,
@@ -10966,7 +10978,7 @@
       {
         "id": "article-4ea051823676",
         "label": "УУС ст. 135",
-        "count": 2,
+        "count": 1,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-4ea051823676.json"
       },
       {
@@ -11062,7 +11074,7 @@
       {
         "id": "article-7bf93cd187b4",
         "label": "УУС ст. 777",
-        "count": 1,
+        "count": 2,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/article/article-7bf93cd187b4.json"
       },
       {
@@ -11290,13 +11302,13 @@
       {
         "id": "outcome-0e05a2689abd",
         "label": "Иное",
-        "count": 36,
+        "count": 34,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/outcome/outcome-0e05a2689abd.json"
       },
       {
         "id": "outcome-e49deb9fbf5c",
         "label": "Оставлено в силе",
-        "count": 6,
+        "count": 7,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/outcome/outcome-e49deb9fbf5c.json"
       },
       {
@@ -11320,7 +11332,7 @@
       {
         "id": "outcome-4fb920c22b08",
         "label": "Разъяснение / предписание",
-        "count": 13,
+        "count": 14,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/outcome/outcome-4fb920c22b08.json"
       }
     ],
@@ -16102,7 +16114,7 @@
       {
         "id": "procedure-0e1ae1cc0450",
         "label": "Применение закона",
-        "count": 60,
+        "count": 59,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/procedure/procedure-0e1ae1cc0450.json"
       },
       {
@@ -16606,13 +16618,13 @@
       {
         "id": "topic-6d9169d2b1be",
         "label": "Договоры и обязательства",
-        "count": 42,
+        "count": 41,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-6d9169d2b1be.json"
       },
       {
         "id": "topic-f74456ae7d60",
         "label": "Доказательства",
-        "count": 10,
+        "count": 9,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-f74456ae7d60.json"
       },
       {
@@ -16624,25 +16636,25 @@
       {
         "id": "topic-5553e7ab99f1",
         "label": "Казна и государственная служба",
-        "count": 32,
+        "count": 31,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-5553e7ab99f1.json"
       },
       {
         "id": "topic-9ce0b148e7e7",
         "label": "Крестьяне, общины, сословия",
-        "count": 76,
+        "count": 78,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-9ce0b148e7e7.json"
       },
       {
         "id": "topic-e9242c0a631c",
         "label": "Наследство и завещания",
-        "count": 60,
+        "count": 61,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-e9242c0a631c.json"
       },
       {
         "id": "topic-9db7feb8c3e2",
         "label": "Недвижимость и земля",
-        "count": 73,
+        "count": 71,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-9db7feb8c3e2.json"
       },
       {
@@ -16654,7 +16666,7 @@
       {
         "id": "topic-845b6692bbf0",
         "label": "Нотариат и акты",
-        "count": 19,
+        "count": 18,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-845b6692bbf0.json"
       },
       {
@@ -16672,7 +16684,7 @@
       {
         "id": "topic-7bf01e445310",
         "label": "Подсудность и процесс",
-        "count": 21,
+        "count": 20,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-7bf01e445310.json"
       },
       {

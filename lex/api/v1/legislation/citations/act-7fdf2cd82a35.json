@@ -1,13 +1,13 @@
 {
   "api_version": "v1",
   "contract_version": "1.6.0",
-  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
+  "data_revision": "sha256:a59b8d9fef758eb7b6a94319cb261e00f6dd70ee57b65af303dac62df2538883",
   "resource": "legislation-citations",
   "scope": {
     "code": "УГС",
     "id": "act-7fdf2cd82a35"
   },
-  "count": 367,
+  "count": 369,
   "items": [
     {
       "id": "1896-009:УГС:1:text:3609",
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "id": "1896-033:УГС:1:text:1949",
+      "id": "1896-033:УГС:1:text:1936",
       "statute": "УГС ст. 1",
       "code": "УГС",
       "article": "ст. 1",
@@ -96,27 +96,27 @@
       "year": 1896,
       "decision_number": 33,
       "field": "text",
-      "start": 1949,
-      "end": 1954,
+      "start": 1936,
+      "end": 1941,
       "quote_original": "ст. 1",
-      "context_original": "ой выше усадьбы № 15 необ- № 33—34 772 18Ѣ6 наружено, — а потому требованіе вла дѣльца имѣнія „Суминъ “ подходить подъ общее, выраженное въ ст. 1 уст. гр. суд., правило о томъ, что вся кіе споры о правѣ гражданскомъ под лежатъ разсмотрѣнію судебныхъ мѣстъ; 5) что, независимо отъ сего,",
+      "context_original": "витутъ означенной выше усадьбы № 15 необ- наружено, — а потому требованіе вла дѣльца имѣнія „ Суминъ “ подходит ь подъ общее, выраженное въ ст. 1 уст. гр. суд., правило о томъ, что вся кіе споры о правѣ гражданскомъ под лежатъ разсмотрѣнію судебныхъ мѣстъ; 5) что, независимо отъ сего,",
       "association": "акт прямо назван при этой ссылке",
       "verification_status": "context_verified",
-      "source_sha256": "77ab5f47277932fd68a580daa8dc2dd6d428dfbe845e86f4aacd711db4ebdd7d",
+      "source_sha256": "62f1a182a87d998798cc93c6be960eb1e79a5107cdf67a75eaf84333f08e8cde",
       "headnote_sha256": "f3d4ad9514d2212dabf642d02508168e2d9bcacf68e77a195099a574d7526f20",
       "number_status": "ocr_unverified",
       "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-033",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-033?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+1&law=1896-033%3A%D0%A3%D0%93%D0%A1%3A1%3Atext%3A1949&at=1949&end=1954",
-      "source_warning": "В конце пассажа с постановлением о подсудности начинается смешение с соседним рассуждением об исполнении решения №34. Пояснение ограничено вопросом №33.",
-      "passage_id": "1896-033:1256-3013",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-033?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+1&law=1896-033%3A%D0%A3%D0%93%D0%A1%3A1%3Atext%3A1936&at=1936&end=1941&v=1896-restored-20261019",
+      "source_warning": null,
+      "passage_id": "1896-033:1256-2707",
       "sources": [
         {
           "page": 772,
           "page_method": "neighbors",
           "file": "p0065.txt",
-          "start": 1949,
-          "end": 1954
+          "start": 1936,
+          "end": 1941
         }
       ],
       "printed_pages": [
@@ -129,7 +129,7 @@
           "full": "scans/1896/pages/p0065-798ba3ebc3471aff.webp",
           "width": 1100,
           "height": 1659,
-          "ocr_sha256": "4548f85c2a181ce21c1e4e231432b1bc1b29c98579d14dbc2fe74f2335a6036e",
+          "ocr_sha256": "ba786cbaa89225f1b00aee4f28b1ddd8d311a11e04ef0dfe49be2b329100e81d",
           "pdf_page": 65,
           "kind": "page"
         }
@@ -139,8 +139,8 @@
         {
           "kind": "direct",
           "field": "text",
-          "start": 1949,
-          "end": 1968,
+          "start": 1936,
+          "end": 1955,
           "quote_original": "ст. 1 уст. гр. суд.",
           "act_code": "УГС"
         }
@@ -148,16 +148,16 @@
       "occurrences": [
         {
           "field": "text",
-          "start": 1949,
-          "end": 1954,
+          "start": 1936,
+          "end": 1941,
           "quote_original": "ст. 1",
           "method": "direct",
           "evidence": [
             {
               "kind": "direct",
               "field": "text",
-              "start": 1949,
-              "end": 1968,
+              "start": 1936,
+              "end": 1955,
               "quote_original": "ст. 1 уст. гр. суд.",
               "act_code": "УГС"
             }
@@ -3210,6 +3210,57 @@
           ]
         }
       ]
+    },
+    {
+      "id": "1896-030:УГС:12:text:3529",
+      "statute": "УГС ст. 12",
+      "code": "УГС",
+      "article": "ст. 12",
+      "decision_id": "1896-030",
+      "year": 1896,
+      "decision_number": 30,
+      "field": "text",
+      "start": 3529,
+      "end": 3535,
+      "quote_original": "ст. 12",
+      "context_original": "ни было правильнаго вы- вода, почему и надлежитъ обратиться къ разъясненію сего вопроса по обще- му смыслу законовъ (ст. 9 уст. гр. суд. и ст. 12 уст. угол. суд). За- конъ не перечисляетъ всѣхъ возможныхъ видовъ ни оригинальныхъ музыкаль- ныхъ ’произведеній, ни разнообразныхъ формъ пр",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "cd95a8f74545ff04fe0ad1282b62ef9737c35932c7093a5c53860e1276a9b2f4",
+      "headnote_sha256": "12d528b848c404889cfc926497a53aa6b3b29f7241c2e5885f79fd7a04380810",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-030",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-030?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+12&law=1896-030%3A%D0%A3%D0%93%D0%A1%3A12%3Atext%3A3529&at=3529&end=3535&v=1896-restored-20261019",
+      "source_warning": null,
+      "passage_id": "1896-030:2570-4004",
+      "sources": [
+        {
+          "page": 763,
+          "page_method": "header",
+          "file": "p0056.txt",
+          "start": 3529,
+          "end": 3535
+        }
+      ],
+      "printed_pages": [
+        763
+      ],
+      "scans": [
+        {
+          "file": "p0056.txt",
+          "page": 763,
+          "full": "scans/1896/pages/p0056-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1686,
+          "ocr_sha256": "b99e4dcebcb6bd7b7cce5c90d0261e54c763e09860feb4028cf122b52bd158eb",
+          "pdf_page": 56,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
       "id": "1904-075:УГС:12:text:4747",
@@ -13011,7 +13062,7 @@
       ]
     },
     {
-      "id": "1896-036:УГС:273:text:5051",
+      "id": "1896-036:УГС:273:text:5023",
       "statute": "УГС ст. 273",
       "code": "УГС",
       "article": "ст. 273",
@@ -13019,27 +13070,27 @@
       "year": 1896,
       "decision_number": 36,
       "field": "text",
-      "start": 5051,
-      "end": 5058,
+      "start": 5023,
+      "end": 5030,
       "quote_original": "ст. 273",
       "context_original": "ментовъ, по которымъ производятся безсрочные платежи, ст. 33 уст. о пошл. устанавливаетъ двѣнадцатилѣт нюю сложность выговоренныхъ суммъ, а ст. 273 уст. гр. суд. опредѣляетъ цѣ ну исковъ о правѣ, которое не ограни чено срокомъ, или есть пожизненное, десятилѣтнею сложностью платежей или",
       "association": "акт прямо назван при этой ссылке",
       "verification_status": "context_verified",
-      "source_sha256": "85a5675f64a35e818c715ad3ecc3e3b8fc7f6d3dd9afafa22102e44511925664",
+      "source_sha256": "18ce04f0b533a51dd96351c730e1417e44ac9d044cc8ce7910368628fb9f7ff3",
       "headnote_sha256": "0e56130a667cc2ffaa86c695b982dcf9efdaf2dc29daa110f52c7097cdc8aae0",
       "number_status": "ocr_unverified",
       "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-036",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-036?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+273&law=1896-036%3A%D0%A3%D0%93%D0%A1%3A273%3Atext%3A5051&at=5051&end=5058",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-036?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+273&law=1896-036%3A%D0%A3%D0%93%D0%A1%3A273%3Atext%3A5023&at=5023&end=5030&v=1896-restored-20261019",
       "source_warning": null,
-      "passage_id": "1896-036:4363-5872",
+      "passage_id": "1896-036:4278-5845",
       "sources": [
         {
           "page": 776,
           "page_method": "neighbors",
           "file": "p0069.txt",
-          "start": 5051,
-          "end": 5058
+          "start": 5023,
+          "end": 5030
         }
       ],
       "printed_pages": [
@@ -13052,7 +13103,7 @@
           "full": "scans/1896/pages/p0069-798ba3ebc3471aff.webp",
           "width": 1100,
           "height": 1676,
-          "ocr_sha256": "93fccd9c6c630a7b6296cb567410bc1ed7fc8796355b2b8cbd9496eab0820d24",
+          "ocr_sha256": "0be37be90a86713ac4f9627be7b92c354976f60b4ee4a4979c95ddf9293893fe",
           "pdf_page": 69,
           "kind": "page"
         }
@@ -13062,8 +13113,8 @@
         {
           "kind": "direct",
           "field": "text",
-          "start": 5051,
-          "end": 5072,
+          "start": 5023,
+          "end": 5044,
           "quote_original": "ст. 273 уст. гр. суд.",
           "act_code": "УГС"
         }
@@ -13071,16 +13122,16 @@
       "occurrences": [
         {
           "field": "text",
-          "start": 5051,
-          "end": 5058,
+          "start": 5023,
+          "end": 5030,
           "quote_original": "ст. 273",
           "method": "direct",
           "evidence": [
             {
               "kind": "direct",
               "field": "text",
-              "start": 5051,
-              "end": 5072,
+              "start": 5023,
+              "end": 5044,
               "quote_original": "ст. 273 уст. гр. суд.",
               "act_code": "УГС"
             }
@@ -16048,7 +16099,7 @@
       ]
     },
     {
-      "id": "1896-049:УГС:3656:text:2698",
+      "id": "1896-049:УГС:3656:text:2951",
       "statute": "УГС ст. 3656",
       "code": "УГС",
       "article": "ст. 3656",
@@ -16056,27 +16107,27 @@
       "year": 1896,
       "decision_number": 49,
       "field": "text",
-      "start": 2698,
-      "end": 2706,
+      "start": 2951,
+      "end": 2959,
       "quote_original": "ст. 3656",
       "context_original": "кихъ на аль- никовъ и городскихъ судей, а на сум му свыше трехсотъ и несвыіе ьяти- сотъ рублей, или же въ случаяхъ, ука занныхъ въ пунктѣ 1 ст. 3656 уст. гражд. суд. (т. е., когда отвѣтчикъ имѣетъ пребываніе въ уѣздѣ), вѣдом ству уѣздныхъ членовъ окружнаго су да “ . Такимъ образомъ, на о",
       "association": "акт прямо назван при этой ссылке",
       "verification_status": "context_verified",
-      "source_sha256": "caf0e73a23d34d2fd5dbc48cf7cc721a14eff1d8fbecd08ce4997a662ada2c3c",
+      "source_sha256": "fc5bcdf5849262ff9ef726679b0f724d149df88cff9e58b2ddc820453912a573",
       "headnote_sha256": "759c4aa44bc27bbeb145a9808a1b4de42d454e7c0ec10cd909b215e4aa598399",
       "number_status": "ocr_unverified",
       "citation_status": "Акт установлен по опубликованному OCR; редакция и правильность номера по скану отдельно не подтверждены.",
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-049",
-      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-049?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+3656&law=1896-049%3A%D0%A3%D0%93%D0%A1%3A3656%3Atext%3A2698&at=2698&end=2706",
-      "source_warning": "В исходном тексте нарушен порядок двух колонок: законодательные нормы и историческое рассуждение чередуются. Пояснение проверено по полному контексту одного решения; OCR не исправлен.",
-      "passage_id": "1896-049:1194-2824",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-049?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+3656&law=1896-049%3A%D0%A3%D0%93%D0%A1%3A3656%3Atext%3A2951&at=2951&end=2959&v=1896-restored-20261019",
+      "source_warning": null,
+      "passage_id": "1896-049:2111-3426",
       "sources": [
         {
           "page": 792,
           "page_method": "header",
           "file": "p0085.txt",
-          "start": 2698,
-          "end": 2706
+          "start": 2951,
+          "end": 2959
         }
       ],
       "printed_pages": [
@@ -16089,7 +16140,7 @@
           "full": "scans/1896/pages/p0085-798ba3ebc3471aff.webp",
           "width": 1100,
           "height": 1673,
-          "ocr_sha256": "a765cd55b9fea6995e5527e7dbc4659ec9f0890bc207864ab2943a8af203a111",
+          "ocr_sha256": "1bbbcdc9c82593bf8d4b8f64b791bddd7e9a02a7231167a79431c8508754205d",
           "pdf_page": 85,
           "kind": "page"
         }
@@ -16099,8 +16150,8 @@
         {
           "kind": "direct",
           "field": "text",
-          "start": 2698,
-          "end": 2723,
+          "start": 2951,
+          "end": 2976,
           "quote_original": "ст. 3656 уст. гражд. суд.",
           "act_code": "УГС"
         }
@@ -16108,16 +16159,16 @@
       "occurrences": [
         {
           "field": "text",
-          "start": 2698,
-          "end": 2706,
+          "start": 2951,
+          "end": 2959,
           "quote_original": "ст. 3656",
           "method": "direct",
           "evidence": [
             {
               "kind": "direct",
               "field": "text",
-              "start": 2698,
-              "end": 2723,
+              "start": 2951,
+              "end": 2976,
               "quote_original": "ст. 3656 уст. гражд. суд.",
               "act_code": "УГС"
             }
@@ -28060,6 +28111,57 @@
           ]
         }
       ]
+    },
+    {
+      "id": "1896-030:УГС:9:text:3507",
+      "statute": "УГС ст. 9",
+      "code": "УГС",
+      "article": "ст. 9",
+      "decision_id": "1896-030",
+      "year": 1896,
+      "decision_number": 30,
+      "field": "text",
+      "start": 3507,
+      "end": 3512,
+      "quote_original": "ст. 9",
+      "context_original": "точно для какого-бы то ни было правильнаго вы- вода, почему и надлежитъ обратиться къ разъясненію сего вопроса по обще- му смыслу законовъ (ст. 9 уст. гр. суд. и ст. 12 уст. угол. суд). За- конъ не перечисляетъ всѣхъ возможныхъ видовъ ни оригинальныхъ музыкаль- ныхъ ’произведеній, ни",
+      "association": "прежняя автоматическая привязка; отдельно не подтверждена",
+      "verification_status": "legacy_unverified",
+      "source_sha256": "cd95a8f74545ff04fe0ad1282b62ef9737c35932c7093a5c53860e1276a9b2f4",
+      "headnote_sha256": "12d528b848c404889cfc926497a53aa6b3b29f7241c2e5885f79fd7a04380810",
+      "number_status": "ocr_unverified",
+      "citation_status": "Историческая автоматическая привязка; акт требует проверки по контексту.",
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-030",
+      "passage_url": "https://ivseliv.github.io/senat/lex/#/d/1896-030?mode=laws&c=%D0%A3%D0%93%D0%A1&q=%D1%81%D1%82.+9&law=1896-030%3A%D0%A3%D0%93%D0%A1%3A9%3Atext%3A3507&at=3507&end=3512&v=1896-restored-20261019",
+      "source_warning": null,
+      "passage_id": "1896-030:2570-4004",
+      "sources": [
+        {
+          "page": 763,
+          "page_method": "header",
+          "file": "p0056.txt",
+          "start": 3507,
+          "end": 3512
+        }
+      ],
+      "printed_pages": [
+        763
+      ],
+      "scans": [
+        {
+          "file": "p0056.txt",
+          "page": 763,
+          "full": "scans/1896/pages/p0056-798ba3ebc3471aff.webp",
+          "width": 1100,
+          "height": 1686,
+          "ocr_sha256": "b99e4dcebcb6bd7b7cce5c90d0261e54c763e09860feb4028cf122b52bd158eb",
+          "pdf_page": 56,
+          "kind": "page"
+        }
+      ],
+      "scan_available": true,
+      "evidence": [],
+      "occurrences": []
     },
     {
       "id": "1904-023:УГС:9:text:3310",

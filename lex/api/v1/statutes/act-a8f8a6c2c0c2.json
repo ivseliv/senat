@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
   "contract_version": "1.6.0",
-  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
+  "data_revision": "sha256:a59b8d9fef758eb7b6a94319cb261e00f6dd70ee57b65af303dac62df2538883",
   "resource": "statutes",
   "scope": {
     "code": "УУС",
@@ -13,21 +13,11 @@
       "statute": "УУС ст. 135",
       "code": "УУС",
       "article": "ст. 135",
-      "mentions": 5,
+      "mentions": 6,
       "decision_id": "1896-011",
       "year": 1896,
       "decision_number": 11,
       "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-011"
-    },
-    {
-      "statute": "УУС ст. 135",
-      "code": "УУС",
-      "article": "ст. 135",
-      "mentions": 2,
-      "decision_id": "1896-012",
-      "year": 1896,
-      "decision_number": 12,
-      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-012"
     },
     {
       "statute": "УУС ст. 277",
@@ -73,7 +63,17 @@
       "statute": "УУС ст. 375",
       "code": "УУС",
       "article": "ст. 375",
-      "mentions": 2,
+      "mentions": 1,
+      "decision_id": "1896-031",
+      "year": 1896,
+      "decision_number": 31,
+      "decision_url": "https://ivseliv.github.io/senat/lex/#/d/1896-031"
+    },
+    {
+      "statute": "УУС ст. 777",
+      "code": "УУС",
+      "article": "ст. 777",
+      "mentions": 1,
       "decision_id": "1896-031",
       "year": 1896,
       "decision_number": 31,
@@ -113,7 +113,7 @@
       "statute": "УУС ст. 1077–1102",
       "code": "УУС",
       "article": "ст. 1077–1102",
-      "mentions": 2,
+      "mentions": 1,
       "decision_id": "1896-045",
       "year": 1896,
       "decision_number": 45,

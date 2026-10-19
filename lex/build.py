@@ -47,6 +47,17 @@ def build_published_artifacts():
     analytics_path = Path(OUT) / 'analytics.json'
     analytics_data = json.loads(analytics_path.read_text(encoding='utf-8'))
     analytics_data['source_warnings'] = warnings
+    restoration_path = Path(ROOT) / 'lex/source-restorations.json'
+    if restoration_path.exists():
+        restoration = json.loads(restoration_path.read_text(encoding='utf-8'))
+        from law_attribution import sha, texts_by_id
+        meta = json.loads((Path(OUT) / 'meta.json').read_text(encoding='utf-8'))
+        current_texts = texts_by_id(Path(ROOT), meta)
+        for record in restoration['decisions']:
+            if sha(current_texts[record['id']]) != record['sha256']:
+                raise ValueError('Устарел протокол восстановления: ' + record['id'])
+        analytics_data['source_revisions'] = {r['id']: dict(version=restoration['version'], sha256=r['sha256'])
+                                             for r in restoration['decisions']}
     analytics_path.write_text(json.dumps(analytics_data, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
     precedents = build_precedents(ROOT)
     print('  ссылки на решения:', len(precedents['references']), precedents['counts'])
@@ -84,7 +95,9 @@ def modernize(s):
     s = re.sub(r'(?<![а-яА-ЯёЁ])чрез(?![а-яА-ЯёЁ])', 'через', s)
     return s
 
-ENDINGS = sorted(['иями', 'ями', 'ами', 'ыми', 'ими', 'ого', 'его', 'ому', 'ему', 'ать', 'ять', 'ить', 'еть', 'ыть', 'ует',
+# Полная группа падежных окончаний существительных на -ие/-ия:
+# «объяснение» и «объяснений», «сословию» и «сословия» должны иметь одну основу.
+ENDINGS = sorted(['иями', 'ией', 'ием', 'иям', 'иях', 'ие', 'ию', 'ями', 'ами', 'ыми', 'ими', 'ого', 'его', 'ому', 'ему', 'ать', 'ять', 'ить', 'еть', 'ыть', 'ует',
                   'ают', 'яет', 'ает', 'ой', 'ый', 'ий', 'ая', 'яя', 'ое', 'ее', 'ые', 'ие', 'ых', 'их', 'ов', 'ев', 'ей',
                   'ом', 'ем', 'ам', 'ям', 'ах', 'ях', 'ую', 'юю', 'ою', 'ею', 'ия', 'ии', 'ью', 'ье', 'ья', 'а', 'я', 'о',
                   'е', 'ы', 'и', 'у', 'ю', 'ь', 'й'], key=len, reverse=True)

@@ -1,17 +1,16 @@
 {
   "api_version": "v1",
   "contract_version": "1.6.0",
-  "data_revision": "sha256:de0bbae10067904f85093bae189ed3b18a42f5dff078f3d94046e758df58b75e",
+  "data_revision": "sha256:a59b8d9fef758eb7b6a94319cb261e00f6dd70ee57b65af303dac62df2538883",
   "resource": "decision-set",
   "filter": {
     "kind": "topic",
     "id": "topic-f74456ae7d60",
     "label": "Доказательства"
   },
-  "count": 10,
+  "count": 9,
   "decision_ids": [
     "1896-004",
-    "1896-021",
     "1896-023",
     "1897-008",
     "1897-032",
@@ -24,7 +23,6 @@
   "links": {
     "decisions": [
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1896-004.json",
-      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1896-021.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1896-023.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-008.json",
       "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-032.json",

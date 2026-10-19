@@ -41,9 +41,9 @@
       "split": "test",
       "method": "hybrid",
       "n": 30,
-      "recall5": 0.3,
-      "recall10": 0.3,
-      "mrr": 0.23444444444444443,
+      "recall5": 0.4,
+      "recall10": 0.4,
+      "mrr": 0.2633333333333333,
       "falsePositives": null
     },
     {
@@ -77,9 +77,9 @@
       "split": "positive",
       "method": "hybrid",
       "n": 30,
-      "recall5": 0.3,
-      "recall10": 0.3,
-      "mrr": 0.23444444444444443,
+      "recall5": 0.4,
+      "recall10": 0.4,
+      "mrr": 0.2633333333333333,
       "falsePositives": null
     }
   ],
@@ -197,7 +197,7 @@
           "pages": [
             117
           ],
-          "score": 12.16481,
+          "score": 12.1661,
           "relevant": false
         },
         {
@@ -207,7 +207,7 @@
             119,
             120
           ],
-          "score": 11.05589,
+          "score": 11.0578,
           "relevant": false
         },
         {
@@ -217,7 +217,7 @@
             120,
             121
           ],
-          "score": 10.62675,
+          "score": 10.62971,
           "relevant": false
         },
         {
@@ -227,7 +227,7 @@
             120,
             121
           ],
-          "score": 10.55197,
+          "score": 10.55325,
           "relevant": false
         },
         {
@@ -236,7 +236,7 @@
           "pages": [
             239
           ],
-          "score": 10.29654,
+          "score": 10.29917,
           "relevant": false
         },
         {
@@ -246,7 +246,7 @@
             117,
             118
           ],
-          "score": 9.33216,
+          "score": 9.33416,
           "relevant": false
         },
         {
@@ -256,7 +256,7 @@
             239,
             240
           ],
-          "score": 9.32518,
+          "score": 9.32789,
           "relevant": false
         },
         {
@@ -265,7 +265,7 @@
           "pages": [
             115
           ],
-          "score": 9.26726,
+          "score": 9.2689,
           "relevant": false
         }
       ]
@@ -279,7 +279,7 @@
       "recall10": 0,
       "mrr": 0,
       "negativeFalsePositive": null,
-      "results": 11,
+      "results": 13,
       "top10": [
         {
           "passage": "1904-042:4241-5964",
@@ -288,7 +288,7 @@
             116,
             117
           ],
-          "score": 14.86835,
+          "score": 14.76825,
           "relevant": false
         },
         {
@@ -297,7 +297,7 @@
           "pages": [
             117
           ],
-          "score": 14.55782,
+          "score": 14.46876,
           "relevant": false
         },
         {
@@ -307,7 +307,7 @@
             121,
             122
           ],
-          "score": 13.90558,
+          "score": 14.08183,
           "relevant": false
         },
         {
@@ -317,7 +317,7 @@
             120,
             121
           ],
-          "score": 13.3001,
+          "score": 13.30304,
           "relevant": false
         },
         {
@@ -327,7 +327,7 @@
             119,
             120
           ],
-          "score": 12.71886,
+          "score": 12.72115,
           "relevant": false
         },
         {
@@ -337,7 +337,7 @@
             117,
             118
           ],
-          "score": 12.47545,
+          "score": 12.37926,
           "relevant": false
         },
         {
@@ -347,7 +347,26 @@
             239,
             240
           ],
-          "score": 11.88731,
+          "score": 11.80196,
+          "relevant": false
+        },
+        {
+          "passage": "1904-042:1518-3004",
+          "decision": "1904-042",
+          "pages": [
+            115,
+            116
+          ],
+          "score": 11.76436,
+          "relevant": false
+        },
+        {
+          "passage": "1904-042:0-1756",
+          "decision": "1904-042",
+          "pages": [
+            115
+          ],
+          "score": 11.66393,
           "relevant": false
         },
         {
@@ -357,25 +376,7 @@
             120,
             121
           ],
-          "score": 11.16356,
-          "relevant": false
-        },
-        {
-          "passage": "1904-042:23793-24845",
-          "decision": "1904-042",
-          "pages": [
-            123
-          ],
-          "score": 11.14395,
-          "relevant": false
-        },
-        {
-          "passage": "1904-042:9293-10833",
-          "decision": "1904-042",
-          "pages": [
-            118
-          ],
-          "score": 10.3537,
+          "score": 11.60832,
           "relevant": false
         }
       ]
@@ -389,7 +390,7 @@
       "recall10": 0,
       "mrr": 0,
       "negativeFalsePositive": null,
-      "results": 17,
+      "results": 18,
       "top10": [
         {
           "passage": "1904-042:5747-7687",
@@ -397,7 +398,7 @@
           "pages": [
             117
           ],
-          "score": 14.12582,
+          "score": 14.07468,
           "relevant": false
         },
         {
@@ -407,7 +408,7 @@
             116,
             117
           ],
-          "score": 13.99488,
+          "score": 13.92853,
           "relevant": false
         },
         {
@@ -417,55 +418,7 @@
             217,
             218
           ],
-          "score": 12.37063,
-          "relevant": false
-        },
-        {
-          "passage": "1904-042:13701-15585",
-          "decision": "1904-042",
-          "pages": [
-            119,
-            120
-          ],
-          "score": 11.05589,
-          "relevant": false
-        },
-        {
-          "passage": "1897-072:0-1719",
-          "decision": "1897-072",
-          "pages": [
-            239
-          ],
-          "score": 10.92565,
-          "relevant": false
-        },
-        {
-          "passage": "1897-072:1439-3098",
-          "decision": "1897-072",
-          "pages": [
-            239,
-            240
-          ],
-          "score": 10.89949,
-          "relevant": false
-        },
-        {
-          "passage": "1904-042:7365-9575",
-          "decision": "1904-042",
-          "pages": [
-            117,
-            118
-          ],
-          "score": 10.87783,
-          "relevant": false
-        },
-        {
-          "passage": "1897-011:0-1640",
-          "decision": "1897-011",
-          "pages": [
-            50
-          ],
-          "score": 10.85623,
+          "score": 12.38793,
           "relevant": false
         },
         {
@@ -475,7 +428,55 @@
             120,
             121
           ],
-          "score": 10.83149,
+          "score": 11.27595,
+          "relevant": false
+        },
+        {
+          "passage": "1904-042:13701-15585",
+          "decision": "1904-042",
+          "pages": [
+            119,
+            120
+          ],
+          "score": 11.0578,
+          "relevant": false
+        },
+        {
+          "passage": "1897-072:0-1719",
+          "decision": "1897-072",
+          "pages": [
+            239
+          ],
+          "score": 10.94009,
+          "relevant": false
+        },
+        {
+          "passage": "1897-011:0-1640",
+          "decision": "1897-011",
+          "pages": [
+            50
+          ],
+          "score": 10.9102,
+          "relevant": false
+        },
+        {
+          "passage": "1897-072:1439-3098",
+          "decision": "1897-072",
+          "pages": [
+            239,
+            240
+          ],
+          "score": 10.85272,
+          "relevant": false
+        },
+        {
+          "passage": "1904-042:7365-9575",
+          "decision": "1904-042",
+          "pages": [
+            117,
+            118
+          ],
+          "score": 10.78131,
           "relevant": false
         },
         {
@@ -485,7 +486,7 @@
             121,
             122
           ],
-          "score": 10.69786,
+          "score": 10.71596,
           "relevant": false
         }
       ]
@@ -499,7 +500,7 @@
       "recall10": 0,
       "mrr": 0,
       "negativeFalsePositive": null,
-      "results": 18,
+      "results": 19,
       "top10": [
         {
           "passage": "1904-042:4241-5964",
@@ -508,7 +509,7 @@
             116,
             117
           ],
-          "score": 14.86835,
+          "score": 14.76825,
           "relevant": false
         },
         {
@@ -517,7 +518,7 @@
           "pages": [
             117
           ],
-          "score": 14.55782,
+          "score": 14.46876,
           "relevant": false
         },
         {
@@ -527,7 +528,7 @@
             217,
             218
           ],
-          "score": 14.45939,
+          "score": 14.45449,
           "relevant": false
         },
         {
@@ -537,7 +538,7 @@
             121,
             122
           ],
-          "score": 14.22928,
+          "score": 14.24683,
           "relevant": false
         },
         {
@@ -546,7 +547,7 @@
           "pages": [
             269
           ],
-          "score": 13.36379,
+          "score": 13.38492,
           "relevant": false
         },
         {
@@ -556,7 +557,7 @@
             120,
             121
           ],
-          "score": 13.3001,
+          "score": 13.30304,
           "relevant": false
         },
         {
@@ -566,7 +567,7 @@
             119,
             120
           ],
-          "score": 12.71886,
+          "score": 12.72115,
           "relevant": false
         },
         {
@@ -576,7 +577,7 @@
             117,
             118
           ],
-          "score": 12.47545,
+          "score": 12.37926,
           "relevant": false
         },
         {
@@ -585,7 +586,7 @@
           "pages": [
             115
           ],
-          "score": 12.27933,
+          "score": 12.29933,
           "relevant": false
         },
         {
@@ -595,7 +596,7 @@
             239,
             240
           ],
-          "score": 11.88731,
+          "score": 11.80196,
           "relevant": false
         }
       ]
@@ -762,7 +763,7 @@
             132,
             133
           ],
-          "score": 11.48088,
+          "score": 11.48715,
           "relevant": false
         },
         {
@@ -772,7 +773,7 @@
             133,
             134
           ],
-          "score": 11.08066,
+          "score": 11.08724,
           "relevant": false
         },
         {
@@ -781,7 +782,7 @@
           "pages": [
             134
           ],
-          "score": 10.26468,
+          "score": 10.26925,
           "relevant": true
         },
         {
@@ -790,7 +791,7 @@
           "pages": [
             132
           ],
-          "score": 10.23711,
+          "score": 10.24525,
           "relevant": false
         },
         {
@@ -799,7 +800,7 @@
           "pages": [
             134
           ],
-          "score": 10.13321,
+          "score": 10.14091,
           "relevant": true
         },
         {
@@ -809,7 +810,7 @@
             151,
             152
           ],
-          "score": 7.15648,
+          "score": 7.16229,
           "relevant": false
         }
       ]
@@ -832,7 +833,7 @@
             132,
             133
           ],
-          "score": 11.48088,
+          "score": 11.48715,
           "relevant": false
         },
         {
@@ -842,7 +843,7 @@
             133,
             134
           ],
-          "score": 11.08066,
+          "score": 11.08724,
           "relevant": false
         },
         {
@@ -851,7 +852,7 @@
           "pages": [
             134
           ],
-          "score": 10.26468,
+          "score": 10.26925,
           "relevant": true
         },
         {
@@ -860,7 +861,7 @@
           "pages": [
             132
           ],
-          "score": 10.23711,
+          "score": 10.24525,
           "relevant": false
         },
         {
@@ -869,7 +870,7 @@
           "pages": [
             134
           ],
-          "score": 10.13321,
+          "score": 10.14091,
           "relevant": true
         },
         {
@@ -879,7 +880,7 @@
             131,
             132
           ],
-          "score": 8.64053,
+          "score": 8.64468,
           "relevant": false
         },
         {
@@ -889,7 +890,7 @@
             151,
             152
           ],
-          "score": 7.15648,
+          "score": 7.16229,
           "relevant": false
         },
         {
@@ -899,7 +900,7 @@
             208,
             209
           ],
-          "score": 6.93711,
+          "score": 6.93976,
           "relevant": false
         }
       ]
@@ -922,17 +923,7 @@
             132,
             133
           ],
-          "score": 11.48088,
-          "relevant": false
-        },
-        {
-          "passage": "1897-041:9693-11364",
-          "decision": "1897-041",
-          "pages": [
-            133,
-            134
-          ],
-          "score": 11.08066,
+          "score": 11.48715,
           "relevant": false
         },
         {
@@ -942,7 +933,17 @@
             131,
             132
           ],
-          "score": 11.04396,
+          "score": 11.08841,
+          "relevant": false
+        },
+        {
+          "passage": "1897-041:9693-11364",
+          "decision": "1897-041",
+          "pages": [
+            133,
+            134
+          ],
+          "score": 11.08724,
           "relevant": false
         },
         {
@@ -951,7 +952,7 @@
           "pages": [
             132
           ],
-          "score": 10.93922,
+          "score": 10.97312,
           "relevant": false
         },
         {
@@ -960,7 +961,7 @@
           "pages": [
             134
           ],
-          "score": 10.87693,
+          "score": 10.88868,
           "relevant": true
         },
         {
@@ -969,7 +970,7 @@
           "pages": [
             134
           ],
-          "score": 10.61632,
+          "score": 10.65454,
           "relevant": true
         },
         {
@@ -978,7 +979,7 @@
           "pages": [
             131
           ],
-          "score": 9.79221,
+          "score": 9.82346,
           "relevant": false
         },
         {
@@ -988,7 +989,7 @@
             130,
             131
           ],
-          "score": 8.91115,
+          "score": 8.97047,
           "relevant": false
         },
         {
@@ -998,7 +999,7 @@
             151,
             152
           ],
-          "score": 7.85336,
+          "score": 7.87365,
           "relevant": false
         }
       ]
@@ -1012,7 +1013,7 @@
       "recall10": 1,
       "mrr": 0.2,
       "negativeFalsePositive": null,
-      "results": 10,
+      "results": 13,
       "top10": [
         {
           "passage": "1897-041:6872-8559",
@@ -1021,17 +1022,7 @@
             132,
             133
           ],
-          "score": 11.48088,
-          "relevant": false
-        },
-        {
-          "passage": "1897-041:9693-11364",
-          "decision": "1897-041",
-          "pages": [
-            133,
-            134
-          ],
-          "score": 11.08066,
+          "score": 11.48715,
           "relevant": false
         },
         {
@@ -1041,7 +1032,17 @@
             131,
             132
           ],
-          "score": 11.04396,
+          "score": 11.08841,
+          "relevant": false
+        },
+        {
+          "passage": "1897-041:9693-11364",
+          "decision": "1897-041",
+          "pages": [
+            133,
+            134
+          ],
+          "score": 11.08724,
           "relevant": false
         },
         {
@@ -1050,7 +1051,7 @@
           "pages": [
             132
           ],
-          "score": 10.93922,
+          "score": 10.97312,
           "relevant": false
         },
         {
@@ -1059,7 +1060,7 @@
           "pages": [
             134
           ],
-          "score": 10.87693,
+          "score": 10.88868,
           "relevant": true
         },
         {
@@ -1068,7 +1069,7 @@
           "pages": [
             134
           ],
-          "score": 10.61632,
+          "score": 10.65454,
           "relevant": true
         },
         {
@@ -1077,7 +1078,7 @@
           "pages": [
             131
           ],
-          "score": 9.79221,
+          "score": 9.82346,
           "relevant": false
         },
         {
@@ -1087,7 +1088,7 @@
             130,
             131
           ],
-          "score": 8.91115,
+          "score": 8.97047,
           "relevant": false
         },
         {
@@ -1097,17 +1098,17 @@
             151,
             152
           ],
-          "score": 7.85336,
+          "score": 7.87365,
           "relevant": false
         },
         {
-          "passage": "1897-063:5264-7066",
-          "decision": "1897-063",
+          "passage": "1897-047:4443-5927",
+          "decision": "1897-047",
           "pages": [
-            208,
-            209
+            160,
+            161
           ],
-          "score": 6.93711,
+          "score": 7.63392,
           "relevant": false
         }
       ]
@@ -1202,7 +1203,7 @@
             178,
             179
           ],
-          "score": 16.63351,
+          "score": 16.68046,
           "relevant": false
         }
       ]
@@ -1216,7 +1217,7 @@
       "recall10": 0,
       "mrr": 0,
       "negativeFalsePositive": null,
-      "results": 1,
+      "results": 2,
       "top10": [
         {
           "passage": "1897-055:0-2051",
@@ -1225,7 +1226,17 @@
             178,
             179
           ],
-          "score": 16.63351,
+          "score": 16.68046,
+          "relevant": false
+        },
+        {
+          "passage": "1897-055:1800-3351",
+          "decision": "1897-055",
+          "pages": [
+            178,
+            179
+          ],
+          "score": 10.73596,
           "relevant": false
         }
       ]
@@ -1259,7 +1270,7 @@
           "pages": [
             228
           ],
-          "score": 22.75527,
+          "score": 22.73966,
           "relevant": false
         }
       ]
@@ -1281,7 +1292,7 @@
           "pages": [
             228
           ],
-          "score": 22.8006,
+          "score": 22.78529,
           "relevant": false
         },
         {
@@ -1290,7 +1301,7 @@
           "pages": [
             228
           ],
-          "score": 22.08358,
+          "score": 22.14232,
           "relevant": false
         }
       ]
@@ -1300,11 +1311,11 @@
       "query": "права вдовы на выдел из родового имущества свекра",
       "split": "test",
       "method": "hybrid",
-      "recall5": 0,
-      "recall10": 0,
-      "mrr": 0,
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.3333333333333333,
       "negativeFalsePositive": null,
-      "results": 2,
+      "results": 4,
       "top10": [
         {
           "passage": "1897-068:2166-3814",
@@ -1312,7 +1323,7 @@
           "pages": [
             228
           ],
-          "score": 22.8006,
+          "score": 22.78529,
           "relevant": false
         },
         {
@@ -1321,7 +1332,27 @@
           "pages": [
             228
           ],
-          "score": 22.08358,
+          "score": 22.14232,
+          "relevant": false
+        },
+        {
+          "passage": "1897-068:3576-4536",
+          "decision": "1897-068",
+          "pages": [
+            228,
+            229
+          ],
+          "score": 18.39211,
+          "relevant": true
+        },
+        {
+          "passage": "1897-068:0-1302",
+          "decision": "1897-068",
+          "pages": [
+            227,
+            228
+          ],
+          "score": 17.31374,
           "relevant": false
         }
       ]
@@ -1439,7 +1470,7 @@
           "pages": [
             48
           ],
-          "score": 15.08331,
+          "score": 15.0846,
           "relevant": true
         }
       ]
@@ -1461,7 +1492,7 @@
           "pages": [
             48
           ],
-          "score": 17.3373,
+          "score": 17.34425,
           "relevant": true
         }
       ]
@@ -1483,7 +1514,7 @@
           "pages": [
             48
           ],
-          "score": 17.3373,
+          "score": 17.34425,
           "relevant": true
         }
       ]
@@ -1505,7 +1536,7 @@
           "pages": [
             48
           ],
-          "score": 17.3373,
+          "score": 17.34425,
           "relevant": true
         }
       ]
@@ -1747,8 +1778,39 @@
       "recall10": 0,
       "mrr": 0,
       "negativeFalsePositive": null,
-      "results": 0,
-      "top10": []
+      "results": 3,
+      "top10": [
+        {
+          "passage": "1896-010:2670-4200",
+          "decision": "1896-010",
+          "pages": [
+            721,
+            722
+          ],
+          "score": 11.95172,
+          "relevant": false
+        },
+        {
+          "passage": "1897-021:2971-4710",
+          "decision": "1897-021",
+          "pages": [
+            80,
+            81
+          ],
+          "score": 8.98724,
+          "relevant": false
+        },
+        {
+          "passage": "1897-021:1287-3241",
+          "decision": "1897-021",
+          "pages": [
+            79,
+            80
+          ],
+          "score": 6.69992,
+          "relevant": false
+        }
+      ]
     },
     {
       "id": "ind19",
@@ -1792,7 +1854,7 @@
             243,
             244
           ],
-          "score": 18.63846,
+          "score": 18.54495,
           "relevant": false
         }
       ]
@@ -1802,11 +1864,11 @@
       "query": "выкуп доли наследственного имения в исковом порядке",
       "split": "test",
       "method": "hybrid",
-      "recall5": 0,
-      "recall10": 0,
-      "mrr": 0,
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.3333333333333333,
       "negativeFalsePositive": null,
-      "results": 1,
+      "results": 4,
       "top10": [
         {
           "passage": "1904-088:2838-4491",
@@ -1815,7 +1877,34 @@
             243,
             244
           ],
-          "score": 18.63846,
+          "score": 18.54495,
+          "relevant": false
+        },
+        {
+          "passage": "1904-088:1386-3122",
+          "decision": "1904-088",
+          "pages": [
+            243
+          ],
+          "score": 11.89447,
+          "relevant": false
+        },
+        {
+          "passage": "1904-088:4209-6089",
+          "decision": "1904-088",
+          "pages": [
+            244
+          ],
+          "score": 11.84516,
+          "relevant": true
+        },
+        {
+          "passage": "1904-013:8560-10100",
+          "decision": "1904-013",
+          "pages": [
+            37
+          ],
+          "score": 10.88176,
           "relevant": false
         }
       ]
@@ -1861,7 +1950,7 @@
           "pages": [
             280
           ],
-          "score": 17.4603,
+          "score": 17.503,
           "relevant": true
         }
       ]
@@ -1883,7 +1972,7 @@
           "pages": [
             280
           ],
-          "score": 17.4603,
+          "score": 17.503,
           "relevant": true
         }
       ]
@@ -1906,7 +1995,7 @@
             5,
             6
           ],
-          "score": 15.68727,
+          "score": 15.6902,
           "relevant": true
         }
       ]
@@ -1929,7 +2018,7 @@
             5,
             6
           ],
-          "score": 15.68727,
+          "score": 15.6902,
           "relevant": true
         }
       ]
@@ -1952,7 +2041,7 @@
             5,
             6
           ],
-          "score": 15.68727,
+          "score": 15.6902,
           "relevant": true
         }
       ]
@@ -1966,7 +2055,7 @@
       "recall10": 1,
       "mrr": 1,
       "negativeFalsePositive": null,
-      "results": 1,
+      "results": 5,
       "top10": [
         {
           "passage": "1905-002:0-1623",
@@ -1975,8 +2064,45 @@
             5,
             6
           ],
-          "score": 15.68727,
+          "score": 15.6902,
           "relevant": true
+        },
+        {
+          "passage": "1896-009:1219-2678",
+          "decision": "1896-009",
+          "pages": [
+            720
+          ],
+          "score": 10.11082,
+          "relevant": false
+        },
+        {
+          "passage": "1905-002:1398-3234",
+          "decision": "1905-002",
+          "pages": [
+            6
+          ],
+          "score": 8.158,
+          "relevant": false
+        },
+        {
+          "passage": "1896-009:2462-4122",
+          "decision": "1896-009",
+          "pages": [
+            720
+          ],
+          "score": 7.90258,
+          "relevant": false
+        },
+        {
+          "passage": "1896-009:3930-5411",
+          "decision": "1896-009",
+          "pages": [
+            720,
+            721
+          ],
+          "score": 7.21481,
+          "relevant": false
         }
       ]
     },
@@ -1997,7 +2123,7 @@
           "pages": [
             16
           ],
-          "score": 18.96484,
+          "score": 18.96993,
           "relevant": false
         },
         {
@@ -2006,7 +2132,7 @@
           "pages": [
             16
           ],
-          "score": 18.6073,
+          "score": 18.60575,
           "relevant": true
         },
         {
@@ -2016,7 +2142,7 @@
             15,
             16
           ],
-          "score": 18.37785,
+          "score": 18.37829,
           "relevant": false
         }
       ]
@@ -2038,7 +2164,7 @@
           "pages": [
             16
           ],
-          "score": 18.96484,
+          "score": 18.96993,
           "relevant": false
         },
         {
@@ -2047,7 +2173,7 @@
           "pages": [
             16
           ],
-          "score": 18.6073,
+          "score": 18.60575,
           "relevant": true
         },
         {
@@ -2057,7 +2183,7 @@
             15,
             16
           ],
-          "score": 18.37785,
+          "score": 18.37829,
           "relevant": false
         }
       ]
@@ -2079,7 +2205,7 @@
           "pages": [
             16
           ],
-          "score": 19.12079,
+          "score": 19.13274,
           "relevant": false
         },
         {
@@ -2088,7 +2214,7 @@
           "pages": [
             16
           ],
-          "score": 18.84272,
+          "score": 18.82094,
           "relevant": true
         },
         {
@@ -2098,7 +2224,7 @@
             15,
             16
           ],
-          "score": 18.52793,
+          "score": 18.5351,
           "relevant": false
         }
       ]
@@ -2112,7 +2238,7 @@
       "recall10": 1,
       "mrr": 0.5,
       "negativeFalsePositive": null,
-      "results": 3,
+      "results": 4,
       "top10": [
         {
           "passage": "1905-007:5726-6749",
@@ -2120,7 +2246,7 @@
           "pages": [
             16
           ],
-          "score": 19.12079,
+          "score": 19.13274,
           "relevant": false
         },
         {
@@ -2129,7 +2255,7 @@
           "pages": [
             16
           ],
-          "score": 18.84272,
+          "score": 18.82094,
           "relevant": true
         },
         {
@@ -2139,7 +2265,17 @@
             15,
             16
           ],
-          "score": 18.52793,
+          "score": 18.5351,
+          "relevant": false
+        },
+        {
+          "passage": "1905-007:1315-2944",
+          "decision": "1905-007",
+          "pages": [
+            14,
+            15
+          ],
+          "score": 10.7513,
           "relevant": false
         }
       ]
@@ -2161,7 +2297,7 @@
           "pages": [
             31
           ],
-          "score": 15.71499,
+          "score": 15.72547,
           "relevant": true
         },
         {
@@ -2170,7 +2306,7 @@
           "pages": [
             326
           ],
-          "score": 8.8074,
+          "score": 8.81643,
           "relevant": false
         }
       ]
@@ -2192,7 +2328,7 @@
           "pages": [
             31
           ],
-          "score": 15.71499,
+          "score": 15.72547,
           "relevant": true
         },
         {
@@ -2201,7 +2337,7 @@
           "pages": [
             326
           ],
-          "score": 8.8074,
+          "score": 8.81643,
           "relevant": false
         }
       ]
@@ -2223,7 +2359,7 @@
           "pages": [
             31
           ],
-          "score": 19.08455,
+          "score": 19.13568,
           "relevant": true
         },
         {
@@ -2232,7 +2368,7 @@
           "pages": [
             326
           ],
-          "score": 9.31334,
+          "score": 9.3652,
           "relevant": false
         }
       ]
@@ -2246,7 +2382,7 @@
       "recall10": 1,
       "mrr": 1,
       "negativeFalsePositive": null,
-      "results": 2,
+      "results": 9,
       "top10": [
         {
           "passage": "1905-012:3991-5604",
@@ -2254,8 +2390,27 @@
           "pages": [
             31
           ],
-          "score": 19.08455,
+          "score": 19.13568,
           "relevant": true
+        },
+        {
+          "passage": "1905-012:5384-6273",
+          "decision": "1905-012",
+          "pages": [
+            31
+          ],
+          "score": 12.05938,
+          "relevant": false
+        },
+        {
+          "passage": "1905-012:2745-4251",
+          "decision": "1905-012",
+          "pages": [
+            30,
+            31
+          ],
+          "score": 11.68145,
+          "relevant": false
         },
         {
           "passage": "1897-099:5299-7211",
@@ -2263,7 +2418,55 @@
           "pages": [
             326
           ],
-          "score": 9.31334,
+          "score": 9.3652,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:10341-12144",
+          "decision": "1905-105",
+          "pages": [
+            287
+          ],
+          "score": 6.4251,
+          "relevant": false
+        },
+        {
+          "passage": "1905-081:2699-4493",
+          "decision": "1905-081",
+          "pages": [
+            224
+          ],
+          "score": 6.20136,
+          "relevant": false
+        },
+        {
+          "passage": "1905-081:1225-2981",
+          "decision": "1905-081",
+          "pages": [
+            223,
+            224
+          ],
+          "score": 5.95163,
+          "relevant": false
+        },
+        {
+          "passage": "1904-060:8696-10869",
+          "decision": "1904-060",
+          "pages": [
+            170,
+            171
+          ],
+          "score": 5.72186,
+          "relevant": false
+        },
+        {
+          "passage": "1905-105:11894-13768",
+          "decision": "1905-105",
+          "pages": [
+            287,
+            288
+          ],
+          "score": 5.67572,
           "relevant": false
         }
       ]
@@ -2309,7 +2512,7 @@
           "pages": [
             46
           ],
-          "score": 18.26427,
+          "score": 18.29135,
           "relevant": false
         },
         {
@@ -2319,7 +2522,7 @@
             46,
             47
           ],
-          "score": 18.10793,
+          "score": 18.1355,
           "relevant": false
         },
         {
@@ -2329,7 +2532,7 @@
             45,
             46
           ],
-          "score": 18.00538,
+          "score": 18.0643,
           "relevant": false
         },
         {
@@ -2338,7 +2541,7 @@
           "pages": [
             47
           ],
-          "score": 18.00538,
+          "score": 18.0643,
           "relevant": false
         }
       ]
@@ -2348,11 +2551,11 @@
       "query": "нужна ли доверенность назначенному адвокату",
       "split": "test",
       "method": "hybrid",
-      "recall5": 0,
-      "recall10": 0,
-      "mrr": 0,
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.2,
       "negativeFalsePositive": null,
-      "results": 4,
+      "results": 5,
       "top10": [
         {
           "passage": "1905-019:1486-2888",
@@ -2360,7 +2563,7 @@
           "pages": [
             46
           ],
-          "score": 18.26427,
+          "score": 18.29135,
           "relevant": false
         },
         {
@@ -2370,7 +2573,7 @@
             46,
             47
           ],
-          "score": 18.10793,
+          "score": 18.1355,
           "relevant": false
         },
         {
@@ -2380,7 +2583,7 @@
             45,
             46
           ],
-          "score": 18.00538,
+          "score": 18.0643,
           "relevant": false
         },
         {
@@ -2389,8 +2592,18 @@
           "pages": [
             47
           ],
-          "score": 18.00538,
+          "score": 18.0643,
           "relevant": false
+        },
+        {
+          "passage": "1905-019:5539-7345",
+          "decision": "1905-019",
+          "pages": [
+            47,
+            48
+          ],
+          "score": 9.21735,
+          "relevant": true
         }
       ]
     },
@@ -2484,7 +2697,7 @@
             122,
             123
           ],
-          "score": 31.56499,
+          "score": 31.59333,
           "relevant": true
         },
         {
@@ -2494,7 +2707,7 @@
             120,
             121
           ],
-          "score": 31.52087,
+          "score": 31.51701,
           "relevant": false
         },
         {
@@ -2503,7 +2716,7 @@
           "pages": [
             121
           ],
-          "score": 30.09155,
+          "score": 30.08903,
           "relevant": false
         },
         {
@@ -2512,7 +2725,7 @@
           "pages": [
             123
           ],
-          "score": 29.15349,
+          "score": 29.15061,
           "relevant": false
         },
         {
@@ -2521,7 +2734,7 @@
           "pages": [
             122
           ],
-          "score": 26.23138,
+          "score": 26.23255,
           "relevant": false
         }
       ]
@@ -2535,7 +2748,7 @@
       "recall10": 1,
       "mrr": 1,
       "negativeFalsePositive": null,
-      "results": 5,
+      "results": 6,
       "top10": [
         {
           "passage": "1905-044:5951-7649",
@@ -2544,7 +2757,7 @@
             122,
             123
           ],
-          "score": 31.56499,
+          "score": 31.59333,
           "relevant": true
         },
         {
@@ -2554,7 +2767,7 @@
             120,
             121
           ],
-          "score": 31.52087,
+          "score": 31.51701,
           "relevant": false
         },
         {
@@ -2563,7 +2776,7 @@
           "pages": [
             121
           ],
-          "score": 30.09155,
+          "score": 30.08903,
           "relevant": false
         },
         {
@@ -2572,7 +2785,7 @@
           "pages": [
             123
           ],
-          "score": 29.15349,
+          "score": 29.15061,
           "relevant": false
         },
         {
@@ -2581,7 +2794,17 @@
           "pages": [
             122
           ],
-          "score": 26.23138,
+          "score": 26.23255,
+          "relevant": false
+        },
+        {
+          "passage": "1905-044:2623-4781",
+          "decision": "1905-044",
+          "pages": [
+            121,
+            122
+          ],
+          "score": 18.93577,
           "relevant": false
         }
       ]
@@ -2604,7 +2827,7 @@
             156,
             157
           ],
-          "score": 20.40605,
+          "score": 20.39008,
           "relevant": true
         }
       ]
@@ -2627,7 +2850,7 @@
             156,
             157
           ],
-          "score": 20.40605,
+          "score": 20.39008,
           "relevant": true
         }
       ]
@@ -2650,7 +2873,7 @@
             156,
             157
           ],
-          "score": 20.40605,
+          "score": 20.39008,
           "relevant": true
         }
       ]
@@ -2664,7 +2887,7 @@
       "recall10": 1,
       "mrr": 1,
       "negativeFalsePositive": null,
-      "results": 1,
+      "results": 2,
       "top10": [
         {
           "passage": "1905-057:4659-6739",
@@ -2673,8 +2896,17 @@
             156,
             157
           ],
-          "score": 20.40605,
+          "score": 20.39008,
           "relevant": true
+        },
+        {
+          "passage": "1905-057:2881-4920",
+          "decision": "1905-057",
+          "pages": [
+            156
+          ],
+          "score": 11.59568,
+          "relevant": false
         }
       ]
     },
@@ -2744,7 +2976,7 @@
             238,
             239
           ],
-          "score": 27.84845,
+          "score": 27.85488,
           "relevant": false
         },
         {
@@ -2754,7 +2986,7 @@
             237,
             238
           ],
-          "score": 27.59471,
+          "score": 27.60183,
           "relevant": false
         },
         {
@@ -2763,7 +2995,7 @@
           "pages": [
             238
           ],
-          "score": 26.91945,
+          "score": 26.92753,
           "relevant": true
         }
       ]
@@ -2786,7 +3018,7 @@
             237,
             238
           ],
-          "score": 28.67258,
+          "score": 28.68191,
           "relevant": false
         },
         {
@@ -2796,7 +3028,7 @@
             238,
             239
           ],
-          "score": 27.84845,
+          "score": 27.85488,
           "relevant": false
         },
         {
@@ -2805,7 +3037,7 @@
           "pages": [
             238
           ],
-          "score": 27.45945,
+          "score": 27.42634,
           "relevant": true
         }
       ]
@@ -2828,7 +3060,7 @@
             237,
             238
           ],
-          "score": 28.67258,
+          "score": 28.68191,
           "relevant": false
         },
         {
@@ -2838,7 +3070,7 @@
             238,
             239
           ],
-          "score": 27.84845,
+          "score": 27.85488,
           "relevant": false
         },
         {
@@ -2847,7 +3079,7 @@
           "pages": [
             238
           ],
-          "score": 26.91945,
+          "score": 26.92753,
           "relevant": true
         },
         {
@@ -2856,7 +3088,7 @@
           "pages": [
             237
           ],
-          "score": 23.53918,
+          "score": 23.57717,
           "relevant": false
         }
       ]
@@ -2879,7 +3111,7 @@
             237,
             238
           ],
-          "score": 28.67258,
+          "score": 28.68191,
           "relevant": false
         },
         {
@@ -2889,7 +3121,7 @@
             238,
             239
           ],
-          "score": 27.84845,
+          "score": 27.85488,
           "relevant": false
         },
         {
@@ -2898,7 +3130,7 @@
           "pages": [
             238
           ],
-          "score": 27.45945,
+          "score": 27.42634,
           "relevant": true
         },
         {
@@ -2907,7 +3139,7 @@
           "pages": [
             237
           ],
-          "score": 23.97953,
+          "score": 23.98395,
           "relevant": false
         }
       ]

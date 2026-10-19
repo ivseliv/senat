@@ -57,7 +57,7 @@
     // Полное совпадение в любом томе важнее частичных из остальных томов.
     const strict=hits.filter(h=>!h.partial);
     if (strict.length) hits=strict;
-    hits.sort((a,b)=>b.score-a.score || a.passage.id.localeCompare(b.passage.id));
+    hits.sort((a,b)=>Number(Boolean(a.context))-Number(Boolean(b.context)) || b.score-a.score || a.passage.id.localeCompare(b.passage.id));
     return {...(results[0] || {expanded:[],concepts:[],query:{groups:[],words:[]}}),hits,partial:hits.some(h=>h.partial)};
   }
   function makeEngines(volumes, glossary) {
@@ -112,7 +112,7 @@
       method=method || 'glossary';
       const pq=parse(q,method==='baseline'?[]:glossary);
       if(!pq.groups.length) return {hits:[],expanded:[],concepts:[],query:pq};
-      let candidates=null; const total=new Map(), evidence=new Map(), groupMatches=[];
+      let candidates=null; const total=new Map(), evidence=new Map(), groupMatches=[], groupScores=[];
       for(const group of pq.groups) {
         const plain=alternatives(original,group.modern,0,Boolean(group.concept));
         const old=method==='glossary'||method==='hybrid' ? alternatives(original,group.old,0,true) : {scores:new Map(),matches:new Map()};
@@ -123,6 +123,7 @@
         }
         const ids=new Set(scores.keys());
         groupMatches.push(ids);
+        groupScores.push(scores);
         candidates=candidates===null?ids:new Set([...candidates].filter(id=>ids.has(id)));
         for(const [id,score] of scores) {
           total.set(id,(total.get(id)||0)+score);
@@ -141,9 +142,39 @@
         const missing=pq.groups.filter((g,j)=>!groupMatches[j].has(i)).map(g=>g.concept || g.modern[0]);
         return {i,score:total.get(i),matched:evidence.get(i),passage:docs[i],partial:missing.length>0,missing};
       });
+      // Пассажи — перекрывающиеся окна, а не самостоятельные документы.
+      // Все условия могут находиться по разные стороны границы окна. В таком
+      // случае показываем отдельный, явно подписанный результат с соседними
+      // источниками. Ни одно условие не отбрасывается; другое дело не подходит.
+      if (method==='hybrid' && (!options || options.context!==false) &&
+          pq.groups.length>=2 && !/["«»“”„]/.test(q)) {
+        const present=new Set(hits.filter(h=>!h.partial).map(h=>h.i));
+        for (const i of total.keys()) {
+          if (present.has(i)) continue;
+          const own=pq.groups.filter((g,j)=>groupMatches[j].has(i)).length;
+          if (own<Math.max(2,Math.ceil(pq.groups.length*0.6))) continue;
+          const p=docs[i], supports=new Set(); let score=total.get(i), complete=true;
+          for (let j=0;j<pq.groups.length;j++) {
+            if (groupMatches[j].has(i)) continue;
+            const nearby=[i-1,i+1].filter(k=>docs[k] && docs[k].decision===p.decision &&
+              Math.max(docs[k].end,p.end)-Math.min(docs[k].start,p.start)<=4000 &&
+              Math.max(docs[k].start,p.start)<=Math.min(docs[k].end,p.end)+80 && groupMatches[j].has(k));
+            nearby.sort((a,b)=>groupScores[j].get(b)-groupScores[j].get(a));
+            if (!nearby.length) { complete=false; break; }
+            const k=nearby[0];supports.add(k);score+=0.4*groupScores[j].get(k);
+          }
+          const context=[...supports].sort((a,b)=>a-b).map(k=>docs[k]);
+          if (!complete || !context.length ||
+              Math.max(p.end,...context.map(x=>x.end))-Math.min(p.start,...context.map(x=>x.start))>4000) continue;
+          const matched=[...(evidence.get(i)||[]),...context.flatMap(c=>evidence.get(docs.indexOf(c))||[])];
+          const previous=hits.findIndex(h=>h.i===i);
+          if (previous>=0) hits.splice(previous,1);
+          hits.push({i,score:score*0.75,matched:[...new Set(matched)],passage:p,partial:false,missing:[],context});
+        }
+      }
       // В пределах тома полные совпадения также первыми проходят устранение
       // перекрывающихся окон: частичный пассаж не должен вытеснять полный.
-      hits.sort((a,b)=>Number(a.partial)-Number(b.partial) || b.score-a.score || a.passage.id.localeCompare(b.passage.id));
+      hits.sort((a,b)=>Number(a.partial)-Number(b.partial) || Number(Boolean(a.context))-Number(Boolean(b.context)) || b.score-a.score || a.passage.id.localeCompare(b.passage.id));
       // Перекрывающиеся окна с одним рассуждением не занимают весь верх выдачи.
       const distinct=[];
       for(const hit of hits) {

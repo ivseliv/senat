@@ -1,0 +1,20 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.6.0",
+  "data_revision": "sha256:a59b8d9fef758eb7b6a94319cb261e00f6dd70ee57b65af303dac62df2538883",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "article",
+    "id": "article-1a85ba73cf0f",
+    "label": "? ст. 1512"
+  },
+  "count": 1,
+  "decision_ids": [
+    "1896-031"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1896-031.json"
+    ]
+  }
+}
