@@ -29,7 +29,7 @@
     sense: { config: null, engines: [], promise: null, q: '', hits: [], shown: 10, token: 0, partial: false, suggested: 0 },
     map: { q: '', topic: '', token: 0 },
     laws: { q: '', code: '', page: 1, data: null, promise: null, token: 0, passages: {} },
-    analyses: { data: null, promise: null },
+    analyses: { data: null, promise: null, documents: {} },
     precedents: { data: null, promise: null },
     guides: { data: null, promise: null, catalog: null, catalogPromise: null, token: 0, shown: 30, key: '' },
     api: { data: null, promise: null },
@@ -75,9 +75,28 @@
   async function loadJSON(name) { if (window.LEX_INLINE && window.LEX_INLINE[name]) return window.LEX_INLINE[name]; const r = await fetch(DATA + name); if (!r.ok) throw new Error(name + ': ' + r.status); return r.json(); }
   async function loadVol(y) { if (!S.texts[y]) S.texts[y] = loadJSON(`text-${y}.json`); return S.texts[y]; }
   async function textOf(d) { return (await loadVol(d.vol))[localIndex(d)]; }
-  async function loadAnalyses() {
-    if (!S.analyses.promise) S.analyses.promise = loadJSON('decision-analyses.json').then(data => (S.analyses.data = data));
+  async function loadAnalysesIndex() {
+    if (!S.analyses.promise) S.analyses.promise = loadJSON('decision-analyses-index.json').then(data => (S.analyses.data = data)).catch(err=>{S.analyses.promise=null;throw err;});
     return S.analyses.promise;
+  }
+  async function loadAnalysis(id) {
+    const catalog=await loadAnalysesIndex(),entry=catalog.decisions[id];
+    if(!entry)return null;
+    if(!S.analyses.documents[id])S.analyses.documents[id]=(async()=>{
+      let doc;
+      if(window.LEX_INLINE?.['decision-analyses.json'])doc=window.LEX_INLINE['decision-analyses.json'].decisions[id];
+      else {
+        if(entry.id!==id||entry.file!=='analyses/'+id+'.json'||!/^[a-f0-9]{64}$/.test(entry.sha256))throw Error('Неверная запись каталога разбора '+id);
+        const response=await fetch(DATA+entry.file+'?v='+entry.sha256);
+        if(!response.ok)throw Error('Разбор '+id+': '+response.status);
+        const raw=await response.text();
+        if(await window.SenatResearch.hash(raw)!==entry.sha256)throw Error('Разбор '+id+' не соответствует каталогу. Обновите страницу.');
+        doc=JSON.parse(raw);
+      }
+      if(!doc||doc.id!==id||doc.source_sha256!==entry.source_sha256)throw Error('Версия источника разбора '+id+' не соответствует каталогу.');
+      return doc;
+    })().catch(err=>{delete S.analyses.documents[id];throw err;});
+    return S.analyses.documents[id];
   }
   async function loadPrecedents() {
     if (!S.precedents.promise) S.precedents.promise=loadJSON('precedents.json').then(data=>(S.precedents.data=data)).catch(err=>{S.precedents.promise=null;throw err;});
@@ -266,7 +285,7 @@
     const params=readHash().p,requested=params.get('g')||'',year=params.get('y')||'',query=params.get('q')||'';
     if(!more)box.replaceChildren(h('p',{class:'muted'},'Загрузка каталога тем…'));
     try {
-      const [data,catalog]=await Promise.all([loadGuides(),loadTopicCatalog(),loadAnalyses()]);
+      const [data,catalog]=await Promise.all([loadGuides(),loadTopicCatalog(),loadAnalysesIndex()]);
       if(token!==S.guides.token || $('#view-guides').hidden)return;
       const selected=catalog.route_aliases[requested]||requested;
       const key=[selected,year,query].join('|');
@@ -377,18 +396,19 @@
     const box = $('#analyses-results');
     box.replaceChildren(h('p',{class:'muted'},'Загрузка разборов…'));
     try {
-      const data = await loadAnalyses();
+      const data = await loadAnalysesIndex();
       const all = Object.values(data.decisions), year = readHash().p.get('y') || '';
       const select = $('#analyses-year');
       select.replaceChildren(h('option',{value:''},'Все тома'),...S.meta.volumes.map(v=>h('option',{value:String(v.year)},String(v.year)+' · '+v.dept)));
       select.value = year;
       select.onchange = () => go('analyses',{y:select.value});
       const items = all.filter(item=>!year || String(item.year)===year);
-      $('#analyses-status').textContent = `Разобрано ${all.length} из ${S.meta.decisions.length} решений; показано ${items.length}. Полное покрытие корпуса пока отсутствует.`;
+      $('#analyses-status').textContent = `Разобрано ${all.length} из ${S.meta.decisions.length} решений; показано ${items.length}. ` +
+        (all.length===S.meta.decisions.length?'Подробные разделы доступны для всего опубликованного корпуса.':'Полное покрытие корпуса пока отсутствует.');
       box.replaceChildren(...items.map(item => {
         const d = S.meta.decisions.find(x => x.id === item.id);
         return h('article',{class:'card analysis-card'},h('h3',{},h('a',{href:'#/d/'+item.id+'?mode=analyses'},`${item.year} · № ${d.num}`)),
-          h('p',{class:'muted small'},d.dept),h('p',{},item.sections[0].summary),h('p',{class:'muted small'},item.selection),
+          h('p',{class:'muted small'},d.dept),h('p',{},item.summary),h('p',{class:'muted small'},item.selection),
           h('details',{class:'small'},h('summary',{},'Заголовок издания (OCR)'),h('p',{},M(d.headnote))),
           h('a',{href:'#/d/'+item.id+'?mode=analyses'},'Открыть разбор и первоисточник →'));
       }));
@@ -577,7 +597,8 @@
     if (!d) { box.replaceChildren(h('p', {}, 'Решение не найдено')); $('#detail').hidden = false; return; }
     $('#detail').hidden = false; document.body.classList.add('modal');
     box.replaceChildren(h('p',{class:'muted'},'Загрузка решения…'));
-    const [text, analyses, precedents, guides, catalog, laws] = await Promise.all([textOf(d), loadAnalyses(),
+    let analysisUnavailable = false;
+    const [text, analysis, precedents, guides, catalog, laws] = await Promise.all([textOf(d), loadAnalysis(id).catch(()=>{analysisUnavailable=true;return null;}),
       loadPrecedents().catch(()=>({references:[],unavailable:true})),
       readHash().p.get('mode')==='guides'?loadGuides():null,
       readHash().p.get('mode')==='guides'?loadTopicCatalog():null,
@@ -585,7 +606,6 @@
     if (S.detailId !== id || $('#detail').hidden) return;
     const params = readHash().p, inSense = ['sense','map','passage','laws','analysis','guides','quote','research'].includes(params.get('mode'));
     let target = null, senseTerms = [], partialMissing = [], quoteWarning = '';
-    const analysis = analyses.decisions && analyses.decisions[id];
     if (params.get('mode') === 'quote' || params.get('mode') === 'research') {
       if (params.get('mode') === 'research' && !params.has('at')) {
         target = null;
@@ -681,7 +701,9 @@
       d.participant_ids && d.participant_ids.length ? h('section',{},h('h3',{},'Участники по указателю издания'),
         h('p',{class:'muted small'},'Записи печатного указателя, без определения роли в деле.'),
         h('ul',{},d.participant_ids.map(id=>h('li',{},participantLink(S.participantMap.get(id)))))) : '',
-      analysisSection(d, analysis),
+      analysisUnavailable ? h('section',{class:'analysis-unavailable preliminary-note',role:'status'},
+        h('p',{},'Редакционный разбор не удалось загрузить или проверить. Ниже доступен оригинальный текст. Если ошибка повторяется, обновите страницу.'),
+        h('button',{class:'btn ghost',id:'analysis-retry',onclick:()=>openDetail(id)},'Повторить загрузку разбора')) : analysisSection(d, analysis),
       Object.keys(d.statutes).length ? h('section', {}, h('h3', {}, 'Упомянутые статьи'), h('div', { class: 'chips' },
         Object.keys(d.statutes).sort().map(s => h('button', { class: 'chip stat', title: 'Найти все решения с этой статьёй', onclick: () => go('search', { s }) }, statLabel(s))))) : '',
       h('div', { class: 'toolbar' },
@@ -1220,8 +1242,8 @@
       S.engine = L.makeEngine(index, meta.decisions);
       S.reader=window.SenatReaderUI.create({meta,textOf,loadJSON,loadScans,formatDate:fmtDate,setModern,isModern:()=>S.opts.modern,warningOf:d=>(S.an.source_warnings?.[d.id]?.messages||[]).join(' ')});
       S.research=window.SenatResearchUI.create({meta,analytics:an,reader:S.reader,prepare:async()=>{
-        await loadSense();const [analyses,guides]=await Promise.all([loadAnalyses(),loadGuides()]);
-        return {engines:S.sense.engines,config:S.sense.config,context:window.SenatResearch.context({meta,analytics:an,analyses,guides,config:S.sense.config,
+        await loadSense();const [catalog,guides]=await Promise.all([loadAnalysesIndex(),loadGuides()]);
+        return {engines:S.sense.engines,config:S.sense.config,context:window.SenatResearch.context({meta,analytics:an,analyses:{decisions:{}},analyses_revision:catalog.revision,analysisOf:loadAnalysis,guides,config:S.sense.config,
           volumes:S.sense.engines.map(e=>e.data),textOf,loadScans})};
       }});
       $('#loading').hidden = true; setupControls(); route(); addEventListener('hashchange', route);

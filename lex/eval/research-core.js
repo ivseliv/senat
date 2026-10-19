@@ -30,7 +30,7 @@ async function verifyQuote(q) {
  const modernID=Object.values(analyses.decisions).find(d=>d.sections.some(s=>s.heading==='Как рассуждал Сенат')).id;
  const modern=await ctx.compile({ids:[modernID]},{candidates:[],hits:[]});
  check(modern.cases[0].sections.some(s=>s.kind==='reason')&&modern.cases[0].sections.some(s=>s.kind==='holding'),'Современные заголовки рассуждения и постановления распознаны');
- check(report.cases.some(c=>!c.sections.length),'Есть дела без редакционного разбора');
+ check(report.cases.every(c=>c.sections.length===7),'Все найденные дела имеют семь подробных разделов');
  for(const c of report.cases){await verifyQuote(c.headnote_evidence);for(const section of c.sections)for(const q of section.evidence)await verifyQuote(q);for(const f of c.fragments){await verifyQuote(f.evidence);check(f.speaker.includes('отдельно не размечен'),'Пояснение не выдано за позицию Сената');}}
  found=R.find(engines,config,{q:'сделки',year:'1896',department:'Гражданский кассационный департамент'},meta);
  check(found.hits.length===0,'Общее собрание не подменяет кассационный департамент');
@@ -53,6 +53,9 @@ async function verifyQuote(q) {
  check(await R.context({...adapter,analyses:corrupted}).corpus!==await ctx.corpus,'Изменение редакционного разбора меняет версию справки');
  const stale=await R.context({...adapter,analyses:corrupted}).compile({ids:[id]},{candidates:[],hits:[]});
  check(stale.cases[0].sections.length===0&&stale.issues.length>0,'Устаревший разбор не принимается');
+ const absent=structuredClone(analyses);delete absent.decisions[id];
+ const fallback=await R.context({...adapter,analyses:absent,guides:{guides:[]}}).compile({ids:[id]},{candidates:[],hits:[]});
+ check(fallback.cases[0].sections.length===0&&fallback.cases[0].fragments.length>0,'При отсутствии разбора остаётся исходный текст и явно неатрибутированные фрагменты');
  const tampered=structuredClone(analyses);tampered.decisions[id].sections[0].evidence[0].text+='НЕ ИЗ ИСТОЧНИКА';
  const mismatch=await R.context({...adapter,analyses:tampered}).compile({ids:[id]},{candidates:[],hits:[]});check(mismatch.issues.length>0,'Проверяется буквальная цитата, а не только SHA разбора');
  const forged={format:'senat-research',version:1,state:privateState,cases:[{summary:'Подложный вывод'}]};
@@ -72,8 +75,15 @@ async function verifyQuote(q) {
    const one=await ctx.compile({ids:[d.id]},{candidates:[],hits:[]});
    check(one.cases.length===1&&one.issues.length===0,'Любое дело корпуса собирается без потери источника: '+d.id);
    if(one.cases[0].sections.length)detailed++;
+   check(one.cases[0].sections.map(s=>s.kind).join(',')==='facts,party,lower,question,reason,holding,limits','Семь элементов дела разнесены по своим строкам: '+d.id);
    if(d.id==='1904-042')check(one.cases[0].date.includes('1903/₄')&&one.cases[0].date.includes('декабря')&&one.cases[0].date.includes('февраля'),'Составная дата сохранена');
  }
- check(detailed===43,'40 разборов и три дополнительных дела сравнительных подборок');
+ check(detailed===meta.decisions.length&&detailed===384,'Подробные разборы покрывают все 384 дела корпуса');
+ const requested=[],selectedIDs=['1896-001','1905-018'];
+ const lazy=R.context({...adapter,analyses:{decisions:{}},analyses_revision:'catalog-v1',analysisOf:async id=>{requested.push(id);return analyses.decisions[id];}});
+ const lazyReport=await lazy.compile({ids:selectedIDs},{candidates:[],hits:[]});
+ check(requested.join(',')===selectedIDs.join(','),'Загружаются разборы только выбранных дел');
+ check(lazyReport.cases.every(c=>c.sections.length===7)&&lazyReport.issues.length===0,'Раздельная загрузка сохраняет разделы, SHA и точные цитаты');
+ check(await lazy.corpus!==await R.context({...adapter,analyses:{decisions:{}},analyses_revision:'catalog-v2',analysisOf:async id=>analyses.decisions[id]}).corpus,'Полная редакционная версия меняется и при ленивой загрузке');
  console.log('Research checks passed:',count);
 })().catch(e=>{console.error(e);process.exitCode=1;});

@@ -16,6 +16,7 @@ LEX = ROOT / 'lex'
 DATA = LEX / 'data'
 SOURCE = LEX / 'decision-analyses-source.json'
 OUT = DATA / 'decision-analyses.json'
+INDEX = DATA / 'decision-analyses-index.json'
 
 
 def read(path):
@@ -123,17 +124,73 @@ def build():
     return output
 
 
+def render(obj):
+    """Точные публичные UTF-8-байты; полный JSON сохраняет прежний формат."""
+    return (json.dumps(obj, ensure_ascii=False, separators=(',', ':')) + '\n').encode('utf-8')
+
+
+def published_files(obj):
+    """Полный документ, лёгкий индекс и части, относительно lex/data/."""
+    combined = render(obj)
+    files = {'decision-analyses.json': combined}
+    if obj['count'] != len(obj['decisions']):
+        raise ValueError('Число разборов не совпадает с содержимым документа')
+    index = dict(schema_version=1, label=obj['label'], method=obj['method'],
+                 count=obj['count'], revision=hashlib.sha256(combined).hexdigest(), decisions={})
+    for ident, record in obj['decisions'].items():
+        # Идентификатор становится частью пути: не допускаем подмены имени,
+        # абсолютных путей или выхода из выделенной папки с частями.
+        if not isinstance(ident, str) or not re.fullmatch(r'\d{4}-\d{3}', ident, flags=re.ASCII):
+            raise ValueError(f'Небезопасный идентификатор разбора: {ident!r}')
+        if record['id'] != ident:
+            raise ValueError(f'{ident}: идентификатор записи не совпадает с ключом')
+        relative = f'analyses/{ident}.json'
+        chunk = render(record)
+        files[relative] = chunk
+        index['decisions'][ident] = dict(
+            **{key: record[key] for key in ('id', 'year', 'department', 'source_sha256', 'selection')},
+            summary=record['sections'][0]['summary'], file=relative,
+            sha256=hashlib.sha256(chunk).hexdigest())
+    files['decision-analyses-index.json'] = render(index)
+    return files
+
+
+def write_published(obj, data_dir=None, *, check=False):
+    """Одна генерация для общей сборки и CLI; --check ничего не записывает."""
+    directory = Path(data_dir) if data_dir is not None else DATA
+    files = published_files(obj)
+    expected_chunks = {relative for relative in files if relative.startswith('analyses/')}
+    existing_chunks = {path.relative_to(directory).as_posix()
+                       for path in (directory / 'analyses').glob('*.json')}
+    stale = existing_chunks - expected_chunks
+    if check:
+        different = [relative for relative, encoded in files.items()
+                     if not (directory / relative).is_file()
+                     or (directory / relative).read_bytes() != encoded]
+        if different or stale:
+            names = ', '.join(sorted(set(different) | stale))
+            raise ValueError(f'Разборы устарели: {names}; запустите decision_analyses.py')
+    else:
+        for relative, encoded in files.items():
+            target = directory / relative
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(encoded)
+        # Эта папка принадлежит генератору. Удаляем только старые JSON-части,
+        # чтобы после исключения разбора его прежняя копия не публиковалась.
+        for relative in stale:
+            (directory / relative).unlink()
+    return files
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--check', action='store_true')
     args = parser.parse_args()
     obj = build()
-    encoded = json.dumps(obj, ensure_ascii=False, separators=(',', ':')) + '\n'
-    if args.check:
-        if not OUT.is_file() or OUT.read_text(encoding='utf-8') != encoded:
-            raise SystemExit('decision-analyses.json устарел: запустите decision_analyses.py')
-    else:
-        OUT.write_text(encoded, encoding='utf-8')
+    try:
+        write_published(obj, check=args.check)
+    except ValueError as error:
+        raise SystemExit(str(error)) from error
     print(f'Разборы: {obj["count"]}; цитаты, версия текста и привязки проверены.')
 
 
