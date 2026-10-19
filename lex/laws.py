@@ -249,7 +249,15 @@ def build_law_index(root=ROOT):
                 for proof in occurrence.get('evidence',[]): check_proof(root,fields,proof,old['code'])
             current=[{k:r[k] for k in ('id','code','article','passage_url')}
                      for r in citations+unresolved if r['decision_id']==old['decision_id'] and r['article']==old['article']]
-            old=dict(old,historical_note='Сохранённая ссылка предыдущей версии. Акт мог быть уточнён; эта запись не входит в текущую статистику.',current_references=current)
+            # ID сохраняет прежнюю идентичность ссылки; URL и страницы должны
+            # относиться к проверенной сейчас буквальной цитате. После смены
+            # границ OCR сохранённый passage_url/источники могут быть устаревшими.
+            location = location_info(texts[doc['id']],old['start'],old['end'],passages_by_decision[doc['id']],scans_by_year[doc['vol']]) if old['field']=='text' else dict(passage_id=None,sources=[],printed_pages=[],scans=[],scan_available=False,source_warning=None)
+            query = urlencode(dict(mode='laws',c=old['code'],q=old['article'],law=old['id'],
+                                   at=old['start'],end=old['end'],field=old['field']))
+            old=dict(old,**location,context_original=context(original,old['start'],old['end']),
+                     passage_url=decision_url(doc['id'])+'?'+query,
+                     historical_note='Сохранённая ссылка предыдущей версии. Акт мог быть уточнён; эта запись не входит в текущую статистику.' + (' '+old['restoration_note'] if old.get('restoration_note') else ''),current_references=current)
             history.append(old)
     output = dict(version=2,sources=catalog['sources'],acts=output_acts,historical_references=history,
         citations=sorted(citations,key=lambda r:(r['code'],r['article'],r['year'],r['decision_number'],r['start'])),
