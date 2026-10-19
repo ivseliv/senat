@@ -89,12 +89,13 @@
     const senate=/^сенат(?:[\s,;:]|$)/i.test(section.speaker);
     // Сопоставляем редакционные разделы, а не угадываем автора по слову
     // «Сенат» внутри пересказанного довода жалобщика.
-    if(/жалоб|довод|позици/.test(h)&&!senate)return 'party';
-    if(/предел|оговорк|ограничени/.test(h))return 'limits';
+    if(/^(?:предел|оговорк|ограничени)/.test(h))return 'limits';
     if(/постанов|результат/.test(h)||senate&&/отмен|отклон|оставлена без последствий/.test(h))return 'holding';
-    if(/^(?:какой )?вопрос/.test(h))return 'question';
-    if(/рассужд|мотивиров/.test(h)||senate)return 'reason';
     if(/предшеств|палаты|нижестоящ/.test(h))return 'lower';
+    if(/^(?:какой )?вопрос/.test(h))return 'question';
+    if(/жалоб|жалова|довод|позици/.test(h)&&(!senate||/^(?:жалоба|на что жаловались)/.test(h)))return 'party';
+    if(/^(?:спор|о ч[её]м|внес[её]нный вопрос)/.test(h))return 'facts';
+    if(/рассужд|мотивиров/.test(h)||senate)return 'reason';
     return 'facts';
   }
   function pageLabel(q) {
@@ -105,7 +106,7 @@
     const docs=new Map(adapter.meta.decisions.map(d=>[d.id,d]));
     const all=adapter.volumes.flatMap(v=>v.passages),byId=new Map(all.map(p=>[p.id,p])),byCase=new Map();
     for(const p of all){if(!byCase.has(p.decision))byCase.set(p.decision,[]);byCase.get(p.decision).push(p);}
-    const corpus=hash(JSON.stringify({schema:1,meta:adapter.meta,passages:all,analyses:adapter.analyses,guides:adapter.guides,config:adapter.config||null})),cache=new Map();
+    const corpus=hash(JSON.stringify({schema:1,meta:adapter.meta,passages:all,analyses:adapter.analyses_revision||adapter.analyses,guides:adapter.guides,config:adapter.config||null})),cache=new Map();
     function source(d) {
       if(!cache.has(d.id))cache.set(d.id,adapter.textOf(d).then(async t=>({text:t,sha:await hash(t),cp:Array.from(t)})));
       return cache.get(d.id);
@@ -137,7 +138,7 @@
         if(s.year&&String(d.vol)!==s.year||s.department&&d.dept!==s.department)issues.push(id+': добавлено вручную вне поискового фильтра. Фильтры ограничивают подбор кандидатов; выбранное дело оставлено для сравнения.');
         const src=await source(d),changed=Boolean(s.hashes[id]&&s.hashes[id]!==src.sha),sections=[],fragments=[];
         if(changed)issues.push(id+': текст изменился после сохранения справки; показана текущая версия, прежние координаты не перенесены.');
-        let analysis=adapter.analyses.decisions[id];
+        let analysis=adapter.analysisOf?await adapter.analysisOf(id):adapter.analyses.decisions[id];
         if(!analysis)analysis=adapter.guides.guides.flatMap(g=>g.comparison?.cases||[]).find(c=>c.id===id);
         if(analysis) {
           if(analysis.source_sha256!==src.sha)issues.push(id+': подробный разбор устарел и не включён.');
