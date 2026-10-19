@@ -4,6 +4,7 @@ import copy
 import json
 import tempfile
 import unittest
+from urllib.parse import parse_qs
 from pathlib import Path
 from law_attribution import apply_attributions, check_quote, sha, statute_digest, texts_by_id
 from laws import build_law_index, context
@@ -90,6 +91,14 @@ class AttributionTest(unittest.TestCase):
             check_quote(fields[row['field']],row)
             self.assertEqual(row['source_sha256'],sha(fields['text']))
             self.assertEqual(row['headnote_sha256'],sha(fields['headnote']))
+            query=parse_qs(row['passage_url'].split('?',1)[1])
+            self.assertEqual(int(query['at'][0]),row['start'])
+            self.assertEqual(int(query['end'][0]),row['end'])
+            self.assertEqual(query['law'][0],row['id'])
+            self.assertEqual(query['field'][0],row['field'])
+            if row['field']=='text':
+                self.assertTrue(row['sources'])
+                self.assertTrue(all(s['start']<row['end'] and s['end']>row['start'] for s in row['sources']))
             for ref in row['current_references']:
                 current=active[ref['id']]
                 self.assertEqual(current['decision_id'],row['decision_id'])
