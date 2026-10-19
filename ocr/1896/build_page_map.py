@@ -28,6 +28,8 @@ def printed_folio(pdf,page):
     return nums[0] if nums else None
 
 def main():
+    if Path(__file__).with_name('restoration.json').exists():
+        raise SystemExit('Источник восстановлен по колонкам: прежний raw-импорт его повредит. Читайте restoration.json; новый импорт выполняйте отдельно и сверяйте по PDF.')
     parser=argparse.ArgumentParser()
     parser.add_argument('--pdf',required=True,type=Path)
     args=parser.parse_args(); pdf=args.pdf

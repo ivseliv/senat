@@ -34,6 +34,8 @@ def pos(text,marker):
 
 def clean(s): return re.sub(r'\s+',' ',s.replace('\u00ad','')).strip()
 def main():
+    if Path(__file__).with_name('restoration.json').exists():
+        raise SystemExit('Источник восстановлен по колонкам: прежний raw-импорт его повредит. Читайте restoration.json; новый импорт выполняйте отдельно и сверяйте по PDF.')
  global PDF, OUT
  parser=argparse.ArgumentParser(description='Собрать 1896 из проверенного FineReader PDF.')
  parser.add_argument('--pdf', required=True, type=Path, help='локальный PDF FineReader (в Git не добавляется)')
