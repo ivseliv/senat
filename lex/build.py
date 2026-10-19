@@ -19,7 +19,7 @@ from passages import build_passages, refresh_published_enrichment
 from participants import load_participants
 from laws import build_law_index
 from export import build_export
-from decision_analyses import build as build_decision_analyses
+from decision_analyses import build as build_decision_analyses, write_published as write_decision_analyses
 from guide_comparisons import build as build_guides
 from topic_catalog import build as build_topic_catalog
 from api import build_api
@@ -64,8 +64,7 @@ def build_published_artifacts():
     export = build_export(ROOT)
     print('  экспорт:', ', '.join(f'{key}={value}' for key, value in export['counts'].items()))
     analyses = build_decision_analyses()
-    (Path(OUT) / 'decision-analyses.json').write_text(
-        json.dumps(analyses, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+    write_decision_analyses(analyses, Path(OUT))
     print(f'  редакционные разборы: {analyses["count"]}')
     guides = build_guides()
     (Path(OUT) / 'guides.json').write_text(
