@@ -34,7 +34,7 @@ header { border-bottom: 1px solid var(--line); background: var(--surface); }
 .top h1 { font: 600 20px/1.2 var(--serif); margin: 0; }
 .top .sub { color: var(--ink2); font-size: 14px; }
 .spacer { flex: 1; }
-nav { display: flex; gap: 4px; margin-top: 8px; }
+nav { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
 nav a { padding: 9px 14px; text-decoration: none; color: var(--ink2); border-bottom: 2px solid transparent; }
 nav a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); font-weight: 600; }
 main { padding: 20px 0 60px; }
@@ -198,13 +198,29 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
 #reader-compare-panel { margin:24px 0; }.reader-scan-links { padding-left:20px; overflow-wrap:anywhere; }
 #reader-notice:empty { display:none; }#reader-status { margin:14px 0; }.reader-save-decision { margin-top:10px; }
 @media(max-width:760px) { .reader-compare-grid { grid-template-columns:1fr; }.reader-item-top { align-items:flex-start; }.reader-item-top h3 { flex-basis:100%; }.reader-actions .btn { max-width:100%; }.reader-full-original { max-height:55vh; } }
+
+/* Исследование: вопрос, подтверждения и сравнение по одинаковым элементам. */
+.research-hero { padding:24px; background:var(--soft); border:1px solid var(--line); border-radius:12px; margin:20px 0; }
+.research-hero h2 { margin:0 0 10px; font:600 27px/1.3 var(--serif); }
+#research-form { display:grid; gap:12px; }#research-form label,.research-note-label { display:grid; gap:6px; min-width:0; }
+#view-research input[type=text],#view-research textarea { width:100%; box-sizing:border-box; padding:10px 12px; font:inherit; border:1px solid var(--line); border-radius:8px; background:var(--surface); color:var(--ink); min-width:0; }
+#view-research textarea { resize:vertical; }#research-q { font-size:18px; }.research-form-row { display:flex; gap:12px; flex-wrap:wrap; align-items:end; }.research-form-row label { flex:1 1 200px; }.research-form-row select { max-width:100%; width:100%; }
+.research-example-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr)); gap:12px; margin:18px 0; }
+.research-example { font:inherit; text-align:left; display:grid; gap:8px; padding:18px; cursor:pointer; color:var(--ink); background:var(--surface); border:1px solid var(--line); border-radius:10px; }.research-example:hover { border-color:var(--accent); }
+.research-actions,.research-links,.research-saved-row { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin:12px 0; }.research-saved-row { border-bottom:1px solid var(--line); padding-bottom:10px; }.research-saved-row .btn { text-align:left; flex:1 1 200px; }.research-delete { background:none; border:0; color:var(--ink2); text-decoration:underline; cursor:pointer; font:inherit; }
+.research-report-head { border-left:4px solid var(--accent); padding:4px 18px; margin:26px 0; }.research-report-head h2 { margin:0 0 10px; }.research-jump { display:flex; gap:14px; flex-wrap:wrap; margin:18px 0; }
+.research-position,.research-fragment { border-top:1px solid var(--line); margin-top:16px; padding-top:12px; }.research-position h4 { margin:0; }.research-evidence { margin:12px 0; padding:10px 12px; border:1px solid var(--line); border-radius:7px; overflow-wrap:anywhere; }.research-evidence summary { cursor:pointer; color:var(--accent-ink); }
+.research-case { margin:20px 0; }.research-headnote { font-family:var(--serif); }.research-note-label { margin:20px 0; }.research-full-analysis { padding:12px 0; }.research-table-wrap { max-width:100%; max-height:75vh; overflow:auto; margin:18px 0; border:1px solid var(--line); border-radius:8px; }
+.research-table { border-collapse:separate; border-spacing:0; width:100%; font-size:14px; }.research-table caption { text-align:left; padding:12px; }.research-table td,.research-table th { vertical-align:top; text-align:left; border-top:1px solid var(--line); border-right:1px solid var(--line); padding:14px; min-width:270px; max-width:380px; overflow-wrap:anywhere; }.research-table th:first-child { min-width:155px; max-width:180px; background:var(--soft); position:sticky; left:0; z-index:1; }.research-table thead th { background:var(--soft); position:sticky; top:0; z-index:2; }.research-table thead th:first-child { z-index:3; }.research-table .research-position { margin:0; padding:0; border:0; }.research-table .research-evidence { background:var(--surface); }
+#research-candidates,#research-add-results { display:grid; gap:8px; margin:14px 0; }#research-candidates button,#research-add-results button { text-align:left; white-space:normal; }.research-transfer { padding:18px; border:1px solid var(--line); border-radius:9px; margin:28px 0; }#research-share-url { width:100%; }#research-status { margin:14px 0; }#research-notice:empty { display:none; }#research-import { max-width:100%; }
+@media(max-width:600px) { .research-hero { padding:16px; }.research-hero h2 { font-size:23px; }.research-form-row { display:grid; grid-template-columns:1fr; }.research-actions .btn { width:100%; }.research-table td,.research-table th { min-width:245px; }.research-table th:first-child { min-width:120px; }.research-report-head { padding-left:12px; }.research-quote-link { overflow-wrap:anywhere; } }
 </style>
 </head>
 <body>
 <header><div class="wrap">
   <div class="top"><h1>Решения Правительствующего Сената</h1><span class="sub">поиск и аналитика · прототип</span><span class="spacer"></span>
     <button class="btn ghost" id="theme" title="Светлая / тёмная тема">◐ тема</button></div>
-  <nav aria-label="Разделы"><a id="tab-search" href="#/search">Поиск</a><a id="tab-sense" href="#/sense">По смыслу</a><a id="tab-laws" href="#/laws">Законодательство</a><a id="tab-map" href="#/map">Карта</a><a id="tab-participants" href="#/participants">Участники</a><a id="tab-guides" href="#/guides">Темы</a><a id="tab-analyses" href="#/analyses">Разборы</a><a id="tab-reader" href="#/reader">Подборка</a><a id="tab-api" href="#/api">API</a><a id="tab-analytics" href="#/analytics">Аналитика</a><a id="tab-about" href="#/about">О проекте</a></nav>
+  <nav aria-label="Разделы"><a id="tab-research" href="#/research">Исследование</a><a id="tab-search" href="#/search">Поиск</a><a id="tab-sense" href="#/sense">По смыслу</a><a id="tab-laws" href="#/laws">Законодательство</a><a id="tab-map" href="#/map">Карта</a><a id="tab-participants" href="#/participants">Участники</a><a id="tab-guides" href="#/guides">Темы</a><a id="tab-analyses" href="#/analyses">Разборы</a><a id="tab-reader" href="#/reader">Подборка</a><a id="tab-api" href="#/api">API</a><a id="tab-analytics" href="#/analytics">Аналитика</a><a id="tab-about" href="#/about">О проекте</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -246,6 +262,39 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     <div id="status" aria-live="polite"></div>
     <div id="results"></div>
     <button class="btn ghost" id="more" hidden>Показать ещё</button>
+  </section>
+
+  <section id="view-research" hidden>
+    <div class="research-hero">
+      <h2>Разобраться в правовом вопросе</h2>
+      <p>Соберите справку из решений корпуса, сопоставьте обстоятельства и судебные позиции, сохраните цитаты и передайте результат коллеге.</p>
+      <form id="research-form">
+        <label>Ваш вопрос<textarea id="research-q" rows="2" maxlength="600" placeholder="Например: когда сделку считали мнимой?"></textarea></label>
+        <label>Поисковая формулировка<input type="text" id="research-terms" maxlength="600" placeholder="Можно уточнить: фиктивные сделки"><span class="muted small">Если оставить поле пустым, используем вопрос и узнаваемые понятия справочника. Фактическая формулировка будет показана после поиска.</span></label>
+        <div class="research-form-row"><label>Том<select id="research-year"><option value="">Все тома</option></select></label><label>Департамент<select id="research-department"><option value="">Все департаменты</option></select></label><button type="submit" class="btn">Составить справку</button></div>
+      </form>
+    </div>
+    <p id="research-status" role="status"></p><p id="research-notice" role="status"></p>
+    <p id="research-storage-warning" class="preliminary-note" hidden></p><button id="research-storage-raw" class="btn ghost" hidden>Скачать исходную запись браузера</button>
+    <div id="research-empty"><h3>Начните с вопроса</h3><div id="research-examples" class="research-example-grid"></div></div>
+    <div id="research-output" hidden>
+      <header class="research-report-head"><h2 id="research-report-title"></h2><p id="research-coverage" class="small muted"></p><p class="small">Справка составлена из опубликованных разборов и пояснений ИИ. Каждое положение раскрывается до оригинальной цитаты. Полнота практики и правило действующего права не устанавливаются.</p></header>
+      <div id="research-issues"></div>
+      <nav class="research-jump" aria-label="Разделы исследования"><a href="#research-position-heading" data-research-scroll="research-position-heading">Позиции и условия</a><a href="#research-cases-heading" data-research-scroll="research-cases-heading">Выбранные дела</a><a href="#research-compare-heading" data-research-scroll="research-compare-heading">Сравнить по существу</a><a href="#research-transfer-heading" data-research-scroll="research-transfer-heading">Сохранить и поделиться</a></nav>
+      <label class="research-note-label">Название справки<input type="text" id="research-title" maxlength="200" placeholder="Можно дать своё название"></label>
+      <label class="research-note-label">Моя общая заметка<textarea id="research-note" rows="3" maxlength="4000"></textarea></label>
+      <p class="small muted" id="research-save-state"></p><button id="research-save-copy" class="btn ghost" hidden>Сохранить свою копию в браузере</button>
+      <details open><summary id="research-position-heading"><strong>Позиции Сената и пределы вывода</strong></summary><div id="research-positions"></div></details>
+      <h2 id="research-cases-heading">Дела и фрагменты к вопросу</h2><div id="research-cases"></div>
+      <h3>Изменить состав справки</h3><p id="research-candidate-count" class="small muted"></p><button id="research-partial" class="btn ghost" hidden>Показать частичные совпадения</button><div id="research-candidates"></div>
+      <label class="research-note-label">Добавить любое дело корпуса<input type="text" id="research-add" placeholder="1904-034 или слова из заголовка" maxlength="200"></label><div id="research-add-results"></div>
+      <h2 id="research-compare-heading">Сравнение по существу</h2><div id="research-comparison"></div><div id="research-differences"></div>
+      <section class="research-transfer"><h2 id="research-transfer-heading">Сохранить и поделиться</h2><p>Ссылка передаёт вопрос, выбранные дела и версии текстов. При изменении корпуса получатель увидит предупреждение. Заметки включаются только по вашему выбору.</p>
+        <label><input type="checkbox" id="research-share-notes"> Включить мои заметки в ссылку</label><div class="research-actions"><button id="research-share" class="btn">Скопировать ссылку</button><button id="research-export-html" class="btn ghost">HTML для чтения и печати</button><button id="research-export-md" class="btn ghost">Markdown</button><button id="research-export-json" class="btn ghost">JSON — перенос справки</button></div>
+        <label id="research-share-box" hidden>Готовая ссылка<textarea id="research-share-url" readonly rows="3"></textarea></label><p class="small muted">Файл содержит текст и цитаты. Ссылки на сайт и сканы требуют интернета. Полученный JSON восстанавливается по текущему корпусу с проверкой версий.</p>
+      </section>
+    </div>
+    <section><h3>Продолжить сохранённое исследование</h3><p id="research-saved-empty" class="muted">Сохранённых справок пока нет. Новые исследования сохраняются в этом браузере; полученную ссылкой справку можно сохранить отдельной копией.</p><div id="research-saved"></div><label class="research-note-label">Открыть JSON-файл справки<input type="file" id="research-import" accept="application/json,.json"></label></section>
   </section>
 
   <section id="view-sense" hidden>
@@ -343,7 +392,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     <label class="reader-import-label">Объединить с JSON-копией<input type="file" id="reader-import" accept="application/json,.json"></label>
     <p class="small muted">При импорте цитаты проверяются по текущему корпусу; страницы и ссылки определяются заново. Уже сохранённые заметки не заменяются.</p>
     <div class="reader-actions"><button id="reader-retry" class="btn ghost">Повторить сохранение</button><button id="reader-export-original" class="btn ghost" hidden>Скачать исходную запись</button><button id="reader-recover" class="btn ghost" hidden>Восстановить хранилище</button></div>
-    <div class="reader-actions"><button id="reader-compare" class="btn" disabled>Сравнить выбранные дела</button><span id="reader-compare-count" class="small"></span></div>
+    <div class="reader-actions"><button id="reader-compare" class="btn" disabled>Сравнить выбранные дела</button><button id="reader-research" class="btn ghost" disabled>Исследовать выбранные дела</button><span id="reader-compare-count" class="small"></span></div>
     <div id="reader-compare-panel"></div>
     <div id="reader-items"></div>
   </section>
@@ -1440,7 +1489,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     }
     function pageLabel(q) {return q.printed_pages.length?'Печатные страницы: '+q.printed_pages.join(', ')+'.':'Печатные страницы не определены.';}
     function localQuoteURL(id,q){return '#/d/'+id+'?'+new URLSearchParams({mode:'quote',field:q.field,at:q.start,end:q.end,sha:q.source_sha256});}
-    function compareStatus() {$('reader-compare').disabled=compareIds.size<2;$('reader-compare-count').textContent='Выбрано для сравнения: '+compareIds.size+' из 4.';}
+    function compareStatus() {$('reader-compare').disabled=compareIds.size<2;$('reader-research').disabled=compareIds.size<2;$('reader-compare-count').textContent='Выбрано для сравнения: '+compareIds.size+' из 4.';}
     async function compare() {
       const current=++token,s=store.getState(), selected=s.items.filter(i=>compareIds.has(i.id));if(selected.length<2)return;
       const box=$('reader-compare-panel');box.replaceChildren(h('p',{},'Загружаем решения для сравнения…'));
@@ -1477,7 +1526,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
       })},'Сохранить цитату');
       quoteButton.addEventListener('pointerdown',event=>event.preventDefault());
       for(const source of [info.body,info.headnote].filter(Boolean))source.addEventListener('pointerdown',()=>{selected=null;quoteButton.disabled=true;});
-      const tools=h('section',{class:'reader-detail-tools'},h('div',{class:'reader-actions'},saveButton(info.d),quoteButton,h('a',{href:'#/reader'},'Открыть подборку')),selectionStatus,h('p',{class:'preliminary-note reader-persistence-hint',hidden:true,role:'status'}));
+      const tools=h('section',{class:'reader-detail-tools'},h('div',{class:'reader-actions'},saveButton(info.d),quoteButton,h('a',{href:'#/reader'},'Открыть подборку'),h('a',{href:'#/research?ids='+info.d.id},'Исследовать это дело')),selectionStatus,h('p',{class:'preliminary-note reader-persistence-hint',hidden:true,role:'status'}));
       if(adapter.isModern())tools.append(h('button',{class:'btn ghost reader-original',onclick:()=>adapter.setModern(false)},'Включить оригинал для цитирования'));
       if(info.target && !info.target.warning && Number.isSafeInteger(info.target.start))tools.append(h('button',{id:'reader-save-target',class:'btn ghost',onclick:guarded(async()=>{
         store.addQuote(await snapshot(info.d),await makeQuote(info.d,info.target.field||'text',info.target.start,info.target.end,info.text));selectionStatus.textContent='Фрагмент сохранён в оригинальной орфографии.';
@@ -1505,6 +1554,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     $('reader-title').addEventListener('input',event=>{try{store.setTitle(event.target.value);}catch(err){message(err.message,true);}});
     $('reader-note').addEventListener('input',event=>{try{store.setNote(event.target.value);}catch(err){message(err.message,true);}});
     $('reader-compare').addEventListener('click',guarded(compare));
+    $('reader-research').addEventListener('click',()=>{location.hash='#/research?'+new URLSearchParams({ids:[...compareIds].join(',')});});
     for(const type of ['json','markdown','html','csv'])$('reader-export-'+type).addEventListener('click',()=>download(type));
     $('reader-import').addEventListener('change',guarded(async event=>{const file=event.target.files[0];event.target.value='';await importFile(file);}));
     $('reader-recover').addEventListener('click',()=>{if(confirm('Перезаписать повреждённое хранилище текущими доступными записями? Сначала сохраните JSON-копию.')){store.recoverStorage();status();}});
@@ -1519,6 +1569,575 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     status();return {render,saveButton,attachDetail,clearDetail,resolveQuote,store,importFile};
   }
   root.SenatReaderUI={create,selectionFromRange};
+})(window);
+</script>
+<script>/* Исследовательская справка: проверяемые источники, сравнение и перенос. */
+(function (root, factory) {
+  'use strict';
+  const node = typeof module === 'object' && module.exports;
+  const api = factory(node ? require('./lex.js') : root.Lex, node ? require('./concept.js') : root.Concept);
+  if (node) module.exports = api; else root.SenatResearch = api;
+})(typeof globalThis !== 'undefined' ? globalThis : this, function (L, C) {
+  'use strict';
+  const PUBLIC = 'https://ivseliv.github.io/senat/lex/';
+  const LIMITS = Object.freeze({cases:6, query:600, title:200, note:4000, caseNote:1500, share:16000, file:2000000});
+  const SHA = /^[a-f0-9]{64}$/;
+  const ID = /^\d{4}-\d{3}$/;
+  const cut = (s,a,b) => Array.from(s).slice(a,b).join('');
+  const clone = x => JSON.parse(JSON.stringify(x));
+  const object = x => x && typeof x === 'object' && !Array.isArray(x);
+  function text(x, max, label, fallback='') {
+    if (x == null) return fallback;
+    if (typeof x !== 'string' || x.length>max) throw Error('Недопустимое поле: '+label+'.');
+    return x;
+  }
+  async function hash(s) {
+    const bytes = await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));
+    return Array.from(new Uint8Array(bytes),b=>b.toString(16).padStart(2,'0')).join('');
+  }
+  function state(raw={}) {
+    if (!object(raw) || (raw.version!=null && raw.version!==1)) throw Error('Версия справки не поддерживается.');
+    const ids = raw.ids==null ? [] : raw.ids;
+    if (!Array.isArray(ids) || ids.length>LIMITS.cases || ids.some(id=>typeof id!=='string'||!ID.test(id)) || new Set(ids).size!==ids.length) throw Error('Выберите не более шести разных решений.');
+    const notes={general:text(raw.notes?.general,LIMITS.note,'заметка'),cases:{}};
+    const hashes={};
+    for(const id of ids) {
+      if(raw.hashes?.[id]!=null) {
+        if(typeof raw.hashes[id]!=='string'||!SHA.test(raw.hashes[id]))throw Error('Повреждена контрольная сумма решения.');
+        hashes[id]=raw.hashes[id];
+      }
+      const note=text(raw.notes?.cases?.[id],LIMITS.caseNote,'заметка к делу');
+      if(note)notes.cases[id]=note;
+    }
+    const corpus=text(raw.corpus,64,'версия корпуса');
+    if(corpus && !SHA.test(corpus))throw Error('Повреждена версия корпуса.');
+    return {version:1,q:text(raw.q,LIMITS.query,'вопрос'),terms:text(raw.terms,LIMITS.query,'поисковая формулировка',raw.q||''),
+      year:text(raw.year,4,'год'),department:text(raw.department,120,'департамент'),partial:raw.partial===true,manual:raw.manual===true,
+      title:text(raw.title,LIMITS.title,'название'),ids:[...ids],hashes,corpus,notes};
+  }
+  function encode(raw, includeNotes=false) {
+    const s=state(raw);if(!includeNotes)s.notes={general:'',cases:{}};
+    const bytes=new TextEncoder().encode(JSON.stringify(s));
+    let binary='';for(const byte of bytes)binary+=String.fromCharCode(byte);
+    const code=btoa(binary).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+    if(code.length>LIMITS.share)throw Error('Ссылка слишком длинная. Уберите заметки из ссылки или передайте JSON-файл.');
+    return code;
+  }
+  function decode(code) {
+    if(typeof code!=='string'||!code.length||code.length>LIMITS.share||!/^[A-Za-z0-9_-]+$/.test(code))throw Error('Ссылка на справку повреждена или слишком длинная.');
+    try {
+      const binary=atob(code.replace(/-/g,'+').replace(/_/g,'/'));
+      return state(JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(Uint8Array.from(binary,c=>c.charCodeAt(0)))));
+    }catch(_){throw Error('Не удалось прочитать ссылку на справку. Сохранённая работа не изменена.');}
+  }
+  function shareURL(raw, notes=false) {return PUBLIC+'#/research?share='+encode(raw,notes);}
+
+  // Убираем только рамку вопроса и явно показываем полученную формулировку.
+  // Отрицания, числа и операторы не преобразуем; дополнительные условия сохраняем.
+  function suggestTerms(question, glossary) {
+    if(/(?:^|\s)(?:не|ни|без|кроме|исключая|только|лишь)(?:\s|$)|[\d"«»“”+−]/i.test(question))return question.trim();
+    const words=L.tokens(question),stems=words.map(L.stem),used=new Set(),names=[];
+    const fillers=/^(?:когда|почему|какой|какие|каких|каким|считали|считают|считалась|считались|признавали|признают|признается|признаются|признавалась|признавались|можно|нужно|должен|должны|сенат|решал|решил|решали|вопрос|случае|случаях)$/;
+    const aliases=glossary.flatMap(c=>[c.понятие,...c.синонимы].map(name=>({name,terms:L.stems(name)})))
+      .filter(a=>a.terms.length>=2).sort((a,b)=>b.terms.length-a.terms.length||a.name.localeCompare(b.name));
+    for(const a of aliases) {
+      const positions=a.terms.map(term=>stems.findIndex((s,i)=>s===term&&!used.has(i)));
+      if(positions.some(i=>i<0)||new Set(positions).size!==positions.length)continue;
+      positions.forEach(i=>used.add(i));names.push(a.name);
+    }
+    if(!names.length)return question.trim();
+    const remainder=words.filter((w,i)=>!used.has(i)&&!fillers.test(w));
+    return [...names,...remainder].join(' ');
+  }
+  function find(engines, config, raw, meta) {
+    const s=state(raw),allowed=new Set(meta.decisions.filter(d=>(!s.year||String(d.vol)===s.year)&&(!s.department||d.dept===s.department)).map(d=>d.id));
+    const selected=engines.filter(e=>e.data.passages.some(p=>allowed.has(p.decision)));
+    const result=C.searchAll(selected.map(e=>e.engine),s.terms||s.q,config.method,{partial:true});
+    const hits=result.hits.filter(h=>allowed.has(h.passage.decision));
+    return {...result,hits:result.partial&&!s.partial?[]:hits,suggested:result.partial&&!s.partial?hits.length:0,
+      candidates:[...new Set((result.partial&&!s.partial?[]:hits).map(h=>h.passage.decision))]};
+  }
+  function kind(section) {
+    const h=section.heading.toLowerCase();
+    const senate=/^сенат(?:[\s,;:]|$)/i.test(section.speaker);
+    // Сопоставляем редакционные разделы, а не угадываем автора по слову
+    // «Сенат» внутри пересказанного довода жалобщика.
+    if(/жалоб|довод|позици/.test(h)&&!senate)return 'party';
+    if(/предел|оговорк|ограничени/.test(h))return 'limits';
+    if(/постанов|результат/.test(h)||senate&&/отмен|отклон|оставлена без последствий/.test(h))return 'holding';
+    if(/^(?:какой )?вопрос/.test(h))return 'question';
+    if(/рассужд|мотивиров/.test(h)||senate)return 'reason';
+    if(/предшеств|палаты|нижестоящ/.test(h))return 'lower';
+    return 'facts';
+  }
+  function pageLabel(q) {
+    return q.pages.length?'Печатные страницы: '+q.pages.join(', ')+(q.incomplete_pages?' (часть номеров не определена)':''):'Печатная страница не определена';
+  }
+  function safeScan(path) {return typeof path==='string'&&/^scans\/\d{4}\/(?:pages|fragments)\/[A-Za-z0-9_-]+\.webp$/.test(path);}
+  function context(adapter) {
+    const docs=new Map(adapter.meta.decisions.map(d=>[d.id,d]));
+    const all=adapter.volumes.flatMap(v=>v.passages),byId=new Map(all.map(p=>[p.id,p])),byCase=new Map();
+    for(const p of all){if(!byCase.has(p.decision))byCase.set(p.decision,[]);byCase.get(p.decision).push(p);}
+    const corpus=hash(JSON.stringify({schema:1,meta:adapter.meta,passages:all,analyses:adapter.analyses,guides:adapter.guides,config:adapter.config||null})),cache=new Map();
+    function source(d) {
+      if(!cache.has(d.id))cache.set(d.id,adapter.textOf(d).then(async t=>({text:t,sha:await hash(t),cp:Array.from(t)})));
+      return cache.get(d.id);
+    }
+    async function quote(d, ev, src, field='text') {
+      const original=field==='headnote'?d.headnote:src.text,chars=field==='headnote'?Array.from(d.headnote):src.cp;
+      if(!Number.isSafeInteger(ev.start)||!Number.isSafeInteger(ev.end)||ev.start<0||ev.end<=ev.start||ev.end>chars.length)throw Error(d.id+': диапазон цитаты не соответствует тексту.');
+      const literal=chars.slice(ev.start,ev.end).join('');
+      if(ev.text!=null&&ev.text!==literal)throw Error(d.id+': цитата изменилась; её разбор не включён.');
+      const manifest=await adapter.loadScans(d.vol),parts=[];
+      if(field==='text')for(const p of byCase.get(d.id)||[])for(const part of p.sources||[]){
+        const start=Math.max(ev.start,part.start),end=Math.min(ev.end,part.end);
+        if(start<end)parts.push({...part,start,end});
+      }
+      const scans=[...new Set(parts.map(p=>p.file))].map(file=>manifest.pages[file]).filter(Boolean).filter(s=>safeScan(s.full)).map(s=>({file:s.file,page:s.page??null,full:s.full}));
+      const pages=[...new Set(parts.map(p=>p.page).filter(Number.isInteger))].sort((a,b)=>a-b);
+      const digest=field==='headnote'?await hash(original):src.sha;
+      const url=PUBLIC+'#/d/'+d.id+'?'+new URLSearchParams({mode:'quote',field,at:ev.start,end:ev.end,sha:digest});
+      return {decision:d.id,field,start:ev.start,end:ev.end,text:literal,source_sha256:digest,pages,scans,url,
+        incomplete_pages:parts.some(p=>p.page==null),warning:ev.source_warning||''};
+    }
+    async function compile(raw,result) {
+      const s=state(raw),stamp=await corpus,issues=[];
+      if(/(?:^|\s)(?:не|ни|без|кроме|исключая|только|лишь)(?:\s|[.,?!]|$)/i.test(s.q+' '+s.terms))issues.push('В вопросе есть отрицание или исключение. Поиск подбирает связанные понятия; соблюдение этого условия нужно проверить по приведённым цитатам.');
+      const ids=s.manual?s.ids:s.ids.length?s.ids:result.candidates.slice(0,4);
+      const cases=[];
+      for(const id of ids) {
+        const d=docs.get(id);if(!d){issues.push('Решение '+id+' отсутствует в этой версии корпуса.');continue;}
+        if(s.year&&String(d.vol)!==s.year||s.department&&d.dept!==s.department)issues.push(id+': добавлено вручную вне поискового фильтра. Фильтры ограничивают подбор кандидатов; выбранное дело оставлено для сравнения.');
+        const src=await source(d),changed=Boolean(s.hashes[id]&&s.hashes[id]!==src.sha),sections=[],fragments=[];
+        if(changed)issues.push(id+': текст изменился после сохранения справки; показана текущая версия, прежние координаты не перенесены.');
+        let analysis=adapter.analyses.decisions[id];
+        if(!analysis)analysis=adapter.guides.guides.flatMap(g=>g.comparison?.cases||[]).find(c=>c.id===id);
+        if(analysis) {
+          if(analysis.source_sha256!==src.sha)issues.push(id+': подробный разбор устарел и не включён.');
+          else for(const section of analysis.sections) {
+            try {
+              const evidence=await Promise.all(section.evidence.map(ev=>quote(d,ev,src)));
+              if(evidence.length)sections.push({heading:section.heading,speaker:section.speaker,summary:section.summary,kind:kind(section),evidence});
+            }catch(err){issues.push(err.message);}
+          }
+        }
+        const matching=result.hits.filter(h=>h.passage.decision===id).slice(0,3),selected=[];
+        for(const hit of matching)for(const p of [hit.passage,...(hit.context||[])])if(!selected.some(x=>x.p.id===p.id))selected.push({p,neighbor:p.id!==hit.passage.id,partial:Boolean(hit.partial)});
+        if(!selected.length)for(const p of (byCase.get(id)||[]).slice(0,2))selected.push({p,neighbor:false,partial:false,browsing:true});
+        for(const item of selected.slice(0,5)) {
+          const p=byId.get(item.p.id);if(!p)continue;
+          const original=src.cp.slice(p.start,p.end).join('');
+          if(await hash(original)!==p.sha256){issues.push(id+': устаревший пассаж пропущен.');continue;}
+          const validAI=p.ai?.summary&&typeof p.ai.evidence==='string'&&p.ai.evidence.length>0&&original.includes(p.ai.evidence);
+          const evidence=await quote(d,{start:p.start,end:p.end,source_warning:p.ai?.source_warning},src);
+          fragments.push({summary:validAI?p.ai.summary:'',speaker:'Автор позиции в этом фрагменте отдельно не размечен',evidence,
+            concepts:validAI?(p.ai.concepts||[]):[],neighbor:item.neighbor,partial:item.partial,browsing:Boolean(item.browsing)});
+        }
+        const manifest=await adapter.loadScans(d.vol),pages=[...new Set((manifest.decisions[id]||[]).map(f=>manifest.pages[f]?.page).filter(Number.isInteger))].sort((a,b)=>a-b);
+        const headnote=await quote(d,{start:0,end:Array.from(d.headnote).length},src,'headnote');
+        cases.push({id,year:d.vol,number:d.num,department:d.dept,date:d.date_label||d.date||'Дата не определена',headnote:d.headnote,
+          source_sha256:src.sha,changed,pages,url:PUBLIC+'#/d/'+id,headnote_evidence:headnote,
+          outcome:d.outcome||'Не размечен',statutes:Object.keys(d.statutes||{}),sections,fragments,note:s.notes.cases[id]||'',
+          warning:(adapter.analytics.source_warnings?.[id]?.messages||[]).join(' '),restored:Boolean(adapter.analytics.source_revisions?.[id])});
+      }
+      const selected=new Set(cases.map(c=>c.id)),comparisons=[];
+      for(const guide of adapter.guides.guides) {
+        const comp=guide.comparison;if(!comp||!comp.cases.every(c=>selected.has(c.id)))continue;
+        for(const row of comp.comparisons) {
+          try {
+            const evidence=await Promise.all(row.evidence.map(async ev=>{
+              const d=docs.get(ev.decision),src=await source(d);
+              if(comp.cases.find(c=>c.id===d.id).source_sha256!==src.sha)throw Error('Сравнительный разбор устарел.');
+              return quote(d,ev,src);
+            }));
+            comparisons.push({heading:row.heading,summary:row.summary,evidence,scope:comp.scope,limits:comp.limits});
+          }catch(err){issues.push(err.message);}
+        }
+      }
+      const sharedStatutes=[];
+      for(const statute of new Set(cases.flatMap(c=>c.statutes))) {
+        if(statute.split(' ')[0]==='?')continue;
+        const ids=cases.filter(c=>c.statutes.includes(statute)).map(c=>c.id);
+        if(ids.length>1)sharedStatutes.push({statute,ids});
+      }
+      const final=state({...s,manual:true,ids:cases.map(c=>c.id),hashes:Object.fromEntries(cases.map(c=>[c.id,c.source_sha256])),corpus:stamp});
+      return {format:'senat-research',version:1,created_at:new Date().toISOString(),state:final,
+        title:s.title||s.q||'Сравнение решений Сената',question:s.q,terms:s.terms||s.q,notes:final.notes,
+        corpus:stamp,corpus_changed:Boolean(s.corpus&&s.corpus!==stamp),scope:adapter.meta.volumes.map(v=>({year:v.year,department:v.dept,decisions:v.decisions})),
+        cases,comparisons,shared_statutes:sharedStatutes,issues:[...new Set(issues)],
+        coverage:{selected:cases.length,analysed:cases.filter(c=>c.sections.length).length,matched:result.candidates.length,
+          partial:cases.some(c=>c.fragments.some(f=>f.partial))},
+        notice:'Справка собрана из опубликованных редакционных разборов и пояснений ИИ. Цитаты сверены с текущим текстом OCR. Отдельные фрагменты не атрибутированы как позиция Сената; автоматические метки исхода и норм показаны отдельно. Корпус охватывает четыре отдельных тома и не представляет всю практику Сената. Историческое решение не устанавливает правило действующего права.'};
+    }
+    return {compile,corpus};
+  }
+  function importState(raw) {
+    if(typeof raw!=='string'||new TextEncoder().encode(raw).length>LIMITS.file)throw Error('Файл справки превышает 2 МБ.');
+    let data;try{data=JSON.parse(raw);}catch(_){throw Error('Не удалось прочитать JSON справки.');}
+    if(!object(data)||data.format!=='senat-research'||data.version!==1)throw Error('Это не JSON-файл исследовательской справки.');
+    // Поля с цитатами и выводами из чужого файла не исполняем и не принимаем:
+    // восстановление выполняется по текущему корпусу и SHA выбранных дел.
+    return state(data.state);
+  }
+  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const md=s=>esc(s).replace(/[\\`*_{}\[\]()#+.!|>-]/g,'\\$&');
+  const quoteMD=q=>q.text.split('\n').map(s=>'> '+md(s)).join('\n');
+  function scanLinks(q) {return q.scans.filter(s=>safeScan(s.full)).map(s=>({label:'Скан'+(s.page==null?'':', с. '+s.page),url:PUBLIC+s.full}));}
+  const label=c=>c.year+' г. № '+c.number;
+  const ROWS=[['facts','Обстоятельства и предмет'],['party','Доводы участников'],['lower','Предшествующее рассмотрение'],['question','Вопрос Сената'],['reason','Рассуждение Сената'],['holding','Постановление'],['limits','Пределы вывода']];
+  function markdown(report) {
+    const out=['# '+md(report.title),'',md(report.notice),'','Вопрос: '+md(report.question),'Поисковая формулировка: '+md(report.terms),
+      'Тома: '+report.scope.map(v=>v.year+' ('+md(v.department)+')').join('; '),
+      'Подробных разборов в выбранных делах: '+report.coverage.analysed+' из '+report.cases.length+'.',
+      'Снимок корпуса: `'+report.corpus+'`',''];
+    if(report.notes.general)out.push('## Заметка читателя',md(report.notes.general),'');
+    for(const issue of report.issues)out.push('Ограничение: '+md(issue),'');
+    if(report.cases.length>1){
+      const cell=s=>md(s).replace(/\r?\n/g,' ');
+      out.push('## Сравнение по существу','',
+        '| Элемент дела | '+report.cases.map(c=>cell(label(c)+' · '+c.department)).join(' | ')+' |',
+        '|---|'+report.cases.map(()=>'---|').join(''));
+      for(const [kind,title] of ROWS)out.push('| '+title+' | '+report.cases.map(c=>cell(c.sections.filter(s=>s.kind===kind).map(s=>s.speaker+': '+s.summary).join(' ')||'Подробный разбор не подготовлен.')).join(' | ')+' |');
+      out.push('| Исход (автоматическая метка) | '+report.cases.map(c=>cell(c.outcome)).join(' | ')+' |',
+        '| Упоминания норм (метки корпуса) | '+report.cases.map(c=>cell(c.statutes.join('; ')||'Нет меток')).join(' | ')+' |','');
+    }
+    function evidence(q){out.push(quoteMD(q),'',md(pageLabel(q)), '[Открыть точную цитату](<'+q.url+'>)',...scanLinks(q).map(s=>'['+md(s.label)+'](<'+s.url+'>)'), '');}
+    for(const c of report.cases) {
+      out.push('## '+label(c)+' · '+md(c.department),'',md(c.headnote),'','[Полное решение](<'+c.url+'>)',
+        'Дата: '+md(c.date)+'. Исход (автоматическая метка): '+md(c.outcome)+'.',
+        'Упоминания норм (метки корпуса): '+md(c.statutes.join('; ')||'Нет меток')+'.','');
+      if(c.warning)out.push(md(c.warning),'');
+      if(c.note)out.push('### Заметка читателя',md(c.note),'');
+      if(!c.sections.length)out.push('Подробный разбор не подготовлен; ниже — фрагменты для чтения, без атрибуции позиции.','');
+      for(const section of c.sections){out.push('### '+md(section.heading),md(section.speaker),'',md(section.summary),'');section.evidence.forEach(evidence);}
+      for(const f of c.fragments){out.push('### Фрагмент по вопросу',f.neighbor?'Соседний контекст.':'',md(f.speaker),f.summary?'Пояснение ИИ: '+md(f.summary):'','');evidence(f.evidence);}
+    }
+    for(const comparison of report.comparisons){out.push('## '+md(comparison.heading),md(comparison.summary),'',md(comparison.limits),'');comparison.evidence.forEach(evidence);}
+    out.push('Изображения и ссылки на сайт требуют интернета. Текст справки доступен в этом файле.');
+    return out.join('\n');
+  }
+  function html(report) {
+    const link=(name,url)=>'<a href="'+esc(url)+'" rel="noopener noreferrer">'+esc(name)+'</a>';
+    const evidence=q=>'<details open><summary>'+esc(pageLabel(q))+'</summary><blockquote>'+esc(q.text)+'</blockquote><p>'+link('Открыть точную цитату',q.url)+' '+scanLinks(q).map(s=>link(s.label,s.url)).join(' · ')+'</p></details>';
+    const summaryCell=(c,kind)=>{
+      if(kind==='headnote')return '<p>'+esc(c.headnote)+'</p>'+evidence(c.headnote_evidence);
+      if(kind==='outcome')return esc(c.outcome);
+      if(kind==='statutes')return esc(c.statutes.join('; ')||'Нет меток');
+      if(kind==='note')return '<p>'+esc(c.note||'Нет заметки')+'</p>';
+      const parts=c.sections.filter(s=>s.kind===kind);
+      return parts.length?parts.map(s=>'<p><strong>'+esc(s.speaker)+'</strong></p><p>'+esc(s.summary)+'</p>'+s.evidence.map(evidence).join('')).join(''):'Подробный разбор этого элемента не подготовлен.';
+    };
+    return '<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(report.title)+'</title><style>body{font:16px/1.6 system-ui;margin:32px auto;padding:0 20px;max-width:1200px;color:#171717}a{color:#175a99}blockquote{white-space:pre-wrap;border-left:3px solid #ccc;margin:14px 0;padding-left:14px;font-family:Georgia,serif}p{white-space:pre-wrap;overflow-wrap:anywhere}article{margin:32px 0;border-top:1px solid #ccc;padding-top:16px}.table-wrap{overflow:auto}table{border-collapse:collapse;min-width:680px;width:100%}th,td{border:1px solid #bbb;padding:12px;vertical-align:top;min-width:220px}th:first-child{min-width:140px}details{margin:12px 0}summary{font-weight:600}@media print{body{max-width:none;padding:0;font-size:10pt}a{color:inherit}details{display:block}table{min-width:0;font-size:8pt}th,td{min-width:0}blockquote{break-inside:avoid}.table-wrap{overflow:visible}}</style><h1>'+esc(report.title)+'</h1><p>'+esc(report.notice)+'</p><p>Вопрос: '+esc(report.question)+'<br>Поисковая формулировка: '+esc(report.terms)+'</p><p>Тома: '+report.scope.map(v=>esc(v.year+' · '+v.department)).join('; ')+'. Подробных разборов: '+report.coverage.analysed+' из '+report.cases.length+'.</p>'+report.issues.map(x=>'<p>Ограничение: '+esc(x)+'</p>').join('')+(report.notes.general?'<h2>Заметка читателя</h2><p>'+esc(report.notes.general)+'</p>':'')+
+      (report.cases.length>1?'<h2>Сравнение по существу</h2><div class="table-wrap"><table><thead><tr><th>Элемент дела</th>'+report.cases.map(c=>'<th>'+esc(label(c)+' · '+c.department)+'</th>').join('')+'</tr></thead><tbody>'+[['headnote','Предмет по заголовку'],...ROWS,['outcome','Исход (автоматическая метка)'],['statutes','Упоминания норм (метки корпуса)'],['note','Заметка читателя']].map(([kind,title])=>'<tr><th>'+title+'</th>'+report.cases.map(c=>'<td>'+summaryCell(c,kind)+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>':'')+
+      report.cases.map(c=>'<article><h2>'+link(label(c)+' · '+c.department,c.url)+'</h2><p>'+esc(c.headnote)+'</p><p>Дата: '+esc(c.date)+'. Исход (автоматическая метка): '+esc(c.outcome)+'.</p><p>Упоминания норм (метки корпуса): '+esc(c.statutes.join('; ')||'Нет меток')+'</p>'+(c.note?'<h3>Заметка читателя</h3><p>'+esc(c.note)+'</p>':'')+(c.warning?'<p>'+esc(c.warning)+'</p>':'')+c.sections.map(s=>'<h3>'+esc(s.heading)+'</h3><p><strong>'+esc(s.speaker)+'</strong></p><p>'+esc(s.summary)+'</p>'+s.evidence.map(evidence).join('')).join('')+c.fragments.map(f=>'<h3>Фрагмент по вопросу'+(f.neighbor?' · соседний контекст':'')+'</h3><p>'+esc(f.speaker)+'</p><p>Пояснение ИИ: '+esc(f.summary)+'</p>'+evidence(f.evidence)).join('')+'</article>').join('')+
+      report.comparisons.map(c=>'<h2>'+esc(c.heading)+'</h2><p>'+esc(c.summary)+'</p>'+c.evidence.map(evidence).join('')+'<p>'+esc(c.limits)+'</p>').join('')+
+      '<footer><p>Снимок корпуса: '+esc(report.corpus)+'</p><p>Изображения и ссылки на сайт требуют интернета. Текст справки доступен в этом файле.</p></footer></html>';
+  }
+  return {PUBLIC,LIMITS,ROWS,state,hash,encode,decode,shareURL,suggestTerms,find,context,importState,markdown,html,pageLabel,scanLinks,cut};
+});
+</script>
+<script>/* Исследование в браузере: справка, матрица дел, заметки, файлы и ссылки. */
+(function (root) {
+  'use strict';
+  const R=root.SenatResearch,KEY='senat.research.v1',MAX_SAVED=20;
+  const $=id=>document.getElementById(id);
+  const replace=(id,...kids)=>$(id).replaceChildren(...kids.flat(Infinity).filter(k=>k!=null&&k!==false));
+  function h(tag,attrs,...kids) {
+    const el=document.createElement(tag);
+    for(const [key,value] of Object.entries(attrs||{})) {
+      if(value==null||value===false)continue;
+      if(key.startsWith('on'))el.addEventListener(key.slice(2),value);
+      else if(key==='class')el.className=value;
+      else el.setAttribute(key,value===true?'':String(value));
+    }
+    for(const child of kids.flat(Infinity))if(child!=null&&child!==false)el.append(child.nodeType?child:document.createTextNode(String(child)));
+    return el;
+  }
+  function create(adapter) {
+    let active=R.state(),report=null,result=null,token=0,ready=null,pending=null,recordId=null,storage=null,records=[],blocked=false;
+    let renderedCode='',notice='',persistent=true;
+    const docs=new Map(adapter.meta.decisions.map(d=>[d.id,d]));
+    function readRecords(raw) {
+      if(!raw)return [];
+      const saved=JSON.parse(raw);
+      if(saved.version!==1||!Array.isArray(saved.records)||saved.records.length>MAX_SAVED)throw Error();
+      const rows=saved.records.map(r=>{
+        if(typeof r.id!=='string'||!/^[-a-z0-9]{1,80}$/i.test(r.id)||typeof r.updated!=='string'||!Number.isFinite(Date.parse(r.updated)))throw Error();
+        return {id:r.id,updated:r.updated,state:R.state(r.state)};
+      });
+      if(new Set(rows.map(r=>r.id)).size!==rows.length)throw Error();
+      return rows;
+    }
+    try {
+      storage=localStorage;const raw=storage.getItem(KEY);
+      records=readRecords(raw);
+    } catch(_){blocked=true;persistent=false;}
+    async function prepare() {if(!ready)ready=adapter.prepare().catch(e=>{ready=null;throw e;});return ready;}
+    function message(value,error=false) {$('research-notice').textContent=value;$('research-notice').classList.toggle('reader-error',error);}
+    function status() {
+      $('research-storage-warning').hidden=persistent;
+      $('research-storage-warning').textContent=blocked?'Сохранённые исследования недоступны; исходная запись браузера не перезаписана. Текущую справку можно скачать файлом.':'Не удалось записать исследование в браузер. Скачайте файл до закрытия страницы.';
+      $('research-storage-raw').hidden=!blocked||!storage;
+      $('research-save-copy').hidden=!report||Boolean(recordId);
+      $('research-save-state').textContent=!report?'':recordId&&persistent?'Сохранено в этом браузере.':recordId?'Изменения доступны в памяти; скачайте копию.':'Это полученная справка. Сохраните свою копию для продолжения работы.';
+    }
+    function rememberURL() {
+      if(!recordId||!persistent||!location.hash.startsWith('#/research'))return;
+      const params=new URLSearchParams({share:R.encode(active,false),draft:recordId});
+      history.replaceState(null,'',location.pathname+location.search+'#/research?'+params);
+    }
+    function syncNotes() {
+      if(!report)return;
+      active=R.state(active);report.state=R.state(active);report.title=active.title||active.q||'Сравнение решений Сената';report.notes=active.notes;
+      report.cases.forEach(c=>{c.note=active.notes.cases[c.id]||'';});
+      $('research-report-title').textContent=report.title;
+      // Название могло измениться после отрисовки ссылок. Возврат из цитаты
+      // должен относиться к текущей справке и сохранять заметки в памяти.
+      for(const a of $('research-output').querySelectorAll('a[href^="#/d/"]')) {
+        const [path,query]=a.getAttribute('href').split('?'),params=new URLSearchParams(query);
+        if(params.get('mode')==='research'){params.set('back',R.encode(active,false));a.setAttribute('href',path+'?'+params);}
+      }
+      $('research-share-box').hidden=true;
+      if(recordId)persist();
+    }
+    function persist() {
+      if(blocked||!storage||!recordId){status();return;}
+      let fresh;
+      try{fresh=readRecords(storage.getItem(KEY));}catch(_){blocked=true;persistent=false;status();return;}
+      const known=records.find(r=>r.id===recordId),remote=fresh.find(r=>r.id===recordId);
+      if(known&&JSON.stringify(known)!==JSON.stringify(remote)) {
+        recordId=crypto.randomUUID();message('Справка изменена в другом окне. Ваши правки сохраняются отдельной копией.');
+      }
+      const row={id:recordId,updated:new Date().toISOString(),state:R.state(active)},at=fresh.findIndex(r=>r.id===recordId);
+      if(at<0&&fresh.length>=MAX_SAVED){recordId=null;persistent=false;message('Уже сохранено 20 исследований. Новая справка доступна в памяти; скачайте файл или удалите ненужную сохранённую копию.',true);status();return;}
+      const next=fresh.slice();if(at<0)next.unshift(row);else next[at]=row;
+      // Запись подтверждается только после успешного setItem.
+      try{storage.setItem(KEY,JSON.stringify({version:1,records:next}));records=next;persistent=true;rememberURL();}
+      catch(_){persistent=false;}
+      status();
+    }
+    function saveCopy() {
+      if(!report)return;recordId=crypto.randomUUID();persist();savedList();
+      if(persistent)message('Своя копия сохранена в этом браузере.');
+    }
+    function savedList() {
+      $('research-saved').replaceChildren(...records.map(row=>h('div',{class:'research-saved-row'},
+        h('button',{class:'btn ghost',onclick:()=>navigate(row.state,'saved',row.id)},row.state.title||row.state.q||'Сравнение выбранных дел'),
+        h('span',{class:'muted small'},new Date(row.updated).toLocaleString('ru-RU')),
+        h('button',{class:'research-delete',type:'button','aria-label':'Удалить сохранённое исследование',onclick:()=>{
+          if(!confirm('Удалить эту сохранённую справку и заметки из браузера?'))return;
+          try{const next=readRecords(storage.getItem(KEY)).filter(r=>r.id!==row.id);storage.setItem(KEY,JSON.stringify({version:1,records:next}));records=next;if(recordId===row.id)recordId=null;savedList();status();}
+          catch(_){persistent=false;status();}
+        }},'Удалить'))));
+      $('research-saved-empty').hidden=records.length>0;
+    }
+    function navigate(raw,origin='local',id=null) {
+      const s=R.state(raw),code=R.encode(s,false);
+      pending={state:s,origin,id,code};
+      const hash='#/research?share='+code;
+      if(location.hash===hash)render(new URLSearchParams({share:code}));else location.hash=hash;
+    }
+    function quoteLink(q) {
+      const url=new URL(q.url),params=new URLSearchParams(url.hash.split('?')[1]);
+      params.set('mode','research');params.set('back',R.encode(active,false));
+      return '#/d/'+q.decision+'?'+params;
+    }
+    function evidence(q,open=false) {
+      return h('details',{class:'research-evidence',open},
+        h('summary',{},R.pageLabel(q)),q.warning?h('p',{class:'preliminary-note'},q.warning):null,
+        h('blockquote',{class:'source-quote'},q.text),
+        h('div',{class:'research-links'},h('a',{class:'research-quote-link',href:quoteLink(q)},'Цитата в решении и скан'),
+          R.scanLinks(q).map(s=>h('a',{href:s.url,target:'_blank',rel:'noopener noreferrer'},s.label))));
+    }
+    function section(s) {
+      return h('section',{class:'research-position','data-section-kind':s.kind},h('h4',{},s.heading),
+        h('p',{class:'analysis-speaker'},s.speaker),h('p',{},s.summary),s.evidence.map(q=>evidence(q)));
+    }
+    function itemLabel(id) {const d=docs.get(id);return d?d.vol+' г. № '+d.num:id;}
+    function scope() {
+      return adapter.meta.volumes.map(v=>v.year+' · '+v.dept).join('; ');
+    }
+    function comparison() {
+      if(report.cases.length<2)return h('p',{class:'empty'},'Добавьте ещё одно дело, чтобы сравнить обстоятельства, доводы и рассуждение.');
+      const rows=[['headnote','Предмет по заголовку издания'],['relevance','Фрагменты по вопросу'],...R.ROWS,['outcome','Исход (автоматическая метка)'],['statutes','Упоминания норм (метки корпуса)'],['note','Заметка читателя']];
+      function cell(c,key) {
+        if(key==='headnote')return [h('p',{class:'source-quote'},c.headnote),evidence(c.headnote_evidence)];
+        if(key==='relevance')return c.fragments.map(f=>h('section',{},h('p',{},f.summary||'Оригинальный фрагмент'),
+          h('p',{class:'small muted'},f.speaker+(f.partial?' · частичное совпадение':'')+(f.browsing?' · добавлено для чтения, совпадение с вопросом не установлено':'')),evidence(f.evidence)));
+        if(key==='outcome')return [h('p',{},c.outcome),h('p',{class:'small muted'},'Автоматическая метка; резолютивная часть — в полном решении.')];
+        if(key==='statutes')return statutes(c);
+        if(key==='note')return h('p',{class:'research-case-note-copy'},active.notes.cases[c.id]||'Нет заметки.');
+        const sections=c.sections.filter(s=>s.kind===key);
+        return sections.length?sections.map(section):h('p',{class:'muted research-unavailable'},'Подробный разбор этого элемента не подготовлен.');
+      }
+      return h('div',{class:'research-table-wrap',tabindex:'0','aria-label':'Сравнение решений, таблицу можно прокручивать по горизонтали и вертикали'},
+        h('table',{class:'research-table'},h('caption',{},'Дела сопоставлены по одинаковым вопросам. Отличие исхода само по себе не доказывает противоречия судебных позиций.'),
+          h('thead',{},h('tr',{},h('th',{scope:'col'},'Элемент дела'),report.cases.map(c=>h('th',{scope:'col'},h('a',{href:'#/d/'+c.id+'?mode=research&back='+R.encode(active,false)},itemLabel(c.id)),h('div',{class:'small'},c.department))))),
+          h('tbody',{},rows.map(([key,title])=>h('tr',{'data-compare-row':key},h('th',{scope:'row'},title),report.cases.map(c=>h('td',{'data-compare-case':c.id},cell(c,key))))))));
+    }
+    function statutes(c) {
+      return c.statutes.length?h('ul',{class:'research-statutes'},c.statutes.map(value=>{
+        const [code,...rest]=value.split(' ');
+        return h('li',{},h('a',{href:'#/laws?'+new URLSearchParams({c:code,q:rest.join(' ')})},(adapter.analytics.codes[code]||'Акт не установлен')+' · '+rest.join(' ')));
+      })):h('p',{class:'muted'},'Метки норм отсутствуют.');
+    }
+    function renderReport() {
+      $('research-output').hidden=false;$('research-empty').hidden=true;
+      $('research-report-title').textContent=report.title;
+      $('research-title').value=active.title;
+      $('research-note').value=active.notes.general;
+      $('research-coverage').textContent=`Выбрано дел: ${report.cases.length}. Подробных разборов: ${report.coverage.analysed}. Доступные тома: ${scope()}.`;
+      replace('research-issues',
+        report.corpus_changed?h('p',{class:'preliminary-note'},'Корпус обновился после создания ссылки или файла. Справка собрана заново по текущим текстам; прежние выводы из файла не перенесены.'):null,
+        report.coverage.partial?h('p',{class:'search-partial-note'},'Включены частичные совпадения с вопросом. Полного соответствия всех условий не установлено.'):null,
+        report.issues.map(issue=>h('p',{class:'preliminary-note'},issue)));
+      const positions=report.cases.filter(c=>c.sections.some(s=>['question','reason','holding','limits'].includes(s.kind)));
+      $('research-positions').replaceChildren(...(positions.length?positions.map(c=>h('article',{class:'card'},h('h3',{},itemLabel(c.id)+' · '+c.department),
+        c.sections.filter(s=>['question','reason','holding'].includes(s.kind)).map(section),
+        c.sections.some(s=>s.kind==='limits')?h('details',{},h('summary',{},'Пределы вывода и оговорки'),c.sections.filter(s=>s.kind==='limits').map(section)):null)):[
+        h('p',{class:'empty'},'Для выбранных дел отдельная атрибуция позиции Сената не подготовлена. Ниже доступны пояснения и оригинальные фрагменты для чтения.')]));
+      $('research-cases').replaceChildren(...report.cases.map(c=>h('article',{class:'card research-case','data-research-case':c.id},
+        h('div',{class:'reader-item-top'},h('h3',{},h('a',{href:'#/d/'+c.id+'?mode=research&back='+R.encode(active,false)},itemLabel(c.id))),adapter.reader.saveButton(docs.get(c.id)),
+          h('button',{class:'btn ghost research-remove',onclick:()=>{
+            const s=R.state(active);s.ids=s.ids.filter(id=>id!==c.id);delete s.notes.cases[c.id];delete s.hashes[c.id];navigate(s,'saved',recordId);
+          }},'Убрать из справки')),
+        h('p',{class:'muted small'},c.department+' · '+c.date),h('p',{class:'research-headnote'},Lmodern(c.headnote)),
+        c.warning?h('p',{class:'preliminary-note'},c.warning):null,
+        c.restored?h('p',{class:'small muted'},'Порядок колонок восстановлен по скану; сплошной буквенной вычитки нет.'):null,
+        h('p',{class:'small muted'},c.pages.length?'Печатные страницы дела: '+c.pages.join(', '):'Печатные страницы не определены.'),
+        h('p',{class:'small'},c.sections.length?'Редакционный разбор с атрибуцией позиций доступен.':'Подробный разбор не подготовлен; автор позиции в отдельных фрагментах не установлен.'),
+        c.fragments.map((f,i)=>h('section',{class:'research-fragment'},
+          h('p',{class:'analysis-label'},f.neighbor?'Соседний контекст':f.browsing?'Фрагмент для чтения · соответствие вопросу не установлено':f.partial?'Частичное совпадение с вопросом':'Фрагмент по вопросу'),
+          f.summary?h('p',{},h('strong',{},'Пояснение ИИ: '),f.summary):null,
+          h('p',{class:'small muted'},f.speaker),evidence(f.evidence,i===0))),
+        c.sections.length?h('details',{class:'research-full-analysis'},h('summary',{},'Обстоятельства, доводы и полный разбор'),c.sections.map(section)):null,
+        noteInput(c.id))));
+      $('research-comparison').replaceChildren(comparison());
+      replace('research-differences',report.comparisons.map(c=>h('article',{class:'card'},h('h3',{},c.heading),h('p',{},c.summary),
+        h('p',{class:'small muted'},'Редакционное сравнение, подготовленное с помощью ИИ. '+c.scope),c.evidence.map(q=>evidence(q)),h('details',{},h('summary',{},'Пределы сравнения'),h('p',{},c.limits)))),
+        report.shared_statutes.length?h('div',{},h('h3',{},'Общие упоминания норм'),h('ul',{},report.shared_statutes.map(row=>h('li',{},row.statute+' — '+row.ids.map(itemLabel).join('; ')))),h('p',{class:'small muted'},'Совпадение меток норм помогает сопоставить дела, но не устанавливает одинаковый предмет спора или противоречие позиций.')):null,
+        !report.comparisons.length?h('p',{class:'muted'},'Отдельный редакционный вывод о сходствах и различиях для этого сочетания дел не подготовлен. Сопоставьте обстоятельства и цитаты в таблице.'):null);
+      const remaining=result.candidates.filter(id=>!active.ids.includes(id));
+      $('research-candidates').replaceChildren(...remaining.map(id=>h('button',{class:'btn ghost research-add-candidate',disabled:active.ids.length>=R.LIMITS.cases,onclick:()=>add(id)},itemLabel(id)+' · '+Lmodern(docs.get(id).headnote).slice(0,130))));
+      $('research-candidate-count').textContent=result.candidates.length?`Найдено разных дел: ${result.candidates.length}. В справку можно включить до шести.`:'Полных совпадений с вопросом не найдено. Можно уточнить формулировку или добавить дело вручную.';
+      $('research-partial').hidden=!result.suggested;
+      $('research-partial').textContent='Показать частичные совпадения ('+result.suggested+')';
+      savedList();status();
+    }
+    function Lmodern(s){return root.Lex.modernize(s);}
+    function noteInput(id) {
+      const area=h('textarea',{'aria-label':'Заметка к делу '+itemLabel(id),rows:2,maxlength:R.LIMITS.caseNote,oninput:()=>{
+        active.notes.cases[id]=area.value;syncNotes();
+        for(const cell of $('research-comparison').querySelectorAll('[data-compare-case="'+id+'"] .research-case-note-copy'))cell.textContent=area.value||'Нет заметки.';
+      }});area.value=active.notes.cases[id]||'';
+      return h('label',{class:'research-note-label'},'Моя заметка к делу',area);
+    }
+    async function render(params) {
+      const current=++token;message('');savedList();
+      try {
+        const code=params.get('share')||params.get('back');
+        if(!pending&&code&&report&&(code===renderedCode||code===R.encode(active,false))){rememberURL();status();return;}
+        let incoming,origin='shared',id=null;
+        if(code) {
+          if(pending?.code===code){incoming=pending.state;origin=pending.origin;id=pending.id;pending=null;}
+          else {
+            incoming=R.decode(code);
+            const saved=params.get('draft')&&records.find(row=>row.id===params.get('draft')&&R.encode(row.state,false)===code);
+            if(saved){incoming=saved.state;origin='saved';id=saved.id;}
+          }
+        }else if(params.get('q')||params.get('ids')){
+          incoming=R.state({q:params.get('q')||'',terms:params.get('terms')||params.get('q')||'',ids:(params.get('ids')||'').split(',').filter(Boolean),year:params.get('y')||'',department:params.get('dept')||''});origin='local';
+        }else {
+          report=null;active=R.state();$('research-output').hidden=true;$('research-empty').hidden=false;status();return;
+        }
+        const s=R.state(incoming);
+        if(s.year&&!adapter.meta.volumes.some(v=>String(v.year)===s.year))throw Error('Этот год отсутствует в корпусе.');
+        if(s.department&&!adapter.meta.volumes.some(v=>v.dept===s.department))throw Error('Этот департамент отсутствует в корпусе.');
+        $('research-q').value=s.q;$('research-terms').value=s.terms;$('research-year').value=s.year;$('research-department').value=s.department;
+        $('research-status').textContent='Собираем справку и проверяем цитаты…';
+        $('research-output').hidden=true;
+        const a=await prepare();if(current!==token)return;
+        const found=R.find(a.engines,a.config,s,adapter.meta),compiled=await a.context.compile(s,found);
+        if(current!==token)return;
+        active=compiled.state;report=compiled;result=found;renderedCode=code||R.encode(active,false);recordId=id;
+        $('research-q').value=active.q;$('research-terms').value=active.terms;$('research-year').value=active.year;$('research-department').value=active.department;
+        $('research-status').textContent=report.cases.length?'Справка готова. Цитаты сверены с текущим текстом OCR.':'По выбранным условиям дел не найдено.';
+        renderReport();
+        if(origin==='local'){recordId=crypto.randomUUID();persist();savedList();}
+        else if(origin==='saved'){
+          if(JSON.stringify(records.find(row=>row.id===recordId)?.state)!==JSON.stringify(active))persist();
+          rememberURL();savedList();
+        }
+        else message(origin==='import'?'Файл открыт. Цитаты и разборы восстановлены по текущему корпусу; заметки сохранены.':'Открыта полученная справка. Заметки не меняют вашу рабочую подборку.');
+      }catch(err){if(current===token){$('research-status').textContent='';message(err.message,true);$('research-output').hidden=true;$('research-empty').hidden=false;}}
+    }
+    function add(id) {
+      if(!docs.has(id))return;
+      if(active.ids.includes(id)){message('Это дело уже включено в справку.');return;}
+      if(active.ids.length>=R.LIMITS.cases){message('В справке можно сравнить до шести дел.',true);return;}
+      navigate({...active,manual:true,ids:[...active.ids,id]},recordId?'saved':'local',recordId);
+    }
+    function download(kind) {
+      if(!report)return;
+      const mime={json:'application/json',md:'text/markdown;charset=utf-8',html:'text/html;charset=utf-8'}[kind];
+      const content=kind==='json'?JSON.stringify(report,null,2):kind==='md'?R.markdown(report):R.html(report);
+      blobDownload(content,mime,'Сенат — '+report.title.replace(/[\\/:*?"<>|\x00-\x1f]/g,' ').slice(0,80)+'.'+kind);
+      message('Справка выгружена. Текст доступен без сети; ссылки на сайт и сканы требуют интернета.');
+    }
+    function blobDownload(content,mime,name) {
+      const url=URL.createObjectURL(new Blob([content],{type:mime})),a=h('a',{href:url,download:name});document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);
+    }
+    $('research-form').addEventListener('submit',async event=>{
+      event.preventDefault();try {
+        const q=$('research-q').value.trim(),entered=$('research-terms').value.trim();
+        if(!q&&!entered){message('Введите вопрос или добавьте дело для сравнения.',true);return;}
+        const a=await prepare();
+        const terms=entered&&entered!==active.terms?entered:R.suggestTerms(q,a.config.glossary);
+        navigate({q,terms,year:$('research-year').value,department:$('research-department').value});
+      }catch(err){message(err.message,true);}
+    });
+    $('research-q').addEventListener('input',()=>{$('research-terms').value='';});
+    for(const a of document.querySelectorAll('[data-research-scroll]'))a.addEventListener('click',event=>{event.preventDefault();$(a.dataset.researchScroll).scrollIntoView({behavior:'smooth',block:'start'});});
+    $('research-partial').addEventListener('click',()=>navigate({...active,ids:[],manual:false,partial:true},'local'));
+    $('research-title').addEventListener('input',()=>{active.title=$('research-title').value;syncNotes();});
+    $('research-note').addEventListener('input',()=>{active.notes.general=$('research-note').value;syncNotes();});
+    $('research-save-copy').addEventListener('click',saveCopy);
+    $('research-share').addEventListener('click',async()=>{
+      try {
+        const url=R.shareURL(active,$('research-share-notes').checked);$('research-share-url').value=url;$('research-share-box').hidden=false;
+        try{await navigator.clipboard.writeText(url);message('Ссылка скопирована'+($('research-share-notes').checked?' вместе с вашими заметками.':'. Ваши заметки в неё не включены.'));}
+        catch(_){$('research-share-url').focus();$('research-share-url').select();message('Ссылка готова. Скопируйте её из поля.');}
+      }catch(err){message(err.message,true);}
+    });
+    $('research-share-notes').addEventListener('change',()=>{$('research-share-box').hidden=true;});
+    for(const kind of ['html','md','json'])$('research-export-'+kind).addEventListener('click',()=>download(kind));
+    $('research-import').addEventListener('change',async event=>{
+      const file=event.target.files[0];event.target.value='';if(!file)return;
+      try{if(file.size>R.LIMITS.file)throw Error('Файл превышает 2 МБ.');navigate(R.importState(await file.text()),'import');}
+      catch(err){message(err.message,true);}
+    });
+    $('research-storage-raw').addEventListener('click',()=>{try{blobDownload(storage.getItem(KEY)||'','text/plain;charset=utf-8','Сенат — исходная запись исследований.txt');}catch(err){message(err.message,true);}});
+    $('research-add').addEventListener('input',()=>{
+      const query=Lmodern($('research-add').value.trim()).toLowerCase(),terms=root.Lex.stems(query);
+      const found=query?adapter.meta.decisions.filter(d=>d.id.includes(query)||terms.length&&terms.every(t=>root.Lex.stems(d.headnote).includes(t))).slice(0,8):[];
+      $('research-add-results').replaceChildren(...found.map(d=>h('button',{class:'btn ghost',onclick:()=>add(d.id)},itemLabel(d.id)+' · '+Lmodern(d.headnote).slice(0,150))));
+    });
+    const examples=[
+      ['Когда сделку считали мнимой?','фиктивные сделки',[]],
+      ['Кто продолжает дело после смерти участника?','наследники процесс',['1904-034','1905-083']],
+      ['За что отвечает нотариус?','ответственность нотариуса',['1897-041','1904-050','1904-105']],
+      ['Когда перевозчик возмещает убытки?','ответственность перевозчика',['1904-030','1905-022','1905-101']],
+      ['Вред здоровью и производственная травма','производственная травма',[]],
+      ['Кто должен доказывать свои требования?','бремя доказывания',[]]
+    ];
+    $('research-examples').replaceChildren(...examples.map(([q,terms,ids])=>h('button',{class:'research-example',onclick:()=>navigate({q,terms,ids})},q,
+      h('span',{class:'small muted'},ids.length?'Сопоставление '+ids.length+' дел с редакционным разбором':'Подобрать дела из корпуса'))));
+    for(const year of adapter.meta.volumes)$('research-year').append(h('option',{value:year.year},year.year));
+    for(const dept of new Set(adapter.meta.volumes.map(v=>v.dept)))$('research-department').append(h('option',{value:dept},dept));
+    savedList();status();
+    return {render,cancel:()=>{token++;},getReport:()=>report};
+  }
+  root.SenatResearchUI={create};
 })(window);
 </script>
 <script>/* Интерфейс: поиск по решениям Сената и аналитика. Зависит от lex.js (Lex). */
@@ -1547,7 +2166,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
   ];
 
   const S = {
-    meta: null, index: null, an: null, engine: null, texts: {}, stemCache: new Map(), reader: null,
+    meta: null, index: null, an: null, engine: null, texts: {}, stemCache: new Map(), reader: null, research: null,
     opts: { modern: false, gloss: true }, detailId: null,
     sense: { config: null, engines: [], promise: null, q: '', hits: [], shown: 10, token: 0, partial: false, suggested: 0 },
     map: { q: '', topic: '', token: 0 },
@@ -1567,7 +2186,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
       if (k === 'class') el.className = v; else if (k === 'html') el.innerHTML = v;
       else if (k.startsWith('on')) el.addEventListener(k.slice(2), v); else el.setAttribute(k, k==='href' ? versionedLink(v) : v === true ? '' : v);
     }
-    for (const k of kids.flat()) if (k != null && k !== false) el.append(k.nodeType ? k : document.createTextNode(k));
+    for (const k of kids.flat(Infinity)) if (k != null && k !== false) el.append(k.nodeType ? k : document.createTextNode(k));
     return el;
   }
   function versionedLink(value) {
@@ -1736,9 +2355,10 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
   }
   function route() {
     const { path, p } = readHash();
-    const requested = path.startsWith('d/') ? (['sense','participants','map','laws','analyses','analysis','guides','reader','quote'].includes(p.get('mode')) ? (p.get('mode') === 'analysis' ? 'analyses' : p.get('mode') === 'quote' ? 'reader' : p.get('mode')) : 'search') : (path.split('/')[0] || 'search');
-    const tab = ['search','sense','map','laws','participants','guides','analyses','reader','api','analytics','about'].includes(requested) ? requested : 'search';
-    for (const t of ['search','sense','map','laws','participants','guides','analyses','reader','api','analytics','about']) {
+    const requested = path.startsWith('d/') ? (['sense','participants','map','laws','analyses','analysis','guides','reader','quote','research'].includes(p.get('mode')) ? (p.get('mode') === 'analysis' ? 'analyses' : p.get('mode') === 'quote' ? 'reader' : p.get('mode')) : 'search') : (path.split('/')[0] || 'search');
+    const tab = ['research','search','sense','map','laws','participants','guides','analyses','reader','api','analytics','about'].includes(requested) ? requested : 'search';
+    if(tab!=='research')S.research.cancel();
+    for (const t of ['research','search','sense','map','laws','participants','guides','analyses','reader','api','analytics','about']) {
       $('#view-' + t).hidden = t !== tab;
       $('#tab-' + t).setAttribute('aria-current', t === tab ? 'page' : 'false');
     }
@@ -1769,6 +2389,9 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
     } else if (tab === 'guides') {
       renderGuides();
+      if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
+    } else if (tab === 'research') {
+      S.research.render(p);
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
     } else if (tab === 'reader') {
       S.reader.render();
@@ -1861,6 +2484,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     const quote=ev=>sourceEvidence(ev.decision,ev,{mode:'guides',g:guide.id,compare:'1'});
     return h('section',{class:'guide-comparison','aria-label':comp.title},
       h('p',{class:'analysis-label'},comp.label),
+      h('p',{},h('a',{class:'btn ghost',href:'#/research?'+new URLSearchParams({q:comp.question,terms:guide.title,ids:comp.cases.map(c=>c.id).join(',')})},'Открыть исследование, сравнить и поделиться')),
       h('p',{class:'muted small'},'Полные тексты прочитаны по контексту. Каждое сопоставление связано с цитатами разных дел. Новая сплошная сверка изображений и независимая юридическая экспертиза не проводились.'),
       h('h3',{},'Что меняет ответ Сената'),
       ...comp.comparisons.map(c=>h('section',{class:'guide-contrast'},h('h4',{},c.heading),h('p',{},c.summary),...c.evidence.map(quote))),
@@ -2101,13 +2725,17 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
       readHash().p.get('mode')==='guides'?loadTopicCatalog():null,
       readHash().p.get('mode')==='laws'&&readHash().p.has('law')?loadLaws():null]);
     if (S.detailId !== id || $('#detail').hidden) return;
-    const params = readHash().p, inSense = ['sense','map','passage','laws','analysis','guides','quote'].includes(params.get('mode'));
+    const params = readHash().p, inSense = ['sense','map','passage','laws','analysis','guides','quote','research'].includes(params.get('mode'));
     let target = null, senseTerms = [], partialMissing = [], quoteWarning = '';
     const analysis = analyses.decisions && analyses.decisions[id];
-    if (params.get('mode') === 'quote') {
+    if (params.get('mode') === 'quote' || params.get('mode') === 'research') {
+      if (params.get('mode') === 'research' && !params.has('at')) {
+        target = null;
+      } else {
       target = await S.reader.resolveQuote(d,text,params);
       if (target.warning) { quoteWarning=target.warning; target=null; }
       if (S.detailId !== id || $('#detail').hidden) return;
+      }
     } else if (params.get('mode') === 'laws' && params.has('law')) {
       const row = [...laws.citations, ...(laws.unresolved || []), ...(laws.historical_references || [])].find(r=>r.id===params.get('law') && r.decision_id===id);
       if (row) target = await lawDetailTarget(d, row, params);
@@ -2141,7 +2769,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
       }
     }
     const revision=S.an.source_revisions?.[id];
-    if (revision && params.has('at') && params.get('mode')!=='quote' && params.get('v')!==revision.version) {
+    if (revision && params.has('at') && !['quote','research'].includes(params.get('mode')) && params.get('v')!==revision.version) {
       target=null; senseTerms=[];
       quoteWarning='Порядок колонок и границы этого решения восстановлены. Диапазон в старой ссылке не подтверждён; открыт полный текст. Найдите цитату заново через поиск или разбор решения.';
     }
@@ -2296,7 +2924,11 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     $('#gloss').addEventListener('change', e => { S.opts.gloss = e.target.checked; runSearch(); });
     $('#more').addEventListener('click', () => { S.shown += 20; renderResults(++runToken); });
     $('#reset').addEventListener('click', () => go('search'));
-    $('#detail-close').addEventListener('click', () => { const { p } = readHash(); const requested = p.get('mode'); const mode = requested === 'quote' ? 'reader' : requested === 'passage' ? 'sense' : (requested === 'analysis' ? 'analyses' : (['sense','participants','map','laws','guides','analyses','api','reader'].includes(requested) ? requested : 'search')); p.delete('at'); p.delete('end'); p.delete('mode'); p.delete('ref'); p.delete('law'); p.delete('field'); p.delete('sha'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : ''); });
+    $('#detail-close').addEventListener('click', () => {
+      const { p } = readHash(); const requested = p.get('mode');
+      if (requested==='research') {location.hash='#/research'+(p.get('back')?'?'+new URLSearchParams({share:p.get('back')}):'');return;}
+      const mode = requested === 'quote' ? 'reader' : requested === 'passage' ? 'sense' : (requested === 'analysis' ? 'analyses' : (['sense','participants','map','laws','guides','analyses','api','reader'].includes(requested) ? requested : 'search')); p.delete('at'); p.delete('end'); p.delete('mode'); p.delete('ref'); p.delete('law'); p.delete('field'); p.delete('sha'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : '');
+    });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !document.querySelector('.scan-dialog[open]') && !$('#detail').hidden) $('#detail-close').click(); });
     $('#examples').append(...['недействительность сделки', 'возмещение убытков', 'исковая давность', 'договор аренды', 'банкротство', 'страховое возмещение', 'перевозка грузов', 'исполнитель завещания']
       .map(x => h('button', { class: 'chip', onclick: () => go('search', { q: x }) }, x)));
@@ -2380,6 +3012,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     $('#sense-status').replaceChildren(h('strong', {}, `${hits.length} ${plural(hits.length,'фрагмент','фрагмента','фрагментов')}`),
       h('span', {class:'muted'}, S.sense.concepts && S.sense.concepts.length ? ' · понятия: '+S.sense.concepts.map(c=>c.concept).join(', ') : ''),
       S.sense.partial ? h('span',{class:'search-partial-note'},' · частичные совпадения') : '');
+    if(hits.length)$('#sense-status').append(h('p',{},h('a',{class:'btn ghost',href:'#/research?'+new URLSearchParams({q:S.sense.q,terms:S.sense.q})},'Собрать справку и сравнить дела')));
     if (!hits.length) {
       box.append(h('p', {class:'empty'}, 'Подходящие фрагменты в доступных томах не найдены. Это не доказывает отсутствия такой практики: попробуйте другое понятие или обычный поиск.'));
       if (S.sense.suggested) box.append(h('p',{class:'small'},'Есть фрагменты, в которых совпадает всё, кроме одной части запроса.'),
@@ -2728,6 +3361,11 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
       $('#corpus-summary').hidden = false;
       S.engine = L.makeEngine(index, meta.decisions);
       S.reader=window.SenatReaderUI.create({meta,textOf,loadJSON,loadScans,formatDate:fmtDate,setModern,isModern:()=>S.opts.modern,warningOf:d=>(S.an.source_warnings?.[d.id]?.messages||[]).join(' ')});
+      S.research=window.SenatResearchUI.create({meta,analytics:an,reader:S.reader,prepare:async()=>{
+        await loadSense();const [analyses,guides]=await Promise.all([loadAnalyses(),loadGuides()]);
+        return {engines:S.sense.engines,config:S.sense.config,context:window.SenatResearch.context({meta,analytics:an,analyses,guides,config:S.sense.config,
+          volumes:S.sense.engines.map(e=>e.data),textOf,loadScans})};
+      }});
       $('#loading').hidden = true; setupControls(); route(); addEventListener('hashchange', route);
     } catch (e) {
       $('#loading').textContent = 'Не удалось загрузить данные: ' + e.message + '. Откройте страницу через веб-сервер (например, `python3 -m http.server` в папке lex).';

@@ -3,6 +3,7 @@
 import hashlib
 import json
 import os
+import re
 import subprocess
 import tempfile
 import unittest
@@ -113,7 +114,8 @@ assert.equal(C.makeEngine(data,config.glossary).search('электронная �
         subprocess.run(['python3',str(ROOT/'build.py'),'--single'],cwd=REPO,check=True,capture_output=True)
         self.assertEqual(before,{p:hashlib.sha256(p.read_bytes()).hexdigest() for p in files})
         # Предел относится к начальной загрузке сайта; офлайн-файл содержит все тома.
-        initial = ['index.html','app.js','lex.js','concept.js','data/meta.json','data/index.json','data/analytics.json']
+        scripts = [s.split('?',1)[0] for s in re.findall(r'<script src="([^"]+)"', (ROOT/'index.html').read_text())]
+        initial = ['index.html',*scripts,'data/meta.json','data/index.json','data/analytics.json']
         self.assertLess(sum((ROOT/name).stat().st_size for name in initial),10_000_000)
 
     def test_scores_are_comparable_across_volumes(self):
