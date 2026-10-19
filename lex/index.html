@@ -34,7 +34,7 @@ header { border-bottom: 1px solid var(--line); background: var(--surface); }
 .top h1 { font: 600 20px/1.2 var(--serif); margin: 0; }
 .top .sub { color: var(--ink2); font-size: 14px; }
 .spacer { flex: 1; }
-nav { display: flex; gap: 4px; margin-top: 8px; }
+nav { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
 nav a { padding: 9px 14px; text-decoration: none; color: var(--ink2); border-bottom: 2px solid transparent; }
 nav a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); font-weight: 600; }
 main { padding: 20px 0 60px; }
@@ -198,13 +198,29 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
 #reader-compare-panel { margin:24px 0; }.reader-scan-links { padding-left:20px; overflow-wrap:anywhere; }
 #reader-notice:empty { display:none; }#reader-status { margin:14px 0; }.reader-save-decision { margin-top:10px; }
 @media(max-width:760px) { .reader-compare-grid { grid-template-columns:1fr; }.reader-item-top { align-items:flex-start; }.reader-item-top h3 { flex-basis:100%; }.reader-actions .btn { max-width:100%; }.reader-full-original { max-height:55vh; } }
+
+/* Исследование: вопрос, подтверждения и сравнение по одинаковым элементам. */
+.research-hero { padding:24px; background:var(--soft); border:1px solid var(--line); border-radius:12px; margin:20px 0; }
+.research-hero h2 { margin:0 0 10px; font:600 27px/1.3 var(--serif); }
+#research-form { display:grid; gap:12px; }#research-form label,.research-note-label { display:grid; gap:6px; min-width:0; }
+#view-research input[type=text],#view-research textarea { width:100%; box-sizing:border-box; padding:10px 12px; font:inherit; border:1px solid var(--line); border-radius:8px; background:var(--surface); color:var(--ink); min-width:0; }
+#view-research textarea { resize:vertical; }#research-q { font-size:18px; }.research-form-row { display:flex; gap:12px; flex-wrap:wrap; align-items:end; }.research-form-row label { flex:1 1 200px; }.research-form-row select { max-width:100%; width:100%; }
+.research-example-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr)); gap:12px; margin:18px 0; }
+.research-example { font:inherit; text-align:left; display:grid; gap:8px; padding:18px; cursor:pointer; color:var(--ink); background:var(--surface); border:1px solid var(--line); border-radius:10px; }.research-example:hover { border-color:var(--accent); }
+.research-actions,.research-links,.research-saved-row { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin:12px 0; }.research-saved-row { border-bottom:1px solid var(--line); padding-bottom:10px; }.research-saved-row .btn { text-align:left; flex:1 1 200px; }.research-delete { background:none; border:0; color:var(--ink2); text-decoration:underline; cursor:pointer; font:inherit; }
+.research-report-head { border-left:4px solid var(--accent); padding:4px 18px; margin:26px 0; }.research-report-head h2 { margin:0 0 10px; }.research-jump { display:flex; gap:14px; flex-wrap:wrap; margin:18px 0; }
+.research-position,.research-fragment { border-top:1px solid var(--line); margin-top:16px; padding-top:12px; }.research-position h4 { margin:0; }.research-evidence { margin:12px 0; padding:10px 12px; border:1px solid var(--line); border-radius:7px; overflow-wrap:anywhere; }.research-evidence summary { cursor:pointer; color:var(--accent-ink); }
+.research-case { margin:20px 0; }.research-headnote { font-family:var(--serif); }.research-note-label { margin:20px 0; }.research-full-analysis { padding:12px 0; }.research-table-wrap { max-width:100%; max-height:75vh; overflow:auto; margin:18px 0; border:1px solid var(--line); border-radius:8px; }
+.research-table { border-collapse:separate; border-spacing:0; width:100%; font-size:14px; }.research-table caption { text-align:left; padding:12px; }.research-table td,.research-table th { vertical-align:top; text-align:left; border-top:1px solid var(--line); border-right:1px solid var(--line); padding:14px; min-width:270px; max-width:380px; overflow-wrap:anywhere; }.research-table th:first-child { min-width:155px; max-width:180px; background:var(--soft); position:sticky; left:0; z-index:1; }.research-table thead th { background:var(--soft); position:sticky; top:0; z-index:2; }.research-table thead th:first-child { z-index:3; }.research-table .research-position { margin:0; padding:0; border:0; }.research-table .research-evidence { background:var(--surface); }
+#research-candidates,#research-add-results { display:grid; gap:8px; margin:14px 0; }#research-candidates button,#research-add-results button { text-align:left; white-space:normal; }.research-transfer { padding:18px; border:1px solid var(--line); border-radius:9px; margin:28px 0; }#research-share-url { width:100%; }#research-status { margin:14px 0; }#research-notice:empty { display:none; }#research-import { max-width:100%; }
+@media(max-width:600px) { .research-hero { padding:16px; }.research-hero h2 { font-size:23px; }.research-form-row { display:grid; grid-template-columns:1fr; }.research-actions .btn { width:100%; }.research-table td,.research-table th { min-width:245px; }.research-table th:first-child { min-width:120px; }.research-report-head { padding-left:12px; }.research-quote-link { overflow-wrap:anywhere; } }
 </style>
 </head>
 <body>
 <header><div class="wrap">
   <div class="top"><h1>Решения Правительствующего Сената</h1><span class="sub">поиск и аналитика · прототип</span><span class="spacer"></span>
     <button class="btn ghost" id="theme" title="Светлая / тёмная тема">◐ тема</button></div>
-  <nav aria-label="Разделы"><a id="tab-search" href="#/search">Поиск</a><a id="tab-sense" href="#/sense">По смыслу</a><a id="tab-laws" href="#/laws">Законодательство</a><a id="tab-map" href="#/map">Карта</a><a id="tab-participants" href="#/participants">Участники</a><a id="tab-guides" href="#/guides">Темы</a><a id="tab-analyses" href="#/analyses">Разборы</a><a id="tab-reader" href="#/reader">Подборка</a><a id="tab-api" href="#/api">API</a><a id="tab-analytics" href="#/analytics">Аналитика</a><a id="tab-about" href="#/about">О проекте</a></nav>
+  <nav aria-label="Разделы"><a id="tab-research" href="#/research">Исследование</a><a id="tab-search" href="#/search">Поиск</a><a id="tab-sense" href="#/sense">По смыслу</a><a id="tab-laws" href="#/laws">Законодательство</a><a id="tab-map" href="#/map">Карта</a><a id="tab-participants" href="#/participants">Участники</a><a id="tab-guides" href="#/guides">Темы</a><a id="tab-analyses" href="#/analyses">Разборы</a><a id="tab-reader" href="#/reader">Подборка</a><a id="tab-api" href="#/api">API</a><a id="tab-analytics" href="#/analytics">Аналитика</a><a id="tab-about" href="#/about">О проекте</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -246,6 +262,39 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     <div id="status" aria-live="polite"></div>
     <div id="results"></div>
     <button class="btn ghost" id="more" hidden>Показать ещё</button>
+  </section>
+
+  <section id="view-research" hidden>
+    <div class="research-hero">
+      <h2>Разобраться в правовом вопросе</h2>
+      <p>Соберите справку из решений корпуса, сопоставьте обстоятельства и судебные позиции, сохраните цитаты и передайте результат коллеге.</p>
+      <form id="research-form">
+        <label>Ваш вопрос<textarea id="research-q" rows="2" maxlength="600" placeholder="Например: когда сделку считали мнимой?"></textarea></label>
+        <label>Поисковая формулировка<input type="text" id="research-terms" maxlength="600" placeholder="Можно уточнить: фиктивные сделки"><span class="muted small">Если оставить поле пустым, используем вопрос и узнаваемые понятия справочника. Фактическая формулировка будет показана после поиска.</span></label>
+        <div class="research-form-row"><label>Том<select id="research-year"><option value="">Все тома</option></select></label><label>Департамент<select id="research-department"><option value="">Все департаменты</option></select></label><button type="submit" class="btn">Составить справку</button></div>
+      </form>
+    </div>
+    <p id="research-status" role="status"></p><p id="research-notice" role="status"></p>
+    <p id="research-storage-warning" class="preliminary-note" hidden></p><button id="research-storage-raw" class="btn ghost" hidden>Скачать исходную запись браузера</button>
+    <div id="research-empty"><h3>Начните с вопроса</h3><div id="research-examples" class="research-example-grid"></div></div>
+    <div id="research-output" hidden>
+      <header class="research-report-head"><h2 id="research-report-title"></h2><p id="research-coverage" class="small muted"></p><p class="small">Справка составлена из опубликованных разборов и пояснений ИИ. Каждое положение раскрывается до оригинальной цитаты. Полнота практики и правило действующего права не устанавливаются.</p></header>
+      <div id="research-issues"></div>
+      <nav class="research-jump" aria-label="Разделы исследования"><a href="#research-position-heading" data-research-scroll="research-position-heading">Позиции и условия</a><a href="#research-cases-heading" data-research-scroll="research-cases-heading">Выбранные дела</a><a href="#research-compare-heading" data-research-scroll="research-compare-heading">Сравнить по существу</a><a href="#research-transfer-heading" data-research-scroll="research-transfer-heading">Сохранить и поделиться</a></nav>
+      <label class="research-note-label">Название справки<input type="text" id="research-title" maxlength="200" placeholder="Можно дать своё название"></label>
+      <label class="research-note-label">Моя общая заметка<textarea id="research-note" rows="3" maxlength="4000"></textarea></label>
+      <p class="small muted" id="research-save-state"></p><button id="research-save-copy" class="btn ghost" hidden>Сохранить свою копию в браузере</button>
+      <details open><summary id="research-position-heading"><strong>Позиции Сената и пределы вывода</strong></summary><div id="research-positions"></div></details>
+      <h2 id="research-cases-heading">Дела и фрагменты к вопросу</h2><div id="research-cases"></div>
+      <h3>Изменить состав справки</h3><p id="research-candidate-count" class="small muted"></p><button id="research-partial" class="btn ghost" hidden>Показать частичные совпадения</button><div id="research-candidates"></div>
+      <label class="research-note-label">Добавить любое дело корпуса<input type="text" id="research-add" placeholder="1904-034 или слова из заголовка" maxlength="200"></label><div id="research-add-results"></div>
+      <h2 id="research-compare-heading">Сравнение по существу</h2><div id="research-comparison"></div><div id="research-differences"></div>
+      <section class="research-transfer"><h2 id="research-transfer-heading">Сохранить и поделиться</h2><p>Ссылка передаёт вопрос, выбранные дела и версии текстов. При изменении корпуса получатель увидит предупреждение. Заметки включаются только по вашему выбору.</p>
+        <label><input type="checkbox" id="research-share-notes"> Включить мои заметки в ссылку</label><div class="research-actions"><button id="research-share" class="btn">Скопировать ссылку</button><button id="research-export-html" class="btn ghost">HTML для чтения и печати</button><button id="research-export-md" class="btn ghost">Markdown</button><button id="research-export-json" class="btn ghost">JSON — перенос справки</button></div>
+        <label id="research-share-box" hidden>Готовая ссылка<textarea id="research-share-url" readonly rows="3"></textarea></label><p class="small muted">Файл содержит текст и цитаты. Ссылки на сайт и сканы требуют интернета. Полученный JSON восстанавливается по текущему корпусу с проверкой версий.</p>
+      </section>
+    </div>
+    <section><h3>Продолжить сохранённое исследование</h3><p id="research-saved-empty" class="muted">Сохранённых справок пока нет. Новые исследования сохраняются в этом браузере; полученную ссылкой справку можно сохранить отдельной копией.</p><div id="research-saved"></div><label class="research-note-label">Открыть JSON-файл справки<input type="file" id="research-import" accept="application/json,.json"></label></section>
   </section>
 
   <section id="view-sense" hidden>
@@ -343,7 +392,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     <label class="reader-import-label">Объединить с JSON-копией<input type="file" id="reader-import" accept="application/json,.json"></label>
     <p class="small muted">При импорте цитаты проверяются по текущему корпусу; страницы и ссылки определяются заново. Уже сохранённые заметки не заменяются.</p>
     <div class="reader-actions"><button id="reader-retry" class="btn ghost">Повторить сохранение</button><button id="reader-export-original" class="btn ghost" hidden>Скачать исходную запись</button><button id="reader-recover" class="btn ghost" hidden>Восстановить хранилище</button></div>
-    <div class="reader-actions"><button id="reader-compare" class="btn" disabled>Сравнить выбранные дела</button><span id="reader-compare-count" class="small"></span></div>
+    <div class="reader-actions"><button id="reader-compare" class="btn" disabled>Сравнить выбранные дела</button><button id="reader-research" class="btn ghost" disabled>Исследовать выбранные дела</button><span id="reader-compare-count" class="small"></span></div>
     <div id="reader-compare-panel"></div>
     <div id="reader-items"></div>
   </section>
@@ -396,7 +445,9 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
 <script src="concept.js"></script>
 <script src="reader.js"></script>
 <script src="reader-export.js"></script>
-<script src="reader-ui.js"></script>
-<script src="app.js"></script>
+<script src="reader-ui.js?v=research-20261019"></script>
+<script src="research.js?v=research-20261019"></script>
+<script src="research-ui.js?v=research-20261019"></script>
+<script src="app.js?v=research-20261019"></script>
 </body>
 </html>
