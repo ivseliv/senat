@@ -18,7 +18,7 @@ from guide_comparisons import guide_decisions
 ROOT = Path(__file__).resolve().parent.parent
 PUBLIC = 'https://ivseliv.github.io/senat/lex/'
 API_VERSION = 'v1'
-CONTRACT_VERSION = '1.8.0'
+CONTRACT_VERSION = '1.9.0'
 
 
 def read_json(path):
@@ -47,6 +47,57 @@ def mime_type(path):
     return 'application/json; charset=utf-8' if path.suffix == '.json' else 'application/octet-stream'
 
 
+def province_boundary_path(data, geography):
+    """Слой границ публикуется рядом с geography.json, вне каталога API."""
+    filename = geography['province_map']['file']
+    if filename != 'province-boundaries-1897.json':
+        raise ValueError('API: неизвестный файл границ губерний')
+    return Path(data) / filename
+
+
+def api_data_revision(export, data, geography):
+    """Геометрия также закреплена ревизией, хотя не копируется в api/v1."""
+    export, data = Path(export), Path(data)
+    return digest_files([
+        export / 'manifest.json', data / 'decision-analyses.json',
+        data / 'analysis-search.json', data / 'guides.json',
+        data / 'topic-catalog.json', data / 'analytics.json',
+        data / 'concepts.json', data / 'geography.json',
+        province_boundary_path(data, geography),
+    ])
+
+
+def province_reference_data(data, geography):
+    """Покрытие справочной карты не смешивается с числом упоминаний и дел."""
+    descriptor = geography['province_map']
+    path = province_boundary_path(data, geography)
+    raw = path.read_bytes()
+    boundaries = json.loads(raw)
+    if boundaries.get('type') != 'FeatureCollection' or boundaries.get('year') != descriptor['year']:
+        raise ValueError('API: тип или год слоя границ не совпадает с province_map')
+    feature_ids = [feature['id'] for feature in boundaries['features']]
+    if len(set(feature_ids)) != len(feature_ids):
+        raise ValueError('API: повторяющиеся идентификаторы геометрии губерний')
+    referenced_ids = {ident for province in geography['provinces'] for ident in province['boundary_ids']}
+    if not referenced_ids <= set(feature_ids):
+        raise ValueError('API: губерния ссылается на отсутствующую геометрию')
+    with_geometry = sum(bool(province['boundary_ids']) for province in geography['provinces'])
+    return {
+        'id': 'province-boundaries-1897',
+        'href': PUBLIC + 'data/' + descriptor['file'],
+        'media_type': 'application/geo+json', 'year': descriptor['year'],
+        'bytes': len(raw), 'sha256': hashlib.sha256(raw).hexdigest(),
+        **{key: descriptor[key] for key in ('source_url', 'attribution', 'license', 'note')},
+        'coverage': {
+            'boundary_features': len(feature_ids),
+            'corpus_provinces': len(geography['provinces']),
+            'corpus_provinces_with_geometry': with_geometry,
+            'corpus_provinces_without_geometry': len(geography['provinces']) - with_geometry,
+            'referenced_boundary_features': len(referenced_ids),
+        },
+    }
+
+
 def schema_document():
     return {
         '$schema': 'https://json-schema.org/draft/2020-12/schema',
@@ -54,24 +105,63 @@ def schema_document():
         'title': 'Статический API решений Правительствующего Сената, v1',
         'type': 'object',
         '$defs': {
+            'ProvinceSource': {
+                'type': 'object', 'required': ['url', 'title', 'evidence'],
+                'properties': {
+                    'url': {'type': 'string', 'format': 'uri'},
+                    'title': {'type': 'string', 'minLength': 1},
+                    'evidence': {'type': 'string', 'minLength': 1},
+                },
+            },
+            'Province': {
+                'type': 'object',
+                'required': ['id', 'label', 'kind', 'within_empire', 'boundary_ids', 'sources', 'note'],
+                'properties': {
+                    'id': {'type': 'string', 'minLength': 1},
+                    'label': {'type': 'string', 'minLength': 1},
+                    'kind': {'enum': ['governorate', 'oblast', 'foreign_province']},
+                    'within_empire': {'type': 'boolean'},
+                    'boundary_ids': {'type': 'array', 'uniqueItems': True, 'items': {'type': 'string', 'minLength': 1}},
+                    'sources': {'type': 'array', 'minItems': 1, 'items': {'$ref': '#/$defs/ProvinceSource'}},
+                    'note': {'type': 'string'},
+                },
+                'description': 'Редакционная территориальная группа для годов томов. boundary_ids связывает её с Feature.id справочной карты; пустой список означает отсутствие геометрии, а не отсутствие упоминаний.',
+            },
+            'ProvinceMap': {
+                'type': 'object',
+                'required': ['file', 'year', 'source_url', 'attribution', 'license', 'note'],
+                'properties': {
+                    'file': {'const': 'province-boundaries-1897.json'}, 'year': {'const': 1897},
+                    'source_url': {'type': 'string', 'format': 'uri'},
+                    'attribution': {'type': 'string', 'minLength': 1},
+                    'license': {'type': 'string', 'minLength': 1}, 'note': {'type': 'string'},
+                },
+                'description': 'Геометрия 1897 года служит исторической справкой; фильтр года тома не изменяет её границы.',
+            },
             'Geography': {
                 'type': 'object',
-                'required': ['schema_version', 'places', 'mentions', 'roles', 'coverage'],
+                'required': ['schema_version', 'places', 'mentions', 'roles', 'coverage', 'provinces', 'province_map'],
                 'properties': {
                     'schema_version': {'const': 1},
                     'coverage': {'type': 'object', 'required': ['complete', 'decisions', 'places', 'unresolved_mentions']},
                     'roles': {'type': 'object'},
+                    'provinces': {'type': 'array', 'items': {'$ref': '#/$defs/Province'}},
+                    'province_map': {'$ref': '#/$defs/ProvinceMap'},
                     'places': {'type': 'array', 'items': {'type': 'object',
-                        'required': ['id', 'historical_name', 'modern_name', 'lat', 'lon', 'coordinate_source', 'coordinate_revision', 'coordinate_note', 'identity_source'],
+                        'required': ['id', 'historical_name', 'modern_name', 'lat', 'lon', 'coordinate_source', 'coordinate_revision', 'coordinate_note', 'identity_source', 'province_ids'],
                         'properties': {'id': {'type': 'string'}, 'lat': {'type': 'number', 'minimum': -90, 'maximum': 90},
                                        'lon': {'type': 'number', 'minimum': -180, 'maximum': 180},
                                        'coordinate_revision': {'type': 'integer', 'minimum': 1},
                                        'coordinate_note': {'type': 'string', 'minLength': 1},
                                        'coordinate_source': {'type': 'string', 'format': 'uri'},
-                                       'identity_source': {'type': 'string', 'format': 'uri'}}}},
+                                       'identity_source': {'type': 'string', 'format': 'uri'},
+                                       'province_ids': {'type': 'array', 'uniqueItems': True, 'items': {'type': 'string'}}}}},
                     'mentions': {'type': 'array', 'items': {'type': 'object',
-                        'required': ['id', 'decision_id', 'place_id', 'role', 'quote', 'start', 'end', 'mention', 'mention_start', 'mention_end', 'source_sha256', 'printed_pages', 'scans'],
+                        'required': ['id', 'decision_id', 'place_id', 'role', 'quote', 'start', 'end', 'mention', 'mention_start', 'mention_end', 'source_sha256', 'printed_pages', 'scans', 'province_id', 'province_note', 'province_sources'],
                         'properties': {'place_id': {'type': ['string', 'null']},
+                                       'province_id': {'type': ['string', 'null'], 'description': 'Территориальная принадлежность места для года тома; null означает, что она не установлена.'},
+                                       'province_note': {'type': 'string'},
+                                       'province_sources': {'type': 'array', 'items': {'$ref': '#/$defs/ProvinceSource'}},
                                        'role': {'enum': ['court', 'event_property', 'person_organization', 'mention_unclear']},
                                        'source_sha256': {'type': 'string', 'pattern': '^[0-9a-f]{64}$'},
                                        'start': {'type': 'integer', 'minimum': 0}, 'end': {'type': 'integer', 'minimum': 0},
@@ -268,7 +358,8 @@ def openapi_document(years, act_ids):
             '/volumes.json': {'get': {'summary': 'Реестр опубликованных томов с постоянными volume_id', 'responses': response}},
             '/editorial/guides.json': {'get': {'summary': 'Тематические подборки и сравнительные разборы', 'responses': response}},
             '/editorial/topics.json': {'get': {'summary': 'Каталог тем с подтверждёнными цитатами включениями решений', 'responses': response}},
-            '/editorial/geography.json': {'get': {'summary': 'Выборочная география: населённые пункты, роли, буквальные цитаты и источники координат', 'responses': response}},
+        '/editorial/geography.json': {'get': {'summary': 'Выборочная география: населённые пункты, губернии, роли и источники',
+            'description': 'item.provinces и упоминания содержат историческую территориальную атрибуцию; links.boundaryGeoJSON ведёт к отдельной справочной геометрии 1897 года. Её источник, лицензия, SHA-256 и покрытие опубликованы в manifest.reference_data.', 'responses': response}},
             '/bulk.json': {'get': {'summary': 'Полные JSON/CSV-выгрузки', 'responses': response}},
         },
         'components': {'schemas': {'Envelope': {'$ref': './schema.json#/$defs/Envelope'}, 'Decision': {'$ref': './schema.json#/$defs/Decision'}, 'Passage': {'$ref': './schema.json#/$defs/Passage'}, 'PrecedentReference': {'$ref':'./schema.json#/$defs/PrecedentReference'}}},
@@ -329,7 +420,8 @@ def build_api(root=ROOT):
     analytics = read_json(data / 'analytics.json')
     glossary = read_json(data / 'concepts.json')
     export_manifest = read_json(export / 'manifest.json')
-    revision = digest_files([export / 'manifest.json', data / 'decision-analyses.json', data / 'analysis-search.json', data / 'guides.json', data / 'topic-catalog.json', data / 'analytics.json', data / 'concepts.json', data / 'geography.json'])
+    reference_data = [province_reference_data(data, geography)]
+    revision = api_data_revision(export, data, geography)
     years = [volume['year'] for volume in meta['volumes']]
     codes = [act['code'] for act in acts]
 
@@ -427,7 +519,11 @@ def build_api(root=ROOT):
     emit('editorial/analysis-search.json', envelope('analysis-search', item=analysis_search, links={'web': PUBLIC + '#/analyses'}))
     emit('editorial/guides.json', envelope('editorial-guides', item=guides, links={'web': PUBLIC + '#/guides'}))
     emit('editorial/topics.json', envelope('topic-catalog', item=catalog, links={'web': PUBLIC + '#/guides'}))
-    emit('editorial/geography.json', envelope('geography', item=geography, links={'web': PUBLIC + '#/places', 'geojson': PUBLIC + 'data/geography.geojson'}))
+    emit('editorial/geography.json', envelope('geography', item=geography, links={
+        'web': PUBLIC + '#/places', 'geojson': PUBLIC + 'data/geography.geojson',
+        'boundaryGeoJSON': reference_data[0]['href'],
+        'boundarySource': reference_data[0]['source_url'],
+    }))
     emit('analytics.json', envelope('analytics', item=analytics))
     emit('glossary.json', envelope('concepts', item=glossary))
 
@@ -445,6 +541,9 @@ def build_api(root=ROOT):
     counts['editorial_analyses'] = analyses['count']
     counts['geography_places'] = geography['coverage']['places']
     counts['geography_decisions'] = geography['coverage']['decisions']
+    counts['geography_provinces'] = len(geography['provinces'])
+    counts['geography_province_mentions'] = sum(mention['province_id'] is not None for mention in geography['mentions'])
+    counts['geography_province_unresolved_mentions'] = sum(mention['province_id'] is None for mention in geography['mentions'])
     counts['passage_source_warnings'] = sum(bool(p.get('source_warning')) for p in passages)
     counts['guides'] = len(guides['guides'])
     counts['guide_comparisons'] = guides.get('comparison_count', 0)
@@ -457,6 +556,7 @@ def build_api(root=ROOT):
     emit('volumes.json', envelope('volumes', items=volumes))
     emit('corpus.json', envelope('corpus', item={
         **coverage,
+        'reference_data': reference_data,
         'orthography': 'Оригинальная дореформенная орфография OCR.',
         'passage_offsets': 'start/end — полуоткрытый Unicode-диапазон [start,end) в text_original.',
         'scan_geometry': 'box — [x0,y0,x1,y1] в долях ширины и высоты; при null используйте full_page_url.',
@@ -467,6 +567,7 @@ def build_api(root=ROOT):
         'historical_legislation_references': 'legislation/historical-references.json сохраняет записи предыдущих версий с прежними ID и местами. Они исключены из текущих ссылок и фасетов; отдельный счётчик legislation_historical_references считает только сохранённые записи.',
         'source_warning': 'Непустая строка у пассажа сообщает об установленном дефекте порядка или атрибуции OCR. Его пояснение не индексируется в обогащённом поиске; исходный текст сохранён.',
         'guide_comparisons': 'Редакционные сопоставления выбранных дел: закреплённые SHA полных текстов и буквальные цитаты со страницами. Не являются независимой юридической экспертизой или доказательством развития практики.',
+        'geography': 'Выборочные упоминания мест сгруппированы по территориальной принадлежности для года тома; особое управление поясняется отдельно. Роль court не означает место событий или территорию юрисдикции. Справочные границы относятся к 1897 году и не меняются с фильтром года; отсутствие геометрии не означает отсутствие упоминаний.',
     }))
     emit('bulk.json', envelope('bulk-downloads', item={
         'description': 'Полные JSON/CSV-выгрузки; имена, контрольные суммы и размеры определяет export/manifest.json.',
@@ -477,6 +578,7 @@ def build_api(root=ROOT):
         'access': 'Файлы публикуются без ключа для чтения и исследовательского использования.',
         'license': None,
         'rights_notice': 'Репозиторий не заявляет лицензию на тексты, OCR, метаданные или изображения. Перед повторным распространением и коммерческим использованием проверьте права на каждый вид материала.',
+        'reference_data': [{'id': row['id'], **{key: row[key] for key in ('source_url', 'license', 'attribution')}} for row in reference_data],
         'citation': f'Решения Правительствующего Сената, Static API v1, data_revision {revision}; URL ресурса; дата обращения.',
         'compatibility': 'В v1 добавляются только новые поля и файлы. Несовместимый контракт будет опубликован в новом пути /api/v2/.',
     }))
@@ -543,7 +645,7 @@ def build_api(root=ROOT):
     datasets = [
         {'id':'volume-registry','description':'Постоянные ID опубликованных томов, департаменты и издания; старые ID решений сохранены.','href':href('volumes.json')},
         {'id':'analysis-search','description':'Разделы редакционных разборов: вид, автор, современное пояснение и буквальные цитаты со смещениями.','href':href('editorial/analysis-search.json')},
-        {'id':'geography','description':'Выборочные упоминания населённых пунктов с ролями, цитатами и источниками координат; неоднозначные места без точек.','href':href('editorial/geography.json'),'item_schema':'Geography'},
+        {'id':'geography','description':'Выборочные упоминания населённых пунктов с ролями, цитатами, координатами и территориальной атрибуцией; отдельный справочный слой границ 1897 года.','href':href('editorial/geography.json'),'item_schema':'Geography'},
         {'id':'legislation-unresolved','description':'Ссылки без установленного акта: контекст, Unicode-смещения, SHA источника.','href':href('legislation/unresolved.json'),'item_schema':'LegislationCitation'},
         {'id':'legislation-historical-references','description':'Записи прежних версий с исходными ID, местами и пометкой historical_note; вне текущих подсчётов.','href':href('legislation/historical-references.json'),'item_schema':'HistoricalLegislationReference'},
         {'id':'legislation-attribution','description':'Результат сверки актов, единица счёта и остаток неопределённых ссылок.','href':href('legislation/attribution.json')},
@@ -566,7 +668,7 @@ def build_api(root=ROOT):
         'base_url': PUBLIC + 'api/' + API_VERSION + '/',
         'method': 'Статический API: GET/HEAD файлов JSON UTF-8; ключ, авторизация и серверные query-параметры отсутствуют.',
         'compatibility': 'В v1 новые поля и файлы добавляются без удаления существующих. Несовместимые изменения получают новый путь /api/v2/.',
-        'coverage': coverage, 'datasets': datasets,
+        'coverage': coverage, 'datasets': datasets, 'reference_data': reference_data,
         'documents': {'landing': PUBLIC + 'api/', 'documentation': PUBLIC + 'API.md', 'openapi': href('openapi.json'),
                       'schema': href('schema.json'), 'terms': href('terms.json'), 'bulk': href('bulk.json')},
         'files': file_records,
@@ -576,6 +678,7 @@ def build_api(root=ROOT):
             'При отсутствии box нельзя реконструировать точный участок изображения: используйте full_page_url.',
             'passage_id зависит от OCR-смещений и стабилен только в пределах data_revision; decision_id является постоянным ключом корпуса.',
             'Старое поле cites содержит неполные пары год/номер. Для связей используйте precedents: department + year + number и status=linked.',
+            'Географическое покрытие выборочное. Губерния упоминания не устанавливает место событий; справочная карта 1897 года не представляет границы на каждый год тома.',
         ],
     }
     write_json(out, 'manifest.json', manifest)

@@ -4,6 +4,114 @@
   "title": "Статический API решений Правительствующего Сената, v1",
   "type": "object",
   "$defs": {
+    "ProvinceSource": {
+      "type": "object",
+      "required": [
+        "url",
+        "title",
+        "evidence"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "Province": {
+      "type": "object",
+      "required": [
+        "id",
+        "label",
+        "kind",
+        "within_empire",
+        "boundary_ids",
+        "sources",
+        "note"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "governorate",
+            "oblast",
+            "foreign_province"
+          ]
+        },
+        "within_empire": {
+          "type": "boolean"
+        },
+        "boundary_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/ProvinceSource"
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "description": "Редакционная территориальная группа для годов томов. boundary_ids связывает её с Feature.id справочной карты; пустой список означает отсутствие геометрии, а не отсутствие упоминаний."
+    },
+    "ProvinceMap": {
+      "type": "object",
+      "required": [
+        "file",
+        "year",
+        "source_url",
+        "attribution",
+        "license",
+        "note"
+      ],
+      "properties": {
+        "file": {
+          "const": "province-boundaries-1897.json"
+        },
+        "year": {
+          "const": 1897
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "attribution": {
+          "type": "string",
+          "minLength": 1
+        },
+        "license": {
+          "type": "string",
+          "minLength": 1
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "description": "Геометрия 1897 года служит исторической справкой; фильтр года тома не изменяет её границы."
+    },
     "Geography": {
       "type": "object",
       "required": [
@@ -11,7 +119,9 @@
         "places",
         "mentions",
         "roles",
-        "coverage"
+        "coverage",
+        "provinces",
+        "province_map"
       ],
       "properties": {
         "schema_version": {
@@ -29,6 +139,15 @@
         "roles": {
           "type": "object"
         },
+        "provinces": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Province"
+          }
+        },
+        "province_map": {
+          "$ref": "#/$defs/ProvinceMap"
+        },
         "places": {
           "type": "array",
           "items": {
@@ -42,7 +161,8 @@
               "coordinate_source",
               "coordinate_revision",
               "coordinate_note",
-              "identity_source"
+              "identity_source",
+              "province_ids"
             ],
             "properties": {
               "id": {
@@ -73,6 +193,13 @@
               "identity_source": {
                 "type": "string",
                 "format": "uri"
+              },
+              "province_ids": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "type": "string"
+                }
               }
             }
           }
@@ -94,7 +221,10 @@
               "mention_end",
               "source_sha256",
               "printed_pages",
-              "scans"
+              "scans",
+              "province_id",
+              "province_note",
+              "province_sources"
             ],
             "properties": {
               "place_id": {
@@ -102,6 +232,22 @@
                   "string",
                   "null"
                 ]
+              },
+              "province_id": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "Территориальная принадлежность места для года тома; null означает, что она не установлена."
+              },
+              "province_note": {
+                "type": "string"
+              },
+              "province_sources": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/ProvinceSource"
+                }
               },
               "role": {
                 "enum": [

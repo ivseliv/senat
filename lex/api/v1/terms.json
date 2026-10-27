@@ -1,13 +1,21 @@
 {
   "api_version": "v1",
-  "contract_version": "1.8.0",
-  "data_revision": "sha256:8bdfef527ec55177e17e9bf097d57f57c09cb99cc1f0e2b721588325737e04a9",
+  "contract_version": "1.9.0",
+  "data_revision": "sha256:0f7a8fc4c00d9a2cfae2cc53f60292a14dee625257f1c8bd093c322c7b5b7fbc",
   "resource": "terms",
   "item": {
     "access": "Файлы публикуются без ключа для чтения и исследовательского использования.",
     "license": null,
     "rights_notice": "Репозиторий не заявляет лицензию на тексты, OCR, метаданные или изображения. Перед повторным распространением и коммерческим использованием проверьте права на каждый вид материала.",
-    "citation": "Решения Правительствующего Сената, Static API v1, data_revision sha256:8bdfef527ec55177e17e9bf097d57f57c09cb99cc1f0e2b721588325737e04a9; URL ресурса; дата обращения.",
+    "reference_data": [
+      {
+        "id": "province-boundaries-1897",
+        "source_url": "https://doi.org/10.34894/NQOASN",
+        "license": "CC0; RIStat citation required by the repository terms",
+        "attribution": "Kessler & Markevich, RIStat (2020); GIS: Rombert Stapel, IISH (2021); dataset version 3.3."
+      }
+    ],
+    "citation": "Решения Правительствующего Сената, Static API v1, data_revision sha256:0f7a8fc4c00d9a2cfae2cc53f60292a14dee625257f1c8bd093c322c7b5b7fbc; URL ресурса; дата обращения.",
     "compatibility": "В v1 добавляются только новые поля и файлы. Несовместимый контракт будет опубликован в новом пути /api/v2/."
   }
 }

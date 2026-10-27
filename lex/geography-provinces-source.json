@@ -1,0 +1,2482 @@
+{
+  "schema_version": 1,
+  "method": "Территориальная группировка городов по историческим справочникам. Проверены перечисленные годы томов, а не административная подчинённость каждого эпизода. Принадлежность не вычисляется из попадания точки в полигон. Границы — отдельный обзорный срез 1897 года.",
+  "provinces": [
+    {
+      "id": "oblast-akmolinsk",
+      "label": "Акмолинская область",
+      "kind": "oblast",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-98"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9E%D0%BC%D1%81%D0%BA&oldid=5369271",
+          "title": "ЭСБЕ/Омск",
+          "evidence": "Омск указан областным городом Акмолинской области и центром Степного генерал-губернаторства.",
+          "evidence_kind": "paraphrase",
+          "revision": 5369271
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-bessarabia",
+      "label": "Бессарабская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-41"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9A%D0%B8%D1%88%D0%B8%D0%BD%D0%B5%D0%B2&oldid=5191392",
+          "title": "ЭСБЕ/Кишинев",
+          "evidence": "Кишинев указан губернским городом Бессарабской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5191392
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-warsaw",
+      "label": "Варшавская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-29"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%92%D0%B0%D1%80%D1%88%D0%B0%D0%B2%D0%B0&oldid=5367155",
+          "title": "ЭСБЕ/Варшава",
+          "evidence": "Варшава названа губернским городом Варшавской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5367155
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-vilna",
+      "label": "Виленская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-26"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%2C_%D0%BF%D0%BE%D1%81%D0%B0%D0%B4%D0%BE%D0%B2_%D0%B8_%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85_%D0%B2%D0%B0%D0%B6%D0%BD%D0%B5%D0%B9%D1%88%D0%B8%D1%85_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85_%D0%BC%D0%B5%D1%81%D1%82&oldid=353202",
+          "title": "ЭСБЕ/Россия/Население/Статистика населения/Население городов, посадов и других важнейших населенных мест",
+          "evidence": "Вильна — Виленская.",
+          "evidence_kind": "paraphrase",
+          "revision": 353202
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-volhynia",
+      "label": "Волынская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-38"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%96%D0%B8%D1%82%D0%BE%D0%BC%D0%B8%D1%80&oldid=5753701",
+          "title": "ЭСБЕ/Житомир",
+          "evidence": "Житомир указан губернским городом Волынской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5753701
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-voronezh",
+      "label": "Воронежская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-57"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6%2C+%D0%B3%D0%BE%D1%80%D0%BE%D0%B4&oldid=5677155",
+          "title": "ЭСБЕ/Воронеж, город",
+          "evidence": "Воронеж прямо назван губернским городом Воронежской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5677155
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "province-east-prussia",
+      "label": "Восточная Пруссия",
+      "kind": "foreign_province",
+      "within_empire": false,
+      "boundary_ids": [],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9A%D0%B5%D0%BD%D0%B8%D0%B3%D1%81%D0%B1%D0%B5%D1%80%D0%B3&oldid=5753669",
+          "title": "ЭСБЕ/Кенигсберг",
+          "evidence": "Кенигсберг помещён в провинции Восточная Пруссия; речь о прусском городе.",
+          "evidence_kind": "paraphrase",
+          "revision": 5753669
+        }
+      ],
+      "note": "Иностранная провинция; на слое Российской империи 1897 года границы отсутствуют."
+    },
+    {
+      "id": "governorate-grodno",
+      "label": "Гродненская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-36"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%2C_%D0%BF%D0%BE%D1%81%D0%B0%D0%B4%D0%BE%D0%B2_%D0%B8_%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85_%D0%B2%D0%B0%D0%B6%D0%BD%D0%B5%D0%B9%D1%88%D0%B8%D1%85_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85_%D0%BC%D0%B5%D1%81%D1%82&oldid=353202",
+          "title": "ЭСБЕ/Россия/Население/Статистика населения/Население городов, посадов и других важнейших населенных мест",
+          "evidence": "Гродно — Гродненская.",
+          "evidence_kind": "paraphrase",
+          "revision": 353202
+        },
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%91%D0%B5%D0%BB%D0%BE%D1%81%D1%82%D0%BE%D0%BA&oldid=2127462",
+          "title": "ЭСБЕ/Белосток",
+          "evidence": "Статья относит Белосток к уездным городам Гродненской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 2127462
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "oblast-transcaspian",
+      "label": "Закаспийская область",
+      "kind": "oblast",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-102"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D0%BA&oldid=3838205",
+          "title": "ЭСБЕ/Красноводск",
+          "evidence": "Красноводск назван уездным городом Закаспийской области.",
+          "evidence_kind": "paraphrase",
+          "revision": 3838205
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "province-west-prussia",
+      "label": "Западная Пруссия",
+      "kind": "foreign_province",
+      "within_empire": false,
+      "boundary_ids": [],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%94%D0%B0%D0%BD%D1%86%D0%B8%D0%B3&oldid=1820003",
+          "title": "ЭСБЕ/Данциг",
+          "evidence": "Данциг назван главным городом прусской провинции Западная Пруссия.",
+          "evidence_kind": "paraphrase",
+          "revision": 1820003
+        }
+      ],
+      "note": "Иностранная провинция; на слое Российской империи 1897 года границы отсутствуют."
+    },
+    {
+      "id": "governorate-irkutsk",
+      "label": "Иркутская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-91"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%98%D1%80%D0%BA%D1%83%D1%82%D1%81%D0%BA&oldid=5351785",
+          "title": "ЭСБЕ/Иркутск",
+          "evidence": "Иркутск указан губернским городом Иркутской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5351785
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-kazan",
+      "label": "Казанская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-75"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&oldid=5369361",
+          "title": "ЭСБЕ/Казань",
+          "evidence": "Казань названа губернским городом Казанской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5369361
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-kalish",
+      "label": "Калишская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-30"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9A%D0%B0%D0%BB%D0%B8%D1%88%2C_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4&oldid=3064775",
+          "title": "ЭСБЕ/Калиш, город",
+          "evidence": "Калиш назван губернским городом Калишской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 3064775
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-kiev",
+      "label": "Киевская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-40"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9A%D0%B8%D0%B5%D0%B2&oldid=5366706",
+          "title": "ЭСБЕ/Киев",
+          "evidence": "Киев прямо назван губернским городом Киевской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5366706
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-kovno",
+      "label": "Ковенская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-22"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9A%D0%BE%D0%B2%D0%BD%D0%B0&oldid=5370147",
+          "title": "ЭСБЕ/Ковна",
+          "evidence": "Ковна или Ковно названы губернским городом Ковенской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5370147
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-courland",
+      "label": "Курляндская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-21"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9B%D0%B8%D0%B1%D0%B0%D0%B2%D0%B0&oldid=3804752",
+          "title": "ЭСБЕ/Либава",
+          "evidence": "Либава названа портовым городом Курляндской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 3804752
+        },
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9C%D0%B8%D1%82%D0%B0%D0%B2%D0%B0&oldid=5369878",
+          "title": "ЭСБЕ/Митава",
+          "evidence": "Митава названа губернским городом Курляндской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5369878
+        },
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%92%D0%B8%D0%BD%D0%B4%D0%B0%D0%B2%D0%B0%2C+%D0%B3%D0%BE%D1%80%D0%BE%D0%B4&oldid=5370205",
+          "title": "ЭСБЕ/Виндава, город",
+          "evidence": "Виндава названа портовым и уездным городом Курляндской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5370205
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-kutais",
+      "label": "Кутаисская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-62"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9A%D1%83%D1%82%D0%B0%D0%B8%D1%81&oldid=5088841",
+          "title": "ЭСБЕ/Кутаис",
+          "evidence": "Кутаис указан губернским городом Кутаисской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5088841
+        },
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9F%D0%BE%D1%82%D0%B8&oldid=4625247",
+          "title": "ЭСБЕ/Поти",
+          "evidence": "Поти прямо отнесён к портовым городам Кутаисской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 4625247
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании. На карте показана составная территория источника: губерния с Сухумским округом."
+    },
+    {
+      "id": "governorate-livonia",
+      "label": "Лифляндская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-20"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A0%D0%B8%D0%B3%D0%B0%2C_%D0%B3%D1%83%D0%B1%D0%B5%D1%80%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4&oldid=5191312",
+          "title": "ЭСБЕ/Рига, губернский город",
+          "evidence": "Рига названа губернским городом Лифляндской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5191312
+        },
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%92%D0%B5%D0%BD%D0%B4%D0%B5%D0%BD&oldid=5104381",
+          "title": "ЭСБЕ/Венден",
+          "evidence": "Венден указан уездным городом Лифляндской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5104381
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-lublin",
+      "label": "Люблинская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-34"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9B%D1%8E%D0%B1%D0%BB%D0%B8%D0%BD&oldid=3616025",
+          "title": "ЭСБЕ/Люблин",
+          "evidence": "Люблин указан губернским городом Люблинской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 3616025
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-minsk",
+      "label": "Минская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-37"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9D%D0%B5%D1%81%D0%B2%D0%B8%D0%B6&oldid=3622438",
+          "title": "ЭСБЕ/Несвиж",
+          "evidence": "Несвиж назван заштатным городом Слуцкого уезда Минской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 3622438
+        },
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%2C_%D0%BF%D0%BE%D1%81%D0%B0%D0%B4%D0%BE%D0%B2_%D0%B8_%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85_%D0%B2%D0%B0%D0%B6%D0%BD%D0%B5%D0%B9%D1%88%D0%B8%D1%85_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85_%D0%BC%D0%B5%D1%81%D1%82&oldid=353202",
+          "title": "ЭСБЕ/Россия/Население/Статистика населения/Население городов, посадов и других важнейших населенных мест",
+          "evidence": "Минск — Минская.",
+          "evidence_kind": "paraphrase",
+          "revision": 353202
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-moscow",
+      "label": "Московская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-48"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%2C_%D0%BF%D0%BE%D1%81%D0%B0%D0%B4%D0%BE%D0%B2_%D0%B8_%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85_%D0%B2%D0%B0%D0%B6%D0%BD%D0%B5%D0%B9%D1%88%D0%B8%D1%85_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85_%D0%BC%D0%B5%D1%81%D1%82&oldid=353202",
+          "title": "ЭСБЕ/Россия/Население/Статистика населения/Население городов, посадов и других важнейших населенных мест",
+          "evidence": "Москва — Московская.",
+          "evidence_kind": "paraphrase",
+          "revision": 353202
+        },
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9A%D0%BE%D0%BB%D0%BE%D0%BC%D0%BD%D0%B0&oldid=3610027",
+          "title": "ЭСБЕ/Коломна",
+          "evidence": "Коломна указана уездным городом Московской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 3610027
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-novgorod",
+      "label": "Новгородская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-3"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%A7%D0%B5%D1%80%D0%B5%D0%BF%D0%BE%D0%B2%D0%B5%D1%86&oldid=5677047",
+          "title": "ЭСБЕ/Череповец",
+          "evidence": "Череповец указан уездным городом Новгородской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5677047
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "oblast-don-host",
+      "label": "Область Войска Донского",
+      "kind": "oblast",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-58"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A2%D0%B0%D0%B3%D0%B0%D0%BD%D1%80%D0%BE%D0%B3&oldid=4857141",
+          "title": "ЭСБЕ/Таганрог",
+          "evidence": "Таганрог указан окружным городом Области Войска Донского.",
+          "evidence_kind": "paraphrase",
+          "revision": 4857141
+        },
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%A0%D0%BE%D1%81%D1%82%D0%BE%D0%B2-%D0%BD%D0%B0-%D0%94%D0%BE%D0%BD%D1%83&oldid=5369107",
+          "title": "ЭСБЕ/Ростов-на-Дону",
+          "evidence": "Ростов-на-Дону указан окружным городом области Войска Донского.",
+          "evidence_kind": "paraphrase",
+          "revision": 5369107
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-orenburg",
+      "label": "Оренбургская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-83"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9E%D1%80%D0%B5%D0%BD%D0%B1%D1%83%D1%80%D0%B3&oldid=5062091",
+          "title": "ЭСБЕ/Оренбург",
+          "evidence": "Оренбург назван губернским городом Оренбургской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5062091
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-orel",
+      "label": "Орловская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-50"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9B%D0%B8%D0%B2%D0%BD%D1%8B&oldid=2306548",
+          "title": "ЭСБЕ/Ливны",
+          "evidence": "Ливны указаны уездным городом Орловской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 2306548
+        },
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9E%D1%80%D0%B5%D0%BB%2C+%D0%B3%D1%83%D0%B1%D0%B5%D1%80%D0%BD%D1%81%D0%BA%D0%B8%D0%B9+%D0%B3%D0%BE%D1%80%D0%BE%D0%B4&oldid=3805201",
+          "title": "ЭСБЕ/Орел, губернский город",
+          "evidence": "Орел описан как губернский город; историческая часть относит его к центрам Орловского наместничества, затем губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 3805201
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-penza",
+      "label": "Пензенская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-73"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9F%D0%B5%D0%BD%D0%B7%D0%B0%2C_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4&oldid=5323604",
+          "title": "ЭСБЕ/Пенза, город",
+          "evidence": "Пенза названа губернским городом Пензенской губернии с 1801 года.",
+          "evidence_kind": "paraphrase",
+          "revision": 5323604
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-perm",
+      "label": "Пермская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-84"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&oldid=5061840",
+          "title": "ЭСБЕ/Екатеринбург",
+          "evidence": "Екатеринбург назван уездным городом Пермской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5061840
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-petrokov",
+      "label": "Петроковская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-31"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9D%D0%BE%D0%B2%D0%BE%D1%80%D0%B0%D0%B4%D0%BE%D0%BC%D1%81%D0%BA&oldid=3623211",
+          "title": "ЭСБЕ/Новорадомск",
+          "evidence": "Новорадомск прямо назван уездным городом Петроковской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 3623211
+        },
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%BA%D0%BE%D0%B2&oldid=5104207",
+          "title": "ЭСБЕ/Петроков",
+          "evidence": "Петроков прямо назван губернским городом Петроковской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5104207
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-podolia",
+      "label": "Подольская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-39"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9A%D0%B0%D0%BC%D0%B5%D0%BD%D0%B5%D1%86-%D0%9F%D0%BE%D0%B4%D0%BE%D0%BB%D1%8C%D1%81%D0%BA&oldid=3801718",
+          "title": "ЭСБЕ/Каменец-Подольск",
+          "evidence": "Каменец-Подольск назван губернским городом Подольской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 3801718
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-poltava",
+      "label": "Полтавская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-43"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9F%D0%B5%D1%80%D0%B5%D1%8F%D1%81%D0%BB%D0%B0%D0%B2%D0%BB%D1%8C%2C_%D1%83%D0%B5%D0%B7%D0%B4%D0%BD%D1%8B%D0%B9_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4_%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%B3%D1%83%D0%B1%D0%B5%D1%80%D0%BD%D0%B8%D0%B8&oldid=3936961",
+          "title": "ЭСБЕ/Переяславль, уездный город Полтавской губернии",
+          "evidence": "Переяславль назван уездным городом Полтавской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 3936961
+        },
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D0%B0&oldid=5351623",
+          "title": "ЭСБЕ/Полтава",
+          "evidence": "Полтава названа губернским городом Полтавской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5351623
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "oblast-primorsk",
+      "label": "Приморская область",
+      "kind": "oblast",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-88"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D0%BA&oldid=5061588",
+          "title": "ЭСБЕ/Владивосток",
+          "evidence": "Владивосток указан областным городом Приморской области; описано присоединение прежнего военного губернаторства к областному управлению в 1888 году.",
+          "evidence_kind": "paraphrase",
+          "revision": 5061588
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-ryazan",
+      "label": "Рязанская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-55"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%2C_%D0%BF%D0%BE%D1%81%D0%B0%D0%B4%D0%BE%D0%B2_%D0%B8_%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85_%D0%B2%D0%B0%D0%B6%D0%BD%D0%B5%D0%B9%D1%88%D0%B8%D1%85_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85_%D0%BC%D0%B5%D1%81%D1%82&oldid=353202",
+          "title": "ЭСБЕ/Россия/Население/Статистика населения/Население городов, посадов и других важнейших населенных мест",
+          "evidence": "Рязань — Рязанская.",
+          "evidence_kind": "paraphrase",
+          "revision": 353202
+        },
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9A%D0%B0%D1%81%D0%B8%D0%BC%D0%BE%D0%B2%2C+%D0%B3%D0%BE%D1%80%D0%BE%D0%B4&oldid=2155857",
+          "title": "ЭСБЕ/Касимов, город",
+          "evidence": "Касимов указан уездным городом Рязанской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 2155857
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-saint-petersburg",
+      "label": "Санкт-Петербургская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-2"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%2C_%D0%BF%D0%BE%D1%81%D0%B0%D0%B4%D0%BE%D0%B2_%D0%B8_%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85_%D0%B2%D0%B0%D0%B6%D0%BD%D0%B5%D0%B9%D1%88%D0%B8%D1%85_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85_%D0%BC%D0%B5%D1%81%D1%82&oldid=353202",
+          "title": "ЭСБЕ/Россия/Население/Статистика населения/Население городов, посадов и других важнейших населенных мест",
+          "evidence": "Санкт-Петербург — Санкт-Петербургская.",
+          "evidence_kind": "paraphrase",
+          "revision": 353202
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-saratov",
+      "label": "Саратовская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-77"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A1%D0%B0%D1%80%D0%B0%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F_%D0%B3%D1%83%D0%B1%D0%B5%D1%80%D0%BD%D0%B8%D1%8F&oldid=5351473",
+          "title": "ЭСБЕ/Саратовская губерния",
+          "evidence": "Саратов перечислен среди городов Саратовской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5351473
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-simbirsk",
+      "label": "Симбирская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-76"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%A1%D0%B8%D0%BC%D0%B1%D0%B8%D1%80%D1%81%D0%BA&oldid=5368982",
+          "title": "ЭСБЕ/Симбирск",
+          "evidence": "Симбирск описан как губернский город; территориальная статья отдельно описывает Симбирскую губернию и её Симбирский уезд.",
+          "evidence_kind": "paraphrase",
+          "revision": 5368982
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "oblast-syrdarya",
+      "label": "Сырдарьинская область",
+      "kind": "oblast",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-101"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82&oldid=5605939",
+          "title": "ЭСБЕ/Ташкент",
+          "evidence": "Ташкент назван главным городом Сырдарьинской области и Туркестанского генерал-губернаторства.",
+          "evidence_kind": "paraphrase",
+          "revision": 5605939
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-taurida",
+      "label": "Таврическая губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-53"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A1%D0%B8%D0%BC%D1%84%D0%B5%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C&oldid=5362779",
+          "title": "ЭСБЕ/Симферополь",
+          "evidence": "Симферополь назван губернским городом Таврической губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5362779
+        },
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%AF%D0%BB%D1%82%D0%B0%2C+%D0%B3%D0%BE%D1%80%D0%BE%D0%B4&oldid=5361512",
+          "title": "ЭСБЕ/Ялта, город",
+          "evidence": "Ялта прямо названа уездным городом Таврической губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5361512
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-tambov",
+      "label": "Тамбовская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-56"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9A%D0%B8%D1%80%D1%81%D0%B0%D0%BD%D0%BE%D0%B2&oldid=5369552",
+          "title": "ЭСБЕ/Кирсанов",
+          "evidence": "Кирсанов указан уездным городом Тамбовской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5369552
+        },
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%A2%D0%B0%D0%BC%D0%B1%D0%BE%D0%B2&oldid=5351438",
+          "title": "ЭСБЕ/Тамбов",
+          "evidence": "Тамбов описан как губернский город; статья о Тамбовской губернии включает Тамбовский уезд.",
+          "evidence_kind": "paraphrase",
+          "revision": 5351438
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-tver",
+      "label": "Тверская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-13"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%2C_%D0%BF%D0%BE%D1%81%D0%B0%D0%B4%D0%BE%D0%B2_%D0%B8_%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85_%D0%B2%D0%B0%D0%B6%D0%BD%D0%B5%D0%B9%D1%88%D0%B8%D1%85_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85_%D0%BC%D0%B5%D1%81%D1%82&oldid=353202",
+          "title": "ЭСБЕ/Россия/Население/Статистика населения/Население городов, посадов и других важнейших населенных мест",
+          "evidence": "Тверь — Тверская.",
+          "evidence_kind": "paraphrase",
+          "revision": 353202
+        },
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%A2%D0%BE%D1%80%D0%B6%D0%BE%D0%BA&oldid=5368893",
+          "title": "ЭСБЕ/Торжок",
+          "evidence": "Торжок указан городом Новоторжского уезда Тверской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5368893
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-tiflis",
+      "label": "Тифлисская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-70"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%A2%D0%B8%D1%84%D0%BB%D0%B8%D1%81&oldid=5351392",
+          "title": "ЭСБЕ/Тифлис",
+          "evidence": "Тифлис указан губернским городом Тифлисской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5351392
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании. На карте показана составная территория источника: губерния с Закатальским округом."
+    },
+    {
+      "id": "governorate-tobolsk",
+      "label": "Тобольская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-85"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%A2%D0%BE%D0%B1%D0%BE%D0%BB%D1%8C%D1%81%D0%BA&oldid=5368902",
+          "title": "ЭСБЕ/Тобольск",
+          "evidence": "Тобольск указан губернским городом Тобольской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5368902
+        },
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%A2%D1%8E%D0%BC%D0%B5%D0%BD%D1%8C&oldid=5352646",
+          "title": "ЭСБЕ/Тюмень",
+          "evidence": "Тюмень прямо названа уездным городом Тобольской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5352646
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-tomsk",
+      "label": "Томская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-87"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A2%D0%BE%D0%BC%D1%81%D0%BA&oldid=5352639",
+          "title": "ЭСБЕ/Томск",
+          "evidence": "Томск назван губернским городом Томской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5352639
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-kharkov",
+      "label": "Харьковская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-52"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2&oldid=5351312",
+          "title": "ЭСБЕ/Харьков",
+          "evidence": "Харьков назван губернским городом Харьковской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5351312
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-kherson",
+      "label": "Херсонская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-42"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2%2C_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4_%D0%A5%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%B3%D1%83%D0%B1%D0%B5%D1%80%D0%BD%D0%B8%D0%B8&oldid=3450801",
+          "title": "ЭСБЕ/Николаев, город Херсонской губернии",
+          "evidence": "Николаев указан военно-морским городом Херсонской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 3450801
+        },
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%B0&oldid=5369234",
+          "title": "ЭСБЕ/Одесса",
+          "evidence": "Одесса отнесена к Херсонской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5369234
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-chernomorsk",
+      "label": "Черноморская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-60"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9D%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA&oldid=4765028",
+          "title": "ЭСБЕ/Новороссийск",
+          "evidence": "Раздел об округе датирует образование Черноморской губернии 23 мая 1896 года и описывает её Новороссийский округ.",
+          "evidence_kind": "paraphrase",
+          "revision": 4765028
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-erivan",
+      "label": "Эриванская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-65"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%AD%D1%80%D0%B8%D0%B2%D0%B0%D0%BD%D1%8C&oldid=5191301",
+          "title": "ЭСБЕ/Эривань",
+          "evidence": "Эривань названа губернским городом Эриванской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5191301
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "oblast-yakutsk",
+      "label": "Якутская область",
+      "kind": "oblast",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-96"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA&oldid=5351160",
+          "title": "ЭСБЕ/Якутск",
+          "evidence": "Якутск указан областным городом Якутской области.",
+          "evidence_kind": "paraphrase",
+          "revision": 5351160
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    },
+    {
+      "id": "governorate-yaroslavl",
+      "label": "Ярославская губерния",
+      "kind": "governorate",
+      "within_empire": true,
+      "boundary_ids": [
+        "gub-14"
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%AF%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D0%BB%D1%8C&oldid=3946296",
+          "title": "ЭСБЕ/Ярославль",
+          "evidence": "Ярославль назван губернским городом Ярославской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 3946296
+        }
+      ],
+      "note": "Территориальная группа для годов томов; особое управление города указано при упоминании."
+    }
+  ],
+  "assignments": [
+    {
+      "place_id": "belostok",
+      "province_id": "governorate-grodno",
+      "valid_from": 1904,
+      "valid_to": 1905,
+      "valid_years": [
+        1904,
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%91%D0%B5%D0%BB%D0%BE%D1%81%D1%82%D0%BE%D0%BA&oldid=2127462",
+          "title": "ЭСБЕ/Белосток",
+          "evidence": "Статья относит Белосток к уездным городам Гродненской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 2127462
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела.",
+      "special_administration": []
+    },
+    {
+      "place_id": "cherepovets",
+      "province_id": "governorate-novgorod",
+      "valid_from": 1905,
+      "valid_to": 1905,
+      "valid_years": [
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%A7%D0%B5%D1%80%D0%B5%D0%BF%D0%BE%D0%B2%D0%B5%D1%86&oldid=5677047",
+          "title": "ЭСБЕ/Череповец",
+          "evidence": "Череповец указан уездным городом Новгородской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5677047
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела.",
+      "special_administration": []
+    },
+    {
+      "place_id": "dantsig",
+      "province_id": "province-west-prussia",
+      "valid_from": 1904,
+      "valid_to": 1904,
+      "valid_years": [
+        1904
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%94%D0%B0%D0%BD%D1%86%D0%B8%D0%B3&oldid=1820003",
+          "title": "ЭСБЕ/Данциг",
+          "evidence": "Данциг назван главным городом прусской провинции Западная Пруссия.",
+          "evidence_kind": "paraphrase",
+          "revision": 1820003
+        }
+      ],
+      "note": "Иностранная прусская провинция; не губерния Российской империи. Упоминание в перевозочном споре не означает российской административной принадлежности.",
+      "special_administration": []
+    },
+    {
+      "place_id": "erivan",
+      "province_id": "governorate-erivan",
+      "valid_from": 1896,
+      "valid_to": 1896,
+      "valid_years": [
+        1896
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%AD%D1%80%D0%B8%D0%B2%D0%B0%D0%BD%D1%8C&oldid=5191301",
+          "title": "ЭСБЕ/Эривань",
+          "evidence": "Эривань названа губернским городом Эриванской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5191301
+        }
+      ],
+      "note": "Губерния города суда; место спорной земли из этого не выводится.",
+      "special_administration": []
+    },
+    {
+      "place_id": "grodno",
+      "province_id": "governorate-grodno",
+      "valid_from": 1896,
+      "valid_to": 1904,
+      "valid_years": [
+        1896,
+        1897,
+        1904
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%2C_%D0%BF%D0%BE%D1%81%D0%B0%D0%B4%D0%BE%D0%B2_%D0%B8_%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85_%D0%B2%D0%B0%D0%B6%D0%BD%D0%B5%D0%B9%D1%88%D0%B8%D1%85_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85_%D0%BC%D0%B5%D1%81%D1%82&oldid=353202",
+          "title": "ЭСБЕ/Россия/Население/Статистика населения/Население городов, посадов и других важнейших населенных мест",
+          "evidence": "Гродно — Гродненская.",
+          "evidence_kind": "paraphrase",
+          "revision": 353202
+        }
+      ],
+      "note": "Губерния места, не судебный округ.",
+      "special_administration": []
+    },
+    {
+      "place_id": "irkutsk",
+      "province_id": "governorate-irkutsk",
+      "valid_from": 1904,
+      "valid_to": 1904,
+      "valid_years": [
+        1904
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%98%D1%80%D0%BA%D1%83%D1%82%D1%81%D0%BA&oldid=5351785",
+          "title": "ЭСБЕ/Иркутск",
+          "evidence": "Иркутск указан губернским городом Иркутской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5351785
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела.",
+      "special_administration": []
+    },
+    {
+      "place_id": "kalish",
+      "province_id": "governorate-kalish",
+      "valid_from": 1897,
+      "valid_to": 1897,
+      "valid_years": [
+        1897
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9A%D0%B0%D0%BB%D0%B8%D1%88%2C_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4&oldid=3064775",
+          "title": "ЭСБЕ/Калиш, город",
+          "evidence": "Калиш назван губернским городом Калишской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 3064775
+        }
+      ],
+      "note": "Царство Польское/Привислянский край не заменяет конкретную Калишскую губернию.",
+      "special_administration": []
+    },
+    {
+      "place_id": "kamenets-podolsky",
+      "province_id": "governorate-podolia",
+      "valid_from": 1897,
+      "valid_to": 1904,
+      "valid_years": [
+        1897,
+        1904
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9A%D0%B0%D0%BC%D0%B5%D0%BD%D0%B5%D1%86-%D0%9F%D0%BE%D0%B4%D0%BE%D0%BB%D1%8C%D1%81%D0%BA&oldid=3801718",
+          "title": "ЭСБЕ/Каменец-Подольск",
+          "evidence": "Каменец-Подольск назван губернским городом Подольской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 3801718
+        }
+      ],
+      "note": "Не Каменец-Литовск; современная Хмельницкая область не подменяет историческую губернию.",
+      "special_administration": []
+    },
+    {
+      "place_id": "kasimov",
+      "province_id": "governorate-ryazan",
+      "valid_from": 1904,
+      "valid_to": 1904,
+      "valid_years": [
+        1904
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9A%D0%B0%D1%81%D0%B8%D0%BC%D0%BE%D0%B2%2C+%D0%B3%D0%BE%D1%80%D0%BE%D0%B4&oldid=2155857",
+          "title": "ЭСБЕ/Касимов, город",
+          "evidence": "Касимов указан уездным городом Рязанской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 2155857
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела.",
+      "special_administration": []
+    },
+    {
+      "place_id": "kazan",
+      "province_id": "governorate-kazan",
+      "valid_from": 1897,
+      "valid_to": 1897,
+      "valid_years": [
+        1897
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C&oldid=5369361",
+          "title": "ЭСБЕ/Казань",
+          "evidence": "Казань названа губернским городом Казанской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5369361
+        }
+      ],
+      "note": "Губерния места, не судебный округ.",
+      "special_administration": []
+    },
+    {
+      "place_id": "kenigsberg",
+      "province_id": "province-east-prussia",
+      "valid_from": 1904,
+      "valid_to": 1904,
+      "valid_years": [
+        1904
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9A%D0%B5%D0%BD%D0%B8%D0%B3%D1%81%D0%B1%D0%B5%D1%80%D0%B3&oldid=5753669",
+          "title": "ЭСБЕ/Кенигсберг",
+          "evidence": "Кенигсберг помещён в провинции Восточная Пруссия; речь о прусском городе.",
+          "evidence_kind": "paraphrase",
+          "revision": 5753669
+        }
+      ],
+      "note": "Иностранная прусская провинция; не губерния Российской империи. Упоминание в перевозочном споре не означает российской административной принадлежности.",
+      "special_administration": []
+    },
+    {
+      "place_id": "kharkov",
+      "province_id": "governorate-kharkov",
+      "valid_from": 1896,
+      "valid_to": 1905,
+      "valid_years": [
+        1896,
+        1897,
+        1904,
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2&oldid=5351312",
+          "title": "ЭСБЕ/Харьков",
+          "evidence": "Харьков назван губернским городом Харьковской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5351312
+        }
+      ],
+      "note": "Губерния места, не судебный округ.",
+      "special_administration": []
+    },
+    {
+      "place_id": "kiev",
+      "province_id": "governorate-kiev",
+      "valid_from": 1904,
+      "valid_to": 1905,
+      "valid_years": [
+        1904,
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9A%D0%B8%D0%B5%D0%B2&oldid=5366706",
+          "title": "ЭСБЕ/Киев",
+          "evidence": "Киев прямо назван губернским городом Киевской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5366706
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела.",
+      "special_administration": []
+    },
+    {
+      "place_id": "kirsanov",
+      "province_id": "governorate-tambov",
+      "valid_from": 1905,
+      "valid_to": 1905,
+      "valid_years": [
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9A%D0%B8%D1%80%D1%81%D0%B0%D0%BD%D0%BE%D0%B2&oldid=5369552",
+          "title": "ЭСБЕ/Кирсанов",
+          "evidence": "Кирсанов указан уездным городом Тамбовской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5369552
+        }
+      ],
+      "note": "Кирсанов — город Тамбовской губернии. В корпусе это предложенное место получения денег, а не доказанное место состоявшегося платежа.",
+      "special_administration": []
+    },
+    {
+      "place_id": "kishinev",
+      "province_id": "governorate-bessarabia",
+      "valid_from": 1905,
+      "valid_to": 1905,
+      "valid_years": [
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9A%D0%B8%D1%88%D0%B8%D0%BD%D0%B5%D0%B2&oldid=5191392",
+          "title": "ЭСБЕ/Кишинев",
+          "evidence": "Кишинев указан губернским городом Бессарабской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5191392
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела.",
+      "special_administration": []
+    },
+    {
+      "place_id": "kolomna",
+      "province_id": "governorate-moscow",
+      "valid_from": 1904,
+      "valid_to": 1904,
+      "valid_years": [
+        1904
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9A%D0%BE%D0%BB%D0%BE%D0%BC%D0%BD%D0%B0&oldid=3610027",
+          "title": "ЭСБЕ/Коломна",
+          "evidence": "Коломна указана уездным городом Московской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 3610027
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела.",
+      "special_administration": []
+    },
+    {
+      "place_id": "kovno",
+      "province_id": "governorate-kovno",
+      "valid_from": 1897,
+      "valid_to": 1897,
+      "valid_years": [
+        1897
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9A%D0%BE%D0%B2%D0%BD%D0%B0&oldid=5370147",
+          "title": "ЭСБЕ/Ковна",
+          "evidence": "Ковна или Ковно названы губернским городом Ковенской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5370147
+        }
+      ],
+      "note": "Историческое имя Ковно сохранено; губерния не определяется по современному названию Каунас.",
+      "special_administration": []
+    },
+    {
+      "place_id": "krasnovodsk",
+      "province_id": "oblast-transcaspian",
+      "valid_from": 1904,
+      "valid_to": 1904,
+      "valid_years": [
+        1904
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D0%BA&oldid=3838205",
+          "title": "ЭСБЕ/Красноводск",
+          "evidence": "Красноводск назван уездным городом Закаспийской области.",
+          "evidence_kind": "paraphrase",
+          "revision": 3838205
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела. Точка города немного выходит за огрублённую береговую линию исходного GIS-слоя; принадлежность подтверждена справочником и не определяется попаданием в полигон.",
+      "special_administration": []
+    },
+    {
+      "place_id": "kutais",
+      "province_id": "governorate-kutais",
+      "valid_from": 1904,
+      "valid_to": 1905,
+      "valid_years": [
+        1904,
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9A%D1%83%D1%82%D0%B0%D0%B8%D1%81&oldid=5088841",
+          "title": "ЭСБЕ/Кутаис",
+          "evidence": "Кутаис указан губернским городом Кутаисской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5088841
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела.",
+      "special_administration": []
+    },
+    {
+      "place_id": "libava",
+      "province_id": "governorate-courland",
+      "valid_from": 1897,
+      "valid_to": 1904,
+      "valid_years": [
+        1897,
+        1904
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9B%D0%B8%D0%B1%D0%B0%D0%B2%D0%B0&oldid=3804752",
+          "title": "ЭСБЕ/Либава",
+          "evidence": "Либава названа портовым городом Курляндской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 3804752
+        }
+      ],
+      "note": "Губерния города упоминания; название должностного лица не устанавливает место фабрики.",
+      "special_administration": []
+    },
+    {
+      "place_id": "livny",
+      "province_id": "governorate-orel",
+      "valid_from": 1904,
+      "valid_to": 1904,
+      "valid_years": [
+        1904
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9B%D0%B8%D0%B2%D0%BD%D1%8B&oldid=2306548",
+          "title": "ЭСБЕ/Ливны",
+          "evidence": "Ливны указаны уездным городом Орловской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 2306548
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела.",
+      "special_administration": []
+    },
+    {
+      "place_id": "lyublin",
+      "province_id": "governorate-lublin",
+      "valid_from": 1904,
+      "valid_to": 1904,
+      "valid_years": [
+        1904
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9B%D1%8E%D0%B1%D0%BB%D0%B8%D0%BD&oldid=3616025",
+          "title": "ЭСБЕ/Люблин",
+          "evidence": "Люблин указан губернским городом Люблинской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 3616025
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела.",
+      "special_administration": []
+    },
+    {
+      "place_id": "minsk",
+      "province_id": "governorate-minsk",
+      "valid_from": 1897,
+      "valid_to": 1897,
+      "valid_years": [
+        1897
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%2C_%D0%BF%D0%BE%D1%81%D0%B0%D0%B4%D0%BE%D0%B2_%D0%B8_%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85_%D0%B2%D0%B0%D0%B6%D0%BD%D0%B5%D0%B9%D1%88%D0%B8%D1%85_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85_%D0%BC%D0%B5%D1%81%D1%82&oldid=353202",
+          "title": "ЭСБЕ/Россия/Население/Статистика населения/Население городов, посадов и других важнейших населенных мест",
+          "evidence": "Минск — Минская.",
+          "evidence_kind": "paraphrase",
+          "revision": 353202
+        }
+      ],
+      "note": "Губерния места, не судебный округ.",
+      "special_administration": []
+    },
+    {
+      "place_id": "mitava",
+      "province_id": "governorate-courland",
+      "valid_from": 1897,
+      "valid_to": 1904,
+      "valid_years": [
+        1897,
+        1904
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9C%D0%B8%D1%82%D0%B0%D0%B2%D0%B0&oldid=5369878",
+          "title": "ЭСБЕ/Митава",
+          "evidence": "Митава названа губернским городом Курляндской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5369878
+        }
+      ],
+      "note": "Губернская группа Митавы — Курляндская; современное имя Елгава не меняет исторической привязки.",
+      "special_administration": []
+    },
+    {
+      "place_id": "moscow",
+      "province_id": "governorate-moscow",
+      "valid_from": 1897,
+      "valid_to": 1905,
+      "valid_years": [
+        1897,
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%2C_%D0%BF%D0%BE%D1%81%D0%B0%D0%B4%D0%BE%D0%B2_%D0%B8_%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85_%D0%B2%D0%B0%D0%B6%D0%BD%D0%B5%D0%B9%D1%88%D0%B8%D1%85_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85_%D0%BC%D0%B5%D1%81%D1%82&oldid=353202",
+          "title": "ЭСБЕ/Россия/Население/Статистика населения/Население городов, посадов и других важнейших населенных мест",
+          "evidence": "Москва — Московская.",
+          "evidence_kind": "paraphrase",
+          "revision": 353202
+        }
+      ],
+      "note": "Территориальная группа; с 1905 года отдельно учитывается Московское градоначальство. Этот статус не переносится на 1897 год.",
+      "special_administration": [
+        {
+          "label": "Московское градоначальство",
+          "valid_from": 1905,
+          "valid_to": 1905,
+          "valid_years": [
+            1905
+          ],
+          "sources": [
+            {
+              "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9F%D0%BE%D0%BB%D0%B8%D1%86%D0%B8%D1%8F&oldid=5374768",
+              "title": "ЭСБЕ/Полиция",
+              "evidence": "Московское градоначальство учреждено с 1 января 1905 года.",
+              "evidence_kind": "paraphrase",
+              "revision": 5374768
+            }
+          ],
+          "note": "Применяется к томам 1905 года; не к упоминаниям 1897 года.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "place_id": "nesvizh",
+      "province_id": "governorate-minsk",
+      "valid_from": 1897,
+      "valid_to": 1897,
+      "valid_years": [
+        1897
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9D%D0%B5%D1%81%D0%B2%D0%B8%D0%B6&oldid=3622438",
+          "title": "ЭСБЕ/Несвиж",
+          "evidence": "Несвиж назван заштатным городом Слуцкого уезда Минской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 3622438
+        }
+      ],
+      "note": "Слуцкий уезд — вложенная единица; губернская группа остаётся Минской.",
+      "special_administration": []
+    },
+    {
+      "place_id": "nikolaev",
+      "province_id": "governorate-kherson",
+      "valid_from": 1896,
+      "valid_to": 1897,
+      "valid_years": [
+        1896,
+        1897
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2%2C_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4_%D0%A5%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%B3%D1%83%D0%B1%D0%B5%D1%80%D0%BD%D0%B8%D0%B8&oldid=3450801",
+          "title": "ЭСБЕ/Николаев, город Херсонской губернии",
+          "evidence": "Николаев указан военно-морским городом Херсонской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 3450801
+        }
+      ],
+      "note": "Для упоминаний 1896–1897 годов действует особое военное управление; позднейшее градоначальство на эти годы не переносится.",
+      "special_administration": [
+        {
+          "label": "Николаевское военное губернаторство",
+          "valid_from": 1896,
+          "valid_to": 1897,
+          "valid_years": [
+            1896,
+            1897
+          ],
+          "sources": [
+            {
+              "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%2C_%D0%BF%D0%BE%D1%81%D0%B0%D0%B4%D0%BE%D0%B2_%D0%B8_%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85_%D0%B2%D0%B0%D0%B6%D0%BD%D0%B5%D0%B9%D1%88%D0%B8%D1%85_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85_%D0%BC%D0%B5%D1%81%D1%82&oldid=353202",
+              "title": "ЭСБЕ/Россия/Население/Статистика населения/Население городов, посадов и других важнейших населенных мест",
+              "evidence": "Николаев обозначен военным губернаторством.",
+              "evidence_kind": "paraphrase",
+              "revision": 353202
+            }
+          ],
+          "note": "Николаев обозначен военным губернаторством.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "place_id": "novoradomsk",
+      "province_id": "governorate-petrokov",
+      "valid_from": 1905,
+      "valid_to": 1905,
+      "valid_years": [
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9D%D0%BE%D0%B2%D0%BE%D1%80%D0%B0%D0%B4%D0%BE%D0%BC%D1%81%D0%BA&oldid=3623211",
+          "title": "ЭСБЕ/Новорадомск",
+          "evidence": "Новорадомск прямо назван уездным городом Петроковской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 3623211
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела.",
+      "special_administration": []
+    },
+    {
+      "place_id": "novorossiysk",
+      "province_id": "governorate-chernomorsk",
+      "valid_from": 1904,
+      "valid_to": 1904,
+      "valid_years": [
+        1904
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9D%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA&oldid=4765028",
+          "title": "ЭСБЕ/Новороссийск",
+          "evidence": "Раздел об округе датирует образование Черноморской губернии 23 мая 1896 года и описывает её Новороссийский округ.",
+          "evidence_kind": "paraphrase",
+          "revision": 4765028
+        }
+      ],
+      "note": "Для имеющегося упоминания 1904 года — Черноморская губерния. Она образована 23 мая 1896 года (старый стиль) из Черноморского округа Кубанской области. Вступительное «1895» в статье противоречит её разделу об округе; использованы точная дата этого раздела и проверка РНБ.",
+      "special_administration": []
+    },
+    {
+      "place_id": "odessa",
+      "province_id": "governorate-kherson",
+      "valid_from": 1897,
+      "valid_to": 1905,
+      "valid_years": [
+        1897,
+        1904,
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%B0&oldid=5369234",
+          "title": "ЭСБЕ/Одесса",
+          "evidence": "Одесса отнесена к Херсонской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5369234
+        }
+      ],
+      "note": "Территориальная группа сохраняется, самостоятельное градоначальство отмечено отдельно.",
+      "special_administration": [
+        {
+          "label": "Одесское градоначальство",
+          "valid_from": 1897,
+          "valid_to": 1905,
+          "valid_years": [
+            1897,
+            1904,
+            1905
+          ],
+          "sources": [
+            {
+              "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%BA%D0%BE%D0%B5_%D0%93%D1%80%D0%B0%D0%B4%D0%BE%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE&oldid=5369236",
+              "title": "ЭСБЕ/Одесское Градоначальство",
+              "evidence": "Одесское градоначальство административно самостоятельно; подчинение херсонскому губернатору ограничено воинской повинностью.",
+              "evidence_kind": "paraphrase",
+              "revision": 5369236
+            }
+          ],
+          "note": "Не обычный уезд губернского губернатора; для земства учитывалось особо.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "place_id": "omsk",
+      "province_id": "oblast-akmolinsk",
+      "valid_from": 1904,
+      "valid_to": 1905,
+      "valid_years": [
+        1904,
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9E%D0%BC%D1%81%D0%BA&oldid=5369271",
+          "title": "ЭСБЕ/Омск",
+          "evidence": "Омск указан областным городом Акмолинской области и центром Степного генерал-губернаторства.",
+          "evidence_kind": "paraphrase",
+          "revision": 5369271
+        }
+      ],
+      "note": "Город относится к Акмолинской области и служит центром Степного генерал-губернаторства. Нынешняя Омская область и прежняя/соседняя Тобольская губерния не используются.",
+      "special_administration": []
+    },
+    {
+      "place_id": "orel",
+      "province_id": "governorate-orel",
+      "valid_from": 1904,
+      "valid_to": 1904,
+      "valid_years": [
+        1904
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9E%D1%80%D0%B5%D0%BB%2C+%D0%B3%D1%83%D0%B1%D0%B5%D1%80%D0%BD%D1%81%D0%BA%D0%B8%D0%B9+%D0%B3%D0%BE%D1%80%D0%BE%D0%B4&oldid=3805201",
+          "title": "ЭСБЕ/Орел, губернский город",
+          "evidence": "Орел описан как губернский город; историческая часть относит его к центрам Орловского наместничества, затем губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 3805201
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела.",
+      "special_administration": []
+    },
+    {
+      "place_id": "orenburg",
+      "province_id": "governorate-orenburg",
+      "valid_from": 1897,
+      "valid_to": 1897,
+      "valid_years": [
+        1897
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9E%D1%80%D0%B5%D0%BD%D0%B1%D1%83%D1%80%D0%B3&oldid=5062091",
+          "title": "ЭСБЕ/Оренбург",
+          "evidence": "Оренбург назван губернским городом Оренбургской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5062091
+        }
+      ],
+      "note": "Губерния места, не судебный округ.",
+      "special_administration": []
+    },
+    {
+      "place_id": "penza",
+      "province_id": "governorate-penza",
+      "valid_from": 1897,
+      "valid_to": 1897,
+      "valid_years": [
+        1897
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9F%D0%B5%D0%BD%D0%B7%D0%B0%2C_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4&oldid=5323604",
+          "title": "ЭСБЕ/Пенза, город",
+          "evidence": "Пенза названа губернским городом Пензенской губернии с 1801 года.",
+          "evidence_kind": "paraphrase",
+          "revision": 5323604
+        }
+      ],
+      "note": "Губерния места, не судебный округ.",
+      "special_administration": []
+    },
+    {
+      "place_id": "pereyaslav-poltava",
+      "province_id": "governorate-poltava",
+      "valid_from": 1897,
+      "valid_to": 1897,
+      "valid_years": [
+        1897
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9F%D0%B5%D1%80%D0%B5%D1%8F%D1%81%D0%BB%D0%B0%D0%B2%D0%BB%D1%8C%2C_%D1%83%D0%B5%D0%B7%D0%B4%D0%BD%D1%8B%D0%B9_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4_%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%B3%D1%83%D0%B1%D0%B5%D1%80%D0%BD%D0%B8%D0%B8&oldid=3936961",
+          "title": "ЭСБЕ/Переяславль, уездный город Полтавской губернии",
+          "evidence": "Переяславль назван уездным городом Полтавской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 3936961
+        }
+      ],
+      "note": "Это Переяслав Полтавской губернии, а не Переславль-Залесский и не Рязань.",
+      "special_administration": []
+    },
+    {
+      "place_id": "petrokov",
+      "province_id": "governorate-petrokov",
+      "valid_from": 1904,
+      "valid_to": 1904,
+      "valid_years": [
+        1904
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%BA%D0%BE%D0%B2&oldid=5104207",
+          "title": "ЭСБЕ/Петроков",
+          "evidence": "Петроков прямо назван губернским городом Петроковской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5104207
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела.",
+      "special_administration": []
+    },
+    {
+      "place_id": "poltava",
+      "province_id": "governorate-poltava",
+      "valid_from": 1896,
+      "valid_to": 1896,
+      "valid_years": [
+        1896
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D0%B0&oldid=5351623",
+          "title": "ЭСБЕ/Полтава",
+          "evidence": "Полтава названа губернским городом Полтавской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5351623
+        }
+      ],
+      "note": "Губерния места, не судебный округ.",
+      "special_administration": []
+    },
+    {
+      "place_id": "poti",
+      "province_id": "governorate-kutais",
+      "valid_from": 1904,
+      "valid_to": 1904,
+      "valid_years": [
+        1904
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%9F%D0%BE%D1%82%D0%B8&oldid=4625247",
+          "title": "ЭСБЕ/Поти",
+          "evidence": "Поти прямо отнесён к портовым городам Кутаисской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 4625247
+        }
+      ],
+      "note": "Кутаисская губерния. В корпусе указано имя Потийской карантинно-таможенной конторы; это не точная локализация склада или места продажи. Точка города немного выходит за огрублённую береговую линию исходного GIS-слоя; принадлежность подтверждена справочником и не определяется попаданием в полигон.",
+      "special_administration": []
+    },
+    {
+      "place_id": "riga",
+      "province_id": "governorate-livonia",
+      "valid_from": 1896,
+      "valid_to": 1905,
+      "valid_years": [
+        1896,
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A0%D0%B8%D0%B3%D0%B0%2C_%D0%B3%D1%83%D0%B1%D0%B5%D1%80%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4&oldid=5191312",
+          "title": "ЭСБЕ/Рига, губернский город",
+          "evidence": "Рига названа губернским городом Лифляндской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5191312
+        }
+      ],
+      "note": "Рига относится к Лифляндской губернии; Митава и Либава — к другой, Курляндской.",
+      "special_administration": []
+    },
+    {
+      "place_id": "rostov-on-don",
+      "province_id": "oblast-don-host",
+      "valid_from": 1904,
+      "valid_to": 1904,
+      "valid_years": [
+        1904
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%A0%D0%BE%D1%81%D1%82%D0%BE%D0%B2-%D0%BD%D0%B0-%D0%94%D0%BE%D0%BD%D1%83&oldid=5369107",
+          "title": "ЭСБЕ/Ростов-на-Дону",
+          "evidence": "Ростов-на-Дону указан окружным городом области Войска Донского.",
+          "evidence_kind": "paraphrase",
+          "revision": 5369107
+        }
+      ],
+      "note": "Территориальная группировка — область Войска Донского. С 1904 года действует особое Ростовское-на-Дону градоначальство; по предметам его ведения город не подчинён Донскому областному правлению. Группировка по области не обозначает прямого подчинения градоначальника областному управлению.",
+      "special_administration": [
+        {
+          "label": "Ростовское-на-Дону градоначальство",
+          "valid_from": 1904,
+          "valid_to": 1905,
+          "valid_years": [
+            1904
+          ],
+          "sources": [
+            {
+              "url": "https://cities.blacksea.gr/ru/rostov-on-don/1-2/",
+              "title": "Ростовское-на-Дону градоначальство",
+              "evidence": "Исследовательский проект ссылается на закон 23 февраля 1904 года и описывает выделенные полномочия градоначальника.",
+              "evidence_kind": "paraphrase"
+            }
+          ],
+          "note": "Исследовательский проект ссылается на закон 23 февраля 1904 года и описывает выделенные полномочия градоначальника.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "place_id": "ryazan",
+      "province_id": "governorate-ryazan",
+      "valid_from": 1897,
+      "valid_to": 1897,
+      "valid_years": [
+        1897
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%2C_%D0%BF%D0%BE%D1%81%D0%B0%D0%B4%D0%BE%D0%B2_%D0%B8_%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85_%D0%B2%D0%B0%D0%B6%D0%BD%D0%B5%D0%B9%D1%88%D0%B8%D1%85_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85_%D0%BC%D0%B5%D1%81%D1%82&oldid=353202",
+          "title": "ЭСБЕ/Россия/Население/Статистика населения/Население городов, посадов и других важнейших населенных мест",
+          "evidence": "Рязань — Рязанская.",
+          "evidence_kind": "paraphrase",
+          "revision": 353202
+        }
+      ],
+      "note": "Губерния места, не судебный округ.",
+      "special_administration": []
+    },
+    {
+      "place_id": "saint-petersburg",
+      "province_id": "governorate-saint-petersburg",
+      "valid_from": 1896,
+      "valid_to": 1905,
+      "valid_years": [
+        1896,
+        1904,
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%2C_%D0%BF%D0%BE%D1%81%D0%B0%D0%B4%D0%BE%D0%B2_%D0%B8_%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85_%D0%B2%D0%B0%D0%B6%D0%BD%D0%B5%D0%B9%D1%88%D0%B8%D1%85_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85_%D0%BC%D0%B5%D1%81%D1%82&oldid=353202",
+          "title": "ЭСБЕ/Россия/Население/Статистика населения/Население городов, посадов и других важнейших населенных мест",
+          "evidence": "Санкт-Петербург — Санкт-Петербургская.",
+          "evidence_kind": "paraphrase",
+          "revision": 353202
+        }
+      ],
+      "note": "Территориальная группа; столичное градоначальство отмечено отдельно и не считается обычным подчинением губернскому губернатору.",
+      "special_administration": [
+        {
+          "label": "Санкт-Петербургское градоначальство",
+          "valid_from": 1896,
+          "valid_to": 1905,
+          "valid_years": [
+            1896,
+            1904,
+            1905
+          ],
+          "sources": [
+            {
+              "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%93%D1%80%D0%B0%D0%B4%D0%BE%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA&oldid=2197959",
+              "title": "ЭСБЕ/Градоначальник",
+              "evidence": "Петербургское градоначальство имеет отдельное управление с правами губернатора.",
+              "evidence_kind": "paraphrase",
+              "revision": 2197959
+            }
+          ],
+          "note": "Петербургское градоначальство имеет отдельное управление с правами губернатора.",
+          "confidence": "high"
+        },
+        {
+          "label": "Временное Санкт-Петербургское генерал-губернаторство",
+          "valid_from": 1905,
+          "valid_to": 1905,
+          "valid_years": [
+            1905
+          ],
+          "sources": [
+            {
+              "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%9F%D0%BE%D0%BB%D0%B8%D1%86%D0%B8%D1%8F&oldid=5374768",
+              "title": "ЭСБЕ/Полиция",
+              "evidence": "Петербургское чрезвычайное генерал-губернаторство действовало 11 января–10 ноября 1905 года.",
+              "evidence_kind": "paraphrase",
+              "revision": 5374768
+            }
+          ],
+          "note": "Дополнительный режим 1905 года; губернская территориальная группа не меняется.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "place_id": "saratov",
+      "province_id": "governorate-saratov",
+      "valid_from": 1897,
+      "valid_to": 1897,
+      "valid_years": [
+        1897
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A1%D0%B0%D1%80%D0%B0%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F_%D0%B3%D1%83%D0%B1%D0%B5%D1%80%D0%BD%D0%B8%D1%8F&oldid=5351473",
+          "title": "ЭСБЕ/Саратовская губерния",
+          "evidence": "Саратов перечислен среди городов Саратовской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5351473
+        }
+      ],
+      "note": "Губерния места, не судебный округ.",
+      "special_administration": []
+    },
+    {
+      "place_id": "simbirsk",
+      "province_id": "governorate-simbirsk",
+      "valid_from": 1905,
+      "valid_to": 1905,
+      "valid_years": [
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%A1%D0%B8%D0%BC%D0%B1%D0%B8%D1%80%D1%81%D0%BA&oldid=5368982",
+          "title": "ЭСБЕ/Симбирск",
+          "evidence": "Симбирск описан как губернский город; территориальная статья отдельно описывает Симбирскую губернию и её Симбирский уезд.",
+          "evidence_kind": "paraphrase",
+          "revision": 5368982
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела.",
+      "special_administration": []
+    },
+    {
+      "place_id": "simferopol",
+      "province_id": "governorate-taurida",
+      "valid_from": 1897,
+      "valid_to": 1905,
+      "valid_years": [
+        1897,
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A1%D0%B8%D0%BC%D1%84%D0%B5%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C&oldid=5362779",
+          "title": "ЭСБЕ/Симферополь",
+          "evidence": "Симферополь назван губернским городом Таврической губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5362779
+        }
+      ],
+      "note": "Губерния города суда не переносит в Симферополь имущество, прямо указанное в Ялте.",
+      "special_administration": []
+    },
+    {
+      "place_id": "taganrog",
+      "province_id": "oblast-don-host",
+      "valid_from": 1896,
+      "valid_to": 1896,
+      "valid_years": [
+        1896
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A2%D0%B0%D0%B3%D0%B0%D0%BD%D1%80%D0%BE%D0%B3&oldid=4857141",
+          "title": "ЭСБЕ/Таганрог",
+          "evidence": "Таганрог указан окружным городом Области Войска Донского.",
+          "evidence_kind": "paraphrase",
+          "revision": 4857141
+        }
+      ],
+      "note": "Прежнее Таганрогское градоначальство не используется как действующая единица для 1896 года.",
+      "special_administration": []
+    },
+    {
+      "place_id": "tambov",
+      "province_id": "governorate-tambov",
+      "valid_from": 1905,
+      "valid_to": 1905,
+      "valid_years": [
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%A2%D0%B0%D0%BC%D0%B1%D0%BE%D0%B2&oldid=5351438",
+          "title": "ЭСБЕ/Тамбов",
+          "evidence": "Тамбов описан как губернский город; статья о Тамбовской губернии включает Тамбовский уезд.",
+          "evidence_kind": "paraphrase",
+          "revision": 5351438
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела.",
+      "special_administration": []
+    },
+    {
+      "place_id": "tashkent",
+      "province_id": "oblast-syrdarya",
+      "valid_from": 1905,
+      "valid_to": 1905,
+      "valid_years": [
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82&oldid=5605939",
+          "title": "ЭСБЕ/Ташкент",
+          "evidence": "Ташкент назван главным городом Сырдарьинской области и Туркестанского генерал-губернаторства.",
+          "evidence_kind": "paraphrase",
+          "revision": 5605939
+        }
+      ],
+      "note": "Город — одновременно центр Сырдарьинской области и Туркестанского генерал-губернаторства; генерал-губернаторство не заменяет территориальную область.",
+      "special_administration": []
+    },
+    {
+      "place_id": "tiflis",
+      "province_id": "governorate-tiflis",
+      "valid_from": 1905,
+      "valid_to": 1905,
+      "valid_years": [
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%A2%D0%B8%D1%84%D0%BB%D0%B8%D1%81&oldid=5351392",
+          "title": "ЭСБЕ/Тифлис",
+          "evidence": "Тифлис указан губернским городом Тифлисской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5351392
+        }
+      ],
+      "note": "Территориально Тифлисская губерния; размещение главного кавказского управления не превращает город в отдельную губернию.",
+      "special_administration": []
+    },
+    {
+      "place_id": "tobolsk",
+      "province_id": "governorate-tobolsk",
+      "valid_from": 1904,
+      "valid_to": 1904,
+      "valid_years": [
+        1904
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%A2%D0%BE%D0%B1%D0%BE%D0%BB%D1%8C%D1%81%D0%BA&oldid=5368902",
+          "title": "ЭСБЕ/Тобольск",
+          "evidence": "Тобольск указан губернским городом Тобольской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5368902
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела.",
+      "special_administration": []
+    },
+    {
+      "place_id": "tomsk",
+      "province_id": "governorate-tomsk",
+      "valid_from": 1897,
+      "valid_to": 1897,
+      "valid_years": [
+        1897
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A2%D0%BE%D0%BC%D1%81%D0%BA&oldid=5352639",
+          "title": "ЭСБЕ/Томск",
+          "evidence": "Томск назван губернским городом Томской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5352639
+        }
+      ],
+      "note": "Место направления груза не означает место всех событий дела.",
+      "special_administration": []
+    },
+    {
+      "place_id": "torzhok",
+      "province_id": "governorate-tver",
+      "valid_from": 1904,
+      "valid_to": 1904,
+      "valid_years": [
+        1904
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%A2%D0%BE%D1%80%D0%B6%D0%BE%D0%BA&oldid=5368893",
+          "title": "ЭСБЕ/Торжок",
+          "evidence": "Торжок указан городом Новоторжского уезда Тверской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5368893
+        }
+      ],
+      "note": "Торжок — город Новоторжского уезда Тверской губернии. В корпусном деле1904-046 он упомянут в пересказе прежнего решения1902 года; принадлежность не переносится на имущество текущего спора.",
+      "special_administration": []
+    },
+    {
+      "place_id": "tver",
+      "province_id": "governorate-tver",
+      "valid_from": 1896,
+      "valid_to": 1896,
+      "valid_years": [
+        1896
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%2C_%D0%BF%D0%BE%D1%81%D0%B0%D0%B4%D0%BE%D0%B2_%D0%B8_%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85_%D0%B2%D0%B0%D0%B6%D0%BD%D0%B5%D0%B9%D1%88%D0%B8%D1%85_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85_%D0%BC%D0%B5%D1%81%D1%82&oldid=353202",
+          "title": "ЭСБЕ/Россия/Население/Статистика населения/Население городов, посадов и других важнейших населенных мест",
+          "evidence": "Тверь — Тверская.",
+          "evidence_kind": "paraphrase",
+          "revision": 353202
+        }
+      ],
+      "note": "Губерния места, не судебный округ.",
+      "special_administration": []
+    },
+    {
+      "place_id": "tyumen",
+      "province_id": "governorate-tobolsk",
+      "valid_from": 1904,
+      "valid_to": 1904,
+      "valid_years": [
+        1904
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%A2%D1%8E%D0%BC%D0%B5%D0%BD%D1%8C&oldid=5352646",
+          "title": "ЭСБЕ/Тюмень",
+          "evidence": "Тюмень прямо названа уездным городом Тобольской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5352646
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела.",
+      "special_administration": []
+    },
+    {
+      "place_id": "venden",
+      "province_id": "governorate-livonia",
+      "valid_from": 1905,
+      "valid_to": 1905,
+      "valid_years": [
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%92%D0%B5%D0%BD%D0%B4%D0%B5%D0%BD&oldid=5104381",
+          "title": "ЭСБЕ/Венден",
+          "evidence": "Венден указан уездным городом Лифляндской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5104381
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела.",
+      "special_administration": []
+    },
+    {
+      "place_id": "vilno",
+      "province_id": "governorate-vilna",
+      "valid_from": 1896,
+      "valid_to": 1905,
+      "valid_years": [
+        1896,
+        1904,
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/%D0%9D%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%BE%D0%B2%2C_%D0%BF%D0%BE%D1%81%D0%B0%D0%B4%D0%BE%D0%B2_%D0%B8_%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85_%D0%B2%D0%B0%D0%B6%D0%BD%D0%B5%D0%B9%D1%88%D0%B8%D1%85_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85_%D0%BC%D0%B5%D1%81%D1%82&oldid=353202",
+          "title": "ЭСБЕ/Россия/Население/Статистика населения/Население городов, посадов и других важнейших населенных мест",
+          "evidence": "Вильна — Виленская.",
+          "evidence_kind": "paraphrase",
+          "revision": 353202
+        }
+      ],
+      "note": "Вильно в корпусе соответствует Вильне справочника; генерал-губернаторство и судебная палата не заменяют территориальную губернию.",
+      "special_administration": []
+    },
+    {
+      "place_id": "vindava",
+      "province_id": "governorate-courland",
+      "valid_from": 1905,
+      "valid_to": 1905,
+      "valid_years": [
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%92%D0%B8%D0%BD%D0%B4%D0%B0%D0%B2%D0%B0%2C+%D0%B3%D0%BE%D1%80%D0%BE%D0%B4&oldid=5370205",
+          "title": "ЭСБЕ/Виндава, город",
+          "evidence": "Виндава названа портовым и уездным городом Курляндской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5370205
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела.",
+      "special_administration": []
+    },
+    {
+      "place_id": "vladivostok",
+      "province_id": "oblast-primorsk",
+      "valid_from": 1905,
+      "valid_to": 1905,
+      "valid_years": [
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D0%BA&oldid=5061588",
+          "title": "ЭСБЕ/Владивосток",
+          "evidence": "Владивосток указан областным городом Приморской области; описано присоединение прежнего военного губернаторства к областному управлению в 1888 году.",
+          "evidence_kind": "paraphrase",
+          "revision": 5061588
+        }
+      ],
+      "note": "Приморская область; прежнее особое военное губернаторство вновь присоединено к областному управлению в 1888 году. Военный порт и крепость не представлены отдельной губернией. Точка города немного выходит за огрублённую береговую линию исходного GIS-слоя; принадлежность подтверждена справочником и не определяется попаданием в полигон.",
+      "special_administration": []
+    },
+    {
+      "place_id": "voronezh",
+      "province_id": "governorate-voronezh",
+      "valid_from": 1905,
+      "valid_to": 1905,
+      "valid_years": [
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6%2C+%D0%B3%D0%BE%D1%80%D0%BE%D0%B4&oldid=5677155",
+          "title": "ЭСБЕ/Воронеж, город",
+          "evidence": "Воронеж прямо назван губернским городом Воронежской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5677155
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела.",
+      "special_administration": []
+    },
+    {
+      "place_id": "warsaw",
+      "province_id": "governorate-warsaw",
+      "valid_from": 1897,
+      "valid_to": 1905,
+      "valid_years": [
+        1897,
+        1904,
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%92%D0%B0%D1%80%D1%88%D0%B0%D0%B2%D0%B0&oldid=5367155",
+          "title": "ЭСБЕ/Варшава",
+          "evidence": "Варшава названа губернским городом Варшавской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5367155
+        }
+      ],
+      "note": "Центр генерал-губернаторства; последнее не заменяет Варшавскую губернию в территориальной группировке.",
+      "special_administration": []
+    },
+    {
+      "place_id": "yakutsk",
+      "province_id": "oblast-yakutsk",
+      "valid_from": 1904,
+      "valid_to": 1904,
+      "valid_years": [
+        1904
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%AF%D0%BA%D1%83%D1%82%D1%81%D0%BA&oldid=5351160",
+          "title": "ЭСБЕ/Якутск",
+          "evidence": "Якутск указан областным городом Якутской области.",
+          "evidence_kind": "paraphrase",
+          "revision": 5351160
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела.",
+      "special_administration": []
+    },
+    {
+      "place_id": "yalta",
+      "province_id": "governorate-taurida",
+      "valid_from": 1905,
+      "valid_to": 1905,
+      "valid_years": [
+        1905
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%AF%D0%BB%D1%82%D0%B0%2C+%D0%B3%D0%BE%D1%80%D0%BE%D0%B4&oldid=5361512",
+          "title": "ЭСБЕ/Ялта, город",
+          "evidence": "Ялта прямо названа уездным городом Таврической губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5361512
+        }
+      ],
+      "note": "В исследуемом томе1905 года — уездный город Таврической губернии. Более поздний статус градоначальства на этот год не переносится.",
+      "special_administration": []
+    },
+    {
+      "place_id": "yaroslavl",
+      "province_id": "governorate-yaroslavl",
+      "valid_from": 1897,
+      "valid_to": 1897,
+      "valid_years": [
+        1897
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%AF%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D0%BB%D1%8C&oldid=3946296",
+          "title": "ЭСБЕ/Ярославль",
+          "evidence": "Ярославль назван губернским городом Ярославской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 3946296
+        }
+      ],
+      "note": "Губерния места, не судебный округ.",
+      "special_administration": []
+    },
+    {
+      "place_id": "yekaterinburg",
+      "province_id": "governorate-perm",
+      "valid_from": 1897,
+      "valid_to": 1897,
+      "valid_years": [
+        1897
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95/%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3&oldid=5061840",
+          "title": "ЭСБЕ/Екатеринбург",
+          "evidence": "Екатеринбург назван уездным городом Пермской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5061840
+        }
+      ],
+      "note": "Екатеринбургская губерния для 1897 года не используется.",
+      "special_administration": []
+    },
+    {
+      "place_id": "zhitomir",
+      "province_id": "governorate-volhynia",
+      "valid_from": 1904,
+      "valid_to": 1904,
+      "valid_years": [
+        1904
+      ],
+      "sources": [
+        {
+          "url": "https://ru.wikisource.org/w/index.php?title=%D0%AD%D0%A1%D0%91%D0%95%2F%D0%96%D0%B8%D1%82%D0%BE%D0%BC%D0%B8%D1%80&oldid=5753701",
+          "title": "ЭСБЕ/Житомир",
+          "evidence": "Житомир указан губернским городом Волынской губернии.",
+          "evidence_kind": "paraphrase",
+          "revision": 5753701
+        }
+      ],
+      "note": "Территориальная принадлежность населённого пункта; не граница судебного округа и не утверждение места событий дела.",
+      "special_administration": []
+    }
+  ]
+}
