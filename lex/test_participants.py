@@ -2,6 +2,7 @@
 import copy
 import hashlib
 import json
+import os
 import tempfile
 import unittest
 from pathlib import Path
@@ -13,7 +14,7 @@ ROOT = Path(__file__).resolve().parent.parent
 class IndexTests(unittest.TestCase):
     def test_all_printed_entries_have_current_sources_and_existing_decisions(self):
         docs = json.loads((ROOT/'lex/data/meta.json').read_text())['decisions']
-        entries = load_participants(ROOT, docs)
+        entries = load_participants(ROOT, docs, os.environ.get('LEX_OCR_ROOT'))
         self.assertEqual(len(entries), 790)
         self.assertEqual(len({e['id'] for e in entries}), 790)
         covered = {d for e in entries for d in e['decisions']}
@@ -43,7 +44,7 @@ class IndexTests(unittest.TestCase):
 
     def test_1904_and_1905_preserve_repeated_records_and_compound_references(self):
         docs = json.loads((ROOT/'lex/data/meta.json').read_text())['decisions']
-        entries = load_participants(ROOT, docs)
+        entries = load_participants(ROOT, docs, os.environ.get('LEX_OCR_ROOT'))
         rail_admin = [e for e in entries if e['year'] == 1904 and e['label'] == 'Управленіе желѣзныхъ дорогъ']
         self.assertEqual(len(rail_admin), 2)  # В указателе есть запись под «Ж» и повтор под «У».
         broken = next(e for e in rail_admin if len(e['sources']) == 2)

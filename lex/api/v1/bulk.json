@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.6.0",
-  "data_revision": "sha256:994e85d211349cda22db5ec477b42ce04d462dd4f537e979daa6f0046520c857",
+  "contract_version": "1.7.0",
+  "data_revision": "sha256:7f9fd1326fc167b5d3960e76a4eb946e5fc65196842b90374168a78940287d3c",
   "resource": "bulk-downloads",
   "item": {
     "description": "Полные JSON/CSV-выгрузки; имена, контрольные суммы и размеры определяет export/manifest.json.",
@@ -10,14 +10,14 @@
     "files": [
       {
         "name": "decisions.json",
-        "sha256": "8b5c2dde28d280c8b01d9990eb9fa3817f575e96cd79175dc5237f188de6fb9b",
-        "bytes": 8364381,
+        "sha256": "cf1b6141a69e3e4833f48b0ef51c0c8e6dcdc94d45c091e227226595c7a3eefe",
+        "bytes": 8472388,
         "href": "https://ivseliv.github.io/senat/lex/export/decisions.json"
       },
       {
         "name": "decisions.csv",
-        "sha256": "f93c831e2506030ffdef0a21c0ab9929c242ae70000e945c3f62e7c86f77fe34",
-        "bytes": 7815323,
+        "sha256": "df552cb3b98dd0187575411ff67626ad0a12bb7396f89c8369ef5d6831ed2b7c",
+        "bytes": 7887701,
         "href": "https://ivseliv.github.io/senat/lex/export/decisions.csv"
       },
       {
@@ -130,8 +130,8 @@
       },
       {
         "name": "README.md",
-        "sha256": "14b20bc890d89eced34d10286edf29793d13f410713362be4856e174567a8430",
-        "bytes": 5142,
+        "sha256": "d79670a87edf82ba714a9d496e6cebf6744b30c87705ada8fc0d95387d712072",
+        "bytes": 5495,
         "href": "https://ivseliv.github.io/senat/lex/export/README.md"
       }
     ]

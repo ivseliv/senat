@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Решения Правительствующего Сената — Static API",
-    "version": "1.6.0",
+    "version": "1.7.0",
     "description": "Статические JSON-файлы: доступны GET и HEAD, query-параметров и серверного поиска нет."
   },
   "servers": [
@@ -444,6 +444,40 @@
     "/editorial/analyses.json": {
       "get": {
         "summary": "Редакционные разборы",
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/editorial/analysis-search.json": {
+      "get": {
+        "summary": "Разделы разборов с видами, авторами и цитатами для поиска",
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/volumes.json": {
+      "get": {
+        "summary": "Реестр опубликованных томов с постоянными volume_id",
         "responses": {
           "200": {
             "description": "JSON UTF-8",

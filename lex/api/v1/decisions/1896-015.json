@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.6.0",
-  "data_revision": "sha256:994e85d211349cda22db5ec477b42ce04d462dd4f537e979daa6f0046520c857",
+  "contract_version": "1.7.0",
+  "data_revision": "sha256:7f9fd1326fc167b5d3960e76a4eb946e5fc65196842b90374168a78940287d3c",
   "resource": "decision",
   "scope": {
     "id": "1896-015",
@@ -12,6 +12,13 @@
     "year": 1896,
     "number": 15,
     "date": "1896-03-11",
+    "volume_id": "senat-general-1896",
+    "topic_ids": [
+      "procedure",
+      "peasants",
+      "damages"
+    ],
+    "automatic_topics": [],
     "date_label": null,
     "department": "Общее собрание",
     "headnote_original": "По вѣдѣнію Второго Депар тамента Правительствующа го Сената за № 7638, по пред мету разномыслія между Курскимъ губернскимъ при сутствіемъ и и Харьковскою судебною палатою въ примѣ неніи правилъ, прил ож е н - н ы х ъ къ ст. 37 о 6 щ. п о л о ж. о крест. (прим. 2).",
@@ -23,7 +30,11 @@
     "procedure": [
       "Процессуальный порядок"
     ],
-    "topics": [],
+    "topics": [
+      "Судебный процесс и подсудность",
+      "Крестьяне, общины и сословия",
+      "Возмещение вреда и убытков"
+    ],
     "participant_groups": {},
     "statutes": {
       "? ст. 37": 2

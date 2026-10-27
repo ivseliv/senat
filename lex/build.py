@@ -24,6 +24,10 @@ from guide_comparisons import build as build_guides
 from topic_catalog import build as build_topic_catalog
 from api import build_api
 from precedents import build_precedents
+from topic_navigation import apply_catalog
+from analysis_search import build as build_analysis_search
+from volumes import apply_registry
+from search_assets import refresh_search_assets
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 OUT = os.path.join(ROOT, 'lex', 'data')
@@ -31,10 +35,29 @@ OUT = os.path.join(ROOT, 'lex', 'data')
 
 def build_published_artifacts():
     """Пересобирает производные публичные данные и статический API из lex/data."""
+    # Один редакционный каталог используется и UI, и экспортом, и API.
+    # Прежние автоматические метки сохраняются отдельно как история.
+    meta_path, analytics_path = Path(OUT) / 'meta.json', Path(OUT) / 'analytics.json'
+    meta = json.loads(meta_path.read_text(encoding='utf-8'))
+    meta = apply_registry(meta)
+    analytics_data = json.loads(analytics_path.read_text(encoding='utf-8'))
+    guides = build_guides()
+    (Path(OUT) / 'guides.json').write_text(
+        json.dumps(guides, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+    print(f'  сравнительные разборы: {guides["comparison_count"]}')
+    catalog = build_topic_catalog()
+    apply_catalog(meta, analytics_data, catalog)
+    for path, data in ((meta_path, meta), (analytics_path, analytics_data)):
+        path.write_text(json.dumps(data, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+    (Path(OUT) / 'topic-catalog.json').write_text(
+        json.dumps(catalog, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+    print(f'  единые темы: {catalog["topic_count"]}; {catalog["classified"]}/{catalog["count"]} решений')
     law_index = build_law_index(ROOT)
     print('  законодательство:', law_index['attribution_summary'])
     enrichment = refresh_published_enrichment(ROOT, stems)
     print('  актуальные пояснения:', enrichment['valid'], '; устаревшие записи:', enrichment['ignored'])
+    search_assets = refresh_search_assets(ROOT, stems, modernize, stem)
+    print('  поисковые индексы:', search_assets)
     warnings = {}
     for file in sorted(Path(OUT).glob('passages-*.json')):
         for passage in json.loads(file.read_text(encoding='utf-8'))['passages']:
@@ -66,14 +89,10 @@ def build_published_artifacts():
     analyses = build_decision_analyses()
     write_decision_analyses(analyses, Path(OUT))
     print(f'  редакционные разборы: {analyses["count"]}')
-    guides = build_guides()
-    (Path(OUT) / 'guides.json').write_text(
-        json.dumps(guides, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
-    print(f'  сравнительные разборы: {guides["comparison_count"]}')
-    catalog = build_topic_catalog()
-    (Path(OUT) / 'topic-catalog.json').write_text(
-        json.dumps(catalog, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
-    print(f'  каталог: {catalog["topic_count"]} тем; {catalog["classified"]}/{catalog["count"]} решений')
+    analysis_search = build_analysis_search(analyses, catalog, meta)
+    (Path(OUT) / 'analysis-search.json').write_text(
+        json.dumps(analysis_search, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+    print(f'  поиск разборов: {analysis_search["count"]} дел; {analysis_search["section_count"]} разделов')
     api = build_api(ROOT)
     print('  API:', api['contract_version'], ', '.join(f'{key}={value}' for key, value in api['coverage']['counts'].items()))
     return export, analyses, api
@@ -116,7 +135,7 @@ def stem(w):
 
 def tokens(text):
     t = modernize(text).lower().replace('ё', 'е')
-    return [w for w in re.findall(r'[а-я0-9]+', t) if len(w) > 1 and w not in STOP]
+    return [w for w in re.findall(r'[а-я0-9]+', t) if (len(w) > 1 or w.isdigit()) and w not in STOP]
 
 def stems(text):
     return [stem(w) for w in tokens(text)]
@@ -422,19 +441,18 @@ def cites_for(text, own_year):
 # ---------------------------------------------------------------- сборка
 
 def main():
-    os.makedirs(OUT, exist_ok=True)
-    vols, docs, texts = [], [], {}
+    vols, docs, texts, backmatter = [], [], {}, {}
     for vf in sorted(glob.glob(os.path.join(ROOT, 'ocr', '*', 'volume.txt'))):
         year = os.path.basename(os.path.dirname(vf))
         if not year.isdigit():
             continue
-        raw = open(vf, encoding='utf-8').read()
+        raw = Path(vf).read_text(encoding='utf-8')
         front, decs, back = split_volume(raw)
         dept = department(front)
         nums = [d['num'] for d in decs]
         gaps = [n for n in range(min(nums), max(nums) + 1) if n not in nums] if nums else []
         vols.append(dict(year=int(year), dept=dept, decisions=len(decs), gaps=gaps, file=f'text-{year}.json'))
-        open(os.path.join(OUT, f'backmatter-{year}.txt'), 'w', encoding='utf-8').write(back)
+        backmatter[year] = back
         vt = []
         for d in decs:
             i = len(docs)
@@ -451,6 +469,18 @@ def main():
                 docs[-1]['date_label'] = d['date_label']
             vt.append(d['text'])
         texts[year] = vt
+    # Проверяем все идентификаторы до первой записи в опубликованные данные.
+    # Сборщики по году пока не поддерживают два разных тома одного года.
+    if not vols:
+        raise ValueError('Нет исходных томов; опубликованные данные не изменены')
+    identities = apply_registry(dict(volumes=vols, decisions=[
+        {key: d[key] for key in ('id', 'vol', 'num', 'dept')} for d in docs]))
+    vols = identities['volumes']
+    for doc, identity in zip(docs, identities['decisions']):
+        doc['volume_id'] = identity['volume_id']
+    os.makedirs(OUT, exist_ok=True)
+    for year, back in backmatter.items():
+        Path(OUT, f'backmatter-{year}.txt').write_text(back, encoding='utf-8')
     unify_persons(docs)
     participants = load_participants(ROOT, docs)
     # --- обратный индекс
@@ -599,7 +629,7 @@ def build_single():
     blob = json.dumps(inline, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
     js = lambda n: open(os.path.join(d, n), encoding='utf-8').read().replace('</script', '<\\/script')
     html = html.replace('<script src="lex.js"></script>', '<script>window.LEX_INLINE=' + blob + '</script>\n<script>' + js('lex.js') + '</script>')
-    for script in ('concept.js', 'reader.js', 'reader-export.js', 'reader-ui.js', 'research.js', 'research-ui.js', 'app.js'):
+    for script in ('concept.js', 'analysis_search.js', 'reader.js', 'reader-export.js', 'reader-ui.js', 'research.js', 'research-ui.js', 'app.js'):
         pattern = r'<script src="' + re.escape(script) + r'(?:\?[^\"]*)?"></script>'
         html = re.sub(pattern, lambda _: '<script>' + js(script) + '</script>', html)
     html = html.replace('<title>Решения Сената: поиск и аналитика</title>', '<title>Сенат: поиск решений</title>')

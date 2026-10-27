@@ -1,0 +1,34 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.7.0",
+  "data_revision": "sha256:7f9fd1326fc167b5d3960e76a4eb946e5fc65196842b90374168a78940287d3c",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "topic",
+    "id": "topic-832bc9c319a9",
+    "label": "Опека и дееспособность"
+  },
+  "count": 8,
+  "decision_ids": [
+    "1904-021",
+    "1904-035",
+    "1904-080",
+    "1905-001",
+    "1905-042",
+    "1905-058",
+    "1905-081",
+    "1905-097"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-021.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-035.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-080.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-001.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-042.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-058.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-081.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-097.json"
+    ]
+  }
+}

@@ -71,8 +71,9 @@ def parse_printed_index(index, source_texts):
     return result
 
 
-def load_participants(root, docs):
+def load_participants(root, docs, ocr_root=None):
     root = Path(root)
+    ocr_root = Path(ocr_root) if ocr_root is not None else root / 'ocr'
     known = {d['id']: d for d in docs}
     entries, seen = [], set()
     for path in sorted((root / 'lex/participants').glob('*.json')):
@@ -83,7 +84,7 @@ def load_participants(root, docs):
             continue
         source_texts = {}
         for file, source in index['sources'].items():
-            raw = (root / 'ocr' / str(year) / file).read_bytes()
+            raw = (ocr_root / str(year) / file).read_bytes()
             if hashlib.sha256(raw).hexdigest() != source['ocr_sha256']:
                 raise ValueError(f'{file}: указатель устарел; требуется сверка по скану')
             if source.get('image') and not (root / 'lex' / source['image']).is_file():

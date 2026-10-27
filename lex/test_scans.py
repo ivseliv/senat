@@ -2,6 +2,7 @@
 """Проверка отказа от ненадёжного кадрирования и актуальности привязок."""
 import hashlib
 import json
+import os
 import tempfile
 import unittest
 import xml.etree.ElementTree as ET
@@ -53,7 +54,7 @@ class AssetTests(unittest.TestCase):
                         self.assertGreaterEqual(ref['coverage'],.90)
                         self.assertTrue(0<=ref['box'][1]<ref['box'][3]<=1)
             for fn,info in manifest['pages'].items():
-                self.assertEqual(hashlib.sha256((ROOT/'ocr'/str(year)/fn).read_bytes()).hexdigest(),info['ocr_sha256'])
+                self.assertEqual(hashlib.sha256((Path(os.environ.get('LEX_OCR_ROOT', ROOT/'ocr'))/str(year)/fn).read_bytes()).hexdigest(),info['ocr_sha256'])
 
 class LeafPDFTests(unittest.TestCase):
     def page(self, text):

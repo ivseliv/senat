@@ -2,12 +2,12 @@
 <title>API корпуса решений Сената</title>
 <style>body{max-width:850px;margin:40px auto;padding:0 18px;font:17px/1.55 system-ui,sans-serif;color:#242424}code,pre{background:#f3f3f1;border-radius:5px;padding:2px 5px}pre{padding:14px;overflow:auto}a{color:#1261a0}.note{border-left:4px solid #b56a27;padding:10px 14px;background:#fff8ef}table{border-collapse:collapse}td,th{padding:6px 12px;border-bottom:1px solid #ddd;text-align:left}</style>
 <h1>Статический API корпуса решений Сената</h1>
-<p>Версия контракта <code>1.6.0</code>. Это набор проверяемых JSON-файлов без ключа, сервера и платных сервисов.</p>
+<p>Версия контракта <code>1.7.0</code>. Это набор проверяемых JSON-файлов без ключа, сервера и платных сервисов.</p>
 <p><a href="../#/api">Страница API в интерфейсе</a> · <a href="v1/manifest.json">манифест v1</a> · <a href="v1/openapi.json">OpenAPI 3.1</a> · <a href="v1/schema.json">JSON Schema</a> · <a href="../API.md">документация</a></p>
 <table><tr><th>Решений</th><th>Пассажей</th><th>Указатель</th></tr><tr><td>384</td><td>2150</td><td>790</td></tr></table>
 <h2>Быстрый старт</h2><pre>curl -L https://ivseliv.github.io/senat/lex/api/v1/manifest.json
 curl -L https://ivseliv.github.io/senat/lex/api/v1/decisions/1904.json</pre>
-<p>Например, <a href="v1/decisions/1904-042.json">решение 1904-042</a>. Для проверки снимка сохраняйте <code>data_revision</code>: <code>sha256:994e85d211349cda22db5ec477b42ce04d462dd4f537e979daa6f0046520c857</code>.</p>
+<p>Например, <a href="v1/decisions/1904-042.json">решение 1904-042</a>. Для проверки снимка сохраняйте <code>data_revision</code>: <code>sha256:7f9fd1326fc167b5d3960e76a4eb946e5fc65196842b90374168a78940287d3c</code>.</p>
 <p class="note">Это статический API: <code>?year=1904</code> не выполняется на сервере. Берите годовой файл или полную выгрузку и фильтруйте у себя.</p>
 <h2>Ограничения</h2><p>Тексты — OCR в дореформенной орфографии. Темы, исходы, нормы, социальные признаки и ИИ-пояснения требуют сверки с первоисточником и сканом. Смещения пассажей — Unicode-диапазоны <code>[start,end)</code>, не индексы UTF-16.</p>
 <p>Условия использования и рекомендуемое цитирование: <a href="v1/terms.json">terms.json</a>. Лицензия на данные и изображения специально не подразумевается.</p></html>

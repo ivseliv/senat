@@ -32,7 +32,7 @@
   }
   function create(adapter) {
     let storage;try{storage=localStorage;}catch(_){storage=null;}
-    const store=R.createStore({storage}), compareIds=new Set(), hashes=new Map(), volumes=new Map();
+    const store=R.createStore({storage,registry:adapter.meta}), compareIds=new Set(), hashes=new Map(), volumes=new Map(), candidates=new Map();
     let detail=null,selected=null,token=0,notice='',noticeError=false;
     const docs=new Map(adapter.meta.decisions.map(d=>[d.id,d]));
     const message=(text,error=false)=>{notice=text;noticeError=error;status();};
@@ -90,7 +90,7 @@
     async function snapshot(d) {
       const [text,scans]=await Promise.all([adapter.textOf(d),adapter.loadScans(d.vol)]);
       const refs=(scans.decisions[d.id]||[]).map(file=>scans.pages[file]).filter(Boolean).map(cleanScan);
-      return {id:d.id,year:d.vol,number:d.num,department:d.dept,date_label:d.date_label||adapter.formatDate(d.date,d.date_label),headnote:d.headnote,
+      return {id:d.id,...(d.volume_id?{volume_id:d.volume_id}:{}),year:d.vol,number:d.num,department:d.dept,date_label:d.date_label||adapter.formatDate(d.date,d.date_label),headnote:d.headnote,
         url:PUBLIC+'#/d/'+d.id,source_sha256:await hash(text),printed_pages:[...new Set(refs.map(r=>r.page).filter(Number.isInteger))].sort((a,b)=>a-b),scans:refs,source_warning:adapter.warningOf?adapter.warningOf(d):''};
     }
     function quoteURL(d,q) {return PUBLIC+'#/d/'+d.id+'?'+new URLSearchParams({mode:'quote',field:q.field,at:q.start,end:q.end,sha:q.source_sha256});}
@@ -98,7 +98,7 @@
       const source=field==='headnote'?d.headnote:text, original=cut(source,start,end);
       if(!Number.isSafeInteger(start)||!Number.isSafeInteger(end)||start<0||end>cp(source).length||end<=start||!original.trim())throw Error('Диапазон цитаты не соответствует источнику.');
       const q={field,start,end,text_original:original,source_sha256:await hash(source),note,...await location(d,start,end,field)};
-      q.url=quoteURL(d,q);return q;
+      q.url=quoteURL(d,q);q.verification=R.inspectQuote(q,source,q.source_sha256).verification;return q;
     }
     async function save(d) {store.saveDecision(await snapshot(d));status();message('Решение добавлено в подборку.');}
     function saveButton(d) {const btn=h('button',{class:'btn ghost reader-save-decision','data-decision':d.id,'aria-pressed':String(store.getState().items.some(i=>i.id===d.id)),onclick:guarded(()=>save(d))},store.getState().items.some(i=>i.id===d.id)?'В подборке ✓':'В подборку');return btn;}
@@ -110,17 +110,48 @@
     }
     async function importFile(file) {
       if(!file)return;if(file.size>R.LIMITS.bytes)throw Error('Файл подборки превышает 4 МБ.');
-      const incoming=R.validate(await file.text()), prepared=JSON.parse(JSON.stringify(incoming));
+      const incoming=R.validate(await file.text(),adapter.meta), prepared=JSON.parse(JSON.stringify(incoming));
+      let archived=0;
       for(const item of prepared.items) {
-        const d=docs.get(item.id);if(!d)throw Error('В корпусе нет решения '+item.id+'. Подборка не изменена.');
-        const text=await adapter.textOf(d);item.decision=await snapshot(d);
-        for(let i=0;i<item.quotes.length;i++) {
-          const q=item.quotes[i],source=q.field==='headnote'?d.headnote:text;
-          if(await hash(source)!==q.source_sha256 || cut(source,q.start,q.end)!==q.text_original)throw Error('Цитата '+item.id+' не совпадает с текущим источником. Файл сохранён у вас, подборка не изменена.');
-          item.quotes[i]={...await makeQuote(d,q.field,q.start,q.end,text,q.note),id:q.id};
+        for(const q of item.quotes) {
+          const checked=await checkQuote(item.id,q);
+          // Копия хранит снимок источника. Меняется только отдельный результат проверки.
+          q.verification=checked.verification;
+          if(checked.candidate)candidates.set(item.id+'|'+q.id,checked.candidate);
+          if(q.verification.status!=='current')archived++;
         }
       }
-      store.importJSON(prepared,{merge:true});render();message('Подборка объединена с текущей. Существующие заметки и цитаты сохранены.');
+      store.importJSON(prepared,{merge:true});render();message('Подборка объединена с текущей. Существующие заметки и цитаты сохранены.'+(archived?' Архивных или непроверенных цитат: '+archived+'. Проверьте их перед использованием.':''));
+    }
+    async function checkQuote(id,q) {
+      const d=docs.get(id),checked_at=new Date().toISOString();
+      if(!d)return {verification:{status:'missing',checked_at,reason:'Решение отсутствует в текущем корпусе. Архивные цитата, страницы и заметка сохранены.'},candidate:null};
+      try {
+        const source=q.field==='headnote'?d.headnote:await adapter.textOf(d);
+        return R.inspectQuote(q,source,await hash(source));
+      } catch(_) {return {verification:{status:'unverified',checked_at,reason:'Текущий источник не удалось загрузить. Снимок и заметка сохранены; повторите проверку позже.'},candidate:null};}
+    }
+    async function verifyQuote(id,q) {
+      const checked=await checkQuote(id,q),key=id+'|'+q.id;
+      if(checked.candidate)candidates.set(key,checked.candidate);else candidates.delete(key);
+      store.verifyQuote(id,q.id,checked.verification);render();message(checked.verification.reason);
+    }
+    async function rebindQuote(id,q) {
+      const d=docs.get(id),checked=await checkQuote(id,q);
+      if(!d||!checked.candidate)throw Error('Единственное буквальное совпадение не подтверждено. Архивная цитата сохранена.');
+      const text=await adapter.textOf(d),source=q.field==='headnote'?d.headnote:text;
+      if(await hash(source)!==checked.candidate.sha256)throw Error('Источник изменился во время проверки. Повторите проверку.');
+      const fresh=await makeQuote(d,q.field,checked.candidate.start,checked.candidate.end,text,q.note);
+      store.addQuote(await snapshot(d),fresh);candidates.delete(id+'|'+q.id);
+      store.verifyQuote(id,q.id,checked.verification);render();
+      message('Сохранена отдельная цитата с текущими SHA и страницами. Архивный снимок и его заметка сохранены.');
+    }
+    function quoteReview(item,q) {
+      const verification=q.verification, candidate=candidates.get(item.id+'|'+q.id);
+      return h('div',{class:'reader-quote-review'},
+        h('p',{class:'small '+(verification?.status==='current'?'muted':'preliminary-note')},verification?.reason||'Сохранённый снимок цитаты. Актуальность после открытия ещё не проверена.'),
+        h('button',{class:'btn ghost reader-verify-quote',onclick:guarded(()=>verifyQuote(item.id,q))},'Проверить актуальность'),
+        candidate?h('button',{class:'btn ghost reader-rebind-quote',onclick:guarded(()=>rebindQuote(item.id,q))},'Сохранить привязку к текущему тексту отдельной цитатой'):null);
     }
     function noteBox(value,label,save,className) {
       const input=h('textarea',{class:className,rows:3,maxlength:R.LIMITS.note,'aria-label':label,oninput:()=>{try{save(input.value);}catch(err){message(err.message,true);}}});input.value=value;
@@ -149,6 +180,7 @@
           h('div',{class:'reader-quotes'},item.quotes.map(q=>h('section',{class:'reader-quote','data-quote-id':q.id},
             h('blockquote',{class:'source-quote reader-quote-original'},q.text_original),
             q.source_warning?h('p',{class:'preliminary-note'},q.source_warning):null,
+            quoteReview(item,q),
             h('p',{class:'small reader-quote-pages'},(q.field==='headnote'?'Заголовок издания. ':'')+pageLabel(q)),
             h('a',{class:'reader-quote-open',href:localQuoteURL(item.id,q)},'Открыть это место'),
             h('ul',{class:'reader-scan-links'},q.scans.map(scan=>h('li',{},h('a',{href:PUBLIC+scan.full.replace(PUBLIC,''),target:'_blank',rel:'noopener'},'Полная страница'+(scan.page==null?' без печатного номера':', с. '+scan.page))))),
@@ -225,7 +257,7 @@
     $('reader-title').addEventListener('input',event=>{try{store.setTitle(event.target.value);}catch(err){message(err.message,true);}});
     $('reader-note').addEventListener('input',event=>{try{store.setNote(event.target.value);}catch(err){message(err.message,true);}});
     $('reader-compare').addEventListener('click',guarded(compare));
-    $('reader-research').addEventListener('click',()=>{location.hash='#/research?'+new URLSearchParams({ids:[...compareIds].join(',')});});
+    $('reader-research').addEventListener('click',()=>{root.location.hash='#/research?'+new URLSearchParams({ids:[...compareIds].join(',')});});
     for(const type of ['json','markdown','html','csv'])$('reader-export-'+type).addEventListener('click',()=>download(type));
     $('reader-import').addEventListener('change',guarded(async event=>{const file=event.target.files[0];event.target.value='';await importFile(file);}));
     $('reader-recover').addEventListener('click',()=>{if(confirm('Перезаписать повреждённое хранилище текущими доступными записями? Сначала сохраните JSON-копию.')){store.recoverStorage();status();}});

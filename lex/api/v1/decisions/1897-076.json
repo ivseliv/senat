@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.6.0",
-  "data_revision": "sha256:994e85d211349cda22db5ec477b42ce04d462dd4f537e979daa6f0046520c857",
+  "contract_version": "1.7.0",
+  "data_revision": "sha256:7f9fd1326fc167b5d3960e76a4eb946e5fc65196842b90374168a78940287d3c",
   "resource": "decision",
   "scope": {
     "id": "1897-076",
@@ -12,6 +12,14 @@
     "year": 1897,
     "number": 76,
     "date": "1897-11-25",
+    "volume_id": "senat-civil-1897",
+    "topic_ids": [
+      "work",
+      "contracts",
+      "companies",
+      "evidence"
+    ],
+    "automatic_topics": [],
     "date_label": null,
     "department": "Гражданский кассационный департамент",
     "headnote_original": "Прошеніе повѣреннаго Адольфа Беккера, присяжнаго повѣреннаго Густава Вебера, объ отмѣнѣ рѣшенія Газенпотъ-Гробинскаго мирового съѣзда по иску Андрея Лукаса съ довѣрителя просителя 133 руб.",
@@ -24,7 +32,12 @@
       "Процессуальный порядок",
       "Доказательства"
     ],
-    "topics": [],
+    "topics": [
+      "Труд и личные услуги",
+      "Договоры и обязательства",
+      "Общества, предприятия и банки",
+      "Доказательства"
+    ],
     "participant_groups": {},
     "statutes": {
       "? ст. 2936": 2,

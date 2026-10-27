@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.6.0",
-  "data_revision": "sha256:994e85d211349cda22db5ec477b42ce04d462dd4f537e979daa6f0046520c857",
+  "contract_version": "1.7.0",
+  "data_revision": "sha256:7f9fd1326fc167b5d3960e76a4eb946e5fc65196842b90374168a78940287d3c",
   "resource": "decision",
   "scope": {
     "id": "1897-040",
@@ -12,6 +12,15 @@
     "year": 1897,
     "number": 40,
     "date": "1897-01-15",
+    "volume_id": "senat-civil-1897",
+    "topic_ids": [
+      "costs",
+      "procedure"
+    ],
+    "automatic_topics": [
+      "Судебные издержки и пошлины",
+      "Крестьяне, общины, сословия"
+    ],
     "date_label": null,
     "department": "Гражданский кассационный департамент",
     "headnote_original": "Прошеніе мѣщанина Менделя Литинецкаго объ отмѣнѣ рѣшенія Литинскаго мироваго съѣзда по иску Карла Тритшеля съ просителя 120 р.",
@@ -22,8 +31,8 @@
     "outcome": "Иное",
     "procedure": [],
     "topics": [
-      "Судебные издержки и пошлины",
-      "Крестьяне, общины, сословия"
+      "Судебные расходы и пошлины",
+      "Судебный процесс и подсудность"
     ],
     "participant_groups": {
       "gender": [

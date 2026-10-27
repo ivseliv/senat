@@ -3,14 +3,7 @@
   'use strict';
   const L = typeof module !== 'undefined' && module.exports ? require('./lex.js') : root.Lex;
   const filler = new Set(L.stems('как можно нужно должен ли когда почему какой какие при если суд требовать требование вопрос порядок разница отличие различие'));
-  const allStems = s => (L.modernize(s).toLowerCase().replace(/ё/g, 'е').match(/[а-я0-9]+/g) || []).map(L.stem);
-  function contains(arr, seq) {
-    outer: for (let i=0; i+seq.length<=arr.length; i++) {
-      for (let j=0; j<seq.length; j++) if (arr[i+j] !== seq[j]) continue outer;
-      return true;
-    }
-    return false;
-  }
+  const allStems = L.allStems;
   function parse(q, glossary) {
     // Сохраняем слово рядом с основой: неизвестные слова ещё раз проходят
     // L.stems() при поиске. Повторное усечение основы (нотариуса → нотариу
@@ -41,7 +34,7 @@
       const key=group.concept ? 'concept:'+group.concept : 'word:'+L.stems(group.modern[0]).join(' ');
       if (!unique.has(key)) unique.set(key,group);
     }
-    return {groups:[...unique.values()], words:tokens.map(w=>w.stem)};
+    return {groups:[...unique.values()], words:tokens.map(w=>w.stem),unsupportedOperators:L.unsupportedOperators(q)};
   }
   // Частичный поиск требует хотя бы две разные совпавшие группы. Номера
   // и распознанные юридические понятия обязательны; отрицания и операторы
@@ -52,30 +45,38 @@
       !/["«»“”„]|(?:^|\s)[+−-]\S/.test(q);
   }
   function searchAll(engines, q, method, options) {
-    const results=engines.map(e=>e.search(q,method,options));
+    let results=engines.map(e=>e.search(q,method,{...options,fuzzy:false}));
     let hits=results.flatMap(r=>r.hits);
+    if(!hits.length && (!options || options.ocr!==false) && (!options || options.fuzzy!==false)) {
+      results=engines.map(e=>e.search(q,method,{...options,fuzzy:true}));hits=results.flatMap(r=>r.hits);
+    }
     // Полное совпадение в любом томе важнее частичных из остальных томов.
     const strict=hits.filter(h=>!h.partial);
     if (strict.length) hits=strict;
-    hits.sort((a,b)=>Number(Boolean(a.context))-Number(Boolean(b.context)) || b.score-a.score || a.passage.id.localeCompare(b.passage.id));
+    hits.sort((a,b)=>Number(Boolean(a.ocr))-Number(Boolean(b.ocr)) || Number(Boolean(a.context))-Number(Boolean(b.context)) || b.score-a.score || a.passage.id.localeCompare(b.passage.id));
     return {...(results[0] || {expanded:[],concepts:[],query:{groups:[],words:[]}}),hits,partial:hits.some(h=>h.partial)};
   }
   function makeEngines(volumes, glossary) {
     // Для нескольких томов BM25 использует общие частоты и среднюю длину.
     // Иначе редкое слово в маленьком томе получало бы другой вес при слиянии выдачи.
-    const stats=['original','enriched'].map(field=>{
+    const stats=['original','enriched','ocr'].map(field=>{
       let n=0,totalLength=0;const df=new Map();
       for(const volume of volumes) {
-        const index=volume[field];n+=index.n;totalLength+=index.len.reduce((sum,length)=>sum+length,0);
+        const index=field==='ocr' ? volume.original.ocr || volume.original : volume[field];n+=index.n;totalLength+=index.len.reduce((sum,length)=>sum+length,0);
         for(const [term,list] of Object.entries(index.post)) df.set(term,(df.get(term)||0)+list.length/2);
       }
       return {n,avgdl:totalLength/Math.max(1,n),df};
     });
-    return volumes.map(data=>makeEngine(data,glossary,stats));
+    const queryIndexes=volumes.flatMap(volume=>[volume.original,volume.original.ocr].filter(Boolean));
+    return volumes.map(data=>makeEngine(data,glossary,stats,queryIndexes));
   }
-  function makeEngine(data, glossary, collectionStats) {
+  function makeEngine(data, glossary, collectionStats, queryIndexes) {
     const docs=data.passages, original=data.original, enriched=data.enriched;
-    const vocab=new Map((original.vocabulary || []).map((s,i)=>[s,i]));
+    const phraseMatches=L.sequenceMatcher(original);
+    const ocrEngine=original.ocr ? makeEngine({passages:docs,original:original.ocr,enriched},glossary,
+      collectionStats ? [collectionStats[2],collectionStats[1]] : null) : null;
+    const fuzzyIndexes=queryIndexes || [original,original.ocr].filter(Boolean);
+    const knownWords=original.ocr ? new Set(fuzzyIndexes.flatMap(index=>index.lexicon || [])) : null;
     const caches=[new Map(),new Map()];
     function post(index, word, which) {
       if (!caches[which].has(word)) {
@@ -92,8 +93,8 @@
         const lists=terms.map(t=>post(index,t,which));
         let ids=[...lists[0].keys()].filter(id=>lists.every(p=>p.has(id)));
         if(phrase && allStems(name).length>1) {
-          const seq=allStems(name).map(s=>vocab.get(s));
-          ids=ids.filter(id=>seq.every(s=>s!==undefined) && contains(original.sequence[id],seq));
+          const seq=allStems(name);
+          ids=ids.filter(id=>phraseMatches(id,seq));
         }
         for(const id of ids) {
           let score=0;
@@ -108,8 +109,9 @@
       }
       return {scores,matches};
     }
-    function search(q, method, options) {
+    function exactSearch(q, method, options) {
       method=method || 'glossary';
+      const filter=options && options.filter || (()=>true);
       const pq=parse(q,method==='baseline'?[]:glossary);
       if(!pq.groups.length) return {hits:[],expanded:[],concepts:[],query:pq};
       let candidates=null; const total=new Map(), evidence=new Map(), groupMatches=[], groupScores=[];
@@ -138,7 +140,7 @@
           return missing.length<=1 && missing.every(g=>!g.concept && !/\d/.test(g.modern[0]));
         }));
       }
-      const hits=[...(candidates||[])].map(i=> {
+      const hits=[...(candidates||[])].filter(i=>filter(docs[i])).map(i=> {
         const missing=pq.groups.filter((g,j)=>!groupMatches[j].has(i)).map(g=>g.concept || g.modern[0]);
         return {i,score:total.get(i),matched:evidence.get(i),passage:docs[i],partial:missing.length>0,missing};
       });
@@ -153,10 +155,11 @@
           if (present.has(i)) continue;
           const own=pq.groups.filter((g,j)=>groupMatches[j].has(i)).length;
           if (own<Math.max(2,Math.ceil(pq.groups.length*0.6))) continue;
-          const p=docs[i], supports=new Set(); let score=total.get(i), complete=true;
+          const p=docs[i], supports=new Set(); if(!filter(p))continue;
+          let score=total.get(i), complete=true;
           for (let j=0;j<pq.groups.length;j++) {
             if (groupMatches[j].has(i)) continue;
-            const nearby=[i-1,i+1].filter(k=>docs[k] && docs[k].decision===p.decision &&
+            const nearby=[i-1,i+1].filter(k=>docs[k] && filter(docs[k]) && docs[k].decision===p.decision &&
               Math.max(docs[k].end,p.end)-Math.min(docs[k].start,p.start)<=4000 &&
               Math.max(docs[k].start,p.start)<=Math.min(docs[k].end,p.end)+80 && groupMatches[j].has(k));
             nearby.sort((a,b)=>groupScores[j].get(b)-groupScores[j].get(a));
@@ -185,21 +188,40 @@
       }
       return {hits:distinct,expanded:[...new Set(pq.groups.flatMap(g=>g.old))],concepts:pq.groups.filter(g=>g.concept),query:pq};
     }
+    function search(q,method,options) {
+      const result=exactSearch(q,method,options);
+      if(!ocrEngine || options && options.ocr===false)return result;
+      const normalized=L.normalizeOcr(q,knownWords);
+      let extra=ocrEngine.search(normalized.text,method,{...options,ocr:false}),changes=normalized.corrections;
+      if(!result.hits.length && !extra.hits.length && (!options || options.fuzzy!==false)) {
+        const fuzzy=L.fuzzyQuery(normalized.text,fuzzyIndexes);
+        if(fuzzy){extra=ocrEngine.search(fuzzy.text,method,{...options,ocr:false});changes=[...changes,...fuzzy.corrections];}
+      }
+      for(const hit of extra.hits) {
+        const previous=result.hits.findIndex(h=>h.i===hit.i);
+        if(previous>=0) {
+          if(!result.hits[previous].partial || hit.partial)continue;
+          result.hits.splice(previous,1);
+        }
+        // OCR-окна не дублируют уже найденное полное совпадение.
+        // Координаты и сам исходник остаются прежними.
+        const p=hit.passage;
+        if(result.hits.some(h=>!h.ocr && (!h.partial || hit.partial) && h.passage.decision===p.decision &&
+          Math.max(0,Math.min(h.passage.end,p.end)-Math.max(h.passage.start,p.start))/Math.min(p.end-p.start,h.passage.end-h.passage.start)>0.45))continue;
+        const terms=[...extra.query.words,...hit.matched.flatMap(L.stems)];
+        const corrections=L.ocrCorrections(original.ocr,hit.i,terms,changes);
+        if(hit.context)for(const support of hit.context)corrections.push(...L.ocrCorrections(original.ocr,docs.indexOf(support),terms,[]));
+        result.hits.push({...hit,ocr:true,corrections:[...new Map(corrections.map(c=>[c.kind+'\0'+c.from+'\0'+c.to,c])).values()]});
+      }
+      return result;
+    }
     return {search};
   }
-  function highlight(text, terms) {
-    const set=new Set(terms.flatMap(L.stems));
-    let html='',pos=0; const re=/[А-Яа-яЁёѢѣІіѲѳѴѵъь0-9]+/g; let m;
-    while((m=re.exec(text))) {
-      html+=L.esc(text.slice(pos,m.index));
-      const escaped=L.esc(m[0]);
-      html+=set.has(allStems(m[0])[0])?'<mark>'+escaped+'</mark>':escaped;
-      pos=m.index+m[0].length;
-    }
-    return html+L.esc(text.slice(pos));
+  function highlight(text, terms, corrections) {
+    return L.highlightText(text,terms.flatMap(L.stems),corrections);
   }
-  function highlightEvidence(text, terms, evidence) {
-    const html=highlight(text,terms);
+  function highlightEvidence(text, terms, evidence, corrections) {
+    const html=highlight(text,terms,corrections);
     if(html.includes('<mark>') || !evidence) return html;
     const at=text.indexOf(evidence);
     if(at<0) return html;

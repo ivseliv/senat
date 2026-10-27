@@ -1,4 +1,4 @@
-/* Настоящий Chromium: три сравнения, все выбранные дела и страницы цитат. */
+/* Настоящий Chromium: все сравнения, выбранные дела и страницы цитат. */
 const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=require('fs'),path=require('path');
 const lex=path.resolve(__dirname,'..'),base=process.env.LEX_TEST_URL||'http://127.0.0.1:8774/';
 const out=process.env.LEX_SCREENSHOTS||path.resolve(lex,'../../comparative-guides-2026-10/browser');
@@ -90,6 +90,6 @@ const link=(g,e)=>base+'#/d/'+e.decision+'?'+new URLSearchParams({mode:'guides',
   await op.waitForSelector('#passage-target');
   assert.equal((await op.locator('.passage-focus').allTextContents()).join('\n\n'),note.text);
   assert(!requests.some(url=>/\/data\//.test(url)));assert.deepEqual(errors,[]);
-  console.log(JSON.stringify({themes:3,cases:checked,checked:'буквальные цитаты, исходные страницы восьми дел, полная картинка, прямые ссылки/перезагрузка/возврат, многостраничная цитата, примечание, мобильная/тёмная тема, списки чтения и офлайн-текст',errors,screenshots:out},null,2));
+  console.log(JSON.stringify({themes:data.guides.length,cases:checked,checked:'буквальные цитаты, исходные страницы выбранных дел, полная картинка, прямые ссылки/перезагрузка/возврат, многостраничная цитата, примечание, мобильная/тёмная тема, списки чтения и офлайн-текст',errors,screenshots:out},null,2));
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

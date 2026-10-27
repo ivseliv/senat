@@ -16,7 +16,7 @@ class GuideTests(unittest.TestCase):
         for guide in data['guides']:
             with self.subTest(guide=guide['id']):
                 ids=[i for group in guide['groups'] for i in group['decisions']]
-                self.assertGreaterEqual(len(ids), 5)
+                self.assertGreaterEqual(len(ids), 2 if guide.get('comparison') else 5)
                 self.assertEqual(len(ids),len(set(ids)))
                 self.assertTrue(all(i in docs for i in ids))
 
@@ -24,7 +24,10 @@ class GuideTests(unittest.TestCase):
         generated=comparisons.build()
         original=json.loads((ROOT/'guides-source.json').read_text())
         self.assertEqual(generated, json.loads((ROOT/'data/guides.json').read_text()))
-        self.assertEqual(generated['comparison_count'], 3)
+        self.assertEqual(generated['comparison_count'], 9)
+        self.assertEqual({g['id'] for g in generated['guides']}, {
+            'inheritance', 'property-notary', 'commerce-transport', 'contracts',
+            'family', 'insolvency', 'evidence', 'deadlines', 'enforcement'})
         for before, after in zip(original['guides'],generated['guides']):
             self.assertEqual(before,{k:v for k,v in after.items() if k!='comparison'})
 

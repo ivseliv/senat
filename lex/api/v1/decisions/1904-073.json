@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.6.0",
-  "data_revision": "sha256:994e85d211349cda22db5ec477b42ce04d462dd4f537e979daa6f0046520c857",
+  "contract_version": "1.7.0",
+  "data_revision": "sha256:7f9fd1326fc167b5d3960e76a4eb946e5fc65196842b90374168a78940287d3c",
   "resource": "decision",
   "scope": {
     "id": "1904-073",
@@ -12,6 +12,13 @@
     "year": 1904,
     "number": 73,
     "date": "1904-02-18",
+    "volume_id": "senat-civil-1904",
+    "topic_ids": [
+      "debt"
+    ],
+    "automatic_topics": [
+      "Векселя, займы, залог"
+    ],
     "date_label": null,
     "department": "Гражданский кассационный департамент",
     "headnote_original": "Прошеніе повѣреннаго Августа Каспари, присяжнаго повѣреннаго Лебера, объ отмѣнѣ рѣшенія Венденъ-Валкскаго мироваго съѣзда по иску Филиппа Розенгартена съ Каспари 360 рубл. по тремъ векселямъ.",
@@ -22,7 +29,7 @@
     "outcome": "Отменено, дело направлено на новое рассмотрение",
     "procedure": [],
     "topics": [
-      "Векселя, займы, залог"
+      "Долги, векселя и залог"
     ],
     "participant_groups": {},
     "statutes": {},

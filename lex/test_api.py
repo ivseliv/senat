@@ -7,6 +7,7 @@ from pathlib import Path
 
 from api import API_VERSION, CONTRACT_VERSION, build_api
 from guide_comparisons import guide_decisions
+from topic_navigation import LEGACY_TOPICS
 
 
 ROOT = Path(__file__).resolve().parent
@@ -146,7 +147,11 @@ class ApiTest(unittest.TestCase):
                     decision = decisions[ident]
                     if kind == 'year': self.assertEqual(str(decision['year']), label)
                     elif kind == 'outcome': self.assertEqual(decision['outcome'], label)
-                    elif kind == 'topic': self.assertIn(label, decision['topics'])
+                    elif kind == 'topic':
+                        if label in LEGACY_TOPICS:
+                            self.assertIn(LEGACY_TOPICS[label], decision['topic_ids'])
+                        else:
+                            self.assertIn(label, decision['topics'])
                     elif kind == 'procedure': self.assertIn(label, decision['procedure'])
                     elif kind == 'act': self.assertTrue(any(value.split(' ', 1)[0] == label for value in decision['statutes']))
                     elif kind == 'article': self.assertIn(label, decision['statutes'])
@@ -161,8 +166,8 @@ class ApiTest(unittest.TestCase):
         resource=read(API/'editorial/guides.json')['item']
         self.assertEqual(resource,self.guides)
         counts=self.manifest['coverage']['counts']
-        self.assertEqual(counts['guide_comparisons'],3)
-        self.assertEqual(counts['guide_comparison_decisions'],8)
+        self.assertEqual(counts['guide_comparisons'],9)
+        self.assertEqual(counts['guide_comparison_decisions'],20)
         self.assertIn('GuideComparison',read(API/'schema.json')['$defs'])
 
     def test_catalog_is_available_with_exact_coverage(self):
@@ -190,6 +195,23 @@ class ApiTest(unittest.TestCase):
             if ref.get('box') is not None:
                 self.assertEqual(len(ref['box']), 4)
                 self.assertTrue(all(0 <= value <= 1 for value in ref['box']))
+
+    def test_editorial_search_topics_and_volume_ids_are_consistent(self):
+        meta = read(ROOT / 'data/meta.json')
+        volume_ids = {v['volume_id'] for v in meta['volumes']}
+        volumes = read(API / 'volumes.json')['items']
+        self.assertEqual({v['volume_id'] for v in volumes}, volume_ids)
+        self.assertTrue(all(v['department_id'] and v['edition'] for v in volumes))
+        catalog = {t['id']: t for t in self.catalog['topics']}
+        for decision in self.decisions:
+            self.assertIn(decision['volume_id'], volume_ids)
+            self.assertEqual(decision['topics'], [catalog[t]['title'] for t in decision['topic_ids']])
+            self.assertTrue(all(decision['id'] in catalog[t]['decision_ids'] for t in decision['topic_ids']))
+        search = read(API / 'editorial/analysis-search.json')['item']
+        self.assertEqual(search, read(ROOT / 'data/analysis-search.json'))
+        self.assertIn('/editorial/analysis-search.json', read(API / 'openapi.json')['paths'])
+        paths = [item['path'] for item in self.manifest['files']]
+        self.assertEqual(len(paths), len(set(paths)))
 
     def test_rebuild_is_deterministic(self):
         before = digest_tree(ROOT / 'api')

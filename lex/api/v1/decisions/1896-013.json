@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.6.0",
-  "data_revision": "sha256:994e85d211349cda22db5ec477b42ce04d462dd4f537e979daa6f0046520c857",
+  "contract_version": "1.7.0",
+  "data_revision": "sha256:7f9fd1326fc167b5d3960e76a4eb946e5fc65196842b90374168a78940287d3c",
   "resource": "decision",
   "scope": {
     "id": "1896-013",
@@ -12,6 +12,14 @@
     "year": 1896,
     "number": 13,
     "date": "1896-03-11",
+    "volume_id": "senat-general-1896",
+    "topic_ids": [
+      "state"
+    ],
+    "automatic_topics": [
+      "Векселя, займы, залог",
+      "Недвижимость и земля"
+    ],
     "date_label": null,
     "department": "Общее собрание",
     "headnote_original": "По вн«е сен иго му Пераопри- сутствующдмъ вопросу о томъ: можетъ ли быть при мѣняемъ къ выдачѣ судеб- н? ы м приставамъ залога, жности, порядокъ, установ ленный ст. 13 полож. о нотар. части (т. XVI ч. 1 св. зак., й з д. 1892 года)?",
@@ -22,8 +30,7 @@
     "outcome": "Иное",
     "procedure": [],
     "topics": [
-      "Векселя, займы, залог",
-      "Недвижимость и земля"
+      "Казна, служба и публичные учреждения"
     ],
     "participant_groups": {},
     "statutes": {},
