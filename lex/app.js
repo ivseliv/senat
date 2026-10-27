@@ -86,7 +86,8 @@
       h('p',{class:'small muted'},'Порядок колонок и границы решения восстановлены по скану. Отдельные буквы, имена и числа не вычитаны сплошь.') : null;
   }
 
-  async function loadJSON(name) { if (window.LEX_INLINE && window.LEX_INLINE[name]) return window.LEX_INLINE[name]; const r = await fetch(DATA + name); if (!r.ok) throw new Error(name + ': ' + r.status); return r.json(); }
+  const releaseURL = url => window.LEX_RELEASE ? url + (url.includes('?') ? '&' : '?') + 'v=' + encodeURIComponent(window.LEX_RELEASE) : url;
+  async function loadJSON(name) { if (window.LEX_INLINE && window.LEX_INLINE[name]) return window.LEX_INLINE[name]; const r = await fetch(releaseURL(DATA + name)); if (!r.ok) throw new Error(name + ': ' + r.status); return r.json(); }
   async function loadVol(y) { if (!S.texts[y]) S.texts[y] = loadJSON(`text-${y}.json`); return S.texts[y]; }
   async function textOf(d) { return (await loadVol(d.vol))[localIndex(d)]; }
   async function loadAnalysesIndex() {
@@ -167,7 +168,7 @@
     return (window.LEX_INLINE ? 'https://ivseliv.github.io/senat/lex/api/v1/' : 'api/v1/') + name;
   }
   async function loadApi() {
-    if (!S.api.promise) S.api.promise = fetch(apiURL('manifest.json')).then(r => {
+    if (!S.api.promise) S.api.promise = fetch(releaseURL(apiURL('manifest.json'))).then(r => {
       if (!r.ok) throw new Error('manifest.json: ' + r.status);
       return r.json();
     }).then(data => (S.api.data = data));
