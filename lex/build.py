@@ -628,7 +628,7 @@ def build_single():
             inline[f] = json.load(open(os.path.join(OUT, f), encoding='utf-8'))
     blob = json.dumps(inline, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
     js = lambda n: open(os.path.join(d, n), encoding='utf-8').read().replace('</script', '<\\/script')
-    html = html.replace('<script src="lex.js"></script>', '<script>window.LEX_INLINE=' + blob + '</script>\n<script>' + js('lex.js') + '</script>')
+    html = re.sub(r'<script src="lex\.js(?:\?[^\"]*)?"></script>', lambda _: '<script>window.LEX_INLINE=' + blob + '</script>\n<script>' + js('lex.js') + '</script>', html)
     for script in ('concept.js', 'analysis_search.js', 'reader.js', 'reader-export.js', 'reader-ui.js', 'research.js', 'research-ui.js', 'app.js'):
         pattern = r'<script src="' + re.escape(script) + r'(?:\?[^\"]*)?"></script>'
         html = re.sub(pattern, lambda _: '<script>' + js(script) + '</script>', html)
