@@ -28,6 +28,7 @@ from topic_navigation import apply_catalog
 from analysis_search import build as build_analysis_search
 from volumes import apply_registry
 from search_assets import refresh_search_assets
+from geography import write as build_geography
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 OUT = os.path.join(ROOT, 'lex', 'data')
@@ -93,6 +94,8 @@ def build_published_artifacts():
     (Path(OUT) / 'analysis-search.json').write_text(
         json.dumps(analysis_search, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
     print(f'  поиск разборов: {analysis_search["count"]} дел; {analysis_search["section_count"]} разделов')
+    geography = build_geography(ROOT)
+    print('  география:', geography['coverage'])
     api = build_api(ROOT)
     print('  API:', api['contract_version'], ', '.join(f'{key}={value}' for key, value in api['coverage']['counts'].items()))
     return export, analyses, api
@@ -622,6 +625,9 @@ def build_single():
     """Один HTML-файл с данными внутри: lex/dist/senat-lex.html (открывается без сервера)."""
     d = os.path.join(ROOT, 'lex')
     html = open(os.path.join(d, 'index.html'), encoding='utf-8').read()
+    # Автономная карта/корпус не должны обращаться за веб-шрифтом.
+    # CSS уже содержит системные serif fallback; сканы по-прежнему отдельны.
+    html = re.sub(r'<link\b[^>]*href="https://fonts\.googleapis\.com[^\"]*"[^>]*>', '', html)
     inline = {}
     for f in sorted(os.listdir(OUT)):
         if f.endswith('.json'):
@@ -629,9 +635,12 @@ def build_single():
     blob = json.dumps(inline, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
     js = lambda n: open(os.path.join(d, n), encoding='utf-8').read().replace('</script', '<\\/script')
     html = re.sub(r'<script src="lex\.js(?:\?[^\"]*)?"></script>', lambda _: '<script>window.LEX_INLINE=' + blob + '</script>\n<script>' + js('lex.js') + '</script>', html)
-    for script in ('concept.js', 'analysis_search.js', 'reader.js', 'reader-export.js', 'reader-ui.js', 'research.js', 'research-ui.js', 'app.js'):
+    for script in ('concept.js', 'analysis_search.js', 'reader.js', 'reader-export.js', 'reader-ui.js', 'research.js', 'research-ui.js', 'vendor/leaflet/leaflet.js', 'places.js', 'app.js'):
         pattern = r'<script src="' + re.escape(script) + r'(?:\?[^\"]*)?"></script>'
         html = re.sub(pattern, lambda _: '<script>' + js(script) + '</script>', html)
+    css = Path(d, 'vendor/leaflet/leaflet.css').read_text(encoding='utf-8')
+    html = re.sub(r'<link\b[^>]*href="vendor/leaflet/leaflet\.css(?:\?[^\"]*)?"[^>]*>',
+                  lambda _: '<style>/* ' + Path(d, 'vendor/leaflet/LICENSE').read_text() + ' */\n' + css + '</style>', html)
     html = html.replace('<title>Решения Сената: поиск и аналитика</title>', '<title>Сенат: поиск решений</title>')
     os.makedirs(os.path.join(d, 'dist'), exist_ok=True)
     out = os.path.join(d, 'dist', 'senat-lex.html')

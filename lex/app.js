@@ -24,7 +24,7 @@
   ];
 
   const S = {
-    meta: null, index: null, an: null, engine: null, texts: {}, reader: null, research: null,
+    meta: null, index: null, an: null, engine: null, texts: {}, reader: null, research: null, places: null,
     opts: { modern: false, gloss: true, ocr: true }, detailId: null,
     sense: { config: null, engines: [], promise: null, q: '', topic: '', year: '', hits: [], shown: 10, token: 0, partial: false, suggested: 0 },
     map: { q: '', topic: '', token: 0 },
@@ -254,10 +254,12 @@
     const { path, p } = readHash();
     S.opts.ocr=p.get('ocr')!=='0';
     for(const id of ['search-ocr','sense-ocr'])if($('#'+id))$('#'+id).checked=S.opts.ocr;
-    const requested = path.startsWith('d/') ? (['sense','participants','map','laws','analyses','analysis','guides','reader','quote','research'].includes(p.get('mode')) ? (p.get('mode') === 'analysis' ? 'analyses' : p.get('mode') === 'quote' ? 'reader' : p.get('mode')) : 'search') : (path.split('/')[0] || 'search');
-    const tab = ['research','search','sense','map','laws','participants','guides','analyses','reader','api','analytics','about'].includes(requested) ? requested : 'search';
+    const requested = path.startsWith('d/') ? (['sense','participants','map','places','laws','analyses','analysis','guides','reader','quote','research'].includes(p.get('mode')) ? (p.get('mode') === 'analysis' ? 'analyses' : p.get('mode') === 'quote' ? 'reader' : p.get('mode')) : 'search') : (path.split('/')[0] || 'search');
+    const tab = ['research','search','sense','map','places','laws','participants','guides','analyses','reader','api','analytics','about'].includes(requested) ? requested : 'search';
+    const preservePlacesScroll=tab==='places'&&!$('#view-places').hidden;
     if(tab!=='research')S.research.cancel();
-    for (const t of ['research','search','sense','map','laws','participants','guides','analyses','reader','api','analytics','about']) {
+    if(tab!=='places')S.places.cancel();
+    for (const t of ['research','search','sense','map','places','laws','participants','guides','analyses','reader','api','analytics','about']) {
       $('#view-' + t).hidden = t !== tab;
       $('#tab-' + t).setAttribute('aria-current', t === tab ? 'page' : 'false');
     }
@@ -274,6 +276,9 @@
     } else if (tab === 'map') {
       S.map.q = p.get('q') || ''; S.map.topic = topicId(p.get('t') || '');
       $('#map-q').value = S.map.q; $('#map-topic').value = S.map.topic; renderMap();
+      if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
+    } else if (tab === 'places') {
+      S.places.render(p);
       if (path.startsWith('d/')) openDetail(path.slice(2)); else closeDetail();
     } else if (tab === 'laws') {
       S.laws.q = p.get('q') || ''; S.laws.code = p.get('c') || '';
@@ -301,7 +306,7 @@
     } else closeDetail();
     if (tab === 'analytics') renderAnalytics();
     if (tab === 'about') renderCorpus();
-    window.scrollTo(0, path.startsWith('d/') ? window.scrollY : 0);
+    if(!preservePlacesScroll)window.scrollTo(0, path.startsWith('d/') ? window.scrollY : 0);
   }
   async function renderGuides(more=false) {
     const box=$('#guides-results'),status=$('#guides-status'),token=++S.guides.token;
@@ -646,8 +651,8 @@
       readHash().p.get('mode')==='guides'?loadTopicCatalog():null,
       readHash().p.get('mode')==='laws'&&readHash().p.has('law')?loadLaws():null]);
     if (S.detailId !== id || $('#detail').hidden) return;
-    const params = readHash().p, inSense = ['sense','map','passage','laws','analysis','guides','quote','research'].includes(params.get('mode'));
-    let target = null, senseTerms = [], partialMissing = [], quoteWarning = '', detailHit=null;
+    const params = readHash().p, inSense = ['sense','map','places','passage','laws','analysis','guides','quote','research'].includes(params.get('mode'));
+    let target = null, senseTerms = [], partialMissing = [], quoteWarning = '', detailHit=null, verifiedGeography=false;
     if (params.get('mode') === 'quote' || params.get('mode') === 'research') {
       if (params.get('mode') === 'research' && !params.has('at')) {
         target = null;
@@ -655,6 +660,21 @@
       target = await S.reader.resolveQuote(d,text,params);
       if (target.warning) { quoteWarning=target.warning; target=null; }
       if (S.detailId !== id || $('#detail').hidden) return;
+      }
+    } else if(params.get('mode')==='places') {
+      if(params.has('geo')){
+        try{
+          const mention=await S.places.resolveEvidence(params,id);
+          if(mention&&Number.isInteger(mention.start)&&Number.isInteger(mention.end)&&mention.start>=0&&mention.end>mention.start&&
+              window.Concept.slice(text,mention.start,mention.end)===mention.quote&&await window.SenatResearch.hash(text)===mention.source_sha256){
+            const refs=mention.scans||[];
+            target={id:mention.id,start:mention.start,end:mention.end,pages:mention.printed_pages||[],scans:refs,
+              sources:mention.sources||refs.map(r=>({file:r.file,page:r.page,page_method:'verified'})),ai:{source_warning:mention.source_warning}};
+            senseTerms=[window.SenatPlaces.mentionName(mention)];
+            verifiedGeography=true;
+          }else quoteWarning='Географическая цитата не подтверждена текущей версией текста. Открыт полный текст решения; вернитесь к географии и выберите ссылку заново.';
+        }catch(error){quoteWarning='Не удалось проверить географическую цитату. Полный текст решения остаётся доступен.';}
+        if(S.detailId!==id||$('#detail').hidden)return;
       }
     } else if (params.get('mode') === 'laws' && params.has('law')) {
       const row = [...laws.citations, ...(laws.unresolved || []), ...(laws.historical_references || [])].find(r=>r.id===params.get('law') && r.decision_id===id);
@@ -692,7 +712,7 @@
       }
     }
     const revision=S.an.source_revisions?.[id];
-    if (revision && params.has('at') && !['quote','research'].includes(params.get('mode')) && params.get('v')!==revision.version) {
+    if (revision && params.has('at') && !['quote','research'].includes(params.get('mode')) && !verifiedGeography && params.get('v')!==revision.version) {
       target=null; senseTerms=[];
       quoteWarning='Порядок колонок и границы этого решения восстановлены. Диапазон в старой ссылке не подтверждён; открыт полный текст. Найдите цитату заново через поиск или разбор решения.';
     }
@@ -853,7 +873,7 @@
     $('#detail-close').addEventListener('click', () => {
       const { p } = readHash(); const requested = p.get('mode');
       if (requested==='research') {location.hash='#/research'+(p.get('back')?'?'+new URLSearchParams({share:p.get('back')}):'');return;}
-      const mode = requested === 'quote' ? 'reader' : requested === 'passage' ? 'sense' : (requested === 'analysis' ? 'analyses' : (['sense','participants','map','laws','guides','analyses','api','reader'].includes(requested) ? requested : 'search')); p.delete('at'); p.delete('end'); p.delete('mode'); p.delete('ref'); p.delete('law'); p.delete('field'); p.delete('sha'); p.delete('sec'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : '');
+      const mode = requested === 'quote' ? 'reader' : requested === 'passage' ? 'sense' : (requested === 'analysis' ? 'analyses' : (['sense','participants','map','places','laws','guides','analyses','api','reader'].includes(requested) ? requested : 'search')); p.delete('at'); p.delete('end'); p.delete('mode'); p.delete('ref'); p.delete('law'); p.delete('field'); p.delete('sha'); p.delete('sec'); p.delete('geo'); location.hash = '#/' + mode + (p.toString() ? '?' + p.toString() : '');
     });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !document.querySelector('.scan-dialog[open]') && !$('#detail').hidden) $('#detail-close').click(); });
     $('#examples').append(...['недействительность сделки', 'возмещение убытков', 'исковая давность', 'договор аренды', 'банкротство', 'страховое возмещение', 'перевозка грузов', 'исполнитель завещания']
@@ -1300,6 +1320,7 @@
       $('#corpus-summary').textContent = `В корпусе: ${meta.volumes.map(v=>v.year).join(', ')} · ${meta.decisions.length} ${plural(meta.decisions.length,'решение','решения','решений')}`;
       $('#corpus-summary').hidden = false;
       S.engine = L.makeEngine(index, meta.decisions);
+      S.places=window.SenatPlaces.create({meta,loadJSON,topicList,topicId,sourceEvidence,modernize:M});
       S.reader=window.SenatReaderUI.create({meta,textOf,loadJSON,loadScans,formatDate:fmtDate,setModern,isModern:()=>S.opts.modern,warningOf:d=>(S.an.source_warnings?.[d.id]?.messages||[]).join(' ')});
       S.research=window.SenatResearchUI.create({meta,analytics:an,reader:S.reader,prepare:async()=>{
         await loadSense();const [catalog,guides]=await Promise.all([loadAnalysesIndex(),loadGuides()]);

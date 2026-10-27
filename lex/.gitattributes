@@ -1,0 +1,2 @@
+# Preserve upstream vendor bytes and published integrity hashes (including CRLF).
+vendor/leaflet/* -text whitespace=cr-at-eol

@@ -18,7 +18,7 @@ from guide_comparisons import guide_decisions
 ROOT = Path(__file__).resolve().parent.parent
 PUBLIC = 'https://ivseliv.github.io/senat/lex/'
 API_VERSION = 'v1'
-CONTRACT_VERSION = '1.7.0'
+CONTRACT_VERSION = '1.8.0'
 
 
 def read_json(path):
@@ -54,6 +54,35 @@ def schema_document():
         'title': 'Статический API решений Правительствующего Сената, v1',
         'type': 'object',
         '$defs': {
+            'Geography': {
+                'type': 'object',
+                'required': ['schema_version', 'places', 'mentions', 'roles', 'coverage'],
+                'properties': {
+                    'schema_version': {'const': 1},
+                    'coverage': {'type': 'object', 'required': ['complete', 'decisions', 'places', 'unresolved_mentions']},
+                    'roles': {'type': 'object'},
+                    'places': {'type': 'array', 'items': {'type': 'object',
+                        'required': ['id', 'historical_name', 'modern_name', 'lat', 'lon', 'coordinate_source', 'coordinate_revision', 'coordinate_note', 'identity_source'],
+                        'properties': {'id': {'type': 'string'}, 'lat': {'type': 'number', 'minimum': -90, 'maximum': 90},
+                                       'lon': {'type': 'number', 'minimum': -180, 'maximum': 180},
+                                       'coordinate_revision': {'type': 'integer', 'minimum': 1},
+                                       'coordinate_note': {'type': 'string', 'minLength': 1},
+                                       'coordinate_source': {'type': 'string', 'format': 'uri'},
+                                       'identity_source': {'type': 'string', 'format': 'uri'}}}},
+                    'mentions': {'type': 'array', 'items': {'type': 'object',
+                        'required': ['id', 'decision_id', 'place_id', 'role', 'quote', 'start', 'end', 'mention', 'mention_start', 'mention_end', 'source_sha256', 'printed_pages', 'scans'],
+                        'properties': {'place_id': {'type': ['string', 'null']},
+                                       'role': {'enum': ['court', 'event_property', 'person_organization', 'mention_unclear']},
+                                       'source_sha256': {'type': 'string', 'pattern': '^[0-9a-f]{64}$'},
+                                       'start': {'type': 'integer', 'minimum': 0}, 'end': {'type': 'integer', 'minimum': 0},
+                                       'mention_start': {'type': 'integer', 'minimum': 0}, 'mention_end': {'type': 'integer', 'minimum': 0},
+                                       'quote': {'type': 'string', 'minLength': 1}, 'mention': {'type': 'string', 'minLength': 1},
+                                       'scans': {'type': 'array', 'minItems': 1}, 'printed_pages': {'type': 'array'},
+                                       'unresolved_reason': {'type': 'string', 'minLength': 1}},
+                        'allOf': [{'if': {'properties': {'place_id': {'type': 'null'}}},
+                                   'then': {'required': ['unresolved_reason']}}]}},
+                },
+            },
             'Envelope': {
                 'type': 'object',
                 'required': ['api_version', 'contract_version', 'data_revision', 'resource'],
@@ -239,6 +268,7 @@ def openapi_document(years, act_ids):
             '/volumes.json': {'get': {'summary': 'Реестр опубликованных томов с постоянными volume_id', 'responses': response}},
             '/editorial/guides.json': {'get': {'summary': 'Тематические подборки и сравнительные разборы', 'responses': response}},
             '/editorial/topics.json': {'get': {'summary': 'Каталог тем с подтверждёнными цитатами включениями решений', 'responses': response}},
+            '/editorial/geography.json': {'get': {'summary': 'Выборочная география: населённые пункты, роли, буквальные цитаты и источники координат', 'responses': response}},
             '/bulk.json': {'get': {'summary': 'Полные JSON/CSV-выгрузки', 'responses': response}},
         },
         'components': {'schemas': {'Envelope': {'$ref': './schema.json#/$defs/Envelope'}, 'Decision': {'$ref': './schema.json#/$defs/Decision'}, 'Passage': {'$ref': './schema.json#/$defs/Passage'}, 'PrecedentReference': {'$ref':'./schema.json#/$defs/PrecedentReference'}}},
@@ -295,10 +325,11 @@ def build_api(root=ROOT):
     analysis_search = read_json(data / 'analysis-search.json')
     guides = read_json(data / 'guides.json')
     catalog = read_json(data / 'topic-catalog.json')
+    geography = read_json(data / 'geography.json')
     analytics = read_json(data / 'analytics.json')
     glossary = read_json(data / 'concepts.json')
     export_manifest = read_json(export / 'manifest.json')
-    revision = digest_files([export / 'manifest.json', data / 'decision-analyses.json', data / 'analysis-search.json', data / 'guides.json', data / 'topic-catalog.json', data / 'analytics.json', data / 'concepts.json'])
+    revision = digest_files([export / 'manifest.json', data / 'decision-analyses.json', data / 'analysis-search.json', data / 'guides.json', data / 'topic-catalog.json', data / 'analytics.json', data / 'concepts.json', data / 'geography.json'])
     years = [volume['year'] for volume in meta['volumes']]
     codes = [act['code'] for act in acts]
 
@@ -396,6 +427,7 @@ def build_api(root=ROOT):
     emit('editorial/analysis-search.json', envelope('analysis-search', item=analysis_search, links={'web': PUBLIC + '#/analyses'}))
     emit('editorial/guides.json', envelope('editorial-guides', item=guides, links={'web': PUBLIC + '#/guides'}))
     emit('editorial/topics.json', envelope('topic-catalog', item=catalog, links={'web': PUBLIC + '#/guides'}))
+    emit('editorial/geography.json', envelope('geography', item=geography, links={'web': PUBLIC + '#/places', 'geojson': PUBLIC + 'data/geography.geojson'}))
     emit('analytics.json', envelope('analytics', item=analytics))
     emit('glossary.json', envelope('concepts', item=glossary))
 
@@ -411,6 +443,8 @@ def build_api(root=ROOT):
         })
     counts = dict(export_manifest['counts'])
     counts['editorial_analyses'] = analyses['count']
+    counts['geography_places'] = geography['coverage']['places']
+    counts['geography_decisions'] = geography['coverage']['decisions']
     counts['passage_source_warnings'] = sum(bool(p.get('source_warning')) for p in passages)
     counts['guides'] = len(guides['guides'])
     counts['guide_comparisons'] = guides.get('comparison_count', 0)
@@ -509,6 +543,7 @@ def build_api(root=ROOT):
     datasets = [
         {'id':'volume-registry','description':'Постоянные ID опубликованных томов, департаменты и издания; старые ID решений сохранены.','href':href('volumes.json')},
         {'id':'analysis-search','description':'Разделы редакционных разборов: вид, автор, современное пояснение и буквальные цитаты со смещениями.','href':href('editorial/analysis-search.json')},
+        {'id':'geography','description':'Выборочные упоминания населённых пунктов с ролями, цитатами и источниками координат; неоднозначные места без точек.','href':href('editorial/geography.json'),'item_schema':'Geography'},
         {'id':'legislation-unresolved','description':'Ссылки без установленного акта: контекст, Unicode-смещения, SHA источника.','href':href('legislation/unresolved.json'),'item_schema':'LegislationCitation'},
         {'id':'legislation-historical-references','description':'Записи прежних версий с исходными ID, местами и пометкой historical_note; вне текущих подсчётов.','href':href('legislation/historical-references.json'),'item_schema':'HistoricalLegislationReference'},
         {'id':'legislation-attribution','description':'Результат сверки актов, единица счёта и остаток неопределённых ссылок.','href':href('legislation/attribution.json')},

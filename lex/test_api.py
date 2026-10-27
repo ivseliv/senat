@@ -30,6 +30,13 @@ def digest_tree(path):
 
 
 class ApiTest(unittest.TestCase):
+    def test_geography_is_a_separate_documented_resource(self):
+        geography = read(API / 'editorial/geography.json')
+        self.assertEqual(geography['item'], read(ROOT / 'data/geography.json'))
+        self.assertFalse(geography['item']['coverage']['complete'])
+        self.assertIn('/editorial/geography.json', read(API / 'openapi.json')['paths'])
+        self.assertTrue(any(d['id'] == 'geography' for d in self.manifest['datasets']))
+
     @classmethod
     def setUpClass(cls):
         cls.manifest = read(API / 'manifest.json')
