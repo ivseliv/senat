@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Решения Правительствующего Сената — Static API",
-    "version": "1.7.0",
+    "version": "1.8.0",
     "description": "Статические JSON-файлы: доступны GET и HEAD, query-параметров и серверного поиска нет."
   },
   "servers": [
@@ -512,6 +512,23 @@
     "/editorial/topics.json": {
       "get": {
         "summary": "Каталог тем с подтверждёнными цитатами включениями решений",
+        "responses": {
+          "200": {
+            "description": "JSON UTF-8",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schema.json#/$defs/Envelope"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/editorial/geography.json": {
+      "get": {
+        "summary": "Выборочная география: населённые пункты, роли, буквальные цитаты и источники координат",
         "responses": {
           "200": {
             "description": "JSON UTF-8",
