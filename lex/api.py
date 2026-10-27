@@ -18,7 +18,7 @@ from guide_comparisons import guide_decisions
 ROOT = Path(__file__).resolve().parent.parent
 PUBLIC = 'https://ivseliv.github.io/senat/lex/'
 API_VERSION = 'v1'
-CONTRACT_VERSION = '1.6.0'
+CONTRACT_VERSION = '1.7.0'
 
 
 def read_json(path):
@@ -72,6 +72,9 @@ def schema_document():
                 'properties': {
                     'id': {'type': 'string', 'pattern': '^\\d{4}-\\d{3}$'},
                     'year': {'type': 'integer'}, 'number': {'type': 'integer'},
+                    'volume_id': {'type': 'string'},
+                    'topic_ids': {'type': 'array', 'items': {'type': 'string'}},
+                    'automatic_topics': {'type': 'array', 'items': {'type': 'string'}, 'description': 'Прежние автоматические метки, сохранённые для истории; текущая классификация — topics/topic_ids.'},
                     'date': {'type': ['string', 'null']}, 'date_label': {'type': ['string', 'null']},
                     'department': {'type': 'string'}, 'headnote_original': {'type': 'string'},
                     'text_original': {'type': 'string'}, 'outcome': {'type': 'string'},
@@ -232,6 +235,8 @@ def openapi_document(years, act_ids):
             '/legislation/citations/{act_id}.json': {'get': {'summary': 'Контексты ссылок на один акт; act_id берётся из statutes/index.json', 'parameters': act_parameter, 'responses': response}},
             '/scans/{year}.json': {'get': {'summary': 'Привязки к страницам и координатам', 'parameters': year_parameter, 'responses': response}},
             '/editorial/analyses.json': {'get': {'summary': 'Редакционные разборы', 'responses': response}},
+            '/editorial/analysis-search.json': {'get': {'summary': 'Разделы разборов с видами, авторами и цитатами для поиска', 'responses': response}},
+            '/volumes.json': {'get': {'summary': 'Реестр опубликованных томов с постоянными volume_id', 'responses': response}},
             '/editorial/guides.json': {'get': {'summary': 'Тематические подборки и сравнительные разборы', 'responses': response}},
             '/editorial/topics.json': {'get': {'summary': 'Каталог тем с подтверждёнными цитатами включениями решений', 'responses': response}},
             '/bulk.json': {'get': {'summary': 'Полные JSON/CSV-выгрузки', 'responses': response}},
@@ -287,12 +292,13 @@ def build_api(root=ROOT):
     scan_refs = read_json(export / 'scan-passages.json')
     precedents = read_json(export / 'precedents.json')
     analyses = read_json(data / 'decision-analyses.json')
+    analysis_search = read_json(data / 'analysis-search.json')
     guides = read_json(data / 'guides.json')
     catalog = read_json(data / 'topic-catalog.json')
     analytics = read_json(data / 'analytics.json')
     glossary = read_json(data / 'concepts.json')
     export_manifest = read_json(export / 'manifest.json')
-    revision = digest_files([export / 'manifest.json', data / 'decision-analyses.json', data / 'guides.json', data / 'topic-catalog.json', data / 'analytics.json', data / 'concepts.json'])
+    revision = digest_files([export / 'manifest.json', data / 'decision-analyses.json', data / 'analysis-search.json', data / 'guides.json', data / 'topic-catalog.json', data / 'analytics.json', data / 'concepts.json'])
     years = [volume['year'] for volume in meta['volumes']]
     codes = [act['code'] for act in acts]
 
@@ -319,6 +325,8 @@ def build_api(root=ROOT):
         return path
 
     decision_by_id = {row['id']: row for row in decisions}
+    if len(decision_by_id) != len(decisions):
+        raise ValueError('API: повторяющиеся идентификаторы решений')
     passages_by_year, participants_by_year, scans_by_year = defaultdict(list), defaultdict(list), defaultdict(list)
     statutes_by_code, citations_by_code = defaultdict(list), defaultdict(list)
     precedents_by_year = defaultdict(list)
@@ -343,7 +351,7 @@ def build_api(root=ROOT):
 
     decision_index = []
     for row in decisions:
-        decision_index.append({key: row.get(key) for key in ('id', 'year', 'number', 'date', 'date_label', 'department', 'headnote_original', 'outcome', 'topics')}
+        decision_index.append({key: row.get(key) for key in ('id', 'year', 'volume_id', 'number', 'date', 'date_label', 'department', 'headnote_original', 'outcome', 'topics', 'topic_ids')}
                               | {'href': href(f'decisions/{row["id"]}.json'), 'web_url': row['url']})
     decision_index.sort(key=lambda row: (row['year'], row['number']))
     emit('decisions/index.json', envelope('decision-index', items=decision_index))
@@ -385,6 +393,7 @@ def build_api(root=ROOT):
     emit('legislation/attribution.json', envelope('legislation-attribution', item=law_index['attribution_summary']))
     emit('legislation/acts.json', envelope('legislation-acts', items=acts))
     emit('editorial/analyses.json', envelope('editorial-analyses', item=analyses, links={'web': PUBLIC + '#/analyses'}))
+    emit('editorial/analysis-search.json', envelope('analysis-search', item=analysis_search, links={'web': PUBLIC + '#/analyses'}))
     emit('editorial/guides.json', envelope('editorial-guides', item=guides, links={'web': PUBLIC + '#/guides'}))
     emit('editorial/topics.json', envelope('topic-catalog', item=catalog, links={'web': PUBLIC + '#/guides'}))
     emit('analytics.json', envelope('analytics', item=analytics))
@@ -394,6 +403,8 @@ def build_api(root=ROOT):
     for volume in meta['volumes']:
         year = volume['year']
         volumes.append({
+            'volume_id': volume['volume_id'], 'department_id': volume['department_id'],
+            'edition': volume['edition'], 'decision_id_prefix': volume['decision_id_prefix'],
             'year': year, 'department': volume['dept'], 'decisions': volume['decisions'], 'gaps': volume['gaps'],
             'links': {'decisions': href(f'decisions/{year}.json'), 'passages': href(f'passages/{year}.json'),
                       'participants': href(f'participants/{year}.json'), 'scan_passages': href(f'scans/{year}.json')},
@@ -415,7 +426,9 @@ def build_api(root=ROOT):
         'orthography': 'Оригинальная дореформенная орфография OCR.',
         'passage_offsets': 'start/end — полуоткрытый Unicode-диапазон [start,end) в text_original.',
         'scan_geometry': 'box — [x0,y0,x1,y1] в долях ширины и высоты; при null используйте full_page_url.',
-        'automated_fields': ['topics', 'outcome', 'procedure', 'participant_groups', 'statutes', 'ai_summary', 'ai_concepts'],
+        'automated_fields': ['automatic_topics', 'outcome', 'procedure', 'participant_groups', 'statutes', 'ai_summary', 'ai_concepts'],
+        'topics': 'topics и topic_ids используют единый редакционный каталог с цитатами; прежние автоматические метки сохранены в automatic_topics. Полнота юридической квалификации не гарантируется.',
+        'analysis_search': 'Редакционные разделы различают вопрос, доводы, предшествующее рассмотрение, рассуждение, постановление и пределы. Вид раздела не превращает редакционный пересказ в текст Сената; проверяйте evidence и полный источник.',
         'precedents': 'Переход устанавливается только по департаменту, году и номеру; неопределённые ссылки сохранены с контекстом без target_id. Старые пары cites не пригодны для переходов.',
         'historical_legislation_references': 'legislation/historical-references.json сохраняет записи предыдущих версий с прежними ID и местами. Они исключены из текущих ссылок и фасетов; отдельный счётчик legislation_historical_references считает только сохранённые записи.',
         'source_warning': 'Непустая строка у пассажа сообщает об установленном дефекте порядка или атрибуции OCR. Его пояснение не индексируется в обогащённом поиске; исходный текст сохранён.',
@@ -461,6 +474,11 @@ def build_api(root=ROOT):
     for topic in catalog['topics']:
         for ident in topic['decision_ids']:
             add_facet('catalog-topic', topic['id'], ident)
+    # Сохраняем прежние URL фильтров тем с текущим редакционным составом.
+    from topic_navigation import LEGACY_TOPICS
+    topics_by_id = {topic['id']: topic for topic in catalog['topics']}
+    for old_title, topic_id in LEGACY_TOPICS.items():
+        facet_groups['topic'][old_title].update(topics_by_id[topic_id]['decision_ids'])
 
     # Historical facet URLs remain valid after correcting an act association.
     # Empty sets are explicit; their former, incorrect memberships are not kept.
@@ -489,6 +507,8 @@ def build_api(root=ROOT):
     emit('facets.json', envelope('facets', item=facets))
 
     datasets = [
+        {'id':'volume-registry','description':'Постоянные ID опубликованных томов, департаменты и издания; старые ID решений сохранены.','href':href('volumes.json')},
+        {'id':'analysis-search','description':'Разделы редакционных разборов: вид, автор, современное пояснение и буквальные цитаты со смещениями.','href':href('editorial/analysis-search.json')},
         {'id':'legislation-unresolved','description':'Ссылки без установленного акта: контекст, Unicode-смещения, SHA источника.','href':href('legislation/unresolved.json'),'item_schema':'LegislationCitation'},
         {'id':'legislation-historical-references','description':'Записи прежних версий с исходными ID, местами и пометкой historical_note; вне текущих подсчётов.','href':href('legislation/historical-references.json'),'item_schema':'HistoricalLegislationReference'},
         {'id':'legislation-attribution','description':'Результат сверки актов, единица счёта и остаток неопределённых ссылок.','href':href('legislation/attribution.json')},

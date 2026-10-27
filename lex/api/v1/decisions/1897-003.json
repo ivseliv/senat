@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.6.0",
-  "data_revision": "sha256:994e85d211349cda22db5ec477b42ce04d462dd4f537e979daa6f0046520c857",
+  "contract_version": "1.7.0",
+  "data_revision": "sha256:7f9fd1326fc167b5d3960e76a4eb946e5fc65196842b90374168a78940287d3c",
   "resource": "decision",
   "scope": {
     "id": "1897-003",
@@ -12,6 +12,14 @@
     "year": 1897,
     "number": 3,
     "date": "1897-01-29",
+    "volume_id": "senat-civil-1897",
+    "topic_ids": [
+      "debt",
+      "contracts"
+    ],
+    "automatic_topics": [
+      "Окраины и местные законы"
+    ],
     "date_label": null,
     "department": "Гражданский кассационный департамент",
     "headnote_original": "Прошеніе Карла Куна объ отмѣнѣ рѣшенія Симферопольскаго окружнаго суда 27 октября 1895 года по иску Куна къ коллежскому ассесору Михаилу Лямину о 310 руб.",
@@ -22,7 +30,8 @@
     "outcome": "Просьба оставлена без последствий",
     "procedure": [],
     "topics": [
-      "Окраины и местные законы"
+      "Долги, векселя и залог",
+      "Договоры и обязательства"
     ],
     "participant_groups": {},
     "statutes": {

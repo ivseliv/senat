@@ -1,0 +1,22 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.7.0",
+  "data_revision": "sha256:7f9fd1326fc167b5d3960e76a4eb946e5fc65196842b90374168a78940287d3c",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "guide",
+    "id": "deadlines",
+    "label": "deadlines"
+  },
+  "count": 2,
+  "decision_ids": [
+    "1904-021",
+    "1904-076"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-021.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-076.json"
+    ]
+  }
+}

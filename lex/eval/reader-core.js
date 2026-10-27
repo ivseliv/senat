@@ -40,4 +40,31 @@ test('whole decision export contains pages and scans without requiring a quote',
  const s=R.createStore({storage:memory()});s.saveDecision(d);for(const out of [E.markdown(s.getState()),E.html(s.getState()),E.csv(s.getState())]){assert(out.includes('p0003_L.webp'));assert(out.includes('4'));}
  const empty=R.createStore({storage:memory()});empty.saveDecision({...d,printed_pages:[],scans:[]});assert(E.markdown(empty.getState()).includes('Печатные страницы не определены'));
 });
+test('new years need no whitelist, registered edition IDs stay bounded to corpus URLs',()=>{
+ const newer={...d,id:'1898-001',year:1898,url:R.PUBLIC+'#/d/1898-001',scans:[]};
+ const legacy=R.createStore();legacy.saveDecision(newer);assert.equal(legacy.getState().items[0].id,newer.id);
+ const volume_id='senat-criminal-1897-first',id=volume_id+'-001';
+ const registry={volumes:[{volume_id,year:1897}],decisions:[{id,volume_id,vol:1897,num:1}]};
+ const snapshot={...newer,id,volume_id,year:1897,url:R.PUBLIC+'#/d/'+id};
+ assert.throws(()=>R.createStore().saveDecision(snapshot));
+ const store=R.createStore({registry});store.saveDecision(snapshot);assert.equal(store.getState().items[0].decision.volume_id,volume_id);
+ for(const url of ['javascript:alert(1)','https://evil.test/#/d/'+id,R.PUBLIC+'#/d/'+id+'?redirect=https://evil.test',R.PUBLIC+'#/d/../'+id])assert.throws(()=>store.saveDecision({...snapshot,url}));
+ assert.throws(()=>store.saveDecision({...snapshot,year:1904}));
+ assert.throws(()=>R.scanURL('scans/unknown-volume/pages/a.webp',registry));
+ assert.equal(R.scanURL('scans/'+volume_id+'/pages/a.webp',registry),'scans/'+volume_id+'/pages/a.webp');
+ assert(E.html(store.getState()).includes('#/d/'+id));
+});
+test('archive verification keeps original SHA, pages, offsets and note immutable',()=>{
+ const crypto=require('node:crypto'),digest=s=>crypto.createHash('sha256').update(s).digest('hex');
+ const old='Прежде. Точная цитата. Конец.',current='Точная цитата. Конец.',literal='Точная цитата.';
+ const saved={field:'text',start:8,end:8+Array.from(literal).length,text_original:literal,source_sha256:digest(old),printed_pages:[7],note:'Моя заметка'};
+ const before=JSON.stringify(saved),result=R.inspectQuote(saved,current,digest(current));
+ assert.equal(JSON.stringify(saved),before);assert.equal(result.verification.status,'archived');assert.deepEqual(result.candidate,{start:0,end:literal.length,sha256:digest(current)});
+ assert.equal(R.inspectQuote(saved,current+' '+current,digest(current+' '+current)).candidate,null);
+ assert.equal(R.inspectQuote(saved,'Другая цитата.',digest('Другая цитата.')).candidate,null);
+ const store=R.createStore();store.addQuote(d,{...q,note:'Заметка'});const snapshot=store.getState().items[0].quotes[0];
+ store.verifyQuote(d.id,snapshot.id,{status:'archived',reason:'Источник изменился',checked_sha256:'b'.repeat(64)});
+ const checked=store.getState().items[0].quotes[0];assert.equal(checked.source_sha256,snapshot.source_sha256);assert.deepEqual(checked.printed_pages,snapshot.printed_pages);assert.equal(checked.note,'Заметка');
+ assert(E.markdown(store.getState()).includes('Источник изменился'));assert(E.csv(store.getState()).includes('verification_status'));
+});
 console.log('Reader core/export:',tests,'checks passed');

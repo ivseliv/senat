@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.6.0",
-  "data_revision": "sha256:994e85d211349cda22db5ec477b42ce04d462dd4f537e979daa6f0046520c857",
+  "contract_version": "1.7.0",
+  "data_revision": "sha256:7f9fd1326fc167b5d3960e76a4eb946e5fc65196842b90374168a78940287d3c",
   "resource": "decision",
   "scope": {
     "id": "1896-039",
@@ -12,6 +12,12 @@
     "year": 1896,
     "number": 39,
     "date": "1896-11-25",
+    "volume_id": "senat-general-1896",
+    "topic_ids": [
+      "criminal",
+      "procedure"
+    ],
+    "automatic_topics": [],
     "date_label": null,
     "department": "Общее собрание",
     "headnote_original": "По рапорту, за Военнаго Ми нистра, Начальника Главна го Штаба за № 5019 о разрѣ шеніи возникшаго между Но вочеркасскимъ о к р у гж н У м ъ судомъ и военнымъ началь ствомъ пререканья относи тельно поря дк а производ ства слѣдствія по дѣлу о кражѣ денегъ у в о йск о в а г о ста р ш п н ы К рю к о в а.",
@@ -23,7 +29,10 @@
     "procedure": [
       "Процессуальный порядок"
     ],
-    "topics": [],
+    "topics": [
+      "Уголовное право и производство",
+      "Судебный процесс и подсудность"
+    ],
     "participant_groups": {
       "estate": [
         "Военные"

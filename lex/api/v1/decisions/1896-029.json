@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.6.0",
-  "data_revision": "sha256:994e85d211349cda22db5ec477b42ce04d462dd4f537e979daa6f0046520c857",
+  "contract_version": "1.7.0",
+  "data_revision": "sha256:7f9fd1326fc167b5d3960e76a4eb946e5fc65196842b90374168a78940287d3c",
   "resource": "decision",
   "scope": {
     "id": "1896-029",
@@ -12,6 +12,15 @@
     "year": 1896,
     "number": 29,
     "date": "1896-03-11",
+    "volume_id": "senat-general-1896",
+    "topic_ids": [
+      "costs",
+      "contracts",
+      "commerce-transport"
+    ],
+    "automatic_topics": [
+      "Судебные издержки и пошлины"
+    ],
     "date_label": null,
     "department": "Общее собрание",
     "headnote_original": "П о шн есе н-я ому' П ер в оіп р и’- с у ѣ ст ‘Ву ющиМ'Ъ вопросу о томъ: подлежатъ ли оплатѣ гербовою пошли ню ю надпи си на накладныхъ о переда чѣ права на взыс К'а н і е пе ребора.",
@@ -22,7 +31,9 @@
     "outcome": "Иное",
     "procedure": [],
     "topics": [
-      "Судебные издержки и пошлины"
+      "Судебные расходы и пошлины",
+      "Договоры и обязательства",
+      "Перевозки и железные дороги"
     ],
     "participant_groups": {},
     "statutes": {

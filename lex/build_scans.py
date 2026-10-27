@@ -11,9 +11,11 @@ import collections
 import difflib
 import hashlib
 import json
+import os
 import re
 import shutil
 import subprocess
+import tempfile
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from PIL import Image
@@ -21,6 +23,77 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parent.parent
 NS = {'x': 'http://www.w3.org/1999/xhtml'}
 TRANS = str.maketrans({'ѣ':'е', 'і':'и', 'ѳ':'ф', 'ѵ':'и', 'ё':'е'})
+
+
+def file_sha256(path):
+    digest = hashlib.sha256()
+    with Path(path).open('rb') as stream:
+        for chunk in iter(lambda: stream.read(1024 * 1024), b''):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def page_asset(year, filename, pdf_sha256):
+    return f'scans/{year}/pages/{filename}-{pdf_sha256[:16]}.webp'
+
+
+def fragment_asset(year, passage_id, filename, pdf_sha256, box):
+    identity = json.dumps([passage_id, filename, pdf_sha256, box, 'scan-raster-v2'], separators=(',', ':'))
+    return f'scans/{year}/fragments/{hashlib.sha256(identity.encode()).hexdigest()[:16]}.webp'
+
+
+def publish_assets(stage, lex, assets):
+    """Добавить неизменяемые изображения, сохранив прежние URL и байты."""
+    # Проверяем весь набор до появления новых опубликованных путей.
+    for asset in sorted(assets):
+        destination, source_asset = lex / asset, stage / asset
+        if destination.is_file():
+            if source_asset.is_file() and file_sha256(source_asset) != file_sha256(destination):
+                raise ValueError(f'Запрещена замена опубликованного изображения: {asset}')
+        elif not source_asset.is_file():
+            raise FileNotFoundError(source_asset)
+    for asset in sorted(assets):
+        destination, source_asset = lex / asset, stage / asset
+        if destination.is_file():
+            continue
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        # Копируем во временный файл, затем атомарно создаём постоянный путь.
+        # Прерывание копирования не оставит неполное изображение по его URL.
+        with tempfile.NamedTemporaryFile(dir=destination.parent, prefix='.scan-', delete=False) as target:
+            temporary = Path(target.name)
+            try:
+                with source_asset.open('rb') as source:
+                    shutil.copyfileobj(source, target)
+                target.flush()
+                os.fsync(target.fileno())
+                try:
+                    os.link(temporary, destination)
+                except FileExistsError:
+                    if file_sha256(destination) != file_sha256(temporary):
+                        raise ValueError(f'Конкурирующая сборка создала другое изображение: {asset}')
+            finally:
+                temporary.unlink(missing_ok=True)
+
+
+def save_manifest(path, manifest):
+    if path.exists():
+        previous = path.read_bytes()
+        archive = path.parent / 'scan-history' / str(manifest['year']) / (hashlib.sha256(previous).hexdigest() + '.json')
+        archive.parent.mkdir(parents=True, exist_ok=True)
+        if not archive.exists():
+            with archive.open('xb') as stream:
+                stream.write(previous)
+        elif archive.read_bytes() != previous:
+            raise ValueError('Архивный манифест повреждён; автоматическая замена запрещена')
+    with tempfile.NamedTemporaryFile(dir=path.parent, prefix='.manifest-', mode='w', encoding='utf-8', delete=False) as stream:
+        temporary = Path(stream.name)
+        try:
+            json.dump(manifest, stream, ensure_ascii=False, separators=(',', ':'))
+            stream.flush()
+            os.fsync(stream.fileno())
+            temporary.replace(path)
+        finally:
+            temporary.unlink(missing_ok=True)
 
 
 def norm(s):
@@ -69,7 +142,7 @@ def crop_box(piece, ocr, words, mapping, ids, width, height):
 
 def pdf_pages(pdf, cache):
     # Одинаковое имя бывает у исходного скана и нового экспорта FineReader.
-    digest = hashlib.sha256(pdf.read_bytes()).hexdigest()[:16]
+    digest = file_sha256(pdf)[:16]
     bbox = cache / (pdf.stem + '.' + digest + '.bbox.html')
     if not bbox.exists():
         subprocess.run(['pdftotext', '-bbox-layout', str(pdf), str(bbox)], check=True)
@@ -164,7 +237,7 @@ def validate_leaf_pdf(pages, year, byfile, pdf_sha256=None):
 
 
 def leaf_image(source, year, fn, pdf, cache, single_pages=False, digest=None):
-    digest = digest or hashlib.sha256(pdf.read_bytes()).hexdigest()[:16]
+    digest = digest or file_sha256(pdf)[:16]
     if single_pages:
         # Рендерим именно тот PDF, из которого получены координаты: FineReader
         # может изменить обрезку, размеры и наклон исходной картинки.
@@ -181,9 +254,8 @@ def leaf_image(source, year, fn, pdf, cache, single_pages=False, digest=None):
         if not ready.exists():
             subprocess.run(['pdftoppm', '-f', str(page), '-l', str(page), '-scale-to-x', '1100', '-scale-to-y', '-1', '-png', '-gray', '-singlefile', str(pdf), str(ready.with_suffix(''))], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
         return Image.open(ready).convert('L')
-    ready = source / 'work' / str(year) / (fn + '.png')
-    if ready.exists():
-        return Image.open(ready).convert('L')
+    # Прежние PNG в work/<year> не закреплены SHA источника и не подходят
+    # после замены одноимённого PDF. Рендер и кеш всегда учитывают SHA PDF.
     number, side = int(fn[1:5]), fn[-1]
     spread = cache / f'{year}-{digest}-{number:04d}.png'
     if not spread.exists():
@@ -223,9 +295,10 @@ def build(source, cache, years=None, leaf_pdfs=None):
                 groups[s['file']].append(s)
             for filename, spans in groups.items():
                 byfile[filename].append((p, spans))
+        pdf_digest = file_sha256(pdf)
         if single_pages:
-            validate_leaf_pdf(pages, year, byfile, hashlib.sha256(pdf.read_bytes()).hexdigest())
-        manifest = dict(version=1, year=year, source_pdf_sha256=hashlib.sha256(pdf.read_bytes()).hexdigest(), pages={}, passages={}, decisions={}, passage_sha256={p['id']:p['sha256'] for p in data['passages']})
+            validate_leaf_pdf(pages, year, byfile, pdf_digest)
+        manifest = dict(version=1, year=year, source_pdf_sha256=pdf_digest, pages={}, passages={}, decisions={}, passage_sha256={p['id']:p['sha256'] for p in data['passages']})
         if single_pages:
             manifest.update(source_layout='single-pages', source_pdf_pages=len(pages))
         stage = cache / 'built' / str(year) / manifest['source_pdf_sha256'][:16]
@@ -243,8 +316,7 @@ def build(source, cache, years=None, leaf_pdfs=None):
             base = stage / 'scans' / str(year)
             (base / 'pages').mkdir(parents=True, exist_ok=True)
             (base / 'fragments').mkdir(exist_ok=True)
-            suffix = '-' + manifest['source_pdf_sha256'][:16] if single_pages else ''
-            full = f'scans/{year}/pages/{fn}{suffix}.webp'
+            full = page_asset(year, fn, manifest['source_pdf_sha256'])
             published_full = ROOT / 'lex' / full
             published_full.parent.mkdir(parents=True, exist_ok=True)
             if published_full.is_file():
@@ -255,7 +327,6 @@ def build(source, cache, years=None, leaf_pdfs=None):
             else:
                 image = leaf_image(source, year, fn, pdf, cache, single_pages, manifest['source_pdf_sha256'][:16])
                 image.save(stage / full, format='WEBP', quality=86, method=4)
-                shutil.copy2(stage / full, published_full)
             page_nums = {s['page'] for _, spans in items for s in spans if s['page'] is not None}
             if len(page_nums) > 1:
                 raise ValueError(f'{year}/{fn}: противоречивые номера страниц {page_nums}')
@@ -271,11 +342,7 @@ def build(source, cache, years=None, leaf_pdfs=None):
                     if .025 < box[3] - box[1] < .85:
                         # Новые геометрия/рамка получают новый URL: браузер
                         # не должен показать старый кадр из кеша с новой рамкой.
-                        identity = p['id'] + filename
-                        if single_pages:
-                            identity += manifest['source_pdf_sha256'] + json.dumps(box)
-                        key = hashlib.sha256(identity.encode()).hexdigest()[:16]
-                        thumb = f'scans/{year}/fragments/{key}.webp'
+                        thumb = fragment_asset(year, p['id'], filename, manifest['source_pdf_sha256'], box)
                         published_thumb = ROOT / 'lex' / thumb
                         published_thumb.parent.mkdir(parents=True, exist_ok=True)
                         if published_thumb.is_file():
@@ -283,7 +350,6 @@ def build(source, cache, years=None, leaf_pdfs=None):
                         else:
                             cut = image.crop((0, int(box[1]*image.height), image.width, min(image.height, int(box[3]*image.height)+1)))
                             cut.save(stage / thumb, format='WEBP', quality=86, method=4)
-                            shutil.copy2(stage / thumb, published_thumb)
                         result.update(kind='fragment', image=thumb, box=box, coverage=min(b['coverage'] for b in boxes), width=cut.width, height=cut.height)
                         crops += 1
                 if result['kind'] == 'page':
@@ -295,23 +361,12 @@ def build(source, cache, years=None, leaf_pdfs=None):
             print(f'{year}/{fn}: готово', flush=True)
         manifest['coverage'] = dict(pages=len(byfile), fragments=crops, references=sum(len(v) for v in manifest['passages'].values()))
         assets = {r[k] for refs in manifest['passages'].values() for r in refs for k in ('image', 'full')}
-        for asset in sorted(assets):
-            destination = ROOT / 'lex' / asset
-            destination.parent.mkdir(parents=True, exist_ok=True)
-            # Оставляем staging-копию: так повторный запуск после прерывания
-            # не потеряет уже собранный кадр до переноса всех остальных.
-            source_asset = stage / asset
-            if source_asset.is_file():
-                shutil.copy2(source_asset, destination)
-            elif not destination.is_file():
-                raise FileNotFoundError(source_asset)
-        # После исправлений текста идентификаторы кадров меняются. Удаляем
-        # только неиспользуемые WebP выбранного тома после полной сборки.
-        for folder in ('pages', 'fragments'):
-            for old in (ROOT / 'lex/scans' / str(year) / folder).glob('*.webp'):
-                if old.relative_to(ROOT / 'lex').as_posix() not in assets:
-                    old.unlink()
-        (ROOT / 'lex/data' / f'scans-{year}.json').write_text(json.dumps(manifest, ensure_ascii=False, separators=(',', ':')))
+        if file_sha256(pdf) != pdf_digest:
+            raise ValueError('PDF изменился во время сборки; опубликованный манифест не изменён')
+        publish_assets(stage, ROOT / 'lex', assets)
+        # Старые URL остаются в подборках и выгрузках. Сохраняем прежние WebP
+        # и точную копию прошлого манифеста перед переключением.
+        save_manifest(ROOT / 'lex/data' / f'scans-{year}.json', manifest)
         summary.append(dict(year=year, **manifest['coverage']))
     (ROOT / 'lex/data/scans.json').write_text(json.dumps(dict(version=1, volumes=summary), ensure_ascii=False, separators=(',', ':')))
     print(json.dumps(summary, ensure_ascii=False))

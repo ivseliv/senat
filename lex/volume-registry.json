@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "volumes": [
+    {"volume_id":"senat-general-1896","year":1896,"department_id":"general","department":"Общее собрание","edition":"Опубликованный том 1896 года","status":"published","legacy_year_key":1896,"decision_id_prefix":"1896"},
+    {"volume_id":"senat-civil-1897","year":1897,"department_id":"civil","department":"Гражданский кассационный департамент","edition":"Опубликованный том 1897 года","status":"published","legacy_year_key":1897,"decision_id_prefix":"1897"},
+    {"volume_id":"senat-civil-1904","year":1904,"department_id":"civil","department":"Гражданский кассационный департамент","edition":"Опубликованный том 1904 года","status":"published","legacy_year_key":1904,"decision_id_prefix":"1904"},
+    {"volume_id":"senat-civil-1905","year":1905,"department_id":"civil","department":"Гражданский кассационный департамент","edition":"Опубликованный том 1905 года","status":"published","legacy_year_key":1905,"decision_id_prefix":"1905"}
+  ]
+}

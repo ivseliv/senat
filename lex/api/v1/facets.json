@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.6.0",
-  "data_revision": "sha256:994e85d211349cda22db5ec477b42ce04d462dd4f537e979daa6f0046520c857",
+  "contract_version": "1.7.0",
+  "data_revision": "sha256:7f9fd1326fc167b5d3960e76a4eb946e5fc65196842b90374168a78940287d3c",
   "resource": "facets",
   "item": {
     "act": [
@@ -11286,10 +11286,46 @@
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/guide/commerce-transport.json"
       },
       {
+        "id": "contracts",
+        "label": "contracts",
+        "count": 2,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/guide/contracts.json"
+      },
+      {
+        "id": "deadlines",
+        "label": "deadlines",
+        "count": 2,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/guide/deadlines.json"
+      },
+      {
+        "id": "enforcement",
+        "label": "enforcement",
+        "count": 2,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/guide/enforcement.json"
+      },
+      {
+        "id": "evidence",
+        "label": "evidence",
+        "count": 2,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/guide/evidence.json"
+      },
+      {
+        "id": "family",
+        "label": "family",
+        "count": 2,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/guide/family.json"
+      },
+      {
         "id": "inheritance",
         "label": "inheritance",
         "count": 35,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/guide/inheritance.json"
+      },
+      {
+        "id": "insolvency",
+        "label": "insolvency",
+        "count": 2,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/guide/insolvency.json"
       },
       {
         "id": "property-notary",
@@ -16598,123 +16634,243 @@
     ],
     "topic": [
       {
+        "id": "topic-471131dd6932",
+        "label": "Авторские и исключительные права",
+        "count": 3,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-471131dd6932.json"
+      },
+      {
         "id": "topic-79e8f2353faa",
         "label": "Аренда и наём",
-        "count": 12,
+        "count": 22,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-79e8f2353faa.json"
+      },
+      {
+        "id": "topic-3cab498b30dd",
+        "label": "Банкротство и несостоятельность",
+        "count": 15,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-3cab498b30dd.json"
       },
       {
         "id": "topic-8be0027e45c6",
         "label": "Векселя, займы, залог",
-        "count": 24,
+        "count": 44,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-8be0027e45c6.json"
       },
       {
         "id": "topic-91504f0fba5a",
         "label": "Возмещение вреда",
-        "count": 20,
+        "count": 40,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-91504f0fba5a.json"
+      },
+      {
+        "id": "topic-3cae361dbcc9",
+        "label": "Возмещение вреда и убытков",
+        "count": 40,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-3cae361dbcc9.json"
       },
       {
         "id": "topic-6d9169d2b1be",
         "label": "Договоры и обязательства",
-        "count": 41,
+        "count": 62,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-6d9169d2b1be.json"
       },
       {
         "id": "topic-f74456ae7d60",
         "label": "Доказательства",
-        "count": 9,
+        "count": 41,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-f74456ae7d60.json"
+      },
+      {
+        "id": "topic-fcabbeb1b558",
+        "label": "Долги, векселя и залог",
+        "count": 44,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-fcabbeb1b558.json"
       },
       {
         "id": "topic-45ccc8f2304e",
         "label": "Железные дороги и перевозки",
-        "count": 49,
+        "count": 38,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-45ccc8f2304e.json"
+      },
+      {
+        "id": "topic-b2d27713a40f",
+        "label": "Исполнение решений",
+        "count": 39,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-b2d27713a40f.json"
       },
       {
         "id": "topic-5553e7ab99f1",
         "label": "Казна и государственная служба",
-        "count": 31,
+        "count": 36,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-5553e7ab99f1.json"
+      },
+      {
+        "id": "topic-f31dcdfeffa0",
+        "label": "Казна, служба и публичные учреждения",
+        "count": 36,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-f31dcdfeffa0.json"
+      },
+      {
+        "id": "topic-a46a08dc359b",
+        "label": "Крестьяне, общины и сословия",
+        "count": 35,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-a46a08dc359b.json"
       },
       {
         "id": "topic-9ce0b148e7e7",
         "label": "Крестьяне, общины, сословия",
-        "count": 78,
+        "count": 35,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-9ce0b148e7e7.json"
+      },
+      {
+        "id": "topic-cb7d40e04aa3",
+        "label": "Местное право и правовое положение иностранцев",
+        "count": 80,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-cb7d40e04aa3.json"
+      },
+      {
+        "id": "topic-5e2efe050ab1",
+        "label": "Налоги, сборы и таможня",
+        "count": 8,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-5e2efe050ab1.json"
       },
       {
         "id": "topic-e9242c0a631c",
         "label": "Наследство и завещания",
-        "count": 61,
+        "count": 68,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-e9242c0a631c.json"
       },
       {
         "id": "topic-9db7feb8c3e2",
         "label": "Недвижимость и земля",
-        "count": 71,
+        "count": 74,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-9db7feb8c3e2.json"
       },
       {
         "id": "topic-1a126ecfb9b3",
         "label": "Несостоятельность",
-        "count": 14,
+        "count": 15,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-1a126ecfb9b3.json"
       },
       {
         "id": "topic-845b6692bbf0",
         "label": "Нотариат и акты",
-        "count": 18,
+        "count": 32,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-845b6692bbf0.json"
+      },
+      {
+        "id": "topic-fccad74f855a",
+        "label": "Нотариат и оформление прав",
+        "count": 32,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-fccad74f855a.json"
+      },
+      {
+        "id": "topic-88c7939fadfb",
+        "label": "Общества, предприятия и банки",
+        "count": 25,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-88c7939fadfb.json"
       },
       {
         "id": "topic-67abbe395214",
         "label": "Окраины и местные законы",
-        "count": 44,
+        "count": 80,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-67abbe395214.json"
+      },
+      {
+        "id": "topic-832bc9c319a9",
+        "label": "Опека и дееспособность",
+        "count": 8,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-832bc9c319a9.json"
       },
       {
         "id": "topic-50de8a4d56ae",
         "label": "Опека, недееспособность",
-        "count": 17,
+        "count": 8,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-50de8a4d56ae.json"
+      },
+      {
+        "id": "topic-4a9b2d7692d8",
+        "label": "Перевозки и железные дороги",
+        "count": 38,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-4a9b2d7692d8.json"
       },
       {
         "id": "topic-7bf01e445310",
         "label": "Подсудность и процесс",
-        "count": 20,
+        "count": 99,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-7bf01e445310.json"
+      },
+      {
+        "id": "topic-b24a6502fd13",
+        "label": "Религиозные учреждения и духовенство",
+        "count": 8,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-b24a6502fd13.json"
       },
       {
         "id": "topic-7e59999b864c",
         "label": "Семья и брак",
-        "count": 7,
+        "count": 27,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-7e59999b864c.json"
+      },
+      {
+        "id": "topic-c93480df322c",
+        "label": "Собственность и недвижимость",
+        "count": 74,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-c93480df322c.json"
+      },
+      {
+        "id": "topic-d9e95d3a7879",
+        "label": "Сроки и давность",
+        "count": 38,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-d9e95d3a7879.json"
       },
       {
         "id": "topic-f2362c36b857",
         "label": "Страхование",
-        "count": 7,
+        "count": 5,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-f2362c36b857.json"
       },
       {
         "id": "topic-5d81ece662c0",
         "label": "Судебные издержки и пошлины",
-        "count": 21,
+        "count": 46,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-5d81ece662c0.json"
+      },
+      {
+        "id": "topic-0177e9f63169",
+        "label": "Судебные расходы и пошлины",
+        "count": 46,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-0177e9f63169.json"
+      },
+      {
+        "id": "topic-cecc3178e472",
+        "label": "Судебный процесс и подсудность",
+        "count": 99,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-cecc3178e472.json"
       },
       {
         "id": "topic-a2717c4b6f71",
         "label": "Торговые и акционерные общества",
-        "count": 36,
+        "count": 25,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-a2717c4b6f71.json"
+      },
+      {
+        "id": "topic-067b9e9d67f5",
+        "label": "Труд и личные услуги",
+        "count": 7,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-067b9e9d67f5.json"
+      },
+      {
+        "id": "topic-ad8585b5a564",
+        "label": "Уголовное право и производство",
+        "count": 17,
+        "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-ad8585b5a564.json"
       },
       {
         "id": "topic-cdd01415403a",
         "label": "Церковь и духовенство",
-        "count": 14,
+        "count": 8,
         "href": "https://ivseliv.github.io/senat/lex/api/v1/indexes/topic/topic-cdd01415403a.json"
       }
     ],

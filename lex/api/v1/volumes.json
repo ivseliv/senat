@@ -1,11 +1,15 @@
 {
   "api_version": "v1",
-  "contract_version": "1.6.0",
-  "data_revision": "sha256:994e85d211349cda22db5ec477b42ce04d462dd4f537e979daa6f0046520c857",
+  "contract_version": "1.7.0",
+  "data_revision": "sha256:7f9fd1326fc167b5d3960e76a4eb946e5fc65196842b90374168a78940287d3c",
   "resource": "volumes",
   "count": 4,
   "items": [
     {
+      "volume_id": "senat-general-1896",
+      "department_id": "general",
+      "edition": "Опубликованный том 1896 года",
+      "decision_id_prefix": "1896",
       "year": 1896,
       "department": "Общее собрание",
       "decisions": 49,
@@ -18,6 +22,10 @@
       }
     },
     {
+      "volume_id": "senat-civil-1897",
+      "department_id": "civil",
+      "edition": "Опубликованный том 1897 года",
+      "decision_id_prefix": "1897",
       "year": 1897,
       "department": "Гражданский кассационный департамент",
       "decisions": 100,
@@ -30,6 +38,10 @@
       }
     },
     {
+      "volume_id": "senat-civil-1904",
+      "department_id": "civil",
+      "edition": "Опубликованный том 1904 года",
+      "decision_id_prefix": "1904",
       "year": 1904,
       "department": "Гражданский кассационный департамент",
       "decisions": 120,
@@ -42,6 +54,10 @@
       }
     },
     {
+      "volume_id": "senat-civil-1905",
+      "department_id": "civil",
+      "edition": "Опубликованный том 1905 года",
+      "decision_id_prefix": "1905",
       "year": 1905,
       "department": "Гражданский кассационный департамент",
       "decisions": 115,

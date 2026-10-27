@@ -7,28 +7,44 @@
       "dept": "Общее собрание",
       "decisions": 49,
       "gaps": [],
-      "file": "text-1896.json"
+      "file": "text-1896.json",
+      "volume_id": "senat-general-1896",
+      "department_id": "general",
+      "edition": "Опубликованный том 1896 года",
+      "decision_id_prefix": "1896"
     },
     {
       "year": 1897,
       "dept": "Гражданский кассационный департамент",
       "decisions": 100,
       "gaps": [],
-      "file": "text-1897.json"
+      "file": "text-1897.json",
+      "volume_id": "senat-civil-1897",
+      "department_id": "civil",
+      "edition": "Опубликованный том 1897 года",
+      "decision_id_prefix": "1897"
     },
     {
       "year": 1904,
       "dept": "Гражданский кассационный департамент",
       "decisions": 120,
       "gaps": [],
-      "file": "text-1904.json"
+      "file": "text-1904.json",
+      "volume_id": "senat-civil-1904",
+      "department_id": "civil",
+      "edition": "Опубликованный том 1904 года",
+      "decision_id_prefix": "1904"
     },
     {
       "year": 1905,
       "dept": "Гражданский кассационный департамент",
       "decisions": 115,
       "gaps": [],
-      "file": "text-1905.json"
+      "file": "text-1905.json",
+      "volume_id": "senat-civil-1905",
+      "department_id": "civil",
+      "edition": "Опубликованный том 1905 года",
+      "decision_id_prefix": "1905"
     }
   ],
   "counts": {
@@ -46,13 +62,13 @@
   "files": [
     {
       "name": "decisions.json",
-      "sha256": "8b5c2dde28d280c8b01d9990eb9fa3817f575e96cd79175dc5237f188de6fb9b",
-      "bytes": 8364381
+      "sha256": "cf1b6141a69e3e4833f48b0ef51c0c8e6dcdc94d45c091e227226595c7a3eefe",
+      "bytes": 8472388
     },
     {
       "name": "decisions.csv",
-      "sha256": "f93c831e2506030ffdef0a21c0ab9929c242ae70000e945c3f62e7c86f77fe34",
-      "bytes": 7815323
+      "sha256": "df552cb3b98dd0187575411ff67626ad0a12bb7396f89c8369ef5d6831ed2b7c",
+      "bytes": 7887701
     },
     {
       "name": "passages.json",
@@ -146,8 +162,8 @@
     },
     {
       "name": "README.md",
-      "sha256": "14b20bc890d89eced34d10286edf29793d13f410713362be4856e174567a8430",
-      "bytes": 5142
+      "sha256": "d79670a87edf82ba714a9d496e6cebf6744b30c87705ada8fc0d95387d712072",
+      "bytes": 5495
     }
   ],
   "notes": "Сборка детерминирована из lex/data; даты выгрузки намеренно не записываются."

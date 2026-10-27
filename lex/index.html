@@ -178,6 +178,12 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
 .topic-comparison > summary { font-weight: 600; }.catalog-cases { margin-top: 20px; }
 .catalog-case h3 { margin-top: 0; }.catalog-headnote { margin-top: 12px; }
 #guides-status { margin: 16px 0; color: var(--muted); }#guides-filter { display: flex; align-items: end; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+#analyses-filter { display:flex; flex-wrap:wrap; gap:10px; align-items:end; margin:18px 0; }
+#analyses-filter label { display:grid; gap:5px; min-width:0; max-width:100%; }
+#analyses-filter .analysis-query { flex:1 1 300px; }#analyses-q { width:100%; }
+#analyses-filter select { max-width:100%; } .analysis-section-kind { font-weight:700; }
+.search-ocr-note { border-left:3px solid var(--accent); padding:6px 10px; }
+.analysis-item:focus { outline:2px solid var(--accent); outline-offset:6px; }
 #guides-filter label { display: grid; gap: 5px; min-width: 0; max-width: 100%; }#guides-filter .guide-query { flex: 1 1 280px; }#guides-q { width: 100%; }#guides-year { max-width: 100%; min-width: 0; }
 .decision-analysis h3 { margin-top: 0; }.analysis-label,.analysis-speaker { color: var(--accent-ink); font-size: 13px; font-weight: 600; margin: 4px 0; }.analysis-item { border-top: 1px solid var(--line); padding-top: 12px; margin-top: 12px; }.analysis-item h4 { margin: 0; font-size: 16px; }.analysis-evidence { margin-top: 8px; }.source-quote { margin: 10px 0; padding-left: 12px; border-left: 2px solid var(--line); font-family: "Noto Serif", Georgia, serif; white-space: pre-wrap; }.analysis-card h3 { margin-top: 0; }
 
@@ -257,6 +263,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     <div class="opts">
       <span class="orth" role="group" aria-label="Орфография текста">Орфография: <label><input type="radio" name="orth" value="old" checked> дореформенная</label> <label><input type="radio" name="orth" value="new"> современная</label></span>
       <label title="Слово «арендатор» найдёт и «наниматель», «ущерб» — «убытки», «вред» и т. д."><input type="checkbox" id="gloss" checked> расширять запрос старыми терминами</label>
+      <label><input type="checkbox" id="search-ocr" checked> учитывать ошибки OCR и опечатки</label>
     </div>
     </details>
     <div id="status" aria-live="polite"></div>
@@ -300,6 +307,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
   <section id="view-sense" hidden>
     <form id="sense-form" class="row" role="search">
       <input id="sense-q" type="search" placeholder="Современное понятие или вопрос: фиктивные сделки" aria-label="Поиск по смыслу" autocomplete="off">
+      <select id="sense-topic" aria-label="Тема поиска по смыслу"></select><select id="sense-year" aria-label="Том поиска по смыслу"></select>
       <button class="btn" type="submit">Найти фрагменты</button>
     </form>
     <div class="chips" id="sense-examples" aria-label="Примеры понятий"></div>
@@ -310,7 +318,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     <div class="opts"><span class="orth" role="group" aria-label="Орфография фрагментов">Орфография:
       <label><input type="radio" name="sense-orth" value="old" checked> дореформенная</label>
       <label><input type="radio" name="sense-orth" value="new"> современная</label>
-    </span></div>
+    </span><label><input type="checkbox" id="sense-ocr" checked> учитывать ошибки OCR и опечатки</label></div>
     <p class="muted small">Современные понятия помогают найти старые выражения. Результат — фрагмент первоисточника; пояснение ИИ дано отдельно. Наличие слов ещё не означает совпадения правового института.</p>
     <div id="sense-status" aria-live="polite"></div><div id="sense-results"></div>
     <button class="btn ghost" id="sense-more" hidden>Показать ещё</button>
@@ -355,18 +363,26 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
 
   <section id="view-analyses" hidden>
     <h2>Что именно решил Сенат</h2>
-    <p class="preliminary-note"><strong>Предварительная публикация.</strong> Редакционные разборы подготовлены с помощью ИИ и прочитаны по доступному тексту источника.</p>
-    <p>Спор, доводы участников, предшествующее рассмотрение, рассуждение и постановление Сената. Общие собрания 1896 года отделены от гражданских кассационных дел 1897, 1904 и 1905 годов.</p>
-    <p class="muted small">Каждый тезис привязан к буквальной цитате, смещениям в OCR, пассажам и страницам скана. Разбор подготовлен с помощью ИИ и не является юридической экспертизой.</p>
-    <label>Том: <select id="analyses-year" aria-label="Том редакционных разборов"></select></label>
+    <p class="preliminary-note"><strong>Редакционные разборы, подготовленные с помощью ИИ.</strong> Ищите вопрос, доводы или вывод и проверяйте его по буквальной цитате.</p>
+    <form id="analyses-filter" role="search">
+      <label class="analysis-query">Найти в разборах<input id="analyses-q" type="search" placeholder="Например: содержание ребёнка, бремя доказывания" autocomplete="off"></label>
+      <label>Том<select id="analyses-year" aria-label="Том редакционных разборов"></select></label>
+      <label>Тема<select id="analyses-topic" aria-label="Тема редакционных разборов"></select></label>
+      <label>Чья позиция / вид раздела<select id="analyses-kind" aria-label="Вид раздела разбора"></select></label>
+      <label>Департамент<select id="analyses-department" aria-label="Департамент разбора"></select></label>
+      <button class="btn" type="submit">Найти разделы</button><a class="btn ghost" href="#/analyses">Сбросить</a>
+    </form>
+    <p class="muted small">Поиск учитывает словоформы и словарь понятий. Ищет в современных пояснениях и буквальных цитатах всех разборов. Доводы стороны, нижестоящие суды, рассуждение и постановление Сената показаны раздельно; пределы вывода — редакционное пояснение.</p>
+    <details class="muted small"><summary>Как читать разборы</summary><p>Предварительная публикация по доступному тексту источника. Каждый тезис связан с буквальной цитатой, диапазоном текста и страницами скана; независимая юридическая экспертиза не проводилась. Общие собрания 1896 года отделены от гражданских кассационных дел 1897, 1904 и 1905 годов.</p></details>
     <div id="analyses-status" aria-live="polite"></div><div id="analyses-results"></div>
+    <button class="btn ghost" id="analyses-more" hidden>Показать ещё разделы</button>
   </section>
 
   <section id="view-guides" hidden>
     <h2>Каталог тем</h2>
     <p class="muted small">Редакционная разметка и современные пояснения подготовлены с помощью ИИ.</p>
     <p>Современные названия и пояснения помогают найти дела по предмету спора или судебному вопросу. Каждое включение в тему можно проверить по цитате и странице издания.</p>
-    <details class="muted small"><summary>Как составлен каталог</summary><p>Тематическая разметка подготовлена с помощью ИИ по заголовкам, изложению и аннотациям пассажей; спорные места уточнялись по полному тексту. Одно дело может входить в несколько разделов. Это редакционная навигация: полнота всех возможных тем и юридическая экспертиза не заявляются. Неуточнённые дела остаются доступны в общем списке. Автоматические метки вкладки «Поиск» сохраняются отдельно.</p></details>
+    <details class="muted small"><summary>Как составлен каталог</summary><p>Тематическая разметка подготовлена с помощью ИИ по заголовкам, изложению и аннотациям пассажей; спорные места уточнялись по полному тексту. Одно дело может входить в несколько разделов. Это редакционная навигация: полнота всех возможных тем и юридическая экспертиза не заявляются. Во вкладках «Поиск», «По смыслу», «Карта», «Разборы» и «Аналитика» используется этот же каталог. Прежние автоматические метки сохранены в данных для проверки происхождения.</p></details>
     <form id="guides-filter"><label>Том<select id="guides-year" aria-label="Том каталога"></select></label><label class="guide-query"><span id="guides-q-label">Найти тему</span><input id="guides-q" type="search"></label><button class="btn" type="submit">Найти</button></form>
     <div id="guides-status" aria-live="polite"></div><div id="guides-results"></div>
   </section>
@@ -443,6 +459,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
 
 <script src="lex.js"></script>
 <script src="concept.js"></script>
+<script src="analysis_search.js"></script>
 <script src="reader.js"></script>
 <script src="reader-export.js"></script>
 <script src="reader-ui.js?v=research-20261019"></script>

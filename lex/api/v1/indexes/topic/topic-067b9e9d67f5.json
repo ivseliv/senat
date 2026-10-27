@@ -1,0 +1,32 @@
+{
+  "api_version": "v1",
+  "contract_version": "1.7.0",
+  "data_revision": "sha256:7f9fd1326fc167b5d3960e76a4eb946e5fc65196842b90374168a78940287d3c",
+  "resource": "decision-set",
+  "filter": {
+    "kind": "topic",
+    "id": "topic-067b9e9d67f5",
+    "label": "Труд и личные услуги"
+  },
+  "count": 7,
+  "decision_ids": [
+    "1896-040",
+    "1897-020",
+    "1897-076",
+    "1897-099",
+    "1904-026",
+    "1904-033",
+    "1905-085"
+  ],
+  "links": {
+    "decisions": [
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1896-040.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-020.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-076.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1897-099.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-026.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1904-033.json",
+      "https://ivseliv.github.io/senat/lex/api/v1/decisions/1905-085.json"
+    ]
+  }
+}

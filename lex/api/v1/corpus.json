@@ -1,11 +1,15 @@
 {
   "api_version": "v1",
-  "contract_version": "1.6.0",
-  "data_revision": "sha256:994e85d211349cda22db5ec477b42ce04d462dd4f537e979daa6f0046520c857",
+  "contract_version": "1.7.0",
+  "data_revision": "sha256:7f9fd1326fc167b5d3960e76a4eb946e5fc65196842b90374168a78940287d3c",
   "resource": "corpus",
   "item": {
     "volumes": [
       {
+        "volume_id": "senat-general-1896",
+        "department_id": "general",
+        "edition": "Опубликованный том 1896 года",
+        "decision_id_prefix": "1896",
         "year": 1896,
         "department": "Общее собрание",
         "decisions": 49,
@@ -18,6 +22,10 @@
         }
       },
       {
+        "volume_id": "senat-civil-1897",
+        "department_id": "civil",
+        "edition": "Опубликованный том 1897 года",
+        "decision_id_prefix": "1897",
         "year": 1897,
         "department": "Гражданский кассационный департамент",
         "decisions": 100,
@@ -30,6 +38,10 @@
         }
       },
       {
+        "volume_id": "senat-civil-1904",
+        "department_id": "civil",
+        "edition": "Опубликованный том 1904 года",
+        "decision_id_prefix": "1904",
         "year": 1904,
         "department": "Гражданский кассационный департамент",
         "decisions": 120,
@@ -42,6 +54,10 @@
         }
       },
       {
+        "volume_id": "senat-civil-1905",
+        "department_id": "civil",
+        "edition": "Опубликованный том 1905 года",
+        "decision_id_prefix": "1905",
         "year": 1905,
         "department": "Гражданский кассационный департамент",
         "decisions": 115,
@@ -67,9 +83,9 @@
       "precedent_references": 827,
       "editorial_analyses": 384,
       "passage_source_warnings": 0,
-      "guides": 3,
-      "guide_comparisons": 3,
-      "guide_comparison_decisions": 8,
+      "guides": 9,
+      "guide_comparisons": 9,
+      "guide_comparison_decisions": 20,
       "catalog_topics": 26,
       "catalog_decisions": 384,
       "catalog_classified": 384,
@@ -79,7 +95,7 @@
     "passage_offsets": "start/end — полуоткрытый Unicode-диапазон [start,end) в text_original.",
     "scan_geometry": "box — [x0,y0,x1,y1] в долях ширины и высоты; при null используйте full_page_url.",
     "automated_fields": [
-      "topics",
+      "automatic_topics",
       "outcome",
       "procedure",
       "participant_groups",
@@ -87,6 +103,8 @@
       "ai_summary",
       "ai_concepts"
     ],
+    "topics": "topics и topic_ids используют единый редакционный каталог с цитатами; прежние автоматические метки сохранены в automatic_topics. Полнота юридической квалификации не гарантируется.",
+    "analysis_search": "Редакционные разделы различают вопрос, доводы, предшествующее рассмотрение, рассуждение, постановление и пределы. Вид раздела не превращает редакционный пересказ в текст Сената; проверяйте evidence и полный источник.",
     "precedents": "Переход устанавливается только по департаменту, году и номеру; неопределённые ссылки сохранены с контекстом без target_id. Старые пары cites не пригодны для переходов.",
     "historical_legislation_references": "legislation/historical-references.json сохраняет записи предыдущих версий с прежними ID и местами. Они исключены из текущих ссылок и фасетов; отдельный счётчик legislation_historical_references считает только сохранённые записи.",
     "source_warning": "Непустая строка у пассажа сообщает об установленном дефекте порядка или атрибуции OCR. Его пояснение не индексируется в обогащённом поиске; исходный текст сохранён.",
