@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.7.0",
-  "data_revision": "sha256:7f9fd1326fc167b5d3960e76a4eb946e5fc65196842b90374168a78940287d3c",
+  "contract_version": "1.8.0",
+  "data_revision": "sha256:8bdfef527ec55177e17e9bf097d57f57c09cb99cc1f0e2b721588325737e04a9",
   "resource": "corpus",
   "item": {
     "volumes": [
@@ -82,6 +82,8 @@
       "scan_passage_refs": 3296,
       "precedent_references": 827,
       "editorial_analyses": 384,
+      "geography_places": 65,
+      "geography_decisions": 82,
       "passage_source_warnings": 0,
       "guides": 9,
       "guide_comparisons": 9,

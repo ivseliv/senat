@@ -4,6 +4,173 @@
   "title": "Статический API решений Правительствующего Сената, v1",
   "type": "object",
   "$defs": {
+    "Geography": {
+      "type": "object",
+      "required": [
+        "schema_version",
+        "places",
+        "mentions",
+        "roles",
+        "coverage"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "coverage": {
+          "type": "object",
+          "required": [
+            "complete",
+            "decisions",
+            "places",
+            "unresolved_mentions"
+          ]
+        },
+        "roles": {
+          "type": "object"
+        },
+        "places": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "historical_name",
+              "modern_name",
+              "lat",
+              "lon",
+              "coordinate_source",
+              "coordinate_revision",
+              "coordinate_note",
+              "identity_source"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "lat": {
+                "type": "number",
+                "minimum": -90,
+                "maximum": 90
+              },
+              "lon": {
+                "type": "number",
+                "minimum": -180,
+                "maximum": 180
+              },
+              "coordinate_revision": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "coordinate_note": {
+                "type": "string",
+                "minLength": 1
+              },
+              "coordinate_source": {
+                "type": "string",
+                "format": "uri"
+              },
+              "identity_source": {
+                "type": "string",
+                "format": "uri"
+              }
+            }
+          }
+        },
+        "mentions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "decision_id",
+              "place_id",
+              "role",
+              "quote",
+              "start",
+              "end",
+              "mention",
+              "mention_start",
+              "mention_end",
+              "source_sha256",
+              "printed_pages",
+              "scans"
+            ],
+            "properties": {
+              "place_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "role": {
+                "enum": [
+                  "court",
+                  "event_property",
+                  "person_organization",
+                  "mention_unclear"
+                ]
+              },
+              "source_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "start": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "end": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "mention_start": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "mention_end": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "quote": {
+                "type": "string",
+                "minLength": 1
+              },
+              "mention": {
+                "type": "string",
+                "minLength": 1
+              },
+              "scans": {
+                "type": "array",
+                "minItems": 1
+              },
+              "printed_pages": {
+                "type": "array"
+              },
+              "unresolved_reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "place_id": {
+                      "type": "null"
+                    }
+                  }
+                },
+                "then": {
+                  "required": [
+                    "unresolved_reason"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
     "Envelope": {
       "type": "object",
       "required": [

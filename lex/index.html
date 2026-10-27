@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Решения Сената: поиск и аналитика</title>
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css?v=geography-20261027">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%232a78d6'/%3E%3Cpath d='M4 4h8v2H4zm0 3h8v2H4zm0 3h5v2H4z' fill='%23fff'/%3E%3C/svg%3E">
 <style>
@@ -220,13 +221,18 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
 .research-table { border-collapse:separate; border-spacing:0; width:100%; font-size:14px; }.research-table caption { text-align:left; padding:12px; }.research-table td,.research-table th { vertical-align:top; text-align:left; border-top:1px solid var(--line); border-right:1px solid var(--line); padding:14px; min-width:270px; max-width:380px; overflow-wrap:anywhere; }.research-table th:first-child { min-width:155px; max-width:180px; background:var(--soft); position:sticky; left:0; z-index:1; }.research-table thead th { background:var(--soft); position:sticky; top:0; z-index:2; }.research-table thead th:first-child { z-index:3; }.research-table .research-position { margin:0; padding:0; border:0; }.research-table .research-evidence { background:var(--surface); }
 #research-candidates,#research-add-results { display:grid; gap:8px; margin:14px 0; }#research-candidates button,#research-add-results button { text-align:left; white-space:normal; }.research-transfer { padding:18px; border:1px solid var(--line); border-radius:9px; margin:28px 0; }#research-share-url { width:100%; }#research-status { margin:14px 0; }#research-notice:empty { display:none; }#research-import { max-width:100%; }
 @media(max-width:600px) { .research-hero { padding:16px; }.research-hero h2 { font-size:23px; }.research-form-row { display:grid; grid-template-columns:1fr; }.research-actions .btn { width:100%; }.research-table td,.research-table th { min-width:245px; }.research-table th:first-child { min-width:120px; }.research-report-head { padding-left:12px; }.research-quote-link { overflow-wrap:anywhere; } }
+.places-form { display:flex; gap:10px; flex-wrap:wrap; align-items:end; margin:18px 0; }.places-form label { display:grid; gap:5px; min-width:0; max-width:100%; }.places-form .places-query { flex:1 1 270px; }.places-form input[type=search] { width:100%; }.places-form .places-unmapped-label { display:flex; align-items:center; flex-basis:100%; }
+.places-layout { display:grid; grid-template-columns:minmax(0,1.7fr) minmax(245px,1fr); gap:18px; align-items:start; margin:18px 0; }.places-map-shell { min-width:0; }.places-map { height:430px; width:100%; border:1px solid var(--line); border-radius:10px; isolation:isolate; z-index:0; background:#e9f0f3; }.places-map .places-land { fill:var(--soft); stroke:var(--line); }.places-map .places-marker { fill:var(--accent); stroke:var(--accent-ink); cursor:pointer; }.places-map .places-marker:focus { stroke:var(--focus); stroke-width:4; outline:none; }.places-map .leaflet-popup-content-wrapper,.places-map .leaflet-popup-tip { background:var(--surface); color:var(--ink); }.places-map .leaflet-tooltip { background:var(--surface); color:var(--ink); border-color:var(--line); }.places-map .leaflet-bar a { background:var(--surface); color:var(--ink); }.places-map .leaflet-control-attribution { background:var(--surface); color:var(--ink2); }.places-map .leaflet-control-attribution a { color:var(--accent-ink); }.places-map .leaflet-control-scale-line { color:var(--ink); background:var(--surface); border-color:var(--ink2); text-shadow:none; }.places-popup p { margin:8px 0; }.places-popup .btn { font:inherit; padding:6px 9px; }
+.places-list-panel h3 { margin:0 0 10px; }.places-list { list-style:none; padding:0; margin:0; max-height:430px; overflow:auto; border:1px solid var(--line); border-radius:8px; }.places-list li+li { border-top:1px solid var(--line); }.places-select { display:flex; align-items:start; justify-content:space-between; gap:12px; width:100%; padding:12px; text-align:left; font:inherit; color:var(--ink); background:var(--surface); border:0; cursor:pointer; }.places-select>span:first-child { display:grid; gap:3px; }.places-select[aria-pressed=true] { background:var(--soft); box-shadow:inset 4px 0 var(--accent); }.places-select:hover { background:var(--soft); }.places-count { font-size:13px; color:var(--accent-ink); white-space:nowrap; }.places-mention { border-top:1px solid var(--line); padding-top:10px; margin-top:12px; }.places-role { font-size:14px; font-weight:600; }.places-map-note { min-height:40px; }.places-unresolved { margin:16px 0; }.places-unresolved li { margin:8px 0; }.places-case h4 { margin:0; }.places-case { overflow-wrap:anywhere; }.places-headnote { display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:3; overflow:hidden; }
+:root[data-theme=dark] .places-map { background:#16232d; }@media(prefers-color-scheme:dark) { :root:not([data-theme=light]) .places-map { background:#16232d; } }
+@media(max-width:760px) { .places-layout { grid-template-columns:minmax(0,1fr); }.places-map { height:320px; }.places-list { max-height:290px; }.places-form>label:not(.places-unmapped-label) { flex:1 1 220px; }.places-map .leaflet-control-attribution { max-width:260px; font-size:10px; } }
 </style>
 </head>
 <body>
 <header><div class="wrap">
   <div class="top"><h1>Решения Правительствующего Сената</h1><span class="sub">поиск и аналитика · прототип</span><span class="spacer"></span>
     <button class="btn ghost" id="theme" title="Светлая / тёмная тема">◐ тема</button></div>
-  <nav aria-label="Разделы"><a id="tab-research" href="#/research">Исследование</a><a id="tab-search" href="#/search">Поиск</a><a id="tab-sense" href="#/sense">По смыслу</a><a id="tab-laws" href="#/laws">Законодательство</a><a id="tab-map" href="#/map">Карта</a><a id="tab-participants" href="#/participants">Участники</a><a id="tab-guides" href="#/guides">Темы</a><a id="tab-analyses" href="#/analyses">Разборы</a><a id="tab-reader" href="#/reader">Подборка</a><a id="tab-api" href="#/api">API</a><a id="tab-analytics" href="#/analytics">Аналитика</a><a id="tab-about" href="#/about">О проекте</a></nav>
+  <nav aria-label="Разделы"><a id="tab-research" href="#/research">Исследование</a><a id="tab-search" href="#/search">Поиск</a><a id="tab-sense" href="#/sense">По смыслу</a><a id="tab-laws" href="#/laws">Законодательство</a><a id="tab-places" href="#/places">География</a><a id="tab-map" href="#/map">Связи</a><a id="tab-participants" href="#/participants">Участники</a><a id="tab-guides" href="#/guides">Темы</a><a id="tab-analyses" href="#/analyses">Разборы</a><a id="tab-reader" href="#/reader">Подборка</a><a id="tab-api" href="#/api">API</a><a id="tab-analytics" href="#/analytics">Аналитика</a><a id="tab-about" href="#/about">О проекте</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -325,7 +331,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
   </section>
 
   <section id="view-map" hidden>
-    <h2>Юридическая карта</h2>
+    <h2>Карта связей</h2>
     <form id="map-form" class="row" role="search">
       <input id="map-q" type="search" placeholder="Современное понятие: фиктивные сделки" aria-label="Современное понятие для карты" autocomplete="off">
       <select id="map-topic" aria-label="Тема корпуса"></select>
@@ -336,6 +342,29 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     </details>
     <p class="muted small">Цепочка строится от современного понятия или темы к фрагментам первоисточника, затем к решениям, извлечённым ссылкам на нормы и записям печатных указателей. Это навигация по корпусу: совпадение не устанавливает правовой вывод, роль участника или точный исторический аналог.</p>
     <div id="map-status" aria-live="polite"></div><div id="map-results"></div>
+  </section>
+
+  <section id="view-places" hidden>
+    <h2>География решений</h2>
+    <p class="preliminary-note"><strong>Предварительная географическая разметка.</strong> Точки — населённые пункты, не адреса. Названия и роль каждого упоминания можно проверить по цитате.</p>
+    <p id="places-coverage" class="muted small"></p>
+    <details class="muted small"><summary>Как получена разметка</summary><p id="places-method"></p></details>
+    <form id="places-form" class="places-form" role="search">
+      <label class="places-query">Населённый пункт<input id="places-q" type="search" placeholder="Историческое или современное название" autocomplete="off"></label>
+      <label>Том<select id="places-year"></select></label><label>Тема<select id="places-topic"></select></label><label>Роль упоминания<select id="places-role"></select></label>
+      <button class="btn" type="submit">Найти</button><a class="btn ghost" href="#/places">Сбросить фильтры</a>
+      <label class="places-unmapped-label"><input id="places-unmapped" type="checkbox"> Только упоминания без точки на карте</label>
+    </form>
+    <p class="small">Попробуйте: <a class="chip" href="#/places?q=Ялта">Ялта</a> <a class="chip" href="#/places?q=Митава">Митава</a></p>
+    <p class="muted small">Фильтры действуют одновременно на карту и список. Число возле названия — разные решения, а не число упоминаний. Одно дело может относиться к нескольким пунктам; эти числа не измеряют частоту судебной практики.</p>
+    <p id="places-status" role="status" aria-live="polite"></p>
+    <div class="places-layout">
+      <div class="places-map-shell"><div id="places-map" class="places-map"></div><p class="small"><button id="places-fit" type="button" class="btn ghost">Все точки выборки</button> <button id="places-europe" type="button" class="btn ghost">Европейская часть</button> <a id="places-list-jump" href="#/places">Перейти к списку</a></p><p id="places-map-note" class="muted small places-map-note"></p></div>
+      <section class="places-list-panel" aria-labelledby="places-list-heading"><h3 id="places-list-heading" tabindex="-1">Населённые пункты</h3><ul id="places-list" class="places-list"></ul><p id="places-list-empty" class="muted" hidden>По этим фильтрам точек нет. Упоминания без установленного места показаны ниже.</p></section>
+    </div>
+    <details id="places-unresolved" class="places-unresolved" hidden><summary id="places-unresolved-summary"></summary><ul id="places-unresolved-list"></ul><a id="places-only-unresolved" class="chip" href="#/places?u=1">Показать дела только с такими упоминаниями</a></details>
+    <h3 id="places-cases-heading" tabindex="-1">Дела текущей выборки</h3><div id="places-selection"></div><p id="places-cases-count" class="muted small" role="status" aria-live="polite"></p><div id="places-cases"></div><button id="places-more" class="btn ghost" type="button" hidden>Показать ещё дела</button>
+    <p class="small muted">Выгрузить всю разметку без текущих фильтров: <button id="places-export-json" type="button" class="btn ghost">JSON с цитатами</button> <button id="places-export-geojson" type="button" class="btn ghost">GeoJSON точек</button>. Упоминания без точки входят в JSON.</p>
   </section>
 
   <section id="view-laws" hidden>
@@ -457,15 +486,17 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
   <button class="btn" id="detail-close">Закрыть ✕</button><div id="detail-body"></div>
 </div></div>
 
-<script>window.LEX_RELEASE="search-corpus-20261027";</script>
-<script src="lex.js?v=search-corpus-20261027"></script>
-<script src="concept.js?v=search-corpus-20261027"></script>
-<script src="analysis_search.js?v=search-corpus-20261027"></script>
-<script src="reader.js?v=search-corpus-20261027"></script>
-<script src="reader-export.js?v=search-corpus-20261027"></script>
-<script src="reader-ui.js?v=search-corpus-20261027"></script>
-<script src="research.js?v=search-corpus-20261027"></script>
-<script src="research-ui.js?v=search-corpus-20261027"></script>
-<script src="app.js?v=search-corpus-20261027"></script>
+<script>window.LEX_RELEASE="geography-20261027";</script>
+<script src="lex.js?v=geography-20261027"></script>
+<script src="concept.js?v=geography-20261027"></script>
+<script src="analysis_search.js?v=geography-20261027"></script>
+<script src="reader.js?v=geography-20261027"></script>
+<script src="reader-export.js?v=geography-20261027"></script>
+<script src="reader-ui.js?v=geography-20261027"></script>
+<script src="research.js?v=geography-20261027"></script>
+<script src="research-ui.js?v=geography-20261027"></script>
+<script src="vendor/leaflet/leaflet.js?v=geography-20261027"></script>
+<script src="places.js?v=geography-20261027"></script>
+<script src="app.js?v=geography-20261027"></script>
 </body>
 </html>
