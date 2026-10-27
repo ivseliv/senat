@@ -12,6 +12,7 @@ function option(name) {
 }
 const suiteFile=option('--suite')||'eval/queries.json';
 const partial=args.includes('--partial');
+const ocr=!args.includes('--no-ocr');
 const outputDir=option('--output-dir') ? path.resolve(ROOT,option('--output-dir')) : __dirname;
 const config=read('data/concepts.json'), suite=read(suiteFile);
 const selectedYears=option('--years')?.split(',').map(Number);
@@ -33,7 +34,9 @@ const methods=['baseline','glossary','enriched','hybrid'];
 function relevant(p,g) {return p.decision===g.decision && p.start<=g.start && p.end>=g.end;}
 const rows=[];
 for(const q of queries) for(const method of methods) {
-  const result=partial ? C.searchAll(engines,q.query,method,{partial:true}) : {hits:engines.flatMap(e=>e.search(q.query,method).hits).sort((a,b)=>b.score-a.score||a.passage.id.localeCompare(b.passage.id)),partial:false};
+  // Тот же порядок объединения томов, точных/OCR и соседних совпадений,
+  // что в интерфейсе. Отдельная сортировка только по score меняла выдачу.
+  const result=C.searchAll(engines,q.query,method,{partial,ocr});
   const hits=result.hits;
   const recall=k=>q.expected.length ? q.expected.filter(g=>hits.slice(0,k).some(h=>relevant(h.passage,g))).length/q.expected.length : null;
   const rank=hits.findIndex(h=>q.expected.some(g=>relevant(h.passage,g)));
@@ -53,16 +56,18 @@ for(const group of ['dev','test','positive','negative']) for(const method of met
 }
 const suiteLabel=path.basename(suiteFile);
 const result={suite:suiteLabel,queriesSha256:crypto.createHash('sha256').update(fs.readFileSync(path.join(ROOT,suiteFile))).digest('hex'),
-  protocol:suite.protocol,volumes:scope.map(v=>v.year),split,...(partial ? {matching:'Полное совпадение по всему корпусу; при его отсутствии — явно запрошенное частичное совпадение без одной необязательной группы.'} : {}),aggregates,rows};
+  protocol:suite.protocol,volumes:scope.map(v=>v.year),split,ocr,...(partial ? {matching:'Полное совпадение по всему корпусу; при его отсутствии — явно запрошенное частичное совпадение без одной необязательной группы.'} : {}),aggregates,rows};
 let filename=suiteFile==='eval/queries.json'?'metrics':path.basename(suiteFile,'.json').replace(/^queries/,'metrics');
 if(split!=='all')filename+='-'+split;
 if(selectedYears)filename+='-'+scope.map(v=>v.year).join('-');
 if(partial)filename+='-partial';
+if(!ocr)filename+='-no-ocr';
 fs.mkdirSync(outputDir,{recursive:true});
 fs.writeFileSync(path.join(outputDir,filename+'.json'),JSON.stringify(result,null,2)+'\n');
 const f=n=>n===null?'—':n.toFixed(3);
 let md='# Сравнение понятийного поиска\n\n'+suite.protocol+'\n\n'+
 'Поиск по томам: '+scope.map(v=>v.year).join(', ')+'. Эталоны из томов: '+[...new Set(suite.queries.flatMap(q=>q.expected.map(g=>g.decision.split('-')[0])))].join(', ')+'.\n\n'+
+'Дополнительный OCR-слой: '+(ocr?'включён':'отключён')+'. Объединение и порядок результатов совпадают с интерфейсом (`Concept.searchAll`).\n\n'+
 (partial ? result.matching+' Это отдельный режим по кнопке, он не заменяет оценку поиска по всему запросу.\n\n' : '')+
 'Релевантным считается пассаж, содержащий целиком размеченную цитату рассуждения. Recall измеряется по эталонным цитатам, MRR — по первому такому пассажу во всей выдаче. Отрицательные запросы исключены из средних recall и MRR.\n\n'+
 '| Часть | Подход | Запросов | Recall@5 | Recall@10 | MRR | Ложные ответы |\n|---|---|---:|---:|---:|---:|---:|\n';

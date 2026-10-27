@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.6.0",
-  "data_revision": "sha256:994e85d211349cda22db5ec477b42ce04d462dd4f537e979daa6f0046520c857",
+  "contract_version": "1.7.0",
+  "data_revision": "sha256:7f9fd1326fc167b5d3960e76a4eb946e5fc65196842b90374168a78940287d3c",
   "resource": "decision",
   "scope": {
     "id": "1904-080",
@@ -12,6 +12,14 @@
     "year": 1904,
     "number": 80,
     "date": "1904-04-14",
+    "volume_id": "senat-civil-1904",
+    "topic_ids": [
+      "guardianship",
+      "contracts"
+    ],
+    "automatic_topics": [
+      "Опека, недееспособность"
+    ],
     "date_label": null,
     "department": "Гражданский кассационный департамент",
     "headnote_original": "Прошеніе повѣреннаго Михаила Дурилина, присяжнаго повѣреннаго Гольденвейзера, объ отмѣнѣ рѣшенія Харьковской судебной палаты по иску просителя съ Сергѣя и Владиміра Волховскихъ 28000 руб. съ %.",
@@ -22,7 +30,8 @@
     "outcome": "Просьба оставлена без последствий",
     "procedure": [],
     "topics": [
-      "Опека, недееспособность"
+      "Опека и дееспособность",
+      "Договоры и обязательства"
     ],
     "participant_groups": {},
     "statutes": {

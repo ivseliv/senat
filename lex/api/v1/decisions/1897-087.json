@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.6.0",
-  "data_revision": "sha256:994e85d211349cda22db5ec477b42ce04d462dd4f537e979daa6f0046520c857",
+  "contract_version": "1.7.0",
+  "data_revision": "sha256:7f9fd1326fc167b5d3960e76a4eb946e5fc65196842b90374168a78940287d3c",
   "resource": "decision",
   "scope": {
     "id": "1897-087",
@@ -12,6 +12,16 @@
     "year": 1897,
     "number": 87,
     "date": "1897-12-17",
+    "volume_id": "senat-civil-1897",
+    "topic_ids": [
+      "inheritance",
+      "family",
+      "evidence",
+      "local-law"
+    ],
+    "automatic_topics": [
+      "Наследство и завещания"
+    ],
     "date_label": null,
     "department": "Гражданский кассационный департамент",
     "headnote_original": "Прошеніе Маріанны Сливка объ отмѣнѣ рѣшенія мирового съѣзда 1 округа Ломжинской губерніи по дѣлу о раздѣлѣ наслѣдства послѣ Григорія и Маріанны Пивоварскихъ.",
@@ -24,7 +34,10 @@
       "Доказательства"
     ],
     "topics": [
-      "Наследство и завещания"
+      "Наследство и завещания",
+      "Семья и брак",
+      "Доказательства",
+      "Местное право и правовое положение иностранцев"
     ],
     "participant_groups": {},
     "statutes": {

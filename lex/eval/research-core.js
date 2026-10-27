@@ -30,6 +30,12 @@ async function verifyQuote(q) {
  const modernID=Object.values(analyses.decisions).find(d=>d.sections.some(s=>s.heading==='Как рассуждал Сенат')).id;
  const modern=await ctx.compile({ids:[modernID]},{candidates:[],hits:[]});
  check(modern.cases[0].sections.some(s=>s.kind==='reason')&&modern.cases[0].sections.some(s=>s.kind==='holding'),'Современные заголовки рассуждения и постановления распознаны');
+ const limitCase=Object.values(analyses.decisions).find(d=>d.sections.some(s=>s.heading==='Пределы вывода'&&s.speaker==='Сенат'));
+ const limitReport=await ctx.compile({ids:[limitCase.id]},{candidates:[],hits:[]});
+ const limitSection=limitReport.cases[0].sections.find(s=>s.kind==='limits');
+ check(limitSection.speaker==='Сенат','Исходная атрибуция в данных сохранена');
+ check(R.markdown(limitReport).includes('### Пределы вывода\nРедакционное пояснение о пределах вывода'),'Markdown отделяет редакционные пределы от позиции Сената');
+ check(R.html(limitReport).includes('<h3>Пределы вывода</h3><p><strong>Редакционное пояснение о пределах вывода</strong>'),'HTML отделяет редакционные пределы от позиции Сената');
  check(report.cases.every(c=>c.sections.length===7),'Все найденные дела имеют семь подробных разделов');
  for(const c of report.cases){await verifyQuote(c.headnote_evidence);for(const section of c.sections)for(const q of section.evidence)await verifyQuote(q);for(const f of c.fragments){await verifyQuote(f.evidence);check(f.speaker.includes('отдельно не размечен'),'Пояснение не выдано за позицию Сената');}}
  found=R.find(engines,config,{q:'сделки',year:'1896',department:'Гражданский кассационный департамент'},meta);

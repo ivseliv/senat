@@ -8,7 +8,8 @@ def main():
     texts = json.load(open(os.path.join(build.OUT, 'text-1905.json'), encoding='utf-8'))
     random.seed(1)
     samples = [t[i:i + 400] for t in random.sample(texts, 40) for i in random.sample(range(0, max(1, len(t) - 400)), 3)]
-    samples += ['Судебныя установленія, правительствующаго сената, чрезъ Общаго Собранія, гражданскія дѣла ѲЕДОРОВА']
+    samples += ['Судебныя установленія, правительствующаго сената, чрезъ Общаго Собранія, гражданскія дѣла ѲЕДОРОВА',
+                'Статьи 1 2 9 10 1524; заем без передачи денег; не быть; Слiозберга; наслѣд- ство']
     exp = [dict(m=build.modernize(s), t=build.tokens(s), s=build.stems(s)) for s in samples]
     with tempfile.TemporaryDirectory() as d:
         json.dump(samples, open(os.path.join(d, 'in.json'), 'w', encoding='utf-8'), ensure_ascii=False)

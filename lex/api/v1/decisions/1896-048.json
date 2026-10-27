@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.6.0",
-  "data_revision": "sha256:994e85d211349cda22db5ec477b42ce04d462dd4f537e979daa6f0046520c857",
+  "contract_version": "1.7.0",
+  "data_revision": "sha256:7f9fd1326fc167b5d3960e76a4eb946e5fc65196842b90374168a78940287d3c",
   "resource": "decision",
   "scope": {
     "id": "1896-048",
@@ -12,6 +12,13 @@
     "year": 1896,
     "number": 48,
     "date": "1896-10-07",
+    "volume_id": "senat-general-1896",
+    "topic_ids": [
+      "procedure",
+      "local-law",
+      "property"
+    ],
+    "automatic_topics": [],
     "date_label": null,
     "department": "Общее собрание",
     "headnote_original": "По жалобѣ Ефрема Дейкар ханова на опредѣленіе Тиф лисской судебной палаты отъ 11 декабря 1895 г., коимъ искъ Дейкарханова къ об ществу поселянъ'дер. Новру- злу о землѣ признанъ непод суднымъ судебнымъ уста новленіямъ.",
@@ -23,7 +30,11 @@
     "procedure": [
       "Процессуальный порядок"
     ],
-    "topics": [],
+    "topics": [
+      "Судебный процесс и подсудность",
+      "Местное право и правовое положение иностранцев",
+      "Собственность и недвижимость"
+    ],
     "participant_groups": {},
     "statutes": {
       "УГС ст. 239": 1,

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.6.0",
-  "data_revision": "sha256:994e85d211349cda22db5ec477b42ce04d462dd4f537e979daa6f0046520c857",
+  "contract_version": "1.7.0",
+  "data_revision": "sha256:7f9fd1326fc167b5d3960e76a4eb946e5fc65196842b90374168a78940287d3c",
   "resource": "decision",
   "scope": {
     "id": "1896-038",
@@ -12,6 +12,12 @@
     "year": 1896,
     "number": 38,
     "date": "1896-12-16",
+    "volume_id": "senat-general-1896",
+    "topic_ids": [
+      "criminal",
+      "procedure"
+    ],
+    "automatic_topics": [],
     "date_label": null,
     "department": "Общее собрание",
     "headnote_original": "По рапорту Военнаго Министра за № 5299, о разрѣшеніи возникшаго между Тверскимъ окружнымъ судомъ и временно-командующимъ войсками Московскаго военнаго округа пререканія относительно порядка производства слѣдствія по обвиненію рядовыхъ Гревцова и Объѣденнаго въ кражѣ.",
@@ -23,7 +29,10 @@
     "procedure": [
       "Процессуальный порядок"
     ],
-    "topics": [],
+    "topics": [
+      "Уголовное право и производство",
+      "Судебный процесс и подсудность"
+    ],
     "participant_groups": {
       "estate": [
         "Военные"

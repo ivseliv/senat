@@ -213,6 +213,8 @@
   function scanLinks(q) {return q.scans.filter(s=>safeScan(s.full)).map(s=>({label:'Скан'+(s.page==null?'':', с. '+s.page),url:PUBLIC+s.full}));}
   const label=c=>c.year+' г. № '+c.number;
   const ROWS=[['facts','Обстоятельства и предмет'],['party','Доводы участников'],['lower','Предшествующее рассмотрение'],['question','Вопрос Сената'],['reason','Рассуждение Сената'],['holding','Постановление'],['limits','Пределы вывода']];
+  // Пределы формулирует составитель разбора; цитата остаётся голосом источника.
+  const displaySpeaker=section=>section.kind==='limits'?'Редакционное пояснение о пределах вывода':section.speaker;
   function markdown(report) {
     const out=['# '+md(report.title),'',md(report.notice),'','Вопрос: '+md(report.question),'Поисковая формулировка: '+md(report.terms),
       'Тома: '+report.scope.map(v=>v.year+' ('+md(v.department)+')').join('; '),
@@ -225,7 +227,7 @@
       out.push('## Сравнение по существу','',
         '| Элемент дела | '+report.cases.map(c=>cell(label(c)+' · '+c.department)).join(' | ')+' |',
         '|---|'+report.cases.map(()=>'---|').join(''));
-      for(const [kind,title] of ROWS)out.push('| '+title+' | '+report.cases.map(c=>cell(c.sections.filter(s=>s.kind===kind).map(s=>s.speaker+': '+s.summary).join(' ')||'Подробный разбор не подготовлен.')).join(' | ')+' |');
+      for(const [kind,title] of ROWS)out.push('| '+title+' | '+report.cases.map(c=>cell(c.sections.filter(s=>s.kind===kind).map(s=>displaySpeaker(s)+': '+s.summary).join(' ')||'Подробный разбор не подготовлен.')).join(' | ')+' |');
       out.push('| Исход (автоматическая метка) | '+report.cases.map(c=>cell(c.outcome)).join(' | ')+' |',
         '| Упоминания норм (метки корпуса) | '+report.cases.map(c=>cell(c.statutes.join('; ')||'Нет меток')).join(' | ')+' |','');
     }
@@ -237,7 +239,7 @@
       if(c.warning)out.push(md(c.warning),'');
       if(c.note)out.push('### Заметка читателя',md(c.note),'');
       if(!c.sections.length)out.push('Подробный разбор не подготовлен; ниже — фрагменты для чтения, без атрибуции позиции.','');
-      for(const section of c.sections){out.push('### '+md(section.heading),md(section.speaker),'',md(section.summary),'');section.evidence.forEach(evidence);}
+      for(const section of c.sections){out.push('### '+md(section.heading),md(displaySpeaker(section)),'',md(section.summary),'');section.evidence.forEach(evidence);}
       for(const f of c.fragments){out.push('### Фрагмент по вопросу',f.neighbor?'Соседний контекст.':'',md(f.speaker),f.summary?'Пояснение ИИ: '+md(f.summary):'','');evidence(f.evidence);}
     }
     for(const comparison of report.comparisons){out.push('## '+md(comparison.heading),md(comparison.summary),'',md(comparison.limits),'');comparison.evidence.forEach(evidence);}
@@ -253,13 +255,13 @@
       if(kind==='statutes')return esc(c.statutes.join('; ')||'Нет меток');
       if(kind==='note')return '<p>'+esc(c.note||'Нет заметки')+'</p>';
       const parts=c.sections.filter(s=>s.kind===kind);
-      return parts.length?parts.map(s=>'<p><strong>'+esc(s.speaker)+'</strong></p><p>'+esc(s.summary)+'</p>'+s.evidence.map(evidence).join('')).join(''):'Подробный разбор этого элемента не подготовлен.';
+      return parts.length?parts.map(s=>'<p><strong>'+esc(displaySpeaker(s))+'</strong></p><p>'+esc(s.summary)+'</p>'+s.evidence.map(evidence).join('')).join(''):'Подробный разбор этого элемента не подготовлен.';
     };
     return '<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(report.title)+'</title><style>body{font:16px/1.6 system-ui;margin:32px auto;padding:0 20px;max-width:1200px;color:#171717}a{color:#175a99}blockquote{white-space:pre-wrap;border-left:3px solid #ccc;margin:14px 0;padding-left:14px;font-family:Georgia,serif}p{white-space:pre-wrap;overflow-wrap:anywhere}article{margin:32px 0;border-top:1px solid #ccc;padding-top:16px}.table-wrap{overflow:auto}table{border-collapse:collapse;min-width:680px;width:100%}th,td{border:1px solid #bbb;padding:12px;vertical-align:top;min-width:220px}th:first-child{min-width:140px}details{margin:12px 0}summary{font-weight:600}@media print{body{max-width:none;padding:0;font-size:10pt}a{color:inherit}details{display:block}table{min-width:0;font-size:8pt}th,td{min-width:0}blockquote{break-inside:avoid}.table-wrap{overflow:visible}}</style><h1>'+esc(report.title)+'</h1><p>'+esc(report.notice)+'</p><p>Вопрос: '+esc(report.question)+'<br>Поисковая формулировка: '+esc(report.terms)+'</p><p>Тома: '+report.scope.map(v=>esc(v.year+' · '+v.department)).join('; ')+'. Подробных разборов: '+report.coverage.analysed+' из '+report.cases.length+'.</p>'+report.issues.map(x=>'<p>Ограничение: '+esc(x)+'</p>').join('')+(report.notes.general?'<h2>Заметка читателя</h2><p>'+esc(report.notes.general)+'</p>':'')+
       (report.cases.length>1?'<h2>Сравнение по существу</h2><div class="table-wrap"><table><thead><tr><th>Элемент дела</th>'+report.cases.map(c=>'<th>'+esc(label(c)+' · '+c.department)+'</th>').join('')+'</tr></thead><tbody>'+[['headnote','Предмет по заголовку'],...ROWS,['outcome','Исход (автоматическая метка)'],['statutes','Упоминания норм (метки корпуса)'],['note','Заметка читателя']].map(([kind,title])=>'<tr><th>'+title+'</th>'+report.cases.map(c=>'<td>'+summaryCell(c,kind)+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>':'')+
-      report.cases.map(c=>'<article><h2>'+link(label(c)+' · '+c.department,c.url)+'</h2><p>'+esc(c.headnote)+'</p><p>Дата: '+esc(c.date)+'. Исход (автоматическая метка): '+esc(c.outcome)+'.</p><p>Упоминания норм (метки корпуса): '+esc(c.statutes.join('; ')||'Нет меток')+'</p>'+(c.note?'<h3>Заметка читателя</h3><p>'+esc(c.note)+'</p>':'')+(c.warning?'<p>'+esc(c.warning)+'</p>':'')+c.sections.map(s=>'<h3>'+esc(s.heading)+'</h3><p><strong>'+esc(s.speaker)+'</strong></p><p>'+esc(s.summary)+'</p>'+s.evidence.map(evidence).join('')).join('')+c.fragments.map(f=>'<h3>Фрагмент по вопросу'+(f.neighbor?' · соседний контекст':'')+'</h3><p>'+esc(f.speaker)+'</p><p>Пояснение ИИ: '+esc(f.summary)+'</p>'+evidence(f.evidence)).join('')+'</article>').join('')+
+      report.cases.map(c=>'<article><h2>'+link(label(c)+' · '+c.department,c.url)+'</h2><p>'+esc(c.headnote)+'</p><p>Дата: '+esc(c.date)+'. Исход (автоматическая метка): '+esc(c.outcome)+'.</p><p>Упоминания норм (метки корпуса): '+esc(c.statutes.join('; ')||'Нет меток')+'</p>'+(c.note?'<h3>Заметка читателя</h3><p>'+esc(c.note)+'</p>':'')+(c.warning?'<p>'+esc(c.warning)+'</p>':'')+c.sections.map(s=>'<h3>'+esc(s.heading)+'</h3><p><strong>'+esc(displaySpeaker(s))+'</strong></p><p>'+esc(s.summary)+'</p>'+s.evidence.map(evidence).join('')).join('')+c.fragments.map(f=>'<h3>Фрагмент по вопросу'+(f.neighbor?' · соседний контекст':'')+'</h3><p>'+esc(f.speaker)+'</p><p>Пояснение ИИ: '+esc(f.summary)+'</p>'+evidence(f.evidence)).join('')+'</article>').join('')+
       report.comparisons.map(c=>'<h2>'+esc(c.heading)+'</h2><p>'+esc(c.summary)+'</p>'+c.evidence.map(evidence).join('')+'<p>'+esc(c.limits)+'</p>').join('')+
       '<footer><p>Снимок корпуса: '+esc(report.corpus)+'</p><p>Изображения и ссылки на сайт требуют интернета. Текст справки доступен в этом файле.</p></footer></html>';
   }
-  return {PUBLIC,LIMITS,ROWS,state,hash,encode,decode,shareURL,suggestTerms,find,context,importState,markdown,html,pageLabel,scanLinks,cut};
+  return {PUBLIC,LIMITS,ROWS,state,hash,encode,decode,shareURL,suggestTerms,find,context,importState,markdown,html,pageLabel,scanLinks,cut,displaySpeaker};
 });

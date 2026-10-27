@@ -66,6 +66,22 @@
         "number": {
           "type": "integer"
         },
+        "volume_id": {
+          "type": "string"
+        },
+        "topic_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "automatic_topics": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Прежние автоматические метки, сохранённые для истории; текущая классификация — topics/topic_ids."
+        },
         "date": {
           "type": [
             "string",

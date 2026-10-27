@@ -117,6 +117,8 @@ def build_export(root=ROOT):
         refs = [scan_ref(scans['pages'][file]) for file in scans['decisions'].get(d['id'], [])]
         decision_rows.append({
             'id': d['id'], 'year': d['vol'], 'number': d['num'], 'date': d.get('date'),
+            'volume_id': d.get('volume_id'), 'topic_ids': d.get('topic_ids', []),
+            'automatic_topics': d.get('automatic_topics', []),
             'date_label': d.get('date_label'), 'department': d['dept'], 'headnote_original': d['headnote'],
             'text_original': text_by_id[d['id']], 'presiding': d.get('presiding'),
             'reporter': d.get('reporter'), 'prosecutor': d.get('prosecutor'), 'outcome': d['outcome'],
@@ -125,9 +127,9 @@ def build_export(root=ROOT):
             'precedents': precedents_by_source.get(d['id'], []),
             'url': decision_url(d['id']), 'scan_pages': refs,
         })
-    decision_fields = ['id', 'year', 'number', 'date', 'date_label', 'department', 'headnote_original', 'text_original',
+    decision_fields = ['id', 'year', 'volume_id', 'number', 'date', 'date_label', 'department', 'headnote_original', 'text_original',
                        'presiding', 'reporter', 'prosecutor', 'outcome', 'procedure', 'topics', 'participant_groups',
-                       'statutes', 'cites', 'precedents', 'participant_ids', 'url', 'scan_pages']
+                       'statutes', 'cites', 'precedents', 'participant_ids', 'url', 'scan_pages', 'topic_ids', 'automatic_topics']
 
     passage_rows, scan_rows = [], []
     for passage in sorted(passage_by_id.values(), key=lambda p: (p['doc'], p['start'])):
@@ -234,7 +236,7 @@ def build_export(root=ROOT):
 
 В `precedents` целевое решение определяется только по департаменту, году и номеру. `status=linked` даёт `target_id`/`target_url`; остальные записи сохраняют контекст без перехода. `source_url` открывает точное место упоминания. Старое поле `cites` в решениях оставлено для совместимости: это неполные пары год/номер со старым извлечением, их нельзя использовать для построения связей. Наличие ссылки в тексте не означает согласия Сената с цитируемым доводом.
 
-Текст получен автоматическим распознаванием; числа, статьи и фамилии нужно сверять с изображением. Поля `ai_*` — отдельные модельные пояснения по буквальной цитате, не юридические выводы и не часть первоисточника. Темы, исход, нормы и социальные группы тоже определяются автоматически. Полное описание ограничений — в [README сайта](../README.md). Для программного доступа с версионированным контрактом используйте [Static API v1](../api/).
+Текст получен автоматическим распознаванием; числа, статьи и фамилии нужно сверять с изображением. Поля `ai_*` — отдельные модельные пояснения по буквальной цитате, не юридические выводы и не часть первоисточника. `topic_ids` и `topics` относятся к единому редакционному каталогу; прежняя автоматическая классификация сохранена в `automatic_topics`. `volume_id` различает том, департамент и издание, не изменяя ID решений. Исход, нормы и социальные группы извлекаются автоматически и требуют проверки. Полное описание ограничений — в [README сайта](../README.md). Для программного доступа с версионированным контрактом используйте [Static API v1](../api/).
 """, encoding='utf-8')
     files.append(readme)
     manifest = {

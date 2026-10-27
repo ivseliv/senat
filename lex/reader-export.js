@@ -7,7 +7,7 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
   'use strict';
   const PUBLIC = 'https://ivseliv.github.io/senat/lex/';
-  const ID = /^(?:1896|1897|1904|1905)-\d{3}$/;
+  const ID = /^(?:\d{4}|[a-z][a-z0-9]*(?:-[a-z0-9]+)*)-\d{3}$/;
   const SHA = /^[a-f0-9]{64}$/i;
   const positive = x => Number.isSafeInteger(x) && x > 0;
   const str = x => x == null ? '' : String(x);
@@ -39,7 +39,7 @@
     try { url = new URL(value, PUBLIC); } catch (_) { return ''; }
     if (url.origin !== 'https://ivseliv.github.io' || url.username || url.password || url.search || url.hash) return '';
     const folder = kind === 'page' ? 'pages' : 'fragments';
-    const pattern = new RegExp('^/senat/lex/scans/(?:1896|1897|1904|1905)/' + folder + '/[A-Za-z0-9_-][A-Za-z0-9_.-]*\\.webp$');
+    const pattern = new RegExp('^/senat/lex/scans/(?:[0-9]{4}|[a-z][a-z0-9]*(?:-[a-z0-9]+)*)/' + folder + '/[A-Za-z0-9_-][A-Za-z0-9_.-]*\\.webp$');
     return pattern.test(url.pathname) ? url.href : '';
   }
   function scanLinks(quote) {
@@ -113,6 +113,7 @@
         if (SHA.test(str(q.source_sha256))) lines.push('SHA\-256 исходного поля: `' + q.source_sha256.toLowerCase() + '`', '');
         if (scans.length) lines.push(...scans.map(s => '- ' + linkMD(scanLabel(s), s.url)), '');
         else lines.push('Ссылки на сканы для этой цитаты не определены.', '');
+        lines.push('Проверка: '+mdText(q.verification?.reason||'Снимок цитаты; текущая версия источника не проверена.'),'');
         if(q.source_warning)lines.push('Ограничение источника: '+mdText(q.source_warning),'');
         if (q.note) lines.push('Заметка читателя к цитате:', '', mdText(q.note), '');
       });
@@ -147,6 +148,7 @@
         if (SHA.test(str(q.source_sha256))) content.push('<p class="metadata">SHA-256 исходного поля: <code>' + q.source_sha256.toLowerCase() + '</code></p>');
         if (scans.length) content.push('<ul>' + scans.map(s => '<li>' + linkHTML(scanLabel(s), s.url) + '</li>').join('') + '</ul>');
         else content.push('<p class="metadata">Ссылки на сканы для этой цитаты не определены.</p>');
+        content.push('<p class="metadata">Проверка: '+escapeHTML(q.verification?.reason||'Снимок цитаты; текущая версия источника не проверена.')+'</p>');
         if(q.source_warning)content.push('<p class="metadata">Ограничение источника: '+escapeHTML(q.source_warning)+'</p>');
         if (q.note) content.push('<h4>Заметка читателя к цитате</h4><p class="reader-note">' + escapeHTML(q.note) + '</p>');
         content.push('</section>');
@@ -166,12 +168,12 @@
   }
 
   function csv(state) {
-    const fields = ['row_type','collection_title','collection_note','decision_id','volume_year','decision_number','department','date_label','decision_url','decision_note','quote_id','field','start','end','text_original','quote_note','source_sha256','source_warning','printed_pages','quote_url','scan_urls','saved_at','updated_at'];
+    const fields = ['row_type','collection_title','collection_note','decision_id','volume_year','decision_number','department','date_label','decision_url','decision_note','quote_id','field','start','end','text_original','quote_note','source_sha256','source_warning','verification_status','verification_reason','checked_sha256','printed_pages','quote_url','scan_urls','saved_at','updated_at'];
     const rows = [];
     for (const item of items(state)) {
       const d = item.decision || {}, base = {collection_title:title(state), collection_note:state && state.note, decision_id:d.id, volume_year:d.year, decision_number:d.number, department:d.department, date_label:d.date_label, decision_url:decisionURL(d), decision_note:item.note, saved_at:item.saved_at, updated_at:item.updated_at};
       rows.push({...base, row_type:'decision', source_sha256:d.source_sha256, source_warning:d.source_warning, printed_pages:pages(d).join('; '), scan_urls:scanLinks(d).map(s=>scanLabel(s)+': '+s.url).join('\n')});
-      for (const q of array(item.quotes).filter(q => q && typeof q === 'object')) rows.push({...base, row_type:'quote', quote_id:q.id, field:q.field, start:q.start, end:q.end, text_original:q.text_original, quote_note:q.note, source_sha256:q.source_sha256, source_warning:q.source_warning, printed_pages:pages(q).join('; '), quote_url:quoteURL(d,q), scan_urls:scanLinks(q).map(s => scanLabel(s) + ': ' + s.url).join('\n')});
+      for (const q of array(item.quotes).filter(q => q && typeof q === 'object')) rows.push({...base, row_type:'quote', quote_id:q.id, field:q.field, start:q.start, end:q.end, text_original:q.text_original, quote_note:q.note, source_sha256:q.source_sha256, source_warning:q.source_warning, verification_status:q.verification?.status||'unverified', verification_reason:q.verification?.reason||'', checked_sha256:q.verification?.checked_sha256||'', printed_pages:pages(q).join('; '), quote_url:quoteURL(d,q), scan_urls:scanLinks(q).map(s => scanLabel(s) + ': ' + s.url).join('\n')});
     }
     if (!rows.length) rows.push({row_type:'collection', collection_title:title(state), collection_note:state && state.note});
     // Апостроф защищает открытие CSV в таблицах от выполнения пользовательских формул.

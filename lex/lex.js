@@ -39,9 +39,86 @@
 
   function tokens(text) {
     const t = modernize(text).toLowerCase().replace(/ё/g, 'е');
-    return (t.match(/[а-я0-9]+/g) || []).filter(w => w.length > 1 && !STOP.has(w));
+    return (t.match(/[а-я0-9]+/g) || []).filter(w => (w.length > 1 || /^[0-9]+$/.test(w)) && !STOP.has(w));
   }
   function stems(text) { return tokens(text).map(stem); }
+  // Внутри кавычек сохраняем служебные слова и слова из одной буквы.
+  function allStems(text) {
+    return (modernize(text).toLowerCase().replace(/ё/g, 'е').match(/[а-я0-9]+/g) || []).map(stem);
+  }
+  function containsSequence(arr, seq) {
+    if (!seq.length) return false;
+    outer: for (let i=0; i+seq.length<=arr.length; i++) {
+      for (let j=0; j<seq.length; j++) if (arr[i+j]!==seq[j]) continue outer;
+      return true;
+    }
+    return false;
+  }
+  function sequenceMatcher(index) {
+    const vocab = new Map((index.vocabulary || []).map((word,i)=>[word,i]));
+    return (id, terms) => {
+      const seq = terms.map(t=>vocab.get(t));
+      if (seq.some(t=>t===undefined)) return false;
+      const parts = index.sequences ? index.sequences[id] : index.sequence ? [index.sequence[id]] : [];
+      return (parts || []).some(part=>containsSequence(part,seq));
+    };
+  }
+  const latin = 'aeopcxyiABCEHKMOPTXI', cyrillic = 'аеорсхуіАВСЕНКМОРТХІ';
+  function normalizeOcr(text, knownWords) {
+    const corrections=[];
+    text=text.replace(/[А-Яа-яЁёѢѣІіѲѳѴѵA-Za-z0-9_]+/g, word=> {
+      if (!/[А-Яа-яЁёѢѣІіѲѳѴѵ]/.test(word) || !/[A-Za-z]/.test(word)) return word;
+      const to=Array.from(word,c=>latin.includes(c)?cyrillic[latin.indexOf(c)]:c).join('');
+      if(to!==word)corrections.push({from:word,to,kind:'mixed-script'});
+      return to;
+    });
+    if(knownWords)text=text.replace(/([А-Яа-яЁёѢѣІіѲѳѴѵ]{3,})-[ \t\r\n]+([а-яёѣіѳѵ]{2,})/g,(from,a,b)=> {
+      const to=a+b,key=modernize(to).toLowerCase().replace(/ё/g,'е');
+      if(!knownWords.has(key))return from;
+      corrections.push({from,to,kind:'hyphenation'});return to;
+    });
+    return {text,corrections};
+  }
+  function unsupportedOperators(q) {
+    const flags=[];
+    if(/(?:^|[^А-Яа-яЁё])(?:не|ни|без|кроме|исключая|только|лишь)(?=$|[^А-Яа-яЁё])/i.test(q))flags.push('negation');
+    if(/(?:^|\s)[+−-]\S/.test(q))flags.push('minus');
+    if(/["«»“”„]/.test(q))flags.push('phrase');
+    return flags;
+  }
+  function oneEdit(a,b) {
+    if(Math.abs(a.length-b.length)>1 || a===b)return false;
+    let i=0,j=0,edits=0;
+    while(i<a.length && j<b.length) {
+      if(a[i]===b[j]){i++;j++;continue;}
+      if(++edits>1)return false;
+      if(a.length>=b.length)i++;if(b.length>=a.length)j++;
+    }
+    return edits+(i<a.length || j<b.length?1:0)===1;
+  }
+  function fuzzyQuery(q, indexes) {
+    if(unsupportedOperators(q).length)return null;
+    const lexicon=[...new Set(indexes.flatMap(index=>index.lexicon || []))];
+    let changed=null;
+    for(const word of [...new Set(tokens(q))]) {
+      if(!/^[а-я]{7,}$/.test(word) || indexes.some(index=>index.post[stem(word)]))continue;
+      const matches=lexicon.filter(candidate=>oneEdit(word,candidate));
+      // Не выбираем молча одно из нескольких слов с разными основами.
+      const roots=new Set(matches.map(stem));
+      if(roots.size!==1 || !matches.length)continue;
+      if(changed)return null; // Не более одного исправленного слова запроса.
+      changed={from:word,to:matches.sort((a,b)=>a.localeCompare(b,'ru'))[0],kind:'typo'};
+    }
+    if(!changed)return null;
+    const text=modernize(q).toLowerCase().replace(/ё/g,'е').replace(/[а-я0-9]+/g,w=>w===changed.from?changed.to:w);
+    return {text,corrections:[changed]};
+  }
+  function ocrCorrections(index,id,terms,queryCorrections) {
+    const set=new Set(terms), edits=[...(queryCorrections || []),...(index.changes?.[id] || []).filter(c=>(c.terms || []).some(t=>set.has(t)))];
+    const unique=new Map();
+    for(const {from,to,kind} of edits)unique.set(kind+'\0'+from+'\0'+to,{from,to,kind});
+    return [...unique.values()];
+  }
 
   /* Современный термин -> старые/родственные выражения (в современной орфографии). */
   const GLOSSARY = {
@@ -70,8 +147,13 @@
 
   /* Разбор запроса: слова (И), "фразы", -минус. Возвращает {clauses, phrases, not, expanded}. */
   function parseQuery(q, useGloss) {
-    const phrases = [], not = [], clauses = [], expanded = [];
-    q = q.replace(/"([^"]+)"/g, (_, p) => { const st = stems(p); if (st.length) phrases.push(st); return ' ' + p + ' '; });
+    const phrases = [], notPhrases = [], not = [], clauses = [], expanded = [];
+    q = q.replace(/(-?)(?:"([^"]+)"|«([^»]+)»|“([^”]+)”|„([^“]+)“)/g, (_, minus, a, b, c, d) => {
+      const p=a || b || c || d;
+      const seq=allStems(p);if(seq.length)(minus?notPhrases:phrases).push(seq);
+      if(!minus)for(const st of stems(p))clauses.push([[st]]);
+      return ' ';
+    });
     for (let raw of q.split(/\s+/)) {
       if (!raw) continue;
       if (raw[0] === '-' && raw.length > 1) { stems(raw.slice(1)).forEach(s => not.push(s)); continue; }
@@ -85,7 +167,7 @@
         clauses.push(alts);
       }
     }
-    return { clauses, phrases, not, expanded: [...new Set(expanded)] };
+    return { clauses, phrases, notPhrases, not, expanded: [...new Set(expanded)] };
   }
 
   /* Индекс: index.json -> структура для поиска. */
@@ -103,18 +185,18 @@
     }
     const k1 = 1.2, b = 0.75;
     const idf = df => Math.log(1 + (N - df + 0.5) / (df + 0.5));
+    const phraseMatches=sequenceMatcher(index);
+    const ocrEngine=index.ocr ? makeEngine(index.ocr,docs) : null;
+    const knownWords=index.ocr ? new Set(index.ocr.lexicon || []) : null;
 
-    function search(q, opts) {
+    function exactSearch(q, opts) {
       opts = opts || {};
       const pq = parseQuery(q, opts.gloss !== false);
       const filter = opts.filter || (() => true);
       const clauses = pq.clauses.slice();
-      pq.phrases.forEach(p => clauses.push([p]));
       let cand = null, scores = new Map();
       if (!clauses.length) {           // только фильтры: все решения, новее вперёд
-        const out = [];
-        for (const d of docs) if (filter(d)) out.push({ i: d.i, score: 0 });
-        return { hits: out, query: pq };
+        cand = new Set(docs.map(d=>d.i));
       }
       for (const alts of clauses) {
         const ok = new Set();
@@ -138,43 +220,97 @@
         cand = cand === null ? ok : new Set([...cand].filter(x => ok.has(x)));
       }
       for (const st of pq.not) { const p = post(st, 'b'); if (p) for (const id of p.keys()) cand.delete(id); }
+      for(const phrase of pq.phrases)for(const id of cand)if(!phraseMatches(id,phrase))cand.delete(id);
+      for(const phrase of pq.notPhrases)for(const id of cand)if(phraseMatches(id,phrase))cand.delete(id);
       const hits = [];
       for (const id of cand) if (filter(docs[id])) hits.push({ i: id, score: scores.get(id) || 0 });
       hits.sort((a, c) => c.score - a.score || a.i - c.i);
       return { hits, query: pq };
+    }
+    function search(q, opts) {
+      opts=opts || {};
+      const result=exactSearch(q,opts);
+      if(!ocrEngine || opts.ocr===false || result.query.not.length || result.query.notPhrases.length)return result;
+      const normalized=normalizeOcr(q,knownWords);
+      let additional=ocrEngine.search(normalized.text,{...opts,ocr:false}), changes=normalized.corrections;
+      if(!result.hits.length && !additional.hits.length && opts.fuzzy!==false) {
+        const fuzzy=fuzzyQuery(normalized.text,[index,index.ocr]);
+        if(fuzzy){additional=ocrEngine.search(fuzzy.text,{...opts,ocr:false});changes=[...changes,...fuzzy.corrections];}
+      }
+      const seen=new Set(result.hits.map(h=>h.i));
+      const terms=additional.query.clauses.flat(3);
+      for(const hit of additional.hits)if(!seen.has(hit.i))result.hits.push({...hit,ocr:true,
+        corrections:ocrCorrections(index.ocr,hit.i,terms,changes)});
+      return result;
     }
     return { search, post };
   }
 
   /* Подсветка: возвращает HTML-фрагмент вокруг лучшего окна слов запроса. */
   function esc(s) { return s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
-  function snippet(text, qstems, width) {
+  const WORD_RX=/[А-Яа-яЁёѢѣІіѲѳѴѵA-Za-z0-9_]+/g;
+  const WORD_EDGE=/[А-Яа-яЁёѢѣІіѲѳѴѵA-Za-z0-9_]/;
+  function matchRanges(text,qstems,corrections) {
+    const set=new Set(qstems),ranges=[];
+    // Нормализуем только ключ сравнения. Выводится буквальный исходный токен,
+    // включая латинскую букву, по которой найдено OCR-совпадение.
+    for(const m of text.matchAll(WORD_RX)) {
+      const st=allStems(normalizeOcr(m[0]).text)[0];
+      if(set.has(st))ranges.push({s:m.index,e:m.index+m[0].length});
+    }
+    for(const correction of corrections || []) {
+      // Современное представление также строится из исходника; замена from
+      // нужна лишь для поиска диапазона в уже выбранном отображении.
+      for(const from of new Set([correction.from,modernize(correction.from)])) {
+        if(!from)continue;
+        for(let at=text.indexOf(from);at>=0;at=text.indexOf(from,at+from.length)) {
+          if((at && WORD_EDGE.test(text[at-1])) || WORD_EDGE.test(text[at+from.length] || ''))continue;
+          ranges.push({s:at,e:at+from.length});
+        }
+      }
+    }
+    ranges.sort((a,b)=>a.s-b.s || b.e-a.e);
+    const merged=[];
+    for(const range of ranges) {
+      const previous=merged[merged.length-1];
+      if(previous && range.s<=previous.e)previous.e=Math.max(previous.e,range.e);
+      else merged.push({...range});
+    }
+    return merged;
+  }
+  function renderRanges(text,ranges,from=0,to=text.length) {
+    let out='',pos=from;
+    for(const range of ranges) {
+      if(range.e<=from || range.s>=to)continue;
+      const start=Math.max(range.s,from),end=Math.min(range.e,to);
+      out+=esc(text.slice(pos,start))+'<mark>'+esc(text.slice(start,end))+'</mark>';pos=end;
+    }
+    return out+esc(text.slice(pos,to));
+  }
+  function highlightText(text,qstems,corrections) {
+    return renderRanges(text,matchRanges(text,qstems,corrections));
+  }
+  function snippet(text, qstems, width, corrections) {
     width = width || 320;
     const t = text.replace(/\s+/g, ' ');
-    const re = /[А-Яа-яЁёѢѣІіѲѳѴѵъь0-9]+/g; const words = []; let m;
-    while ((m = re.exec(t))) words.push({ s: m.index, e: m.index + m[0].length, st: stem(modernize(m[0]).toLowerCase().replace(/ё/g, 'е')) });
-    const set = new Set(qstems); const idx = words.map((w, k) => set.has(w.st) ? k : -1).filter(k => k >= 0);
+    const edits=(corrections || []).map(c=>({...c,from:c.from.replace(/\s+/g,' ')}));
+    const ranges=matchRanges(t,qstems,edits);
     let from = 0;
-    if (idx.length) {
-      let best = -1, bestStart = idx[0];
-      for (const k of idx) {
-        const seen = new Set(idx.filter(j => words[j].s >= words[k].s && words[j].s < words[k].s + width).map(j => words[j].st));
-        if (seen.size > best) { best = seen.size; bestStart = k; }
+    if (ranges.length) {
+      let best=-1,bestStart=ranges[0].s;
+      for(const range of ranges) {
+        const count=ranges.filter(r=>r.s>=range.s && r.s<range.s+width).length;
+        if(count>best){best=count;bestStart=range.s;}
       }
-      from = Math.max(0, words[bestStart].s - 60);
+      from = Math.max(0, bestStart - 60);
       const sp = t.lastIndexOf(' ', from); from = sp >= 0 && from > 0 ? sp + 1 : from;
     }
     const to = Math.min(t.length, from + width);
-    let out = '', pos = from;
-    for (const w of words) {
-      if (w.e <= from || w.s >= to) continue;
-      out += esc(t.slice(pos, w.s)); const piece = t.slice(w.s, w.e);
-      out += set.has(w.st) ? '<mark>' + esc(piece) + '</mark>' : esc(piece); pos = w.e;
-    }
-    out += esc(t.slice(pos, to));
+    const out=renderRanges(t,ranges,from,to);
     return (from > 0 ? '… ' : '') + out + (to < t.length ? ' …' : '');
   }
 
-  const api = { modernize, stem, tokens, stems, parseQuery, makeEngine, snippet, GLOSSARY, esc };
+  const api = { modernize, stem, tokens, stems, allStems, sequenceMatcher, normalizeOcr, unsupportedOperators,
+    fuzzyQuery, ocrCorrections, parseQuery, makeEngine, snippet, highlightText, GLOSSARY, esc };
   if (typeof module !== 'undefined' && module.exports) module.exports = api; else root.Lex = api;
 })(typeof window !== 'undefined' ? window : globalThis);

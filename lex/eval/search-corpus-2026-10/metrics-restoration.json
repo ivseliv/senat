@@ -1,0 +1,2759 @@
+{
+  "suite": "queries-restoration.json",
+  "queriesSha256": "dc686676a81a1a0ac3b43a8f84bf087397c51a25b0b3eb8d6dbab28ca5b9dee5",
+  "protocol": "24 новых формулировки по четырём томам и8 заведомо отсутствующих в корпусе вопросов. Цитаты выбраны из источника до просмотра рангов;12dev/12test, чередование внутри каждого тома закреплено заранее. Подбор редакционный с помощью ИИ, не независимая оценка юристом; дела и темы могут пересекаться с прежними наборами. Эталоны и разбиение после фиксации не меняются. Test используется один раз для окончательной оценки выбранного изменения; после просмотра не служит настройке. Recall измеряет наличие выбранной цитаты, не полноту всех релевантных мест.",
+  "volumes": [
+    1896,
+    1897,
+    1904,
+    1905
+  ],
+  "split": "all",
+  "ocr": true,
+  "aggregates": [
+    {
+      "split": "dev",
+      "method": "baseline",
+      "n": 12,
+      "recall5": 0.08333333333333333,
+      "recall10": 0.08333333333333333,
+      "mrr": 0.08333333333333333,
+      "falsePositives": null
+    },
+    {
+      "split": "dev",
+      "method": "glossary",
+      "n": 12,
+      "recall5": 0.16666666666666666,
+      "recall10": 0.16666666666666666,
+      "mrr": 0.16666666666666666,
+      "falsePositives": null
+    },
+    {
+      "split": "dev",
+      "method": "enriched",
+      "n": 12,
+      "recall5": 0.25,
+      "recall10": 0.25,
+      "mrr": 0.15277777777777776,
+      "falsePositives": null
+    },
+    {
+      "split": "dev",
+      "method": "hybrid",
+      "n": 12,
+      "recall5": 0.5833333333333334,
+      "recall10": 0.5833333333333334,
+      "mrr": 0.40277777777777785,
+      "falsePositives": null
+    },
+    {
+      "split": "test",
+      "method": "baseline",
+      "n": 12,
+      "recall5": 0.08333333333333333,
+      "recall10": 0.08333333333333333,
+      "mrr": 0.08333333333333333,
+      "falsePositives": null
+    },
+    {
+      "split": "test",
+      "method": "glossary",
+      "n": 12,
+      "recall5": 0.08333333333333333,
+      "recall10": 0.08333333333333333,
+      "mrr": 0.08333333333333333,
+      "falsePositives": null
+    },
+    {
+      "split": "test",
+      "method": "enriched",
+      "n": 12,
+      "recall5": 0.4166666666666667,
+      "recall10": 0.4166666666666667,
+      "mrr": 0.375,
+      "falsePositives": null
+    },
+    {
+      "split": "test",
+      "method": "hybrid",
+      "n": 12,
+      "recall5": 0.5,
+      "recall10": 0.5,
+      "mrr": 0.40277777777777785,
+      "falsePositives": null
+    },
+    {
+      "split": "positive",
+      "method": "baseline",
+      "n": 24,
+      "recall5": 0.08333333333333333,
+      "recall10": 0.08333333333333333,
+      "mrr": 0.08333333333333333,
+      "falsePositives": null
+    },
+    {
+      "split": "positive",
+      "method": "glossary",
+      "n": 24,
+      "recall5": 0.125,
+      "recall10": 0.125,
+      "mrr": 0.125,
+      "falsePositives": null
+    },
+    {
+      "split": "positive",
+      "method": "enriched",
+      "n": 24,
+      "recall5": 0.3333333333333333,
+      "recall10": 0.3333333333333333,
+      "mrr": 0.2638888888888889,
+      "falsePositives": null
+    },
+    {
+      "split": "positive",
+      "method": "hybrid",
+      "n": 24,
+      "recall5": 0.5416666666666666,
+      "recall10": 0.5416666666666666,
+      "mrr": 0.40277777777777773,
+      "falsePositives": null
+    },
+    {
+      "split": "negative",
+      "method": "baseline",
+      "n": 8,
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "falsePositives": 0
+    },
+    {
+      "split": "negative",
+      "method": "glossary",
+      "n": 8,
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "falsePositives": 0
+    },
+    {
+      "split": "negative",
+      "method": "enriched",
+      "n": 8,
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "falsePositives": 0
+    },
+    {
+      "split": "negative",
+      "method": "hybrid",
+      "n": 8,
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "falsePositives": 0
+    }
+  ],
+  "rows": [
+    {
+      "id": "restored-01",
+      "query": "частичное погашение ипотеки без предъявления подлинника закладной",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-01",
+      "query": "частичное погашение ипотеки без предъявления подлинника закладной",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-01",
+      "query": "частичное погашение ипотеки без предъявления подлинника закладной",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 3,
+      "top10": [
+        {
+          "passage": "1896-012:5403-7034",
+          "decision": "1896-012",
+          "pages": [
+            726
+          ],
+          "score": 30.41401,
+          "relevant": false
+        },
+        {
+          "passage": "1896-012:6769-8554",
+          "decision": "1896-012",
+          "pages": [
+            726
+          ],
+          "score": 25.75951,
+          "relevant": false
+        },
+        {
+          "passage": "1896-012:1251-3201",
+          "decision": "1896-012",
+          "pages": [
+            725
+          ],
+          "score": 23.6476,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-01",
+      "query": "частичное погашение ипотеки без предъявления подлинника закладной",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 5,
+      "top10": [
+        {
+          "passage": "1896-012:5403-7034",
+          "decision": "1896-012",
+          "pages": [
+            726
+          ],
+          "score": 30.41401,
+          "relevant": false
+        },
+        {
+          "passage": "1896-012:6769-8554",
+          "decision": "1896-012",
+          "pages": [
+            726
+          ],
+          "score": 25.75951,
+          "relevant": false
+        },
+        {
+          "passage": "1896-012:1251-3201",
+          "decision": "1896-012",
+          "pages": [
+            725
+          ],
+          "score": 23.6476,
+          "relevant": false
+        },
+        {
+          "passage": "1896-012:8309-9554",
+          "decision": "1896-012",
+          "pages": [
+            726,
+            727
+          ],
+          "score": 20.6276,
+          "relevant": false
+        },
+        {
+          "passage": "1896-012:0-1518",
+          "decision": "1896-012",
+          "pages": [
+            724,
+            725
+          ],
+          "score": 19.88129,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-02",
+      "query": "приобретательная давность на часть нераздельного крестьянского леса",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-02",
+      "query": "приобретательная давность на часть нераздельного крестьянского леса",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1896-014:0-1763",
+          "decision": "1896-014",
+          "pages": [
+            730,
+            731
+          ],
+          "score": 20.74964,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-02",
+      "query": "приобретательная давность на часть нераздельного крестьянского леса",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.5,
+      "negativeFalsePositive": null,
+      "results": 3,
+      "top10": [
+        {
+          "passage": "1896-014:0-1763",
+          "decision": "1896-014",
+          "pages": [
+            730,
+            731
+          ],
+          "score": 23.5188,
+          "relevant": false
+        },
+        {
+          "passage": "1896-014:2960-4402",
+          "decision": "1896-014",
+          "pages": [
+            731
+          ],
+          "score": 21.27086,
+          "relevant": true
+        },
+        {
+          "passage": "1897-021:0-1501",
+          "decision": "1897-021",
+          "pages": [
+            79,
+            80
+          ],
+          "score": 20.5965,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-02",
+      "query": "приобретательная давность на часть нераздельного крестьянского леса",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.5,
+      "negativeFalsePositive": null,
+      "results": 5,
+      "top10": [
+        {
+          "passage": "1896-014:0-1763",
+          "decision": "1896-014",
+          "pages": [
+            730,
+            731
+          ],
+          "score": 23.5188,
+          "relevant": false
+        },
+        {
+          "passage": "1896-014:2960-4402",
+          "decision": "1896-014",
+          "pages": [
+            731
+          ],
+          "score": 21.27086,
+          "relevant": true
+        },
+        {
+          "passage": "1897-021:0-1501",
+          "decision": "1897-021",
+          "pages": [
+            79,
+            80
+          ],
+          "score": 20.5965,
+          "relevant": false
+        },
+        {
+          "passage": "1896-014:4161-5177",
+          "decision": "1896-014",
+          "pages": [
+            731,
+            732
+          ],
+          "score": 14.29433,
+          "relevant": false
+        },
+        {
+          "passage": "1897-021:1287-3241",
+          "decision": "1897-021",
+          "pages": [
+            79,
+            80
+          ],
+          "score": 12.93513,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-03",
+      "query": "принудительная явка подсудимого только для дачи объяснений",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-03",
+      "query": "принудительная явка подсудимого только для дачи объяснений",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-03",
+      "query": "принудительная явка подсудимого только для дачи объяснений",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-03",
+      "query": "принудительная явка подсудимого только для дачи объяснений",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-04",
+      "query": "учебная музыкальная хрестоматия конкурирует с изданиями автора",
+      "split": "test",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-04",
+      "query": "учебная музыкальная хрестоматия конкурирует с изданиями автора",
+      "split": "test",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-04",
+      "query": "учебная музыкальная хрестоматия конкурирует с изданиями автора",
+      "split": "test",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-04",
+      "query": "учебная музыкальная хрестоматия конкурирует с изданиями автора",
+      "split": "test",
+      "method": "hybrid",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-05",
+      "query": "хранение исполнительных листов при периодических удержаниях из жалованья",
+      "split": "test",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-05",
+      "query": "хранение исполнительных листов при периодических удержаниях из жалованья",
+      "split": "test",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-05",
+      "query": "хранение исполнительных листов при периодических удержаниях из жалованья",
+      "split": "test",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1896-034:3416-5229",
+          "decision": "1896-034",
+          "pages": [
+            773
+          ],
+          "score": 32.34129,
+          "relevant": true
+        }
+      ]
+    },
+    {
+      "id": "restored-05",
+      "query": "хранение исполнительных листов при периодических удержаниях из жалованья",
+      "split": "test",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 2,
+      "top10": [
+        {
+          "passage": "1896-034:3416-5229",
+          "decision": "1896-034",
+          "pages": [
+            773
+          ],
+          "score": 32.34129,
+          "relevant": true
+        },
+        {
+          "passage": "1896-034:4977-6936",
+          "decision": "1896-034",
+          "pages": [
+            773
+          ],
+          "score": 19.87164,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-06",
+      "query": "исполнение решений волостного суда через удержания из заработка рабочих",
+      "split": "test",
+      "method": "baseline",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1896-040:2856-4460",
+          "decision": "1896-040",
+          "pages": [
+            783,
+            784
+          ],
+          "score": 23.20762,
+          "relevant": true
+        }
+      ]
+    },
+    {
+      "id": "restored-06",
+      "query": "исполнение решений волостного суда через удержания из заработка рабочих",
+      "split": "test",
+      "method": "glossary",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1896-040:2856-4460",
+          "decision": "1896-040",
+          "pages": [
+            783,
+            784
+          ],
+          "score": 28.3134,
+          "relevant": true
+        }
+      ]
+    },
+    {
+      "id": "restored-06",
+      "query": "исполнение решений волостного суда через удержания из заработка рабочих",
+      "split": "test",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.5,
+      "negativeFalsePositive": null,
+      "results": 2,
+      "top10": [
+        {
+          "passage": "1896-040:0-1606",
+          "decision": "1896-040",
+          "pages": [
+            782,
+            783
+          ],
+          "score": 27.86453,
+          "relevant": false
+        },
+        {
+          "passage": "1896-040:2856-4460",
+          "decision": "1896-040",
+          "pages": [
+            783,
+            784
+          ],
+          "score": 27.67645,
+          "relevant": true
+        }
+      ]
+    },
+    {
+      "id": "restored-06",
+      "query": "исполнение решений волостного суда через удержания из заработка рабочих",
+      "split": "test",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 4,
+      "top10": [
+        {
+          "passage": "1896-040:2856-4460",
+          "decision": "1896-040",
+          "pages": [
+            783,
+            784
+          ],
+          "score": 29.9263,
+          "relevant": true
+        },
+        {
+          "passage": "1896-040:0-1606",
+          "decision": "1896-040",
+          "pages": [
+            782,
+            783
+          ],
+          "score": 27.86453,
+          "relevant": false
+        },
+        {
+          "passage": "1896-040:4215-5960",
+          "decision": "1896-040",
+          "pages": [
+            783,
+            784
+          ],
+          "score": 18.98702,
+          "relevant": false
+        },
+        {
+          "passage": "1896-040:1377-3073",
+          "decision": "1896-040",
+          "pages": [
+            783
+          ],
+          "score": 18.77699,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-07",
+      "query": "возражение ответчика о праве третьего лица без его доверенности",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-07",
+      "query": "возражение ответчика о праве третьего лица без его доверенности",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 2,
+      "top10": [
+        {
+          "passage": "1897-005:5301-6899",
+          "decision": "1897-005",
+          "pages": [
+            20,
+            21
+          ],
+          "score": 16.66694,
+          "relevant": true
+        },
+        {
+          "passage": "1897-031:8408-10220",
+          "decision": "1897-031",
+          "pages": [
+            110,
+            111
+          ],
+          "score": 9.47279,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-07",
+      "query": "возражение ответчика о праве третьего лица без его доверенности",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1897-031:8408-10220",
+          "decision": "1897-031",
+          "pages": [
+            110,
+            111
+          ],
+          "score": 10.89559,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-07",
+      "query": "возражение ответчика о праве третьего лица без его доверенности",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 11,
+      "top10": [
+        {
+          "passage": "1897-005:5301-6899",
+          "decision": "1897-005",
+          "pages": [
+            20,
+            21
+          ],
+          "score": 19.68913,
+          "relevant": true
+        },
+        {
+          "passage": "1897-031:8408-10220",
+          "decision": "1897-031",
+          "pages": [
+            110,
+            111
+          ],
+          "score": 10.89559,
+          "relevant": false
+        },
+        {
+          "passage": "1897-031:2812-4634",
+          "decision": "1897-031",
+          "pages": [
+            109
+          ],
+          "score": 11.59213,
+          "relevant": false
+        },
+        {
+          "passage": "1897-005:3834-5535",
+          "decision": "1897-005",
+          "pages": [
+            20
+          ],
+          "score": 9.97239,
+          "relevant": false
+        },
+        {
+          "passage": "1897-062:4206-5458",
+          "decision": "1897-062",
+          "pages": [
+            203
+          ],
+          "score": 9.92298,
+          "relevant": false
+        },
+        {
+          "passage": "1897-031:6935-8653",
+          "decision": "1897-031",
+          "pages": [
+            110,
+            111
+          ],
+          "score": 9.56723,
+          "relevant": false
+        },
+        {
+          "passage": "1897-031:4387-5926",
+          "decision": "1897-031",
+          "pages": [
+            109,
+            110
+          ],
+          "score": 9.20802,
+          "relevant": false
+        },
+        {
+          "passage": "1905-016:1425-2835",
+          "decision": "1905-016",
+          "pages": [
+            38,
+            39
+          ],
+          "score": 8.01649,
+          "relevant": false
+        },
+        {
+          "passage": "1904-030:1459-3548",
+          "decision": "1904-030",
+          "pages": [
+            75
+          ],
+          "score": 7.30572,
+          "relevant": false
+        },
+        {
+          "passage": "1905-063:1253-3081",
+          "decision": "1905-063",
+          "pages": [
+            171,
+            172
+          ],
+          "score": 6.78118,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-08",
+      "query": "ограничение продажи по сословию не отменяет права собственности",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-08",
+      "query": "ограничение продажи по сословию не отменяет права собственности",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-08",
+      "query": "ограничение продажи по сословию не отменяет права собственности",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-08",
+      "query": "ограничение продажи по сословию не отменяет права собственности",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.5,
+      "negativeFalsePositive": null,
+      "results": 3,
+      "top10": [
+        {
+          "passage": "1897-011:3883-5463",
+          "decision": "1897-011",
+          "pages": [
+            51,
+            52
+          ],
+          "score": 11.12943,
+          "relevant": false
+        },
+        {
+          "passage": "1897-011:7692-9345",
+          "decision": "1897-011",
+          "pages": [
+            52,
+            53
+          ],
+          "score": 10.06441,
+          "relevant": true
+        },
+        {
+          "passage": "1897-011:5211-6742",
+          "decision": "1897-011",
+          "pages": [
+            51,
+            52
+          ],
+          "score": 9.05485,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-09",
+      "query": "запрет рубки спорного леса при межевании и вотчинном споре",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-09",
+      "query": "запрет рубки спорного леса при межевании и вотчинном споре",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-09",
+      "query": "запрет рубки спорного леса при межевании и вотчинном споре",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-09",
+      "query": "запрет рубки спорного леса при межевании и вотчинном споре",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 2,
+      "top10": [
+        {
+          "passage": "1897-028:3903-5080",
+          "decision": "1897-028",
+          "pages": [
+            103,
+            104
+          ],
+          "score": 22.01506,
+          "relevant": true
+        },
+        {
+          "passage": "1897-028:2642-4102",
+          "decision": "1897-028",
+          "pages": [
+            103,
+            104
+          ],
+          "score": 18.66236,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-10",
+      "query": "достаточно ли документов для опровержения давностного владения землёй",
+      "split": "test",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-10",
+      "query": "достаточно ли документов для опровержения давностного владения землёй",
+      "split": "test",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-10",
+      "query": "достаточно ли документов для опровержения давностного владения землёй",
+      "split": "test",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-10",
+      "query": "достаточно ли документов для опровержения давностного владения землёй",
+      "split": "test",
+      "method": "hybrid",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-11",
+      "query": "истребование торговых книг при обеспечении доказательств",
+      "split": "test",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-11",
+      "query": "истребование торговых книг при обеспечении доказательств",
+      "split": "test",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-11",
+      "query": "истребование торговых книг при обеспечении доказательств",
+      "split": "test",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1897-067:5990-7993",
+          "decision": "1897-067",
+          "pages": [
+            226
+          ],
+          "score": 21.25283,
+          "relevant": true
+        }
+      ]
+    },
+    {
+      "id": "restored-11",
+      "query": "истребование торговых книг при обеспечении доказательств",
+      "split": "test",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 3,
+      "top10": [
+        {
+          "passage": "1897-067:5990-7993",
+          "decision": "1897-067",
+          "pages": [
+            226
+          ],
+          "score": 21.25283,
+          "relevant": true
+        },
+        {
+          "passage": "1897-067:7710-9615",
+          "decision": "1897-067",
+          "pages": [
+            226,
+            227
+          ],
+          "score": 14.58984,
+          "relevant": false
+        },
+        {
+          "passage": "1897-067:4385-6323",
+          "decision": "1897-067",
+          "pages": [
+            225,
+            226
+          ],
+          "score": 12.33927,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-12",
+      "query": "компетенция горского словесного суда продавать имущество на торгах",
+      "split": "test",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-12",
+      "query": "компетенция горского словесного суда продавать имущество на торгах",
+      "split": "test",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1897-095:1258-2801",
+          "decision": "1897-095",
+          "pages": [
+            307
+          ],
+          "score": 21.00777,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-12",
+      "query": "компетенция горского словесного суда продавать имущество на торгах",
+      "split": "test",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-12",
+      "query": "компетенция горского словесного суда продавать имущество на торгах",
+      "split": "test",
+      "method": "hybrid",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 4,
+      "top10": [
+        {
+          "passage": "1897-095:1258-2801",
+          "decision": "1897-095",
+          "pages": [
+            307
+          ],
+          "score": 21.00777,
+          "relevant": false
+        },
+        {
+          "passage": "1897-095:2581-4321",
+          "decision": "1897-095",
+          "pages": [
+            307,
+            308
+          ],
+          "score": 20.3542,
+          "relevant": false
+        },
+        {
+          "passage": "1897-095:4087-5748",
+          "decision": "1897-095",
+          "pages": [
+            308
+          ],
+          "score": 20.11104,
+          "relevant": false
+        },
+        {
+          "passage": "1897-095:0-1507",
+          "decision": "1897-095",
+          "pages": [
+            306,
+            307
+          ],
+          "score": 15.52623,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-13",
+      "query": "пожар от паровозных искр в Прибалтике и местное гражданское право",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1904-003:2974-4990",
+          "decision": "1904-003",
+          "pages": [
+            12
+          ],
+          "score": 30.64602,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-13",
+      "query": "пожар от паровозных искр в Прибалтике и местное гражданское право",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1904-003:2974-4990",
+          "decision": "1904-003",
+          "pages": [
+            12
+          ],
+          "score": 30.64602,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-13",
+      "query": "пожар от паровозных искр в Прибалтике и местное гражданское право",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1904-003:2974-4990",
+          "decision": "1904-003",
+          "pages": [
+            12
+          ],
+          "score": 30.91502,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-13",
+      "query": "пожар от паровозных искр в Прибалтике и местное гражданское право",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.5,
+      "negativeFalsePositive": null,
+      "results": 2,
+      "top10": [
+        {
+          "passage": "1904-003:2974-4990",
+          "decision": "1904-003",
+          "pages": [
+            12
+          ],
+          "score": 30.91502,
+          "relevant": false
+        },
+        {
+          "passage": "1904-003:1751-3212",
+          "decision": "1904-003",
+          "pages": [
+            11,
+            12
+          ],
+          "score": 18.27122,
+          "relevant": true
+        }
+      ]
+    },
+    {
+      "id": "restored-14",
+      "query": "переход собственности после утверждения сделки старшим нотариусом",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-14",
+      "query": "переход собственности после утверждения сделки старшим нотариусом",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-14",
+      "query": "переход собственности после утверждения сделки старшим нотариусом",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-14",
+      "query": "переход собственности после утверждения сделки старшим нотариусом",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-15",
+      "query": "несчастная несостоятельность и согласие большинства кредиторов",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-15",
+      "query": "несчастная несостоятельность и согласие большинства кредиторов",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-15",
+      "query": "несчастная несостоятельность и согласие большинства кредиторов",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-15",
+      "query": "несчастная несостоятельность и согласие большинства кредиторов",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-16",
+      "query": "узаконение умершего отца по просьбе его детей",
+      "split": "test",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-16",
+      "query": "узаконение умершего отца по просьбе его детей",
+      "split": "test",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-16",
+      "query": "узаконение умершего отца по просьбе его детей",
+      "split": "test",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1904-048:1206-2888",
+          "decision": "1904-048",
+          "pages": [
+            134
+          ],
+          "score": 22.1557,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-16",
+      "query": "узаконение умершего отца по просьбе его детей",
+      "split": "test",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.3333333333333333,
+      "negativeFalsePositive": null,
+      "results": 3,
+      "top10": [
+        {
+          "passage": "1904-048:1206-2888",
+          "decision": "1904-048",
+          "pages": [
+            134
+          ],
+          "score": 22.1557,
+          "relevant": false
+        },
+        {
+          "passage": "1904-048:0-1486",
+          "decision": "1904-048",
+          "pages": [
+            133,
+            134
+          ],
+          "score": 15.80551,
+          "relevant": false
+        },
+        {
+          "passage": "1904-048:2605-4155",
+          "decision": "1904-048",
+          "pages": [
+            134,
+            135
+          ],
+          "score": 14.43914,
+          "relevant": true
+        }
+      ]
+    },
+    {
+      "id": "restored-17",
+      "query": "давность истребования приданого при браке несовершеннолетней",
+      "split": "test",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-17",
+      "query": "давность истребования приданого при браке несовершеннолетней",
+      "split": "test",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-17",
+      "query": "давность истребования приданого при браке несовершеннолетней",
+      "split": "test",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-17",
+      "query": "давность истребования приданого при браке несовершеннолетней",
+      "split": "test",
+      "method": "hybrid",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-18",
+      "query": "сохранение материнской фамилии ребёнку после узаконения",
+      "split": "test",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-18",
+      "query": "сохранение материнской фамилии ребёнку после узаконения",
+      "split": "test",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-18",
+      "query": "сохранение материнской фамилии ребёнку после узаконения",
+      "split": "test",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-18",
+      "query": "сохранение материнской фамилии ребёнку после узаконения",
+      "split": "test",
+      "method": "hybrid",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-19",
+      "query": "запрет договорной ипотеки и допустимость судебной ипотеки",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-19",
+      "query": "запрет договорной ипотеки и допустимость судебной ипотеки",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-19",
+      "query": "запрет договорной ипотеки и допустимость судебной ипотеки",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-19",
+      "query": "запрет договорной ипотеки и допустимость судебной ипотеки",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-20",
+      "query": "вдова оспаривает заём выданный без разрешения мужа",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-20",
+      "query": "вдова оспаривает заём выданный без разрешения мужа",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-20",
+      "query": "вдова оспаривает заём выданный без разрешения мужа",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.3333333333333333,
+      "negativeFalsePositive": null,
+      "results": 5,
+      "top10": [
+        {
+          "passage": "1905-032:5601-7019",
+          "decision": "1905-032",
+          "pages": [
+            86,
+            87
+          ],
+          "score": 28.75068,
+          "relevant": false
+        },
+        {
+          "passage": "1905-032:1637-3358",
+          "decision": "1905-032",
+          "pages": [
+            85,
+            86
+          ],
+          "score": 26.87713,
+          "relevant": false
+        },
+        {
+          "passage": "1905-032:4487-5859",
+          "decision": "1905-032",
+          "pages": [
+            86
+          ],
+          "score": 26.41118,
+          "relevant": true
+        },
+        {
+          "passage": "1905-032:3106-4751",
+          "decision": "1905-032",
+          "pages": [
+            86
+          ],
+          "score": 25.93263,
+          "relevant": false
+        },
+        {
+          "passage": "1905-032:0-1881",
+          "decision": "1905-032",
+          "pages": [
+            84,
+            85
+          ],
+          "score": 24.82369,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-20",
+      "query": "вдова оспаривает заём выданный без разрешения мужа",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.3333333333333333,
+      "negativeFalsePositive": null,
+      "results": 5,
+      "top10": [
+        {
+          "passage": "1905-032:5601-7019",
+          "decision": "1905-032",
+          "pages": [
+            86,
+            87
+          ],
+          "score": 28.75068,
+          "relevant": false
+        },
+        {
+          "passage": "1905-032:1637-3358",
+          "decision": "1905-032",
+          "pages": [
+            85,
+            86
+          ],
+          "score": 26.87713,
+          "relevant": false
+        },
+        {
+          "passage": "1905-032:4487-5859",
+          "decision": "1905-032",
+          "pages": [
+            86
+          ],
+          "score": 26.41118,
+          "relevant": true
+        },
+        {
+          "passage": "1905-032:3106-4751",
+          "decision": "1905-032",
+          "pages": [
+            86
+          ],
+          "score": 25.93263,
+          "relevant": false
+        },
+        {
+          "passage": "1905-032:0-1881",
+          "decision": "1905-032",
+          "pages": [
+            84,
+            85
+          ],
+          "score": 24.82369,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-21",
+      "query": "учреждение торговой администрации при дефиците предприятия",
+      "split": "dev",
+      "method": "baseline",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 3,
+      "top10": [
+        {
+          "passage": "1905-046:0-1818",
+          "decision": "1905-046",
+          "pages": [
+            125,
+            126
+          ],
+          "score": 27.33054,
+          "relevant": true
+        },
+        {
+          "passage": "1905-045:1436-3555",
+          "decision": "1905-045",
+          "pages": [
+            124
+          ],
+          "score": 24.1168,
+          "relevant": false
+        },
+        {
+          "passage": "1905-046:1516-3620",
+          "decision": "1905-046",
+          "pages": [
+            126
+          ],
+          "score": 22.23763,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-21",
+      "query": "учреждение торговой администрации при дефиците предприятия",
+      "split": "dev",
+      "method": "glossary",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 3,
+      "top10": [
+        {
+          "passage": "1905-046:0-1818",
+          "decision": "1905-046",
+          "pages": [
+            125,
+            126
+          ],
+          "score": 27.33054,
+          "relevant": true
+        },
+        {
+          "passage": "1905-045:1436-3555",
+          "decision": "1905-045",
+          "pages": [
+            124
+          ],
+          "score": 24.1168,
+          "relevant": false
+        },
+        {
+          "passage": "1905-046:1516-3620",
+          "decision": "1905-046",
+          "pages": [
+            126
+          ],
+          "score": 22.23763,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-21",
+      "query": "учреждение торговой администрации при дефиците предприятия",
+      "split": "dev",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 3,
+      "top10": [
+        {
+          "passage": "1905-046:0-1818",
+          "decision": "1905-046",
+          "pages": [
+            125,
+            126
+          ],
+          "score": 27.90566,
+          "relevant": true
+        },
+        {
+          "passage": "1905-045:1436-3555",
+          "decision": "1905-045",
+          "pages": [
+            124
+          ],
+          "score": 24.1168,
+          "relevant": false
+        },
+        {
+          "passage": "1905-046:1516-3620",
+          "decision": "1905-046",
+          "pages": [
+            126
+          ],
+          "score": 23.66161,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-21",
+      "query": "учреждение торговой администрации при дефиците предприятия",
+      "split": "dev",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 5,
+      "top10": [
+        {
+          "passage": "1905-046:0-1818",
+          "decision": "1905-046",
+          "pages": [
+            125,
+            126
+          ],
+          "score": 27.90566,
+          "relevant": true
+        },
+        {
+          "passage": "1905-045:1436-3555",
+          "decision": "1905-045",
+          "pages": [
+            124
+          ],
+          "score": 24.1168,
+          "relevant": false
+        },
+        {
+          "passage": "1905-046:1516-3620",
+          "decision": "1905-046",
+          "pages": [
+            126
+          ],
+          "score": 23.66161,
+          "relevant": false
+        },
+        {
+          "passage": "1905-045:0-1763",
+          "decision": "1905-045",
+          "pages": [
+            123,
+            124
+          ],
+          "score": 15.41757,
+          "relevant": false
+        },
+        {
+          "passage": "1905-045:3284-5277",
+          "decision": "1905-045",
+          "pages": [
+            124,
+            125
+          ],
+          "score": 13.95348,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-22",
+      "query": "недействительность завещания после рождения законного наследника",
+      "split": "test",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 2,
+      "top10": [
+        {
+          "passage": "1905-066:3026-4488",
+          "decision": "1905-066",
+          "pages": [
+            179,
+            180
+          ],
+          "score": 22.412,
+          "relevant": false
+        },
+        {
+          "passage": "1905-066:1232-3278",
+          "decision": "1905-066",
+          "pages": [
+            179
+          ],
+          "score": 21.95106,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-22",
+      "query": "недействительность завещания после рождения законного наследника",
+      "split": "test",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 2,
+      "top10": [
+        {
+          "passage": "1905-066:1232-3278",
+          "decision": "1905-066",
+          "pages": [
+            179
+          ],
+          "score": 23.40304,
+          "relevant": false
+        },
+        {
+          "passage": "1905-066:3026-4488",
+          "decision": "1905-066",
+          "pages": [
+            179,
+            180
+          ],
+          "score": 22.412,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-22",
+      "query": "недействительность завещания после рождения законного наследника",
+      "split": "test",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 3,
+      "top10": [
+        {
+          "passage": "1905-066:4260-5611",
+          "decision": "1905-066",
+          "pages": [
+            180
+          ],
+          "score": 24.38474,
+          "relevant": true
+        },
+        {
+          "passage": "1905-066:1232-3278",
+          "decision": "1905-066",
+          "pages": [
+            179
+          ],
+          "score": 24.30016,
+          "relevant": false
+        },
+        {
+          "passage": "1905-066:3026-4488",
+          "decision": "1905-066",
+          "pages": [
+            179,
+            180
+          ],
+          "score": 24.11197,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-22",
+      "query": "недействительность завещания после рождения законного наследника",
+      "split": "test",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 0.5,
+      "negativeFalsePositive": null,
+      "results": 5,
+      "top10": [
+        {
+          "passage": "1905-066:1232-3278",
+          "decision": "1905-066",
+          "pages": [
+            179
+          ],
+          "score": 24.4899,
+          "relevant": false
+        },
+        {
+          "passage": "1905-066:4260-5611",
+          "decision": "1905-066",
+          "pages": [
+            180
+          ],
+          "score": 24.38474,
+          "relevant": true
+        },
+        {
+          "passage": "1905-066:3026-4488",
+          "decision": "1905-066",
+          "pages": [
+            179,
+            180
+          ],
+          "score": 24.11197,
+          "relevant": false
+        },
+        {
+          "passage": "1905-066:0-1460",
+          "decision": "1905-066",
+          "pages": [
+            178,
+            179
+          ],
+          "score": 16.54096,
+          "relevant": false
+        },
+        {
+          "passage": "1905-066:5362-7069",
+          "decision": "1905-066",
+          "pages": [
+            180
+          ],
+          "score": 16.21708,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-23",
+      "query": "публичная продажа городской недвижимости и правила о крестьянских имуществах",
+      "split": "test",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-23",
+      "query": "публичная продажа городской недвижимости и правила о крестьянских имуществах",
+      "split": "test",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-23",
+      "query": "публичная продажа городской недвижимости и правила о крестьянских имуществах",
+      "split": "test",
+      "method": "enriched",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 1,
+      "top10": [
+        {
+          "passage": "1905-089:6507-8045",
+          "decision": "1905-089",
+          "pages": [
+            242,
+            243
+          ],
+          "score": 19.8348,
+          "relevant": true
+        }
+      ]
+    },
+    {
+      "id": "restored-23",
+      "query": "публичная продажа городской недвижимости и правила о крестьянских имуществах",
+      "split": "test",
+      "method": "hybrid",
+      "recall5": 1,
+      "recall10": 1,
+      "mrr": 1,
+      "negativeFalsePositive": null,
+      "results": 4,
+      "top10": [
+        {
+          "passage": "1905-089:6507-8045",
+          "decision": "1905-089",
+          "pages": [
+            242,
+            243
+          ],
+          "score": 19.8348,
+          "relevant": true
+        },
+        {
+          "passage": "1905-089:5154-6737",
+          "decision": "1905-089",
+          "pages": [
+            242
+          ],
+          "score": 13.09413,
+          "relevant": false
+        },
+        {
+          "passage": "1905-089:7784-9349",
+          "decision": "1905-089",
+          "pages": [
+            242,
+            243
+          ],
+          "score": 12.83703,
+          "relevant": false
+        },
+        {
+          "passage": "1897-066:0-1398",
+          "decision": "1897-066",
+          "pages": [
+            221,
+            222
+          ],
+          "score": 11.71422,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-24",
+      "query": "право разработки золота после утраты посессионного владения",
+      "split": "test",
+      "method": "baseline",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-24",
+      "query": "право разработки золота после утраты посессионного владения",
+      "split": "test",
+      "method": "glossary",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-24",
+      "query": "право разработки золота после утраты посессионного владения",
+      "split": "test",
+      "method": "enriched",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-24",
+      "query": "право разработки золота после утраты посессионного владения",
+      "split": "test",
+      "method": "hybrid",
+      "recall5": 0,
+      "recall10": 0,
+      "mrr": 0,
+      "negativeFalsePositive": null,
+      "results": 2,
+      "top10": [
+        {
+          "passage": "1905-109:1785-3575",
+          "decision": "1905-109",
+          "pages": [
+            296,
+            297
+          ],
+          "score": 20.29352,
+          "relevant": false
+        },
+        {
+          "passage": "1905-109:0-2051",
+          "decision": "1905-109",
+          "pages": [
+            296,
+            297
+          ],
+          "score": 19.00149,
+          "relevant": false
+        }
+      ]
+    },
+    {
+      "id": "restored-negative-01",
+      "query": "согласие на обработку генетических персональных данных",
+      "split": "negative",
+      "method": "baseline",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-01",
+      "query": "согласие на обработку генетических персональных данных",
+      "split": "negative",
+      "method": "glossary",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-01",
+      "query": "согласие на обработку генетических персональных данных",
+      "split": "negative",
+      "method": "enriched",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-01",
+      "query": "согласие на обработку генетических персональных данных",
+      "split": "negative",
+      "method": "hybrid",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-02",
+      "query": "квалифицированная электронная подпись нотариуса",
+      "split": "negative",
+      "method": "baseline",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-02",
+      "query": "квалифицированная электронная подпись нотариуса",
+      "split": "negative",
+      "method": "glossary",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-02",
+      "query": "квалифицированная электронная подпись нотариуса",
+      "split": "negative",
+      "method": "enriched",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-02",
+      "query": "квалифицированная электронная подпись нотариуса",
+      "split": "negative",
+      "method": "hybrid",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-03",
+      "query": "майнинг криптовалют на золотом прииске",
+      "split": "negative",
+      "method": "baseline",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-03",
+      "query": "майнинг криптовалют на золотом прииске",
+      "split": "negative",
+      "method": "glossary",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-03",
+      "query": "майнинг криптовалют на золотом прииске",
+      "split": "negative",
+      "method": "enriched",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-03",
+      "query": "майнинг криптовалют на золотом прииске",
+      "split": "negative",
+      "method": "hybrid",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-04",
+      "query": "алгоритмическое определение кредитного рейтинга",
+      "split": "negative",
+      "method": "baseline",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-04",
+      "query": "алгоритмическое определение кредитного рейтинга",
+      "split": "negative",
+      "method": "glossary",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-04",
+      "query": "алгоритмическое определение кредитного рейтинга",
+      "split": "negative",
+      "method": "enriched",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-04",
+      "query": "алгоритмическое определение кредитного рейтинга",
+      "split": "negative",
+      "method": "hybrid",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-05",
+      "query": "компенсация за утечку биометрических данных",
+      "split": "negative",
+      "method": "baseline",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-05",
+      "query": "компенсация за утечку биометрических данных",
+      "split": "negative",
+      "method": "glossary",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-05",
+      "query": "компенсация за утечку биометрических данных",
+      "split": "negative",
+      "method": "enriched",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-05",
+      "query": "компенсация за утечку биометрических данных",
+      "split": "negative",
+      "method": "hybrid",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-06",
+      "query": "товарный знак интернет магазина",
+      "split": "negative",
+      "method": "baseline",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-06",
+      "query": "товарный знак интернет магазина",
+      "split": "negative",
+      "method": "glossary",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-06",
+      "query": "товарный знак интернет магазина",
+      "split": "negative",
+      "method": "enriched",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-06",
+      "query": "товарный знак интернет магазина",
+      "split": "negative",
+      "method": "hybrid",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-07",
+      "query": "искусственный интеллект как автор музыкальной хрестоматии",
+      "split": "negative",
+      "method": "baseline",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-07",
+      "query": "искусственный интеллект как автор музыкальной хрестоматии",
+      "split": "negative",
+      "method": "glossary",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-07",
+      "query": "искусственный интеллект как автор музыкальной хрестоматии",
+      "split": "negative",
+      "method": "enriched",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-07",
+      "query": "искусственный интеллект как автор музыкальной хрестоматии",
+      "split": "negative",
+      "method": "hybrid",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-08",
+      "query": "государственная регистрация доменного имени",
+      "split": "negative",
+      "method": "baseline",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-08",
+      "query": "государственная регистрация доменного имени",
+      "split": "negative",
+      "method": "glossary",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-08",
+      "query": "государственная регистрация доменного имени",
+      "split": "negative",
+      "method": "enriched",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    },
+    {
+      "id": "restored-negative-08",
+      "query": "государственная регистрация доменного имени",
+      "split": "negative",
+      "method": "hybrid",
+      "recall5": null,
+      "recall10": null,
+      "mrr": null,
+      "negativeFalsePositive": false,
+      "results": 0,
+      "top10": []
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.6.0",
-  "data_revision": "sha256:994e85d211349cda22db5ec477b42ce04d462dd4f537e979daa6f0046520c857",
+  "contract_version": "1.7.0",
+  "data_revision": "sha256:7f9fd1326fc167b5d3960e76a4eb946e5fc65196842b90374168a78940287d3c",
   "resource": "decision",
   "scope": {
     "id": "1905-029",
@@ -12,6 +12,12 @@
     "year": 1905,
     "number": 29,
     "date": "1905-03-16",
+    "volume_id": "senat-civil-1905",
+    "topic_ids": [
+      "property",
+      "state"
+    ],
+    "automatic_topics": [],
     "date_label": null,
     "department": "Гражданский кассационный департамент",
     "headnote_original": "Прошеніе повѣреннаго Александра Леонидова, частнаго повѣреннаго Дьяченко, объ отмѣнѣ рѣшенія Ростовскаго на Дону съѣзда мировыхъ судей по иску Леонидова къ городу Ростову на Дону о 216 руб. 14 коп.",
@@ -21,7 +27,10 @@
     "prosecutor": "Фролов С. П.",
     "outcome": "Просьба оставлена без последствий",
     "procedure": [],
-    "topics": [],
+    "topics": [
+      "Собственность и недвижимость",
+      "Казна, служба и публичные учреждения"
+    ],
     "participant_groups": {},
     "statutes": {
       "СЗГ ст. 425": 1

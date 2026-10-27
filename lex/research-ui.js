@@ -113,7 +113,7 @@
     }
     function section(s) {
       return h('section',{class:'research-position','data-section-kind':s.kind},h('h4',{},s.heading),
-        h('p',{class:'analysis-speaker'},s.speaker),h('p',{},s.summary),s.evidence.map(q=>evidence(q)));
+        h('p',{class:'analysis-speaker'},R.displaySpeaker(s)),h('p',{},s.summary),s.evidence.map(q=>evidence(q)));
     }
     function itemLabel(id) {const d=docs.get(id);return d?d.vol+' г. № '+d.num:id;}
     function scope() {
