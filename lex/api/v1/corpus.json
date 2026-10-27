@@ -1,7 +1,7 @@
 {
   "api_version": "v1",
-  "contract_version": "1.8.0",
-  "data_revision": "sha256:8bdfef527ec55177e17e9bf097d57f57c09cb99cc1f0e2b721588325737e04a9",
+  "contract_version": "1.9.0",
+  "data_revision": "sha256:0f7a8fc4c00d9a2cfae2cc53f60292a14dee625257f1c8bd093c322c7b5b7fbc",
   "resource": "corpus",
   "item": {
     "volumes": [
@@ -84,6 +84,9 @@
       "editorial_analyses": 384,
       "geography_places": 65,
       "geography_decisions": 82,
+      "geography_provinces": 48,
+      "geography_province_mentions": 109,
+      "geography_province_unresolved_mentions": 28,
       "passage_source_warnings": 0,
       "guides": 9,
       "guide_comparisons": 9,
@@ -93,6 +96,27 @@
       "catalog_classified": 384,
       "catalog_memberships": 917
     },
+    "reference_data": [
+      {
+        "id": "province-boundaries-1897",
+        "href": "https://ivseliv.github.io/senat/lex/data/province-boundaries-1897.json",
+        "media_type": "application/geo+json",
+        "year": 1897,
+        "bytes": 1464661,
+        "sha256": "454c7cceb341e535140065c3e61652010856b981a0434c5e0d8381736d6a0982",
+        "source_url": "https://doi.org/10.34894/NQOASN",
+        "attribution": "Kessler & Markevich, RIStat (2020); GIS: Rombert Stapel, IISH (2021); dataset version 3.3.",
+        "license": "CC0; RIStat citation required by the repository terms",
+        "note": "Границы: 1897 год, обзорная реконструкция RIStat/IISH. Год тома не меняет этот слой. Особые городские управления не выделены отдельными полигонами.",
+        "coverage": {
+          "boundary_features": 99,
+          "corpus_provinces": 48,
+          "corpus_provinces_with_geometry": 46,
+          "corpus_provinces_without_geometry": 2,
+          "referenced_boundary_features": 46
+        }
+      }
+    ],
     "orthography": "Оригинальная дореформенная орфография OCR.",
     "passage_offsets": "start/end — полуоткрытый Unicode-диапазон [start,end) в text_original.",
     "scan_geometry": "box — [x0,y0,x1,y1] в долях ширины и высоты; при null используйте full_page_url.",
@@ -110,6 +134,7 @@
     "precedents": "Переход устанавливается только по департаменту, году и номеру; неопределённые ссылки сохранены с контекстом без target_id. Старые пары cites не пригодны для переходов.",
     "historical_legislation_references": "legislation/historical-references.json сохраняет записи предыдущих версий с прежними ID и местами. Они исключены из текущих ссылок и фасетов; отдельный счётчик legislation_historical_references считает только сохранённые записи.",
     "source_warning": "Непустая строка у пассажа сообщает об установленном дефекте порядка или атрибуции OCR. Его пояснение не индексируется в обогащённом поиске; исходный текст сохранён.",
-    "guide_comparisons": "Редакционные сопоставления выбранных дел: закреплённые SHA полных текстов и буквальные цитаты со страницами. Не являются независимой юридической экспертизой или доказательством развития практики."
+    "guide_comparisons": "Редакционные сопоставления выбранных дел: закреплённые SHA полных текстов и буквальные цитаты со страницами. Не являются независимой юридической экспертизой или доказательством развития практики.",
+    "geography": "Выборочные упоминания мест сгруппированы по территориальной принадлежности для года тома; особое управление поясняется отдельно. Роль court не означает место событий или территорию юрисдикции. Справочные границы относятся к 1897 году и не меняются с фильтром года; отсутствие геометрии не означает отсутствие упоминаний."
   }
 }

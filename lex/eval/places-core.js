@@ -5,6 +5,7 @@ const meta={decisions:[
  {id:'1904-002',i:1,vol:1904,topic_ids:['family']},
  {id:'1905-001',i:2,vol:1905,topic_ids:['contracts']}
 ]};
+
 const mention=(id,place_id,decision_id,role)=>({id,place_id,decision_id,year:Number(decision_id.slice(0,4)),role,quote:'Въ Петровкѣ.',start:100,end:112,mention_start:103,mention_end:111});
 const data={places:[
  {id:'petersburg',historical_name:'С.-Петербург',modern_name:'Санкт-Петербург',aliases:['Петербург'],lat:59.94,lon:30.31},
@@ -14,6 +15,8 @@ const data={places:[
  mention('c','petersburg','1904-002','court'),mention('d','vilna','1904-001','person_organization'),
  mention('e',null,'1905-001','mention_unclear'),mention('f','vilna','1905-001','event_property')
 ]};
+data.provinces=[{id:'p',label:'Петербургская губерния',within_empire:true},{id:'v',label:'Виленская губерния',within_empire:true},{id:'foreign',label:'Тестовая зарубежная территория',within_empire:false}];
+for(const m of data.mentions)m.province_id=m.id==='e'?null:m.id==='f'?'foreign':m.place_id==='vilna'?'v':'p';
 const select=filters=>P.select(data,meta,P.state(filters));
 let s=select({});assert.equal(s.points.length,2);assert.equal(s.decisionCount,3);assert.equal(s.coverageDecisions,3);
 assert.equal(s.points.find(p=>p.place.id==='petersburg').decisionIds.length,2);assert.equal(s.points.find(p=>p.place.id==='petersburg').mentions.length,3);
@@ -27,5 +30,17 @@ assert.equal(select({role:'invented'}).cases.length,0);assert.equal(select({p:'n
 assert(!P.validPoint({lat:91,lon:30}));assert(!P.validPoint({lat:30,lon:Infinity}));assert(!P.validPoint({lat:'59',lon:30}));
 const invalid=structuredClone(data);invalid.places[0].lat=null;assert.equal(P.select(invalid,meta,P.state({})).unresolved.length,4);
 assert.equal(P.mentionName(data.mentions[0]),'Петровкѣ');
-assert.deepEqual(P.state(new URLSearchParams('q=+Вильно+&y=1904&t=family&role=court&u=1&p=vilna')),{q:'Вильно',y:'1904',t:'family',role:'court',u:'1',p:'vilna'});
+assert.deepEqual(P.state(new URLSearchParams('q=+Вильно+&y=1904&t=family&role=court&u=1&p=vilna&g=v&b=0')),{q:'Вильно',y:'1904',t:'family',role:'court',g:'v',u:'1',p:'vilna',b:'0'});
+assert.deepEqual(select({g:'__unknown'}).cases.map(c=>c.doc.id),['1905-001']);
+assert.deepEqual(select({g:'v',y:'1904',t:'contracts',role:'person_organization'}).cases.map(c=>c.doc.id),['1904-001']);
+assert.equal(select({g:'not-a-province'}).decisionCount,0);
+const groups=select({}).provinces;assert.equal(groups.find(g=>g.id==='p').decisionIds.length,2);assert.equal(groups.find(g=>g.id==='p').mentions.length,3);
+assert.equal(groups.filter(g=>g.points.some(p=>p.place.id==='vilna')).length,2,'Один город может иметь разную историческую принадлежность в разных упоминаниях');
+assert.equal(groups.find(g=>g.id==='__unknown').points.length,0,'Неизвестная губерния и отсутствие точки — отдельные признаки');
+const aggregate={properties:{province_ids:['p','v']}},one={properties:{province_ids:['v']}};
+assert.equal(P.boundarySummary(aggregate,select({})).decisionIds.length,2,'Общий полигон не суммирует одно дело дважды');
+assert.equal(P.boundarySummary(aggregate,select({})).filterId,null,'Составной полигон не угадывает один фильтр');
+assert.equal(P.boundarySummary(one,select({})).filterId,'v');assert.equal(P.boundarySummary(one,select({y:'1905'})).filterId,null,'Граница без дел остаётся информационной');
+const f=P.state({g:'v',role:'person_organization',b:'0'}),exported=P.exportSelection(data,P.select(data,meta,f),f);
+assert.equal(exported.mentions.length,1);assert.equal(exported.places.length,1);assert.equal(exported.provinces[0].id,'v');assert.deepEqual(exported.selection.filters,f);assert.equal(data.mentions.length,6,'Экспорт не меняет исходные данные');
 console.log('Places checks passed: distinct decisions, combined filters, aliases, unresolved places and point selection.');

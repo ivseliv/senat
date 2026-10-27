@@ -2,10 +2,12 @@
 """Проверяет контракт статического API v1 без сети и сторонних пакетов."""
 import hashlib
 import json
+import tempfile
 import unittest
 from pathlib import Path
 
-from api import API_VERSION, CONTRACT_VERSION, build_api
+from api import (API_VERSION, CONTRACT_VERSION, PUBLIC, api_data_revision,
+                 build_api, province_reference_data, schema_document)
 from guide_comparisons import guide_decisions
 from topic_navigation import LEGACY_TOPICS
 
@@ -29,6 +31,84 @@ def digest_tree(path):
     return digest.hexdigest()
 
 
+class ProvinceApiContractTest(unittest.TestCase):
+    """Проверки справочных данных не перегенерируют опубликованный API."""
+    def setUp(self):
+        temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(temporary.cleanup)
+        self.root = Path(temporary.name)
+        self.data, self.export = self.root / 'data', self.root / 'export'
+        self.data.mkdir()
+        self.export.mkdir()
+        self.geography = {
+            'province_map': {
+                'file': 'province-boundaries-1897.json', 'year': 1897,
+                'source_url': 'https://example.org/historical-map',
+                'attribution': 'Автор исторической карты', 'license': 'CC0',
+                'note': 'Границы 1897 года, не каждого года корпуса.',
+            },
+            'provinces': [
+                {'id': 'governorate-a', 'boundary_ids': ['gub-1', 'gub-2']},
+                {'id': 'foreign-province-b', 'boundary_ids': []},
+            ],
+        }
+        self.boundaries = {'type': 'FeatureCollection', 'year': 1897, 'features': [
+            {'type': 'Feature', 'id': ident, 'properties': {}, 'geometry': None}
+            for ident in ('gub-1', 'gub-2', 'gub-3')
+        ]}
+        self.path = self.data / 'province-boundaries-1897.json'
+        self.write_boundaries()
+
+    def write_boundaries(self):
+        self.path.write_text(json.dumps(self.boundaries), encoding='utf-8')
+
+    def test_reference_distinguishes_geometry_from_corpus_coverage(self):
+        reference = province_reference_data(self.data, self.geography)
+        self.assertEqual(reference['href'], PUBLIC + 'data/province-boundaries-1897.json')
+        self.assertEqual(reference['coverage'], {
+            'boundary_features': 3, 'corpus_provinces': 2,
+            'corpus_provinces_with_geometry': 1, 'corpus_provinces_without_geometry': 1,
+            'referenced_boundary_features': 2,
+        })
+        self.assertEqual(reference['bytes'], self.path.stat().st_size)
+        self.assertEqual(reference['sha256'], hashlib.sha256(self.path.read_bytes()).hexdigest())
+        for key in ('source_url', 'attribution', 'license', 'note', 'year'):
+            self.assertEqual(reference[key], self.geography['province_map'][key])
+
+    def test_boundary_bytes_participate_in_data_revision(self):
+        for filename in ('decision-analyses.json', 'analysis-search.json', 'guides.json',
+                         'topic-catalog.json', 'analytics.json', 'concepts.json', 'geography.json'):
+            (self.data / filename).write_text('{}\n', encoding='utf-8')
+        (self.export / 'manifest.json').write_text('{}\n', encoding='utf-8')
+        before = api_data_revision(self.export, self.data, self.geography)
+        self.boundaries['features'][0]['geometry'] = {'type': 'Point', 'coordinates': [35, 45]}
+        self.write_boundaries()
+        self.assertNotEqual(before, api_data_revision(self.export, self.data, self.geography))
+
+    def test_reference_rejects_missing_geometry_and_wrong_year(self):
+        self.geography['provinces'][0]['boundary_ids'] = ['gub-missing']
+        with self.assertRaisesRegex(ValueError, 'отсутствующую геометрию'):
+            province_reference_data(self.data, self.geography)
+        self.geography['provinces'][0]['boundary_ids'] = ['gub-1']
+        self.boundaries['year'] = 1905
+        self.write_boundaries()
+        with self.assertRaisesRegex(ValueError, 'год слоя границ'):
+            province_reference_data(self.data, self.geography)
+
+    def test_schema_preserves_nullable_province_and_separate_geometry(self):
+        definitions = schema_document()['$defs']
+        geography = definitions['Geography']
+        self.assertEqual(geography['properties']['schema_version'], {'const': 1})
+        self.assertIn('province_map', geography['required'])
+        self.assertIn('provinces', geography['required'])
+        mention = geography['properties']['mentions']['items']
+        self.assertEqual(mention['properties']['province_id']['type'], ['string', 'null'])
+        self.assertIn('province_sources', mention['required'])
+        self.assertIn('province_ids', geography['properties']['places']['items']['required'])
+        self.assertNotIn('minItems', definitions['Province']['properties']['boundary_ids'])
+        self.assertIn('foreign_province', definitions['Province']['properties']['kind']['enum'])
+
+
 class ApiTest(unittest.TestCase):
     def test_geography_is_a_separate_documented_resource(self):
         geography = read(API / 'editorial/geography.json')
@@ -36,6 +116,28 @@ class ApiTest(unittest.TestCase):
         self.assertFalse(geography['item']['coverage']['complete'])
         self.assertIn('/editorial/geography.json', read(API / 'openapi.json')['paths'])
         self.assertTrue(any(d['id'] == 'geography' for d in self.manifest['datasets']))
+
+    def test_province_reference_links_integrity_and_coverage(self):
+        geography = read(API / 'editorial/geography.json')
+        reference = province_reference_data(ROOT / 'data', geography['item'])
+        self.assertEqual(self.manifest['reference_data'], [reference])
+        self.assertEqual(read(API / 'corpus.json')['item']['reference_data'], [reference])
+        self.assertEqual(geography['links']['boundaryGeoJSON'], reference['href'])
+        self.assertEqual(geography['links']['boundarySource'], reference['source_url'])
+        self.assertEqual(self.manifest['data_revision'], api_data_revision(EXPORT, ROOT / 'data', geography['item']))
+        counts = self.manifest['coverage']['counts']
+        self.assertEqual(counts['geography_provinces'], len(geography['item']['provinces']))
+        mentions = geography['item']['mentions']
+        self.assertEqual(counts['geography_province_mentions'], sum(m['province_id'] is not None for m in mentions))
+        self.assertEqual(counts['geography_province_unresolved_mentions'], sum(m['province_id'] is None for m in mentions))
+        province_ids = {row['id'] for row in geography['item']['provinces']}
+        self.assertTrue(all(m['province_id'] is None or m['province_id'] in province_ids for m in mentions))
+        self.assertTrue(all(set(p['province_ids']) <= province_ids for p in geography['item']['places']))
+        definitions = read(API / 'schema.json')['$defs']
+        for row in geography['item']['provinces']:
+            self.assertTrue(set(definitions['Province']['required']) <= row.keys())
+        for row in mentions:
+            self.assertTrue(set(definitions['Geography']['properties']['mentions']['items']['required']) <= row.keys())
 
     @classmethod
     def setUpClass(cls):
