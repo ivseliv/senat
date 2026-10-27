@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Решения Сената: поиск и аналитика</title>
-<link rel="stylesheet" href="vendor/leaflet/leaflet.css?v=geography-20261027">
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css?v=provinces-20261028">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%232a78d6'/%3E%3Cpath d='M4 4h8v2H4zm0 3h8v2H4zm0 3h5v2H4z' fill='%23fff'/%3E%3C/svg%3E">
 <style>
@@ -224,6 +224,7 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
 .places-form { display:flex; gap:10px; flex-wrap:wrap; align-items:end; margin:18px 0; }.places-form label { display:grid; gap:5px; min-width:0; max-width:100%; }.places-form .places-query { flex:1 1 270px; }.places-form input[type=search] { width:100%; }.places-form .places-unmapped-label { display:flex; align-items:center; flex-basis:100%; }
 .places-layout { display:grid; grid-template-columns:minmax(0,1.7fr) minmax(245px,1fr); gap:18px; align-items:start; margin:18px 0; }.places-map-shell { min-width:0; }.places-map { height:430px; width:100%; border:1px solid var(--line); border-radius:10px; isolation:isolate; z-index:0; background:#e9f0f3; }.places-map .places-land { fill:var(--soft); stroke:var(--line); }.places-map .places-marker { fill:var(--accent); stroke:var(--accent-ink); cursor:pointer; }.places-map .places-marker:focus { stroke:var(--focus); stroke-width:4; outline:none; }.places-map .leaflet-popup-content-wrapper,.places-map .leaflet-popup-tip { background:var(--surface); color:var(--ink); }.places-map .leaflet-tooltip { background:var(--surface); color:var(--ink); border-color:var(--line); }.places-map .leaflet-bar a { background:var(--surface); color:var(--ink); }.places-map .leaflet-control-attribution { background:var(--surface); color:var(--ink2); }.places-map .leaflet-control-attribution a { color:var(--accent-ink); }.places-map .leaflet-control-scale-line { color:var(--ink); background:var(--surface); border-color:var(--ink2); text-shadow:none; }.places-popup p { margin:8px 0; }.places-popup .btn { font:inherit; padding:6px 9px; }
 .places-list-panel h3 { margin:0 0 10px; }.places-list { list-style:none; padding:0; margin:0; max-height:430px; overflow:auto; border:1px solid var(--line); border-radius:8px; }.places-list li+li { border-top:1px solid var(--line); }.places-select { display:flex; align-items:start; justify-content:space-between; gap:12px; width:100%; padding:12px; text-align:left; font:inherit; color:var(--ink); background:var(--surface); border:0; cursor:pointer; }.places-select>span:first-child { display:grid; gap:3px; }.places-select[aria-pressed=true] { background:var(--soft); box-shadow:inset 4px 0 var(--accent); }.places-select:hover { background:var(--soft); }.places-count { font-size:13px; color:var(--accent-ink); white-space:nowrap; }.places-mention { border-top:1px solid var(--line); padding-top:10px; margin-top:12px; }.places-role { font-size:14px; font-weight:600; }.places-map-note { min-height:40px; }.places-unresolved { margin:16px 0; }.places-unresolved li { margin:8px 0; }.places-case h4 { margin:0; }.places-case { overflow-wrap:anywhere; }.places-headnote { display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:3; overflow:hidden; }
+.places-map .places-province { stroke:#8c7047; fill:#8c7047; cursor:pointer; }.places-map .places-province-selected { stroke:var(--accent-ink); fill:var(--accent); }.places-map .places-province:focus { stroke:var(--focus); stroke-width:3; outline:none; }.places-province-group h4 { margin:0; padding:10px 12px; background:var(--soft); font-size:13px; }.places-province-group>ul { list-style:none; margin:0; padding:0; }.places-province-evidence { margin:10px 0; }.places-province-overview { margin:16px 0; }.places-provinces { display:flex; flex-wrap:wrap; gap:8px; max-height:250px; overflow:auto; padding:12px 0; }.places-provinces .chip { white-space:normal; }.places-provinces [aria-current=true] { border-color:var(--accent); }.places-boundary-toggle label { display:inline-flex; align-items:center; gap:7px; }.places-form select { max-width:300px; }.places-province-evidence p { overflow-wrap:anywhere; }
 :root[data-theme=dark] .places-map { background:#16232d; }@media(prefers-color-scheme:dark) { :root:not([data-theme=light]) .places-map { background:#16232d; } }
 @media(max-width:760px) { .places-layout { grid-template-columns:minmax(0,1fr); }.places-map { height:320px; }.places-list { max-height:290px; }.places-form>label:not(.places-unmapped-label) { flex:1 1 220px; }.places-map .leaflet-control-attribution { max-width:260px; font-size:10px; } }
 </style>
@@ -351,20 +352,25 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
     <details class="muted small"><summary>Как получена разметка</summary><p id="places-method"></p></details>
     <form id="places-form" class="places-form" role="search">
       <label class="places-query">Населённый пункт<input id="places-q" type="search" placeholder="Историческое или современное название" autocomplete="off"></label>
-      <label>Том<select id="places-year"></select></label><label>Тема<select id="places-topic"></select></label><label>Роль упоминания<select id="places-role"></select></label>
+      <label>Том<select id="places-year"></select></label><label>Тема<select id="places-topic"></select></label><label>Губерния / область<select id="places-province"></select></label><label>Роль упоминания<select id="places-role"></select></label>
       <button class="btn" type="submit">Найти</button><a class="btn ghost" href="#/places">Сбросить фильтры</a>
       <label class="places-unmapped-label"><input id="places-unmapped" type="checkbox"> Только упоминания без точки на карте</label>
     </form>
     <p class="small">Попробуйте: <a class="chip" href="#/places?q=Ялта">Ялта</a> <a class="chip" href="#/places?q=Митава">Митава</a></p>
     <p class="muted small">Фильтры действуют одновременно на карту и список. Число возле названия — разные решения, а не число упоминаний. Одно дело может относиться к нескольким пунктам; эти числа не измеряют частоту судебной практики.</p>
     <p id="places-status" role="status" aria-live="polite"></p>
+    <div id="places-province-selection"></div>
+    <p class="small places-boundary-toggle"><label><input id="places-boundaries" type="checkbox" checked> Показывать исторические границы 1897 года</label></p>
+    <p class="muted small">Границы остаются срезом <strong>1897 года</strong> при любом выбранном томе. Принадлежность населённых пунктов определена отдельно по историческим источникам для года тома; её можно проверить в карточке упоминания.</p>
+    <div id="places-boundary-status" class="muted small" role="status"></div>
     <div class="places-layout">
       <div class="places-map-shell"><div id="places-map" class="places-map"></div><p class="small"><button id="places-fit" type="button" class="btn ghost">Все точки выборки</button> <button id="places-europe" type="button" class="btn ghost">Европейская часть</button> <a id="places-list-jump" href="#/places">Перейти к списку</a></p><p id="places-map-note" class="muted small places-map-note"></p></div>
-      <section class="places-list-panel" aria-labelledby="places-list-heading"><h3 id="places-list-heading" tabindex="-1">Населённые пункты</h3><ul id="places-list" class="places-list"></ul><p id="places-list-empty" class="muted" hidden>По этим фильтрам точек нет. Упоминания без установленного места показаны ниже.</p></section>
+      <section class="places-list-panel" aria-labelledby="places-list-heading"><h3 id="places-list-heading" tabindex="-1">Пункты по губерниям / областям</h3><ul id="places-list" class="places-list"></ul><p id="places-list-empty" class="muted" hidden>По этим фильтрам точек нет. Упоминания без установленного места показаны ниже.</p></section>
     </div>
+    <details class="places-province-overview"><summary id="places-provinces-title">Губернии и области в выборке</summary><div id="places-provinces" class="places-provinces"></div></details>
     <details id="places-unresolved" class="places-unresolved" hidden><summary id="places-unresolved-summary"></summary><ul id="places-unresolved-list"></ul><a id="places-only-unresolved" class="chip" href="#/places?u=1">Показать дела только с такими упоминаниями</a></details>
     <h3 id="places-cases-heading" tabindex="-1">Дела текущей выборки</h3><div id="places-selection"></div><p id="places-cases-count" class="muted small" role="status" aria-live="polite"></p><div id="places-cases"></div><button id="places-more" class="btn ghost" type="button" hidden>Показать ещё дела</button>
-    <p class="small muted">Выгрузить всю разметку без текущих фильтров: <button id="places-export-json" type="button" class="btn ghost">JSON с цитатами</button> <button id="places-export-geojson" type="button" class="btn ghost">GeoJSON точек</button>. Упоминания без точки входят в JSON.</p>
+    <p class="small muted">Выгрузить текущую выборку с фильтрами: <button id="places-export-json" type="button" class="btn ghost">JSON с цитатами</button> <button id="places-export-geojson" type="button" class="btn ghost">GeoJSON точек</button>. Упоминания без точки входят в JSON. Сбросьте фильтры для полной выгрузки.</p>
   </section>
 
   <section id="view-laws" hidden>
@@ -486,17 +492,17 @@ button.bar-row { cursor: pointer; } button.bar-row:hover .bar-label { text-decor
   <button class="btn" id="detail-close">Закрыть ✕</button><div id="detail-body"></div>
 </div></div>
 
-<script>window.LEX_RELEASE="geography-20261027";</script>
-<script src="lex.js?v=geography-20261027"></script>
-<script src="concept.js?v=geography-20261027"></script>
-<script src="analysis_search.js?v=geography-20261027"></script>
-<script src="reader.js?v=geography-20261027"></script>
-<script src="reader-export.js?v=geography-20261027"></script>
-<script src="reader-ui.js?v=geography-20261027"></script>
-<script src="research.js?v=geography-20261027"></script>
-<script src="research-ui.js?v=geography-20261027"></script>
-<script src="vendor/leaflet/leaflet.js?v=geography-20261027"></script>
-<script src="places.js?v=geography-20261027"></script>
-<script src="app.js?v=geography-20261027"></script>
+<script>window.LEX_RELEASE="provinces-20261028";</script>
+<script src="lex.js?v=provinces-20261028"></script>
+<script src="concept.js?v=provinces-20261028"></script>
+<script src="analysis_search.js?v=provinces-20261028"></script>
+<script src="reader.js?v=provinces-20261028"></script>
+<script src="reader-export.js?v=provinces-20261028"></script>
+<script src="reader-ui.js?v=provinces-20261028"></script>
+<script src="research.js?v=provinces-20261028"></script>
+<script src="research-ui.js?v=provinces-20261028"></script>
+<script src="vendor/leaflet/leaflet.js?v=provinces-20261028"></script>
+<script src="places.js?v=provinces-20261028"></script>
+<script src="app.js?v=provinces-20261028"></script>
 </body>
 </html>

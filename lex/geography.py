@@ -9,6 +9,7 @@ from pathlib import Path
 from urllib.parse import urlencode, urlparse, parse_qs
 
 from decision_analyses import evidence_record
+from province_geography import apply as apply_provinces
 
 ROOT = Path(__file__).resolve().parent.parent
 PUBLIC = 'https://ivseliv.github.io/senat/lex/'
@@ -100,6 +101,7 @@ def build(root=ROOT):
     used = {m['place_id'] for m in mentions if m['place_id']}
     if used != set(places):
         raise ValueError('Справочник содержит точки без подтверждённых цитат')
+    provincial = apply_provinces(lex, places, mentions)
     chosen = {m['decision_id'] for m in mentions}
     coverage = dict(total_decisions=len(docs), decisions=len(chosen), mentions=len(mentions),
                     places=len(places), mapped_mentions=sum(m['place_id'] is not None for m in mentions),
@@ -109,8 +111,12 @@ def build(root=ROOT):
                                          mentions=sum(m['year'] == y for m in mentions)) for y in sorted(scans)},
                     by_role=dict(Counter(m['role'] for m in mentions)), complete=False,
                     note='Выборочная редакционная разметка. Отсутствие точки не означает отсутствия места в решении. Число дел на карте не измеряет географию всей судебной практики.')
+    coverage.update(provinces=len(provincial['provinces']),
+                    province_mentions=sum(m['province_id'] is not None for m in mentions),
+                    unresolved_province_mentions=sum(m['province_id'] is None for m in mentions))
     return dict(schema_version=1, roles=ROLES, label='География решений', method=source['method'],
                 offset_encoding='Unicode code points in UTF-8-decoded source text', coverage=coverage,
+                **provincial,
                 places=sorted(places.values(), key=lambda p: p['historical_name']),
                 mentions=sorted(mentions, key=lambda m: (m['decision_id'], m['mention_start'], m['id'])))
 

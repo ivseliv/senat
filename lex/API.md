@@ -61,6 +61,8 @@ console.log(items.filter(d => d.outcome));
 | `analytics.json`, `glossary.json` | данные аналитики и словарь понятийного поиска |
 | `editorial/analyses.json`, `editorial/guides.json` | редакционные разборы и тематические подборки |
 | `editorial/analysis-search.json` | разделы разборов с видами, пояснениями и точными цитатами для клиентского поиска |
+| `editorial/geography.json` | выборочные упоминания мест, историческая территориальная принадлежность и источники |
+| `links.boundaryGeoJSON` из географии | отдельный GeoJSON справочных границ 1897 года; источник, лицензия и SHA-256 — в `manifest.reference_data` |
 | `bulk.json` | совместимые полные JSON/CSV-выгрузки из `lex/export/` |
 | `openapi.json`, `schema.json`, `terms.json` | контракт, JSON Schema и условия использования |
 
@@ -72,6 +74,51 @@ console.log(items.filter(d => d.outcome));
 понятийный поиск воспроизводятся на стороне клиента по пассажам и словарю.
 
 ## Контракт данных
+
+Контракт **1.9.0** добавляет губернии, области и иностранные провинции в
+`editorial/geography.json`, сохраняя `item.schema_version = 1` и прежние поля.
+`item.provinces` содержит постоянные `id`, `label`, `kind`
+(`governorate`, `oblast`, `foreign_province`), признак `within_empire`,
+`boundary_ids`, исторические `sources` (`url`, `title`, `evidence`) и `note`.
+Иностранная провинция не обозначается как российская губерния.
+
+У каждого упоминания `province_id` задаёт территориальную принадлежность
+места для **года тома**. `province_note` поясняет основания и особое городское
+управление; `province_sources` сохраняет источники. Значение `null` означает
+неустановленную принадлежность. Оно отличается от `place_id = null`:
+известное место также может иметь неустановленную губернию. `places[].province_ids`
+перечисляет группы его упоминаний; для фильтра конкретного года используйте
+`mentions[].province_id`, а не весь список места.
+
+`item.province_map` описывает справочную карту: `file`, `year = 1897`,
+`source_url`, `attribution`, `license`, `note`. Ссылка `links.boundaryGeoJSON`
+ведёт к `lex/data/province-boundaries-1897.json` с типом `FeatureCollection`.
+`provinces[].boundary_ids` сопоставляются с `features[].id`; пустой массив
+означает отсутствие подходящей геометрии. Отдельная ссылка `links.geojson`
+по-прежнему ведёт к точкам населённых пунктов. Порядок координат обоих
+GeoJSON — долгота, широта.
+
+Границы относятся к **1897 году** и не меняются при выборе года тома.
+Территориальная атрибуция, особое управление города и судебная юрисдикция —
+разные сведения: роль `court` не устанавливает место событий или территорию
+подсудности. Ни отсутствие упоминаний в выборке, ни отсутствие геометрии
+не доказывает отсутствие практики Сената по данной территории.
+
+`manifest.reference_data` и `corpus.item.reference_data` содержат отдельную
+запись `province-boundaries-1897`: публичный `href`, `year`, `media_type`,
+`bytes`, `sha256`, `source_url`, `attribution`, `license`, `note` и `coverage`.
+В покрытии `boundary_features` считает все объекты карты,
+`corpus_provinces` — группы в географических данных,
+`corpus_provinces_with_geometry` и `corpus_provinces_without_geometry` —
+группы с геометрией и без неё, `referenced_boundary_features` — различные
+объекты карты, связанные с этими группами. Это не счётчики дел.
+В общих `coverage.counts` поля `geography_provinces`,
+`geography_province_mentions`, `geography_province_unresolved_mentions`
+отдельно считают группы, атрибутированные и неатрибутированные упоминания.
+Сам файл границ остаётся вне `api/v1` и списка `manifest.files`, однако его
+содержимое участвует в `data_revision`; проверять его следует по
+`reference_data[].sha256` и `bytes`. Лицензия и атрибуция этого внешнего слоя
+относятся только к нему; они также приведены в `terms.item.reference_data`.
 
 Контракт **1.8.0** добавляет `editorial/geography.json`: выборочные упоминания
 населённых пунктов с ролями, исходными цитатами, SHA, Unicode-смещениями,
